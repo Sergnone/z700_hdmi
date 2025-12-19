@@ -1,0 +1,68 @@
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:25: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                        ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:26: warning: null character ignored [-Wnull-character]
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                            ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:27: warning: null character ignored [-Wnull-character]
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                                    ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:28: warning: null character ignored [-Wnull-character]
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                                            ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:1: error: unknown type name 'XlxVV0EB0000000000000098'
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:30: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                                                     ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:30: error: expected ';' after top level declarator
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                                                     ^
+                                                     ;
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:33: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                                                           ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:34: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                                                               ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:37: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                                                                     ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:41: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                                                                           ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:44: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                                                                                 ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:56: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                                                                                                              ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:58: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                                                                                                                   ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:59: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                                                                                                                       ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:60: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                                                                                                                           ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:61: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                                                                                                                               ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:63: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                                                                                                                                    ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1:64: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>E<81>JG<C1><D8>r-<DA>ݚ0<E6>*H<D2>(3_Ok<U+007F><U+007F>g?4G<D9>0<B4><FA><DF><E0>W<B0><98>_<U+0006>
+                                                                                                                                        ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:2:1: error: source file is not valid UTF-8
+<F9><U+0006>7i!<83>?5eH<FA>wc<BA><U+001D>y<B8><DC>S<CF>Vg>V<U+000E><U+05EE>]r;~<D8>E2<F6><U+F2D6>M<EC><DA>?i<U+000B>^,E<8E>&<DE><U+0011><FF><U+0014><C9>Uq94C/<U+007F><C1><A5><A8><F0>^<80>&Y=<87><CB><F6><B9><<C6><CA>ػ}<U+001F>r<B7>_<E7><AD><U+0019><D9><F2><U+0010><U+0000><U+0000><U+0000><C7>44<DF><U+0014><9C>Q<,ď=}L><B2>XlxVV0EB0001689200003340-<CD>m<A7><B7><F7><EA><U+000B><FA><8E><CA>xnN),<C1><9A><D3>2-oe<96>;9<E8><ED><C6><D3>k<BB>故x<98><F6><9F><88>~<F4>W
+^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:2:6: error: source file is not valid UTF-8
+<F9><U+0006>7i!<83>?5eH<FA>wc<BA><U+001D>y<B8><DC>S<CF>Vg>V<U+000E><U+05EE>]r;~<D8>E2<F6><U+F2D6>M<EC><DA>?i<U+000B>^,E<8E>&<DE><U+0011><FF><U+0014><C9>Uq94C/<U+007F><C1><A5><A8><F0>^<80>&Y=<87><CB><F6><B9><<C6><CA>ػ}<U+001F>r<B7>_<E7><AD><U+0019><D9><F2><U+0010><U+0000><U+0000><U+0000><C7>44<DF><U+0014><9C>Q<,ď=}L><B2>XlxVV0EB0001689200003340-<CD>m<A7><B7><F7><EA><U+000B><FA><8E><CA>xnN),<C1><9A><D3>2-oe<96>;9<E8><ED><C6><D3>k<BB>故x<98><F6><9F><88>~<F4>W
+               ^
+/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:2:11: error: source file is not valid UTF-8
+<F9><U+0006>7i!<83>?5eH<FA>wc<BA><U+001D>y<B8><DC>S<CF>Vg>V<U+000E><U+05EE>]r;~<D8>E2<F6><U+F2D6>M<EC><DA>?i<U+000B>^,E<8E>&<DE><U+0011><FF><U+0014><C9>Uq94C/<U+007F><C1><A5><A8><F0>^<80>&Y=<87><CB><F6><B9><<C6><CA>ػ}<U+001F>r<B7>_<E7><AD><U+0019><D9><F2><U+0010><U+0000><U+0000><U+0000><C7>44<DF><U+0014><9C>Q<,ď=}L><B2>XlxVV0EB0001689200003340-<CD>m<A7><B7><F7><EA><U+000B><FA><8E><CA>xnN),<C1><9A><D3>2-oe<96>;9<E8><ED><C6><D3>k<BB>故x<98><F6><9F><88>~<F4>W
+                       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]

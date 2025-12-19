@@ -1,0 +1,52 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Thu Dec 18 14:49:27 2025
+| Host         : serg running 64-bit Ubuntu 24.04.3 LTS
+| Command      : report_drc -file top_design_wrapper_drc_opted.rpt -pb top_design_wrapper_drc_opted.pb -rpx top_design_wrapper_drc_opted.rpx
+| Design       : top_design_wrapper
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_top_design_wrapper
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 2
++---------+------------------+------------------------+--------+
+| Rule    | Severity         | Description            | Checks |
++---------+------------------+------------------------+--------+
+| AVAL-46 | Critical Warning | v7v8_mmcm_fvco_rule1   | 1      |
+| DPOP-2  | Warning          | MREG Output pipelining | 1      |
++---------+------------------+------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+AVAL-46#1 Critical Warning
+v7v8_mmcm_fvco_rule1  
+The current computed target frequency, FVCO, is out of range for cell top_design_i/axi_dynclk_0/U0/Inst_mmcme2_drp/mmcm_adv_inst. The computed FVCO is 1481.701 MHz. The valid FVCO range for speed grade -2 is 600MHz to 1440MHz. The cell attribute values used to compute FVCO are CLKFBOUT_MULT_F = 10.000, CLKIN1_PERIOD = 6.74900, and DIVCLK_DIVIDE = 1 (FVCO = 1000 * CLKFBOUT_MULT_F/(CLKIN1_PERIOD * DIVCLK_DIVIDE)).
+This violation may be corrected by:
+  1. The timer uses timing constraints for clock period or clock frequency that affect CLKIN1 to set cell attribute CLKIN1_PERIOD, over-riding any previous value. This may already be in place and, if so this violation will be resolved once Timing is run.  Otherwise, consider modifying timing constraints to adjust the CLKIN1_PERIOD and bring FVCO into the allowed range.
+  2. In the absence of timing constraints that affect CLKIN1, consider modifying the cell CLKIN1_PERIOD to bring FVCO into the allowed range.
+  3. If CLKIN1_PERIOD is satisfactory, modify the CLKFBOUT_MULT_F or DIVCLK_DIVIDE cell attributes to bring FVCO into the allowed range.
+  4. The MMCM configuration may be dynamically modified by use of DRP which is recognized by an ACTIVE signal on DCLK pin.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP top_design_i/v_frmbuf_rd_0/inst/grp_FrmbufRdHlsDataFlow_fu_166/Bytes2MultiPixStream_U0/mul_11ns_13ns_23_1_1_U25/tmp_product multiplier stage top_design_i/v_frmbuf_rd_0/inst/grp_FrmbufRdHlsDataFlow_fu_166/Bytes2MultiPixStream_U0/mul_11ns_13ns_23_1_1_U25/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+
