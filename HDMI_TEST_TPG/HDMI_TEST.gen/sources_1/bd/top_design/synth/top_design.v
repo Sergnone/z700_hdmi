@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Fri Dec 19 18:35:12 2025
+//Date        : Fri Dec 19 19:03:22 2025
 //Host        : serg running 64-bit Ubuntu 24.04.3 LTS
 //Command     : generate_target top_design.bd
 //Design      : top_design
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "top_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=top_design,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=10,numReposBlks=10,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=5,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "top_design.hwdef" *) 
+(* CORE_GENERATION_INFO = "top_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=top_design,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=10,numReposBlks=10,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=5,da_clkrst_cnt=1,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "top_design.hwdef" *) 
 module top_design
    (DDR_addr,
     DDR_ba,
@@ -384,6 +384,8 @@ module top_design
         .vid_data(v_axi4s_vid_out_0_vid_io_out_DATA),
         .vid_hsync(v_axi4s_vid_out_0_vid_io_out_HSYNC),
         .vid_io_out_ce(1'b1),
+        .vid_io_out_clk(processing_system7_0_FCLK_CLK0),
+        .vid_io_out_reset(1'b0),
         .vid_vsync(v_axi4s_vid_out_0_vid_io_out_VSYNC),
         .vtg_active_video(v_tc_0_vtiming_out_ACTIVE_VIDEO),
         .vtg_ce(v_axi4s_vid_out_0_vtg_ce),

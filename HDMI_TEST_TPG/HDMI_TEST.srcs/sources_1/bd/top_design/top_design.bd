@@ -702,7 +702,12 @@
         "xci_name": "top_design_v_axi4s_vid_out_0_1",
         "xci_path": "ip/top_design_v_axi4s_vid_out_0_1/top_design_v_axi4s_vid_out_0_1.xci",
         "inst_hier_path": "v_axi4s_vid_out_0",
-        "has_run_ip_tcl": "true"
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "C_HAS_ASYNC_CLK": {
+            "value": "1"
+          }
+        }
       },
       "v_tc_0": {
         "vlnv": "xilinx.com:ip:v_tc:6.2",
@@ -843,7 +848,8 @@
           "v_axi4s_vid_out_0/aclk",
           "rgb2dvi_0/PixelClk",
           "axi_dynclk_0/s_axi_lite_aclk",
-          "axi_dynclk_0/REF_CLK_I"
+          "axi_dynclk_0/REF_CLK_I",
+          "v_axi4s_vid_out_0/vid_io_out_clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {

@@ -104,7 +104,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param bd.open.in_stealth_mode 6
+  set_param bd.open.in_stealth_mode 7
   set_param chipscope.maxJobs 3
   set_param general.usePosixSpawnForFork 1
   set_param runs.launchOptions { -jobs 4  }

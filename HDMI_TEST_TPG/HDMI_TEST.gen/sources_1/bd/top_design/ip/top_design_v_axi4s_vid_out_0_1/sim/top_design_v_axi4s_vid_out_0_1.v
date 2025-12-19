@@ -63,7 +63,9 @@ module top_design_v_axi4s_vid_out_0_1 (
   s_axis_video_tuser,
   s_axis_video_tlast,
   fid,
+  vid_io_out_clk,
   vid_io_out_ce,
+  vid_io_out_reset,
   vid_active_video,
   vid_vsync,
   vid_hsync,
@@ -111,10 +113,18 @@ input wire s_axis_video_tuser;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 video_in TLAST" *)
 input wire s_axis_video_tlast;
 input wire fid;
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 vid_io_out_clk_intf CLK" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME vid_io_out_clk_intf, ASSOCIATED_BUSIF vid_io_out, FREQ_HZ 148148163, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
+input wire vid_io_out_clk;
 (* X_INTERFACE_INFO = "xilinx.com:signal:clockenable:1.0 vid_io_out_ce_intf CE" *)
 (* X_INTERFACE_MODE = "slave" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME vid_io_out_ce_intf, POLARITY ACTIVE_HIGH" *)
 input wire vid_io_out_ce;
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 vid_io_out_reset_intf RST" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME vid_io_out_reset_intf, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *)
+input wire vid_io_out_reset;
 (* X_INTERFACE_INFO = "xilinx.com:interface:vid_io:1.0 vid_io_out ACTIVE_VIDEO" *)
 (* X_INTERFACE_MODE = "master" *)
 output wire vid_active_video;
@@ -159,7 +169,7 @@ output wire sof_state_out;
     .C_NATIVE_COMPONENT_WIDTH(8),
     .C_NATIVE_DATA_WIDTH(24),
     .C_S_AXIS_TDATA_WIDTH(24),
-    .C_HAS_ASYNC_CLK(0),
+    .C_HAS_ASYNC_CLK(1),
     .C_ADDR_WIDTH(10),
     .C_VTG_MASTER_SLAVE(0),
     .C_HYSTERESIS_LEVEL(12),
@@ -178,9 +188,9 @@ output wire sof_state_out;
     .s_axis_video_tuser(s_axis_video_tuser),
     .s_axis_video_tlast(s_axis_video_tlast),
     .fid(fid),
-    .vid_io_out_clk(1'B0),
+    .vid_io_out_clk(vid_io_out_clk),
     .vid_io_out_ce(vid_io_out_ce),
-    .vid_io_out_reset(1'B0),
+    .vid_io_out_reset(vid_io_out_reset),
     .vid_active_video(vid_active_video),
     .vid_vsync(vid_vsync),
     .vid_hsync(vid_hsync),

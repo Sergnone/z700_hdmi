@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Dec 19 18:35:21 2025" VIVADOVERSION="2025.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Dec 19 19:03:23 2025" VIVADOVERSION="2025.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="top_design" PACKAGE="clg400" SPEEDGRADE="-2"/>
 
@@ -2169,6 +2169,7 @@
             <CONNECTION INSTANCE="rgb2dvi_0" PORT="PixelClk"/>
             <CONNECTION INSTANCE="axi_dynclk_0" PORT="s_axi_lite_aclk"/>
             <CONNECTION INSTANCE="axi_dynclk_0" PORT="REF_CLK_I"/>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_io_out_clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -2673,7 +2674,7 @@
         <PARAMETER NAME="C_ARBITRARY_RES_EN" VALUE="0"/>
         <PARAMETER NAME="C_COMPONENTS_PER_PIXEL" VALUE="3"/>
         <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
-        <PARAMETER NAME="C_HAS_ASYNC_CLK" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ASYNC_CLK" VALUE="1"/>
         <PARAMETER NAME="C_HYSTERESIS_LEVEL" VALUE="12"/>
         <PARAMETER NAME="C_INCLUDE_PIXEL_REMAP_420" VALUE="0"/>
         <PARAMETER NAME="C_INCLUDE_PIXEL_REPEAT" VALUE="0"/>
@@ -2750,6 +2751,12 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="vid_io_out_ce" POLARITY="ACTIVE_HIGH" SIGIS="ce"/>
+        <PORT CLKFREQUENCY="148148163" DIR="I" NAME="vid_io_out_clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vid_io_out_reset" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
         <PORT DIR="O" NAME="vid_vsync" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pVSync">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pVSync"/>
