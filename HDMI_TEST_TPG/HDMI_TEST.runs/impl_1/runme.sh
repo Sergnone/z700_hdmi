@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/impl_1'
+HD_PWD='/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -38,7 +38,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log top_design_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_design_wrapper.tcl -notrace
 
 

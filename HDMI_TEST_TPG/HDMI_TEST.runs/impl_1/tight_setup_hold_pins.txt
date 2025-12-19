@@ -1,15 +1,8 @@
 +====================+===================+=========================================================================================================+
 | Launch Setup Clock | Launch Hold Clock | Pin                                                                                                     |
 +====================+===================+=========================================================================================================+
-| clk_fpga_0         | clk_fpga_0        | top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgForeground_U0/boxHCoord_loc_0_fu_106_reg[14]/D |
-| clk_fpga_0         | clk_fpga_0        | top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgForeground_U0/boxHCoord_loc_0_fu_106_reg[11]/D |
-| clk_fpga_0         | clk_fpga_0        | top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgForeground_U0/boxHCoord_loc_0_fu_106_reg[9]/D  |
-| clk_fpga_0         | clk_fpga_0        | top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgForeground_U0/boxHCoord_loc_0_fu_106_reg[8]/D  |
-| clk_fpga_0         | clk_fpga_0        | top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgForeground_U0/boxHCoord_loc_0_fu_106_reg[7]/D  |
-| clk_fpga_0         | clk_fpga_0        | top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgForeground_U0/boxHCoord_loc_0_fu_106_reg[10]/D |
+| clk_fpga_0         | clk_fpga_0        | top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgForeground_U0/boxVCoord_loc_0_fu_102_reg[13]/D |
+| clk_fpga_0         | clk_fpga_0        | top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgForeground_U0/boxVCoord_loc_0_fu_102_reg[15]/D |
 | clk_fpga_0         | clk_fpga_0        | top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgForeground_U0/boxVCoord_loc_0_fu_102_reg[14]/D |
-| clk_fpga_0         | clk_fpga_0        | top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgForeground_U0/boxVCoord_loc_0_fu_102_reg[7]/D  |
 | clk_fpga_0         | clk_fpga_0        | top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgForeground_U0/boxVCoord_loc_0_fu_102_reg[11]/D |
-| clk_fpga_0         | clk_fpga_0        | top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgForeground_U0/boxHCoord_loc_0_fu_106_reg[12]/D |
-| clk_fpga_0         | clk_fpga_0        | top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgForeground_U0/boxHCoord_loc_0_fu_106_reg[13]/D |
 +--------------------+-------------------+---------------------------------------------------------------------------------------------------------+

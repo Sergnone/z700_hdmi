@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Wed Dec 17 18:50:32 2025
+//Date        : Fri Dec 19 18:35:12 2025
 //Host        : serg running 64-bit Ubuntu 24.04.3 LTS
 //Command     : generate_target top_design.bd
 //Design      : top_design
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "top_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=top_design,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=9,numReposBlks=9,numNonXlnxBlks=1,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "top_design.hwdef" *) 
+(* CORE_GENERATION_INFO = "top_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=top_design,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=10,numReposBlks=10,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=5,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "top_design.hwdef" *) 
 module top_design
    (DDR_addr,
     DDR_ba,
@@ -108,6 +108,26 @@ module top_design
   wire axi_smc_M00_AXI_WREADY;
   wire [3:0]axi_smc_M00_AXI_WSTRB;
   wire axi_smc_M00_AXI_WVALID;
+  wire [5:0]axi_smc_M01_AXI_ARADDR;
+  wire [2:0]axi_smc_M01_AXI_ARPROT;
+  wire axi_smc_M01_AXI_ARREADY;
+  wire axi_smc_M01_AXI_ARVALID;
+  wire [5:0]axi_smc_M01_AXI_AWADDR;
+  wire [2:0]axi_smc_M01_AXI_AWPROT;
+  wire axi_smc_M01_AXI_AWREADY;
+  wire axi_smc_M01_AXI_AWVALID;
+  wire axi_smc_M01_AXI_BREADY;
+  wire [1:0]axi_smc_M01_AXI_BRESP;
+  wire axi_smc_M01_AXI_BVALID;
+  wire [31:0]axi_smc_M01_AXI_RDATA;
+  wire axi_smc_M01_AXI_RREADY;
+  wire [1:0]axi_smc_M01_AXI_RRESP;
+  wire axi_smc_M01_AXI_RVALID;
+  wire [31:0]axi_smc_M01_AXI_WDATA;
+  wire axi_smc_M01_AXI_WREADY;
+  wire [3:0]axi_smc_M01_AXI_WSTRB;
+  wire axi_smc_M01_AXI_WVALID;
+  wire [1:0]ilconcat_0_dout;
   wire processing_system7_0_FCLK_CLK0;
   wire processing_system7_0_FCLK_RESET0_N;
   wire [31:0]processing_system7_0_M_AXI_GP0_ARADDR;
@@ -159,12 +179,36 @@ module top_design
   wire v_tc_0_vtiming_out_HSYNC;
   wire v_tc_0_vtiming_out_VBLANK;
   wire v_tc_0_vtiming_out_VSYNC;
+  wire v_tpg_0_interrupt;
   wire [23:0]v_tpg_0_m_axis_video_TDATA;
   wire [0:0]v_tpg_0_m_axis_video_TLAST;
   wire v_tpg_0_m_axis_video_TREADY;
   wire [0:0]v_tpg_0_m_axis_video_TUSER;
   wire v_tpg_0_m_axis_video_TVALID;
 
+  top_design_axi_dynclk_0_0 axi_dynclk_0
+       (.REF_CLK_I(processing_system7_0_FCLK_CLK0),
+        .s_axi_lite_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_lite_araddr(axi_smc_M01_AXI_ARADDR),
+        .s_axi_lite_aresetn(rst_ps7_0_148M_peripheral_aresetn),
+        .s_axi_lite_arprot(axi_smc_M01_AXI_ARPROT),
+        .s_axi_lite_arready(axi_smc_M01_AXI_ARREADY),
+        .s_axi_lite_arvalid(axi_smc_M01_AXI_ARVALID),
+        .s_axi_lite_awaddr(axi_smc_M01_AXI_AWADDR),
+        .s_axi_lite_awprot(axi_smc_M01_AXI_AWPROT),
+        .s_axi_lite_awready(axi_smc_M01_AXI_AWREADY),
+        .s_axi_lite_awvalid(axi_smc_M01_AXI_AWVALID),
+        .s_axi_lite_bready(axi_smc_M01_AXI_BREADY),
+        .s_axi_lite_bresp(axi_smc_M01_AXI_BRESP),
+        .s_axi_lite_bvalid(axi_smc_M01_AXI_BVALID),
+        .s_axi_lite_rdata(axi_smc_M01_AXI_RDATA),
+        .s_axi_lite_rready(axi_smc_M01_AXI_RREADY),
+        .s_axi_lite_rresp(axi_smc_M01_AXI_RRESP),
+        .s_axi_lite_rvalid(axi_smc_M01_AXI_RVALID),
+        .s_axi_lite_wdata(axi_smc_M01_AXI_WDATA),
+        .s_axi_lite_wready(axi_smc_M01_AXI_WREADY),
+        .s_axi_lite_wstrb(axi_smc_M01_AXI_WSTRB),
+        .s_axi_lite_wvalid(axi_smc_M01_AXI_WVALID));
   top_design_axi_smc_1 axi_smc
        (.M00_AXI_araddr(axi_smc_M00_AXI_ARADDR),
         .M00_AXI_arready(axi_smc_M00_AXI_ARREADY),
@@ -183,6 +227,25 @@ module top_design
         .M00_AXI_wready(axi_smc_M00_AXI_WREADY),
         .M00_AXI_wstrb(axi_smc_M00_AXI_WSTRB),
         .M00_AXI_wvalid(axi_smc_M00_AXI_WVALID),
+        .M01_AXI_araddr(axi_smc_M01_AXI_ARADDR),
+        .M01_AXI_arprot(axi_smc_M01_AXI_ARPROT),
+        .M01_AXI_arready(axi_smc_M01_AXI_ARREADY),
+        .M01_AXI_arvalid(axi_smc_M01_AXI_ARVALID),
+        .M01_AXI_awaddr(axi_smc_M01_AXI_AWADDR),
+        .M01_AXI_awprot(axi_smc_M01_AXI_AWPROT),
+        .M01_AXI_awready(axi_smc_M01_AXI_AWREADY),
+        .M01_AXI_awvalid(axi_smc_M01_AXI_AWVALID),
+        .M01_AXI_bready(axi_smc_M01_AXI_BREADY),
+        .M01_AXI_bresp(axi_smc_M01_AXI_BRESP),
+        .M01_AXI_bvalid(axi_smc_M01_AXI_BVALID),
+        .M01_AXI_rdata(axi_smc_M01_AXI_RDATA),
+        .M01_AXI_rready(axi_smc_M01_AXI_RREADY),
+        .M01_AXI_rresp(axi_smc_M01_AXI_RRESP),
+        .M01_AXI_rvalid(axi_smc_M01_AXI_RVALID),
+        .M01_AXI_wdata(axi_smc_M01_AXI_WDATA),
+        .M01_AXI_wready(axi_smc_M01_AXI_WREADY),
+        .M01_AXI_wstrb(axi_smc_M01_AXI_WSTRB),
+        .M01_AXI_wvalid(axi_smc_M01_AXI_WVALID),
         .S00_AXI_araddr(processing_system7_0_M_AXI_GP0_ARADDR),
         .S00_AXI_arburst(processing_system7_0_M_AXI_GP0_ARBURST),
         .S00_AXI_arcache(processing_system7_0_M_AXI_GP0_ARCACHE),
@@ -223,7 +286,7 @@ module top_design
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID),
         .aclk(processing_system7_0_FCLK_CLK0),
         .aresetn(rst_ps7_0_148M_peripheral_aresetn));
-  
+  assign ilconcat_0_dout = {1'b0, v_tpg_0_interrupt};
   assign HDMI_EN = 1'h1;
   top_design_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr),
@@ -245,6 +308,7 @@ module top_design
         .DDR_WEB(DDR_we_n),
         .FCLK_CLK0(processing_system7_0_FCLK_CLK0),
         .FCLK_RESET0_N(processing_system7_0_FCLK_RESET0_N),
+        .IRQ_F2P(ilconcat_0_dout),
         .MIO(FIXED_IO_mio),
         .M_AXI_GP0_ACLK(processing_system7_0_FCLK_CLK0),
         .M_AXI_GP0_ARADDR(processing_system7_0_M_AXI_GP0_ARADDR),
@@ -343,6 +407,7 @@ module top_design
        (.ap_clk(processing_system7_0_FCLK_CLK0),
         .ap_rst_n(rst_ps7_0_148M_peripheral_aresetn),
         .fid_in(1'b1),
+        .interrupt(v_tpg_0_interrupt),
         .m_axis_video_TDATA(v_tpg_0_m_axis_video_TDATA),
         .m_axis_video_TLAST(v_tpg_0_m_axis_video_TLAST),
         .m_axis_video_TREADY(v_tpg_0_m_axis_video_TREADY),

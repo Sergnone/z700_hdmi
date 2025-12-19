@@ -211,6 +211,24 @@
                 "SV": "xilinx.com:ip:v_tpg:8.2",
                 "TM": "both",
                 "TU": "register"
+            },
+            "V4": {
+                "VT": "AC",
+                "BA": "0x43C10000",
+                "HA": "0x43C1FFFF",
+                "BP": "C_S_AXI_LITE_BASEADDR",
+                "HP": "C_S_AXI_LITE_HIGHADDR",
+                "MA": "Data",
+                "MX": "/processing_system7_0",
+                "MI": "M_AXI_GP0",
+                "MS": "SEG_axi_dynclk_0_S_AXI_LITE_reg",
+                "MV": "xilinx.com:ip:processing_system7:5.5",
+                "SX": "/axi_dynclk_0",
+                "SI": "S_AXI_LITE",
+                "SS": "S_AXI_LITE_reg",
+                "SV": "digilentinc.com:ip:axi_dynclk:1.2",
+                "TM": "both",
+                "TU": "register"
             }
         },
         "edges": [
@@ -224,6 +242,11 @@
             },
             {
                 "src": "V3",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V4",
                 "trg": "V2",
                 "EH": "2"
             }
