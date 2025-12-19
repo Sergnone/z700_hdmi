@@ -1,14 +1,13 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x98B3B6B049229299",
+      "boundary_crc": "0x98B3B6B0973532E3",
       "device": "xc7z020clg400-2",
       "gen_directory": "../../../../HDMI_TEST.gen/sources_1/bd/top_design",
       "name": "top_design",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2025.2",
-      "validated": "true"
+      "tool_version": "2025.2"
     },
     "design_tree": {
       "processing_system7_0": "",
@@ -18,7 +17,6 @@
       "v_axi4s_vid_out_0": "",
       "v_tc_0": "",
       "rgb2dvi_0": "",
-      "ilconstant_0": "",
       "ilconstant_1": ""
     },
     "interface_ports": {
@@ -693,9 +691,6 @@
             "value": "false"
           }
         }
-      },
-      "ilconstant_0": {
-        "vlnv": "xilinx.com:inline_hdl:ilconstant:1.0"
       },
       "ilconstant_1": {
         "vlnv": "xilinx.com:inline_hdl:ilconstant:1.0"
