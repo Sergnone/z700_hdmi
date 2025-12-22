@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.srcs/phy_constr/new/phy_constr.xdc rfile:../../../HDMI_TEST.srcs/phy_constr/new/phy_constr.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_VDMA/HDMI_TEST.srcs/phy_constr/new/phy_constr.xdc rfile:../../../HDMI_TEST.srcs/phy_constr/new/phy_constr.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN B19 [get_ports {TMDS_0_data_p[2]}]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]

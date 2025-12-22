@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/synth_1'
+HD_PWD='/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_VDMA/HDMI_TEST.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

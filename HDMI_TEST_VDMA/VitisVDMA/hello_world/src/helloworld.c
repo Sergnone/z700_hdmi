@@ -49,7 +49,10 @@ int main()
 #include "xil_types.h"
 #include "xil_cache.h"
 #include "xparameters.h"
-#include "pic_800_600.h"
+//#include "pic_800_600.h"
+//#include "pic_800600.h"
+//#include "redblue_800_600.h"
+#include "wsun_wall.h"
 #include "sleep.h"
 /*
  * XPAR redefines
@@ -139,22 +142,25 @@ void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern)
 	u32 iPixelAddr = 0;
 	u8 wRed, wBlue, wGreen;
 	u32 xInt;
-	u32 pic_number=0;
+	u32 pic_number = 0;
 
 
 	switch (pattern)
 	{
 	case DEMO_PATTERN_0:
 
-		for(ycoi = 0; ycoi < 600; ycoi++)
+		for(ycoi = 0; ycoi < DISPLAY_HEIGHT; ycoi++)
 		{
-			for(xcoi = 0; xcoi < (800 * BYTES_PIXEL); xcoi+=BYTES_PIXEL)
+			for(xcoi = 0; xcoi < (DISPLAY_WIDTH * BYTES_PIXEL); xcoi+=BYTES_PIXEL)
 			{
-				frame[xcoi + iPixelAddr + 0] = gImage_pic_800_600[pic_number++];
-				frame[xcoi + iPixelAddr + 1] = gImage_pic_800_600[pic_number++];
-				frame[xcoi + iPixelAddr + 2] = gImage_pic_800_600[pic_number++];
+				frame[xcoi + iPixelAddr + 1] = gImage_pic_800_600[pic_number];
+				pic_number+=1;
+				frame[xcoi + iPixelAddr + 0] = gImage_pic_800_600[pic_number];
+				pic_number+=1;
+				frame[xcoi + iPixelAddr + 2] = gImage_pic_800_600[pic_number];
+				pic_number+=1;
 			}
-			iPixelAddr += stride;
+			iPixelAddr += 5760;
 		}
 		/*
 		 * Flush the framebuffer memory range to ensure changes are written to the
@@ -168,20 +174,11 @@ void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern)
 		{
 			for(xcoi = 0; xcoi < (width * BYTES_PIXEL); xcoi+=BYTES_PIXEL)
 			{
-				if (((xcoi/BYTES_PIXEL)&0x20)^(ycoi&0x20)) {
-					wRed = 255;
-					wGreen = 255;
-					wBlue = 255;
-				}
-				else{
-					wRed = 0;
-					wGreen = 0;
-					wBlue = 0;
-				}
-
-
-				frame[xcoi + iPixelAddr + 0] = wBlue;
-				frame[xcoi + iPixelAddr + 1] = wGreen;
+				wRed = 0x16;
+				wGreen = 0x16;
+				wBlue = 0xff;
+				frame[xcoi + iPixelAddr + 0] = wGreen;
+				frame[xcoi + iPixelAddr + 1] = wBlue;
 				frame[xcoi + iPixelAddr + 2] = wRed;
 			}
 			iPixelAddr += stride;

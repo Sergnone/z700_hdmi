@@ -329,31 +329,7 @@ int DisplayInitialize(DisplayCtrl *dispPtr, XAxiVdma *vdma, u16 vtcId, u32 dynCl
 	}
 	dispPtr->state = DISPLAY_STOPPED;
 	dispPtr->stride = stride;
-	dispPtr->vMode = VMODE_800x600;
-
-	ClkFindParams(dispPtr->vMode.freq, &clkMode);
-
-	/*
-	 * Store the obtained frequency to pxlFreq. It is possible that the PLL was not able to
-	 * exactly generate the desired pixel clock, so this may differ from vMode.freq.
-	 */
-	dispPtr->pxlFreq = clkMode.freq;
-
-	/*
-	 * Write to the PLL dynamic configuration registers to configure it with the calculated
-	 * parameters.
-	 */
-	if (!ClkFindReg(&clkReg, &clkMode))
-	{
-		xdbg_printf(XDBG_DEBUG_GENERAL, "Error calculating CLK register values\n\r");
-		return XST_FAILURE;
-	}
-	ClkWriteReg(&clkReg, dispPtr->dynClkAddr);
-
-	/*
-	 * Enable the dynamically generated clock
-    */
-	ClkStart(dispPtr->dynClkAddr);
+	dispPtr->vMode = VMODE_1920x1080;
 
 	/* Initialize the VTC driver so that it's ready to use look up
 	 * configuration in the config table, then initialize it.
