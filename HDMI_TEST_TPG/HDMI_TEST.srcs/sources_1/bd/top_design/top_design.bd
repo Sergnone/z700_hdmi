@@ -411,6 +411,9 @@
           },
           "PCW_USE_FABRIC_INTERRUPT": {
             "value": "1"
+          },
+          "PCW_USE_S_AXI_HP0": {
+            "value": "1"
           }
         },
         "interface_ports": {
@@ -429,6 +432,11 @@
               "maximum": "0x7FFFFFFF",
               "width": "32"
             }
+          },
+          "S_AXI_HP0": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Slave",
+            "memory_map_ref": "S_AXI_HP0"
           }
         },
         "addressing": {
@@ -849,7 +857,8 @@
           "rgb2dvi_0/PixelClk",
           "axi_dynclk_0/s_axi_lite_aclk",
           "axi_dynclk_0/REF_CLK_I",
-          "v_axi4s_vid_out_0/vid_io_out_clk"
+          "v_axi4s_vid_out_0/vid_io_out_clk",
+          "processing_system7_0/S_AXI_HP0_ACLK"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {

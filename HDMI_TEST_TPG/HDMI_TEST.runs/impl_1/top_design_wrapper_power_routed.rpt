@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date             : Fri Dec 19 19:05:32 2025
+| Date             : Mon Dec 22 18:45:03 2025
 | Host             : serg running 64-bit Ubuntu 24.04.3 LTS
 | Command          : report_power -file top_design_wrapper_power_routed.rpt -pb top_design_wrapper_power_summary_routed.pb -rpx top_design_wrapper_power_routed.rpx
 | Design           : top_design_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.947        |
+| Total On-Chip Power (W)  | 1.953        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.798        |
+| Dynamic (W)              | 1.804        |
 | Device Static (W)        | 0.149        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 62.5         |
@@ -66,9 +66,9 @@ Table of Contents
 | PLL                     |     0.137 |        1 |         4 |           25.00 |
 | DSPs                    |     0.021 |       14 |       220 |            6.36 |
 | I/O                     |     0.135 |        9 |       125 |            7.20 |
-| PS7                     |     1.277 |        1 |       --- |             --- |
+| PS7                     |     1.283 |        1 |       --- |             --- |
 | Static Power            |     0.149 |          |           |                 |
-| Total                   |     1.947 |          |           |                 |
+| Total                   |     1.953 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -91,7 +91,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccpint   |       1.000 |     0.704 |       0.670 |      0.033 |       NA    | Unspecified | NA         |
+| Vccpint   |       1.000 |     0.710 |       0.677 |      0.033 |       NA    | Unspecified | NA         |
 | Vccpaux   |       1.800 |     0.036 |       0.026 |      0.010 |       NA    | Unspecified | NA         |
 | Vccpll    |       1.800 |     0.019 |       0.016 |      0.003 |       NA    | Unspecified | NA         |
 | Vcco_ddr  |       1.500 |     0.356 |       0.354 |      0.002 |       NA    | Unspecified | NA         |
@@ -158,14 +158,14 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| top_design_wrapper       |     1.798 |
-|   top_design_i           |     1.798 |
+| top_design_wrapper       |     1.804 |
+|   top_design_i           |     1.804 |
 |     axi_dynclk_0         |     0.135 |
 |       U0                 |     0.135 |
 |     axi_smc              |     0.010 |
 |       inst               |     0.010 |
-|     processing_system7_0 |     1.278 |
-|       inst               |     1.278 |
+|     processing_system7_0 |     1.284 |
+|       inst               |     1.284 |
 |     rgb2dvi_0            |     0.280 |
 |       U0                 |     0.280 |
 |     v_axi4s_vid_out_0    |     0.010 |

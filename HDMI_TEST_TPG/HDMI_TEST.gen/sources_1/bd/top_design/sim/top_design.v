@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Fri Dec 19 19:03:22 2025
+//Date        : Mon Dec 22 18:43:04 2025
 //Host        : serg running 64-bit Ubuntu 24.04.3 LTS
 //Command     : generate_target top_design.bd
 //Design      : top_design
@@ -351,7 +351,37 @@ module top_design
         .M_AXI_GP0_WVALID(processing_system7_0_M_AXI_GP0_WVALID),
         .PS_CLK(FIXED_IO_ps_clk),
         .PS_PORB(FIXED_IO_ps_porb),
-        .PS_SRSTB(FIXED_IO_ps_srstb));
+        .PS_SRSTB(FIXED_IO_ps_srstb),
+        .S_AXI_HP0_ACLK(processing_system7_0_FCLK_CLK0),
+        .S_AXI_HP0_ARADDR({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_ARBURST({1'b0,1'b1}),
+        .S_AXI_HP0_ARCACHE({1'b0,1'b0,1'b1,1'b1}),
+        .S_AXI_HP0_ARID({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_ARLEN({1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_ARLOCK({1'b0,1'b0}),
+        .S_AXI_HP0_ARPROT({1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_ARQOS({1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_ARSIZE({1'b0,1'b1,1'b1}),
+        .S_AXI_HP0_ARVALID(1'b0),
+        .S_AXI_HP0_AWADDR({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_AWBURST({1'b0,1'b1}),
+        .S_AXI_HP0_AWCACHE({1'b0,1'b0,1'b1,1'b1}),
+        .S_AXI_HP0_AWID({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_AWLEN({1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_AWLOCK({1'b0,1'b0}),
+        .S_AXI_HP0_AWPROT({1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_AWQOS({1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_AWSIZE({1'b0,1'b1,1'b1}),
+        .S_AXI_HP0_AWVALID(1'b0),
+        .S_AXI_HP0_BREADY(1'b0),
+        .S_AXI_HP0_RDISSUECAP1_EN(1'b0),
+        .S_AXI_HP0_RREADY(1'b0),
+        .S_AXI_HP0_WDATA({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_WID({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .S_AXI_HP0_WLAST(1'b0),
+        .S_AXI_HP0_WRISSUECAP1_EN(1'b0),
+        .S_AXI_HP0_WSTRB({1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1}),
+        .S_AXI_HP0_WVALID(1'b0));
   top_design_rgb2dvi_0_0 rgb2dvi_0
        (.PixelClk(processing_system7_0_FCLK_CLK0),
         .TMDS_Clk_n(TMDS_0_clk_n),
