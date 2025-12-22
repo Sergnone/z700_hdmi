@@ -49,10 +49,9 @@ int main()
 #include "xil_types.h"
 #include "xil_cache.h"
 #include "xparameters.h"
-//#include "pic_800_600.h"
-//#include "pic_800600.h"
-//#include "redblue_800_600.h"
-#include "wsun_wall.h"
+#include "pic_800_600.h"
+//#include "2color.h"
+//#include "wsun_wall.h"
 #include "sleep.h"
 /*
  * XPAR redefines
@@ -122,6 +121,7 @@ int main(void)
 		xil_printf("Display Ctrl initialization failed during demo initialization%d\r\n", Status);
 
 	}
+	printf("-----------------------------------------------------\r\n");
 	Status = DisplayStart(&dispCtrl);
 	if (Status != XST_SUCCESS)
 	{
@@ -160,7 +160,7 @@ void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern)
 				frame[xcoi + iPixelAddr + 2] = gImage_pic_800_600[pic_number];
 				pic_number+=1;
 			}
-			iPixelAddr += 5760;
+			iPixelAddr += stride;
 		}
 		/*
 		 * Flush the framebuffer memory range to ensure changes are written to the

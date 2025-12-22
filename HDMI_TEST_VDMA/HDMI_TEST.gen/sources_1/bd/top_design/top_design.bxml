@@ -2,11 +2,11 @@
 <Root MajorVersion="0" MinorVersion="43">
   <CompositeFile CompositeFileTopName="top_design" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1766054048"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1766054048"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1766054048"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1766054048"/>
-    <Generation Name="INSTANTIATION_TEMPLATE" State="GENERATED" Timestamp="1766054048"/>
+    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1766416088"/>
+    <Generation Name="SIMULATION" State="STALE" Timestamp="1766416088"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1766416088"/>
+    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1766415932"/>
+    <Generation Name="INSTANTIATION_TEMPLATE" State="STALE" Timestamp="1766416901"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth/top_design.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
@@ -36,14 +36,6 @@
         <Library Name="xil_defaultlib"/>
         <ProcessingOrder Val="NORMAL"/>
       </File>
-      <File Name="top_design_ooc.xdc" Type="XDC">
-        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="OUT_OF_CONTEXT"/>
-        <ProcessingOrder Val="NORMAL"/>
-      </File>
       <File Name="hw_handoff/top_design.hwh" Type="HwHandoff">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
@@ -66,6 +58,14 @@
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="top_design_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
         <ProcessingOrder Val="NORMAL"/>
       </File>
     </FileCollection>
