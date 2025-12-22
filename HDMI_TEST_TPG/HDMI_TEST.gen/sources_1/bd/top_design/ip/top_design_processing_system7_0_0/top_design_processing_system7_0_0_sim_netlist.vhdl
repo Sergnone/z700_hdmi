@@ -2,7 +2,7 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Mon Dec 22 19:21:07 2025
+-- Date        : Mon Dec 22 20:07:10 2025
 -- Host        : serg running 64-bit Ubuntu 24.04.3 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/top_design_processing_system7_0_0_sim_netlist.vhdl
@@ -818,7 +818,7 @@ entity top_design_processing_system7_0_0_processing_system7_v5_5_processing_syst
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of top_design_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "processing_system7_v5_5_processing_system7";
   attribute POWER : string;
-  attribute POWER of top_design_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={100.000000} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1800.000} /><AXI interface={S_AXI_HP0} dataWidth={64} clockFreq={148} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={148} usageRate={0.5} />/>";
+  attribute POWER of top_design_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={Timer} ioStandard={} bidis={0} ioBank={} clockFreq={111.111115} usageRate={0.5} /><IO interface={Timer} ioStandard={} bidis={0} ioBank={} clockFreq={111.111115} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={100.000000} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1800.000} /><AXI interface={S_AXI_HP0} dataWidth={64} clockFreq={148} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={148} usageRate={0.5} />/>";
   attribute USE_TRACE_DATA_EDGE_DETECTOR : integer;
   attribute USE_TRACE_DATA_EDGE_DETECTOR of top_design_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
 end top_design_processing_system7_0_0_processing_system7_v5_5_processing_system7;
@@ -1337,12 +1337,6 @@ architecture STRUCTURE of top_design_processing_system7_0_0_processing_system7_v
   signal PS7_i_n_330 : STD_LOGIC;
   signal PS7_i_n_331 : STD_LOGIC;
   signal PS7_i_n_332 : STD_LOGIC;
-  signal PS7_i_n_333 : STD_LOGIC;
-  signal PS7_i_n_334 : STD_LOGIC;
-  signal PS7_i_n_335 : STD_LOGIC;
-  signal PS7_i_n_336 : STD_LOGIC;
-  signal PS7_i_n_337 : STD_LOGIC;
-  signal PS7_i_n_338 : STD_LOGIC;
   signal PS7_i_n_34 : STD_LOGIC;
   signal PS7_i_n_345 : STD_LOGIC;
   signal PS7_i_n_346 : STD_LOGIC;
@@ -3076,12 +3070,6 @@ begin
   TRACE_CLK_OUT <= \<const0>\;
   TRACE_CTL <= \TRACE_CTL_PIPE[0]\;
   TRACE_DATA(1 downto 0) <= \TRACE_DATA_PIPE[0]\(1 downto 0);
-  TTC0_WAVE0_OUT <= \<const0>\;
-  TTC0_WAVE1_OUT <= \<const0>\;
-  TTC0_WAVE2_OUT <= \<const0>\;
-  TTC1_WAVE0_OUT <= \<const0>\;
-  TTC1_WAVE1_OUT <= \<const0>\;
-  TTC1_WAVE2_OUT <= \<const0>\;
   UART0_DTRN <= \<const0>\;
   UART0_RTSN <= \<const0>\;
   UART0_TX <= \<const0>\;
@@ -3420,13 +3408,13 @@ PS7_i: unisim.vcomponents.PS7
       EMIOTRACECTL => NLW_PS7_i_EMIOTRACECTL_UNCONNECTED,
       EMIOTRACEDATA(31 downto 0) => NLW_PS7_i_EMIOTRACEDATA_UNCONNECTED(31 downto 0),
       EMIOTTC0CLKI(2 downto 0) => B"000",
-      EMIOTTC0WAVEO(2) => PS7_i_n_333,
-      EMIOTTC0WAVEO(1) => PS7_i_n_334,
-      EMIOTTC0WAVEO(0) => PS7_i_n_335,
+      EMIOTTC0WAVEO(2) => TTC0_WAVE2_OUT,
+      EMIOTTC0WAVEO(1) => TTC0_WAVE1_OUT,
+      EMIOTTC0WAVEO(0) => TTC0_WAVE0_OUT,
       EMIOTTC1CLKI(2 downto 0) => B"000",
-      EMIOTTC1WAVEO(2) => PS7_i_n_336,
-      EMIOTTC1WAVEO(1) => PS7_i_n_337,
-      EMIOTTC1WAVEO(0) => PS7_i_n_338,
+      EMIOTTC1WAVEO(2) => TTC1_WAVE2_OUT,
+      EMIOTTC1WAVEO(1) => TTC1_WAVE1_OUT,
+      EMIOTTC1WAVEO(0) => TTC1_WAVE0_OUT,
       EMIOUART0CTSN => '0',
       EMIOUART0DCDN => '0',
       EMIOUART0DSRN => '0',
@@ -5341,6 +5329,12 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity top_design_processing_system7_0_0 is
   port (
+    TTC0_WAVE0_OUT : out STD_LOGIC;
+    TTC0_WAVE1_OUT : out STD_LOGIC;
+    TTC0_WAVE2_OUT : out STD_LOGIC;
+    TTC1_WAVE0_OUT : out STD_LOGIC;
+    TTC1_WAVE1_OUT : out STD_LOGIC;
+    TTC1_WAVE2_OUT : out STD_LOGIC;
     M_AXI_GP0_ARVALID : out STD_LOGIC;
     M_AXI_GP0_AWVALID : out STD_LOGIC;
     M_AXI_GP0_BREADY : out STD_LOGIC;
@@ -5647,12 +5641,6 @@ architecture STRUCTURE of top_design_processing_system7_0_0 is
   signal NLW_inst_S_AXI_HP3_WREADY_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_TRACE_CLK_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_TRACE_CTL_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_TTC0_WAVE0_OUT_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_TTC0_WAVE1_OUT_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_TTC0_WAVE2_OUT_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_TTC1_WAVE0_OUT_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_TTC1_WAVE1_OUT_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_TTC1_WAVE2_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_UART0_DTRN_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_UART0_RTSN_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_UART0_TX_UNCONNECTED : STD_LOGIC;
@@ -5862,7 +5850,7 @@ architecture STRUCTURE of top_design_processing_system7_0_0 is
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of inst : label is "top_design_processing_system7_0_0.hwdef";
   attribute POWER : string;
-  attribute POWER of inst : label is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={100.000000} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1800.000} /><AXI interface={S_AXI_HP0} dataWidth={64} clockFreq={148} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={148} usageRate={0.5} />/>";
+  attribute POWER of inst : label is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={Timer} ioStandard={} bidis={0} ioBank={} clockFreq={111.111115} usageRate={0.5} /><IO interface={Timer} ioStandard={} bidis={0} ioBank={} clockFreq={111.111115} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={100.000000} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1800.000} /><AXI interface={S_AXI_HP0} dataWidth={64} clockFreq={148} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={148} usageRate={0.5} />/>";
   attribute USE_TRACE_DATA_EDGE_DETECTOR : integer;
   attribute USE_TRACE_DATA_EDGE_DETECTOR of inst : label is 0;
   attribute X_INTERFACE_INFO : string;
@@ -6676,15 +6664,15 @@ inst: entity work.top_design_processing_system7_0_0_processing_system7_v5_5_proc
       TTC0_CLK0_IN => '0',
       TTC0_CLK1_IN => '0',
       TTC0_CLK2_IN => '0',
-      TTC0_WAVE0_OUT => NLW_inst_TTC0_WAVE0_OUT_UNCONNECTED,
-      TTC0_WAVE1_OUT => NLW_inst_TTC0_WAVE1_OUT_UNCONNECTED,
-      TTC0_WAVE2_OUT => NLW_inst_TTC0_WAVE2_OUT_UNCONNECTED,
+      TTC0_WAVE0_OUT => TTC0_WAVE0_OUT,
+      TTC0_WAVE1_OUT => TTC0_WAVE1_OUT,
+      TTC0_WAVE2_OUT => TTC0_WAVE2_OUT,
       TTC1_CLK0_IN => '0',
       TTC1_CLK1_IN => '0',
       TTC1_CLK2_IN => '0',
-      TTC1_WAVE0_OUT => NLW_inst_TTC1_WAVE0_OUT_UNCONNECTED,
-      TTC1_WAVE1_OUT => NLW_inst_TTC1_WAVE1_OUT_UNCONNECTED,
-      TTC1_WAVE2_OUT => NLW_inst_TTC1_WAVE2_OUT_UNCONNECTED,
+      TTC1_WAVE0_OUT => TTC1_WAVE0_OUT,
+      TTC1_WAVE1_OUT => TTC1_WAVE1_OUT,
+      TTC1_WAVE2_OUT => TTC1_WAVE2_OUT,
       UART0_CTSN => '0',
       UART0_DCDN => '0',
       UART0_DSRN => '0',

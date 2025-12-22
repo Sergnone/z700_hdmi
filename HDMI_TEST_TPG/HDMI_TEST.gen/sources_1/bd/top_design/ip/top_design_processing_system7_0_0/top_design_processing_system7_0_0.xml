@@ -14996,7 +14996,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:77c0ab02</spirit:value>
+            <spirit:value>9:a08de6ce</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15011,11 +15011,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 22 16:20:34 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 22 17:06:45 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:68abffa6</spirit:value>
+            <spirit:value>9:73b563f4</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15034,11 +15034,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 22 16:20:34 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 22 17:06:45 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:77c0ab02</spirit:value>
+            <spirit:value>9:a08de6ce</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15053,11 +15053,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 22 16:20:35 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 22 17:06:46 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:68abffa6</spirit:value>
+            <spirit:value>9:73b563f4</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15076,11 +15076,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 22 16:20:34 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 22 17:06:45 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d4e834f4</spirit:value>
+            <spirit:value>9:237c5fc8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15091,7 +15091,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d4e834f4</spirit:value>
+            <spirit:value>9:237c5fc8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15105,11 +15105,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 22 16:21:07 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 22 17:07:10 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d4e834f4</spirit:value>
+            <spirit:value>9:237c5fc8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15120,7 +15120,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d4e834f4</spirit:value>
+            <spirit:value>9:237c5fc8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15136,11 +15136,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 22 16:20:34 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 22 17:06:45 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9aceeec8</spirit:value>
+            <spirit:value>9:34b421cd</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15160,11 +15160,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 22 16:20:34 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 22 17:06:45 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9aceeec8</spirit:value>
+            <spirit:value>9:34b421cd</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15184,11 +15184,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 22 16:20:34 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 22 17:06:45 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d4e834f4</spirit:value>
+            <spirit:value>9:237c5fc8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -18301,7 +18301,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.TTC0_WAVE0_OUT" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_TTC0)) = 1)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_TTC0)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.TTC0_WAVE0_OUT" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_TTC0)) = 1)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_TTC0)) = 1))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -18321,7 +18321,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.TTC0_WAVE1_OUT" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_TTC0)) = 1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.TTC0_WAVE1_OUT" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_TTC0)) = 1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -18341,7 +18341,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.TTC0_WAVE2_OUT" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_TTC0)) = 1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.TTC0_WAVE2_OUT" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_TTC0)) = 1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -18430,7 +18430,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.TTC1_WAVE0_OUT" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_TTC1)) = 1)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_TTC1)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.TTC1_WAVE0_OUT" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_TTC1)) = 1)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_TTC1)) = 1))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -18450,7 +18450,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.TTC1_WAVE1_OUT" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_TTC1)) = 1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.TTC1_WAVE1_OUT" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_TTC1)) = 1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -18470,7 +18470,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.TTC1_WAVE2_OUT" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_TTC1)) = 1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.TTC1_WAVE2_OUT" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_TTC1)) = 1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -31750,14 +31750,6 @@
       <spirit:enumeration>MIO 42</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_1a80fa5a</spirit:name>
-      <spirit:enumeration>&lt;Select></spirit:enumeration>
-      <spirit:enumeration>EMIO</spirit:enumeration>
-      <spirit:enumeration>MIO 18 .. 19</spirit:enumeration>
-      <spirit:enumeration>MIO 30 .. 31</spirit:enumeration>
-      <spirit:enumeration>MIO 42 .. 43</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
       <spirit:name>choice_list_1e4fa2cf</spirit:name>
       <spirit:enumeration>&lt;Select></spirit:enumeration>
       <spirit:enumeration>MIO</spirit:enumeration>
@@ -32037,6 +32029,13 @@
       <spirit:enumeration>&lt;Select></spirit:enumeration>
       <spirit:enumeration>EMIO</spirit:enumeration>
       <spirit:enumeration>MIO 52 .. 53</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_6498e87e</spirit:name>
+      <spirit:enumeration>EMIO</spirit:enumeration>
+      <spirit:enumeration>MIO 16 .. 17</spirit:enumeration>
+      <spirit:enumeration>MIO 28 .. 29</spirit:enumeration>
+      <spirit:enumeration>MIO 40 .. 41</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_6727dfa6</spirit:name>
@@ -32394,6 +32393,13 @@
       <spirit:enumeration>MIO 52 .. 53</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
+      <spirit:name>choice_list_ac9aeb86</spirit:name>
+      <spirit:enumeration>EMIO</spirit:enumeration>
+      <spirit:enumeration>MIO 18 .. 19</spirit:enumeration>
+      <spirit:enumeration>MIO 30 .. 31</spirit:enumeration>
+      <spirit:enumeration>MIO 42 .. 43</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
       <spirit:name>choice_list_ae9f88f6</spirit:name>
       <spirit:enumeration>1</spirit:enumeration>
     </spirit:choice>
@@ -32582,14 +32588,6 @@
     <spirit:choice>
       <spirit:name>choice_list_d177f33e</spirit:name>
       <spirit:enumeration>0xE0008000</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
-      <spirit:name>choice_list_d282f9a2</spirit:name>
-      <spirit:enumeration>&lt;Select></spirit:enumeration>
-      <spirit:enumeration>EMIO</spirit:enumeration>
-      <spirit:enumeration>MIO 16 .. 17</spirit:enumeration>
-      <spirit:enumeration>MIO 28 .. 29</spirit:enumeration>
-      <spirit:enumeration>MIO 40 .. 41</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_d2a5f697</spirit:name>
@@ -33566,7 +33564,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_TTC0_BASEADDR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_TTC0)) = 1) ">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_TTC0_BASEADDR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_TTC0)) = 1) ">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -33578,7 +33576,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_TTC0_HIGHADDR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_TTC0)) = 1) ">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_TTC0_HIGHADDR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_TTC0)) = 1) ">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -33590,7 +33588,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_TTC1_BASEADDR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_TTC1)) = 1) ">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_TTC1_BASEADDR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_TTC1)) = 1) ">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -33602,7 +33600,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_TTC1_HIGHADDR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_TTC1)) = 1) ">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_TTC1_HIGHADDR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_TTC1)) = 1) ">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -34206,13 +34204,6 @@
       <spirit:name>PCW_TTC_PERIPHERAL_FREQMHZ</spirit:name>
       <spirit:displayName>PCW TTC PERIPHERAL FREQMHZ</spirit:displayName>
       <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_TTC_PERIPHERAL_FREQMHZ" spirit:order="25100" spirit:minimum="0.100000" spirit:maximum="100.000000">50</spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_TTC_PERIPHERAL_FREQMHZ">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_TTC0_CLK0_PERIPHERAL_FREQMHZ</spirit:name>
@@ -35043,12 +35034,12 @@
     <spirit:parameter>
       <spirit:name>PCW_EN_EMIO_TTC0</spirit:name>
       <spirit:displayName>PCW EN EMIO TTC0</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_EMIO_TTC0" spirit:choiceRef="choice_list_8af5a703" spirit:order="12500">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_EMIO_TTC0" spirit:choiceRef="choice_list_8af5a703" spirit:order="12500">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_EN_EMIO_TTC1</spirit:name>
       <spirit:displayName>PCW EN EMIO TTC1</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_EMIO_TTC1" spirit:choiceRef="choice_list_8af5a703" spirit:order="12600">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_EMIO_TTC1" spirit:choiceRef="choice_list_8af5a703" spirit:order="12600">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_EN_EMIO_WDT</spirit:name>
@@ -35908,12 +35899,12 @@
     <spirit:parameter>
       <spirit:name>PCW_EN_TTC0</spirit:name>
       <spirit:displayName>PCW EN TTC0</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_TTC0" spirit:choiceRef="choice_list_8af5a703" spirit:order="9900">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_TTC0" spirit:choiceRef="choice_list_8af5a703" spirit:order="9900">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_EN_TTC1</spirit:name>
       <spirit:displayName>PCW EN TTC1</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_TTC1" spirit:choiceRef="choice_list_8af5a703" spirit:order="10000">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_TTC1" spirit:choiceRef="choice_list_8af5a703" spirit:order="10000">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_EN_WDT</spirit:name>
@@ -37969,36 +37960,22 @@
     <spirit:parameter>
       <spirit:name>PCW_TTC0_PERIPHERAL_ENABLE</spirit:name>
       <spirit:displayName>PCW TTC0 PERIPHERAL ENABLE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_TTC0_PERIPHERAL_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="1600">0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_TTC0_PERIPHERAL_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="1600">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_TTC0_TTC0_IO</spirit:name>
       <spirit:displayName>PCW TTC0 TTC0 IO</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_TTC0_TTC0_IO" spirit:choiceRef="choice_list_1a80fa5a" spirit:order="7600">&lt;Select></spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_TTC0_TTC0_IO">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_TTC0_TTC0_IO" spirit:choiceRef="choice_list_ac9aeb86" spirit:order="7600">EMIO</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_TTC1_PERIPHERAL_ENABLE</spirit:name>
       <spirit:displayName>PCW TTC1 PERIPHERAL ENABLE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_TTC1_PERIPHERAL_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="1700">0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_TTC1_PERIPHERAL_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="1700">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_TTC1_TTC1_IO</spirit:name>
       <spirit:displayName>PCW TTC1 TTC1 IO</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_TTC1_TTC1_IO" spirit:choiceRef="choice_list_d282f9a2" spirit:order="7700">&lt;Select></spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_TTC1_TTC1_IO">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_TTC1_TTC1_IO" spirit:choiceRef="choice_list_6498e87e" spirit:order="7700">EMIO</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_PJTAG_PERIPHERAL_ENABLE</spirit:name>
@@ -41698,6 +41675,7 @@ igned#unassigned#unassigned#tx#rx#unassigned#unassigned#unassigned#unassigned</s
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC0_CLK2_PERIPHERAL_CLKSRC" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC0_CLK2_PERIPHERAL_DIVISOR0" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC0_PERIPHERAL_ENABLE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC0_TTC0_IO" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC1_CLK0_PERIPHERAL_CLKSRC" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC1_CLK0_PERIPHERAL_DIVISOR0" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC1_CLK1_PERIPHERAL_CLKSRC" xilinx:valueSource="user"/>
@@ -41705,6 +41683,8 @@ igned#unassigned#unassigned#tx#rx#unassigned#unassigned#unassigned#unassigned</s
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC1_CLK2_PERIPHERAL_CLKSRC" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC1_CLK2_PERIPHERAL_DIVISOR0" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC1_PERIPHERAL_ENABLE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC1_TTC1_IO" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC_PERIPHERAL_FREQMHZ" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_UART0_PERIPHERAL_ENABLE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_UART1_BASEADDR" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_UART1_BAUD_RATE" xilinx:valueSource="user"/>
