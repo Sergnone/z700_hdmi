@@ -3,13 +3,19 @@
 
 <trans_list>
 
-<trans id="169" from="1" to="2">
+<trans id="176" from="1" to="2">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="166" from="2" to="3">
+<trans id="172" from="2" to="3">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="173" from="3" to="4">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -22,7 +28,7 @@
 
 <state id="1" st_id="2">
 
-<operation id="6" st_id="1" stage="1" lat="1">
+<operation id="7" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -37,7 +43,7 @@ newFuncRoot:0 %x = alloca i32 1
 <StgValue><ssdm name="x"/></StgValue>
 </operation>
 
-<operation id="7" st_id="1" stage="1" lat="1">
+<operation id="8" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -52,7 +58,7 @@ newFuncRoot:1 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStab
 <StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
 </operation>
 
-<operation id="8" st_id="1" stage="1" lat="1">
+<operation id="9" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -67,7 +73,7 @@ newFuncRoot:2 %colorFormat_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %col
 <StgValue><ssdm name="colorFormat_val_read"/></StgValue>
 </operation>
 
-<operation id="9" st_id="1" stage="1" lat="1">
+<operation id="10" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -82,7 +88,7 @@ newFuncRoot:3 %icmp_ln1963_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp_ln
 <StgValue><ssdm name="icmp_ln1963_read"/></StgValue>
 </operation>
 
-<operation id="10" st_id="1" stage="1" lat="1">
+<operation id="11" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -97,7 +103,7 @@ newFuncRoot:4 %crossHairX_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %c
 <StgValue><ssdm name="crossHairX_val_read"/></StgValue>
 </operation>
 
-<operation id="11" st_id="1" stage="1" lat="1">
+<operation id="12" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -112,7 +118,7 @@ newFuncRoot:5 %boxColorG_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %boxCo
 <StgValue><ssdm name="boxColorG_val_read"/></StgValue>
 </operation>
 
-<operation id="12" st_id="1" stage="1" lat="1">
+<operation id="13" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -127,7 +133,7 @@ newFuncRoot:6 %icmp_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp
 <StgValue><ssdm name="icmp_read"/></StgValue>
 </operation>
 
-<operation id="13" st_id="1" stage="1" lat="1">
+<operation id="14" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -142,7 +148,7 @@ newFuncRoot:7 %hMax_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %hMax
 <StgValue><ssdm name="hMax_read"/></StgValue>
 </operation>
 
-<operation id="14" st_id="1" stage="1" lat="1">
+<operation id="15" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -157,7 +163,7 @@ newFuncRoot:8 %zext_ln789_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %zext_ln7
 <StgValue><ssdm name="zext_ln789_read"/></StgValue>
 </operation>
 
-<operation id="15" st_id="1" stage="1" lat="1">
+<operation id="16" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -172,7 +178,7 @@ newFuncRoot:9 %vMax_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %vMax
 <StgValue><ssdm name="vMax_read"/></StgValue>
 </operation>
 
-<operation id="16" st_id="1" stage="1" lat="1">
+<operation id="17" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -187,7 +193,7 @@ newFuncRoot:10 %y_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %y
 <StgValue><ssdm name="y_read"/></StgValue>
 </operation>
 
-<operation id="17" st_id="1" stage="1" lat="1">
+<operation id="18" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -202,7 +208,7 @@ newFuncRoot:11 %boxSize_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %box
 <StgValue><ssdm name="boxSize_val_read"/></StgValue>
 </operation>
 
-<operation id="18" st_id="1" stage="1" lat="1">
+<operation id="19" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -217,7 +223,7 @@ newFuncRoot:12 %patternId_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %patt
 <StgValue><ssdm name="patternId_val_read"/></StgValue>
 </operation>
 
-<operation id="19" st_id="1" stage="1" lat="1">
+<operation id="20" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -232,7 +238,7 @@ newFuncRoot:13 %and_ln1993_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %and_ln1
 <StgValue><ssdm name="and_ln1993_read"/></StgValue>
 </operation>
 
-<operation id="20" st_id="1" stage="1" lat="1">
+<operation id="21" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -247,7 +253,7 @@ newFuncRoot:14 %and_ln1991_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %and_ln1
 <StgValue><ssdm name="and_ln1991_read"/></StgValue>
 </operation>
 
-<operation id="21" st_id="1" stage="1" lat="1">
+<operation id="22" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -262,7 +268,7 @@ newFuncRoot:15 %and_ln1989_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %and_ln1
 <StgValue><ssdm name="and_ln1989_read"/></StgValue>
 </operation>
 
-<operation id="22" st_id="1" stage="1" lat="1">
+<operation id="23" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -277,7 +283,7 @@ newFuncRoot:16 %boxColorR_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %boxC
 <StgValue><ssdm name="boxColorR_val_read"/></StgValue>
 </operation>
 
-<operation id="23" st_id="1" stage="1" lat="1">
+<operation id="24" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -292,7 +298,7 @@ newFuncRoot:17 %select_ln1977_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %sele
 <StgValue><ssdm name="select_ln1977_read"/></StgValue>
 </operation>
 
-<operation id="24" st_id="1" stage="1" lat="1">
+<operation id="25" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -307,7 +313,7 @@ newFuncRoot:18 %boxColorB_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %boxC
 <StgValue><ssdm name="boxColorB_val_read"/></StgValue>
 </operation>
 
-<operation id="25" st_id="1" stage="1" lat="1">
+<operation id="26" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -322,7 +328,7 @@ newFuncRoot:19 %width_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %width
 <StgValue><ssdm name="width_val_read"/></StgValue>
 </operation>
 
-<operation id="26" st_id="1" stage="1" lat="1">
+<operation id="27" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -337,7 +343,7 @@ newFuncRoot:20 %maskId_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %maskId_
 <StgValue><ssdm name="maskId_val_read"/></StgValue>
 </operation>
 
-<operation id="27" st_id="1" stage="1" lat="1">
+<operation id="28" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -352,7 +358,7 @@ newFuncRoot:21 %shl_ln_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %shl_ln
 <StgValue><ssdm name="shl_ln_read"/></StgValue>
 </operation>
 
-<operation id="28" st_id="1" stage="1" lat="1">
+<operation id="29" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -367,7 +373,7 @@ newFuncRoot:22 %zext_ln789_cast = zext i8 %zext_ln789_read
 <StgValue><ssdm name="zext_ln789_cast"/></StgValue>
 </operation>
 
-<operation id="29" st_id="1" stage="1" lat="1">
+<operation id="30" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -382,7 +388,7 @@ newFuncRoot:23 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecSta
 <StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
 </operation>
 
-<operation id="30" st_id="1" stage="1" lat="1">
+<operation id="31" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -397,7 +403,7 @@ newFuncRoot:24 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecSta
 <StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
 </operation>
 
-<operation id="31" st_id="1" stage="1" lat="1">
+<operation id="32" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -412,7 +418,7 @@ newFuncRoot:25 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecSta
 <StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
 </operation>
 
-<operation id="32" st_id="1" stage="1" lat="1">
+<operation id="33" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -427,7 +433,7 @@ newFuncRoot:26 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecSta
 <StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
 </operation>
 
-<operation id="33" st_id="1" stage="1" lat="1">
+<operation id="34" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -442,7 +448,7 @@ newFuncRoot:27 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecSta
 <StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
 </operation>
 
-<operation id="34" st_id="1" stage="1" lat="1">
+<operation id="35" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -457,7 +463,7 @@ newFuncRoot:28 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecSta
 <StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
 </operation>
 
-<operation id="35" st_id="1" stage="1" lat="1">
+<operation id="36" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -472,7 +478,7 @@ newFuncRoot:29 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecSta
 <StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
 </operation>
 
-<operation id="36" st_id="1" stage="1" lat="1">
+<operation id="37" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -487,7 +493,7 @@ newFuncRoot:30 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecSta
 <StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
 </operation>
 
-<operation id="37" st_id="1" stage="1" lat="1">
+<operation id="38" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -502,7 +508,7 @@ newFuncRoot:31 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecSta
 <StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
 </operation>
 
-<operation id="38" st_id="1" stage="1" lat="1">
+<operation id="39" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -517,7 +523,7 @@ newFuncRoot:32 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, 
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
 </operation>
 
-<operation id="39" st_id="1" stage="1" lat="1">
+<operation id="40" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -532,7 +538,7 @@ newFuncRoot:33 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, 
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
 </operation>
 
-<operation id="40" st_id="1" stage="1" lat="1">
+<operation id="41" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -547,7 +553,7 @@ newFuncRoot:34 %zext_ln1889 = zext i9 %shl_ln_read
 <StgValue><ssdm name="zext_ln1889"/></StgValue>
 </operation>
 
-<operation id="41" st_id="1" stage="1" lat="1">
+<operation id="42" st_id="1" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -562,7 +568,7 @@ newFuncRoot:35 %icmp_ln801 = icmp_eq  i8 %maskId_val_read, i8 0
 <StgValue><ssdm name="icmp_ln801"/></StgValue>
 </operation>
 
-<operation id="42" st_id="1" stage="1" lat="1">
+<operation id="43" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -577,7 +583,7 @@ newFuncRoot:36 %store_ln1956 = store i16 0, i16 %x
 <StgValue><ssdm name="store_ln1956"/></StgValue>
 </operation>
 
-<operation id="43" st_id="1" stage="1" lat="1">
+<operation id="44" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -592,7 +598,7 @@ newFuncRoot:37 %br_ln774 = br void %for.body6
 <StgValue><ssdm name="br_ln774"/></StgValue>
 </operation>
 
-<operation id="44" st_id="1" stage="1" lat="1">
+<operation id="45" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -607,7 +613,7 @@ for.body6:0 %x_1 = load i16 %x
 <StgValue><ssdm name="x_1"/></StgValue>
 </operation>
 
-<operation id="45" st_id="1" stage="1" lat="1">
+<operation id="46" st_id="1" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -622,7 +628,7 @@ for.body6:1 %icmp_ln774 = icmp_eq  i16 %x_1, i16 %width_val_read
 <StgValue><ssdm name="icmp_ln774"/></StgValue>
 </operation>
 
-<operation id="46" st_id="1" stage="1" lat="1">
+<operation id="47" st_id="1" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -637,7 +643,7 @@ for.body6:2 %x_2 = add i16 %x_1, i16 1
 <StgValue><ssdm name="x_2"/></StgValue>
 </operation>
 
-<operation id="47" st_id="1" stage="1" lat="1">
+<operation id="48" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -652,7 +658,7 @@ for.body6:3 %br_ln774 = br i1 %icmp_ln774, void %for.body6.split, void %for.inc1
 <StgValue><ssdm name="br_ln774"/></StgValue>
 </operation>
 
-<operation id="48" st_id="1" stage="1" lat="1">
+<operation id="49" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -668,7 +674,7 @@ for.body6.split:8 %switch_ln780 = switch i8 %patternId_val_read, void %sw.epilog
 <StgValue><ssdm name="switch_ln780"/></StgValue>
 </operation>
 
-<operation id="49" st_id="1" stage="1" lat="1">
+<operation id="50" st_id="1" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -685,7 +691,7 @@ sw.bb8:0 %or_ln1884 = or i16 %x_1, i16 %y_read
 <StgValue><ssdm name="or_ln1884"/></StgValue>
 </operation>
 
-<operation id="50" st_id="1" stage="1" lat="1">
+<operation id="51" st_id="1" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -702,7 +708,7 @@ sw.bb8:1 %icmp_ln1884 = icmp_eq  i16 %or_ln1884, i16 0
 <StgValue><ssdm name="icmp_ln1884"/></StgValue>
 </operation>
 
-<operation id="51" st_id="1" stage="1" lat="1">
+<operation id="52" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -719,7 +725,7 @@ sw.bb8:2 %br_ln1884 = br i1 %icmp_ln1884, void %if.end64.i, void %if.then.i
 <StgValue><ssdm name="br_ln1884"/></StgValue>
 </operation>
 
-<operation id="52" st_id="1" stage="1" lat="1">
+<operation id="53" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -737,7 +743,7 @@ if.then.i:0 %boxHCoord_loc_1_out_load = load i16 %boxHCoord_loc_1_out
 <StgValue><ssdm name="boxHCoord_loc_1_out_load"/></StgValue>
 </operation>
 
-<operation id="53" st_id="1" stage="1" lat="1">
+<operation id="54" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -755,7 +761,7 @@ if.then.i:1 %hDir_load = load i1 %hDir
 <StgValue><ssdm name="hDir_load"/></StgValue>
 </operation>
 
-<operation id="54" st_id="1" stage="1" lat="1">
+<operation id="55" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -773,7 +779,7 @@ if.then.i:2 %vDir_load = load i1 %vDir
 <StgValue><ssdm name="vDir_load"/></StgValue>
 </operation>
 
-<operation id="55" st_id="1" stage="1" lat="1">
+<operation id="56" st_id="1" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -791,7 +797,7 @@ if.then.i:3 %sub_ln1914 = sub i16 %boxHCoord_loc_1_out_load, i16 %zext_ln789_cas
 <StgValue><ssdm name="sub_ln1914"/></StgValue>
 </operation>
 
-<operation id="56" st_id="1" stage="1" lat="1">
+<operation id="57" st_id="1" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -809,7 +815,7 @@ if.then.i:4 %add_ln1912 = add i16 %boxHCoord_loc_1_out_load, i16 %zext_ln789_cas
 <StgValue><ssdm name="add_ln1912"/></StgValue>
 </operation>
 
-<operation id="57" st_id="1" stage="1" lat="1">
+<operation id="58" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -827,7 +833,7 @@ if.then.i:5 %br_ln1887 = br i1 %hDir_load, void %if.then12.i, void %if.else.i
 <StgValue><ssdm name="br_ln1887"/></StgValue>
 </operation>
 
-<operation id="58" st_id="1" stage="1" lat="1">
+<operation id="59" st_id="1" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -846,7 +852,7 @@ if.then12.i:0 %icmp_ln1889 = icmp_ugt  i16 %boxHCoord_loc_1_out_load, i16 %hMax_
 <StgValue><ssdm name="icmp_ln1889"/></StgValue>
 </operation>
 
-<operation id="59" st_id="1" stage="1" lat="1">
+<operation id="60" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -865,7 +871,7 @@ if.then12.i:1 %br_ln1889 = br i1 %icmp_ln1889, void %if.then12.i._crit_edge, voi
 <StgValue><ssdm name="br_ln1889"/></StgValue>
 </operation>
 
-<operation id="60" st_id="1" stage="1" lat="1">
+<operation id="61" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -885,7 +891,7 @@ if.then16.i:0 %store_ln1890 = store i1 1, i1 %hDir
 <StgValue><ssdm name="store_ln1890"/></StgValue>
 </operation>
 
-<operation id="61" st_id="1" stage="1" lat="1">
+<operation id="62" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -905,7 +911,7 @@ if.then16.i:1 %store_ln1914 = store i16 %sub_ln1914, i16 %boxHCoord_loc_1_out
 <StgValue><ssdm name="store_ln1914"/></StgValue>
 </operation>
 
-<operation id="62" st_id="1" stage="1" lat="1">
+<operation id="63" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -925,7 +931,7 @@ if.then16.i:2 %br_ln1890 = br void %if.end22.i
 <StgValue><ssdm name="br_ln1890"/></StgValue>
 </operation>
 
-<operation id="63" st_id="1" stage="1" lat="1">
+<operation id="64" st_id="1" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -944,7 +950,7 @@ if.else.i:0 %icmp_ln1894 = icmp_ugt  i16 %zext_ln1889, i16 %boxHCoord_loc_1_out_
 <StgValue><ssdm name="icmp_ln1894"/></StgValue>
 </operation>
 
-<operation id="64" st_id="1" stage="1" lat="1">
+<operation id="65" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -963,7 +969,7 @@ if.else.i:1 %br_ln1894 = br i1 %icmp_ln1894, void %if.else.i.if.end22.i_crit_edg
 <StgValue><ssdm name="br_ln1894"/></StgValue>
 </operation>
 
-<operation id="65" st_id="1" stage="1" lat="1">
+<operation id="66" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -983,7 +989,7 @@ if.else.i.if.end22.i_crit_edge:0 %store_ln1914 = store i16 %sub_ln1914, i16 %box
 <StgValue><ssdm name="store_ln1914"/></StgValue>
 </operation>
 
-<operation id="66" st_id="1" stage="1" lat="1">
+<operation id="67" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1003,7 +1009,7 @@ if.else.i.if.end22.i_crit_edge:1 %br_ln1894 = br void %if.end22.i
 <StgValue><ssdm name="br_ln1894"/></StgValue>
 </operation>
 
-<operation id="67" st_id="1" stage="1" lat="1">
+<operation id="68" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1023,7 +1029,7 @@ if.then20.i:0 %store_ln1895 = store i1 0, i1 %hDir
 <StgValue><ssdm name="store_ln1895"/></StgValue>
 </operation>
 
-<operation id="68" st_id="1" stage="1" lat="1">
+<operation id="69" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1043,7 +1049,7 @@ if.then20.i:1 %br_ln1895 = br void %if.then12.i._crit_edge
 <StgValue><ssdm name="br_ln1895"/></StgValue>
 </operation>
 
-<operation id="69" st_id="1" stage="1" lat="1">
+<operation id="70" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1068,7 +1074,7 @@ if.then12.i._crit_edge:0 %store_ln1912 = store i16 %add_ln1912, i16 %boxHCoord_l
 <StgValue><ssdm name="store_ln1912"/></StgValue>
 </operation>
 
-<operation id="70" st_id="1" stage="1" lat="1">
+<operation id="71" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1093,7 +1099,7 @@ if.then12.i._crit_edge:1 %br_ln1911 = br void %if.end22.i
 <StgValue><ssdm name="br_ln1911"/></StgValue>
 </operation>
 
-<operation id="71" st_id="1" stage="1" lat="1">
+<operation id="72" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1111,7 +1117,7 @@ if.end22.i:0 %boxVCoord_loc_1_out_load = load i16 %boxVCoord_loc_1_out
 <StgValue><ssdm name="boxVCoord_loc_1_out_load"/></StgValue>
 </operation>
 
-<operation id="72" st_id="1" stage="1" lat="1">
+<operation id="73" st_id="1" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1129,7 +1135,7 @@ if.end22.i:3 %sub_ln1918 = sub i16 %boxVCoord_loc_1_out_load, i16 %zext_ln789_ca
 <StgValue><ssdm name="sub_ln1918"/></StgValue>
 </operation>
 
-<operation id="73" st_id="1" stage="1" lat="1">
+<operation id="74" st_id="1" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1147,7 +1153,7 @@ if.end22.i:4 %add_ln1916 = add i16 %boxVCoord_loc_1_out_load, i16 %zext_ln789_ca
 <StgValue><ssdm name="add_ln1916"/></StgValue>
 </operation>
 
-<operation id="74" st_id="1" stage="1" lat="1">
+<operation id="75" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1165,7 +1171,7 @@ if.end22.i:5 %br_ln1899 = br i1 %vDir_load, void %if.then25.i, void %if.else31.i
 <StgValue><ssdm name="br_ln1899"/></StgValue>
 </operation>
 
-<operation id="75" st_id="1" stage="1" lat="1">
+<operation id="76" st_id="1" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1184,7 +1190,7 @@ if.then25.i:0 %icmp_ln1901 = icmp_ugt  i16 %boxVCoord_loc_1_out_load, i16 %vMax_
 <StgValue><ssdm name="icmp_ln1901"/></StgValue>
 </operation>
 
-<operation id="76" st_id="1" stage="1" lat="1">
+<operation id="77" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1203,7 +1209,7 @@ if.then25.i:1 %br_ln1901 = br i1 %icmp_ln1901, void %if.then25.i._crit_edge, voi
 <StgValue><ssdm name="br_ln1901"/></StgValue>
 </operation>
 
-<operation id="77" st_id="1" stage="1" lat="1">
+<operation id="78" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1223,7 +1229,7 @@ if.then29.i:0 %store_ln1902 = store i1 1, i1 %vDir
 <StgValue><ssdm name="store_ln1902"/></StgValue>
 </operation>
 
-<operation id="78" st_id="1" stage="1" lat="1">
+<operation id="79" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1243,7 +1249,7 @@ if.then29.i:1 %br_ln1902 = br void %if.end38.i
 <StgValue><ssdm name="br_ln1902"/></StgValue>
 </operation>
 
-<operation id="79" st_id="1" stage="1" lat="1">
+<operation id="80" st_id="1" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1262,7 +1268,7 @@ if.else31.i:0 %icmp_ln1906 = icmp_ugt  i16 %zext_ln1889, i16 %boxVCoord_loc_1_ou
 <StgValue><ssdm name="icmp_ln1906"/></StgValue>
 </operation>
 
-<operation id="80" st_id="1" stage="1" lat="1">
+<operation id="81" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1281,7 +1287,7 @@ if.else31.i:1 %br_ln1906 = br i1 %icmp_ln1906, void %if.end38.i, void %if.then36
 <StgValue><ssdm name="br_ln1906"/></StgValue>
 </operation>
 
-<operation id="81" st_id="1" stage="1" lat="1">
+<operation id="82" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1306,7 +1312,7 @@ if.end38.i:0 %store_ln1918 = store i16 %sub_ln1918, i16 %boxVCoord_loc_1_out
 <StgValue><ssdm name="store_ln1918"/></StgValue>
 </operation>
 
-<operation id="82" st_id="1" stage="1" lat="1">
+<operation id="83" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1331,7 +1337,7 @@ if.end38.i:1 %br_ln1915 = br void
 <StgValue><ssdm name="br_ln1915"/></StgValue>
 </operation>
 
-<operation id="83" st_id="1" stage="1" lat="1">
+<operation id="84" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1351,7 +1357,7 @@ if.then36.i:0 %store_ln1907 = store i1 0, i1 %vDir
 <StgValue><ssdm name="store_ln1907"/></StgValue>
 </operation>
 
-<operation id="84" st_id="1" stage="1" lat="1">
+<operation id="85" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1371,7 +1377,7 @@ if.then36.i:1 %br_ln1907 = br void %if.then25.i._crit_edge
 <StgValue><ssdm name="br_ln1907"/></StgValue>
 </operation>
 
-<operation id="85" st_id="1" stage="1" lat="1">
+<operation id="86" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1396,7 +1402,7 @@ if.then25.i._crit_edge:0 %store_ln1916 = store i16 %add_ln1916, i16 %boxVCoord_l
 <StgValue><ssdm name="store_ln1916"/></StgValue>
 </operation>
 
-<operation id="86" st_id="1" stage="1" lat="1">
+<operation id="87" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1421,7 +1427,7 @@ if.then25.i._crit_edge:1 %br_ln1915 = br void
 <StgValue><ssdm name="br_ln1915"/></StgValue>
 </operation>
 
-<operation id="87" st_id="1" stage="1" lat="1">
+<operation id="88" st_id="1" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1438,7 +1444,7 @@ sw.bb10:0 %icmp_ln1963_1 = icmp_eq  i16 %x_1, i16 %crossHairX_val_read
 <StgValue><ssdm name="icmp_ln1963_1"/></StgValue>
 </operation>
 
-<operation id="88" st_id="1" stage="1" lat="1">
+<operation id="89" st_id="1" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1453,23 +1459,6 @@ sw.bb10:1 %or_ln1963 = or i1 %icmp_ln1963_read, i1 %icmp_ln1963_1
 
 ]]></Node>
 <StgValue><ssdm name="or_ln1963"/></StgValue>
-</operation>
-
-<operation id="89" st_id="1" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
-<literal name="patternId_val_read" val="2"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="164" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
-<![CDATA[
-sw.bb10:2 %br_ln1963 = br i1 %or_ln1963, void %sw.epilog_ifconv, void %if.then.i130
-
-]]></Node>
-<StgValue><ssdm name="br_ln1963"/></StgValue>
 </operation>
 
 <operation id="90" st_id="1" stage="1" lat="1">
@@ -1495,26 +1484,6 @@ if.then.i130:0 %switch_ln1974 = switch i8 %colorFormat_val_read, void %cond.fals
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln774" val="0"/>
-<literal name="patternId_val_read" val="2"/>
-<literal name="or_ln1963" val="1"/>
-<literal name="colorFormat_val_read" val="!0"/>
-<literal name="colorFormat_val_read" val="!1"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="169" bw="0" op_0_bw="0">
-<![CDATA[
-cond.false15.i:1 %br_ln1975 = br void %cond.end.i
-
-]]></Node>
-<StgValue><ssdm name="br_ln1975"/></StgValue>
-</operation>
-
-<operation id="92" st_id="1" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1529,7 +1498,7 @@ sw.epilog_ifconv:11 %store_ln1956 = store i16 %x_2, i16 %x
 
 <state id="2" st_id="3">
 
-<operation id="93" st_id="2" stage="1" lat="1">
+<operation id="92" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1545,119 +1514,7 @@ for.body6.split:0 %trunc_ln774 = trunc i16 %x_1
 <StgValue><ssdm name="trunc_ln774"/></StgValue>
 </operation>
 
-<operation id="94" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="75" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0">
-<![CDATA[
-for.body6.split:1 %specpipeline_ln777 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_1
-
-]]></Node>
-<StgValue><ssdm name="specpipeline_ln777"/></StgValue>
-</operation>
-
-<operation id="95" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="76" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
-<![CDATA[
-for.body6.split:2 %speclooptripcount_ln763 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 65535, i64 32767
-
-]]></Node>
-<StgValue><ssdm name="speclooptripcount_ln763"/></StgValue>
-</operation>
-
-<operation id="96" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="77" bw="0" op_0_bw="0" op_1_bw="0">
-<![CDATA[
-for.body6.split:3 %specloopname_ln774 = specloopname void @_ssdm_op_SpecLoopName, void @empty_26
-
-]]></Node>
-<StgValue><ssdm name="specloopname_ln774"/></StgValue>
-</operation>
-
-<operation id="97" st_id="2" stage="1" lat="1">
-<core>FIFO_SRL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="78" bw="24" op_0_bw="24" op_1_bw="24">
-<![CDATA[
-for.body6.split:4 %bckgndYUV_read = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %bckgndYUV
-
-]]></Node>
-<StgValue><ssdm name="bckgndYUV_read"/></StgValue>
-</operation>
-
-<operation id="98" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="79" bw="8" op_0_bw="24">
-<![CDATA[
-for.body6.split:5 %pixIn = trunc i24 %bckgndYUV_read
-
-]]></Node>
-<StgValue><ssdm name="pixIn"/></StgValue>
-</operation>
-
-<operation id="99" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="80" bw="8" op_0_bw="8" op_1_bw="24" op_2_bw="32" op_3_bw="32">
-<![CDATA[
-for.body6.split:6 %pixIn_5 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %bckgndYUV_read, i32 8, i32 15
-
-]]></Node>
-<StgValue><ssdm name="pixIn_5"/></StgValue>
-</operation>
-
-<operation id="100" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="81" bw="8" op_0_bw="8" op_1_bw="24" op_2_bw="32" op_3_bw="32">
-<![CDATA[
-for.body6.split:7 %pixIn_6 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %bckgndYUV_read, i32 16, i32 23
-
-]]></Node>
-<StgValue><ssdm name="pixIn_6"/></StgValue>
-</operation>
-
-<operation id="101" st_id="2" stage="1" lat="1">
+<operation id="93" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1674,7 +1531,7 @@ if.end22.i:1 %boxHCoord_loc_1_out_load_1 = load i16 %boxHCoord_loc_1_out
 <StgValue><ssdm name="boxHCoord_loc_1_out_load_1"/></StgValue>
 </operation>
 
-<operation id="102" st_id="2" stage="1" lat="1">
+<operation id="94" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1691,7 +1548,7 @@ if.end22.i:2 %store_ln0 = store i16 %boxHCoord_loc_1_out_load_1, i16 %boxHCoord
 <StgValue><ssdm name="store_ln0"/></StgValue>
 </operation>
 
-<operation id="103" st_id="2" stage="1" lat="1">
+<operation id="95" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1708,7 +1565,7 @@ if.end22.i:2 %store_ln0 = store i16 %boxHCoord_loc_1_out_load_1, i16 %boxHCoord
 <StgValue><ssdm name="boxVCoord_loc_1_out_load_1"/></StgValue>
 </operation>
 
-<operation id="104" st_id="2" stage="1" lat="1">
+<operation id="96" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1725,7 +1582,7 @@ if.end22.i:2 %store_ln0 = store i16 %boxHCoord_loc_1_out_load_1, i16 %boxHCoord
 <StgValue><ssdm name="store_ln0"/></StgValue>
 </operation>
 
-<operation id="105" st_id="2" stage="1" lat="1">
+<operation id="97" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1742,7 +1599,7 @@ if.end22.i:2 %store_ln0 = store i16 %boxHCoord_loc_1_out_load_1, i16 %boxHCoord
 <StgValue><ssdm name="br_ln1922"/></StgValue>
 </operation>
 
-<operation id="106" st_id="2" stage="1" lat="1">
+<operation id="98" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1759,7 +1616,7 @@ if.end64.i:0 %boxTop = load i16 %boxVCoord_loc_1_out
 <StgValue><ssdm name="boxTop"/></StgValue>
 </operation>
 
-<operation id="107" st_id="2" stage="1" lat="1">
+<operation id="99" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1776,7 +1633,7 @@ if.end64.i:1 %boxLeft = load i16 %boxHCoord_loc_1_out
 <StgValue><ssdm name="boxLeft"/></StgValue>
 </operation>
 
-<operation id="108" st_id="2" stage="1" lat="1">
+<operation id="100" st_id="2" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1793,7 +1650,7 @@ if.end64.i:2 %boxRight = add i16 %boxLeft, i16 %boxSize_val_read
 <StgValue><ssdm name="boxRight"/></StgValue>
 </operation>
 
-<operation id="109" st_id="2" stage="1" lat="1">
+<operation id="101" st_id="2" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1810,7 +1667,7 @@ if.end64.i:3 %boxBottom = add i16 %boxTop, i16 %boxSize_val_read
 <StgValue><ssdm name="boxBottom"/></StgValue>
 </operation>
 
-<operation id="110" st_id="2" stage="1" lat="1">
+<operation id="102" st_id="2" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1827,7 +1684,7 @@ if.end64.i:4 %icmp_ln1932 = icmp_ult  i16 %y_read, i16 %boxTop
 <StgValue><ssdm name="icmp_ln1932"/></StgValue>
 </operation>
 
-<operation id="111" st_id="2" stage="1" lat="1">
+<operation id="103" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1844,7 +1701,7 @@ if.end64.i:5 %xor_ln1932 = xor i1 %icmp_ln1932, i1 1
 <StgValue><ssdm name="xor_ln1932"/></StgValue>
 </operation>
 
-<operation id="112" st_id="2" stage="1" lat="1">
+<operation id="104" st_id="2" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1861,7 +1718,7 @@ if.end64.i:6 %icmp_ln1932_1 = icmp_ult  i16 %y_read, i16 %boxBottom
 <StgValue><ssdm name="icmp_ln1932_1"/></StgValue>
 </operation>
 
-<operation id="113" st_id="2" stage="1" lat="1">
+<operation id="105" st_id="2" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1878,7 +1735,7 @@ if.end64.i:7 %icmp_ln1937 = icmp_ult  i16 %x_1, i16 %boxLeft
 <StgValue><ssdm name="icmp_ln1937"/></StgValue>
 </operation>
 
-<operation id="114" st_id="2" stage="1" lat="1">
+<operation id="106" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1895,7 +1752,7 @@ if.end64.i:8 %xor_ln1937 = xor i1 %icmp_ln1937, i1 1
 <StgValue><ssdm name="xor_ln1937"/></StgValue>
 </operation>
 
-<operation id="115" st_id="2" stage="1" lat="1">
+<operation id="107" st_id="2" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1912,7 +1769,7 @@ if.end64.i:9 %icmp_ln1937_1 = icmp_ult  i16 %x_1, i16 %boxRight
 <StgValue><ssdm name="icmp_ln1937_1"/></StgValue>
 </operation>
 
-<operation id="116" st_id="2" stage="1" lat="1">
+<operation id="108" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1929,7 +1786,7 @@ if.end64.i:10 %and_ln1942_2 = and i1 %icmp_ln1937_1, i1 %xor_ln1937
 <StgValue><ssdm name="and_ln1942_2"/></StgValue>
 </operation>
 
-<operation id="117" st_id="2" stage="1" lat="1">
+<operation id="109" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1946,7 +1803,7 @@ if.end64.i:11 %and_ln1942_1 = and i1 %xor_ln1932, i1 %icmp_ln1932_1
 <StgValue><ssdm name="and_ln1942_1"/></StgValue>
 </operation>
 
-<operation id="118" st_id="2" stage="1" lat="1">
+<operation id="110" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1963,42 +1820,24 @@ if.end64.i:12 %and_ln1942 = and i1 %and_ln1942_1, i1 %and_ln1942_2
 <StgValue><ssdm name="and_ln1942"/></StgValue>
 </operation>
 
-<operation id="119" st_id="2" stage="1" lat="1">
+<operation id="111" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln774" val="0"/>
-<literal name="patternId_val_read" val="1"/>
+<literal name="patternId_val_read" val="2"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="156" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<Node id="164" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-if.end64.i:13 %br_ln1942 = br i1 %and_ln1942, void %sw.epilog_ifconv, void %if.then97.i
+sw.bb10:2 %br_ln1963 = br i1 %or_ln1963, void %sw.epilog_ifconv, void %if.then.i130
 
 ]]></Node>
-<StgValue><ssdm name="br_ln1942"/></StgValue>
+<StgValue><ssdm name="br_ln1963"/></StgValue>
 </operation>
 
-<operation id="120" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
-<literal name="patternId_val_read" val="1"/>
-<literal name="and_ln1942" val="1"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="160" bw="0" op_0_bw="0">
-<![CDATA[
-if.then97.i:2 %br_ln1951 = br void %sw.epilog_ifconv
-
-]]></Node>
-<StgValue><ssdm name="br_ln1951"/></StgValue>
-</operation>
-
-<operation id="121" st_id="2" stage="1" lat="1">
+<operation id="112" st_id="2" stage="1" lat="1">
 <core>Sel</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2018,7 +1857,27 @@ cond.false15.i:0 %select_ln1975 = select i1 %trunc_ln774, i2 2, i2 1
 <StgValue><ssdm name="select_ln1975"/></StgValue>
 </operation>
 
-<operation id="122" st_id="2" stage="1" lat="1">
+<operation id="113" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
+<literal name="patternId_val_read" val="2"/>
+<literal name="or_ln1963" val="1"/>
+<literal name="colorFormat_val_read" val="!0"/>
+<literal name="colorFormat_val_read" val="!1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="169" bw="0" op_0_bw="0">
+<![CDATA[
+cond.false15.i:1 %br_ln1975 = br void %cond.end.i
+
+]]></Node>
+<StgValue><ssdm name="br_ln1975"/></StgValue>
+</operation>
+
+<operation id="114" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2037,7 +1896,7 @@ cond.end.i:0 %phi_ln1975 = phi i2 %select_ln1975, void %cond.false15.i, i2 1, vo
 <StgValue><ssdm name="phi_ln1975"/></StgValue>
 </operation>
 
-<operation id="123" st_id="2" stage="1" lat="1">
+<operation id="115" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2056,7 +1915,7 @@ cond.end.i:1 %zext_ln1975 = zext i2 %phi_ln1975
 <StgValue><ssdm name="zext_ln1975"/></StgValue>
 </operation>
 
-<operation id="124" st_id="2" stage="1" lat="1">
+<operation id="116" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2075,7 +1934,7 @@ cond.end.i:2 %whiYuv_2_addr = getelementptr i8 %whiYuv_2, i64 0, i64 %zext_ln197
 <StgValue><ssdm name="whiYuv_2_addr"/></StgValue>
 </operation>
 
-<operation id="125" st_id="2" stage="2" lat="2">
+<operation id="117" st_id="2" stage="2" lat="2">
 <core>ROM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2094,7 +1953,7 @@ cond.end.i:3 %whiYuv_2_load = load i2 %whiYuv_2_addr
 <StgValue><ssdm name="whiYuv_2_load"/></StgValue>
 </operation>
 
-<operation id="126" st_id="2" stage="1" lat="1">
+<operation id="118" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2112,25 +1971,138 @@ cond.end.i:4 %br_ln1974 = br void %sw.epilog_ifconv
 ]]></Node>
 <StgValue><ssdm name="br_ln1974"/></StgValue>
 </operation>
-
-<operation id="142" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln774" val="1"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="191" bw="0">
-<![CDATA[
-for.inc17.exitStub:0 %ret_ln0 = ret
-
-]]></Node>
-<StgValue><ssdm name="ret_ln0"/></StgValue>
-</operation>
 </state>
 
 <state id="3" st_id="4">
+
+<operation id="119" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="75" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0">
+<![CDATA[
+for.body6.split:1 %specpipeline_ln777 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_1
+
+]]></Node>
+<StgValue><ssdm name="specpipeline_ln777"/></StgValue>
+</operation>
+
+<operation id="120" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="76" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<![CDATA[
+for.body6.split:2 %speclooptripcount_ln763 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 65535, i64 32767
+
+]]></Node>
+<StgValue><ssdm name="speclooptripcount_ln763"/></StgValue>
+</operation>
+
+<operation id="121" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="77" bw="0" op_0_bw="0" op_1_bw="0">
+<![CDATA[
+for.body6.split:3 %specloopname_ln774 = specloopname void @_ssdm_op_SpecLoopName, void @empty_26
+
+]]></Node>
+<StgValue><ssdm name="specloopname_ln774"/></StgValue>
+</operation>
+
+<operation id="122" st_id="3" stage="1" lat="1">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="78" bw="24" op_0_bw="24" op_1_bw="24">
+<![CDATA[
+for.body6.split:4 %bckgndYUV_read = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %bckgndYUV
+
+]]></Node>
+<StgValue><ssdm name="bckgndYUV_read"/></StgValue>
+</operation>
+
+<operation id="123" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="79" bw="8" op_0_bw="24">
+<![CDATA[
+for.body6.split:5 %pixIn = trunc i24 %bckgndYUV_read
+
+]]></Node>
+<StgValue><ssdm name="pixIn"/></StgValue>
+</operation>
+
+<operation id="124" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="80" bw="8" op_0_bw="8" op_1_bw="24" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+for.body6.split:6 %pixIn_5 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %bckgndYUV_read, i32 8, i32 15
+
+]]></Node>
+<StgValue><ssdm name="pixIn_5"/></StgValue>
+</operation>
+
+<operation id="125" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="81" bw="8" op_0_bw="8" op_1_bw="24" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+for.body6.split:7 %pixIn_6 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %bckgndYUV_read, i32 16, i32 23
+
+]]></Node>
+<StgValue><ssdm name="pixIn_6"/></StgValue>
+</operation>
+
+<operation id="126" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
+<literal name="patternId_val_read" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="156" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+if.end64.i:13 %br_ln1942 = br i1 %and_ln1942, void %sw.epilog_ifconv, void %if.then97.i
+
+]]></Node>
+<StgValue><ssdm name="br_ln1942"/></StgValue>
+</operation>
 
 <operation id="127" st_id="3" stage="1" lat="1">
 <core>LogicGate</core>
@@ -2168,7 +2140,25 @@ if.then97.i:1 %pixOut_5 = select i1 %and_ln1947, i8 %boxColorB_val_read, i8 %box
 <StgValue><ssdm name="pixOut_5"/></StgValue>
 </operation>
 
-<operation id="129" st_id="3" stage="1" lat="2">
+<operation id="129" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln774" val="0"/>
+<literal name="patternId_val_read" val="1"/>
+<literal name="and_ln1942" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="160" bw="0" op_0_bw="0">
+<![CDATA[
+if.then97.i:2 %br_ln1951 = br void %sw.epilog_ifconv
+
+]]></Node>
+<StgValue><ssdm name="br_ln1951"/></StgValue>
+</operation>
+
+<operation id="130" st_id="3" stage="1" lat="2">
 <core>ROM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2187,7 +2177,26 @@ cond.end.i:3 %whiYuv_2_load = load i2 %whiYuv_2_addr
 <StgValue><ssdm name="whiYuv_2_load"/></StgValue>
 </operation>
 
-<operation id="130" st_id="3" stage="1" lat="1">
+<operation id="143" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln774" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="191" bw="0">
+<![CDATA[
+for.inc17.exitStub:0 %ret_ln0 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="4" st_id="5">
+
+<operation id="131" st_id="4" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2202,7 +2211,7 @@ sw.epilog_ifconv:0 %pix_4 = phi i8 %pixIn_6, void %for.body6.split, i8 %boxColor
 <StgValue><ssdm name="pix_4"/></StgValue>
 </operation>
 
-<operation id="131" st_id="3" stage="1" lat="1">
+<operation id="132" st_id="4" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2217,7 +2226,7 @@ sw.epilog_ifconv:1 %pix_3 = phi i8 %pixIn_5, void %for.body6.split, i8 %pixOut_5
 <StgValue><ssdm name="pix_3"/></StgValue>
 </operation>
 
-<operation id="132" st_id="3" stage="1" lat="1">
+<operation id="133" st_id="4" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2232,7 +2241,7 @@ sw.epilog_ifconv:2 %pix = phi i8 %pixIn, void %for.body6.split, i8 %boxColorR_va
 <StgValue><ssdm name="pix"/></StgValue>
 </operation>
 
-<operation id="133" st_id="3" stage="1" lat="1">
+<operation id="134" st_id="4" stage="1" lat="1">
 <core>Sel</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2248,7 +2257,7 @@ sw.epilog_ifconv:3 %pixOut_9 = select i1 %and_ln1989_read, i8 0, i8 %pix
 <StgValue><ssdm name="pixOut_9"/></StgValue>
 </operation>
 
-<operation id="134" st_id="3" stage="1" lat="1">
+<operation id="135" st_id="4" stage="1" lat="1">
 <core>Sel</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2264,7 +2273,7 @@ sw.epilog_ifconv:4 %pixOut_10 = select i1 %and_ln1991_read, i8 0, i8 %pix_3
 <StgValue><ssdm name="pixOut_10"/></StgValue>
 </operation>
 
-<operation id="135" st_id="3" stage="1" lat="1">
+<operation id="136" st_id="4" stage="1" lat="1">
 <core>Sel</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2280,7 +2289,7 @@ sw.epilog_ifconv:5 %select_ln1993 = select i1 %and_ln1993_read, i8 0, i8 %pix_4
 <StgValue><ssdm name="select_ln1993"/></StgValue>
 </operation>
 
-<operation id="136" st_id="3" stage="1" lat="1">
+<operation id="137" st_id="4" stage="1" lat="1">
 <core>Sel</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2295,7 +2304,7 @@ sw.epilog_ifconv:6 %p_0_2_0_0_0269598 = select i1 %icmp_ln801, i8 %pix_4, i8 %se
 <StgValue><ssdm name="p_0_2_0_0_0269598"/></StgValue>
 </operation>
 
-<operation id="137" st_id="3" stage="1" lat="1">
+<operation id="138" st_id="4" stage="1" lat="1">
 <core>Sel</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2310,7 +2319,7 @@ sw.epilog_ifconv:7 %pixOut_11 = select i1 %icmp_ln801, i8 %pix_3, i8 %pixOut_10
 <StgValue><ssdm name="pixOut_11"/></StgValue>
 </operation>
 
-<operation id="138" st_id="3" stage="1" lat="1">
+<operation id="139" st_id="4" stage="1" lat="1">
 <core>Sel</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2325,7 +2334,7 @@ sw.epilog_ifconv:8 %pixOut_12 = select i1 %icmp_ln801, i8 %pix, i8 %pixOut_9
 <StgValue><ssdm name="pixOut_12"/></StgValue>
 </operation>
 
-<operation id="139" st_id="3" stage="1" lat="1">
+<operation id="140" st_id="4" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2340,7 +2349,7 @@ sw.epilog_ifconv:9 %or_ln808_3 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24
 <StgValue><ssdm name="or_ln808_3"/></StgValue>
 </operation>
 
-<operation id="140" st_id="3" stage="1" lat="1">
+<operation id="141" st_id="4" stage="1" lat="1">
 <core>FIFO_SRL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2355,7 +2364,7 @@ sw.epilog_ifconv:10 %write_ln808 = write void @_ssdm_op_Write.ap_fifo.volatile.i
 <StgValue><ssdm name="write_ln808"/></StgValue>
 </operation>
 
-<operation id="141" st_id="3" stage="1" lat="1">
+<operation id="142" st_id="4" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">

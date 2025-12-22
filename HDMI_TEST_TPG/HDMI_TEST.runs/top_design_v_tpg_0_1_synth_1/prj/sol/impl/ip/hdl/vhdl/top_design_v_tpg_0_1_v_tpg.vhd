@@ -52,34 +52,36 @@ architecture behav of top_design_v_tpg_0_1_v_tpg is
     attribute DowngradeIPIdentifiedWarnings of behav : architecture is "yes";
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "top_design_v_tpg_0_1_v_tpg,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-2,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.858500,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=9,HLS_SYN_DSP=0,HLS_SYN_FF=6067,HLS_SYN_LUT=6543,HLS_VERSION=2025_2}";
+    "top_design_v_tpg_0_1_v_tpg,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-2,HLS_INPUT_CLOCK=6.750000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=4.890000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=9,HLS_SYN_DSP=0,HLS_SYN_FF=6413,HLS_SYN_LUT=6597,HLS_VERSION=2025_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
-    constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (4 downto 0) := "00001";
-    constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (4 downto 0) := "00010";
-    constant ap_ST_fsm_state3 : STD_LOGIC_VECTOR (4 downto 0) := "00100";
-    constant ap_ST_fsm_state4 : STD_LOGIC_VECTOR (4 downto 0) := "01000";
-    constant ap_ST_fsm_state5 : STD_LOGIC_VECTOR (4 downto 0) := "10000";
+    constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (5 downto 0) := "000001";
+    constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (5 downto 0) := "000010";
+    constant ap_ST_fsm_state3 : STD_LOGIC_VECTOR (5 downto 0) := "000100";
+    constant ap_ST_fsm_state4 : STD_LOGIC_VECTOR (5 downto 0) := "001000";
+    constant ap_ST_fsm_state5 : STD_LOGIC_VECTOR (5 downto 0) := "010000";
+    constant ap_ST_fsm_state6 : STD_LOGIC_VECTOR (5 downto 0) := "100000";
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_boolean_1 : BOOLEAN := true;
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
     constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
+    constant ap_const_lv32_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000011";
     constant C_S_AXI_DATA_WIDTH : INTEGER := 32;
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
-    constant ap_const_lv32_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000011";
+    constant ap_const_lv32_4 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000100";
     constant ap_const_boolean_0 : BOOLEAN := false;
     constant ap_const_lv16_1 : STD_LOGIC_VECTOR (15 downto 0) := "0000000000000001";
     constant ap_const_lv32_A : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001010";
     constant ap_const_lv32_1F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011111";
     constant ap_const_lv29_1 : STD_LOGIC_VECTOR (28 downto 0) := "00000000000000000000000000001";
-    constant ap_const_lv32_4 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000100";
+    constant ap_const_lv32_5 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000101";
 
     signal ap_rst_n_inv : STD_LOGIC;
     signal ap_start : STD_LOGIC;
     signal ap_done : STD_LOGIC;
     signal ap_idle : STD_LOGIC;
-    signal ap_CS_fsm : STD_LOGIC_VECTOR (4 downto 0) := "00001";
+    signal ap_CS_fsm : STD_LOGIC_VECTOR (5 downto 0) := "000001";
     attribute fsm_encoding : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
@@ -108,67 +110,70 @@ architecture behav of top_design_v_tpg_0_1_v_tpg is
     signal bck_motion_en : STD_LOGIC_VECTOR (15 downto 0);
     signal count : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     signal s : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
-    signal icmp_ln500_fu_640_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal icmp_ln500_reg_723 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln500_fu_622_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln500_reg_701 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
-    signal add_ln502_fu_650_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal height_read_reg_735 : STD_LOGIC_VECTOR (15 downto 0);
+    signal add_ln502_fu_632_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal add_ln502_reg_705 : STD_LOGIC_VECTOR (31 downto 0);
+    signal height_read_reg_714 : STD_LOGIC_VECTOR (15 downto 0);
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
-    signal width_read_reg_740 : STD_LOGIC_VECTOR (15 downto 0);
-    signal field_id_read_reg_745 : STD_LOGIC_VECTOR (15 downto 0);
-    signal fid_in_read_reg_750 : STD_LOGIC_VECTOR (0 downto 0);
-    signal bckgndId_read_reg_755 : STD_LOGIC_VECTOR (7 downto 0);
-    signal ovrlayId_read_reg_760 : STD_LOGIC_VECTOR (7 downto 0);
-    signal maskId_read_reg_765 : STD_LOGIC_VECTOR (7 downto 0);
-    signal motionSpeed_read_reg_770 : STD_LOGIC_VECTOR (7 downto 0);
-    signal colorFormat_read_reg_775 : STD_LOGIC_VECTOR (7 downto 0);
-    signal crossHairX_read_reg_780 : STD_LOGIC_VECTOR (15 downto 0);
-    signal crossHairY_read_reg_785 : STD_LOGIC_VECTOR (15 downto 0);
-    signal ZplateHorContStart_read_reg_790 : STD_LOGIC_VECTOR (15 downto 0);
-    signal ZplateHorContDelta_read_reg_795 : STD_LOGIC_VECTOR (15 downto 0);
-    signal ZplateVerContStart_read_reg_800 : STD_LOGIC_VECTOR (15 downto 0);
-    signal ZplateVerContDelta_read_reg_805 : STD_LOGIC_VECTOR (15 downto 0);
-    signal boxSize_read_reg_810 : STD_LOGIC_VECTOR (15 downto 0);
-    signal empty_fu_708_p1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal empty_reg_815 : STD_LOGIC_VECTOR (7 downto 0);
-    signal empty_59_fu_713_p1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal empty_59_reg_820 : STD_LOGIC_VECTOR (7 downto 0);
-    signal empty_60_fu_718_p1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal empty_60_reg_825 : STD_LOGIC_VECTOR (7 downto 0);
-    signal dpDynamicRange_read_reg_830 : STD_LOGIC_VECTOR (7 downto 0);
-    signal dpYUVCoef_read_reg_835 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDATA : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TKEEP : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TSTRB : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TLAST : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDEST : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_v_tpgHlsDataFlow_fu_441_fid : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_v_tpgHlsDataFlow_fu_441_ap_start : STD_LOGIC;
-    signal grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID : STD_LOGIC;
-    signal grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TREADY : STD_LOGIC;
-    signal grp_v_tpgHlsDataFlow_fu_441_fid_ap_vld : STD_LOGIC;
-    signal grp_v_tpgHlsDataFlow_fu_441_ap_done : STD_LOGIC;
-    signal grp_v_tpgHlsDataFlow_fu_441_ap_ready : STD_LOGIC;
-    signal grp_v_tpgHlsDataFlow_fu_441_ap_idle : STD_LOGIC;
-    signal grp_v_tpgHlsDataFlow_fu_441_ap_continue : STD_LOGIC;
-    signal grp_reg_unsigned_short_s_fu_634_ap_start : STD_LOGIC;
-    signal grp_reg_unsigned_short_s_fu_634_ap_done : STD_LOGIC;
-    signal grp_reg_unsigned_short_s_fu_634_ap_idle : STD_LOGIC;
-    signal grp_reg_unsigned_short_s_fu_634_ap_ready : STD_LOGIC;
-    signal grp_reg_unsigned_short_s_fu_634_ap_return : STD_LOGIC_VECTOR (15 downto 0);
-    signal count_new_0_reg_430 : STD_LOGIC_VECTOR (31 downto 0);
-    signal icmp_ln503_fu_656_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_v_tpgHlsDataFlow_fu_441_ap_start_reg : STD_LOGIC := '0';
+    signal width_read_reg_719 : STD_LOGIC_VECTOR (15 downto 0);
+    signal field_id_read_reg_724 : STD_LOGIC_VECTOR (15 downto 0);
+    signal bckgndId_read_reg_729 : STD_LOGIC_VECTOR (7 downto 0);
+    signal ovrlayId_read_reg_734 : STD_LOGIC_VECTOR (7 downto 0);
+    signal maskId_read_reg_739 : STD_LOGIC_VECTOR (7 downto 0);
+    signal motionSpeed_read_reg_744 : STD_LOGIC_VECTOR (7 downto 0);
+    signal colorFormat_read_reg_749 : STD_LOGIC_VECTOR (7 downto 0);
+    signal crossHairX_read_reg_754 : STD_LOGIC_VECTOR (15 downto 0);
+    signal crossHairY_read_reg_759 : STD_LOGIC_VECTOR (15 downto 0);
+    signal ZplateHorContStart_read_reg_764 : STD_LOGIC_VECTOR (15 downto 0);
+    signal ZplateHorContDelta_read_reg_769 : STD_LOGIC_VECTOR (15 downto 0);
+    signal ZplateVerContStart_read_reg_774 : STD_LOGIC_VECTOR (15 downto 0);
+    signal ZplateVerContDelta_read_reg_779 : STD_LOGIC_VECTOR (15 downto 0);
+    signal boxSize_read_reg_784 : STD_LOGIC_VECTOR (15 downto 0);
+    signal empty_fu_689_p1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal empty_reg_789 : STD_LOGIC_VECTOR (7 downto 0);
+    signal empty_59_fu_693_p1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal empty_59_reg_794 : STD_LOGIC_VECTOR (7 downto 0);
+    signal empty_60_fu_697_p1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal empty_60_reg_799 : STD_LOGIC_VECTOR (7 downto 0);
+    signal dpDynamicRange_read_reg_804 : STD_LOGIC_VECTOR (7 downto 0);
+    signal dpYUVCoef_read_reg_809 : STD_LOGIC_VECTOR (7 downto 0);
+    signal fid_in_read_reg_814 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state4 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
-    signal ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_ready : STD_LOGIC := '0';
-    signal ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_done : STD_LOGIC := '0';
-    signal ap_block_state4_on_subcall_done : BOOLEAN;
-    signal ap_sync_grp_v_tpgHlsDataFlow_fu_441_ap_ready : STD_LOGIC;
+    signal grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDATA : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TKEEP : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TSTRB : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TLAST : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDEST : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_v_tpgHlsDataFlow_fu_440_fid : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_v_tpgHlsDataFlow_fu_440_ap_start : STD_LOGIC;
+    signal grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID : STD_LOGIC;
+    signal grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TREADY : STD_LOGIC;
+    signal grp_v_tpgHlsDataFlow_fu_440_fid_ap_vld : STD_LOGIC;
+    signal grp_v_tpgHlsDataFlow_fu_440_ap_done : STD_LOGIC;
+    signal grp_v_tpgHlsDataFlow_fu_440_ap_ready : STD_LOGIC;
+    signal grp_v_tpgHlsDataFlow_fu_440_ap_idle : STD_LOGIC;
+    signal grp_v_tpgHlsDataFlow_fu_440_ap_continue : STD_LOGIC;
+    signal grp_reg_unsigned_short_s_fu_616_ap_start : STD_LOGIC;
+    signal grp_reg_unsigned_short_s_fu_616_ap_done : STD_LOGIC;
+    signal grp_reg_unsigned_short_s_fu_616_ap_idle : STD_LOGIC;
+    signal grp_reg_unsigned_short_s_fu_616_ap_ready : STD_LOGIC;
+    signal grp_reg_unsigned_short_s_fu_616_ap_return : STD_LOGIC_VECTOR (15 downto 0);
+    signal ap_phi_mux_count_new_0_phi_fu_433_p4 : STD_LOGIC_VECTOR (31 downto 0);
+    signal icmp_ln503_fu_638_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_v_tpgHlsDataFlow_fu_440_ap_start_reg : STD_LOGIC := '0';
+    signal ap_CS_fsm_state5 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
+    signal ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready : STD_LOGIC := '0';
+    signal ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_done : STD_LOGIC := '0';
+    signal ap_block_state5_on_subcall_done : BOOLEAN;
+    signal ap_sync_grp_v_tpgHlsDataFlow_fu_440_ap_ready : STD_LOGIC;
     signal m_axis_video_TDATA_reg : STD_LOGIC_VECTOR (23 downto 0);
     signal m_axis_video_TKEEP_reg : STD_LOGIC_VECTOR (2 downto 0);
     signal m_axis_video_TSTRB_reg : STD_LOGIC_VECTOR (2 downto 0);
@@ -177,19 +182,20 @@ architecture behav of top_design_v_tpg_0_1_v_tpg is
     signal m_axis_video_TID_reg : STD_LOGIC_VECTOR (0 downto 0);
     signal m_axis_video_TDEST_reg : STD_LOGIC_VECTOR (0 downto 0);
     signal fid_reg : STD_LOGIC_VECTOR (0 downto 0);
-    signal select_ln505_fu_688_p3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_1_fu_666_p4 : STD_LOGIC_VECTOR (28 downto 0);
-    signal icmp_ln505_fu_676_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal add_ln507_fu_682_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_CS_fsm_state5 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
+    signal select_ln505_fu_669_p3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_1_fu_647_p4 : STD_LOGIC_VECTOR (28 downto 0);
+    signal icmp_ln505_fu_657_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal add_ln507_fu_663_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_CS_fsm_state6 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state6 : signal is "none";
     signal regslice_both_m_axis_video_V_data_V_U_apdone_blk : STD_LOGIC;
-    signal ap_NS_fsm : STD_LOGIC_VECTOR (4 downto 0);
+    signal ap_NS_fsm : STD_LOGIC_VECTOR (5 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
     signal ap_ST_fsm_state3_blk : STD_LOGIC;
     signal ap_ST_fsm_state4_blk : STD_LOGIC;
     signal ap_ST_fsm_state5_blk : STD_LOGIC;
+    signal ap_ST_fsm_state6_blk : STD_LOGIC;
     signal m_axis_video_TDATA_int_regslice : STD_LOGIC_VECTOR (23 downto 0);
     signal m_axis_video_TVALID_int_regslice : STD_LOGIC;
     signal m_axis_video_TREADY_int_regslice : STD_LOGIC;
@@ -372,37 +378,37 @@ architecture behav of top_design_v_tpg_0_1_v_tpg is
 
 
 begin
-    grp_v_tpgHlsDataFlow_fu_441 : component top_design_v_tpg_0_1_v_tpgHlsDataFlow
+    grp_v_tpgHlsDataFlow_fu_440 : component top_design_v_tpg_0_1_v_tpgHlsDataFlow
     port map (
-        height_val4 => height_read_reg_735,
-        width_val7 => width_read_reg_740,
-        field_id_val8 => field_id_read_reg_745,
-        fid_in_val9 => fid_in_read_reg_750,
-        bckgndId_val10 => bckgndId_read_reg_755,
-        ovrlayId_val11 => ovrlayId_read_reg_760,
-        maskId_val12 => maskId_read_reg_765,
-        motionSpeed_val14 => motionSpeed_read_reg_770,
-        colorFormat_val17 => colorFormat_read_reg_775,
-        crossHairX_val18 => crossHairX_read_reg_780,
-        crossHairY_val19 => crossHairY_read_reg_785,
-        ZplateHorContStart_val20 => ZplateHorContStart_read_reg_790,
-        ZplateHorContDelta_val21 => ZplateHorContDelta_read_reg_795,
-        ZplateVerContStart_val22 => ZplateVerContStart_read_reg_800,
-        ZplateVerContDelta_val23 => ZplateVerContDelta_read_reg_805,
-        boxSize_val24 => boxSize_read_reg_810,
-        boxColorR_val25 => empty_reg_815,
-        boxColorG_val26 => empty_59_reg_820,
-        boxColorB_val27 => empty_60_reg_825,
-        dpDynamicRange_val28 => dpDynamicRange_read_reg_830,
-        dpYUVCoef_val29 => dpYUVCoef_read_reg_835,
-        m_axis_video_TDATA => grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDATA,
-        m_axis_video_TKEEP => grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TKEEP,
-        m_axis_video_TSTRB => grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TSTRB,
-        m_axis_video_TUSER => grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TUSER,
-        m_axis_video_TLAST => grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TLAST,
-        m_axis_video_TID => grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TID,
-        m_axis_video_TDEST => grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDEST,
-        fid => grp_v_tpgHlsDataFlow_fu_441_fid,
+        height_val4 => height_read_reg_714,
+        width_val7 => width_read_reg_719,
+        field_id_val8 => field_id_read_reg_724,
+        fid_in_val9 => fid_in_read_reg_814,
+        bckgndId_val10 => bckgndId_read_reg_729,
+        ovrlayId_val11 => ovrlayId_read_reg_734,
+        maskId_val12 => maskId_read_reg_739,
+        motionSpeed_val14 => motionSpeed_read_reg_744,
+        colorFormat_val17 => colorFormat_read_reg_749,
+        crossHairX_val18 => crossHairX_read_reg_754,
+        crossHairY_val19 => crossHairY_read_reg_759,
+        ZplateHorContStart_val20 => ZplateHorContStart_read_reg_764,
+        ZplateHorContDelta_val21 => ZplateHorContDelta_read_reg_769,
+        ZplateVerContStart_val22 => ZplateVerContStart_read_reg_774,
+        ZplateVerContDelta_val23 => ZplateVerContDelta_read_reg_779,
+        boxSize_val24 => boxSize_read_reg_784,
+        boxColorR_val25 => empty_reg_789,
+        boxColorG_val26 => empty_59_reg_794,
+        boxColorB_val27 => empty_60_reg_799,
+        dpDynamicRange_val28 => dpDynamicRange_read_reg_804,
+        dpYUVCoef_val29 => dpYUVCoef_read_reg_809,
+        m_axis_video_TDATA => grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDATA,
+        m_axis_video_TKEEP => grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TKEEP,
+        m_axis_video_TSTRB => grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TSTRB,
+        m_axis_video_TUSER => grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TUSER,
+        m_axis_video_TLAST => grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TLAST,
+        m_axis_video_TID => grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TID,
+        m_axis_video_TDEST => grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDEST,
+        fid => grp_v_tpgHlsDataFlow_fu_440_fid,
         s => s,
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
@@ -418,7 +424,7 @@ begin
         motionSpeed_val14_ap_vld => ap_const_logic_1,
         colorFormat_val17_ap_vld => ap_const_logic_1,
         s_ap_vld => ap_const_logic_1,
-        ap_start => grp_v_tpgHlsDataFlow_fu_441_ap_start,
+        ap_start => grp_v_tpgHlsDataFlow_fu_440_ap_start,
         ovrlayId_val11_ap_vld => ap_const_logic_1,
         maskId_val12_ap_vld => ap_const_logic_1,
         crossHairX_val18_ap_vld => ap_const_logic_1,
@@ -427,26 +433,26 @@ begin
         boxColorR_val25_ap_vld => ap_const_logic_1,
         boxColorG_val26_ap_vld => ap_const_logic_1,
         boxColorB_val27_ap_vld => ap_const_logic_1,
-        m_axis_video_TVALID => grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID,
-        m_axis_video_TREADY => grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TREADY,
+        m_axis_video_TVALID => grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID,
+        m_axis_video_TREADY => grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TREADY,
         fid_in_val9_ap_vld => ap_const_logic_1,
-        fid_ap_vld => grp_v_tpgHlsDataFlow_fu_441_fid_ap_vld,
+        fid_ap_vld => grp_v_tpgHlsDataFlow_fu_440_fid_ap_vld,
         field_id_val8_ap_vld => ap_const_logic_1,
-        ap_done => grp_v_tpgHlsDataFlow_fu_441_ap_done,
-        ap_ready => grp_v_tpgHlsDataFlow_fu_441_ap_ready,
-        ap_idle => grp_v_tpgHlsDataFlow_fu_441_ap_idle,
-        ap_continue => grp_v_tpgHlsDataFlow_fu_441_ap_continue);
+        ap_done => grp_v_tpgHlsDataFlow_fu_440_ap_done,
+        ap_ready => grp_v_tpgHlsDataFlow_fu_440_ap_ready,
+        ap_idle => grp_v_tpgHlsDataFlow_fu_440_ap_idle,
+        ap_continue => grp_v_tpgHlsDataFlow_fu_440_ap_continue);
 
-    grp_reg_unsigned_short_s_fu_634 : component top_design_v_tpg_0_1_reg_unsigned_short_s
+    grp_reg_unsigned_short_s_fu_616 : component top_design_v_tpg_0_1_reg_unsigned_short_s
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => grp_reg_unsigned_short_s_fu_634_ap_start,
-        ap_done => grp_reg_unsigned_short_s_fu_634_ap_done,
-        ap_idle => grp_reg_unsigned_short_s_fu_634_ap_idle,
-        ap_ready => grp_reg_unsigned_short_s_fu_634_ap_ready,
+        ap_start => grp_reg_unsigned_short_s_fu_616_ap_start,
+        ap_done => grp_reg_unsigned_short_s_fu_616_ap_done,
+        ap_idle => grp_reg_unsigned_short_s_fu_616_ap_idle,
+        ap_ready => grp_reg_unsigned_short_s_fu_616_ap_ready,
         d => bck_motion_en,
-        ap_return => grp_reg_unsigned_short_s_fu_634_ap_return);
+        ap_return => grp_reg_unsigned_short_s_fu_616_ap_return);
 
     CTRL_s_axi_U : component top_design_v_tpg_0_1_CTRL_s_axi
     generic map (
@@ -507,7 +513,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => m_axis_video_TDATA_int_regslice,
-        vld_in => grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID,
+        vld_in => grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID,
         ack_in => m_axis_video_TREADY_int_regslice,
         data_out => m_axis_video_TDATA,
         vld_out => regslice_both_m_axis_video_V_data_V_U_vld_out,
@@ -521,7 +527,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => m_axis_video_TKEEP_int_regslice,
-        vld_in => grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID,
+        vld_in => grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID,
         ack_in => regslice_both_m_axis_video_V_keep_V_U_ack_in_dummy,
         data_out => m_axis_video_TKEEP,
         vld_out => regslice_both_m_axis_video_V_keep_V_U_vld_out,
@@ -535,7 +541,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => m_axis_video_TSTRB_int_regslice,
-        vld_in => grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID,
+        vld_in => grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID,
         ack_in => regslice_both_m_axis_video_V_strb_V_U_ack_in_dummy,
         data_out => m_axis_video_TSTRB,
         vld_out => regslice_both_m_axis_video_V_strb_V_U_vld_out,
@@ -549,7 +555,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => m_axis_video_TUSER_int_regslice,
-        vld_in => grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID,
+        vld_in => grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID,
         ack_in => regslice_both_m_axis_video_V_user_V_U_ack_in_dummy,
         data_out => m_axis_video_TUSER,
         vld_out => regslice_both_m_axis_video_V_user_V_U_vld_out,
@@ -563,7 +569,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => m_axis_video_TLAST_int_regslice,
-        vld_in => grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID,
+        vld_in => grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID,
         ack_in => regslice_both_m_axis_video_V_last_V_U_ack_in_dummy,
         data_out => m_axis_video_TLAST,
         vld_out => regslice_both_m_axis_video_V_last_V_U_vld_out,
@@ -577,7 +583,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => m_axis_video_TID_int_regslice,
-        vld_in => grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID,
+        vld_in => grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID,
         ack_in => regslice_both_m_axis_video_V_id_V_U_ack_in_dummy,
         data_out => m_axis_video_TID,
         vld_out => regslice_both_m_axis_video_V_id_V_U_vld_out,
@@ -591,7 +597,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => m_axis_video_TDEST_int_regslice,
-        vld_in => grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID,
+        vld_in => grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID,
         ack_in => regslice_both_m_axis_video_V_dest_V_U_ack_in_dummy,
         data_out => m_axis_video_TDEST,
         vld_out => regslice_both_m_axis_video_V_dest_V_U_vld_out,
@@ -614,107 +620,77 @@ begin
     end process;
 
 
-    ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_done_assign_proc : process(ap_clk)
+    ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_done_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_done <= ap_const_logic_0;
+                ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_done <= ap_const_logic_0;
             else
-                if (((ap_const_boolean_0 = ap_block_state4_on_subcall_done) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-                    ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_done <= ap_const_logic_0;
-                elsif ((grp_v_tpgHlsDataFlow_fu_441_ap_done = ap_const_logic_1)) then 
-                    ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_done <= ap_const_logic_1;
+                if (((ap_const_boolean_0 = ap_block_state5_on_subcall_done) and (ap_const_logic_1 = ap_CS_fsm_state5))) then 
+                    ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_done <= ap_const_logic_0;
+                elsif ((grp_v_tpgHlsDataFlow_fu_440_ap_done = ap_const_logic_1)) then 
+                    ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_done <= ap_const_logic_1;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_ready_assign_proc : process(ap_clk)
+    ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_ready <= ap_const_logic_0;
+                ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready <= ap_const_logic_0;
             else
-                if (((ap_const_boolean_0 = ap_block_state4_on_subcall_done) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-                    ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_ready <= ap_const_logic_0;
-                elsif ((grp_v_tpgHlsDataFlow_fu_441_ap_ready = ap_const_logic_1)) then 
-                    ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_ready <= ap_const_logic_1;
+                if (((ap_const_boolean_0 = ap_block_state5_on_subcall_done) and (ap_const_logic_1 = ap_CS_fsm_state5))) then 
+                    ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready <= ap_const_logic_0;
+                elsif ((grp_v_tpgHlsDataFlow_fu_440_ap_ready = ap_const_logic_1)) then 
+                    ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready <= ap_const_logic_1;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_v_tpgHlsDataFlow_fu_441_ap_start_reg_assign_proc : process(ap_clk)
+    grp_v_tpgHlsDataFlow_fu_440_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_v_tpgHlsDataFlow_fu_441_ap_start_reg <= ap_const_logic_0;
+                grp_v_tpgHlsDataFlow_fu_440_ap_start_reg <= ap_const_logic_0;
             else
-                if (((ap_const_logic_1 = ap_CS_fsm_state3) or ((ap_sync_grp_v_tpgHlsDataFlow_fu_441_ap_ready = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state4)))) then 
-                    grp_v_tpgHlsDataFlow_fu_441_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_v_tpgHlsDataFlow_fu_441_ap_ready = ap_const_logic_1)) then 
-                    grp_v_tpgHlsDataFlow_fu_441_ap_start_reg <= ap_const_logic_0;
+                if (((ap_const_logic_1 = ap_CS_fsm_state4) or ((ap_sync_grp_v_tpgHlsDataFlow_fu_440_ap_ready = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state5)))) then 
+                    grp_v_tpgHlsDataFlow_fu_440_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_v_tpgHlsDataFlow_fu_440_ap_ready = ap_const_logic_1)) then 
+                    grp_v_tpgHlsDataFlow_fu_440_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
-
-    count_new_0_reg_430_assign_proc : process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if (((icmp_ln500_fu_640_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
-                if ((icmp_ln503_fu_656_p2 = ap_const_lv1_0)) then 
-                    count_new_0_reg_430 <= add_ln502_fu_650_p2;
-                elsif ((icmp_ln503_fu_656_p2 = ap_const_lv1_1)) then 
-                    count_new_0_reg_430 <= ap_const_lv32_0;
-                end if;
-            end if; 
-        end if;
-    end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state3)) then
-                ZplateHorContDelta_read_reg_795 <= ZplateHorContDelta;
-                ZplateHorContStart_read_reg_790 <= ZplateHorContStart;
-                ZplateVerContDelta_read_reg_805 <= ZplateVerContDelta;
-                ZplateVerContStart_read_reg_800 <= ZplateVerContStart;
-                bckgndId_read_reg_755 <= bckgndId;
-                boxSize_read_reg_810 <= boxSize;
-                colorFormat_read_reg_775 <= colorFormat;
-                crossHairX_read_reg_780 <= crossHairX;
-                crossHairY_read_reg_785 <= crossHairY;
-                dpDynamicRange_read_reg_830 <= dpDynamicRange;
-                dpYUVCoef_read_reg_835 <= dpYUVCoef;
-                empty_59_reg_820 <= empty_59_fu_713_p1;
-                empty_60_reg_825 <= empty_60_fu_718_p1;
-                empty_reg_815 <= empty_fu_708_p1;
-                fid_in_read_reg_750 <= fid_in;
-                field_id_read_reg_745 <= field_id;
-                height_read_reg_735 <= height;
-                maskId_read_reg_765 <= maskId;
-                motionSpeed_read_reg_770 <= motionSpeed;
-                ovrlayId_read_reg_760 <= ovrlayId;
-                width_read_reg_740 <= width;
-            end if;
-        end if;
-    end process;
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if (((icmp_ln500_reg_723 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
-                count <= count_new_0_reg_430;
-            end if;
-        end if;
-    end process;
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state4) and (grp_v_tpgHlsDataFlow_fu_441_fid_ap_vld = ap_const_logic_1))) then
-                fid_reg <= grp_v_tpgHlsDataFlow_fu_441_fid;
+                ZplateHorContDelta_read_reg_769 <= ZplateHorContDelta;
+                ZplateHorContStart_read_reg_764 <= ZplateHorContStart;
+                ZplateVerContDelta_read_reg_779 <= ZplateVerContDelta;
+                ZplateVerContStart_read_reg_774 <= ZplateVerContStart;
+                bckgndId_read_reg_729 <= bckgndId;
+                boxSize_read_reg_784 <= boxSize;
+                colorFormat_read_reg_749 <= colorFormat;
+                crossHairX_read_reg_754 <= crossHairX;
+                crossHairY_read_reg_759 <= crossHairY;
+                dpDynamicRange_read_reg_804 <= dpDynamicRange;
+                dpYUVCoef_read_reg_809 <= dpYUVCoef;
+                empty_59_reg_794 <= empty_59_fu_693_p1;
+                empty_60_reg_799 <= empty_60_fu_697_p1;
+                empty_reg_789 <= empty_fu_689_p1;
+                field_id_read_reg_724 <= field_id;
+                height_read_reg_714 <= height;
+                maskId_read_reg_739 <= maskId;
+                motionSpeed_read_reg_744 <= motionSpeed;
+                ovrlayId_read_reg_734 <= ovrlayId;
+                width_read_reg_719 <= width;
             end if;
         end if;
     end process;
@@ -722,34 +698,59 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state2)) then
-                icmp_ln500_reg_723 <= icmp_ln500_fu_640_p2;
+                add_ln502_reg_705 <= add_ln502_fu_632_p2;
+                icmp_ln500_reg_701 <= icmp_ln500_fu_622_p2;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state4) and (grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID = ap_const_logic_1))) then
-                m_axis_video_TDATA_reg <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDATA;
-                m_axis_video_TDEST_reg <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDEST;
-                m_axis_video_TID_reg <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TID;
-                m_axis_video_TKEEP_reg <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TKEEP;
-                m_axis_video_TLAST_reg <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TLAST;
-                m_axis_video_TSTRB_reg <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TSTRB;
-                m_axis_video_TUSER_reg <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TUSER;
+            if (((icmp_ln500_reg_701 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                count <= ap_phi_mux_count_new_0_phi_fu_433_p4;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((icmp_ln500_fu_640_p2 = ap_const_lv1_1) and (icmp_ln503_fu_656_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
-                s <= select_ln505_fu_688_p3;
+            if ((ap_const_logic_1 = ap_CS_fsm_state4)) then
+                fid_in_read_reg_814 <= fid_in;
+            end if;
+        end if;
+    end process;
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if (((ap_const_logic_1 = ap_CS_fsm_state5) and (grp_v_tpgHlsDataFlow_fu_440_fid_ap_vld = ap_const_logic_1))) then
+                fid_reg <= grp_v_tpgHlsDataFlow_fu_440_fid;
+            end if;
+        end if;
+    end process;
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if (((ap_const_logic_1 = ap_CS_fsm_state5) and (grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID = ap_const_logic_1))) then
+                m_axis_video_TDATA_reg <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDATA;
+                m_axis_video_TDEST_reg <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDEST;
+                m_axis_video_TID_reg <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TID;
+                m_axis_video_TKEEP_reg <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TKEEP;
+                m_axis_video_TLAST_reg <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TLAST;
+                m_axis_video_TSTRB_reg <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TSTRB;
+                m_axis_video_TUSER_reg <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TUSER;
+            end if;
+        end if;
+    end process;
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if (((icmp_ln500_reg_701 = ap_const_lv1_1) and (icmp_ln503_fu_638_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                s <= select_ln505_fu_669_p3;
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state4, ap_block_state4_on_subcall_done, ap_CS_fsm_state5, regslice_both_m_axis_video_V_data_V_U_apdone_blk)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state5, ap_block_state5_on_subcall_done, ap_CS_fsm_state6, regslice_both_m_axis_video_V_data_V_U_apdone_blk)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -763,28 +764,31 @@ begin
             when ap_ST_fsm_state3 => 
                 ap_NS_fsm <= ap_ST_fsm_state4;
             when ap_ST_fsm_state4 => 
-                if (((ap_const_boolean_0 = ap_block_state4_on_subcall_done) and (ap_const_logic_1 = ap_CS_fsm_state4))) then
-                    ap_NS_fsm <= ap_ST_fsm_state5;
-                else
-                    ap_NS_fsm <= ap_ST_fsm_state4;
-                end if;
+                ap_NS_fsm <= ap_ST_fsm_state5;
             when ap_ST_fsm_state5 => 
-                if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state5))) then
+                if (((ap_const_boolean_0 = ap_block_state5_on_subcall_done) and (ap_const_logic_1 = ap_CS_fsm_state5))) then
+                    ap_NS_fsm <= ap_ST_fsm_state6;
+                else
+                    ap_NS_fsm <= ap_ST_fsm_state5;
+                end if;
+            when ap_ST_fsm_state6 => 
+                if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state6))) then
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 else
-                    ap_NS_fsm <= ap_ST_fsm_state5;
+                    ap_NS_fsm <= ap_ST_fsm_state6;
                 end if;
             when others =>  
-                ap_NS_fsm <= "XXXXX";
+                ap_NS_fsm <= "XXXXXX";
         end case;
     end process;
-    add_ln502_fu_650_p2 <= std_logic_vector(unsigned(count) + unsigned(ap_const_lv32_1));
-    add_ln507_fu_682_p2 <= std_logic_vector(unsigned(s) + unsigned(ap_const_lv32_1));
+    add_ln502_fu_632_p2 <= std_logic_vector(unsigned(count) + unsigned(ap_const_lv32_1));
+    add_ln507_fu_663_p2 <= std_logic_vector(unsigned(s) + unsigned(ap_const_lv32_1));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
     ap_CS_fsm_state3 <= ap_CS_fsm(2);
     ap_CS_fsm_state4 <= ap_CS_fsm(3);
     ap_CS_fsm_state5 <= ap_CS_fsm(4);
+    ap_CS_fsm_state6 <= ap_CS_fsm(5);
 
     ap_ST_fsm_state1_blk_assign_proc : process(ap_start)
     begin
@@ -797,20 +801,11 @@ begin
 
     ap_ST_fsm_state2_blk <= ap_const_logic_0;
     ap_ST_fsm_state3_blk <= ap_const_logic_0;
+    ap_ST_fsm_state4_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state4_blk_assign_proc : process(ap_block_state4_on_subcall_done)
+    ap_ST_fsm_state5_blk_assign_proc : process(ap_block_state5_on_subcall_done)
     begin
-        if ((ap_const_boolean_1 = ap_block_state4_on_subcall_done)) then 
-            ap_ST_fsm_state4_blk <= ap_const_logic_1;
-        else 
-            ap_ST_fsm_state4_blk <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    ap_ST_fsm_state5_blk_assign_proc : process(regslice_both_m_axis_video_V_data_V_U_apdone_blk)
-    begin
-        if ((regslice_both_m_axis_video_V_data_V_U_apdone_blk = ap_const_logic_1)) then 
+        if ((ap_const_boolean_1 = ap_block_state5_on_subcall_done)) then 
             ap_ST_fsm_state5_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state5_blk <= ap_const_logic_0;
@@ -818,15 +813,25 @@ begin
     end process;
 
 
-    ap_block_state4_on_subcall_done_assign_proc : process(ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_ready, ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_done)
+    ap_ST_fsm_state6_blk_assign_proc : process(regslice_both_m_axis_video_V_data_V_U_apdone_blk)
     begin
-                ap_block_state4_on_subcall_done <= ((ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_ready and ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_done) = ap_const_logic_0);
+        if ((regslice_both_m_axis_video_V_data_V_U_apdone_blk = ap_const_logic_1)) then 
+            ap_ST_fsm_state6_blk <= ap_const_logic_1;
+        else 
+            ap_ST_fsm_state6_blk <= ap_const_logic_0;
+        end if; 
     end process;
 
 
-    ap_done_assign_proc : process(ap_CS_fsm_state5, regslice_both_m_axis_video_V_data_V_U_apdone_blk)
+    ap_block_state5_on_subcall_done_assign_proc : process(ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready, ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_done)
     begin
-        if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state5))) then 
+                ap_block_state5_on_subcall_done <= ((ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready and ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_done) = ap_const_logic_0);
+    end process;
+
+
+    ap_done_assign_proc : process(ap_CS_fsm_state6, regslice_both_m_axis_video_V_data_V_U_apdone_blk)
+    begin
+        if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state6))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -844,9 +849,25 @@ begin
     end process;
 
 
-    ap_ready_assign_proc : process(ap_CS_fsm_state5, regslice_both_m_axis_video_V_data_V_U_apdone_blk)
+    ap_phi_mux_count_new_0_phi_fu_433_p4_assign_proc : process(icmp_ln500_reg_701, add_ln502_reg_705, ap_CS_fsm_state3, icmp_ln503_fu_638_p2)
     begin
-        if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state5))) then 
+        if (((icmp_ln500_reg_701 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+            if ((icmp_ln503_fu_638_p2 = ap_const_lv1_0)) then 
+                ap_phi_mux_count_new_0_phi_fu_433_p4 <= add_ln502_reg_705;
+            elsif ((icmp_ln503_fu_638_p2 = ap_const_lv1_1)) then 
+                ap_phi_mux_count_new_0_phi_fu_433_p4 <= ap_const_lv32_0;
+            else 
+                ap_phi_mux_count_new_0_phi_fu_433_p4 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            end if;
+        else 
+            ap_phi_mux_count_new_0_phi_fu_433_p4 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    ap_ready_assign_proc : process(ap_CS_fsm_state6, regslice_both_m_axis_video_V_data_V_U_apdone_blk)
+    begin
+        if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state6))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
@@ -859,119 +880,119 @@ begin
                 ap_rst_n_inv <= not(ap_rst_n);
     end process;
 
-    ap_sync_grp_v_tpgHlsDataFlow_fu_441_ap_ready <= (grp_v_tpgHlsDataFlow_fu_441_ap_ready or ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_ready);
-    empty_59_fu_713_p1 <= boxColorG(8 - 1 downto 0);
-    empty_60_fu_718_p1 <= boxColorB(8 - 1 downto 0);
-    empty_fu_708_p1 <= boxColorR(8 - 1 downto 0);
+    ap_sync_grp_v_tpgHlsDataFlow_fu_440_ap_ready <= (grp_v_tpgHlsDataFlow_fu_440_ap_ready or ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready);
+    empty_59_fu_693_p1 <= boxColorG(8 - 1 downto 0);
+    empty_60_fu_697_p1 <= boxColorB(8 - 1 downto 0);
+    empty_fu_689_p1 <= boxColorR(8 - 1 downto 0);
 
-    fid_assign_proc : process(grp_v_tpgHlsDataFlow_fu_441_fid, grp_v_tpgHlsDataFlow_fu_441_fid_ap_vld, ap_CS_fsm_state4, fid_reg)
+    fid_assign_proc : process(grp_v_tpgHlsDataFlow_fu_440_fid, grp_v_tpgHlsDataFlow_fu_440_fid_ap_vld, ap_CS_fsm_state5, fid_reg)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state4) and (grp_v_tpgHlsDataFlow_fu_441_fid_ap_vld = ap_const_logic_1))) then 
-            fid <= grp_v_tpgHlsDataFlow_fu_441_fid;
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) and (grp_v_tpgHlsDataFlow_fu_440_fid_ap_vld = ap_const_logic_1))) then 
+            fid <= grp_v_tpgHlsDataFlow_fu_440_fid;
         else 
             fid <= fid_reg;
         end if; 
     end process;
 
 
-    grp_reg_unsigned_short_s_fu_634_ap_start_assign_proc : process(ap_start, ap_CS_fsm_state1)
+    grp_reg_unsigned_short_s_fu_616_ap_start_assign_proc : process(ap_start, ap_CS_fsm_state1)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_1))) then 
-            grp_reg_unsigned_short_s_fu_634_ap_start <= ap_const_logic_1;
+            grp_reg_unsigned_short_s_fu_616_ap_start <= ap_const_logic_1;
         else 
-            grp_reg_unsigned_short_s_fu_634_ap_start <= ap_const_logic_0;
+            grp_reg_unsigned_short_s_fu_616_ap_start <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    grp_v_tpgHlsDataFlow_fu_441_ap_continue_assign_proc : process(ap_CS_fsm_state4, ap_block_state4_on_subcall_done)
+    grp_v_tpgHlsDataFlow_fu_440_ap_continue_assign_proc : process(ap_CS_fsm_state5, ap_block_state5_on_subcall_done)
     begin
-        if (((ap_const_boolean_0 = ap_block_state4_on_subcall_done) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            grp_v_tpgHlsDataFlow_fu_441_ap_continue <= ap_const_logic_1;
+        if (((ap_const_boolean_0 = ap_block_state5_on_subcall_done) and (ap_const_logic_1 = ap_CS_fsm_state5))) then 
+            grp_v_tpgHlsDataFlow_fu_440_ap_continue <= ap_const_logic_1;
         else 
-            grp_v_tpgHlsDataFlow_fu_441_ap_continue <= ap_const_logic_0;
+            grp_v_tpgHlsDataFlow_fu_440_ap_continue <= ap_const_logic_0;
         end if; 
     end process;
 
-    grp_v_tpgHlsDataFlow_fu_441_ap_start <= grp_v_tpgHlsDataFlow_fu_441_ap_start_reg;
-    grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TREADY <= (m_axis_video_TREADY_int_regslice and ap_CS_fsm_state4);
-    icmp_ln500_fu_640_p2 <= "1" when (grp_reg_unsigned_short_s_fu_634_ap_return = ap_const_lv16_1) else "0";
-    icmp_ln503_fu_656_p2 <= "1" when (add_ln502_fu_650_p2 = ap_const_lv32_A) else "0";
-    icmp_ln505_fu_676_p2 <= "1" when (signed(tmp_1_fu_666_p4) < signed(ap_const_lv29_1)) else "0";
+    grp_v_tpgHlsDataFlow_fu_440_ap_start <= grp_v_tpgHlsDataFlow_fu_440_ap_start_reg;
+    grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TREADY <= (m_axis_video_TREADY_int_regslice and ap_CS_fsm_state5);
+    icmp_ln500_fu_622_p2 <= "1" when (grp_reg_unsigned_short_s_fu_616_ap_return = ap_const_lv16_1) else "0";
+    icmp_ln503_fu_638_p2 <= "1" when (add_ln502_reg_705 = ap_const_lv32_A) else "0";
+    icmp_ln505_fu_657_p2 <= "1" when (signed(tmp_1_fu_647_p4) < signed(ap_const_lv29_1)) else "0";
 
-    m_axis_video_TDATA_int_regslice_assign_proc : process(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDATA, grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TDATA_reg)
+    m_axis_video_TDATA_int_regslice_assign_proc : process(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDATA, grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID, ap_CS_fsm_state5, m_axis_video_TDATA_reg)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state4) and (grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID = ap_const_logic_1))) then 
-            m_axis_video_TDATA_int_regslice <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDATA;
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) and (grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID = ap_const_logic_1))) then 
+            m_axis_video_TDATA_int_regslice <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDATA;
         else 
             m_axis_video_TDATA_int_regslice <= m_axis_video_TDATA_reg;
         end if; 
     end process;
 
 
-    m_axis_video_TDEST_int_regslice_assign_proc : process(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDEST, grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TDEST_reg)
+    m_axis_video_TDEST_int_regslice_assign_proc : process(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDEST, grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID, ap_CS_fsm_state5, m_axis_video_TDEST_reg)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state4) and (grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID = ap_const_logic_1))) then 
-            m_axis_video_TDEST_int_regslice <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDEST;
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) and (grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID = ap_const_logic_1))) then 
+            m_axis_video_TDEST_int_regslice <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDEST;
         else 
             m_axis_video_TDEST_int_regslice <= m_axis_video_TDEST_reg;
         end if; 
     end process;
 
 
-    m_axis_video_TID_int_regslice_assign_proc : process(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TID, grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TID_reg)
+    m_axis_video_TID_int_regslice_assign_proc : process(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TID, grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID, ap_CS_fsm_state5, m_axis_video_TID_reg)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state4) and (grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID = ap_const_logic_1))) then 
-            m_axis_video_TID_int_regslice <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TID;
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) and (grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID = ap_const_logic_1))) then 
+            m_axis_video_TID_int_regslice <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TID;
         else 
             m_axis_video_TID_int_regslice <= m_axis_video_TID_reg;
         end if; 
     end process;
 
 
-    m_axis_video_TKEEP_int_regslice_assign_proc : process(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TKEEP, grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TKEEP_reg)
+    m_axis_video_TKEEP_int_regslice_assign_proc : process(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TKEEP, grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID, ap_CS_fsm_state5, m_axis_video_TKEEP_reg)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state4) and (grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID = ap_const_logic_1))) then 
-            m_axis_video_TKEEP_int_regslice <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TKEEP;
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) and (grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID = ap_const_logic_1))) then 
+            m_axis_video_TKEEP_int_regslice <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TKEEP;
         else 
             m_axis_video_TKEEP_int_regslice <= m_axis_video_TKEEP_reg;
         end if; 
     end process;
 
 
-    m_axis_video_TLAST_int_regslice_assign_proc : process(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TLAST, grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TLAST_reg)
+    m_axis_video_TLAST_int_regslice_assign_proc : process(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TLAST, grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID, ap_CS_fsm_state5, m_axis_video_TLAST_reg)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state4) and (grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID = ap_const_logic_1))) then 
-            m_axis_video_TLAST_int_regslice <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TLAST;
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) and (grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID = ap_const_logic_1))) then 
+            m_axis_video_TLAST_int_regslice <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TLAST;
         else 
             m_axis_video_TLAST_int_regslice <= m_axis_video_TLAST_reg;
         end if; 
     end process;
 
 
-    m_axis_video_TSTRB_int_regslice_assign_proc : process(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TSTRB, grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TSTRB_reg)
+    m_axis_video_TSTRB_int_regslice_assign_proc : process(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TSTRB, grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID, ap_CS_fsm_state5, m_axis_video_TSTRB_reg)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state4) and (grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID = ap_const_logic_1))) then 
-            m_axis_video_TSTRB_int_regslice <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TSTRB;
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) and (grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID = ap_const_logic_1))) then 
+            m_axis_video_TSTRB_int_regslice <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TSTRB;
         else 
             m_axis_video_TSTRB_int_regslice <= m_axis_video_TSTRB_reg;
         end if; 
     end process;
 
 
-    m_axis_video_TUSER_int_regslice_assign_proc : process(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TUSER, grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TUSER_reg)
+    m_axis_video_TUSER_int_regslice_assign_proc : process(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TUSER, grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID, ap_CS_fsm_state5, m_axis_video_TUSER_reg)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state4) and (grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID = ap_const_logic_1))) then 
-            m_axis_video_TUSER_int_regslice <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TUSER;
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) and (grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID = ap_const_logic_1))) then 
+            m_axis_video_TUSER_int_regslice <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TUSER;
         else 
             m_axis_video_TUSER_int_regslice <= m_axis_video_TUSER_reg;
         end if; 
     end process;
 
     m_axis_video_TVALID <= regslice_both_m_axis_video_V_data_V_U_vld_out;
-    m_axis_video_TVALID_int_regslice <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID;
-    select_ln505_fu_688_p3 <= 
-        add_ln507_fu_682_p2 when (icmp_ln505_fu_676_p2(0) = '1') else 
+    m_axis_video_TVALID_int_regslice <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID;
+    select_ln505_fu_669_p3 <= 
+        add_ln507_fu_663_p2 when (icmp_ln505_fu_657_p2(0) = '1') else 
         ap_const_lv32_0;
-    tmp_1_fu_666_p4 <= s(31 downto 3);
+    tmp_1_fu_647_p4 <= s(31 downto 3);
 end behav;

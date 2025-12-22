@@ -14,9 +14,9 @@ set SynModuleInfo {
       {MODELNAME top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1 RTLNAME top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
       {MODELNAME top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1 RTLNAME top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
       {MODELNAME top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1 RTLNAME top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
+      {MODELNAME top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1 RTLNAME top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
       {MODELNAME top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1 RTLNAME top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
       {MODELNAME top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1 RTLNAME top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
-      {MODELNAME top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1 RTLNAME top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
       {MODELNAME top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1 RTLNAME top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
       {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
       {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}

@@ -2,10 +2,10 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-// Date        : Wed Dec 17 18:44:07 2025
+// Date        : Mon Dec 22 19:22:05 2025
 // Host        : serg running 64-bit Ubuntu 24.04.3 LTS
-// Command     : write_verilog -force -mode funcsim -rename_top top_design_v_tpg_0_1 -prefix
-//               top_design_v_tpg_0_1_ top_design_v_tpg_0_1_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tpg_0_1/top_design_v_tpg_0_1_sim_netlist.v
 // Design      : top_design_v_tpg_0_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -151,7 +151,7 @@ module top_design_v_tpg_0_1
   (* ap_ST_fsm_state4 = "6'b001000" *) 
   (* ap_ST_fsm_state5 = "6'b010000" *) 
   (* ap_ST_fsm_state6 = "6'b100000" *) 
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg inst
+  top_design_v_tpg_0_1_v_tpg inst
        (.ap_clk(ap_clk),
         .ap_rst_n(ap_rst_n),
         .fid(fid),
@@ -185,7 +185,7 @@ module top_design_v_tpg_0_1
         .s_axi_CTRL_WVALID(s_axi_CTRL_WVALID));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_CTRL_s_axi
+module top_design_v_tpg_0_1_CTRL_s_axi
    (SR,
     interrupt,
     \FSM_onehot_rstate_reg[1]_0 ,
@@ -7092,7 +7092,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_CTRL_s_axi
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo
+module top_design_v_tpg_0_1_MultiPixStream2AXIvideo
    (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TLAST,
     CO,
     \sof_reg_211_reg[0] ,
@@ -7778,7 +7778,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo
         .I1(Q),
         .I2(CO),
         .O(empty_n_reg));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167
+  top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167
        (.CO(CO),
         .D({grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_n_65,ap_NS_fsm[2]}),
         .E(E),
@@ -8385,7 +8385,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2
+module top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2
    (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TLAST,
     \sof_reg_211_reg[0]_0 ,
     \icmp_ln981_reg_440_pp0_iter1_reg_reg[0]_0 ,
@@ -9872,7 +9872,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipelin
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1
+module top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1
    (P,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -9887,14 +9887,14 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1
   wire ap_block_pp0_stage0_subdone;
   wire ap_clk;
 
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0 top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0_U
+  top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0 top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0_U
        (.B(B),
         .P(P),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
         .ap_clk(ap_clk));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0
+module top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0
    (P,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -9999,7 +9999,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_D
         .UNDERFLOW(NLW_p_reg_reg_UNDERFLOW_UNCONNECTED));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S
+module top_design_v_tpg_0_1_fifo_w24_d16_S
    (bckgndYUV_empty_n,
     bckgndYUV_full_n,
     Q,
@@ -10066,7 +10066,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S
   wire p_9_in;
   wire push;
 
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg_16 U_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg
+  top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg_16 U_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg
        (.Q(addr_reg),
         .ap_clk(ap_clk),
         .in(in),
@@ -10239,7 +10239,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_fifo_w24_d16_S" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_2
+module top_design_v_tpg_0_1_fifo_w24_d16_S_2
    (ovrlayYUV_empty_n,
     ovrlayYUV_full_n,
     \mOutPtr_reg[0]_0 ,
@@ -10295,7 +10295,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_2
   wire push;
   wire [4:0]tpgForeground_U0_ovrlayYUV_num_data_valid;
 
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg U_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg
+  top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg U_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg
        (.Q(addr_reg),
         .ap_clk(ap_clk),
         .in(in),
@@ -10470,7 +10470,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_2
         .R(SR));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg
+module top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg
    (out,
     push,
     in,
@@ -10803,7 +10803,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg_16
+module top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg_16
    (out,
     push,
     in,
@@ -11135,7 +11135,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg_16
         .Q(out[9]));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init
+module top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init
    (ap_rst_n_0,
     \icmp_ln774_reg_821_pp0_iter1_reg_reg[0] ,
     \ap_CS_fsm_reg[1] ,
@@ -12696,7 +12696,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequenti
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init_4
+module top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init_4
    (ap_done_cache,
     ap_loop_init_int_reg_0,
     D,
@@ -14091,7 +14091,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequenti
         .S({\zonePlateVDelta[7]_i_6_n_3 ,\zonePlateVDelta[7]_i_7_n_3 ,\zonePlateVDelta[7]_i_8_n_3 ,\zonePlateVDelta[7]_i_9_n_3 }));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1
+module top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1
    (P,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -14115,7 +14115,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1
   wire [15:0]p_reg_reg_0;
   wire [15:0]phi_mul_fu_478_reg;
 
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0 top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0_U
+  top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0 top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0_U
        (.P(P),
         .Q(Q),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
@@ -14125,7 +14125,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1
         .phi_mul_fu_478_reg(phi_mul_fu_478_reg));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0
+module top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0
    (P,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -14408,7 +14408,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_D
         .O(p_reg_reg_i_9__0_n_3));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1
+module top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1
    (A,
     SS,
     D,
@@ -14447,7 +14447,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1
   wire \r_2_reg_5328_reg[0]_0 ;
   wire [7:0]r_reg_5030_pp0_iter19_reg;
 
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0 top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0_U
+  top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0 top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0_U
        (.A(A),
         .D(D),
         .P(P),
@@ -14462,7 +14462,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1
         .r_reg_5030_pp0_iter19_reg(r_reg_5030_pp0_iter19_reg));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0
+module top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0
    (A,
     SS,
     D,
@@ -14685,7 +14685,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_
         .O(D[7]));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1
+module top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1
    (P,
     \tmp_4_reg_5041_reg[8] ,
     SS,
@@ -14742,7 +14742,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1
   wire [8:0]p_reg_reg;
   wire [6:0]\tmp_4_reg_5041_reg[8] ;
 
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0 top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0_U
+  top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0 top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0_U
        (.A(A),
         .D(D),
         .DI(DI),
@@ -14763,7 +14763,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1
         .\tmp_4_reg_5041_reg[8] (\tmp_4_reg_5041_reg[8] ));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0
+module top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0
    (P,
     \tmp_4_reg_5041_reg[8] ,
     SS,
@@ -15373,7 +15373,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_D
         .O(\tmp_4_reg_5041_reg[8] [0]));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1
+module top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1
    (P,
     A,
     ap_block_pp0_stage0_subdone,
@@ -15394,7 +15394,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1
   wire ap_clk;
   wire [6:0]p_reg_reg;
 
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0 top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0_U
+  top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0 top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0_U
        (.A(A),
         .P(P),
         .Q(Q),
@@ -15403,7 +15403,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1
         .p_reg_reg_0(p_reg_reg));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0
+module top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0
    (P,
     A,
     ap_block_pp0_stage0_subdone,
@@ -15519,7 +15519,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_
         .O(A));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1
+module top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1
    (PCOUT,
     \tmp_reg_4995_reg[8] ,
     ap_block_pp0_stage0_subdone,
@@ -15540,7 +15540,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1
   wire ap_clk;
   wire [6:0]\tmp_reg_4995_reg[8] ;
 
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0 top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0_U
+  top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0 top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0_U
        (.A(A),
         .PCOUT(PCOUT),
         .Q(Q),
@@ -15549,7 +15549,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1
         .\tmp_reg_4995_reg[8] (\tmp_reg_4995_reg[8] ));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0
+module top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0
    (PCOUT,
     \tmp_reg_4995_reg[8] ,
     ap_block_pp0_stage0_subdone,
@@ -15707,7 +15707,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DS
         .O(\tmp_reg_4995_reg[8] [0]));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1
+module top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1
    (P,
     A,
     ap_block_pp0_stage0_subdone,
@@ -15731,7 +15731,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1
   wire [6:0]p_reg_reg;
   wire [14:0]p_reg_reg_0;
 
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0 top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0_U
+  top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0 top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0_U
        (.A(A),
         .P(P),
         .Q(Q),
@@ -15741,7 +15741,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1
         .p_reg_reg_1(p_reg_reg_0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0
+module top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0
    (P,
     A,
     ap_block_pp0_stage0_subdone,
@@ -15860,7 +15860,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_
         .O(A));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1
+module top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1
    (\tmp_3_reg_5036_reg[8] ,
     SS,
     D,
@@ -15902,7 +15902,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1
   wire [8:0]p_reg_reg;
   wire [6:0]\tmp_3_reg_5036_reg[8] ;
 
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_15 top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_U
+  top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_15 top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_U
        (.A(A),
         .D(D),
         .PCOUT(PCOUT),
@@ -15919,7 +15919,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5
+module top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5
    (p_reg_reg,
     p_reg_reg_0,
     S,
@@ -15949,7 +15949,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5
   wire [0:0]p_reg_reg_0;
   wire [0:0]p_reg_reg_1;
 
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0 top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_U
+  top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0 top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_U
        (.A(A),
         .DI(DI),
         .P(P),
@@ -15961,7 +15961,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5
         .p_reg_reg_2(p_reg_reg_1));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0
+module top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0
    (p_reg_reg_0,
     p_reg_reg_1,
     S,
@@ -16104,7 +16104,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DS
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_15
+module top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_15
    (\tmp_3_reg_5036_reg[8] ,
     SS,
     D,
@@ -16466,7 +16466,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DS
         .O(\tmp_3_reg_5036_reg[8] [0]));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1
+module top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1
    (P,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -16587,7 +16587,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_6
+module top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_6
    (P,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -16708,7 +16708,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_6
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_7
+module top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_7
    (P,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -16828,7 +16828,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_7
         .UNDERFLOW(NLW_tmp_product_UNDERFLOW_UNCONNECTED));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_reg_ap_uint_10_s
+module top_design_v_tpg_0_1_reg_ap_uint_10_s
    (\ap_phi_reg_pp0_iter3_hHatch_reg_1326_reg[0] ,
     E,
     SR,
@@ -17285,7 +17285,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_reg_ap_uint_10_s
         .S({1'b0,1'b0,1'b0,\tpgPatternCrossHatch_unsigned_short_unsigned_short_unsigned_short_unsigned_sh[9]_i_15_n_3 }));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_reg_unsigned_short_s
+module top_design_v_tpg_0_1_reg_unsigned_short_s
    (\ap_CS_fsm_reg[1] ,
     \d_read_reg_24_reg[15]_0 ,
     ap_clk,
@@ -17443,7 +17443,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_reg_unsigned_short_s
         .O(\icmp_ln500_reg_701[0]_i_4_n_3 ));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both
+module top_design_v_tpg_0_1_regslice_both
    (m_axis_video_TREADY_int_regslice,
     m_axis_video_TVALID,
     D,
@@ -18315,7 +18315,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_regslice_both" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0
+module top_design_v_tpg_0_1_regslice_both__parameterized0
    (m_axis_video_TKEEP,
     SR,
     ap_clk,
@@ -18516,7 +18516,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_regslice_both" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0_0
+module top_design_v_tpg_0_1_regslice_both__parameterized0_0
    (m_axis_video_TSTRB,
     SR,
     ap_clk,
@@ -18717,7 +18717,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0_0
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_regslice_both" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1
+module top_design_v_tpg_0_1_regslice_both__parameterized1
    (ack_in_t_reg_0,
     data_p2,
     m_axis_video_TLAST,
@@ -18848,7 +18848,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_regslice_both" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1_1
+module top_design_v_tpg_0_1_regslice_both__parameterized1_1
    (ack_in_t_reg_0,
     data_p2,
     m_axis_video_TUSER,
@@ -18978,7 +18978,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1_1
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvideo_U0
+module top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvideo_U0
    (MultiPixStream2AXIvideo_U0_ap_start,
     start_for_MultiPixStream2AXIvideo_U0_full_n,
     SR,
@@ -19094,7 +19094,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvid
         .R(SR));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_start_for_tpgForeground_U0
+module top_design_v_tpg_0_1_start_for_tpgForeground_U0
    (tpgForeground_U0_ap_start,
     start_for_tpgForeground_U0_full_n,
     empty_n_reg_0,
@@ -19226,7 +19226,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_start_for_tpgForeground_U0
         .R(SR));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground
+module top_design_v_tpg_0_1_tpgBackground
    (\colorFormat_read_reg_749_reg[4] ,
     icmp_ln1947_fu_296_p2,
     start_once_reg,
@@ -21567,7 +21567,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground
         .I2(grp_reg_ap_uint_10_s_fu_1924_ap_start_reg),
         .I3(grp_reg_ap_uint_10_s_fu_1924_ap_start_reg0),
         .O(grp_reg_ap_uint_10_s_fu_1924_ap_start_reg_i_1_n_3));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2 grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2 grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432
        (.CO(icmp_ln563_fu_959_p2),
         .D(ap_NS_fsm[3:2]),
         .DPtpgBarArray_address0(DPtpgBarArray_address0),
@@ -24425,7 +24425,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2
    (\icmp_ln565_reg_4822_pp0_iter19_reg_reg[0]__0_0 ,
     ap_loop_exit_ready_pp0_iter21_reg,
     or_ln1494_reg_4946_pp0_iter19_reg,
@@ -26872,7 +26872,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
   wire [3:0]\NLW_yCount_reg[9]_i_6_O_UNCONNECTED ;
   wire [3:3]\NLW_zonePlateVAddr_reg[15]_i_3_CO_UNCONNECTED ;
 
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R DPtpgBarArray_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R DPtpgBarArray_U
        (.D({DPtpgBarArray_U_n_3,DPtpgBarArray_U_n_4}),
         .DPtpgBarArray_address0(DPtpgBarArray_address0),
         .E(DPtpgBarArray_ce0_local),
@@ -26888,17 +26888,17 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\q0_reg[2]_1 ({DPtpgBarArray_U_n_17,DPtpgBarArray_U_n_18}),
         .\q0_reg[6] (ap_enable_reg_pp0_iter22_reg_0),
         .tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_3_fu_258(tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_3_fu_258));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R DPtpgBarSelRgb_CEA_g_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R DPtpgBarSelRgb_CEA_g_U
        (.DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .Q(\q0_reg[2] [2]),
         .ap_clk(ap_clk),
         .\q0_reg[4]_0 (DPtpgBarSelRgb_CEA_g_U_n_3));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R DPtpgBarSelRgb_CEA_r_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R DPtpgBarSelRgb_CEA_r_U
        (.DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .Q(\q0_reg[2] [1]),
         .ap_clk(ap_clk),
         .\q0_reg[4]_0 (DPtpgBarSelRgb_CEA_r_U_n_3));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R DPtpgBarSelRgb_VESA_b_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R DPtpgBarSelRgb_VESA_b_U
        (.DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .ap_clk(ap_clk),
         .ap_predicate_pred2145_state22(ap_predicate_pred2145_state22),
@@ -26955,7 +26955,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\rampVal_loc_0_fu_306_reg[6] (\rampVal_loc_0_fu_306_reg[6] ),
         .trunc_ln565_9_reg_4841_pp0_iter20_reg(trunc_ln565_9_reg_4841_pp0_iter20_reg),
         .\trunc_ln565_9_reg_4841_pp0_iter20_reg_reg[0] (DPtpgBarSelRgb_VESA_b_U_n_11));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R DPtpgBarSelRgb_VESA_r_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R DPtpgBarSelRgb_VESA_r_U
        (.DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .Q(tmp_25_reg_5304[4]),
         .ap_clk(ap_clk),
@@ -27014,7 +27014,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .select_ln1188_read_reg_4734(select_ln1188_read_reg_4734),
         .trunc_ln565_9_reg_4841_pp0_iter20_reg(trunc_ln565_9_reg_4841_pp0_iter20_reg),
         .\trunc_ln565_9_reg_4841_pp0_iter20_reg_reg[0] (DPtpgBarSelRgb_VESA_r_U_n_10));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R DPtpgBarSelYuv_601_u_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R DPtpgBarSelYuv_601_u_U
        (.D({\q0_reg[5]_0 ,DPtpgBarArray_U_n_9}),
         .DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .Q(DPtpgBarSelYuv_601_u_U_n_7),
@@ -27046,7 +27046,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\q0_reg[3]_3 (\q0_reg[3] ),
         .\q0_reg[7]_0 (\q0_reg[2] ),
         .\q0_reg[7]_1 (DPtpgBarSelYuv_709_u_U_n_4));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R DPtpgBarSelYuv_601_v_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R DPtpgBarSelYuv_601_v_U
        (.DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .ap_clk(ap_clk),
         .\q0_reg[3]_0 (DPtpgBarSelYuv_601_v_U_n_5),
@@ -27056,7 +27056,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\q0_reg[4]_1 (\q0_reg[4] ),
         .\q0_reg[5]_0 (DPtpgBarSelYuv_601_v_U_n_4),
         .\q0_reg[5]_1 (\q0_reg[5] ));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R DPtpgBarSelYuv_601_y_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R DPtpgBarSelYuv_601_y_U
        (.D({DPtpgBarArray_U_n_3,DPtpgBarArray_U_n_4}),
         .DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .Q(\q0_reg[2] [0]),
@@ -27133,7 +27133,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .trunc_ln565_9_reg_4841_pp0_iter20_reg(trunc_ln565_9_reg_4841_pp0_iter20_reg),
         .\zext_ln1449_reg_4811_reg[0] (DPtpgBarSelYuv_601_y_U_n_8),
         .\zext_ln1449_reg_4811_reg[0]_0 (DPtpgBarSelYuv_601_y_U_n_9));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R DPtpgBarSelYuv_709_u_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R DPtpgBarSelYuv_709_u_U
        (.DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .Q(DPtpgBarSelYuv_709_v_U_n_14),
         .ap_block_pp0_stage0_subdone_grp0_done_reg_reg(ap_enable_reg_pp0_iter22_reg_0),
@@ -27151,7 +27151,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\q0_reg[7]_0 (DPtpgBarSelYuv_709_u_U_n_6),
         .\q0_reg[7]_1 (\q0_reg[2] ),
         .trunc_ln565_9_reg_4841_pp0_iter20_reg(trunc_ln565_9_reg_4841_pp0_iter20_reg));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R DPtpgBarSelYuv_709_v_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R DPtpgBarSelYuv_709_v_U
        (.D({DPtpgBarArray_U_n_17,DPtpgBarArray_U_n_18}),
         .DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .Q(DPtpgBarSelYuv_601_u_U_n_7),
@@ -27201,7 +27201,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\q0_reg[6]_4 (\q0_reg[6]_1 ),
         .\q0_reg[7]_0 (DPtpgBarSelYuv_709_v_U_n_4),
         .\q0_reg[7]_1 (\q0_reg[7]_1 ));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R DPtpgBarSelYuv_709_y_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R DPtpgBarSelYuv_709_y_U
        (.D({DPtpgBarArray_U_n_10,DPtpgBarArray_U_n_11,DPtpgBarArray_U_n_12,DPtpgBarArray_U_n_13,DPtpgBarArray_U_n_14}),
         .DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .ap_clk(ap_clk),
@@ -28605,7 +28605,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .CLK(ap_clk),
         .D(add_ln549_reg_4902_pp0_iter3_reg[9]),
         .Q(\add_ln549_reg_4902_pp0_iter9_reg_reg[9]_srl6_n_3 ));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1 am_addmul_16ns_1s_16ns_17_4_1_U20
+  top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1 am_addmul_16ns_1s_16ns_17_4_1_U20
        (.B(ap_sig_allocacmp_x_4),
         .P(d),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
@@ -31193,7 +31193,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .D(\barWidthMinSamples_read_reg_4662_reg[9]_0 [9]),
         .Q(barWidthMinSamples_read_reg_4662[9]),
         .R(1'b0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R blkYuv_1_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R blkYuv_1_U
        (.DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .ap_clk(ap_clk),
         .\outpix_0_1_0_0_0_load215_lcssa223_fu_246_reg[7] (\outpix_0_1_0_0_0_load215_lcssa223_fu_246[7]_i_19_n_3 ),
@@ -31203,7 +31203,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\outpix_0_1_0_0_0_load215_lcssa223_fu_246_reg[7]_3 (\outpix_0_1_0_0_0_load215_lcssa223_fu_246[7]_i_20_n_3 ),
         .\q0_reg[7]_0 (blkYuv_1_U_n_3),
         .\q0_reg[7]_1 (\q0_reg[7]_0 ));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_3 blkYuv_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_3 blkYuv_U
        (.DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .Q(patternId_val_read_reg_4700[1:0]),
         .ap_clk(ap_clk),
@@ -31212,7 +31212,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\q0_reg[7]_1 (redYuv_U_n_4),
         .\q0_reg[7]_2 (\colorFormat_val_read_reg_4756_reg[2]_0 ),
         .\q0_reg[7]_3 (\icmp_ln565_reg_4822_pp0_iter19_reg_reg[0]__0_0 ));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R bluYuv_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R bluYuv_U
        (.DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .Q(patternId_val_read_reg_4700[1:0]),
         .ap_clk(ap_clk),
@@ -31279,7 +31279,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .D(\colorFormat_val_read_reg_4756_reg[7]_0 [7]),
         .Q(colorFormat_val_read_reg_4756[7]),
         .R(1'b0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init_4 flow_control_loop_pipe_sequential_init_U
+  top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init_4 flow_control_loop_pipe_sequential_init_U
        (.B(ap_sig_allocacmp_x_4),
         .CO(icmp_ln565_fu_1556_p2250_in),
         .D(D),
@@ -31708,7 +31708,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .D(trunc_ln1285_1_fu_2547_p1),
         .Q(g_reg_5052[7]),
         .S(\g_reg_5052[7]_i_1_n_3 ));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R grnYuv_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R grnYuv_U
        (.DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .Q(patternId_val_read_reg_4700[1:0]),
         .ap_clk(ap_clk),
@@ -31756,7 +31756,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\q0_reg[7]_0 ({\q0_reg[7] [7],\q0_reg[7] [4],\q0_reg[7] [2]}),
         .\q0_reg[7]_1 (\q0_reg[7]_2 ),
         .trunc_ln565_9_reg_4841_pp0_iter19_reg(trunc_ln565_9_reg_4841_pp0_iter19_reg));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_reg_ap_uint_10_s grp_reg_ap_uint_10_s_fu_1924
+  top_design_v_tpg_0_1_reg_ap_uint_10_s grp_reg_ap_uint_10_s_fu_1924
        (.D(tpgPatternCrossHatch_unsigned_short_unsigned_short_unsigned_short_unsigned_sh1_in),
         .E(grp_reg_ap_uint_10_s_fu_1924_n_4),
         .Q(tpgPatternCrossHatch_unsigned_short_unsigned_short_unsigned_short_unsigned_sh),
@@ -33165,7 +33165,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .RSTREGB(1'b0),
         .WEA({1'b0,1'b0}),
         .WEBWE({1'b0,1'b0,1'b0,1'b0}));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1 mac_muladd_16s_16s_16s_16_4_1_U21
+  top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1 mac_muladd_16s_16s_16s_16_4_1_U21
        (.P({mac_muladd_16s_16s_16s_16_4_1_U21_n_3,mac_muladd_16s_16s_16s_16_4_1_U21_n_4,mac_muladd_16s_16s_16s_16_4_1_U21_n_5,mac_muladd_16s_16s_16s_16_4_1_U21_n_6,mac_muladd_16s_16s_16s_16_4_1_U21_n_7,mac_muladd_16s_16s_16s_16_4_1_U21_n_8,mac_muladd_16s_16s_16s_16_4_1_U21_n_9,mac_muladd_16s_16s_16s_16_4_1_U21_n_10,mac_muladd_16s_16s_16s_16_4_1_U21_n_11,mac_muladd_16s_16s_16s_16_4_1_U21_n_12,mac_muladd_16s_16s_16s_16_4_1_U21_n_13}),
         .Q(Q),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
@@ -33173,7 +33173,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .p_reg_reg(d),
         .p_reg_reg_0(p_reg_reg),
         .phi_mul_fu_478_reg(phi_mul_fu_478_reg));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1 mac_muladd_8ns_5ns_16ns_17_4_1_U28
+  top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1 mac_muladd_8ns_5ns_16ns_17_4_1_U28
        (.A(mac_muladd_8ns_5ns_16ns_17_4_1_U28_n_3),
         .D(r_2_fu_3363_p3),
         .P({mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_3,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_4,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_5,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_6,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_7,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_8,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_9,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_10,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_11,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_12,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_13,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_14,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_15,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_16,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_17,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_18}),
@@ -33186,7 +33186,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\r_2_reg_5328_reg[0] (ap_enable_reg_pp0_iter22_reg_0),
         .\r_2_reg_5328_reg[0]_0 (\icmp_ln1122_reg_4790_reg_n_3_[0] ),
         .r_reg_5030_pp0_iter19_reg(r_reg_5030_pp0_iter19_reg));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1 mac_muladd_8ns_6s_15ns_16_4_1_U27
+  top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1 mac_muladd_8ns_6s_15ns_16_4_1_U27
        (.A(mac_muladd_8ns_5ns_16ns_17_4_1_U28_n_3),
         .D(b_2_fu_3161_p3),
         .DI(mac_muladd_8ns_8s_16s_16_4_1_U26_n_21),
@@ -33205,21 +33205,21 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .bckgndYUV_full_n(bckgndYUV_full_n),
         .p_reg_reg(tmp_4_reg_5041),
         .\tmp_4_reg_5041_reg[8] (grp_fu_4590_p0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1 mac_muladd_8ns_7ns_13ns_15_4_1_U22
+  top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1 mac_muladd_8ns_7ns_13ns_15_4_1_U22
        (.A(mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_18),
         .P({mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_3,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_4,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_5,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_6,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_7,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_8,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_9,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_10,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_11,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_12,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_13,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_14,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_15,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_16,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_17}),
         .Q(tmp_reg_4995[8:7]),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
         .ap_clk(ap_clk),
         .p_reg_reg(grp_fu_4545_p0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1 mac_muladd_8ns_7s_16s_16_4_1_U23
+  top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1 mac_muladd_8ns_7s_16s_16_4_1_U23
        (.A(mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_18),
         .PCOUT({mac_muladd_8ns_7s_16s_16_4_1_U23_n_3,mac_muladd_8ns_7s_16s_16_4_1_U23_n_4,mac_muladd_8ns_7s_16s_16_4_1_U23_n_5,mac_muladd_8ns_7s_16s_16_4_1_U23_n_6,mac_muladd_8ns_7s_16s_16_4_1_U23_n_7,mac_muladd_8ns_7s_16s_16_4_1_U23_n_8,mac_muladd_8ns_7s_16s_16_4_1_U23_n_9,mac_muladd_8ns_7s_16s_16_4_1_U23_n_10,mac_muladd_8ns_7s_16s_16_4_1_U23_n_11,mac_muladd_8ns_7s_16s_16_4_1_U23_n_12,mac_muladd_8ns_7s_16s_16_4_1_U23_n_13,mac_muladd_8ns_7s_16s_16_4_1_U23_n_14,mac_muladd_8ns_7s_16s_16_4_1_U23_n_15,mac_muladd_8ns_7s_16s_16_4_1_U23_n_16,mac_muladd_8ns_7s_16s_16_4_1_U23_n_17,mac_muladd_8ns_7s_16s_16_4_1_U23_n_18,mac_muladd_8ns_7s_16s_16_4_1_U23_n_19,mac_muladd_8ns_7s_16s_16_4_1_U23_n_20,mac_muladd_8ns_7s_16s_16_4_1_U23_n_21,mac_muladd_8ns_7s_16s_16_4_1_U23_n_22,mac_muladd_8ns_7s_16s_16_4_1_U23_n_23,mac_muladd_8ns_7s_16s_16_4_1_U23_n_24,mac_muladd_8ns_7s_16s_16_4_1_U23_n_25,mac_muladd_8ns_7s_16s_16_4_1_U23_n_26,mac_muladd_8ns_7s_16s_16_4_1_U23_n_27,mac_muladd_8ns_7s_16s_16_4_1_U23_n_28,mac_muladd_8ns_7s_16s_16_4_1_U23_n_29,mac_muladd_8ns_7s_16s_16_4_1_U23_n_30,mac_muladd_8ns_7s_16s_16_4_1_U23_n_31,mac_muladd_8ns_7s_16s_16_4_1_U23_n_32,mac_muladd_8ns_7s_16s_16_4_1_U23_n_33,mac_muladd_8ns_7s_16s_16_4_1_U23_n_34,mac_muladd_8ns_7s_16s_16_4_1_U23_n_35,mac_muladd_8ns_7s_16s_16_4_1_U23_n_36,mac_muladd_8ns_7s_16s_16_4_1_U23_n_37,mac_muladd_8ns_7s_16s_16_4_1_U23_n_38,mac_muladd_8ns_7s_16s_16_4_1_U23_n_39,mac_muladd_8ns_7s_16s_16_4_1_U23_n_40,mac_muladd_8ns_7s_16s_16_4_1_U23_n_41,mac_muladd_8ns_7s_16s_16_4_1_U23_n_42,mac_muladd_8ns_7s_16s_16_4_1_U23_n_43,mac_muladd_8ns_7s_16s_16_4_1_U23_n_44,mac_muladd_8ns_7s_16s_16_4_1_U23_n_45,mac_muladd_8ns_7s_16s_16_4_1_U23_n_46,mac_muladd_8ns_7s_16s_16_4_1_U23_n_47,mac_muladd_8ns_7s_16s_16_4_1_U23_n_48,mac_muladd_8ns_7s_16s_16_4_1_U23_n_49,mac_muladd_8ns_7s_16s_16_4_1_U23_n_50}),
         .Q(tmp_reg_4995),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
         .ap_clk(ap_clk),
         .\tmp_reg_4995_reg[8] (grp_fu_4545_p0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1 mac_muladd_8ns_8ns_15ns_16_4_1_U24
+  top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1 mac_muladd_8ns_8ns_15ns_16_4_1_U24
        (.A(mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_19),
         .P({mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_3,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_4,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_5,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_6,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_7,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_8,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_9,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_10,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_11,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_12,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_13,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_14,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_15,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_16,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_17,mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_18}),
         .Q(tmp_3_reg_5036[8:7]),
@@ -33227,7 +33227,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .ap_clk(ap_clk),
         .p_reg_reg(grp_fu_4562_p0),
         .p_reg_reg_0({mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_3,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_4,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_5,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_6,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_7,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_8,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_9,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_10,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_11,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_12,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_13,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_14,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_15,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_16,mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_17}));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1 mac_muladd_8ns_8s_16s_16_4_1_U25
+  top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1 mac_muladd_8ns_8s_16s_16_4_1_U25
        (.A(mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_19),
         .D(g_2_fu_3155_p3),
         .PCOUT({mac_muladd_8ns_7s_16s_16_4_1_U23_n_3,mac_muladd_8ns_7s_16s_16_4_1_U23_n_4,mac_muladd_8ns_7s_16s_16_4_1_U23_n_5,mac_muladd_8ns_7s_16s_16_4_1_U23_n_6,mac_muladd_8ns_7s_16s_16_4_1_U23_n_7,mac_muladd_8ns_7s_16s_16_4_1_U23_n_8,mac_muladd_8ns_7s_16s_16_4_1_U23_n_9,mac_muladd_8ns_7s_16s_16_4_1_U23_n_10,mac_muladd_8ns_7s_16s_16_4_1_U23_n_11,mac_muladd_8ns_7s_16s_16_4_1_U23_n_12,mac_muladd_8ns_7s_16s_16_4_1_U23_n_13,mac_muladd_8ns_7s_16s_16_4_1_U23_n_14,mac_muladd_8ns_7s_16s_16_4_1_U23_n_15,mac_muladd_8ns_7s_16s_16_4_1_U23_n_16,mac_muladd_8ns_7s_16s_16_4_1_U23_n_17,mac_muladd_8ns_7s_16s_16_4_1_U23_n_18,mac_muladd_8ns_7s_16s_16_4_1_U23_n_19,mac_muladd_8ns_7s_16s_16_4_1_U23_n_20,mac_muladd_8ns_7s_16s_16_4_1_U23_n_21,mac_muladd_8ns_7s_16s_16_4_1_U23_n_22,mac_muladd_8ns_7s_16s_16_4_1_U23_n_23,mac_muladd_8ns_7s_16s_16_4_1_U23_n_24,mac_muladd_8ns_7s_16s_16_4_1_U23_n_25,mac_muladd_8ns_7s_16s_16_4_1_U23_n_26,mac_muladd_8ns_7s_16s_16_4_1_U23_n_27,mac_muladd_8ns_7s_16s_16_4_1_U23_n_28,mac_muladd_8ns_7s_16s_16_4_1_U23_n_29,mac_muladd_8ns_7s_16s_16_4_1_U23_n_30,mac_muladd_8ns_7s_16s_16_4_1_U23_n_31,mac_muladd_8ns_7s_16s_16_4_1_U23_n_32,mac_muladd_8ns_7s_16s_16_4_1_U23_n_33,mac_muladd_8ns_7s_16s_16_4_1_U23_n_34,mac_muladd_8ns_7s_16s_16_4_1_U23_n_35,mac_muladd_8ns_7s_16s_16_4_1_U23_n_36,mac_muladd_8ns_7s_16s_16_4_1_U23_n_37,mac_muladd_8ns_7s_16s_16_4_1_U23_n_38,mac_muladd_8ns_7s_16s_16_4_1_U23_n_39,mac_muladd_8ns_7s_16s_16_4_1_U23_n_40,mac_muladd_8ns_7s_16s_16_4_1_U23_n_41,mac_muladd_8ns_7s_16s_16_4_1_U23_n_42,mac_muladd_8ns_7s_16s_16_4_1_U23_n_43,mac_muladd_8ns_7s_16s_16_4_1_U23_n_44,mac_muladd_8ns_7s_16s_16_4_1_U23_n_45,mac_muladd_8ns_7s_16s_16_4_1_U23_n_46,mac_muladd_8ns_7s_16s_16_4_1_U23_n_47,mac_muladd_8ns_7s_16s_16_4_1_U23_n_48,mac_muladd_8ns_7s_16s_16_4_1_U23_n_49,mac_muladd_8ns_7s_16s_16_4_1_U23_n_50}),
@@ -33241,7 +33241,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\g_2_reg_5159_reg[7]_i_3 (zext_ln1303_fu_3074_p1),
         .p_reg_reg(tmp_3_reg_5036),
         .\tmp_3_reg_5036_reg[8] (grp_fu_4562_p0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5 mac_muladd_8ns_8s_16s_16_4_1_U26
+  top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5 mac_muladd_8ns_8s_16s_16_4_1_U26
        (.A({mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_19,grp_fu_4562_p0}),
         .DI(mac_muladd_8ns_8s_16s_16_4_1_U26_n_21),
         .P(mac_muladd_8ns_6s_15ns_16_4_1_U27_n_3),
@@ -33251,17 +33251,17 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .p_reg_reg({mac_muladd_8ns_8s_16s_16_4_1_U26_n_3,mac_muladd_8ns_8s_16s_16_4_1_U26_n_4,mac_muladd_8ns_8s_16s_16_4_1_U26_n_5,mac_muladd_8ns_8s_16s_16_4_1_U26_n_6,mac_muladd_8ns_8s_16s_16_4_1_U26_n_7,mac_muladd_8ns_8s_16s_16_4_1_U26_n_8,mac_muladd_8ns_8s_16s_16_4_1_U26_n_9,mac_muladd_8ns_8s_16s_16_4_1_U26_n_10,mac_muladd_8ns_8s_16s_16_4_1_U26_n_11,mac_muladd_8ns_8s_16s_16_4_1_U26_n_12,mac_muladd_8ns_8s_16s_16_4_1_U26_n_13,mac_muladd_8ns_8s_16s_16_4_1_U26_n_14,mac_muladd_8ns_8s_16s_16_4_1_U26_n_15,mac_muladd_8ns_8s_16s_16_4_1_U26_n_16,mac_muladd_8ns_8s_16s_16_4_1_U26_n_17}),
         .p_reg_reg_0(mac_muladd_8ns_8s_16s_16_4_1_U26_n_18),
         .p_reg_reg_1(mac_muladd_8ns_8s_16s_16_4_1_U26_n_20));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1 mul_11ns_13ns_23_1_1_U7
+  top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1 mul_11ns_13ns_23_1_1_U7
        (.A(trunc_ln565_11_reg_4853_pp0_iter9_reg),
         .P({mul_11ns_13ns_23_1_1_U7_n_3,mul_11ns_13ns_23_1_1_U7_n_4,mul_11ns_13ns_23_1_1_U7_n_5,mul_11ns_13ns_23_1_1_U7_n_6,mul_11ns_13ns_23_1_1_U7_n_7,mul_11ns_13ns_23_1_1_U7_n_8,mul_11ns_13ns_23_1_1_U7_n_9,mul_11ns_13ns_23_1_1_U7_n_10,mul_11ns_13ns_23_1_1_U7_n_11,mul_11ns_13ns_23_1_1_U7_n_12}),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
         .ap_clk(ap_clk));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_6 mul_11ns_13ns_23_1_1_U8
+  top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_6 mul_11ns_13ns_23_1_1_U8
        (.A({add_ln549_1_reg_4908_pp0_iter10_reg,add_ln549_reg_4902_pp0_iter10_reg[0]}),
         .P({mul_11ns_13ns_23_1_1_U8_n_3,mul_11ns_13ns_23_1_1_U8_n_4,mul_11ns_13ns_23_1_1_U8_n_5,mul_11ns_13ns_23_1_1_U8_n_6,mul_11ns_13ns_23_1_1_U8_n_7,mul_11ns_13ns_23_1_1_U8_n_8,mul_11ns_13ns_23_1_1_U8_n_9,mul_11ns_13ns_23_1_1_U8_n_10,mul_11ns_13ns_23_1_1_U8_n_11,mul_11ns_13ns_23_1_1_U8_n_12}),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
         .ap_clk(ap_clk));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_7 mul_11ns_13ns_23_1_1_U9
+  top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_7 mul_11ns_13ns_23_1_1_U9
        (.A(add_ln549_reg_4902_pp0_iter10_reg),
         .P({mul_11ns_13ns_23_1_1_U9_n_3,mul_11ns_13ns_23_1_1_U9_n_4,mul_11ns_13ns_23_1_1_U9_n_5,mul_11ns_13ns_23_1_1_U9_n_6,mul_11ns_13ns_23_1_1_U9_n_7,mul_11ns_13ns_23_1_1_U9_n_8,mul_11ns_13ns_23_1_1_U9_n_9,mul_11ns_13ns_23_1_1_U9_n_10,mul_11ns_13ns_23_1_1_U9_n_11,mul_11ns_13ns_23_1_1_U9_n_12}),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
@@ -37130,7 +37130,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .I4(ap_predicate_pred2213_state21),
         .I5(\rampVal_loc_0_fu_306_reg[7]_0 [7]),
         .O(\rampVal_loc_0_fu_306[7]_i_3_n_3 ));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R redYuv_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R redYuv_U
        (.DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .Q(patternId_val_read_reg_4700),
         .ap_clk(ap_clk),
@@ -38562,7 +38562,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .D(\tmp_reg_4995[8]_i_1_n_3 ),
         .Q(tmp_reg_4995[8]),
         .R(1'b0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_8 tpgBarSelRgb_b_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_8 tpgBarSelRgb_b_U
        (.DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .ap_clk(ap_clk),
         .\q0_reg[1]_0 (\q0_reg[1] ),
@@ -38572,7 +38572,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\reg_1468_reg[1] (ap_predicate_pred543_state22),
         .\reg_1468_reg[1]_0 (ap_predicate_pred547_state22),
         .\reg_1468_reg[1]_1 (ap_predicate_pred552_state22));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R tpgBarSelRgb_g_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R tpgBarSelRgb_g_U
        (.D({tpgBarSelRgb_g_U_n_4,tpgBarSelRgb_g_U_n_5,tpgBarSelRgb_g_U_n_6,tpgBarSelRgb_g_U_n_7}),
         .E(tpgBarSelRgb_g_ce0_local),
         .Q({tpgBarSelYuv_u_U_n_3,tpgBarSelYuv_u_U_n_4}),
@@ -38583,19 +38583,19 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\phi_ln1_reg_5350_reg[7] ({tpgBarSelYuv_v_U_n_3,tpgBarSelYuv_v_U_n_6}),
         .\q0_reg[1]_0 (tpgBarSelRgb_g_U_n_3),
         .\q0_reg[1]_1 (\q0_reg[1]_1 ));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_9 tpgBarSelRgb_r_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_9 tpgBarSelRgb_r_U
        (.D(phi_ln1418_fu_3383_p3),
         .Q({tpgBarSelYuv_y_U_n_3,tpgBarSelYuv_y_U_n_4,tpgBarSelYuv_y_U_n_5,tpgBarSelYuv_y_U_n_6,tpgBarSelYuv_y_U_n_7,tpgBarSelYuv_y_U_n_8,tpgBarSelYuv_y_U_n_9,tpgBarSelYuv_y_U_n_10}),
         .ap_clk(ap_clk),
         .\phi_ln1260_reg_5361_reg[7] (\icmp_ln1122_reg_4790_reg_n_3_[0] ),
         .\q0_reg[1]_0 (\q0_reg[1]_0 ),
         .\q0_reg[1]_1 (\q0_reg[1]_4 ));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R tpgBarSelYuv_u_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R tpgBarSelYuv_u_U
        (.E(tpgBarSelRgb_g_ce0_local),
         .Q({tpgBarSelYuv_u_U_n_3,tpgBarSelYuv_u_U_n_4}),
         .ap_clk(ap_clk),
         .\q0_reg[7]_0 (\q0_reg[7]_3 ));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R tpgBarSelYuv_v_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R tpgBarSelYuv_v_U
        (.D({tpgBarSelYuv_v_U_n_3,tpgBarSelYuv_v_U_n_4,tpgBarSelYuv_v_U_n_5,tpgBarSelYuv_v_U_n_6}),
         .E(tpgBarSelRgb_g_ce0_local),
         .ap_clk(ap_clk),
@@ -38612,7 +38612,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\q0_reg[7]_1 (ap_predicate_pred528_state22),
         .\q0_reg[7]_2 (ap_predicate_pred534_state22),
         .\q0_reg[7]_3 ({tpgTartanBarArray_U_n_18,tpgTartanBarArray_U_n_19}));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R tpgBarSelYuv_y_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R tpgBarSelYuv_y_U
        (.D({tpgCheckerBoardArray_U_n_4,tpgCheckerBoardArray_U_n_5,tpgTartanBarArray_U_n_3,tpgTartanBarArray_U_n_4,tpgTartanBarArray_U_n_5,tpgTartanBarArray_U_n_6,tpgTartanBarArray_U_n_7,tpgTartanBarArray_U_n_8}),
         .Q({tpgBarSelYuv_y_U_n_3,tpgBarSelYuv_y_U_n_4,tpgBarSelYuv_y_U_n_5,tpgBarSelYuv_y_U_n_6,tpgBarSelYuv_y_U_n_7,tpgBarSelYuv_y_U_n_8,tpgBarSelYuv_y_U_n_9,tpgBarSelYuv_y_U_n_10}),
         .ap_clk(ap_clk),
@@ -38622,7 +38622,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .ap_predicate_pred2123_state22(ap_predicate_pred2123_state22),
         .bckgndYUV_full_n(bckgndYUV_full_n),
         .\q0_reg[0]_0 (ap_enable_reg_pp0_iter22_reg_0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R tpgCheckerBoardArray_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R tpgCheckerBoardArray_U
        (.D({tpgCheckerBoardArray_U_n_4,tpgCheckerBoardArray_U_n_5}),
         .Q(\q0_reg[2]_0 [2:1]),
         .ap_clk(ap_clk),
@@ -40224,7 +40224,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .DI({1'b0,1'b0,1'b0,tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign[8]}),
         .O({\NLW_tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign_reg[9]_i_3_O_UNCONNECTED [3:2],tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign0_in[9:8]}),
         .S({1'b0,1'b0,\tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign[9]_i_4_n_3 ,\tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign[9]_i_5_n_3 }));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R tpgTartanBarArray_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R tpgTartanBarArray_U
        (.D({tpgTartanBarArray_U_n_3,tpgTartanBarArray_U_n_4,tpgTartanBarArray_U_n_5,tpgTartanBarArray_U_n_6,tpgTartanBarArray_U_n_7,tpgTartanBarArray_U_n_8}),
         .Q(\q0_reg[2]_0 ),
         .ap_clk(ap_clk),
@@ -40713,7 +40713,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .D(trunc_ln565_9_reg_4841_pp0_iter19_reg),
         .Q(trunc_ln565_9_reg_4841_pp0_iter20_reg),
         .R(1'b0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1 urem_11ns_3ns_2_15_1_U4
+  top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1 urem_11ns_3ns_2_15_1_U4
        (.A(trunc_ln565_11_reg_4853_pp0_iter9_reg[2]),
         .DI(trunc_ln565_11_reg_4853_pp0_iter2_reg),
         .I27(add_ln549_reg_4902_pp0_iter10_reg[1]),
@@ -40727,7 +40727,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\loop[5].remd_tmp_reg[6][0] (trunc_ln565_11_reg_4853_pp0_iter6_reg),
         .\loop[7].remd_tmp_reg[8][0] (trunc_ln565_11_reg_4853_pp0_iter8_reg[3]),
         .p_1_in(trunc_ln565_11_reg_4853_pp0_iter7_reg));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10 urem_11ns_3ns_2_15_1_U5
+  top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10 urem_11ns_3ns_2_15_1_U5
        (.A(add_ln549_1_reg_4908_pp0_iter10_reg[2:1]),
         .DI(add_ln549_1_reg_4908_pp0_iter3_reg),
         .Q(grp_fu_1912_p2),
@@ -40740,7 +40740,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\loop[7].remd_tmp_reg[8][0] (add_ln549_1_reg_4908_pp0_iter9_reg[3]),
         .p_1_in(add_ln549_1_reg_4908_pp0_iter8_reg),
         .trunc_ln565_9_reg_4841_pp0_iter12_reg(trunc_ln565_9_reg_4841_pp0_iter12_reg));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11 urem_11ns_3ns_2_15_1_U6
+  top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11 urem_11ns_3ns_2_15_1_U6
        (.A(add_ln549_reg_4902_pp0_iter10_reg[2:1]),
         .DI(add_ln549_reg_4902_pp0_iter3_reg),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
@@ -40982,7 +40982,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .D(\vHatch[0]_i_1_n_3 ),
         .Q(vHatch),
         .R(1'b0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R whiYuv_1_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R whiYuv_1_U
        (.DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .Q(patternId_val_read_reg_4700),
         .ap_clk(ap_clk),
@@ -41013,7 +41013,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .\phi_ln1_reg_5350_reg[0] (\q0_reg[7] [0]),
         .\phi_ln1_reg_5350_reg[4] (whiYuv_1_U_n_3),
         .\q0_reg[6]_0 (\q0_reg[6] ));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_12 whiYuv_U
+  top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_12 whiYuv_U
        (.DPtpgBarSelRgb_CEA_b_ce0_local(DPtpgBarSelRgb_CEA_b_ce0_local),
         .Q(patternId_val_read_reg_4700),
         .ap_clk(ap_clk),
@@ -42771,7 +42771,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R
    (D,
     Q,
     ap_enable_reg_pp0_iter22_reg,
@@ -42958,7 +42958,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R
    (\q0_reg[4]_0 ,
     DPtpgBarSelRgb_CEA_b_ce0_local,
     Q,
@@ -42981,7 +42981,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R
    (\q0_reg[4]_0 ,
     DPtpgBarSelRgb_CEA_b_ce0_local,
     Q,
@@ -43004,7 +43004,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R
    (\q0_reg[3]_0 ,
     ap_predicate_pred2328_state22_reg,
     \q0_reg[3]_1 ,
@@ -43191,7 +43191,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R
    (\q0_reg[4]_0 ,
     \q0_reg[5]_0 ,
     \q0_reg[3]_0 ,
@@ -43241,7 +43241,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R
    (\q0_reg[4]_0 ,
     \q0_reg[7]_0 ,
     grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432_outpix_0_2_0_0_0_load216_out_o,
@@ -43678,7 +43678,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R
    (\q0_reg[3]_0 ,
     ap_enable_reg_pp0_iter22_reg,
     \q0_reg[4]_0 ,
@@ -43780,7 +43780,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R
    (\q0_reg[1]_0 ,
     \q0_reg[7]_0 ,
     \q0_reg[6]_0 ,
@@ -44119,7 +44119,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R
    (\q0_reg[2]_0 ,
     DPtpgBarSelRgb_CEA_b_ce0_local,
     \sext_ln1162_cast_reg_4774_reg[7] ,
@@ -44421,7 +44421,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R
    (\q0_reg[7]_0 ,
     DPtpgBarSelRgb_CEA_b_ce0_local,
     \q0_reg[7]_1 ,
@@ -44471,7 +44471,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_3
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_3
    (\q0_reg[7]_0 ,
     DPtpgBarSelRgb_CEA_b_ce0_local,
     ap_clk,
@@ -44517,7 +44517,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R
    (\icmp_ln565_reg_4822_pp0_iter19_reg_reg[0]__0 ,
     \q0_reg[7]_0 ,
     \q0_reg[6]_0 ,
@@ -44651,7 +44651,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R
    (\patternId_val_read_reg_4700_reg[0] ,
     \colorFormat_val_read_reg_4756_reg[2] ,
     \q0_reg[7]_0 ,
@@ -44978,7 +44978,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R
    (\colorFormat_val_read_reg_4756_reg[0] ,
     \patternId_val_read_reg_4700_reg[4] ,
     \select_ln1122_reg_1310_reg[5] ,
@@ -45260,7 +45260,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R
    (\q0_reg[1]_0 ,
     grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432_outpix_0_2_0_0_0_load216_out_o,
     \rampVal_loc_0_fu_306_reg[6] ,
@@ -45595,7 +45595,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_8
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_8
    (\q0_reg[1]_0 ,
     \q0_reg[1]_1 ,
     \q0_reg[1]_2 ,
@@ -45643,7 +45643,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .O(\q0_reg[1]_1 ));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R
    (\q0_reg[1]_0 ,
     D,
     E,
@@ -45718,7 +45718,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R
    (\q0_reg[1]_0 ,
     ap_predicate_pred2193_state22_reg,
     \q0_reg[1]_1 ,
@@ -46094,7 +46094,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_9
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_9
    (\q0_reg[1]_0 ,
     D,
     \q0_reg[1]_1 ,
@@ -46187,7 +46187,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R
    (Q,
     E,
     \q0_reg[7]_0 ,
@@ -46216,7 +46216,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R
    (D,
     E,
     \q0_reg[1] ,
@@ -46312,7 +46312,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R
    (Q,
     \q0_reg[0]_0 ,
     bckgndYUV_full_n,
@@ -46403,7 +46403,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R
    (\q0_reg[0]_0 ,
     D,
     tpgCheckerBoardArray_ce0_local,
@@ -46469,7 +46469,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R
    (D,
     tpgCheckerBoardArray_ce0_local,
     tpgBarSelRgb_r_address0_local,
@@ -46733,7 +46733,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R
    (\phi_ln1_reg_5350_reg[4] ,
     ap_enable_reg_pp0_iter21_reg_rep,
     ap_enable_reg_pp0_iter21_reg_rep_0,
@@ -46914,7 +46914,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_12
+module top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_12
    (\patternId_val_read_reg_4700_reg[2] ,
     \select_ln1122_reg_1310_reg[6] ,
     \q0_reg[6]_0 ,
@@ -47100,7 +47100,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground
+module top_design_v_tpg_0_1_tpgForeground
    (Q,
     CO,
     start_once_reg,
@@ -48622,7 +48622,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground
         .I1(Q),
         .I2(CO),
         .O(empty_n_reg_0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2 grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_182
+  top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2 grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_182
        (.CO(CO),
         .D(D),
         .E(E),
@@ -49987,7 +49987,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground
         .R(\width_val_read_reg_428[15]_i_1_n_3 ));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2
+module top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2
    (empty_n_reg,
     D,
     p_9_in,
@@ -52335,7 +52335,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LO
         .I4(push_0),
         .I5(bckgndYUV_empty_n),
         .O(\icmp_ln774_reg_821_pp0_iter1_reg_reg[0]_0 ));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init flow_control_loop_pipe_sequential_init_U
+  top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init flow_control_loop_pipe_sequential_init_U
        (.CO(icmp_ln774_fu_371_p2),
         .D(ap_sig_allocacmp_x_1),
         .DI(flow_control_loop_pipe_sequential_init_U_n_48),
@@ -53775,7 +53775,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LO
         .D(flow_control_loop_pipe_sequential_init_U_n_11),
         .Q(vDir),
         .R(1'b0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R whiYuv_2_U
+  top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R whiYuv_2_U
        (.D(p_1_in[6:4]),
         .Q(patternId_val_read_reg_771),
         .ap_clk(ap_clk),
@@ -54052,7 +54052,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LO
         .R(flow_control_loop_pipe_sequential_init_U_n_9));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R
+module top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R
    (D,
     \patternId_val_read_reg_771_reg[7] ,
     \colorFormat_val_read_reg_745_reg[6] ,
@@ -54196,7 +54196,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LO
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1
+module top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1
    (Q,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -54251,7 +54251,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1
         .D(remd[1]),
         .Q(Q[1]),
         .R(1'b0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_14 top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_u
+  top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_14 top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_u
        (.A(A),
         .DI(DI),
         .I27(I27),
@@ -54268,7 +54268,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10
+module top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10
    (Q,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -54320,7 +54320,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10
         .D(remd[1]),
         .Q(Q[1]),
         .R(1'b0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_13 top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_u
+  top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_13 top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_u
        (.A(A),
         .DI(DI),
         .Q(remd),
@@ -54336,7 +54336,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11
+module top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11
    (dout,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -54388,7 +54388,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11
         .D(remd[1]),
         .Q(dout[1]),
         .R(1'b0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_u
+  top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_u
        (.A(A),
         .DI(DI),
         .Q(remd),
@@ -54403,7 +54403,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11
         .trunc_ln565_9_reg_4841_pp0_iter12_reg(trunc_ln565_9_reg_4841_pp0_iter12_reg));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider
+module top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider
    (Q,
     ap_block_pp0_stage0_subdone,
     A,
@@ -55917,7 +55917,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_13
+module top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_13
    (Q,
     ap_block_pp0_stage0_subdone,
     A,
@@ -57431,7 +57431,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_13
 endmodule
 
 (* ORIG_REF_NAME = "top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_14
+module top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_14
    (Q,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -58945,7 +58945,7 @@ endmodule
 (* ap_ST_fsm_state1 = "6'b000001" *) (* ap_ST_fsm_state2 = "6'b000010" *) (* ap_ST_fsm_state3 = "6'b000100" *) 
 (* ap_ST_fsm_state4 = "6'b001000" *) (* ap_ST_fsm_state5 = "6'b010000" *) (* ap_ST_fsm_state6 = "6'b100000" *) 
 (* hls_module = "yes" *) 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg
+module top_design_v_tpg_0_1_v_tpg
    (ap_clk,
     ap_rst_n,
     fid_in,
@@ -59333,7 +59333,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg
   assign s_axi_CTRL_RDATA[15:0] = \^s_axi_CTRL_RDATA [15:0];
   assign s_axi_CTRL_RRESP[1] = \<const0> ;
   assign s_axi_CTRL_RRESP[0] = \<const0> ;
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_CTRL_s_axi CTRL_s_axi_U
+  top_design_v_tpg_0_1_CTRL_s_axi CTRL_s_axi_U
        (.D(ap_NS_fsm[1]),
         .\FSM_onehot_rstate_reg[1]_0 (s_axi_CTRL_ARREADY),
         .\FSM_onehot_wstate_reg[1]_0 (s_axi_CTRL_AWREADY),
@@ -61152,13 +61152,13 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg
         .D(field_id[9]),
         .Q(field_id_read_reg_724[9]),
         .R(1'b0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_reg_unsigned_short_s grp_reg_unsigned_short_s_fu_616
+  top_design_v_tpg_0_1_reg_unsigned_short_s grp_reg_unsigned_short_s_fu_616
        (.Q(ap_CS_fsm_state2),
         .\ap_CS_fsm_reg[1] (grp_reg_unsigned_short_s_fu_616_n_3),
         .ap_clk(ap_clk),
         .\d_read_reg_24_reg[15]_0 (bck_motion_en),
         .\icmp_ln500_reg_701_reg[0] (\icmp_ln500_reg_701_reg_n_3_[0] ));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpgHlsDataFlow grp_v_tpgHlsDataFlow_fu_440
+  top_design_v_tpg_0_1_v_tpgHlsDataFlow grp_v_tpgHlsDataFlow_fu_440
        (.D({grp_v_tpgHlsDataFlow_fu_440_n_8,grp_v_tpgHlsDataFlow_fu_440_n_9,grp_v_tpgHlsDataFlow_fu_440_n_10}),
         .Q(motionSpeed_read_reg_744),
         .SR(ap_rst_n_inv),
@@ -61660,7 +61660,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg
         .D(ovrlayId[7]),
         .Q(ovrlayId_read_reg_734[7]),
         .R(1'b0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both regslice_both_m_axis_video_V_data_V_U
+  top_design_v_tpg_0_1_regslice_both regslice_both_m_axis_video_V_data_V_U
        (.D({ap_NS_fsm[5],ap_NS_fsm[0]}),
         .Q(m_axis_video_TDATA_reg),
         .SR(ap_rst_n_inv),
@@ -61677,14 +61677,14 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg
         .m_axis_video_TREADY(m_axis_video_TREADY),
         .m_axis_video_TREADY_int_regslice(m_axis_video_TREADY_int_regslice),
         .m_axis_video_TVALID(m_axis_video_TVALID));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0 regslice_both_m_axis_video_V_keep_V_U
+  top_design_v_tpg_0_1_regslice_both__parameterized0 regslice_both_m_axis_video_V_keep_V_U
        (.D({grp_v_tpgHlsDataFlow_fu_440_n_8,grp_v_tpgHlsDataFlow_fu_440_n_9,grp_v_tpgHlsDataFlow_fu_440_n_10}),
         .SR(ap_rst_n_inv),
         .ap_clk(ap_clk),
         .load_p2(load_p2),
         .m_axis_video_TKEEP(m_axis_video_TKEEP),
         .m_axis_video_TREADY(m_axis_video_TREADY));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1 regslice_both_m_axis_video_V_last_V_U
+  top_design_v_tpg_0_1_regslice_both__parameterized1 regslice_both_m_axis_video_V_last_V_U
        (.SR(ap_rst_n_inv),
         .ack_in_t_reg_0(regslice_both_m_axis_video_V_last_V_U_n_3),
         .ap_clk(ap_clk),
@@ -61695,14 +61695,14 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg
         .m_axis_video_TLAST(m_axis_video_TLAST),
         .m_axis_video_TLAST_reg(m_axis_video_TLAST_reg),
         .m_axis_video_TREADY(m_axis_video_TREADY));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0_0 regslice_both_m_axis_video_V_strb_V_U
+  top_design_v_tpg_0_1_regslice_both__parameterized0_0 regslice_both_m_axis_video_V_strb_V_U
        (.D({grp_v_tpgHlsDataFlow_fu_440_n_11,grp_v_tpgHlsDataFlow_fu_440_n_12,grp_v_tpgHlsDataFlow_fu_440_n_13}),
         .SR(ap_rst_n_inv),
         .ap_clk(ap_clk),
         .load_p2(load_p2),
         .m_axis_video_TREADY(m_axis_video_TREADY),
         .m_axis_video_TSTRB(m_axis_video_TSTRB));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1_1 regslice_both_m_axis_video_V_user_V_U
+  top_design_v_tpg_0_1_regslice_both__parameterized1_1 regslice_both_m_axis_video_V_user_V_U
        (.SR(ap_rst_n_inv),
         .ack_in_t_reg_0(regslice_both_m_axis_video_V_user_V_U_n_3),
         .ap_clk(ap_clk),
@@ -62335,7 +62335,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg
         .R(1'b0));
 endmodule
 
-module top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpgHlsDataFlow
+module top_design_v_tpg_0_1_v_tpgHlsDataFlow
    (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TLAST,
     grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TUSER,
     load_p2,
@@ -62550,7 +62550,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpgHlsDataFlow
   wire [2:0]\trunc_ln1247_reg_1315_reg[2] ;
   wire [15:0]\width_val_read_reg_428_reg[15] ;
 
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo MultiPixStream2AXIvideo_U0
+  top_design_v_tpg_0_1_MultiPixStream2AXIvideo MultiPixStream2AXIvideo_U0
        (.CO(icmp_ln979_fu_282_p2),
         .D(add_ln994_fu_201_p2),
         .E(MultiPixStream2AXIvideo_U0_n_7),
@@ -62602,7 +62602,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpgHlsDataFlow
         .\tmp_i_reg_454_reg[23] (\tmp_i_reg_454_reg[23] ),
         .\tmp_i_reg_454_reg[23]_0 (\tmp_i_reg_454_reg[23]_0 ),
         .\width_val7_read_reg_403_reg[12]_0 (\width_val_read_reg_428_reg[15] [12:0]));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S bckgndYUV_U
+  top_design_v_tpg_0_1_fifo_w24_d16_S bckgndYUV_U
        (.D(tpgForeground_U0_n_7),
         .E(tpgForeground_U0_n_9),
         .Q(bckgndYUV_num_data_valid),
@@ -62621,7 +62621,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpgHlsDataFlow
         .out(bckgndYUV_dout),
         .p_9_in(p_9_in_1),
         .push(push));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_2 ovrlayYUV_U
+  top_design_v_tpg_0_1_fifo_w24_d16_S_2 ovrlayYUV_U
        (.E(MultiPixStream2AXIvideo_U0_n_9),
         .SR(SR),
         .\addr_reg[0]_0 (MultiPixStream2AXIvideo_U0_n_7),
@@ -62636,7 +62636,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpgHlsDataFlow
         .ovrlayYUV_full_n(ovrlayYUV_full_n),
         .p_9_in(p_9_in),
         .push(push_0));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvideo_U0 start_for_MultiPixStream2AXIvideo_U0_U
+  top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvideo_U0 start_for_MultiPixStream2AXIvideo_U0_U
        (.CO(icmp_ln979_fu_282_p2),
         .MultiPixStream2AXIvideo_U0_ap_start(MultiPixStream2AXIvideo_U0_ap_start),
         .Q(ap_CS_fsm_state2),
@@ -62647,7 +62647,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpgHlsDataFlow
         .start_for_MultiPixStream2AXIvideo_U0_full_n(start_for_MultiPixStream2AXIvideo_U0_full_n),
         .start_once_reg(start_once_reg_2),
         .tpgForeground_U0_ap_start(tpgForeground_U0_ap_start));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_start_for_tpgForeground_U0 start_for_tpgForeground_U0_U
+  top_design_v_tpg_0_1_start_for_tpgForeground_U0 start_for_tpgForeground_U0_U
        (.CO(icmp_ln772_fu_337_p2),
         .Q(ap_CS_fsm_state2_3),
         .SR(SR),
@@ -62661,7 +62661,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpgHlsDataFlow
         .start_once_reg(start_once_reg),
         .start_once_reg_0(start_once_reg_2),
         .tpgForeground_U0_ap_start(tpgForeground_U0_ap_start));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground tpgBackground_U0
+  top_design_v_tpg_0_1_tpgBackground tpgBackground_U0
        (.D(add_ln994_fu_201_p2),
         .Q(Q),
         .SR(SR),
@@ -62694,7 +62694,7 @@ module top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpgHlsDataFlow
         .start_once_reg_reg_0(tpgBackground_U0_n_8),
         .\trunc_ln1247_reg_1315_reg[2]_0 (\trunc_ln1247_reg_1315_reg[2] ),
         .\width_val_read_reg_1216_reg[15]_0 (\width_val_read_reg_428_reg[15] ));
-  top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground tpgForeground_U0
+  top_design_v_tpg_0_1_tpgForeground tpgForeground_U0
        (.CO(icmp_ln772_fu_337_p2),
         .D(tpgForeground_U0_n_7),
         .E(tpgForeground_U0_n_9),

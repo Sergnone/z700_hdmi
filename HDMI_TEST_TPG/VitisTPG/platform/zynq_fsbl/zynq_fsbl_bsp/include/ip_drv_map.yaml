@@ -67,6 +67,9 @@ ps7_uart_1:
 ps7_xadc_0:
 - ps7_xadc
 - xadcps
+v_tc_0:
+- v_tc
+- vtc
 v_tpg_0:
 - v_tpg
 - v_tpg

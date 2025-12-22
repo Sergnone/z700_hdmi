@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 5,
-    "calls": "9 7",
+    "calls": "4 2",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_tpg.cpp",
@@ -19,73 +19,6 @@
     "total_instructions": 1467
   },
   "1": {
-    "basicblocks": 27,
-    "calls": "3",
-    "control_depth": 0,
-    "def_use_depth": 4,
-    "file": "v_tpg.cpp",
-    "fileloc": 1437,
-    "instructions": 108,
-    "loads": {
-      "G": 5,
-      "L": 1
-    },
-    "memory_accesses": 0,
-    "name": "tpgPatternCrossHatch",
-    "stores": {
-      "G": 11,
-      "L": 4
-    },
-    "total_instructions": 110
-  },
-  "2": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
-    "memory_accesses": 0,
-    "name": "reg<int>",
-    "total_instructions": 1
-  },
-  "3": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 2,
-    "memory_accesses": 1,
-    "name": "reg<ap_uint<10> >",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 2
-  },
-  "4": {
-    "basicblocks": 15,
-    "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 6,
-    "file": "v_tpg.cpp",
-    "fileloc": 919,
-    "instructions": 168,
-    "loads": {
-      "G": 3,
-      "L": 7
-    },
-    "memory_accesses": 26,
-    "name": "MultiPixStream2AXIvideo",
-    "stores": {
-      "G": 2,
-      "L": 16
-    },
-    "total_instructions": 214
-  },
-  "5": {
     "basicblocks": 36,
     "calls": "",
     "control_depth": 5,
@@ -105,28 +38,9 @@
     },
     "total_instructions": 215
   },
-  "6": {
-    "basicblocks": 131,
-    "calls": "2 1 8",
-    "control_depth": 4,
-    "def_use_depth": 22,
-    "file": "v_tpg.cpp",
-    "fileloc": 536,
-    "instructions": 666,
-    "loads": {
-      "G": 65,
-      "L": 6
-    },
-    "memory_accesses": 113,
-    "name": "tpgBackground",
-    "stores": {
-      "G": 41
-    },
-    "total_instructions": 933
-  },
-  "7": {
+  "2": {
     "basicblocks": 1,
-    "calls": "6 5 4",
+    "calls": "7 1 6",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "v_tpg.cpp",
@@ -136,7 +50,31 @@
     "name": "v_tpgHlsDataFlow",
     "total_instructions": 1372
   },
-  "8": {
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "memory_accesses": 0,
+    "name": "reg<int>",
+    "total_instructions": 1
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "memory_accesses": 0,
+    "name": "reg<unsigned short>",
+    "total_instructions": 1
+  },
+  "5": {
     "basicblocks": 29,
     "calls": "",
     "control_depth": 0,
@@ -155,6 +93,65 @@
     },
     "total_instructions": 135
   },
+  "6": {
+    "basicblocks": 15,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 6,
+    "file": "v_tpg.cpp",
+    "fileloc": 919,
+    "instructions": 168,
+    "loads": {
+      "G": 3,
+      "L": 7
+    },
+    "memory_accesses": 26,
+    "name": "MultiPixStream2AXIvideo",
+    "stores": {
+      "G": 2,
+      "L": 16
+    },
+    "total_instructions": 214
+  },
+  "7": {
+    "basicblocks": 131,
+    "calls": "3 8 5",
+    "control_depth": 4,
+    "def_use_depth": 22,
+    "file": "v_tpg.cpp",
+    "fileloc": 536,
+    "instructions": 666,
+    "loads": {
+      "G": 65,
+      "L": 6
+    },
+    "memory_accesses": 113,
+    "name": "tpgBackground",
+    "stores": {
+      "G": 41
+    },
+    "total_instructions": 933
+  },
+  "8": {
+    "basicblocks": 27,
+    "calls": "9",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "v_tpg.cpp",
+    "fileloc": 1437,
+    "instructions": 108,
+    "loads": {
+      "G": 5,
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "tpgPatternCrossHatch",
+    "stores": {
+      "G": 11,
+      "L": 4
+    },
+    "total_instructions": 110
+  },
   "9": {
     "basicblocks": 1,
     "calls": "",
@@ -162,9 +159,12 @@
     "def_use_depth": 0,
     "file": "x_hls_utils.h",
     "fileloc": 222,
-    "instructions": 1,
-    "memory_accesses": 0,
-    "name": "reg<unsigned short>",
-    "total_instructions": 1
+    "instructions": 2,
+    "memory_accesses": 1,
+    "name": "reg<ap_uint<10> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2
   }
 }

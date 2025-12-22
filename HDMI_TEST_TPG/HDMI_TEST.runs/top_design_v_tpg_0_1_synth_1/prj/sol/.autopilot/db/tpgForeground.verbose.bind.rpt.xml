@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'tpgForeground'" level="0">
-<item name = "Date">Fri Dec 19 16:54:37 2025
+<item name = "Date">Mon Dec 22 19:21:25 2025
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 5.607 ns, 2.70 ns</column>
+<column name="ap_clk">6.75 ns, 4.388 ns, 1.82 ns</column>
 </table>
 </item>
 </section>
@@ -24,19 +24,19 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1, 4295163901, 10.000 ns, 42.952 sec, 1, 4295163901, no</column>
+<column name="">1, 4295229436, 6.750 ns, 28.993 sec, 1, 4295229436, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_182">tpgForeground_Pipeline_VITIS_LOOP_774_2, 2, 65538, 20.000 ns, 0.655 ms, 0, 0, loop pipeline stp</column>
+<column name="grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_182">tpgForeground_Pipeline_VITIS_LOOP_774_2, 2, 65539, 13.500 ns, 0.442 ms, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_772_1">0, 4295163900, 4 ~ 65540, -, -, 0 ~ 65535, no</column>
+<column name="- VITIS_LOOP_772_1">0, 4295229435, 4 ~ 65541, -, -, 0 ~ 65535, no</column>
 </table>
 </item>
 </section>

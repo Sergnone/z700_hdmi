@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'tpgForeground'
 ================================================================
-* Date:           Fri Dec 19 16:54:38 2025
+* Date:           Mon Dec 22 19:21:25 2025
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -17,20 +17,20 @@
 ================================================================
 + Timing: 
     * Summary: 
-    +--------+----------+----------+------------+
-    |  Clock |  Target  | Estimated| Uncertainty|
-    +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  5.607 ns|     2.70 ns|
-    +--------+----------+----------+------------+
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.75 ns|  4.388 ns|     1.82 ns|
+    +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+------------+-----------+------------+-----+------------+---------+
-    |   Latency (cycles)   |   Latency (absolute)   |     Interval     | Pipeline|
-    |   min   |     max    |    min    |     max    | min |     max    |   Type  |
-    +---------+------------+-----------+------------+-----+------------+---------+
-    |        1|  4295163901|  10.000 ns|  42.952 sec|    1|  4295163901|       no|
-    +---------+------------+-----------+------------+-----+------------+---------+
+    +---------+------------+----------+------------+-----+------------+---------+
+    |   Latency (cycles)   |   Latency (absolute)  |     Interval     | Pipeline|
+    |   min   |     max    |    min   |     max    | min |     max    |   Type  |
+    +---------+------------+----------+------------+-----+------------+---------+
+    |        1|  4295229436|  6.750 ns|  28.993 sec|    1|  4295229436|       no|
+    +---------+------------+----------+------------+-----+------------+---------+
 
     + Detail: 
         * Instance: 
@@ -38,7 +38,7 @@
         |                                                    |                                         |  Latency (cycles) |  Latency (absolute)  |  Interval |      Pipeline     |
         |                      Instance                      |                  Module                 |   min   |   max   |    min    |    max   | min | max |        Type       |
         +----------------------------------------------------+-----------------------------------------+---------+---------+-----------+----------+-----+-----+-------------------+
-        |grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_182  |tpgForeground_Pipeline_VITIS_LOOP_774_2  |        2|    65538|  20.000 ns|  0.655 ms|    0|    0|  loop pipeline stp|
+        |grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_182  |tpgForeground_Pipeline_VITIS_LOOP_774_2  |        2|    65539|  13.500 ns|  0.442 ms|    0|    0|  loop pipeline stp|
         +----------------------------------------------------+-----------------------------------------+---------+---------+-----------+----------+-----+-----+-------------------+
 
         * Loop: 
@@ -46,7 +46,7 @@
         |                    |   Latency (cycles)   | Iteration |  Initiation Interval  |    Trip   |          |
         |      Loop Name     |   min   |     max    |  Latency  |  achieved |   target  |   Count   | Pipelined|
         +--------------------+---------+------------+-----------+-----------+-----------+-----------+----------+
-        |- VITIS_LOOP_772_1  |        0|  4295163900|  4 ~ 65540|          -|          -|  0 ~ 65535|        no|
+        |- VITIS_LOOP_772_1  |        0|  4295229435|  4 ~ 65541|          -|          -|  0 ~ 65535|        no|
         +--------------------+---------+------------+-----------+-----------+-----------+-----------+----------+
 
 
@@ -61,12 +61,12 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       0|    108|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        0|    -|     174|    574|    -|
+|Instance         |        0|    -|     265|    614|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       0|     62|    -|
 |Register         |        -|    -|     286|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|     460|    744|    0|
+|Total            |        0|    0|     551|    784|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
@@ -78,9 +78,9 @@
     +----------------------------------------------------+-----------------------------------------+---------+----+-----+-----+-----+
     |                      Instance                      |                  Module                 | BRAM_18K| DSP|  FF | LUT | URAM|
     +----------------------------------------------------+-----------------------------------------+---------+----+-----+-----+-----+
-    |grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_182  |tpgForeground_Pipeline_VITIS_LOOP_774_2  |        0|   0|  174|  574|    0|
+    |grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_182  |tpgForeground_Pipeline_VITIS_LOOP_774_2  |        0|   0|  265|  614|    0|
     +----------------------------------------------------+-----------------------------------------+---------+----+-----+-----+-----+
-    |Total                                               |                                         |        0|   0|  174|  574|    0|
+    |Total                                               |                                         |        0|   0|  265|  614|    0|
     +----------------------------------------------------+-----------------------------------------+---------+----+-----+-----+-----+
 
     * DSP: 
@@ -295,13 +295,13 @@ ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%store_ln1901 = store i16 %boxVCoor
 ST_1 : Operation 50 [1/1] (1.29ns)   --->   "%store_ln763 = store i16 0, i16 %y" [prj/sol/.autopilot/db/v_tpg.cpp:763]   --->   Operation 50 'store' 'store_ln763' <Predicate = true> <Delay = 1.29>
 ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%br_ln772 = br void %VITIS_LOOP_774_2" [prj/sol/.autopilot/db/v_tpg.cpp:772]   --->   Operation 51 'br' 'br_ln772' <Predicate = true> <Delay = 0.00>
 
-State 2 <SV = 1> <Delay = 5.24>
+State 2 <SV = 1> <Delay = 4.38>
 ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%y_1 = load i16 %y" [prj/sol/.autopilot/db/v_tpg.cpp:772]   --->   Operation 52 'load' 'y_1' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 53 [1/1] (1.54ns)   --->   "%icmp_ln772 = icmp_eq  i16 %y_1, i16 %height_val_read" [prj/sol/.autopilot/db/v_tpg.cpp:772]   --->   Operation 53 'icmp' 'icmp_ln772' <Predicate = true> <Delay = 1.54> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 54 [1/1] (1.54ns)   --->   "%y_2 = add i16 %y_1, i16 1" [prj/sol/.autopilot/db/v_tpg.cpp:772]   --->   Operation 54 'add' 'y_2' <Predicate = true> <Delay = 1.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%br_ln772 = br i1 %icmp_ln772, void %for.body6.lr.ph, void %for.end18" [prj/sol/.autopilot/db/v_tpg.cpp:772]   --->   Operation 55 'br' 'br_ln772' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 56 [1/1] (1.54ns)   --->   "%icmp_ln1963 = icmp_eq  i16 %y_1, i16 %crossHairY_val_read" [prj/sol/.autopilot/db/v_tpg.cpp:1963->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 56 'icmp' 'icmp_ln1963' <Predicate = (!icmp_ln772)> <Delay = 1.54> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 57 [2/2] (3.69ns)   --->   "%call_ln1894 = call void @tpgForeground_Pipeline_VITIS_LOOP_774_2, i9 %shl_ln, i8 %maskId_val_read, i16 %width_val_read, i8 %boxColorB_val_read, i8 %select_ln1977, i8 %boxColorR_val_read, i1 %and_ln1989, i1 %and_ln1991, i1 %and_ln1993, i24 %ovrlayYUV, i24 %bckgndYUV, i8 %patternId_val_read, i16 %boxSize_val_read, i16 %y_1, i16 %sub_ln1882, i8 %motionSpeed_val_read, i16 %sub_ln1881, i1 %icmp_ln1947, i8 %boxColorG_val_read, i16 %crossHairX_val_read, i1 %icmp_ln1963, i8 %colorFormat_val_read, i16 %boxHCoord_loc_0, i16 %boxVCoord_loc_0, i16 %boxVCoord, i1 %vDir, i16 %boxHCoord, i1 %hDir, i8 %whiYuv_2" [prj/sol/.autopilot/db/v_tpg.cpp:1894->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 57 'call' 'call_ln1894' <Predicate = (!icmp_ln772)> <Delay = 3.69> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 57 [2/2] (2.84ns)   --->   "%call_ln1894 = call void @tpgForeground_Pipeline_VITIS_LOOP_774_2, i9 %shl_ln, i8 %maskId_val_read, i16 %width_val_read, i8 %boxColorB_val_read, i8 %select_ln1977, i8 %boxColorR_val_read, i1 %and_ln1989, i1 %and_ln1991, i1 %and_ln1993, i24 %ovrlayYUV, i24 %bckgndYUV, i8 %patternId_val_read, i16 %boxSize_val_read, i16 %y_1, i16 %sub_ln1882, i8 %motionSpeed_val_read, i16 %sub_ln1881, i1 %icmp_ln1947, i8 %boxColorG_val_read, i16 %crossHairX_val_read, i1 %icmp_ln1963, i8 %colorFormat_val_read, i16 %boxHCoord_loc_0, i16 %boxVCoord_loc_0, i16 %boxVCoord, i1 %vDir, i16 %boxHCoord, i1 %hDir, i8 %whiYuv_2" [prj/sol/.autopilot/db/v_tpg.cpp:1894->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 57 'call' 'call_ln1894' <Predicate = (!icmp_ln772)> <Delay = 2.84> <CoreType = "Generic">   --->   Generic Core
 ST_2 : Operation 58 [1/1] (1.29ns)   --->   "%store_ln763 = store i16 %y_2, i16 %y" [prj/sol/.autopilot/db/v_tpg.cpp:763]   --->   Operation 58 'store' 'store_ln763' <Predicate = (!icmp_ln772)> <Delay = 1.29>
 ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%ret_ln811 = ret" [prj/sol/.autopilot/db/v_tpg.cpp:811]   --->   Operation 59 'ret' 'ret_ln811' <Predicate = (icmp_ln772)> <Delay = 0.00>
 
@@ -1926,7 +1926,7 @@ br_ln772                (br               ) [ 0000]
 |----------|----------------------------------------------------|---------|---------|---------|
 | Operation|                   Functional Unit                  |  Delay  |    FF   |   LUT   |
 |----------|----------------------------------------------------|---------|---------|---------|
-|   call   | grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_182 |  1.298  |   174   |   386   |
+|   call   | grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_182 |  1.298  |   190   |   386   |
 |----------|----------------------------------------------------|---------|---------|---------|
 |          |                 icmp_ln1977_fu_222                 |    0    |    0    |    8    |
 |   icmp   |                 icmp_ln1947_fu_296                 |    0    |    0    |    7    |
@@ -1966,7 +1966,7 @@ br_ln772                (br               ) [ 0000]
 |----------|----------------------------------------------------|---------|---------|---------|
 |bitconcatenate|                    shl_ln_fu_302                   |    0    |    0    |    0    |
 |----------|----------------------------------------------------|---------|---------|---------|
-|   Total  |                                                    |  1.298  |   174   |   492   |
+|   Total  |                                                    |  1.298  |   190   |   492   |
 |----------|----------------------------------------------------|---------|---------|---------|
 
 Memories:
@@ -2021,10 +2021,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |    1   |   174  |   492  |
+|  Function |    1   |   190  |   492  |
 |   Memory  |    -   |    -   |    -   |
 |Multiplexer|    2   |    0   |   18   |
 |  Register |    -   |   254  |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    3   |   428  |   510  |
+|   Total   |    3   |   444  |   510  |
 +-----------+--------+--------+--------+

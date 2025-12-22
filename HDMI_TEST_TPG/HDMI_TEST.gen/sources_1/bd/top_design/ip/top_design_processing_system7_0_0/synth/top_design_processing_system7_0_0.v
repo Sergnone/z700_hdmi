@@ -349,7 +349,7 @@ input wire [63 : 0] S_AXI_HP0_WDATA;
 input wire [7 : 0] S_AXI_HP0_WSTRB;
 (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 IRQ_F2P INTERRUPT" *)
 (* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME IRQ_F2P, SENSITIVITY NULL:LEVEL_HIGH, PortWidth 2" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME IRQ_F2P, SENSITIVITY LEVEL_HIGH:LEVEL_HIGH, PortWidth 2" *)
 input wire [1 : 0] IRQ_F2P;
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 FCLK_CLK0 CLK" *)
 (* X_INTERFACE_MODE = "master" *)

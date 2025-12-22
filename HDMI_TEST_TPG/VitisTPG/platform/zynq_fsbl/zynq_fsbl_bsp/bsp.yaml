@@ -199,6 +199,10 @@ drv_info:
     driver: xadcps
     ip_name: ps7_xadc
     path: /tools/xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/xadcps_v2_7
+  v_tc_0:
+    driver: vtc
+    ip_name: v_tc
+    path: /tools/xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/vtc_v8_7
   v_tpg_0:
     driver: v_tpg
     ip_name: v_tpg

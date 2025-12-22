@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'MultiPixStream2AXIvideo'
 ================================================================
-* Date:           Fri Dec 19 16:54:37 2025
+* Date:           Mon Dec 22 19:21:25 2025
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -17,20 +17,20 @@
 ================================================================
 + Timing: 
     * Summary: 
-    +--------+----------+----------+------------+
-    |  Clock |  Target  | Estimated| Uncertainty|
-    +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.395 ns|     2.70 ns|
-    +--------+----------+----------+------------+
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.75 ns|  4.210 ns|     1.82 ns|
+    +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+-----------+-----------+-----+---------+---------+
-    |  Latency (cycles) |   Latency (absolute)  |    Interval   | Pipeline|
-    |   min   |   max   |    min    |    max    | min |   max   |   Type  |
-    +---------+---------+-----------+-----------+-----+---------+---------+
-    |        1|  8860321|  10.000 ns|  88.603 ms|    1|  8860321|       no|
-    +---------+---------+-----------+-----------+-----+---------+---------+
+    +---------+---------+----------+-----------+-----+---------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max    | min |   max   |   Type  |
+    +---------+---------+----------+-----------+-----+---------+---------+
+    |        1|  8862481|  6.750 ns|  59.822 ms|    1|  8862481|       no|
+    +---------+---------+----------+-----------+-----+---------+---------+
 
     + Detail: 
         * Instance: 
@@ -38,7 +38,7 @@
         |                                                              |                                                   |  Latency (cycles) |   Latency (absolute)  |  Interval  | Pipeline|
         |                           Instance                           |                       Module                      |   min   |   max   |    min    |    max    | min |  max |   Type  |
         +--------------------------------------------------------------+---------------------------------------------------+---------+---------+-----------+-----------+-----+------+---------+
-        |grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167  |MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2  |        3|     4099|  30.000 ns|  40.990 us|    3|  4099|       no|
+        |grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167  |MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2  |        4|     4100|  27.000 ns|  27.675 us|    4|  4100|       no|
         +--------------------------------------------------------------+---------------------------------------------------+---------+---------+-----------+-----------+-----+------+---------+
 
         * Loop: 
@@ -46,7 +46,7 @@
         |                    |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip   |          |
         |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
         +--------------------+---------+---------+----------+-----------+-----------+----------+----------+
-        |- VITIS_LOOP_979_1  |        0|  8860320|  6 ~ 4102|          -|          -|  0 ~ 2160|        no|
+        |- VITIS_LOOP_979_1  |        0|  8862480|  7 ~ 4103|          -|          -|  0 ~ 2160|        no|
         +--------------------+---------+---------+----------+-----------+-----------+----------+----------+
 
 ============================================================
@@ -87,7 +87,7 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 4.93>
+State 1 <SV = 0> <Delay = 4.00>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [prj/sol/.autopilot/db/v_tpg.cpp:979->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 5 'alloca' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%counter_loc_0_i_i = alloca i32 1"   --->   Operation 6 'alloca' 'counter_loc_0_i_i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sof = alloca i32 1" [prj/sol/.autopilot/db/v_tpg.cpp:973->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 7 'alloca' 'sof' <Predicate = true> <Delay = 0.00>
@@ -95,8 +95,8 @@ ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%empty = alloca i32 1"   --->   Oper
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%field_id_val8_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %field_id_val8"   --->   Operation 9 'read' 'field_id_val8_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%fid_in_val9_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %fid_in_val9"   --->   Operation 10 'read' 'fid_in_val9_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%colorFormat_val17_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %colorFormat_val17"   --->   Operation 11 'read' 'colorFormat_val17_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (3.40ns)   --->   "%width_val7_read = read i13 @_ssdm_op_Read.ap_auto.i13, i13 %width_val7"   --->   Operation 12 'read' 'width_val7_read' <Predicate = true> <Delay = 3.40> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 13> <Depth = 2> <FIFO>
-ST_1 : Operation 13 [1/1] (3.40ns)   --->   "%height_val4_read = read i12 @_ssdm_op_Read.ap_auto.i12, i12 %height_val4"   --->   Operation 13 'read' 'height_val4_read' <Predicate = true> <Delay = 3.40> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 2> <FIFO>
+ST_1 : Operation 12 [1/1] (2.46ns)   --->   "%width_val7_read = read i13 @_ssdm_op_Read.ap_auto.i13, i13 %width_val7"   --->   Operation 12 'read' 'width_val7_read' <Predicate = true> <Delay = 2.46> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 13> <Depth = 2> <FIFO>
+ST_1 : Operation 13 [1/1] (2.46ns)   --->   "%height_val4_read = read i12 @_ssdm_op_Read.ap_auto.i12, i12 %height_val4"   --->   Operation 13 'read' 'height_val4_read' <Predicate = true> <Delay = 2.46> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 2> <FIFO>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%phi_ln1036_i_loc = alloca i64 1"   --->   Operation 14 'alloca' 'phi_ln1036_i_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%counter_loc_1_i_i_loc = alloca i64 1"   --->   Operation 15 'alloca' 'counter_loc_1_i_i_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %colorFormat_val17, i1 1, void @p_str"   --->   Operation 16 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
@@ -137,8 +137,8 @@ ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%p_load = load i1 %empty" [prj/sol/
 ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%store_ln1062 = store i1 %p_load, i1 %fidStored" [prj/sol/.autopilot/db/v_tpg.cpp:1062->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 49 'store' 'store_ln1062' <Predicate = (icmp_ln979)> <Delay = 0.00>
 ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%ret_ln399 = ret" [prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 50 'ret' 'ret_ln399' <Predicate = (icmp_ln979)> <Delay = 0.00>
 
-State 3 <SV = 2> <Delay = 6.39>
-ST_3 : Operation 51 [1/2] (6.39ns)   --->   "%call_ln994 = call void @MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2, i16 %counter_loc_0_i_i_load, i1 %sof_load, i8 %colorFormat_val17_read, i13 %width_val7_read, i24 %ovrlayYUV, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i13 %add_ln994, i16 %counter_loc_1_i_i_loc, i1 %phi_ln1036_i_loc, i16 %counter" [prj/sol/.autopilot/db/v_tpg.cpp:994->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 51 'call' 'call_ln994' <Predicate = true> <Delay = 6.39> <CoreType = "Generic">   --->   Generic Core
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 51 [1/2] (0.00ns)   --->   "%call_ln994 = call void @MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2, i16 %counter_loc_0_i_i_load, i1 %sof_load, i8 %colorFormat_val17_read, i13 %width_val7_read, i24 %ovrlayYUV, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i13 %add_ln994, i16 %counter_loc_1_i_i_loc, i1 %phi_ln1036_i_loc, i16 %counter" [prj/sol/.autopilot/db/v_tpg.cpp:994->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 51 'call' 'call_ln994' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 2.92>
 ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%specloopname_ln979 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10" [prj/sol/.autopilot/db/v_tpg.cpp:979->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 52 'specloopname' 'specloopname_ln979' <Predicate = true> <Delay = 0.00>
@@ -1747,7 +1747,7 @@ br_ln979                   (br                 ) [ 00000]
 |----------|--------------------------------------------------------------|---------|---------|---------|
 | Operation|                        Functional Unit                       |  Delay  |    FF   |   LUT   |
 |----------|--------------------------------------------------------------|---------|---------|---------|
-|   call   | grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167 |  1.298  |    71   |   105   |
+|   call   | grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167 |  2.596  |    95   |   114   |
 |----------|--------------------------------------------------------------|---------|---------|---------|
 |          |                      icmp_ln1051_fu_207                      |    0    |    0    |    16   |
 |          |                       icmp_ln981_fu_213                      |    0    |    0    |    13   |
@@ -1780,7 +1780,7 @@ br_ln979                   (br                 ) [ 00000]
 |----------|--------------------------------------------------------------|---------|---------|---------|
 |bitconcatenate|                        or_ln_i_fu_229                        |    0    |    0    |    0    |
 |----------|--------------------------------------------------------------|---------|---------|---------|
-|   Total  |                                                              |  1.298  |    71   |   226   |
+|   Total  |                                                              |  2.596  |    95   |   235   |
 |----------|--------------------------------------------------------------|---------|---------|---------|
 
 Memories:
@@ -1826,10 +1826,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |    1   |   71   |   226  |
+|  Function |    2   |   95   |   235  |
 |   Memory  |    -   |    -   |    -   |
 |Multiplexer|    1   |    0   |    9   |
 |  Register |    -   |   111  |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    2   |   182  |   235  |
+|   Total   |    3   |   206  |   244  |
 +-----------+--------+--------+--------+

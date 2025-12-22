@@ -496,6 +496,15 @@ video_common_IS_TOP_LEVEL:STATIC=OFF
 video_common_SOURCE_DIR:STATIC=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/VitisTPG/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/video_common/src
 
 //Value Computed by CMake
+vtc_BINARY_DIR:STATIC=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/VitisTPG/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/vtc/src
+
+//Value Computed by CMake
+vtc_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+vtc_SOURCE_DIR:STATIC=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/VitisTPG/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/vtc/src
+
+//Value Computed by CMake
 xadcps_BINARY_DIR:STATIC=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/VitisTPG/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xadcps/src
 
 //Value Computed by CMake
@@ -652,7 +661,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=27
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=28
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

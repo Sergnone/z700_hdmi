@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Wed Dec 17 18:42:45 2025
+-- Date        : Mon Dec 22 19:21:10 2025
 -- Host        : serg running 64-bit Ubuntu 24.04.3 LTS
 -- Command     : write_vhdl -force -mode funcsim
---               /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_rgb2dvi_0_0/top_design_rgb2dvi_0_0_sim_netlist.vhdl
+--               /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_rgb2dvi_0_0/top_design_rgb2dvi_0_0_sim_netlist.vhdl
 -- Design      : top_design_rgb2dvi_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -697,104 +697,6 @@ begin
       D => oSyncStages(0),
       PRE => AS(0),
       Q => oSyncStages(1)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity top_design_rgb2dvi_0_0_SyncAsync_6 is
-  port (
-    AR : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \oSyncStages_reg[0]_0\ : in STD_LOGIC;
-    AS : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_rgb2dvi_0_0_SyncAsync_6 : entity is "SyncAsync";
-end top_design_rgb2dvi_0_0_SyncAsync_6;
-
-architecture STRUCTURE of top_design_rgb2dvi_0_0_SyncAsync_6 is
-  signal oSyncStages : STD_LOGIC_VECTOR ( 1 downto 0 );
-  attribute async_reg : string;
-  attribute async_reg of oSyncStages : signal is "true";
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \oSyncStages_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \oSyncStages_reg[0]\ : label is "yes";
-  attribute ASYNC_REG_boolean of \oSyncStages_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \oSyncStages_reg[1]\ : label is "yes";
-begin
-  AR(0) <= oSyncStages(1);
-\oSyncStages_reg[0]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => \oSyncStages_reg[0]_0\,
-      CE => '1',
-      D => '0',
-      PRE => AS(0),
-      Q => oSyncStages(0)
-    );
-\oSyncStages_reg[1]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => \oSyncStages_reg[0]_0\,
-      CE => '1',
-      D => oSyncStages(0),
-      PRE => AS(0),
-      Q => oSyncStages(1)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity \top_design_rgb2dvi_0_0_SyncAsync__parameterized1\ is
-  port (
-    D : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \oSyncStages_reg[0]_0\ : in STD_LOGIC;
-    \oSyncStages_reg[0]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \top_design_rgb2dvi_0_0_SyncAsync__parameterized1\ : entity is "SyncAsync";
-end \top_design_rgb2dvi_0_0_SyncAsync__parameterized1\;
-
-architecture STRUCTURE of \top_design_rgb2dvi_0_0_SyncAsync__parameterized1\ is
-  signal oSyncStages : STD_LOGIC_VECTOR ( 1 downto 0 );
-  attribute async_reg : string;
-  attribute async_reg of oSyncStages : signal is "true";
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \oSyncStages_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \oSyncStages_reg[0]\ : label is "yes";
-  attribute ASYNC_REG_boolean of \oSyncStages_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \oSyncStages_reg[1]\ : label is "yes";
-begin
-  D(0) <= oSyncStages(1);
-\oSyncStages_reg[0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => \oSyncStages_reg[0]_0\,
-      CE => '1',
-      D => \oSyncStages_reg[0]_1\(0),
-      Q => oSyncStages(0),
-      R => '0'
-    );
-\oSyncStages_reg[1]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => \oSyncStages_reg[0]_0\,
-      CE => '1',
-      D => oSyncStages(0),
-      Q => oSyncStages(1),
-      R => '0'
     );
 end STRUCTURE;
 library IEEE;
@@ -4590,7 +4492,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity top_design_rgb2dvi_0_0_ResetBridge is
   port (
     \out\ : out STD_LOGIC_VECTOR ( 0 to 0 );
-    in0 : in STD_LOGIC;
+    aRst_n : in STD_LOGIC;
     PixelClk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -4602,38 +4504,11 @@ architecture STRUCTURE of top_design_rgb2dvi_0_0_ResetBridge is
   attribute RTL_KEEP : string;
   attribute RTL_KEEP of aRst_int : signal is "true";
 begin
-  aRst_int <= in0;
 SyncAsyncx: entity work.top_design_rgb2dvi_0_0_SyncAsync
      port map (
       AS(0) => aRst_int,
       PixelClk => PixelClk,
       \out\(0) => \out\(0)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity top_design_rgb2dvi_0_0_ResetBridge_5 is
-  port (
-    AR : out STD_LOGIC_VECTOR ( 0 to 0 );
-    aRst_n : in STD_LOGIC;
-    \oSyncStages_reg[0]\ : in STD_LOGIC
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_rgb2dvi_0_0_ResetBridge_5 : entity is "ResetBridge";
-end top_design_rgb2dvi_0_0_ResetBridge_5;
-
-architecture STRUCTURE of top_design_rgb2dvi_0_0_ResetBridge_5 is
-  signal aRst_int_0 : STD_LOGIC;
-  attribute RTL_KEEP : string;
-  attribute RTL_KEEP of aRst_int_0 : signal is "true";
-begin
-SyncAsyncx: entity work.top_design_rgb2dvi_0_0_SyncAsync_6
-     port map (
-      AR(0) => AR(0),
-      AS(0) => aRst_int_0,
-      \oSyncStages_reg[0]_0\ => \oSyncStages_reg[0]\
     );
 aRst_int_inferred_i_1: unisim.vcomponents.LUT1
     generic map(
@@ -4641,171 +4516,7 @@ aRst_int_inferred_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => aRst_n,
-      O => aRst_int_0
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity top_design_rgb2dvi_0_0_ClockGen is
-  port (
-    SerialClk : out STD_LOGIC;
-    PixelClk : out STD_LOGIC;
-    in0 : out STD_LOGIC;
-    \oSyncStages_reg[0]\ : in STD_LOGIC;
-    aRst_n : in STD_LOGIC
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_rgb2dvi_0_0_ClockGen : entity is "ClockGen";
-end top_design_rgb2dvi_0_0_ClockGen;
-
-architecture STRUCTURE of top_design_rgb2dvi_0_0_ClockGen is
-  signal CLKFBIN : STD_LOGIC;
-  signal RST : STD_LOGIC;
-  signal aPixelClkLckd : STD_LOGIC;
-  signal oOut : STD_LOGIC;
-  signal pLockWasLost0_n_0 : STD_LOGIC;
-  signal \pLocked_q_reg_n_0_[0]\ : STD_LOGIC;
-  signal \pLocked_q_reg_n_0_[1]\ : STD_LOGIC;
-  signal pRst : STD_LOGIC;
-  signal p_1_in : STD_LOGIC;
-  signal \NLW_GenPLL.DVI_ClkGenerator_CLKOUT2_UNCONNECTED\ : STD_LOGIC;
-  signal \NLW_GenPLL.DVI_ClkGenerator_CLKOUT3_UNCONNECTED\ : STD_LOGIC;
-  signal \NLW_GenPLL.DVI_ClkGenerator_CLKOUT4_UNCONNECTED\ : STD_LOGIC;
-  signal \NLW_GenPLL.DVI_ClkGenerator_CLKOUT5_UNCONNECTED\ : STD_LOGIC;
-  signal \NLW_GenPLL.DVI_ClkGenerator_DRDY_UNCONNECTED\ : STD_LOGIC;
-  signal \NLW_GenPLL.DVI_ClkGenerator_DO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 15 downto 0 );
-  attribute box_type : string;
-  attribute box_type of \GenPLL.DVI_ClkGenerator\ : label is "PRIMITIVE";
-begin
-\GenPLL.DVI_ClkGenerator\: unisim.vcomponents.PLLE2_ADV
-    generic map(
-      BANDWIDTH => "OPTIMIZED",
-      CLKFBOUT_MULT => 10,
-      CLKFBOUT_PHASE => 0.000000,
-      CLKIN1_PERIOD => 6.250000,
-      CLKIN2_PERIOD => 0.000000,
-      CLKOUT0_DIVIDE => 2,
-      CLKOUT0_DUTY_CYCLE => 0.500000,
-      CLKOUT0_PHASE => 0.000000,
-      CLKOUT1_DIVIDE => 10,
-      CLKOUT1_DUTY_CYCLE => 0.500000,
-      CLKOUT1_PHASE => 0.000000,
-      CLKOUT2_DIVIDE => 1,
-      CLKOUT2_DUTY_CYCLE => 0.500000,
-      CLKOUT2_PHASE => 0.000000,
-      CLKOUT3_DIVIDE => 1,
-      CLKOUT3_DUTY_CYCLE => 0.500000,
-      CLKOUT3_PHASE => 0.000000,
-      CLKOUT4_DIVIDE => 1,
-      CLKOUT4_DUTY_CYCLE => 0.500000,
-      CLKOUT4_PHASE => 0.000000,
-      CLKOUT5_DIVIDE => 1,
-      CLKOUT5_DUTY_CYCLE => 0.500000,
-      CLKOUT5_PHASE => 0.000000,
-      COMPENSATION => "INTERNAL",
-      DIVCLK_DIVIDE => 1,
-      IS_CLKINSEL_INVERTED => '0',
-      IS_PWRDWN_INVERTED => '0',
-      IS_RST_INVERTED => '0',
-      REF_JITTER1 => 0.010000,
-      REF_JITTER2 => 0.000000,
-      STARTUP_WAIT => "FALSE"
-    )
-        port map (
-      CLKFBIN => CLKFBIN,
-      CLKFBOUT => CLKFBIN,
-      CLKIN1 => \oSyncStages_reg[0]\,
-      CLKIN2 => '0',
-      CLKINSEL => '1',
-      CLKOUT0 => SerialClk,
-      CLKOUT1 => PixelClk,
-      CLKOUT2 => \NLW_GenPLL.DVI_ClkGenerator_CLKOUT2_UNCONNECTED\,
-      CLKOUT3 => \NLW_GenPLL.DVI_ClkGenerator_CLKOUT3_UNCONNECTED\,
-      CLKOUT4 => \NLW_GenPLL.DVI_ClkGenerator_CLKOUT4_UNCONNECTED\,
-      CLKOUT5 => \NLW_GenPLL.DVI_ClkGenerator_CLKOUT5_UNCONNECTED\,
-      DADDR(6 downto 0) => B"0000000",
-      DCLK => '0',
-      DEN => '0',
-      DI(15 downto 0) => B"0000000000000000",
-      DO(15 downto 0) => \NLW_GenPLL.DVI_ClkGenerator_DO_UNCONNECTED\(15 downto 0),
-      DRDY => \NLW_GenPLL.DVI_ClkGenerator_DRDY_UNCONNECTED\,
-      DWE => '0',
-      LOCKED => aPixelClkLckd,
-      PWRDWN => '0',
-      RST => RST
-    );
-LockLostReset: entity work.top_design_rgb2dvi_0_0_ResetBridge_5
-     port map (
-      AR(0) => pRst,
-      aRst_n => aRst_n,
-      \oSyncStages_reg[0]\ => \oSyncStages_reg[0]\
-    );
-PLL_LockSyncAsync: entity work.\top_design_rgb2dvi_0_0_SyncAsync__parameterized1\
-     port map (
-      D(0) => oOut,
-      \oSyncStages_reg[0]_0\ => \oSyncStages_reg[0]\,
-      \oSyncStages_reg[0]_1\(0) => aPixelClkLckd
-    );
-\aRst_int_inferred_i_1__0\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => aPixelClkLckd,
-      O => in0
-    );
-pLockWasLost0: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"70"
-    )
-        port map (
-      I0 => \pLocked_q_reg_n_0_[1]\,
-      I1 => \pLocked_q_reg_n_0_[0]\,
-      I2 => p_1_in,
-      O => pLockWasLost0_n_0
-    );
-pLockWasLost_reg: unisim.vcomponents.FDPE
-     port map (
-      C => \oSyncStages_reg[0]\,
-      CE => '1',
-      D => pLockWasLost0_n_0,
-      PRE => pRst,
-      Q => RST
-    );
-\pLocked_q_reg[0]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => \oSyncStages_reg[0]\,
-      CE => '1',
-      CLR => pRst,
-      D => oOut,
-      Q => \pLocked_q_reg_n_0_[0]\
-    );
-\pLocked_q_reg[1]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => \oSyncStages_reg[0]\,
-      CE => '1',
-      CLR => pRst,
-      D => \pLocked_q_reg_n_0_[0]\,
-      Q => \pLocked_q_reg_n_0_[1]\
-    );
-\pLocked_q_reg[2]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => \oSyncStages_reg[0]\,
-      CE => '1',
-      CLR => pRst,
-      D => \pLocked_q_reg_n_0_[1]\,
-      Q => p_1_in
+      O => aRst_int
     );
 end STRUCTURE;
 library IEEE;
@@ -4842,33 +4553,22 @@ entity top_design_rgb2dvi_0_0_rgb2dvi is
   attribute kD2Swap : string;
   attribute kD2Swap of top_design_rgb2dvi_0_0_rgb2dvi : entity is "FALSE";
   attribute kGenerateSerialClk : string;
-  attribute kGenerateSerialClk of top_design_rgb2dvi_0_0_rgb2dvi : entity is "TRUE";
+  attribute kGenerateSerialClk of top_design_rgb2dvi_0_0_rgb2dvi : entity is "FALSE";
   attribute kRstActiveHigh : string;
   attribute kRstActiveHigh of top_design_rgb2dvi_0_0_rgb2dvi : entity is "FALSE";
 end top_design_rgb2dvi_0_0_rgb2dvi;
 
 architecture STRUCTURE of top_design_rgb2dvi_0_0_rgb2dvi is
   signal \DataEncoders[0].DataEncoder_n_0\ : STD_LOGIC;
-  signal PixelClkIO : STD_LOGIC;
-  signal SerialClkIO : STD_LOGIC;
-  signal aRstLck : STD_LOGIC;
   signal \pDataOutRaw[0]\ : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal \pDataOutRaw[1]\ : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal \pDataOutRaw[2]\ : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal pRstLck : STD_LOGIC;
 begin
-\ClockGenInternal.ClockGenX\: entity work.top_design_rgb2dvi_0_0_ClockGen
-     port map (
-      PixelClk => PixelClkIO,
-      SerialClk => SerialClkIO,
-      aRst_n => aRst_n,
-      in0 => aRstLck,
-      \oSyncStages_reg[0]\ => PixelClk
-    );
 ClockSerializer: entity work.top_design_rgb2dvi_0_0_OutputSERDES
      port map (
-      PixelClk => PixelClkIO,
-      SerialClk => SerialClkIO,
+      PixelClk => PixelClk,
+      SerialClk => SerialClk,
       TMDS_Clk_n => TMDS_Clk_n,
       TMDS_Clk_p => TMDS_Clk_p,
       aRst => pRstLck
@@ -4885,8 +4585,8 @@ ClockSerializer: entity work.top_design_rgb2dvi_0_0_OutputSERDES
     );
 \DataEncoders[0].DataSerializer\: entity work.top_design_rgb2dvi_0_0_OutputSERDES_0
      port map (
-      PixelClk => PixelClkIO,
-      SerialClk => SerialClkIO,
+      PixelClk => PixelClk,
+      SerialClk => SerialClk,
       TMDS_Data_n(0) => TMDS_Data_n(0),
       TMDS_Data_p(0) => TMDS_Data_p(0),
       aRst => pRstLck,
@@ -4901,8 +4601,8 @@ ClockSerializer: entity work.top_design_rgb2dvi_0_0_OutputSERDES
     );
 \DataEncoders[1].DataSerializer\: entity work.top_design_rgb2dvi_0_0_OutputSERDES_2
      port map (
-      PixelClk => PixelClkIO,
-      SerialClk => SerialClkIO,
+      PixelClk => PixelClk,
+      SerialClk => SerialClk,
       TMDS_Data_n(0) => TMDS_Data_n(1),
       TMDS_Data_p(0) => TMDS_Data_p(1),
       \out\(0) => pRstLck,
@@ -4917,8 +4617,8 @@ ClockSerializer: entity work.top_design_rgb2dvi_0_0_OutputSERDES
     );
 \DataEncoders[2].DataSerializer\: entity work.top_design_rgb2dvi_0_0_OutputSERDES_4
      port map (
-      PixelClk => PixelClkIO,
-      SerialClk => SerialClkIO,
+      PixelClk => PixelClk,
+      SerialClk => SerialClk,
       TMDS_Data_n(0) => TMDS_Data_n(2),
       TMDS_Data_p(0) => TMDS_Data_p(2),
       \out\(0) => pRstLck,
@@ -4927,7 +4627,7 @@ ClockSerializer: entity work.top_design_rgb2dvi_0_0_OutputSERDES
 LockLostReset: entity work.top_design_rgb2dvi_0_0_ResetBridge
      port map (
       PixelClk => PixelClk,
-      in0 => aRstLck,
+      aRst_n => aRst_n,
       \out\(0) => pRstLck
     );
 end STRUCTURE;
@@ -4946,7 +4646,8 @@ entity top_design_rgb2dvi_0_0 is
     vid_pVDE : in STD_LOGIC;
     vid_pHSync : in STD_LOGIC;
     vid_pVSync : in STD_LOGIC;
-    PixelClk : in STD_LOGIC
+    PixelClk : in STD_LOGIC;
+    SerialClk : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of top_design_rgb2dvi_0_0 : entity is true;
@@ -4972,7 +4673,7 @@ architecture STRUCTURE of top_design_rgb2dvi_0_0 is
   attribute kD2Swap : string;
   attribute kD2Swap of U0 : label is "FALSE";
   attribute kGenerateSerialClk : string;
-  attribute kGenerateSerialClk of U0 : label is "TRUE";
+  attribute kGenerateSerialClk of U0 : label is "FALSE";
   attribute kRstActiveHigh : string;
   attribute kRstActiveHigh of U0 : label is "FALSE";
   attribute x_interface_info : string;
@@ -4980,7 +4681,10 @@ architecture STRUCTURE of top_design_rgb2dvi_0_0 is
   attribute x_interface_mode : string;
   attribute x_interface_mode of PixelClk : signal is "slave PixelClk";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of PixelClk : signal is "XIL_INTERFACENAME PixelClk, FREQ_HZ 148148163, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of PixelClk : signal is "XIL_INTERFACENAME PixelClk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_axi_dynclk_0_0_PXL_CLK_O, INSERT_VIP 0";
+  attribute x_interface_info of SerialClk : signal is "xilinx.com:signal:clock:1.0 SerialClk CLK";
+  attribute x_interface_mode of SerialClk : signal is "slave SerialClk";
+  attribute x_interface_parameter of SerialClk : signal is "XIL_INTERFACENAME SerialClk, ASSOCIATED_RESET aRst:aRst_n:pRst:pRst_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_axi_dynclk_0_0_PXL_CLK_5X_O, INSERT_VIP 0";
   attribute x_interface_info of TMDS_Clk_n : signal is "digilentinc.com:interface:tmds:1.0 TMDS CLK_N, xilinx.com:signal:clock:1.0 TMDS_Clk_n CLK";
   attribute x_interface_mode of TMDS_Clk_n : signal is "master TMDS_Clk_n";
   attribute x_interface_parameter of TMDS_Clk_n : signal is "XIL_INTERFACENAME TMDS_Clk_n, ASSOCIATED_RESET aRst_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0";
@@ -5001,7 +4705,7 @@ begin
 U0: entity work.top_design_rgb2dvi_0_0_rgb2dvi
      port map (
       PixelClk => PixelClk,
-      SerialClk => '0',
+      SerialClk => SerialClk,
       TMDS_Clk_n => TMDS_Clk_n,
       TMDS_Clk_p => TMDS_Clk_p,
       TMDS_Data_n(2 downto 0) => TMDS_Data_n(2 downto 0),

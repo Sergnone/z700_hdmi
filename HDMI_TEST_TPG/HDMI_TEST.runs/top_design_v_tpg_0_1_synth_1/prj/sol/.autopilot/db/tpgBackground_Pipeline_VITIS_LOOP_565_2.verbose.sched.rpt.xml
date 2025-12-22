@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'tpgBackground_Pipeline_VITIS_LOOP_565_2'" level="0">
-<item name = "Date">Fri Dec 19 16:54:37 2025
+<item name = "Date">Mon Dec 22 19:21:24 2025
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.859 ns, 2.70 ns</column>
+<column name="ap_clk">6.75 ns, 4.890 ns, 1.82 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2, 65556, 20.000 ns, 0.656 ms, 0, 0, loop pipeline stp</column>
+<column name="">2, 65558, 13.500 ns, 0.443 ms, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_565_2">0, 65554, 21, 1, 1, 0 ~ 65535, yes</column>
+<column name="- VITIS_LOOP_565_2">0, 65556, 23, 1, 1, 0 ~ 65535, yes</column>
 </table>
 </item>
 </section>

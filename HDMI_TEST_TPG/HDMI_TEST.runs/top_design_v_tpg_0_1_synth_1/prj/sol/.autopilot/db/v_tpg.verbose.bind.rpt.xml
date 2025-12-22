@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'v_tpg'" level="0">
-<item name = "Date">Fri Dec 19 16:54:37 2025
+<item name = "Date">Mon Dec 22 19:21:25 2025
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.859 ns, 2.70 ns</column>
+<column name="ap_clk">6.75 ns, 4.890 ns, 1.82 ns</column>
 </table>
 </item>
 </section>
@@ -24,15 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">27, 4296409070, 0.270 us, 42.964 sec, 28, 4296409071, no</column>
+<column name="">30, 4296540141, 0.203 us, 29.002 sec, 31, 4296540142, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_v_tpgHlsDataFlow_fu_441">v_tpgHlsDataFlow, 23, 4296409066, 0.230 us, 42.964 sec, 2, 4296409067, dataflow</column>
-<column name="grp_reg_unsigned_short_s_fu_634">reg_unsigned_short_s, 1, 1, 10.000 ns, 10.000 ns, 1, 1, yes</column>
+<column name="grp_v_tpgHlsDataFlow_fu_440">v_tpgHlsDataFlow, 25, 4296540136, 0.169 us, 29.002 sec, 2, 4296540137, dataflow</column>
+<column name="grp_reg_unsigned_short_s_fu_616">reg_unsigned_short_s, 1, 1, 6.750 ns, 6.750 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

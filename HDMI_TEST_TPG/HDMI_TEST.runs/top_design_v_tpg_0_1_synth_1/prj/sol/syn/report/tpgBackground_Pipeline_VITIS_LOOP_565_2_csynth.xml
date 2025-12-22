@@ -9,8 +9,8 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020-clg400-2</Part>
 <TopModelName>tpgBackground_Pipeline_VITIS_LOOP_565_2</TopModelName>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>2.70</ClockUncertainty>
+<TargetClockPeriod>6.75</TargetClockPeriod>
+<ClockUncertainty>1.82</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
@@ -18,23 +18,23 @@
 <PipelineType>loop pipeline stp</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>6.859</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.890</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
 <Best-caseLatency>2</Best-caseLatency>
-<Average-caseLatency>32788</Average-caseLatency>
-<Worst-caseLatency>65556</Worst-caseLatency>
-<Best-caseRealTimeLatency>20.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.328 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.656 ms</Worst-caseRealTimeLatency>
+<Average-caseLatency>32790</Average-caseLatency>
+<Worst-caseLatency>65558</Worst-caseLatency>
+<Best-caseRealTimeLatency>13.500 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.221 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.443 ms</Worst-caseRealTimeLatency>
 <Interval-min>1</Interval-min>
 <Interval-max>65536</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <VITIS_LOOP_565_2>
-<Slack>7.30</Slack>
+<Slack>4.93</Slack>
 <TripCount>
 <range>
 <min>0</min>
@@ -45,17 +45,17 @@
 <Latency>
 <range>
 <min>0</min>
-<max>65554</max>
+<max>65556</max>
 </range>
 </Latency>
 <AbsoluteTimeLatency>
 <range>
 <min>0</min>
-<max>655540</max>
+<max>442503</max>
 </range>
 </AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>21</PipelineDepth>
+<PipelineDepth>23</PipelineDepth>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
@@ -80,8 +80,8 @@
 <Resources>
 <BRAM_18K>9</BRAM_18K>
 <DSP>13</DSP>
-<FF>3725</FF>
-<LUT>3868</LUT>
+<FF>3952</FF>
+<LUT>3866</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

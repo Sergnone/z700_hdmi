@@ -3,23 +3,23 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Wed Dec 17 18:42:46 2025
-# Process ID         : 308061
-# Current directory  : /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/top_design_v_tc_0_1_synth_1
+# Start of session at: Mon Dec 22 19:20:40 2025
+# Process ID         : 243277
+# Current directory  : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tc_0_1_synth_1
 # Command line       : vivado -log top_design_v_tc_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_design_v_tc_0_1.tcl
-# Log file           : /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/top_design_v_tc_0_1_synth_1/top_design_v_tc_0_1.vds
-# Journal file       : /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/top_design_v_tc_0_1_synth_1/vivado.jou
+# Log file           : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tc_0_1_synth_1/top_design_v_tc_0_1.vds
+# Journal file       : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tc_0_1_synth_1/vivado.jou
 # Running On         : serg
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.3 LTS
 # Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13400
-# CPU Frequency      : 4100.611 MHz
+# CPU Frequency      : 4100.083 MHz
 # CPU Physical cores : 10
 # CPU Logical cores  : 16
 # Host memory        : 33411 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 42001 MB
-# Available Virtual  : 30482 MB
+# Available Virtual  : 32529 MB
 #-----------------------------------------------------------
 source top_design_v_tc_0_1.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -32,12 +32,12 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 308549
+INFO: [Synth 8-7075] Helper process launched with PID 244208
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2242.387 ; gain = 485.594 ; free physical = 4634 ; free virtual = 25910
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2241.605 ; gain = 482.875 ; free physical = 2011 ; free virtual = 20284
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top_design_v_tc_0_1' [/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/synth/top_design_v_tc_0_1.vhd:75]
-	Parameter C_HAS_AXI4_LITE bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'top_design_v_tc_0_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/synth/top_design_v_tc_0_1.vhd:97]
+	Parameter C_HAS_AXI4_LITE bound to: 1 - type: integer 
 	Parameter C_HAS_INTC_IF bound to: 0 - type: integer 
 	Parameter C_ARBITRARY_RES_EN bound to: 0 - type: integer 
 	Parameter C_VID_PPC bound to: 4 - type: integer 
@@ -124,10 +124,21 @@ INFO: [Synth 8-638] synthesizing module 'top_design_v_tc_0_1' [/home/serg/Docume
 	Parameter C_GEN_ACHROMA_EN bound to: 0 - type: integer 
 	Parameter C_GEN_FIELDID_EN bound to: 0 - type: integer 
 	Parameter C_DET_FIELDID_EN bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'v_tc' declared at '/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ipshared/c219/hdl/v_tc_v6_2_vh_rfs.vhd:9571' bound to instance 'U0' of component 'v_tc' [/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/synth/top_design_v_tc_0_1.vhd:249]
+INFO: [Synth 8-3491] module 'v_tc' declared at '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ipshared/c219/hdl/v_tc_v6_2_vh_rfs.vhd:9571' bound to instance 'U0' of component 'v_tc' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/synth/top_design_v_tc_0_1.vhd:303]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
-INFO: [Synth 8-256] done synthesizing module 'top_design_v_tc_0_1' (0#1) [/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/synth/top_design_v_tc_0_1.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'top_design_v_tc_0_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/synth/top_design_v_tc_0_1.vhd:97]
 INFO: [Synth 8-7129] Port gen_v0chroma_start[11] in module tc_generator is either unconnected or has no load
 INFO: [Synth 8-7129] Port gen_v0chroma_start[10] in module tc_generator is either unconnected or has no load
 INFO: [Synth 8-7129] Port gen_v0chroma_start[9] in module tc_generator is either unconnected or has no load
@@ -230,57 +241,69 @@ INFO: [Synth 8-7129] Port gen_v1sync_start_hori[9] in module tc_generator is eit
 INFO: [Synth 8-7129] Port gen_v1sync_start_hori[8] in module tc_generator is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2344.324 ; gain = 587.531 ; free physical = 4249 ; free virtual = 25592
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2381.543 ; gain = 622.812 ; free physical = 1573 ; free virtual = 19865
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2353.230 ; gain = 596.438 ; free physical = 4241 ; free virtual = 25584
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2387.480 ; gain = 628.750 ; free physical = 1541 ; free virtual = 19834
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2353.230 ; gain = 596.438 ; free physical = 4241 ; free virtual = 25584
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2387.480 ; gain = 628.750 ; free physical = 1541 ; free virtual = 19834
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2353.230 ; gain = 0.000 ; free physical = 4229 ; free virtual = 25581
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2387.480 ; gain = 0.000 ; free physical = 1489 ; free virtual = 19776
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/top_design_v_tc_0_1_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/top_design_v_tc_0_1_synth_1/dont_touch.xdc]
-Parsing XDC File [/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_clocks.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_clocks.xdc] for cell 'U0'
+Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tc_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tc_0_1_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_clocks.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_design_v_tc_0_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_design_v_tc_0_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_design_v_tc_0_1_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_design_v_tc_0_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2467.969 ; gain = 0.000 ; free physical = 4155 ; free virtual = 25514
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2491.945 ; gain = 0.000 ; free physical = 1101 ; free virtual = 19399
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2468.004 ; gain = 0.000 ; free physical = 4157 ; free virtual = 25517
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2491.980 ; gain = 0.000 ; free physical = 1085 ; free virtual = 19382
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2468.004 ; gain = 711.211 ; free physical = 5819 ; free virtual = 27188
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2491.980 ; gain = 733.250 ; free physical = 3561 ; free virtual = 21846
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2475.973 ; gain = 719.180 ; free physical = 5819 ; free virtual = 27188
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2499.949 ; gain = 741.219 ; free physical = 3561 ; free virtual = 21846
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2475.973 ; gain = 719.180 ; free physical = 5811 ; free virtual = 27180
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2499.949 ; gain = 741.219 ; free physical = 3553 ; free virtual = 21838
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2475.973 ; gain = 719.180 ; free physical = 5833 ; free virtual = 27204
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2499.949 ; gain = 741.219 ; free physical = 3517 ; free virtual = 21819
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -289,25 +312,43 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input   12 Bit       Adders := 3     
 	   3 Input   12 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
 	   2 Input    1 Bit       Adders := 1     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 7     
 +---Registers : 
-	               32 Bit    Registers := 1     
+	               45 Bit    Registers := 4     
+	               34 Bit    Registers := 3     
+	               32 Bit    Registers := 103   
 	               17 Bit    Registers := 1     
 	               12 Bit    Registers := 18    
-	                7 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 6     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
-	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 36    
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 62    
 +---Muxes : 
-	   2 Input   32 Bit        Muxes := 7     
+	   2 Input   32 Bit        Muxes := 82    
+	   4 Input   32 Bit        Muxes := 2     
+	   4 Input   28 Bit        Muxes := 17    
 	   2 Input   17 Bit        Muxes := 1     
 	   2 Input   12 Bit        Muxes := 15    
 	   3 Input   12 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 56    
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 7     
+	   2 Input    2 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 61    
+	   4 Input    1 Bit        Muxes := 3     
 	   5 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -325,25 +366,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2475.973 ; gain = 719.180 ; free physical = 5621 ; free virtual = 27004
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2499.949 ; gain = 741.219 ; free physical = 7187 ; free virtual = 25480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2522.973 ; gain = 766.180 ; free physical = 5505 ; free virtual = 26889
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2543.949 ; gain = 785.219 ; free physical = 8549 ; free virtual = 26872
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2560.020 ; gain = 803.227 ; free physical = 5442 ; free virtual = 26826
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2554.949 ; gain = 796.219 ; free physical = 8468 ; free virtual = 26793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2568.027 ; gain = 811.234 ; free physical = 5434 ; free virtual = 26817
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2582.996 ; gain = 824.266 ; free physical = 8402 ; free virtual = 26719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -361,49 +402,52 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2725.840 ; gain = 969.047 ; free physical = 5203 ; free virtual = 26587
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2745.809 ; gain = 987.078 ; free physical = 8287 ; free virtual = 26607
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2725.840 ; gain = 969.047 ; free physical = 5203 ; free virtual = 26587
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2745.809 ; gain = 987.078 ; free physical = 8287 ; free virtual = 26609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2725.840 ; gain = 969.047 ; free physical = 5203 ; free virtual = 26587
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2745.809 ; gain = 987.078 ; free physical = 8261 ; free virtual = 26615
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2725.840 ; gain = 969.047 ; free physical = 5203 ; free virtual = 26587
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2745.809 ; gain = 987.078 ; free physical = 8261 ; free virtual = 26618
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2725.840 ; gain = 969.047 ; free physical = 5203 ; free virtual = 26587
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2745.809 ; gain = 987.078 ; free physical = 8257 ; free virtual = 26616
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2725.840 ; gain = 969.047 ; free physical = 5203 ; free virtual = 26587
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2745.809 ; gain = 987.078 ; free physical = 8251 ; free virtual = 26611
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name                      | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|v_tc        | U_TC_TOP/detect_en_d_reg[3]   | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
-|v_tc        | U_TC_TOP/generate_en_d_reg[3] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
-+------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|video_ctrl  | AXI4_LITE_INTERFACE.GENR_MUX0/GEN_SEL_DELAY[5].sel_int_reg[5][0] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|video_ctrl  | AXI4_LITE_INTERFACE.GENR_MUX0/GEN_SEL_DELAY[4].sel_int_reg[4][0] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|video_ctrl  | AXI4_LITE_INTERFACE.CORE_MUX0/GEN_SEL_DELAY[3].sel_int_reg[3][0] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|v_tc        | U_TC_TOP/detect_en_d_reg[3]                                      | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|v_tc        | U_TC_TOP/generate_en_d_reg[3]                                    | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -423,44 +467,45 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |CARRY4 |    45|
-|2     |LUT1   |    37|
-|3     |LUT2   |    46|
-|4     |LUT3   |    15|
-|5     |LUT4   |    19|
-|6     |LUT5   |     9|
-|7     |LUT6   |    88|
-|8     |SRL16E |     2|
-|9     |FDRE   |   227|
-|10    |FDSE   |    16|
+|2     |LUT1   |    43|
+|3     |LUT2   |    79|
+|4     |LUT3   |   582|
+|5     |LUT4   |    86|
+|6     |LUT5   |   130|
+|7     |LUT6   |   427|
+|8     |MUXF7  |   160|
+|9     |SRL16E |     5|
+|10    |FDRE   |  2984|
+|11    |FDSE   |   259|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2725.840 ; gain = 969.047 ; free physical = 5203 ; free virtual = 26587
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2745.809 ; gain = 987.078 ; free physical = 8248 ; free virtual = 26608
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2725.840 ; gain = 854.273 ; free physical = 5203 ; free virtual = 26587
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2725.848 ; gain = 969.047 ; free physical = 5203 ; free virtual = 26587
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2745.809 ; gain = 882.578 ; free physical = 8219 ; free virtual = 26584
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2745.816 ; gain = 987.078 ; free physical = 8219 ; free virtual = 26584
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2725.848 ; gain = 0.000 ; free physical = 5329 ; free virtual = 26713
-INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2745.816 ; gain = 0.000 ; free physical = 8328 ; free virtual = 26701
+INFO: [Netlist 29-17] Analyzing 205 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2781.867 ; gain = 0.000 ; free physical = 6808 ; free virtual = 28188
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2801.836 ; gain = 0.000 ; free physical = 8310 ; free virtual = 26715
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 4b476eee
+Synth Design complete | Checksum: 7f8aa1c7
 INFO: [Common 17-83] Releasing license: Synthesis
-126 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+140 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 2781.902 ; gain = 1160.969 ; free physical = 6792 ; free virtual = 28172
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1787.559; main = 1787.559; forked = 225.021
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3470.176; main = 2781.871; forked = 994.199
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2805.879 ; gain = 0.000 ; free physical = 6788 ; free virtual = 28168
-INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/top_design_v_tc_0_1_synth_1/top_design_v_tc_0_1.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP top_design_v_tc_0_1, cache-ID = 3c19d49931b2edcb
-INFO: [Coretcl 2-1174] Renamed 5 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2805.879 ; gain = 0.000 ; free physical = 6917 ; free virtual = 28299
-INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/top_design_v_tc_0_1_synth_1/top_design_v_tc_0_1.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:31 . Memory (MB): peak = 2801.871 ; gain = 1177.969 ; free physical = 8381 ; free virtual = 26797
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1726.499; main = 1726.499; forked = 210.812
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3494.148; main = 2801.840; forked = 994.195
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2825.848 ; gain = 0.000 ; free physical = 8373 ; free virtual = 26800
+INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tc_0_1_synth_1/top_design_v_tc_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP top_design_v_tc_0_1, cache-ID = 6b4fd7dd156f0b7f
+INFO: [Coretcl 2-1174] Renamed 12 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2825.848 ; gain = 0.000 ; free physical = 8058 ; free virtual = 26512
+INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tc_0_1_synth_1/top_design_v_tc_0_1.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file top_design_v_tc_0_1_utilization_synth.rpt -pb top_design_v_tc_0_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 17 18:43:09 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 22 19:21:19 2025...

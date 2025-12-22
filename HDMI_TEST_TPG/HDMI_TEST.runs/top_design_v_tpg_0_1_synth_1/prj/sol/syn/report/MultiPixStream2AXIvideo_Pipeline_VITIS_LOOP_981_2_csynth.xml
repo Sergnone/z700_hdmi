@@ -9,8 +9,8 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020-clg400-2</Part>
 <TopModelName>MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2</TopModelName>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>2.70</ClockUncertainty>
+<TargetClockPeriod>6.75</TargetClockPeriod>
+<ClockUncertainty>1.82</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
@@ -18,23 +18,23 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>6.395</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.210</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>3</Best-caseLatency>
+<Best-caseLatency>4</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>4099</Worst-caseLatency>
-<Best-caseRealTimeLatency>30.000 ns</Best-caseRealTimeLatency>
+<Worst-caseLatency>4100</Worst-caseLatency>
+<Best-caseRealTimeLatency>27.000 ns</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>40.990 us</Worst-caseRealTimeLatency>
-<Interval-min>3</Interval-min>
-<Interval-max>4099</Interval-max>
+<Worst-caseRealTimeLatency>27.675 us</Worst-caseRealTimeLatency>
+<Interval-min>4</Interval-min>
+<Interval-max>4100</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <VITIS_LOOP_981_2>
-<Slack>7.30</Slack>
+<Slack>4.93</Slack>
 <TripCount>
 <range>
 <min>0</min>
@@ -44,18 +44,18 @@
 <isPerfectNested>1</isPerfectNested>
 <Latency>
 <range>
-<min>0</min>
-<max>4096</max>
+<min>1</min>
+<max>4097</max>
 </range>
 </Latency>
 <AbsoluteTimeLatency>
 <range>
-<min>0</min>
-<max>40960</max>
+<min>6</min>
+<max>27654</max>
 </range>
 </AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>2</PipelineDepth>
+<PipelineDepth>3</PipelineDepth>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
@@ -78,8 +78,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>41</FF>
-<LUT>199</LUT>
+<FF>68</FF>
+<LUT>207</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>

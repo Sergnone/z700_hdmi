@@ -186,8 +186,8 @@ set ArgLastReadFirstWriteLatency {
 		and_ln1989 {Type I LastRead 0 FirstWrite -1}
 		and_ln1991 {Type I LastRead 0 FirstWrite -1}
 		and_ln1993 {Type I LastRead 0 FirstWrite -1}
-		ovrlayYUV {Type O LastRead -1 FirstWrite 2}
-		bckgndYUV {Type I LastRead 1 FirstWrite -1}
+		ovrlayYUV {Type O LastRead -1 FirstWrite 3}
+		bckgndYUV {Type I LastRead 2 FirstWrite -1}
 		patternId_val {Type I LastRead 0 FirstWrite -1}
 		boxSize_val {Type I LastRead 0 FirstWrite -1}
 		y {Type I LastRead 0 FirstWrite -1}
@@ -210,7 +210,7 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "2", "Max" : "65538"}
+	{"Name" : "Latency", "Min" : "2", "Max" : "65539"}
 	, {"Name" : "Interval", "Min" : "1", "Max" : "65536"}
 ]}
 

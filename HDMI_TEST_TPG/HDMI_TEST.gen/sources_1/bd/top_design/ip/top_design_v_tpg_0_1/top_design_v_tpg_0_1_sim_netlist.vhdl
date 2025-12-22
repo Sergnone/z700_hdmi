@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Wed Dec 17 18:44:07 2025
+-- Date        : Mon Dec 22 19:22:05 2025
 -- Host        : serg running 64-bit Ubuntu 24.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim -rename_top top_design_v_tpg_0_1 -prefix
---               top_design_v_tpg_0_1_ top_design_v_tpg_0_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tpg_0_1/top_design_v_tpg_0_1_sim_netlist.vhdl
 -- Design      : top_design_v_tpg_0_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -15,7 +15,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_CTRL_s_axi is
+entity top_design_v_tpg_0_1_CTRL_s_axi is
   port (
     SR : out STD_LOGIC_VECTOR ( 0 to 0 );
     interrupt : out STD_LOGIC;
@@ -62,9 +62,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_CTRL_s_axi is
     ap_done : in STD_LOGIC;
     s_axi_CTRL_AWADDR : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_CTRL_s_axi;
+end top_design_v_tpg_0_1_CTRL_s_axi;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_CTRL_s_axi is
+architecture STRUCTURE of top_design_v_tpg_0_1_CTRL_s_axi is
   signal \FSM_onehot_rstate[1]_i_1_n_3\ : STD_LOGIC;
   signal \FSM_onehot_rstate[2]_i_1_n_3\ : STD_LOGIC;
   signal \^fsm_onehot_rstate_reg[1]_0\ : STD_LOGIC;
@@ -9242,7 +9242,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 is
+entity top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 is
   port (
     grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TLAST : out STD_LOGIC_VECTOR ( 0 to 0 );
     \sof_reg_211_reg[0]_0\ : out STD_LOGIC;
@@ -9297,9 +9297,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipelin
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     \out\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2;
+end top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 is
+architecture STRUCTURE of top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 is
   signal ap_CS_fsm_pp0_stage0 : STD_LOGIC;
   signal \ap_CS_fsm_reg_n_3_[0]\ : STD_LOGIC;
   signal ap_NS_fsm : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -11121,16 +11121,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0 is
+entity top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0 is
   port (
     P : out STD_LOGIC_VECTOR ( 15 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
     ap_clk : in STD_LOGIC;
     B : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0;
+end top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0 is
+architecture STRUCTURE of top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0 is
   signal p_reg_reg_n_108 : STD_LOGIC;
   signal NLW_p_reg_reg_CARRYCASCOUT_UNCONNECTED : STD_LOGIC;
   signal NLW_p_reg_reg_MULTSIGNOUT_UNCONNECTED : STD_LOGIC;
@@ -11232,7 +11232,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg is
+entity top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg is
   port (
     \out\ : out STD_LOGIC_VECTOR ( 23 downto 0 );
     push : in STD_LOGIC;
@@ -11240,9 +11240,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg is
     Q : in STD_LOGIC_VECTOR ( 3 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg;
+end top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg is
+architecture STRUCTURE of top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg is
   attribute srl_bus_name : string;
   attribute srl_bus_name of \SRL_SIG_reg[15][0]_srl16\ : label is "inst/\grp_v_tpgHlsDataFlow_fu_440/ovrlayYUV_U/U_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg/SRL_SIG_reg[15] ";
   attribute srl_name : string;
@@ -11635,7 +11635,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg_16 is
+entity top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg_16 is
   port (
     \out\ : out STD_LOGIC_VECTOR ( 23 downto 0 );
     push : in STD_LOGIC;
@@ -11644,10 +11644,10 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg_16 is
     ap_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg_16 : entity is "top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg";
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg_16;
+  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg_16 : entity is "top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg";
+end top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg_16;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg_16 is
+architecture STRUCTURE of top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg_16 is
   attribute srl_bus_name : string;
   attribute srl_bus_name of \SRL_SIG_reg[15][0]_srl16\ : label is "inst/\grp_v_tpgHlsDataFlow_fu_440/bckgndYUV_U/U_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg/SRL_SIG_reg[15] ";
   attribute srl_name : string;
@@ -12040,7 +12040,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init is
+entity top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init is
   port (
     ap_rst_n_0 : out STD_LOGIC;
     \icmp_ln774_reg_821_pp0_iter1_reg_reg[0]\ : out STD_LOGIC;
@@ -12129,9 +12129,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequenti
     \sub_ln1914_fu_415_p2_carry__1\ : in STD_LOGIC_VECTOR ( 9 downto 0 );
     motionSpeed_val_read_reg_378 : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init;
+end top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init is
+architecture STRUCTURE of top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init is
   signal \^d\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \ap_CS_fsm[2]_i_2_n_3\ : STD_LOGIC;
   signal ap_done_cache : STD_LOGIC;
@@ -13881,7 +13881,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init_4 is
+entity top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init_4 is
   port (
     ap_done_cache : out STD_LOGIC;
     ap_loop_init_int_reg_0 : out STD_LOGIC;
@@ -13958,10 +13958,10 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequenti
     \zonePlateVDelta_reg[15]_0\ : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init_4 : entity is "top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init";
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init_4;
+  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init_4 : entity is "top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init";
+end top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init_4;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init_4 is
+architecture STRUCTURE of top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init_4 is
   signal \^b\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \^co\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -15621,7 +15621,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0 is
+entity top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0 is
   port (
     P : out STD_LOGIC_VECTOR ( 10 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
@@ -15631,9 +15631,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_D
     p_reg_reg_1 : in STD_LOGIC_VECTOR ( 15 downto 0 );
     phi_mul_fu_478_reg : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0;
+end top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0 is
   signal C : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \p_reg_reg_i_10__0_n_3\ : STD_LOGIC;
   signal \p_reg_reg_i_11__0_n_3\ : STD_LOGIC;
@@ -16037,7 +16037,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0 is
+entity top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0 is
   port (
     A : out STD_LOGIC_VECTOR ( 0 to 0 );
     SS : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -16052,9 +16052,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_
     \r_2_reg_5328_reg[0]_0\ : in STD_LOGIC;
     r_reg_5030_pp0_iter19_reg : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0;
+end top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0 is
   signal \^a\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal grp_fu_4600_p3 : STD_LOGIC_VECTOR ( 16 to 16 );
   signal p_reg_reg_n_100 : STD_LOGIC;
@@ -16299,7 +16299,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0 is
+entity top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0 is
   port (
     P : out STD_LOGIC_VECTOR ( 0 to 0 );
     \tmp_4_reg_5041_reg[8]\ : out STD_LOGIC_VECTOR ( 6 downto 0 );
@@ -16320,9 +16320,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_D
     \b_2_reg_5165_reg[7]_i_4_0\ : in STD_LOGIC_VECTOR ( 14 downto 0 );
     p_reg_reg_0 : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0;
+end top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0 is
   signal add_ln1304_2_fu_3097_p2 : STD_LOGIC_VECTOR ( 16 to 16 );
   signal add_ln1304_3_fu_3093_p2 : STD_LOGIC_VECTOR ( 15 downto 8 );
   signal \b_2_reg_5165[3]_i_10_n_3\ : STD_LOGIC;
@@ -17138,7 +17138,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0 is
+entity top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0 is
   port (
     P : out STD_LOGIC_VECTOR ( 14 downto 0 );
     A : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -17147,9 +17147,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_
     p_reg_reg_0 : in STD_LOGIC_VECTOR ( 6 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0;
+end top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0 is
   signal \^a\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_p_reg_reg_CARRYCASCOUT_UNCONNECTED : STD_LOGIC;
   signal NLW_p_reg_reg_MULTSIGNOUT_UNCONNECTED : STD_LOGIC;
@@ -17260,7 +17260,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0 is
+entity top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0 is
   port (
     PCOUT : out STD_LOGIC_VECTOR ( 47 downto 0 );
     \tmp_reg_4995_reg[8]\ : out STD_LOGIC_VECTOR ( 6 downto 0 );
@@ -17269,9 +17269,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DS
     A : in STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0;
+end top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0 is
   signal \^tmp_reg_4995_reg[8]\ : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal NLW_p_reg_reg_CARRYCASCOUT_UNCONNECTED : STD_LOGIC;
   signal NLW_p_reg_reg_MULTSIGNOUT_UNCONNECTED : STD_LOGIC;
@@ -17441,7 +17441,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0 is
+entity top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0 is
   port (
     P : out STD_LOGIC_VECTOR ( 15 downto 0 );
     A : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -17451,9 +17451,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_
     p_reg_reg_1 : in STD_LOGIC_VECTOR ( 14 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0;
+end top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0 is
   signal \^a\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_p_reg_reg_CARRYCASCOUT_UNCONNECTED : STD_LOGIC;
   signal NLW_p_reg_reg_MULTSIGNOUT_UNCONNECTED : STD_LOGIC;
@@ -17565,7 +17565,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0 is
+entity top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0 is
   port (
     p_reg_reg_0 : out STD_LOGIC_VECTOR ( 14 downto 0 );
     p_reg_reg_1 : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -17577,9 +17577,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DS
     A : in STD_LOGIC_VECTOR ( 7 downto 0 );
     P : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0;
+end top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0 is
   signal p_reg_reg_n_93 : STD_LOGIC;
   signal NLW_p_reg_reg_CARRYCASCOUT_UNCONNECTED : STD_LOGIC;
   signal NLW_p_reg_reg_MULTSIGNOUT_UNCONNECTED : STD_LOGIC;
@@ -17714,7 +17714,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_15 is
+entity top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_15 is
   port (
     \tmp_3_reg_5036_reg[8]\ : out STD_LOGIC_VECTOR ( 6 downto 0 );
     SS : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -17731,10 +17731,10 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DS
     p_reg_reg_0 : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_15 : entity is "top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0";
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_15;
+  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_15 : entity is "top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0";
+end top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_15;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_15 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_15 is
   signal add_ln1303_2_fu_3081_p2 : STD_LOGIC_VECTOR ( 16 to 16 );
   signal \add_ln1303_2_fu_3081_p2__0\ : STD_LOGIC_VECTOR ( 15 downto 8 );
   signal \g_2_reg_5159[1]_i_3_n_3\ : STD_LOGIC;
@@ -18188,16 +18188,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1 is
+entity top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1 is
   port (
     P : out STD_LOGIC_VECTOR ( 9 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
     ap_clk : in STD_LOGIC;
     A : in STD_LOGIC_VECTOR ( 10 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1;
+end top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1 is
   signal tmp_product_n_100 : STD_LOGIC;
   signal tmp_product_n_101 : STD_LOGIC;
   signal tmp_product_n_102 : STD_LOGIC;
@@ -18328,149 +18328,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_6 is
-  port (
-    P : out STD_LOGIC_VECTOR ( 9 downto 0 );
-    ap_block_pp0_stage0_subdone : in STD_LOGIC;
-    ap_clk : in STD_LOGIC;
-    A : in STD_LOGIC_VECTOR ( 10 downto 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_6 : entity is "top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1";
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_6;
-
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_6 is
-  signal tmp_product_n_100 : STD_LOGIC;
-  signal tmp_product_n_101 : STD_LOGIC;
-  signal tmp_product_n_102 : STD_LOGIC;
-  signal tmp_product_n_103 : STD_LOGIC;
-  signal tmp_product_n_104 : STD_LOGIC;
-  signal tmp_product_n_105 : STD_LOGIC;
-  signal tmp_product_n_106 : STD_LOGIC;
-  signal tmp_product_n_107 : STD_LOGIC;
-  signal tmp_product_n_108 : STD_LOGIC;
-  signal tmp_product_n_84 : STD_LOGIC;
-  signal tmp_product_n_85 : STD_LOGIC;
-  signal tmp_product_n_96 : STD_LOGIC;
-  signal tmp_product_n_97 : STD_LOGIC;
-  signal tmp_product_n_98 : STD_LOGIC;
-  signal tmp_product_n_99 : STD_LOGIC;
-  signal NLW_tmp_product_CARRYCASCOUT_UNCONNECTED : STD_LOGIC;
-  signal NLW_tmp_product_MULTSIGNOUT_UNCONNECTED : STD_LOGIC;
-  signal NLW_tmp_product_OVERFLOW_UNCONNECTED : STD_LOGIC;
-  signal NLW_tmp_product_PATTERNBDETECT_UNCONNECTED : STD_LOGIC;
-  signal NLW_tmp_product_PATTERNDETECT_UNCONNECTED : STD_LOGIC;
-  signal NLW_tmp_product_UNDERFLOW_UNCONNECTED : STD_LOGIC;
-  signal NLW_tmp_product_ACOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 29 downto 0 );
-  signal NLW_tmp_product_BCOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 17 downto 0 );
-  signal NLW_tmp_product_CARRYOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_tmp_product_P_UNCONNECTED : STD_LOGIC_VECTOR ( 47 downto 25 );
-  signal NLW_tmp_product_PCOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 47 downto 0 );
-  attribute METHODOLOGY_DRC_VIOS : string;
-  attribute METHODOLOGY_DRC_VIOS of tmp_product : label is "{SYNTH-11 {cell *THIS*}}";
-begin
-tmp_product: unisim.vcomponents.DSP48E1
-    generic map(
-      ACASCREG => 2,
-      ADREG => 1,
-      ALUMODEREG => 0,
-      AREG => 2,
-      AUTORESET_PATDET => "NO_RESET",
-      A_INPUT => "DIRECT",
-      BCASCREG => 0,
-      BREG => 0,
-      B_INPUT => "DIRECT",
-      CARRYINREG => 0,
-      CARRYINSELREG => 0,
-      CREG => 1,
-      DREG => 1,
-      INMODEREG => 0,
-      MASK => X"3FFFFFFFFFFF",
-      MREG => 0,
-      OPMODEREG => 0,
-      PATTERN => X"000000000000",
-      PREG => 0,
-      SEL_MASK => "MASK",
-      SEL_PATTERN => "PATTERN",
-      USE_DPORT => false,
-      USE_MULT => "MULTIPLY",
-      USE_PATTERN_DETECT => "NO_PATDET",
-      USE_SIMD => "ONE48"
-    )
-        port map (
-      A(29 downto 11) => B"0000000000000000000",
-      A(10 downto 0) => A(10 downto 0),
-      ACIN(29 downto 0) => B"000000000000000000000000000000",
-      ACOUT(29 downto 0) => NLW_tmp_product_ACOUT_UNCONNECTED(29 downto 0),
-      ALUMODE(3 downto 0) => B"0000",
-      B(17 downto 0) => B"000000101010101011",
-      BCIN(17 downto 0) => B"000000000000000000",
-      BCOUT(17 downto 0) => NLW_tmp_product_BCOUT_UNCONNECTED(17 downto 0),
-      C(47 downto 0) => B"111111111111111111111111111111111111111111111111",
-      CARRYCASCIN => '0',
-      CARRYCASCOUT => NLW_tmp_product_CARRYCASCOUT_UNCONNECTED,
-      CARRYIN => '0',
-      CARRYINSEL(2 downto 0) => B"000",
-      CARRYOUT(3 downto 0) => NLW_tmp_product_CARRYOUT_UNCONNECTED(3 downto 0),
-      CEA1 => ap_block_pp0_stage0_subdone,
-      CEA2 => ap_block_pp0_stage0_subdone,
-      CEAD => '0',
-      CEALUMODE => '0',
-      CEB1 => '0',
-      CEB2 => '0',
-      CEC => '0',
-      CECARRYIN => '0',
-      CECTRL => '0',
-      CED => '0',
-      CEINMODE => '0',
-      CEM => '0',
-      CEP => '0',
-      CLK => ap_clk,
-      D(24 downto 0) => B"0000000000000000000000000",
-      INMODE(4 downto 0) => B"00000",
-      MULTSIGNIN => '0',
-      MULTSIGNOUT => NLW_tmp_product_MULTSIGNOUT_UNCONNECTED,
-      OPMODE(6 downto 0) => B"0000101",
-      OVERFLOW => NLW_tmp_product_OVERFLOW_UNCONNECTED,
-      P(47 downto 25) => NLW_tmp_product_P_UNCONNECTED(47 downto 25),
-      P(24) => tmp_product_n_84,
-      P(23) => tmp_product_n_85,
-      P(22 downto 13) => P(9 downto 0),
-      P(12) => tmp_product_n_96,
-      P(11) => tmp_product_n_97,
-      P(10) => tmp_product_n_98,
-      P(9) => tmp_product_n_99,
-      P(8) => tmp_product_n_100,
-      P(7) => tmp_product_n_101,
-      P(6) => tmp_product_n_102,
-      P(5) => tmp_product_n_103,
-      P(4) => tmp_product_n_104,
-      P(3) => tmp_product_n_105,
-      P(2) => tmp_product_n_106,
-      P(1) => tmp_product_n_107,
-      P(0) => tmp_product_n_108,
-      PATTERNBDETECT => NLW_tmp_product_PATTERNBDETECT_UNCONNECTED,
-      PATTERNDETECT => NLW_tmp_product_PATTERNDETECT_UNCONNECTED,
-      PCIN(47 downto 0) => B"000000000000000000000000000000000000000000000000",
-      PCOUT(47 downto 0) => NLW_tmp_product_PCOUT_UNCONNECTED(47 downto 0),
-      RSTA => '0',
-      RSTALLCARRYIN => '0',
-      RSTALUMODE => '0',
-      RSTB => '0',
-      RSTC => '0',
-      RSTCTRL => '0',
-      RSTD => '0',
-      RSTINMODE => '0',
-      RSTM => '0',
-      RSTP => '0',
-      UNDERFLOW => NLW_tmp_product_UNDERFLOW_UNCONNECTED
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_7 is
+entity top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_6 is
   port (
     P : out STD_LOGIC_VECTOR ( 9 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
@@ -18478,10 +18336,10 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_7 is
     A : in STD_LOGIC_VECTOR ( 10 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_7 : entity is "top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1";
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_7;
+  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_6 : entity is "top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1";
+end top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_6;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_7 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_6 is
   signal tmp_product_n_100 : STD_LOGIC;
   signal tmp_product_n_101 : STD_LOGIC;
   signal tmp_product_n_102 : STD_LOGIC;
@@ -18612,7 +18470,149 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_reg_ap_uint_10_s is
+entity top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_7 is
+  port (
+    P : out STD_LOGIC_VECTOR ( 9 downto 0 );
+    ap_block_pp0_stage0_subdone : in STD_LOGIC;
+    ap_clk : in STD_LOGIC;
+    A : in STD_LOGIC_VECTOR ( 10 downto 0 )
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_7 : entity is "top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1";
+end top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_7;
+
+architecture STRUCTURE of top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_7 is
+  signal tmp_product_n_100 : STD_LOGIC;
+  signal tmp_product_n_101 : STD_LOGIC;
+  signal tmp_product_n_102 : STD_LOGIC;
+  signal tmp_product_n_103 : STD_LOGIC;
+  signal tmp_product_n_104 : STD_LOGIC;
+  signal tmp_product_n_105 : STD_LOGIC;
+  signal tmp_product_n_106 : STD_LOGIC;
+  signal tmp_product_n_107 : STD_LOGIC;
+  signal tmp_product_n_108 : STD_LOGIC;
+  signal tmp_product_n_84 : STD_LOGIC;
+  signal tmp_product_n_85 : STD_LOGIC;
+  signal tmp_product_n_96 : STD_LOGIC;
+  signal tmp_product_n_97 : STD_LOGIC;
+  signal tmp_product_n_98 : STD_LOGIC;
+  signal tmp_product_n_99 : STD_LOGIC;
+  signal NLW_tmp_product_CARRYCASCOUT_UNCONNECTED : STD_LOGIC;
+  signal NLW_tmp_product_MULTSIGNOUT_UNCONNECTED : STD_LOGIC;
+  signal NLW_tmp_product_OVERFLOW_UNCONNECTED : STD_LOGIC;
+  signal NLW_tmp_product_PATTERNBDETECT_UNCONNECTED : STD_LOGIC;
+  signal NLW_tmp_product_PATTERNDETECT_UNCONNECTED : STD_LOGIC;
+  signal NLW_tmp_product_UNDERFLOW_UNCONNECTED : STD_LOGIC;
+  signal NLW_tmp_product_ACOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 29 downto 0 );
+  signal NLW_tmp_product_BCOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 17 downto 0 );
+  signal NLW_tmp_product_CARRYOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_tmp_product_P_UNCONNECTED : STD_LOGIC_VECTOR ( 47 downto 25 );
+  signal NLW_tmp_product_PCOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 47 downto 0 );
+  attribute METHODOLOGY_DRC_VIOS : string;
+  attribute METHODOLOGY_DRC_VIOS of tmp_product : label is "{SYNTH-11 {cell *THIS*}}";
+begin
+tmp_product: unisim.vcomponents.DSP48E1
+    generic map(
+      ACASCREG => 2,
+      ADREG => 1,
+      ALUMODEREG => 0,
+      AREG => 2,
+      AUTORESET_PATDET => "NO_RESET",
+      A_INPUT => "DIRECT",
+      BCASCREG => 0,
+      BREG => 0,
+      B_INPUT => "DIRECT",
+      CARRYINREG => 0,
+      CARRYINSELREG => 0,
+      CREG => 1,
+      DREG => 1,
+      INMODEREG => 0,
+      MASK => X"3FFFFFFFFFFF",
+      MREG => 0,
+      OPMODEREG => 0,
+      PATTERN => X"000000000000",
+      PREG => 0,
+      SEL_MASK => "MASK",
+      SEL_PATTERN => "PATTERN",
+      USE_DPORT => false,
+      USE_MULT => "MULTIPLY",
+      USE_PATTERN_DETECT => "NO_PATDET",
+      USE_SIMD => "ONE48"
+    )
+        port map (
+      A(29 downto 11) => B"0000000000000000000",
+      A(10 downto 0) => A(10 downto 0),
+      ACIN(29 downto 0) => B"000000000000000000000000000000",
+      ACOUT(29 downto 0) => NLW_tmp_product_ACOUT_UNCONNECTED(29 downto 0),
+      ALUMODE(3 downto 0) => B"0000",
+      B(17 downto 0) => B"000000101010101011",
+      BCIN(17 downto 0) => B"000000000000000000",
+      BCOUT(17 downto 0) => NLW_tmp_product_BCOUT_UNCONNECTED(17 downto 0),
+      C(47 downto 0) => B"111111111111111111111111111111111111111111111111",
+      CARRYCASCIN => '0',
+      CARRYCASCOUT => NLW_tmp_product_CARRYCASCOUT_UNCONNECTED,
+      CARRYIN => '0',
+      CARRYINSEL(2 downto 0) => B"000",
+      CARRYOUT(3 downto 0) => NLW_tmp_product_CARRYOUT_UNCONNECTED(3 downto 0),
+      CEA1 => ap_block_pp0_stage0_subdone,
+      CEA2 => ap_block_pp0_stage0_subdone,
+      CEAD => '0',
+      CEALUMODE => '0',
+      CEB1 => '0',
+      CEB2 => '0',
+      CEC => '0',
+      CECARRYIN => '0',
+      CECTRL => '0',
+      CED => '0',
+      CEINMODE => '0',
+      CEM => '0',
+      CEP => '0',
+      CLK => ap_clk,
+      D(24 downto 0) => B"0000000000000000000000000",
+      INMODE(4 downto 0) => B"00000",
+      MULTSIGNIN => '0',
+      MULTSIGNOUT => NLW_tmp_product_MULTSIGNOUT_UNCONNECTED,
+      OPMODE(6 downto 0) => B"0000101",
+      OVERFLOW => NLW_tmp_product_OVERFLOW_UNCONNECTED,
+      P(47 downto 25) => NLW_tmp_product_P_UNCONNECTED(47 downto 25),
+      P(24) => tmp_product_n_84,
+      P(23) => tmp_product_n_85,
+      P(22 downto 13) => P(9 downto 0),
+      P(12) => tmp_product_n_96,
+      P(11) => tmp_product_n_97,
+      P(10) => tmp_product_n_98,
+      P(9) => tmp_product_n_99,
+      P(8) => tmp_product_n_100,
+      P(7) => tmp_product_n_101,
+      P(6) => tmp_product_n_102,
+      P(5) => tmp_product_n_103,
+      P(4) => tmp_product_n_104,
+      P(3) => tmp_product_n_105,
+      P(2) => tmp_product_n_106,
+      P(1) => tmp_product_n_107,
+      P(0) => tmp_product_n_108,
+      PATTERNBDETECT => NLW_tmp_product_PATTERNBDETECT_UNCONNECTED,
+      PATTERNDETECT => NLW_tmp_product_PATTERNDETECT_UNCONNECTED,
+      PCIN(47 downto 0) => B"000000000000000000000000000000000000000000000000",
+      PCOUT(47 downto 0) => NLW_tmp_product_PCOUT_UNCONNECTED(47 downto 0),
+      RSTA => '0',
+      RSTALLCARRYIN => '0',
+      RSTALUMODE => '0',
+      RSTB => '0',
+      RSTC => '0',
+      RSTCTRL => '0',
+      RSTD => '0',
+      RSTINMODE => '0',
+      RSTM => '0',
+      RSTP => '0',
+      UNDERFLOW => NLW_tmp_product_UNDERFLOW_UNCONNECTED
+    );
+end STRUCTURE;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity top_design_v_tpg_0_1_reg_ap_uint_10_s is
   port (
     \ap_phi_reg_pp0_iter3_hHatch_reg_1326_reg[0]\ : out STD_LOGIC;
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -18631,9 +18631,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_reg_ap_uint_10_s is
     \ap_port_reg_d_reg[9]_0\ : in STD_LOGIC_VECTOR ( 9 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_reg_ap_uint_10_s;
+end top_design_v_tpg_0_1_reg_ap_uint_10_s;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_reg_ap_uint_10_s is
+architecture STRUCTURE of top_design_v_tpg_0_1_reg_ap_uint_10_s is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \ap_phi_reg_pp0_iter3_hHatch_reg_1326[0]_i_2_n_3\ : STD_LOGIC;
   signal ap_port_reg_d : STD_LOGIC_VECTOR ( 9 downto 0 );
@@ -19203,7 +19203,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_reg_unsigned_short_s is
+entity top_design_v_tpg_0_1_reg_unsigned_short_s is
   port (
     \ap_CS_fsm_reg[1]\ : out STD_LOGIC;
     \d_read_reg_24_reg[15]_0\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -19211,9 +19211,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_reg_unsigned_short_s is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \icmp_ln500_reg_701_reg[0]\ : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_reg_unsigned_short_s;
+end top_design_v_tpg_0_1_reg_unsigned_short_s;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_reg_unsigned_short_s is
+architecture STRUCTURE of top_design_v_tpg_0_1_reg_unsigned_short_s is
   signal d_read_reg_24 : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \icmp_ln500_reg_701[0]_i_2_n_3\ : STD_LOGIC;
   signal \icmp_ln500_reg_701[0]_i_3_n_3\ : STD_LOGIC;
@@ -19402,7 +19402,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both is
+entity top_design_v_tpg_0_1_regslice_both is
   port (
     m_axis_video_TREADY_int_regslice : out STD_LOGIC;
     m_axis_video_TVALID : out STD_LOGIC;
@@ -19421,9 +19421,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both is
     ap_start : in STD_LOGIC;
     \data_p2_reg[23]_0\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both;
+end top_design_v_tpg_0_1_regslice_both;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both is
+architecture STRUCTURE of top_design_v_tpg_0_1_regslice_both is
   signal ack_in_t_i_1_n_3 : STD_LOGIC;
   signal \ap_CS_fsm[5]_i_2_n_3\ : STD_LOGIC;
   signal \ap_CS_fsm[5]_i_3_n_3\ : STD_LOGIC;
@@ -20518,7 +20518,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0\ is
+entity \top_design_v_tpg_0_1_regslice_both__parameterized0\ is
   port (
     m_axis_video_TKEEP : out STD_LOGIC_VECTOR ( 2 downto 0 );
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -20528,10 +20528,10 @@ entity \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0\
     D : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0\ : entity is "top_design_v_tpg_0_1_regslice_both";
-end \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0\;
+  attribute ORIG_REF_NAME of \top_design_v_tpg_0_1_regslice_both__parameterized0\ : entity is "top_design_v_tpg_0_1_regslice_both";
+end \top_design_v_tpg_0_1_regslice_both__parameterized0\;
 
-architecture STRUCTURE of \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0\ is
+architecture STRUCTURE of \top_design_v_tpg_0_1_regslice_both__parameterized0\ is
   signal \ack_in_t_i_1__0_n_3\ : STD_LOGIC;
   signal ack_in_t_reg_n_3 : STD_LOGIC;
   signal \data_p1[0]_i_1_n_3\ : STD_LOGIC;
@@ -20776,7 +20776,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0_0\ is
+entity \top_design_v_tpg_0_1_regslice_both__parameterized0_0\ is
   port (
     m_axis_video_TSTRB : out STD_LOGIC_VECTOR ( 2 downto 0 );
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -20786,10 +20786,10 @@ entity \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0_
     D : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0_0\ : entity is "top_design_v_tpg_0_1_regslice_both";
-end \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0_0\;
+  attribute ORIG_REF_NAME of \top_design_v_tpg_0_1_regslice_both__parameterized0_0\ : entity is "top_design_v_tpg_0_1_regslice_both";
+end \top_design_v_tpg_0_1_regslice_both__parameterized0_0\;
 
-architecture STRUCTURE of \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0_0\ is
+architecture STRUCTURE of \top_design_v_tpg_0_1_regslice_both__parameterized0_0\ is
   signal \ack_in_t_i_1__1_n_3\ : STD_LOGIC;
   signal ack_in_t_reg_n_3 : STD_LOGIC;
   signal \data_p1[0]_i_1_n_3\ : STD_LOGIC;
@@ -21034,7 +21034,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1\ is
+entity \top_design_v_tpg_0_1_regslice_both__parameterized1\ is
   port (
     ack_in_t_reg_0 : out STD_LOGIC;
     data_p2 : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -21048,10 +21048,10 @@ entity \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1\
     m_axis_video_TREADY : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1\ : entity is "top_design_v_tpg_0_1_regslice_both";
-end \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1\;
+  attribute ORIG_REF_NAME of \top_design_v_tpg_0_1_regslice_both__parameterized1\ : entity is "top_design_v_tpg_0_1_regslice_both";
+end \top_design_v_tpg_0_1_regslice_both__parameterized1\;
 
-architecture STRUCTURE of \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1\ is
+architecture STRUCTURE of \top_design_v_tpg_0_1_regslice_both__parameterized1\ is
   signal \ack_in_t_i_1__3_n_3\ : STD_LOGIC;
   signal \^ack_in_t_reg_0\ : STD_LOGIC;
   signal \data_p1[0]_i_1__1_n_3\ : STD_LOGIC;
@@ -21191,7 +21191,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1_1\ is
+entity \top_design_v_tpg_0_1_regslice_both__parameterized1_1\ is
   port (
     ack_in_t_reg_0 : out STD_LOGIC;
     data_p2 : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -21205,10 +21205,10 @@ entity \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1_
     m_axis_video_TREADY : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1_1\ : entity is "top_design_v_tpg_0_1_regslice_both";
-end \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1_1\;
+  attribute ORIG_REF_NAME of \top_design_v_tpg_0_1_regslice_both__parameterized1_1\ : entity is "top_design_v_tpg_0_1_regslice_both";
+end \top_design_v_tpg_0_1_regslice_both__parameterized1_1\;
 
-architecture STRUCTURE of \top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1_1\ is
+architecture STRUCTURE of \top_design_v_tpg_0_1_regslice_both__parameterized1_1\ is
   signal \ack_in_t_i_1__2_n_3\ : STD_LOGIC;
   signal \^ack_in_t_reg_0\ : STD_LOGIC;
   signal \data_p1[0]_i_1__0_n_3\ : STD_LOGIC;
@@ -21348,7 +21348,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvideo_U0 is
+entity top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvideo_U0 is
   port (
     MultiPixStream2AXIvideo_U0_ap_start : out STD_LOGIC;
     start_for_MultiPixStream2AXIvideo_U0_full_n : out STD_LOGIC;
@@ -21361,9 +21361,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvid
     full_n_reg_0 : in STD_LOGIC;
     \mOutPtr_reg[0]_0\ : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvideo_U0;
+end top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvideo_U0;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvideo_U0 is
+architecture STRUCTURE of top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvideo_U0 is
   signal \^multipixstream2axivideo_u0_ap_start\ : STD_LOGIC;
   signal \empty_n_i_1__2_n_3\ : STD_LOGIC;
   signal \full_n_i_1__2_n_3\ : STD_LOGIC;
@@ -21480,7 +21480,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_start_for_tpgForeground_U0 is
+entity top_design_v_tpg_0_1_start_for_tpgForeground_U0 is
   port (
     tpgForeground_U0_ap_start : out STD_LOGIC;
     start_for_tpgForeground_U0_full_n : out STD_LOGIC;
@@ -21496,9 +21496,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_start_for_tpgForeground_U0 is
     \mOutPtr_reg[1]_0\ : in STD_LOGIC;
     full_n_reg_0 : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_start_for_tpgForeground_U0;
+end top_design_v_tpg_0_1_start_for_tpgForeground_U0;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_start_for_tpgForeground_U0 is
+architecture STRUCTURE of top_design_v_tpg_0_1_start_for_tpgForeground_U0 is
   signal \empty_n_i_1__1_n_3\ : STD_LOGIC;
   signal \full_n_i_1__1_n_3\ : STD_LOGIC;
   signal mOutPtr : STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -21625,7 +21625,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R is
   port (
     D : out STD_LOGIC_VECTOR ( 1 downto 0 );
     Q : out STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -21643,9 +21643,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_3_fu_258 : in STD_LOGIC_VECTOR ( 2 downto 0 );
     DPtpgBarArray_address0 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^q\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \q0[1]_i_1__0__0_n_3\ : STD_LOGIC;
@@ -21845,16 +21845,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R is
   port (
     \q0_reg[4]_0\ : out STD_LOGIC;
     DPtpgBarSelRgb_CEA_b_ce0_local : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_clk : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R is
 begin
 \q0_reg[4]\: unisim.vcomponents.FDRE
      port map (
@@ -21869,16 +21869,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R is
   port (
     \q0_reg[4]_0\ : out STD_LOGIC;
     DPtpgBarSelRgb_CEA_b_ce0_local : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_clk : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R is
 begin
 \q0_reg[4]\: unisim.vcomponents.FDRE
      port map (
@@ -21893,7 +21893,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R is
   port (
     \q0_reg[3]_0\ : out STD_LOGIC;
     ap_predicate_pred2328_state22_reg : out STD_LOGIC;
@@ -21927,9 +21927,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     ap_enable_reg_pp0_iter20 : in STD_LOGIC;
     \q0_reg[7]_1\ : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R is
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_246[2]_i_10_n_3\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_246[4]_i_11_n_3\ : STD_LOGIC;
   signal \q0[7]_i_1_n_3\ : STD_LOGIC;
@@ -22053,7 +22053,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R is
   port (
     \q0_reg[4]_0\ : out STD_LOGIC;
     \q0_reg[5]_0\ : out STD_LOGIC;
@@ -22065,9 +22065,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     \q0_reg[3]_1\ : in STD_LOGIC;
     \q0_reg[3]_2\ : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R is
 begin
 \q0_reg[3]\: unisim.vcomponents.FDRE
      port map (
@@ -22098,7 +22098,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R is
   port (
     \q0_reg[4]_0\ : out STD_LOGIC;
     \q0_reg[7]_0\ : out STD_LOGIC;
@@ -22177,9 +22177,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     \outpix_0_0_0_0_0_load213_lcssa220_fu_242[1]_i_5_0\ : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R is
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_242[7]_i_10_n_3\ : STD_LOGIC;
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_242[7]_i_6_n_3\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_246[0]_i_11_n_3\ : STD_LOGIC;
@@ -22455,7 +22455,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R is
   port (
     \q0_reg[3]_0\ : out STD_LOGIC;
     ap_enable_reg_pp0_iter22_reg : out STD_LOGIC;
@@ -22475,9 +22475,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     \q0_reg[7]_1\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     ap_enable_reg_pp0_iter20 : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R is
   signal \^ap_enable_reg_pp0_iter22_reg\ : STD_LOGIC;
   signal \q0[7]_i_1_n_3\ : STD_LOGIC;
   signal \^q0_reg[7]_0\ : STD_LOGIC;
@@ -22549,7 +22549,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R is
   port (
     \q0_reg[1]_0\ : out STD_LOGIC;
     \q0_reg[7]_0\ : out STD_LOGIC;
@@ -22601,9 +22601,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     \outpix_0_2_0_0_0_load217_lcssa226_fu_250[4]_i_2\ : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R is
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_246[1]_i_11_n_3\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_246[3]_i_14_n_3\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_246[5]_i_14_n_3\ : STD_LOGIC;
@@ -22858,7 +22858,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R is
   port (
     \q0_reg[2]_0\ : out STD_LOGIC;
     DPtpgBarSelRgb_CEA_b_ce0_local : out STD_LOGIC;
@@ -22906,9 +22906,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     \outpix_0_0_0_0_0_load213_lcssa220_fu_242[0]_i_7_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R is
   signal \^dptpgbarselrgb_cea_b_ce0_local\ : STD_LOGIC;
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_242[0]_i_4_n_3\ : STD_LOGIC;
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_242[0]_i_7_n_3\ : STD_LOGIC;
@@ -23129,7 +23129,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R is
   port (
     \q0_reg[7]_0\ : out STD_LOGIC;
     DPtpgBarSelRgb_CEA_b_ce0_local : in STD_LOGIC;
@@ -23141,9 +23141,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     \outpix_0_1_0_0_0_load215_lcssa223_fu_246_reg[7]_2\ : in STD_LOGIC;
     \outpix_0_1_0_0_0_load215_lcssa223_fu_246_reg[7]_3\ : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R is
   signal \q0_reg_n_3_[7]\ : STD_LOGIC;
 begin
 \outpix_0_1_0_0_0_load215_lcssa223_fu_246[7]_i_8\: unisim.vcomponents.LUT6
@@ -23172,7 +23172,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_3 is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_3 is
   port (
     \q0_reg[7]_0\ : out STD_LOGIC;
     DPtpgBarSelRgb_CEA_b_ce0_local : in STD_LOGIC;
@@ -23184,10 +23184,10 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     ap_phi_reg_pp0_iter20_phi_ln1207_reg_1381 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_3 : entity is "top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R";
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_3;
+  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_3 : entity is "top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R";
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_3;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_3 is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_3 is
   signal \q0[7]_i_1__4_n_3\ : STD_LOGIC;
 begin
 \q0[7]_i_1__4\: unisim.vcomponents.LUT6
@@ -23216,7 +23216,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R is
   port (
     \icmp_ln565_reg_4822_pp0_iter19_reg_reg[0]__0\ : out STD_LOGIC;
     \q0_reg[7]_0\ : out STD_LOGIC;
@@ -23237,9 +23237,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     DPtpgBarSelRgb_CEA_b_ce0_local : in STD_LOGIC;
     ap_clk : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R is
   signal bluYuv_address0 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^icmp_ln565_reg_4822_pp0_iter19_reg_reg[0]__0\ : STD_LOGIC;
   signal \q0[4]_i_1__0__0_n_3\ : STD_LOGIC;
@@ -23348,7 +23348,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R is
   port (
     \patternId_val_read_reg_4700_reg[0]\ : out STD_LOGIC;
     \colorFormat_val_read_reg_4756_reg[2]\ : out STD_LOGIC;
@@ -23398,9 +23398,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     \q0_reg[7]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_clk : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R is
   signal ap_predicate_pred2515_state22_i_3_n_3 : STD_LOGIC;
   signal \^colorformat_val_read_reg_4756_reg[2]\ : STD_LOGIC;
   signal grnYuv_address0 : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -23649,7 +23649,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R is
   port (
     \colorFormat_val_read_reg_4756_reg[0]\ : out STD_LOGIC;
     \patternId_val_read_reg_4700_reg[4]\ : out STD_LOGIC;
@@ -23692,9 +23692,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     ap_clk : in STD_LOGIC;
     ap_phi_reg_pp0_iter20_phi_ln1144_reg_1414 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R is
   signal \^colorformat_val_read_reg_4756_reg[0]\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_246[0]_i_9_n_3\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_246[1]_i_2_n_3\ : STD_LOGIC;
@@ -23913,7 +23913,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R is
   port (
     \q0_reg[1]_0\ : out STD_LOGIC;
     grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432_outpix_0_2_0_0_0_load216_out_o : out STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -23972,9 +23972,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     trunc_ln565_9_reg_4841_pp0_iter20_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
     \outpix_0_2_0_0_0_load217_lcssa226_fu_250[4]_i_2_0\ : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R is
   signal \outpix_0_2_0_0_0_load217_lcssa226_fu_250[0]_i_3_n_3\ : STD_LOGIC;
   signal \outpix_0_2_0_0_0_load217_lcssa226_fu_250[1]_i_5_n_3\ : STD_LOGIC;
   signal \outpix_0_2_0_0_0_load217_lcssa226_fu_250[2]_i_2_n_3\ : STD_LOGIC;
@@ -24193,7 +24193,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_8 is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_8 is
   port (
     \q0_reg[1]_0\ : out STD_LOGIC;
     \q0_reg[1]_1\ : out STD_LOGIC;
@@ -24206,10 +24206,10 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     reg_1468 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_8 : entity is "top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R";
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_8;
+  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_8 : entity is "top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R";
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_8;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_8 is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_8 is
   signal \^q0_reg[1]_0\ : STD_LOGIC;
 begin
   \q0_reg[1]_0\ <= \^q0_reg[1]_0\;
@@ -24239,7 +24239,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R is
   port (
     \q0_reg[1]_0\ : out STD_LOGIC;
     D : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -24252,9 +24252,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \phi_ln1_reg_5350_reg[7]\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R is
   signal \^q0_reg[1]_0\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \phi_ln1_reg_5350[5]_i_1\ : label is "soft_lutpair220";
@@ -24318,7 +24318,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R is
   port (
     \q0_reg[1]_0\ : out STD_LOGIC;
     ap_predicate_pred2193_state22_reg : out STD_LOGIC_VECTOR ( 4 downto 0 );
@@ -24379,9 +24379,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     \outpix_0_0_0_0_0_load213_lcssa220_fu_242[4]_i_9_1\ : in STD_LOGIC;
     ap_predicate_pred2145_state22 : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R is
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_242[1]_i_2_n_3\ : STD_LOGIC;
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_242[1]_i_5_n_3\ : STD_LOGIC;
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_242[3]_i_4_n_3\ : STD_LOGIC;
@@ -24646,7 +24646,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_9 is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_9 is
   port (
     \q0_reg[1]_0\ : out STD_LOGIC;
     D : out STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -24656,10 +24656,10 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_9 : entity is "top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R";
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_9;
+  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_9 : entity is "top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R";
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_9;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_9 is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_9 is
   signal \^q0_reg[1]_0\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \phi_ln1260_reg_5361[0]_i_1\ : label is "soft_lutpair224";
@@ -24765,16 +24765,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R is
   port (
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     \q0_reg[7]_0\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R is
 begin
 \q0_reg[5]\: unisim.vcomponents.FDRE
      port map (
@@ -24797,7 +24797,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R is
   port (
     D : out STD_LOGIC_VECTOR ( 3 downto 0 );
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -24816,9 +24816,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     \phi_ln1_reg_5350_reg[4]_1\ : in STD_LOGIC;
     \q0_reg[7]_3\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R is
   signal \^d\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
 begin
@@ -24886,7 +24886,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R is
   port (
     Q : out STD_LOGIC_VECTOR ( 7 downto 0 );
     \q0_reg[0]_0\ : in STD_LOGIC;
@@ -24898,9 +24898,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     D : in STD_LOGIC_VECTOR ( 7 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R is
   signal tpgBarSelYuv_y_ce0_local : STD_LOGIC;
 begin
 \q0[7]_i_1__1__0\: unisim.vcomponents.LUT6
@@ -24985,7 +24985,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R is
   port (
     \q0_reg[0]_0\ : out STD_LOGIC;
     D : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -24998,9 +24998,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     ap_predicate_pred2123_state22 : in STD_LOGIC;
     tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_hBarSel_l_1_fu_302 : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R is
   signal g0_b0_n_3 : STD_LOGIC;
   signal \^q0_reg[0]_0\ : STD_LOGIC;
 begin
@@ -25051,7 +25051,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R is
   port (
     D : out STD_LOGIC_VECTOR ( 5 downto 0 );
     tpgCheckerBoardArray_ce0_local : out STD_LOGIC;
@@ -25074,9 +25074,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     \q0_reg[4]_2\ : in STD_LOGIC;
     sel : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R is
   signal \^q\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \g0_b0__0_n_3\ : STD_LOGIC;
   signal g0_b1_n_3 : STD_LOGIC;
@@ -25355,7 +25355,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R is
   port (
     \phi_ln1_reg_5350_reg[4]\ : out STD_LOGIC;
     ap_enable_reg_pp0_iter21_reg_rep : out STD_LOGIC;
@@ -25388,9 +25388,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     ap_predicate_pred2674_state22 : in STD_LOGIC;
     \outpix_0_1_0_0_0_load215_lcssa223_fu_246_reg[6]_1\ : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R is
   signal \^ap_enable_reg_pp0_iter21_reg_rep\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_246[0]_i_2_n_3\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_246[0]_i_6_n_3\ : STD_LOGIC;
@@ -25512,7 +25512,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_12 is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_12 is
   port (
     \patternId_val_read_reg_4700_reg[2]\ : out STD_LOGIC;
     \select_ln1122_reg_1310_reg[6]\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -25548,10 +25548,10 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     ap_predicate_pred2166_state4 : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_12 : entity is "top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R";
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_12;
+  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_12 : entity is "top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R";
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_12;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_12 is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_12 is
   signal \^ap_enable_reg_pp0_iter21_reg\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_246[6]_i_2_n_3\ : STD_LOGIC;
   signal \^patternid_val_read_reg_4700_reg[2]\ : STD_LOGIC;
@@ -25675,7 +25675,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R is
+entity top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R is
   port (
     D : out STD_LOGIC_VECTOR ( 2 downto 0 );
     \patternId_val_read_reg_771_reg[7]\ : out STD_LOGIC;
@@ -25696,9 +25696,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LO
     ap_enable_reg_pp0_iter1 : in STD_LOGIC;
     \q0_reg[6]_2\ : in STD_LOGIC
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R;
+end top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R is
   signal ap_predicate_pred238_state3_i_4_n_3 : STD_LOGIC;
   signal \^colorformat_val_read_reg_745_reg[6]\ : STD_LOGIC;
   signal \^patternid_val_read_reg_771_reg[7]\ : STD_LOGIC;
@@ -25820,7 +25820,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider is
+entity top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider is
   port (
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
@@ -25835,9 +25835,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider is
     \loop[7].remd_tmp_reg[8][0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     trunc_ln565_9_reg_4841_pp0_iter12_reg : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider;
+end top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider is
+architecture STRUCTURE of top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider is
   signal \cal_tmp[10]_29\ : STD_LOGIC_VECTOR ( 11 to 11 );
   signal \cal_tmp[10]_carry__0_i_1__1_n_3\ : STD_LOGIC;
   signal \cal_tmp[10]_carry__0_i_2__1_n_3\ : STD_LOGIC;
@@ -27989,7 +27989,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_13 is
+entity top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_13 is
   port (
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
@@ -28005,10 +28005,10 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_13
     trunc_ln565_9_reg_4841_pp0_iter12_reg : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_13 : entity is "top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider";
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_13;
+  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_13 : entity is "top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider";
+end top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_13;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_13 is
+architecture STRUCTURE of top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_13 is
   signal \cal_tmp[10]_19\ : STD_LOGIC_VECTOR ( 11 to 11 );
   signal \cal_tmp[10]_carry__0_i_1__0_n_3\ : STD_LOGIC;
   signal \cal_tmp[10]_carry__0_i_2__0_n_3\ : STD_LOGIC;
@@ -30160,7 +30160,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_14 is
+entity top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_14 is
   port (
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
@@ -30177,10 +30177,10 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_14
     \loop[10].remd_tmp_reg[11][0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_14 : entity is "top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider";
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_14;
+  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_14 : entity is "top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider";
+end top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_14;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_14 is
+architecture STRUCTURE of top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_14 is
   signal \cal_tmp[10]_9\ : STD_LOGIC_VECTOR ( 11 to 11 );
   signal \cal_tmp[10]_carry__0_i_1_n_3\ : STD_LOGIC;
   signal \cal_tmp[10]_carry__0_i_2_n_3\ : STD_LOGIC;
@@ -32323,7 +32323,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo is
+entity top_design_v_tpg_0_1_MultiPixStream2AXIvideo is
   port (
     grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TLAST : out STD_LOGIC_VECTOR ( 0 to 0 );
     CO : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -32377,9 +32377,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo is
     \height_val4_read_reg_408_reg[11]_0\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \out\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo;
+end top_design_v_tpg_0_1_MultiPixStream2AXIvideo;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo is
+architecture STRUCTURE of top_design_v_tpg_0_1_MultiPixStream2AXIvideo is
   signal \^co\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal MultiPixStream2AXIvideo_U0_ap_ready : STD_LOGIC;
   signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -33104,7 +33104,7 @@ ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_done_i_1: unisim.vcomponents.LUT6
       I2 => \^co\(0),
       O => empty_n_reg
     );
-grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2
+grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167: entity work.top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2
      port map (
       CO(0) => \^co\(0),
       D(1) => grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_n_65,
@@ -33915,18 +33915,18 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1 is
+entity top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1 is
   port (
     P : out STD_LOGIC_VECTOR ( 15 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
     ap_clk : in STD_LOGIC;
     B : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1;
+end top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1 is
+architecture STRUCTURE of top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1 is
 begin
-top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0
+top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0
      port map (
       B(15 downto 0) => B(15 downto 0),
       P(15 downto 0) => P(15 downto 0),
@@ -33938,7 +33938,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S is
+entity top_design_v_tpg_0_1_fifo_w24_d16_S is
   port (
     bckgndYUV_empty_n : out STD_LOGIC;
     bckgndYUV_full_n : out STD_LOGIC;
@@ -33959,9 +33959,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S is
     D : in STD_LOGIC_VECTOR ( 0 to 0 );
     \addr_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S;
+end top_design_v_tpg_0_1_fifo_w24_d16_S;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S is
+architecture STRUCTURE of top_design_v_tpg_0_1_fifo_w24_d16_S is
   signal \^q\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \addr[0]_i_1_n_3\ : STD_LOGIC;
   signal \addr[1]_i_1_n_3\ : STD_LOGIC;
@@ -33986,7 +33986,7 @@ begin
   Q(1 downto 0) <= \^q\(1 downto 0);
   bckgndYUV_empty_n <= \^bckgndyuv_empty_n\;
   bckgndYUV_full_n <= \^bckgndyuv_full_n\;
-U_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg_16
+U_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg: entity work.top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg_16
      port map (
       Q(3 downto 0) => addr_reg(3 downto 0),
       ap_clk => ap_clk,
@@ -34214,7 +34214,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_2 is
+entity top_design_v_tpg_0_1_fifo_w24_d16_S_2 is
   port (
     ovrlayYUV_empty_n : out STD_LOGIC;
     ovrlayYUV_full_n : out STD_LOGIC;
@@ -34232,10 +34232,10 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_2 is
     \addr_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_2 : entity is "top_design_v_tpg_0_1_fifo_w24_d16_S";
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_2;
+  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_fifo_w24_d16_S_2 : entity is "top_design_v_tpg_0_1_fifo_w24_d16_S";
+end top_design_v_tpg_0_1_fifo_w24_d16_S_2;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_2 is
+architecture STRUCTURE of top_design_v_tpg_0_1_fifo_w24_d16_S_2 is
   signal \addr[0]_i_1__0_n_3\ : STD_LOGIC;
   signal \addr[1]_i_1__0_n_3\ : STD_LOGIC;
   signal \addr[2]_i_1__0_n_3\ : STD_LOGIC;
@@ -34259,7 +34259,7 @@ architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16
   attribute SOFT_HLUTNM of \mOutPtr[3]_i_1__0\ : label is "soft_lutpair189";
 begin
   ovrlayYUV_empty_n <= \^ovrlayyuv_empty_n\;
-U_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg
+U_top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg: entity work.top_design_v_tpg_0_1_fifo_w24_d16_S_ShiftReg
      port map (
       Q(3 downto 0) => addr_reg(3 downto 0),
       ap_clk => ap_clk,
@@ -34488,7 +34488,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1 is
+entity top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1 is
   port (
     P : out STD_LOGIC_VECTOR ( 10 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
@@ -34498,11 +34498,11 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1 i
     p_reg_reg_0 : in STD_LOGIC_VECTOR ( 15 downto 0 );
     phi_mul_fu_478_reg : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1;
+end top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1 is
 begin
-top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0
+top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0
      port map (
       P(10 downto 0) => P(10 downto 0),
       Q(15 downto 0) => Q(15 downto 0),
@@ -34517,7 +34517,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1 is
+entity top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1 is
   port (
     A : out STD_LOGIC_VECTOR ( 0 to 0 );
     SS : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -34532,11 +34532,11 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1 
     \r_2_reg_5328_reg[0]_0\ : in STD_LOGIC;
     r_reg_5030_pp0_iter19_reg : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1;
+end top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1 is
 begin
-top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0
+top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0
      port map (
       A(0) => A(0),
       D(7 downto 0) => D(7 downto 0),
@@ -34556,7 +34556,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1 is
+entity top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1 is
   port (
     P : out STD_LOGIC_VECTOR ( 0 to 0 );
     \tmp_4_reg_5041_reg[8]\ : out STD_LOGIC_VECTOR ( 6 downto 0 );
@@ -34577,11 +34577,11 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1 i
     \b_2_reg_5165_reg[7]_i_4\ : in STD_LOGIC_VECTOR ( 14 downto 0 );
     p_reg_reg : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1;
+end top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1 is
 begin
-top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0
+top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0
      port map (
       A(0) => A(0),
       D(7 downto 0) => D(7 downto 0),
@@ -34607,7 +34607,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1 is
+entity top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1 is
   port (
     P : out STD_LOGIC_VECTOR ( 14 downto 0 );
     A : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -34616,11 +34616,11 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1 
     p_reg_reg : in STD_LOGIC_VECTOR ( 6 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1;
+end top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1 is
 begin
-top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0
+top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0
      port map (
       A(0) => A(0),
       P(14 downto 0) => P(14 downto 0),
@@ -34634,7 +34634,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1 is
+entity top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1 is
   port (
     PCOUT : out STD_LOGIC_VECTOR ( 47 downto 0 );
     \tmp_reg_4995_reg[8]\ : out STD_LOGIC_VECTOR ( 6 downto 0 );
@@ -34643,11 +34643,11 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1 is
     A : in STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1;
+end top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1 is
 begin
-top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0
+top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0
      port map (
       A(0) => A(0),
       PCOUT(47 downto 0) => PCOUT(47 downto 0),
@@ -34661,7 +34661,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1 is
+entity top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1 is
   port (
     P : out STD_LOGIC_VECTOR ( 15 downto 0 );
     A : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -34671,11 +34671,11 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1 
     p_reg_reg_0 : in STD_LOGIC_VECTOR ( 14 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1;
+end top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1 is
 begin
-top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0
+top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0
      port map (
       A(0) => A(0),
       P(15 downto 0) => P(15 downto 0),
@@ -34690,7 +34690,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1 is
+entity top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1 is
   port (
     \tmp_3_reg_5036_reg[8]\ : out STD_LOGIC_VECTOR ( 6 downto 0 );
     SS : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -34706,11 +34706,11 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1 is
     \g_2_reg_5159_reg[7]_i_3\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     p_reg_reg : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1;
+end top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1 is
 begin
-top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_15
+top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_15
      port map (
       A(0) => A(0),
       D(7 downto 0) => D(7 downto 0),
@@ -34731,7 +34731,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5 is
+entity top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5 is
   port (
     p_reg_reg : out STD_LOGIC_VECTOR ( 14 downto 0 );
     p_reg_reg_0 : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -34744,12 +34744,12 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5 
     P : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5 : entity is "top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1";
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5;
+  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5 : entity is "top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1";
+end top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5 is
+architecture STRUCTURE of top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5 is
 begin
-top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0
+top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_U: entity work.top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0
      port map (
       A(7 downto 0) => A(7 downto 0),
       DI(0) => DI(0),
@@ -34766,7 +34766,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2 is
+entity top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2 is
   port (
     empty_n_reg : out STD_LOGIC_VECTOR ( 0 to 0 );
     D : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -34833,9 +34833,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LO
     \boxColorG_val_read_reg_749_reg[7]_0\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \boxColorB_val_read_reg_801_reg[7]_0\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2;
+end top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2 is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2 is
   signal \_inferred__3/i__carry__0_n_3\ : STD_LOGIC;
   signal \_inferred__3/i__carry__0_n_4\ : STD_LOGIC;
   signal \_inferred__3/i__carry__0_n_5\ : STD_LOGIC;
@@ -37734,7 +37734,7 @@ empty_n_i_1: unisim.vcomponents.LUT6
       I5 => bckgndYUV_empty_n,
       O => \icmp_ln774_reg_821_pp0_iter1_reg_reg[0]_0\
     );
-flow_control_loop_pipe_sequential_init_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init
+flow_control_loop_pipe_sequential_init_U: entity work.top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init
      port map (
       CO(0) => icmp_ln774_fu_371_p2(0),
       D(15 downto 0) => ap_sig_allocacmp_x_1(15 downto 0),
@@ -39885,7 +39885,7 @@ sub_ln1918_fu_473_p2_carry_i_9: unisim.vcomponents.LUT2
       Q => vDir(0),
       R => '0'
     );
-whiYuv_2_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R
+whiYuv_2_U: entity work.top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R
      port map (
       D(2 downto 0) => p_1_in(6 downto 4),
       Q(7 downto 0) => patternId_val_read_reg_771(7 downto 0),
@@ -40275,7 +40275,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1 is
+entity top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1 is
   port (
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
@@ -40291,9 +40291,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1 is
     I27 : in STD_LOGIC_VECTOR ( 0 to 0 );
     \loop[10].remd_tmp_reg[11][0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1;
+end top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1 is
+architecture STRUCTURE of top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1 is
   signal remd : STD_LOGIC_VECTOR ( 1 downto 0 );
 begin
 \remd_reg[0]\: unisim.vcomponents.FDRE
@@ -40312,7 +40312,7 @@ begin
       Q => Q(1),
       R => '0'
     );
-top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_u: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_14
+top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_u: entity work.top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_14
      port map (
       A(0) => A(0),
       DI(1 downto 0) => DI(1 downto 0),
@@ -40333,7 +40333,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10 is
+entity top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10 is
   port (
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
@@ -40349,10 +40349,10 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10 is
     trunc_ln565_9_reg_4841_pp0_iter12_reg : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10 : entity is "top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1";
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10;
+  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10 : entity is "top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1";
+end top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10 is
+architecture STRUCTURE of top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10 is
   signal remd : STD_LOGIC_VECTOR ( 1 downto 0 );
 begin
 \remd_reg[0]\: unisim.vcomponents.FDRE
@@ -40371,7 +40371,7 @@ begin
       Q => Q(1),
       R => '0'
     );
-top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_u: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_13
+top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_u: entity work.top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_13
      port map (
       A(1 downto 0) => A(1 downto 0),
       DI(1 downto 0) => DI(1 downto 0),
@@ -40391,7 +40391,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11 is
+entity top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11 is
   port (
     dout : out STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
@@ -40407,10 +40407,10 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11 is
     trunc_ln565_9_reg_4841_pp0_iter12_reg : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11 : entity is "top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1";
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11;
+  attribute ORIG_REF_NAME of top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11 : entity is "top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1";
+end top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11 is
+architecture STRUCTURE of top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11 is
   signal remd : STD_LOGIC_VECTOR ( 1 downto 0 );
 begin
 \remd_reg[0]\: unisim.vcomponents.FDRE
@@ -40429,7 +40429,7 @@ begin
       Q => dout(1),
       R => '0'
     );
-top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_u: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider
+top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider_u: entity work.top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_divider
      port map (
       A(1 downto 0) => A(1 downto 0),
       DI(1 downto 0) => DI(1 downto 0),
@@ -40449,7 +40449,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2 is
+entity top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2 is
   port (
     \icmp_ln565_reg_4822_pp0_iter19_reg_reg[0]__0_0\ : out STD_LOGIC;
     ap_loop_exit_ready_pp0_iter21_reg : out STD_LOGIC;
@@ -40653,9 +40653,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LO
     \q0_reg[4]_1\ : in STD_LOGIC;
     \zonePlateVDelta_reg[15]_0\ : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2;
+end top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2 is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2 is
   signal DPtpgBarArray_U_n_10 : STD_LOGIC;
   signal DPtpgBarArray_U_n_11 : STD_LOGIC;
   signal DPtpgBarArray_U_n_12 : STD_LOGIC;
@@ -43149,7 +43149,7 @@ begin
   \q0_reg[2]_0\(2 downto 0) <= \^q0_reg[2]_0\(2 downto 0);
   \rampStart_load_reg_1304_reg[6]\(7 downto 0) <= \^rampstart_load_reg_1304_reg[6]\(7 downto 0);
   \rampVal_2_loc_0_fu_266_reg[7]\(7 downto 0) <= \^rampval_2_loc_0_fu_266_reg[7]\(7 downto 0);
-DPtpgBarArray_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R
+DPtpgBarArray_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R
      port map (
       D(1) => DPtpgBarArray_U_n_3,
       D(0) => DPtpgBarArray_U_n_4,
@@ -43173,21 +43173,21 @@ DPtpgBarArray_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackgr
       \q0_reg[6]\ => \^ap_enable_reg_pp0_iter22_reg_0\,
       tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_3_fu_258(2 downto 0) => tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_3_fu_258(2 downto 0)
     );
-DPtpgBarSelRgb_CEA_g_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R
+DPtpgBarSelRgb_CEA_g_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R
      port map (
       DPtpgBarSelRgb_CEA_b_ce0_local => DPtpgBarSelRgb_CEA_b_ce0_local,
       Q(0) => \^q0_reg[2]\(2),
       ap_clk => ap_clk,
       \q0_reg[4]_0\ => DPtpgBarSelRgb_CEA_g_U_n_3
     );
-DPtpgBarSelRgb_CEA_r_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R
+DPtpgBarSelRgb_CEA_r_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R
      port map (
       DPtpgBarSelRgb_CEA_b_ce0_local => DPtpgBarSelRgb_CEA_b_ce0_local,
       Q(0) => \^q0_reg[2]\(1),
       ap_clk => ap_clk,
       \q0_reg[4]_0\ => DPtpgBarSelRgb_CEA_r_U_n_3
     );
-DPtpgBarSelRgb_VESA_b_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R
+DPtpgBarSelRgb_VESA_b_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R
      port map (
       DPtpgBarSelRgb_CEA_b_ce0_local => DPtpgBarSelRgb_CEA_b_ce0_local,
       ap_clk => ap_clk,
@@ -43248,7 +43248,7 @@ DPtpgBarSelRgb_VESA_b_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_t
       trunc_ln565_9_reg_4841_pp0_iter20_reg(0) => trunc_ln565_9_reg_4841_pp0_iter20_reg(0),
       \trunc_ln565_9_reg_4841_pp0_iter20_reg_reg[0]\ => DPtpgBarSelRgb_VESA_b_U_n_11
     );
-DPtpgBarSelRgb_VESA_r_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R
+DPtpgBarSelRgb_VESA_r_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R
      port map (
       DPtpgBarSelRgb_CEA_b_ce0_local => DPtpgBarSelRgb_CEA_b_ce0_local,
       Q(0) => tmp_25_reg_5304(4),
@@ -43312,7 +43312,7 @@ DPtpgBarSelRgb_VESA_r_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_t
       trunc_ln565_9_reg_4841_pp0_iter20_reg(0) => trunc_ln565_9_reg_4841_pp0_iter20_reg(0),
       \trunc_ln565_9_reg_4841_pp0_iter20_reg_reg[0]\ => DPtpgBarSelRgb_VESA_r_U_n_10
     );
-DPtpgBarSelYuv_601_u_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R
+DPtpgBarSelYuv_601_u_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R
      port map (
       D(1) => \q0_reg[5]_0\(0),
       D(0) => DPtpgBarArray_U_n_9,
@@ -43347,7 +43347,7 @@ DPtpgBarSelYuv_601_u_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tp
       \q0_reg[7]_0\(2 downto 0) => \^q0_reg[2]\(2 downto 0),
       \q0_reg[7]_1\ => DPtpgBarSelYuv_709_u_U_n_4
     );
-DPtpgBarSelYuv_601_v_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R
+DPtpgBarSelYuv_601_v_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R
      port map (
       DPtpgBarSelRgb_CEA_b_ce0_local => DPtpgBarSelRgb_CEA_b_ce0_local,
       ap_clk => ap_clk,
@@ -43359,7 +43359,7 @@ DPtpgBarSelYuv_601_v_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tp
       \q0_reg[5]_0\ => DPtpgBarSelYuv_601_v_U_n_4,
       \q0_reg[5]_1\ => \q0_reg[5]\
     );
-DPtpgBarSelYuv_601_y_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R
+DPtpgBarSelYuv_601_y_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R
      port map (
       D(1) => DPtpgBarArray_U_n_3,
       D(0) => DPtpgBarArray_U_n_4,
@@ -43443,7 +43443,7 @@ DPtpgBarSelYuv_601_y_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tp
       \zext_ln1449_reg_4811_reg[0]\ => DPtpgBarSelYuv_601_y_U_n_8,
       \zext_ln1449_reg_4811_reg[0]_0\ => DPtpgBarSelYuv_601_y_U_n_9
     );
-DPtpgBarSelYuv_709_u_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R
+DPtpgBarSelYuv_709_u_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R
      port map (
       DPtpgBarSelRgb_CEA_b_ce0_local => DPtpgBarSelRgb_CEA_b_ce0_local,
       Q(0) => DPtpgBarSelYuv_709_v_U_n_14,
@@ -43463,7 +43463,7 @@ DPtpgBarSelYuv_709_u_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tp
       \q0_reg[7]_1\(2 downto 0) => \^q0_reg[2]\(2 downto 0),
       trunc_ln565_9_reg_4841_pp0_iter20_reg(0) => trunc_ln565_9_reg_4841_pp0_iter20_reg(0)
     );
-DPtpgBarSelYuv_709_v_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R
+DPtpgBarSelYuv_709_v_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R
      port map (
       D(1) => DPtpgBarArray_U_n_17,
       D(0) => DPtpgBarArray_U_n_18,
@@ -43519,7 +43519,7 @@ DPtpgBarSelYuv_709_v_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tp
       \q0_reg[7]_0\ => DPtpgBarSelYuv_709_v_U_n_4,
       \q0_reg[7]_1\ => \q0_reg[7]_1\
     );
-DPtpgBarSelYuv_709_y_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R
+DPtpgBarSelYuv_709_y_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R
      port map (
       D(4) => DPtpgBarArray_U_n_10,
       D(3) => DPtpgBarArray_U_n_11,
@@ -45322,7 +45322,7 @@ DPtpgBarSelYuv_709_y_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tp
       D => add_ln549_reg_4902_pp0_iter3_reg(9),
       Q => \add_ln549_reg_4902_pp0_iter9_reg_reg[9]_srl6_n_3\
     );
-am_addmul_16ns_1s_16ns_17_4_1_U20: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1
+am_addmul_16ns_1s_16ns_17_4_1_U20: entity work.top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1
      port map (
       B(15 downto 0) => ap_sig_allocacmp_x_4(15 downto 0),
       P(15 downto 0) => \^d\(15 downto 0),
@@ -48736,7 +48736,7 @@ ap_predicate_pred552_state20_reg: unisim.vcomponents.FDRE
       Q => barWidthMinSamples_read_reg_4662(9),
       R => '0'
     );
-blkYuv_1_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R
+blkYuv_1_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R
      port map (
       DPtpgBarSelRgb_CEA_b_ce0_local => DPtpgBarSelRgb_CEA_b_ce0_local,
       ap_clk => ap_clk,
@@ -48748,7 +48748,7 @@ blkYuv_1_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_
       \q0_reg[7]_0\ => blkYuv_1_U_n_3,
       \q0_reg[7]_1\ => \q0_reg[7]_0\
     );
-blkYuv_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_3
+blkYuv_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_3
      port map (
       DPtpgBarSelRgb_CEA_b_ce0_local => DPtpgBarSelRgb_CEA_b_ce0_local,
       Q(1 downto 0) => patternId_val_read_reg_4700(1 downto 0),
@@ -48759,7 +48759,7 @@ blkYuv_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pi
       \q0_reg[7]_2\ => \^colorformat_val_read_reg_4756_reg[2]_0\,
       \q0_reg[7]_3\ => \^icmp_ln565_reg_4822_pp0_iter19_reg_reg[0]__0_0\
     );
-bluYuv_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R
+bluYuv_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R
      port map (
       DPtpgBarSelRgb_CEA_b_ce0_local => DPtpgBarSelRgb_CEA_b_ce0_local,
       Q(1 downto 0) => patternId_val_read_reg_4700(1 downto 0),
@@ -48845,7 +48845,7 @@ bluYuv_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pi
       Q => colorFormat_val_read_reg_4756(7),
       R => '0'
     );
-flow_control_loop_pipe_sequential_init_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init_4
+flow_control_loop_pipe_sequential_init_U: entity work.top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init_4
      port map (
       B(15 downto 0) => ap_sig_allocacmp_x_4(15 downto 0),
       CO(0) => icmp_ln565_fu_1556_p2250_in(0),
@@ -49452,7 +49452,7 @@ flow_control_loop_pipe_sequential_init_U: entity work.top_design_v_tpg_0_1_top_d
       Q => g_reg_5052(7),
       S => \g_reg_5052[7]_i_1_n_3\
     );
-grnYuv_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R
+grnYuv_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R
      port map (
       DPtpgBarSelRgb_CEA_b_ce0_local => DPtpgBarSelRgb_CEA_b_ce0_local,
       Q(1 downto 0) => patternId_val_read_reg_4700(1 downto 0),
@@ -49508,7 +49508,7 @@ grnYuv_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pi
       \q0_reg[7]_1\(0) => \q0_reg[7]_2\(0),
       trunc_ln565_9_reg_4841_pp0_iter19_reg(0) => trunc_ln565_9_reg_4841_pp0_iter19_reg(0)
     );
-grp_reg_ap_uint_10_s_fu_1924: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_reg_ap_uint_10_s
+grp_reg_ap_uint_10_s_fu_1924: entity work.top_design_v_tpg_0_1_reg_ap_uint_10_s
      port map (
       D(9 downto 0) => tpgPatternCrossHatch_unsigned_short_unsigned_short_unsigned_short_unsigned_sh1_in(9 downto 0),
       E(0) => grp_reg_ap_uint_10_s_fu_1924_n_4,
@@ -51221,7 +51221,7 @@ lshr_ln3_reg_4960_pp0_iter16_reg_reg_1: unisim.vcomponents.RAMB18E1
       WEA(1 downto 0) => B"00",
       WEBWE(3 downto 0) => B"0000"
     );
-mac_muladd_16s_16s_16s_16_4_1_U21: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1
+mac_muladd_16s_16s_16s_16_4_1_U21: entity work.top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1
      port map (
       P(10) => mac_muladd_16s_16s_16s_16_4_1_U21_n_3,
       P(9) => mac_muladd_16s_16s_16s_16_4_1_U21_n_4,
@@ -51241,7 +51241,7 @@ mac_muladd_16s_16s_16s_16_4_1_U21: entity work.top_design_v_tpg_0_1_top_design_v
       p_reg_reg_0(15 downto 0) => p_reg_reg(15 downto 0),
       phi_mul_fu_478_reg(15 downto 0) => phi_mul_fu_478_reg(15 downto 0)
     );
-mac_muladd_8ns_5ns_16ns_17_4_1_U28: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1
+mac_muladd_8ns_5ns_16ns_17_4_1_U28: entity work.top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1
      port map (
       A(0) => mac_muladd_8ns_5ns_16ns_17_4_1_U28_n_3,
       D(7 downto 0) => r_2_fu_3363_p3(7 downto 0),
@@ -51271,7 +51271,7 @@ mac_muladd_8ns_5ns_16ns_17_4_1_U28: entity work.top_design_v_tpg_0_1_top_design_
       \r_2_reg_5328_reg[0]_0\ => \icmp_ln1122_reg_4790_reg_n_3_[0]\,
       r_reg_5030_pp0_iter19_reg(7 downto 0) => r_reg_5030_pp0_iter19_reg(7 downto 0)
     );
-mac_muladd_8ns_6s_15ns_16_4_1_U27: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1
+mac_muladd_8ns_6s_15ns_16_4_1_U27: entity work.top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1
      port map (
       A(0) => mac_muladd_8ns_5ns_16ns_17_4_1_U28_n_3,
       D(7 downto 0) => b_2_fu_3161_p3(7 downto 0),
@@ -51306,7 +51306,7 @@ mac_muladd_8ns_6s_15ns_16_4_1_U27: entity work.top_design_v_tpg_0_1_top_design_v
       p_reg_reg(8 downto 0) => tmp_4_reg_5041(8 downto 0),
       \tmp_4_reg_5041_reg[8]\(6 downto 0) => grp_fu_4590_p0(6 downto 0)
     );
-mac_muladd_8ns_7ns_13ns_15_4_1_U22: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1
+mac_muladd_8ns_7ns_13ns_15_4_1_U22: entity work.top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1
      port map (
       A(0) => mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_18,
       P(14) => mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_3,
@@ -51329,7 +51329,7 @@ mac_muladd_8ns_7ns_13ns_15_4_1_U22: entity work.top_design_v_tpg_0_1_top_design_
       ap_clk => ap_clk,
       p_reg_reg(6 downto 0) => grp_fu_4545_p0(6 downto 0)
     );
-mac_muladd_8ns_7s_16s_16_4_1_U23: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1
+mac_muladd_8ns_7s_16s_16_4_1_U23: entity work.top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1
      port map (
       A(0) => mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_18,
       PCOUT(47) => mac_muladd_8ns_7s_16s_16_4_1_U23_n_3,
@@ -51385,7 +51385,7 @@ mac_muladd_8ns_7s_16s_16_4_1_U23: entity work.top_design_v_tpg_0_1_top_design_v_
       ap_clk => ap_clk,
       \tmp_reg_4995_reg[8]\(6 downto 0) => grp_fu_4545_p0(6 downto 0)
     );
-mac_muladd_8ns_8ns_15ns_16_4_1_U24: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1
+mac_muladd_8ns_8ns_15ns_16_4_1_U24: entity work.top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1
      port map (
       A(0) => mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_19,
       P(15) => mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_3,
@@ -51424,7 +51424,7 @@ mac_muladd_8ns_8ns_15ns_16_4_1_U24: entity work.top_design_v_tpg_0_1_top_design_
       p_reg_reg_0(1) => mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_16,
       p_reg_reg_0(0) => mac_muladd_8ns_7ns_13ns_15_4_1_U22_n_17
     );
-mac_muladd_8ns_8s_16s_16_4_1_U25: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1
+mac_muladd_8ns_8s_16s_16_4_1_U25: entity work.top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1
      port map (
       A(0) => mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_19,
       D(7 downto 0) => g_2_fu_3155_p3(7 downto 0),
@@ -51487,7 +51487,7 @@ mac_muladd_8ns_8s_16s_16_4_1_U25: entity work.top_design_v_tpg_0_1_top_design_v_
       p_reg_reg(8 downto 0) => tmp_3_reg_5036(8 downto 0),
       \tmp_3_reg_5036_reg[8]\(6 downto 0) => grp_fu_4562_p0(6 downto 0)
     );
-mac_muladd_8ns_8s_16s_16_4_1_U26: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5
+mac_muladd_8ns_8s_16s_16_4_1_U26: entity work.top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1_5
      port map (
       A(7) => mac_muladd_8ns_8ns_15ns_16_4_1_U24_n_19,
       A(6 downto 0) => grp_fu_4562_p0(6 downto 0),
@@ -51514,7 +51514,7 @@ mac_muladd_8ns_8s_16s_16_4_1_U26: entity work.top_design_v_tpg_0_1_top_design_v_
       p_reg_reg_0(0) => mac_muladd_8ns_8s_16s_16_4_1_U26_n_18,
       p_reg_reg_1(0) => mac_muladd_8ns_8s_16s_16_4_1_U26_n_20
     );
-mul_11ns_13ns_23_1_1_U7: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1
+mul_11ns_13ns_23_1_1_U7: entity work.top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1
      port map (
       A(10 downto 0) => trunc_ln565_11_reg_4853_pp0_iter9_reg(10 downto 0),
       P(9) => mul_11ns_13ns_23_1_1_U7_n_3,
@@ -51530,7 +51530,7 @@ mul_11ns_13ns_23_1_1_U7: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_m
       ap_block_pp0_stage0_subdone => ap_block_pp0_stage0_subdone,
       ap_clk => ap_clk
     );
-mul_11ns_13ns_23_1_1_U8: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_6
+mul_11ns_13ns_23_1_1_U8: entity work.top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_6
      port map (
       A(10 downto 1) => add_ln549_1_reg_4908_pp0_iter10_reg(10 downto 1),
       A(0) => add_ln549_reg_4902_pp0_iter10_reg(0),
@@ -51547,7 +51547,7 @@ mul_11ns_13ns_23_1_1_U8: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_m
       ap_block_pp0_stage0_subdone => ap_block_pp0_stage0_subdone,
       ap_clk => ap_clk
     );
-mul_11ns_13ns_23_1_1_U9: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_7
+mul_11ns_13ns_23_1_1_U9: entity work.top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1_7
      port map (
       A(10 downto 0) => add_ln549_reg_4902_pp0_iter10_reg(10 downto 0),
       P(9) => mul_11ns_13ns_23_1_1_U9_n_3,
@@ -56640,7 +56640,7 @@ mul_ln1356_reg_5203_reg_i_1: unisim.vcomponents.LUT3
       I5 => \rampVal_loc_0_fu_306_reg[7]_0\(7),
       O => \rampVal_loc_0_fu_306[7]_i_3_n_3\
     );
-redYuv_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R
+redYuv_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R
      port map (
       DPtpgBarSelRgb_CEA_b_ce0_local => DPtpgBarSelRgb_CEA_b_ce0_local,
       Q(7 downto 0) => patternId_val_read_reg_4700(7 downto 0),
@@ -58395,7 +58395,7 @@ tmp_17_reg_4990_reg_rep: unisim.vcomponents.RAMB18E1
       Q => tmp_reg_4995(8),
       R => '0'
     );
-tpgBarSelRgb_b_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_8
+tpgBarSelRgb_b_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_8
      port map (
       DPtpgBarSelRgb_CEA_b_ce0_local => DPtpgBarSelRgb_CEA_b_ce0_local,
       ap_clk => ap_clk,
@@ -58407,7 +58407,7 @@ tpgBarSelRgb_b_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackg
       \reg_1468_reg[1]_0\ => \^ap_predicate_pred547_state22\,
       \reg_1468_reg[1]_1\ => \^ap_predicate_pred552_state22\
     );
-tpgBarSelRgb_g_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R
+tpgBarSelRgb_g_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R
      port map (
       D(3) => tpgBarSelRgb_g_U_n_4,
       D(2) => tpgBarSelRgb_g_U_n_5,
@@ -58425,7 +58425,7 @@ tpgBarSelRgb_g_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackg
       \q0_reg[1]_0\ => tpgBarSelRgb_g_U_n_3,
       \q0_reg[1]_1\ => \q0_reg[1]_1\
     );
-tpgBarSelRgb_r_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_9
+tpgBarSelRgb_r_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_9
      port map (
       D(7 downto 0) => phi_ln1418_fu_3383_p3(7 downto 0),
       Q(7) => tpgBarSelYuv_y_U_n_3,
@@ -58441,7 +58441,7 @@ tpgBarSelRgb_r_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackg
       \q0_reg[1]_0\ => \q0_reg[1]_0\,
       \q0_reg[1]_1\ => \q0_reg[1]_4\
     );
-tpgBarSelYuv_u_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R
+tpgBarSelYuv_u_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R
      port map (
       E(0) => tpgBarSelRgb_g_ce0_local,
       Q(1) => tpgBarSelYuv_u_U_n_3,
@@ -58449,7 +58449,7 @@ tpgBarSelYuv_u_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackg
       ap_clk => ap_clk,
       \q0_reg[7]_0\(1 downto 0) => \q0_reg[7]_3\(1 downto 0)
     );
-tpgBarSelYuv_v_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R
+tpgBarSelYuv_v_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R
      port map (
       D(3) => tpgBarSelYuv_v_U_n_3,
       D(2) => tpgBarSelYuv_v_U_n_4,
@@ -58472,7 +58472,7 @@ tpgBarSelYuv_v_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackg
       \q0_reg[7]_3\(1) => tpgTartanBarArray_U_n_18,
       \q0_reg[7]_3\(0) => tpgTartanBarArray_U_n_19
     );
-tpgBarSelYuv_y_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R
+tpgBarSelYuv_y_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R
      port map (
       D(7) => tpgCheckerBoardArray_U_n_4,
       D(6) => tpgCheckerBoardArray_U_n_5,
@@ -58498,7 +58498,7 @@ tpgBarSelYuv_y_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackg
       bckgndYUV_full_n => bckgndYUV_full_n,
       \q0_reg[0]_0\ => \^ap_enable_reg_pp0_iter22_reg_0\
     );
-tpgCheckerBoardArray_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R
+tpgCheckerBoardArray_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R
      port map (
       D(1) => tpgCheckerBoardArray_U_n_4,
       D(0) => tpgCheckerBoardArray_U_n_5,
@@ -60738,7 +60738,7 @@ tpgCheckerBoardArray_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tp
       S(1) => \tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign[9]_i_4_n_3\,
       S(0) => \tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign[9]_i_5_n_3\
     );
-tpgTartanBarArray_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R
+tpgTartanBarArray_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R
      port map (
       D(5) => tpgTartanBarArray_U_n_3,
       D(4) => tpgTartanBarArray_U_n_4,
@@ -61367,7 +61367,7 @@ trunc_ln1356_reg_5209_reg: unisim.vcomponents.DSP48E1
       Q => trunc_ln565_9_reg_4841_pp0_iter20_reg(0),
       R => '0'
     );
-urem_11ns_3ns_2_15_1_U4: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1
+urem_11ns_3ns_2_15_1_U4: entity work.top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1
      port map (
       A(0) => trunc_ln565_11_reg_4853_pp0_iter9_reg(2),
       DI(1 downto 0) => trunc_ln565_11_reg_4853_pp0_iter2_reg(10 downto 9),
@@ -61383,7 +61383,7 @@ urem_11ns_3ns_2_15_1_U4: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_u
       \loop[7].remd_tmp_reg[8][0]\(0) => trunc_ln565_11_reg_4853_pp0_iter8_reg(3),
       p_1_in(0) => trunc_ln565_11_reg_4853_pp0_iter7_reg(4)
     );
-urem_11ns_3ns_2_15_1_U5: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10
+urem_11ns_3ns_2_15_1_U5: entity work.top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_10
      port map (
       A(1 downto 0) => add_ln549_1_reg_4908_pp0_iter10_reg(2 downto 1),
       DI(1 downto 0) => add_ln549_1_reg_4908_pp0_iter3_reg(10 downto 9),
@@ -61398,7 +61398,7 @@ urem_11ns_3ns_2_15_1_U5: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_u
       p_1_in(0) => add_ln549_1_reg_4908_pp0_iter8_reg(4),
       trunc_ln565_9_reg_4841_pp0_iter12_reg(0) => trunc_ln565_9_reg_4841_pp0_iter12_reg(0)
     );
-urem_11ns_3ns_2_15_1_U6: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11
+urem_11ns_3ns_2_15_1_U6: entity work.top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1_11
      port map (
       A(1 downto 0) => add_ln549_reg_4902_pp0_iter10_reg(2 downto 1),
       DI(1 downto 0) => add_ln549_reg_4902_pp0_iter3_reg(10 downto 9),
@@ -61716,7 +61716,7 @@ urem_11ns_3ns_2_15_1_U6: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_u
       Q => vHatch(0),
       R => '0'
     );
-whiYuv_1_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R
+whiYuv_1_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R
      port map (
       DPtpgBarSelRgb_CEA_b_ce0_local => DPtpgBarSelRgb_CEA_b_ce0_local,
       Q(7 downto 0) => patternId_val_read_reg_4700(7 downto 0),
@@ -61749,7 +61749,7 @@ whiYuv_1_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_
       \phi_ln1_reg_5350_reg[4]\ => whiYuv_1_U_n_3,
       \q0_reg[6]_0\ => \q0_reg[6]\
     );
-whiYuv_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_12
+whiYuv_U: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_12
      port map (
       DPtpgBarSelRgb_CEA_b_ce0_local => DPtpgBarSelRgb_CEA_b_ce0_local,
       Q(7 downto 0) => patternId_val_read_reg_4700(7 downto 0),
@@ -64146,7 +64146,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground is
+entity top_design_v_tpg_0_1_tpgForeground is
   port (
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
     CO : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -64189,9 +64189,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground is
     \boxColorB_val_read_reg_383_reg[7]_0\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \crossHairY_val_read_reg_403_reg[15]_0\ : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground;
+end top_design_v_tpg_0_1_tpgForeground;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgForeground is
   signal \^co\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal add_ln1912_fu_421_p2 : STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -66048,7 +66048,7 @@ full_n_i_2: unisim.vcomponents.LUT3
       I2 => \^co\(0),
       O => empty_n_reg_0
     );
-grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_182: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2
+grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_182: entity work.top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2
      port map (
       CO(0) => \^co\(0),
       D(0) => D(0),
@@ -68022,7 +68022,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground is
+entity top_design_v_tpg_0_1_tpgBackground is
   port (
     \colorFormat_read_reg_749_reg[4]\ : out STD_LOGIC;
     icmp_ln1947_fu_296_p2 : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -68057,9 +68057,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground is
     \ZplateVerContStart_val_read_reg_1196_reg[15]_0\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
     \ZplateVerContDelta_val_read_reg_1191_reg[15]_0\ : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground;
+end top_design_v_tpg_0_1_tpgBackground;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground is
+architecture STRUCTURE of top_design_v_tpg_0_1_tpgBackground is
   signal \^d\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal DPtpgBarArray_address0 : STD_LOGIC_VECTOR ( 3 to 3 );
   signal DPtpgBarArray_ce0_local : STD_LOGIC;
@@ -71109,7 +71109,7 @@ grp_reg_ap_uint_10_s_fu_1924_ap_start_reg_i_1: unisim.vcomponents.LUT4
       I3 => grp_reg_ap_uint_10_s_fu_1924_ap_start_reg0,
       O => grp_reg_ap_uint_10_s_fu_1924_ap_start_reg_i_1_n_3
     );
-grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2
+grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432: entity work.top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2
      port map (
       CO(0) => icmp_ln563_fu_959_p2(0),
       D(1 downto 0) => ap_NS_fsm(3 downto 2),
@@ -74999,7 +74999,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpgHlsDataFlow is
+entity top_design_v_tpg_0_1_v_tpgHlsDataFlow is
   port (
     grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TLAST : out STD_LOGIC_VECTOR ( 0 to 0 );
     grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TUSER : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -75057,9 +75057,9 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpgHlsDataFlow is
     \boxColorB_val_read_reg_383_reg[7]\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \crossHairY_val_read_reg_403_reg[15]\ : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpgHlsDataFlow;
+end top_design_v_tpg_0_1_v_tpgHlsDataFlow;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpgHlsDataFlow is
+architecture STRUCTURE of top_design_v_tpg_0_1_v_tpgHlsDataFlow is
   signal MultiPixStream2AXIvideo_U0_ap_start : STD_LOGIC;
   signal MultiPixStream2AXIvideo_U0_n_68 : STD_LOGIC;
   signal MultiPixStream2AXIvideo_U0_n_69 : STD_LOGIC;
@@ -75108,7 +75108,7 @@ architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpgHlsData
   signal tpgForeground_U0_n_9 : STD_LOGIC;
   signal tpgForeground_U0_ovrlayYUV_din : STD_LOGIC_VECTOR ( 23 downto 0 );
 begin
-MultiPixStream2AXIvideo_U0: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_MultiPixStream2AXIvideo
+MultiPixStream2AXIvideo_U0: entity work.top_design_v_tpg_0_1_MultiPixStream2AXIvideo
      port map (
       CO(0) => icmp_ln979_fu_282_p2(0),
       D(0) => add_ln994_fu_201_p2(0),
@@ -75162,7 +75162,7 @@ MultiPixStream2AXIvideo_U0: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_
       \tmp_i_reg_454_reg[23]_0\(23 downto 0) => \tmp_i_reg_454_reg[23]_0\(23 downto 0),
       \width_val7_read_reg_403_reg[12]_0\(12 downto 0) => \width_val_read_reg_428_reg[15]\(12 downto 0)
     );
-bckgndYUV_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S
+bckgndYUV_U: entity work.top_design_v_tpg_0_1_fifo_w24_d16_S
      port map (
       D(0) => tpgForeground_U0_n_7,
       E(0) => tpgForeground_U0_n_9,
@@ -75185,7 +75185,7 @@ bckgndYUV_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_
       p_9_in => p_9_in_1,
       push => push
     );
-ovrlayYUV_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_S_2
+ovrlayYUV_U: entity work.top_design_v_tpg_0_1_fifo_w24_d16_S_2
      port map (
       E(0) => MultiPixStream2AXIvideo_U0_n_9,
       SR(0) => SR(0),
@@ -75202,7 +75202,7 @@ ovrlayYUV_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_fifo_w24_d16_
       p_9_in => p_9_in,
       push => push_0
     );
-start_for_MultiPixStream2AXIvideo_U0_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvideo_U0
+start_for_MultiPixStream2AXIvideo_U0_U: entity work.top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvideo_U0
      port map (
       CO(0) => icmp_ln979_fu_282_p2(0),
       MultiPixStream2AXIvideo_U0_ap_start => MultiPixStream2AXIvideo_U0_ap_start,
@@ -75215,7 +75215,7 @@ start_for_MultiPixStream2AXIvideo_U0_U: entity work.top_design_v_tpg_0_1_top_des
       start_once_reg => start_once_reg_2,
       tpgForeground_U0_ap_start => tpgForeground_U0_ap_start
     );
-start_for_tpgForeground_U0_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_start_for_tpgForeground_U0
+start_for_tpgForeground_U0_U: entity work.top_design_v_tpg_0_1_start_for_tpgForeground_U0
      port map (
       CO(0) => icmp_ln772_fu_337_p2(0),
       Q(0) => ap_CS_fsm_state2_3,
@@ -75231,7 +75231,7 @@ start_for_tpgForeground_U0_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_
       start_once_reg_0 => start_once_reg_2,
       tpgForeground_U0_ap_start => tpgForeground_U0_ap_start
     );
-tpgBackground_U0: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackground
+tpgBackground_U0: entity work.top_design_v_tpg_0_1_tpgBackground
      port map (
       D(0) => add_ln994_fu_201_p2(0),
       Q(7 downto 0) => Q(7 downto 0),
@@ -75268,7 +75268,7 @@ tpgBackground_U0: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgBackg
       \trunc_ln1247_reg_1315_reg[2]_0\(2 downto 0) => \trunc_ln1247_reg_1315_reg[2]\(2 downto 0),
       \width_val_read_reg_1216_reg[15]_0\(15 downto 0) => \width_val_read_reg_428_reg[15]\(15 downto 0)
     );
-tpgForeground_U0: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_tpgForeground
+tpgForeground_U0: entity work.top_design_v_tpg_0_1_tpgForeground
      port map (
       CO(0) => icmp_ln772_fu_337_p2(0),
       D(0) => tpgForeground_U0_n_7,
@@ -75316,7 +75316,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg is
+entity top_design_v_tpg_0_1_v_tpg is
   port (
     ap_clk : in STD_LOGIC;
     ap_rst_n : in STD_LOGIC;
@@ -75351,34 +75351,34 @@ entity top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg is
     interrupt : out STD_LOGIC
   );
   attribute C_S_AXI_CTRL_ADDR_WIDTH : integer;
-  attribute C_S_AXI_CTRL_ADDR_WIDTH of top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg : entity is 8;
+  attribute C_S_AXI_CTRL_ADDR_WIDTH of top_design_v_tpg_0_1_v_tpg : entity is 8;
   attribute C_S_AXI_CTRL_DATA_WIDTH : integer;
-  attribute C_S_AXI_CTRL_DATA_WIDTH of top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg : entity is 32;
+  attribute C_S_AXI_CTRL_DATA_WIDTH of top_design_v_tpg_0_1_v_tpg : entity is 32;
   attribute C_S_AXI_CTRL_WSTRB_WIDTH : integer;
-  attribute C_S_AXI_CTRL_WSTRB_WIDTH of top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg : entity is 4;
+  attribute C_S_AXI_CTRL_WSTRB_WIDTH of top_design_v_tpg_0_1_v_tpg : entity is 4;
   attribute C_S_AXI_DATA_WIDTH : integer;
-  attribute C_S_AXI_DATA_WIDTH of top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg : entity is 32;
+  attribute C_S_AXI_DATA_WIDTH of top_design_v_tpg_0_1_v_tpg : entity is 32;
   attribute C_S_AXI_WSTRB_WIDTH : integer;
-  attribute C_S_AXI_WSTRB_WIDTH of top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg : entity is 4;
+  attribute C_S_AXI_WSTRB_WIDTH of top_design_v_tpg_0_1_v_tpg : entity is 4;
   attribute DowngradeIPIdentifiedWarnings : string;
-  attribute DowngradeIPIdentifiedWarnings of top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg : entity is "yes";
+  attribute DowngradeIPIdentifiedWarnings of top_design_v_tpg_0_1_v_tpg : entity is "yes";
   attribute ap_ST_fsm_state1 : string;
-  attribute ap_ST_fsm_state1 of top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg : entity is "6'b000001";
+  attribute ap_ST_fsm_state1 of top_design_v_tpg_0_1_v_tpg : entity is "6'b000001";
   attribute ap_ST_fsm_state2 : string;
-  attribute ap_ST_fsm_state2 of top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg : entity is "6'b000010";
+  attribute ap_ST_fsm_state2 of top_design_v_tpg_0_1_v_tpg : entity is "6'b000010";
   attribute ap_ST_fsm_state3 : string;
-  attribute ap_ST_fsm_state3 of top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg : entity is "6'b000100";
+  attribute ap_ST_fsm_state3 of top_design_v_tpg_0_1_v_tpg : entity is "6'b000100";
   attribute ap_ST_fsm_state4 : string;
-  attribute ap_ST_fsm_state4 of top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg : entity is "6'b001000";
+  attribute ap_ST_fsm_state4 of top_design_v_tpg_0_1_v_tpg : entity is "6'b001000";
   attribute ap_ST_fsm_state5 : string;
-  attribute ap_ST_fsm_state5 of top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg : entity is "6'b010000";
+  attribute ap_ST_fsm_state5 of top_design_v_tpg_0_1_v_tpg : entity is "6'b010000";
   attribute ap_ST_fsm_state6 : string;
-  attribute ap_ST_fsm_state6 of top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg : entity is "6'b100000";
+  attribute ap_ST_fsm_state6 of top_design_v_tpg_0_1_v_tpg : entity is "6'b100000";
   attribute hls_module : string;
-  attribute hls_module of top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg : entity is "yes";
-end top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg;
+  attribute hls_module of top_design_v_tpg_0_1_v_tpg : entity is "yes";
+end top_design_v_tpg_0_1_v_tpg;
 
-architecture STRUCTURE of top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg is
+architecture STRUCTURE of top_design_v_tpg_0_1_v_tpg is
   signal \<const0>\ : STD_LOGIC;
   signal \MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TLAST\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TUSER\ : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -75711,7 +75711,7 @@ begin
   s_axi_CTRL_RDATA(15 downto 0) <= \^s_axi_ctrl_rdata\(15 downto 0);
   s_axi_CTRL_RRESP(1) <= \<const0>\;
   s_axi_CTRL_RRESP(0) <= \<const0>\;
-CTRL_s_axi_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_CTRL_s_axi
+CTRL_s_axi_U: entity work.top_design_v_tpg_0_1_CTRL_s_axi
      port map (
       D(0) => ap_NS_fsm(1),
       \FSM_onehot_rstate_reg[1]_0\ => s_axi_CTRL_ARREADY,
@@ -78166,7 +78166,7 @@ ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready_reg: unisim.vcomponents.FDRE
       Q => field_id_read_reg_724(9),
       R => '0'
     );
-grp_reg_unsigned_short_s_fu_616: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_reg_unsigned_short_s
+grp_reg_unsigned_short_s_fu_616: entity work.top_design_v_tpg_0_1_reg_unsigned_short_s
      port map (
       Q(0) => ap_CS_fsm_state2,
       \ap_CS_fsm_reg[1]\ => grp_reg_unsigned_short_s_fu_616_n_3,
@@ -78174,7 +78174,7 @@ grp_reg_unsigned_short_s_fu_616: entity work.top_design_v_tpg_0_1_top_design_v_t
       \d_read_reg_24_reg[15]_0\(15 downto 0) => bck_motion_en(15 downto 0),
       \icmp_ln500_reg_701_reg[0]\ => \icmp_ln500_reg_701_reg_n_3_[0]\
     );
-grp_v_tpgHlsDataFlow_fu_440: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpgHlsDataFlow
+grp_v_tpgHlsDataFlow_fu_440: entity work.top_design_v_tpg_0_1_v_tpgHlsDataFlow
      port map (
       D(2) => grp_v_tpgHlsDataFlow_fu_440_n_8,
       D(1) => grp_v_tpgHlsDataFlow_fu_440_n_9,
@@ -78834,7 +78834,7 @@ grp_v_tpgHlsDataFlow_fu_440_ap_start_reg_reg: unisim.vcomponents.FDRE
       Q => ovrlayId_read_reg_734(7),
       R => '0'
     );
-regslice_both_m_axis_video_V_data_V_U: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both
+regslice_both_m_axis_video_V_data_V_U: entity work.top_design_v_tpg_0_1_regslice_both
      port map (
       D(1) => ap_NS_fsm(5),
       D(0) => ap_NS_fsm(0),
@@ -78856,7 +78856,7 @@ regslice_both_m_axis_video_V_data_V_U: entity work.top_design_v_tpg_0_1_top_desi
       m_axis_video_TREADY_int_regslice => m_axis_video_TREADY_int_regslice,
       m_axis_video_TVALID => m_axis_video_TVALID
     );
-regslice_both_m_axis_video_V_keep_V_U: entity work.\top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0\
+regslice_both_m_axis_video_V_keep_V_U: entity work.\top_design_v_tpg_0_1_regslice_both__parameterized0\
      port map (
       D(2) => grp_v_tpgHlsDataFlow_fu_440_n_8,
       D(1) => grp_v_tpgHlsDataFlow_fu_440_n_9,
@@ -78867,7 +78867,7 @@ regslice_both_m_axis_video_V_keep_V_U: entity work.\top_design_v_tpg_0_1_top_des
       m_axis_video_TKEEP(2 downto 0) => m_axis_video_TKEEP(2 downto 0),
       m_axis_video_TREADY => m_axis_video_TREADY
     );
-regslice_both_m_axis_video_V_last_V_U: entity work.\top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1\
+regslice_both_m_axis_video_V_last_V_U: entity work.\top_design_v_tpg_0_1_regslice_both__parameterized1\
      port map (
       SR(0) => ap_rst_n_inv,
       ack_in_t_reg_0 => regslice_both_m_axis_video_V_last_V_U_n_3,
@@ -78880,7 +78880,7 @@ regslice_both_m_axis_video_V_last_V_U: entity work.\top_design_v_tpg_0_1_top_des
       m_axis_video_TLAST_reg(0) => m_axis_video_TLAST_reg(0),
       m_axis_video_TREADY => m_axis_video_TREADY
     );
-regslice_both_m_axis_video_V_strb_V_U: entity work.\top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized0_0\
+regslice_both_m_axis_video_V_strb_V_U: entity work.\top_design_v_tpg_0_1_regslice_both__parameterized0_0\
      port map (
       D(2) => grp_v_tpgHlsDataFlow_fu_440_n_11,
       D(1) => grp_v_tpgHlsDataFlow_fu_440_n_12,
@@ -78891,7 +78891,7 @@ regslice_both_m_axis_video_V_strb_V_U: entity work.\top_design_v_tpg_0_1_top_des
       m_axis_video_TREADY => m_axis_video_TREADY,
       m_axis_video_TSTRB(2 downto 0) => m_axis_video_TSTRB(2 downto 0)
     );
-regslice_both_m_axis_video_V_user_V_U: entity work.\top_design_v_tpg_0_1_top_design_v_tpg_0_1_regslice_both__parameterized1_1\
+regslice_both_m_axis_video_V_user_V_U: entity work.\top_design_v_tpg_0_1_regslice_both__parameterized1_1\
      port map (
       SR(0) => ap_rst_n_inv,
       ack_in_t_reg_0 => regslice_both_m_axis_video_V_user_V_U_n_3,
@@ -79968,7 +79968,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-inst: entity work.top_design_v_tpg_0_1_top_design_v_tpg_0_1_v_tpg
+inst: entity work.top_design_v_tpg_0_1_v_tpg
      port map (
       ap_clk => ap_clk,
       ap_rst_n => ap_rst_n,

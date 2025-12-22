@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'v_tpg'" level="0">
-<item name = "Date">Fri Dec 19 16:54:38 2025
+<item name = "Date">Mon Dec 22 19:21:26 2025
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.859 ns, 2.70 ns</column>
+<column name="ap_clk">6.75 ns, 4.890 ns, 1.82 ns</column>
 </table>
 </item>
 </section>
@@ -24,15 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">27, 4296409070, 0.270 us, 42.964 sec, 28, 4296409071, no</column>
+<column name="">30, 4296540141, 0.203 us, 29.002 sec, 31, 4296540142, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_v_tpgHlsDataFlow_fu_441">v_tpgHlsDataFlow, 23, 4296409066, 0.230 us, 42.964 sec, 2, 4296409067, dataflow</column>
-<column name="grp_reg_unsigned_short_s_fu_634">reg_unsigned_short_s, 1, 1, 10.000 ns, 10.000 ns, 1, 1, yes</column>
+<column name="grp_v_tpgHlsDataFlow_fu_440">v_tpgHlsDataFlow, 25, 4296540136, 0.169 us, 29.002 sec, 2, 4296540137, dataflow</column>
+<column name="grp_reg_unsigned_short_s_fu_616">reg_unsigned_short_s, 1, 1, 6.750 ns, 6.750 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -51,12 +51,12 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 175, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">9, 13, 5686, 6262, -</column>
+<column name="Instance">9, 13, 6031, 6308, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, 0, 106, -</column>
-<column name="Register">-, -, 381, -, -</column>
+<column name="Multiplexer">-, -, 0, 114, -</column>
+<column name="Register">-, -, 382, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">3, 5, 5, 12, 0</specialColumn>
+<specialColumn name="Utilization (%)">3, 5, 6, 12, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -64,8 +64,8 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 442, 600, 0</column>
-<column name="grp_reg_unsigned_short_s_fu_634">reg_unsigned_short_s, 0, 0, 18, 2, 0</column>
-<column name="grp_v_tpgHlsDataFlow_fu_441">v_tpgHlsDataFlow, 9, 13, 5226, 5660, 0</column>
+<column name="grp_reg_unsigned_short_s_fu_616">reg_unsigned_short_s, 0, 0, 18, 2, 0</column>
+<column name="grp_v_tpgHlsDataFlow_fu_440">v_tpgHlsDataFlow, 9, 13, 5571, 5706, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -82,20 +82,20 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln502_fu_650_p2">+, 0, 0, 32, 32, 1</column>
-<column name="add_ln507_fu_682_p2">+, 0, 0, 32, 32, 1</column>
-<column name="grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TREADY">and, 0, 0, 1, 1, 1</column>
-<column name="icmp_ln500_fu_640_p2">icmp, 0, 0, 16, 16, 1</column>
-<column name="icmp_ln503_fu_656_p2">icmp, 0, 0, 32, 32, 4</column>
-<column name="icmp_ln505_fu_676_p2">icmp, 0, 0, 29, 29, 1</column>
-<column name="ap_sync_grp_v_tpgHlsDataFlow_fu_441_ap_ready">or, 0, 0, 1, 1, 1</column>
-<column name="select_ln505_fu_688_p3">select, 0, 0, 32, 1, 32</column>
+<column name="add_ln502_fu_632_p2">+, 0, 0, 32, 32, 1</column>
+<column name="add_ln507_fu_663_p2">+, 0, 0, 32, 32, 1</column>
+<column name="grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TREADY">and, 0, 0, 1, 1, 1</column>
+<column name="icmp_ln500_fu_622_p2">icmp, 0, 0, 16, 16, 1</column>
+<column name="icmp_ln503_fu_638_p2">icmp, 0, 0, 32, 32, 4</column>
+<column name="icmp_ln505_fu_657_p2">icmp, 0, 0, 29, 29, 1</column>
+<column name="ap_sync_grp_v_tpgHlsDataFlow_fu_440_ap_ready">or, 0, 0, 1, 1, 1</column>
+<column name="select_ln505_fu_669_p3">select, 0, 0, 32, 1, 32</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">25, 6, 1, 6</column>
-<column name="count_new_0_reg_430">9, 2, 32, 64</column>
+<column name="ap_NS_fsm">29, 7, 1, 7</column>
+<column name="ap_phi_mux_count_new_0_phi_fu_433_p4">13, 3, 32, 96</column>
 <column name="fid">9, 2, 1, 2</column>
 <column name="m_axis_video_TDATA_int_regslice">9, 2, 24, 48</column>
 <column name="m_axis_video_TDEST_int_regslice">9, 2, 1, 2</column>
@@ -108,31 +108,31 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ZplateHorContDelta_read_reg_795">16, 0, 16, 0</column>
-<column name="ZplateHorContStart_read_reg_790">16, 0, 16, 0</column>
-<column name="ZplateVerContDelta_read_reg_805">16, 0, 16, 0</column>
-<column name="ZplateVerContStart_read_reg_800">16, 0, 16, 0</column>
-<column name="ap_CS_fsm">5, 0, 5, 0</column>
-<column name="ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_done">1, 0, 1, 0</column>
-<column name="ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_ready">1, 0, 1, 0</column>
-<column name="bckgndId_read_reg_755">8, 0, 8, 0</column>
-<column name="boxSize_read_reg_810">16, 0, 16, 0</column>
-<column name="colorFormat_read_reg_775">8, 0, 8, 0</column>
+<column name="ZplateHorContDelta_read_reg_769">16, 0, 16, 0</column>
+<column name="ZplateHorContStart_read_reg_764">16, 0, 16, 0</column>
+<column name="ZplateVerContDelta_read_reg_779">16, 0, 16, 0</column>
+<column name="ZplateVerContStart_read_reg_774">16, 0, 16, 0</column>
+<column name="add_ln502_reg_705">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">6, 0, 6, 0</column>
+<column name="ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_done">1, 0, 1, 0</column>
+<column name="ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready">1, 0, 1, 0</column>
+<column name="bckgndId_read_reg_729">8, 0, 8, 0</column>
+<column name="boxSize_read_reg_784">16, 0, 16, 0</column>
+<column name="colorFormat_read_reg_749">8, 0, 8, 0</column>
 <column name="count">32, 0, 32, 0</column>
-<column name="count_new_0_reg_430">32, 0, 32, 0</column>
-<column name="crossHairX_read_reg_780">16, 0, 16, 0</column>
-<column name="crossHairY_read_reg_785">16, 0, 16, 0</column>
-<column name="dpDynamicRange_read_reg_830">8, 0, 8, 0</column>
-<column name="dpYUVCoef_read_reg_835">8, 0, 8, 0</column>
-<column name="empty_59_reg_820">8, 0, 8, 0</column>
-<column name="empty_60_reg_825">8, 0, 8, 0</column>
-<column name="empty_reg_815">8, 0, 8, 0</column>
-<column name="fid_in_read_reg_750">1, 0, 1, 0</column>
+<column name="crossHairX_read_reg_754">16, 0, 16, 0</column>
+<column name="crossHairY_read_reg_759">16, 0, 16, 0</column>
+<column name="dpDynamicRange_read_reg_804">8, 0, 8, 0</column>
+<column name="dpYUVCoef_read_reg_809">8, 0, 8, 0</column>
+<column name="empty_59_reg_794">8, 0, 8, 0</column>
+<column name="empty_60_reg_799">8, 0, 8, 0</column>
+<column name="empty_reg_789">8, 0, 8, 0</column>
+<column name="fid_in_read_reg_814">1, 0, 1, 0</column>
 <column name="fid_reg">1, 0, 1, 0</column>
-<column name="field_id_read_reg_745">16, 0, 16, 0</column>
-<column name="grp_v_tpgHlsDataFlow_fu_441_ap_start_reg">1, 0, 1, 0</column>
-<column name="height_read_reg_735">16, 0, 16, 0</column>
-<column name="icmp_ln500_reg_723">1, 0, 1, 0</column>
+<column name="field_id_read_reg_724">16, 0, 16, 0</column>
+<column name="grp_v_tpgHlsDataFlow_fu_440_ap_start_reg">1, 0, 1, 0</column>
+<column name="height_read_reg_714">16, 0, 16, 0</column>
+<column name="icmp_ln500_reg_701">1, 0, 1, 0</column>
 <column name="m_axis_video_TDATA_reg">24, 0, 24, 0</column>
 <column name="m_axis_video_TDEST_reg">1, 0, 1, 0</column>
 <column name="m_axis_video_TID_reg">1, 0, 1, 0</column>
@@ -140,11 +140,11 @@
 <column name="m_axis_video_TLAST_reg">1, 0, 1, 0</column>
 <column name="m_axis_video_TSTRB_reg">3, 0, 3, 0</column>
 <column name="m_axis_video_TUSER_reg">1, 0, 1, 0</column>
-<column name="maskId_read_reg_765">8, 0, 8, 0</column>
-<column name="motionSpeed_read_reg_770">8, 0, 8, 0</column>
-<column name="ovrlayId_read_reg_760">8, 0, 8, 0</column>
+<column name="maskId_read_reg_739">8, 0, 8, 0</column>
+<column name="motionSpeed_read_reg_744">8, 0, 8, 0</column>
+<column name="ovrlayId_read_reg_734">8, 0, 8, 0</column>
 <column name="s">32, 0, 32, 0</column>
-<column name="width_read_reg_740">16, 0, 16, 0</column>
+<column name="width_read_reg_719">16, 0, 16, 0</column>
 </table>
 </item>
 </section>

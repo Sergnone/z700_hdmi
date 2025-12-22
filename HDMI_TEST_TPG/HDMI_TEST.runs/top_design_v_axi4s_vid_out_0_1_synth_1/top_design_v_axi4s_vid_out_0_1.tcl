@@ -56,8 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "top_design_v_axi4s_vid_out_0_1_synth_1" START { ROLLUP_AUTO }
-set_param bd.open.in_stealth_mode 7
-set_param chipscope.maxJobs 3
 set_param general.usePosixSpawnForFork 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run

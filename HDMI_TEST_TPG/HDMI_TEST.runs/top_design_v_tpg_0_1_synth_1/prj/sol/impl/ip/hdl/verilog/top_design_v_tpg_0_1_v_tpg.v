@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="top_design_v_tpg_0_1_v_tpg,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-2,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.858500,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=9,HLS_SYN_DSP=0,HLS_SYN_FF=6067,HLS_SYN_LUT=6543,HLS_VERSION=2025_2}" *)
+(* CORE_GENERATION_INFO="top_design_v_tpg_0_1_v_tpg,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-2,HLS_INPUT_CLOCK=6.750000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=4.890000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=9,HLS_SYN_DSP=0,HLS_SYN_FF=6413,HLS_SYN_LUT=6597,HLS_VERSION=2025_2}" *)
 
 (* DowngradeIPIdentifiedWarnings="yes" *)
 module top_design_v_tpg_0_1_v_tpg (
@@ -43,11 +43,12 @@ module top_design_v_tpg_0_1_v_tpg (
         interrupt
 );
 
-parameter    ap_ST_fsm_state1 = 5'd1;
-parameter    ap_ST_fsm_state2 = 5'd2;
-parameter    ap_ST_fsm_state3 = 5'd4;
-parameter    ap_ST_fsm_state4 = 5'd8;
-parameter    ap_ST_fsm_state5 = 5'd16;
+parameter    ap_ST_fsm_state1 = 6'd1;
+parameter    ap_ST_fsm_state2 = 6'd2;
+parameter    ap_ST_fsm_state3 = 6'd4;
+parameter    ap_ST_fsm_state4 = 6'd8;
+parameter    ap_ST_fsm_state5 = 6'd16;
+parameter    ap_ST_fsm_state6 = 6'd32;
 parameter    C_S_AXI_CTRL_DATA_WIDTH = 32;
 parameter    C_S_AXI_CTRL_ADDR_WIDTH = 8;
 parameter    C_S_AXI_DATA_WIDTH = 32;
@@ -93,7 +94,7 @@ reg[0:0] fid;
 wire    ap_start;
 reg    ap_done;
 reg    ap_idle;
-(* fsm_encoding = "none" *) reg   [4:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [5:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    ap_ready;
 wire   [15:0] height;
@@ -119,64 +120,66 @@ wire   [7:0] dpYUVCoef;
 wire   [15:0] bck_motion_en;
 reg   [31:0] count;
 reg   [31:0] s;
-wire   [0:0] icmp_ln500_fu_640_p2;
-reg   [0:0] icmp_ln500_reg_723;
+wire   [0:0] icmp_ln500_fu_622_p2;
+reg   [0:0] icmp_ln500_reg_701;
 wire    ap_CS_fsm_state2;
-wire   [31:0] add_ln502_fu_650_p2;
-reg   [15:0] height_read_reg_735;
+wire   [31:0] add_ln502_fu_632_p2;
+reg   [31:0] add_ln502_reg_705;
+reg   [15:0] height_read_reg_714;
 wire    ap_CS_fsm_state3;
-reg   [15:0] width_read_reg_740;
-reg   [15:0] field_id_read_reg_745;
-reg   [0:0] fid_in_read_reg_750;
-reg   [7:0] bckgndId_read_reg_755;
-reg   [7:0] ovrlayId_read_reg_760;
-reg   [7:0] maskId_read_reg_765;
-reg   [7:0] motionSpeed_read_reg_770;
-reg   [7:0] colorFormat_read_reg_775;
-reg   [15:0] crossHairX_read_reg_780;
-reg   [15:0] crossHairY_read_reg_785;
-reg   [15:0] ZplateHorContStart_read_reg_790;
-reg   [15:0] ZplateHorContDelta_read_reg_795;
-reg   [15:0] ZplateVerContStart_read_reg_800;
-reg   [15:0] ZplateVerContDelta_read_reg_805;
-reg   [15:0] boxSize_read_reg_810;
-wire   [7:0] empty_fu_708_p1;
-reg   [7:0] empty_reg_815;
-wire   [7:0] empty_59_fu_713_p1;
-reg   [7:0] empty_59_reg_820;
-wire   [7:0] empty_60_fu_718_p1;
-reg   [7:0] empty_60_reg_825;
-reg   [7:0] dpDynamicRange_read_reg_830;
-reg   [7:0] dpYUVCoef_read_reg_835;
-wire   [23:0] grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDATA;
-wire   [2:0] grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TKEEP;
-wire   [2:0] grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TSTRB;
-wire   [0:0] grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TUSER;
-wire   [0:0] grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TLAST;
-wire   [0:0] grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TID;
-wire   [0:0] grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDEST;
-wire   [0:0] grp_v_tpgHlsDataFlow_fu_441_fid;
-wire    grp_v_tpgHlsDataFlow_fu_441_ap_start;
-wire    grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID;
-wire    grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TREADY;
-wire    grp_v_tpgHlsDataFlow_fu_441_fid_ap_vld;
-wire    grp_v_tpgHlsDataFlow_fu_441_ap_done;
-wire    grp_v_tpgHlsDataFlow_fu_441_ap_ready;
-wire    grp_v_tpgHlsDataFlow_fu_441_ap_idle;
-reg    grp_v_tpgHlsDataFlow_fu_441_ap_continue;
-reg    grp_reg_unsigned_short_s_fu_634_ap_start;
-wire    grp_reg_unsigned_short_s_fu_634_ap_done;
-wire    grp_reg_unsigned_short_s_fu_634_ap_idle;
-wire    grp_reg_unsigned_short_s_fu_634_ap_ready;
-wire   [15:0] grp_reg_unsigned_short_s_fu_634_ap_return;
-reg   [31:0] count_new_0_reg_430;
-wire   [0:0] icmp_ln503_fu_656_p2;
-reg    grp_v_tpgHlsDataFlow_fu_441_ap_start_reg;
+reg   [15:0] width_read_reg_719;
+reg   [15:0] field_id_read_reg_724;
+reg   [7:0] bckgndId_read_reg_729;
+reg   [7:0] ovrlayId_read_reg_734;
+reg   [7:0] maskId_read_reg_739;
+reg   [7:0] motionSpeed_read_reg_744;
+reg   [7:0] colorFormat_read_reg_749;
+reg   [15:0] crossHairX_read_reg_754;
+reg   [15:0] crossHairY_read_reg_759;
+reg   [15:0] ZplateHorContStart_read_reg_764;
+reg   [15:0] ZplateHorContDelta_read_reg_769;
+reg   [15:0] ZplateVerContStart_read_reg_774;
+reg   [15:0] ZplateVerContDelta_read_reg_779;
+reg   [15:0] boxSize_read_reg_784;
+wire   [7:0] empty_fu_689_p1;
+reg   [7:0] empty_reg_789;
+wire   [7:0] empty_59_fu_693_p1;
+reg   [7:0] empty_59_reg_794;
+wire   [7:0] empty_60_fu_697_p1;
+reg   [7:0] empty_60_reg_799;
+reg   [7:0] dpDynamicRange_read_reg_804;
+reg   [7:0] dpYUVCoef_read_reg_809;
+reg   [0:0] fid_in_read_reg_814;
 wire    ap_CS_fsm_state4;
-reg    ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_ready;
-reg    ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_done;
-reg    ap_block_state4_on_subcall_done;
-wire    ap_sync_grp_v_tpgHlsDataFlow_fu_441_ap_ready;
+wire   [23:0] grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDATA;
+wire   [2:0] grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TKEEP;
+wire   [2:0] grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TSTRB;
+wire   [0:0] grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TUSER;
+wire   [0:0] grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TLAST;
+wire   [0:0] grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TID;
+wire   [0:0] grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDEST;
+wire   [0:0] grp_v_tpgHlsDataFlow_fu_440_fid;
+wire    grp_v_tpgHlsDataFlow_fu_440_ap_start;
+wire    grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID;
+wire    grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TREADY;
+wire    grp_v_tpgHlsDataFlow_fu_440_fid_ap_vld;
+wire    grp_v_tpgHlsDataFlow_fu_440_ap_done;
+wire    grp_v_tpgHlsDataFlow_fu_440_ap_ready;
+wire    grp_v_tpgHlsDataFlow_fu_440_ap_idle;
+reg    grp_v_tpgHlsDataFlow_fu_440_ap_continue;
+reg    grp_reg_unsigned_short_s_fu_616_ap_start;
+wire    grp_reg_unsigned_short_s_fu_616_ap_done;
+wire    grp_reg_unsigned_short_s_fu_616_ap_idle;
+wire    grp_reg_unsigned_short_s_fu_616_ap_ready;
+wire   [15:0] grp_reg_unsigned_short_s_fu_616_ap_return;
+reg   [31:0] ap_phi_mux_count_new_0_phi_fu_433_p4;
+wire   [0:0] icmp_ln503_fu_638_p2;
+reg    grp_v_tpgHlsDataFlow_fu_440_ap_start_reg;
+wire    ap_CS_fsm_state5;
+reg    ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready;
+reg    ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_done;
+reg    ap_block_state5_on_subcall_done;
+wire    ap_sync_grp_v_tpgHlsDataFlow_fu_440_ap_ready;
 reg   [23:0] m_axis_video_TDATA_reg;
 reg   [2:0] m_axis_video_TKEEP_reg;
 reg   [2:0] m_axis_video_TSTRB_reg;
@@ -185,18 +188,19 @@ reg   [0:0] m_axis_video_TLAST_reg;
 reg   [0:0] m_axis_video_TID_reg;
 reg   [0:0] m_axis_video_TDEST_reg;
 reg   [0:0] fid_reg;
-wire   [31:0] select_ln505_fu_688_p3;
-wire   [28:0] tmp_1_fu_666_p4;
-wire   [0:0] icmp_ln505_fu_676_p2;
-wire   [31:0] add_ln507_fu_682_p2;
-wire    ap_CS_fsm_state5;
+wire   [31:0] select_ln505_fu_669_p3;
+wire   [28:0] tmp_1_fu_647_p4;
+wire   [0:0] icmp_ln505_fu_657_p2;
+wire   [31:0] add_ln507_fu_663_p2;
+wire    ap_CS_fsm_state6;
 wire    regslice_both_m_axis_video_V_data_V_U_apdone_blk;
-reg   [4:0] ap_NS_fsm;
+reg   [5:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
 wire    ap_ST_fsm_state3_blk;
-reg    ap_ST_fsm_state4_blk;
+wire    ap_ST_fsm_state4_blk;
 reg    ap_ST_fsm_state5_blk;
+reg    ap_ST_fsm_state6_blk;
 reg   [23:0] m_axis_video_TDATA_int_regslice;
 wire    m_axis_video_TVALID_int_regslice;
 wire    m_axis_video_TREADY_int_regslice;
@@ -229,44 +233,44 @@ wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
-#0 ap_CS_fsm = 5'd1;
+#0 ap_CS_fsm = 6'd1;
 #0 count = 32'd0;
 #0 s = 32'd0;
-#0 grp_v_tpgHlsDataFlow_fu_441_ap_start_reg = 1'b0;
-#0 ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_ready = 1'b0;
-#0 ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_done = 1'b0;
+#0 grp_v_tpgHlsDataFlow_fu_440_ap_start_reg = 1'b0;
+#0 ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready = 1'b0;
+#0 ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_done = 1'b0;
 end
 
-top_design_v_tpg_0_1_v_tpgHlsDataFlow grp_v_tpgHlsDataFlow_fu_441(
-    .height_val4(height_read_reg_735),
-    .width_val7(width_read_reg_740),
-    .field_id_val8(field_id_read_reg_745),
-    .fid_in_val9(fid_in_read_reg_750),
-    .bckgndId_val10(bckgndId_read_reg_755),
-    .ovrlayId_val11(ovrlayId_read_reg_760),
-    .maskId_val12(maskId_read_reg_765),
-    .motionSpeed_val14(motionSpeed_read_reg_770),
-    .colorFormat_val17(colorFormat_read_reg_775),
-    .crossHairX_val18(crossHairX_read_reg_780),
-    .crossHairY_val19(crossHairY_read_reg_785),
-    .ZplateHorContStart_val20(ZplateHorContStart_read_reg_790),
-    .ZplateHorContDelta_val21(ZplateHorContDelta_read_reg_795),
-    .ZplateVerContStart_val22(ZplateVerContStart_read_reg_800),
-    .ZplateVerContDelta_val23(ZplateVerContDelta_read_reg_805),
-    .boxSize_val24(boxSize_read_reg_810),
-    .boxColorR_val25(empty_reg_815),
-    .boxColorG_val26(empty_59_reg_820),
-    .boxColorB_val27(empty_60_reg_825),
-    .dpDynamicRange_val28(dpDynamicRange_read_reg_830),
-    .dpYUVCoef_val29(dpYUVCoef_read_reg_835),
-    .m_axis_video_TDATA(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDATA),
-    .m_axis_video_TKEEP(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TKEEP),
-    .m_axis_video_TSTRB(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TSTRB),
-    .m_axis_video_TUSER(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TUSER),
-    .m_axis_video_TLAST(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TLAST),
-    .m_axis_video_TID(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TID),
-    .m_axis_video_TDEST(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDEST),
-    .fid(grp_v_tpgHlsDataFlow_fu_441_fid),
+top_design_v_tpg_0_1_v_tpgHlsDataFlow grp_v_tpgHlsDataFlow_fu_440(
+    .height_val4(height_read_reg_714),
+    .width_val7(width_read_reg_719),
+    .field_id_val8(field_id_read_reg_724),
+    .fid_in_val9(fid_in_read_reg_814),
+    .bckgndId_val10(bckgndId_read_reg_729),
+    .ovrlayId_val11(ovrlayId_read_reg_734),
+    .maskId_val12(maskId_read_reg_739),
+    .motionSpeed_val14(motionSpeed_read_reg_744),
+    .colorFormat_val17(colorFormat_read_reg_749),
+    .crossHairX_val18(crossHairX_read_reg_754),
+    .crossHairY_val19(crossHairY_read_reg_759),
+    .ZplateHorContStart_val20(ZplateHorContStart_read_reg_764),
+    .ZplateHorContDelta_val21(ZplateHorContDelta_read_reg_769),
+    .ZplateVerContStart_val22(ZplateVerContStart_read_reg_774),
+    .ZplateVerContDelta_val23(ZplateVerContDelta_read_reg_779),
+    .boxSize_val24(boxSize_read_reg_784),
+    .boxColorR_val25(empty_reg_789),
+    .boxColorG_val26(empty_59_reg_794),
+    .boxColorB_val27(empty_60_reg_799),
+    .dpDynamicRange_val28(dpDynamicRange_read_reg_804),
+    .dpYUVCoef_val29(dpYUVCoef_read_reg_809),
+    .m_axis_video_TDATA(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDATA),
+    .m_axis_video_TKEEP(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TKEEP),
+    .m_axis_video_TSTRB(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TSTRB),
+    .m_axis_video_TUSER(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TUSER),
+    .m_axis_video_TLAST(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TLAST),
+    .m_axis_video_TID(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TID),
+    .m_axis_video_TDEST(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDEST),
+    .fid(grp_v_tpgHlsDataFlow_fu_440_fid),
     .s(s),
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
@@ -282,7 +286,7 @@ top_design_v_tpg_0_1_v_tpgHlsDataFlow grp_v_tpgHlsDataFlow_fu_441(
     .motionSpeed_val14_ap_vld(1'b1),
     .colorFormat_val17_ap_vld(1'b1),
     .s_ap_vld(1'b1),
-    .ap_start(grp_v_tpgHlsDataFlow_fu_441_ap_start),
+    .ap_start(grp_v_tpgHlsDataFlow_fu_440_ap_start),
     .ovrlayId_val11_ap_vld(1'b1),
     .maskId_val12_ap_vld(1'b1),
     .crossHairX_val18_ap_vld(1'b1),
@@ -291,26 +295,26 @@ top_design_v_tpg_0_1_v_tpgHlsDataFlow grp_v_tpgHlsDataFlow_fu_441(
     .boxColorR_val25_ap_vld(1'b1),
     .boxColorG_val26_ap_vld(1'b1),
     .boxColorB_val27_ap_vld(1'b1),
-    .m_axis_video_TVALID(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID),
-    .m_axis_video_TREADY(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TREADY),
+    .m_axis_video_TVALID(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID),
+    .m_axis_video_TREADY(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TREADY),
     .fid_in_val9_ap_vld(1'b1),
-    .fid_ap_vld(grp_v_tpgHlsDataFlow_fu_441_fid_ap_vld),
+    .fid_ap_vld(grp_v_tpgHlsDataFlow_fu_440_fid_ap_vld),
     .field_id_val8_ap_vld(1'b1),
-    .ap_done(grp_v_tpgHlsDataFlow_fu_441_ap_done),
-    .ap_ready(grp_v_tpgHlsDataFlow_fu_441_ap_ready),
-    .ap_idle(grp_v_tpgHlsDataFlow_fu_441_ap_idle),
-    .ap_continue(grp_v_tpgHlsDataFlow_fu_441_ap_continue)
+    .ap_done(grp_v_tpgHlsDataFlow_fu_440_ap_done),
+    .ap_ready(grp_v_tpgHlsDataFlow_fu_440_ap_ready),
+    .ap_idle(grp_v_tpgHlsDataFlow_fu_440_ap_idle),
+    .ap_continue(grp_v_tpgHlsDataFlow_fu_440_ap_continue)
 );
 
-top_design_v_tpg_0_1_reg_unsigned_short_s grp_reg_unsigned_short_s_fu_634(
+top_design_v_tpg_0_1_reg_unsigned_short_s grp_reg_unsigned_short_s_fu_616(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_reg_unsigned_short_s_fu_634_ap_start),
-    .ap_done(grp_reg_unsigned_short_s_fu_634_ap_done),
-    .ap_idle(grp_reg_unsigned_short_s_fu_634_ap_idle),
-    .ap_ready(grp_reg_unsigned_short_s_fu_634_ap_ready),
+    .ap_start(grp_reg_unsigned_short_s_fu_616_ap_start),
+    .ap_done(grp_reg_unsigned_short_s_fu_616_ap_done),
+    .ap_idle(grp_reg_unsigned_short_s_fu_616_ap_idle),
+    .ap_ready(grp_reg_unsigned_short_s_fu_616_ap_ready),
     .d(bck_motion_en),
-    .ap_return(grp_reg_unsigned_short_s_fu_634_ap_return)
+    .ap_return(grp_reg_unsigned_short_s_fu_616_ap_return)
 );
 
 top_design_v_tpg_0_1_CTRL_s_axi #(
@@ -371,7 +375,7 @@ regslice_both_m_axis_video_V_data_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .data_in(m_axis_video_TDATA_int_regslice),
-    .vld_in(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID),
+    .vld_in(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID),
     .ack_in(m_axis_video_TREADY_int_regslice),
     .data_out(m_axis_video_TDATA),
     .vld_out(regslice_both_m_axis_video_V_data_V_U_vld_out),
@@ -385,7 +389,7 @@ regslice_both_m_axis_video_V_keep_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .data_in(m_axis_video_TKEEP_int_regslice),
-    .vld_in(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID),
+    .vld_in(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID),
     .ack_in(regslice_both_m_axis_video_V_keep_V_U_ack_in_dummy),
     .data_out(m_axis_video_TKEEP),
     .vld_out(regslice_both_m_axis_video_V_keep_V_U_vld_out),
@@ -399,7 +403,7 @@ regslice_both_m_axis_video_V_strb_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .data_in(m_axis_video_TSTRB_int_regslice),
-    .vld_in(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID),
+    .vld_in(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID),
     .ack_in(regslice_both_m_axis_video_V_strb_V_U_ack_in_dummy),
     .data_out(m_axis_video_TSTRB),
     .vld_out(regslice_both_m_axis_video_V_strb_V_U_vld_out),
@@ -413,7 +417,7 @@ regslice_both_m_axis_video_V_user_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .data_in(m_axis_video_TUSER_int_regslice),
-    .vld_in(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID),
+    .vld_in(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID),
     .ack_in(regslice_both_m_axis_video_V_user_V_U_ack_in_dummy),
     .data_out(m_axis_video_TUSER),
     .vld_out(regslice_both_m_axis_video_V_user_V_U_vld_out),
@@ -427,7 +431,7 @@ regslice_both_m_axis_video_V_last_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .data_in(m_axis_video_TLAST_int_regslice),
-    .vld_in(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID),
+    .vld_in(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID),
     .ack_in(regslice_both_m_axis_video_V_last_V_U_ack_in_dummy),
     .data_out(m_axis_video_TLAST),
     .vld_out(regslice_both_m_axis_video_V_last_V_U_vld_out),
@@ -441,7 +445,7 @@ regslice_both_m_axis_video_V_id_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .data_in(m_axis_video_TID_int_regslice),
-    .vld_in(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID),
+    .vld_in(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID),
     .ack_in(regslice_both_m_axis_video_V_id_V_U_ack_in_dummy),
     .data_out(m_axis_video_TID),
     .vld_out(regslice_both_m_axis_video_V_id_V_U_vld_out),
@@ -455,7 +459,7 @@ regslice_both_m_axis_video_V_dest_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .data_in(m_axis_video_TDEST_int_regslice),
-    .vld_in(grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID),
+    .vld_in(grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID),
     .ack_in(regslice_both_m_axis_video_V_dest_V_U_ack_in_dummy),
     .data_out(m_axis_video_TDEST),
     .vld_out(regslice_both_m_axis_video_V_dest_V_U_vld_out),
@@ -473,109 +477,105 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_done <= 1'b0;
+        ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_done <= 1'b0;
     end else begin
-        if (((1'b0 == ap_block_state4_on_subcall_done) & (1'b1 == ap_CS_fsm_state4))) begin
-            ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_done <= 1'b0;
-        end else if ((grp_v_tpgHlsDataFlow_fu_441_ap_done == 1'b1)) begin
-            ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_done <= 1'b1;
+        if (((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5))) begin
+            ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_done <= 1'b0;
+        end else if ((grp_v_tpgHlsDataFlow_fu_440_ap_done == 1'b1)) begin
+            ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_done <= 1'b1;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_ready <= 1'b0;
+        ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready <= 1'b0;
     end else begin
-        if (((1'b0 == ap_block_state4_on_subcall_done) & (1'b1 == ap_CS_fsm_state4))) begin
-            ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_ready <= 1'b0;
-        end else if ((grp_v_tpgHlsDataFlow_fu_441_ap_ready == 1'b1)) begin
-            ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_ready <= 1'b1;
+        if (((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5))) begin
+            ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready <= 1'b0;
+        end else if ((grp_v_tpgHlsDataFlow_fu_440_ap_ready == 1'b1)) begin
+            ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready <= 1'b1;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_v_tpgHlsDataFlow_fu_441_ap_start_reg <= 1'b0;
+        grp_v_tpgHlsDataFlow_fu_440_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state3) | ((ap_sync_grp_v_tpgHlsDataFlow_fu_441_ap_ready == 1'b0) & (1'b1 == ap_CS_fsm_state4)))) begin
-            grp_v_tpgHlsDataFlow_fu_441_ap_start_reg <= 1'b1;
-        end else if ((grp_v_tpgHlsDataFlow_fu_441_ap_ready == 1'b1)) begin
-            grp_v_tpgHlsDataFlow_fu_441_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((icmp_ln500_fu_640_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-        if ((icmp_ln503_fu_656_p2 == 1'd0)) begin
-            count_new_0_reg_430 <= add_ln502_fu_650_p2;
-        end else if ((icmp_ln503_fu_656_p2 == 1'd1)) begin
-            count_new_0_reg_430 <= 32'd0;
+        if (((1'b1 == ap_CS_fsm_state4) | ((ap_sync_grp_v_tpgHlsDataFlow_fu_440_ap_ready == 1'b0) & (1'b1 == ap_CS_fsm_state5)))) begin
+            grp_v_tpgHlsDataFlow_fu_440_ap_start_reg <= 1'b1;
+        end else if ((grp_v_tpgHlsDataFlow_fu_440_ap_ready == 1'b1)) begin
+            grp_v_tpgHlsDataFlow_fu_440_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        ZplateHorContDelta_read_reg_795 <= ZplateHorContDelta;
-        ZplateHorContStart_read_reg_790 <= ZplateHorContStart;
-        ZplateVerContDelta_read_reg_805 <= ZplateVerContDelta;
-        ZplateVerContStart_read_reg_800 <= ZplateVerContStart;
-        bckgndId_read_reg_755 <= bckgndId;
-        boxSize_read_reg_810 <= boxSize;
-        colorFormat_read_reg_775 <= colorFormat;
-        crossHairX_read_reg_780 <= crossHairX;
-        crossHairY_read_reg_785 <= crossHairY;
-        dpDynamicRange_read_reg_830 <= dpDynamicRange;
-        dpYUVCoef_read_reg_835 <= dpYUVCoef;
-        empty_59_reg_820 <= empty_59_fu_713_p1;
-        empty_60_reg_825 <= empty_60_fu_718_p1;
-        empty_reg_815 <= empty_fu_708_p1;
-        fid_in_read_reg_750 <= fid_in;
-        field_id_read_reg_745 <= field_id;
-        height_read_reg_735 <= height;
-        maskId_read_reg_765 <= maskId;
-        motionSpeed_read_reg_770 <= motionSpeed;
-        ovrlayId_read_reg_760 <= ovrlayId;
-        width_read_reg_740 <= width;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((icmp_ln500_reg_723 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
-        count <= count_new_0_reg_430;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state4) & (grp_v_tpgHlsDataFlow_fu_441_fid_ap_vld == 1'b1))) begin
-        fid_reg <= grp_v_tpgHlsDataFlow_fu_441_fid;
+        ZplateHorContDelta_read_reg_769 <= ZplateHorContDelta;
+        ZplateHorContStart_read_reg_764 <= ZplateHorContStart;
+        ZplateVerContDelta_read_reg_779 <= ZplateVerContDelta;
+        ZplateVerContStart_read_reg_774 <= ZplateVerContStart;
+        bckgndId_read_reg_729 <= bckgndId;
+        boxSize_read_reg_784 <= boxSize;
+        colorFormat_read_reg_749 <= colorFormat;
+        crossHairX_read_reg_754 <= crossHairX;
+        crossHairY_read_reg_759 <= crossHairY;
+        dpDynamicRange_read_reg_804 <= dpDynamicRange;
+        dpYUVCoef_read_reg_809 <= dpYUVCoef;
+        empty_59_reg_794 <= empty_59_fu_693_p1;
+        empty_60_reg_799 <= empty_60_fu_697_p1;
+        empty_reg_789 <= empty_fu_689_p1;
+        field_id_read_reg_724 <= field_id;
+        height_read_reg_714 <= height;
+        maskId_read_reg_739 <= maskId;
+        motionSpeed_read_reg_744 <= motionSpeed;
+        ovrlayId_read_reg_734 <= ovrlayId;
+        width_read_reg_719 <= width;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        icmp_ln500_reg_723 <= icmp_ln500_fu_640_p2;
+        add_ln502_reg_705 <= add_ln502_fu_632_p2;
+        icmp_ln500_reg_701 <= icmp_ln500_fu_622_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state4) & (grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID == 1'b1))) begin
-        m_axis_video_TDATA_reg <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDATA;
-        m_axis_video_TDEST_reg <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDEST;
-        m_axis_video_TID_reg <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TID;
-        m_axis_video_TKEEP_reg <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TKEEP;
-        m_axis_video_TLAST_reg <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TLAST;
-        m_axis_video_TSTRB_reg <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TSTRB;
-        m_axis_video_TUSER_reg <= grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TUSER;
+    if (((icmp_ln500_reg_701 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
+        count <= ap_phi_mux_count_new_0_phi_fu_433_p4;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln500_fu_640_p2 == 1'd1) & (icmp_ln503_fu_656_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-        s <= select_ln505_fu_688_p3;
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        fid_in_read_reg_814 <= fid_in;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b1 == ap_CS_fsm_state5) & (grp_v_tpgHlsDataFlow_fu_440_fid_ap_vld == 1'b1))) begin
+        fid_reg <= grp_v_tpgHlsDataFlow_fu_440_fid;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b1 == ap_CS_fsm_state5) & (grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID == 1'b1))) begin
+        m_axis_video_TDATA_reg <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDATA;
+        m_axis_video_TDEST_reg <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDEST;
+        m_axis_video_TID_reg <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TID;
+        m_axis_video_TKEEP_reg <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TKEEP;
+        m_axis_video_TLAST_reg <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TLAST;
+        m_axis_video_TSTRB_reg <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TSTRB;
+        m_axis_video_TUSER_reg <= grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TUSER;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((icmp_ln500_reg_701 == 1'd1) & (icmp_ln503_fu_638_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
+        s <= select_ln505_fu_669_p3;
     end
 end
 
@@ -591,16 +591,10 @@ assign ap_ST_fsm_state2_blk = 1'b0;
 
 assign ap_ST_fsm_state3_blk = 1'b0;
 
-always @ (*) begin
-    if ((1'b1 == ap_block_state4_on_subcall_done)) begin
-        ap_ST_fsm_state4_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state4_blk = 1'b0;
-    end
-end
+assign ap_ST_fsm_state4_blk = 1'b0;
 
 always @ (*) begin
-    if ((regslice_both_m_axis_video_V_data_V_U_apdone_blk == 1'b1)) begin
+    if ((1'b1 == ap_block_state5_on_subcall_done)) begin
         ap_ST_fsm_state5_blk = 1'b1;
     end else begin
         ap_ST_fsm_state5_blk = 1'b0;
@@ -608,7 +602,15 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state5))) begin
+    if ((regslice_both_m_axis_video_V_data_V_U_apdone_blk == 1'b1)) begin
+        ap_ST_fsm_state6_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state6_blk = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state6))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -624,7 +626,21 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state5))) begin
+    if (((icmp_ln500_reg_701 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
+        if ((icmp_ln503_fu_638_p2 == 1'd0)) begin
+            ap_phi_mux_count_new_0_phi_fu_433_p4 = add_ln502_reg_705;
+        end else if ((icmp_ln503_fu_638_p2 == 1'd1)) begin
+            ap_phi_mux_count_new_0_phi_fu_433_p4 = 32'd0;
+        end else begin
+            ap_phi_mux_count_new_0_phi_fu_433_p4 = 'bx;
+        end
+    end else begin
+        ap_phi_mux_count_new_0_phi_fu_433_p4 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state6))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -632,8 +648,8 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) & (grp_v_tpgHlsDataFlow_fu_441_fid_ap_vld == 1'b1))) begin
-        fid = grp_v_tpgHlsDataFlow_fu_441_fid;
+    if (((1'b1 == ap_CS_fsm_state5) & (grp_v_tpgHlsDataFlow_fu_440_fid_ap_vld == 1'b1))) begin
+        fid = grp_v_tpgHlsDataFlow_fu_440_fid;
     end else begin
         fid = fid_reg;
     end
@@ -641,71 +657,71 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        grp_reg_unsigned_short_s_fu_634_ap_start = 1'b1;
+        grp_reg_unsigned_short_s_fu_616_ap_start = 1'b1;
     end else begin
-        grp_reg_unsigned_short_s_fu_634_ap_start = 1'b0;
+        grp_reg_unsigned_short_s_fu_616_ap_start = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_state4_on_subcall_done) & (1'b1 == ap_CS_fsm_state4))) begin
-        grp_v_tpgHlsDataFlow_fu_441_ap_continue = 1'b1;
+    if (((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5))) begin
+        grp_v_tpgHlsDataFlow_fu_440_ap_continue = 1'b1;
     end else begin
-        grp_v_tpgHlsDataFlow_fu_441_ap_continue = 1'b0;
+        grp_v_tpgHlsDataFlow_fu_440_ap_continue = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) & (grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID == 1'b1))) begin
-        m_axis_video_TDATA_int_regslice = grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDATA;
+    if (((1'b1 == ap_CS_fsm_state5) & (grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID == 1'b1))) begin
+        m_axis_video_TDATA_int_regslice = grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDATA;
     end else begin
         m_axis_video_TDATA_int_regslice = m_axis_video_TDATA_reg;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) & (grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID == 1'b1))) begin
-        m_axis_video_TDEST_int_regslice = grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TDEST;
+    if (((1'b1 == ap_CS_fsm_state5) & (grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID == 1'b1))) begin
+        m_axis_video_TDEST_int_regslice = grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TDEST;
     end else begin
         m_axis_video_TDEST_int_regslice = m_axis_video_TDEST_reg;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) & (grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID == 1'b1))) begin
-        m_axis_video_TID_int_regslice = grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TID;
+    if (((1'b1 == ap_CS_fsm_state5) & (grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID == 1'b1))) begin
+        m_axis_video_TID_int_regslice = grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TID;
     end else begin
         m_axis_video_TID_int_regslice = m_axis_video_TID_reg;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) & (grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID == 1'b1))) begin
-        m_axis_video_TKEEP_int_regslice = grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TKEEP;
+    if (((1'b1 == ap_CS_fsm_state5) & (grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID == 1'b1))) begin
+        m_axis_video_TKEEP_int_regslice = grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TKEEP;
     end else begin
         m_axis_video_TKEEP_int_regslice = m_axis_video_TKEEP_reg;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) & (grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID == 1'b1))) begin
-        m_axis_video_TLAST_int_regslice = grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TLAST;
+    if (((1'b1 == ap_CS_fsm_state5) & (grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID == 1'b1))) begin
+        m_axis_video_TLAST_int_regslice = grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TLAST;
     end else begin
         m_axis_video_TLAST_int_regslice = m_axis_video_TLAST_reg;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) & (grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID == 1'b1))) begin
-        m_axis_video_TSTRB_int_regslice = grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TSTRB;
+    if (((1'b1 == ap_CS_fsm_state5) & (grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID == 1'b1))) begin
+        m_axis_video_TSTRB_int_regslice = grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TSTRB;
     end else begin
         m_axis_video_TSTRB_int_regslice = m_axis_video_TSTRB_reg;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) & (grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID == 1'b1))) begin
-        m_axis_video_TUSER_int_regslice = grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TUSER;
+    if (((1'b1 == ap_CS_fsm_state5) & (grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID == 1'b1))) begin
+        m_axis_video_TUSER_int_regslice = grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TUSER;
     end else begin
         m_axis_video_TUSER_int_regslice = m_axis_video_TUSER_reg;
     end
@@ -727,17 +743,20 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state4;
         end
         ap_ST_fsm_state4 : begin
-            if (((1'b0 == ap_block_state4_on_subcall_done) & (1'b1 == ap_CS_fsm_state4))) begin
-                ap_NS_fsm = ap_ST_fsm_state5;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state4;
-            end
+            ap_NS_fsm = ap_ST_fsm_state5;
         end
         ap_ST_fsm_state5 : begin
-            if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state5))) begin
-                ap_NS_fsm = ap_ST_fsm_state1;
+            if (((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5))) begin
+                ap_NS_fsm = ap_ST_fsm_state6;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state5;
+            end
+        end
+        ap_ST_fsm_state6 : begin
+            if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state6))) begin
+                ap_NS_fsm = ap_ST_fsm_state1;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state6;
             end
         end
         default : begin
@@ -746,9 +765,9 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln502_fu_650_p2 = (count + 32'd1);
+assign add_ln502_fu_632_p2 = (count + 32'd1);
 
-assign add_ln507_fu_682_p2 = (s + 32'd1);
+assign add_ln507_fu_663_p2 = (s + 32'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -760,39 +779,41 @@ assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
 
 assign ap_CS_fsm_state5 = ap_CS_fsm[32'd4];
 
+assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
+
 always @ (*) begin
-    ap_block_state4_on_subcall_done = ((ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_ready & ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_done) == 1'b0);
+    ap_block_state5_on_subcall_done = ((ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready & ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_done) == 1'b0);
 end
 
 always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
 end
 
-assign ap_sync_grp_v_tpgHlsDataFlow_fu_441_ap_ready = (grp_v_tpgHlsDataFlow_fu_441_ap_ready | ap_sync_reg_grp_v_tpgHlsDataFlow_fu_441_ap_ready);
+assign ap_sync_grp_v_tpgHlsDataFlow_fu_440_ap_ready = (grp_v_tpgHlsDataFlow_fu_440_ap_ready | ap_sync_reg_grp_v_tpgHlsDataFlow_fu_440_ap_ready);
 
-assign empty_59_fu_713_p1 = boxColorG[7:0];
+assign empty_59_fu_693_p1 = boxColorG[7:0];
 
-assign empty_60_fu_718_p1 = boxColorB[7:0];
+assign empty_60_fu_697_p1 = boxColorB[7:0];
 
-assign empty_fu_708_p1 = boxColorR[7:0];
+assign empty_fu_689_p1 = boxColorR[7:0];
 
-assign grp_v_tpgHlsDataFlow_fu_441_ap_start = grp_v_tpgHlsDataFlow_fu_441_ap_start_reg;
+assign grp_v_tpgHlsDataFlow_fu_440_ap_start = grp_v_tpgHlsDataFlow_fu_440_ap_start_reg;
 
-assign grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TREADY = (m_axis_video_TREADY_int_regslice & ap_CS_fsm_state4);
+assign grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TREADY = (m_axis_video_TREADY_int_regslice & ap_CS_fsm_state5);
 
-assign icmp_ln500_fu_640_p2 = ((grp_reg_unsigned_short_s_fu_634_ap_return == 16'd1) ? 1'b1 : 1'b0);
+assign icmp_ln500_fu_622_p2 = ((grp_reg_unsigned_short_s_fu_616_ap_return == 16'd1) ? 1'b1 : 1'b0);
 
-assign icmp_ln503_fu_656_p2 = ((add_ln502_fu_650_p2 == 32'd10) ? 1'b1 : 1'b0);
+assign icmp_ln503_fu_638_p2 = ((add_ln502_reg_705 == 32'd10) ? 1'b1 : 1'b0);
 
-assign icmp_ln505_fu_676_p2 = (($signed(tmp_1_fu_666_p4) < $signed(29'd1)) ? 1'b1 : 1'b0);
+assign icmp_ln505_fu_657_p2 = (($signed(tmp_1_fu_647_p4) < $signed(29'd1)) ? 1'b1 : 1'b0);
 
 assign m_axis_video_TVALID = regslice_both_m_axis_video_V_data_V_U_vld_out;
 
-assign m_axis_video_TVALID_int_regslice = grp_v_tpgHlsDataFlow_fu_441_m_axis_video_TVALID;
+assign m_axis_video_TVALID_int_regslice = grp_v_tpgHlsDataFlow_fu_440_m_axis_video_TVALID;
 
-assign select_ln505_fu_688_p3 = ((icmp_ln505_fu_676_p2[0:0] == 1'b1) ? add_ln507_fu_682_p2 : 32'd0);
+assign select_ln505_fu_669_p3 = ((icmp_ln505_fu_657_p2[0:0] == 1'b1) ? add_ln507_fu_663_p2 : 32'd0);
 
-assign tmp_1_fu_666_p4 = {{s[31:3]}};
+assign tmp_1_fu_647_p4 = {{s[31:3]}};
 
 
 reg find_df_deadlock = 0;

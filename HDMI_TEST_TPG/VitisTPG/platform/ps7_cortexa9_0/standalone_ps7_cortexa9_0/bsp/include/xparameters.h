@@ -162,6 +162,24 @@
 #define XPAR_XV_TPG_0_SOLID_COLOR 0x1
 #define XPAR_XV_TPG_0_ZONE_PLATE 0x1
 
+#define XPAR_XVTC_NUM_INSTANCES 1
+
+/* Definitions for peripheral V_TC_0 */
+#define XPAR_V_TC_0_COMPATIBLE "xlnx,v-tc-6.2"
+#define XPAR_V_TC_0_BASEADDR 0x43c20000
+#define XPAR_V_TC_0_HIGHADDR 0x43c2ffff
+#define XPAR_V_TC_0_INTERRUPTS 0x401e
+#define XPAR_FABRIC_V_TC_0_INTR 30
+#define XPAR_V_TC_0_INTERRUPT_PARENT 0xf8f01000
+
+/* Canonical definitions for peripheral V_TC_0 */
+#define XPAR_XVTC_0_BASEADDR 0x43c20000
+#define XPAR_FABRIC_XVTC_0_INTR 30
+#define XPAR_XVTC_0_HIGHADDR 0x43c2ffff
+#define XPAR_XVTC_0_COMPATIBLE "xlnx,v-tc-6.2"
+#define XPAR_XVTC_0_INTERRUPTS 0x401e
+#define XPAR_XVTC_0_INTERRUPT_PARENT 0xf8f01000
+
 #define XPAR_XXADCPS_NUM_INSTANCES 1
 
 /* Definitions for peripheral ADC */

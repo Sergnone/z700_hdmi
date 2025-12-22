@@ -13,7 +13,7 @@
         <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock name="ap_clk" period="10" default="false"/>
+        <clock name="ap_clk" period="6.750" default="false"/>
     </clockList>
     <config>
         <config_rtl module_prefix="top_design_v_tpg_0_1_"/>

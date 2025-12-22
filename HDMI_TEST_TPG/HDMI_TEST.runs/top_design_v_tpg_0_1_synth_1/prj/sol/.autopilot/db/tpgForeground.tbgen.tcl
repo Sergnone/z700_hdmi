@@ -125,7 +125,7 @@ set NewPortList {[
 
 set ArgLastReadFirstWriteLatency {
 	tpgForeground {
-		bckgndYUV {Type I LastRead 1 FirstWrite -1}
+		bckgndYUV {Type I LastRead 2 FirstWrite -1}
 		height_val {Type I LastRead 0 FirstWrite -1}
 		width_val {Type I LastRead 0 FirstWrite -1}
 		patternId_val {Type I LastRead 0 FirstWrite -1}
@@ -138,7 +138,7 @@ set ArgLastReadFirstWriteLatency {
 		boxColorG_val {Type I LastRead 0 FirstWrite -1}
 		boxColorB_val {Type I LastRead 0 FirstWrite -1}
 		motionSpeed_val {Type I LastRead 0 FirstWrite -1}
-		ovrlayYUV {Type O LastRead -1 FirstWrite 2}
+		ovrlayYUV {Type O LastRead -1 FirstWrite 3}
 		boxHCoord {Type IO LastRead -1 FirstWrite -1}
 		boxVCoord {Type IO LastRead -1 FirstWrite -1}
 		vDir {Type IO LastRead -1 FirstWrite -1}
@@ -154,8 +154,8 @@ set ArgLastReadFirstWriteLatency {
 		and_ln1989 {Type I LastRead 0 FirstWrite -1}
 		and_ln1991 {Type I LastRead 0 FirstWrite -1}
 		and_ln1993 {Type I LastRead 0 FirstWrite -1}
-		ovrlayYUV {Type O LastRead -1 FirstWrite 2}
-		bckgndYUV {Type I LastRead 1 FirstWrite -1}
+		ovrlayYUV {Type O LastRead -1 FirstWrite 3}
+		bckgndYUV {Type I LastRead 2 FirstWrite -1}
 		patternId_val {Type I LastRead 0 FirstWrite -1}
 		boxSize_val {Type I LastRead 0 FirstWrite -1}
 		y {Type I LastRead 0 FirstWrite -1}
@@ -178,8 +178,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1", "Max" : "4295163901"}
-	, {"Name" : "Interval", "Min" : "1", "Max" : "4295163901"}
+	{"Name" : "Latency", "Min" : "1", "Max" : "4295229436"}
+	, {"Name" : "Interval", "Min" : "1", "Max" : "4295229436"}
 ]}
 
 set PipelineEnableSignalInfo {[

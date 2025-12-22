@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'MultiPixStream2AXIvideo'" level="0">
-<item name = "Date">Fri Dec 19 16:54:37 2025
+<item name = "Date">Mon Dec 22 19:21:25 2025
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.395 ns, 2.70 ns</column>
+<column name="ap_clk">6.75 ns, 4.210 ns, 1.82 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1, 8860321, 10.000 ns, 88.603 ms, 1, 8860321, no</column>
+<column name="">1, 8862481, 6.750 ns, 59.822 ms, 1, 8862481, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_979_1">0, 8860320, 6 ~ 4102, -, -, 0 ~ 2160, no</column>
+<column name="- VITIS_LOOP_979_1">0, 8862480, 7 ~ 4103, -, -, 0 ~ 2160, no</column>
 </table>
 </item>
 </section>

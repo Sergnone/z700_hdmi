@@ -132,23 +132,23 @@ set ArgLastReadFirstWriteLatency {
 		colorFormat_val17 {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
 		ovrlayYUV {Type I LastRead 2 FirstWrite -1}
-		m_axis_video_V_data_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_keep_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_strb_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_user_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_last_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_id_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_dest_V {Type O LastRead -1 FirstWrite 2}
+		m_axis_video_V_data_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_keep_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_strb_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_user_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_last_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_id_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_dest_V {Type O LastRead -1 FirstWrite 3}
 		sext_ln1051_i {Type I LastRead 0 FirstWrite -1}
-		counter_loc_1_i_i_out {Type O LastRead -1 FirstWrite 3}
-		phi_ln1036_i_out {Type O LastRead -1 FirstWrite 2}
-		counter {Type O LastRead -1 FirstWrite 1}}}
+		counter_loc_1_i_i_out {Type O LastRead -1 FirstWrite 4}
+		phi_ln1036_i_out {Type O LastRead -1 FirstWrite 3}
+		counter {Type O LastRead -1 FirstWrite 2}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "3", "Max" : "4099"}
-	, {"Name" : "Interval", "Min" : "3", "Max" : "4099"}
+	{"Name" : "Latency", "Min" : "4", "Max" : "4100"}
+	, {"Name" : "Interval", "Min" : "4", "Max" : "4100"}
 ]}
 
 set PipelineEnableSignalInfo {[

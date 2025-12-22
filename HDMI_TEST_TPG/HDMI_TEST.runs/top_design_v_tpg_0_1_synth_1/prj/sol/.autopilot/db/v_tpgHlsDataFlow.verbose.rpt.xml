@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'v_tpgHlsDataFlow'" level="0">
-<item name = "Date">Fri Dec 19 16:54:38 2025
+<item name = "Date">Mon Dec 22 19:21:25 2025
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.859 ns, 2.70 ns</column>
+<column name="ap_clk">6.75 ns, 4.890 ns, 1.82 ns</column>
 </table>
 </item>
 </section>
@@ -24,16 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">23, 4296409066, 0.230 us, 42.964 sec, 2, 4296409067, dataflow</column>
+<column name="">25, 4296540136, 0.169 us, 29.002 sec, 2, 4296540137, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="tpgBackground_U0">tpgBackground, 1, 4296409066, 10.000 ns, 42.964 sec, 1, 4296409066, no</column>
-<column name="tpgForeground_U0">tpgForeground, 1, 4295163901, 10.000 ns, 42.952 sec, 1, 4295163901, no</column>
-<column name="MultiPixStream2AXIvideo_U0">MultiPixStream2AXIvideo, 1, 8860321, 10.000 ns, 88.603 ms, 1, 8860321, no</column>
+<column name="tpgBackground_U0">tpgBackground, 1, 4296540136, 6.750 ns, 29.002 sec, 1, 4296540136, no</column>
+<column name="tpgForeground_U0">tpgForeground, 1, 4295229436, 6.750 ns, 28.993 sec, 1, 4295229436, no</column>
+<column name="MultiPixStream2AXIvideo_U0">MultiPixStream2AXIvideo, 1, 8862481, 6.750 ns, 59.822 ms, 1, 8862481, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -52,21 +52,21 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 1, -</column>
 <column name="FIFO">-, -, 198, 138, -</column>
-<column name="Instance">9, 13, 5028, 5521, -</column>
+<column name="Instance">9, 13, 5373, 5567, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, -, -</column>
 <column name="Register">-, -, -, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">3, 5, 4, 10, 0</specialColumn>
+<specialColumn name="Utilization (%)">3, 5, 5, 10, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="MultiPixStream2AXIvideo_U0">MultiPixStream2AXIvideo, 0, 0, 210, 465, 0</column>
-<column name="tpgBackground_U0">tpgBackground, 9, 13, 4358, 4312, 0</column>
-<column name="tpgForeground_U0">tpgForeground, 0, 0, 460, 744, 0</column>
+<column name="MultiPixStream2AXIvideo_U0">MultiPixStream2AXIvideo, 0, 0, 237, 473, 0</column>
+<column name="tpgBackground_U0">tpgBackground, 9, 13, 4585, 4310, 0</column>
+<column name="tpgForeground_U0">tpgForeground, 0, 0, 551, 784, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">

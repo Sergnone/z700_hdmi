@@ -9,8 +9,8 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020-clg400-2</Part>
 <TopModelName>tpgForeground_Pipeline_VITIS_LOOP_774_2</TopModelName>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>2.70</ClockUncertainty>
+<TargetClockPeriod>6.75</TargetClockPeriod>
+<ClockUncertainty>1.82</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
@@ -18,23 +18,23 @@
 <PipelineType>loop pipeline stp</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>5.607</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.141</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
 <Best-caseLatency>2</Best-caseLatency>
-<Average-caseLatency>32770</Average-caseLatency>
-<Worst-caseLatency>65538</Worst-caseLatency>
-<Best-caseRealTimeLatency>20.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.328 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.655 ms</Worst-caseRealTimeLatency>
+<Average-caseLatency>32771</Average-caseLatency>
+<Worst-caseLatency>65539</Worst-caseLatency>
+<Best-caseRealTimeLatency>13.500 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.221 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.442 ms</Worst-caseRealTimeLatency>
 <Interval-min>1</Interval-min>
 <Interval-max>65536</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <VITIS_LOOP_774_2>
-<Slack>7.30</Slack>
+<Slack>4.93</Slack>
 <TripCount>
 <range>
 <min>0</min>
@@ -45,17 +45,17 @@
 <Latency>
 <range>
 <min>0</min>
-<max>65536</max>
+<max>65537</max>
 </range>
 </Latency>
 <AbsoluteTimeLatency>
 <range>
 <min>0</min>
-<max>655360</max>
+<max>442374</max>
 </range>
 </AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>3</PipelineDepth>
+<PipelineDepth>4</PipelineDepth>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
@@ -79,8 +79,8 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<FF>174</FF>
-<LUT>574</LUT>
+<FF>265</FF>
+<LUT>614</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>

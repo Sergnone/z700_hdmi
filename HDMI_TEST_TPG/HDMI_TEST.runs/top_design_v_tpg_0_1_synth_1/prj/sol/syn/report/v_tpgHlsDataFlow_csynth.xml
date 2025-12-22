@@ -9,8 +9,8 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020-clg400-2</Part>
 <TopModelName>v_tpgHlsDataFlow</TopModelName>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>2.70</ClockUncertainty>
+<TargetClockPeriod>6.75</TargetClockPeriod>
+<ClockUncertainty>1.82</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
@@ -18,24 +18,24 @@
 <PipelineType>dataflow</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>6.859</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.890</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>23</Best-caseLatency>
+<Best-caseLatency>25</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>4296409066</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.230 us</Best-caseRealTimeLatency>
+<Worst-caseLatency>4296540136</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.169 us</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>42.964 sec</Worst-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>29.002 sec</Worst-caseRealTimeLatency>
 <DataflowPipelineThroughput>
 <range>
 <min>2</min>
-<max>4296409067</max>
+<max>4296540137</max>
 </range>
 </DataflowPipelineThroughput>
 <Interval-min>2</Interval-min>
-<Interval-max>4296409067</Interval-max>
+<Interval-max>4296540137</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
@@ -49,8 +49,8 @@
 <Resources>
 <BRAM_18K>9</BRAM_18K>
 <DSP>13</DSP>
-<FF>5226</FF>
-<LUT>5660</LUT>
+<FF>5571</FF>
+<LUT>5706</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

@@ -238,13 +238,13 @@ set ArgLastReadFirstWriteLatency {
 		boxColorB_val27 {Type I LastRead 2 FirstWrite -1}
 		dpDynamicRange_val28 {Type I LastRead 0 FirstWrite -1}
 		dpYUVCoef_val29 {Type I LastRead 0 FirstWrite -1}
-		m_axis_video_V_data_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_keep_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_strb_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_user_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_last_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_id_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_dest_V {Type O LastRead -1 FirstWrite 2}
+		m_axis_video_V_data_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_keep_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_strb_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_user_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_last_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_id_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_dest_V {Type O LastRead -1 FirstWrite 3}
 		fid {Type O LastRead -1 FirstWrite 0}
 		rampStart {Type IO LastRead -1 FirstWrite -1}
 		s {Type I LastRead 0 FirstWrite -1}
@@ -325,7 +325,7 @@ set ArgLastReadFirstWriteLatency {
 		dpYUVCoef_val {Type I LastRead 0 FirstWrite -1}
 		motionSpeed_val {Type I LastRead 0 FirstWrite -1}
 		colorFormat_val {Type I LastRead 0 FirstWrite -1}
-		bckgndYUV {Type O LastRead -1 FirstWrite 20}
+		bckgndYUV {Type O LastRead -1 FirstWrite 22}
 		rampStart {Type IO LastRead -1 FirstWrite -1}
 		s {Type I LastRead 0 FirstWrite -1}
 		rampVal_1 {Type IO LastRead -1 FirstWrite -1}
@@ -407,7 +407,7 @@ set ArgLastReadFirstWriteLatency {
 		select_ln1162 {Type I LastRead 0 FirstWrite -1}
 		select_ln1141 {Type I LastRead 0 FirstWrite -1}
 		rampStart_1 {Type I LastRead 0 FirstWrite -1}
-		bckgndYUV {Type O LastRead -1 FirstWrite 20}
+		bckgndYUV {Type O LastRead -1 FirstWrite 22}
 		ZplateHorContStart_val {Type I LastRead 0 FirstWrite -1}
 		patternId_val {Type I LastRead 0 FirstWrite -1}
 		zext_ln1120 {Type I LastRead 0 FirstWrite -1}
@@ -424,28 +424,28 @@ set ArgLastReadFirstWriteLatency {
 		add_ln1533 {Type I LastRead 0 FirstWrite -1}
 		icmp {Type I LastRead 0 FirstWrite -1}
 		icmp_ln1801 {Type I LastRead 0 FirstWrite -1}
-		rampVal_3_flag_1_out {Type O LastRead -1 FirstWrite 19}
-		rampVal_3_new_1_out {Type O LastRead -1 FirstWrite 19}
-		rampVal_3_loc_1_out {Type IO LastRead 19 FirstWrite 19}
-		rampVal_loc_1_out {Type IO LastRead 19 FirstWrite 18}
-		tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_hBarSel_l_2_out {Type IO LastRead 18 FirstWrite 17}
+		rampVal_3_flag_1_out {Type O LastRead -1 FirstWrite 21}
+		rampVal_3_new_1_out {Type O LastRead -1 FirstWrite 21}
+		rampVal_3_loc_1_out {Type IO LastRead 21 FirstWrite 21}
+		rampVal_loc_1_out {Type IO LastRead 21 FirstWrite 20}
+		tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_hBarSel_l_2_out {Type IO LastRead 19 FirstWrite 18}
 		zonePlateVAddr_loc_1_out {Type IO LastRead 6 FirstWrite 5}
-		vBarSel_loc_1_out {Type IO LastRead 17 FirstWrite 16}
-		tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign_4_out {Type IO LastRead 17 FirstWrite 16}
-		hdata_flag_1_out {Type O LastRead -1 FirstWrite 19}
-		hdata_new_1_out {Type O LastRead -1 FirstWrite 19}
-		hdata_loc_1_out {Type IO LastRead 19 FirstWrite 19}
-		vBarSel_2_loc_1_out {Type IO LastRead 17 FirstWrite 16}
-		tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_4_out {Type IO LastRead 17 FirstWrite 16}
-		rampVal_2_flag_1_out {Type O LastRead -1 FirstWrite 19}
-		rampVal_2_new_1_out {Type O LastRead -1 FirstWrite 19}
-		rampVal_2_loc_1_out {Type IO LastRead 19 FirstWrite 19}
-		vBarSel_3_loc_1_out {Type IO LastRead 17 FirstWrite 16}
-		tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_4_out {Type IO LastRead 17 FirstWrite 16}
-		outpix_0_2_0_0_0_load216_out {Type IO LastRead 20 FirstWrite 0}
-		outpix_0_1_0_0_0_load214_out {Type IO LastRead 20 FirstWrite 19}
-		outpix_0_0_0_0_0_load212_out {Type IO LastRead 20 FirstWrite 0}
-		rampVal {Type O LastRead -1 FirstWrite 18}
+		vBarSel_loc_1_out {Type IO LastRead 18 FirstWrite 17}
+		tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign_4_out {Type IO LastRead 18 FirstWrite 17}
+		hdata_flag_1_out {Type O LastRead -1 FirstWrite 21}
+		hdata_new_1_out {Type O LastRead -1 FirstWrite 21}
+		hdata_loc_1_out {Type IO LastRead 21 FirstWrite 21}
+		vBarSel_2_loc_1_out {Type IO LastRead 18 FirstWrite 17}
+		tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_4_out {Type IO LastRead 18 FirstWrite 17}
+		rampVal_2_flag_1_out {Type O LastRead -1 FirstWrite 21}
+		rampVal_2_new_1_out {Type O LastRead -1 FirstWrite 20}
+		rampVal_2_loc_1_out {Type IO LastRead 20 FirstWrite 20}
+		vBarSel_3_loc_1_out {Type IO LastRead 19 FirstWrite 18}
+		tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_4_out {Type IO LastRead 19 FirstWrite 18}
+		outpix_0_2_0_0_0_load216_out {Type IO LastRead 22 FirstWrite 1}
+		outpix_0_1_0_0_0_load214_out {Type IO LastRead 22 FirstWrite 21}
+		outpix_0_0_0_0_0_load212_out {Type IO LastRead 22 FirstWrite 1}
+		rampVal {Type O LastRead -1 FirstWrite 20}
 		redYuv {Type I LastRead -1 FirstWrite -1}
 		grnYuv {Type I LastRead -1 FirstWrite -1}
 		bluYuv {Type I LastRead -1 FirstWrite -1}
@@ -456,17 +456,17 @@ set ArgLastReadFirstWriteLatency {
 		tpgBarSelRgb_g {Type I LastRead -1 FirstWrite -1}
 		tpgBarSelYuv_u {Type I LastRead -1 FirstWrite -1}
 		tpgBarSelYuv_v {Type I LastRead -1 FirstWrite -1}
-		tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_hBarSel {Type O LastRead -1 FirstWrite 17}
+		tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_hBarSel {Type O LastRead -1 FirstWrite 18}
 		tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_xBar {Type IO LastRead -1 FirstWrite -1}
 		tpgBarSelRgb_b {Type I LastRead -1 FirstWrite -1}
 		tpgSinTableArray {Type I LastRead -1 FirstWrite -1}
 		zonePlateVAddr {Type O LastRead -1 FirstWrite 5}
 		zonePlateVDelta {Type IO LastRead -1 FirstWrite -1}
 		tpgTartanBarArray {Type I LastRead -1 FirstWrite -1}
-		tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign_1 {Type O LastRead -1 FirstWrite 16}
+		tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign_1 {Type O LastRead -1 FirstWrite 17}
 		tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign {Type IO LastRead -1 FirstWrite -1}
 		yCount {Type IO LastRead -1 FirstWrite -1}
-		vBarSel {Type O LastRead -1 FirstWrite 16}
+		vBarSel {Type O LastRead -1 FirstWrite 17}
 		tpgPatternCrossHatch_unsigned_short_unsigned_short_unsigned_short_unsigned_sh {Type IO LastRead -1 FirstWrite -1}
 		vHatch {Type IO LastRead -1 FirstWrite -1}
 		yCount_2 {Type IO LastRead -1 FirstWrite -1}
@@ -476,10 +476,10 @@ set ArgLastReadFirstWriteLatency {
 		tpgSinTableArray_9bit_1 {Type I LastRead -1 FirstWrite -1}
 		tpgSinTableArray_9bit_2 {Type I LastRead -1 FirstWrite -1}
 		tpgCheckerBoardArray {Type I LastRead -1 FirstWrite -1}
-		tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_1 {Type O LastRead -1 FirstWrite 16}
+		tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_1 {Type O LastRead -1 FirstWrite 17}
 		tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_s {Type IO LastRead -1 FirstWrite -1}
 		yCount_3 {Type IO LastRead -1 FirstWrite -1}
-		vBarSel_2 {Type O LastRead -1 FirstWrite 16}
+		vBarSel_2 {Type O LastRead -1 FirstWrite 17}
 		rSerie {Type IO LastRead -1 FirstWrite -1}
 		gSerie {Type IO LastRead -1 FirstWrite -1}
 		bSerie {Type IO LastRead -1 FirstWrite -1}
@@ -487,10 +487,10 @@ set ArgLastReadFirstWriteLatency {
 		DPtpgBarSelRgb_VESA_g {Type I LastRead -1 FirstWrite -1}
 		DPtpgBarSelRgb_VESA_b {Type I LastRead -1 FirstWrite -1}
 		DPtpgBarArray {Type I LastRead -1 FirstWrite -1}
-		tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_1 {Type O LastRead -1 FirstWrite 16}
+		tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_1 {Type O LastRead -1 FirstWrite 18}
 		tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_s {Type IO LastRead -1 FirstWrite -1}
 		yCount_1 {Type IO LastRead -1 FirstWrite -1}
-		vBarSel_1 {Type O LastRead -1 FirstWrite 16}
+		vBarSel_1 {Type O LastRead -1 FirstWrite 18}
 		DPtpgBarSelRgb_CEA_r {Type I LastRead -1 FirstWrite -1}
 		DPtpgBarSelRgb_CEA_g {Type I LastRead -1 FirstWrite -1}
 		DPtpgBarSelRgb_CEA_b {Type I LastRead -1 FirstWrite -1}
@@ -505,7 +505,7 @@ set ArgLastReadFirstWriteLatency {
 	reg_int_s {
 		d {Type I LastRead 0 FirstWrite -1}}
 	tpgForeground {
-		bckgndYUV {Type I LastRead 1 FirstWrite -1}
+		bckgndYUV {Type I LastRead 2 FirstWrite -1}
 		height_val {Type I LastRead 0 FirstWrite -1}
 		width_val {Type I LastRead 0 FirstWrite -1}
 		patternId_val {Type I LastRead 0 FirstWrite -1}
@@ -518,7 +518,7 @@ set ArgLastReadFirstWriteLatency {
 		boxColorG_val {Type I LastRead 0 FirstWrite -1}
 		boxColorB_val {Type I LastRead 0 FirstWrite -1}
 		motionSpeed_val {Type I LastRead 0 FirstWrite -1}
-		ovrlayYUV {Type O LastRead -1 FirstWrite 2}
+		ovrlayYUV {Type O LastRead -1 FirstWrite 3}
 		boxHCoord {Type IO LastRead -1 FirstWrite -1}
 		boxVCoord {Type IO LastRead -1 FirstWrite -1}
 		vDir {Type IO LastRead -1 FirstWrite -1}
@@ -534,8 +534,8 @@ set ArgLastReadFirstWriteLatency {
 		and_ln1989 {Type I LastRead 0 FirstWrite -1}
 		and_ln1991 {Type I LastRead 0 FirstWrite -1}
 		and_ln1993 {Type I LastRead 0 FirstWrite -1}
-		ovrlayYUV {Type O LastRead -1 FirstWrite 2}
-		bckgndYUV {Type I LastRead 1 FirstWrite -1}
+		ovrlayYUV {Type O LastRead -1 FirstWrite 3}
+		bckgndYUV {Type I LastRead 2 FirstWrite -1}
 		patternId_val {Type I LastRead 0 FirstWrite -1}
 		boxSize_val {Type I LastRead 0 FirstWrite -1}
 		y {Type I LastRead 0 FirstWrite -1}
@@ -556,13 +556,13 @@ set ArgLastReadFirstWriteLatency {
 		whiYuv_2 {Type I LastRead -1 FirstWrite -1}}
 	MultiPixStream2AXIvideo {
 		ovrlayYUV {Type I LastRead 2 FirstWrite -1}
-		m_axis_video_V_data_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_keep_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_strb_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_user_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_last_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_id_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_dest_V {Type O LastRead -1 FirstWrite 2}
+		m_axis_video_V_data_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_keep_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_strb_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_user_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_last_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_id_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_dest_V {Type O LastRead -1 FirstWrite 3}
 		height_val4 {Type I LastRead 0 FirstWrite -1}
 		width_val7 {Type I LastRead 0 FirstWrite -1}
 		colorFormat_val17 {Type I LastRead 0 FirstWrite -1}
@@ -577,23 +577,23 @@ set ArgLastReadFirstWriteLatency {
 		colorFormat_val17 {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
 		ovrlayYUV {Type I LastRead 2 FirstWrite -1}
-		m_axis_video_V_data_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_keep_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_strb_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_user_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_last_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_id_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_dest_V {Type O LastRead -1 FirstWrite 2}
+		m_axis_video_V_data_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_keep_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_strb_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_user_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_last_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_id_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_dest_V {Type O LastRead -1 FirstWrite 3}
 		sext_ln1051_i {Type I LastRead 0 FirstWrite -1}
-		counter_loc_1_i_i_out {Type O LastRead -1 FirstWrite 3}
-		phi_ln1036_i_out {Type O LastRead -1 FirstWrite 2}
-		counter {Type O LastRead -1 FirstWrite 1}}}
+		counter_loc_1_i_i_out {Type O LastRead -1 FirstWrite 4}
+		phi_ln1036_i_out {Type O LastRead -1 FirstWrite 3}
+		counter {Type O LastRead -1 FirstWrite 2}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "23", "Max" : "4296409066"}
-	, {"Name" : "Interval", "Min" : "2", "Max" : "4296409067"}
+	{"Name" : "Latency", "Min" : "25", "Max" : "4296540136"}
+	, {"Name" : "Interval", "Min" : "2", "Max" : "4296540137"}
 ]}
 
 set PipelineEnableSignalInfo {[

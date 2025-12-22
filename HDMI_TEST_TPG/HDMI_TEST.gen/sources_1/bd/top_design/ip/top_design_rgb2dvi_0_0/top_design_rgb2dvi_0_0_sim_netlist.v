@@ -2,10 +2,10 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-// Date        : Wed Dec 17 18:42:45 2025
+// Date        : Mon Dec 22 19:21:10 2025
 // Host        : serg running 64-bit Ubuntu 24.04.3 LTS
 // Command     : write_verilog -force -mode funcsim
-//               /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_rgb2dvi_0_0/top_design_rgb2dvi_0_0_sim_netlist.v
+//               /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_rgb2dvi_0_0/top_design_rgb2dvi_0_0_sim_netlist.v
 // Design      : top_design_rgb2dvi_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,7 +25,8 @@ module top_design_rgb2dvi_0_0
     vid_pVDE,
     vid_pHSync,
     vid_pVSync,
-    PixelClk);
+    PixelClk,
+    SerialClk);
   (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS CLK_P, xilinx.com:signal:clock:1.0 TMDS_Clk_p CLK" *) (* x_interface_mode = "master TMDS, master TMDS_Clk_p" *) (* x_interface_parameter = "XIL_INTERFACENAME TMDS, BOARD.ASSOCIATED_PARAM TMDS_BOARD_INTERFACE, XIL_INTERFACENAME TMDS_Clk_p, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *) output TMDS_Clk_p;
   (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS CLK_N, xilinx.com:signal:clock:1.0 TMDS_Clk_n CLK" *) (* x_interface_mode = "master TMDS_Clk_n" *) (* x_interface_parameter = "XIL_INTERFACENAME TMDS_Clk_n, ASSOCIATED_RESET aRst_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *) output TMDS_Clk_n;
   (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS DATA_P" *) output [2:0]TMDS_Data_p;
@@ -35,9 +36,11 @@ module top_design_rgb2dvi_0_0
   (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB ACTIVE_VIDEO" *) input vid_pVDE;
   (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB HSYNC" *) input vid_pHSync;
   (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB VSYNC" *) input vid_pVSync;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 PixelClk CLK" *) (* x_interface_mode = "slave PixelClk" *) (* x_interface_parameter = "XIL_INTERFACENAME PixelClk, FREQ_HZ 148148163, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input PixelClk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 PixelClk CLK" *) (* x_interface_mode = "slave PixelClk" *) (* x_interface_parameter = "XIL_INTERFACENAME PixelClk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_axi_dynclk_0_0_PXL_CLK_O, INSERT_VIP 0" *) input PixelClk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 SerialClk CLK" *) (* x_interface_mode = "slave SerialClk" *) (* x_interface_parameter = "XIL_INTERFACENAME SerialClk, ASSOCIATED_RESET aRst:aRst_n:pRst:pRst_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_axi_dynclk_0_0_PXL_CLK_5X_O, INSERT_VIP 0" *) input SerialClk;
 
   wire PixelClk;
+  wire SerialClk;
   (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire TMDS_Clk_n;
   (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire TMDS_Clk_p;
   (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire [2:0]TMDS_Data_n;
@@ -54,11 +57,11 @@ module top_design_rgb2dvi_0_0
   (* kD0Swap = "FALSE" *) 
   (* kD1Swap = "FALSE" *) 
   (* kD2Swap = "FALSE" *) 
-  (* kGenerateSerialClk = "TRUE" *) 
+  (* kGenerateSerialClk = "FALSE" *) 
   (* kRstActiveHigh = "FALSE" *) 
   top_design_rgb2dvi_0_0_rgb2dvi U0
        (.PixelClk(PixelClk),
-        .SerialClk(1'b0),
+        .SerialClk(SerialClk),
         .TMDS_Clk_n(TMDS_Clk_n),
         .TMDS_Clk_p(TMDS_Clk_p),
         .TMDS_Data_n(TMDS_Data_n),
@@ -69,147 +72,6 @@ module top_design_rgb2dvi_0_0
         .vid_pHSync(vid_pHSync),
         .vid_pVDE(vid_pVDE),
         .vid_pVSync(vid_pVSync));
-endmodule
-
-(* ORIG_REF_NAME = "ClockGen" *) 
-module top_design_rgb2dvi_0_0_ClockGen
-   (SerialClk,
-    PixelClk,
-    in0,
-    \oSyncStages_reg[0] ,
-    aRst_n);
-  output SerialClk;
-  output PixelClk;
-  output in0;
-  input \oSyncStages_reg[0] ;
-  input aRst_n;
-
-  wire CLKFBIN;
-  wire PixelClk;
-  wire RST;
-  wire SerialClk;
-  wire aPixelClkLckd;
-  wire aRst_n;
-  wire in0;
-  wire oOut;
-  wire \oSyncStages_reg[0] ;
-  wire pLockWasLost0_n_0;
-  wire \pLocked_q_reg_n_0_[0] ;
-  wire \pLocked_q_reg_n_0_[1] ;
-  wire pRst;
-  wire p_1_in;
-  wire \NLW_GenPLL.DVI_ClkGenerator_CLKOUT2_UNCONNECTED ;
-  wire \NLW_GenPLL.DVI_ClkGenerator_CLKOUT3_UNCONNECTED ;
-  wire \NLW_GenPLL.DVI_ClkGenerator_CLKOUT4_UNCONNECTED ;
-  wire \NLW_GenPLL.DVI_ClkGenerator_CLKOUT5_UNCONNECTED ;
-  wire \NLW_GenPLL.DVI_ClkGenerator_DRDY_UNCONNECTED ;
-  wire [15:0]\NLW_GenPLL.DVI_ClkGenerator_DO_UNCONNECTED ;
-
-  (* box_type = "PRIMITIVE" *) 
-  PLLE2_ADV #(
-    .BANDWIDTH("OPTIMIZED"),
-    .CLKFBOUT_MULT(10),
-    .CLKFBOUT_PHASE(0.000000),
-    .CLKIN1_PERIOD(6.250000),
-    .CLKIN2_PERIOD(0.000000),
-    .CLKOUT0_DIVIDE(2),
-    .CLKOUT0_DUTY_CYCLE(0.500000),
-    .CLKOUT0_PHASE(0.000000),
-    .CLKOUT1_DIVIDE(10),
-    .CLKOUT1_DUTY_CYCLE(0.500000),
-    .CLKOUT1_PHASE(0.000000),
-    .CLKOUT2_DIVIDE(1),
-    .CLKOUT2_DUTY_CYCLE(0.500000),
-    .CLKOUT2_PHASE(0.000000),
-    .CLKOUT3_DIVIDE(1),
-    .CLKOUT3_DUTY_CYCLE(0.500000),
-    .CLKOUT3_PHASE(0.000000),
-    .CLKOUT4_DIVIDE(1),
-    .CLKOUT4_DUTY_CYCLE(0.500000),
-    .CLKOUT4_PHASE(0.000000),
-    .CLKOUT5_DIVIDE(1),
-    .CLKOUT5_DUTY_CYCLE(0.500000),
-    .CLKOUT5_PHASE(0.000000),
-    .COMPENSATION("INTERNAL"),
-    .DIVCLK_DIVIDE(1),
-    .IS_CLKINSEL_INVERTED(1'b0),
-    .IS_PWRDWN_INVERTED(1'b0),
-    .IS_RST_INVERTED(1'b0),
-    .REF_JITTER1(0.010000),
-    .REF_JITTER2(0.000000),
-    .STARTUP_WAIT("FALSE")) 
-    \GenPLL.DVI_ClkGenerator 
-       (.CLKFBIN(CLKFBIN),
-        .CLKFBOUT(CLKFBIN),
-        .CLKIN1(\oSyncStages_reg[0] ),
-        .CLKIN2(1'b0),
-        .CLKINSEL(1'b1),
-        .CLKOUT0(SerialClk),
-        .CLKOUT1(PixelClk),
-        .CLKOUT2(\NLW_GenPLL.DVI_ClkGenerator_CLKOUT2_UNCONNECTED ),
-        .CLKOUT3(\NLW_GenPLL.DVI_ClkGenerator_CLKOUT3_UNCONNECTED ),
-        .CLKOUT4(\NLW_GenPLL.DVI_ClkGenerator_CLKOUT4_UNCONNECTED ),
-        .CLKOUT5(\NLW_GenPLL.DVI_ClkGenerator_CLKOUT5_UNCONNECTED ),
-        .DADDR({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .DCLK(1'b0),
-        .DEN(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .DO(\NLW_GenPLL.DVI_ClkGenerator_DO_UNCONNECTED [15:0]),
-        .DRDY(\NLW_GenPLL.DVI_ClkGenerator_DRDY_UNCONNECTED ),
-        .DWE(1'b0),
-        .LOCKED(aPixelClkLckd),
-        .PWRDWN(1'b0),
-        .RST(RST));
-  top_design_rgb2dvi_0_0_ResetBridge_5 LockLostReset
-       (.AR(pRst),
-        .aRst_n(aRst_n),
-        .\oSyncStages_reg[0] (\oSyncStages_reg[0] ));
-  top_design_rgb2dvi_0_0_SyncAsync__parameterized1 PLL_LockSyncAsync
-       (.D(oOut),
-        .\oSyncStages_reg[0]_0 (\oSyncStages_reg[0] ),
-        .\oSyncStages_reg[0]_1 (aPixelClkLckd));
-  LUT1 #(
-    .INIT(2'h1)) 
-    aRst_int_inferred_i_1__0
-       (.I0(aPixelClkLckd),
-        .O(in0));
-  LUT3 #(
-    .INIT(8'h70)) 
-    pLockWasLost0
-       (.I0(\pLocked_q_reg_n_0_[1] ),
-        .I1(\pLocked_q_reg_n_0_[0] ),
-        .I2(p_1_in),
-        .O(pLockWasLost0_n_0));
-  FDPE pLockWasLost_reg
-       (.C(\oSyncStages_reg[0] ),
-        .CE(1'b1),
-        .D(pLockWasLost0_n_0),
-        .PRE(pRst),
-        .Q(RST));
-  FDCE #(
-    .INIT(1'b1)) 
-    \pLocked_q_reg[0] 
-       (.C(\oSyncStages_reg[0] ),
-        .CE(1'b1),
-        .CLR(pRst),
-        .D(oOut),
-        .Q(\pLocked_q_reg_n_0_[0] ));
-  FDCE #(
-    .INIT(1'b1)) 
-    \pLocked_q_reg[1] 
-       (.C(\oSyncStages_reg[0] ),
-        .CE(1'b1),
-        .CLR(pRst),
-        .D(\pLocked_q_reg_n_0_[0] ),
-        .Q(\pLocked_q_reg_n_0_[1] ));
-  FDCE #(
-    .INIT(1'b1)) 
-    \pLocked_q_reg[2] 
-       (.C(\oSyncStages_reg[0] ),
-        .CE(1'b1),
-        .CLR(pRst),
-        .D(\pLocked_q_reg_n_0_[1] ),
-        .Q(p_1_in));
 endmodule
 
 (* ORIG_REF_NAME = "OutputSERDES" *) 
@@ -828,46 +690,26 @@ endmodule
 (* ORIG_REF_NAME = "ResetBridge" *) 
 module top_design_rgb2dvi_0_0_ResetBridge
    (out,
-    in0,
+    aRst_n,
     PixelClk);
   output [0:0]out;
-  input in0;
+  input aRst_n;
   input PixelClk;
 
   wire PixelClk;
   (* RTL_KEEP = "true" *) wire aRst_int;
+  wire aRst_n;
   wire [0:0]out;
 
-  assign aRst_int = in0;
   top_design_rgb2dvi_0_0_SyncAsync SyncAsyncx
        (.AS(aRst_int),
         .PixelClk(PixelClk),
         .out(out));
-endmodule
-
-(* ORIG_REF_NAME = "ResetBridge" *) 
-module top_design_rgb2dvi_0_0_ResetBridge_5
-   (AR,
-    aRst_n,
-    \oSyncStages_reg[0] );
-  output [0:0]AR;
-  input aRst_n;
-  input \oSyncStages_reg[0] ;
-
-  wire [0:0]AR;
-  (* RTL_KEEP = "true" *) wire aRst_int_0;
-  wire aRst_n;
-  wire \oSyncStages_reg[0] ;
-
-  top_design_rgb2dvi_0_0_SyncAsync_6 SyncAsyncx
-       (.AR(AR),
-        .AS(aRst_int_0),
-        .\oSyncStages_reg[0]_0 (\oSyncStages_reg[0] ));
   LUT1 #(
     .INIT(2'h1)) 
     aRst_int_inferred_i_1
        (.I0(aRst_n),
-        .O(aRst_int_0));
+        .O(aRst_int));
 endmodule
 
 (* ORIG_REF_NAME = "SyncAsync" *) 
@@ -904,78 +746,6 @@ module top_design_rgb2dvi_0_0_SyncAsync
         .D(oSyncStages[0]),
         .PRE(AS),
         .Q(oSyncStages[1]));
-endmodule
-
-(* ORIG_REF_NAME = "SyncAsync" *) 
-module top_design_rgb2dvi_0_0_SyncAsync_6
-   (AR,
-    \oSyncStages_reg[0]_0 ,
-    AS);
-  output [0:0]AR;
-  input \oSyncStages_reg[0]_0 ;
-  input [0:0]AS;
-
-  wire [0:0]AS;
-  (* async_reg = "true" *) wire [1:0]oSyncStages;
-  wire \oSyncStages_reg[0]_0 ;
-
-  assign AR[0] = oSyncStages[1];
-  (* ASYNC_REG *) 
-  (* KEEP = "yes" *) 
-  FDPE #(
-    .INIT(1'b1)) 
-    \oSyncStages_reg[0] 
-       (.C(\oSyncStages_reg[0]_0 ),
-        .CE(1'b1),
-        .D(1'b0),
-        .PRE(AS),
-        .Q(oSyncStages[0]));
-  (* ASYNC_REG *) 
-  (* KEEP = "yes" *) 
-  FDPE #(
-    .INIT(1'b1)) 
-    \oSyncStages_reg[1] 
-       (.C(\oSyncStages_reg[0]_0 ),
-        .CE(1'b1),
-        .D(oSyncStages[0]),
-        .PRE(AS),
-        .Q(oSyncStages[1]));
-endmodule
-
-(* ORIG_REF_NAME = "SyncAsync" *) 
-module top_design_rgb2dvi_0_0_SyncAsync__parameterized1
-   (D,
-    \oSyncStages_reg[0]_0 ,
-    \oSyncStages_reg[0]_1 );
-  output [0:0]D;
-  input \oSyncStages_reg[0]_0 ;
-  input [0:0]\oSyncStages_reg[0]_1 ;
-
-  (* async_reg = "true" *) wire [1:0]oSyncStages;
-  wire \oSyncStages_reg[0]_0 ;
-  wire [0:0]\oSyncStages_reg[0]_1 ;
-
-  assign D[0] = oSyncStages[1];
-  (* ASYNC_REG *) 
-  (* KEEP = "yes" *) 
-  FDRE #(
-    .INIT(1'b0)) 
-    \oSyncStages_reg[0] 
-       (.C(\oSyncStages_reg[0]_0 ),
-        .CE(1'b1),
-        .D(\oSyncStages_reg[0]_1 ),
-        .Q(oSyncStages[0]),
-        .R(1'b0));
-  (* ASYNC_REG *) 
-  (* KEEP = "yes" *) 
-  FDRE #(
-    .INIT(1'b0)) 
-    \oSyncStages_reg[1] 
-       (.C(\oSyncStages_reg[0]_0 ),
-        .CE(1'b1),
-        .D(oSyncStages[0]),
-        .Q(oSyncStages[1]),
-        .R(1'b0));
 endmodule
 
 (* ORIG_REF_NAME = "TMDS_Encoder" *) 
@@ -3897,7 +3667,7 @@ endmodule
 
 (* ORIG_REF_NAME = "rgb2dvi" *) (* kClkPrimitive = "PLL" *) (* kClkRange = "1" *) 
 (* kClkSwap = "FALSE" *) (* kD0Swap = "FALSE" *) (* kD1Swap = "FALSE" *) 
-(* kD2Swap = "FALSE" *) (* kGenerateSerialClk = "TRUE" *) (* kRstActiveHigh = "FALSE" *) 
+(* kD2Swap = "FALSE" *) (* kGenerateSerialClk = "FALSE" *) (* kRstActiveHigh = "FALSE" *) 
 module top_design_rgb2dvi_0_0_rgb2dvi
    (TMDS_Clk_p,
     TMDS_Clk_n,
@@ -3926,13 +3696,11 @@ module top_design_rgb2dvi_0_0_rgb2dvi
 
   wire \DataEncoders[0].DataEncoder_n_0 ;
   wire PixelClk;
-  wire PixelClkIO;
-  wire SerialClkIO;
+  wire SerialClk;
   wire TMDS_Clk_n;
   wire TMDS_Clk_p;
   wire [2:0]TMDS_Data_n;
   wire [2:0]TMDS_Data_p;
-  wire aRstLck;
   wire aRst_n;
   wire [9:0]\pDataOutRaw[0] ;
   wire [9:0]\pDataOutRaw[1] ;
@@ -3943,15 +3711,9 @@ module top_design_rgb2dvi_0_0_rgb2dvi
   wire vid_pVDE;
   wire vid_pVSync;
 
-  top_design_rgb2dvi_0_0_ClockGen \ClockGenInternal.ClockGenX 
-       (.PixelClk(PixelClkIO),
-        .SerialClk(SerialClkIO),
-        .aRst_n(aRst_n),
-        .in0(aRstLck),
-        .\oSyncStages_reg[0] (PixelClk));
   top_design_rgb2dvi_0_0_OutputSERDES ClockSerializer
-       (.PixelClk(PixelClkIO),
-        .SerialClk(SerialClkIO),
+       (.PixelClk(PixelClk),
+        .SerialClk(SerialClk),
         .TMDS_Clk_n(TMDS_Clk_n),
         .TMDS_Clk_p(TMDS_Clk_p),
         .aRst(pRstLck));
@@ -3964,8 +3726,8 @@ module top_design_rgb2dvi_0_0_rgb2dvi
         .vid_pVDE(vid_pVDE),
         .vid_pVSync(vid_pVSync));
   top_design_rgb2dvi_0_0_OutputSERDES_0 \DataEncoders[0].DataSerializer 
-       (.PixelClk(PixelClkIO),
-        .SerialClk(SerialClkIO),
+       (.PixelClk(PixelClk),
+        .SerialClk(SerialClk),
         .TMDS_Data_n(TMDS_Data_n[0]),
         .TMDS_Data_p(TMDS_Data_p[0]),
         .aRst(pRstLck),
@@ -3976,8 +3738,8 @@ module top_design_rgb2dvi_0_0_rgb2dvi
         .SR(\DataEncoders[0].DataEncoder_n_0 ),
         .vid_pData(vid_pData[7:0]));
   top_design_rgb2dvi_0_0_OutputSERDES_2 \DataEncoders[1].DataSerializer 
-       (.PixelClk(PixelClkIO),
-        .SerialClk(SerialClkIO),
+       (.PixelClk(PixelClk),
+        .SerialClk(SerialClk),
         .TMDS_Data_n(TMDS_Data_n[1]),
         .TMDS_Data_p(TMDS_Data_p[1]),
         .out(pRstLck),
@@ -3988,15 +3750,15 @@ module top_design_rgb2dvi_0_0_rgb2dvi
         .SR(\DataEncoders[0].DataEncoder_n_0 ),
         .vid_pData(vid_pData[23:16]));
   top_design_rgb2dvi_0_0_OutputSERDES_4 \DataEncoders[2].DataSerializer 
-       (.PixelClk(PixelClkIO),
-        .SerialClk(SerialClkIO),
+       (.PixelClk(PixelClk),
+        .SerialClk(SerialClk),
         .TMDS_Data_n(TMDS_Data_n[2]),
         .TMDS_Data_p(TMDS_Data_p[2]),
         .out(pRstLck),
         .pDataOut(\pDataOutRaw[2] ));
   top_design_rgb2dvi_0_0_ResetBridge LockLostReset
        (.PixelClk(PixelClk),
-        .in0(aRstLck),
+        .aRst_n(aRst_n),
         .out(pRstLck));
 endmodule
 `ifndef GLBL

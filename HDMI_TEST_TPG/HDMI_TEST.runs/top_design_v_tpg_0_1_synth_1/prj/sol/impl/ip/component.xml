@@ -1430,7 +1430,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>79adb2e8</spirit:value>
+            <spirit:value>d7073729</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1446,7 +1446,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>52a9c881</spirit:value>
+            <spirit:value>adcfeb79</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1462,7 +1462,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>1ce05457</spirit:value>
+            <spirit:value>446b1ec0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1478,7 +1478,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>400a2eb7</spirit:value>
+            <spirit:value>98b66fd5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3098,7 +3098,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/top_design_v_tpg_0_1_v_tpg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_4b4fa326</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_520b12d9</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -3487,7 +3487,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>clk_period</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="1">10</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="1">6.75</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>machine</spirit:name>
@@ -3499,11 +3499,11 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="4">27</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="4">30</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="5">28 ~ 4296409071</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="5">31 ~ 4296540142</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
@@ -3516,8 +3516,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>V_tpg</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114398494</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-12-19T13:54:43Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114402961</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2025-12-22T16:21:31Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -3527,10 +3527,10 @@
       <xilinx:xilinxVersion>2025.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="203d73ef"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="e98d7c3d"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="495641cc"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="da86074e"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="eb986cf1"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="4395c73a"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="6fe41665"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="0cbfd1a7"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>
