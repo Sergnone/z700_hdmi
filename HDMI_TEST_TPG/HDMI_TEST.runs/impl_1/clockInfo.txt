@@ -1,8 +1,8 @@
 -------------------------------------
 | Tool Version : Vivado v.2025.2
-| Date         : Mon Dec 22 20:08:21 2025
+| Date         : Mon Dec 22 20:47:46 2025
 | Host         : serg
-| Design       : checkpoint_top_design_wrapper
+| Design       : design_1
 | Device       : xc7z020-clg400-2--
 -------------------------------------
 

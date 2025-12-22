@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1766423283">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1766425644">
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="top_design_wrapper_postroute_physopted.rqs"/>
@@ -113,7 +113,6 @@
   <File Type="INIT-TIMING" Name="top_design_wrapper_timing_summary_init.rpt"/>
   <File Type="REPORTS-TCL" Name="top_design_wrapper_reports.tcl"/>
   <File Type="PA-TCL" Name="top_design_wrapper.tcl"/>
-  <File Type="PA-DCP" Name="top_design_wrapper.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/top_design/top_design.bd">
@@ -175,11 +174,11 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="top_design_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="top_design_v_tpg_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="top_design_rst_ps7_0_148M_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="top_design_v_axi4s_vid_out_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="top_design_v_tc_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="top_design_rgb2dvi_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="top_design_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_design_v_axi4s_vid_out_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="top_design_axi_dynclk_0_0"/>
 </GenRun>

@@ -35,6 +35,7 @@ int main()
 {
     int Status = 0;
     int i = 0;
+    int pattern = 9;
 
 	for (i = 0; i < DISPLAY_NUM_FRAMES; i++)
 	{
@@ -69,11 +70,14 @@ int main()
  
     XV_tpg_EnableAutoRestart(&tpg);
     XV_tpg_Start(&tpg);
- 
-    int pattern = 1;
+
     
     print("Successfully ran TPG application\r\n");
 
+
+    XV_tpg_Set_bckgndId(&tpg, pattern);
+    
+    /*
     while(true)
     {
         XV_tpg_Set_bckgndId(&tpg, pattern);
@@ -87,6 +91,7 @@ int main()
 
         print("Change pattern\r\n");
     }
- 
+    */
+
     return 0;
 }

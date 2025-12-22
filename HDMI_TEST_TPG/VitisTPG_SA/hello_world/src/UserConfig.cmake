@@ -27,8 +27,8 @@ set(USER_UNDEFINED_SYMBOLS
 # Example 3: Adding ${CMAKE_SOURCE_DIR}/data/include to add data/include from this project.
 
 set(USER_INCLUDE_DIRECTORIES
-"../dynclk"
 "../display_ctrl"
+"../dynclk"
 )
 
 #Add any source below, they will be added as Compile sources.
@@ -38,11 +38,11 @@ set(USER_INCLUDE_DIRECTORIES
 set(USER_COMPILE_SOURCES
 "helloworld.c"
 "platform.c"
+"../display_ctrl/display_ctrl.c"
 "../dynclk/ddynclk.c"
 "../dynclk/ddynclk_g.c"
 "../dynclk/ddynclk_selftest.c"
 "../dynclk/ddynclk_sinit.c"
-"../display_ctrl/display_ctrl.c"
 )
 
 # -----------------------------------------
