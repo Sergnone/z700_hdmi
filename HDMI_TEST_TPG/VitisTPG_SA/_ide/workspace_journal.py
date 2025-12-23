@@ -26,3 +26,157 @@ status = platform.build()
 
 comp.build()
 
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+comp.set_app_config(key = "USER_INCLUDE_DIRECTORIES", values = ["../display_ctrl"])
+
+comp.set_app_config(key = "USER_INCLUDE_DIRECTORIES", values = [""])
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+comp.set_app_config(key = "USER_INCLUDE_DIRECTORIES", values = ["../display_ctrl"])
+
+comp.set_app_config(key = "USER_INCLUDE_DIRECTORIES", values = [""])
+
+comp.set_app_config(key = "USER_COMPILE_SOURCES", values = ["helloworld.c", "platform.c", "../display_ctrl/display_ctrl.c", "../dynclk/ddynclk.c", "../dynclk/ddynclk_g.c", "../dynclk/ddynclk_selftest.c"])
+
+comp.set_app_config(key = "USER_COMPILE_SOURCES", values = ["helloworld.c", "platform.c", "../display_ctrl/display_ctrl.c", "../dynclk/ddynclk.c", "../dynclk/ddynclk_g.c"])
+
+comp.set_app_config(key = "USER_COMPILE_SOURCES", values = ["helloworld.c", "platform.c", "../display_ctrl/display_ctrl.c", "../dynclk/ddynclk.c"])
+
+comp.set_app_config(key = "USER_COMPILE_SOURCES", values = ["helloworld.c", "platform.c", "../display_ctrl/display_ctrl.c"])
+
+comp.set_app_config(key = "USER_COMPILE_SOURCES", values = ["helloworld.c", "platform.c"])
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
