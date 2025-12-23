@@ -56,6 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "top_design_rgb2dvi_0_0_synth_1" START { ROLLUP_AUTO }
+set_param bd.open.in_stealth_mode 2
 set_param general.usePosixSpawnForFork 1
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }

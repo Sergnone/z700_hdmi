@@ -201,12 +201,6 @@
             "value": "END_POINT",
             "value_src": "auto"
           }
-        },
-        "hdl_attributes": {
-          "LOCKED": {
-            "value": "FALSE",
-            "value_src": "default"
-          }
         }
       },
       "S01_AXI": {
@@ -348,12 +342,6 @@
             "value": "END_POINT",
             "value_src": "auto"
           }
-        },
-        "hdl_attributes": {
-          "LOCKED": {
-            "value": "FALSE",
-            "value_src": "default"
-          }
         }
       },
       "M00_AXI": {
@@ -478,13 +466,7 @@
             "value_src": "default"
           }
         },
-        "memory_map_ref": "M00_AXI",
-        "hdl_attributes": {
-          "LOCKED": {
-            "value": "FALSE",
-            "value_src": "default"
-          }
-        }
+        "memory_map_ref": "M00_AXI"
       }
     },
     "ports": {
