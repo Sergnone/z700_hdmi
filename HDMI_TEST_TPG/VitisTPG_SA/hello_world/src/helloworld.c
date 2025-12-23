@@ -54,7 +54,7 @@ XVtc vtc;
 XVtc_Timing vtcTiming;
 XV_tpg tpg;
 VideoMode vMode;
-XVtc_SourceSelect SourceSelect;
+//XVtc_SourceSelect SourceSelect;
 
 int VTC_Init(void)
 {
@@ -86,6 +86,7 @@ int VTC_Init(void)
 	vtcTiming.VSyncPolarity = vMode.vpol;
 	vtcTiming.Interlaced = 0;
 
+	/*
 	memset((void *)&SourceSelect, 0, sizeof(SourceSelect));
 	SourceSelect.VBlankPolSrc = 1;
 	SourceSelect.VSyncPolSrc = 1;
@@ -104,11 +105,11 @@ int VTC_Init(void)
 	SourceSelect.HSyncSrc = 1;
 	SourceSelect.HFrontPorchSrc = 1;
 	SourceSelect.HTotalSrc = 1;
-
+	*/
 	XVtc_SelfTest(&vtc);
 	XVtc_RegUpdateEnable(&vtc);
 	XVtc_SetGeneratorTiming(&vtc, &vtcTiming);
-	XVtc_SetSource(&vtc, &SourceSelect);
+	//XVtc_SetSource(&vtc, &SourceSelect);
 	XVtc_EnableGenerator(&vtc);
 	return XST_SUCCESS;
 }
@@ -138,10 +139,10 @@ int main()
 {
     int pattern = 9;
 
-	print("-------------------------------------\r\n");
+	  print("-------------------------------------\r\n");
     DriverInit();
     XV_tpg_Start(&tpg);
-	print("Successfully ran TPG application\r\n");
+	  print("Successfully ran TPG application\r\n");
     XV_tpg_Set_bckgndId(&tpg, pattern);
 
     return 0;
