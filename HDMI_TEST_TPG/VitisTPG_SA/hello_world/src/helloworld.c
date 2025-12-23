@@ -7,6 +7,7 @@
 
 #include "xvtc.h"
 #include "xv_frmbufrd_l2.h"
+#include <stdint.h>
 
 #define BYTES_PIXEL 3
 
@@ -54,15 +55,101 @@ static const VideoMode VMODE_1080P = {
 	.freq = 148.5 //148.57 is close enough
 };
 
+#define NUM_TEST_FORMATS        1
+#define NUM_TEST_MODES          1
+typedef struct {
+  XVidC_ColorFormat MemFormat;
+  XVidC_ColorFormat StreamFormat;
+  u16 FormatBits;
+} VideoFormats;
+
+VideoFormats ColorFormats[NUM_TEST_FORMATS] =
+{
+  //memory format            stream format        bits per component
+  {XVIDC_CSF_MEM_RGB8,       XVIDC_CSF_RGB,       8},
+};
+
+XVidC_VideoMode TestModes[NUM_TEST_MODES] =
+{
+  XVIDC_VM_1080_60_P,
+};
+
 XVtc vtc;
 XVtc_Timing vtcTiming;
 XV_tpg tpg;
 VideoMode vMode;
-XVtc_SourceSelect SourceSelect;
 XV_FrmbufRd_l2     frmbufrd;
 XV_frmbufrd_Config frmbufrd_cfg;
 VideoMode vMode;
+XVidC_VideoStream VidStream;
 
+
+static uint32_t CalcStride(XVidC_ColorFormat Cfmt,
+                      u16 AXIMMDataWidth,
+                      XVidC_VideoStream *StreamPtr)
+{
+  u32 stride;
+  int width = StreamPtr->Timing.HActive;
+  u16 MMWidthBytes = AXIMMDataWidth/8;
+  u8 bpp_numerator;
+  u8 bpp_denominator = 1;
+
+  switch (Cfmt) {
+    case XVIDC_CSF_MEM_Y_UV10:
+    case XVIDC_CSF_MEM_Y_UV10_420:
+    case XVIDC_CSF_MEM_Y10:
+	case XVIDC_CSF_MEM_Y_U_V10:
+      /* 4 bytes per 3 pixels (Y_UV10, Y_UV10_420, Y10, Y_U_V10) */
+      bpp_numerator = 4;
+      bpp_denominator = 3;
+      break;
+    case XVIDC_CSF_MEM_Y_UV8:
+    case XVIDC_CSF_MEM_Y_UV8_420:
+    case XVIDC_CSF_MEM_Y8:
+    case XVIDC_CSF_MEM_Y_U_V8:
+      /* 1 byte per pixel (Y_UV8, Y_UV8_420, Y8, Y_U_V8) */
+      bpp_numerator = 1;
+      break;
+    case XVIDC_CSF_MEM_RGB8:
+    case XVIDC_CSF_MEM_YUV8:
+    case XVIDC_CSF_MEM_BGR8:
+      /* 3 bytes per pixel (RGB8, YUV8, BGR8) */
+      bpp_numerator = 3;
+      break;
+    case XVIDC_CSF_MEM_RGBX12:
+    case XVIDC_CSF_MEM_YUVX12:
+      /* 5 bytes per pixel (RGBX12, YUVX12) */
+      bpp_numerator = 5;
+      break;
+    case XVIDC_CSF_MEM_Y_UV12:
+    case XVIDC_CSF_MEM_Y_UV12_420:
+    case XVIDC_CSF_MEM_Y12:
+      /* 3 bytes per 2 pixels (Y_UV12, Y_UV12_420, Y12) */
+      bpp_numerator = 3;
+      bpp_denominator = 2;
+      break;
+    case XVIDC_CSF_MEM_RGB16:
+    case XVIDC_CSF_MEM_YUV16:
+      /* 6 bytes per pixel (RGB16, YUV16) */
+      bpp_numerator = 6;
+      break;
+    case XVIDC_CSF_MEM_YUYV8:
+    case XVIDC_CSF_MEM_UYVY8:
+    case XVIDC_CSF_MEM_Y_UV16:
+    case XVIDC_CSF_MEM_Y_UV16_420:
+    case XVIDC_CSF_MEM_Y16:
+      /* 2 bytes per pixel (YUYV8, UYVY8, Y_UV16, Y_UV16_420, Y16) */
+      bpp_numerator = 2;
+      break;
+    default:
+      /* 4 bytes per pixel */
+      bpp_numerator = 4;
+  }
+  stride = ((((width * bpp_numerator) / bpp_denominator) +
+    MMWidthBytes - 1) / MMWidthBytes) * MMWidthBytes;
+
+  return(stride);
+}
 
 
 int VTC_Init(void)
@@ -95,29 +182,9 @@ int VTC_Init(void)
 	vtcTiming.VSyncPolarity = vMode.vpol;
 	vtcTiming.Interlaced = 0;
 
-	memset((void *)&SourceSelect, 0, sizeof(SourceSelect));
-	SourceSelect.VBlankPolSrc = 1;
-	SourceSelect.VSyncPolSrc = 1;
-	SourceSelect.HBlankPolSrc = 1;
-	SourceSelect.HSyncPolSrc = 1;
-	SourceSelect.ActiveVideoPolSrc = 1;
-	SourceSelect.ActiveChromaPolSrc= 1;
-	SourceSelect.VChromaSrc = 1;
-	SourceSelect.VActiveSrc = 1;
-	SourceSelect.VBackPorchSrc = 1;
-	SourceSelect.VSyncSrc = 1;
-	SourceSelect.VFrontPorchSrc = 1;
-	SourceSelect.VTotalSrc = 1;
-	SourceSelect.HActiveSrc = 1;
-	SourceSelect.HBackPorchSrc = 1;
-	SourceSelect.HSyncSrc = 1;
-	SourceSelect.HFrontPorchSrc = 1;
-	SourceSelect.HTotalSrc = 1;
-
 	XVtc_SelfTest(&vtc);
 	XVtc_RegUpdateEnable(&vtc);
 	XVtc_SetGeneratorTiming(&vtc, &vtcTiming);
-	XVtc_SetSource(&vtc, &SourceSelect);
 	XVtc_EnableGenerator(&vtc);
 	return XST_SUCCESS;
 }
@@ -152,18 +219,29 @@ int FRB_Init(void)
 
 
 
+
+
+
+
 int DriverInit(void)
 {
-	VTC_Init();
-	TPG_Init();
-  	return(XST_SUCCESS);
+    VTC_Init();
+    TPG_Init();
+    FRB_Init();
+    return(XST_SUCCESS);
 }
 
 int main()
 {
     int pattern = 9;
     print("--------------------------\r\n");
-	DriverInit();
+	  DriverInit();
+    XVFrmbufRd_DbgReportStatus(&frmbufrd);
+
+    VidStream.PixPerClk     = frmbufrd.FrmbufRd.Config.PixPerClk;
+    VidStream.ColorDepth    = frmbufrd.FrmbufRd.Config.MaxDataWidth;
+
+    
     XV_tpg_Start(&tpg);
     print("Successfully ran TPG application\r\n");
     XV_tpg_Set_bckgndId(&tpg, pattern);

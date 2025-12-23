@@ -66,8 +66,8 @@
 
 #define VIDEO_MONITOR_LOCK_TIMEOUT (1000000)
 
-#define NUM_TEST_MODES 4
-#define NUM_TEST_FORMATS 29
+#define NUM_TEST_MODES        1
+#define NUM_TEST_FORMATS      1
 
 #define CHROMA_ADDR_OFFSET   (0x01000000U)
 #define V_CHROMA_ADDR_OFFSET (0x03000000U)
@@ -82,35 +82,7 @@ typedef struct {
 VideoFormats ColorFormats[NUM_TEST_FORMATS] =
 {
   //memory format            stream format        bits per component
-  {XVIDC_CSF_MEM_RGBX8,      XVIDC_CSF_RGB,       8},
-  {XVIDC_CSF_MEM_YUVX8,      XVIDC_CSF_YCRCB_444, 8},
-  {XVIDC_CSF_MEM_YUYV8,      XVIDC_CSF_YCRCB_422, 8},
-  {XVIDC_CSF_MEM_RGBX10,     XVIDC_CSF_RGB,       10},
-  {XVIDC_CSF_MEM_YUVX10,     XVIDC_CSF_YCRCB_444, 10},
-  {XVIDC_CSF_MEM_Y_UV8,      XVIDC_CSF_YCRCB_422, 8},
-  {XVIDC_CSF_MEM_Y_UV8_420,  XVIDC_CSF_YCRCB_420, 8},
   {XVIDC_CSF_MEM_RGB8,       XVIDC_CSF_RGB,       8},
-  {XVIDC_CSF_MEM_YUV8,       XVIDC_CSF_YCRCB_444, 8},
-  {XVIDC_CSF_MEM_Y_UV10,     XVIDC_CSF_YCRCB_422, 10},
-  {XVIDC_CSF_MEM_Y_UV10_420, XVIDC_CSF_YCRCB_420, 10},
-  {XVIDC_CSF_MEM_Y8,         XVIDC_CSF_YONLY, 8},
-  {XVIDC_CSF_MEM_Y10,        XVIDC_CSF_YONLY, 10},
-  {XVIDC_CSF_MEM_BGRX8,      XVIDC_CSF_RGB,       8},
-  {XVIDC_CSF_MEM_UYVY8,      XVIDC_CSF_YCRCB_422, 8},
-  {XVIDC_CSF_MEM_BGR8,       XVIDC_CSF_RGB,       8},
-  {XVIDC_CSF_MEM_RGBX12,     XVIDC_CSF_RGB,       12},
-  {XVIDC_CSF_MEM_RGB16,      XVIDC_CSF_RGB,       16},
-  {XVIDC_CSF_MEM_YUVX12,     XVIDC_CSF_YCRCB_444, 12},
-  {XVIDC_CSF_MEM_YUV16,      XVIDC_CSF_YCRCB_444, 16},
-  {XVIDC_CSF_MEM_Y_UV12,     XVIDC_CSF_YCRCB_422, 12},
-  {XVIDC_CSF_MEM_Y_UV16,     XVIDC_CSF_YCRCB_422, 16},
-  {XVIDC_CSF_MEM_Y_UV12_420, XVIDC_CSF_YCRCB_420, 12},
-  {XVIDC_CSF_MEM_Y_UV16_420, XVIDC_CSF_YCRCB_420, 16},
-  {XVIDC_CSF_MEM_Y12,        XVIDC_CSF_YONLY, 12},
-  {XVIDC_CSF_MEM_Y16,        XVIDC_CSF_YONLY, 16},
-  {XVIDC_CSF_MEM_Y_U_V8,     XVIDC_CSF_YCRCB_444, 8},
-  {XVIDC_CSF_MEM_Y_U_V10,    XVIDC_CSF_YCRCB_444, 10},
-  {XVIDC_CSF_MEM_Y_U_V8_420, XVIDC_CSF_YCRCB_420, 8}
 };
 
 XV_FrmbufRd_l2     frmbufrd;
@@ -626,14 +598,11 @@ int main(void)
 
   XVidC_VideoMode TestModes[NUM_TEST_MODES] =
   {
-    XVIDC_VM_720_60_P,
     XVIDC_VM_1080_60_P,
-    XVIDC_VM_UHD_30_P,
-    XVIDC_VM_UHD_60_P
   };
 
   init_platform();
-
+  xil_printf("===================================================\r\n");
   xil_printf("Start Frame Buffer Example Design Test\r\n");
 
 
@@ -645,6 +614,7 @@ int main(void)
     return(1);
   }
 
+  //XVFrmbufRd_DbgReportStatus(&frmbufrd);
   /* Initialize IRQ */
 #ifndef SDT
   Status = SetupInterrupts();
@@ -675,59 +645,57 @@ int main(void)
   VidStream.PixPerClk     = frmbufrd.FrmbufRd.Config.PixPerClk;
   VidStream.ColorDepth    = frmbufrd.FrmbufRd.Config.MaxDataWidth;
 
-  for (format=0; format<NUM_TEST_FORMATS; format++)
+  format = 0;
+  index = 0;
+  Cfmt = ColorFormats[format].MemFormat;
+  VidStream.ColorFormatId = ColorFormats[format].StreamFormat;
+
+
+  /* Get mode to test */
+  VidStream.VmId = TestModes[index];
+
+  /* Validate testcase format and mode */
+  //valid = ValidateTestCase(frmbufrd.FrmbufRd.Config.PixPerClk,
+   //                         TestModes[index],
+  //                          frmbufrd.FrmbufRd.Config.MaxDataWidth,
+  //                          ColorFormats[format]);
+
+  valid = 1;
+  if (valid)
   {
-    /* Get video format to test */
-    Cfmt = ColorFormats[format].MemFormat;
-    VidStream.ColorFormatId = ColorFormats[format].StreamFormat;
+    ++TestCount;
+    /* Get mode timing parameters */
+    TimingPtr = XVidC_GetTimingInfo(VidStream.VmId);
+    VidStream.Timing = *TimingPtr;
+    VidStream.FrameRate = XVidC_GetFrameRate(VidStream.VmId);
 
-    for(index=0; index<NUM_TEST_MODES; ++index)
-    {
-      /* Get mode to test */
-      VidStream.VmId = TestModes[index];
+    xil_printf("\r\n********************************************\r\n");
+    xil_printf("Test Input Stream: %s (%s)\r\n",
+                XVidC_GetVideoModeStr(VidStream.VmId),
+                XVidC_GetColorFormatStr(Cfmt));
+    xil_printf("********************************************\r\n");
 
-      /* Validate testcase format and mode */
-      valid = ValidateTestCase(frmbufrd.FrmbufRd.Config.PixPerClk,
-                               TestModes[index],
-                               frmbufrd.FrmbufRd.Config.MaxDataWidth,
-                               ColorFormats[format]);
+    /* Configure VTC */
+    ConfigVtc(&VidStream);
 
-      if (valid)
-      {
-        ++TestCount;
-        /* Get mode timing parameters */
-        TimingPtr = XVidC_GetTimingInfo(VidStream.VmId);
-        VidStream.Timing = *TimingPtr;
-        VidStream.FrameRate = XVidC_GetFrameRate(VidStream.VmId);
+    /* Configure Frame Buffer */
+    stride = CalcStride(Cfmt,
+                        frmbufrd.FrmbufRd.Config.AXIMMDataWidth,
+                        &VidStream);
 
-        xil_printf("\r\n********************************************\r\n");
-        xil_printf("Test Input Stream: %s (%s)\r\n",
-                   XVidC_GetVideoModeStr(VidStream.VmId),
-                   XVidC_GetColorFormatStr(Cfmt));
-        xil_printf("********************************************\r\n");
+    ConfigFrmbuf(stride, Cfmt, &VidStream);
 
-        /* Configure VTC */
-        ConfigVtc(&VidStream);
-
-        /* Configure Frame Buffer */
-        stride = CalcStride(Cfmt,
-                            frmbufrd.FrmbufRd.Config.AXIMMDataWidth,
-                            &VidStream);
-
-        ConfigFrmbuf(stride, Cfmt, &VidStream);
-
-        xil_printf("Wait for vid out lock: ");
-        Lock = CheckVidoutLock();
-        if (Lock) {
-          ++PassCount;
-        } else {
-          ++FailCount;
-        }
-
-        xil_printf("INFO:: Video unlocked\r\n");
-      }
+    xil_printf("Wait for vid out lock: ");
+    Lock = CheckVidoutLock();
+    if (Lock) {
+      ++PassCount;
+    } else {
+      ++FailCount;
     }
+
+    xil_printf("INFO:: Video unlocked\r\n");
   }
+
 
   if (FailCount) {
     xil_printf("\r\n\r\nINFO: Test completed. %d/%d tests failed.\r\n",
