@@ -6,57 +6,52 @@
 
 
 #include "xvtc.h"
-#include "xv_frmbufrd_l2.h"
 #include <stdint.h>
 
-#define BYTES_PIXEL 3
+#include "xv_frmbufrd_l2.h"
+#include "xv_frmbufwr_l2.h"
 
-#define DISPLAY_WIDTH           1920
-#define DISPLAY_HEIGHT          1080
 
-#define DEMO_MAX_FRAME (DISPLAY_WIDTH*DISPLAY_HEIGHT*BYTES_PIXEL)
-#define DEMO_STRIDE (DISPLAY_WIDTH * BYTES_PIXEL)
+#if defined(__MICROBLAZE__) || defined(__riscv)
+#ifndef  SDT
+#define DDR_BASEADDR XPAR_MIG7SERIES_0_BASEADDR
+#else
+#define DDR_BASEADDR XPAR_MIG_0_BASEADDRESS
+#endif
+#else
+#define DDR_BASEADDR XPAR_DDR_MEM_BASEADDR
+#endif
 
+#define XVFRMBUFRD_BUFFER_BASEADDR (DDR_BASEADDR + (0x20000000))
+#define XVFRMBUFWR_BUFFER_BASEADDR (DDR_BASEADDR + (0x21000000))
+#define CHROMA_ADDR_OFFSET   (0x01000000U)
+#define V_CHROMA_ADDR_OFFSET (0x03000000U)
+
+
+#define XPAR_V_FRMBUF_RD_0_DEVICE_ID                  0
+#define XPAR_V_FRMBUF_WR_0_DEVICE_ID                  0
 #define DYNCLK_BASEADDR XPAR_AXI_DYNCLK_0_BASEADDR
-#define VGA_VDMA_ID 0
 #define DISP_VTC_ID 0
 
-#define XPAR_V_TC_0_DEVICE_ID				0
-#define XPAR_V_FRMBUF_RD_0_DEVICE_ID		0
-
-typedef struct {
-	char label[64]; /* Label describing the resolution */
-	u32 width; /*Width of the active video frame*/
-	u32 height; /*Height of the active video frame*/
-	u32 hps; /*Start time of Horizontal sync pulse, in pixel clocks (active width + H. front porch)*/
-	u32 hpe; /*End time of Horizontal sync pulse, in pixel clocks (active width + H. front porch + H. sync width)*/
-	u32 hmax; /*Total number of pixel clocks per line (active width + H. front porch + H. sync width + H. back porch) */
-	u32 hpol; /*hsync pulse polarity*/
-	u32 vps; /*Start time of Vertical sync pulse, in lines (active height + V. front porch)*/
-	u32 vpe; /*End time of Vertical sync pulse, in lines (active height + V. front porch + V. sync width)*/
-	u32 vmax; /*Total number of lines per frame (active height + V. front porch + V. sync width + V. back porch) */
-	u32 vpol; /*vsync pulse polarity*/
-	double freq; /*Pixel Clock frequency*/
-} VideoMode;
 
 
-static const VideoMode VMODE_1080P = {
-	.label = "1920x1080@60Hz",
-	.width = 1920,
-	.height = 1080,
-	.hps = 2008,
-	.hpe = 2052,
-	.hmax = 2199,
-	.hpol = 1,
-	.vps = 1084,
-	.vpe = 1089,
-	.vmax = 1124,
-	.vpol = 1,
-	.freq = 148.5 //148.57 is close enough
-};
 
-#define NUM_TEST_FORMATS        1
-#define NUM_TEST_MODES          1
+
+XVtc vtc;
+XV_tpg tpg;
+XVidC_VideoStream VidStream;
+XVidC_VideoTiming const *TimingPtr;
+XV_FrmbufRd_l2     frmbufrd;
+XV_frmbufrd_Config frmbufrd_cfg;
+XV_FrmbufWr_l2     frmbufwr;
+XV_frmbufwr_Config frmbufwr_cfg;
+XVtc_Timing vtc_timing = {0};
+
+
+//--------------------------------------------------------------------------------
+#define NUM_TEST_MODES                1
+#define NUM_TEST_FORMATS              1
+//mapping between memory and streaming video formats
 typedef struct {
   XVidC_ColorFormat MemFormat;
   XVidC_ColorFormat StreamFormat;
@@ -74,14 +69,7 @@ XVidC_VideoMode TestModes[NUM_TEST_MODES] =
   XVIDC_VM_1080_60_P,
 };
 
-XVtc vtc;
-XVtc_Timing vtcTiming;
-XV_tpg tpg;
-VideoMode vMode;
-XV_FrmbufRd_l2     frmbufrd;
-XV_frmbufrd_Config frmbufrd_cfg;
-VideoMode vMode;
-XVidC_VideoStream VidStream;
+//--------------------------------------------------------------------------------
 
 
 static uint32_t CalcStride(XVidC_ColorFormat Cfmt,
@@ -152,40 +140,126 @@ static uint32_t CalcStride(XVidC_ColorFormat Cfmt,
 }
 
 
+static int ConfigFrmbufRd(u32 StrideInBytes,
+                        XVidC_ColorFormat Cfmt,
+                        XVidC_VideoStream *StreamPtr)
+{
+  int Status;
+
+  /* Stop Frame Buffers */
+  XVFrmbufRd_Stop(&frmbufrd);
+  //resetIp();
+  XVFrmbufRd_WaitForIdle(&frmbufrd);
+
+  /* Configure  Frame Buffers */
+  Status = XVFrmbufRd_SetMemFormat(&frmbufrd, StrideInBytes, Cfmt, StreamPtr);
+  if (Status != XST_SUCCESS) {
+    xil_printf("ERROR:: Unable to configure Frame Buffer Read\r\n");
+    return(XST_FAILURE);
+  }
+
+  Status = XVFrmbufRd_SetBufferAddr(&frmbufrd, XVFRMBUFRD_BUFFER_BASEADDR);
+  if (Status != XST_SUCCESS) {
+    xil_printf("ERROR:: Unable to configure Frame Buffer Read buffer address\r\n");
+    return(XST_FAILURE);
+  }
+
+  /* Set Chroma Buffer Address for semi-planar color formats */
+  if ((Cfmt == XVIDC_CSF_MEM_Y_UV8) || (Cfmt == XVIDC_CSF_MEM_Y_UV8_420) ||
+      (Cfmt == XVIDC_CSF_MEM_Y_UV10) || (Cfmt == XVIDC_CSF_MEM_Y_UV10_420) ||
+      (Cfmt == XVIDC_CSF_MEM_Y_U_V8) || (Cfmt == XVIDC_CSF_MEM_Y_U_V10) ||
+      (Cfmt == XVIDC_CSF_MEM_Y_U_V8_420)) {
+	  Status = XVFrmbufRd_SetChromaBufferAddr(&frmbufrd, XVFRMBUFRD_BUFFER_BASEADDR+CHROMA_ADDR_OFFSET);
+	  if (Status != XST_SUCCESS) {
+		  xil_printf("ERROR:: Unable to configure Frame Buffer Read buffer address\r\n");
+		  return(XST_FAILURE);
+	  }
+  }
+
+  if ((Cfmt == XVIDC_CSF_MEM_Y_U_V8) || (Cfmt == XVIDC_CSF_MEM_Y_U_V10) || (Cfmt == XVIDC_CSF_MEM_Y_U_V8_420)) {
+	  Status = XVFrmbufRd_SetVChromaBufferAddr(&frmbufrd, XVFRMBUFRD_BUFFER_BASEADDR+V_CHROMA_ADDR_OFFSET);
+	  if (Status != XST_SUCCESS) {
+		  xil_printf("ERROR:: Unable to configure Frame Buffer Read buffer V address\r\n");
+		  return(XST_FAILURE);
+	  }
+  }
+
+  /* Enable Interrupt */
+  XVFrmbufRd_InterruptEnable(&frmbufrd, XVFRMBUFRD_IRQ_DONE_MASK);
+
+  /* Start Frame Buffers */
+  XVFrmbufRd_Start(&frmbufrd);
+  xil_printf("INFO: FRMBUF RD configured\r\n");
+  return(Status);
+}
+
+
+static int ConfigFrmbufWr(u32 StrideInBytes,
+                        XVidC_ColorFormat Cfmt,
+                        XVidC_VideoStream *StreamPtr)
+{
+  int Status;
+
+  XVFrmbufWr_Stop(&frmbufwr);
+  XVFrmbufWr_WaitForIdle(&frmbufwr);
+  Status = XVFrmbufWr_SetMemFormat(&frmbufwr, StrideInBytes, Cfmt, StreamPtr);
+  if (Status != XST_SUCCESS) {
+    xil_printf("ERROR:: Unable to configure Frame Buffer Write\r\n");
+    return(XST_FAILURE);
+  }
+
+  Status = XVFrmbufWr_SetBufferAddr(&frmbufwr, XVFRMBUFWR_BUFFER_BASEADDR);
+  if (Status != XST_SUCCESS) {
+    xil_printf("ERROR:: Unable to configure Frame Buffer Write buffer address\r\n");
+    return(XST_FAILURE);
+  }
+
+  /* Set Chroma Buffer Address for semi-planar color formats */
+  if ((Cfmt == XVIDC_CSF_MEM_Y_UV8) || (Cfmt == XVIDC_CSF_MEM_Y_UV8_420) ||
+      (Cfmt == XVIDC_CSF_MEM_Y_UV10) || (Cfmt == XVIDC_CSF_MEM_Y_UV10_420) ||
+      (Cfmt == XVIDC_CSF_MEM_Y_UV12) || (Cfmt == XVIDC_CSF_MEM_Y_UV12_420) ||
+      (Cfmt == XVIDC_CSF_MEM_Y_UV16) || (Cfmt == XVIDC_CSF_MEM_Y_UV16_420) ||
+      (Cfmt == XVIDC_CSF_MEM_Y_U_V8) || (Cfmt == XVIDC_CSF_MEM_Y_U_V10) ||
+      (Cfmt == XVIDC_CSF_MEM_Y_U_V8_420)) {
+	  Status = XVFrmbufWr_SetChromaBufferAddr(&frmbufwr, XVFRMBUFWR_BUFFER_BASEADDR+CHROMA_ADDR_OFFSET);
+	  if (Status != XST_SUCCESS) {
+		  xil_printf("ERROR:: Unable to configure Frame Buffer Write chroma buffer address\r\n");
+		  return(XST_FAILURE);
+	  }
+  }
+
+  if ((Cfmt == XVIDC_CSF_MEM_Y_U_V8) || (Cfmt == XVIDC_CSF_MEM_Y_U_V10) || (Cfmt == XVIDC_CSF_MEM_Y_U_V8_420)) {
+	  Status = XVFrmbufWr_SetVChromaBufferAddr(&frmbufwr, XVFRMBUFWR_BUFFER_BASEADDR+V_CHROMA_ADDR_OFFSET);
+	  if (Status != XST_SUCCESS) {
+		  xil_printf("ERROR:: Unable to configure Frame Buffer Write V buffer address\r\n");
+		  return(XST_FAILURE);
+	  }
+  }
+
+  XVFrmbufWr_InterruptEnable(&frmbufwr, XVFRMBUFRD_IRQ_DONE_MASK);
+
+  XVFrmbufWr_Start(&frmbufwr);
+
+  xil_printf("INFO: FRMBUF WR configured\r\n");
+  return(Status);
+}
+
+
+
 int VTC_Init(void)
 {
 	int Status;
 	XVtc_Config *vtcConfig;
-	vMode = VMODE_1080P;
 	vtcConfig = XVtc_LookupConfig(DISP_VTC_ID);
 	if (NULL == vtcConfig)
-    {
+  {
 		return (XST_FAILURE);
 	}
 	Status = XVtc_CfgInitialize(&vtc, vtcConfig, vtcConfig->BaseAddress);
 	if (Status != (XST_SUCCESS))
-    {
+  {
 		return (XST_FAILURE);
 	}
-	vtcTiming.HActiveVideo = vMode.width;
-	vtcTiming.HFrontPorch = vMode.hps - vMode.width;
-	vtcTiming.HSyncWidth = vMode.hpe - vMode.hps;
-	vtcTiming.HBackPorch = vMode.hmax - vMode.hpe + 1;
-	vtcTiming.HSyncPolarity = vMode.hpol;
-	vtcTiming.VActiveVideo = vMode.height;
-	vtcTiming.V0FrontPorch = vMode.vps - vMode.height;
-	vtcTiming.V0SyncWidth = vMode.vpe - vMode.vps;
-	vtcTiming.V0BackPorch = vMode.vmax - vMode.vpe + 1;
-	vtcTiming.V1FrontPorch = vMode.vps - vMode.height;
-	vtcTiming.V1SyncWidth = vMode.vpe - vMode.vps;
-	vtcTiming.V1BackPorch = vMode.vmax - vMode.vpe + 1;
-	vtcTiming.VSyncPolarity = vMode.vpol;
-	vtcTiming.Interlaced = 0;
-
-	XVtc_SelfTest(&vtc);
-	XVtc_RegUpdateEnable(&vtc);
-	XVtc_SetGeneratorTiming(&vtc, &vtcTiming);
-	XVtc_EnableGenerator(&vtc);
 	return XST_SUCCESS;
 }
 
@@ -214,12 +288,49 @@ int FRB_Init(void)
     xil_printf("ERROR:: Frame Buffer Read initialization failed\r\n");
     return(XST_FAILURE);
   }
+  Status = XVFrmbufWr_Initialize(&frmbufwr, XPAR_V_FRMBUF_WR_0_DEVICE_ID);
+  if (Status != XST_SUCCESS) {
+    xil_printf("ERROR:: Frame Buffer Write initialization failed\r\n");
+    return(XST_FAILURE);
+  }
   return(XST_SUCCESS);
 }
 
 
+int VTC_Config(XVidC_VideoStream *StreamPtr)
+{
+    u16 PixelsPerClock = StreamPtr->PixPerClk;
+    vtc_timing.HActiveVideo  = StreamPtr->Timing.HActive/PixelsPerClock;
+    vtc_timing.HFrontPorch   = StreamPtr->Timing.HFrontPorch/PixelsPerClock;
+    vtc_timing.HSyncWidth    = StreamPtr->Timing.HSyncWidth/PixelsPerClock;
+    vtc_timing.HBackPorch    = StreamPtr->Timing.HBackPorch/PixelsPerClock;
+    vtc_timing.HSyncPolarity = StreamPtr->Timing.HSyncPolarity;
+    vtc_timing.VActiveVideo  = StreamPtr->Timing.VActive;
+    vtc_timing.V0FrontPorch  = StreamPtr->Timing.F0PVFrontPorch;
+    vtc_timing.V0SyncWidth   = StreamPtr->Timing.F0PVSyncWidth;
+    vtc_timing.V0BackPorch   = StreamPtr->Timing.F0PVBackPorch;
+    vtc_timing.VSyncPolarity = StreamPtr->Timing.VSyncPolarity;
+    XVtc_SetGeneratorTiming(&vtc, &vtc_timing);
+    XVtc_Enable(&vtc);
+    XVtc_EnableGenerator(&vtc);
+    XVtc_RegUpdateEnable(&vtc);
+    xil_printf("INFO: VTC configured\r\n");
+    return 0;
+}
 
-
+void PrintDebug_VTC(XVtc_Timing *vtc_tim)
+{
+    printf("-HActiveVideo %d\r\n", vtc_tim->HActiveVideo);
+    printf("-HFrontPorch %d\r\n", vtc_tim->HFrontPorch);
+    printf("-HSyncWidth %d\r\n", vtc_tim->HSyncWidth);
+    printf("-HBackPorch %d\r\n", vtc_tim->HBackPorch);
+    printf("-HSyncPolarity %d\r\n", vtc_tim->HSyncPolarity);
+    printf("-VActiveVideo %d\r\n", vtc_tim->VActiveVideo);
+    printf("-V0FrontPorch %d\r\n", vtc_tim->V0FrontPorch);
+    printf("-V0SyncWidth %d\r\n", vtc_tim->V0SyncWidth);
+    printf("-V0BackPorch %d\r\n", vtc_tim->V0BackPorch);
+    printf("-VSyncPolarity %d\r\n", vtc_tim->VSyncPolarity);
+}
 
 
 
@@ -233,17 +344,43 @@ int DriverInit(void)
 
 int main()
 {
+    int format = 0;
+    int index = 0;
     int pattern = 9;
-    print("--------------------------\r\n");
-	  DriverInit();
-    XVFrmbufRd_DbgReportStatus(&frmbufrd);
+    int stride = 0;
+    XVidC_ColorFormat Cfmt;
 
+	  print("-------------------------------------\r\n");
+    DriverInit();
+    //XVFrmbufRd_DbgReportStatus(&frmbufrd);
+
+    //VidStream.PixPerClk     = 1;
+    //VidStream.ColorDepth    = 8;
     VidStream.PixPerClk     = frmbufrd.FrmbufRd.Config.PixPerClk;
     VidStream.ColorDepth    = frmbufrd.FrmbufRd.Config.MaxDataWidth;
+    printf("PixPerClk %d\r\n", VidStream.PixPerClk);
+    printf("ColorDepth %d\r\n", VidStream.ColorDepth);
+    format = 0;
+    index = 0;
+    Cfmt = ColorFormats[format].MemFormat;
+    VidStream.ColorFormatId = ColorFormats[format].StreamFormat;
+    VidStream.VmId = TestModes[index];
+    TimingPtr = XVidC_GetTimingInfo(VidStream.VmId);
+    VidStream.Timing = *TimingPtr;
+    VidStream.FrameRate = XVidC_GetFrameRate(VidStream.VmId);
+  
+    VTC_Config(&VidStream);
+    PrintDebug_VTC(&vtc_timing);
 
-    
+    stride = CalcStride(Cfmt,
+                        frmbufrd.FrmbufRd.Config.AXIMMDataWidth,
+                        &VidStream);
+    printf("Stride %d\r\n", stride);
+    ConfigFrmbufRd(stride, Cfmt, &VidStream);
+    ConfigFrmbufWr(stride, Cfmt, &VidStream);
     XV_tpg_Start(&tpg);
-    print("Successfully ran TPG application\r\n");
+	  print("Successfully ran TPG application...\r\n");
     XV_tpg_Set_bckgndId(&tpg, pattern);
+
     return 0;
 }

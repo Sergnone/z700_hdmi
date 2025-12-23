@@ -7,8 +7,7 @@
       "name": "top_design",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2025.2",
-      "validated": "true"
+      "tool_version": "2025.2"
     },
     "design_tree": {
       "processing_system7_0": "",
@@ -1525,6 +1524,17 @@
         "xci_path": "ip/top_design_v_tpg_0_1/top_design_v_tpg_0_1.xci",
         "inst_hier_path": "v_tpg_0",
         "has_run_ip_tcl": "true",
+        "parameters": {
+          "HAS_AXI4S_SLAVE": {
+            "value": "0"
+          },
+          "MAX_COLS": {
+            "value": "1920"
+          },
+          "MAX_ROWS": {
+            "value": "1080"
+          }
+        },
         "interface_ports": {
           "s_axi_CTRL": {
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
