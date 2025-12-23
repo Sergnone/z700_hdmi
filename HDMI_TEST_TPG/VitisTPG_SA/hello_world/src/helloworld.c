@@ -6,61 +6,44 @@
 
 
 #include "xvtc.h"
-
-#define BYTES_PIXEL 3
-
-#define DISPLAY_WIDTH           1920
-#define DISPLAY_HEIGHT          1080
-
-#define DEMO_MAX_FRAME (DISPLAY_WIDTH*DISPLAY_HEIGHT*BYTES_PIXEL)
-#define DEMO_STRIDE (DISPLAY_WIDTH * BYTES_PIXEL)
+#include "xvidc.h"
 
 #define DYNCLK_BASEADDR XPAR_AXI_DYNCLK_0_BASEADDR
-#define VGA_VDMA_ID 0
 #define DISP_VTC_ID 0
 
-typedef struct {
-	char label[64]; /* Label describing the resolution */
-	u32 width; /*Width of the active video frame*/
-	u32 height; /*Height of the active video frame*/
-	u32 hps; /*Start time of Horizontal sync pulse, in pixel clocks (active width + H. front porch)*/
-	u32 hpe; /*End time of Horizontal sync pulse, in pixel clocks (active width + H. front porch + H. sync width)*/
-	u32 hmax; /*Total number of pixel clocks per line (active width + H. front porch + H. sync width + H. back porch) */
-	u32 hpol; /*hsync pulse polarity*/
-	u32 vps; /*Start time of Vertical sync pulse, in lines (active height + V. front porch)*/
-	u32 vpe; /*End time of Vertical sync pulse, in lines (active height + V. front porch + V. sync width)*/
-	u32 vmax; /*Total number of lines per frame (active height + V. front porch + V. sync width + V. back porch) */
-	u32 vpol; /*vsync pulse polarity*/
-	double freq; /*Pixel Clock frequency*/
-} VideoMode;
-
-
-static const VideoMode VMODE_1080P = {
-	.label = "1920x1080@60Hz",
-	.width = 1920,
-	.height = 1080,
-	.hps = 2008,
-	.hpe = 2052,
-	.hmax = 2199,
-	.hpol = 1,
-	.vps = 1084,
-	.vpe = 1089,
-	.vmax = 1124,
-	.vpol = 1,
-	.freq = 148.5 //148.57 is close enough
-};
 
 XVtc vtc;
-XVtc_Timing vtcTiming;
 XV_tpg tpg;
-VideoMode vMode;
-//XVtc_SourceSelect SourceSelect;
+XVidC_VideoStream VidStream;
+XVidC_VideoTiming const *TimingPtr;
 
+
+//--------------------------------------------------------------------------------
+#define NUM_TEST_MODES                1
+#define NUM_TEST_FORMATS              1
+//mapping between memory and streaming video formats
+typedef struct {
+  XVidC_ColorFormat MemFormat;
+  XVidC_ColorFormat StreamFormat;
+  u16 FormatBits;
+} VideoFormats;
+
+VideoFormats ColorFormats[NUM_TEST_FORMATS] =
+{
+  //memory format            stream format        bits per component
+  {XVIDC_CSF_MEM_RGB8,       XVIDC_CSF_RGB,       8},
+};
+
+XVidC_VideoMode TestModes[NUM_TEST_MODES] =
+{
+  XVIDC_VM_1080_60_P,
+};
+
+//--------------------------------------------------------------------------------
 int VTC_Init(void)
 {
 	int Status;
 	XVtc_Config *vtcConfig;
-	vMode = VMODE_1080P;
 	vtcConfig = XVtc_LookupConfig(DISP_VTC_ID);
 	if (NULL == vtcConfig)
     {
@@ -71,52 +54,12 @@ int VTC_Init(void)
     {
 		return (XST_FAILURE);
 	}
-	vtcTiming.HActiveVideo = vMode.width;
-	vtcTiming.HFrontPorch = vMode.hps - vMode.width;
-	vtcTiming.HSyncWidth = vMode.hpe - vMode.hps;
-	vtcTiming.HBackPorch = vMode.hmax - vMode.hpe + 1;
-	vtcTiming.HSyncPolarity = vMode.hpol;
-	vtcTiming.VActiveVideo = vMode.height;
-	vtcTiming.V0FrontPorch = vMode.vps - vMode.height;
-	vtcTiming.V0SyncWidth = vMode.vpe - vMode.vps;
-	vtcTiming.V0BackPorch = vMode.vmax - vMode.vpe + 1;
-	vtcTiming.V1FrontPorch = vMode.vps - vMode.height;
-	vtcTiming.V1SyncWidth = vMode.vpe - vMode.vps;
-	vtcTiming.V1BackPorch = vMode.vmax - vMode.vpe + 1;
-	vtcTiming.VSyncPolarity = vMode.vpol;
-	vtcTiming.Interlaced = 0;
-
-	/*
-	memset((void *)&SourceSelect, 0, sizeof(SourceSelect));
-	SourceSelect.VBlankPolSrc = 1;
-	SourceSelect.VSyncPolSrc = 1;
-	SourceSelect.HBlankPolSrc = 1;
-	SourceSelect.HSyncPolSrc = 1;
-	SourceSelect.ActiveVideoPolSrc = 1;
-	SourceSelect.ActiveChromaPolSrc= 1;
-	SourceSelect.VChromaSrc = 1;
-	SourceSelect.VActiveSrc = 1;
-	SourceSelect.VBackPorchSrc = 1;
-	SourceSelect.VSyncSrc = 1;
-	SourceSelect.VFrontPorchSrc = 1;
-	SourceSelect.VTotalSrc = 1;
-	SourceSelect.HActiveSrc = 1;
-	SourceSelect.HBackPorchSrc = 1;
-	SourceSelect.HSyncSrc = 1;
-	SourceSelect.HFrontPorchSrc = 1;
-	SourceSelect.HTotalSrc = 1;
-	*/
-	XVtc_SelfTest(&vtc);
-	XVtc_RegUpdateEnable(&vtc);
-	XVtc_SetGeneratorTiming(&vtc, &vtcTiming);
-	//XVtc_SetSource(&vtc, &SourceSelect);
-	XVtc_EnableGenerator(&vtc);
 	return XST_SUCCESS;
 }
 
 int TPG_Init(void)
 {
-	XV_tpg_Initialize(&tpg, 0);
+	  XV_tpg_Initialize(&tpg, 0);
     XV_tpg_Set_width(&tpg, 1920);
     XV_tpg_Set_height(&tpg, 1080);
     XV_tpg_Set_ZplateHorContDelta(&tpg, 2);
@@ -126,8 +69,45 @@ int TPG_Init(void)
     XV_tpg_Set_motionSpeed(&tpg, 2);
     XV_tpg_Set_motionEn(&tpg, 1);
     XV_tpg_EnableAutoRestart(&tpg);
-	return 0;
+	  return 0;
 }
+
+int VTC_Config(XVidC_VideoStream *StreamPtr)
+{
+    XVtc_Timing vtc_timing = {0};
+    u16 PixelsPerClock = StreamPtr->PixPerClk;
+    vtc_timing.HActiveVideo  = StreamPtr->Timing.HActive/PixelsPerClock;
+    vtc_timing.HFrontPorch   = StreamPtr->Timing.HFrontPorch/PixelsPerClock;
+    vtc_timing.HSyncWidth    = StreamPtr->Timing.HSyncWidth/PixelsPerClock;
+    vtc_timing.HBackPorch    = StreamPtr->Timing.HBackPorch/PixelsPerClock;
+    vtc_timing.HSyncPolarity = StreamPtr->Timing.HSyncPolarity;
+    vtc_timing.VActiveVideo  = StreamPtr->Timing.VActive;
+    vtc_timing.V0FrontPorch  = StreamPtr->Timing.F0PVFrontPorch;
+    vtc_timing.V0SyncWidth   = StreamPtr->Timing.F0PVSyncWidth;
+    vtc_timing.V0BackPorch   = StreamPtr->Timing.F0PVBackPorch;
+    vtc_timing.VSyncPolarity = StreamPtr->Timing.VSyncPolarity;
+    XVtc_SetGeneratorTiming(&vtc, &vtc_timing);
+    XVtc_Enable(&vtc);
+    XVtc_EnableGenerator(&vtc);
+    XVtc_RegUpdateEnable(&vtc);
+    xil_printf("INFO: VTC configured\r\n");
+    return 0;
+}
+
+void PrintDebug_VTC(XVtc_Timing *vtc_tim)
+{
+    printf("-HActiveVideo %d\r\n", vtc_tim->HActiveVideo);
+    printf("-HFrontPorch %d\r\n", vtc_tim->HFrontPorch);
+    printf("-HSyncWidth %d\r\n", vtc_tim->HSyncWidth);
+    printf("-HBackPorch %d\r\n", vtc_tim->HBackPorch);
+    printf("-HSyncPolarity %d\r\n", vtc_tim->HSyncPolarity);
+    printf("-VActiveVideo %d\r\n", vtc_tim->VActiveVideo);
+    printf("-V0FrontPorch %d\r\n", vtc_tim->V0FrontPorch);
+    printf("-V0SyncWidth %d\r\n", vtc_tim->V0SyncWidth);
+    printf("-V0BackPorch %d\r\n", vtc_tim->V0BackPorch);
+    printf("-VSyncPolarity %d\r\n", vtc_tim->VSyncPolarity);
+}
+
 
 void DriverInit(void)
 {
@@ -137,10 +117,26 @@ void DriverInit(void)
  
 int main()
 {
+    int format = 0;
+    int index = 0;
     int pattern = 9;
+    XVidC_ColorFormat Cfmt;
 
 	  print("-------------------------------------\r\n");
     DriverInit();
+
+    VidStream.PixPerClk     = 1;
+    VidStream.ColorDepth    = 8;
+    format = 0;
+    index = 0;
+    Cfmt = ColorFormats[format].MemFormat;
+    VidStream.ColorFormatId = ColorFormats[format].StreamFormat;
+    VidStream.VmId = TestModes[index];
+    TimingPtr = XVidC_GetTimingInfo(VidStream.VmId);
+    VidStream.Timing = *TimingPtr;
+    VidStream.FrameRate = XVidC_GetFrameRate(VidStream.VmId);
+  
+    VTC_Config(&VidStream);
     XV_tpg_Start(&tpg);
 	  print("Successfully ran TPG application\r\n");
     XV_tpg_Set_bckgndId(&tpg, pattern);
