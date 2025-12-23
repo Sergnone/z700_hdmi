@@ -64,8 +64,8 @@ output  [0:0] m_axis_video_TUSER;
 output  [0:0] m_axis_video_TLAST;
 output  [0:0] m_axis_video_TID;
 output  [0:0] m_axis_video_TDEST;
-input  [11:0] height_val4;
-input  [12:0] width_val7;
+input  [10:0] height_val4;
+input  [10:0] width_val7;
 input  [7:0] colorFormat_val17;
 input  [0:0] fid_in_val9;
 output  [0:0] fid;
@@ -93,10 +93,10 @@ reg   [15:0] counter;
 reg   [0:0] fid_in_val9_read_reg_393;
 reg    ap_block_state1;
 reg   [7:0] colorFormat_val17_read_reg_398;
-reg   [12:0] width_val7_read_reg_403;
-reg   [11:0] height_val4_read_reg_408;
-wire   [12:0] add_ln994_fu_201_p2;
-reg   [12:0] add_ln994_reg_425;
+reg   [10:0] width_val7_read_reg_403;
+reg   [10:0] height_val4_read_reg_408;
+wire   [11:0] add_ln994_fu_201_p2;
+reg   [11:0] add_ln994_reg_425;
 wire   [0:0] icmp_ln1051_fu_207_p2;
 reg   [0:0] icmp_ln1051_reg_430;
 wire   [0:0] icmp_ln981_fu_213_p2;
@@ -107,30 +107,30 @@ wire   [0:0] icmp_ln1038_1_fu_243_p2;
 reg   [0:0] icmp_ln1038_1_reg_444;
 wire   [0:0] icmp_ln1038_2_fu_249_p2;
 reg   [0:0] icmp_ln1038_2_reg_449;
-wire   [11:0] i_2_fu_287_p2;
-reg   [11:0] i_2_reg_457;
+wire   [10:0] i_2_fu_287_p2;
+reg   [10:0] i_2_reg_457;
 wire    ap_CS_fsm_state2;
-wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_start;
-wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_done;
-wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_idle;
-wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_ready;
-wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ovrlayYUV_read;
-wire   [23:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TDATA;
-wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TVALID;
-wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TREADY;
-wire   [2:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TKEEP;
-wire   [2:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TSTRB;
-wire   [0:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TUSER;
-wire   [0:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TLAST;
-wire   [0:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TID;
-wire   [0:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TDEST;
-wire   [15:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_counter_loc_1_i_i_out;
-wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_counter_loc_1_i_i_out_ap_vld;
-wire   [0:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_phi_ln1036_i_out;
-wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_phi_ln1036_i_out_ap_vld;
-wire   [15:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_counter;
-wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_counter_ap_vld;
-reg    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_start_reg;
+wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_start;
+wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_done;
+wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_idle;
+wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_ready;
+wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ovrlayYUV_read;
+wire   [23:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TDATA;
+wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TVALID;
+wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TREADY;
+wire   [2:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TKEEP;
+wire   [2:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TSTRB;
+wire   [0:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TUSER;
+wire   [0:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TLAST;
+wire   [0:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TID;
+wire   [0:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TDEST;
+wire   [15:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_counter_loc_1_i_i_out;
+wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_counter_loc_1_i_i_out_ap_vld;
+wire   [0:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_phi_ln1036_i_out;
+wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_phi_ln1036_i_out_ap_vld;
+wire   [15:0] grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_counter;
+wire    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_counter_ap_vld;
+reg    grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_start_reg;
 wire   [0:0] icmp_ln979_fu_282_p2;
 wire    ap_CS_fsm_state3;
 reg   [23:0] m_axis_video_TDATA_reg;
@@ -140,15 +140,16 @@ reg   [0:0] m_axis_video_TUSER_reg;
 reg   [0:0] m_axis_video_TLAST_reg;
 reg   [0:0] m_axis_video_TID_reg;
 reg   [0:0] m_axis_video_TDEST_reg;
-reg   [15:0] counter_loc_1_i_i_loc_fu_126;
-reg   [0:0] phi_ln1036_i_loc_fu_122;
-reg   [11:0] i_fu_106;
+reg   [15:0] counter_loc_1_i_i_loc_fu_122;
+reg   [0:0] phi_ln1036_i_loc_fu_118;
+reg   [10:0] i_fu_102;
 wire    ap_CS_fsm_state4;
-reg   [15:0] counter_loc_0_i_i_fu_110;
-reg   [0:0] sof_fu_114;
-reg   [0:0] empty_fu_118;
+reg   [15:0] counter_loc_0_i_i_fu_106;
+reg   [0:0] sof_fu_110;
+reg   [0:0] empty_fu_114;
 wire   [0:0] select_ln1038_fu_338_p3;
 reg   [0:0] fid_preg;
+wire   [11:0] zext_ln928_fu_192_p1;
 wire   [14:0] tmp_17_i_fu_219_p4;
 wire   [15:0] or_ln_i_fu_229_p3;
 wire   [0:0] and_ln1038_fu_316_p2;
@@ -168,46 +169,46 @@ initial begin
 #0 ap_CS_fsm = 4'd1;
 #0 fidStored = 1'd0;
 #0 counter = 16'd0;
-#0 grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_start_reg = 1'b0;
-#0 i_fu_106 = 12'd0;
-#0 counter_loc_0_i_i_fu_110 = 16'd0;
-#0 sof_fu_114 = 1'd0;
-#0 empty_fu_118 = 1'd0;
+#0 grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_start_reg = 1'b0;
+#0 i_fu_102 = 11'd0;
+#0 counter_loc_0_i_i_fu_106 = 16'd0;
+#0 sof_fu_110 = 1'd0;
+#0 empty_fu_114 = 1'd0;
 #0 fid_preg = 1'd0;
 end
 
-top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167(
+top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_start),
-    .ap_done(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_done),
-    .ap_idle(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_idle),
-    .ap_ready(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_ready),
-    .counter_loc_0_i_i(counter_loc_0_i_i_fu_110),
-    .sof_i(sof_fu_114),
+    .ap_start(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_start),
+    .ap_done(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_done),
+    .ap_idle(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_idle),
+    .ap_ready(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_ready),
+    .counter_loc_0_i_i(counter_loc_0_i_i_fu_106),
+    .sof_i(sof_fu_110),
     .colorFormat_val17(colorFormat_val17_read_reg_398),
     .empty(width_val7_read_reg_403),
     .ovrlayYUV_dout(ovrlayYUV_dout),
     .ovrlayYUV_empty_n(ovrlayYUV_empty_n),
-    .ovrlayYUV_read(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ovrlayYUV_read),
+    .ovrlayYUV_read(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ovrlayYUV_read),
     .ovrlayYUV_num_data_valid(5'd0),
     .ovrlayYUV_fifo_cap(5'd0),
-    .m_axis_video_TDATA(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TDATA),
-    .m_axis_video_TVALID(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TVALID),
-    .m_axis_video_TREADY(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TREADY),
-    .m_axis_video_TKEEP(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TKEEP),
-    .m_axis_video_TSTRB(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TSTRB),
-    .m_axis_video_TUSER(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TUSER),
-    .m_axis_video_TLAST(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TLAST),
-    .m_axis_video_TID(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TID),
-    .m_axis_video_TDEST(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TDEST),
-    .sext_ln1051_i(add_ln994_reg_425),
-    .counter_loc_1_i_i_out(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_counter_loc_1_i_i_out),
-    .counter_loc_1_i_i_out_ap_vld(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_counter_loc_1_i_i_out_ap_vld),
-    .phi_ln1036_i_out(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_phi_ln1036_i_out),
-    .phi_ln1036_i_out_ap_vld(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_phi_ln1036_i_out_ap_vld),
-    .counter(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_counter),
-    .counter_ap_vld(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_counter_ap_vld)
+    .m_axis_video_TDATA(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TDATA),
+    .m_axis_video_TVALID(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TVALID),
+    .m_axis_video_TREADY(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TREADY),
+    .m_axis_video_TKEEP(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TKEEP),
+    .m_axis_video_TSTRB(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TSTRB),
+    .m_axis_video_TUSER(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TUSER),
+    .m_axis_video_TLAST(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TLAST),
+    .m_axis_video_TID(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TID),
+    .m_axis_video_TDEST(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TDEST),
+    .add_ln994_i(add_ln994_reg_425),
+    .counter_loc_1_i_i_out(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_counter_loc_1_i_i_out),
+    .counter_loc_1_i_i_out_ap_vld(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_counter_loc_1_i_i_out_ap_vld),
+    .phi_ln1036_i_out(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_phi_ln1036_i_out),
+    .phi_ln1036_i_out_ap_vld(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_phi_ln1036_i_out_ap_vld),
+    .counter(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_counter),
+    .counter_ap_vld(grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_counter_ap_vld)
 );
 
 always @ (posedge ap_clk) begin
@@ -244,45 +245,45 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_start_reg <= 1'b0;
+        grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_start_reg <= 1'b0;
     end else begin
         if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln979_fu_282_p2 == 1'd0))) begin
-            grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_start_reg <= 1'b1;
-        end else if ((grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_ready == 1'b1)) begin
-            grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_start_reg <= 1'b0;
+            grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_start_reg <= 1'b1;
+        end else if ((grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_ready == 1'b1)) begin
+            grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        counter_loc_0_i_i_fu_110 <= counter;
+        counter_loc_0_i_i_fu_106 <= counter;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        counter_loc_0_i_i_fu_110 <= counter_loc_1_i_i_loc_fu_126;
+        counter_loc_0_i_i_fu_106 <= counter_loc_1_i_i_loc_fu_122;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        empty_fu_118 <= fidStored;
+        empty_fu_114 <= fidStored;
     end else if (((icmp_ln981_reg_435 == 1'd0) & (1'b1 == ap_CS_fsm_state4))) begin
-        empty_fu_118 <= select_ln1038_fu_338_p3;
+        empty_fu_114 <= select_ln1038_fu_338_p3;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        i_fu_106 <= 12'd0;
+        i_fu_102 <= 11'd0;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        i_fu_106 <= i_2_reg_457;
+        i_fu_102 <= i_2_reg_457;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        sof_fu_114 <= 1'd1;
+        sof_fu_110 <= 1'd1;
     end else if (((icmp_ln981_reg_435 == 1'd0) & (1'b1 == ap_CS_fsm_state4))) begin
-        sof_fu_114 <= 1'd0;
+        sof_fu_110 <= 1'd0;
     end
 end
 
@@ -302,20 +303,20 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_counter_ap_vld == 1'b1))) begin
-        counter <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_counter;
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_counter_ap_vld == 1'b1))) begin
+        counter <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_counter;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_counter_loc_1_i_i_out_ap_vld == 1'b1))) begin
-        counter_loc_1_i_i_loc_fu_126 <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_counter_loc_1_i_i_out;
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_counter_loc_1_i_i_out_ap_vld == 1'b1))) begin
+        counter_loc_1_i_i_loc_fu_122 <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_counter_loc_1_i_i_out;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln979_fu_282_p2 == 1'd1))) begin
-        fidStored <= empty_fu_118;
+        fidStored <= empty_fu_114;
     end
 end
 
@@ -326,20 +327,20 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TVALID == 1'b1))) begin
-        m_axis_video_TDATA_reg <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TDATA;
-        m_axis_video_TDEST_reg <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TDEST;
-        m_axis_video_TID_reg <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TID;
-        m_axis_video_TKEEP_reg <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TKEEP;
-        m_axis_video_TLAST_reg <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TLAST;
-        m_axis_video_TSTRB_reg <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TSTRB;
-        m_axis_video_TUSER_reg <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TUSER;
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TVALID == 1'b1))) begin
+        m_axis_video_TDATA_reg <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TDATA;
+        m_axis_video_TDEST_reg <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TDEST;
+        m_axis_video_TID_reg <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TID;
+        m_axis_video_TKEEP_reg <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TKEEP;
+        m_axis_video_TLAST_reg <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TLAST;
+        m_axis_video_TSTRB_reg <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TSTRB;
+        m_axis_video_TUSER_reg <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TUSER;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_phi_ln1036_i_out_ap_vld == 1'b1))) begin
-        phi_ln1036_i_loc_fu_122 <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_phi_ln1036_i_out;
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_phi_ln1036_i_out_ap_vld == 1'b1))) begin
+        phi_ln1036_i_loc_fu_118 <= grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_phi_ln1036_i_out;
     end
 end
 
@@ -354,7 +355,7 @@ end
 assign ap_ST_fsm_state2_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_done == 1'b0)) begin
+    if ((grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_done == 1'b0)) begin
         ap_ST_fsm_state3_blk = 1'b1;
     end else begin
         ap_ST_fsm_state3_blk = 1'b0;
@@ -406,56 +407,56 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TVALID == 1'b1))) begin
-        m_axis_video_TDATA = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TDATA;
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TVALID == 1'b1))) begin
+        m_axis_video_TDATA = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TDATA;
     end else begin
         m_axis_video_TDATA = m_axis_video_TDATA_reg;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TVALID == 1'b1))) begin
-        m_axis_video_TDEST = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TDEST;
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TVALID == 1'b1))) begin
+        m_axis_video_TDEST = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TDEST;
     end else begin
         m_axis_video_TDEST = m_axis_video_TDEST_reg;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TVALID == 1'b1))) begin
-        m_axis_video_TID = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TID;
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TVALID == 1'b1))) begin
+        m_axis_video_TID = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TID;
     end else begin
         m_axis_video_TID = m_axis_video_TID_reg;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TVALID == 1'b1))) begin
-        m_axis_video_TKEEP = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TKEEP;
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TVALID == 1'b1))) begin
+        m_axis_video_TKEEP = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TKEEP;
     end else begin
         m_axis_video_TKEEP = m_axis_video_TKEEP_reg;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TVALID == 1'b1))) begin
-        m_axis_video_TLAST = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TLAST;
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TVALID == 1'b1))) begin
+        m_axis_video_TLAST = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TLAST;
     end else begin
         m_axis_video_TLAST = m_axis_video_TLAST_reg;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TVALID == 1'b1))) begin
-        m_axis_video_TSTRB = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TSTRB;
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TVALID == 1'b1))) begin
+        m_axis_video_TSTRB = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TSTRB;
     end else begin
         m_axis_video_TSTRB = m_axis_video_TSTRB_reg;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TVALID == 1'b1))) begin
-        m_axis_video_TUSER = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TUSER;
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TVALID == 1'b1))) begin
+        m_axis_video_TUSER = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TUSER;
     end else begin
         m_axis_video_TUSER = m_axis_video_TUSER_reg;
     end
@@ -478,7 +479,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state3 : begin
-            if (((grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+            if (((grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
                 ap_NS_fsm = ap_ST_fsm_state4;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -493,9 +494,9 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln994_fu_201_p2 = ($signed(width_val7) + $signed(13'd8191));
+assign add_ln994_fu_201_p2 = ($signed(zext_ln928_fu_192_p1) + $signed(12'd4095));
 
-assign and_ln1038_fu_316_p2 = (phi_ln1036_i_loc_fu_122 & icmp_ln1038_1_reg_444);
+assign and_ln1038_fu_316_p2 = (phi_ln1036_i_loc_fu_118 & icmp_ln1038_1_reg_444);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -509,11 +510,11 @@ always @ (*) begin
     ap_block_state1 = ((ap_start == 1'b0) | (ap_done_reg == 1'b1));
 end
 
-assign grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_start = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ap_start_reg;
+assign grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_start = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ap_start_reg;
 
-assign grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TREADY = (m_axis_video_TREADY & ap_CS_fsm_state3);
+assign grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TREADY = (m_axis_video_TREADY & ap_CS_fsm_state3);
 
-assign i_2_fu_287_p2 = (i_fu_106 + 12'd1);
+assign i_2_fu_287_p2 = (i_fu_102 + 11'd1);
 
 assign icmp_ln1038_1_fu_243_p2 = ((field_id_val8 != 16'd0) ? 1'b1 : 1'b0);
 
@@ -523,17 +524,17 @@ assign icmp_ln1038_fu_237_p2 = ((field_id_val8 < 16'd3) ? 1'b1 : 1'b0);
 
 assign icmp_ln1051_fu_207_p2 = ((field_id_val8 == 16'd3) ? 1'b1 : 1'b0);
 
-assign icmp_ln979_fu_282_p2 = ((i_fu_106 == height_val4_read_reg_408) ? 1'b1 : 1'b0);
+assign icmp_ln979_fu_282_p2 = ((i_fu_102 == height_val4_read_reg_408) ? 1'b1 : 1'b0);
 
-assign icmp_ln981_fu_213_p2 = ((width_val7 == 13'd0) ? 1'b1 : 1'b0);
+assign icmp_ln981_fu_213_p2 = ((width_val7 == 11'd0) ? 1'b1 : 1'b0);
 
-assign m_axis_video_TVALID = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_m_axis_video_TVALID;
+assign m_axis_video_TVALID = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_m_axis_video_TVALID;
 
 assign or_ln1038_fu_321_p2 = (icmp_ln1038_2_reg_449 | and_ln1038_fu_316_p2);
 
 assign or_ln_i_fu_229_p3 = {{tmp_17_i_fu_219_p4}, {1'd1}};
 
-assign ovrlayYUV_read = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_ovrlayYUV_read;
+assign ovrlayYUV_read = grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_ovrlayYUV_read;
 
 assign select_ln1038_fu_338_p3 = ((icmp_ln1038_reg_439[0:0] == 1'b1) ? or_ln1038_fu_321_p2 : select_ln1051_fu_332_p3);
 
@@ -541,6 +542,8 @@ assign select_ln1051_fu_332_p3 = ((icmp_ln1051_reg_430[0:0] == 1'b1) ? xor_ln105
 
 assign tmp_17_i_fu_219_p4 = {{field_id_val8[15:1]}};
 
-assign xor_ln1053_fu_326_p2 = (phi_ln1036_i_loc_fu_122 ^ 1'd1);
+assign xor_ln1053_fu_326_p2 = (phi_ln1036_i_loc_fu_118 ^ 1'd1);
+
+assign zext_ln928_fu_192_p1 = width_val7;
 
 endmodule //top_design_v_tpg_0_1_MultiPixStream2AXIvideo

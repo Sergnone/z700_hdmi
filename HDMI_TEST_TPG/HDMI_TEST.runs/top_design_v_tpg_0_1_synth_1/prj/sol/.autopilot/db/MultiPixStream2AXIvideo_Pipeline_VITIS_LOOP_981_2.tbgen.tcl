@@ -23,7 +23,7 @@ set C_modelArgList {
 	{ counter_loc_0_i_i int 16 regular  }
 	{ sof_i int 1 regular  }
 	{ colorFormat_val17 int 8 regular {ap_stable 0} }
-	{ empty int 13 regular {ap_stable 0} }
+	{ empty int 11 regular {ap_stable 0} }
 	{ ovrlayYUV int 24 regular {fifo 0 volatile }  }
 	{ m_axis_video_V_data_V int 24 regular {axi_s 1 volatile  { m_axis_video Data } }  }
 	{ m_axis_video_V_keep_V int 3 regular {axi_s 1 volatile  { m_axis_video Keep } }  }
@@ -32,7 +32,7 @@ set C_modelArgList {
 	{ m_axis_video_V_last_V int 1 regular {axi_s 1 volatile  { m_axis_video Last } }  }
 	{ m_axis_video_V_id_V int 1 regular {axi_s 1 volatile  { m_axis_video ID } }  }
 	{ m_axis_video_V_dest_V int 1 regular {axi_s 1 volatile  { m_axis_video Dest } }  }
-	{ sext_ln1051_i int 13 regular {ap_stable 0} }
+	{ add_ln994_i int 12 regular {ap_stable 0} }
 	{ counter_loc_1_i_i_out int 16 regular {pointer 1}  }
 	{ phi_ln1036_i_out int 1 regular {pointer 1}  }
 	{ counter int 16 regular {pointer 1} {global 1}  }
@@ -44,7 +44,7 @@ set C_modelArgMapList {[
 	{ "Name" : "counter_loc_0_i_i", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
  	{ "Name" : "sof_i", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "colorFormat_val17", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
- 	{ "Name" : "empty", "interface" : "wire", "bitwidth" : 13, "direction" : "READONLY"} , 
+ 	{ "Name" : "empty", "interface" : "wire", "bitwidth" : 11, "direction" : "READONLY"} , 
  	{ "Name" : "ovrlayYUV", "interface" : "fifo", "bitwidth" : 24, "direction" : "READONLY"} , 
  	{ "Name" : "m_axis_video_V_data_V", "interface" : "axis", "bitwidth" : 24, "direction" : "WRITEONLY"} , 
  	{ "Name" : "m_axis_video_V_keep_V", "interface" : "axis", "bitwidth" : 3, "direction" : "WRITEONLY"} , 
@@ -53,7 +53,7 @@ set C_modelArgMapList {[
  	{ "Name" : "m_axis_video_V_last_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
  	{ "Name" : "m_axis_video_V_id_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
  	{ "Name" : "m_axis_video_V_dest_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "sext_ln1051_i", "interface" : "wire", "bitwidth" : 13, "direction" : "READONLY"} , 
+ 	{ "Name" : "add_ln994_i", "interface" : "wire", "bitwidth" : 12, "direction" : "READONLY"} , 
  	{ "Name" : "counter_loc_1_i_i_out", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY"} , 
  	{ "Name" : "phi_ln1036_i_out", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
  	{ "Name" : "counter", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "extern" : 0} ]}
@@ -69,7 +69,7 @@ set portList {
 	{ counter_loc_0_i_i sc_in sc_lv 16 signal 0 } 
 	{ sof_i sc_in sc_lv 1 signal 1 } 
 	{ colorFormat_val17 sc_in sc_lv 8 signal 2 } 
-	{ empty sc_in sc_lv 13 signal 3 } 
+	{ empty sc_in sc_lv 11 signal 3 } 
 	{ ovrlayYUV_dout sc_in sc_lv 24 signal 4 } 
 	{ ovrlayYUV_empty_n sc_in sc_logic 1 signal 4 } 
 	{ ovrlayYUV_read sc_out sc_logic 1 signal 4 } 
@@ -84,7 +84,7 @@ set portList {
 	{ m_axis_video_TLAST sc_out sc_lv 1 signal 9 } 
 	{ m_axis_video_TID sc_out sc_lv 1 signal 10 } 
 	{ m_axis_video_TDEST sc_out sc_lv 1 signal 11 } 
-	{ sext_ln1051_i sc_in sc_lv 13 signal 12 } 
+	{ add_ln994_i sc_in sc_lv 12 signal 12 } 
 	{ counter_loc_1_i_i_out sc_out sc_lv 16 signal 13 } 
 	{ counter_loc_1_i_i_out_ap_vld sc_out sc_logic 1 outvld 13 } 
 	{ phi_ln1036_i_out sc_out sc_lv 1 signal 14 } 
@@ -102,7 +102,7 @@ set NewPortList {[
  	{ "name": "counter_loc_0_i_i", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "counter_loc_0_i_i", "role": "default" }} , 
  	{ "name": "sof_i", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "sof_i", "role": "default" }} , 
  	{ "name": "colorFormat_val17", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "colorFormat_val17", "role": "default" }} , 
- 	{ "name": "empty", "direction": "in", "datatype": "sc_lv", "bitwidth":13, "type": "signal", "bundle":{"name": "empty", "role": "default" }} , 
+ 	{ "name": "empty", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "empty", "role": "default" }} , 
  	{ "name": "ovrlayYUV_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "ovrlayYUV", "role": "dout" }} , 
  	{ "name": "ovrlayYUV_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "ovrlayYUV", "role": "empty_n" }} , 
  	{ "name": "ovrlayYUV_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "ovrlayYUV", "role": "read" }} , 
@@ -117,7 +117,7 @@ set NewPortList {[
  	{ "name": "m_axis_video_TLAST", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "m_axis_video_V_last_V", "role": "default" }} , 
  	{ "name": "m_axis_video_TID", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "m_axis_video_V_id_V", "role": "default" }} , 
  	{ "name": "m_axis_video_TDEST", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "m_axis_video_V_dest_V", "role": "default" }} , 
- 	{ "name": "sext_ln1051_i", "direction": "in", "datatype": "sc_lv", "bitwidth":13, "type": "signal", "bundle":{"name": "sext_ln1051_i", "role": "default" }} , 
+ 	{ "name": "add_ln994_i", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "add_ln994_i", "role": "default" }} , 
  	{ "name": "counter_loc_1_i_i_out", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "counter_loc_1_i_i_out", "role": "default" }} , 
  	{ "name": "counter_loc_1_i_i_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "counter_loc_1_i_i_out", "role": "ap_vld" }} , 
  	{ "name": "phi_ln1036_i_out", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "phi_ln1036_i_out", "role": "default" }} , 
@@ -139,7 +139,7 @@ set ArgLastReadFirstWriteLatency {
 		m_axis_video_V_last_V {Type O LastRead -1 FirstWrite 3}
 		m_axis_video_V_id_V {Type O LastRead -1 FirstWrite 3}
 		m_axis_video_V_dest_V {Type O LastRead -1 FirstWrite 3}
-		sext_ln1051_i {Type I LastRead 0 FirstWrite -1}
+		add_ln994_i {Type I LastRead 0 FirstWrite -1}
 		counter_loc_1_i_i_out {Type O LastRead -1 FirstWrite 4}
 		phi_ln1036_i_out {Type O LastRead -1 FirstWrite 3}
 		counter {Type O LastRead -1 FirstWrite 2}}}
@@ -147,8 +147,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "4", "Max" : "4100"}
-	, {"Name" : "Interval", "Min" : "4", "Max" : "4100"}
+	{"Name" : "Latency", "Min" : "4", "Max" : "1924"}
+	, {"Name" : "Interval", "Min" : "4", "Max" : "1924"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -159,7 +159,7 @@ set Spec2ImplPortList {
 	counter_loc_0_i_i { ap_none {  { counter_loc_0_i_i in_data 0 16 } } }
 	sof_i { ap_none {  { sof_i in_data 0 1 } } }
 	colorFormat_val17 { ap_stable {  { colorFormat_val17 in_data 0 8 } } }
-	empty { ap_stable {  { empty in_data 0 13 } } }
+	empty { ap_stable {  { empty in_data 0 11 } } }
 	ovrlayYUV { ap_fifo {  { ovrlayYUV_dout fifo_data_out 0 24 }  { ovrlayYUV_empty_n fifo_status_empty 0 1 }  { ovrlayYUV_read fifo_data_in 1 1 }  { ovrlayYUV_num_data_valid fifo_update 0 5 }  { ovrlayYUV_fifo_cap fifo_data 0 5 } } }
 	m_axis_video_V_data_V { axis {  { m_axis_video_TDATA out_data 1 24 }  { m_axis_video_TREADY out_acc 0 1 } } }
 	m_axis_video_V_keep_V { axis {  { m_axis_video_TKEEP out_data 1 3 } } }
@@ -168,7 +168,7 @@ set Spec2ImplPortList {
 	m_axis_video_V_last_V { axis {  { m_axis_video_TLAST out_data 1 1 } } }
 	m_axis_video_V_id_V { axis {  { m_axis_video_TID out_data 1 1 } } }
 	m_axis_video_V_dest_V { axis {  { m_axis_video_TVALID out_vld 1 1 }  { m_axis_video_TDEST out_data 1 1 } } }
-	sext_ln1051_i { ap_stable {  { sext_ln1051_i in_data 0 13 } } }
+	add_ln994_i { ap_stable {  { add_ln994_i in_data 0 12 } } }
 	counter_loc_1_i_i_out { ap_vld {  { counter_loc_1_i_i_out out_data 1 16 }  { counter_loc_1_i_i_out_ap_vld out_vld 1 1 } } }
 	phi_ln1036_i_out { ap_vld {  { phi_ln1036_i_out out_data 1 1 }  { phi_ln1036_i_out_ap_vld out_vld 1 1 } } }
 	counter { ap_vld {  { counter out_data 1 16 }  { counter_ap_vld out_vld 1 1 } } }

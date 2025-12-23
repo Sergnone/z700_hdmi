@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'v_tpg'" level="0">
-<item name = "Date">Mon Dec 22 19:21:26 2025
+<item name = "Date">Tue Dec 23 20:57:51 2025
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -51,7 +51,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 175, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">9, 13, 6031, 6308, -</column>
+<column name="Instance">9, 13, 6023, 6298, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 114, -</column>
 <column name="Register">-, -, 382, -, -</column>
@@ -65,7 +65,7 @@
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 442, 600, 0</column>
 <column name="grp_reg_unsigned_short_s_fu_616">reg_unsigned_short_s, 0, 0, 18, 2, 0</column>
-<column name="grp_v_tpgHlsDataFlow_fu_440">v_tpgHlsDataFlow, 9, 13, 5571, 5706, 0</column>
+<column name="grp_v_tpgHlsDataFlow_fu_440">v_tpgHlsDataFlow, 9, 13, 5563, 5696, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Dec 22 20:46:45 2025" VIVADOVERSION="2025.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Dec 23 20:55:26 2025" VIVADOVERSION="2025.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="top_design" PACKAGE="clg400" SPEEDGRADE="-2"/>
 
@@ -3030,7 +3030,11 @@
             <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TVALID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="sof_state_out" SIGIS="undef"/>
+        <PORT DIR="O" NAME="sof_state_out" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_sof_state_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_tc_0" PORT="sof_state"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="31" NAME="status" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" NAME="underflow" SIGIS="undef"/>
         <PORT DIR="O" NAME="vid_active_video" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pVDE">
@@ -3450,7 +3454,11 @@
             <CONNECTION INSTANCE="axi_smc" PORT="M02_AXI_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="sof_state" SIGIS="undef"/>
+        <PORT DIR="I" NAME="sof_state" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_sof_state_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="sof_state_out"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="vblank_out" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_vtg_vblank">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vtg_vblank"/>
@@ -3543,9 +3551,9 @@
         <PARAMETER NAME="FOREGROUND" VALUE="1"/>
         <PARAMETER NAME="HAS_AXI4S_SLAVE" VALUE="0"/>
         <PARAMETER NAME="HAS_AXI4_YUV422_YUV420" VALUE="0"/>
-        <PARAMETER NAME="MAX_COLS" VALUE="4096"/>
+        <PARAMETER NAME="MAX_COLS" VALUE="1920"/>
         <PARAMETER NAME="MAX_DATA_WIDTH" VALUE="8"/>
-        <PARAMETER NAME="MAX_ROWS" VALUE="2160"/>
+        <PARAMETER NAME="MAX_ROWS" VALUE="1080"/>
         <PARAMETER NAME="NUM_VIDEO_COMPONENTS" VALUE="3"/>
         <PARAMETER NAME="RAMP" VALUE="1"/>
         <PARAMETER NAME="SAMPLES_PER_CLOCK" VALUE="1"/>

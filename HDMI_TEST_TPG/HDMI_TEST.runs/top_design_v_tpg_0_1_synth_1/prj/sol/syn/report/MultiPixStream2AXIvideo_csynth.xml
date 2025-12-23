@@ -24,12 +24,12 @@
 <unit>clock cycles</unit>
 <Best-caseLatency>1</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>8862481</Worst-caseLatency>
+<Worst-caseLatency>2081161</Worst-caseLatency>
 <Best-caseRealTimeLatency>6.750 ns</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>59.822 ms</Worst-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>14.048 ms</Worst-caseRealTimeLatency>
 <Interval-min>1</Interval-min>
-<Interval-max>8862481</Interval-max>
+<Interval-max>2081161</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -38,26 +38,26 @@
 <TripCount>
 <range>
 <min>0</min>
-<max>2160</max>
+<max>1080</max>
 </range>
 </TripCount>
 <isPerfectNested>0</isPerfectNested>
 <Latency>
 <range>
 <min>0</min>
-<max>8862480</max>
+<max>2081160</max>
 </range>
 </Latency>
 <AbsoluteTimeLatency>
 <range>
 <min>0</min>
-<max>59821740</max>
+<max>14047830</max>
 </range>
 </AbsoluteTimeLatency>
 <IterationLatency>
 <range>
 <min>7</min>
-<max>4103</max>
+<max>1927</max>
 </range>
 </IterationLatency>
 <PerformancePragma>-</PerformancePragma>
@@ -82,8 +82,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>237</FF>
-<LUT>473</LUT>
+<FF>229</FF>
+<LUT>463</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -337,7 +337,7 @@
 <IOProtocol>ap_stable</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>12</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -348,7 +348,7 @@
 <IOProtocol>ap_stable</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>13</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>

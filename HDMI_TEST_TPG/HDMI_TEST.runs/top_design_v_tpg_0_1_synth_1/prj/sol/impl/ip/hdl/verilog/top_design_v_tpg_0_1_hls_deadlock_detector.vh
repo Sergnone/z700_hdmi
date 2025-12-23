@@ -222,7 +222,7 @@ end
         .token_out_vec(token_out_vec_2),
         .dl_detect_out(dl_in_vec[2]));
 
-    assign proc_2_data_FIFO_blk[0] = 1'b0 | (~grp_v_tpgHlsDataFlow_fu_440.MultiPixStream2AXIvideo_U0.grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167.ovrlayYUV_blk_n);
+    assign proc_2_data_FIFO_blk[0] = 1'b0 | (~grp_v_tpgHlsDataFlow_fu_440.MultiPixStream2AXIvideo_U0.grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163.ovrlayYUV_blk_n);
     assign proc_2_data_PIPO_blk[0] = 1'b0;
     assign proc_2_start_FIFO_blk[0] = 1'b0 | (~grp_v_tpgHlsDataFlow_fu_440.start_for_MultiPixStream2AXIvideo_U0_U.if_empty_n & grp_v_tpgHlsDataFlow_fu_440.MultiPixStream2AXIvideo_U0.ap_idle & ~grp_v_tpgHlsDataFlow_fu_440.start_for_MultiPixStream2AXIvideo_U0_U.if_write);
     assign proc_2_TLF_FIFO_blk[0] = 1'b0;

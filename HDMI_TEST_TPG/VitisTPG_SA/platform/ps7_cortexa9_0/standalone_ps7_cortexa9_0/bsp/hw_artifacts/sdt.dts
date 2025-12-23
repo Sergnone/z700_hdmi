@@ -1081,11 +1081,11 @@
                         phandle = <0x5>;
                         interrupts = <0x0 0x1d 0x4>;
                         compatible = "xlnx,v-tpg-8.2", "xlnx,v-tpg-8.0";
-                        xlnx,max-width = <0x1000>;
+                        xlnx,max-width = <0x780>;
                         xlnx,foreground = <0x1>;
-                        xlnx,max-height = <0x870>;
+                        xlnx,max-height = <0x438>;
                         interrupt-parent = <&intc>;
-                        xlnx,max-rows = <0x870>;
+                        xlnx,max-rows = <0x438>;
                         xlnx,solid-color = <0x1>;
                         xlnx,has-axi4-yuv422-yuv420 = <0x0>;
                         xlnx,ip-name = "v_tpg";
@@ -1097,7 +1097,7 @@
                         xlnx,max-data-width = <0x8>;
                         xlnx,has-axi4s-slave = <0x0>;
                         xlnx,ppc = <0x1>;
-                        xlnx,max-cols = <0x1000>;
+                        xlnx,max-cols = <0x780>;
                         xlnx,edk-iptype = "PERIPHERAL";
                         status = "okay";
                         clock-names = "ap_clk";

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'tpgForeground_Pipeline_VITIS_LOOP_774_2'
 ================================================================
-* Date:           Mon Dec 22 19:21:25 2025
+* Date:           Tue Dec 23 20:57:50 2025
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -241,7 +241,8 @@ Target clock period: 6.750ns, clock uncertainty: 1.822ns.
 The critical path consists of the following:
 	'store' operation ('store_ln1956', prj/sol/.autopilot/db/v_tpg.cpp:1956->prj/sol/.autopilot/db/v_tpg.cpp:793) of constant 0 16 bit on local variable 'x', prj/sol/.autopilot/db/v_tpg.cpp:1956->prj/sol/.autopilot/db/v_tpg.cpp:793 [66]  (1.298 ns)
 	'load' operation 16 bit ('x', prj/sol/.autopilot/db/v_tpg.cpp:1884->prj/sol/.autopilot/db/v_tpg.cpp:788) on local variable 'x', prj/sol/.autopilot/db/v_tpg.cpp:1956->prj/sol/.autopilot/db/v_tpg.cpp:793 [69]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln774', prj/sol/.autopilot/db/v_tpg.cpp:774) [70]  (1.545 ns)
+	'or' operation 16 bit ('or_ln1884', prj/sol/.autopilot/db/v_tpg.cpp:1884->prj/sol/.autopilot/db/v_tpg.cpp:788) [84]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln1884', prj/sol/.autopilot/db/v_tpg.cpp:1884->prj/sol/.autopilot/db/v_tpg.cpp:788) [85]  (1.545 ns)
 	'store' operation ('store_ln1918', prj/sol/.autopilot/db/v_tpg.cpp:1918->prj/sol/.autopilot/db/v_tpg.cpp:788) of variable 'sub_ln1918', prj/sol/.autopilot/db/v_tpg.cpp:1918->prj/sol/.autopilot/db/v_tpg.cpp:788 16 bit on local variable 'boxVCoord_loc_1_out' [130]  (1.298 ns)
 
  <State 2>: 3.890ns

@@ -212,7 +212,7 @@ entry:20 %height_val4_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %height_va
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="118" bw="13" op_0_bw="16">
+<Node id="118" bw="11" op_0_bw="16">
 <![CDATA[
 entry:21 %trunc_ln332 = trunc i16 %width_val7_read
 
@@ -227,7 +227,7 @@ entry:21 %trunc_ln332 = trunc i16 %width_val7_read
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="119" bw="12" op_0_bw="16">
+<Node id="119" bw="11" op_0_bw="16">
 <![CDATA[
 entry:22 %trunc_ln332_1 = trunc i16 %height_val4_read
 
@@ -494,9 +494,9 @@ entry:18 %field_id_val8_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %field_i
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="152" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="3" op_4_bw="3" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="1" op_9_bw="12" op_10_bw="13" op_11_bw="8" op_12_bw="1" op_13_bw="1" op_14_bw="16" op_15_bw="1" op_16_bw="16" op_17_bw="0" op_18_bw="0">
+<Node id="152" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="3" op_4_bw="3" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="1" op_9_bw="11" op_10_bw="11" op_11_bw="8" op_12_bw="1" op_13_bw="1" op_14_bw="16" op_15_bw="1" op_16_bw="16" op_17_bw="0" op_18_bw="0">
 <![CDATA[
-entry:55 %call_ln399 = call void @MultiPixStream2AXIvideo, i24 %ovrlayYUV, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %trunc_ln332_1, i13 %trunc_ln332, i8 %colorFormat_val17_read, i1 %fid_in_val9_read, i1 %fid, i16 %field_id_val8_read, i1 %fidStored, i16 %counter
+entry:55 %call_ln399 = call void @MultiPixStream2AXIvideo, i24 %ovrlayYUV, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i11 %trunc_ln332_1, i11 %trunc_ln332, i8 %colorFormat_val17_read, i1 %fid_in_val9_read, i1 %fid, i16 %field_id_val8_read, i1 %fidStored, i16 %counter
 
 ]]></Node>
 <StgValue><ssdm name="call_ln399"/></StgValue>
@@ -932,9 +932,9 @@ entry:52 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %o
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="152" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="3" op_4_bw="3" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="1" op_9_bw="12" op_10_bw="13" op_11_bw="8" op_12_bw="1" op_13_bw="1" op_14_bw="16" op_15_bw="1" op_16_bw="16" op_17_bw="0" op_18_bw="0">
+<Node id="152" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="3" op_4_bw="3" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="1" op_9_bw="11" op_10_bw="11" op_11_bw="8" op_12_bw="1" op_13_bw="1" op_14_bw="16" op_15_bw="1" op_16_bw="16" op_17_bw="0" op_18_bw="0">
 <![CDATA[
-entry:55 %call_ln399 = call void @MultiPixStream2AXIvideo, i24 %ovrlayYUV, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %trunc_ln332_1, i13 %trunc_ln332, i8 %colorFormat_val17_read, i1 %fid_in_val9_read, i1 %fid, i16 %field_id_val8_read, i1 %fidStored, i16 %counter
+entry:55 %call_ln399 = call void @MultiPixStream2AXIvideo, i24 %ovrlayYUV, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i11 %trunc_ln332_1, i11 %trunc_ln332, i8 %colorFormat_val17_read, i1 %fid_in_val9_read, i1 %fid, i16 %field_id_val8_read, i1 %fidStored, i16 %counter
 
 ]]></Node>
 <StgValue><ssdm name="call_ln399"/></StgValue>

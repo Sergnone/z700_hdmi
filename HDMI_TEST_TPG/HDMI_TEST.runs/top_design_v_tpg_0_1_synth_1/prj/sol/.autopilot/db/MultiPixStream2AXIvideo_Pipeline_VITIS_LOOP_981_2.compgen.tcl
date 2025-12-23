@@ -201,7 +201,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_empty \
     op interface \
-    ports { empty { I 13 vector } } \
+    ports { empty { I 11 vector } } \
 } "
 }
 
@@ -224,14 +224,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 205 \
-    name sext_ln1051_i \
+    name add_ln994_i \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_sext_ln1051_i \
+    corename dc_add_ln994_i \
     op interface \
-    ports { sext_ln1051_i { I 13 vector } } \
+    ports { add_ln994_i { I 12 vector } } \
 } "
 }
 

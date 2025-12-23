@@ -159,11 +159,11 @@
 		v_tpg_0: v_tpg@43c00000 {
 			interrupts = < 0 29 4 >;
 			compatible = "xlnx,v-tpg-8.2" , "xlnx,v-tpg-8.0";
-			xlnx,max-width = <4096>;
+			xlnx,max-width = <1920>;
 			xlnx,foreground = <1>;
-			xlnx,max-height = <2160>;
+			xlnx,max-height = <1080>;
 			interrupt-parent = <&intc>;
-			xlnx,max-rows = <2160>;
+			xlnx,max-rows = <1080>;
 			xlnx,solid-color = <1>;
 			xlnx,has-axi4-yuv422-yuv420 = <0>;
 			xlnx,ip-name = "v_tpg";
@@ -175,7 +175,7 @@
 			xlnx,max-data-width = <8>;
 			xlnx,has-axi4s-slave = <0>;
 			xlnx,ppc = <1>;
-			xlnx,max-cols = <4096>;
+			xlnx,max-cols = <1920>;
 			xlnx,edk-iptype = "PERIPHERAL";
 			status = "okay";
 			clock-names = "ap_clk";

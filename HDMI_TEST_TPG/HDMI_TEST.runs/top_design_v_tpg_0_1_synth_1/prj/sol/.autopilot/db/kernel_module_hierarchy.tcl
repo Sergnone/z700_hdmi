@@ -24,7 +24,7 @@ set ModuleHierarchy {[{
 			"SubLoops" : [
 			{"Name" : "VITIS_LOOP_979_1","RefName" : "VITIS_LOOP_979_1","ID" : "13","Type" : "no",
 			"SubInsts" : [
-			{"Name" : "grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167", "RefName" : "MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2","ID" : "14","Type" : "sequential",
+			{"Name" : "grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163", "RefName" : "MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2","ID" : "14","Type" : "sequential",
 					"SubLoops" : [
 					{"Name" : "VITIS_LOOP_981_2","RefName" : "VITIS_LOOP_981_2","ID" : "15","Type" : "pipeline"},]},]},]},]},
 	{"Name" : "grp_reg_unsigned_short_s_fu_616", "RefName" : "reg_unsigned_short_s","ID" : "16","Type" : "pipeline"},]

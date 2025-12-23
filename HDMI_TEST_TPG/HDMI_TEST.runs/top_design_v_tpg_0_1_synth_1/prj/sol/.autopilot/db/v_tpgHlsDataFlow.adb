@@ -2332,7 +2332,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>13</bitwidth>
+            <bitwidth>11</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -2388,7 +2388,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>12</bitwidth>
+            <bitwidth>11</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -2792,7 +2792,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>4.00</m_delay>
+          <m_delay>3.94</m_delay>
           <m_topoIndex>28</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -5291,11 +5291,11 @@
             <item_version>0</item_version>
             <item class_id="48" tracking_level="0" version="0">
               <first>FF</first>
-              <second>237</second>
+              <second>229</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>473</second>
+              <second>463</second>
             </item>
           </second>
         </item>
@@ -5532,7 +5532,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>157</item>
+            <item>156</item>
           </second>
         </item>
         <item>
@@ -5540,7 +5540,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>173</item>
+            <item>172</item>
           </second>
         </item>
       </dp_fifo_map>

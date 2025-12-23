@@ -166,7 +166,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_height_val4 \
     op interface \
-    ports { height_val4 { I 12 vector } } \
+    ports { height_val4 { I 11 vector } } \
 } "
 }
 
@@ -181,7 +181,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_width_val7 \
     op interface \
-    ports { width_val7 { I 13 vector } } \
+    ports { width_val7 { I 11 vector } } \
 } "
 }
 

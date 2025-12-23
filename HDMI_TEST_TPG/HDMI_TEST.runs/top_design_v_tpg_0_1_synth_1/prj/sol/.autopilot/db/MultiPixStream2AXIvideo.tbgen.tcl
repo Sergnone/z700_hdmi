@@ -28,8 +28,8 @@ set C_modelArgList {
 	{ m_axis_video_V_last_V int 1 regular {axi_s 1 volatile  { m_axis_video Last } }  }
 	{ m_axis_video_V_id_V int 1 regular {axi_s 1 volatile  { m_axis_video ID } }  }
 	{ m_axis_video_V_dest_V int 1 regular {axi_s 1 volatile  { m_axis_video Dest } }  }
-	{ height_val4 int 12 regular {ap_stable 0} }
-	{ width_val7 int 13 regular {ap_stable 0} }
+	{ height_val4 int 11 regular {ap_stable 0} }
+	{ width_val7 int 11 regular {ap_stable 0} }
 	{ colorFormat_val17 int 8 regular {ap_stable 0} }
 	{ fid_in_val9 int 1 regular {ap_stable 0} }
 	{ fid int 1 regular {pointer 1}  }
@@ -47,8 +47,8 @@ set C_modelArgMapList {[
  	{ "Name" : "m_axis_video_V_last_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
  	{ "Name" : "m_axis_video_V_id_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
  	{ "Name" : "m_axis_video_V_dest_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "height_val4", "interface" : "wire", "bitwidth" : 12, "direction" : "READONLY"} , 
- 	{ "Name" : "width_val7", "interface" : "wire", "bitwidth" : 13, "direction" : "READONLY"} , 
+ 	{ "Name" : "height_val4", "interface" : "wire", "bitwidth" : 11, "direction" : "READONLY"} , 
+ 	{ "Name" : "width_val7", "interface" : "wire", "bitwidth" : 11, "direction" : "READONLY"} , 
  	{ "Name" : "colorFormat_val17", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
  	{ "Name" : "fid_in_val9", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "fid", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
@@ -77,8 +77,8 @@ set portList {
 	{ m_axis_video_TLAST sc_out sc_lv 1 signal 5 } 
 	{ m_axis_video_TID sc_out sc_lv 1 signal 6 } 
 	{ m_axis_video_TDEST sc_out sc_lv 1 signal 7 } 
-	{ height_val4 sc_in sc_lv 12 signal 8 } 
-	{ width_val7 sc_in sc_lv 13 signal 9 } 
+	{ height_val4 sc_in sc_lv 11 signal 8 } 
+	{ width_val7 sc_in sc_lv 11 signal 9 } 
 	{ colorFormat_val17 sc_in sc_lv 8 signal 10 } 
 	{ fid_in_val9 sc_in sc_lv 1 signal 11 } 
 	{ fid sc_out sc_lv 1 signal 12 } 
@@ -107,8 +107,8 @@ set NewPortList {[
  	{ "name": "m_axis_video_TLAST", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "m_axis_video_V_last_V", "role": "default" }} , 
  	{ "name": "m_axis_video_TID", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "m_axis_video_V_id_V", "role": "default" }} , 
  	{ "name": "m_axis_video_TDEST", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "m_axis_video_V_dest_V", "role": "default" }} , 
- 	{ "name": "height_val4", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "height_val4", "role": "default" }} , 
- 	{ "name": "width_val7", "direction": "in", "datatype": "sc_lv", "bitwidth":13, "type": "signal", "bundle":{"name": "width_val7", "role": "default" }} , 
+ 	{ "name": "height_val4", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "height_val4", "role": "default" }} , 
+ 	{ "name": "width_val7", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "width_val7", "role": "default" }} , 
  	{ "name": "colorFormat_val17", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "colorFormat_val17", "role": "default" }} , 
  	{ "name": "fid_in_val9", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "fid_in_val9", "role": "default" }} , 
  	{ "name": "fid", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "fid", "role": "default" }} , 
@@ -146,7 +146,7 @@ set ArgLastReadFirstWriteLatency {
 		m_axis_video_V_last_V {Type O LastRead -1 FirstWrite 3}
 		m_axis_video_V_id_V {Type O LastRead -1 FirstWrite 3}
 		m_axis_video_V_dest_V {Type O LastRead -1 FirstWrite 3}
-		sext_ln1051_i {Type I LastRead 0 FirstWrite -1}
+		add_ln994_i {Type I LastRead 0 FirstWrite -1}
 		counter_loc_1_i_i_out {Type O LastRead -1 FirstWrite 4}
 		phi_ln1036_i_out {Type O LastRead -1 FirstWrite 3}
 		counter {Type O LastRead -1 FirstWrite 2}}}
@@ -154,8 +154,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1", "Max" : "8862481"}
-	, {"Name" : "Interval", "Min" : "1", "Max" : "8862481"}
+	{"Name" : "Latency", "Min" : "1", "Max" : "2081161"}
+	, {"Name" : "Interval", "Min" : "1", "Max" : "2081161"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -170,8 +170,8 @@ set Spec2ImplPortList {
 	m_axis_video_V_last_V { axis {  { m_axis_video_TLAST out_data 1 1 } } }
 	m_axis_video_V_id_V { axis {  { m_axis_video_TID out_data 1 1 } } }
 	m_axis_video_V_dest_V { axis {  { m_axis_video_TVALID out_vld 1 1 }  { m_axis_video_TREADY out_acc 0 1 }  { m_axis_video_TDEST out_data 1 1 } } }
-	height_val4 { ap_stable {  { height_val4 in_data 0 12 } } }
-	width_val7 { ap_stable {  { width_val7 in_data 0 13 } } }
+	height_val4 { ap_stable {  { height_val4 in_data 0 11 } } }
+	width_val7 { ap_stable {  { width_val7 in_data 0 11 } } }
 	colorFormat_val17 { ap_stable {  { colorFormat_val17 in_data 0 8 } } }
 	fid_in_val9 { ap_stable {  { fid_in_val9 in_data 0 1 } } }
 	fid { ap_vld {  { fid out_data 1 1 }  { fid_ap_vld out_vld 1 1 } } }

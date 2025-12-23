@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'v_tpgHlsDataFlow'" level="0">
-<item name = "Date">Mon Dec 22 19:21:25 2025
+<item name = "Date">Tue Dec 23 20:57:51 2025
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -33,7 +33,7 @@
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="tpgBackground_U0">tpgBackground, 1, 4296540136, 6.750 ns, 29.002 sec, 1, 4296540136, no</column>
 <column name="tpgForeground_U0">tpgForeground, 1, 4295229436, 6.750 ns, 28.993 sec, 1, 4295229436, no</column>
-<column name="MultiPixStream2AXIvideo_U0">MultiPixStream2AXIvideo, 1, 8862481, 6.750 ns, 59.822 ms, 1, 8862481, no</column>
+<column name="MultiPixStream2AXIvideo_U0">MultiPixStream2AXIvideo, 1, 2081161, 6.750 ns, 14.048 ms, 1, 2081161, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -52,7 +52,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 1, -</column>
 <column name="FIFO">-, -, 198, 138, -</column>
-<column name="Instance">9, 13, 5373, 5567, -</column>
+<column name="Instance">9, 13, 5365, 5557, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, -, -</column>
 <column name="Register">-, -, -, -, -</column>
@@ -64,7 +64,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="MultiPixStream2AXIvideo_U0">MultiPixStream2AXIvideo, 0, 0, 237, 473, 0</column>
+<column name="MultiPixStream2AXIvideo_U0">MultiPixStream2AXIvideo, 0, 0, 229, 463, 0</column>
 <column name="tpgBackground_U0">tpgBackground, 9, 13, 4585, 4310, 0</column>
 <column name="tpgForeground_U0">tpgForeground, 0, 0, 551, 784, 0</column>
 </table>

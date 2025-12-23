@@ -171,8 +171,8 @@ wire   [0:0] MultiPixStream2AXIvideo_U0_m_axis_video_TUSER;
 wire   [0:0] MultiPixStream2AXIvideo_U0_m_axis_video_TLAST;
 wire   [0:0] MultiPixStream2AXIvideo_U0_m_axis_video_TID;
 wire   [0:0] MultiPixStream2AXIvideo_U0_m_axis_video_TDEST;
-wire   [11:0] MultiPixStream2AXIvideo_U0_height_val4;
-wire   [12:0] MultiPixStream2AXIvideo_U0_width_val7;
+wire   [10:0] MultiPixStream2AXIvideo_U0_height_val4;
+wire   [10:0] MultiPixStream2AXIvideo_U0_width_val7;
 wire   [0:0] MultiPixStream2AXIvideo_U0_fid;
 wire    MultiPixStream2AXIvideo_U0_fid_ap_vld;
 wire    bckgndYUV_full_n;
@@ -350,9 +350,9 @@ assign MultiPixStream2AXIvideo_U0_ap_continue = ap_continue;
 
 assign MultiPixStream2AXIvideo_U0_ap_start = start_for_MultiPixStream2AXIvideo_U0_empty_n;
 
-assign MultiPixStream2AXIvideo_U0_height_val4 = {{height_val4[(12 - 16'd1):0]}};
+assign MultiPixStream2AXIvideo_U0_height_val4 = {{height_val4[(11 - 16'd1):0]}};
 
-assign MultiPixStream2AXIvideo_U0_width_val7 = {{width_val7[(13 - 16'd1):0]}};
+assign MultiPixStream2AXIvideo_U0_width_val7 = {{width_val7[(11 - 16'd1):0]}};
 
 assign ap_done = MultiPixStream2AXIvideo_U0_ap_done;
 

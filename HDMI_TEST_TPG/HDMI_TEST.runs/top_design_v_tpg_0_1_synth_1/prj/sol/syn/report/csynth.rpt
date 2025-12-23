@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'v_tpg'
 ================================================================
 + General Information: 
-    * Date:           Mon Dec 22 19:21:26 2025
+    * Date:           Tue Dec 23 20:57:51 2025
     * Version:        2025.2 (Build 6295257 on Nov 14 2025)
     * Project:        prj
     * Solution:       sol (Vivado IP Flow Target)
@@ -17,8 +17,8 @@
 |                         Modules                         | Issue|               | Iteration|            |  Trip |          |         Latency        |      |        |         |           |            |     |
 |                         & Loops                         | Type | Violation Type|  Latency |  Interval  | Count | Pipelined|  (cycles)  |    (ns)   | Slack|  BRAM  |   DSP   |     FF    |     LUT    | URAM|
 +---------------------------------------------------------+------+---------------+----------+------------+-------+----------+------------+-----------+------+--------+---------+-----------+------------+-----+
-|+ v_tpg                                                  |     -|              -|         -|  4296540142|      -|        no|  4296540141|  2.900e+10|  0.04|  9 (3%)|  13 (5%)|  6413 (6%)|  6597 (12%)|    -|
-| + v_tpgHlsDataFlow*                                     |     -|              -|         -|  4296540137|      -|  dataflow|  4296540136|  2.900e+10|  0.04|  9 (3%)|  13 (5%)|  5571 (5%)|  5706 (10%)|    -|
+|+ v_tpg                                                  |     -|              -|         -|  4296540142|      -|        no|  4296540141|  2.900e+10|  0.04|  9 (3%)|  13 (5%)|  6405 (6%)|  6587 (12%)|    -|
+| + v_tpgHlsDataFlow*                                     |     -|              -|         -|  4296540137|      -|  dataflow|  4296540136|  2.900e+10|  0.04|  9 (3%)|  13 (5%)|  5563 (5%)|  5696 (10%)|    -|
 |  + tpgBackground                                        |     -|              -|         -|  4296540136|      -|        no|  4296540136|  2.900e+10|  0.04|  9 (3%)|  13 (5%)|  4585 (4%)|   4310 (8%)|    -|
 |   o VITIS_LOOP_563_1                                    |     -|              -|     65561|           -|  65535|        no|  4296540135|  2.900e+10|  4.93|       -|        -|          -|           -|    -|
 |    + tpgBackground_Pipeline_VITIS_LOOP_565_2            |     -|              -|         -|           -|      -|       yes|       65558|  4.425e+05|  0.04|  9 (3%)|  13 (5%)|  3952 (3%)|   3866 (7%)|    -|
@@ -29,10 +29,10 @@
 |   o VITIS_LOOP_772_1                                    |     -|              -|     65541|           -|  65535|        no|  4295229435|  2.899e+10|  4.93|       -|        -|          -|           -|    -|
 |    + tpgForeground_Pipeline_VITIS_LOOP_774_2            |     -|              -|         -|           -|      -|       yes|       65539|  4.424e+05|  0.79|       -|        -|  265 (~0%)|    614 (1%)|    -|
 |     o VITIS_LOOP_774_2                                  |     -|              -|         4|           1|  65535|       yes|       65537|  4.424e+05|  4.93|       -|        -|          -|           -|    -|
-|  + MultiPixStream2AXIvideo                              |     -|              -|         -|     8862481|      -|        no|     8862481|  5.982e+07|  0.72|       -|        -|  237 (~0%)|   473 (~0%)|    -|
-|   o VITIS_LOOP_979_1                                    |     -|              -|      4103|           -|   2160|        no|     8862480|  5.982e+07|  4.93|       -|        -|          -|           -|    -|
-|    + MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2  |     -|              -|         -|        4100|      -|        no|        4100|  2.768e+04|  0.72|       -|        -|   68 (~0%)|   207 (~0%)|    -|
-|     o VITIS_LOOP_981_2                                  |     -|              -|         3|           1|   4096|       yes|        4097|  2.765e+04|  4.93|       -|        -|          -|           -|    -|
+|  + MultiPixStream2AXIvideo                              |     -|              -|         -|     2081161|      -|        no|     2081161|  1.405e+07|  0.72|       -|        -|  229 (~0%)|   463 (~0%)|    -|
+|   o VITIS_LOOP_979_1                                    |     -|              -|      1927|           -|   1080|        no|     2081160|  1.405e+07|  4.93|       -|        -|          -|           -|    -|
+|    + MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2  |     -|              -|         -|        1924|      -|        no|        1924|  1.299e+04|  0.72|       -|        -|   66 (~0%)|   202 (~0%)|    -|
+|     o VITIS_LOOP_981_2                                  |     -|              -|         3|           1|   1920|       yes|        1921|  1.297e+04|  4.93|       -|        -|          -|           -|    -|
 | + reg_unsigned_short_s                                  |     -|              -|         -|           1|      -|       yes|           1|      6.750|  4.93|       -|        -|   18 (~0%)|     2 (~0%)|    -|
 +---------------------------------------------------------+------+---------------+----------+------------+-------+----------+------------+-----------+------+--------+---------+-----------+------------+-----+
     Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
@@ -444,14 +444,14 @@
 |     select_ln1051_fu_332_p3                            |     |        | select_ln1051     | select    | auto_sel                | 0       |
 |     select_ln1038_fu_338_p3                            |     |        | select_ln1038     | select    | auto_sel                | 0       |
 |    + MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 | 0   |        |                   |           |                         |         |
-|      icmp_ln1020_fu_237_p2                             |     |        | icmp_ln1020       | seteq     | auto                    | 0       |
-|      icmp_ln981_fu_256_p2                              |     |        | icmp_ln981        | seteq     | auto                    | 0       |
-|      j_2_fu_261_p2                                     |     |        | j_2               | add       | fabric                  | 0       |
-|      icmp_ln994_fu_267_p2                              |     |        | icmp_ln994        | seteq     | auto                    | 0       |
+|      icmp_ln1020_fu_239_p2                             |     |        | icmp_ln1020       | seteq     | auto                    | 0       |
+|      icmp_ln981_fu_258_p2                              |     |        | icmp_ln981        | seteq     | auto                    | 0       |
+|      j_2_fu_263_p2                                     |     |        | j_2               | add       | fabric                  | 0       |
+|      icmp_ln994_fu_273_p2                              |     |        | icmp_ln994        | seteq     | auto                    | 0       |
 |      counter                                           |     |        | add_ln1005        | add       | fabric                  | 0       |
-|      select_ln1020_fu_326_p3                           |     |        | select_ln1020     | select    | auto_sel                | 0       |
-|      select_ln1020_1_fu_333_p3                         |     |        | select_ln1020_1   | select    | auto_sel                | 0       |
-|      icmp_ln1020_1_fu_272_p2                           |     |        | icmp_ln1020_1     | seteq     | auto                    | 0       |
+|      select_ln1020_fu_332_p3                           |     |        | select_ln1020     | select    | auto_sel                | 0       |
+|      select_ln1020_1_fu_339_p3                         |     |        | select_ln1020_1   | select    | auto_sel                | 0       |
+|      icmp_ln1020_1_fu_278_p2                           |     |        | icmp_ln1020_1     | seteq     | auto                    | 0       |
 |      sparsemux_7_2_24_1_1_U191                         |     |        | tmp_i             | sparsemux | onehotencoding_realdef  | 0       |
 +--------------------------------------------------------+-----+--------+-------------------+-----------+-------------------------+---------+
 

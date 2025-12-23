@@ -34,7 +34,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_v_tpgHlsDataFlow_fu_440/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_167_activity": {
+				"grp_v_tpgHlsDataFlow_fu_440/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_163_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

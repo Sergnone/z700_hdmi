@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Mon Dec 22 20:46:43 2025
+//Date        : Tue Dec 23 20:55:25 2025
 //Host        : serg running 64-bit Ubuntu 24.04.3 LTS
 //Command     : generate_target top_design.bd
 //Design      : top_design
@@ -189,6 +189,7 @@ module top_design
   wire [3:0]processing_system7_0_M_AXI_GP0_WSTRB;
   wire processing_system7_0_M_AXI_GP0_WVALID;
   wire [0:0]rst_ps7_0_148M_peripheral_aresetn;
+  wire v_axi4s_vid_out_0_sof_state_out;
   wire v_axi4s_vid_out_0_vid_io_out_ACTIVE_VIDEO;
   wire [23:0]v_axi4s_vid_out_0_vid_io_out_DATA;
   wire v_axi4s_vid_out_0_vid_io_out_HSYNC;
@@ -452,6 +453,7 @@ module top_design
         .s_axis_video_tready(v_tpg_0_m_axis_video_TREADY),
         .s_axis_video_tuser(v_tpg_0_m_axis_video_TUSER),
         .s_axis_video_tvalid(v_tpg_0_m_axis_video_TVALID),
+        .sof_state_out(v_axi4s_vid_out_0_sof_state_out),
         .vid_active_video(v_axi4s_vid_out_0_vid_io_out_ACTIVE_VIDEO),
         .vid_data(v_axi4s_vid_out_0_vid_io_out_DATA),
         .vid_hsync(v_axi4s_vid_out_0_vid_io_out_HSYNC),
@@ -496,7 +498,7 @@ module top_design
         .s_axi_wready(axi_smc_M02_AXI_WREADY),
         .s_axi_wstrb(axi_smc_M02_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M02_AXI_WVALID),
-        .sof_state(1'b0),
+        .sof_state(v_axi4s_vid_out_0_sof_state_out),
         .vblank_out(v_tc_0_vtiming_out_VBLANK),
         .vsync_out(v_tc_0_vtiming_out_VSYNC));
   top_design_v_tpg_0_1 v_tpg_0

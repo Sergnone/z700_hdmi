@@ -8,8 +8,8 @@ XV_tpg_Config XV_tpg_ConfigTable[] __attribute__ ((section (".drvcfg_sec"))) = {
 		0x0, /* xlnx,axi4s-slave */
 		0x1, /* xlnx,samples-per-clock */
 		0x3, /* xlnx,num-video-components */
-		0x1000, /* xlnx,max-cols */
-		0x870, /* xlnx,max-rows */
+		0x780, /* xlnx,max-cols */
+		0x438, /* xlnx,max-rows */
 		0x8, /* xlnx,max-data-width */
 		0x1, /* xlnx,solid-color */
 		0x1, /* xlnx,ramp */

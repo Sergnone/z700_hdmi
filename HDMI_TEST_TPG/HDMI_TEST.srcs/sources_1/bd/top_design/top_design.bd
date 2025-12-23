@@ -1510,6 +1510,14 @@
         "xci_path": "ip/top_design_v_tpg_0_1/top_design_v_tpg_0_1.xci",
         "inst_hier_path": "v_tpg_0",
         "has_run_ip_tcl": "true",
+        "parameters": {
+          "MAX_COLS": {
+            "value": "1920"
+          },
+          "MAX_ROWS": {
+            "value": "1080"
+          }
+        },
         "interface_ports": {
           "s_axi_CTRL": {
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
@@ -1879,6 +1887,12 @@
           "v_axi4s_vid_out_0/aresetn",
           "axi_dynclk_0/s_axi_lite_aresetn",
           "v_tc_0/s_axi_aresetn"
+        ]
+      },
+      "v_axi4s_vid_out_0_sof_state_out": {
+        "ports": [
+          "v_axi4s_vid_out_0/sof_state_out",
+          "v_tc_0/sof_state"
         ]
       },
       "v_axi4s_vid_out_0_vtg_ce": {

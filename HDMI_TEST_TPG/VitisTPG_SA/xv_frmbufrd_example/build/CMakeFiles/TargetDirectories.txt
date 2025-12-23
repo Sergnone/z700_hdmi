@@ -1,4 +1,0 @@
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/VitisTPG_SA/xv_frmbufrd_example/build/CMakeFiles/xv_frmbufrd_example.elf.dir
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/VitisTPG_SA/xv_frmbufrd_example/build/CMakeFiles/print_build_info.dir
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/VitisTPG_SA/xv_frmbufrd_example/build/CMakeFiles/edit_cache.dir
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/VitisTPG_SA/xv_frmbufrd_example/build/CMakeFiles/rebuild_cache.dir

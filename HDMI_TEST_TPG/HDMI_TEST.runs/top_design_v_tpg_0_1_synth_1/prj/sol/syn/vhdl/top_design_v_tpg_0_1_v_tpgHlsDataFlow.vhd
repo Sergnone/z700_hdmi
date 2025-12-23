@@ -80,8 +80,7 @@ architecture behav of top_design_v_tpg_0_1_v_tpgHlsDataFlow is
     attribute DowngradeIPIdentifiedWarnings of behav : architecture is "yes";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_lv16_0 : STD_LOGIC_VECTOR (15 downto 0) := "0000000000000000";
-    constant ap_const_lv16_C : STD_LOGIC_VECTOR (15 downto 0) := "0000000000001100";
-    constant ap_const_lv16_D : STD_LOGIC_VECTOR (15 downto 0) := "0000000000001101";
+    constant ap_const_lv16_B : STD_LOGIC_VECTOR (15 downto 0) := "0000000000001011";
     constant ap_const_logic_0 : STD_LOGIC := '0';
 
 attribute shreg_extract : string;
@@ -120,8 +119,8 @@ attribute shreg_extract : string;
     signal MultiPixStream2AXIvideo_U0_m_axis_video_TLAST : STD_LOGIC_VECTOR (0 downto 0);
     signal MultiPixStream2AXIvideo_U0_m_axis_video_TID : STD_LOGIC_VECTOR (0 downto 0);
     signal MultiPixStream2AXIvideo_U0_m_axis_video_TDEST : STD_LOGIC_VECTOR (0 downto 0);
-    signal MultiPixStream2AXIvideo_U0_height_val4 : STD_LOGIC_VECTOR (11 downto 0);
-    signal MultiPixStream2AXIvideo_U0_width_val7 : STD_LOGIC_VECTOR (12 downto 0);
+    signal MultiPixStream2AXIvideo_U0_height_val4 : STD_LOGIC_VECTOR (10 downto 0);
+    signal MultiPixStream2AXIvideo_U0_width_val7 : STD_LOGIC_VECTOR (10 downto 0);
     signal MultiPixStream2AXIvideo_U0_fid : STD_LOGIC_VECTOR (0 downto 0);
     signal MultiPixStream2AXIvideo_U0_fid_ap_vld : STD_LOGIC;
     signal bckgndYUV_full_n : STD_LOGIC;
@@ -235,8 +234,8 @@ attribute shreg_extract : string;
         m_axis_video_TLAST : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axis_video_TID : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axis_video_TDEST : OUT STD_LOGIC_VECTOR (0 downto 0);
-        height_val4 : IN STD_LOGIC_VECTOR (11 downto 0);
-        width_val7 : IN STD_LOGIC_VECTOR (12 downto 0);
+        height_val4 : IN STD_LOGIC_VECTOR (10 downto 0);
+        width_val7 : IN STD_LOGIC_VECTOR (10 downto 0);
         colorFormat_val17 : IN STD_LOGIC_VECTOR (7 downto 0);
         fid_in_val9 : IN STD_LOGIC_VECTOR (0 downto 0);
         fid : OUT STD_LOGIC_VECTOR (0 downto 0);
@@ -464,10 +463,10 @@ begin
         vlo_cpy := (others => '0');
         vlo_cpy(4 - 1 downto 0) := ap_const_lv16_0(4 - 1 downto 0);
         vhi_cpy := (others => '0');
-        vhi_cpy(4 - 1 downto 0) := ap_const_lv16_C(4 - 1 downto 0);
+        vhi_cpy(4 - 1 downto 0) := ap_const_lv16_B(4 - 1 downto 0);
         v0_cpy := height_val4;
         if (vlo_cpy(4 - 1 downto 0) > vhi_cpy(4 - 1 downto 0)) then
-            vhi_cpy(4-1 downto 0) := std_logic_vector(16-1-unsigned(ap_const_lv16_C(4-1 downto 0)));
+            vhi_cpy(4-1 downto 0) := std_logic_vector(16-1-unsigned(ap_const_lv16_B(4-1 downto 0)));
             vlo_cpy(4-1 downto 0) := std_logic_vector(16-1-unsigned(ap_const_lv16_0(4-1 downto 0)));
             for MultiPixStream2AXIvideo_U0_height_val4_i in 0 to 16-1 loop
                 v0_cpy(MultiPixStream2AXIvideo_U0_height_val4_i) := height_val4(16-1-MultiPixStream2AXIvideo_U0_height_val4_i);
@@ -481,7 +480,7 @@ begin
         res_mask := std_logic_vector(shift_left(unsigned(tmp_mask),to_integer(unsigned('0' & section(16-1 downto 0)))));
         res_mask := res_mask(16-2 downto 0) & '0';
         resvalue := res_value and not res_mask;
-        MultiPixStream2AXIvideo_U0_height_val4 <= resvalue(12-1 downto 0);
+        MultiPixStream2AXIvideo_U0_height_val4 <= resvalue(11-1 downto 0);
     end process;
 
     
@@ -497,10 +496,10 @@ begin
         vlo_cpy := (others => '0');
         vlo_cpy(4 - 1 downto 0) := ap_const_lv16_0(4 - 1 downto 0);
         vhi_cpy := (others => '0');
-        vhi_cpy(4 - 1 downto 0) := ap_const_lv16_D(4 - 1 downto 0);
+        vhi_cpy(4 - 1 downto 0) := ap_const_lv16_B(4 - 1 downto 0);
         v0_cpy := width_val7;
         if (vlo_cpy(4 - 1 downto 0) > vhi_cpy(4 - 1 downto 0)) then
-            vhi_cpy(4-1 downto 0) := std_logic_vector(16-1-unsigned(ap_const_lv16_D(4-1 downto 0)));
+            vhi_cpy(4-1 downto 0) := std_logic_vector(16-1-unsigned(ap_const_lv16_B(4-1 downto 0)));
             vlo_cpy(4-1 downto 0) := std_logic_vector(16-1-unsigned(ap_const_lv16_0(4-1 downto 0)));
             for MultiPixStream2AXIvideo_U0_width_val7_i in 0 to 16-1 loop
                 v0_cpy(MultiPixStream2AXIvideo_U0_width_val7_i) := width_val7(16-1-MultiPixStream2AXIvideo_U0_width_val7_i);
@@ -514,7 +513,7 @@ begin
         res_mask := std_logic_vector(shift_left(unsigned(tmp_mask),to_integer(unsigned('0' & section(16-1 downto 0)))));
         res_mask := res_mask(16-2 downto 0) & '0';
         resvalue := res_value and not res_mask;
-        MultiPixStream2AXIvideo_U0_width_val7 <= resvalue(13-1 downto 0);
+        MultiPixStream2AXIvideo_U0_width_val7 <= resvalue(11-1 downto 0);
     end process;
 
     ap_done <= MultiPixStream2AXIvideo_U0_ap_done;

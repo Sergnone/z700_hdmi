@@ -28,16 +28,14 @@ typedef struct {
   u16 FormatBits;
 } VideoFormats;
 
-VideoFormats ColorFormats[NUM_TEST_FORMATS] =
+VideoFormats ColorFormats=
 {
-  //memory format            stream format        bits per component
-  {XVIDC_CSF_MEM_RGB8,       XVIDC_CSF_RGB,       8},
+  .MemFormat = XVIDC_CSF_MEM_RGB8,
+  .StreamFormat = XVIDC_CSF_RGB,
+  .FormatBits = 8
 };
 
-XVidC_VideoMode TestModes[NUM_TEST_MODES] =
-{
-  XVIDC_VM_1080_60_P,
-};
+XVidC_VideoMode TestModes = XVIDC_VM_1080_60_P;
 
 //--------------------------------------------------------------------------------
 int VTC_Init(void)
@@ -117,8 +115,6 @@ void DriverInit(void)
  
 int main()
 {
-    int format = 0;
-    int index = 0;
     int pattern = 9;
     XVidC_ColorFormat Cfmt;
 
@@ -127,11 +123,9 @@ int main()
 
     VidStream.PixPerClk     = 1;
     VidStream.ColorDepth    = 8;
-    format = 0;
-    index = 0;
-    Cfmt = ColorFormats[format].MemFormat;
-    VidStream.ColorFormatId = ColorFormats[format].StreamFormat;
-    VidStream.VmId = TestModes[index];
+    Cfmt = ColorFormats.MemFormat;
+    VidStream.ColorFormatId = ColorFormats.StreamFormat;
+    VidStream.VmId = TestModes;
     TimingPtr = XVidC_GetTimingInfo(VidStream.VmId);
     VidStream.Timing = *TimingPtr;
     VidStream.FrameRate = XVidC_GetFrameRate(VidStream.VmId);
