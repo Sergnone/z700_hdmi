@@ -4,7 +4,7 @@
     {
       "type": "tcf-debug",
       "request": "launch",
-      "name": "main_app_hw_1",
+      "name": "xv_frmbufrd_example_app_hw_1",
       "debugType": "baremetal-zynq",
       "attachToRunningTargetOptions": {
         "targetSetupMode": "standalone",
@@ -28,7 +28,7 @@
           "psDevice": "Auto Detect"
         },
         "resetAPU": false,
-        "bitstreamFile": "${workspaceFolder}/main/_ide/bitstream/top_design_wrapper.bit",
+        "bitstreamFile": "${workspaceFolder}/xv_frmbufrd_example/_ide/bitstream/top_design_wrapper.bit",
         "zynqInitialization": {
           "isFsbl": false,
           "usingFSBL": {
@@ -39,14 +39,14 @@
           "usingPs7Init": {
             "runPs7Init": true,
             "runPs7PostInit": true,
-            "ps7InitTclFile": "${workspaceFolder}/main/_ide/psinit/dynclk.tcl"
+            "ps7InitTclFile": "${workspaceFolder}/xv_frmbufrd_example/_ide/psinit/dynclk.tcl"
           }
         },
         "downloadElf": [
           {
             "core": "ps7_cortexa9_0",
             "resetProcessor": true,
-            "elfFile": "${workspaceFolder}/main/build/main.elf",
+            "elfFile": "${workspaceFolder}/xv_frmbufrd_example/build/xv_frmbufrd_example.elf",
             "stopAtEntry": false,
             "isSelfRelocatingApp": false,
             "relativeAddress": ""

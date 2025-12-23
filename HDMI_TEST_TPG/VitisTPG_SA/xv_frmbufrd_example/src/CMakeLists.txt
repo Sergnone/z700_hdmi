@@ -6,7 +6,7 @@ include(${CMAKE_SOURCE_DIR}/Empty_applicationExample.cmake)
 # Include any additional CMake files here
 
 include(${CMAKE_CURRENT_SOURCE_DIR}/UserConfig.cmake)
-set(APP_NAME main)
+set(APP_NAME xv_frmbufrd_example)
 project(${APP_NAME})
 
 find_package(common)
