@@ -1,0 +1,9 @@
+# ninja log v5
+1	17	0	/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/VitisTPG_SA/main/build/CMakeFiles/print_build_info	411e6287edf2b309
+1	17	0	CMakeFiles/print_build_info	411e6287edf2b309
+68	117	1766515075926319601	main.elf	779a1b867e0afd2b
+17	67	1766515075892258489	CMakeFiles/main.elf.dir/main.c.obj	907d6b61d9433f7f
+0	15	0	CMakeFiles/print_build_info	411e6287edf2b309
+0	15	0	/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/VitisTPG_SA/main/build/CMakeFiles/print_build_info	411e6287edf2b309
+15	65	1766515177483211131	CMakeFiles/main.elf.dir/main.c.obj	907d6b61d9433f7f
+65	120	1766515177522050668	main.elf	779a1b867e0afd2b

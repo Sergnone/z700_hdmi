@@ -756,7 +756,7 @@ void resetIp(void)
  */
 int main(void)
 {
-  int Status, index, format;
+  int Status;
   int valid;
   int stride;
   int FailCount = 0;
@@ -787,14 +787,7 @@ int main(void)
   }
 
   /* Initialize IRQ */
-#ifndef SDT
-  Status = SetupInterrupts();
-  if (Status == XST_FAILURE) {
-    xil_printf("ERROR:: Interrupt Setup Failed\r\n");
-    xil_printf("ERROR:: Test could not be completed\r\n");
-    return(1);
-  }
-#else
+
   Status = XSetupInterruptSystem(&frmbufwr,&XVFrmbufWr_InterruptHandler,
 				       frmbufwr.FrmbufWr.Config.IntrId,
 				       frmbufwr.FrmbufWr.Config.IntrParent,
@@ -804,7 +797,7 @@ int main(void)
     xil_printf("ERROR:: Test could not be completed\r\n");
     return(1);
   }
-Status = XSetupInterruptSystem(&frmbufrd,&XVFrmbufRd_InterruptHandler,
+  Status = XSetupInterruptSystem(&frmbufrd,&XVFrmbufRd_InterruptHandler,
 				       frmbufrd.FrmbufRd.Config.IntrId,
 				       frmbufrd.FrmbufRd.Config.IntrParent,
 				       XINTERRUPT_DEFAULT_PRIORITY);
@@ -813,7 +806,7 @@ Status = XSetupInterruptSystem(&frmbufrd,&XVFrmbufRd_InterruptHandler,
     xil_printf("ERROR:: Test could not be completed\r\n");
     return(1);
   }
-#endif
+
 
   /* Enable exceptions. */
   Xil_ExceptionEnable();
@@ -907,6 +900,11 @@ Status = XSetupInterruptSystem(&frmbufrd,&XVFrmbufRd_InterruptHandler,
   XV_tpg_Start(&tpg);
   print("Successfully ran TPG application!\r\n");
   XV_tpg_Set_bckgndId(&tpg, pattern);
+
+  while(1)
+  {
+    usleep(10000);
+  }
 
   return(0);
 }

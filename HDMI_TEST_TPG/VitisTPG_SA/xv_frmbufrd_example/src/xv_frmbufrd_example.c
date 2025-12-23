@@ -545,7 +545,7 @@ static int CheckVidoutLock(void)
  */
 void *XVFrameBufferCallback(void *data)
 {
-	//xil_printf("\nFrame Buffer Read interrupt received.\r\n");
+	  xil_printf("\nFrame Buffer Read interrupt received.\r\n");
 	  XVFrmbufRd_Start(&frmbufrd);
 }
 
