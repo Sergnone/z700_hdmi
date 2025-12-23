@@ -19,8 +19,6 @@
 #define VGA_VDMA_ID 0
 #define DISP_VTC_ID 0
 
-XV_tpg tpg;
-
 typedef struct {
 	char label[64]; /* Label describing the resolution */
 	u32 width; /*Width of the active video frame*/
@@ -52,17 +50,17 @@ static const VideoMode VMODE_1080P = {
 	.freq = 148.5 //148.57 is close enough
 };
 
+XVtc vtc;
+XVtc_Timing vtcTiming;
+XV_tpg tpg;
+VideoMode vMode;
+XVtc_SourceSelect SourceSelect;
+
 int VTC_Init(void)
 {
 	int Status;
-	XVtc vtc;
 	XVtc_Config *vtcConfig;
-
-	XVtc_Timing vtcTiming;
-	XVtc_SourceSelect SourceSelect;
-	VideoMode vMode = VMODE_1080P;
-
-    
+	vMode = VMODE_1080P;
 	vtcConfig = XVtc_LookupConfig(DISP_VTC_ID);
 	if (NULL == vtcConfig)
     {
@@ -73,7 +71,6 @@ int VTC_Init(void)
     {
 		return (XST_FAILURE);
 	}
-
 	vtcTiming.HActiveVideo = vMode.width;
 	vtcTiming.HFrontPorch = vMode.hps - vMode.width;
 	vtcTiming.HSyncWidth = vMode.hpe - vMode.hps;
@@ -109,60 +106,43 @@ int VTC_Init(void)
 	SourceSelect.HTotalSrc = 1;
 
 	XVtc_SelfTest(&vtc);
-
 	XVtc_RegUpdateEnable(&vtc);
 	XVtc_SetGeneratorTiming(&vtc, &vtcTiming);
 	XVtc_SetSource(&vtc, &SourceSelect);
 	XVtc_EnableGenerator(&vtc);
-
 	return XST_SUCCESS;
 }
- 
-int main()
-{
-    int Status = 0;
-    int pattern = 9;
 
-    Status = VTC_Init();
-    
-    print("------Display Started--------------\r\n");
-    XV_tpg_Initialize(&tpg, 0);
- 
+int TPG_Init(void)
+{
+	XV_tpg_Initialize(&tpg, 0);
     XV_tpg_Set_width(&tpg, 1920);
     XV_tpg_Set_height(&tpg, 1080);
- 
     XV_tpg_Set_ZplateHorContDelta(&tpg, 2);
     XV_tpg_Set_ZplateHorContStart(&tpg, 2);
     XV_tpg_Set_ZplateVerContDelta(&tpg, 2);
     XV_tpg_Set_ZplateVerContStart(&tpg, 2);
- 
     XV_tpg_Set_motionSpeed(&tpg, 2);
     XV_tpg_Set_motionEn(&tpg, 1);
- 
     XV_tpg_EnableAutoRestart(&tpg);
-    XV_tpg_Start(&tpg);
+	return 0;
+}
 
-    
-    print("Successfully ran TPG application\r\n");
-
-
-    XV_tpg_Set_bckgndId(&tpg, pattern);
-    
-    /*
-    while(true)
-    {
-        XV_tpg_Set_bckgndId(&tpg, pattern);
+void DriverInit(void)
+{
+	VTC_Init();
+	TPG_Init();
+}
  
-        if(++pattern > 19)
-        {
-            pattern = 1;
-        }
+int main()
+{
+    int pattern = 9;
 
-        usleep(5000000);
-
-        print("Change pattern\r\n");
-    }
-    */
+	print("-------------------------------------\r\n");
+    DriverInit();
+    XV_tpg_Start(&tpg);
+	print("Successfully ran TPG application\r\n");
+    XV_tpg_Set_bckgndId(&tpg, pattern);
 
     return 0;
 }

@@ -1,0 +1,9 @@
+# ninja log v5
+1	17	0	/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/VitisTPG_SA/xv_frmbufrd_example/build/CMakeFiles/print_build_info	d42ef1aae0254adb
+17	53	1766496382525130705	CMakeFiles/xv_frmbufrd_example.elf.dir/platform.c.obj	2059488b5b0a5c89
+1	17	0	CMakeFiles/print_build_info	d42ef1aae0254adb
+0	17	0	CMakeFiles/print_build_info	d42ef1aae0254adb
+0	17	0	/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/VitisTPG_SA/xv_frmbufrd_example/build/CMakeFiles/print_build_info	d42ef1aae0254adb
+17	54	1766496414195083842	CMakeFiles/xv_frmbufrd_example.elf.dir/platform.c.obj	2059488b5b0a5c89
+17	75	1766496414216179747	CMakeFiles/xv_frmbufrd_example.elf.dir/xv_frmbufrd_example.c.obj	4ce13c3eb731e349
+75	125	1766496414250523336	xv_frmbufrd_example.elf	53bfc0bc9d466677
