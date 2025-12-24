@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'AXIMMvideo2Bytes'" level="0">
-<item name = "Date">Wed Dec 24 18:11:31 2025
+<item name = "Date">Wed Dec 24 20:02:10 2025
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">7169, 3354481, 48.391 us, 22.643 ms, 7169, 3354481, no</column>
+<column name="">7169, 1677241, 48.391 us, 11.321 ms, 7169, 1677241, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop_AXIMMvideo2Bytes_1plane">7168, 3354480, 112 ~ 1553, -, -, 64 ~ 2160, no</column>
+<column name="- loop_AXIMMvideo2Bytes_1plane">7168, 1677240, 112 ~ 1553, -, -, 64 ~ 1080, no</column>
 </table>
 </item>
 </section>

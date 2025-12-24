@@ -5,11 +5,11 @@ XV_frmbufrd_Config XV_frmbufrd_ConfigTable[] __attribute__ ((section (".drvcfg_s
 	{
 		"xlnx,v-frmbuf-rd-3.0", /* compatible */
 		0x43c30000, /* reg */
-		0x2, /* xlnx,samples-per-clock */
-		0xf00, /* xlnx,max-cols */
-		0x870, /* xlnx,max-rows */
+		0x1, /* xlnx,samples-per-clock */
+		0x780, /* xlnx,max-cols */
+		0x438, /* xlnx,max-rows */
 		0x8, /* xlnx,max-data-width */
-		0x80, /* xlnx,aximm-data-width */
+		0x40, /* xlnx,aximm-data-width */
 		0x20, /* xlnx,aximm-addr-width */
 		0x0, /* xlnx,has-rgbx8 */
 		0x0, /* xlnx,has-yuvx8 */

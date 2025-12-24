@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'reg_unsigned_short_s'
 ================================================================
-* Date:           Wed Dec 24 18:11:32 2025
+* Date:           Wed Dec 24 20:02:11 2025
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -54,9 +54,9 @@
 |Instance         |        -|    -|       -|      -|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       -|      -|    -|
-|Register         |        -|    -|      14|      -|    -|
+|Register         |        -|    -|      13|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|      14|      2|    0|
+|Total            |        0|    0|      13|      2|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
@@ -94,9 +94,9 @@
     +-------------------------+----+----+-----+-----------+
     |ap_CS_fsm                |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
-    |ap_port_reg_d            |  12|   0|   12|          0|
+    |ap_port_reg_d            |  11|   0|   11|          0|
     +-------------------------+----+----+-----+-----------+
-    |Total                    |  14|   0|   14|          0|
+    |Total                    |  13|   0|   13|          0|
     +-------------------------+----+----+-----+-----------+
 
 
@@ -115,8 +115,8 @@
 |ap_idle    |  out|    1|  ap_ctrl_hs|  reg<unsigned short>|  return value|
 |ap_ready   |  out|    1|  ap_ctrl_hs|  reg<unsigned short>|  return value|
 |ap_ce      |   in|    1|  ap_ctrl_hs|  reg<unsigned short>|  return value|
-|ap_return  |  out|   12|  ap_ctrl_hs|  reg<unsigned short>|  return value|
-|d          |   in|   12|     ap_none|                    d|        scalar|
+|ap_return  |  out|   11|  ap_ctrl_hs|  reg<unsigned short>|  return value|
+|d          |   in|   11|     ap_none|                    d|        scalar|
 +-----------+-----+-----+------------+---------------------+--------------+
 
 ============================================================
@@ -162,11 +162,11 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 0.00>
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 3 [1/1] (0.00ns)   --->   "%d_read = read i12 @_ssdm_op_Read.ap_auto.i12, i12 %d"   --->   Operation 3 'read' 'd_read' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 4 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i12 %d, i1 1, void "   --->   Operation 4 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 3 [1/1] (0.00ns)   --->   "%d_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %d"   --->   Operation 3 'read' 'd_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 4 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i11 %d, i1 1, void "   --->   Operation 4 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specpipeline_ln224 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_4" [/tools/xilinx/2025.2/Vitis/common/technology/autopilot/utils/x_hls_utils.h:224]   --->   Operation 5 'specpipeline' 'specpipeline_ln224' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%speclatency_ln225 = speclatency void @_ssdm_op_SpecLatency, i64 1, i64 1, void @empty_4" [/tools/xilinx/2025.2/Vitis/common/technology/autopilot/utils/x_hls_utils.h:225]   --->   Operation 6 'speclatency' 'speclatency_ln225' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%ret_ln227 = ret i12 %d_read" [/tools/xilinx/2025.2/Vitis/common/technology/autopilot/utils/x_hls_utils.h:227]   --->   Operation 7 'ret' 'ret_ln227' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%ret_ln227 = ret i11 %d_read" [/tools/xilinx/2025.2/Vitis/common/technology/autopilot/utils/x_hls_utils.h:227]   --->   Operation 7 'ret' 'ret_ln227' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -211,7 +211,7 @@ ret_ln227             (ret              ) [ 000]
 <pin id="3" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i12"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i11"/></StgValue>
 </bind>
 </comp>
 
@@ -307,9 +307,9 @@ ret_ln227             (ret              ) [ 000]
 
 <comp id="24" class="1004" name="d_read_read_fu_24">
 <pin_list>
-<pin id="25" dir="0" index="0" bw="12" slack="0"/>
-<pin id="26" dir="0" index="1" bw="12" slack="0"/>
-<pin id="27" dir="1" index="2" bw="12" slack="2147483647"/>
+<pin id="25" dir="0" index="0" bw="11" slack="0"/>
+<pin id="26" dir="0" index="1" bw="11" slack="0"/>
+<pin id="27" dir="1" index="2" bw="11" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>

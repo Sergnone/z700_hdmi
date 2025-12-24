@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'FrmbufRdHlsDataFlow'" level="0">
-<item name = "Date">Wed Dec 24 18:11:32 2025
+<item name = "Date">Wed Dec 24 20:02:10 2025
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">7169, 8305311, 48.391 us, 56.061 ms, 7170, 8305216, dataflow</column>
+<column name="">7169, 4152711, 48.391 us, 28.031 ms, 7170, 4152616, dataflow</column>
 </table>
 </item>
 <item name = "Detail">

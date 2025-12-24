@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'reg_unsigned_short_s'" level="0">
-<item name = "Date">Wed Dec 24 18:11:32 2025
+<item name = "Date">Wed Dec 24 20:02:11 2025
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -52,7 +52,7 @@
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, -, -</column>
-<column name="Register">-, -, 14, -, -</column>
+<column name="Register">-, -, 13, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
@@ -88,7 +88,7 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="ap_port_reg_d">12, 0, 12, 0</column>
+<column name="ap_port_reg_d">11, 0, 11, 0</column>
 </table>
 </item>
 </section>
@@ -105,8 +105,8 @@
 <column name="ap_idle">out, 1, ap_ctrl_hs, reg&lt;unsigned short&gt;, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, reg&lt;unsigned short&gt;, return value</column>
 <column name="ap_ce">in, 1, ap_ctrl_hs, reg&lt;unsigned short&gt;, return value</column>
-<column name="ap_return">out, 12, ap_ctrl_hs, reg&lt;unsigned short&gt;, return value</column>
-<column name="d">in, 12, ap_none, d, scalar</column>
+<column name="ap_return">out, 11, ap_ctrl_hs, reg&lt;unsigned short&gt;, return value</column>
+<column name="d">in, 11, ap_none, d, scalar</column>
 </table>
 </item>
 </section>

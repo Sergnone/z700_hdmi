@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="top_design_v_frmbuf_rd_0_0_v_frmbuf_rd,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-2,HLS_INPUT_CLOCK=6.750000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=4.927500,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=16,HLS_SYN_DSP=0,HLS_SYN_FF=2777,HLS_SYN_LUT=3415,HLS_VERSION=2025_2}" *)
+(* CORE_GENERATION_INFO="top_design_v_frmbuf_rd_0_0_v_frmbuf_rd,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-2,HLS_INPUT_CLOCK=6.750000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=4.927500,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=8,HLS_SYN_DSP=0,HLS_SYN_FF=2374,HLS_SYN_LUT=3248,HLS_VERSION=2025_2}" *)
 
 (* DowngradeIPIdentifiedWarnings="yes" *)
 module top_design_v_frmbuf_rd_0_0_v_frmbuf_rd (
@@ -97,7 +97,7 @@ parameter    C_S_AXI_CTRL_ADDR_WIDTH = 7;
 parameter    C_S_AXI_DATA_WIDTH = 32;
 parameter    C_M_AXI_MM_VIDEO_ID_WIDTH = 1;
 parameter    C_M_AXI_MM_VIDEO_ADDR_WIDTH = 32;
-parameter    C_M_AXI_MM_VIDEO_DATA_WIDTH = 128;
+parameter    C_M_AXI_MM_VIDEO_DATA_WIDTH = 64;
 parameter    C_M_AXI_MM_VIDEO_AWUSER_WIDTH = 1;
 parameter    C_M_AXI_MM_VIDEO_ARUSER_WIDTH = 1;
 parameter    C_M_AXI_MM_VIDEO_WUSER_WIDTH = 1;
@@ -110,7 +110,7 @@ parameter    C_M_AXI_DATA_WIDTH = 32;
 
 parameter C_S_AXI_CTRL_WSTRB_WIDTH = (32 / 8);
 parameter C_S_AXI_WSTRB_WIDTH = (32 / 8);
-parameter C_M_AXI_MM_VIDEO_WSTRB_WIDTH = (128 / 8);
+parameter C_M_AXI_MM_VIDEO_WSTRB_WIDTH = (64 / 8);
 parameter C_M_AXI_WSTRB_WIDTH = (32 / 8);
 
 input   ap_clk;
@@ -160,11 +160,11 @@ output   m_axi_mm_video_BREADY;
 input  [1:0] m_axi_mm_video_BRESP;
 input  [C_M_AXI_MM_VIDEO_ID_WIDTH - 1:0] m_axi_mm_video_BID;
 input  [C_M_AXI_MM_VIDEO_BUSER_WIDTH - 1:0] m_axi_mm_video_BUSER;
-output  [47:0] m_axis_video_TDATA;
+output  [23:0] m_axis_video_TDATA;
 output   m_axis_video_TVALID;
 input   m_axis_video_TREADY;
-output  [5:0] m_axis_video_TKEEP;
-output  [5:0] m_axis_video_TSTRB;
+output  [2:0] m_axis_video_TKEEP;
+output  [2:0] m_axis_video_TSTRB;
 output  [0:0] m_axis_video_TUSER;
 output  [0:0] m_axis_video_TLAST;
 output  [0:0] m_axis_video_TID;
@@ -206,68 +206,68 @@ wire   [5:0] BYTES_PER_PIXEL_address0;
 wire   [2:0] BYTES_PER_PIXEL_q0;
 wire   [5:0] MEMORY2LIVE_address0;
 wire   [2:0] MEMORY2LIVE_q0;
-reg   [31:0] frm_buffer_read_reg_223;
-reg   [15:0] stride_read_reg_228;
-wire  signed [14:0] trunc_ln135_fu_193_p1;
-reg  signed [14:0] trunc_ln135_reg_233;
-wire   [5:0] trunc_ln135_1_fu_197_p1;
-reg   [5:0] trunc_ln135_1_reg_238;
-wire   [11:0] trunc_ln135_2_fu_201_p1;
-reg   [11:0] trunc_ln135_2_reg_243;
-wire   [11:0] trunc_ln135_3_fu_205_p1;
-reg   [11:0] trunc_ln135_3_reg_248;
-reg   [2:0] BYTES_PER_PIXEL_load_reg_263;
+reg   [31:0] frm_buffer_read_reg_225;
+reg   [15:0] stride_read_reg_230;
+wire  signed [13:0] trunc_ln135_fu_195_p1;
+reg  signed [13:0] trunc_ln135_reg_235;
+wire   [5:0] trunc_ln135_1_fu_199_p1;
+reg   [5:0] trunc_ln135_1_reg_240;
+wire   [10:0] trunc_ln135_2_fu_203_p1;
+reg   [10:0] trunc_ln135_2_reg_245;
+wire   [10:0] trunc_ln135_3_fu_207_p1;
+reg   [10:0] trunc_ln135_3_reg_250;
+reg   [2:0] BYTES_PER_PIXEL_load_reg_265;
 wire    ap_CS_fsm_state2;
-reg   [2:0] colorFormat_reg_268;
-wire   [14:0] WidthInBytes_fu_218_p2;
-reg   [14:0] WidthInBytes_reg_273;
+reg   [2:0] colorFormat_reg_270;
+wire   [13:0] WidthInBytes_fu_220_p2;
+reg   [13:0] WidthInBytes_reg_275;
 wire    ap_CS_fsm_state3;
-wire   [47:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TDATA;
-wire   [5:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TKEEP;
-wire   [5:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TSTRB;
-wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TUSER;
-wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TLAST;
-wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TID;
-wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TDEST;
-wire    grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWVALID;
-wire   [31:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWADDR;
-wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWID;
-wire   [31:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWLEN;
-wire   [2:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWSIZE;
-wire   [1:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWBURST;
-wire   [1:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWLOCK;
-wire   [3:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWCACHE;
-wire   [2:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWPROT;
-wire   [3:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWQOS;
-wire   [3:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWREGION;
-wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWUSER;
-wire    grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_WVALID;
-wire   [127:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_WDATA;
-wire   [15:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_WSTRB;
-wire    grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_WLAST;
-wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_WID;
-wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_WUSER;
-wire    grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARVALID;
-wire   [31:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARADDR;
-wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARID;
-wire   [31:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARLEN;
-wire   [2:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARSIZE;
-wire   [1:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARBURST;
-wire   [1:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARLOCK;
-wire   [3:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARCACHE;
-wire   [2:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARPROT;
-wire   [3:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARQOS;
-wire   [3:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARREGION;
-wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARUSER;
-wire    grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_RREADY;
-wire    grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_BREADY;
-wire    grp_FrmbufRdHlsDataFlow_fu_164_ap_start;
-wire    grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID;
-wire    grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TREADY;
-wire    grp_FrmbufRdHlsDataFlow_fu_164_ap_done;
-wire    grp_FrmbufRdHlsDataFlow_fu_164_ap_ready;
-wire    grp_FrmbufRdHlsDataFlow_fu_164_ap_idle;
-reg    grp_FrmbufRdHlsDataFlow_fu_164_ap_continue;
+wire   [23:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TDATA;
+wire   [2:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TKEEP;
+wire   [2:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TSTRB;
+wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TUSER;
+wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TLAST;
+wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TID;
+wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TDEST;
+wire    grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWVALID;
+wire   [31:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWADDR;
+wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWID;
+wire   [31:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWLEN;
+wire   [2:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWSIZE;
+wire   [1:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWBURST;
+wire   [1:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWLOCK;
+wire   [3:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWCACHE;
+wire   [2:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWPROT;
+wire   [3:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWQOS;
+wire   [3:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWREGION;
+wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWUSER;
+wire    grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_WVALID;
+wire   [63:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_WDATA;
+wire   [7:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_WSTRB;
+wire    grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_WLAST;
+wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_WID;
+wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_WUSER;
+wire    grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARVALID;
+wire   [31:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARADDR;
+wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARID;
+wire   [31:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARLEN;
+wire   [2:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARSIZE;
+wire   [1:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARBURST;
+wire   [1:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARLOCK;
+wire   [3:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARCACHE;
+wire   [2:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARPROT;
+wire   [3:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARQOS;
+wire   [3:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARREGION;
+wire   [0:0] grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARUSER;
+wire    grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_RREADY;
+wire    grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_BREADY;
+wire    grp_FrmbufRdHlsDataFlow_fu_166_ap_start;
+wire    grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID;
+wire    grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TREADY;
+wire    grp_FrmbufRdHlsDataFlow_fu_166_ap_done;
+wire    grp_FrmbufRdHlsDataFlow_fu_166_ap_ready;
+wire    grp_FrmbufRdHlsDataFlow_fu_166_ap_idle;
+reg    grp_FrmbufRdHlsDataFlow_fu_166_ap_continue;
 wire    flush;
 reg    s_axi_CTRL_flush_done;
 wire    m_axi_mm_video_flush_done;
@@ -277,27 +277,27 @@ reg    mm_video_0_ARVALID;
 wire    mm_video_0_ARREADY;
 wire    mm_video_0_RVALID;
 reg    mm_video_0_RREADY;
-wire   [127:0] mm_video_0_RDATA;
+wire   [63:0] mm_video_0_RDATA;
 wire   [6:0] mm_video_0_RFIFONUM;
 wire    mm_video_0_BVALID;
-reg    grp_FrmbufRdHlsDataFlow_fu_164_ap_start_reg;
+reg    grp_FrmbufRdHlsDataFlow_fu_166_ap_start_reg;
 wire    ap_CS_fsm_state4;
 wire    ap_CS_fsm_state5;
-reg    ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_164_ap_ready;
-reg    ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_164_ap_done;
+reg    ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_166_ap_ready;
+reg    ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_166_ap_done;
 reg    ap_block_state5_on_subcall_done;
-wire    ap_sync_grp_FrmbufRdHlsDataFlow_fu_164_ap_ready;
-reg   [47:0] m_axis_video_TDATA_reg;
-reg   [5:0] m_axis_video_TKEEP_reg;
-reg   [5:0] m_axis_video_TSTRB_reg;
+wire    ap_sync_grp_FrmbufRdHlsDataFlow_fu_166_ap_ready;
+reg   [23:0] m_axis_video_TDATA_reg;
+reg   [2:0] m_axis_video_TKEEP_reg;
+reg   [2:0] m_axis_video_TSTRB_reg;
 reg   [0:0] m_axis_video_TUSER_reg;
 reg   [0:0] m_axis_video_TLAST_reg;
 reg   [0:0] m_axis_video_TID_reg;
 reg   [0:0] m_axis_video_TDEST_reg;
-wire   [31:0] zext_ln255_fu_209_p1;
+wire   [31:0] zext_ln255_fu_211_p1;
 reg    BYTES_PER_PIXEL_ce0_local;
 reg    MEMORY2LIVE_ce0_local;
-wire   [2:0] WidthInBytes_fu_218_p1;
+wire   [2:0] WidthInBytes_fu_220_p1;
 wire    ap_CS_fsm_state6;
 wire    regslice_both_m_axis_video_V_data_V_U_apdone_blk;
 reg   [5:0] ap_NS_fsm;
@@ -307,16 +307,16 @@ wire    ap_ST_fsm_state3_blk;
 wire    ap_ST_fsm_state4_blk;
 reg    ap_ST_fsm_state5_blk;
 reg    ap_ST_fsm_state6_blk;
-reg   [47:0] m_axis_video_TDATA_int_regslice;
+reg   [23:0] m_axis_video_TDATA_int_regslice;
 wire    m_axis_video_TVALID_int_regslice;
 wire    m_axis_video_TREADY_int_regslice;
 wire    regslice_both_m_axis_video_V_data_V_U_vld_out;
 wire    regslice_both_m_axis_video_V_keep_V_U_apdone_blk;
-reg   [5:0] m_axis_video_TKEEP_int_regslice;
+reg   [2:0] m_axis_video_TKEEP_int_regslice;
 wire    regslice_both_m_axis_video_V_keep_V_U_ack_in_dummy;
 wire    regslice_both_m_axis_video_V_keep_V_U_vld_out;
 wire    regslice_both_m_axis_video_V_strb_V_U_apdone_blk;
-reg   [5:0] m_axis_video_TSTRB_int_regslice;
+reg   [2:0] m_axis_video_TSTRB_int_regslice;
 wire    regslice_both_m_axis_video_V_strb_V_U_ack_in_dummy;
 wire    regslice_both_m_axis_video_V_strb_V_U_vld_out;
 wire    regslice_both_m_axis_video_V_user_V_U_apdone_blk;
@@ -335,28 +335,28 @@ wire    regslice_both_m_axis_video_V_dest_V_U_apdone_blk;
 reg   [0:0] m_axis_video_TDEST_int_regslice;
 wire    regslice_both_m_axis_video_V_dest_V_U_ack_in_dummy;
 wire    regslice_both_m_axis_video_V_dest_V_U_vld_out;
-wire   [14:0] WidthInBytes_fu_218_p10;
+wire   [13:0] WidthInBytes_fu_220_p10;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 6'd1;
-#0 frm_buffer_read_reg_223 = 32'd0;
-#0 stride_read_reg_228 = 16'd0;
-#0 trunc_ln135_reg_233 = 15'd0;
-#0 trunc_ln135_1_reg_238 = 6'd0;
-#0 trunc_ln135_2_reg_243 = 12'd0;
-#0 trunc_ln135_3_reg_248 = 12'd0;
-#0 BYTES_PER_PIXEL_load_reg_263 = 3'd0;
-#0 colorFormat_reg_268 = 3'd0;
-#0 WidthInBytes_reg_273 = 15'd0;
+#0 frm_buffer_read_reg_225 = 32'd0;
+#0 stride_read_reg_230 = 16'd0;
+#0 trunc_ln135_reg_235 = 14'd0;
+#0 trunc_ln135_1_reg_240 = 6'd0;
+#0 trunc_ln135_2_reg_245 = 11'd0;
+#0 trunc_ln135_3_reg_250 = 11'd0;
+#0 BYTES_PER_PIXEL_load_reg_265 = 3'd0;
+#0 colorFormat_reg_270 = 3'd0;
+#0 WidthInBytes_reg_275 = 14'd0;
 #0 s_axi_CTRL_flush_done = 1'b0;
-#0 grp_FrmbufRdHlsDataFlow_fu_164_ap_start_reg = 1'b0;
-#0 ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_164_ap_ready = 1'b0;
-#0 ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_164_ap_done = 1'b0;
-#0 m_axis_video_TDATA_reg = 48'd0;
-#0 m_axis_video_TKEEP_reg = 6'd0;
-#0 m_axis_video_TSTRB_reg = 6'd0;
+#0 grp_FrmbufRdHlsDataFlow_fu_166_ap_start_reg = 1'b0;
+#0 ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_166_ap_ready = 1'b0;
+#0 ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_166_ap_done = 1'b0;
+#0 m_axis_video_TDATA_reg = 24'd0;
+#0 m_axis_video_TKEEP_reg = 3'd0;
+#0 m_axis_video_TSTRB_reg = 3'd0;
 #0 m_axis_video_TUSER_reg = 1'd0;
 #0 m_axis_video_TLAST_reg = 1'd0;
 #0 m_axis_video_TID_reg = 1'd0;
@@ -387,49 +387,49 @@ MEMORY2LIVE_U(
     .q0(MEMORY2LIVE_q0)
 );
 
-top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow grp_FrmbufRdHlsDataFlow_fu_164(
-    .m_axis_video_TDATA(grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TDATA),
-    .m_axis_video_TKEEP(grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TKEEP),
-    .m_axis_video_TSTRB(grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TSTRB),
-    .m_axis_video_TUSER(grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TUSER),
-    .m_axis_video_TLAST(grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TLAST),
-    .m_axis_video_TID(grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TID),
-    .m_axis_video_TDEST(grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TDEST),
-    .m_axi_mm_video_0_AWVALID(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWVALID),
+top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow grp_FrmbufRdHlsDataFlow_fu_166(
+    .m_axis_video_TDATA(grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TDATA),
+    .m_axis_video_TKEEP(grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TKEEP),
+    .m_axis_video_TSTRB(grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TSTRB),
+    .m_axis_video_TUSER(grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TUSER),
+    .m_axis_video_TLAST(grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TLAST),
+    .m_axis_video_TID(grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TID),
+    .m_axis_video_TDEST(grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TDEST),
+    .m_axi_mm_video_0_AWVALID(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWVALID),
     .m_axi_mm_video_0_AWREADY(1'b0),
-    .m_axi_mm_video_0_AWADDR(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWADDR),
-    .m_axi_mm_video_0_AWID(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWID),
-    .m_axi_mm_video_0_AWLEN(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWLEN),
-    .m_axi_mm_video_0_AWSIZE(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWSIZE),
-    .m_axi_mm_video_0_AWBURST(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWBURST),
-    .m_axi_mm_video_0_AWLOCK(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWLOCK),
-    .m_axi_mm_video_0_AWCACHE(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWCACHE),
-    .m_axi_mm_video_0_AWPROT(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWPROT),
-    .m_axi_mm_video_0_AWQOS(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWQOS),
-    .m_axi_mm_video_0_AWREGION(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWREGION),
-    .m_axi_mm_video_0_AWUSER(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_AWUSER),
-    .m_axi_mm_video_0_WVALID(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_WVALID),
+    .m_axi_mm_video_0_AWADDR(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWADDR),
+    .m_axi_mm_video_0_AWID(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWID),
+    .m_axi_mm_video_0_AWLEN(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWLEN),
+    .m_axi_mm_video_0_AWSIZE(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWSIZE),
+    .m_axi_mm_video_0_AWBURST(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWBURST),
+    .m_axi_mm_video_0_AWLOCK(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWLOCK),
+    .m_axi_mm_video_0_AWCACHE(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWCACHE),
+    .m_axi_mm_video_0_AWPROT(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWPROT),
+    .m_axi_mm_video_0_AWQOS(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWQOS),
+    .m_axi_mm_video_0_AWREGION(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWREGION),
+    .m_axi_mm_video_0_AWUSER(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_AWUSER),
+    .m_axi_mm_video_0_WVALID(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_WVALID),
     .m_axi_mm_video_0_WREADY(1'b0),
-    .m_axi_mm_video_0_WDATA(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_WDATA),
-    .m_axi_mm_video_0_WSTRB(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_WSTRB),
-    .m_axi_mm_video_0_WLAST(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_WLAST),
-    .m_axi_mm_video_0_WID(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_WID),
-    .m_axi_mm_video_0_WUSER(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_WUSER),
-    .m_axi_mm_video_0_ARVALID(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARVALID),
+    .m_axi_mm_video_0_WDATA(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_WDATA),
+    .m_axi_mm_video_0_WSTRB(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_WSTRB),
+    .m_axi_mm_video_0_WLAST(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_WLAST),
+    .m_axi_mm_video_0_WID(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_WID),
+    .m_axi_mm_video_0_WUSER(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_WUSER),
+    .m_axi_mm_video_0_ARVALID(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARVALID),
     .m_axi_mm_video_0_ARREADY(mm_video_0_ARREADY),
-    .m_axi_mm_video_0_ARADDR(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARADDR),
-    .m_axi_mm_video_0_ARID(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARID),
-    .m_axi_mm_video_0_ARLEN(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARLEN),
-    .m_axi_mm_video_0_ARSIZE(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARSIZE),
-    .m_axi_mm_video_0_ARBURST(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARBURST),
-    .m_axi_mm_video_0_ARLOCK(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARLOCK),
-    .m_axi_mm_video_0_ARCACHE(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARCACHE),
-    .m_axi_mm_video_0_ARPROT(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARPROT),
-    .m_axi_mm_video_0_ARQOS(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARQOS),
-    .m_axi_mm_video_0_ARREGION(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARREGION),
-    .m_axi_mm_video_0_ARUSER(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARUSER),
+    .m_axi_mm_video_0_ARADDR(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARADDR),
+    .m_axi_mm_video_0_ARID(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARID),
+    .m_axi_mm_video_0_ARLEN(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARLEN),
+    .m_axi_mm_video_0_ARSIZE(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARSIZE),
+    .m_axi_mm_video_0_ARBURST(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARBURST),
+    .m_axi_mm_video_0_ARLOCK(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARLOCK),
+    .m_axi_mm_video_0_ARCACHE(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARCACHE),
+    .m_axi_mm_video_0_ARPROT(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARPROT),
+    .m_axi_mm_video_0_ARQOS(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARQOS),
+    .m_axi_mm_video_0_ARREGION(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARREGION),
+    .m_axi_mm_video_0_ARUSER(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARUSER),
     .m_axi_mm_video_0_RVALID(mm_video_0_RVALID),
-    .m_axi_mm_video_0_RREADY(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_RREADY),
+    .m_axi_mm_video_0_RREADY(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_RREADY),
     .m_axi_mm_video_0_RDATA(mm_video_0_RDATA),
     .m_axi_mm_video_0_RLAST(1'b0),
     .m_axi_mm_video_0_RID(1'd0),
@@ -437,33 +437,33 @@ top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow grp_FrmbufRdHlsDataFlow_fu_164(
     .m_axi_mm_video_0_RUSER(1'd0),
     .m_axi_mm_video_0_RRESP(2'd0),
     .m_axi_mm_video_0_BVALID(1'b0),
-    .m_axi_mm_video_0_BREADY(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_BREADY),
+    .m_axi_mm_video_0_BREADY(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_BREADY),
     .m_axi_mm_video_0_BRESP(2'd0),
     .m_axi_mm_video_0_BID(1'd0),
     .m_axi_mm_video_0_BUSER(1'd0),
-    .HwReg_frm_buffer(frm_buffer_read_reg_223),
-    .width_val2(trunc_ln135_2_reg_243),
-    .height_val6(trunc_ln135_3_reg_248),
-    .stride_val7(stride_read_reg_228),
-    .video_format_val8(trunc_ln135_1_reg_238),
-    .WidthInBytes_val10(WidthInBytes_reg_273),
-    .colorFormat_val11(colorFormat_reg_268),
+    .HwReg_frm_buffer(frm_buffer_read_reg_225),
+    .width_val2(trunc_ln135_2_reg_245),
+    .height_val6(trunc_ln135_3_reg_250),
+    .stride_val7(stride_read_reg_230),
+    .video_format_val8(trunc_ln135_1_reg_240),
+    .WidthInBytes_val10(WidthInBytes_reg_275),
+    .colorFormat_val11(colorFormat_reg_270),
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .HwReg_frm_buffer_ap_vld(1'b1),
     .height_val6_ap_vld(1'b1),
     .WidthInBytes_val10_ap_vld(1'b1),
     .stride_val7_ap_vld(1'b1),
-    .ap_start(grp_FrmbufRdHlsDataFlow_fu_164_ap_start),
+    .ap_start(grp_FrmbufRdHlsDataFlow_fu_166_ap_start),
     .width_val2_ap_vld(1'b1),
     .video_format_val8_ap_vld(1'b1),
-    .m_axis_video_TVALID(grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID),
-    .m_axis_video_TREADY(grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TREADY),
+    .m_axis_video_TVALID(grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID),
+    .m_axis_video_TREADY(grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TREADY),
     .colorFormat_val11_ap_vld(1'b1),
-    .ap_done(grp_FrmbufRdHlsDataFlow_fu_164_ap_done),
-    .ap_ready(grp_FrmbufRdHlsDataFlow_fu_164_ap_ready),
-    .ap_idle(grp_FrmbufRdHlsDataFlow_fu_164_ap_idle),
-    .ap_continue(grp_FrmbufRdHlsDataFlow_fu_164_ap_continue)
+    .ap_done(grp_FrmbufRdHlsDataFlow_fu_166_ap_done),
+    .ap_ready(grp_FrmbufRdHlsDataFlow_fu_166_ap_ready),
+    .ap_idle(grp_FrmbufRdHlsDataFlow_fu_166_ap_idle),
+    .ap_continue(grp_FrmbufRdHlsDataFlow_fu_166_ap_continue)
 );
 
 top_design_v_frmbuf_rd_0_0_CTRL_s_axi #(
@@ -525,7 +525,7 @@ top_design_v_frmbuf_rd_0_0_mm_video_m_axi #(
     .CH0_NUM_READ_OUTSTANDING( 4 ),
     .CH0_NUM_WRITE_OUTSTANDING( 16 ),
     .CH0_USER_RFIFONUM_WIDTH( 7 ),
-    .CH0_USER_DW( 128 ),
+    .CH0_USER_DW( 64 ),
     .CH0_USER_AW( 32 ),
     .NUM_READ_OUTSTANDING( 4 ),
     .NUM_WRITE_OUTSTANDING( 0 ))
@@ -582,8 +582,8 @@ mm_video_m_axi_U(
     .flush_done(m_axi_mm_video_flush_done),
     .I_CH0_ARVALID(mm_video_0_ARVALID),
     .I_CH0_ARREADY(mm_video_0_ARREADY),
-    .I_CH0_ARADDR(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARADDR),
-    .I_CH0_ARLEN(grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARLEN),
+    .I_CH0_ARADDR(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARADDR),
+    .I_CH0_ARLEN(grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARLEN),
     .I_CH0_RVALID(mm_video_0_RVALID),
     .I_CH0_RREADY(mm_video_0_RREADY),
     .I_CH0_RDATA(mm_video_0_RDATA),
@@ -594,31 +594,31 @@ mm_video_m_axi_U(
     .I_CH0_AWLEN(32'd0),
     .I_CH0_WVALID(1'b0),
     .I_CH0_WREADY(mm_video_0_WREADY),
-    .I_CH0_WDATA(128'd0),
-    .I_CH0_WSTRB(16'd0),
+    .I_CH0_WDATA(64'd0),
+    .I_CH0_WSTRB(8'd0),
     .I_CH0_BVALID(mm_video_0_BVALID),
     .I_CH0_BREADY(1'b0)
 );
 
-top_design_v_frmbuf_rd_0_0_mul_15s_3ns_15_1_1 #(
+top_design_v_frmbuf_rd_0_0_mul_14s_3ns_14_1_1 #(
     .ID( 1 ),
     .NUM_STAGE( 1 ),
-    .din0_WIDTH( 15 ),
+    .din0_WIDTH( 14 ),
     .din1_WIDTH( 3 ),
-    .dout_WIDTH( 15 ))
-mul_15s_3ns_15_1_1_U98(
-    .din0(trunc_ln135_reg_233),
-    .din1(WidthInBytes_fu_218_p1),
-    .dout(WidthInBytes_fu_218_p2)
+    .dout_WIDTH( 14 ))
+mul_14s_3ns_14_1_1_U88(
+    .din0(trunc_ln135_reg_235),
+    .din1(WidthInBytes_fu_220_p1),
+    .dout(WidthInBytes_fu_220_p2)
 );
 
 top_design_v_frmbuf_rd_0_0_regslice_both #(
-    .DataWidth( 48 ))
+    .DataWidth( 24 ))
 regslice_both_m_axis_video_V_data_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .data_in(m_axis_video_TDATA_int_regslice),
-    .vld_in(grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID),
+    .vld_in(grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID),
     .ack_in(m_axis_video_TREADY_int_regslice),
     .data_out(m_axis_video_TDATA),
     .vld_out(regslice_both_m_axis_video_V_data_V_U_vld_out),
@@ -627,12 +627,12 @@ regslice_both_m_axis_video_V_data_V_U(
 );
 
 top_design_v_frmbuf_rd_0_0_regslice_both #(
-    .DataWidth( 6 ))
+    .DataWidth( 3 ))
 regslice_both_m_axis_video_V_keep_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .data_in(m_axis_video_TKEEP_int_regslice),
-    .vld_in(grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID),
+    .vld_in(grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID),
     .ack_in(regslice_both_m_axis_video_V_keep_V_U_ack_in_dummy),
     .data_out(m_axis_video_TKEEP),
     .vld_out(regslice_both_m_axis_video_V_keep_V_U_vld_out),
@@ -641,12 +641,12 @@ regslice_both_m_axis_video_V_keep_V_U(
 );
 
 top_design_v_frmbuf_rd_0_0_regslice_both #(
-    .DataWidth( 6 ))
+    .DataWidth( 3 ))
 regslice_both_m_axis_video_V_strb_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .data_in(m_axis_video_TSTRB_int_regslice),
-    .vld_in(grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID),
+    .vld_in(grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID),
     .ack_in(regslice_both_m_axis_video_V_strb_V_U_ack_in_dummy),
     .data_out(m_axis_video_TSTRB),
     .vld_out(regslice_both_m_axis_video_V_strb_V_U_vld_out),
@@ -660,7 +660,7 @@ regslice_both_m_axis_video_V_user_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .data_in(m_axis_video_TUSER_int_regslice),
-    .vld_in(grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID),
+    .vld_in(grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID),
     .ack_in(regslice_both_m_axis_video_V_user_V_U_ack_in_dummy),
     .data_out(m_axis_video_TUSER),
     .vld_out(regslice_both_m_axis_video_V_user_V_U_vld_out),
@@ -674,7 +674,7 @@ regslice_both_m_axis_video_V_last_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .data_in(m_axis_video_TLAST_int_regslice),
-    .vld_in(grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID),
+    .vld_in(grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID),
     .ack_in(regslice_both_m_axis_video_V_last_V_U_ack_in_dummy),
     .data_out(m_axis_video_TLAST),
     .vld_out(regslice_both_m_axis_video_V_last_V_U_vld_out),
@@ -688,7 +688,7 @@ regslice_both_m_axis_video_V_id_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .data_in(m_axis_video_TID_int_regslice),
-    .vld_in(grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID),
+    .vld_in(grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID),
     .ack_in(regslice_both_m_axis_video_V_id_V_U_ack_in_dummy),
     .data_out(m_axis_video_TID),
     .vld_out(regslice_both_m_axis_video_V_id_V_U_vld_out),
@@ -702,7 +702,7 @@ regslice_both_m_axis_video_V_dest_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .data_in(m_axis_video_TDEST_int_regslice),
-    .vld_in(grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID),
+    .vld_in(grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID),
     .ack_in(regslice_both_m_axis_video_V_dest_V_U_ack_in_dummy),
     .data_out(m_axis_video_TDEST),
     .vld_out(regslice_both_m_axis_video_V_dest_V_U_vld_out),
@@ -712,20 +712,20 @@ regslice_both_m_axis_video_V_dest_V_U(
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        BYTES_PER_PIXEL_load_reg_263 <= 3'd0;
+        BYTES_PER_PIXEL_load_reg_265 <= 3'd0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state2)) begin
-            BYTES_PER_PIXEL_load_reg_263 <= BYTES_PER_PIXEL_q0;
+            BYTES_PER_PIXEL_load_reg_265 <= BYTES_PER_PIXEL_q0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        WidthInBytes_reg_273 <= 15'd0;
+        WidthInBytes_reg_275 <= 14'd0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state3)) begin
-            WidthInBytes_reg_273 <= WidthInBytes_fu_218_p2;
+            WidthInBytes_reg_275 <= WidthInBytes_fu_220_p2;
         end
     end
 end
@@ -740,66 +740,66 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_164_ap_done <= 1'b0;
+        ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_166_ap_done <= 1'b0;
     end else begin
         if (((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5))) begin
-            ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_164_ap_done <= 1'b0;
-        end else if ((grp_FrmbufRdHlsDataFlow_fu_164_ap_done == 1'b1)) begin
-            ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_164_ap_done <= 1'b1;
+            ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_166_ap_done <= 1'b0;
+        end else if ((grp_FrmbufRdHlsDataFlow_fu_166_ap_done == 1'b1)) begin
+            ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_166_ap_done <= 1'b1;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_164_ap_ready <= 1'b0;
+        ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_166_ap_ready <= 1'b0;
     end else begin
         if (((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5))) begin
-            ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_164_ap_ready <= 1'b0;
-        end else if ((grp_FrmbufRdHlsDataFlow_fu_164_ap_ready == 1'b1)) begin
-            ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_164_ap_ready <= 1'b1;
+            ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_166_ap_ready <= 1'b0;
+        end else if ((grp_FrmbufRdHlsDataFlow_fu_166_ap_ready == 1'b1)) begin
+            ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_166_ap_ready <= 1'b1;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        colorFormat_reg_268 <= 3'd0;
+        colorFormat_reg_270 <= 3'd0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state2)) begin
-            colorFormat_reg_268 <= MEMORY2LIVE_q0;
+            colorFormat_reg_270 <= MEMORY2LIVE_q0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        frm_buffer_read_reg_223 <= 32'd0;
+        frm_buffer_read_reg_225 <= 32'd0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state1)) begin
-            frm_buffer_read_reg_223 <= frm_buffer;
+            frm_buffer_read_reg_225 <= frm_buffer;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_FrmbufRdHlsDataFlow_fu_164_ap_start_reg <= 1'b0;
+        grp_FrmbufRdHlsDataFlow_fu_166_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state4) | ((ap_sync_grp_FrmbufRdHlsDataFlow_fu_164_ap_ready == 1'b0) & (1'b1 == ap_CS_fsm_state5)))) begin
-            grp_FrmbufRdHlsDataFlow_fu_164_ap_start_reg <= 1'b1;
-        end else if ((grp_FrmbufRdHlsDataFlow_fu_164_ap_ready == 1'b1)) begin
-            grp_FrmbufRdHlsDataFlow_fu_164_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state4) | ((ap_sync_grp_FrmbufRdHlsDataFlow_fu_166_ap_ready == 1'b0) & (1'b1 == ap_CS_fsm_state5)))) begin
+            grp_FrmbufRdHlsDataFlow_fu_166_ap_start_reg <= 1'b1;
+        end else if ((grp_FrmbufRdHlsDataFlow_fu_166_ap_ready == 1'b1)) begin
+            grp_FrmbufRdHlsDataFlow_fu_166_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        m_axis_video_TDATA_reg <= 48'd0;
+        m_axis_video_TDATA_reg <= 24'd0;
     end else begin
-        if (((grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-            m_axis_video_TDATA_reg <= grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TDATA;
+        if (((grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+            m_axis_video_TDATA_reg <= grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TDATA;
         end
     end
 end
@@ -808,8 +808,8 @@ always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
         m_axis_video_TDEST_reg <= 1'd0;
     end else begin
-        if (((grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-            m_axis_video_TDEST_reg <= grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TDEST;
+        if (((grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+            m_axis_video_TDEST_reg <= grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TDEST;
         end
     end
 end
@@ -818,18 +818,18 @@ always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
         m_axis_video_TID_reg <= 1'd0;
     end else begin
-        if (((grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-            m_axis_video_TID_reg <= grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TID;
+        if (((grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+            m_axis_video_TID_reg <= grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TID;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        m_axis_video_TKEEP_reg <= 6'd0;
+        m_axis_video_TKEEP_reg <= 3'd0;
     end else begin
-        if (((grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-            m_axis_video_TKEEP_reg <= grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TKEEP;
+        if (((grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+            m_axis_video_TKEEP_reg <= grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TKEEP;
         end
     end
 end
@@ -838,18 +838,18 @@ always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
         m_axis_video_TLAST_reg <= 1'd0;
     end else begin
-        if (((grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-            m_axis_video_TLAST_reg <= grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TLAST;
+        if (((grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+            m_axis_video_TLAST_reg <= grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TLAST;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        m_axis_video_TSTRB_reg <= 6'd0;
+        m_axis_video_TSTRB_reg <= 3'd0;
     end else begin
-        if (((grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-            m_axis_video_TSTRB_reg <= grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TSTRB;
+        if (((grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+            m_axis_video_TSTRB_reg <= grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TSTRB;
         end
     end
 end
@@ -858,8 +858,8 @@ always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
         m_axis_video_TUSER_reg <= 1'd0;
     end else begin
-        if (((grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-            m_axis_video_TUSER_reg <= grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TUSER;
+        if (((grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+            m_axis_video_TUSER_reg <= grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TUSER;
         end
     end
 end
@@ -874,50 +874,50 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        stride_read_reg_228 <= 16'd0;
+        stride_read_reg_230 <= 16'd0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state1)) begin
-            stride_read_reg_228 <= stride;
+            stride_read_reg_230 <= stride;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        trunc_ln135_1_reg_238 <= 6'd0;
+        trunc_ln135_1_reg_240 <= 6'd0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state1)) begin
-            trunc_ln135_1_reg_238 <= trunc_ln135_1_fu_197_p1;
+            trunc_ln135_1_reg_240 <= trunc_ln135_1_fu_199_p1;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        trunc_ln135_2_reg_243 <= 12'd0;
+        trunc_ln135_2_reg_245 <= 11'd0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state1)) begin
-            trunc_ln135_2_reg_243 <= trunc_ln135_2_fu_201_p1;
+            trunc_ln135_2_reg_245 <= trunc_ln135_2_fu_203_p1;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        trunc_ln135_3_reg_248 <= 12'd0;
+        trunc_ln135_3_reg_250 <= 11'd0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state1)) begin
-            trunc_ln135_3_reg_248 <= trunc_ln135_3_fu_205_p1;
+            trunc_ln135_3_reg_250 <= trunc_ln135_3_fu_207_p1;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        trunc_ln135_reg_233 <= 15'd0;
+        trunc_ln135_reg_235 <= 14'd0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state1)) begin
-            trunc_ln135_reg_233 <= trunc_ln135_fu_193_p1;
+            trunc_ln135_reg_235 <= trunc_ln135_fu_195_p1;
         end
     end
 end
@@ -994,63 +994,63 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5))) begin
-        grp_FrmbufRdHlsDataFlow_fu_164_ap_continue = 1'b1;
+        grp_FrmbufRdHlsDataFlow_fu_166_ap_continue = 1'b1;
     end else begin
-        grp_FrmbufRdHlsDataFlow_fu_164_ap_continue = 1'b0;
+        grp_FrmbufRdHlsDataFlow_fu_166_ap_continue = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        m_axis_video_TDATA_int_regslice = grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TDATA;
+    if (((grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+        m_axis_video_TDATA_int_regslice = grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TDATA;
     end else begin
         m_axis_video_TDATA_int_regslice = m_axis_video_TDATA_reg;
     end
 end
 
 always @ (*) begin
-    if (((grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        m_axis_video_TDEST_int_regslice = grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TDEST;
+    if (((grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+        m_axis_video_TDEST_int_regslice = grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TDEST;
     end else begin
         m_axis_video_TDEST_int_regslice = m_axis_video_TDEST_reg;
     end
 end
 
 always @ (*) begin
-    if (((grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        m_axis_video_TID_int_regslice = grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TID;
+    if (((grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+        m_axis_video_TID_int_regslice = grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TID;
     end else begin
         m_axis_video_TID_int_regslice = m_axis_video_TID_reg;
     end
 end
 
 always @ (*) begin
-    if (((grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        m_axis_video_TKEEP_int_regslice = grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TKEEP;
+    if (((grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+        m_axis_video_TKEEP_int_regslice = grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TKEEP;
     end else begin
         m_axis_video_TKEEP_int_regslice = m_axis_video_TKEEP_reg;
     end
 end
 
 always @ (*) begin
-    if (((grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        m_axis_video_TLAST_int_regslice = grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TLAST;
+    if (((grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+        m_axis_video_TLAST_int_regslice = grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TLAST;
     end else begin
         m_axis_video_TLAST_int_regslice = m_axis_video_TLAST_reg;
     end
 end
 
 always @ (*) begin
-    if (((grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        m_axis_video_TSTRB_int_regslice = grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TSTRB;
+    if (((grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+        m_axis_video_TSTRB_int_regslice = grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TSTRB;
     end else begin
         m_axis_video_TSTRB_int_regslice = m_axis_video_TSTRB_reg;
     end
 end
 
 always @ (*) begin
-    if (((grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        m_axis_video_TUSER_int_regslice = grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TUSER;
+    if (((grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+        m_axis_video_TUSER_int_regslice = grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TUSER;
     end else begin
         m_axis_video_TUSER_int_regslice = m_axis_video_TUSER_reg;
     end
@@ -1058,7 +1058,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
-        mm_video_0_ARVALID = grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_ARVALID;
+        mm_video_0_ARVALID = grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_ARVALID;
     end else begin
         mm_video_0_ARVALID = 1'b0;
     end
@@ -1066,7 +1066,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
-        mm_video_0_RREADY = grp_FrmbufRdHlsDataFlow_fu_164_m_axi_mm_video_0_RREADY;
+        mm_video_0_RREADY = grp_FrmbufRdHlsDataFlow_fu_166_m_axi_mm_video_0_RREADY;
     end else begin
         mm_video_0_RREADY = 1'b0;
     end
@@ -1110,13 +1110,13 @@ always @ (*) begin
     endcase
 end
 
-assign BYTES_PER_PIXEL_address0 = zext_ln255_fu_209_p1;
+assign BYTES_PER_PIXEL_address0 = zext_ln255_fu_211_p1;
 
-assign MEMORY2LIVE_address0 = zext_ln255_fu_209_p1;
+assign MEMORY2LIVE_address0 = zext_ln255_fu_211_p1;
 
-assign WidthInBytes_fu_218_p1 = WidthInBytes_fu_218_p10;
+assign WidthInBytes_fu_220_p1 = WidthInBytes_fu_220_p10;
 
-assign WidthInBytes_fu_218_p10 = BYTES_PER_PIXEL_load_reg_263;
+assign WidthInBytes_fu_220_p10 = BYTES_PER_PIXEL_load_reg_265;
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -1131,31 +1131,31 @@ assign ap_CS_fsm_state5 = ap_CS_fsm[32'd4];
 assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
 
 always @ (*) begin
-    ap_block_state5_on_subcall_done = ((ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_164_ap_ready & ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_164_ap_done) == 1'b0);
+    ap_block_state5_on_subcall_done = ((ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_166_ap_ready & ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_166_ap_done) == 1'b0);
 end
 
 always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
 end
 
-assign ap_sync_grp_FrmbufRdHlsDataFlow_fu_164_ap_ready = (grp_FrmbufRdHlsDataFlow_fu_164_ap_ready | ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_164_ap_ready);
+assign ap_sync_grp_FrmbufRdHlsDataFlow_fu_166_ap_ready = (grp_FrmbufRdHlsDataFlow_fu_166_ap_ready | ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_166_ap_ready);
 
-assign grp_FrmbufRdHlsDataFlow_fu_164_ap_start = grp_FrmbufRdHlsDataFlow_fu_164_ap_start_reg;
+assign grp_FrmbufRdHlsDataFlow_fu_166_ap_start = grp_FrmbufRdHlsDataFlow_fu_166_ap_start_reg;
 
-assign grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TREADY = (m_axis_video_TREADY_int_regslice & ap_CS_fsm_state5);
+assign grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TREADY = (m_axis_video_TREADY_int_regslice & ap_CS_fsm_state5);
 
 assign m_axis_video_TVALID = regslice_both_m_axis_video_V_data_V_U_vld_out;
 
-assign m_axis_video_TVALID_int_regslice = grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TVALID;
+assign m_axis_video_TVALID_int_regslice = grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TVALID;
 
-assign trunc_ln135_1_fu_197_p1 = video_format[5:0];
+assign trunc_ln135_1_fu_199_p1 = video_format[5:0];
 
-assign trunc_ln135_2_fu_201_p1 = width[11:0];
+assign trunc_ln135_2_fu_203_p1 = width[10:0];
 
-assign trunc_ln135_3_fu_205_p1 = height[11:0];
+assign trunc_ln135_3_fu_207_p1 = height[10:0];
 
-assign trunc_ln135_fu_193_p1 = width[14:0];
+assign trunc_ln135_fu_195_p1 = width[13:0];
 
-assign zext_ln255_fu_209_p1 = video_format;
+assign zext_ln255_fu_211_p1 = video_format;
 
 endmodule //top_design_v_frmbuf_rd_0_0_v_frmbuf_rd

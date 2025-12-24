@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set name top_design_v_frmbuf_rd_0_0_mul_15s_3ns_15_1_1
+set name top_design_v_frmbuf_rd_0_0_mul_14s_3ns_14_1_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
 }
@@ -100,7 +100,7 @@ dict set axilite_register_dict CTRL $port_CTRL
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 102 \
+			id 92 \
 			corename v_frmbuf_rd_CTRL_axilite \
 			name top_design_v_frmbuf_rd_0_0_CTRL_s_axi \
 			ports {$port_CTRL} \
@@ -125,14 +125,14 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 103 \
+    id 93 \
     name m_axis_video_V_data_V \
     reset_level 0 \
     sync_rst true \
     corename {m_axis_video} \
     metadata {  } \
     op interface \
-    ports { m_axis_video_TDATA { O 48 vector } } \
+    ports { m_axis_video_TDATA { O 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm_axis_video_V_data_V'"
@@ -144,14 +144,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 104 \
+    id 94 \
     name m_axis_video_V_keep_V \
     reset_level 0 \
     sync_rst true \
     corename {m_axis_video} \
     metadata {  } \
     op interface \
-    ports { m_axis_video_TKEEP { O 6 vector } } \
+    ports { m_axis_video_TKEEP { O 3 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm_axis_video_V_keep_V'"
@@ -163,14 +163,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 105 \
+    id 95 \
     name m_axis_video_V_strb_V \
     reset_level 0 \
     sync_rst true \
     corename {m_axis_video} \
     metadata {  } \
     op interface \
-    ports { m_axis_video_TSTRB { O 6 vector } } \
+    ports { m_axis_video_TSTRB { O 3 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm_axis_video_V_strb_V'"
@@ -182,7 +182,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 106 \
+    id 96 \
     name m_axis_video_V_user_V \
     reset_level 0 \
     sync_rst true \
@@ -201,7 +201,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 107 \
+    id 97 \
     name m_axis_video_V_last_V \
     reset_level 0 \
     sync_rst true \
@@ -220,7 +220,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 108 \
+    id 98 \
     name m_axis_video_V_id_V \
     reset_level 0 \
     sync_rst true \
@@ -239,7 +239,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 109 \
+    id 99 \
     name m_axis_video_V_dest_V \
     reset_level 0 \
     sync_rst true \

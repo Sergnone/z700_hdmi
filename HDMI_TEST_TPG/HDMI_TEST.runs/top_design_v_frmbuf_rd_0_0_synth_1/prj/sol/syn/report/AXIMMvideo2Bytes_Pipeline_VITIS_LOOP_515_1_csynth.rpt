@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1'
 ================================================================
-* Date:           Wed Dec 24 18:11:32 2025
+* Date:           Wed Dec 24 20:02:11 2025
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -59,9 +59,9 @@
 |Instance         |        -|    -|       -|      -|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       0|     54|    -|
-|Register         |        -|    -|     144|      -|    -|
+|Register         |        -|    -|      80|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|     144|     79|    0|
+|Total            |        0|    0|      80|     79|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
@@ -85,8 +85,8 @@
     +--------------------------------+----------+----+---+----+------------+------------+
     |          Variable Name         | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------------------------+----------+----+---+----+------------+------------+
-    |add_ln515_fu_120_p2             |         +|   0|  0|  11|          11|           1|
-    |icmp_ln515_fu_114_p2            |      icmp|   0|  0|  11|          11|          11|
+    |add_ln515_fu_122_p2             |         +|   0|  0|  11|          11|           1|
+    |icmp_ln515_fu_116_p2            |      icmp|   0|  0|  11|          11|          11|
     |ap_block_pp0_stage0_01001_grp1  |        or|   0|  0|   1|           1|           1|
     |ap_enable_pp0                   |       xor|   0|  0|   2|           1|           2|
     +--------------------------------+----------+----+---+----+------------+------------+
@@ -102,25 +102,25 @@
     |ap_sig_allocacmp_x_3     |   9|          2|   11|         22|
     |bytePlanes_blk_n         |   9|          2|    1|          2|
     |mm_video_blk_n_R         |   9|          2|    1|          2|
-    |x_fu_74                  |   9|          2|   11|         22|
+    |x_fu_76                  |   9|          2|   11|         22|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  54|         12|   26|         52|
     +-------------------------+----+-----------+-----+-----------+
 
     * Register: 
-    +----------------------------------+-----+----+-----+-----------+
-    |               Name               |  FF | LUT| Bits| Const Bits|
-    +----------------------------------+-----+----+-----+-----------+
-    |ap_CS_fsm                         |    1|   0|    1|          0|
-    |ap_done_reg                       |    1|   0|    1|          0|
-    |ap_enable_reg_pp0_iter1           |    1|   0|    1|          0|
-    |ap_enable_reg_pp0_iter2           |    1|   0|    1|          0|
-    |ap_loop_exit_ready_pp0_iter1_reg  |    1|   0|    1|          0|
-    |mm_video_addr_read_reg_153        |  128|   0|  128|          0|
-    |x_fu_74                           |   11|   0|   11|          0|
-    +----------------------------------+-----+----+-----+-----------+
-    |Total                             |  144|   0|  144|          0|
-    +----------------------------------+-----+----+-----+-----------+
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |mm_video_addr_read_reg_155        |  64|   0|   64|          0|
+    |x_fu_76                           |  11|   0|   11|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             |  80|   0|   80|          0|
+    +----------------------------------+----+----+-----+-----------+
 
 
 
@@ -152,8 +152,8 @@
 |m_axi_mm_video_0_AWUSER    |  out|    1|       m_axi|                                    mm_video|       pointer|
 |m_axi_mm_video_0_WVALID    |  out|    1|       m_axi|                                    mm_video|       pointer|
 |m_axi_mm_video_0_WREADY    |   in|    1|       m_axi|                                    mm_video|       pointer|
-|m_axi_mm_video_0_WDATA     |  out|  128|       m_axi|                                    mm_video|       pointer|
-|m_axi_mm_video_0_WSTRB     |  out|   16|       m_axi|                                    mm_video|       pointer|
+|m_axi_mm_video_0_WDATA     |  out|   64|       m_axi|                                    mm_video|       pointer|
+|m_axi_mm_video_0_WSTRB     |  out|    8|       m_axi|                                    mm_video|       pointer|
 |m_axi_mm_video_0_WLAST     |  out|    1|       m_axi|                                    mm_video|       pointer|
 |m_axi_mm_video_0_WID       |  out|    1|       m_axi|                                    mm_video|       pointer|
 |m_axi_mm_video_0_WUSER     |  out|    1|       m_axi|                                    mm_video|       pointer|
@@ -172,7 +172,7 @@
 |m_axi_mm_video_0_ARUSER    |  out|    1|       m_axi|                                    mm_video|       pointer|
 |m_axi_mm_video_0_RVALID    |   in|    1|       m_axi|                                    mm_video|       pointer|
 |m_axi_mm_video_0_RREADY    |  out|    1|       m_axi|                                    mm_video|       pointer|
-|m_axi_mm_video_0_RDATA     |   in|  128|       m_axi|                                    mm_video|       pointer|
+|m_axi_mm_video_0_RDATA     |   in|   64|       m_axi|                                    mm_video|       pointer|
 |m_axi_mm_video_0_RLAST     |   in|    1|       m_axi|                                    mm_video|       pointer|
 |m_axi_mm_video_0_RID       |   in|    1|       m_axi|                                    mm_video|       pointer|
 |m_axi_mm_video_0_RFIFONUM  |   in|    7|       m_axi|                                    mm_video|       pointer|
@@ -183,12 +183,12 @@
 |m_axi_mm_video_0_BRESP     |   in|    2|       m_axi|                                    mm_video|       pointer|
 |m_axi_mm_video_0_BID       |   in|    1|       m_axi|                                    mm_video|       pointer|
 |m_axi_mm_video_0_BUSER     |   in|    1|       m_axi|                                    mm_video|       pointer|
-|bytePlanes_din             |  out|  128|     ap_fifo|                                  bytePlanes|       pointer|
+|bytePlanes_din             |  out|   64|     ap_fifo|                                  bytePlanes|       pointer|
 |bytePlanes_full_n          |   in|    1|     ap_fifo|                                  bytePlanes|       pointer|
 |bytePlanes_write           |  out|    1|     ap_fifo|                                  bytePlanes|       pointer|
 |bytePlanes_num_data_valid  |   in|   10|     ap_fifo|                                  bytePlanes|       pointer|
 |bytePlanes_fifo_cap        |   in|   10|     ap_fifo|                                  bytePlanes|       pointer|
 |lshr_ln                    |   in|   11|   ap_stable|                                     lshr_ln|        scalar|
-|sext_ln515                 |   in|   28|     ap_none|                                  sext_ln515|        scalar|
+|sext_ln515                 |   in|   29|     ap_none|                                  sext_ln515|        scalar|
 +---------------------------+-----+-----+------------+--------------------------------------------+--------------+
 

@@ -3,15 +3,15 @@
 #ifndef _V_FRMBUF_RD_CONFIG_H_
 #define _V_FRMBUF_RD_CONFIG_H_
 
-#define SAMPLES_PER_CLOCK       2
-#define MAX_COLS                3840
-#define MAX_ROWS                2160
+#define SAMPLES_PER_CLOCK       1
+#define MAX_COLS                1920
+#define MAX_ROWS                1080
 #define MAX_DATA_WIDTH          8
 #define NR_COMPONENTS           3
 #define BITS_PER_SAMPLE         (NR_COMPONENTS*MAX_DATA_WIDTH)
 #define BITS_PER_CLOCK          (BITS_PER_SAMPLE*SAMPLES_PER_CLOCK)
 #define AXIS_DATA_WIDTH         ((BITS_PER_CLOCK+7)/8*8)    // Rounded up to bytes
-#define AXIMM_DATA_WIDTH        128
+#define AXIMM_DATA_WIDTH        64
 #define AXIMM_NUM_OUTSTANDING   4
 #define AXIMM_BURST_LENGTH      16
 #define MAX_NR_PLANES           1

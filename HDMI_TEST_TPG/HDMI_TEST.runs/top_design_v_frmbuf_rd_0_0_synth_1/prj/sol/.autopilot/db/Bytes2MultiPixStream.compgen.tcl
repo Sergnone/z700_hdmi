@@ -22,7 +22,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 29 \
+    id 28 \
     name bytePlanes \
     type fifo \
     dir I \
@@ -30,14 +30,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_bytePlanes \
     op interface \
-    ports { bytePlanes_dout { I 128 vector } bytePlanes_empty_n { I 1 bit } bytePlanes_read { O 1 bit } bytePlanes_num_data_valid { I 10 vector } bytePlanes_fifo_cap { I 10 vector } } \
+    ports { bytePlanes_dout { I 64 vector } bytePlanes_empty_n { I 1 bit } bytePlanes_read { O 1 bit } bytePlanes_num_data_valid { I 10 vector } bytePlanes_fifo_cap { I 10 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 30 \
+    id 29 \
     name img \
     type fifo \
     dir O \
@@ -45,14 +45,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_img \
     op interface \
-    ports { img_din { O 48 vector } img_full_n { I 1 bit } img_write { O 1 bit } img_num_data_valid { I 32 vector } img_fifo_cap { I 32 vector } } \
+    ports { img_din { O 24 vector } img_full_n { I 1 bit } img_write { O 1 bit } img_num_data_valid { I 32 vector } img_fifo_cap { I 32 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 31 \
+    id 30 \
     name Height_val \
     type other \
     dir I \
@@ -60,14 +60,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_Height_val \
     op interface \
-    ports { Height_val { I 12 vector } } \
+    ports { Height_val { I 11 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 32 \
+    id 31 \
     name Width_val \
     type other \
     dir I \
@@ -75,14 +75,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_Width_val \
     op interface \
-    ports { Width_val { I 12 vector } } \
+    ports { Width_val { I 11 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 33 \
+    id 32 \
     name WidthInBytes_val \
     type other \
     dir I \
@@ -90,14 +90,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_WidthInBytes_val \
     op interface \
-    ports { WidthInBytes_val { I 15 vector } } \
+    ports { WidthInBytes_val { I 14 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 34 \
+    id 33 \
     name VideoFormat_val \
     type other \
     dir I \

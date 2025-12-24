@@ -33,7 +33,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mm_video \
     op interface \
-    ports { m_axi_mm_video_0_AWVALID { O 1 bit } m_axi_mm_video_0_AWREADY { I 1 bit } m_axi_mm_video_0_AWADDR { O 32 vector } m_axi_mm_video_0_AWID { O 1 vector } m_axi_mm_video_0_AWLEN { O 32 vector } m_axi_mm_video_0_AWSIZE { O 3 vector } m_axi_mm_video_0_AWBURST { O 2 vector } m_axi_mm_video_0_AWLOCK { O 2 vector } m_axi_mm_video_0_AWCACHE { O 4 vector } m_axi_mm_video_0_AWPROT { O 3 vector } m_axi_mm_video_0_AWQOS { O 4 vector } m_axi_mm_video_0_AWREGION { O 4 vector } m_axi_mm_video_0_AWUSER { O 1 vector } m_axi_mm_video_0_WVALID { O 1 bit } m_axi_mm_video_0_WREADY { I 1 bit } m_axi_mm_video_0_WDATA { O 128 vector } m_axi_mm_video_0_WSTRB { O 16 vector } m_axi_mm_video_0_WLAST { O 1 bit } m_axi_mm_video_0_WID { O 1 vector } m_axi_mm_video_0_WUSER { O 1 vector } m_axi_mm_video_0_ARVALID { O 1 bit } m_axi_mm_video_0_ARREADY { I 1 bit } m_axi_mm_video_0_ARADDR { O 32 vector } m_axi_mm_video_0_ARID { O 1 vector } m_axi_mm_video_0_ARLEN { O 32 vector } m_axi_mm_video_0_ARSIZE { O 3 vector } m_axi_mm_video_0_ARBURST { O 2 vector } m_axi_mm_video_0_ARLOCK { O 2 vector } m_axi_mm_video_0_ARCACHE { O 4 vector } m_axi_mm_video_0_ARPROT { O 3 vector } m_axi_mm_video_0_ARQOS { O 4 vector } m_axi_mm_video_0_ARREGION { O 4 vector } m_axi_mm_video_0_ARUSER { O 1 vector } m_axi_mm_video_0_RVALID { I 1 bit } m_axi_mm_video_0_RREADY { O 1 bit } m_axi_mm_video_0_RDATA { I 128 vector } m_axi_mm_video_0_RLAST { I 1 bit } m_axi_mm_video_0_RID { I 1 vector } m_axi_mm_video_0_RFIFONUM { I 7 vector } m_axi_mm_video_0_RUSER { I 1 vector } m_axi_mm_video_0_RRESP { I 2 vector } m_axi_mm_video_0_BVALID { I 1 bit } m_axi_mm_video_0_BREADY { O 1 bit } m_axi_mm_video_0_BRESP { I 2 vector } m_axi_mm_video_0_BID { I 1 vector } m_axi_mm_video_0_BUSER { I 1 vector } } \
+    ports { m_axi_mm_video_0_AWVALID { O 1 bit } m_axi_mm_video_0_AWREADY { I 1 bit } m_axi_mm_video_0_AWADDR { O 32 vector } m_axi_mm_video_0_AWID { O 1 vector } m_axi_mm_video_0_AWLEN { O 32 vector } m_axi_mm_video_0_AWSIZE { O 3 vector } m_axi_mm_video_0_AWBURST { O 2 vector } m_axi_mm_video_0_AWLOCK { O 2 vector } m_axi_mm_video_0_AWCACHE { O 4 vector } m_axi_mm_video_0_AWPROT { O 3 vector } m_axi_mm_video_0_AWQOS { O 4 vector } m_axi_mm_video_0_AWREGION { O 4 vector } m_axi_mm_video_0_AWUSER { O 1 vector } m_axi_mm_video_0_WVALID { O 1 bit } m_axi_mm_video_0_WREADY { I 1 bit } m_axi_mm_video_0_WDATA { O 64 vector } m_axi_mm_video_0_WSTRB { O 8 vector } m_axi_mm_video_0_WLAST { O 1 bit } m_axi_mm_video_0_WID { O 1 vector } m_axi_mm_video_0_WUSER { O 1 vector } m_axi_mm_video_0_ARVALID { O 1 bit } m_axi_mm_video_0_ARREADY { I 1 bit } m_axi_mm_video_0_ARADDR { O 32 vector } m_axi_mm_video_0_ARID { O 1 vector } m_axi_mm_video_0_ARLEN { O 32 vector } m_axi_mm_video_0_ARSIZE { O 3 vector } m_axi_mm_video_0_ARBURST { O 2 vector } m_axi_mm_video_0_ARLOCK { O 2 vector } m_axi_mm_video_0_ARCACHE { O 4 vector } m_axi_mm_video_0_ARPROT { O 3 vector } m_axi_mm_video_0_ARQOS { O 4 vector } m_axi_mm_video_0_ARREGION { O 4 vector } m_axi_mm_video_0_ARUSER { O 1 vector } m_axi_mm_video_0_RVALID { I 1 bit } m_axi_mm_video_0_RREADY { O 1 bit } m_axi_mm_video_0_RDATA { I 64 vector } m_axi_mm_video_0_RLAST { I 1 bit } m_axi_mm_video_0_RID { I 1 vector } m_axi_mm_video_0_RFIFONUM { I 7 vector } m_axi_mm_video_0_RUSER { I 1 vector } m_axi_mm_video_0_RRESP { I 2 vector } m_axi_mm_video_0_BVALID { I 1 bit } m_axi_mm_video_0_BREADY { O 1 bit } m_axi_mm_video_0_BRESP { I 2 vector } m_axi_mm_video_0_BID { I 1 vector } m_axi_mm_video_0_BUSER { I 1 vector } } \
 } "
 }
 
@@ -48,7 +48,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_sext_ln515 \
     op interface \
-    ports { sext_ln515 { I 28 vector } } \
+    ports { sext_ln515 { I 29 vector } } \
 } "
 }
 
@@ -63,7 +63,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_bytePlanes \
     op interface \
-    ports { bytePlanes_din { O 128 vector } bytePlanes_full_n { I 1 bit } bytePlanes_write { O 1 bit } bytePlanes_num_data_valid { I 10 vector } bytePlanes_fifo_cap { I 10 vector } } \
+    ports { bytePlanes_din { O 64 vector } bytePlanes_full_n { I 1 bit } bytePlanes_write { O 1 bit } bytePlanes_num_data_valid { I 10 vector } bytePlanes_fifo_cap { I 10 vector } } \
 } "
 }
 

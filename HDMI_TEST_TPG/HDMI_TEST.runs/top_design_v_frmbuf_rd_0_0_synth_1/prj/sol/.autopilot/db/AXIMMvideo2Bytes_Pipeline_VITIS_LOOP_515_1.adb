@@ -73,7 +73,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>128</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>4</if_type>
@@ -109,7 +109,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>28</bitwidth>
+            <bitwidth>29</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>0</if_type>
@@ -145,7 +145,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>128</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <direction>1</direction>
           <if_type>3</if_type>
@@ -241,7 +241,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>28</bitwidth>
+            <bitwidth>29</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -488,7 +488,7 @@
             <count>2</count>
             <item_version>0</item_version>
             <item>45</item>
-            <item>161</item>
+            <item>162</item>
           </oprand_edges>
           <opcode>load</opcode>
           <m_Display>0</m_Display>
@@ -529,7 +529,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>icmp_ln515_fu_114_p2</rtlName>
+              <rtlName>icmp_ln515_fu_116_p2</rtlName>
               <control>auto</control>
               <opType>seteq</opType>
               <implIndex>auto</implIndex>
@@ -586,7 +586,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>add_ln515_fu_120_p2</rtlName>
+              <rtlName>add_ln515_fu_122_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -711,7 +711,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>128</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -768,7 +768,7 @@
               <coreId>111</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>128</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -890,8 +890,8 @@
             <item_version>0</item_version>
             <item>63</item>
             <item>64</item>
-            <item>162</item>
             <item>163</item>
+            <item>164</item>
           </oprand_edges>
           <opcode>store</opcode>
           <m_Display>0</m_Display>
@@ -1402,49 +1402,49 @@
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_51">
-          <id>157</id>
+          <id>158</id>
           <edge_type>2</edge_type>
           <source_obj>15</source_obj>
           <sink_obj>21</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_52">
-          <id>158</id>
+          <id>159</id>
           <edge_type>2</edge_type>
           <source_obj>21</source_obj>
           <sink_obj>31</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_53">
-          <id>159</id>
+          <id>160</id>
           <edge_type>2</edge_type>
           <source_obj>21</source_obj>
           <sink_obj>29</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_54">
-          <id>160</id>
+          <id>161</id>
           <edge_type>2</edge_type>
           <source_obj>29</source_obj>
           <sink_obj>21</sink_obj>
           <is_back_edge>1</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_55">
-          <id>161</id>
+          <id>162</id>
           <edge_type>4</edge_type>
           <source_obj>13</source_obj>
           <sink_obj>16</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_56">
-          <id>162</id>
+          <id>163</id>
           <edge_type>4</edge_type>
           <source_obj>13</source_obj>
           <sink_obj>27</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_57">
-          <id>163</id>
+          <id>164</id>
           <edge_type>4</edge_type>
           <source_obj>16</source_obj>
           <sink_obj>27</sink_obj>
@@ -1743,7 +1743,7 @@
         <count>4</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln515_fu_120_p2 ( + ) </first>
+          <first>add_ln515_fu_122_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1812,7 +1812,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln515_fu_114_p2 ( icmp ) </first>
+          <first>icmp_ln515_fu_116_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1982,7 +1982,7 @@
           </second>
         </item>
         <item>
-          <first>x_fu_74</first>
+          <first>x_fu_76</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -2108,13 +2108,13 @@
           </second>
         </item>
         <item>
-          <first>mm_video_addr_read_reg_153</first>
+          <first>mm_video_addr_read_reg_155</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>128</second>
+              <second>64</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -2122,12 +2122,12 @@
             </item>
             <item>
               <first>FF</first>
-              <second>128</second>
+              <second>64</second>
             </item>
           </second>
         </item>
         <item>
-          <first>x_fu_74</first>
+          <first>x_fu_76</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2165,7 +2165,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>add_ln515_fu_120_p2 ( + ) </first>
+          <first>add_ln515_fu_122_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2173,7 +2173,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln515_fu_114_p2 ( icmp ) </first>
+          <first>icmp_ln515_fu_116_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2367,7 +2367,7 @@
       <count>12</count>
       <item_version>0</item_version>
       <item class_id="51" tracking_level="0" version="0">
-        <first>74</first>
+        <first>76</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2375,7 +2375,7 @@
         </second>
       </item>
       <item>
-        <first>78</first>
+        <first>80</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2383,7 +2383,7 @@
         </second>
       </item>
       <item>
-        <first>84</first>
+        <first>86</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2391,7 +2391,7 @@
         </second>
       </item>
       <item>
-        <first>90</first>
+        <first>92</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2399,7 +2399,7 @@
         </second>
       </item>
       <item>
-        <first>97</first>
+        <first>99</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2407,7 +2407,7 @@
         </second>
       </item>
       <item>
-        <first>102</first>
+        <first>104</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2415,7 +2415,7 @@
         </second>
       </item>
       <item>
-        <first>106</first>
+        <first>108</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2423,7 +2423,7 @@
         </second>
       </item>
       <item>
-        <first>111</first>
+        <first>113</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2431,7 +2431,7 @@
         </second>
       </item>
       <item>
-        <first>114</first>
+        <first>116</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2439,7 +2439,7 @@
         </second>
       </item>
       <item>
-        <first>120</first>
+        <first>122</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2447,7 +2447,7 @@
         </second>
       </item>
       <item>
-        <first>126</first>
+        <first>128</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2455,7 +2455,7 @@
         </second>
       </item>
       <item>
-        <first>131</first>
+        <first>133</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2467,7 +2467,7 @@
       <count>5</count>
       <item_version>0</item_version>
       <item class_id="54" tracking_level="0" version="0">
-        <first>add_ln515_fu_120</first>
+        <first>add_ln515_fu_122</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2475,7 +2475,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln515_fu_114</first>
+        <first>icmp_ln515_fu_116</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2483,7 +2483,7 @@
         </second>
       </item>
       <item>
-        <first>mm_video_addr_fu_131</first>
+        <first>mm_video_addr_fu_133</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2491,7 +2491,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln515_cast_fu_102</first>
+        <first>sext_ln515_cast_fu_104</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2499,7 +2499,7 @@
         </second>
       </item>
       <item>
-        <first>x_fu_74</first>
+        <first>x_fu_76</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2515,7 +2515,7 @@
       <count>7</count>
       <item_version>0</item_version>
       <item>
-        <first>lshr_ln_read_read_fu_84</first>
+        <first>lshr_ln_read_read_fu_86</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2523,7 +2523,7 @@
         </second>
       </item>
       <item>
-        <first>mm_video_addr_read_read_fu_97</first>
+        <first>mm_video_addr_read_read_fu_99</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2531,7 +2531,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln515_read_read_fu_78</first>
+        <first>sext_ln515_read_read_fu_80</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2539,7 +2539,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln515_store_fu_106</first>
+        <first>store_ln515_store_fu_108</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2547,7 +2547,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln515_store_fu_126</first>
+        <first>store_ln515_store_fu_128</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2555,7 +2555,7 @@
         </second>
       </item>
       <item>
-        <first>write_ln521_write_fu_90</first>
+        <first>write_ln521_write_fu_92</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2563,7 +2563,7 @@
         </second>
       </item>
       <item>
-        <first>x_3_load_fu_111</first>
+        <first>x_3_load_fu_113</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2583,7 +2583,7 @@
       <count>4</count>
       <item_version>0</item_version>
       <item>
-        <first>137</first>
+        <first>139</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2591,7 +2591,7 @@
         </second>
       </item>
       <item>
-        <first>144</first>
+        <first>146</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2599,7 +2599,7 @@
         </second>
       </item>
       <item>
-        <first>149</first>
+        <first>151</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2607,7 +2607,7 @@
         </second>
       </item>
       <item>
-        <first>153</first>
+        <first>155</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2619,7 +2619,7 @@
       <count>4</count>
       <item_version>0</item_version>
       <item>
-        <first>icmp_ln515_reg_149</first>
+        <first>icmp_ln515_reg_151</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2627,7 +2627,7 @@
         </second>
       </item>
       <item>
-        <first>mm_video_addr_read_reg_153</first>
+        <first>mm_video_addr_read_reg_155</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2635,7 +2635,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln515_cast_reg_144</first>
+        <first>sext_ln515_cast_reg_146</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2643,7 +2643,7 @@
         </second>
       </item>
       <item>
-        <first>x_reg_137</first>
+        <first>x_reg_139</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

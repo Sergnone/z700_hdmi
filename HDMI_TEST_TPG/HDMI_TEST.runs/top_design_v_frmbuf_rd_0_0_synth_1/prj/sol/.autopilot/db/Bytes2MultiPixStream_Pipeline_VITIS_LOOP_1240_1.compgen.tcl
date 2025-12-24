@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 11 \
-    name trunc_ln4 \
+    name trunc_ln2 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_trunc_ln4 \
+    corename dc_trunc_ln2 \
     op interface \
-    ports { trunc_ln4 { I 9 vector } } \
+    ports { trunc_ln2 { I 9 vector } } \
 } "
 }
 
@@ -41,21 +41,6 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 13 \
-    name icmp_ln1271_6 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_icmp_ln1271_6 \
-    op interface \
-    ports { icmp_ln1271_6 { I 1 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 14 \
     name icmp_ln1271_5 \
     type other \
     dir I \
@@ -70,7 +55,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 15 \
+    id 14 \
     name icmp_ln1271_4 \
     type other \
     dir I \
@@ -79,6 +64,21 @@ eval "cg_default_interface_gen_dc { \
     corename dc_icmp_ln1271_4 \
     op interface \
     ports { icmp_ln1271_4 { I 1 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 15 \
+    name icmp_ln1271_3 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_icmp_ln1271_3 \
+    op interface \
+    ports { icmp_ln1271_3 { I 1 vector } } \
 } "
 }
 
@@ -101,14 +101,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 17 \
-    name icmp_ln1271_2 \
+    name icmp_ln1271_1 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_icmp_ln1271_2 \
+    corename dc_icmp_ln1271_1 \
     op interface \
-    ports { icmp_ln1271_2 { I 1 vector } } \
+    ports { icmp_ln1271_1 { I 1 vector } } \
 } "
 }
 
@@ -116,6 +116,21 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 18 \
+    name img \
+    type fifo \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_img \
+    op interface \
+    ports { img_din { O 24 vector } img_full_n { I 1 bit } img_write { O 1 bit } img_num_data_valid { I 32 vector } img_fifo_cap { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 19 \
     name icmp6 \
     type other \
     dir I \
@@ -124,21 +139,6 @@ eval "cg_default_interface_gen_dc { \
     corename dc_icmp6 \
     op interface \
     ports { icmp6 { I 1 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 19 \
-    name icmp_ln1271 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_icmp_ln1271 \
-    op interface \
-    ports { icmp_ln1271 { I 1 vector } } \
 } "
 }
 
@@ -168,7 +168,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_bytePlanes \
     op interface \
-    ports { bytePlanes_dout { I 128 vector } bytePlanes_empty_n { I 1 bit } bytePlanes_read { O 1 bit } bytePlanes_num_data_valid { I 10 vector } bytePlanes_fifo_cap { I 10 vector } } \
+    ports { bytePlanes_dout { I 64 vector } bytePlanes_empty_n { I 1 bit } bytePlanes_read { O 1 bit } bytePlanes_num_data_valid { I 10 vector } bytePlanes_fifo_cap { I 10 vector } } \
 } "
 }
 
@@ -199,21 +199,6 @@ eval "cg_default_interface_gen_dc { \
     corename dc_icmp_ln1247 \
     op interface \
     ports { icmp_ln1247 { I 1 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 24 \
-    name img \
-    type fifo \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_img \
-    op interface \
-    ports { img_din { O 48 vector } img_full_n { I 1 bit } img_write { O 1 bit } img_num_data_valid { I 32 vector } img_fifo_cap { I 32 vector } } \
 } "
 }
 

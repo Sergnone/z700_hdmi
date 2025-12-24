@@ -87,9 +87,9 @@ module top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow (
 );
 
 
-output  [47:0] m_axis_video_TDATA;
-output  [5:0] m_axis_video_TKEEP;
-output  [5:0] m_axis_video_TSTRB;
+output  [23:0] m_axis_video_TDATA;
+output  [2:0] m_axis_video_TKEEP;
+output  [2:0] m_axis_video_TSTRB;
 output  [0:0] m_axis_video_TUSER;
 output  [0:0] m_axis_video_TLAST;
 output  [0:0] m_axis_video_TID;
@@ -109,8 +109,8 @@ output  [3:0] m_axi_mm_video_0_AWREGION;
 output  [0:0] m_axi_mm_video_0_AWUSER;
 output   m_axi_mm_video_0_WVALID;
 input   m_axi_mm_video_0_WREADY;
-output  [127:0] m_axi_mm_video_0_WDATA;
-output  [15:0] m_axi_mm_video_0_WSTRB;
+output  [63:0] m_axi_mm_video_0_WDATA;
+output  [7:0] m_axi_mm_video_0_WSTRB;
 output   m_axi_mm_video_0_WLAST;
 output  [0:0] m_axi_mm_video_0_WID;
 output  [0:0] m_axi_mm_video_0_WUSER;
@@ -129,7 +129,7 @@ output  [3:0] m_axi_mm_video_0_ARREGION;
 output  [0:0] m_axi_mm_video_0_ARUSER;
 input   m_axi_mm_video_0_RVALID;
 output   m_axi_mm_video_0_RREADY;
-input  [127:0] m_axi_mm_video_0_RDATA;
+input  [63:0] m_axi_mm_video_0_RDATA;
 input   m_axi_mm_video_0_RLAST;
 input  [0:0] m_axi_mm_video_0_RID;
 input  [6:0] m_axi_mm_video_0_RFIFONUM;
@@ -141,11 +141,11 @@ input  [1:0] m_axi_mm_video_0_BRESP;
 input  [0:0] m_axi_mm_video_0_BID;
 input  [0:0] m_axi_mm_video_0_BUSER;
 input  [31:0] HwReg_frm_buffer;
-input  [11:0] width_val2;
-input  [11:0] height_val6;
+input  [10:0] width_val2;
+input  [10:0] height_val6;
 input  [15:0] stride_val7;
 input  [5:0] video_format_val8;
-input  [14:0] WidthInBytes_val10;
+input  [13:0] WidthInBytes_val10;
 input  [2:0] colorFormat_val11;
 input   ap_clk;
 input   ap_rst;
@@ -184,8 +184,8 @@ wire   [3:0] AXIMMvideo2Bytes_U0_m_axi_mm_video_0_AWQOS;
 wire   [3:0] AXIMMvideo2Bytes_U0_m_axi_mm_video_0_AWREGION;
 wire   [0:0] AXIMMvideo2Bytes_U0_m_axi_mm_video_0_AWUSER;
 wire    AXIMMvideo2Bytes_U0_m_axi_mm_video_0_WVALID;
-wire   [127:0] AXIMMvideo2Bytes_U0_m_axi_mm_video_0_WDATA;
-wire   [15:0] AXIMMvideo2Bytes_U0_m_axi_mm_video_0_WSTRB;
+wire   [63:0] AXIMMvideo2Bytes_U0_m_axi_mm_video_0_WDATA;
+wire   [7:0] AXIMMvideo2Bytes_U0_m_axi_mm_video_0_WSTRB;
 wire    AXIMMvideo2Bytes_U0_m_axi_mm_video_0_WLAST;
 wire   [0:0] AXIMMvideo2Bytes_U0_m_axi_mm_video_0_WID;
 wire   [0:0] AXIMMvideo2Bytes_U0_m_axi_mm_video_0_WUSER;
@@ -203,7 +203,7 @@ wire   [3:0] AXIMMvideo2Bytes_U0_m_axi_mm_video_0_ARREGION;
 wire   [0:0] AXIMMvideo2Bytes_U0_m_axi_mm_video_0_ARUSER;
 wire    AXIMMvideo2Bytes_U0_m_axi_mm_video_0_RREADY;
 wire    AXIMMvideo2Bytes_U0_m_axi_mm_video_0_BREADY;
-wire   [127:0] AXIMMvideo2Bytes_U0_bytePlanes_din;
+wire   [63:0] AXIMMvideo2Bytes_U0_bytePlanes_din;
 wire    AXIMMvideo2Bytes_U0_bytePlanes_write;
 wire    Bytes2MultiPixStream_U0_ap_start;
 wire    Bytes2MultiPixStream_U0_ap_done;
@@ -213,7 +213,7 @@ wire    Bytes2MultiPixStream_U0_ap_ready;
 wire    Bytes2MultiPixStream_U0_start_out;
 wire    Bytes2MultiPixStream_U0_start_write;
 wire    Bytes2MultiPixStream_U0_bytePlanes_read;
-wire   [47:0] Bytes2MultiPixStream_U0_img_din;
+wire   [23:0] Bytes2MultiPixStream_U0_img_din;
 wire    Bytes2MultiPixStream_U0_img_write;
 wire   [31:0] Bytes2MultiPixStream_U0_img_num_data_valid;
 wire   [31:0] Bytes2MultiPixStream_U0_img_fifo_cap;
@@ -223,21 +223,21 @@ wire    MultiPixStream2AXIvideo_U0_ap_continue;
 wire    MultiPixStream2AXIvideo_U0_ap_idle;
 wire    MultiPixStream2AXIvideo_U0_ap_ready;
 wire    MultiPixStream2AXIvideo_U0_img_read;
-wire   [47:0] MultiPixStream2AXIvideo_U0_m_axis_video_TDATA;
+wire   [23:0] MultiPixStream2AXIvideo_U0_m_axis_video_TDATA;
 wire    MultiPixStream2AXIvideo_U0_m_axis_video_TVALID;
-wire   [5:0] MultiPixStream2AXIvideo_U0_m_axis_video_TKEEP;
-wire   [5:0] MultiPixStream2AXIvideo_U0_m_axis_video_TSTRB;
+wire   [2:0] MultiPixStream2AXIvideo_U0_m_axis_video_TKEEP;
+wire   [2:0] MultiPixStream2AXIvideo_U0_m_axis_video_TSTRB;
 wire   [0:0] MultiPixStream2AXIvideo_U0_m_axis_video_TUSER;
 wire   [0:0] MultiPixStream2AXIvideo_U0_m_axis_video_TLAST;
 wire   [0:0] MultiPixStream2AXIvideo_U0_m_axis_video_TID;
 wire   [0:0] MultiPixStream2AXIvideo_U0_m_axis_video_TDEST;
 wire    bytePlanes_full_n;
-wire   [127:0] bytePlanes_dout;
+wire   [63:0] bytePlanes_dout;
 wire    bytePlanes_empty_n;
 wire   [9:0] bytePlanes_num_data_valid;
 wire   [9:0] bytePlanes_fifo_cap;
 wire    img_full_n;
-wire   [47:0] img_dout;
+wire   [23:0] img_dout;
 wire    img_empty_n;
 wire   [2:0] img_num_data_valid;
 wire   [2:0] img_fifo_cap;
@@ -372,7 +372,7 @@ top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo MultiPixStream2AXIvideo_U0(
     .colorFormat_val(colorFormat_val11)
 );
 
-top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B bytePlanes_U(
+top_design_v_frmbuf_rd_0_0_fifo_w64_d481_B bytePlanes_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
@@ -387,7 +387,7 @@ top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B bytePlanes_U(
     .if_fifo_cap(bytePlanes_fifo_cap)
 );
 
-top_design_v_frmbuf_rd_0_0_fifo_w48_d2_S img_U(
+top_design_v_frmbuf_rd_0_0_fifo_w24_d2_S img_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
@@ -502,13 +502,13 @@ assign m_axi_mm_video_0_BREADY = 1'b0;
 
 assign m_axi_mm_video_0_RREADY = AXIMMvideo2Bytes_U0_m_axi_mm_video_0_RREADY;
 
-assign m_axi_mm_video_0_WDATA = 128'd0;
+assign m_axi_mm_video_0_WDATA = 64'd0;
 
 assign m_axi_mm_video_0_WID = 1'd0;
 
 assign m_axi_mm_video_0_WLAST = 1'b0;
 
-assign m_axi_mm_video_0_WSTRB = 16'd0;
+assign m_axi_mm_video_0_WSTRB = 8'd0;
 
 assign m_axi_mm_video_0_WUSER = 1'd0;
 

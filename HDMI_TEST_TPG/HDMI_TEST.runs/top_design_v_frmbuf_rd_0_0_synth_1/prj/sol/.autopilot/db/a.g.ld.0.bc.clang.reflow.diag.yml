@@ -3,14 +3,14 @@ Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1237, 
                    Column: 20 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'hls::Scalar<6, ap_uint<8> >::Scalar()'
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
     DebugLoc:        { File: HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/src/hls/hls_video_core.h, 
                        Line: 196, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'Bytes2MultiPixStream(STREAM_PLANES&, hls::stream<hls::Scalar<6, ap_uint<8> >, 0>&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
+  - Caller:          'Bytes2MultiPixStream(STREAM_PLANES&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
                        Column: 0 }
   - String:          ''''
@@ -20,14 +20,14 @@ Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 311, 
                    Column: 18 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'hls::Scalar<6, ap_uint<8> >::Scalar()'
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
     DebugLoc:        { File: HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/src/hls/hls_video_core.h, 
                        Line: 196, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<6, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)'
+  - Caller:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 310, 
                        Column: 0 }
   - String:          ''''
@@ -37,13 +37,13 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 318, 
                    Column: 13 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - Callee:          'unsigned short reg<unsigned short>(unsigned short)'
     DebugLoc:        { File: /tools/xilinx/2025.2/Vitis/common/technology/autopilot/utils/x_hls_utils.h, 
                        Line: 223, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<6, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)'
+  - Caller:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 310, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
@@ -53,13 +53,13 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 116, 
                    Column: 2 }
-Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
+Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
 Args:            
-  - Callee:          'AXIMMvideo2Bytes(ap_uint<128>*&, ap_uint<128>*&, ap_uint<128>*&, STREAM_PLANES&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
+  - Callee:          'AXIMMvideo2Bytes(ap_uint<64>*&, ap_uint<64>*&, ap_uint<64>*&, STREAM_PLANES&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 506, 
                        Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
+  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 84, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
@@ -69,13 +69,13 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 118, 
                    Column: 2 }
-Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
+Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
 Args:            
-  - Callee:          'Bytes2MultiPixStream(STREAM_PLANES&, hls::stream<hls::Scalar<6, ap_uint<8> >, 0>&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
+  - Callee:          'Bytes2MultiPixStream(STREAM_PLANES&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
                        Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
+  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 84, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
@@ -85,13 +85,13 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 125, 
                    Column: 2 }
-Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
+Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
 Args:            
-  - Callee:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<6, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)'
+  - Callee:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 310, 
                        Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
+  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 84, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
@@ -101,13 +101,13 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 259, 
                    Column: 2 }
-Function:        _Z11v_frmbuf_rdttttP7ap_uintILi128EES1_S1_RN3hls6streamINS2_4axisIS_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEE
+Function:        _Z11v_frmbuf_rdttttP7ap_uintILi64EES1_S1_RN3hls6streamINS2_4axisIS_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEE
 Args:            
-  - Callee:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
+  - Callee:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 84, 
                        Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'v_frmbuf_rd(unsigned short, unsigned short, unsigned short, unsigned short, ap_uint<128>*, ap_uint<128>*, ap_uint<128>*, hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
+  - Caller:          'v_frmbuf_rd(unsigned short, unsigned short, unsigned short, unsigned short, ap_uint<64>*, ap_uint<64>*, ap_uint<64>*, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 141, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
@@ -117,7 +117,7 @@ Pass:            reflow-reg2mem-ssa
 Name:            DisaggrReason
 DebugLoc:        { File: HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/src/hls/hls_video_core.h, 
                    Line: 198, Column: 1 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - String:          'Adding '''
   - Name:            pix
@@ -129,7 +129,7 @@ Pass:            reflow-reg2mem-ssa
 Name:            DisaggrReason
 DebugLoc:        { File: HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/src/hls/hls_video_core.h, 
                    Line: 198, Column: 1 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Adding '''
   - Name:            pix
@@ -141,7 +141,7 @@ Pass:            reflow-reg2mem-ssa
 Name:            DisaggrReason
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 96, 
                    Column: 1 }
-Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
+Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
 Args:            
   - String:          'Adding '''
   - Name:            bytePlanes
@@ -153,7 +153,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/src/hls/hls_video_core.h, 
                    Line: 198, Column: 1 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - String:          'Adding '''
   - Name:            pix
@@ -165,7 +165,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/src/hls/hls_video_core.h, 
                    Line: 198, Column: 1 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Adding '''
   - Name:            pix
@@ -177,7 +177,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 96, 
                    Column: 1 }
-Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
+Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
 Args:            
   - String:          'Adding '''
   - Name:            bytePlanes
@@ -189,7 +189,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1237, 
                    Column: 20 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            pix
@@ -200,7 +200,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 311, 
                    Column: 18 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            pix
@@ -211,7 +211,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 95, 
                    Column: 16 }
-Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
+Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            bytePlanes
@@ -222,7 +222,7 @@ Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 403, 
                    Column: 22 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_403_4
@@ -233,7 +233,7 @@ Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 405, 
                    Column: 23 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_405_5
@@ -244,7 +244,7 @@ Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1254, 
                    Column: 24 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_1254_2
@@ -255,7 +255,7 @@ Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1256, 
                    Column: 25 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_1256_3
@@ -266,7 +266,7 @@ Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 310, 
                    Column: 0 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_403_4
@@ -276,31 +276,14 @@ Args:
   - String:          'in function '''
   - String:          MultiPixStream2AXIvideo
   - String:          ''' completely with a factor of '
-  - Factor:          '2'
+  - Factor:          '1'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 310, 
                    Column: 0 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_405_5
-  - String:          ''' ('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:405:23'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          MultiPixStream2AXIvideo
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 310, 
-                   Column: 0 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_405_5
@@ -317,7 +300,7 @@ Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
                    Column: 0 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_1254_2
@@ -334,7 +317,7 @@ Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
                    Column: 0 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_1256_3
@@ -344,14 +327,14 @@ Args:
   - String:          'in function '''
   - String:          Bytes2MultiPixStream
   - String:          ''' completely with a factor of '
-  - Factor:          '2'
+  - Factor:          '1'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
                    Column: 0 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_1256_3
@@ -361,14 +344,14 @@ Args:
   - String:          'in function '''
   - String:          Bytes2MultiPixStream
   - String:          ''' completely with a factor of '
-  - Factor:          '2'
+  - Factor:          '1'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
                    Column: 0 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_1256_3
@@ -378,14 +361,14 @@ Args:
   - String:          'in function '''
   - String:          Bytes2MultiPixStream
   - String:          ''' completely with a factor of '
-  - Factor:          '2'
+  - Factor:          '1'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
                    Column: 0 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_1256_3
@@ -395,14 +378,14 @@ Args:
   - String:          'in function '''
   - String:          Bytes2MultiPixStream
   - String:          ''' completely with a factor of '
-  - Factor:          '2'
+  - Factor:          '1'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
                    Column: 0 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_1256_3
@@ -412,14 +395,14 @@ Args:
   - String:          'in function '''
   - String:          Bytes2MultiPixStream
   - String:          ''' completely with a factor of '
-  - Factor:          '2'
+  - Factor:          '1'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
                    Column: 0 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_1256_3
@@ -429,14 +412,14 @@ Args:
   - String:          'in function '''
   - String:          Bytes2MultiPixStream
   - String:          ''' completely with a factor of '
-  - Factor:          '2'
+  - Factor:          '1'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
                    Column: 0 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_1256_3
@@ -446,14 +429,14 @@ Args:
   - String:          'in function '''
   - String:          Bytes2MultiPixStream
   - String:          ''' completely with a factor of '
-  - Factor:          '2'
+  - Factor:          '1'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
                    Column: 0 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_1256_3
@@ -463,20 +446,20 @@ Args:
   - String:          'in function '''
   - String:          Bytes2MultiPixStream
   - String:          ''' completely with a factor of '
-  - Factor:          '2'
+  - Factor:          '1'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 317, 
                    Column: 13 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - Callee:          'unsigned short reg<unsigned short>(unsigned short)'
     DebugLoc:        { File: /tools/xilinx/2025.2/Vitis/common/technology/autopilot/utils/x_hls_utils.h, 
                        Line: 223, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<6, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)'
+  - Caller:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 310, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
@@ -486,13 +469,13 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 116, 
                    Column: 2 }
-Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
+Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
 Args:            
-  - Callee:          'AXIMMvideo2Bytes(ap_uint<128>*&, ap_uint<128>*&, ap_uint<128>*&, STREAM_PLANES&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
+  - Callee:          'AXIMMvideo2Bytes(ap_uint<64>*&, ap_uint<64>*&, ap_uint<64>*&, STREAM_PLANES&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 506, 
                        Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
+  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 84, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
@@ -502,13 +485,13 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 118, 
                    Column: 2 }
-Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
+Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
 Args:            
-  - Callee:          'Bytes2MultiPixStream(STREAM_PLANES&, hls::stream<hls::Scalar<6, ap_uint<8> >, 0>&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
+  - Callee:          'Bytes2MultiPixStream(STREAM_PLANES&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
                        Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
+  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 84, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
@@ -518,13 +501,13 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 125, 
                    Column: 2 }
-Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
+Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
 Args:            
-  - Callee:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<6, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)'
+  - Callee:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 310, 
                        Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
+  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 84, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
@@ -534,13 +517,13 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 259, 
                    Column: 2 }
-Function:        _Z11v_frmbuf_rdttttP7ap_uintILi128EES1_S1_RN3hls6streamINS2_4axisIS_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEE
+Function:        _Z11v_frmbuf_rdttttP7ap_uintILi64EES1_S1_RN3hls6streamINS2_4axisIS_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEE
 Args:            
-  - Callee:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
+  - Callee:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 84, 
                        Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'v_frmbuf_rd(unsigned short, unsigned short, unsigned short, unsigned short, ap_uint<128>*, ap_uint<128>*, ap_uint<128>*, hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
+  - Caller:          'v_frmbuf_rd(unsigned short, unsigned short, unsigned short, unsigned short, ap_uint<64>*, ap_uint<64>*, ap_uint<64>*, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 141, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
@@ -550,7 +533,7 @@ Pass:            inline
 Name:            NeverInline
 Function:        apatb_v_frmbuf_rd_ir
 Args:            
-  - Callee:          'v_frmbuf_rd(unsigned short, unsigned short, unsigned short, unsigned short, ap_uint<128>*, ap_uint<128>*, ap_uint<128>*, hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
+  - Callee:          'v_frmbuf_rd(unsigned short, unsigned short, unsigned short, unsigned short, ap_uint<64>*, ap_uint<64>*, ap_uint<64>*, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 141, 
                        Column: 0 }
   - String:          ' not inlined into '
@@ -562,7 +545,7 @@ Pass:            reflow-array-undecay
 Name:            WarnOnUnsupportedVLAUnDecay
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 84, 
                    Column: 0 }
-Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_.clone
+Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_.clone
 Args:            
   - String:          'Skipping array undecay on variable length array '''
   - ArrayName:       HwReg_frm_buffer
@@ -573,7 +556,7 @@ Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 311, 
                    Column: 18 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -592,7 +575,7 @@ Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 365, 
                    Column: 13 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -611,7 +594,7 @@ Pass:            reflow-array-partition
 Name:            WarnArrayXFORMOnIndexCast
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 407, 
                    Column: 17 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
 ...
@@ -620,7 +603,7 @@ Pass:            reflow-array-partition
 Name:            WarnArrayXFORMOnIndexCast
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 407, 
                    Column: 17 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
 ...
@@ -629,34 +612,7 @@ Pass:            reflow-array-partition
 Name:            WarnArrayXFORMOnIndexCast
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 407, 
                    Column: 17 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
-Args:            
-  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
-...
---- !Failure
-Pass:            reflow-array-partition
-Name:            WarnArrayXFORMOnIndexCast
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 407, 
-                   Column: 17 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
-Args:            
-  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
-...
---- !Failure
-Pass:            reflow-array-partition
-Name:            WarnArrayXFORMOnIndexCast
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 407, 
-                   Column: 17 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
-Args:            
-  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
-...
---- !Failure
-Pass:            reflow-array-partition
-Name:            WarnArrayXFORMOnIndexCast
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 407, 
-                   Column: 17 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
 ...
@@ -665,7 +621,7 @@ Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 90, 
                    Column: 18 }
-Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
+Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -674,7 +630,7 @@ Args:
   - String:          ''' with '
   - AggregateTypeName: 'compact=bit'
   - String:          ' mode in '
-  - Bitwidth:        '48'
+  - Bitwidth:        '24'
   - String:          '-bits'
 ...
 --- !Passed
@@ -682,7 +638,7 @@ Pass:            reflow-burst-inference
 Name:            BurstInferred
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 515, 
                    Column: 27 }
-Function:        _Z16AXIMMvideo2BytesRP7ap_uintILi128EES2_S2_R13STREAM_PLANESRKtS6_S6_S6_
+Function:        _Z16AXIMMvideo2BytesRP7ap_uintILi64EES2_S2_R13STREAM_PLANESRKtS6_S6_S6_
 Args:            
   - String:          'Sequential '
   - Direction:       read
@@ -700,14 +656,14 @@ Args:
   - String:          ' '
   - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515:27'
   - String:          ' '
-  - Function:        'AXIMMvideo2Bytes(ap_uint<128>*&, ap_uint<128>*&, ap_uint<128>*&, STREAM_PLANES&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
+  - Function:        'AXIMMvideo2Bytes(ap_uint<64>*&, ap_uint<64>*&, ap_uint<64>*&, STREAM_PLANES&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 506, 
                        Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 519, 
-                       Column: 35 }
+                       Column: 34 }
   - OrigDirection:   read
   - OrigID:          for.inc.load.6
 ...
@@ -716,7 +672,7 @@ Pass:            reflow-burst-inference
 Name:            IncompatibleStride
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 515, 
                    Column: 27 }
-Function:        _Z16AXIMMvideo2BytesRP7ap_uintILi128EES2_S2_R13STREAM_PLANESRKtS6_S6_S6_
+Function:        _Z16AXIMMvideo2BytesRP7ap_uintILi64EES2_S2_R13STREAM_PLANESRKtS6_S6_S6_
 Args:            
   - String:          Stride is incompatible
   - String:          ' _XLX_SEP_ '
@@ -733,7 +689,7 @@ Args:
   - String:          ' '
   - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:510:5'
   - String:          ' '
-  - Function:        'AXIMMvideo2Bytes(ap_uint<128>*&, ap_uint<128>*&, ap_uint<128>*&, STREAM_PLANES&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
+  - Function:        'AXIMMvideo2Bytes(ap_uint<64>*&, ap_uint<64>*&, ap_uint<64>*&, STREAM_PLANES&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 506, 
                        Column: 0 }
   - String:          ' '
@@ -743,10 +699,10 @@ Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 515, 
                    Column: 27 }
-Function:        _Z16AXIMMvideo2BytesRP7ap_uintILi128EES2_S2_R13STREAM_PLANESRKtS6_S6_S6_
+Function:        _Z16AXIMMvideo2BytesRP7ap_uintILi64EES2_S2_R13STREAM_PLANESRKtS6_S6_S6_
 Args:            
   - String:          'Could not widen since type '
-  - Type:            i128
+  - Type:            i64
   - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
   - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
@@ -763,7 +719,7 @@ Args:
   - String:          ' '
   - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515:27'
   - String:          ' '
-  - Function:        'AXIMMvideo2Bytes(ap_uint<128>*&, ap_uint<128>*&, ap_uint<128>*&, STREAM_PLANES&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
+  - Function:        'AXIMMvideo2Bytes(ap_uint<64>*&, ap_uint<64>*&, ap_uint<64>*&, STREAM_PLANES&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 506, 
                        Column: 0 }
   - String:          ' '
@@ -773,7 +729,7 @@ Pass:            reflow-occurrence-analysis
 Name:            CouldNotAnalyzeBBInfo
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1272, 
                    Column: 11 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Could not analyze occurrence information for '''
   - BBName:          if.then169
@@ -788,7 +744,7 @@ Pass:            reflow-occurrence-analysis
 Name:            CouldNotAnalyzeBBInfo
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1272, 
                    Column: 11 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Could not analyze occurrence information for '''
   - BBName:          if.then169.1
@@ -803,7 +759,7 @@ Pass:            reflow-occurrence-analysis
 Name:            CouldNotAnalyzeBBInfo
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1272, 
                    Column: 11 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Could not analyze occurrence information for '''
   - BBName:          if.then169.2
@@ -818,7 +774,7 @@ Pass:            reflow-occurrence-analysis
 Name:            CouldNotAnalyzeBBInfo
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1272, 
                    Column: 11 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Could not analyze occurrence information for '''
   - BBName:          if.then169.3
@@ -833,7 +789,7 @@ Pass:            reflow-occurrence-analysis
 Name:            CouldNotAnalyzeBBInfo
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1272, 
                    Column: 11 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Could not analyze occurrence information for '''
   - BBName:          if.then169.4
@@ -848,7 +804,7 @@ Pass:            reflow-occurrence-analysis
 Name:            CouldNotAnalyzeBBInfo
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1272, 
                    Column: 11 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Could not analyze occurrence information for '''
   - BBName:          if.then169.5
@@ -863,7 +819,7 @@ Pass:            reflow-occurrence-analysis
 Name:            CouldNotAnalyzeBBInfo
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1272, 
                    Column: 11 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Could not analyze occurrence information for '''
   - BBName:          if.then169.6
@@ -878,7 +834,7 @@ Pass:            reflow-occurrence-analysis
 Name:            CouldNotAnalyzeBBInfo
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1272, 
                    Column: 11 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi6E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
+Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Could not analyze occurrence information for '''
   - BBName:          if.then169.7
@@ -903,7 +859,7 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 367, 
                    Column: 20 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -926,14 +882,14 @@ Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 515, 
                    Column: 27 }
-Function:        _Z16AXIMMvideo2BytesRP7ap_uintILi128EES2_S2_R13STREAM_PLANESRKtS6_S6_S6_.1
+Function:        _Z16AXIMMvideo2BytesRP7ap_uintILi64EES2_S2_R13STREAM_PLANESRKtS6_S6_S6_.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
   - String:          ' of '
   - Length:          variable
   - String:          ' length and bit width '
-  - Width:           '128'
+  - Width:           '64'
   - String:          ' has been inferred.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
   - String:          ' _XLX_SEP_ '
@@ -946,7 +902,7 @@ Args:
   - String:          ' '
   - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515:27'
   - String:          ' '
-  - Function:        'AXIMMvideo2Bytes(ap_uint<128>*&, ap_uint<128>*&, ap_uint<128>*&, STREAM_PLANES&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&) (.1)'
+  - Function:        'AXIMMvideo2Bytes(ap_uint<64>*&, ap_uint<64>*&, ap_uint<64>*&, STREAM_PLANES&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&) (.1)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 506, 
                        Column: 0 }
   - String:          ' '
@@ -956,14 +912,14 @@ Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 515, 
                    Column: 27 }
-Function:        _Z16AXIMMvideo2BytesRP7ap_uintILi128EES2_S2_R13STREAM_PLANESRKtS6_S6_S6_.1
+Function:        _Z16AXIMMvideo2BytesRP7ap_uintILi64EES2_S2_R13STREAM_PLANESRKtS6_S6_S6_.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
   - String:          ' of '
   - Length:          variable
   - String:          ' length and bit width '
-  - Width:           '128'
+  - Width:           '64'
   - String:          ' in loop '''
   - LoopName:        VITIS_LOOP_515_1
   - String:          '''('
@@ -979,13 +935,13 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 317, 
                    Column: 13 }
-Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi6E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_SC_
 Args:            
   - Callee:          'unsigned short reg<unsigned short>(unsigned short)'
     DebugLoc:        { File: /tools/xilinx/2025.2/Vitis/common/technology/autopilot/utils/x_hls_utils.h, 
                        Line: 223, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<6, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)'
+  - Caller:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 310, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
@@ -995,13 +951,13 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 116, 
                    Column: 2 }
-Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_.1
+Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_.1
 Args:            
-  - Callee:          'AXIMMvideo2Bytes(ap_uint<128>*&, ap_uint<128>*&, ap_uint<128>*&, STREAM_PLANES&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&) (.1)'
+  - Callee:          'AXIMMvideo2Bytes(ap_uint<64>*&, ap_uint<64>*&, ap_uint<64>*&, STREAM_PLANES&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&) (.1)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 506, 
                        Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&) (.1)'
+  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&) (.1)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 84, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
@@ -1011,13 +967,13 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 118, 
                    Column: 2 }
-Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_.1
+Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_.1
 Args:            
-  - Callee:          'Bytes2MultiPixStream(STREAM_PLANES&, hls::stream<hls::Scalar<6, ap_uint<8> >, 0>&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
+  - Callee:          'Bytes2MultiPixStream(STREAM_PLANES&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
                        Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&) (.1)'
+  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&) (.1)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 84, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
@@ -1027,13 +983,13 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 125, 
                    Column: 2 }
-Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_.1
+Function:        _ZL19FrmbufRdHlsDataFlowRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEER13HW_STRUCT_REGRtS9_S9_S9_S9_S9_.1
 Args:            
-  - Callee:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<6, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)'
+  - Callee:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 310, 
                        Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&) (.1)'
+  - Caller:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&) (.1)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 84, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
@@ -1043,13 +999,13 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 259, 
                    Column: 2 }
-Function:        _Z11v_frmbuf_rdttttP7ap_uintILi128EES1_S1_RN3hls6streamINS2_4axisIS_ILi48EELm1ELm1ELm1ELh56ELb0EEELi0EEE
+Function:        _Z11v_frmbuf_rdttttP7ap_uintILi64EES1_S1_RN3hls6streamINS2_4axisIS_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEE
 Args:            
-  - Callee:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&) (.1)'
+  - Callee:          'FrmbufRdHlsDataFlow(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&) (.1)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 84, 
                        Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'v_frmbuf_rd(unsigned short, unsigned short, unsigned short, unsigned short, ap_uint<128>*, ap_uint<128>*, ap_uint<128>*, hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
+  - Caller:          'v_frmbuf_rd(unsigned short, unsigned short, unsigned short, unsigned short, ap_uint<64>*, ap_uint<64>*, ap_uint<64>*, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 141, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'

@@ -24,12 +24,12 @@
 <unit>clock cycles</unit>
 <Best-caseLatency>1</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>8305215</Worst-caseLatency>
+<Worst-caseLatency>4152615</Worst-caseLatency>
 <Best-caseRealTimeLatency>6.750 ns</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>56.060 ms</Worst-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>28.030 ms</Worst-caseRealTimeLatency>
 <Interval-min>1</Interval-min>
-<Interval-max>8305215</Interval-max>
+<Interval-max>4152615</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -38,20 +38,20 @@
 <TripCount>
 <range>
 <min>64</min>
-<max>2160</max>
+<max>1080</max>
 </range>
 </TripCount>
 <isPerfectNested>0</isPerfectNested>
 <Latency>
 <range>
 <min>320</min>
-<max>8305200</max>
+<max>4152600</max>
 </range>
 </Latency>
 <AbsoluteTimeLatency>
 <range>
 <min>2160</min>
-<max>56060100</max>
+<max>28030050</max>
 </range>
 </AbsoluteTimeLatency>
 <IterationLatency>
@@ -83,8 +83,8 @@
 <AreaEstimates>
 <Resources>
 <DSP>1</DSP>
-<FF>640</FF>
-<LUT>529</LUT>
+<FF>467</FF>
+<LUT>516</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -216,7 +216,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>128</Bits>
+<Bits>64</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -271,7 +271,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>48</Bits>
+<Bits>24</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -326,7 +326,7 @@
 <IOProtocol>ap_stable</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>12</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -337,7 +337,7 @@
 <IOProtocol>ap_stable</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>12</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -348,7 +348,7 @@
 <IOProtocol>ap_stable</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>15</Bits>
+<Bits>14</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>

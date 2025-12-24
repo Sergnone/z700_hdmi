@@ -37,7 +37,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>128</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>4</if_type>
@@ -109,7 +109,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>128</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -145,7 +145,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>12</bitwidth>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>0</if_type>
@@ -181,7 +181,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>14</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>0</if_type>
@@ -271,7 +271,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>12</bitwidth>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -412,7 +412,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>14</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -455,7 +455,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>12</bitwidth>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -555,7 +555,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>14</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -568,7 +568,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.53</m_delay>
+				<m_delay>1.52</m_delay>
 				<m_topoIndex>7</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -727,7 +727,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>12</bitwidth>
+					<bitwidth>13</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -1012,13 +1012,13 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>12</bitwidth>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
 					<item>93</item>
-					<item>242</item>
+					<item>245</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -1082,7 +1082,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.54</m_delay>
+				<m_delay>1.48</m_delay>
 				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1126,7 +1126,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>12</bitwidth>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1139,7 +1139,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.54</m_delay>
+				<m_delay>1.48</m_delay>
 				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1247,7 +1247,7 @@
 					<count>2</count>
 					<item_version>0</item_version>
 					<item>102</item>
-					<item>243</item>
+					<item>246</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -1298,7 +1298,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>28</bitwidth>
+					<bitwidth>27</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1434,7 +1434,7 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>trunc_ln6</name>
+						<name>trunc_ln4</name>
 						<fileName>prj/sol/.autopilot/db/v_frmbuf_rd.cpp</fileName>
 						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1</fileDirectory>
 						<lineNumber>515</lineNumber>
@@ -1469,7 +1469,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>28</bitwidth>
+					<bitwidth>29</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -1584,7 +1584,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>128</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1709,7 +1709,7 @@
 					<item>127</item>
 					<item>128</item>
 					<item>129</item>
-					<item>240</item>
+					<item>243</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -1824,8 +1824,8 @@
 					<item_version>0</item_version>
 					<item>132</item>
 					<item>133</item>
-					<item>241</item>
 					<item>244</item>
+					<item>247</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -1883,8 +1883,8 @@
 					<item_version>0</item_version>
 					<item>134</item>
 					<item>135</item>
-					<item>245</item>
-					<item>246</item>
+					<item>248</item>
+					<item>249</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -2067,10 +2067,10 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>14</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>15</content>
+				<content>7</content>
 			</item>
 			<item class_id_reference="16" object_id="_41">
 				<Value>
@@ -2101,7 +2101,7 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>4</content>
+				<content>3</content>
 			</item>
 			<item class_id_reference="16" object_id="_42">
 				<Value>
@@ -2132,7 +2132,7 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>14</content>
+				<content>13</content>
 			</item>
 			<item class_id_reference="16" object_id="_43">
 				<Value>
@@ -2222,7 +2222,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>12</bitwidth>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>0</content>
@@ -2253,7 +2253,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>12</bitwidth>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>1</content>
@@ -2284,7 +2284,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>3</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>0</content>
@@ -2897,77 +2897,77 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_109">
-				<id>236</id>
+				<id>239</id>
 				<edge_type>2</edge_type>
 				<source_obj>29</source_obj>
 				<sink_obj>35</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_110">
-				<id>237</id>
+				<id>240</id>
 				<edge_type>2</edge_type>
 				<source_obj>35</source_obj>
 				<sink_obj>52</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_111">
-				<id>238</id>
+				<id>241</id>
 				<edge_type>2</edge_type>
 				<source_obj>35</source_obj>
 				<sink_obj>50</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_112">
-				<id>239</id>
+				<id>242</id>
 				<edge_type>2</edge_type>
 				<source_obj>50</source_obj>
 				<sink_obj>35</sink_obj>
 				<is_back_edge>1</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_113">
-				<id>240</id>
+				<id>243</id>
 				<edge_type>4</edge_type>
 				<source_obj>44</source_obj>
 				<sink_obj>45</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_114">
-				<id>241</id>
+				<id>244</id>
 				<edge_type>4</edge_type>
 				<source_obj>36</source_obj>
 				<sink_obj>47</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_115">
-				<id>242</id>
+				<id>245</id>
 				<edge_type>4</edge_type>
 				<source_obj>27</source_obj>
 				<sink_obj>30</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_116">
-				<id>243</id>
+				<id>246</id>
 				<edge_type>4</edge_type>
 				<source_obj>26</source_obj>
 				<sink_obj>36</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_117">
-				<id>244</id>
+				<id>247</id>
 				<edge_type>4</edge_type>
 				<source_obj>26</source_obj>
 				<sink_obj>47</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_118">
-				<id>245</id>
+				<id>248</id>
 				<edge_type>4</edge_type>
 				<source_obj>27</source_obj>
 				<sink_obj>48</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_119">
-				<id>246</id>
+				<id>249</id>
 				<edge_type>4</edge_type>
 				<source_obj>30</source_obj>
 				<sink_obj>48</sink_obj>
@@ -2999,7 +2999,7 @@
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
 			<mMinLatency>7169</mMinLatency>
-			<mMaxLatency>3354481</mMaxLatency>
+			<mMaxLatency>1677241</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -3044,9 +3044,9 @@
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
 			<mMinTripCount>64</mMinTripCount>
-			<mMaxTripCount>2160</mMaxTripCount>
+			<mMaxTripCount>1080</mMaxTripCount>
 			<mMinLatency>7168</mMinLatency>
-			<mMaxLatency>3354480</mMaxLatency>
+			<mMaxLatency>1677240</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

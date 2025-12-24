@@ -257,34 +257,33 @@ static AESL_RUNTIME_BC __xlx_m_axis_video_V_id_V_V_size_Reader("../tv/stream_siz
 unsigned int ap_apatb_m_axis_video_V_dest_V_cap_bc;
 static AESL_RUNTIME_BC __xlx_m_axis_video_V_dest_V_V_size_Reader("../tv/stream_size/stream_size_out_m_axis_video_V_dest_V.dat");
 using hls::sim::Byte;
-struct __cosim_s16__ { char data[16]; };
-extern "C" void v_frmbuf_rd(Byte<16>*, short, short, short, short, int, int, int, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *);
+extern "C" void v_frmbuf_rd(Byte<8>*, short, short, short, short, int, int, int, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *);
 extern "C" void apatb_v_frmbuf_rd_hw(short __xlx_apatb_param_width, short __xlx_apatb_param_height, short __xlx_apatb_param_stride, short __xlx_apatb_param_video_format, volatile void * __xlx_apatb_param_frm_buffer, volatile void * __xlx_apatb_param_frm_buffer2, volatile void * __xlx_apatb_param_frm_buffer3, volatile void * __xlx_apatb_param_m_axis_video_V_data_V, volatile void * __xlx_apatb_param_m_axis_video_V_keep_V, volatile void * __xlx_apatb_param_m_axis_video_V_strb_V, volatile void * __xlx_apatb_param_m_axis_video_V_user_V, volatile void * __xlx_apatb_param_m_axis_video_V_last_V, volatile void * __xlx_apatb_param_m_axis_video_V_id_V, volatile void * __xlx_apatb_param_m_axis_video_V_dest_V) {
 using hls::sim::createStream;
   // Collect __xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec
-std::vector<Byte<16>> __xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec;
+std::vector<Byte<8>> __xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec;
 for (size_t i = 0; i < 2073600; ++i){
-__xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec.push_back(((Byte<16>*)__xlx_apatb_param_frm_buffer)[i]);
+__xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec.push_back(((Byte<8>*)__xlx_apatb_param_frm_buffer)[i]);
 }
   int __xlx_size_param_frm_buffer = 2073600;
   int __xlx_offset_param_frm_buffer = 0;
-  int __xlx_offset_byte_param_frm_buffer = 0*16;
+  int __xlx_offset_byte_param_frm_buffer = 0*8;
 for (size_t i = 0; i < 2073600; ++i){
-__xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec.push_back(((Byte<16>*)__xlx_apatb_param_frm_buffer2)[i]);
+__xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec.push_back(((Byte<8>*)__xlx_apatb_param_frm_buffer2)[i]);
 }
   int __xlx_size_param_frm_buffer2 = 2073600;
   int __xlx_offset_param_frm_buffer2 = 2073600;
-  int __xlx_offset_byte_param_frm_buffer2 = 2073600*16;
+  int __xlx_offset_byte_param_frm_buffer2 = 2073600*8;
 for (size_t i = 0; i < 2073600; ++i){
-__xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec.push_back(((Byte<16>*)__xlx_apatb_param_frm_buffer3)[i]);
+__xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec.push_back(((Byte<8>*)__xlx_apatb_param_frm_buffer3)[i]);
 }
   int __xlx_size_param_frm_buffer3 = 2073600;
   int __xlx_offset_param_frm_buffer3 = 4147200;
-  int __xlx_offset_byte_param_frm_buffer3 = 4147200*16;
+  int __xlx_offset_byte_param_frm_buffer3 = 4147200*8;
   //Create input buffer for m_axis_video_V_data_V
   ap_apatb_m_axis_video_V_data_V_cap_bc = __xlx_m_axis_video_V_data_V_V_size_Reader.read_size();
-  long long* __xlx_m_axis_video_V_data_V_input_buffer= new long long[ap_apatb_m_axis_video_V_data_V_cap_bc];
-auto* sm_axis_video_V_data_V = createStream((hls::stream<long long>*)__xlx_apatb_param_m_axis_video_V_data_V);
+  int* __xlx_m_axis_video_V_data_V_input_buffer= new int[ap_apatb_m_axis_video_V_data_V_cap_bc];
+auto* sm_axis_video_V_data_V = createStream((hls::stream<int>*)__xlx_apatb_param_m_axis_video_V_data_V);
   //Create input buffer for m_axis_video_V_keep_V
   ap_apatb_m_axis_video_V_keep_V_cap_bc = __xlx_m_axis_video_V_keep_V_V_size_Reader.read_size();
   char* __xlx_m_axis_video_V_keep_V_input_buffer= new char[ap_apatb_m_axis_video_V_keep_V_cap_bc];
@@ -310,20 +309,20 @@ auto* sm_axis_video_V_id_V = createStream((hls::stream<char>*)__xlx_apatb_param_
   char* __xlx_m_axis_video_V_dest_V_input_buffer= new char[ap_apatb_m_axis_video_V_dest_V_cap_bc];
 auto* sm_axis_video_V_dest_V = createStream((hls::stream<char>*)__xlx_apatb_param_m_axis_video_V_dest_V);
   // DUT call
-  v_frmbuf_rd(__xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec.data(), __xlx_apatb_param_width, __xlx_apatb_param_height, __xlx_apatb_param_stride, __xlx_apatb_param_video_format, __xlx_offset_byte_param_frm_buffer, __xlx_offset_byte_param_frm_buffer2, __xlx_offset_byte_param_frm_buffer3, sm_axis_video_V_data_V->data<long long>(), sm_axis_video_V_keep_V->data<char>(), sm_axis_video_V_strb_V->data<char>(), sm_axis_video_V_user_V->data<char>(), sm_axis_video_V_last_V->data<char>(), sm_axis_video_V_id_V->data<char>(), sm_axis_video_V_dest_V->data<char>());
+  v_frmbuf_rd(__xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec.data(), __xlx_apatb_param_width, __xlx_apatb_param_height, __xlx_apatb_param_stride, __xlx_apatb_param_video_format, __xlx_offset_byte_param_frm_buffer, __xlx_offset_byte_param_frm_buffer2, __xlx_offset_byte_param_frm_buffer3, sm_axis_video_V_data_V->data<int>(), sm_axis_video_V_keep_V->data<char>(), sm_axis_video_V_strb_V->data<char>(), sm_axis_video_V_user_V->data<char>(), sm_axis_video_V_last_V->data<char>(), sm_axis_video_V_id_V->data<char>(), sm_axis_video_V_dest_V->data<char>());
 // print __xlx_apatb_param_frm_buffer
 for (size_t i = 0; i < __xlx_size_param_frm_buffer; ++i) {
-((Byte<16>*)__xlx_apatb_param_frm_buffer)[i] = __xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec[__xlx_offset_param_frm_buffer+i];
+((Byte<8>*)__xlx_apatb_param_frm_buffer)[i] = __xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec[__xlx_offset_param_frm_buffer+i];
 }
 // print __xlx_apatb_param_frm_buffer2
 for (size_t i = 0; i < __xlx_size_param_frm_buffer2; ++i) {
-((Byte<16>*)__xlx_apatb_param_frm_buffer2)[i] = __xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec[__xlx_offset_param_frm_buffer2+i];
+((Byte<8>*)__xlx_apatb_param_frm_buffer2)[i] = __xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec[__xlx_offset_param_frm_buffer2+i];
 }
 // print __xlx_apatb_param_frm_buffer3
 for (size_t i = 0; i < __xlx_size_param_frm_buffer3; ++i) {
-((Byte<16>*)__xlx_apatb_param_frm_buffer3)[i] = __xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec[__xlx_offset_param_frm_buffer3+i];
+((Byte<8>*)__xlx_apatb_param_frm_buffer3)[i] = __xlx_frm_buffer_frm_buffer2_frm_buffer3__tmp_vec[__xlx_offset_param_frm_buffer3+i];
 }
-sm_axis_video_V_data_V->transfer((hls::stream<long long>*)__xlx_apatb_param_m_axis_video_V_data_V);
+sm_axis_video_V_data_V->transfer((hls::stream<int>*)__xlx_apatb_param_m_axis_video_V_data_V);
 sm_axis_video_V_keep_V->transfer((hls::stream<char>*)__xlx_apatb_param_m_axis_video_V_keep_V);
 sm_axis_video_V_strb_V->transfer((hls::stream<char>*)__xlx_apatb_param_m_axis_video_V_strb_V);
 sm_axis_video_V_user_V->transfer((hls::stream<char>*)__xlx_apatb_param_m_axis_video_V_user_V);

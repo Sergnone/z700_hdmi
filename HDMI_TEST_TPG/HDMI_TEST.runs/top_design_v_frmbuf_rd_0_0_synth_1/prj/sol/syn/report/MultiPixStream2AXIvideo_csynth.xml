@@ -18,18 +18,18 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>4.325</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.261</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>12</Best-caseLatency>
+<Best-caseLatency>9</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>4160172</Worst-caseLatency>
-<Best-caseRealTimeLatency>81.000 ns</Best-caseRealTimeLatency>
+<Worst-caseLatency>2080089</Worst-caseLatency>
+<Best-caseRealTimeLatency>60.750 ns</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>28.081 ms</Worst-caseRealTimeLatency>
-<Interval-min>12</Interval-min>
-<Interval-max>4160172</Interval-max>
+<Worst-caseRealTimeLatency>14.041 ms</Worst-caseRealTimeLatency>
+<Interval-min>9</Interval-min>
+<Interval-max>2080089</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -38,20 +38,20 @@
 <TripCount>
 <range>
 <min>0</min>
-<max>2160</max>
+<max>1080</max>
 </range>
 </TripCount>
 <isPerfectNested>0</isPerfectNested>
 <Latency>
 <range>
 <min>0</min>
-<max>4160160</max>
+<max>2080080</max>
 </range>
 </Latency>
 <AbsoluteTimeLatency>
 <range>
 <min>0</min>
-<max>28081080</max>
+<max>14040540</max>
 </range>
 </AbsoluteTimeLatency>
 <IterationLatency>
@@ -83,8 +83,8 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<FF>276</FF>
-<LUT>483</LUT>
+<FF>191</FF>
+<LUT>353</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>
@@ -183,7 +183,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>48</Bits>
+<Bits>24</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -238,7 +238,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>48</Bits>
+<Bits>24</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -282,7 +282,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>6</Bits>
+<Bits>3</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -293,7 +293,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>6</Bits>
+<Bits>3</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -337,7 +337,7 @@
 <IOProtocol>ap_stable</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>12</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -348,7 +348,7 @@
 <IOProtocol>ap_stable</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>12</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>

@@ -10,19 +10,19 @@ wire [6:0] inst_idle_sigs;
 wire [2:0] inst_block_sigs;
 wire kernel_block;
 
-assign axis_block_sigs[0] = ~grp_FrmbufRdHlsDataFlow_fu_164.MultiPixStream2AXIvideo_U0.grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_163.m_axis_video_TDATA_blk_n;
+assign axis_block_sigs[0] = ~grp_FrmbufRdHlsDataFlow_fu_166.MultiPixStream2AXIvideo_U0.grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138.m_axis_video_TDATA_blk_n;
 
-assign inst_idle_sigs[0] = grp_FrmbufRdHlsDataFlow_fu_164.AXIMMvideo2Bytes_U0.ap_idle;
-assign inst_block_sigs[0] = (grp_FrmbufRdHlsDataFlow_fu_164.AXIMMvideo2Bytes_U0.ap_done & ~grp_FrmbufRdHlsDataFlow_fu_164.AXIMMvideo2Bytes_U0.ap_continue) | ~grp_FrmbufRdHlsDataFlow_fu_164.AXIMMvideo2Bytes_U0.grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1_fu_140.bytePlanes_blk_n;
-assign inst_idle_sigs[1] = grp_FrmbufRdHlsDataFlow_fu_164.Bytes2MultiPixStream_U0.ap_idle;
-assign inst_block_sigs[1] = (grp_FrmbufRdHlsDataFlow_fu_164.Bytes2MultiPixStream_U0.ap_done & ~grp_FrmbufRdHlsDataFlow_fu_164.Bytes2MultiPixStream_U0.ap_continue) | ~grp_FrmbufRdHlsDataFlow_fu_164.Bytes2MultiPixStream_U0.grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1_fu_178.bytePlanes_blk_n | ~grp_FrmbufRdHlsDataFlow_fu_164.Bytes2MultiPixStream_U0.grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1_fu_178.img_blk_n;
-assign inst_idle_sigs[2] = grp_FrmbufRdHlsDataFlow_fu_164.MultiPixStream2AXIvideo_U0.ap_idle;
-assign inst_block_sigs[2] = (grp_FrmbufRdHlsDataFlow_fu_164.MultiPixStream2AXIvideo_U0.ap_done & ~grp_FrmbufRdHlsDataFlow_fu_164.MultiPixStream2AXIvideo_U0.ap_continue) | ~grp_FrmbufRdHlsDataFlow_fu_164.MultiPixStream2AXIvideo_U0.grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_163.img_blk_n;
+assign inst_idle_sigs[0] = grp_FrmbufRdHlsDataFlow_fu_166.AXIMMvideo2Bytes_U0.ap_idle;
+assign inst_block_sigs[0] = (grp_FrmbufRdHlsDataFlow_fu_166.AXIMMvideo2Bytes_U0.ap_done & ~grp_FrmbufRdHlsDataFlow_fu_166.AXIMMvideo2Bytes_U0.ap_continue) | ~grp_FrmbufRdHlsDataFlow_fu_166.AXIMMvideo2Bytes_U0.grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1_fu_146.bytePlanes_blk_n;
+assign inst_idle_sigs[1] = grp_FrmbufRdHlsDataFlow_fu_166.Bytes2MultiPixStream_U0.ap_idle;
+assign inst_block_sigs[1] = (grp_FrmbufRdHlsDataFlow_fu_166.Bytes2MultiPixStream_U0.ap_done & ~grp_FrmbufRdHlsDataFlow_fu_166.Bytes2MultiPixStream_U0.ap_continue) | ~grp_FrmbufRdHlsDataFlow_fu_166.Bytes2MultiPixStream_U0.grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1_fu_172.bytePlanes_blk_n | ~grp_FrmbufRdHlsDataFlow_fu_166.Bytes2MultiPixStream_U0.grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1_fu_172.img_blk_n;
+assign inst_idle_sigs[2] = grp_FrmbufRdHlsDataFlow_fu_166.MultiPixStream2AXIvideo_U0.ap_idle;
+assign inst_block_sigs[2] = (grp_FrmbufRdHlsDataFlow_fu_166.MultiPixStream2AXIvideo_U0.ap_done & ~grp_FrmbufRdHlsDataFlow_fu_166.MultiPixStream2AXIvideo_U0.ap_continue) | ~grp_FrmbufRdHlsDataFlow_fu_166.MultiPixStream2AXIvideo_U0.grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138.img_blk_n;
 
 assign inst_idle_sigs[3] = 1'b0;
-assign inst_idle_sigs[4] = grp_FrmbufRdHlsDataFlow_fu_164.ap_idle;
-assign inst_idle_sigs[5] = grp_FrmbufRdHlsDataFlow_fu_164.MultiPixStream2AXIvideo_U0.ap_idle;
-assign inst_idle_sigs[6] = grp_FrmbufRdHlsDataFlow_fu_164.MultiPixStream2AXIvideo_U0.grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_163.ap_idle;
+assign inst_idle_sigs[4] = grp_FrmbufRdHlsDataFlow_fu_166.ap_idle;
+assign inst_idle_sigs[5] = grp_FrmbufRdHlsDataFlow_fu_166.MultiPixStream2AXIvideo_U0.ap_idle;
+assign inst_idle_sigs[6] = grp_FrmbufRdHlsDataFlow_fu_166.MultiPixStream2AXIvideo_U0.grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138.ap_idle;
 
 top_design_v_frmbuf_rd_0_0_hls_deadlock_idx0_monitor top_design_v_frmbuf_rd_0_0_hls_deadlock_idx0_monitor_U (
     .clock(kernel_monitor_clock),

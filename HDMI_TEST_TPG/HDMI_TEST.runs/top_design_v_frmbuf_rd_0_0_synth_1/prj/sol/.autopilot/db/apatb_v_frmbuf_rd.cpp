@@ -1385,8 +1385,8 @@ void apatb_v_frmbuf_rd_hw(hls::sim::Byte<2> __xlx_apatb_param_width, hls::sim::B
   };
   port6.param = &__xlx_offset_byte_param_frm_buffer3;
 
-  static hls::sim::Stream<hls::sim::Byte<8>> port7 {
-    .width = 48,
+  static hls::sim::Stream<hls::sim::Byte<4>> port7 {
+    .width = 24,
     .name = "m_axis_video_V_data_V",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_m_axis_video_V_data_V),
@@ -1396,11 +1396,11 @@ void apatb_v_frmbuf_rd_hw(hls::sim::Byte<2> __xlx_apatb_param_width, hls::sim::B
     .gwriter = new hls::sim::Writer(WRAPC_STREAM_EGRESS_STATUS_m_axis_video_V_data_V),
 #endif
   };
-  port7.param = (hls::stream<hls::sim::Byte<8>>*)__xlx_apatb_param_m_axis_video_V_data_V;
+  port7.param = (hls::stream<hls::sim::Byte<4>>*)__xlx_apatb_param_m_axis_video_V_data_V;
   port7.hasWrite = true;
 
   static hls::sim::Stream<hls::sim::Byte<1>> port8 {
-    .width = 6,
+    .width = 3,
     .name = "m_axis_video_V_keep_V",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_m_axis_video_V_keep_V),
@@ -1414,7 +1414,7 @@ void apatb_v_frmbuf_rd_hw(hls::sim::Byte<2> __xlx_apatb_param_width, hls::sim::B
   port8.hasWrite = true;
 
   static hls::sim::Stream<hls::sim::Byte<1>> port9 {
-    .width = 6,
+    .width = 3,
     .name = "m_axis_video_V_strb_V",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_m_axis_video_V_strb_V),
@@ -1488,8 +1488,8 @@ void apatb_v_frmbuf_rd_hw(hls::sim::Byte<2> __xlx_apatb_param_width, hls::sim::B
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port14 {
 #endif
-    .width = 128,
-    .asize = 16,
+    .width = 64,
+    .asize = 8,
     .hbm = false,
     .name = { "mm_video" },
 #ifdef POST_CHECK
@@ -1506,7 +1506,7 @@ void apatb_v_frmbuf_rd_hw(hls::sim::Byte<2> __xlx_apatb_param_width, hls::sim::B
   };
   port14.param = { __xlx_apatb_param_frm_buffer, __xlx_apatb_param_frm_buffer2, __xlx_apatb_param_frm_buffer3 };
   port14.mname = { "frm_buffer", "frm_buffer2", "frm_buffer3" };
-  port14.nbytes = { 33177600, 33177600, 33177600 };
+  port14.nbytes = { 16588800, 16588800, 16588800 };
   for (size_t i = 0; i < port14.nbytes.size(); ++i) {
     if (port14.nbytes[i] > port14.max_nbytes[i]) {
       port14.max_nbytes[i] = port14.nbytes[i];
@@ -1517,9 +1517,9 @@ void apatb_v_frmbuf_rd_hw(hls::sim::Byte<2> __xlx_apatb_param_width, hls::sim::B
     port14.offset.push_back(off);
     off += hls::sim::divide_ceil(port14.max_nbytes[i], port14.asize);
   }
-  __xlx_offset_byte_param_frm_buffer = port14.offset[0]*16;
-  __xlx_offset_byte_param_frm_buffer2 = port14.offset[1]*16;
-  __xlx_offset_byte_param_frm_buffer3 = port14.offset[2]*16;
+  __xlx_offset_byte_param_frm_buffer = port14.offset[0]*8;
+  __xlx_offset_byte_param_frm_buffer2 = port14.offset[1]*8;
+  __xlx_offset_byte_param_frm_buffer3 = port14.offset[2]*8;
 
   try {
 #ifdef POST_CHECK

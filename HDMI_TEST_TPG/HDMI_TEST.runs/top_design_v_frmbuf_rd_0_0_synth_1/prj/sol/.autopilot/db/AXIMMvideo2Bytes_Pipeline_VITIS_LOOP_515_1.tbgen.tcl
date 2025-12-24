@@ -21,18 +21,18 @@ set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 set C_modelArgList {
 	{ lshr_ln int 11 regular {ap_stable 0} }
-	{ mm_video int 128 regular {axi_master 0 stable }  }
-	{ sext_ln515 int 28 regular  }
-	{ bytePlanes int 128 regular {fifo 1 volatile }  }
+	{ mm_video int 64 regular {axi_master 0 stable }  }
+	{ sext_ln515 int 29 regular  }
+	{ bytePlanes int 64 regular {fifo 1 volatile }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
 	{ "Name" : "lshr_ln", "interface" : "wire", "bitwidth" : 11, "direction" : "READONLY"} , 
- 	{ "Name" : "mm_video", "interface" : "axi_master", "bitwidth" : 128, "direction" : "READONLY", "id_num" : 0, "bitSlice":[ {"cElement": [{"cName": "frm_buffer","offset": { "type": "dynamic","port_name": "frm_buffer","bundle": "CTRL"},"direction": "READONLY"},{"cName": "frm_buffer2","offset": { "type": "dynamic","port_name": "frm_buffer2","bundle": "CTRL"}},{"cName": "frm_buffer3","offset": { "type": "dynamic","port_name": "frm_buffer3","bundle": "CTRL"}}]}]} , 
- 	{ "Name" : "sext_ln515", "interface" : "wire", "bitwidth" : 28, "direction" : "READONLY"} , 
- 	{ "Name" : "bytePlanes", "interface" : "fifo", "bitwidth" : 128, "direction" : "WRITEONLY"} ]}
+ 	{ "Name" : "mm_video", "interface" : "axi_master", "bitwidth" : 64, "direction" : "READONLY", "id_num" : 0, "bitSlice":[ {"cElement": [{"cName": "frm_buffer","offset": { "type": "dynamic","port_name": "frm_buffer","bundle": "CTRL"},"direction": "READONLY"},{"cName": "frm_buffer2","offset": { "type": "dynamic","port_name": "frm_buffer2","bundle": "CTRL"}},{"cName": "frm_buffer3","offset": { "type": "dynamic","port_name": "frm_buffer3","bundle": "CTRL"}}]}]} , 
+ 	{ "Name" : "sext_ln515", "interface" : "wire", "bitwidth" : 29, "direction" : "READONLY"} , 
+ 	{ "Name" : "bytePlanes", "interface" : "fifo", "bitwidth" : 64, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 59
 set portList { 
@@ -57,8 +57,8 @@ set portList {
 	{ m_axi_mm_video_0_AWUSER sc_out sc_lv 1 signal 1 } 
 	{ m_axi_mm_video_0_WVALID sc_out sc_logic 1 signal 1 } 
 	{ m_axi_mm_video_0_WREADY sc_in sc_logic 1 signal 1 } 
-	{ m_axi_mm_video_0_WDATA sc_out sc_lv 128 signal 1 } 
-	{ m_axi_mm_video_0_WSTRB sc_out sc_lv 16 signal 1 } 
+	{ m_axi_mm_video_0_WDATA sc_out sc_lv 64 signal 1 } 
+	{ m_axi_mm_video_0_WSTRB sc_out sc_lv 8 signal 1 } 
 	{ m_axi_mm_video_0_WLAST sc_out sc_logic 1 signal 1 } 
 	{ m_axi_mm_video_0_WID sc_out sc_lv 1 signal 1 } 
 	{ m_axi_mm_video_0_WUSER sc_out sc_lv 1 signal 1 } 
@@ -77,7 +77,7 @@ set portList {
 	{ m_axi_mm_video_0_ARUSER sc_out sc_lv 1 signal 1 } 
 	{ m_axi_mm_video_0_RVALID sc_in sc_logic 1 signal 1 } 
 	{ m_axi_mm_video_0_RREADY sc_out sc_logic 1 signal 1 } 
-	{ m_axi_mm_video_0_RDATA sc_in sc_lv 128 signal 1 } 
+	{ m_axi_mm_video_0_RDATA sc_in sc_lv 64 signal 1 } 
 	{ m_axi_mm_video_0_RLAST sc_in sc_logic 1 signal 1 } 
 	{ m_axi_mm_video_0_RID sc_in sc_lv 1 signal 1 } 
 	{ m_axi_mm_video_0_RFIFONUM sc_in sc_lv 7 signal 1 } 
@@ -88,13 +88,13 @@ set portList {
 	{ m_axi_mm_video_0_BRESP sc_in sc_lv 2 signal 1 } 
 	{ m_axi_mm_video_0_BID sc_in sc_lv 1 signal 1 } 
 	{ m_axi_mm_video_0_BUSER sc_in sc_lv 1 signal 1 } 
-	{ bytePlanes_din sc_out sc_lv 128 signal 3 } 
+	{ bytePlanes_din sc_out sc_lv 64 signal 3 } 
 	{ bytePlanes_full_n sc_in sc_logic 1 signal 3 } 
 	{ bytePlanes_write sc_out sc_logic 1 signal 3 } 
 	{ bytePlanes_num_data_valid sc_in sc_lv 10 signal 3 } 
 	{ bytePlanes_fifo_cap sc_in sc_lv 10 signal 3 } 
 	{ lshr_ln sc_in sc_lv 11 signal 0 } 
-	{ sext_ln515 sc_in sc_lv 28 signal 2 } 
+	{ sext_ln515 sc_in sc_lv 29 signal 2 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -118,8 +118,8 @@ set NewPortList {[
  	{ "name": "m_axi_mm_video_0_AWUSER", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "mm_video", "role": "0_AWUSER" }} , 
  	{ "name": "m_axi_mm_video_0_WVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "mm_video", "role": "0_WVALID" }} , 
  	{ "name": "m_axi_mm_video_0_WREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "mm_video", "role": "0_WREADY" }} , 
- 	{ "name": "m_axi_mm_video_0_WDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":128, "type": "signal", "bundle":{"name": "mm_video", "role": "0_WDATA" }} , 
- 	{ "name": "m_axi_mm_video_0_WSTRB", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "mm_video", "role": "0_WSTRB" }} , 
+ 	{ "name": "m_axi_mm_video_0_WDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mm_video", "role": "0_WDATA" }} , 
+ 	{ "name": "m_axi_mm_video_0_WSTRB", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "mm_video", "role": "0_WSTRB" }} , 
  	{ "name": "m_axi_mm_video_0_WLAST", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "mm_video", "role": "0_WLAST" }} , 
  	{ "name": "m_axi_mm_video_0_WID", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "mm_video", "role": "0_WID" }} , 
  	{ "name": "m_axi_mm_video_0_WUSER", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "mm_video", "role": "0_WUSER" }} , 
@@ -138,7 +138,7 @@ set NewPortList {[
  	{ "name": "m_axi_mm_video_0_ARUSER", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "mm_video", "role": "0_ARUSER" }} , 
  	{ "name": "m_axi_mm_video_0_RVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "mm_video", "role": "0_RVALID" }} , 
  	{ "name": "m_axi_mm_video_0_RREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "mm_video", "role": "0_RREADY" }} , 
- 	{ "name": "m_axi_mm_video_0_RDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":128, "type": "signal", "bundle":{"name": "mm_video", "role": "0_RDATA" }} , 
+ 	{ "name": "m_axi_mm_video_0_RDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mm_video", "role": "0_RDATA" }} , 
  	{ "name": "m_axi_mm_video_0_RLAST", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "mm_video", "role": "0_RLAST" }} , 
  	{ "name": "m_axi_mm_video_0_RID", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "mm_video", "role": "0_RID" }} , 
  	{ "name": "m_axi_mm_video_0_RFIFONUM", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "mm_video", "role": "0_RFIFONUM" }} , 
@@ -149,13 +149,13 @@ set NewPortList {[
  	{ "name": "m_axi_mm_video_0_BRESP", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "mm_video", "role": "0_BRESP" }} , 
  	{ "name": "m_axi_mm_video_0_BID", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "mm_video", "role": "0_BID" }} , 
  	{ "name": "m_axi_mm_video_0_BUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "mm_video", "role": "0_BUSER" }} , 
- 	{ "name": "bytePlanes_din", "direction": "out", "datatype": "sc_lv", "bitwidth":128, "type": "signal", "bundle":{"name": "bytePlanes", "role": "din" }} , 
+ 	{ "name": "bytePlanes_din", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "bytePlanes", "role": "din" }} , 
  	{ "name": "bytePlanes_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bytePlanes", "role": "full_n" }} , 
  	{ "name": "bytePlanes_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bytePlanes", "role": "write" }} , 
  	{ "name": "bytePlanes_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "bytePlanes", "role": "num_data_valid" }} , 
  	{ "name": "bytePlanes_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "bytePlanes", "role": "fifo_cap" }} , 
  	{ "name": "lshr_ln", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "lshr_ln", "role": "default" }} , 
- 	{ "name": "sext_ln515", "direction": "in", "datatype": "sc_lv", "bitwidth":28, "type": "signal", "bundle":{"name": "sext_ln515", "role": "default" }}  ]}
+ 	{ "name": "sext_ln515", "direction": "in", "datatype": "sc_lv", "bitwidth":29, "type": "signal", "bundle":{"name": "sext_ln515", "role": "default" }}  ]}
 
 set ArgLastReadFirstWriteLatency {
 	AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 {
@@ -177,7 +177,7 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	lshr_ln { ap_stable {  { lshr_ln in_data 0 11 } } }
-	 { m_axi {  { m_axi_mm_video_0_AWVALID VALID 1 1 }  { m_axi_mm_video_0_AWREADY READY 0 1 }  { m_axi_mm_video_0_AWADDR ADDR 1 32 }  { m_axi_mm_video_0_AWID ID 1 1 }  { m_axi_mm_video_0_AWLEN SIZE 1 32 }  { m_axi_mm_video_0_AWSIZE BURST 1 3 }  { m_axi_mm_video_0_AWBURST LOCK 1 2 }  { m_axi_mm_video_0_AWLOCK CACHE 1 2 }  { m_axi_mm_video_0_AWCACHE PROT 1 4 }  { m_axi_mm_video_0_AWPROT QOS 1 3 }  { m_axi_mm_video_0_AWQOS REGION 1 4 }  { m_axi_mm_video_0_AWREGION USER 1 4 }  { m_axi_mm_video_0_AWUSER DATA 1 1 }  { m_axi_mm_video_0_WVALID VALID 1 1 }  { m_axi_mm_video_0_WREADY READY 0 1 }  { m_axi_mm_video_0_WDATA FIFONUM 1 128 }  { m_axi_mm_video_0_WSTRB STRB 1 16 }  { m_axi_mm_video_0_WLAST LAST 1 1 }  { m_axi_mm_video_0_WID ID 1 1 }  { m_axi_mm_video_0_WUSER DATA 1 1 }  { m_axi_mm_video_0_ARVALID VALID 1 1 }  { m_axi_mm_video_0_ARREADY READY 0 1 }  { m_axi_mm_video_0_ARADDR ADDR 1 32 }  { m_axi_mm_video_0_ARID ID 1 1 }  { m_axi_mm_video_0_ARLEN SIZE 1 32 }  { m_axi_mm_video_0_ARSIZE BURST 1 3 }  { m_axi_mm_video_0_ARBURST LOCK 1 2 }  { m_axi_mm_video_0_ARLOCK CACHE 1 2 }  { m_axi_mm_video_0_ARCACHE PROT 1 4 }  { m_axi_mm_video_0_ARPROT QOS 1 3 }  { m_axi_mm_video_0_ARQOS REGION 1 4 }  { m_axi_mm_video_0_ARREGION USER 1 4 }  { m_axi_mm_video_0_ARUSER DATA 1 1 }  { m_axi_mm_video_0_RVALID VALID 0 1 }  { m_axi_mm_video_0_RREADY READY 1 1 }  { m_axi_mm_video_0_RDATA FIFONUM 0 128 }  { m_axi_mm_video_0_RLAST LAST 0 1 }  { m_axi_mm_video_0_RID ID 0 1 }  { m_axi_mm_video_0_RFIFONUM LEN 0 7 }  { m_axi_mm_video_0_RUSER DATA 0 1 }  { m_axi_mm_video_0_RRESP RESP 0 2 }  { m_axi_mm_video_0_BVALID VALID 0 1 }  { m_axi_mm_video_0_BREADY READY 1 1 }  { m_axi_mm_video_0_BRESP RESP 0 2 }  { m_axi_mm_video_0_BID ID 0 1 }  { m_axi_mm_video_0_BUSER DATA 0 1 } } }
-	sext_ln515 { ap_none {  { sext_ln515 in_data 0 28 } } }
-	bytePlanes { ap_fifo {  { bytePlanes_din fifo_data_out 1 128 }  { bytePlanes_full_n fifo_status_empty 0 1 }  { bytePlanes_write fifo_data_in 1 1 }  { bytePlanes_num_data_valid fifo_update 0 10 }  { bytePlanes_fifo_cap fifo_data 0 10 } } }
+	 { m_axi {  { m_axi_mm_video_0_AWVALID VALID 1 1 }  { m_axi_mm_video_0_AWREADY READY 0 1 }  { m_axi_mm_video_0_AWADDR ADDR 1 32 }  { m_axi_mm_video_0_AWID ID 1 1 }  { m_axi_mm_video_0_AWLEN SIZE 1 32 }  { m_axi_mm_video_0_AWSIZE BURST 1 3 }  { m_axi_mm_video_0_AWBURST LOCK 1 2 }  { m_axi_mm_video_0_AWLOCK CACHE 1 2 }  { m_axi_mm_video_0_AWCACHE PROT 1 4 }  { m_axi_mm_video_0_AWPROT QOS 1 3 }  { m_axi_mm_video_0_AWQOS REGION 1 4 }  { m_axi_mm_video_0_AWREGION USER 1 4 }  { m_axi_mm_video_0_AWUSER DATA 1 1 }  { m_axi_mm_video_0_WVALID VALID 1 1 }  { m_axi_mm_video_0_WREADY READY 0 1 }  { m_axi_mm_video_0_WDATA FIFONUM 1 64 }  { m_axi_mm_video_0_WSTRB STRB 1 8 }  { m_axi_mm_video_0_WLAST LAST 1 1 }  { m_axi_mm_video_0_WID ID 1 1 }  { m_axi_mm_video_0_WUSER DATA 1 1 }  { m_axi_mm_video_0_ARVALID VALID 1 1 }  { m_axi_mm_video_0_ARREADY READY 0 1 }  { m_axi_mm_video_0_ARADDR ADDR 1 32 }  { m_axi_mm_video_0_ARID ID 1 1 }  { m_axi_mm_video_0_ARLEN SIZE 1 32 }  { m_axi_mm_video_0_ARSIZE BURST 1 3 }  { m_axi_mm_video_0_ARBURST LOCK 1 2 }  { m_axi_mm_video_0_ARLOCK CACHE 1 2 }  { m_axi_mm_video_0_ARCACHE PROT 1 4 }  { m_axi_mm_video_0_ARPROT QOS 1 3 }  { m_axi_mm_video_0_ARQOS REGION 1 4 }  { m_axi_mm_video_0_ARREGION USER 1 4 }  { m_axi_mm_video_0_ARUSER DATA 1 1 }  { m_axi_mm_video_0_RVALID VALID 0 1 }  { m_axi_mm_video_0_RREADY READY 1 1 }  { m_axi_mm_video_0_RDATA FIFONUM 0 64 }  { m_axi_mm_video_0_RLAST LAST 0 1 }  { m_axi_mm_video_0_RID ID 0 1 }  { m_axi_mm_video_0_RFIFONUM LEN 0 7 }  { m_axi_mm_video_0_RUSER DATA 0 1 }  { m_axi_mm_video_0_RRESP RESP 0 2 }  { m_axi_mm_video_0_BVALID VALID 0 1 }  { m_axi_mm_video_0_BREADY READY 1 1 }  { m_axi_mm_video_0_BRESP RESP 0 2 }  { m_axi_mm_video_0_BID ID 0 1 }  { m_axi_mm_video_0_BUSER DATA 0 1 } } }
+	sext_ln515 { ap_none {  { sext_ln515 in_data 0 29 } } }
+	bytePlanes { ap_fifo {  { bytePlanes_din fifo_data_out 1 64 }  { bytePlanes_full_n fifo_status_empty 0 1 }  { bytePlanes_write fifo_data_in 1 1 }  { bytePlanes_num_data_valid fifo_update 0 10 }  { bytePlanes_fifo_cap fifo_data 0 10 } } }
 }

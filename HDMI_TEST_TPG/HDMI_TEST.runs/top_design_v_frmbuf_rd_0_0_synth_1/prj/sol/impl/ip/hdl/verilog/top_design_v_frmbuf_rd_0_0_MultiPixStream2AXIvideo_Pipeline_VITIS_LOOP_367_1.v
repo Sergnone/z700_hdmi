@@ -15,12 +15,6 @@ module top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_36
         ap_idle,
         ap_ready,
         mul_ln369,
-        kMap_5_out,
-        kMap_5_out_ap_vld,
-        kMap_4_out,
-        kMap_4_out_ap_vld,
-        kMap_3_out,
-        kMap_3_out_ap_vld,
         kMap_2_out,
         kMap_2_out_ap_vld,
         kMap_1_out,
@@ -37,24 +31,15 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-input  [4:0] mul_ln369;
-output  [2:0] kMap_5_out;
-output   kMap_5_out_ap_vld;
-output  [2:0] kMap_4_out;
-output   kMap_4_out_ap_vld;
-output  [2:0] kMap_3_out;
-output   kMap_3_out_ap_vld;
-output  [2:0] kMap_2_out;
+input  [3:0] mul_ln369;
+output  [1:0] kMap_2_out;
 output   kMap_2_out_ap_vld;
-output  [2:0] kMap_1_out;
+output  [1:0] kMap_1_out;
 output   kMap_1_out_ap_vld;
-output  [2:0] kMap_out;
+output  [1:0] kMap_out;
 output   kMap_out_ap_vld;
 
 reg ap_idle;
-reg kMap_5_out_ap_vld;
-reg kMap_4_out_ap_vld;
-reg kMap_3_out_ap_vld;
 reg kMap_2_out_ap_vld;
 reg kMap_1_out_ap_vld;
 reg kMap_out_ap_vld;
@@ -65,33 +50,30 @@ wire    ap_enable_reg_pp0_iter0;
 reg    ap_enable_reg_pp0_iter1;
 reg    ap_idle_pp0;
 wire    ap_block_pp0_stage0_subdone;
-wire   [0:0] icmp_ln367_fu_147_p2;
+wire   [0:0] icmp_ln367_fu_102_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-wire   [4:0] mapComp_address0;
-wire   [2:0] mapComp_q0;
-reg   [2:0] i_1_reg_318;
+wire   [3:0] mapComp_address0;
+wire   [1:0] mapComp_q0;
+reg   [1:0] i_1_reg_210;
 wire    ap_block_pp0_stage0_11001;
-reg   [0:0] icmp_ln367_reg_322;
-wire   [31:0] zext_ln369_1_fu_169_p1;
+reg   [0:0] icmp_ln367_reg_214;
+wire   [31:0] zext_ln369_1_fu_124_p1;
 wire    ap_block_pp0_stage0;
-reg   [2:0] i_fu_50;
-wire   [2:0] add_ln367_fu_153_p2;
+reg   [1:0] i_fu_38;
+wire   [1:0] add_ln367_fu_108_p2;
 wire    ap_loop_init;
-reg   [2:0] ap_sig_allocacmp_i_1;
-reg   [4:0] kMap_fu_54;
-wire   [4:0] map_cast_fu_241_p1;
-reg   [4:0] kMap_1_fu_58;
-reg   [4:0] kMap_2_fu_62;
-reg   [4:0] kMap_3_fu_66;
-reg   [4:0] kMap_4_fu_70;
-reg   [4:0] kMap_5_fu_74;
+reg   [1:0] ap_sig_allocacmp_i_1;
+reg   [4:0] kMap_fu_42;
+wire   [4:0] map_cast_fu_166_p1;
+reg   [4:0] kMap_1_fu_46;
+reg   [4:0] kMap_2_fu_50;
 reg    ap_loop_exit_ready_pp0_iter1_reg;
 wire    ap_block_pp0_stage0_01001;
 reg    mapComp_ce0_local;
-wire   [4:0] zext_ln369_fu_159_p1;
-wire   [4:0] add_ln369_fu_163_p2;
+wire   [3:0] zext_ln369_fu_114_p1;
+wire   [3:0] add_ln369_fu_118_p2;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -106,23 +88,20 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 i_1_reg_318 = 3'd0;
-#0 icmp_ln367_reg_322 = 1'd0;
-#0 i_fu_50 = 3'd0;
-#0 kMap_fu_54 = 5'd0;
-#0 kMap_1_fu_58 = 5'd0;
-#0 kMap_2_fu_62 = 5'd0;
-#0 kMap_3_fu_66 = 5'd0;
-#0 kMap_4_fu_70 = 5'd0;
-#0 kMap_5_fu_74 = 5'd0;
+#0 i_1_reg_210 = 2'd0;
+#0 icmp_ln367_reg_214 = 1'd0;
+#0 i_fu_38 = 2'd0;
+#0 kMap_fu_42 = 5'd0;
+#0 kMap_1_fu_46 = 5'd0;
+#0 kMap_2_fu_50 = 5'd0;
 #0 ap_loop_exit_ready_pp0_iter1_reg = 1'b0;
 #0 ap_done_reg = 1'b0;
 end
 
 top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R #(
-    .DataWidth( 3 ),
-    .AddressRange( 24 ),
-    .AddressWidth( 5 ))
+    .DataWidth( 2 ),
+    .AddressRange( 12 ),
+    .AddressWidth( 4 ))
 mapComp_U(
     .clk(ap_clk),
     .reset(ap_rst),
@@ -192,23 +171,23 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        i_1_reg_318 <= 3'd0;
+        i_1_reg_210 <= 2'd0;
     end else begin
         if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-            i_1_reg_318 <= ap_sig_allocacmp_i_1;
+            i_1_reg_210 <= ap_sig_allocacmp_i_1;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        i_fu_50 <= 3'd0;
+        i_fu_38 <= 2'd0;
     end else begin
         if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-            if (((icmp_ln367_fu_147_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-                i_fu_50 <= add_ln367_fu_153_p2;
+            if (((icmp_ln367_fu_102_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+                i_fu_38 <= add_ln367_fu_108_p2;
             end else if ((ap_loop_init == 1'b1)) begin
-                i_fu_50 <= 3'd0;
+                i_fu_38 <= 2'd0;
             end
         end
     end
@@ -216,88 +195,49 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        icmp_ln367_reg_322 <= 1'd0;
+        icmp_ln367_reg_214 <= 1'd0;
     end else begin
         if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-            icmp_ln367_reg_322 <= icmp_ln367_fu_147_p2;
+            icmp_ln367_reg_214 <= icmp_ln367_fu_102_p2;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-                kMap_1_fu_58[0] <= 1'b0;
-        kMap_1_fu_58[1] <= 1'b0;
-        kMap_1_fu_58[2] <= 1'b0;
+                kMap_1_fu_46[0] <= 1'b0;
+        kMap_1_fu_46[1] <= 1'b0;
     end else begin
-        if (((icmp_ln367_reg_322 == 1'd0) & (i_1_reg_318 == 3'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-                        kMap_1_fu_58[2 : 0] <= map_cast_fu_241_p1[2 : 0];
+        if (((icmp_ln367_reg_214 == 1'd0) & (i_1_reg_210 == 2'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+                        kMap_1_fu_46[1 : 0] <= map_cast_fu_166_p1[1 : 0];
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-                kMap_2_fu_62[0] <= 1'b0;
-        kMap_2_fu_62[1] <= 1'b0;
-        kMap_2_fu_62[2] <= 1'b0;
+                kMap_2_fu_50[0] <= 1'b0;
+        kMap_2_fu_50[1] <= 1'b0;
     end else begin
-        if (((icmp_ln367_reg_322 == 1'd0) & (i_1_reg_318 == 3'd2) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-                        kMap_2_fu_62[2 : 0] <= map_cast_fu_241_p1[2 : 0];
+        if ((~(i_1_reg_210 == 2'd0) & ~(i_1_reg_210 == 2'd1) & (icmp_ln367_reg_214 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+                        kMap_2_fu_50[1 : 0] <= map_cast_fu_166_p1[1 : 0];
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-                kMap_3_fu_66[0] <= 1'b0;
-        kMap_3_fu_66[1] <= 1'b0;
-        kMap_3_fu_66[2] <= 1'b0;
+                kMap_fu_42[0] <= 1'b0;
+        kMap_fu_42[1] <= 1'b0;
     end else begin
-        if (((icmp_ln367_reg_322 == 1'd0) & (i_1_reg_318 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-                        kMap_3_fu_66[2 : 0] <= map_cast_fu_241_p1[2 : 0];
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-                kMap_4_fu_70[0] <= 1'b0;
-        kMap_4_fu_70[1] <= 1'b0;
-        kMap_4_fu_70[2] <= 1'b0;
-    end else begin
-        if (((icmp_ln367_reg_322 == 1'd0) & (i_1_reg_318 == 3'd4) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-                        kMap_4_fu_70[2 : 0] <= map_cast_fu_241_p1[2 : 0];
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-                kMap_5_fu_74[0] <= 1'b0;
-        kMap_5_fu_74[1] <= 1'b0;
-        kMap_5_fu_74[2] <= 1'b0;
-    end else begin
-        if ((~(i_1_reg_318 == 3'd4) & ~(i_1_reg_318 == 3'd3) & ~(i_1_reg_318 == 3'd2) & ~(i_1_reg_318 == 3'd1) & ~(i_1_reg_318 == 3'd0) & (icmp_ln367_reg_322 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-                        kMap_5_fu_74[2 : 0] <= map_cast_fu_241_p1[2 : 0];
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-                kMap_fu_54[0] <= 1'b0;
-        kMap_fu_54[1] <= 1'b0;
-        kMap_fu_54[2] <= 1'b0;
-    end else begin
-        if (((icmp_ln367_reg_322 == 1'd0) & (i_1_reg_318 == 3'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-                        kMap_fu_54[2 : 0] <= map_cast_fu_241_p1[2 : 0];
+        if (((icmp_ln367_reg_214 == 1'd0) & (i_1_reg_210 == 2'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+                        kMap_fu_42[1 : 0] <= map_cast_fu_166_p1[1 : 0];
         end
     end
 end
 
 always @ (*) begin
-    if (((icmp_ln367_fu_147_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((icmp_ln367_fu_102_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -313,7 +253,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_idle_pp0 == 1'b1) & (ap_start_int == 1'b0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((ap_idle_pp0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_start_int == 1'b0))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -338,14 +278,14 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_i_1 = 3'd0;
+        ap_sig_allocacmp_i_1 = 2'd0;
     end else begin
-        ap_sig_allocacmp_i_1 = i_fu_50;
+        ap_sig_allocacmp_i_1 = i_fu_38;
     end
 end
 
 always @ (*) begin
-    if (((icmp_ln367_reg_322 == 1'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
+    if (((icmp_ln367_reg_214 == 1'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
         kMap_1_out_ap_vld = 1'b1;
     end else begin
         kMap_1_out_ap_vld = 1'b0;
@@ -353,7 +293,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln367_reg_322 == 1'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
+    if (((icmp_ln367_reg_214 == 1'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
         kMap_2_out_ap_vld = 1'b1;
     end else begin
         kMap_2_out_ap_vld = 1'b0;
@@ -361,31 +301,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln367_reg_322 == 1'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
-        kMap_3_out_ap_vld = 1'b1;
-    end else begin
-        kMap_3_out_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((icmp_ln367_reg_322 == 1'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
-        kMap_4_out_ap_vld = 1'b1;
-    end else begin
-        kMap_4_out_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((icmp_ln367_reg_322 == 1'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
-        kMap_5_out_ap_vld = 1'b1;
-    end else begin
-        kMap_5_out_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((icmp_ln367_reg_322 == 1'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
+    if (((icmp_ln367_reg_214 == 1'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
         kMap_out_ap_vld = 1'b1;
     end else begin
         kMap_out_ap_vld = 1'b0;
@@ -411,9 +327,9 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln367_fu_153_p2 = (ap_sig_allocacmp_i_1 + 3'd1);
+assign add_ln367_fu_108_p2 = (ap_sig_allocacmp_i_1 + 2'd1);
 
-assign add_ln369_fu_163_p2 = (mul_ln369 + zext_ln369_fu_159_p1);
+assign add_ln369_fu_118_p2 = (mul_ln369 + zext_ln369_fu_114_p1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -435,35 +351,26 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln367_fu_147_p2 = ((ap_sig_allocacmp_i_1 == 3'd6) ? 1'b1 : 1'b0);
+assign icmp_ln367_fu_102_p2 = ((ap_sig_allocacmp_i_1 == 2'd3) ? 1'b1 : 1'b0);
 
-assign kMap_1_out = kMap_1_fu_58[2:0];
+assign kMap_1_out = kMap_1_fu_46[1:0];
 
-assign kMap_2_out = kMap_2_fu_62[2:0];
+assign kMap_2_out = kMap_2_fu_50[1:0];
 
-assign kMap_3_out = kMap_3_fu_66[2:0];
+assign kMap_out = kMap_fu_42[1:0];
 
-assign kMap_4_out = kMap_4_fu_70[2:0];
+assign mapComp_address0 = zext_ln369_1_fu_124_p1;
 
-assign kMap_5_out = kMap_5_fu_74[2:0];
+assign map_cast_fu_166_p1 = mapComp_q0;
 
-assign kMap_out = kMap_fu_54[2:0];
+assign zext_ln369_1_fu_124_p1 = add_ln369_fu_118_p2;
 
-assign mapComp_address0 = zext_ln369_1_fu_169_p1;
-
-assign map_cast_fu_241_p1 = mapComp_q0;
-
-assign zext_ln369_1_fu_169_p1 = add_ln369_fu_163_p2;
-
-assign zext_ln369_fu_159_p1 = ap_sig_allocacmp_i_1;
+assign zext_ln369_fu_114_p1 = ap_sig_allocacmp_i_1;
 
 always @ (posedge ap_clk) begin
-    kMap_fu_54[4:3] <= 2'b00;
-    kMap_1_fu_58[4:3] <= 2'b00;
-    kMap_2_fu_62[4:3] <= 2'b00;
-    kMap_3_fu_66[4:3] <= 2'b00;
-    kMap_4_fu_70[4:3] <= 2'b00;
-    kMap_5_fu_74[4:3] <= 2'b00;
+    kMap_fu_42[4:2] <= 3'b000;
+    kMap_1_fu_46[4:2] <= 3'b000;
+    kMap_2_fu_50[4:2] <= 3'b000;
 end
 
 endmodule //top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1

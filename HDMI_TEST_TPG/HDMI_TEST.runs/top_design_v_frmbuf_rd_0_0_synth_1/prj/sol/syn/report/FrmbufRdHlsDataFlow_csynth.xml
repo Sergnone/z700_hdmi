@@ -24,18 +24,18 @@
 <unit>clock cycles</unit>
 <Best-caseLatency>7169</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>8305311</Worst-caseLatency>
+<Worst-caseLatency>4152711</Worst-caseLatency>
 <Best-caseRealTimeLatency>48.391 us</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>56.061 ms</Worst-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>28.031 ms</Worst-caseRealTimeLatency>
 <DataflowPipelineThroughput>
 <range>
 <min>7170</min>
-<max>8305216</max>
+<max>4152616</max>
 </range>
 </DataflowPipelineThroughput>
 <Interval-min>7170</Interval-min>
-<Interval-max>8305216</Interval-max>
+<Interval-max>4152616</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
@@ -47,10 +47,10 @@
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>8</BRAM_18K>
+<BRAM_18K>4</BRAM_18K>
 <DSP>1</DSP>
-<FF>1577</FF>
-<LUT>2071</LUT>
+<FF>1255</FF>
+<LUT>1925</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -71,7 +71,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>48</Bits>
+<Bits>24</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -82,7 +82,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>6</Bits>
+<Bits>3</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -93,7 +93,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>6</Bits>
+<Bits>3</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -335,7 +335,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>128</Bits>
+<Bits>64</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -346,7 +346,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>16</Bits>
+<Bits>8</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -555,7 +555,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>128</Bits>
+<Bits>64</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -698,7 +698,7 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>12</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -720,7 +720,7 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>12</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -786,7 +786,7 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>15</Bits>
+<Bits>14</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>

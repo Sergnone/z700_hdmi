@@ -9,9 +9,9 @@ use ieee.std_logic_unsigned.all;
 
 entity top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R is 
     generic(
-             DataWidth     : integer := 3; 
-             AddressWidth     : integer := 5; 
-             AddressRange    : integer := 24
+             DataWidth     : integer := 2; 
+             AddressWidth     : integer := 4; 
+             AddressRange    : integer := 12
     ); 
     port (
  
@@ -34,12 +34,9 @@ signal address0_tmp : std_logic_vector(AddressWidth-1 downto 0);
 type mem_array is array (0 to AddressRange-1) of std_logic_vector (DataWidth-1 downto 0); 
 
 signal mem0 : mem_array := (
-    0 => "001", 1 => "010", 2 => "000", 3 => "100", 
-    4 => "101", 5 => "011", 6 => "000", 7 => "001", 
-    8 => "010", 9 => "011", 10 => "100", 11 => "101", 
-    12 => "000", 13 => "001", 14 => "011", 15 => "100", 
-    16 => "101", 17 => "010", 18 => "000", 19 => "001", 
-    20 => "011", 21 => "100", 22 => "101", 23 => "010");
+    0 => "01", 1 => "10", 2 => "00", 3 => "00", 
+    4 => "01", 5 => "10", 6 => "00", 7 => "01", 
+    8 => "10", 9 => "00", 10 => "01", 11 => "10");
 
 
 

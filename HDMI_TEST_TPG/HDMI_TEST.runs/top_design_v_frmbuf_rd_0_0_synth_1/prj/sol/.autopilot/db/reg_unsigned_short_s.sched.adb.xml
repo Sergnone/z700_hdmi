@@ -26,9 +26,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="2" bw="12" op_0_bw="12" op_1_bw="12">
+<Node id="2" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-entry:0 %d_read = read i12 @_ssdm_op_Read.ap_auto.i12, i12 %d
+entry:0 %d_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %d
 
 ]]></Node>
 <StgValue><ssdm name="d_read"/></StgValue>
@@ -41,9 +41,9 @@ entry:0 %d_read = read i12 @_ssdm_op_Read.ap_auto.i12, i12 %d
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="3" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="1" op_3_bw="0">
+<Node id="3" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="1" op_3_bw="0">
 <![CDATA[
-entry:1 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i12 %d, i1 1, void 
+entry:1 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i11 %d, i1 1, void 
 
 ]]></Node>
 <StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
@@ -86,9 +86,9 @@ entry:3 %speclatency_ln225 = speclatency void @_ssdm_op_SpecLatency, i64 1, i64 
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="6" bw="0" op_0_bw="12">
+<Node id="6" bw="0" op_0_bw="11">
 <![CDATA[
-entry:4 %ret_ln227 = ret i12 %d_read
+entry:4 %ret_ln227 = ret i11 %d_read
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln227"/></StgValue>

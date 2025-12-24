@@ -7,7 +7,7 @@
   **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Wed Dec 24 18:13:17 2025
+  **** Start of session at: Wed Dec 24 20:01:38 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -18,7 +18,7 @@ INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/2025.2/data/i
 
 ****** vitis-run v2025.2 (64-bit)
   **** SW Build 6295257 on 2025-11-13-01:29:13
-  **** Start of session at: Wed Dec 24 18:13:21 2025
+  **** Start of session at: Wed Dec 24 20:01:42 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -84,10 +84,10 @@ WARNING: [HLS 200-484] The 'config_schedule -verbose' command is deprecated and 
 INFO: [HLS 200-1510] Running: config_rtl -module_prefix top_design_v_tpg_0_1_ 
 INFO: [HLS 200-1510] Running: config_export -vendor xilinx.com -library ip -version 8.2 
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.06 seconds; current allocated memory: 234.641 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.07 seconds; current allocated memory: 234.625 MB.
 INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
 INFO: [HLS 200-10] Analyzing design file '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tpg_0_1/src/v_tpg.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 20.03 seconds. CPU system time: 0.82 seconds. Elapsed time: 20.87 seconds; current allocated memory: 263.785 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 19.59 seconds. CPU system time: 0.85 seconds. Elapsed time: 20.43 seconds; current allocated memory: 263.770 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 INFO: [HLS 200-1995] There were 9,938 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tpg_0_1_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
 INFO: [HLS 200-1995] There were 2,751 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tpg_0_1_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
@@ -302,12 +302,12 @@ INFO: [HLS 214-248] Applying array_partition to '_ZZ19tpgPatternColorBarstthiE7h
 INFO: [HLS 214-248] Applying array_partition to '_ZZ19tpgPatternColorBarstthiE4xBar': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_tpg.cpp:1239:0)
 INFO: [HLS 214-248] Applying array_partition to 'ref.tmp': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_tpg.cpp:1872:18)
 INFO: [HLS 214-248] Applying array_partition to 'ref.tmp11': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_tpg.cpp:1959:18)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.97 seconds. CPU system time: 0.4 seconds. Elapsed time: 7.31 seconds; current allocated memory: 271.785 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 271.785 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.94 seconds. CPU system time: 0.41 seconds. Elapsed time: 7.33 seconds; current allocated memory: 271.770 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 271.770 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 271.785 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 271.770 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 271.785 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 271.770 MB.
 WARNING: [XFORM 203-561] Updating loop upper bound from 65535 to 1920 for loop 'VITIS_LOOP_981_2' (prj/sol/.autopilot/db/v_tpg.cpp:973:7) in function 'MultiPixStream2AXIvideo'.
 WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1920) < AVE (= 32767)) for loop 'VITIS_LOOP_981_2' (prj/sol/.autopilot/db/v_tpg.cpp:973:7) in function 'MultiPixStream2AXIvideo'.
 WARNING: [XFORM 203-561] Updating loop upper bound from 65535 to 1080 for loop 'VITIS_LOOP_979_1' (prj/sol/.autopilot/db/v_tpg.cpp:973:7) in function 'MultiPixStream2AXIvideo'.
@@ -347,8 +347,8 @@ INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (prj/sol/.auto
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (prj/sol/.autopilot/db/v_tpg.cpp:1008:12) to (prj/sol/.autopilot/db/v_tpg.cpp:981:21) in function 'MultiPixStream2AXIvideo'... converting 5 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'tpgForeground' (prj/sol/.autopilot/db/v_tpg.cpp:759:2)...3 expression(s) balanced.
 INFO: [XFORM 203-11] Balancing expressions in function 'tpgBackground' (prj/sol/.autopilot/db/v_tpg.cpp:549:14)...3 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.32 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.32 seconds; current allocated memory: 290.445 MB.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.31 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.33 seconds; current allocated memory: 383.703 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.32 seconds. CPU system time: 0 seconds. Elapsed time: 0.33 seconds; current allocated memory: 290.441 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.31 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.32 seconds; current allocated memory: 383.707 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'v_tpg' ...
 WARNING: [SYN 201-103] Legalizing function name 'reg<unsigned short>' to 'reg_unsigned_short_s'.
@@ -391,13 +391,13 @@ INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'reg<unsigned short>'
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 385.242 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.05 seconds; current allocated memory: 385.242 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 385.242 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 385.242 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reg_ap_uint_10_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -435,13 +435,13 @@ INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'reg<ap_uint<10> >'
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 385.242 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 385.242 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 385.242 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 385.242 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reg_int_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -479,13 +479,13 @@ INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'reg<int>'
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 385.395 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 385.398 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 385.395 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 385.398 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgBackground_Pipeline_VITIS_LOOP_565_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -581,13 +581,13 @@ INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 23, loop 'VITIS_LOOP_565_2'
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.28 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.28 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.27 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.28 seconds; current allocated memory: 399.246 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 399.246 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgBackground' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -623,13 +623,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 399.246 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.246 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgForeground_Pipeline_VITIS_LOOP_774_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -667,13 +667,13 @@ INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_774_2'
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 399.246 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 399.246 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgForeground' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -709,13 +709,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.246 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.246 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -753,13 +753,13 @@ INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_981_2'
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 399.246 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 399.246 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvideo' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -795,13 +795,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 399.246 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 399.246 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_tpgHlsDataFlow' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -837,13 +837,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 399.246 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.246 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_tpg' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -879,31 +879,31 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 399.246 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 399.246 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reg_unsigned_short_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'reg_unsigned_short_s' pipeline 'reg<unsigned short>' pipeline type 'function pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_unsigned_short_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 399.246 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reg_ap_uint_10_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'reg_ap_uint_10_s' pipeline 'reg<ap_uint<10> >' pipeline type 'function pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_ap_uint_10_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 399.246 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reg_int_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'reg_int_s' pipeline 'reg<int>' pipeline type 'function pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_int_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.387 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 399.246 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgBackground_Pipeline_VITIS_LOOP_565_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -964,7 +964,7 @@ INFO: [RTMG 210-279] Implementing memory 'top_design_v_tpg_0_1_tpgBackground_Pip
 INFO: [RTMG 210-279] Implementing memory 'top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R' using auto ROMs.
 INFO: [RTMG 210-279] Implementing memory 'top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R' using auto ROMs.
 INFO: [RTMG 210-279] Implementing memory 'top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R' using auto ROMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 407.426 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 407.430 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgBackground' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -998,20 +998,20 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'boxHCoord' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'boxVCoord' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgForeground'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 429.148 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 429.152 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_24_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 430.930 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 430.934 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvideo' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'fidStored' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'counter' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvideo'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 432.453 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 432.461 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_tpgHlsDataFlow' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1020,7 +1020,7 @@ INFO: [RTMG 210-285] Implementing FIFO 'bckgndYUV_U(top_design_v_tpg_0_1_fifo_w2
 INFO: [RTMG 210-285] Implementing FIFO 'ovrlayYUV_U(top_design_v_tpg_0_1_fifo_w24_d16_S)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_tpgForeground_U0_U(top_design_v_tpg_0_1_start_for_tpgForeground_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPixStream2AXIvideo_U0_U(top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvideo_U0)' using Shift Registers.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 434.238 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 434.242 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_tpg' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1061,14 +1061,14 @@ WARNING: [RTGEN 206-101] Register 'count' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 's' is power-on initialization.
 INFO: [RTGEN 206-100] Bundling port 'height', 'width', 'bckgndId', 'ovrlayId', 'maskId', 'motionSpeed', 'colorFormat', 'crossHairX', 'crossHairY', 'ZplateHorContStart', 'ZplateHorContDelta', 'ZplateVerContStart', 'ZplateVerContDelta', 'boxSize', 'boxColorR', 'boxColorG', 'boxColorB', 'dpDynamicRange', 'dpYUVCoef', 'field_id', 'bck_motion_en' to AXI-Lite port CTRL.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_tpg'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 435.895 MB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 438.371 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 435.898 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 438.387 MB.
 INFO: [HLS 200-2225] Wrote inferred directives to file /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tpg_0_1_synth_1/prj/sol/syn/inferred_directives.ini
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.84 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.88 seconds; current allocated memory: 450.949 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.84 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.88 seconds; current allocated memory: 450.984 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for v_tpg with prefix top_design_v_tpg_0_1_.
 INFO: [VLOG 209-307] Generating Verilog RTL for v_tpg with prefix top_design_v_tpg_0_1_.
 INFO: [HLS 200-789] **** Estimated Fmax: 204.50 MHz
-INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:31; Allocated memory: 216.309 MB.
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:31; Allocated memory: 216.359 MB.
 INFO: [HLS 200-1510] Running: export_design -format ip_catalog 
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 
@@ -1076,7 +1076,7 @@ INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
   **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Wed Dec 24 18:13:55 2025
+  **** Start of session at: Wed Dec 24 20:02:16 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -1102,11 +1102,11 @@ INFO: Calling post_process_sysgen to specialize IP
 Generating sysgen info xml from json file
 INFO: Created IP /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tpg_0_1_synth_1/prj/sol/impl/ip/component.xml
 INFO: Created IP archive /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tpg_0_1_synth_1/prj/sol/impl/ip/xilinx_com_ip_v_tpg_8_2.zip
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 24 18:13:58 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 24 20:02:19 2025...
 INFO: [HLS 200-802] Generated output file prj/sol/impl/export.zip
-INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:04; Allocated memory: 4.172 MB.
-INFO: [HLS 200-112] Total CPU user time: 36.06 seconds. Total CPU system time: 2.32 seconds. Total elapsed time: 36.71 seconds; peak allocated memory: 455.121 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 37s
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:04; Allocated memory: 4.168 MB.
+INFO: [HLS 200-112] Total CPU user time: 35.41 seconds. Total CPU system time: 2.25 seconds. Total elapsed time: 36.04 seconds; peak allocated memory: 455.152 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 36s
 INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.
 WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
 WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_tpg_0_1_CTRL_s_axi.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
@@ -1209,6 +1209,6 @@ WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_tpg_0_1_hls_dead
 WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_tpg_0_1_hls_deadlock_detector.vh" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
 WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_tpg_0_1_hls_deadlock_idx0_monitor.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
 INFO: [Common 17-14] Message 'IP_Flow 19-1971' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-compile_c: Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1622.934 ; gain = 0.000 ; free physical = 9365 ; free virtual = 27883
+compile_c: Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1623.383 ; gain = 0.000 ; free physical = 8192 ; free virtual = 26964
 INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP top_design_v_tpg_0_1, cache-ID = 39e6bfbc6cdbb4fd.
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 24 18:13:58 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 24 20:02:19 2025...

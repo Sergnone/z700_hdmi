@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Wed Dec 24 18:10:55 2025
-# Process ID         : 992525
+# Start of session at: Wed Dec 24 20:01:38 2025
+# Process ID         : 1320843
 # Current directory  : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1
 # Command line       : vivado -log top_design_v_frmbuf_rd_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_design_v_frmbuf_rd_0_0.tcl
 # Log file           : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/top_design_v_frmbuf_rd_0_0.vds
@@ -13,13 +13,13 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.3 LTS
 # Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13400
-# CPU Frequency      : 4102.585 MHz
+# CPU Frequency      : 4100.803 MHz
 # CPU Physical cores : 10
 # CPU Logical cores  : 16
 # Host memory        : 33411 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 42001 MB
-# Available Virtual  : 29439 MB
+# Available Virtual  : 29027 MB
 #-----------------------------------------------------------
 source top_design_v_frmbuf_rd_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -28,7 +28,7 @@ INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/2025.2/data/i
 
 ****** vitis-run v2025.2 (64-bit)
   **** SW Build 6295257 on 2025-11-13-01:29:13
-  **** Start of session at: Wed Dec 24 18:11:01 2025
+  **** Start of session at: Wed Dec 24 20:01:42 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -94,32 +94,32 @@ INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=false
 INFO: [HLS 200-1510] Running: config_rtl -module_prefix top_design_v_frmbuf_rd_0_0_ 
 INFO: [HLS 200-1510] Running: config_export -vendor xilinx.com -library ip -version 3.0 
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.04 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.08 seconds; current allocated memory: 234.602 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.03 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.07 seconds; current allocated memory: 234.613 MB.
 INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
 INFO: [HLS 200-10] Analyzing design file '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/src/v_frmbuf_rd.cpp' ... 
 WARNING: [HLS 207-6591] unused parameter 'srcImg2' (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp:499:12)
 WARNING: [HLS 207-6591] unused parameter 'srcImg3' (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp:500:9)
 WARNING: [HLS 207-6591] unused parameter 'VideoFormat' (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp:505:16)
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 21.03 seconds. CPU system time: 0.85 seconds. Elapsed time: 21.91 seconds; current allocated memory: 263.773 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 19.12 seconds. CPU system time: 0.81 seconds. Elapsed time: 19.93 seconds; current allocated memory: 263.789 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 200-1995] There were 2,137 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,109 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 601 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 509 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 478 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 488 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 427 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 436 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 807 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 897 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 875 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 841 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 805 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 805 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 659 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 710 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 214-131] Inlining function 'hls::Scalar<6, ap_uint<8> >::Scalar()' into 'Bytes2MultiPixStream(STREAM_PLANES&, hls::stream<hls::Scalar<6, ap_uint<8> >, 0>&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1237:20)
-INFO: [HLS 214-131] Inlining function 'hls::Scalar<6, ap_uint<8> >::Scalar()' into 'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<6, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<48>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:311:18)
+INFO: [HLS 200-1995] There were 1,909 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 825 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 465 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 420 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 391 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 377 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 355 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 364 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 549 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 636 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 614 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 583 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 547 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 547 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 473 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 479 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'Bytes2MultiPixStream(STREAM_PLANES&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1237:20)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:311:18)
 INFO: [HLS 214-377] Adding 'pix' into disaggregation list because there's array-partition pragma applied on the struct field (HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/src/hls/hls_video_core.h:198:1)
 INFO: [HLS 214-377] Adding 'bytePlanes' into disaggregation list because there's stream pragma applied on the struct field (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:96:1)
 INFO: [HLS 214-210] Disaggregating variable 'pix' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1237:20)
@@ -132,35 +132,37 @@ INFO: [HLS 214-291] Loop 'VITIS_LOOP_403_4' is marked as complete unroll implied
 INFO: [HLS 214-291] Loop 'VITIS_LOOP_405_5' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:405:23)
 INFO: [HLS 214-291] Loop 'VITIS_LOOP_1254_2' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1254:24)
 INFO: [HLS 214-291] Loop 'VITIS_LOOP_1256_3' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1256:25)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_403_4' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:403:22) in function 'MultiPixStream2AXIvideo' completely with a factor of 2 (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:310:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_403_4' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:403:22) in function 'MultiPixStream2AXIvideo' completely with a factor of 1 (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:310:0)
 INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_405_5' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:405:23) in function 'MultiPixStream2AXIvideo' completely with a factor of 3 (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:310:0)
 INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1254_2' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1254:24) in function 'Bytes2MultiPixStream' completely with a factor of 8 (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:688:0)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1256_3' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1256:25) in function 'Bytes2MultiPixStream' completely with a factor of 2 (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:688:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1256_3' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1256:25) in function 'Bytes2MultiPixStream' completely with a factor of 1 (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:688:0)
 WARNING: [HLS 214-464] Skipping array undecay on variable length array 'HwReg_frm_buffer'. (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:84:0)
 INFO: [HLS 214-248] Applying array_partition to 'pix': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:311:18)
 INFO: [HLS 214-248] Applying array_partition to 'map': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:365:13)
 WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:407:17)
-INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'img' with compact=bit mode in 48-bits (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:90:18)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'img' with compact=bit mode in 24-bits (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:90:18)
 INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_367_1> at prj/sol/.autopilot/db/v_frmbuf_rd.cpp:367:20 due to pipeline_loops threshold
-INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 128 in loop 'VITIS_LOOP_515_1'(prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515:27) has been inferred on bundle 'mm_video'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515:27)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.9 seconds. CPU system time: 0.27 seconds. Elapsed time: 6.71 seconds; current allocated memory: 271.773 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 271.773 MB.
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 64 in loop 'VITIS_LOOP_515_1'(prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515:27) has been inferred on bundle 'mm_video'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515:27)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.77 seconds. CPU system time: 0.3 seconds. Elapsed time: 6.64 seconds; current allocated memory: 271.789 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 271.789 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 271.773 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 271.789 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 271.773 MB.
-WARNING: [XFORM 203-561] Updating loop upper bound from 32767 to 1920 for loop 'VITIS_LOOP_376_3' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:372:7) in function 'MultiPixStream2AXIvideo'.
-WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1920) < AVE (= 16383)) for loop 'VITIS_LOOP_376_3' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:372:7) in function 'MultiPixStream2AXIvideo'.
-WARNING: [XFORM 203-561] Updating loop upper bound from 65535 to 2160 for loop 'VITIS_LOOP_374_2' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:372:7) in function 'MultiPixStream2AXIvideo'.
-WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 2160) < AVE (= 32767)) for loop 'VITIS_LOOP_374_2' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:372:7) in function 'MultiPixStream2AXIvideo'.
-WARNING: [XFORM 203-561] Updating loop upper bound from 1366 to 480 for loop 'VITIS_LOOP_1240_1' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1236:22) in function 'Bytes2MultiPixStream'.
-WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 480) < AVE (= 683)) for loop 'VITIS_LOOP_1240_1' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1236:22) in function 'Bytes2MultiPixStream'.
-WARNING: [XFORM 203-561] Updating loop upper bound from 4320 to 2160 for loop 'loop_RGB8_YUV8' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1234:1) in function 'Bytes2MultiPixStream'.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 271.789 MB.
+WARNING: [XFORM 203-561] Updating loop upper bound from 65535 to 1920 for loop 'VITIS_LOOP_376_3' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:372:7) in function 'MultiPixStream2AXIvideo'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1920) < AVE (= 32767)) for loop 'VITIS_LOOP_376_3' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:372:7) in function 'MultiPixStream2AXIvideo'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 65535 to 1080 for loop 'VITIS_LOOP_374_2' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:372:7) in function 'MultiPixStream2AXIvideo'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1080) < AVE (= 32767)) for loop 'VITIS_LOOP_374_2' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:372:7) in function 'MultiPixStream2AXIvideo'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 2731 to 480 for loop 'VITIS_LOOP_1240_1' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1236:21) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 480) < AVE (= 1365)) for loop 'VITIS_LOOP_1240_1' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1236:21) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 4320 to 1080 for loop 'loop_RGB8_YUV8' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1234:1) in function 'Bytes2MultiPixStream'.
 WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 64 for loop 'loop_RGB8_YUV8' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1234:1) in function 'Bytes2MultiPixStream'.
-WARNING: [XFORM 203-561] Updating loop upper bound from 4096 to 1440 for loop 'VITIS_LOOP_515_1' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515:36) in function 'AXIMMvideo2Bytes'.
-WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1440) < AVE (= 2048)) for loop 'VITIS_LOOP_515_1' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515:36) in function 'AXIMMvideo2Bytes'.
-WARNING: [XFORM 203-561] Updating loop upper bound from 4320 to 2160 for loop 'loop_AXIMMvideo2Bytes_1plane' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:512:1) in function 'AXIMMvideo2Bytes'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1080) < AVE (= 2160)) for loop 'loop_RGB8_YUV8' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1234:1) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 8192 to 1440 for loop 'VITIS_LOOP_515_1' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515:36) in function 'AXIMMvideo2Bytes'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1440) < AVE (= 4096)) for loop 'VITIS_LOOP_515_1' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515:36) in function 'AXIMMvideo2Bytes'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 4320 to 1080 for loop 'loop_AXIMMvideo2Bytes_1plane' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:512:1) in function 'AXIMMvideo2Bytes'.
 WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 64 for loop 'loop_AXIMMvideo2Bytes_1plane' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:512:1) in function 'AXIMMvideo2Bytes'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1080) < AVE (= 2160)) for loop 'loop_AXIMMvideo2Bytes_1plane' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:512:1) in function 'AXIMMvideo2Bytes'.
 WARNING: [HLS 200-805] An internal stream 'img' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:90) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
 INFO: [HLS 200-1947] Using 'stable' for argument 'mm_video' of dataflow function 'FrmbufRdHlsDataFlow' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:90:1).
 INFO: [HLS 200-1947] Using 'stable' for argument 'HwReg_frm_buffer' of dataflow function 'FrmbufRdHlsDataFlow' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:90:1).
@@ -170,8 +172,8 @@ INFO: [XFORM 203-712] Applying dataflow to function 'FrmbufRdHlsDataFlow' (prj/s
 	 'AXIMMvideo2Bytes'
 	 'Bytes2MultiPixStream'
 	 'MultiPixStream2AXIvideo'.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 286.332 MB.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.12 seconds; current allocated memory: 364.281 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 286.094 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 364.059 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'v_frmbuf_rd' ...
 WARNING: [SYN 201-103] Legalizing function name 'reg<unsigned short>' to 'reg_unsigned_short_s'.
@@ -182,25 +184,25 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_515_1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_515_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 365.219 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.03 seconds; current allocated memory: 365.074 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 365.219 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 365.074 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'AXIMMvideo2Bytes' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 365.230 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 365.090 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 365.230 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 365.090 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -208,25 +210,25 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_1240_1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 8, Final II = 8, Depth = 9, loop 'VITIS_LOOP_1240_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 366.805 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 366.348 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 366.805 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 366.348 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'Bytes2MultiPixStream' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 366.805 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 366.348 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 366.805 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 366.348 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reg_unsigned_short_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -234,13 +236,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'reg<unsigned short>'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'reg<unsigned short>'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 366.805 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 366.348 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 366.805 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 366.348 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -248,13 +250,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_367_1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_367_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 367.484 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 366.844 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 367.484 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 366.844 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -262,49 +264,49 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_376_3'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_376_3'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 367.812 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 367.133 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 367.812 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 367.133 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvideo' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 368.289 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 367.535 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 368.289 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 367.535 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'FrmbufRdHlsDataFlow' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 368.605 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 367.848 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 368.605 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 367.848 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_frmbuf_rd' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 369.043 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 368.285 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 369.043 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 368.285 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -322,50 +324,50 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'AXIMMvideo2Bytes_Pipeline_VI
 WARNING: [RTGEN 206-101] Setting dangling out port 'AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1/m_axi_mm_video_0_ARREGION' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1/m_axi_mm_video_0_ARUSER' to 0.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 369.043 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 368.285 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'AXIMMvideo2Bytes' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIMMvideo2Bytes'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 370.992 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 370.230 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1' pipeline 'VITIS_LOOP_1240_1' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 372.867 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 372.094 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Bytes2MultiPixStream' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Generating core module 'mul_11ns_13ns_23_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'urem_11ns_3ns_2_15_seq_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Bytes2MultiPixStream'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 375.316 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 374.465 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reg_unsigned_short_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'reg_unsigned_short_s' pipeline 'reg<unsigned short>' pipeline type 'function pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_unsigned_short_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 377.336 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 376.426 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1' pipeline 'VITIS_LOOP_367_1' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1'.
 INFO: [RTMG 210-279] Implementing memory 'top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R' using auto ROMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 377.336 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 376.426 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3' pipeline 'VITIS_LOOP_376_3' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'sparsemux_13_3_8_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_8_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 378.738 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 377.176 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvideo' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvideo'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 380.215 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 378.348 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'FrmbufRdHlsDataFlow' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -389,11 +391,11 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'FrmbufRdHlsDataFlow/m_axi_mm
 WARNING: [RTGEN 206-101] Setting dangling out port 'FrmbufRdHlsDataFlow/m_axi_mm_video_0_WUSER' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'FrmbufRdHlsDataFlow/m_axi_mm_video_0_BREADY' to 0.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'FrmbufRdHlsDataFlow'.
-INFO: [RTMG 210-285] Implementing FIFO 'bytePlanes_U(top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B)' using Block RAMs.
-INFO: [RTMG 210-285] Implementing FIFO 'img_U(top_design_v_frmbuf_rd_0_0_fifo_w48_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bytePlanes_U(top_design_v_frmbuf_rd_0_0_fifo_w64_d481_B)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'img_U(top_design_v_frmbuf_rd_0_0_fifo_w24_d2_S)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_Bytes2MultiPixStream_U0_U(top_design_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPixStream2AXIvideo_U0_U(top_design_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0)' using Shift Registers.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 381.879 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 379.906 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_frmbuf_rd' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -415,19 +417,19 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_rd/m_axis_video_V
 INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_rd/m_axis_video_V_dest_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on function 'v_frmbuf_rd' to 's_axilite & ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Bundling port 'width', 'height', 'stride', 'video_format', 'frm_buffer', 'frm_buffer2', 'frm_buffer3' and 'return' to AXI-Lite port CTRL.
-INFO: [RTGEN 206-100] Generating core module 'mul_15s_3ns_15_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_14s_3ns_14_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_frmbuf_rd'.
 INFO: [RTMG 210-279] Implementing memory 'top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R' using auto ROMs.
 INFO: [RTMG 210-279] Implementing memory 'top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R' using auto ROMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 384.371 MB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 386.832 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 382.426 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 384.902 MB.
 INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
 INFO: [HLS 200-2225] Wrote inferred directives to file /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/inferred_directives.ini
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.44 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.48 seconds; current allocated memory: 395.617 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.46 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.49 seconds; current allocated memory: 393.566 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for v_frmbuf_rd with prefix top_design_v_frmbuf_rd_0_0_.
 INFO: [VLOG 209-307] Generating Verilog RTL for v_frmbuf_rd with prefix top_design_v_frmbuf_rd_0_0_.
 INFO: [HLS 200-789] **** Estimated Fmax: 202.94 MHz
-INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:30; Allocated memory: 161.016 MB.
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:28; Allocated memory: 158.953 MB.
 INFO: [HLS 200-1510] Running: export_design -format ip_catalog 
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 
@@ -435,7 +437,7 @@ INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
   **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Wed Dec 24 18:11:34 2025
+  **** Start of session at: Wed Dec 24 20:02:13 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -460,684 +462,78 @@ INFO: Calling post_process_sysgen to specialize IP
 Generating sysgen info xml from json file
 INFO: Created IP /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/impl/ip/component.xml
 INFO: Created IP archive /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/impl/ip/xilinx_com_ip_v_frmbuf_rd_3_0.zip
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 24 18:11:37 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 24 20:02:15 2025...
 INFO: [HLS 200-802] Generated output file prj/sol/impl/export.zip
-INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:04; Allocated memory: 2.715 MB.
-INFO: [HLS 200-112] Total CPU user time: 35.37 seconds. Total CPU system time: 2.1 seconds. Total elapsed time: 35.13 seconds; peak allocated memory: 398.332 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 35s
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:03; Allocated memory: 2.723 MB.
+INFO: [HLS 200-112] Total CPU user time: 31.84 seconds. Total CPU system time: 2.03 seconds. Total elapsed time: 32.63 seconds; peak allocated memory: 396.289 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 33s
 INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.
-compile_c: Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 1610.023 ; gain = 0.000 ; free physical = 4636 ; free virtual = 23116
-Command: synth_design -top top_design_v_frmbuf_rd_0_0 -part xc7z020clg400-2 -incremental_mode off -mode out_of_context
-Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
-INFO: [Device 21-403] Loading part xc7z020clg400-2
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
-INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 994496
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2242.789 ; gain = 485.875 ; free physical = 4742 ; free virtual = 23226
----------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/synth/top_design_v_frmbuf_rd_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_v_frmbuf_rd' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_v_frmbuf_rd.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R.v:7]
-INFO: [Synth 8-3876] $readmem data file './top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R.dat' is read successfully [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R.v:7]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R.v:7]
-INFO: [Synth 8-3876] $readmem data file './top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R.dat' is read successfully [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R.v:7]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1.v:83]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1_divseq' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1_divseq' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1.v:83]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R.v:7]
-INFO: [Synth 8-3876] $readmem data file './top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R.dat' is read successfully [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_sparsemux_13_3_8_1_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_sparsemux_13_3_8_1_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_sparsemux_13_3_8_1_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_sparsemux_13_3_8_1_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_reg_unsigned_short_s' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_reg_unsigned_short_s.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_reg_unsigned_short_s' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_reg_unsigned_short_s.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B_ram' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B.v:200]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B_ram' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B.v:200]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_fifo_w48_d2_S' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_fifo_w48_d2_S.v:10]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_fifo_w48_d2_S_ShiftReg' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_fifo_w48_d2_S.v:128]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_fifo_w48_d2_S_ShiftReg' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_fifo_w48_d2_S.v:128]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_fifo_w48_d2_S' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_fifo_w48_d2_S.v:10]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0.v:10]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0_ShiftReg' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0.v:124]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0_ShiftReg' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0.v:124]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0.v:10]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0.v:10]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0_ShiftReg' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0.v:124]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0_ShiftReg' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0.v:124]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0.v:10]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_CTRL_s_axi' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_CTRL_s_axi.v:9]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_CTRL_s_axi.v:256]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_CTRL_s_axi' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_CTRL_s_axi.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_load' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:322]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_fifo' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2331]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_srl' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2544]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_srl' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2544]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_fifo' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2331]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_fifo__parameterized0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2331]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_mem' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2584]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_mem' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2584]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_fifo__parameterized0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2331]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_load' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:322]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_read' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:970]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_fifo__parameterized1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2331]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_srl__parameterized0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2544]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_srl__parameterized0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2544]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_fifo__parameterized1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2331]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_burst_converter' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:1224]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_burst_sequential' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:1830]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_reg_slice' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2227]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_reg_slice' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2227]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_burst_sequential' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:1830]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_burst_converter' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:1224]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_reg_slice__parameterized0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2227]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_reg_slice__parameterized0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2227]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_read' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:970]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_flushManager' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:832]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_fifo__parameterized2' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2331]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_fifo__parameterized2' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:2331]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_flushManager' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:832]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_mul_15s_3ns_15_1_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mul_15s_3ns_15_1_1.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_mul_15s_3ns_15_1_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_mul_15s_3ns_15_1_1.v:5]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_regslice_both' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_regslice_both' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_regslice_both__parameterized0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_regslice_both__parameterized0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0_regslice_both__parameterized1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_regslice_both__parameterized1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0_v_frmbuf_rd' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_v_frmbuf_rd.v:9]
-INFO: [Synth 8-7071] port 'm_axi_mm_video_AWID' of module 'top_design_v_frmbuf_rd_0_0_v_frmbuf_rd' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/synth/top_design_v_frmbuf_rd_0_0.v:275]
-INFO: [Synth 8-7071] port 'm_axi_mm_video_AWUSER' of module 'top_design_v_frmbuf_rd_0_0_v_frmbuf_rd' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/synth/top_design_v_frmbuf_rd_0_0.v:275]
-INFO: [Synth 8-7071] port 'm_axi_mm_video_WID' of module 'top_design_v_frmbuf_rd_0_0_v_frmbuf_rd' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/synth/top_design_v_frmbuf_rd_0_0.v:275]
-INFO: [Synth 8-7071] port 'm_axi_mm_video_WUSER' of module 'top_design_v_frmbuf_rd_0_0_v_frmbuf_rd' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/synth/top_design_v_frmbuf_rd_0_0.v:275]
-INFO: [Synth 8-7071] port 'm_axi_mm_video_ARID' of module 'top_design_v_frmbuf_rd_0_0_v_frmbuf_rd' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/synth/top_design_v_frmbuf_rd_0_0.v:275]
-INFO: [Synth 8-7071] port 'm_axi_mm_video_ARUSER' of module 'top_design_v_frmbuf_rd_0_0_v_frmbuf_rd' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/synth/top_design_v_frmbuf_rd_0_0.v:275]
-INFO: [Synth 8-7071] port 'm_axi_mm_video_RID' of module 'top_design_v_frmbuf_rd_0_0_v_frmbuf_rd' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/synth/top_design_v_frmbuf_rd_0_0.v:275]
-INFO: [Synth 8-7071] port 'm_axi_mm_video_RUSER' of module 'top_design_v_frmbuf_rd_0_0_v_frmbuf_rd' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/synth/top_design_v_frmbuf_rd_0_0.v:275]
-INFO: [Synth 8-7071] port 'm_axi_mm_video_BID' of module 'top_design_v_frmbuf_rd_0_0_v_frmbuf_rd' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/synth/top_design_v_frmbuf_rd_0_0.v:275]
-INFO: [Synth 8-7071] port 'm_axi_mm_video_BUSER' of module 'top_design_v_frmbuf_rd_0_0_v_frmbuf_rd' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/synth/top_design_v_frmbuf_rd_0_0.v:275]
-INFO: [Synth 8-7023] instance 'inst' of module 'top_design_v_frmbuf_rd_0_0_v_frmbuf_rd' has 74 connections declared, but only 64 given [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/synth/top_design_v_frmbuf_rd_0_0.v:275]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/synth/top_design_v_frmbuf_rd_0_0.v:53]
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-6014] Unused sequential element quot_reg was removed.  [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1.v:149]
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_CTRL_s_axi.v:344]
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-7129] Port clk in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi_fifo__parameterized2 is either unconnected or has no load
-INFO: [Synth 8-7129] Port reset in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi_fifo__parameterized2 is either unconnected or has no load
-INFO: [Synth 8-7129] Port clk_en in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi_fifo__parameterized2 is either unconnected or has no load
-INFO: [Synth 8-7129] Port in_BUS_RID[0] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi_read is either unconnected or has no load
-INFO: [Synth 8-7129] Port in_BUS_RRESP[1] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi_read is either unconnected or has no load
-INFO: [Synth 8-7129] Port in_BUS_RRESP[0] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi_read is either unconnected or has no load
-INFO: [Synth 8-7129] Port in_BUS_RUSER[0] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi_read is either unconnected or has no load
-INFO: [Synth 8-7129] Port WREADY in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port BID[0] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port BRESP[1] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port BRESP[0] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port BUSER[0] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[31] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[30] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[29] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[28] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[27] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[26] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[25] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[24] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[23] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[22] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[21] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[20] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[19] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[18] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[17] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[16] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[15] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[14] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[13] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[12] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[11] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[10] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[9] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[8] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[7] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[6] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[5] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[4] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[3] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[2] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[1] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWADDR[0] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[31] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[30] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[29] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[28] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[27] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[26] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[25] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[24] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[23] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[22] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[21] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[20] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[19] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[18] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[17] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[16] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[15] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[14] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[13] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[12] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[11] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[10] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[9] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[8] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[7] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[6] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[5] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[4] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[3] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[2] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[1] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWLEN[0] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_AWVALID in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[127] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[126] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[125] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[124] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[123] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[122] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[121] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[120] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[119] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[118] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[117] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[116] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[115] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[114] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[113] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[112] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[111] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[110] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[109] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[108] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[107] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[106] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port I_CH0_WDATA[105] in module top_design_v_frmbuf_rd_0_0_mm_video_m_axi is either unconnected or has no load
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2428.727 ; gain = 671.812 ; free physical = 4552 ; free virtual = 23054
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2437.633 ; gain = 680.719 ; free physical = 4544 ; free virtual = 23050
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2437.633 ; gain = 680.719 ; free physical = 4544 ; free virtual = 23050
----------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2437.633 ; gain = 0.000 ; free physical = 4574 ; free virtual = 23076
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/top_design_v_frmbuf_rd_0_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/top_design_v_frmbuf_rd_0_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/dont_touch.xdc]
-Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/top_design_v_frmbuf_rd_0_0.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/top_design_v_frmbuf_rd_0_0.xdc] for cell 'inst'
-Completed Processing XDC Constraints
-
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2512.465 ; gain = 0.000 ; free physical = 4588 ; free virtual = 23096
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2512.500 ; gain = 0.000 ; free physical = 4596 ; free virtual = 23104
-INFO: [Designutils 20-5008] Incremental synthesis strategy off
----------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2512.500 ; gain = 755.586 ; free physical = 6484 ; free virtual = 24985
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Loading Part and Timing Information
----------------------------------------------------------------------------------
-Loading part: xc7z020clg400-2
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2520.469 ; gain = 763.555 ; free physical = 6484 ; free virtual = 24985
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying 'set_property' XDC Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2520.469 ; gain = 763.555 ; free physical = 6484 ; free virtual = 24985
----------------------------------------------------------------------------------
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg' and it is trimmed from '11' to '10' bits. [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/hdl/verilog/top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1.v:41]
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'top_design_v_frmbuf_rd_0_0_CTRL_s_axi'
-INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'top_design_v_frmbuf_rd_0_0_CTRL_s_axi'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_reg_slice'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_reg_slice__parameterized0'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_design_v_frmbuf_rd_0_0_regslice_both'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_design_v_frmbuf_rd_0_0_regslice_both__parameterized0'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_design_v_frmbuf_rd_0_0_regslice_both__parameterized1'
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  iSTATE |                             0001 |                               11
-*
-                  WRIDLE |                             0010 |                               00
-                  WRDATA |                             0100 |                               01
-                  WRRESP |                             1000 |                               10
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'top_design_v_frmbuf_rd_0_0_CTRL_s_axi'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  iSTATE |                              001 |                               10
-*
-                  RDIDLE |                              010 |                               00
-                  RDDATA |                              100 |                               01
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'top_design_v_frmbuf_rd_0_0_CTRL_s_axi'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    ZERO |                               00 |                               10
-                     ONE |                               10 |                               11
-                     TWO |                               01 |                               01
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_reg_slice'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    ZERO |                               00 |                               10
-                     ONE |                               10 |                               11
-                     TWO |                               01 |                               01
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_design_v_frmbuf_rd_0_0_mm_video_m_axi_reg_slice__parameterized0'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  iSTATE |                               00 |                               00
-*
-                    ZERO |                               01 |                               10
-                     ONE |                               11 |                               11
-                     TWO |                               10 |                               01
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_design_v_frmbuf_rd_0_0_regslice_both'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  iSTATE |                               00 |                               00
-*
-                    ZERO |                               01 |                               10
-                     ONE |                               11 |                               11
-                     TWO |                               10 |                               01
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_design_v_frmbuf_rd_0_0_regslice_both__parameterized0'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  iSTATE |                               00 |                               00
-*
-                    ZERO |                               01 |                               10
-                     ONE |                               11 |                               11
-                     TWO |                               10 |                               01
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_design_v_frmbuf_rd_0_0_regslice_both__parameterized1'
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2520.469 ; gain = 763.555 ; free physical = 6476 ; free virtual = 24986
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start RTL Component Statistics 
----------------------------------------------------------------------------------
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input   32 Bit       Adders := 3     
-	   2 Input   16 Bit       Adders := 1     
-	   2 Input   15 Bit       Adders := 2     
-	   3 Input   12 Bit       Adders := 1     
-	   2 Input   12 Bit       Adders := 3     
-	   2 Input   11 Bit       Adders := 3     
-	   2 Input   10 Bit       Adders := 3     
-	   3 Input   10 Bit       Adders := 1     
-	   2 Input    9 Bit       Adders := 3     
-	   2 Input    8 Bit       Adders := 2     
-	   2 Input    7 Bit       Adders := 3     
-	   2 Input    6 Bit       Adders := 2     
-	   2 Input    5 Bit       Adders := 1     
-	   3 Input    5 Bit       Adders := 1     
-	   2 Input    4 Bit       Adders := 3     
-	   2 Input    3 Bit       Adders := 11    
-	   2 Input    2 Bit       Adders := 9     
-	   2 Input    1 Bit       Adders := 2     
-+---XORs : 
-	   2 Input      1 Bit         XORs := 2     
-+---Registers : 
-	              130 Bit    Registers := 3     
-	              128 Bit    Registers := 4     
-	              111 Bit    Registers := 1     
-	               65 Bit    Registers := 2     
-	               64 Bit    Registers := 1     
-	               48 Bit    Registers := 7     
-	               32 Bit    Registers := 11    
-	               28 Bit    Registers := 1     
-	               21 Bit    Registers := 1     
-	               20 Bit    Registers := 2     
-	               18 Bit    Registers := 1     
-	               16 Bit    Registers := 6     
-	               15 Bit    Registers := 2     
-	               12 Bit    Registers := 14    
-	               11 Bit    Registers := 10    
-	               10 Bit    Registers := 6     
-	                9 Bit    Registers := 4     
-	                8 Bit    Registers := 13    
-	                7 Bit    Registers := 4     
-	                6 Bit    Registers := 13    
-	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 4     
-	                3 Bit    Registers := 29    
-	                2 Bit    Registers := 17    
-	                1 Bit    Registers := 169   
-+---RAMs : 
-	              60K Bit	(480 X 128 bit)          RAMs := 1     
-	               7K Bit	(63 X 130 bit)          RAMs := 1     
-+---Muxes : 
-	   2 Input  130 Bit        Muxes := 1     
-	   2 Input  111 Bit        Muxes := 1     
-	   2 Input   65 Bit        Muxes := 1     
-	   2 Input   48 Bit        Muxes := 6     
-	   2 Input   32 Bit        Muxes := 5     
-	   2 Input   20 Bit        Muxes := 1     
-	   2 Input   18 Bit        Muxes := 1     
-	   2 Input   17 Bit        Muxes := 1     
-	   2 Input   16 Bit        Muxes := 2     
-	   4 Input   12 Bit        Muxes := 2     
-	   2 Input   12 Bit        Muxes := 1     
-	   2 Input   11 Bit        Muxes := 2     
-	   2 Input   10 Bit        Muxes := 2     
-	   3 Input   10 Bit        Muxes := 1     
-	   2 Input    8 Bit        Muxes := 8     
-	   4 Input    8 Bit        Muxes := 1     
-	   2 Input    7 Bit        Muxes := 2     
-	   2 Input    6 Bit        Muxes := 13    
-	   2 Input    5 Bit        Muxes := 4     
-	   2 Input    4 Bit        Muxes := 13    
-	   4 Input    4 Bit        Muxes := 1     
-	   2 Input    3 Bit        Muxes := 13    
-	   3 Input    3 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 115   
-	   3 Input    2 Bit        Muxes := 7     
-	   4 Input    2 Bit        Muxes := 30    
-	   2 Input    1 Bit        Muxes := 158   
----------------------------------------------------------------------------------
-Finished RTL Component Statistics 
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Part Resource Summary
----------------------------------------------------------------------------------
-Part Resources:
-DSPs: 220 (col length:60)
-BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
----------------------------------------------------------------------------------
-Finished Part Resource Summary
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Cross Boundary and Area Optimization
----------------------------------------------------------------------------------
-DSP Report: Generating DSP Bytes2MultiPixStream_U0/mul_11ns_13ns_23_1_1_U26/tmp_product, operation Mode is: (A:0xaab)*B2.
-DSP Report: register Bytes2MultiPixStream_U0/mul_11ns_13ns_23_1_1_U26/tmp_product is absorbed into DSP Bytes2MultiPixStream_U0/mul_11ns_13ns_23_1_1_U26/tmp_product.
-DSP Report: operator Bytes2MultiPixStream_U0/mul_11ns_13ns_23_1_1_U26/tmp_product is absorbed into DSP Bytes2MultiPixStream_U0/mul_11ns_13ns_23_1_1_U26/tmp_product.
-INFO: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module top_design_v_frmbuf_rd_0_0_CTRL_s_axi.
-INFO: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module top_design_v_frmbuf_rd_0_0_CTRL_s_axi.
----------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2536.477 ; gain = 779.562 ; free physical = 6525 ; free virtual = 25028
----------------------------------------------------------------------------------
- Sort Area is  Bytes2MultiPixStream_U0/mul_11ns_13ns_23_1_1_U26/tmp_product_0 : 0 0 : 704 704 : Used 1 time 0
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP, Shift Register and Retiming Reporting
----------------------------------------------------------------------------------
-
-ROM: Preliminary Mapping Report
-+-------------------------------------------------------------------------------------------------+------------+---------------+----------------+
-|Module Name                                                                                      | RTL Object | Depth x Width | Implemented As | 
-+-------------------------------------------------------------------------------------------------+------------+---------------+----------------+
-|top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R                                           | rom0       | 64x3          | LUT            | 
-|top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R                                               | rom0       | 64x3          | LUT            | 
-|top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R | rom0       | 32x3          | LUT            | 
-|top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow                                                   | p_0_out    | 32x3          | LUT            | 
-|top_design_v_frmbuf_rd_0_0_v_frmbuf_rd                                                           | p_0_out    | 64x3          | LUT            | 
-|top_design_v_frmbuf_rd_0_0_v_frmbuf_rd                                                           | p_0_out    | 64x3          | LUT            | 
-+-------------------------------------------------------------------------------------------------+------------+---------------+----------------+
-
-
-Block RAM: Preliminary Mapping Report (see note below)
-+------------------------------------+------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name                         | RTL Object                                                             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+------------------------------------+------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|inst/grp_FrmbufRdHlsDataFlow_fu_164 | bytePlanes_U/U_top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B_ram/mem_reg | 480 x 128(READ_FIRST)  | W |   | 480 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      | 
-|inst/mm_video_m_axi_U               | load_unit_0/buff_rdata/U_fifo_mem/mem_reg                              | 63 x 130(READ_FIRST)   | W |   | 63 x 130(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
-+------------------------------------+------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-
-Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
-
-DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
-+-----------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name                                    | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+-----------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow | (A:0xaab)*B2 | 12     | 13     | -      | -      | 25     | 1    | 0    | -    | -    | -     | 0    | 0    | 
-+-----------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-
-Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2591.477 ; gain = 834.562 ; free physical = 6659 ; free virtual = 25179
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2693.562 ; gain = 936.648 ; free physical = 8368 ; free virtual = 26891
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP, Shift Register and Retiming Reporting
----------------------------------------------------------------------------------
-
-Block RAM: Final Mapping Report
-+------------------------------------+------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name                         | RTL Object                                                             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+------------------------------------+------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|inst/grp_FrmbufRdHlsDataFlow_fu_164 | bytePlanes_U/U_top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B_ram/mem_reg | 480 x 128(READ_FIRST)  | W |   | 480 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      | 
-|inst/mm_video_m_axi_U               | load_unit_0/buff_rdata/U_fifo_mem/mem_reg                              | 63 x 130(READ_FIRST)   | W |   | 63 x 130(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
-+------------------------------------+------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
-INFO: [Synth 8-7052] The timing for the instance inst/grp_FrmbufRdHlsDataFlow_fu_164/bytePlanes_U/U_top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B_ram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance inst/grp_FrmbufRdHlsDataFlow_fu_164/bytePlanes_U/U_top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B_ram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance inst/mm_video_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
----------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2701.570 ; gain = 944.656 ; free physical = 8372 ; free virtual = 26895
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2841.383 ; gain = 1084.469 ; free physical = 8251 ; free virtual = 26783
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2841.383 ; gain = 1084.469 ; free physical = 8251 ; free virtual = 26783
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2841.383 ; gain = 1084.469 ; free physical = 8250 ; free virtual = 26782
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2841.383 ; gain = 1084.469 ; free physical = 8256 ; free virtual = 26780
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2845.352 ; gain = 1088.438 ; free physical = 8256 ; free virtual = 26780
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2845.352 ; gain = 1088.438 ; free physical = 8256 ; free virtual = 26780
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP, Shift Register and Retiming Reporting
----------------------------------------------------------------------------------
-
-Dynamic Shift Register Report:
-+------------+--------------+--------+------------+--------+---------+--------+--------+--------+
-|Module Name | RTL Name     | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
-+------------+--------------+--------+------------+--------+---------+--------+--------+--------+
-|dsrl        | mem_reg[104] | 64     | 64         | 0      | 256     | 128    | 64     | 0      | 
-|dsrl__1     | mem_reg[2]   | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
-+------------+--------------+--------+------------+--------+---------+--------+--------+--------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Writing Synthesis Report
----------------------------------------------------------------------------------
-
-DSP Final Report (the ' indicates corresponding REG is set)
-+-----------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name                                    | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+-----------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow | (A'*B)'     | 11     | 12     | -      | -      | 25     | 1    | 0    | -    | -    | -     | 0    | 1    | 
-+-----------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-
-
-Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
-
-Report Cell Usage: 
-+------+---------+------+
-|      |Cell     |Count |
-+------+---------+------+
-|1     |CARRY4   |    80|
-|2     |DSP48E1  |     1|
-|3     |LUT1     |    41|
-|4     |LUT2     |   180|
-|5     |LUT3     |   395|
-|6     |LUT4     |   424|
-|7     |LUT5     |   181|
-|8     |LUT6     |   578|
-|9     |MUXF7    |   126|
-|10    |MUXF8    |    39|
-|11    |RAMB36E1 |     4|
-|13    |SRL16E   |     1|
-|14    |SRLC32E  |   156|
-|15    |FDRE     |  2395|
-|16    |FDSE     |    24|
-+------+---------+------+
----------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2845.352 ; gain = 1088.438 ; free physical = 8256 ; free virtual = 26780
----------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2845.352 ; gain = 1013.570 ; free physical = 8244 ; free virtual = 26768
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2845.359 ; gain = 1088.438 ; free physical = 8244 ; free virtual = 26768
-INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2845.359 ; gain = 0.000 ; free physical = 8422 ; free virtual = 26946
-INFO: [Netlist 29-17] Analyzing 250 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2901.379 ; gain = 0.000 ; free physical = 8267 ; free virtual = 26947
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-Synth Design complete | Checksum: bd6ad95a
-INFO: [Common 17-83] Releasing license: Synthesis
-267 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:30 . Memory (MB): peak = 2901.414 ; gain = 1291.391 ; free physical = 8276 ; free virtual = 26955
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1987.952; main = 1987.952; forked = 254.751
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3530.676; main = 2901.383; forked = 994.195
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2925.391 ; gain = 0.000 ; free physical = 8276 ; free virtual = 26955
-INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/top_design_v_frmbuf_rd_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP top_design_v_frmbuf_rd_0_0, cache-ID = d6d6d3071f120ca0
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2925.391 ; gain = 0.000 ; free physical = 8287 ; free virtual = 26942
-INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/top_design_v_frmbuf_rd_0_0.dcp' has been generated.
-INFO: [Vivado 12-24828] Executing command : report_utilization -file top_design_v_frmbuf_rd_0_0_utilization_synth.rpt -pb top_design_v_frmbuf_rd_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 24 18:12:08 2025...
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R.dat" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_CTRL_s_axi.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_fifo_w24_d2_S.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_fifo_w64_d481_B.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_hls_deadlock_detection_unit.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_hls_deadlock_detector.vh" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_hls_deadlock_idx0_monitor.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_hls_deadlock_kernel_monitor_top.vh" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_hls_deadlock_report_unit.vh" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R.dat" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_mul_14s_3ns_14_1_1.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R.dat" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_reg_unsigned_short_s.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_regslice_both.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_v_frmbuf_rd.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R.dat" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_CTRL_s_axi.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_fifo_w24_d2_S.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_fifo_w64_d481_B.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_hls_deadlock_detection_unit.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_hls_deadlock_detector.vh" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_hls_deadlock_idx0_monitor.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_hls_deadlock_kernel_monitor_top.vh" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_hls_deadlock_report_unit.vh" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R.dat" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_mm_video_m_axi.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_mul_14s_3ns_14_1_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R.dat" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_reg_unsigned_short_s.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_regslice_both.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/top_design_v_frmbuf_rd_0_0_v_frmbuf_rd.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+compile_c: Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1623.898 ; gain = 0.000 ; free physical = 7161 ; free virtual = 25926
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP top_design_v_frmbuf_rd_0_0, cache-ID = 7816e022aa1413ed.
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 24 20:02:15 2025...

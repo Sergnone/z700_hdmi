@@ -31,8 +31,8 @@ port (
     m_axi_mm_video_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
     m_axi_mm_video_0_WVALID : OUT STD_LOGIC;
     m_axi_mm_video_0_WREADY : IN STD_LOGIC;
-    m_axi_mm_video_0_WDATA : OUT STD_LOGIC_VECTOR (127 downto 0);
-    m_axi_mm_video_0_WSTRB : OUT STD_LOGIC_VECTOR (15 downto 0);
+    m_axi_mm_video_0_WDATA : OUT STD_LOGIC_VECTOR (63 downto 0);
+    m_axi_mm_video_0_WSTRB : OUT STD_LOGIC_VECTOR (7 downto 0);
     m_axi_mm_video_0_WLAST : OUT STD_LOGIC;
     m_axi_mm_video_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
     m_axi_mm_video_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
@@ -51,7 +51,7 @@ port (
     m_axi_mm_video_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
     m_axi_mm_video_0_RVALID : IN STD_LOGIC;
     m_axi_mm_video_0_RREADY : OUT STD_LOGIC;
-    m_axi_mm_video_0_RDATA : IN STD_LOGIC_VECTOR (127 downto 0);
+    m_axi_mm_video_0_RDATA : IN STD_LOGIC_VECTOR (63 downto 0);
     m_axi_mm_video_0_RLAST : IN STD_LOGIC;
     m_axi_mm_video_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
     m_axi_mm_video_0_RFIFONUM : IN STD_LOGIC_VECTOR (6 downto 0);
@@ -62,13 +62,13 @@ port (
     m_axi_mm_video_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
     m_axi_mm_video_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
     m_axi_mm_video_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-    bytePlanes_din : OUT STD_LOGIC_VECTOR (127 downto 0);
+    bytePlanes_din : OUT STD_LOGIC_VECTOR (63 downto 0);
     bytePlanes_full_n : IN STD_LOGIC;
     bytePlanes_write : OUT STD_LOGIC;
     bytePlanes_num_data_valid : IN STD_LOGIC_VECTOR (9 downto 0);
     bytePlanes_fifo_cap : IN STD_LOGIC_VECTOR (9 downto 0);
     lshr_ln : IN STD_LOGIC_VECTOR (10 downto 0);
-    sext_ln515 : IN STD_LOGIC_VECTOR (27 downto 0) );
+    sext_ln515 : IN STD_LOGIC_VECTOR (28 downto 0) );
 end;
 
 
@@ -86,8 +86,8 @@ architecture behav of top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS
     constant ap_const_lv3_0 : STD_LOGIC_VECTOR (2 downto 0) := "000";
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
     constant ap_const_lv4_0 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
-    constant ap_const_lv128_lc_1 : STD_LOGIC_VECTOR (127 downto 0) := "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
-    constant ap_const_lv16_0 : STD_LOGIC_VECTOR (15 downto 0) := "0000000000000000";
+    constant ap_const_lv64_0 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000000000";
+    constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
     constant ap_const_lv11_0 : STD_LOGIC_VECTOR (10 downto 0) := "00000000000";
     constant ap_const_lv11_1 : STD_LOGIC_VECTOR (10 downto 0) := "00000000001";
 
@@ -102,7 +102,7 @@ attribute shreg_extract : string;
     signal ap_enable_reg_pp0_iter2 : STD_LOGIC := '0';
     signal ap_idle_pp0 : STD_LOGIC;
     signal ap_block_pp0_stage0_subdone : BOOLEAN;
-    signal icmp_ln515_fu_114_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln515_fu_116_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_condition_exit_pp0_iter0_stage0 : STD_LOGIC;
     signal ap_loop_exit_ready : STD_LOGIC;
     signal ap_ready_int : STD_LOGIC;
@@ -111,9 +111,9 @@ attribute shreg_extract : string;
     signal bytePlanes_blk_n : STD_LOGIC;
     signal ap_block_pp0_stage0_11001_grp1 : BOOLEAN;
     signal ap_block_pp0_stage0_11001 : BOOLEAN;
-    signal mm_video_addr_read_reg_153 : STD_LOGIC_VECTOR (127 downto 0) := "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
-    signal x_fu_74 : STD_LOGIC_VECTOR (10 downto 0) := "00000000000";
-    signal add_ln515_fu_120_p2 : STD_LOGIC_VECTOR (10 downto 0);
+    signal mm_video_addr_read_reg_155 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000000000";
+    signal x_fu_76 : STD_LOGIC_VECTOR (10 downto 0) := "00000000000";
+    signal add_ln515_fu_122_p2 : STD_LOGIC_VECTOR (10 downto 0);
     signal ap_loop_init : STD_LOGIC;
     signal ap_sig_allocacmp_x_3 : STD_LOGIC_VECTOR (10 downto 0);
     signal ap_block_pp0_stage0 : BOOLEAN;
@@ -239,31 +239,31 @@ begin
     end process;
 
 
-    mm_video_addr_read_reg_153_assign_proc : process(ap_clk)
+    mm_video_addr_read_reg_155_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                mm_video_addr_read_reg_153 <= ap_const_lv128_lc_1;
+                mm_video_addr_read_reg_155 <= ap_const_lv64_0;
             else
                 if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001_grp1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-                    mm_video_addr_read_reg_153 <= m_axi_mm_video_0_RDATA;
+                    mm_video_addr_read_reg_155 <= m_axi_mm_video_0_RDATA;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    x_fu_74_assign_proc : process(ap_clk)
+    x_fu_76_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                x_fu_74 <= ap_const_lv11_0;
+                x_fu_76 <= ap_const_lv11_0;
             else
                 if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
-                    if (((ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (icmp_ln515_fu_114_p2 = ap_const_lv1_0))) then 
-                        x_fu_74 <= add_ln515_fu_120_p2;
+                    if (((ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (icmp_ln515_fu_116_p2 = ap_const_lv1_0))) then 
+                        x_fu_76 <= add_ln515_fu_122_p2;
                     elsif ((ap_loop_init = ap_const_logic_1)) then 
-                        x_fu_74 <= ap_const_lv11_0;
+                        x_fu_76 <= ap_const_lv11_0;
                     end if;
                 end if; 
             end if;
@@ -280,7 +280,7 @@ begin
                 ap_NS_fsm <= "X";
         end case;
     end process;
-    add_ln515_fu_120_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_x_3) + unsigned(ap_const_lv11_1));
+    add_ln515_fu_122_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_x_3) + unsigned(ap_const_lv11_1));
     ap_CS_fsm_pp0_stage0 <= ap_CS_fsm(0);
         ap_block_pp0_stage0 <= not((ap_const_boolean_1 = ap_const_boolean_1));
 
@@ -309,9 +309,9 @@ begin
     end process;
 
 
-    ap_condition_exit_pp0_iter0_stage0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_block_pp0_stage0_subdone, icmp_ln515_fu_114_p2)
+    ap_condition_exit_pp0_iter0_stage0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_block_pp0_stage0_subdone, icmp_ln515_fu_116_p2)
     begin
-        if (((ap_const_boolean_0 = ap_block_pp0_stage0_subdone) and (ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (icmp_ln515_fu_114_p2 = ap_const_lv1_1))) then 
+        if (((ap_const_boolean_0 = ap_block_pp0_stage0_subdone) and (ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (icmp_ln515_fu_116_p2 = ap_const_lv1_1))) then 
             ap_condition_exit_pp0_iter0_stage0 <= ap_const_logic_1;
         else 
             ap_condition_exit_pp0_iter0_stage0 <= ap_const_logic_0;
@@ -364,12 +364,12 @@ begin
     end process;
 
 
-    ap_sig_allocacmp_x_3_assign_proc : process(ap_CS_fsm_pp0_stage0, x_fu_74, ap_loop_init, ap_block_pp0_stage0)
+    ap_sig_allocacmp_x_3_assign_proc : process(ap_CS_fsm_pp0_stage0, x_fu_76, ap_loop_init, ap_block_pp0_stage0)
     begin
         if (((ap_const_boolean_0 = ap_block_pp0_stage0) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_loop_init = ap_const_logic_1))) then 
             ap_sig_allocacmp_x_3 <= ap_const_lv11_0;
         else 
-            ap_sig_allocacmp_x_3 <= x_fu_74;
+            ap_sig_allocacmp_x_3 <= x_fu_76;
         end if; 
     end process;
 
@@ -383,7 +383,7 @@ begin
         end if; 
     end process;
 
-    bytePlanes_din <= mm_video_addr_read_reg_153;
+    bytePlanes_din <= mm_video_addr_read_reg_155;
 
     bytePlanes_write_assign_proc : process(ap_enable_reg_pp0_iter2, ap_block_pp0_stage0_11001_grp1)
     begin
@@ -394,7 +394,7 @@ begin
         end if; 
     end process;
 
-    icmp_ln515_fu_114_p2 <= "1" when (ap_sig_allocacmp_x_3 = lshr_ln) else "0";
+    icmp_ln515_fu_116_p2 <= "1" when (ap_sig_allocacmp_x_3 = lshr_ln) else "0";
     m_axi_mm_video_0_ARADDR <= ap_const_lv32_0;
     m_axi_mm_video_0_ARBURST <= ap_const_lv2_0;
     m_axi_mm_video_0_ARCACHE <= ap_const_lv4_0;
@@ -430,10 +430,10 @@ begin
         end if; 
     end process;
 
-    m_axi_mm_video_0_WDATA <= ap_const_lv128_lc_1;
+    m_axi_mm_video_0_WDATA <= ap_const_lv64_0;
     m_axi_mm_video_0_WID <= ap_const_lv1_0;
     m_axi_mm_video_0_WLAST <= ap_const_logic_0;
-    m_axi_mm_video_0_WSTRB <= ap_const_lv16_0;
+    m_axi_mm_video_0_WSTRB <= ap_const_lv8_0;
     m_axi_mm_video_0_WUSER <= ap_const_lv1_0;
     m_axi_mm_video_0_WVALID <= ap_const_logic_0;
 

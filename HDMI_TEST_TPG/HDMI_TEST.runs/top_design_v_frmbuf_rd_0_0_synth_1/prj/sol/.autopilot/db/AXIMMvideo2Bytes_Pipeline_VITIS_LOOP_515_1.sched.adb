@@ -73,7 +73,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>128</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>4</if_type>
@@ -109,7 +109,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>28</bitwidth>
+					<bitwidth>29</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>0</if_type>
@@ -145,7 +145,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>128</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -241,7 +241,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>28</bitwidth>
+					<bitwidth>29</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -488,7 +488,7 @@
 					<count>2</count>
 					<item_version>0</item_version>
 					<item>45</item>
-					<item>161</item>
+					<item>162</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -711,7 +711,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>128</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -768,7 +768,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>128</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -890,8 +890,8 @@
 					<item_version>0</item_version>
 					<item>63</item>
 					<item>64</item>
-					<item>162</item>
 					<item>163</item>
+					<item>164</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -1402,49 +1402,49 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_51">
-				<id>157</id>
+				<id>158</id>
 				<edge_type>2</edge_type>
 				<source_obj>15</source_obj>
 				<sink_obj>21</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_52">
-				<id>158</id>
+				<id>159</id>
 				<edge_type>2</edge_type>
 				<source_obj>21</source_obj>
 				<sink_obj>31</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_53">
-				<id>159</id>
+				<id>160</id>
 				<edge_type>2</edge_type>
 				<source_obj>21</source_obj>
 				<sink_obj>29</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_54">
-				<id>160</id>
+				<id>161</id>
 				<edge_type>2</edge_type>
 				<source_obj>29</source_obj>
 				<sink_obj>21</sink_obj>
 				<is_back_edge>1</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_55">
-				<id>161</id>
+				<id>162</id>
 				<edge_type>4</edge_type>
 				<source_obj>13</source_obj>
 				<sink_obj>16</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_56">
-				<id>162</id>
+				<id>163</id>
 				<edge_type>4</edge_type>
 				<source_obj>13</source_obj>
 				<sink_obj>27</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_57">
-				<id>163</id>
+				<id>164</id>
 				<edge_type>4</edge_type>
 				<source_obj>16</source_obj>
 				<sink_obj>27</sink_obj>

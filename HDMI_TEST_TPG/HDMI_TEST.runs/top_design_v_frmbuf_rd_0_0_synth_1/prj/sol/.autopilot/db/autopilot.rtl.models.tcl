@@ -20,21 +20,21 @@ set SynModuleInfo {
   }
   {SRCNAME MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 MODELNAME MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 RTLNAME top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3
     SUBMODULES {
-      {MODELNAME top_design_v_frmbuf_rd_0_0_sparsemux_13_3_8_1_1 RTLNAME top_design_v_frmbuf_rd_0_0_sparsemux_13_3_8_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
+      {MODELNAME top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1 RTLNAME top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1 BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}
     }
   }
   {SRCNAME MultiPixStream2AXIvideo MODELNAME MultiPixStream2AXIvideo RTLNAME top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo}
   {SRCNAME FrmbufRdHlsDataFlow MODELNAME FrmbufRdHlsDataFlow RTLNAME top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow
     SUBMODULES {
-      {MODELNAME top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B RTLNAME top_design_v_frmbuf_rd_0_0_fifo_w128_d481_B BINDTYPE storage TYPE fifo IMPL bram ALLOW_PRAGMA 1 INSTNAME bytePlanes_U}
-      {MODELNAME top_design_v_frmbuf_rd_0_0_fifo_w48_d2_S RTLNAME top_design_v_frmbuf_rd_0_0_fifo_w48_d2_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME img_U}
+      {MODELNAME top_design_v_frmbuf_rd_0_0_fifo_w64_d481_B RTLNAME top_design_v_frmbuf_rd_0_0_fifo_w64_d481_B BINDTYPE storage TYPE fifo IMPL bram ALLOW_PRAGMA 1 INSTNAME bytePlanes_U}
+      {MODELNAME top_design_v_frmbuf_rd_0_0_fifo_w24_d2_S RTLNAME top_design_v_frmbuf_rd_0_0_fifo_w24_d2_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME img_U}
       {MODELNAME top_design_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0 RTLNAME top_design_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_Bytes2MultiPixStream_U0_U}
       {MODELNAME top_design_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0 RTLNAME top_design_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_MultiPixStream2AXIvideo_U0_U}
     }
   }
   {SRCNAME v_frmbuf_rd MODELNAME v_frmbuf_rd RTLNAME top_design_v_frmbuf_rd_0_0_v_frmbuf_rd IS_TOP 1
     SUBMODULES {
-      {MODELNAME top_design_v_frmbuf_rd_0_0_mul_15s_3ns_15_1_1 RTLNAME top_design_v_frmbuf_rd_0_0_mul_15s_3ns_15_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_frmbuf_rd_0_0_mul_14s_3ns_14_1_1 RTLNAME top_design_v_frmbuf_rd_0_0_mul_14s_3ns_14_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R RTLNAME top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
       {MODELNAME top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R RTLNAME top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
       {MODELNAME top_design_v_frmbuf_rd_0_0_mm_video_m_axi RTLNAME top_design_v_frmbuf_rd_0_0_mm_video_m_axi BINDTYPE interface TYPE adapter IMPL m_axi}

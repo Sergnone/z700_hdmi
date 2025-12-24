@@ -28,8 +28,8 @@ output   ap_done;
 output   ap_idle;
 output   ap_ready;
 input   ap_ce;
-input  [11:0] d;
-output  [11:0] ap_return;
+input  [10:0] d;
+output  [10:0] ap_return;
 
 reg ap_done;
 reg ap_idle;
@@ -41,7 +41,7 @@ wire    ap_enable_reg_pp0_iter0;
 reg    ap_enable_reg_pp0_iter1;
 reg    ap_idle_pp0;
 reg    ap_block_pp0_stage0_subdone;
-reg   [11:0] ap_port_reg_d;
+reg   [10:0] ap_port_reg_d;
 wire    ap_block_pp0_stage0_11001;
 reg   [0:0] ap_NS_fsm;
 reg    ap_idle_pp0_0to0;
@@ -53,7 +53,7 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 ap_port_reg_d = 12'd0;
+#0 ap_port_reg_d = 11'd0;
 end
 
 always @ (posedge ap_clk) begin
@@ -76,7 +76,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        ap_port_reg_d <= 12'd0;
+        ap_port_reg_d <= 11'd0;
     end else begin
         if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_ce) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
             ap_port_reg_d <= d;

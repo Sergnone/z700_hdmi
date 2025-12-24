@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3'
 ================================================================
-* Date:           Wed Dec 24 18:11:32 2025
+* Date:           Wed Dec 24 20:02:11 2025
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -56,12 +56,12 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       0|     39|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        -|    -|       0|    150|    -|
+|Instance         |        -|    -|       0|     27|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       0|     63|    -|
-|Register         |        -|    -|      70|      -|    -|
+|Register         |        -|    -|      46|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|      70|    252|    0|
+|Total            |        0|    0|      46|    129|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
@@ -70,18 +70,15 @@
 
 + Detail: 
     * Instance: 
-    +--------------------------+----------------------+---------+----+---+----+-----+
-    |         Instance         |        Module        | BRAM_18K| DSP| FF| LUT| URAM|
-    +--------------------------+----------------------+---------+----+---+----+-----+
-    |sparsemux_13_3_8_1_1_U44  |sparsemux_13_3_8_1_1  |        0|   0|  0|  25|    0|
-    |sparsemux_13_3_8_1_1_U45  |sparsemux_13_3_8_1_1  |        0|   0|  0|  25|    0|
-    |sparsemux_13_3_8_1_1_U46  |sparsemux_13_3_8_1_1  |        0|   0|  0|  25|    0|
-    |sparsemux_13_3_8_1_1_U47  |sparsemux_13_3_8_1_1  |        0|   0|  0|  25|    0|
-    |sparsemux_13_3_8_1_1_U48  |sparsemux_13_3_8_1_1  |        0|   0|  0|  25|    0|
-    |sparsemux_13_3_8_1_1_U49  |sparsemux_13_3_8_1_1  |        0|   0|  0|  25|    0|
-    +--------------------------+----------------------+---------+----+---+----+-----+
-    |Total                     |                      |        0|   0|  0| 150|    0|
-    +--------------------------+----------------------+---------+----+---+----+-----+
+    +-------------------------+---------------------+---------+----+---+----+-----+
+    |         Instance        |        Module       | BRAM_18K| DSP| FF| LUT| URAM|
+    +-------------------------+---------------------+---------+----+---+----+-----+
+    |sparsemux_7_2_8_1_1_U40  |sparsemux_7_2_8_1_1  |        0|   0|  0|   9|    0|
+    |sparsemux_7_2_8_1_1_U41  |sparsemux_7_2_8_1_1  |        0|   0|  0|   9|    0|
+    |sparsemux_7_2_8_1_1_U42  |sparsemux_7_2_8_1_1  |        0|   0|  0|   9|    0|
+    +-------------------------+---------------------+---------+----+---+----+-----+
+    |Total                    |                     |        0|   0|  0|  27|    0|
+    +-------------------------+---------------------+---------+----+---+----+-----+
 
     * DSP: 
     N/A
@@ -96,11 +93,11 @@
     +---------------------------------------+----------+----+---+----+------------+------------+
     |             Variable Name             | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +---------------------------------------+----------+----+---+----+------------+------------+
-    |j_2_fu_245_p2                          |         +|   0|  0|  11|          11|           1|
+    |j_2_fu_203_p2                          |         +|   0|  0|  11|          11|           1|
     |ap_block_state2_pp0_stage0_iter1_grp1  |       and|   0|  0|   1|           1|           1|
     |ap_block_state3_pp0_stage0_iter2_grp1  |       and|   0|  0|   1|           1|           1|
-    |icmp_ln376_fu_239_p2                   |      icmp|   0|  0|  11|          11|          11|
-    |icmp_ln392_fu_255_p2                   |      icmp|   0|  0|  12|          12|          12|
+    |icmp_ln376_fu_197_p2                   |      icmp|   0|  0|  11|          11|          11|
+    |icmp_ln392_fu_213_p2                   |      icmp|   0|  0|  12|          12|          12|
     |ap_block_pp0_stage0_01001_grp1         |        or|   0|  0|   1|           1|           1|
     |ap_enable_pp0                          |       xor|   0|  0|   2|           1|           2|
     +---------------------------------------+----------+----+---+----+------------+------------+
@@ -115,9 +112,9 @@
     |ap_loop_exit_ready_pp0_iter2_reg  |   9|          2|    1|          2|
     |ap_sig_allocacmp_j_1              |   9|          2|   11|         22|
     |img_blk_n                         |   9|          2|    1|          2|
-    |j_fu_126                          |   9|          2|   11|         22|
+    |j_fu_102                          |   9|          2|   11|         22|
     |m_axis_video_TDATA_blk_n          |   9|          2|    1|          2|
-    |sof_1_reg_219                     |   9|          2|    1|          2|
+    |sof_1_reg_177                     |   9|          2|    1|          2|
     +----------------------------------+----+-----------+-----+-----------+
     |Total                             |  63|         14|   27|         54|
     +----------------------------------+----+-----------+-----+-----------+
@@ -132,20 +129,17 @@
     |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
-    |icmp_ln376_reg_559                |   1|   0|    1|          0|
-    |icmp_ln376_reg_559_pp0_iter1_reg  |   1|   0|    1|          0|
-    |icmp_ln392_reg_563                |   1|   0|    1|          0|
-    |icmp_ln392_reg_563_pp0_iter1_reg  |   1|   0|    1|          0|
-    |j_fu_126                          |  11|   0|   11|          0|
-    |sof_1_reg_219                     |   1|   0|    1|          0|
-    |tmp_2_reg_588                     |   8|   0|    8|          0|
-    |tmp_3_reg_593                     |   8|   0|    8|          0|
-    |tmp_7_reg_568                     |   8|   0|    8|          0|
-    |tmp_8_reg_573                     |   8|   0|    8|          0|
-    |tmp_9_reg_578                     |   8|   0|    8|          0|
-    |tmp_s_reg_583                     |   8|   0|    8|          0|
+    |icmp_ln376_reg_340                |   1|   0|    1|          0|
+    |icmp_ln376_reg_340_pp0_iter1_reg  |   1|   0|    1|          0|
+    |icmp_ln392_reg_344                |   1|   0|    1|          0|
+    |icmp_ln392_reg_344_pp0_iter1_reg  |   1|   0|    1|          0|
+    |j_fu_102                          |  11|   0|   11|          0|
+    |sof_1_reg_177                     |   1|   0|    1|          0|
+    |tmp_4_reg_349                     |   8|   0|    8|          0|
+    |tmp_5_reg_354                     |   8|   0|    8|          0|
+    |tmp_6_reg_359                     |   8|   0|    8|          0|
     +----------------------------------+----+----+-----+-----------+
-    |Total                             |  70|   0|   70|          0|
+    |Total                             |  46|   0|   46|          0|
     +----------------------------------+----+----+-----+-----------+
 
 
@@ -163,26 +157,23 @@
 |ap_done              |  out|    1|  ap_ctrl_hs|  MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3|  return value|
 |ap_idle              |  out|    1|  ap_ctrl_hs|  MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3|  return value|
 |ap_ready             |  out|    1|  ap_ctrl_hs|  MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3|  return value|
-|img_dout             |   in|   48|     ap_fifo|                                                img|       pointer|
+|img_dout             |   in|   24|     ap_fifo|                                                img|       pointer|
 |img_empty_n          |   in|    1|     ap_fifo|                                                img|       pointer|
 |img_read             |  out|    1|     ap_fifo|                                                img|       pointer|
 |img_num_data_valid   |   in|    3|     ap_fifo|                                                img|       pointer|
 |img_fifo_cap         |   in|    3|     ap_fifo|                                                img|       pointer|
 |m_axis_video_TREADY  |   in|    1|        axis|                              m_axis_video_V_data_V|       pointer|
-|m_axis_video_TDATA   |  out|   48|        axis|                              m_axis_video_V_data_V|       pointer|
+|m_axis_video_TDATA   |  out|   24|        axis|                              m_axis_video_V_data_V|       pointer|
 |sof                  |   in|    1|     ap_none|                                                sof|        scalar|
-|lshr_ln              |   in|   11|     ap_none|                                            lshr_ln|        scalar|
+|cols                 |   in|   11|     ap_none|                                               cols|        scalar|
 |add_ln392            |   in|   12|     ap_none|                                          add_ln392|        scalar|
-|empty_47             |   in|    3|     ap_none|                                           empty_47|        scalar|
-|empty_48             |   in|    3|     ap_none|                                           empty_48|        scalar|
-|empty_49             |   in|    3|     ap_none|                                           empty_49|        scalar|
-|empty_50             |   in|    3|     ap_none|                                           empty_50|        scalar|
-|empty_51             |   in|    3|     ap_none|                                           empty_51|        scalar|
-|empty                |   in|    3|     ap_none|                                              empty|        scalar|
+|empty_47             |   in|    2|     ap_none|                                           empty_47|        scalar|
+|empty_48             |   in|    2|     ap_none|                                           empty_48|        scalar|
+|empty                |   in|    2|     ap_none|                                              empty|        scalar|
 |m_axis_video_TVALID  |  out|    1|        axis|                              m_axis_video_V_dest_V|       pointer|
 |m_axis_video_TDEST   |  out|    1|        axis|                              m_axis_video_V_dest_V|       pointer|
-|m_axis_video_TKEEP   |  out|    6|        axis|                              m_axis_video_V_keep_V|       pointer|
-|m_axis_video_TSTRB   |  out|    6|        axis|                              m_axis_video_V_strb_V|       pointer|
+|m_axis_video_TKEEP   |  out|    3|        axis|                              m_axis_video_V_keep_V|       pointer|
+|m_axis_video_TSTRB   |  out|    3|        axis|                              m_axis_video_V_strb_V|       pointer|
 |m_axis_video_TUSER   |  out|    1|        axis|                              m_axis_video_V_user_V|       pointer|
 |m_axis_video_TLAST   |  out|    1|        axis|                              m_axis_video_V_last_V|       pointer|
 |m_axis_video_TID     |  out|    1|        axis|                                m_axis_video_V_id_V|       pointer|

@@ -92,8 +92,8 @@ output  [3:0] m_axi_mm_video_0_AWREGION;
 output  [0:0] m_axi_mm_video_0_AWUSER;
 output   m_axi_mm_video_0_WVALID;
 input   m_axi_mm_video_0_WREADY;
-output  [127:0] m_axi_mm_video_0_WDATA;
-output  [15:0] m_axi_mm_video_0_WSTRB;
+output  [63:0] m_axi_mm_video_0_WDATA;
+output  [7:0] m_axi_mm_video_0_WSTRB;
 output   m_axi_mm_video_0_WLAST;
 output  [0:0] m_axi_mm_video_0_WID;
 output  [0:0] m_axi_mm_video_0_WUSER;
@@ -112,7 +112,7 @@ output  [3:0] m_axi_mm_video_0_ARREGION;
 output  [0:0] m_axi_mm_video_0_ARUSER;
 input   m_axi_mm_video_0_RVALID;
 output   m_axi_mm_video_0_RREADY;
-input  [127:0] m_axi_mm_video_0_RDATA;
+input  [63:0] m_axi_mm_video_0_RDATA;
 input   m_axi_mm_video_0_RLAST;
 input  [0:0] m_axi_mm_video_0_RID;
 input  [6:0] m_axi_mm_video_0_RFIFONUM;
@@ -123,13 +123,13 @@ output   m_axi_mm_video_0_BREADY;
 input  [1:0] m_axi_mm_video_0_BRESP;
 input  [0:0] m_axi_mm_video_0_BID;
 input  [0:0] m_axi_mm_video_0_BUSER;
-output  [127:0] bytePlanes_din;
+output  [63:0] bytePlanes_din;
 input   bytePlanes_full_n;
 output   bytePlanes_write;
 input  [9:0] bytePlanes_num_data_valid;
 input  [9:0] bytePlanes_fifo_cap;
 input  [10:0] lshr_ln;
-input  [27:0] sext_ln515;
+input  [28:0] sext_ln515;
 
 reg ap_idle;
 reg m_axi_mm_video_0_RREADY;
@@ -142,7 +142,7 @@ reg    ap_enable_reg_pp0_iter1;
 reg    ap_enable_reg_pp0_iter2;
 reg    ap_idle_pp0;
 reg    ap_block_pp0_stage0_subdone;
-wire   [0:0] icmp_ln515_fu_114_p2;
+wire   [0:0] icmp_ln515_fu_116_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
@@ -151,9 +151,9 @@ wire    ap_block_pp0_stage0_grp1;
 reg    bytePlanes_blk_n;
 reg    ap_block_pp0_stage0_11001_grp1;
 reg    ap_block_pp0_stage0_11001;
-reg   [127:0] mm_video_addr_read_reg_153;
-reg   [10:0] x_fu_74;
-wire   [10:0] add_ln515_fu_120_p2;
+reg   [63:0] mm_video_addr_read_reg_155;
+reg   [10:0] x_fu_76;
+wire   [10:0] add_ln515_fu_122_p2;
 wire    ap_loop_init;
 reg   [10:0] ap_sig_allocacmp_x_3;
 wire    ap_block_pp0_stage0;
@@ -174,8 +174,8 @@ initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 ap_enable_reg_pp0_iter2 = 1'b0;
-#0 mm_video_addr_read_reg_153 = 128'd0;
-#0 x_fu_74 = 11'd0;
+#0 mm_video_addr_read_reg_155 = 64'd0;
+#0 x_fu_76 = 11'd0;
 #0 ap_done_reg = 1'b0;
 #0 ap_loop_exit_ready_pp0_iter1_reg = 1'b0;
 end
@@ -249,30 +249,30 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        mm_video_addr_read_reg_153 <= 128'd0;
+        mm_video_addr_read_reg_155 <= 64'd0;
     end else begin
         if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-            mm_video_addr_read_reg_153 <= m_axi_mm_video_0_RDATA;
+            mm_video_addr_read_reg_155 <= m_axi_mm_video_0_RDATA;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        x_fu_74 <= 11'd0;
+        x_fu_76 <= 11'd0;
     end else begin
         if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-            if (((ap_enable_reg_pp0_iter0 == 1'b1) & (icmp_ln515_fu_114_p2 == 1'd0))) begin
-                x_fu_74 <= add_ln515_fu_120_p2;
+            if (((ap_enable_reg_pp0_iter0 == 1'b1) & (icmp_ln515_fu_116_p2 == 1'd0))) begin
+                x_fu_76 <= add_ln515_fu_122_p2;
             end else if ((ap_loop_init == 1'b1)) begin
-                x_fu_74 <= 11'd0;
+                x_fu_76 <= 11'd0;
             end
         end
     end
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (icmp_ln515_fu_114_p2 == 1'd1))) begin
+    if (((1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (icmp_ln515_fu_116_p2 == 1'd1))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -315,7 +315,7 @@ always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
         ap_sig_allocacmp_x_3 = 11'd0;
     end else begin
-        ap_sig_allocacmp_x_3 = x_fu_74;
+        ap_sig_allocacmp_x_3 = x_fu_76;
     end
 end
 
@@ -362,7 +362,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln515_fu_120_p2 = (ap_sig_allocacmp_x_3 + 11'd1);
+assign add_ln515_fu_122_p2 = (ap_sig_allocacmp_x_3 + 11'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -396,9 +396,9 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign bytePlanes_din = mm_video_addr_read_reg_153;
+assign bytePlanes_din = mm_video_addr_read_reg_155;
 
-assign icmp_ln515_fu_114_p2 = ((ap_sig_allocacmp_x_3 == lshr_ln) ? 1'b1 : 1'b0);
+assign icmp_ln515_fu_116_p2 = ((ap_sig_allocacmp_x_3 == lshr_ln) ? 1'b1 : 1'b0);
 
 assign m_axi_mm_video_0_ARADDR = 32'd0;
 
@@ -450,13 +450,13 @@ assign m_axi_mm_video_0_AWVALID = 1'b0;
 
 assign m_axi_mm_video_0_BREADY = 1'b0;
 
-assign m_axi_mm_video_0_WDATA = 128'd0;
+assign m_axi_mm_video_0_WDATA = 64'd0;
 
 assign m_axi_mm_video_0_WID = 1'd0;
 
 assign m_axi_mm_video_0_WLAST = 1'b0;
 
-assign m_axi_mm_video_0_WSTRB = 16'd0;
+assign m_axi_mm_video_0_WSTRB = 8'd0;
 
 assign m_axi_mm_video_0_WUSER = 1'd0;
 

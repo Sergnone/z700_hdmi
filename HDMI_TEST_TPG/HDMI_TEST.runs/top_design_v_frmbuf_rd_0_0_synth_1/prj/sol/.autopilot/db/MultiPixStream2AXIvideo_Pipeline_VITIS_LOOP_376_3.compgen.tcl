@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler top_design_v_frmbuf_rd_0_0_sparsemux_13_3_8_1_1 BINDTYPE {op} TYPE {sparsemux} IMPL {compactencoding_dontcare}
+	::AP::rtl_comp_handler top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1 BINDTYPE {op} TYPE {sparsemux} IMPL {onehotencoding_realdef}
 }
 
 
@@ -16,14 +16,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 61 \
+    id 51 \
     name m_axis_video_V_data_V \
     reset_level 1 \
     sync_rst true \
     corename {m_axis_video} \
     metadata {  } \
     op interface \
-    ports { m_axis_video_TREADY { I 1 bit } m_axis_video_TDATA { O 48 vector } } \
+    ports { m_axis_video_TREADY { I 1 bit } m_axis_video_TDATA { O 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm_axis_video_V_data_V'"
@@ -35,14 +35,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 62 \
+    id 52 \
     name m_axis_video_V_keep_V \
     reset_level 1 \
     sync_rst true \
     corename {m_axis_video} \
     metadata {  } \
     op interface \
-    ports { m_axis_video_TKEEP { O 6 vector } } \
+    ports { m_axis_video_TKEEP { O 3 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm_axis_video_V_keep_V'"
@@ -54,14 +54,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 63 \
+    id 53 \
     name m_axis_video_V_strb_V \
     reset_level 1 \
     sync_rst true \
     corename {m_axis_video} \
     metadata {  } \
     op interface \
-    ports { m_axis_video_TSTRB { O 6 vector } } \
+    ports { m_axis_video_TSTRB { O 3 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm_axis_video_V_strb_V'"
@@ -73,7 +73,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 64 \
+    id 54 \
     name m_axis_video_V_user_V \
     reset_level 1 \
     sync_rst true \
@@ -92,7 +92,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 65 \
+    id 55 \
     name m_axis_video_V_last_V \
     reset_level 1 \
     sync_rst true \
@@ -111,7 +111,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 66 \
+    id 56 \
     name m_axis_video_V_id_V \
     reset_level 1 \
     sync_rst true \
@@ -130,7 +130,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 67 \
+    id 57 \
     name m_axis_video_V_dest_V \
     reset_level 1 \
     sync_rst true \
@@ -148,7 +148,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 51 \
+    id 44 \
     name sof \
     type other \
     dir I \
@@ -163,22 +163,22 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 52 \
-    name lshr_ln \
+    id 45 \
+    name cols \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_lshr_ln \
+    corename dc_cols \
     op interface \
-    ports { lshr_ln { I 11 vector } } \
+    ports { cols { I 11 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 53 \
+    id 46 \
     name add_ln392 \
     type other \
     dir I \
@@ -193,7 +193,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 54 \
+    id 47 \
     name img \
     type fifo \
     dir I \
@@ -201,14 +201,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_img \
     op interface \
-    ports { img_dout { I 48 vector } img_empty_n { I 1 bit } img_read { O 1 bit } img_num_data_valid { I 3 vector } img_fifo_cap { I 3 vector } } \
+    ports { img_dout { I 24 vector } img_empty_n { I 1 bit } img_read { O 1 bit } img_num_data_valid { I 3 vector } img_fifo_cap { I 3 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 55 \
+    id 48 \
     name empty_47 \
     type other \
     dir I \
@@ -216,14 +216,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_empty_47 \
     op interface \
-    ports { empty_47 { I 3 vector } } \
+    ports { empty_47 { I 2 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 56 \
+    id 49 \
     name empty_48 \
     type other \
     dir I \
@@ -231,59 +231,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_empty_48 \
     op interface \
-    ports { empty_48 { I 3 vector } } \
+    ports { empty_48 { I 2 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 57 \
-    name empty_49 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_empty_49 \
-    op interface \
-    ports { empty_49 { I 3 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 58 \
-    name empty_50 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_empty_50 \
-    op interface \
-    ports { empty_50 { I 3 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 59 \
-    name empty_51 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_empty_51 \
-    op interface \
-    ports { empty_51 { I 3 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 60 \
+    id 50 \
     name empty \
     type other \
     dir I \
@@ -291,7 +246,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_empty \
     op interface \
-    ports { empty { I 3 vector } } \
+    ports { empty { I 2 vector } } \
 } "
 }
 

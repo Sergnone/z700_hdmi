@@ -15,7 +15,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 37 \
+    id 36 \
     name mul_ln369 \
     type other \
     dir I \
@@ -23,59 +23,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mul_ln369 \
     op interface \
-    ports { mul_ln369 { I 5 vector } } \
+    ports { mul_ln369 { I 4 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 38 \
-    name kMap_5_out \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kMap_5_out \
-    op interface \
-    ports { kMap_5_out { O 3 vector } kMap_5_out_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 39 \
-    name kMap_4_out \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kMap_4_out \
-    op interface \
-    ports { kMap_4_out { O 3 vector } kMap_4_out_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 40 \
-    name kMap_3_out \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kMap_3_out \
-    op interface \
-    ports { kMap_3_out { O 3 vector } kMap_3_out_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 41 \
+    id 37 \
     name kMap_2_out \
     type other \
     dir O \
@@ -83,14 +38,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_kMap_2_out \
     op interface \
-    ports { kMap_2_out { O 3 vector } kMap_2_out_ap_vld { O 1 bit } } \
+    ports { kMap_2_out { O 2 vector } kMap_2_out_ap_vld { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 42 \
+    id 38 \
     name kMap_1_out \
     type other \
     dir O \
@@ -98,14 +53,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_kMap_1_out \
     op interface \
-    ports { kMap_1_out { O 3 vector } kMap_1_out_ap_vld { O 1 bit } } \
+    ports { kMap_1_out { O 2 vector } kMap_1_out_ap_vld { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 43 \
+    id 39 \
     name kMap_out \
     type other \
     dir O \
@@ -113,7 +68,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_kMap_out \
     op interface \
-    ports { kMap_out { O 3 vector } kMap_out_ap_vld { O 1 bit } } \
+    ports { kMap_out { O 2 vector } kMap_out_ap_vld { O 1 bit } } \
 } "
 }
 

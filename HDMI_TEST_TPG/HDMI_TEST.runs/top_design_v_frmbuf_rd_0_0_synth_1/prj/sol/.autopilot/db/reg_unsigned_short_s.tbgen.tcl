@@ -17,17 +17,17 @@ set DLRegItemOffset 0
 set svuvm_can_support 1
 set cdfgNum 12
 set C_modelName {reg<unsigned short>}
-set C_modelType { int 12 }
+set C_modelType { int 11 }
 set ap_memory_interface_dict [dict create]
 set C_modelArgList {
-	{ d uint 12 regular {ap_stable 0} }
+	{ d uint 11 regular {ap_stable 0} }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "d", "interface" : "wire", "bitwidth" : 12, "direction" : "READONLY"} , 
- 	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 12} ]}
+	{ "Name" : "d", "interface" : "wire", "bitwidth" : 11, "direction" : "READONLY"} , 
+ 	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 11} ]}
 # RTL Port declarations: 
 set portNum 9
 set portList { 
@@ -38,8 +38,8 @@ set portList {
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ ap_ce sc_in sc_logic 1 ce -1 } 
-	{ d sc_in sc_lv 12 signal 0 } 
-	{ ap_return sc_out sc_lv 12 signal -1 } 
+	{ d sc_in sc_lv 11 signal 0 } 
+	{ ap_return sc_out sc_lv 11 signal -1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -49,8 +49,8 @@ set NewPortList {[
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "ap_ce", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "ce", "bundle":{"name": "ap_ce", "role": "default" }} , 
- 	{ "name": "d", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "d", "role": "default" }} , 
- 	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
+ 	{ "name": "d", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "d", "role": "default" }} , 
+ 	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
 
 set ArgLastReadFirstWriteLatency {
 	reg_unsigned_short_s {
@@ -68,5 +68,5 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	d { ap_none {  { d in_data 0 12 } } }
+	d { ap_none {  { d in_data 0 11 } } }
 }

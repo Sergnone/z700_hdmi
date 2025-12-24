@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'v_frmbuf_rd'" level="0">
-<item name = "Date">Wed Dec 24 18:11:32 2025
+<item name = "Date">Wed Dec 24 20:02:11 2025
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">7174, 8305316, 48.425 us, 56.061 ms, 7175, 8305317, no</column>
+<column name="">7174, 4152716, 48.425 us, 28.031 ms, 7175, 4152717, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_FrmbufRdHlsDataFlow_fu_164">FrmbufRdHlsDataFlow, 7169, 8305311, 48.391 us, 56.061 ms, 7170, 8305216, dataflow</column>
+<column name="grp_FrmbufRdHlsDataFlow_fu_166">FrmbufRdHlsDataFlow, 7169, 4152711, 48.391 us, 28.031 ms, 7170, 4152616, dataflow</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,12 +50,12 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 3, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">16, 1, 2583, 3296, -</column>
+<column name="Instance">8, 1, 2214, 3129, -</column>
 <column name="Memory">0, -, 6, 6, -</column>
 <column name="Multiplexer">-, -, 0, 110, -</column>
-<column name="Register">-, -, 188, -, -</column>
+<column name="Register">-, -, 154, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">5, ~0, 2, 6, 0</specialColumn>
+<specialColumn name="Utilization (%)">2, ~0, 2, 6, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -63,9 +63,9 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 238, 360, 0</column>
-<column name="grp_FrmbufRdHlsDataFlow_fu_164">FrmbufRdHlsDataFlow, 8, 1, 1577, 2071, 0</column>
-<column name="mm_video_m_axi_U">mm_video_m_axi, 8, 0, 768, 859, 0</column>
-<column name="mul_15s_3ns_15_1_1_U98">mul_15s_3ns_15_1_1, 0, 0, 0, 6, 0</column>
+<column name="grp_FrmbufRdHlsDataFlow_fu_166">FrmbufRdHlsDataFlow, 4, 1, 1255, 1925, 0</column>
+<column name="mm_video_m_axi_U">mm_video_m_axi, 4, 0, 721, 838, 0</column>
+<column name="mul_14s_3ns_14_1_1_U88">mul_14s_3ns_14_1_1, 0, 0, 0, 6, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -84,20 +84,20 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="grp_FrmbufRdHlsDataFlow_fu_164_m_axis_video_TREADY">and, 0, 0, 1, 1, 1</column>
+<column name="grp_FrmbufRdHlsDataFlow_fu_166_m_axis_video_TREADY">and, 0, 0, 1, 1, 1</column>
 <column name="s_axi_CTRL_flush_done">and, 0, 0, 1, 1, 0</column>
-<column name="ap_sync_grp_FrmbufRdHlsDataFlow_fu_164_ap_ready">or, 0, 0, 1, 1, 1</column>
+<column name="ap_sync_grp_FrmbufRdHlsDataFlow_fu_166_ap_ready">or, 0, 0, 1, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">29, 7, 1, 7</column>
-<column name="m_axis_video_TDATA_int_regslice">9, 2, 48, 96</column>
+<column name="m_axis_video_TDATA_int_regslice">9, 2, 24, 48</column>
 <column name="m_axis_video_TDEST_int_regslice">9, 2, 1, 2</column>
 <column name="m_axis_video_TID_int_regslice">9, 2, 1, 2</column>
-<column name="m_axis_video_TKEEP_int_regslice">9, 2, 6, 12</column>
+<column name="m_axis_video_TKEEP_int_regslice">9, 2, 3, 6</column>
 <column name="m_axis_video_TLAST_int_regslice">9, 2, 1, 2</column>
-<column name="m_axis_video_TSTRB_int_regslice">9, 2, 6, 12</column>
+<column name="m_axis_video_TSTRB_int_regslice">9, 2, 3, 6</column>
 <column name="m_axis_video_TUSER_int_regslice">9, 2, 1, 2</column>
 <column name="mm_video_0_ARVALID">9, 2, 1, 2</column>
 <column name="mm_video_0_RREADY">9, 2, 1, 2</column>
@@ -105,27 +105,27 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="BYTES_PER_PIXEL_load_reg_263">3, 0, 3, 0</column>
-<column name="WidthInBytes_reg_273">15, 0, 15, 0</column>
+<column name="BYTES_PER_PIXEL_load_reg_265">3, 0, 3, 0</column>
+<column name="WidthInBytes_reg_275">14, 0, 14, 0</column>
 <column name="ap_CS_fsm">6, 0, 6, 0</column>
-<column name="ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_164_ap_done">1, 0, 1, 0</column>
-<column name="ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_164_ap_ready">1, 0, 1, 0</column>
-<column name="colorFormat_reg_268">3, 0, 3, 0</column>
-<column name="frm_buffer_read_reg_223">32, 0, 32, 0</column>
-<column name="grp_FrmbufRdHlsDataFlow_fu_164_ap_start_reg">1, 0, 1, 0</column>
-<column name="m_axis_video_TDATA_reg">48, 0, 48, 0</column>
+<column name="ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_166_ap_done">1, 0, 1, 0</column>
+<column name="ap_sync_reg_grp_FrmbufRdHlsDataFlow_fu_166_ap_ready">1, 0, 1, 0</column>
+<column name="colorFormat_reg_270">3, 0, 3, 0</column>
+<column name="frm_buffer_read_reg_225">32, 0, 32, 0</column>
+<column name="grp_FrmbufRdHlsDataFlow_fu_166_ap_start_reg">1, 0, 1, 0</column>
+<column name="m_axis_video_TDATA_reg">24, 0, 24, 0</column>
 <column name="m_axis_video_TDEST_reg">1, 0, 1, 0</column>
 <column name="m_axis_video_TID_reg">1, 0, 1, 0</column>
-<column name="m_axis_video_TKEEP_reg">6, 0, 6, 0</column>
+<column name="m_axis_video_TKEEP_reg">3, 0, 3, 0</column>
 <column name="m_axis_video_TLAST_reg">1, 0, 1, 0</column>
-<column name="m_axis_video_TSTRB_reg">6, 0, 6, 0</column>
+<column name="m_axis_video_TSTRB_reg">3, 0, 3, 0</column>
 <column name="m_axis_video_TUSER_reg">1, 0, 1, 0</column>
 <column name="s_axi_CTRL_flush_done">1, 0, 1, 0</column>
-<column name="stride_read_reg_228">16, 0, 16, 0</column>
-<column name="trunc_ln135_1_reg_238">6, 0, 6, 0</column>
-<column name="trunc_ln135_2_reg_243">12, 0, 12, 0</column>
-<column name="trunc_ln135_3_reg_248">12, 0, 12, 0</column>
-<column name="trunc_ln135_reg_233">15, 0, 15, 0</column>
+<column name="stride_read_reg_230">16, 0, 16, 0</column>
+<column name="trunc_ln135_1_reg_240">6, 0, 6, 0</column>
+<column name="trunc_ln135_2_reg_245">11, 0, 11, 0</column>
+<column name="trunc_ln135_3_reg_250">11, 0, 11, 0</column>
+<column name="trunc_ln135_reg_235">14, 0, 14, 0</column>
 </table>
 </item>
 </section>
@@ -170,8 +170,8 @@
 <column name="m_axi_mm_video_AWUSER">out, 1, m_axi, mm_video, pointer</column>
 <column name="m_axi_mm_video_WVALID">out, 1, m_axi, mm_video, pointer</column>
 <column name="m_axi_mm_video_WREADY">in, 1, m_axi, mm_video, pointer</column>
-<column name="m_axi_mm_video_WDATA">out, 128, m_axi, mm_video, pointer</column>
-<column name="m_axi_mm_video_WSTRB">out, 16, m_axi, mm_video, pointer</column>
+<column name="m_axi_mm_video_WDATA">out, 64, m_axi, mm_video, pointer</column>
+<column name="m_axi_mm_video_WSTRB">out, 8, m_axi, mm_video, pointer</column>
 <column name="m_axi_mm_video_WLAST">out, 1, m_axi, mm_video, pointer</column>
 <column name="m_axi_mm_video_WID">out, 1, m_axi, mm_video, pointer</column>
 <column name="m_axi_mm_video_WUSER">out, 1, m_axi, mm_video, pointer</column>
@@ -190,7 +190,7 @@
 <column name="m_axi_mm_video_ARUSER">out, 1, m_axi, mm_video, pointer</column>
 <column name="m_axi_mm_video_RVALID">in, 1, m_axi, mm_video, pointer</column>
 <column name="m_axi_mm_video_RREADY">out, 1, m_axi, mm_video, pointer</column>
-<column name="m_axi_mm_video_RDATA">in, 128, m_axi, mm_video, pointer</column>
+<column name="m_axi_mm_video_RDATA">in, 64, m_axi, mm_video, pointer</column>
 <column name="m_axi_mm_video_RLAST">in, 1, m_axi, mm_video, pointer</column>
 <column name="m_axi_mm_video_RID">in, 1, m_axi, mm_video, pointer</column>
 <column name="m_axi_mm_video_RUSER">in, 1, m_axi, mm_video, pointer</column>
@@ -200,12 +200,12 @@
 <column name="m_axi_mm_video_BRESP">in, 2, m_axi, mm_video, pointer</column>
 <column name="m_axi_mm_video_BID">in, 1, m_axi, mm_video, pointer</column>
 <column name="m_axi_mm_video_BUSER">in, 1, m_axi, mm_video, pointer</column>
-<column name="m_axis_video_TDATA">out, 48, axis, m_axis_video_V_data_V, pointer</column>
+<column name="m_axis_video_TDATA">out, 24, axis, m_axis_video_V_data_V, pointer</column>
 <column name="m_axis_video_TVALID">out, 1, axis, m_axis_video_V_dest_V, pointer</column>
 <column name="m_axis_video_TREADY">in, 1, axis, m_axis_video_V_dest_V, pointer</column>
 <column name="m_axis_video_TDEST">out, 1, axis, m_axis_video_V_dest_V, pointer</column>
-<column name="m_axis_video_TKEEP">out, 6, axis, m_axis_video_V_keep_V, pointer</column>
-<column name="m_axis_video_TSTRB">out, 6, axis, m_axis_video_V_strb_V, pointer</column>
+<column name="m_axis_video_TKEEP">out, 3, axis, m_axis_video_V_keep_V, pointer</column>
+<column name="m_axis_video_TSTRB">out, 3, axis, m_axis_video_V_strb_V, pointer</column>
 <column name="m_axis_video_TUSER">out, 1, axis, m_axis_video_V_user_V, pointer</column>
 <column name="m_axis_video_TLAST">out, 1, axis, m_axis_video_V_last_V, pointer</column>
 <column name="m_axis_video_TID">out, 1, axis, m_axis_video_V_id_V, pointer</column>
