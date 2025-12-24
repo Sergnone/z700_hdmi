@@ -1,0 +1,174 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'Bytes2MultiPixStream'" level="0">
+<item name = "Date">Wed Dec 24 18:11:32 2025
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">prj</item>
+<item name = "Solution">sol (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">6.75 ns, 4.927 ns, 1.82 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1, 8305215, 6.750 ns, 56.060 ms, 1, 8305215, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1_fu_178">Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1, 2, 3842, 13.500 ns, 25.933 us, 0, 0, loop pipeline stp</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- loop_RGB8_YUV8">320, 8305200, 5 ~ 3845, -, -, 64 ~ 2160, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 115, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 1, 513, 296, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 118, -</column>
+<column name="Register">-, -, 127, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1_fu_178">Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1, 0, 0, 371, 217, 0</column>
+<column name="mul_11ns_13ns_23_1_1_U26">mul_11ns_13ns_23_1_1, 0, 1, 0, 6, 0</column>
+<column name="urem_11ns_3ns_2_15_seq_1_U25">urem_11ns_3ns_2_15_seq_1, 0, 0, 142, 73, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln1224_fu_234_p2">+, 0, 0, 15, 15, 4</column>
+<column name="add_ln1225_fu_281_p2">+, 0, 0, 11, 11, 2</column>
+<column name="add_ln1247_fu_319_p2">+, 0, 0, 10, 10, 2</column>
+<column name="y_2_fu_416_p2">+, 0, 0, 12, 12, 1</column>
+<column name="icmp_ln1229_fu_260_p2">icmp, 0, 0, 6, 4, 1</column>
+<column name="icmp_ln1232_fu_411_p2">icmp, 0, 0, 12, 12, 12</column>
+<column name="icmp_ln1247_fu_324_p2">icmp, 0, 0, 3, 2, 1</column>
+<column name="icmp_ln1250_fu_330_p2">icmp, 0, 0, 3, 2, 1</column>
+<column name="icmp_ln1271_1_fu_362_p2">icmp, 0, 0, 4, 3, 1</column>
+<column name="icmp_ln1271_2_fu_368_p2">icmp, 0, 0, 6, 4, 2</column>
+<column name="icmp_ln1271_3_fu_384_p2">icmp, 0, 0, 3, 2, 1</column>
+<column name="icmp_ln1271_4_fu_390_p2">icmp, 0, 0, 6, 4, 3</column>
+<column name="icmp_ln1271_5_fu_396_p2">icmp, 0, 0, 6, 4, 3</column>
+<column name="icmp_ln1271_6_fu_402_p2">icmp, 0, 0, 6, 4, 3</column>
+<column name="icmp_ln1271_fu_346_p2">icmp, 0, 0, 6, 4, 1</column>
+<column name="ap_block_state1">or, 0, 0, 1, 1, 1</column>
+<column name="select_ln1271_fu_339_p3">select, 0, 0, 5, 1, 5</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">91, 19, 1, 19</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="real_start">9, 2, 1, 2</column>
+<column name="y_fu_150">9, 2, 12, 24</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="Height_val_read_reg_430">12, 0, 12, 0</column>
+<column name="VideoFormat_val_read_reg_426">6, 0, 6, 0</column>
+<column name="add_ln1225_reg_459">11, 0, 11, 0</column>
+<column name="add_ln1247_reg_474">10, 0, 10, 0</column>
+<column name="ap_CS_fsm">18, 0, 18, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1_fu_178_ap_start_reg">1, 0, 1, 0</column>
+<column name="icmp_ln1229_reg_448">1, 0, 1, 0</column>
+<column name="icmp_ln1247_reg_479">1, 0, 1, 0</column>
+<column name="icmp_ln1250_reg_484">1, 0, 1, 0</column>
+<column name="icmp_ln1271_1_reg_494">1, 0, 1, 0</column>
+<column name="icmp_ln1271_2_reg_499">1, 0, 1, 0</column>
+<column name="icmp_ln1271_3_reg_504">1, 0, 1, 0</column>
+<column name="icmp_ln1271_4_reg_509">1, 0, 1, 0</column>
+<column name="icmp_ln1271_5_reg_514">1, 0, 1, 0</column>
+<column name="icmp_ln1271_6_reg_519">1, 0, 1, 0</column>
+<column name="icmp_ln1271_reg_489">1, 0, 1, 0</column>
+<column name="lshr_ln_reg_454">3, 0, 3, 0</column>
+<column name="start_once_reg">1, 0, 1, 0</column>
+<column name="trunc_ln4_cast_reg_469">9, 0, 9, 0</column>
+<column name="trunc_ln4_reg_464">10, 0, 10, 0</column>
+<column name="trunc_ln_reg_442">11, 0, 11, 0</column>
+<column name="y_2_reg_527">12, 0, 12, 0</column>
+<column name="y_fu_150">12, 0, 12, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, Bytes2MultiPixStream, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, Bytes2MultiPixStream, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, Bytes2MultiPixStream, return value</column>
+<column name="start_full_n">in, 1, ap_ctrl_hs, Bytes2MultiPixStream, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, Bytes2MultiPixStream, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, Bytes2MultiPixStream, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, Bytes2MultiPixStream, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, Bytes2MultiPixStream, return value</column>
+<column name="start_out">out, 1, ap_ctrl_hs, Bytes2MultiPixStream, return value</column>
+<column name="start_write">out, 1, ap_ctrl_hs, Bytes2MultiPixStream, return value</column>
+<column name="bytePlanes_dout">in, 128, ap_fifo, bytePlanes, pointer</column>
+<column name="bytePlanes_empty_n">in, 1, ap_fifo, bytePlanes, pointer</column>
+<column name="bytePlanes_read">out, 1, ap_fifo, bytePlanes, pointer</column>
+<column name="bytePlanes_num_data_valid">in, 10, ap_fifo, bytePlanes, pointer</column>
+<column name="bytePlanes_fifo_cap">in, 10, ap_fifo, bytePlanes, pointer</column>
+<column name="img_din">out, 48, ap_fifo, img, pointer</column>
+<column name="img_full_n">in, 1, ap_fifo, img, pointer</column>
+<column name="img_write">out, 1, ap_fifo, img, pointer</column>
+<column name="img_num_data_valid">in, 32, ap_fifo, img, pointer</column>
+<column name="img_fifo_cap">in, 32, ap_fifo, img, pointer</column>
+<column name="Height_val">in, 12, ap_stable, Height_val, scalar</column>
+<column name="Width_val">in, 12, ap_stable, Width_val, scalar</column>
+<column name="WidthInBytes_val">in, 15, ap_stable, WidthInBytes_val, scalar</column>
+<column name="VideoFormat_val">in, 6, ap_stable, VideoFormat_val, scalar</column>
+</table>
+</item>
+</section>
+</profile>

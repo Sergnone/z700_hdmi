@@ -2,7 +2,7 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Mon Dec 22 20:07:10 2025
+-- Date        : Wed Dec 24 18:11:18 2025
 -- Host        : serg running 64-bit Ubuntu 24.04.3 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/top_design_processing_system7_0_0_sim_netlist.vhdl
@@ -600,7 +600,7 @@ entity top_design_processing_system7_0_0_processing_system7_v5_5_processing_syst
     IRQ_P2F_SPI1 : out STD_LOGIC;
     IRQ_P2F_UART1 : out STD_LOGIC;
     IRQ_P2F_CAN1 : out STD_LOGIC;
-    IRQ_F2P : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    IRQ_F2P : in STD_LOGIC_VECTOR ( 2 downto 0 );
     Core0_nFIQ : in STD_LOGIC;
     Core0_nIRQ : in STD_LOGIC;
     Core1_nFIQ : in STD_LOGIC;
@@ -752,7 +752,7 @@ entity top_design_processing_system7_0_0_processing_system7_v5_5_processing_syst
   attribute C_M_AXI_GP1_THREAD_ID_WIDTH : integer;
   attribute C_M_AXI_GP1_THREAD_ID_WIDTH of top_design_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 12;
   attribute C_NUM_F2P_INTR_INPUTS : integer;
-  attribute C_NUM_F2P_INTR_INPUTS of top_design_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 2;
+  attribute C_NUM_F2P_INTR_INPUTS of top_design_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 3;
   attribute C_PACKAGE_NAME : string;
   attribute C_PACKAGE_NAME of top_design_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "clg400";
   attribute C_PS7_SI_REV : string;
@@ -3504,8 +3504,8 @@ PS7_i: unisim.vcomponents.PS7
       FTMTP2FTRIG(1) => PS7_i_n_719,
       FTMTP2FTRIG(0) => PS7_i_n_720,
       FTMTP2FTRIGACK(3 downto 0) => B"0000",
-      IRQF2P(19 downto 2) => B"000000000000000000",
-      IRQF2P(1 downto 0) => IRQ_F2P(1 downto 0),
+      IRQF2P(19 downto 3) => B"00000000000000000",
+      IRQF2P(2 downto 0) => IRQ_F2P(2 downto 0),
       IRQP2F(28) => PS7_i_n_292,
       IRQP2F(27) => PS7_i_n_293,
       IRQP2F(26) => PS7_i_n_294,
@@ -5419,7 +5419,7 @@ entity top_design_processing_system7_0_0 is
     S_AXI_HP0_WID : in STD_LOGIC_VECTOR ( 5 downto 0 );
     S_AXI_HP0_WDATA : in STD_LOGIC_VECTOR ( 63 downto 0 );
     S_AXI_HP0_WSTRB : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    IRQ_F2P : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    IRQ_F2P : in STD_LOGIC_VECTOR ( 2 downto 0 );
     FCLK_CLK0 : out STD_LOGIC;
     FCLK_RESET0_N : out STD_LOGIC;
     MIO : inout STD_LOGIC_VECTOR ( 53 downto 0 );
@@ -5786,7 +5786,7 @@ architecture STRUCTURE of top_design_processing_system7_0_0 is
   attribute C_M_AXI_GP1_THREAD_ID_WIDTH : integer;
   attribute C_M_AXI_GP1_THREAD_ID_WIDTH of inst : label is 12;
   attribute C_NUM_F2P_INTR_INPUTS : integer;
-  attribute C_NUM_F2P_INTR_INPUTS of inst : label is 2;
+  attribute C_NUM_F2P_INTR_INPUTS of inst : label is 3;
   attribute C_PACKAGE_NAME : string;
   attribute C_PACKAGE_NAME of inst : label is "clg400";
   attribute C_PS7_SI_REV : string;
@@ -5871,7 +5871,7 @@ architecture STRUCTURE of top_design_processing_system7_0_0 is
   attribute X_INTERFACE_INFO of DDR_WEB : signal is "xilinx.com:interface:ddrx:1.0 DDR WE_N";
   attribute X_INTERFACE_INFO of FCLK_CLK0 : signal is "xilinx.com:signal:clock:1.0 FCLK_CLK0 CLK";
   attribute X_INTERFACE_MODE of FCLK_CLK0 : signal is "master";
-  attribute X_INTERFACE_PARAMETER of FCLK_CLK0 : signal is "XIL_INTERFACENAME FCLK_CLK0, FREQ_HZ 148148163, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of FCLK_CLK0 : signal is "XIL_INTERFACENAME FCLK_CLK0, FREQ_HZ 1.48148e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of FCLK_RESET0_N : signal is "xilinx.com:signal:reset:1.0 FCLK_RESET0_N RST";
   attribute X_INTERFACE_MODE of FCLK_RESET0_N : signal is "master";
   attribute X_INTERFACE_PARAMETER of FCLK_RESET0_N : signal is "XIL_INTERFACENAME FCLK_RESET0_N, POLARITY ACTIVE_LOW, INSERT_VIP 0";
@@ -5900,7 +5900,7 @@ architecture STRUCTURE of top_design_processing_system7_0_0 is
   attribute X_INTERFACE_PARAMETER of S_AXI_HP0_ACLK : signal is "XIL_INTERFACENAME S_AXI_HP0_ACLK, ASSOCIATED_BUSIF S_AXI_HP0, FREQ_HZ 148148163, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of S_AXI_HP0_ARREADY : signal is "xilinx.com:interface:aximm:1.0 S_AXI_HP0 ARREADY";
   attribute X_INTERFACE_MODE of S_AXI_HP0_ARREADY : signal is "slave";
-  attribute X_INTERFACE_PARAMETER of S_AXI_HP0_ARREADY : signal is "XIL_INTERFACENAME S_AXI_HP0, NUM_WRITE_OUTSTANDING 8, NUM_READ_OUTSTANDING 8, DATA_WIDTH 64, PROTOCOL AXI3, FREQ_HZ 148148163, ID_WIDTH 6, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 16, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of S_AXI_HP0_ARREADY : signal is "XIL_INTERFACENAME S_AXI_HP0, NUM_WRITE_OUTSTANDING 8, NUM_READ_OUTSTANDING 8, DATA_WIDTH 64, PROTOCOL AXI3, FREQ_HZ 148148163, ID_WIDTH 6, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, MAX_BURST_LENGTH 16, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of S_AXI_HP0_ARVALID : signal is "xilinx.com:interface:aximm:1.0 S_AXI_HP0 ARVALID";
   attribute X_INTERFACE_INFO of S_AXI_HP0_AWREADY : signal is "xilinx.com:interface:aximm:1.0 S_AXI_HP0 AWREADY";
   attribute X_INTERFACE_INFO of S_AXI_HP0_AWVALID : signal is "xilinx.com:interface:aximm:1.0 S_AXI_HP0 AWVALID";
@@ -5922,7 +5922,7 @@ architecture STRUCTURE of top_design_processing_system7_0_0 is
   attribute X_INTERFACE_INFO of DDR_DQS_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
   attribute X_INTERFACE_INFO of IRQ_F2P : signal is "xilinx.com:signal:interrupt:1.0 IRQ_F2P INTERRUPT";
   attribute X_INTERFACE_MODE of IRQ_F2P : signal is "slave";
-  attribute X_INTERFACE_PARAMETER of IRQ_F2P : signal is "XIL_INTERFACENAME IRQ_F2P, SENSITIVITY LEVEL_HIGH:LEVEL_HIGH, PortWidth 2";
+  attribute X_INTERFACE_PARAMETER of IRQ_F2P : signal is "XIL_INTERFACENAME IRQ_F2P, SENSITIVITY LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH, PortWidth 3";
   attribute X_INTERFACE_INFO of MIO : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
   attribute X_INTERFACE_MODE of MIO : signal is "master";
   attribute X_INTERFACE_PARAMETER of MIO : signal is "XIL_INTERFACENAME FIXED_IO, CAN_DEBUG false";
@@ -6170,7 +6170,7 @@ inst: entity work.top_design_processing_system7_0_0_processing_system7_v5_5_proc
       I2C1_SDA_I => '0',
       I2C1_SDA_O => NLW_inst_I2C1_SDA_O_UNCONNECTED,
       I2C1_SDA_T => NLW_inst_I2C1_SDA_T_UNCONNECTED,
-      IRQ_F2P(1 downto 0) => IRQ_F2P(1 downto 0),
+      IRQ_F2P(2 downto 0) => IRQ_F2P(2 downto 0),
       IRQ_P2F_CAN0 => NLW_inst_IRQ_P2F_CAN0_UNCONNECTED,
       IRQ_P2F_CAN1 => NLW_inst_IRQ_P2F_CAN1_UNCONNECTED,
       IRQ_P2F_CTI => NLW_inst_IRQ_P2F_CTI_UNCONNECTED,

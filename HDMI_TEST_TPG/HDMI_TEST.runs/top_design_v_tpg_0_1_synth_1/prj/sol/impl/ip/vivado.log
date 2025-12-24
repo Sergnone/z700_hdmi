@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Tue Dec 23 20:57:54 2025
-# Process ID         : 846993
+# Start of session at: Wed Dec 24 18:13:55 2025
+# Process ID         : 997219
 # Current directory  : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tpg_0_1_synth_1/prj/sol/impl/ip
 # Command line       : vivado -notrace -mode batch -source run_ippack.tcl
 # Log file           : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tpg_0_1_synth_1/prj/sol/impl/ip/vivado.log
@@ -13,13 +13,13 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.3 LTS
 # Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13400
-# CPU Frequency      : 3465.765 MHz
+# CPU Frequency      : 3445.205 MHz
 # CPU Physical cores : 10
 # CPU Logical cores  : 16
 # Host memory        : 33411 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 42001 MB
-# Available Virtual  : 30990 MB
+# Available Virtual  : 28852 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace
 INFO: calling package_hls_ip ip_types=vitis sysgen json_file=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tpg_0_1_synth_1/prj/sol/sol_data.json outdir=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tpg_0_1_synth_1/prj/sol/impl/ip srcdir=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tpg_0_1_synth_1/prj/sol ippack_options_dict=subcore_use_xci_files false ippack_options_dict=subcore_use_xci_files false
@@ -43,4 +43,4 @@ INFO: Calling post_process_sysgen to specialize IP
 Generating sysgen info xml from json file
 INFO: Created IP /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tpg_0_1_synth_1/prj/sol/impl/ip/component.xml
 INFO: Created IP archive /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/top_design_v_tpg_0_1_synth_1/prj/sol/impl/ip/xilinx_com_ip_v_tpg_8_2.zip
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 23 20:57:56 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 24 18:13:58 2025...

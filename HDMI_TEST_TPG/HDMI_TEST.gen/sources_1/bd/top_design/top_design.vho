@@ -78,7 +78,8 @@ COMPONENT top_design
     TMDS_0_clk_n : OUT STD_LOGIC;
     TMDS_0_data_p : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
     TMDS_0_data_n : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-    HDMI_EN : OUT STD_LOGIC_VECTOR(0 DOWNTO 0)
+    HDMI_EN : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+    reset_rtl_0 : IN STD_LOGIC
   );
 END COMPONENT;
 -- COMP_TAG_END ------  End cut for COMPONENT Declaration  ------
@@ -114,7 +115,8 @@ your_instance_name : top_design
     TMDS_0_clk_n => TMDS_0_clk_n,
     TMDS_0_data_p => TMDS_0_data_p,
     TMDS_0_data_n => TMDS_0_data_n,
-    HDMI_EN => HDMI_EN
+    HDMI_EN => HDMI_EN,
+    reset_rtl_0 => reset_rtl_0
   );
 -- INST_TAG_END ------  End cut for INSTANTIATION Template  ------
 

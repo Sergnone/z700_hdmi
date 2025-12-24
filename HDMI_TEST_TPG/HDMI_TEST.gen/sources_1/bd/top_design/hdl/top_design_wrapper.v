@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Tue Dec 23 20:55:25 2025
+//Date        : Wed Dec 24 18:10:40 2025
 //Host        : serg running 64-bit Ubuntu 24.04.3 LTS
 //Command     : generate_target top_design_wrapper.bd
 //Design      : top_design_wrapper
@@ -36,7 +36,8 @@ module top_design_wrapper
     TMDS_0_clk_n,
     TMDS_0_clk_p,
     TMDS_0_data_n,
-    TMDS_0_data_p);
+    TMDS_0_data_p,
+    reset_rtl_0);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -63,6 +64,7 @@ module top_design_wrapper
   output TMDS_0_clk_p;
   output [2:0]TMDS_0_data_n;
   output [2:0]TMDS_0_data_p;
+  input reset_rtl_0;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -90,6 +92,7 @@ module top_design_wrapper
   wire TMDS_0_clk_p;
   wire [2:0]TMDS_0_data_n;
   wire [2:0]TMDS_0_data_p;
+  wire reset_rtl_0;
 
   top_design top_design_i
        (.DDR_addr(DDR_addr),
@@ -117,5 +120,6 @@ module top_design_wrapper
         .TMDS_0_clk_n(TMDS_0_clk_n),
         .TMDS_0_clk_p(TMDS_0_clk_p),
         .TMDS_0_data_n(TMDS_0_data_n),
-        .TMDS_0_data_p(TMDS_0_data_p));
+        .TMDS_0_data_p(TMDS_0_data_p),
+        .reset_rtl_0(reset_rtl_0));
 endmodule

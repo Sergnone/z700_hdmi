@@ -104,7 +104,9 @@ module top_design_sv (
   (* X_INTERFACE_IGNORE = "true" *)
   output wire [2:0] TMDS_0_data_n,
   (* X_INTERFACE_IGNORE = "true" *)
-  output wire [0:0] HDMI_EN
+  output wire [0:0] HDMI_EN,
+  (* X_INTERFACE_IGNORE = "true" *)
+  input wire reset_rtl_0
 );
 
   top_design inst (
@@ -133,7 +135,8 @@ module top_design_sv (
     .TMDS_0_clk_n(TMDS_0_clk_n),
     .TMDS_0_data_p(TMDS_0_data_p),
     .TMDS_0_data_n(TMDS_0_data_n),
-    .HDMI_EN(HDMI_EN)
+    .HDMI_EN(HDMI_EN),
+    .reset_rtl_0(reset_rtl_0)
   );
 
 endmodule

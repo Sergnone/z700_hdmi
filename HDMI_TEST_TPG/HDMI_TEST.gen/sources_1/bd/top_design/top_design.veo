@@ -79,7 +79,8 @@ top_design your_instance_name (
   .TMDS_0_clk_n(TMDS_0_clk_n), // output wire TMDS_0_clk_n
   .TMDS_0_data_p(TMDS_0_data_p), // output wire [2:0] TMDS_0_data_p
   .TMDS_0_data_n(TMDS_0_data_n), // output wire [2:0] TMDS_0_data_n
-  .HDMI_EN(HDMI_EN) // output wire [0:0] HDMI_EN
+  .HDMI_EN(HDMI_EN), // output wire [0:0] HDMI_EN
+  .reset_rtl_0(reset_rtl_0) // input wire reset_rtl_0
 );
 // INST_TAG_END ------  End cut for INSTANTIATION Template  ------
 
