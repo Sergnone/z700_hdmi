@@ -19,7 +19,7 @@
         };
 
         cpus_a9: cpus-a9@0 {
-                phandle = <0x33>;
+                phandle = <0x35>;
                 #address-cells = <0x1>;
                 #size-cells = <0x0>;
                 compatible = "cpus,cluster";
@@ -99,7 +99,7 @@
         };
 
         fpga_full: fpga-region {
-                phandle = <0x34>;
+                phandle = <0x36>;
                 compatible = "fpga-region";
                 fpga-mgr = <&devcfg>;
                 #address-cells = <0x1>;
@@ -188,7 +188,7 @@
                 };
 
                 gpio0: gpio@e000a000 {
-                        phandle = <0x37>;
+                        phandle = <0x39>;
                         compatible = "xlnx,zynq-gpio-1.0";
                         #gpio-cells = <0x2>;
                         clocks = <&clkc 0x2a>;
@@ -238,7 +238,7 @@
                 };
 
                 ocm: sram@fffc0000 {
-                        phandle = <0x3a>;
+                        phandle = <0x3c>;
                         compatible = "mmio-sram";
                         reg = <0xfffc0000 0x10000>;
                         #address-cells = <0x1>;
@@ -293,7 +293,7 @@
                         };
 
                         rstc: rstc@200 {
-                                phandle = <0x46>;
+                                phandle = <0x48>;
                                 compatible = "xlnx,zynq-reset";
                                 reg = <0x200 0x48>;
                                 #reset-cells = <0x1>;
@@ -301,7 +301,7 @@
                         };
 
                         pinctrl0: pinctrl@700 {
-                                phandle = <0x47>;
+                                phandle = <0x49>;
                                 compatible = "xlnx,pinctrl-zynq";
                                 reg = <0x700 0x200>;
                                 syscon = <&slcr>;
@@ -342,7 +342,7 @@
                 };
 
                 efuse: efuse@f800d000 {
-                        phandle = <0x48>;
+                        phandle = <0x4a>;
                         compatible = "xlnx,zynq-efuse";
                         reg = <0xf800d000 0x20>;
                 };
@@ -379,7 +379,7 @@
                 };
 
                 ttc1: timer@f8001004 {
-                        phandle = <0x57>;
+                        phandle = <0x5b>;
                         xlnx,name = "ps7_ttc_1";
                         xlnx,ttc-clk0-clksrc = <0x0>;
                         xlnx,ttc-clk1-freq-hz = <0x69f6bcb>;
@@ -399,7 +399,7 @@
                 };
 
                 ttc2: timer@f8001008 {
-                        phandle = <0x58>;
+                        phandle = <0x5c>;
                         xlnx,name = "ps7_ttc_2";
                         xlnx,ttc-clk0-clksrc = <0x0>;
                         xlnx,ttc-clk1-freq-hz = <0x69f6bcb>;
@@ -438,7 +438,7 @@
                 };
 
                 ttc4: timer@f8002004 {
-                        phandle = <0x59>;
+                        phandle = <0x5d>;
                         xlnx,name = "ps7_ttc_4";
                         xlnx,ttc-clk0-clksrc = <0x0>;
                         xlnx,ttc-clk1-freq-hz = <0x69f6bcb>;
@@ -458,7 +458,7 @@
                 };
 
                 ttc5: timer@f8002008 {
-                        phandle = <0x5a>;
+                        phandle = <0x5e>;
                         xlnx,name = "ps7_ttc_5";
                         xlnx,ttc-clk0-clksrc = <0x0>;
                         xlnx,ttc-clk1-freq-hz = <0x69f6bcb>;
@@ -502,7 +502,7 @@
                 };
 
                 watchdog0: watchdog@f8005000 {
-                        phandle = <0x4b>;
+                        phandle = <0x4d>;
                         clocks = <&clkc 0x2d>;
                         compatible = "cdns,wdt-r1p2";
                         interrupt-parent = <&intc>;
@@ -742,7 +742,7 @@
         };
 
         amba_pl: amba_pl {
-                phandle = <0x51>;
+                phandle = <0x53>;
                 ranges;
                 compatible = "simple-bus";
                 #address-cells = <0x1>;
@@ -750,7 +750,7 @@
                 firmware-name = "top_design_wrapper.bit.bin";
 
                 clocking0: clocking0 {
-                        phandle = <0x52>;
+                        phandle = <0x54>;
                         compatible = "xlnx,fclk";
                         assigned-clocks = <&clkc 0xf>;
                         assigned-clock-rates = <0x8d9ee20>;
@@ -1111,19 +1111,24 @@
                         xlnx,name = "v_tpg_0";
 
                         tpg_portsv_tpg_0: ports {
-                                phandle = <0x54>;
+                                phandle = <0x56>;
                                 #address-cells = <0x1>;
                                 #size-cells = <0x0>;
 
                                 tpg_port1v_tpg_0: port@1 {
-                                        phandle = <0x55>;
+                                        phandle = <0x57>;
                                         xlnx,video-width = <0x8>;
                                         reg = <0x1>;
                                         xlnx,video-format = <0x2>;
+
+                                        tpg_outv_tpg_0: endpoint {
+                                                phandle = <0x34>;
+                                                remote-endpoint = <&v_frmbuf_wr_0v_tpg_0>;
+                                        };
                                 };
 
                                 tpg_port0v_tpg_0: port@0 {
-                                        phandle = <0x56>;
+                                        phandle = <0x58>;
                                         xlnx,video-width = <0x8>;
                                         reg = <0x0>;
                                         xlnx,video-format = <0x2>;
@@ -1157,6 +1162,29 @@
                         xlnx,tri-default = <0xffffffff>;
                         xlnx,name = "video_lock_monitor";
                         xlnx,all-inputs = <0x1>;
+                };
+
+                vcap_v_tpg_0 {
+                        compatible = "xlnx,video";
+                        dmas = <&v_frmbuf_wr_0 0x0>;
+                        dma-names = "port0";
+
+                        vcap_portsv_tpg_0: ports {
+                                phandle = <0x59>;
+                                #address-cells = <0x1>;
+                                #size-cells = <0x0>;
+
+                                vcap_portv_tpg_0: port@0 {
+                                        phandle = <0x5a>;
+                                        direction = "input";
+                                        reg = <0x0>;
+
+                                        v_frmbuf_wr_0v_tpg_0: endpoint {
+                                                phandle = <0x33>;
+                                                remote-endpoint = <&tpg_outv_tpg_0>;
+                                        };
+                                };
+                        };
                 };
         };
 
@@ -1253,8 +1281,12 @@
                 v_tpg_0 = "/amba_pl/v_tpg@43c00000";
                 tpg_portsv_tpg_0 = "/amba_pl/v_tpg@43c00000/ports";
                 tpg_port1v_tpg_0 = "/amba_pl/v_tpg@43c00000/ports/port@1";
+                tpg_outv_tpg_0 = "/amba_pl/v_tpg@43c00000/ports/port@1/endpoint";
                 tpg_port0v_tpg_0 = "/amba_pl/v_tpg@43c00000/ports/port@0";
                 video_lock_monitor = "/amba_pl/gpio@41200000";
+                vcap_portsv_tpg_0 = "/amba_pl/vcap_v_tpg_0/ports";
+                vcap_portv_tpg_0 = "/amba_pl/vcap_v_tpg_0/ports/port@0";
+                v_frmbuf_wr_0v_tpg_0 = "/amba_pl/vcap_v_tpg_0/ports/port@0/endpoint";
                 ps7_ddr_0_memory = "/memory@00100000";
                 ps7_ram_0_memory = "/memory@0";
                 ps7_ram_1_memory = "/memory@ffff0000";

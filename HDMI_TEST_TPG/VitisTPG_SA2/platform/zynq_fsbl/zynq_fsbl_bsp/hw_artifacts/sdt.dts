@@ -18,7 +18,7 @@
         };
 
         cpus_a9: cpus-a9@0 {
-                phandle = <0x33>;
+                phandle = <0x35>;
                 #address-cells = <0x1>;
                 #size-cells = <0x0>;
                 compatible = "cpus,cluster";
@@ -98,7 +98,7 @@
         };
 
         fpga_full: fpga-region {
-                phandle = <0x34>;
+                phandle = <0x36>;
                 compatible = "fpga-region";
                 fpga-mgr = <&devcfg>;
                 #address-cells = <0x1>;
@@ -187,7 +187,7 @@
                 };
 
                 can0: can@e0008000 {
-                        phandle = <0x35>;
+                        phandle = <0x37>;
                         compatible = "xlnx,zynq-can-1.0";
                         status = "disabled";
                         clocks = <&clkc 0x13>,
@@ -201,7 +201,7 @@
                 };
 
                 can1: can@e0009000 {
-                        phandle = <0x36>;
+                        phandle = <0x38>;
                         compatible = "xlnx,zynq-can-1.0";
                         status = "disabled";
                         clocks = <&clkc 0x14>,
@@ -215,7 +215,7 @@
                 };
 
                 gpio0: gpio@e000a000 {
-                        phandle = <0x37>;
+                        phandle = <0x39>;
                         compatible = "xlnx,zynq-gpio-1.0";
                         #gpio-cells = <0x2>;
                         clocks = <&clkc 0x2a>;
@@ -228,7 +228,7 @@
                 };
 
                 i2c0: i2c@e0004000 {
-                        phandle = <0x38>;
+                        phandle = <0x3a>;
                         compatible = "cdns,i2c-r1p10";
                         status = "disabled";
                         clocks = <&clkc 0x26>;
@@ -241,7 +241,7 @@
                 };
 
                 i2c1: i2c@e0005000 {
-                        phandle = <0x39>;
+                        phandle = <0x3b>;
                         compatible = "cdns,i2c-r1p10";
                         status = "disabled";
                         clocks = <&clkc 0x27>;
@@ -291,7 +291,7 @@
                 };
 
                 ocm: sram@fffc0000 {
-                        phandle = <0x3a>;
+                        phandle = <0x3c>;
                         compatible = "mmio-sram";
                         reg = <0xfffc0000 0x10000>;
                         #address-cells = <0x1>;
@@ -304,7 +304,7 @@
                 };
 
                 uart0: serial@e0000000 {
-                        phandle = <0x3b>;
+                        phandle = <0x3d>;
                         compatible = "xlnx,xuartps", "cdns,uart-r1p8";
                         status = "disabled";
                         clocks = <&clkc 0x17>,
@@ -335,7 +335,7 @@
                 };
 
                 spi0: spi@e0006000 {
-                        phandle = <0x3c>;
+                        phandle = <0x3e>;
                         compatible = "xlnx,zynq-spi-r1p6";
                         reg = <0xe0006000 0x1000>;
                         status = "disabled";
@@ -349,7 +349,7 @@
                 };
 
                 spi1: spi@e0007000 {
-                        phandle = <0x3d>;
+                        phandle = <0x3f>;
                         compatible = "xlnx,zynq-spi-r1p6";
                         reg = <0xe0007000 0x1000>;
                         status = "disabled";
@@ -363,7 +363,7 @@
                 };
 
                 qspi: spi@e000d000 {
-                        phandle = <0x3e>;
+                        phandle = <0x40>;
                         compatible = "xlnx,zynq-qspi-1.0";
                         reg = <0xe000d000 0x1000>;
                         interrupt-parent = <&intc>;
@@ -377,7 +377,7 @@
                 };
 
                 gem0: ethernet@e000b000 {
-                        phandle = <0x3f>;
+                        phandle = <0x41>;
                         compatible = "xlnx,zynq-gem", "cdns,gem";
                         reg = <0xe000b000 0x1000>;
                         status = "disabled";
@@ -392,7 +392,7 @@
                 };
 
                 gem1: ethernet@e000c000 {
-                        phandle = <0x40>;
+                        phandle = <0x42>;
                         compatible = "xlnx,zynq-gem", "cdns,gem";
                         reg = <0xe000c000 0x1000>;
                         status = "disabled";
@@ -407,7 +407,7 @@
                 };
 
                 smcc: memory-controller@e000e000 {
-                        phandle = <0x41>;
+                        phandle = <0x43>;
                         compatible = "arm,pl353-smc-r2p1", "arm,primecell";
                         reg = <0xe000e000 0x1000>;
                         status = "disabled";
@@ -421,14 +421,14 @@
                         interrupts = <0x0 0x12 0x4>;
 
                         nfc0: nand-controller@0,0 {
-                                phandle = <0x42>;
+                                phandle = <0x44>;
                                 compatible = "arm,pl353-nand-r2p1";
                                 reg = <0x0 0x0 0x1000000>;
                                 status = "disabled";
                         };
 
                         nor0: flash@1,0 {
-                                phandle = <0x43>;
+                                phandle = <0x45>;
                                 status = "disabled";
                                 compatible = "cfi-flash";
                                 reg = <0x1 0x0 0x2000000>;
@@ -436,7 +436,7 @@
                 };
 
                 sdhci0: mmc@e0100000 {
-                        phandle = <0x44>;
+                        phandle = <0x46>;
                         compatible = "arasan,sdhci-8.9a";
                         status = "disabled";
                         clock-names = "clk_xin", "clk_ahb";
@@ -448,7 +448,7 @@
                 };
 
                 sdhci1: mmc@e0101000 {
-                        phandle = <0x45>;
+                        phandle = <0x47>;
                         compatible = "arasan,sdhci-8.9a";
                         status = "disabled";
                         clock-names = "clk_xin", "clk_ahb";
@@ -483,7 +483,7 @@
                         };
 
                         rstc: rstc@200 {
-                                phandle = <0x46>;
+                                phandle = <0x48>;
                                 compatible = "xlnx,zynq-reset";
                                 reg = <0x200 0x48>;
                                 #reset-cells = <0x1>;
@@ -491,7 +491,7 @@
                         };
 
                         pinctrl0: pinctrl@700 {
-                                phandle = <0x47>;
+                                phandle = <0x49>;
                                 compatible = "xlnx,pinctrl-zynq";
                                 reg = <0x700 0x200>;
                                 syscon = <&slcr>;
@@ -532,7 +532,7 @@
                 };
 
                 efuse: efuse@f800d000 {
-                        phandle = <0x48>;
+                        phandle = <0x4a>;
                         compatible = "xlnx,zynq-efuse";
                         reg = <0xf800d000 0x20>;
                 };
@@ -612,7 +612,7 @@
                 };
 
                 usb0: usb@e0002000 {
-                        phandle = <0x49>;
+                        phandle = <0x4b>;
                         compatible = "xlnx,zynq-usb-2.20a", "chipidea,usb2";
                         status = "disabled";
                         clocks = <&clkc 0x1c>;
@@ -623,7 +623,7 @@
                 };
 
                 usb1: usb@e0003000 {
-                        phandle = <0x4a>;
+                        phandle = <0x4c>;
                         compatible = "xlnx,zynq-usb-2.20a", "chipidea,usb2";
                         status = "disabled";
                         clocks = <&clkc 0x1d>;
@@ -634,7 +634,7 @@
                 };
 
                 watchdog0: watchdog@f8005000 {
-                        phandle = <0x4b>;
+                        phandle = <0x4d>;
                         clocks = <&clkc 0x2d>;
                         compatible = "cdns,wdt-r1p2";
                         interrupt-parent = <&intc>;
@@ -782,7 +782,7 @@
                 };
 
                 processing_system7_0: processing_system7@0 {
-                        phandle = <0x4c>;
+                        phandle = <0x4e>;
                         xlnx,pcw-act-enet0-peripheral-freqmhz = <0xa>;
                         xlnx,pcw-nor-grp-sram-cs1-io = "<Select>";
                         xlnx,num-f2p-intr-inputs = <0x4>;
@@ -1688,7 +1688,7 @@
                 };
 
                 ps7_ddr_0: ps7_ddr@100000 {
-                        phandle = <0x4d>;
+                        phandle = <0x4f>;
                         compatible = "xlnx,ps7-ddr-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_ddr";
@@ -1733,7 +1733,7 @@
                 };
 
                 ps7_ram_0: ps7_ram@0 {
-                        phandle = <0x4e>;
+                        phandle = <0x50>;
                         compatible = "xlnx,ps7-ram-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_ram";
@@ -1742,7 +1742,7 @@
                 };
 
                 ps7_ram_1: ps7_ram@ffff0000 {
-                        phandle = <0x4f>;
+                        phandle = <0x51>;
                         compatible = "xlnx,ps7-ram-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_ram";
@@ -1797,7 +1797,7 @@
                 };
 
                 ps7_m_axi_gp0: ps7_m_axi_gp@40000000 {
-                        phandle = <0x50>;
+                        phandle = <0x52>;
                         compatible = "xlnx,ps7-m-axi-gp-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_m_axi_gp";
@@ -1808,7 +1808,7 @@
         };
 
         amba_pl: amba_pl {
-                phandle = <0x51>;
+                phandle = <0x53>;
                 ranges;
                 compatible = "simple-bus";
                 #address-cells = <0x1>;
@@ -1816,7 +1816,7 @@
                 firmware-name = "top_design_wrapper.bit.bin";
 
                 clocking0: clocking0 {
-                        phandle = <0x52>;
+                        phandle = <0x54>;
                         compatible = "xlnx,fclk";
                         assigned-clocks = <&clkc 0xf>;
                         assigned-clock-rates = <0x8d9ee20>;
@@ -1826,7 +1826,7 @@
                 };
 
                 afi0: afi0@f8008000 {
-                        phandle = <0x53>;
+                        phandle = <0x55>;
                         status = "okay";
                         compatible = "xlnx,afi-fpga";
                         #address-cells = <0x1>;
@@ -2187,19 +2187,24 @@
                         xlnx,name = "v_tpg_0";
 
                         tpg_portsv_tpg_0: ports {
-                                phandle = <0x54>;
+                                phandle = <0x56>;
                                 #address-cells = <0x1>;
                                 #size-cells = <0x0>;
 
                                 tpg_port1v_tpg_0: port@1 {
-                                        phandle = <0x55>;
+                                        phandle = <0x57>;
                                         xlnx,video-width = <0x8>;
                                         reg = <0x1>;
                                         xlnx,video-format = <0x2>;
+
+                                        tpg_outv_tpg_0: endpoint {
+                                                phandle = <0x34>;
+                                                remote-endpoint = <&v_frmbuf_wr_0v_tpg_0>;
+                                        };
                                 };
 
                                 tpg_port0v_tpg_0: port@0 {
-                                        phandle = <0x56>;
+                                        phandle = <0x58>;
                                         xlnx,video-width = <0x8>;
                                         reg = <0x0>;
                                         xlnx,video-format = <0x2>;
@@ -2233,6 +2238,29 @@
                         xlnx,tri-default = <0xffffffff>;
                         xlnx,name = "video_lock_monitor";
                         xlnx,all-inputs = <0x1>;
+                };
+
+                vcap_v_tpg_0 {
+                        compatible = "xlnx,video";
+                        dmas = <&v_frmbuf_wr_0 0x0>;
+                        dma-names = "port0";
+
+                        vcap_portsv_tpg_0: ports {
+                                phandle = <0x59>;
+                                #address-cells = <0x1>;
+                                #size-cells = <0x0>;
+
+                                vcap_portv_tpg_0: port@0 {
+                                        phandle = <0x5a>;
+                                        direction = "input";
+                                        reg = <0x0>;
+
+                                        v_frmbuf_wr_0v_tpg_0: endpoint {
+                                                phandle = <0x33>;
+                                                remote-endpoint = <&tpg_outv_tpg_0>;
+                                        };
+                                };
+                        };
                 };
         };
 
@@ -2354,8 +2382,12 @@
                 v_tpg_0 = "/amba_pl/v_tpg@43c00000";
                 tpg_portsv_tpg_0 = "/amba_pl/v_tpg@43c00000/ports";
                 tpg_port1v_tpg_0 = "/amba_pl/v_tpg@43c00000/ports/port@1";
+                tpg_outv_tpg_0 = "/amba_pl/v_tpg@43c00000/ports/port@1/endpoint";
                 tpg_port0v_tpg_0 = "/amba_pl/v_tpg@43c00000/ports/port@0";
                 video_lock_monitor = "/amba_pl/gpio@41200000";
+                vcap_portsv_tpg_0 = "/amba_pl/vcap_v_tpg_0/ports";
+                vcap_portv_tpg_0 = "/amba_pl/vcap_v_tpg_0/ports/port@0";
+                v_frmbuf_wr_0v_tpg_0 = "/amba_pl/vcap_v_tpg_0/ports/port@0/endpoint";
                 ps7_ddr_0_memory = "/memory@00100000";
                 ps7_ram_0_memory = "/memory@0";
                 ps7_ram_1_memory = "/memory@ffff0000";

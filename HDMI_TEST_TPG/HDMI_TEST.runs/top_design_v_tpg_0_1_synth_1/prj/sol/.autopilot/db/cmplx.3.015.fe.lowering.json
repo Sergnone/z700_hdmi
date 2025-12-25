@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 5,
-    "calls": "3 1",
+    "calls": "6 1",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_tpg.cpp",
@@ -20,7 +20,7 @@
   },
   "1": {
     "basicblocks": 1,
-    "calls": "6 4 2",
+    "calls": "5 4 7",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "v_tpg.cpp",
@@ -31,23 +31,19 @@
     "total_instructions": 1198
   },
   "2": {
-    "basicblocks": 14,
+    "basicblocks": 1,
     "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 8,
-    "file": "v_tpg.cpp",
-    "fileloc": 919,
-    "instructions": 115,
-    "loads": {
-      "G": 3
-    },
-    "memory_accesses": 12,
-    "name": "MultiPixStream2AXIvideo",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 2,
+    "memory_accesses": 1,
+    "name": "reg<ap_uint<10> >",
     "stores": {
-      "G": 2,
-      "L": 9
+      "L": 1
     },
-    "total_instructions": 134
+    "total_instructions": 2
   },
   "3": {
     "basicblocks": 1,
@@ -58,7 +54,7 @@
     "fileloc": 222,
     "instructions": 1,
     "memory_accesses": 0,
-    "name": "reg<unsigned short>",
+    "name": "reg<int>",
     "total_instructions": 1
   },
   "4": {
@@ -80,20 +76,8 @@
     "total_instructions": 169
   },
   "5": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
-    "memory_accesses": 0,
-    "name": "reg<int>",
-    "total_instructions": 1
-  },
-  "6": {
     "basicblocks": 181,
-    "calls": "5 7",
+    "calls": "3 2",
     "control_depth": 5,
     "def_use_depth": 25,
     "file": "v_tpg.cpp",
@@ -110,19 +94,35 @@
     },
     "total_instructions": 883
   },
-  "7": {
+  "6": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
     "def_use_depth": 0,
     "file": "x_hls_utils.h",
     "fileloc": 222,
-    "instructions": 2,
-    "memory_accesses": 1,
-    "name": "reg<ap_uint<10> >",
-    "stores": {
-      "L": 1
+    "instructions": 1,
+    "memory_accesses": 0,
+    "name": "reg<unsigned short>",
+    "total_instructions": 1
+  },
+  "7": {
+    "basicblocks": 14,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 8,
+    "file": "v_tpg.cpp",
+    "fileloc": 919,
+    "instructions": 115,
+    "loads": {
+      "G": 3
     },
-    "total_instructions": 2
+    "memory_accesses": 12,
+    "name": "MultiPixStream2AXIvideo",
+    "stores": {
+      "G": 2,
+      "L": 9
+    },
+    "total_instructions": 134
   }
 }

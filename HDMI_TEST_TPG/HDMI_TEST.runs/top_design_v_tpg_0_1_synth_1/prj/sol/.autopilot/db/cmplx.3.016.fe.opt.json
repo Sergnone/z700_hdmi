@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 5,
-    "calls": "7 1",
+    "calls": "2 7",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_tpg.cpp",
@@ -20,17 +20,29 @@
   },
   "1": {
     "basicblocks": 1,
-    "calls": "4 5 2",
+    "calls": "",
     "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "v_tpg.cpp",
-    "fileloc": 304,
-    "instructions": 12,
-    "memory_accesses": 0,
-    "name": "v_tpgHlsDataFlow",
-    "total_instructions": 1168
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 4,
+    "memory_accesses": 1,
+    "name": "reg<int>",
+    "total_instructions": 4
   },
   "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 4,
+    "memory_accesses": 1,
+    "name": "reg<unsigned short>",
+    "total_instructions": 4
+  },
+  "3": {
     "basicblocks": 15,
     "calls": "",
     "control_depth": 2,
@@ -50,7 +62,7 @@
     },
     "total_instructions": 106
   },
-  "3": {
+  "4": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -65,9 +77,9 @@
     },
     "total_instructions": 5
   },
-  "4": {
+  "5": {
     "basicblocks": 181,
-    "calls": "6 3",
+    "calls": "1 4",
     "control_depth": 6,
     "def_use_depth": 28,
     "file": "v_tpg.cpp",
@@ -85,7 +97,7 @@
     },
     "total_instructions": 883
   },
-  "5": {
+  "6": {
     "basicblocks": 31,
     "calls": "",
     "control_depth": 6,
@@ -105,28 +117,16 @@
     },
     "total_instructions": 167
   },
-  "6": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 4,
-    "memory_accesses": 1,
-    "name": "reg<int>",
-    "total_instructions": 4
-  },
   "7": {
     "basicblocks": 1,
-    "calls": "",
+    "calls": "5 6 3",
     "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 4,
-    "memory_accesses": 1,
-    "name": "reg<unsigned short>",
-    "total_instructions": 4
+    "def_use_depth": 1,
+    "file": "v_tpg.cpp",
+    "fileloc": 304,
+    "instructions": 12,
+    "memory_accesses": 0,
+    "name": "v_tpgHlsDataFlow",
+    "total_instructions": 1168
   }
 }

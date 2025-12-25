@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3'
 ================================================================
-* Date:           Thu Dec 25 12:12:06 2025
+* Date:           Thu Dec 25 12:57:43 2025
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -135,7 +135,7 @@ Target clock period: 6.750ns, clock uncertainty: 1.822ns.
 The critical path consists of the following:
 	'store' operation ('store_ln376', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:376) of constant 0 11 bit on local variable 'j', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:376 [25]  (1.298 ns)
 	'load' operation 11 bit ('j', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:376) on local variable 'j', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:376 [29]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln376', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:376) [30]  (1.482 ns)
+	'add' operation 11 bit ('j', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:376) [32]  (1.482 ns)
 	'store' operation ('store_ln376', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:376) of variable 'j', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:376 11 bit on local variable 'j', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:376 [48]  (1.298 ns)
 
  <State 2>: 3.762ns

@@ -91,7 +91,7 @@
 <pragma file="prj/sol/.autopilot/db/v_frmbuf_wr.cpp" line="1089" pragmaType="loop_flatten" parentfunction="MultiPixStream2Bytes" off="1"/>
 <pragma file="prj/sol/.autopilot/db/v_frmbuf_wr.cpp" line="1088" pragmaType="loop_tripcount" parentfunction="MultiPixStream2Bytes" min="0" max="4320" avg="2160"/>
 <pragma file="prj/sol/.autopilot/db/v_frmbuf_wr.cpp" line="1092" pragmaType="pipeline" parentfunction="MultiPixStream2Bytes" off="0" ii="8" rewind="0" style=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<hls::Scalar<3, ap_uint<8> >, 0>::stream()" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<8, false>(ap_int_base<8, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<hls::Scalar<3, ap_uint<8> >, 0>::stream()" off="0" region="0" recursive="0"/>
 </pragmas>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Dec 25 12:09:24 2025" VIVADOVERSION="2025.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Dec 25 12:55:50 2025" VIVADOVERSION="2025.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="top_design" PACKAGE="clg400" SPEEDGRADE="-2"/>
 
@@ -4812,27 +4812,27 @@
         </PORT>
         <PORT DIR="I" LEFT="23" NAME="s_axis_video_tdata" RIGHT="0" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_s_axis_video_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TDATA"/>
+            <CONNECTION INSTANCE="v_frmbuf_rd_0" PORT="m_axis_video_TDATA"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="s_axis_video_tlast" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_s_axis_video_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TLAST"/>
+            <CONNECTION INSTANCE="v_frmbuf_rd_0" PORT="m_axis_video_TLAST"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="s_axis_video_tready" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_s_axis_video_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TREADY"/>
+            <CONNECTION INSTANCE="v_frmbuf_rd_0" PORT="m_axis_video_TREADY"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="s_axis_video_tuser" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_s_axis_video_tuser">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TUSER"/>
+            <CONNECTION INSTANCE="v_frmbuf_rd_0" PORT="m_axis_video_TUSER"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="s_axis_video_tvalid" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_s_axis_video_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TVALID"/>
+            <CONNECTION INSTANCE="v_frmbuf_rd_0" PORT="m_axis_video_TVALID"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="sof_state_out" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_sof_state_out">
@@ -4901,7 +4901,7 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="v_tpg_0_m_axis_video" NAME="video_in" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="v_frmbuf_rd_0_m_axis_video" NAME="video_in" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="CLK_DOMAIN" VALUE="top_design_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="1.48148e+08"/>
           <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
@@ -5198,15 +5198,31 @@
             <CONNECTION INSTANCE="smartconnect_0" PORT="S00_AXI_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="23" NAME="m_axis_video_TDATA" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="m_axis_video_TDEST" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="m_axis_video_TID" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="2" NAME="m_axis_video_TKEEP" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="m_axis_video_TLAST" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="m_axis_video_TREADY" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="2" NAME="m_axis_video_TSTRB" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="m_axis_video_TUSER" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="m_axis_video_TVALID" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="23" NAME="m_axis_video_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_s_axis_video_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="s_axis_video_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="m_axis_video_TLAST" RIGHT="0" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_s_axis_video_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="s_axis_video_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_video_TREADY" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_s_axis_video_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="s_axis_video_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="m_axis_video_TUSER" RIGHT="0" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_s_axis_video_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="s_axis_video_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_video_TVALID" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_s_axis_video_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="s_axis_video_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="6" NAME="s_axi_CTRL_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="axi_smc_M03_AXI_araddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_smc" PORT="M03_AXI_araddr"/>
@@ -5414,7 +5430,7 @@
             <PORTMAP LOGICAL="WVALID" PHYSICAL="m_axi_mm_video_WVALID"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="m_axis_video" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="v_frmbuf_rd_0_m_axis_video" NAME="m_axis_video" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="CLK_DOMAIN" VALUE="top_design_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="1.48148e+08"/>
           <PARAMETER NAME="HAS_TKEEP" VALUE="1"/>
@@ -5430,12 +5446,8 @@
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
           <PORTMAPS>
             <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_video_TDATA"/>
-            <PORTMAP LOGICAL="TDEST" PHYSICAL="m_axis_video_TDEST"/>
-            <PORTMAP LOGICAL="TID" PHYSICAL="m_axis_video_TID"/>
-            <PORTMAP LOGICAL="TKEEP" PHYSICAL="m_axis_video_TKEEP"/>
             <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_video_TLAST"/>
             <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_video_TREADY"/>
-            <PORTMAP LOGICAL="TSTRB" PHYSICAL="m_axis_video_TSTRB"/>
             <PORTMAP LOGICAL="TUSER" PHYSICAL="m_axis_video_TUSER"/>
             <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_video_TVALID"/>
           </PORTMAPS>
@@ -5446,6 +5458,7 @@
       </MEMORYMAP>
       <PERIPHERALS>
         <PERIPHERAL INSTANCE="processing_system7_0"/>
+        <PERIPHERAL INSTANCE="v_axi4s_vid_out_0"/>
       </PERIPHERALS>
     </MODULE>
     <MODULE COREREVISION="2" FULLNAME="/v_frmbuf_wr_0" HWVERSION="3.0" INSTANCE="v_frmbuf_wr_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="v_frmbuf_wr" VLNV="xilinx.com:ip:v_frmbuf_wr:3.0">
@@ -5790,15 +5803,51 @@
             <CONNECTION INSTANCE="axi_smc" PORT="M06_AXI_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="23" NAME="s_axis_video_TDATA" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="s_axis_video_TDEST" SIGIS="undef"/>
-        <PORT DIR="I" NAME="s_axis_video_TID" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="2" NAME="s_axis_video_TKEEP" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="s_axis_video_TLAST" SIGIS="undef"/>
-        <PORT DIR="O" NAME="s_axis_video_TREADY" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="2" NAME="s_axis_video_TSTRB" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="s_axis_video_TUSER" SIGIS="undef"/>
-        <PORT DIR="I" NAME="s_axis_video_TVALID" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="23" NAME="s_axis_video_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_video_TDEST" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TDEST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TDEST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_video_TID" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="s_axis_video_TKEEP" RIGHT="0" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TKEEP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TKEEP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_video_TLAST" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TLAST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_video_TREADY" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="s_axis_video_TSTRB" RIGHT="0" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TSTRB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TSTRB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_video_TUSER" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TUSER">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TUSER"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_video_TVALID" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="axi_smc_M06_AXI" DATAWIDTH="32" NAME="s_axi_CTRL" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
@@ -5921,7 +5970,7 @@
             <PORTMAP LOGICAL="WVALID" PHYSICAL="m_axi_mm_video_WVALID"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="s_axis_video" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="v_tpg_0_m_axis_video" NAME="s_axis_video" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="CLK_DOMAIN" VALUE="top_design_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="1.48148e+08"/>
           <PARAMETER NAME="HAS_TKEEP" VALUE="1"/>
@@ -6399,29 +6448,49 @@
             <CONNECTION INSTANCE="ilconcat_0" PORT="In2"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="23" NAME="m_axis_video_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_s_axis_video_tdata">
+        <PORT DIR="O" LEFT="23" NAME="m_axis_video_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TDATA">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="s_axis_video_tdata"/>
+            <CONNECTION INSTANCE="v_frmbuf_wr_0" PORT="s_axis_video_TDATA"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="m_axis_video_TLAST" RIGHT="0" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_s_axis_video_tlast">
+        <PORT DIR="O" LEFT="0" NAME="m_axis_video_TDEST" RIGHT="0" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TDEST">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="s_axis_video_tlast"/>
+            <CONNECTION INSTANCE="v_frmbuf_wr_0" PORT="s_axis_video_TDEST"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axis_video_TREADY" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_s_axis_video_tready">
+        <PORT DIR="O" LEFT="0" NAME="m_axis_video_TID" RIGHT="0" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TID">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="s_axis_video_tready"/>
+            <CONNECTION INSTANCE="v_frmbuf_wr_0" PORT="s_axis_video_TID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="m_axis_video_TUSER" RIGHT="0" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_s_axis_video_tuser">
+        <PORT DIR="O" LEFT="2" NAME="m_axis_video_TKEEP" RIGHT="0" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TKEEP">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="s_axis_video_tuser"/>
+            <CONNECTION INSTANCE="v_frmbuf_wr_0" PORT="s_axis_video_TKEEP"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axis_video_TVALID" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_s_axis_video_tvalid">
+        <PORT DIR="O" LEFT="0" NAME="m_axis_video_TLAST" RIGHT="0" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TLAST">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="s_axis_video_tvalid"/>
+            <CONNECTION INSTANCE="v_frmbuf_wr_0" PORT="s_axis_video_TLAST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_video_TREADY" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_frmbuf_wr_0" PORT="s_axis_video_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axis_video_TSTRB" RIGHT="0" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TSTRB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_frmbuf_wr_0" PORT="s_axis_video_TSTRB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="m_axis_video_TUSER" RIGHT="0" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TUSER">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_frmbuf_wr_0" PORT="s_axis_video_TUSER"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_video_TVALID" SIGIS="undef" SIGNAME="v_frmbuf_wr_0_s_axis_video_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_frmbuf_wr_0" PORT="s_axis_video_TVALID"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="7" NAME="s_axi_CTRL_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="axi_smc_M05_AXI_araddr">
@@ -6579,8 +6648,12 @@
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
           <PORTMAPS>
             <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_video_TDATA"/>
+            <PORTMAP LOGICAL="TDEST" PHYSICAL="m_axis_video_TDEST"/>
+            <PORTMAP LOGICAL="TID" PHYSICAL="m_axis_video_TID"/>
+            <PORTMAP LOGICAL="TKEEP" PHYSICAL="m_axis_video_TKEEP"/>
             <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_video_TLAST"/>
             <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_video_TREADY"/>
+            <PORTMAP LOGICAL="TSTRB" PHYSICAL="m_axis_video_TSTRB"/>
             <PORTMAP LOGICAL="TUSER" PHYSICAL="m_axis_video_TUSER"/>
             <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_video_TVALID"/>
           </PORTMAPS>
