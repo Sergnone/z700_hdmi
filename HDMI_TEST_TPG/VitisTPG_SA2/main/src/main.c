@@ -33,17 +33,72 @@
 #include "xvtc.h"
 #include "xvidc.h"
 
+#include "xv_frmbufrd_l2.h"
+#include "xv_frmbufwr_l2.h"
+
+
+#define NUM_TEST_FORMATS 29
+
+//mapping between memory and streaming video formats
+typedef struct {
+  XVidC_ColorFormat MemFormat;
+  XVidC_ColorFormat StreamFormat;
+  u16 FormatBits;
+} VideoFormats;
+
+VideoFormats ColorFormats[NUM_TEST_FORMATS] =
+{
+  //memory format            stream format        bits per component
+  {XVIDC_CSF_MEM_RGBX8,      XVIDC_CSF_RGB,       8},
+  {XVIDC_CSF_MEM_YUVX8,      XVIDC_CSF_YCRCB_444, 8},
+  {XVIDC_CSF_MEM_YUYV8,      XVIDC_CSF_YCRCB_422, 8},
+  {XVIDC_CSF_MEM_RGBX10,     XVIDC_CSF_RGB,       10},
+  {XVIDC_CSF_MEM_YUVX10,     XVIDC_CSF_YCRCB_444, 10},
+  {XVIDC_CSF_MEM_Y_UV8,      XVIDC_CSF_YCRCB_422, 8},
+  {XVIDC_CSF_MEM_Y_UV8_420,  XVIDC_CSF_YCRCB_420, 8},
+  {XVIDC_CSF_MEM_RGB8,       XVIDC_CSF_RGB,       8},
+  {XVIDC_CSF_MEM_YUV8,       XVIDC_CSF_YCRCB_444, 8},
+  {XVIDC_CSF_MEM_Y_UV10,     XVIDC_CSF_YCRCB_422, 10},
+  {XVIDC_CSF_MEM_Y_UV10_420, XVIDC_CSF_YCRCB_420, 10},
+  {XVIDC_CSF_MEM_Y8,         XVIDC_CSF_YONLY, 8},
+  {XVIDC_CSF_MEM_Y10,        XVIDC_CSF_YONLY, 10},
+  {XVIDC_CSF_MEM_BGRX8,      XVIDC_CSF_RGB,       8},
+  {XVIDC_CSF_MEM_UYVY8,      XVIDC_CSF_YCRCB_422, 8},
+  {XVIDC_CSF_MEM_BGR8,       XVIDC_CSF_RGB,       8},
+  {XVIDC_CSF_MEM_RGBX12,     XVIDC_CSF_RGB,       12},
+  {XVIDC_CSF_MEM_RGB16,      XVIDC_CSF_RGB,       16},
+  {XVIDC_CSF_MEM_YUVX12,     XVIDC_CSF_YCRCB_444, 12},
+  {XVIDC_CSF_MEM_YUV16,      XVIDC_CSF_YCRCB_444, 16},
+  {XVIDC_CSF_MEM_Y_UV12,     XVIDC_CSF_YCRCB_422, 12},
+  {XVIDC_CSF_MEM_Y_UV16,     XVIDC_CSF_YCRCB_422, 16},
+  {XVIDC_CSF_MEM_Y_UV12_420, XVIDC_CSF_YCRCB_420, 12},
+  {XVIDC_CSF_MEM_Y_UV16_420, XVIDC_CSF_YCRCB_420, 16},
+  {XVIDC_CSF_MEM_Y12,        XVIDC_CSF_YONLY, 12},
+  {XVIDC_CSF_MEM_Y16,        XVIDC_CSF_YONLY, 16},
+  {XVIDC_CSF_MEM_Y_U_V8,     XVIDC_CSF_YCRCB_444, 8},
+  {XVIDC_CSF_MEM_Y_U_V10,    XVIDC_CSF_YCRCB_444, 10},
+  {XVIDC_CSF_MEM_Y_U_V8_420, XVIDC_CSF_YCRCB_420, 8}
+};
+
+
 XV_tpg_Config		*tpg_Config;
 XV_tpg				tpg;
+
 
 XVtc				vtc;
 XVtc_Config			*vtc_Config;
 XVtc_Timing			vtc_timing;
 
+XVidC_VideoStream 	VidStream;
+
 u32 volatile		*gpio_hlsIpReset;
 u32 volatile		*gpio_videoLockMonitor;
 
-#define XPAR_VIDEO_CLK_WIZ_BASEADDR		0
+XV_FrmbufWr_l2     frmbufwr;
+XV_frmbufwr_Config frmbufwr_cfg;
+
+
+#define XPAR_VIDEO_CLK_WIZ_BASEADDR			0
 #define VideoClockGen_WriteReg(RegOffset, Data) \
     Xil_Out32((XPAR_VIDEO_CLK_WIZ_BASEADDR) + (RegOffset), (u32)(Data))
 #define VideoClockGen_ReadReg(RegOffset) \
@@ -87,37 +142,46 @@ int driverInit()
 		return(XST_FAILURE);
 	}
 
+#ifndef SDT
+  status = XVFrmbufWr_Initialize(&frmbufwr, XPAR_V_FRMBUF_WR_0_DEVICE_ID);
+#else
+  status = XVFrmbufWr_Initialize(&frmbufwr, XPAR_V_FRMBUF_WR_0_BASEADDR);
+#endif
+  if (status != XST_SUCCESS) {
+    xil_printf("ERROR:: Frame Buffer Write initialization failed\r\n");
+    return(XST_FAILURE);
+  }
+
 	return(XST_SUCCESS);
 }
 
-void videoIpConfig(XVidC_VideoMode videoMode)
+void videoIpConfig(XVidC_VideoStream *StreamPtr)
 {
-	XVidC_VideoTiming const *timing = XVidC_GetTimingInfo(videoMode);
-	u16 PixelsPerClk;
+	XVtc_Timing vtc_timing = {0};
+	u16 PixelsPerClock = StreamPtr->PixPerClk;
 
-	XV_tpg_Set_height(&tpg, timing->VActive);
-	XV_tpg_Set_width(&tpg, timing->HActive);
+	XV_tpg_Set_height(&tpg, StreamPtr->Timing.VActive);
+	XV_tpg_Set_width(&tpg, StreamPtr->Timing.HActive);
 	XV_tpg_Set_colorFormat(&tpg, 0);
 	XV_tpg_Set_bckgndId(&tpg, XTPG_BKGND_COLOR_BARS);
 	XV_tpg_Set_ovrlayId(&tpg, 0);
 	XV_tpg_WriteReg(tpg_Config->BaseAddress, XV_TPG_CTRL_ADDR_AP_CTRL, 0x81);
-
-	PixelsPerClk = tpg.Config.PixPerClk;
-
-	vtc_timing.HActiveVideo  = timing->HActive/PixelsPerClk;
-	vtc_timing.HFrontPorch   = timing->HFrontPorch/PixelsPerClk;
-	vtc_timing.HSyncWidth    = timing->HSyncWidth/PixelsPerClk;
-	vtc_timing.HBackPorch    = timing->HBackPorch/PixelsPerClk;
-	vtc_timing.HSyncPolarity = timing->HSyncPolarity;
-	vtc_timing.VActiveVideo  = timing->VActive;
-	vtc_timing.V0FrontPorch  = timing->F0PVFrontPorch;
-	vtc_timing.V0SyncWidth   = timing->F0PVSyncWidth;
-	vtc_timing.V0BackPorch   = timing->F0PVBackPorch;
-	vtc_timing.VSyncPolarity = timing->VSyncPolarity;
+	
+	vtc_timing.HActiveVideo  = StreamPtr->Timing.HActive/PixelsPerClock;
+	vtc_timing.HFrontPorch   = StreamPtr->Timing.HFrontPorch/PixelsPerClock;
+	vtc_timing.HSyncWidth    = StreamPtr->Timing.HSyncWidth/PixelsPerClock;
+	vtc_timing.HBackPorch    = StreamPtr->Timing.HBackPorch/PixelsPerClock;
+	vtc_timing.HSyncPolarity = StreamPtr->Timing.HSyncPolarity;
+	vtc_timing.VActiveVideo  = StreamPtr->Timing.VActive;
+	vtc_timing.V0FrontPorch  = StreamPtr->Timing.F0PVFrontPorch;
+	vtc_timing.V0SyncWidth   = StreamPtr->Timing.F0PVSyncWidth;
+	vtc_timing.V0BackPorch   = StreamPtr->Timing.F0PVBackPorch;
+	vtc_timing.VSyncPolarity = StreamPtr->Timing.VSyncPolarity;
 	XVtc_SetGeneratorTiming(&vtc, &vtc_timing);
 	XVtc_Enable(&vtc);
 	XVtc_EnableGenerator(&vtc);
 	XVtc_RegUpdateEnable(&vtc);
+	xil_printf("INFO: VTC configured\r\n");
 }
 
 int videoClockConfig(XVidC_VideoMode videoMode)
@@ -129,8 +193,8 @@ int videoClockConfig(XVidC_VideoMode videoMode)
 	u32 CLKOUT0_FRAC;
 	u32 clock_config_reg_0;
 	u32 clock_config_reg_2;
-	u32 timeout;
-	u32 lock;
+	//u32 timeout;
+	//u32 lock;
 	u16 PixelsPerClk, mode_index;
 
     const int ClkOut_Frac[3][XVIDC_PPC_NUM_SUPPORTED] =
@@ -144,22 +208,7 @@ int videoClockConfig(XVidC_VideoMode videoMode)
       {0, 3 , 6 , 12}  //4K60
     };
 
-    /* Validate TPG Parameters */
-    Xil_AssertNonvoid((tpg.Config.PixPerClk == XVIDC_PPC_1) ||
-                      (tpg.Config.PixPerClk == XVIDC_PPC_2) ||
-					  (tpg.Config.PixPerClk == XVIDC_PPC_4) ||
-                      (tpg.Config.PixPerClk == XVIDC_PPC_8));
-
-
-    mode_index = ((videoMode ==  XVIDC_VM_1080_60_P) ? 0 :
-                  (videoMode ==  XVIDC_VM_UHD_30_P)  ? 1 :
-                  (videoMode ==  XVIDC_VM_UHD_60_P)  ? 2 : 3);
-
-    if(mode_index > 2)
-    {
-      xil_printf("ERR:: Video Mode %s not supported\r\n", XVidC_GetVideoModeStr(videoMode));
-      return(XST_FAILURE);
-    }
+    mode_index = 0;
 
     //map PPC to array index
     PixelsPerClk = ((tpg.Config.PixPerClk == XVIDC_PPC_8)? 3 : tpg.Config.PixPerClk>>1);
@@ -174,8 +223,8 @@ int videoClockConfig(XVidC_VideoMode videoMode)
 
 	usleep(300000);
 
-	lock = VideoClockGen_ReadReg(0x4) & 0x1;
 	/*
+	lock = VideoClockGen_ReadReg(0x4) & 0x1;
 	if(!lock) //check for lock
 	{
 		//Video Clock Generator not locked
@@ -193,8 +242,8 @@ int videoClockConfig(XVidC_VideoMode videoMode)
 			}
 		}
 	}
-	*/
 	xil_printf("Video Clock Generator locked\r\n");
+	*/
 
 	return(XST_SUCCESS);
 
@@ -215,46 +264,59 @@ void resetIp(void)
 int main()
 {
 	int status;
-	XVidC_VideoMode TestMode;
+	XVidC_ColorFormat Cfmt;
+	XVidC_VideoTiming const *TimingPtr;
 
-	xil_printf("Start test\r\n");
+	xil_printf("----Start test------\r\n");
 
 	gpio_hlsIpReset = (u32*)XPAR_HLS_IP_RESET_BASEADDR;
 	gpio_videoLockMonitor = (u32*)XPAR_VIDEO_LOCK_MONITOR_BASEADDR;
 	*gpio_hlsIpReset = 1;
 
 	status = driverInit();
-	if(status != XST_SUCCESS) {
+	if(status != XST_SUCCESS)
+	{
 		return(XST_FAILURE);
 	}
 
-	//resetIp();
+	resetIp();
 
-	if(*gpio_videoLockMonitor) {
+	if(*gpio_videoLockMonitor)
+	{
 		xil_printf("ERR:: Video should not be locked\r\n");
 		return(XST_FAILURE);
 	}
 
+    Cfmt = ColorFormats[7].MemFormat;
+    VidStream.ColorFormatId = ColorFormats[7].StreamFormat;
 
-	TestMode = XVIDC_VM_1080_60_P;
-	xil_printf("\r\nTest: %s\r\n", XVidC_GetVideoModeStr(TestMode));
-	status = videoClockConfig(TestMode);
-	if(status != XST_SUCCESS) {
+	VidStream.VmId = XVIDC_VM_1080_60_P;
+	VidStream.PixPerClk  = frmbufwr.FrmbufWr.Config.PixPerClk;
+	VidStream.ColorDepth = frmbufwr.FrmbufWr.Config.MaxDataWidth;
+	
+	TimingPtr = XVidC_GetTimingInfo(VidStream.VmId);
+	VidStream.Timing = *TimingPtr;
+
+	xil_printf("\r\nTest: %s\r\n", XVidC_GetVideoModeStr(VidStream.VmId));
+	status = videoClockConfig(VidStream.VmId);
+	if(status != XST_SUCCESS)
+	{
 		return(XST_FAILURE);
 	}
-	videoIpConfig(TestMode);
+	videoIpConfig(&VidStream);
 
 	usleep(300000);
 
-	/*
-	if(!(*gpio_videoLockMonitor)) {
+	if(!(*gpio_videoLockMonitor))
+	{
 		xil_printf("ERR:: Video Lock failed for 1080P60\r\n");
 		return(XST_FAILURE);
 	}
-	else {
+	else
+	{
 		xil_printf("1080P60 passed\r\n");
 	}
-	*/
+
 	xil_printf("Successfully ran Example\r\n");
 
 	return 0;

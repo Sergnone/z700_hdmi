@@ -363,9 +363,6 @@
 					xlnx,video-width = <8>;
 					reg = <1>;
 					xlnx,video-format = <2>;
-					tpg_outv_tpg_0: endpoint {
-						remote-endpoint = <&v_frmbuf_wr_0v_tpg_0>;
-					};
 				};
 				tpg_port0v_tpg_0: port@0 {
 					xlnx,video-width = <8>;
@@ -399,22 +396,6 @@
 			xlnx,tri-default = <0xffffffff>;
 			xlnx,name = "video_lock_monitor";
 			xlnx,all-inputs = <1>;
-		};
-		vcap_v_tpg_0 {
-			compatible = "xlnx,video";
-			dmas = <&v_frmbuf_wr_0 0>;
-			dma-names = "port0";
-			vcap_portsv_tpg_0: ports {
-				#address-cells = <1>;
-				#size-cells = <0>;
-				vcap_portv_tpg_0: port@0 {
-					direction = "input";
-					reg = <0>;
-					v_frmbuf_wr_0v_tpg_0: endpoint {
-						remote-endpoint = <&tpg_outv_tpg_0>;
-					};
-				};
-			};
 		};
 	};
 };

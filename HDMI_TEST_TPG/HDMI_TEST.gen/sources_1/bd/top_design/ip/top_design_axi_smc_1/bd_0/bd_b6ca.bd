@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x87ABE86F2CAC7D2E",
+      "boundary_crc": "0x87ABE86F5217E178",
       "design_src": "SBD",
       "device": "xc7z020clg400-2",
       "name": "bd_b6ca",
@@ -157,7 +157,7 @@
             "value_src": "auto_prop"
           },
           "FREQ_HZ": {
-            "value": "148148163",
+            "value": "1.48148e+08",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -304,7 +304,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "148148163",
+            "value": "1.48148e+08",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -436,7 +436,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "148148163",
+            "value": "1.48148e+08",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -568,7 +568,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "148148163",
+            "value": "1.48148e+08",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -700,7 +700,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "148148163",
+            "value": "1.48148e+08",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -832,7 +832,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "148148163",
+            "value": "1.48148e+08",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -964,7 +964,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "148148163",
+            "value": "1.48148e+08",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1096,7 +1096,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "148148163",
+            "value": "1.48148e+08",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1216,7 +1216,7 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "148148163",
+            "value": "1.48148e+08",
             "value_src": "user_prop"
           },
           "FREQ_TOLERANCE_HZ": {

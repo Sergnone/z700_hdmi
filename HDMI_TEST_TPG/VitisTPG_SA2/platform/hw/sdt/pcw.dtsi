@@ -151,7 +151,7 @@
 			xlnx,pcw-nor-grp-sram-cs0-enable = <0>;
 			xlnx,pcw-clk1-freq = <10000000>;
 			xlnx,pcw-mio-48-slew = "slow";
-			xlnx,pcw-m-axi-gp0-freqmhz = <148>;
+			xlnx,pcw-m-axi-gp0-freqmhz = <0x8d48f20>;
 			xlnx,pcw-ttc0-clk2-peripheral-divisor0 = <1>;
 			xlnx,pcw-mio-45-slew = "<Select>";
 			xlnx,pcw-mio-23-iotype = "<Select>";
@@ -730,7 +730,7 @@
 			xlnx,pcw-mio-29-pullup = "<Select>";
 			xlnx,pcw-mio-30-pullup = "<Select>";
 			xlnx,trace-internal-width = <2>;
-			xlnx,pcw-s-axi-hp0-freqmhz = <148>;
+			xlnx,pcw-s-axi-hp0-freqmhz = <0x8d48f20>;
 			xlnx,pcw-mio-7-direction = "<Select>";
 			xlnx,pcw-i2c0-reset-enable = <0>;
 			xlnx,pcw-mio-53-slew = "<Select>";

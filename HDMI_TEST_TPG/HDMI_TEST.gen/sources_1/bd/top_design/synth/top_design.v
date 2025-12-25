@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Wed Dec 24 20:00:08 2025
+//Date        : Thu Dec 25 12:09:14 2025
 //Host        : serg running 64-bit Ubuntu 24.04.3 LTS
 //Command     : generate_target top_design.bd
 //Design      : top_design
@@ -336,11 +336,6 @@ module top_design
   wire v_frmbuf_rd_0_m_axi_mm_video_WREADY;
   wire [7:0]v_frmbuf_rd_0_m_axi_mm_video_WSTRB;
   wire v_frmbuf_rd_0_m_axi_mm_video_WVALID;
-  wire [23:0]v_frmbuf_rd_0_m_axis_video_TDATA;
-  wire [0:0]v_frmbuf_rd_0_m_axis_video_TLAST;
-  wire v_frmbuf_rd_0_m_axis_video_TREADY;
-  wire [0:0]v_frmbuf_rd_0_m_axis_video_TUSER;
-  wire v_frmbuf_rd_0_m_axis_video_TVALID;
   wire v_frmbuf_wr_0_interrupt;
   wire [31:0]v_frmbuf_wr_0_m_axi_mm_video_ARADDR;
   wire [1:0]v_frmbuf_wr_0_m_axi_mm_video_ARBURST;
@@ -383,12 +378,8 @@ module top_design
   wire v_tc_0_vtiming_out_VSYNC;
   wire v_tpg_0_interrupt;
   wire [23:0]v_tpg_0_m_axis_video_TDATA;
-  wire [0:0]v_tpg_0_m_axis_video_TDEST;
-  wire [0:0]v_tpg_0_m_axis_video_TID;
-  wire [2:0]v_tpg_0_m_axis_video_TKEEP;
   wire [0:0]v_tpg_0_m_axis_video_TLAST;
   wire v_tpg_0_m_axis_video_TREADY;
-  wire [2:0]v_tpg_0_m_axis_video_TSTRB;
   wire [0:0]v_tpg_0_m_axis_video_TUSER;
   wire v_tpg_0_m_axis_video_TVALID;
 
@@ -834,11 +825,11 @@ module top_design
         .fid(1'b0),
         .locked(v_axi4s_vid_out_0_locked),
         .overflow(v_axi4s_vid_out_0_overflow),
-        .s_axis_video_tdata(v_frmbuf_rd_0_m_axis_video_TDATA),
-        .s_axis_video_tlast(v_frmbuf_rd_0_m_axis_video_TLAST),
-        .s_axis_video_tready(v_frmbuf_rd_0_m_axis_video_TREADY),
-        .s_axis_video_tuser(v_frmbuf_rd_0_m_axis_video_TUSER),
-        .s_axis_video_tvalid(v_frmbuf_rd_0_m_axis_video_TVALID),
+        .s_axis_video_tdata(v_tpg_0_m_axis_video_TDATA),
+        .s_axis_video_tlast(v_tpg_0_m_axis_video_TLAST),
+        .s_axis_video_tready(v_tpg_0_m_axis_video_TREADY),
+        .s_axis_video_tuser(v_tpg_0_m_axis_video_TUSER),
+        .s_axis_video_tvalid(v_tpg_0_m_axis_video_TVALID),
         .sof_state_out(v_axi4s_vid_out_0_sof_state_out),
         .vid_active_video(v_axi4s_vid_out_0_vid_io_out_ACTIVE_VIDEO),
         .vid_data(v_axi4s_vid_out_0_vid_io_out_DATA),
@@ -891,11 +882,7 @@ module top_design
         .m_axi_mm_video_WREADY(v_frmbuf_rd_0_m_axi_mm_video_WREADY),
         .m_axi_mm_video_WSTRB(v_frmbuf_rd_0_m_axi_mm_video_WSTRB),
         .m_axi_mm_video_WVALID(v_frmbuf_rd_0_m_axi_mm_video_WVALID),
-        .m_axis_video_TDATA(v_frmbuf_rd_0_m_axis_video_TDATA),
-        .m_axis_video_TLAST(v_frmbuf_rd_0_m_axis_video_TLAST),
-        .m_axis_video_TREADY(v_frmbuf_rd_0_m_axis_video_TREADY),
-        .m_axis_video_TUSER(v_frmbuf_rd_0_m_axis_video_TUSER),
-        .m_axis_video_TVALID(v_frmbuf_rd_0_m_axis_video_TVALID),
+        .m_axis_video_TREADY(1'b1),
         .s_axi_CTRL_ARADDR(axi_smc_M03_AXI_ARADDR),
         .s_axi_CTRL_ARREADY(axi_smc_M03_AXI_ARREADY),
         .s_axi_CTRL_ARVALID(axi_smc_M03_AXI_ARVALID),
@@ -967,15 +954,14 @@ module top_design
         .s_axi_CTRL_WREADY(axi_smc_M06_AXI_WREADY),
         .s_axi_CTRL_WSTRB(axi_smc_M06_AXI_WSTRB),
         .s_axi_CTRL_WVALID(axi_smc_M06_AXI_WVALID),
-        .s_axis_video_TDATA(v_tpg_0_m_axis_video_TDATA),
-        .s_axis_video_TDEST(v_tpg_0_m_axis_video_TDEST),
-        .s_axis_video_TID(v_tpg_0_m_axis_video_TID),
-        .s_axis_video_TKEEP(v_tpg_0_m_axis_video_TKEEP),
-        .s_axis_video_TLAST(v_tpg_0_m_axis_video_TLAST),
-        .s_axis_video_TREADY(v_tpg_0_m_axis_video_TREADY),
-        .s_axis_video_TSTRB(v_tpg_0_m_axis_video_TSTRB),
-        .s_axis_video_TUSER(v_tpg_0_m_axis_video_TUSER),
-        .s_axis_video_TVALID(v_tpg_0_m_axis_video_TVALID));
+        .s_axis_video_TDATA({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .s_axis_video_TDEST(1'b0),
+        .s_axis_video_TID(1'b0),
+        .s_axis_video_TKEEP({1'b1,1'b1,1'b1}),
+        .s_axis_video_TLAST(1'b0),
+        .s_axis_video_TSTRB({1'b1,1'b1,1'b1}),
+        .s_axis_video_TUSER(1'b0),
+        .s_axis_video_TVALID(1'b0));
   top_design_v_tc_0_1 v_tc_0
        (.active_video_out(v_tc_0_vtiming_out_ACTIVE_VIDEO),
         .clk(axi_dynclk_0_PXL_CLK_O),
@@ -1015,12 +1001,8 @@ module top_design
         .fid_in(1'b1),
         .interrupt(v_tpg_0_interrupt),
         .m_axis_video_TDATA(v_tpg_0_m_axis_video_TDATA),
-        .m_axis_video_TDEST(v_tpg_0_m_axis_video_TDEST),
-        .m_axis_video_TID(v_tpg_0_m_axis_video_TID),
-        .m_axis_video_TKEEP(v_tpg_0_m_axis_video_TKEEP),
         .m_axis_video_TLAST(v_tpg_0_m_axis_video_TLAST),
         .m_axis_video_TREADY(v_tpg_0_m_axis_video_TREADY),
-        .m_axis_video_TSTRB(v_tpg_0_m_axis_video_TSTRB),
         .m_axis_video_TUSER(v_tpg_0_m_axis_video_TUSER),
         .m_axis_video_TVALID(v_tpg_0_m_axis_video_TVALID),
         .s_axi_CTRL_ARADDR(axi_smc_M05_AXI_ARADDR),

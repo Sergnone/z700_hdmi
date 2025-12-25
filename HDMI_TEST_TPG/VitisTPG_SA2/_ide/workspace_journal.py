@@ -1,4 +1,4 @@
-# 2025-12-24T20:25:25.730501718
+# 2025-12-25T12:15:21.489377505
 import vitis
 
 client = vitis.create_client()
@@ -8,11 +8,6 @@ platform = client.create_platform_component(name = "platform",hw_design = "$COMP
 
 platform = client.get_component(name="platform")
 status = platform.build()
-
-status = platform.build()
-
-comp = client.get_component(name="xv_frmbufwr_example")
-comp.build()
 
 status = platform.build()
 
@@ -37,7 +32,50 @@ comp.build()
 
 status = platform.build()
 
-comp = client.get_component(name="xv_frmbufwr_example")
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
 comp.build()
 
 status = platform.build()

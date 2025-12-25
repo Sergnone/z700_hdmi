@@ -2253,12 +2253,6 @@
           "smartconnect_0/S00_AXI"
         ]
       },
-      "v_frmbuf_rd_0_m_axis_video": {
-        "interface_ports": [
-          "v_frmbuf_rd_0/m_axis_video",
-          "v_axi4s_vid_out_0/video_in"
-        ]
-      },
       "v_frmbuf_wr_0_m_axi_mm_video": {
         "interface_ports": [
           "v_frmbuf_wr_0/m_axi_mm_video",
@@ -2274,7 +2268,7 @@
       "v_tpg_0_m_axis_video": {
         "interface_ports": [
           "v_tpg_0/m_axis_video",
-          "v_frmbuf_wr_0/s_axis_video"
+          "v_axi4s_vid_out_0/video_in"
         ]
       }
     },

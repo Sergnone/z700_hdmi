@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 5,
-    "calls": "5 3",
+    "calls": "8 9",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_tpg.cpp",
@@ -19,6 +19,25 @@
     "total_instructions": 1943
   },
   "1": {
+    "basicblocks": 30,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "v_tpg.cpp",
+    "fileloc": 1734,
+    "instructions": 166,
+    "loads": {
+      "G": 24
+    },
+    "memory_accesses": 0,
+    "name": "tpgPatternDPColorSquare",
+    "stores": {
+      "G": 10,
+      "L": 12
+    },
+    "total_instructions": 166
+  },
+  "2": {
     "basicblocks": 15,
     "calls": "",
     "control_depth": 4,
@@ -38,7 +57,7 @@
     },
     "total_instructions": 174
   },
-  "2": {
+  "3": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -53,19 +72,59 @@
     },
     "total_instructions": 2
   },
-  "3": {
-    "basicblocks": 1,
-    "calls": "8 4 1",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "v_tpg.cpp",
-    "fileloc": 304,
-    "instructions": 10,
-    "memory_accesses": 0,
-    "name": "v_tpgHlsDataFlow",
-    "total_instructions": 1876
-  },
   "4": {
+    "basicblocks": 137,
+    "calls": "6 5 1",
+    "control_depth": 4,
+    "def_use_depth": 18,
+    "file": "v_tpg.cpp",
+    "fileloc": 536,
+    "instructions": 1071,
+    "loads": {
+      "G": 68,
+      "L": 70
+    },
+    "memory_accesses": 234,
+    "name": "tpgBackground",
+    "stores": {
+      "G": 41,
+      "L": 68
+    },
+    "total_instructions": 1361
+  },
+  "5": {
+    "basicblocks": 29,
+    "calls": "3",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "v_tpg.cpp",
+    "fileloc": 1437,
+    "instructions": 121,
+    "loads": {
+      "G": 5,
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "tpgPatternCrossHatch",
+    "stores": {
+      "G": 11,
+      "L": 6
+    },
+    "total_instructions": 123
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "memory_accesses": 0,
+    "name": "reg<int>",
+    "total_instructions": 1
+  },
+  "7": {
     "basicblocks": 39,
     "calls": "",
     "control_depth": 4,
@@ -85,7 +144,7 @@
     },
     "total_instructions": 331
   },
-  "5": {
+  "8": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -97,75 +156,16 @@
     "name": "reg<unsigned short>",
     "total_instructions": 1
   },
-  "6": {
-    "basicblocks": 30,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "v_tpg.cpp",
-    "fileloc": 1734,
-    "instructions": 166,
-    "loads": {
-      "G": 24
-    },
-    "memory_accesses": 0,
-    "name": "tpgPatternDPColorSquare",
-    "stores": {
-      "G": 10,
-      "L": 12
-    },
-    "total_instructions": 166
-  },
-  "7": {
-    "basicblocks": 29,
-    "calls": "2",
-    "control_depth": 0,
-    "def_use_depth": 4,
-    "file": "v_tpg.cpp",
-    "fileloc": 1437,
-    "instructions": 121,
-    "loads": {
-      "G": 5,
-      "L": 1
-    },
-    "memory_accesses": 0,
-    "name": "tpgPatternCrossHatch",
-    "stores": {
-      "G": 11,
-      "L": 6
-    },
-    "total_instructions": 123
-  },
-  "8": {
-    "basicblocks": 137,
-    "calls": "9 7 6",
-    "control_depth": 4,
-    "def_use_depth": 18,
-    "file": "v_tpg.cpp",
-    "fileloc": 536,
-    "instructions": 1071,
-    "loads": {
-      "G": 68,
-      "L": 70
-    },
-    "memory_accesses": 234,
-    "name": "tpgBackground",
-    "stores": {
-      "G": 41,
-      "L": 68
-    },
-    "total_instructions": 1361
-  },
   "9": {
     "basicblocks": 1,
-    "calls": "",
+    "calls": "4 7 2",
     "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
+    "def_use_depth": 1,
+    "file": "v_tpg.cpp",
+    "fileloc": 304,
+    "instructions": 10,
     "memory_accesses": 0,
-    "name": "reg<int>",
-    "total_instructions": 1
+    "name": "v_tpgHlsDataFlow",
+    "total_instructions": 1876
   }
 }

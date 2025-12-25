@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'tpgForeground'
 ================================================================
-* Date:           Wed Dec 24 20:02:13 2025
+* Date:           Thu Dec 25 12:12:08 2025
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -162,7 +162,7 @@ The critical path consists of the following:
  <State 2>: 4.388ns
 The critical path consists of the following:
 	'load' operation 16 bit ('y', prj/sol/.autopilot/db/v_tpg.cpp:772) on local variable 'y', prj/sol/.autopilot/db/v_tpg.cpp:763 [69]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln772', prj/sol/.autopilot/db/v_tpg.cpp:772) [70]  (1.545 ns)
+	'icmp' operation 1 bit ('icmp_ln1963', prj/sol/.autopilot/db/v_tpg.cpp:1963->prj/sol/.autopilot/db/v_tpg.cpp:793) [76]  (1.545 ns)
 	'call' operation ('call_ln1894', prj/sol/.autopilot/db/v_tpg.cpp:1894->prj/sol/.autopilot/db/v_tpg.cpp:788) to 'tpgForeground_Pipeline_VITIS_LOOP_774_2' [77]  (2.843 ns)
 
  <State 3>: 0.000ns

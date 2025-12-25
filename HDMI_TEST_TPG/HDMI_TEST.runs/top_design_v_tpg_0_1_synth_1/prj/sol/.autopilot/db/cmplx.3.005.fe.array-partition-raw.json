@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 5,
-    "calls": "7 9",
+    "calls": "7 1",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_tpg.cpp",
@@ -19,6 +19,37 @@
     "total_instructions": 1408
   },
   "1": {
+    "basicblocks": 1,
+    "calls": "8 6 3",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "v_tpg.cpp",
+    "fileloc": 304,
+    "instructions": 10,
+    "memory_accesses": 0,
+    "name": "v_tpgHlsDataFlow",
+    "total_instructions": 1341
+  },
+  "2": {
+    "basicblocks": 30,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "v_tpg.cpp",
+    "fileloc": 1734,
+    "instructions": 137,
+    "loads": {
+      "G": 21
+    },
+    "memory_accesses": 0,
+    "name": "tpgPatternDPColorSquare",
+    "stores": {
+      "G": 10,
+      "L": 11
+    },
+    "total_instructions": 137
+  },
+  "3": {
     "basicblocks": 14,
     "calls": "",
     "control_depth": 4,
@@ -38,27 +69,7 @@
     },
     "total_instructions": 128
   },
-  "2": {
-    "basicblocks": 29,
-    "calls": "3",
-    "control_depth": 0,
-    "def_use_depth": 4,
-    "file": "v_tpg.cpp",
-    "fileloc": 1437,
-    "instructions": 112,
-    "loads": {
-      "G": 5,
-      "L": 1
-    },
-    "memory_accesses": 0,
-    "name": "tpgPatternCrossHatch",
-    "stores": {
-      "G": 11,
-      "L": 6
-    },
-    "total_instructions": 114
-  },
-  "3": {
+  "4": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -73,26 +84,19 @@
     },
     "total_instructions": 2
   },
-  "4": {
-    "basicblocks": 30,
+  "5": {
+    "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "v_tpg.cpp",
-    "fileloc": 1734,
-    "instructions": 137,
-    "loads": {
-      "G": 21
-    },
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
     "memory_accesses": 0,
-    "name": "tpgPatternDPColorSquare",
-    "stores": {
-      "G": 10,
-      "L": 11
-    },
-    "total_instructions": 137
+    "name": "reg<int>",
+    "total_instructions": 1
   },
-  "5": {
+  "6": {
     "basicblocks": 40,
     "calls": "",
     "control_depth": 5,
@@ -112,9 +116,21 @@
     },
     "total_instructions": 213
   },
-  "6": {
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "memory_accesses": 0,
+    "name": "reg<unsigned short>",
+    "total_instructions": 1
+  },
+  "8": {
     "basicblocks": 135,
-    "calls": "8 2 4",
+    "calls": "5 9 2",
     "control_depth": 4,
     "def_use_depth": 21,
     "file": "v_tpg.cpp",
@@ -132,40 +148,24 @@
     },
     "total_instructions": 990
   },
-  "7": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
-    "memory_accesses": 0,
-    "name": "reg<unsigned short>",
-    "total_instructions": 1
-  },
-  "8": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
-    "memory_accesses": 0,
-    "name": "reg<int>",
-    "total_instructions": 1
-  },
   "9": {
-    "basicblocks": 1,
-    "calls": "6 5 1",
+    "basicblocks": 29,
+    "calls": "4",
     "control_depth": 0,
-    "def_use_depth": 1,
+    "def_use_depth": 4,
     "file": "v_tpg.cpp",
-    "fileloc": 304,
-    "instructions": 10,
+    "fileloc": 1437,
+    "instructions": 112,
+    "loads": {
+      "G": 5,
+      "L": 1
+    },
     "memory_accesses": 0,
-    "name": "v_tpgHlsDataFlow",
-    "total_instructions": 1341
+    "name": "tpgPatternCrossHatch",
+    "stores": {
+      "G": 11,
+      "L": 6
+    },
+    "total_instructions": 114
   }
 }
