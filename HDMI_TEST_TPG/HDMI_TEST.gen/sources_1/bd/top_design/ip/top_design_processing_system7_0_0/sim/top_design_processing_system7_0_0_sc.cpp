@@ -83,7 +83,7 @@ top_design_processing_system7_0_0_sc::top_design_processing_system7_0_0_sc(const
     model_param_props.addLong("C_S_AXI_GP1_ID_WIDTH", "6");
     model_param_props.addLong("C_S_AXI_ACP_ID_WIDTH", "3");
     model_param_props.addLong("C_S_AXI_HP0_ID_WIDTH", "6");
-    model_param_props.addLong("C_S_AXI_HP0_DATA_WIDTH", "64");
+    model_param_props.addLong("C_S_AXI_HP0_DATA_WIDTH", "32");
     model_param_props.addLong("C_S_AXI_HP1_ID_WIDTH", "6");
     model_param_props.addLong("C_S_AXI_HP1_DATA_WIDTH", "64");
     model_param_props.addLong("C_S_AXI_HP2_ID_WIDTH", "6");

@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Thu Dec 25 12:09:55 2025
+-- Date        : Mon Dec 22 19:21:07 2025
 -- Host        : serg running 64-bit Ubuntu 24.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_axi4s_vid_out_0_1/top_design_v_axi4s_vid_out_0_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top top_design_v_axi4s_vid_out_0_1 -prefix
+--               top_design_v_axi4s_vid_out_0_1_ top_design_v_axi4s_vid_out_0_1_sim_netlist.vhdl
 -- Design      : top_design_v_axi4s_vid_out_0_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -39,8 +39,6 @@ entity top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_formatter is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_formatter : entity is "v_axi4s_vid_out_v4_0_20_formatter";
 end top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_formatter;
 
 architecture STRUCTURE of top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_formatter is
@@ -481,8 +479,6 @@ entity top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_sync is
     \fifo_eol_cnt_dly_reg[12]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_sync : entity is "v_axi4s_vid_out_v4_0_20_sync";
 end top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_sync;
 
 architecture STRUCTURE of top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_sync is
@@ -4234,8 +4230,6 @@ entity top_design_v_axi4s_vid_out_0_1_xpm_cdc_gray is
   attribute DEST_SYNC_FF of top_design_v_axi4s_vid_out_0_1_xpm_cdc_gray : entity is 4;
   attribute INIT_SYNC_FF : integer;
   attribute INIT_SYNC_FF of top_design_v_axi4s_vid_out_0_1_xpm_cdc_gray : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_axi4s_vid_out_0_1_xpm_cdc_gray : entity is "xpm_cdc_gray";
   attribute REG_OUTPUT : integer;
   attribute REG_OUTPUT of top_design_v_axi4s_vid_out_0_1_xpm_cdc_gray : entity is 0;
   attribute SIM_ASSERT_CHK : integer;
@@ -7716,8 +7710,6 @@ entity top_design_v_axi4s_vid_out_0_1_xpm_cdc_single is
   attribute DEST_SYNC_FF of top_design_v_axi4s_vid_out_0_1_xpm_cdc_single : entity is 4;
   attribute INIT_SYNC_FF : integer;
   attribute INIT_SYNC_FF of top_design_v_axi4s_vid_out_0_1_xpm_cdc_single : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_axi4s_vid_out_0_1_xpm_cdc_single : entity is "xpm_cdc_single";
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of top_design_v_axi4s_vid_out_0_1_xpm_cdc_single : entity is 0;
   attribute SRC_INPUT_REG : integer;
@@ -7893,8 +7885,6 @@ entity top_design_v_axi4s_vid_out_0_1_xpm_cdc_sync_rst is
   attribute INIT of top_design_v_axi4s_vid_out_0_1_xpm_cdc_sync_rst : entity is "0";
   attribute INIT_SYNC_FF : integer;
   attribute INIT_SYNC_FF of top_design_v_axi4s_vid_out_0_1_xpm_cdc_sync_rst : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_axi4s_vid_out_0_1_xpm_cdc_sync_rst : entity is "xpm_cdc_sync_rst";
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of top_design_v_axi4s_vid_out_0_1_xpm_cdc_sync_rst : entity is 0;
   attribute VERSION : integer;
@@ -8092,8 +8082,6 @@ entity top_design_v_axi4s_vid_out_0_1_xpm_counter_updn is
     \count_value_i_reg[1]_1\ : in STD_LOGIC;
     rd_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_axi4s_vid_out_0_1_xpm_counter_updn : entity is "xpm_counter_updn";
 end top_design_v_axi4s_vid_out_0_1_xpm_counter_updn;
 
 architecture STRUCTURE of top_design_v_axi4s_vid_out_0_1_xpm_counter_updn is
@@ -10302,8 +10290,6 @@ entity top_design_v_axi4s_vid_out_0_1_xpm_fifo_reg_bit is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gen_pf_ic_rc.gpf_ic.prog_full_i_i_2_0\ : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_axi4s_vid_out_0_1_xpm_fifo_reg_bit : entity is "xpm_fifo_reg_bit";
 end top_design_v_axi4s_vid_out_0_1_xpm_fifo_reg_bit;
 
 architecture STRUCTURE of top_design_v_axi4s_vid_out_0_1_xpm_fifo_reg_bit is
@@ -10400,8 +10386,6 @@ entity top_design_v_axi4s_vid_out_0_1_xpm_fifo_reg_vec is
     D : in STD_LOGIC_VECTOR ( 9 downto 0 );
     wr_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_axi4s_vid_out_0_1_xpm_fifo_reg_vec : entity is "xpm_fifo_reg_vec";
 end top_design_v_axi4s_vid_out_0_1_xpm_fifo_reg_vec;
 
 architecture STRUCTURE of top_design_v_axi4s_vid_out_0_1_xpm_fifo_reg_vec is
@@ -11512,8 +11496,6 @@ entity top_design_v_axi4s_vid_out_0_1_xpm_memory_base is
   attribute MESSAGE_CONTROL of top_design_v_axi4s_vid_out_0_1_xpm_memory_base : entity is 0;
   attribute NUM_CHAR_LOC : integer;
   attribute NUM_CHAR_LOC of top_design_v_axi4s_vid_out_0_1_xpm_memory_base : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_axi4s_vid_out_0_1_xpm_memory_base : entity is "xpm_memory_base";
   attribute P_ECC_MODE : integer;
   attribute P_ECC_MODE of top_design_v_axi4s_vid_out_0_1_xpm_memory_base : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_A : integer;
@@ -11948,8 +11930,6 @@ entity top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_cdc_single is
     src_in : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_cdc_single : entity is "v_axi4s_vid_out_v4_0_20_cdc_single";
 end top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_cdc_single;
 
 architecture STRUCTURE of top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_cdc_single is
@@ -12036,8 +12016,6 @@ entity top_design_v_axi4s_vid_out_0_1_xpm_fifo_rst is
     \guf.underflow_i_reg\ : in STD_LOGIC;
     rd_en : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_axi4s_vid_out_0_1_xpm_fifo_rst : entity is "xpm_fifo_rst";
 end top_design_v_axi4s_vid_out_0_1_xpm_fifo_rst;
 
 architecture STRUCTURE of top_design_v_axi4s_vid_out_0_1_xpm_fifo_rst is
@@ -12626,8 +12604,6 @@ entity top_design_v_axi4s_vid_out_0_1_xpm_fifo_base is
   attribute FULL_RESET_VALUE of top_design_v_axi4s_vid_out_0_1_xpm_fifo_base : entity is 1;
   attribute FULL_RST_VAL : string;
   attribute FULL_RST_VAL of top_design_v_axi4s_vid_out_0_1_xpm_fifo_base : entity is "1'b1";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_axi4s_vid_out_0_1_xpm_fifo_base : entity is "xpm_fifo_base";
   attribute PE_THRESH_ADJ : integer;
   attribute PE_THRESH_ADJ of top_design_v_axi4s_vid_out_0_1_xpm_fifo_base : entity is 8;
   attribute PE_THRESH_MAX : integer;
@@ -14004,8 +13980,6 @@ entity top_design_v_axi4s_vid_out_0_1_xpm_fifo_async is
   attribute FIFO_WRITE_DEPTH of top_design_v_axi4s_vid_out_0_1_xpm_fifo_async : entity is 1024;
   attribute FULL_RESET_VALUE : integer;
   attribute FULL_RESET_VALUE of top_design_v_axi4s_vid_out_0_1_xpm_fifo_async : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_axi4s_vid_out_0_1_xpm_fifo_async : entity is "xpm_fifo_async";
   attribute PROG_EMPTY_THRESH : integer;
   attribute PROG_EMPTY_THRESH of top_design_v_axi4s_vid_out_0_1_xpm_fifo_async : entity is 10;
   attribute PROG_FULL_THRESH : integer;
@@ -14239,8 +14213,6 @@ entity top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_fifo_async is
     dest_out : in STD_LOGIC;
     aclken : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_fifo_async : entity is "v_axi4s_vid_out_v4_0_20_fifo_async";
 end top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_fifo_async;
 
 architecture STRUCTURE of top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_fifo_async is
@@ -14550,8 +14522,6 @@ entity top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_coupler is
     dest_out : in STD_LOGIC;
     aclken : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_coupler : entity is "v_axi4s_vid_out_v4_0_20_coupler";
 end top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_coupler;
 
 architecture STRUCTURE of top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_coupler is
@@ -14675,8 +14645,6 @@ entity top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20 is
   attribute C_VTG_MASTER_SLAVE of top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20 : entity is 0;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20 : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20 : entity is "v_axi4s_vid_out_v4_0_20";
 end top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20;
 
 architecture STRUCTURE of top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20 is
@@ -14975,7 +14943,7 @@ architecture STRUCTURE of top_design_v_axi4s_vid_out_0_1 is
   attribute X_INTERFACE_MODE : string;
   attribute X_INTERFACE_MODE of aclk : signal is "slave";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of aclk : signal is "XIL_INTERFACENAME aclk_intf, ASSOCIATED_BUSIF video_in, FREQ_HZ 1.48148e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of aclk : signal is "XIL_INTERFACENAME aclk_intf, ASSOCIATED_BUSIF video_in, FREQ_HZ 148148163, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of aclken : signal is "xilinx.com:signal:clockenable:1.0 aclken_intf CE";
   attribute X_INTERFACE_MODE of aclken : signal is "slave";
   attribute X_INTERFACE_PARAMETER of aclken : signal is "XIL_INTERFACENAME aclken_intf, POLARITY ACTIVE_HIGH";
@@ -15011,7 +14979,7 @@ architecture STRUCTURE of top_design_v_axi4s_vid_out_0_1 is
   attribute X_INTERFACE_MODE of vtg_vsync : signal is "slave";
   attribute X_INTERFACE_INFO of s_axis_video_tdata : signal is "xilinx.com:interface:axis:1.0 video_in TDATA";
   attribute X_INTERFACE_MODE of s_axis_video_tdata : signal is "slave";
-  attribute X_INTERFACE_PARAMETER of s_axis_video_tdata : signal is "XIL_INTERFACENAME video_in, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 1.48148e+08, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of s_axis_video_tdata : signal is "XIL_INTERFACENAME video_in, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 148148163, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of vid_data : signal is "xilinx.com:interface:vid_io:1.0 vid_io_out DATA";
 begin
   status(31) <= \<const0>\;

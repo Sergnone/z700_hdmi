@@ -669,7 +669,7 @@
             "value": "148.5"
           },
           "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "50"
+            "value": "100"
           },
           "PCW_FPGA2_PERIPHERAL_FREQMHZ": {
             "value": "50"
@@ -999,7 +999,7 @@
             "value": "0"
           },
           "PCW_S_AXI_HP0_DATA_WIDTH": {
-            "value": "64"
+            "value": "32"
           },
           "PCW_S_AXI_HP0_ID_WIDTH": {
             "value": "6"

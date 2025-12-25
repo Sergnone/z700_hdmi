@@ -374,7 +374,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.FREQ_HZ">1.48148e+08</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.FREQ_HZ">148148163</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1003,7 +1003,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.FREQ_HZ">1.48148e+08</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.FREQ_HZ">148148163</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1293,7 +1293,7 @@
           <spirit:name>FREQ_HZ</spirit:name>
           <spirit:displayName>aclk frequency</spirit:displayName>
           <spirit:description>aclk frequency</spirit:description>
-          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_HZ" spirit:minimum="1" spirit:maximum="1000000000" spirit:rangeType="long">1.48148e+08</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_HZ" spirit:minimum="1" spirit:maximum="1000000000" spirit:rangeType="long">148148163</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
@@ -1398,7 +1398,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:03fc34c8</spirit:value>
+            <spirit:value>9:ed21b75e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1421,7 +1421,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c176a4d2</spirit:value>
+            <spirit:value>9:fbf8f5b2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1437,11 +1437,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 25 09:55:49 UTC 2025</spirit:value>
+            <spirit:value>Thu Dec 25 13:59:04 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c176a4d2</spirit:value>
+            <spirit:value>9:fbf8f5b2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1464,7 +1464,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:03fc34c8</spirit:value>
+            <spirit:value>9:ed21b75e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1480,11 +1480,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 25 09:55:49 UTC 2025</spirit:value>
+            <spirit:value>Thu Dec 25 13:59:04 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:03fc34c8</spirit:value>
+            <spirit:value>9:ed21b75e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3502,12 +3502,12 @@
       <spirit:modelParameter spirit:dataType="long">
         <spirit:name>C_LIMIT_WRITE_LENGTH</spirit:name>
         <spirit:displayName>C_LIMIT_WRITE_LENGTH</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_LIMIT_WRITE_LENGTH" spirit:minimum="0" spirit:maximum="256" spirit:rangeType="long">0</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_LIMIT_WRITE_LENGTH" spirit:minimum="0" spirit:maximum="256" spirit:rangeType="long">256</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="long">
         <spirit:name>C_LIMIT_READ_LENGTH</spirit:name>
         <spirit:displayName>C_LIMIT_READ_LENGTH</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_LIMIT_READ_LENGTH" spirit:minimum="0" spirit:maximum="256" spirit:rangeType="long">0</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_LIMIT_READ_LENGTH" spirit:minimum="0" spirit:maximum="256" spirit:rangeType="long">256</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="long">
         <spirit:name>C_WRITE_WATERMARK</spirit:name>
@@ -3562,12 +3562,12 @@
       <spirit:modelParameter spirit:dataType="bitString">
         <spirit:name>C_SEP_WDATA_WIDTH_ARRAY</spirit:name>
         <spirit:displayName>C_SEP_WDATA_WIDTH_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEP_WDATA_WIDTH_ARRAY" spirit:bitStringLength="32">0x00000040</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEP_WDATA_WIDTH_ARRAY" spirit:bitStringLength="32">0x00000020</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitString">
         <spirit:name>C_SEP_RDATA_WIDTH_ARRAY</spirit:name>
         <spirit:displayName>C_SEP_RDATA_WIDTH_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEP_RDATA_WIDTH_ARRAY" spirit:bitStringLength="32">0x00000040</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEP_RDATA_WIDTH_ARRAY" spirit:bitStringLength="32">0x00000020</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitString">
         <spirit:name>C_SEP_PROTOCOL_ARRAY</spirit:name>
@@ -3582,12 +3582,12 @@
       <spirit:modelParameter spirit:dataType="bitString">
         <spirit:name>C_MSC_WDATA_WIDTH_ARRAY</spirit:name>
         <spirit:displayName>C_MSC_WDATA_WIDTH_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MSC_WDATA_WIDTH_ARRAY" spirit:bitStringLength="32">0x00000040</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MSC_WDATA_WIDTH_ARRAY" spirit:bitStringLength="32">0x00000020</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitString">
         <spirit:name>C_MSC_RDATA_WIDTH_ARRAY</spirit:name>
         <spirit:displayName>C_MSC_RDATA_WIDTH_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MSC_RDATA_WIDTH_ARRAY" spirit:bitStringLength="32">0x00000040</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MSC_RDATA_WIDTH_ARRAY" spirit:bitStringLength="32">0x00000020</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="long">
         <spirit:name>C_ADDR_WIDTH</spirit:name>
@@ -3799,12 +3799,12 @@
     <spirit:parameter>
       <spirit:name>LIMIT_READ_LENGTH</spirit:name>
       <spirit:displayName>LIMIT_READ_LENGTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.LIMIT_READ_LENGTH" spirit:order="3" spirit:minimum="0" spirit:maximum="256" spirit:rangeType="long">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.LIMIT_READ_LENGTH" spirit:order="3" spirit:minimum="0" spirit:maximum="256" spirit:rangeType="long">256</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>LIMIT_WRITE_LENGTH</spirit:name>
       <spirit:displayName>LIMIT_WRITE_LENGTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.LIMIT_WRITE_LENGTH" spirit:order="4" spirit:minimum="0" spirit:maximum="256" spirit:rangeType="long">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.LIMIT_WRITE_LENGTH" spirit:order="4" spirit:minimum="0" spirit:maximum="256" spirit:rangeType="long">256</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>READ_WATERMARK</spirit:name>
@@ -3944,12 +3944,12 @@
     <spirit:parameter>
       <spirit:name>SEP000_RDATA_WIDTH</spirit:name>
       <spirit:displayName>SEP000_RDATA_WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEP000_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835">64</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEP000_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835">32</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEP000_WDATA_WIDTH</spirit:name>
       <spirit:displayName>SEP000_WDATA_WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEP000_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835">64</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEP000_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835">32</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEP000_PROTOCOL</spirit:name>
@@ -7784,12 +7784,12 @@
     <spirit:parameter>
       <spirit:name>MSC000_RDATA_WIDTH</spirit:name>
       <spirit:displayName>MSC000_RDATA_WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC000_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835">64</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC000_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835">32</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC000_WDATA_WIDTH</spirit:name>
       <spirit:displayName>MSC000_WDATA_WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC000_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835">64</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC000_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835">32</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC001_RDATA_WIDTH</spirit:name>
@@ -10429,8 +10429,6 @@
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.HAS_BURST" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.ID_WIDTH" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.IS_CASCADED" xilinx:valueSource="user"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.LIMIT_READ_LENGTH" xilinx:valueSource="user"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.LIMIT_WRITE_LENGTH" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.MAX_RUSER_BITS_PER_BYTE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.MAX_WUSER_BITS_PER_BYTE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.MEP_IDENTIFIER_WIDTH" xilinx:valueSource="user"/>

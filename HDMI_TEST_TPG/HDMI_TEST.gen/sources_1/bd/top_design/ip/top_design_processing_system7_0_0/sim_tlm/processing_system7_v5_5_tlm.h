@@ -202,7 +202,7 @@ processing_system7_v5_5_tlm(sc_core::sc_module_name name,
     // Bridge's Xtlm wr/rd target sockets binds with 
     // xtlm initiator sockets of processing_system7_tlm and tlm simple initiator 
     // socket with xilinx_zynq's target socket
-    xtlm::xaximm_xtlm2tlm_t<64,32> S_AXI_HP0_xtlm_brdg;
+    xtlm::xaximm_xtlm2tlm_t<32,32> S_AXI_HP0_xtlm_brdg;
     xtlm::xtlm_aximm_fifo *S_AXI_HP0_buff;
 
     // This Bridges converts b_transport to nb_transports and also

@@ -7,7 +7,7 @@
   **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Thu Dec 25 12:56:38 2025
+  **** Start of session at: Thu Dec 25 17:00:31 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -27,16 +27,16 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 136231
+INFO: [Synth 8-7075] Helper process launched with PID 454387
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2295.727 ; gain = 484.125 ; free physical = 12879 ; free virtual = 29128
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2296.414 ; gain = 484.812 ; free physical = 9128 ; free virtual = 26622
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top_design_wrapper' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/hdl/top_design_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'top_design' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:13]
-INFO: [Synth 8-6157] synthesizing module 'top_design_axi_dynclk_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_axi_dynclk_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_axi_dynclk_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_axi_dynclk_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'top_design_axi_smc_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_axi_smc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_axi_smc_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_axi_smc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_design_axi_dynclk_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_axi_dynclk_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_axi_dynclk_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_axi_dynclk_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_design_axi_smc_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_axi_smc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_axi_smc_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_axi_smc_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'top_design_axi_smc_1' is unconnected for instance 'axi_smc' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:421]
 WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'top_design_axi_smc_1' is unconnected for instance 'axi_smc' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:421]
 WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'top_design_axi_smc_1' is unconnected for instance 'axi_smc' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:421]
@@ -50,10 +50,10 @@ WARNING: [Synth 8-7071] port 'M05_AXI_arprot' of module 'top_design_axi_smc_1' i
 WARNING: [Synth 8-7071] port 'M06_AXI_awprot' of module 'top_design_axi_smc_1' is unconnected for instance 'axi_smc' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:421]
 WARNING: [Synth 8-7071] port 'M06_AXI_arprot' of module 'top_design_axi_smc_1' is unconnected for instance 'axi_smc' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:421]
 WARNING: [Synth 8-7023] instance 'axi_smc' of module 'top_design_axi_smc_1' has 173 connections declared, but only 161 given [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:421]
-INFO: [Synth 8-6157] synthesizing module 'top_design_video_lock_monitor_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_video_lock_monitor_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_video_lock_monitor_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_video_lock_monitor_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'top_design_processing_system7_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_processing_system7_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_design_video_lock_monitor_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_video_lock_monitor_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_video_lock_monitor_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_video_lock_monitor_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_design_processing_system7_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_processing_system7_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'TTC0_WAVE0_OUT' of module 'top_design_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:606]
 WARNING: [Synth 8-7071] port 'TTC0_WAVE1_OUT' of module 'top_design_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:606]
 WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'top_design_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:606]
@@ -67,19 +67,19 @@ WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'top_design_processing
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'top_design_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:606]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'top_design_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:606]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'top_design_processing_system7_0_0' has 114 connections declared, but only 102 given [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:606]
-INFO: [Synth 8-6157] synthesizing module 'top_design_rgb2dvi_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_rgb2dvi_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_rgb2dvi_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_rgb2dvi_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'top_design_rst_ps7_0_148M_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_rst_ps7_0_148M_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_rst_ps7_0_148M_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_rst_ps7_0_148M_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_design_rgb2dvi_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_rgb2dvi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_rgb2dvi_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_rgb2dvi_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_design_rst_ps7_0_148M_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_rst_ps7_0_148M_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_rst_ps7_0_148M_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_rst_ps7_0_148M_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'top_design_rst_ps7_0_148M_1' is unconnected for instance 'rst_ps7_0_148M' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:721]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'top_design_rst_ps7_0_148M_1' is unconnected for instance 'rst_ps7_0_148M' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:721]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'top_design_rst_ps7_0_148M_1' is unconnected for instance 'rst_ps7_0_148M' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:721]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'top_design_rst_ps7_0_148M_1' is unconnected for instance 'rst_ps7_0_148M' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:721]
 WARNING: [Synth 8-7023] instance 'rst_ps7_0_148M' of module 'top_design_rst_ps7_0_148M_1' has 10 connections declared, but only 6 given [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:721]
-INFO: [Synth 8-6157] synthesizing module 'top_design_smartconnect_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_smartconnect_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_smartconnect_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_smartconnect_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_axi4s_vid_out_0_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_v_axi4s_vid_out_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_axi4s_vid_out_0_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_v_axi4s_vid_out_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_design_smartconnect_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_smartconnect_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_axi4s_vid_out_0_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_v_axi4s_vid_out_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_axi4s_vid_out_0_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_v_axi4s_vid_out_0_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'vid_vblank' of module 'top_design_v_axi4s_vid_out_0_1' is unconnected for instance 'v_axi4s_vid_out_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:830]
 WARNING: [Synth 8-7071] port 'vid_hblank' of module 'top_design_v_axi4s_vid_out_0_1' is unconnected for instance 'v_axi4s_vid_out_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:830]
 WARNING: [Synth 8-7071] port 'vid_field_id' of module 'top_design_v_axi4s_vid_out_0_1' is unconnected for instance 'v_axi4s_vid_out_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:830]
@@ -87,8 +87,8 @@ WARNING: [Synth 8-7071] port 'underflow' of module 'top_design_v_axi4s_vid_out_0
 WARNING: [Synth 8-7071] port 'fifo_read_level' of module 'top_design_v_axi4s_vid_out_0_1' is unconnected for instance 'v_axi4s_vid_out_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:830]
 WARNING: [Synth 8-7071] port 'status' of module 'top_design_v_axi4s_vid_out_0_1' is unconnected for instance 'v_axi4s_vid_out_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:830]
 WARNING: [Synth 8-7023] instance 'v_axi4s_vid_out_0' of module 'top_design_v_axi4s_vid_out_0_1' has 32 connections declared, but only 26 given [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:830]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_v_frmbuf_rd_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_v_frmbuf_rd_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_rd_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_v_frmbuf_rd_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_rd_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_v_frmbuf_rd_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_mm_video_AWREGION' of module 'top_design_v_frmbuf_rd_0_0' is unconnected for instance 'v_frmbuf_rd_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:857]
 WARNING: [Synth 8-7071] port 'm_axi_mm_video_ARREGION' of module 'top_design_v_frmbuf_rd_0_0' is unconnected for instance 'v_frmbuf_rd_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:857]
 WARNING: [Synth 8-7071] port 'm_axis_video_TKEEP' of module 'top_design_v_frmbuf_rd_0_0' is unconnected for instance 'v_frmbuf_rd_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:857]
@@ -96,42 +96,42 @@ WARNING: [Synth 8-7071] port 'm_axis_video_TSTRB' of module 'top_design_v_frmbuf
 WARNING: [Synth 8-7071] port 'm_axis_video_TID' of module 'top_design_v_frmbuf_rd_0_0' is unconnected for instance 'v_frmbuf_rd_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:857]
 WARNING: [Synth 8-7071] port 'm_axis_video_TDEST' of module 'top_design_v_frmbuf_rd_0_0' is unconnected for instance 'v_frmbuf_rd_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:857]
 WARNING: [Synth 8-7023] instance 'v_frmbuf_rd_0' of module 'top_design_v_frmbuf_rd_0_0' has 64 connections declared, but only 58 given [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:857]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_v_frmbuf_wr_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_v_frmbuf_wr_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_v_frmbuf_wr_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_v_frmbuf_wr_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_mm_video_AWREGION' of module 'top_design_v_frmbuf_wr_0_0' is unconnected for instance 'v_frmbuf_wr_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:916]
 WARNING: [Synth 8-7071] port 'm_axi_mm_video_ARREGION' of module 'top_design_v_frmbuf_wr_0_0' is unconnected for instance 'v_frmbuf_wr_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:916]
 WARNING: [Synth 8-7023] instance 'v_frmbuf_wr_0' of module 'top_design_v_frmbuf_wr_0_0' has 64 connections declared, but only 62 given [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:916]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_tc_0_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_v_tc_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_tc_0_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_v_tc_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_tc_0_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_v_tc_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_tc_0_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_v_tc_0_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'fsync_out' of module 'top_design_v_tc_0_1' is unconnected for instance 'v_tc_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:979]
 WARNING: [Synth 8-7023] instance 'v_tc_0' of module 'top_design_v_tc_0_1' has 33 connections declared, but only 32 given [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:979]
-INFO: [Synth 8-6157] synthesizing module 'top_design_v_tpg_0_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_v_tpg_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_v_tpg_0_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_v_tpg_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_tpg_0_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_v_tpg_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_tpg_0_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_v_tpg_0_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'fid' of module 'top_design_v_tpg_0_1' is unconnected for instance 'v_tpg_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:1012]
 WARNING: [Synth 8-7023] instance 'v_tpg_0' of module 'top_design_v_tpg_0_1' has 31 connections declared, but only 30 given [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:1012]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:1043]
-INFO: [Synth 8-6157] synthesizing module 'top_design_clk_wiz_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_clk_wiz_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_clk_wiz_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_design_clk_wiz_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_clk_wiz_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_clk_wiz_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'clk_out1' of module 'top_design_clk_wiz_0_0' is unconnected for instance 'video_clk_wiz' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:1043]
 WARNING: [Synth 8-7071] port 'locked' of module 'top_design_clk_wiz_0_0' is unconnected for instance 'video_clk_wiz' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:1043]
 WARNING: [Synth 8-7023] instance 'video_clk_wiz' of module 'top_design_clk_wiz_0_0' has 4 connections declared, but only 2 given [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:1043]
-INFO: [Synth 8-6157] synthesizing module 'top_design_axi_gpio_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_design_axi_gpio_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-136140-serg/realtime/top_design_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_design_axi_gpio_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_axi_gpio_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/.Xil/Vivado-454291-serg/realtime/top_design_axi_gpio_0_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'top_design' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/synth/top_design.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'top_design_wrapper' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/hdl/top_design_wrapper.v:13]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2398.664 ; gain = 587.062 ; free physical = 12774 ; free virtual = 29014
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2391.352 ; gain = 579.750 ; free physical = 9013 ; free virtual = 26510
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2401.633 ; gain = 590.031 ; free physical = 12774 ; free virtual = 29014
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2397.289 ; gain = 585.688 ; free physical = 9013 ; free virtual = 26510
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2401.633 ; gain = 590.031 ; free physical = 12774 ; free virtual = 29014
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2397.289 ; gain = 585.688 ; free physical = 9013 ; free virtual = 26510
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2401.633 ; gain = 0.000 ; free physical = 12774 ; free virtual = 29014
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2397.289 ; gain = 0.000 ; free physical = 9013 ; free virtual = 26510
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -172,33 +172,33 @@ Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.
 Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2449.285 ; gain = 0.000 ; free physical = 12789 ; free virtual = 29028
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2444.941 ; gain = 0.000 ; free physical = 9015 ; free virtual = 26511
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2449.320 ; gain = 0.000 ; free physical = 12789 ; free virtual = 29028
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2444.977 ; gain = 0.000 ; free physical = 9015 ; free virtual = 26511
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'top_design_i/hls_ip_reset' at clock pin 's_axi_aclk' is different from the actual clock period '6.749', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'top_design_i/video_lock_monitor' at clock pin 's_axi_aclk' is different from the actual clock period '6.749', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2449.320 ; gain = 637.719 ; free physical = 12849 ; free virtual = 29089
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2444.977 ; gain = 633.375 ; free physical = 9040 ; free virtual = 26535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2457.289 ; gain = 645.688 ; free physical = 12849 ; free virtual = 29089
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2452.945 ; gain = 641.344 ; free physical = 9040 ; free virtual = 26535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2457.289 ; gain = 645.688 ; free physical = 12849 ; free virtual = 29089
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2452.945 ; gain = 641.344 ; free physical = 9040 ; free virtual = 26535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2457.289 ; gain = 645.688 ; free physical = 12849 ; free virtual = 29090
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2452.945 ; gain = 641.344 ; free physical = 9040 ; free virtual = 26536
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -220,25 +220,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2457.289 ; gain = 645.688 ; free physical = 12900 ; free virtual = 29141
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2452.945 ; gain = 641.344 ; free physical = 9048 ; free virtual = 26549
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2557.289 ; gain = 745.688 ; free physical = 12860 ; free virtual = 29101
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2555.945 ; gain = 744.344 ; free physical = 8984 ; free virtual = 26485
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2558.289 ; gain = 746.688 ; free physical = 12860 ; free virtual = 29101
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2555.945 ; gain = 744.344 ; free physical = 8984 ; free virtual = 26485
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2568.305 ; gain = 756.703 ; free physical = 12841 ; free virtual = 29082
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2566.961 ; gain = 755.359 ; free physical = 8976 ; free virtual = 26477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -256,37 +256,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2754.117 ; gain = 942.516 ; free physical = 12682 ; free virtual = 28928
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.773 ; gain = 941.172 ; free physical = 8820 ; free virtual = 26321
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2754.117 ; gain = 942.516 ; free physical = 12682 ; free virtual = 28928
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.773 ; gain = 941.172 ; free physical = 8820 ; free virtual = 26321
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2754.117 ; gain = 942.516 ; free physical = 12682 ; free virtual = 28928
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.773 ; gain = 941.172 ; free physical = 8820 ; free virtual = 26321
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2754.117 ; gain = 942.516 ; free physical = 12682 ; free virtual = 28928
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.773 ; gain = 941.172 ; free physical = 8820 ; free virtual = 26321
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2754.117 ; gain = 942.516 ; free physical = 12682 ; free virtual = 28928
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.773 ; gain = 941.172 ; free physical = 8820 ; free virtual = 26321
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2754.117 ; gain = 942.516 ; free physical = 12682 ; free virtual = 28928
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.773 ; gain = 941.172 ; free physical = 8820 ; free virtual = 26321
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -334,27 +334,27 @@ Report Cell Usage:
 |16    |OBUF                            |     1|
 +------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2754.117 ; gain = 942.516 ; free physical = 12682 ; free virtual = 28928
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.773 ; gain = 941.172 ; free physical = 8820 ; free virtual = 26321
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2754.117 ; gain = 894.828 ; free physical = 12683 ; free virtual = 28928
-Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2754.125 ; gain = 942.516 ; free physical = 12683 ; free virtual = 28928
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2752.773 ; gain = 893.484 ; free physical = 8820 ; free virtual = 26321
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.781 ; gain = 941.172 ; free physical = 8820 ; free virtual = 26321
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2754.125 ; gain = 0.000 ; free physical = 12841 ; free virtual = 29090
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2752.781 ; gain = 0.000 ; free physical = 8987 ; free virtual = 26488
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2754.125 ; gain = 0.000 ; free physical = 12847 ; free virtual = 29097
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2752.781 ; gain = 0.000 ; free physical = 8987 ; free virtual = 26488
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 9f8f80a9
+Synth Design complete | Checksum: f0f8b3fc
 INFO: [Common 17-83] Releasing license: Synthesis
 54 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 2754.152 ; gain = 1130.254 ; free physical = 12854 ; free virtual = 29104
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1896.282; main = 1896.282; forked = 283.039
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3453.488; main = 2754.121; forked = 994.195
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2778.129 ; gain = 0.000 ; free physical = 12854 ; free virtual = 29104
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 2752.809 ; gain = 1128.910 ; free physical = 8987 ; free virtual = 26488
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1889.363; main = 1889.363; forked = 281.753
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3455.145; main = 2752.777; forked = 994.195
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2776.785 ; gain = 0.000 ; free physical = 8987 ; free virtual = 26488
 INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.runs/synth_1/top_design_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file top_design_wrapper_utilization_synth.rpt -pb top_design_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 25 12:57:01 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 25 17:00:54 2025...

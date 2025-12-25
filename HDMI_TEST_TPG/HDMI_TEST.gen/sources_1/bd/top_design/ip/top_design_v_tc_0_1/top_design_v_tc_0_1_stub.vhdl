@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Thu Dec 25 12:10:02 2025
+-- Date        : Mon Dec 22 19:21:18 2025
 -- Host        : serg running 64-bit Ubuntu 24.04.3 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top top_design_v_tc_0_1 -prefix
+--               top_design_v_tc_0_1_ top_design_v_tc_0_1_stub.vhdl
 -- Design      : top_design_v_tc_0_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-2
@@ -74,7 +74,7 @@ architecture stub of top_design_v_tc_0_1 is
   attribute x_interface_parameter of clken : signal is "XIL_INTERFACENAME clken_intf, POLARITY ACTIVE_HIGH";
   attribute x_interface_info of s_axi_aclk : signal is "xilinx.com:signal:clock:1.0 s_axi_aclk_intf CLK";
   attribute x_interface_mode of s_axi_aclk : signal is "slave s_axi_aclk_intf";
-  attribute x_interface_parameter of s_axi_aclk : signal is "XIL_INTERFACENAME s_axi_aclk_intf, ASSOCIATED_BUSIF ctrl, ASSOCIATED_RESET s_axi_aresetn, ASSOCIATED_CLKEN s_axi_aclken, FREQ_HZ 1.48148e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_aclk : signal is "XIL_INTERFACENAME s_axi_aclk_intf, ASSOCIATED_BUSIF ctrl, ASSOCIATED_RESET s_axi_aresetn, ASSOCIATED_CLKEN s_axi_aclken, FREQ_HZ 148148163, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of s_axi_aclken : signal is "xilinx.com:signal:clockenable:1.0 s_axi_aclken_intf CE";
   attribute x_interface_mode of s_axi_aclken : signal is "slave s_axi_aclken_intf";
   attribute x_interface_parameter of s_axi_aclken : signal is "XIL_INTERFACENAME s_axi_aclken_intf, POLARITY ACTIVE_HIGH";
@@ -92,7 +92,7 @@ architecture stub of top_design_v_tc_0_1 is
   attribute x_interface_parameter of s_axi_aresetn : signal is "XIL_INTERFACENAME s_axi_aresetn_intf, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of s_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 ctrl AWADDR";
   attribute x_interface_mode of s_axi_awaddr : signal is "slave ctrl";
-  attribute x_interface_parameter of s_axi_awaddr : signal is "XIL_INTERFACENAME ctrl, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 1.48148e+08, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_awaddr : signal is "XIL_INTERFACENAME ctrl, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 148148163, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of s_axi_awvalid : signal is "xilinx.com:interface:aximm:1.0 ctrl AWVALID";
   attribute x_interface_info of s_axi_awready : signal is "xilinx.com:interface:aximm:1.0 ctrl AWREADY";
   attribute x_interface_info of s_axi_wdata : signal is "xilinx.com:interface:aximm:1.0 ctrl WDATA";

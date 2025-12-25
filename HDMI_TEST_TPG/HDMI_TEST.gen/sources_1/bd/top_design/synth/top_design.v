@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Thu Dec 25 12:55:47 2025
+//Date        : Thu Dec 25 16:58:53 2025
 //Host        : serg running 64-bit Ubuntu 24.04.3 LTS
 //Command     : generate_target top_design.bd
 //Design      : top_design
@@ -284,15 +284,15 @@ module top_design
   wire smartconnect_0_M00_AXI_BREADY;
   wire [1:0]smartconnect_0_M00_AXI_BRESP;
   wire smartconnect_0_M00_AXI_BVALID;
-  wire [63:0]smartconnect_0_M00_AXI_RDATA;
+  wire [31:0]smartconnect_0_M00_AXI_RDATA;
   wire smartconnect_0_M00_AXI_RLAST;
   wire smartconnect_0_M00_AXI_RREADY;
   wire [1:0]smartconnect_0_M00_AXI_RRESP;
   wire smartconnect_0_M00_AXI_RVALID;
-  wire [63:0]smartconnect_0_M00_AXI_WDATA;
+  wire [31:0]smartconnect_0_M00_AXI_WDATA;
   wire smartconnect_0_M00_AXI_WLAST;
   wire smartconnect_0_M00_AXI_WREADY;
-  wire [7:0]smartconnect_0_M00_AXI_WSTRB;
+  wire [3:0]smartconnect_0_M00_AXI_WSTRB;
   wire smartconnect_0_M00_AXI_WVALID;
   wire v_axi4s_vid_out_0_locked;
   wire v_axi4s_vid_out_0_overflow;

@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Thu Dec 25 12:09:59 2025
+-- Date        : Mon Dec 22 19:21:04 2025
 -- Host        : serg running 64-bit Ubuntu 24.04.3 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_1/top_design_rst_ps7_0_148M_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top top_design_rst_ps7_0_148M_1 -prefix
+--               top_design_rst_ps7_0_148M_1_ top_design_rst_ps7_0_148M_1_stub.vhdl
 -- Design      : top_design_rst_ps7_0_148M_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-2
@@ -45,7 +45,7 @@ architecture stub of top_design_rst_ps7_0_148M_1 is
   attribute x_interface_mode : string;
   attribute x_interface_mode of slowest_sync_clk : signal is "slave clock";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of slowest_sync_clk : signal is "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 1.48148e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of slowest_sync_clk : signal is "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 148148163, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of ext_reset_in : signal is "xilinx.com:signal:reset:1.0 ext_reset RST";
   attribute x_interface_mode of ext_reset_in : signal is "slave ext_reset";
   attribute x_interface_parameter of ext_reset_in : signal is "XIL_INTERFACENAME ext_reset, BOARD.ASSOCIATED_PARAM RESET_BOARD_INTERFACE, POLARITY ACTIVE_LOW, INSERT_VIP 0";

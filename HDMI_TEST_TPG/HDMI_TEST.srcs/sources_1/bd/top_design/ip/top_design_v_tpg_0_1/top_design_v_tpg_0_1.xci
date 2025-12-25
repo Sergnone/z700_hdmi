@@ -97,7 +97,7 @@
             "DATA_WIDTH": [ { "value": "32", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
             "PROTOCOL": [ { "value": "AXI4LITE", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
             "READ_WRITE_MODE": [ { "value": "READ_WRITE", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
-            "FREQ_HZ": [ { "value": "1.48148e+08", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_HZ": [ { "value": "148148163", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "ID_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "AWUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "ARUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
@@ -152,7 +152,7 @@
           "parameters": {
             "ASSOCIATED_BUSIF": [ { "value": "s_axi_CTRL:m_axis_video", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
             "ASSOCIATED_RESET": [ { "value": "ap_rst_n", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
-            "FREQ_HZ": [ { "value": "1.48148e+08", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "user", "usage": "all" } ],
+            "FREQ_HZ": [ { "value": "148148163", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "user", "usage": "all" } ],
             "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PHASE": [ { "value": "0.0", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "top_design_processing_system7_0_0_FCLK_CLK0", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
@@ -200,7 +200,7 @@
             "HAS_TSTRB": [ { "value": "1", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "HAS_TKEEP": [ { "value": "1", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "HAS_TLAST": [ { "value": "1", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "FREQ_HZ": [ { "value": "1.48148e+08", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_HZ": [ { "value": "148148163", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PHASE": [ { "value": "0.0", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "top_design_processing_system7_0_0_FCLK_CLK0", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
@@ -237,5 +237,5 @@
       }
     }
   },
-  "checksum": "fbb0fa5e"
+  "checksum": "33c4762f"
 }

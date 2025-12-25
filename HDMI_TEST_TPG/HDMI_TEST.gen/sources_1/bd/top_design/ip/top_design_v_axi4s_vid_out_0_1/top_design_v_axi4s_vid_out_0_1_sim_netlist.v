@@ -2,10 +2,10 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-// Date        : Thu Dec 25 12:09:55 2025
+// Date        : Mon Dec 22 19:21:07 2025
 // Host        : serg running 64-bit Ubuntu 24.04.3 LTS
-// Command     : write_verilog -force -mode funcsim
-//               /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_axi4s_vid_out_0_1/top_design_v_axi4s_vid_out_0_1_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top top_design_v_axi4s_vid_out_0_1 -prefix
+//               top_design_v_axi4s_vid_out_0_1_ top_design_v_axi4s_vid_out_0_1_sim_netlist.v
 // Design      : top_design_v_axi4s_vid_out_0_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -48,10 +48,10 @@ module top_design_v_axi4s_vid_out_0_1
     fifo_read_level,
     status,
     sof_state_out);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 aclk_intf CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aclk_intf, ASSOCIATED_BUSIF video_in, FREQ_HZ 1.48148e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input aclk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 aclk_intf CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aclk_intf, ASSOCIATED_BUSIF video_in, FREQ_HZ 148148163, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input aclk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clockenable:1.0 aclken_intf CE" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aclken_intf, POLARITY ACTIVE_HIGH" *) input aclken;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 aresetn_intf RST" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aresetn_intf, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input aresetn;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 video_in TDATA" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME video_in, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 1.48148e+08, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) input [23:0]s_axis_video_tdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 video_in TDATA" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME video_in, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 148148163, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) input [23:0]s_axis_video_tdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 video_in TVALID" *) input s_axis_video_tvalid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 video_in TREADY" *) output s_axis_video_tready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 video_in TUSER" *) input s_axis_video_tuser;
@@ -203,7 +203,7 @@ endmodule
 (* C_HYSTERESIS_LEVEL = "12" *) (* C_INCLUDE_PIXEL_REMAP_420 = "0" *) (* C_INCLUDE_PIXEL_REPEAT = "0" *) 
 (* C_NATIVE_COMPONENT_WIDTH = "8" *) (* C_NATIVE_DATA_WIDTH = "24" *) (* C_PIXELS_PER_CLOCK = "1" *) 
 (* C_SYNC_LOCK_THRESHOLD = "4" *) (* C_S_AXIS_COMPONENT_WIDTH = "8" *) (* C_S_AXIS_TDATA_WIDTH = "24" *) 
-(* C_VTG_MASTER_SLAVE = "0" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "v_axi4s_vid_out_v4_0_20" *) 
+(* C_VTG_MASTER_SLAVE = "0" *) (* DowngradeIPIdentifiedWarnings = "yes" *) 
 module top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20
    (aclk,
     aclken,
@@ -494,7 +494,6 @@ module top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "v_axi4s_vid_out_v4_0_20_cdc_single" *) 
 module top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_cdc_single
    (dest_out,
     src_in,
@@ -543,7 +542,6 @@ module top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_cdc_single_0
         .src_in(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "v_axi4s_vid_out_v4_0_20_coupler" *) 
 module top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_coupler
    (overflow,
     dout,
@@ -662,7 +660,6 @@ module top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_coupler
         .vid_io_out_clk(vid_io_out_clk));
 endmodule
 
-(* ORIG_REF_NAME = "v_axi4s_vid_out_v4_0_20_fifo_async" *) 
 module top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_fifo_async
    (overflow,
     dout,
@@ -936,7 +933,6 @@ module top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_fifo_async
         .O(sof_state_out_reg));
 endmodule
 
-(* ORIG_REF_NAME = "v_axi4s_vid_out_v4_0_20_formatter" *) 
 module top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_formatter
    (vid_active_video,
     vid_vsync,
@@ -1300,7 +1296,6 @@ module top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_formatter
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "v_axi4s_vid_out_v4_0_20_sync" *) 
 module top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_sync
    (fifo_eol_dly,
     fifo_sof_dly,
@@ -4109,10 +4104,10 @@ module top_design_v_axi4s_vid_out_0_1_v_axi4s_vid_out_v4_0_20_sync
         .R(vid_io_out_reset));
 endmodule
 
-(* DEST_SYNC_FF = "4" *) (* INIT_SYNC_FF = "1" *) (* ORIG_REF_NAME = "xpm_cdc_gray" *) 
-(* REG_OUTPUT = "0" *) (* SIM_ASSERT_CHK = "0" *) (* SIM_LOSSLESS_GRAY_CHK = "0" *) 
-(* VERSION = "0" *) (* WIDTH = "10" *) (* XPM_MODULE = "TRUE" *) 
-(* keep_hierarchy = "soft" *) (* xpm_cdc = "GRAY" *) 
+(* DEST_SYNC_FF = "4" *) (* INIT_SYNC_FF = "1" *) (* REG_OUTPUT = "0" *) 
+(* SIM_ASSERT_CHK = "0" *) (* SIM_LOSSLESS_GRAY_CHK = "0" *) (* VERSION = "0" *) 
+(* WIDTH = "10" *) (* XPM_MODULE = "TRUE" *) (* keep_hierarchy = "soft" *) 
+(* xpm_cdc = "GRAY" *) 
 module top_design_v_axi4s_vid_out_0_1_xpm_cdc_gray
    (src_clk,
     src_in_bin,
@@ -6753,9 +6748,9 @@ module top_design_v_axi4s_vid_out_0_1_xpm_cdc_gray__parameterized1
         .R(1'b0));
 endmodule
 
-(* DEST_SYNC_FF = "4" *) (* INIT_SYNC_FF = "0" *) (* ORIG_REF_NAME = "xpm_cdc_single" *) 
-(* SIM_ASSERT_CHK = "0" *) (* SRC_INPUT_REG = "0" *) (* VERSION = "0" *) 
-(* XPM_MODULE = "TRUE" *) (* keep_hierarchy = "soft" *) (* xpm_cdc = "SINGLE" *) 
+(* DEST_SYNC_FF = "4" *) (* INIT_SYNC_FF = "0" *) (* SIM_ASSERT_CHK = "0" *) 
+(* SRC_INPUT_REG = "0" *) (* VERSION = "0" *) (* XPM_MODULE = "TRUE" *) 
+(* keep_hierarchy = "soft" *) (* xpm_cdc = "SINGLE" *) 
 module top_design_v_axi4s_vid_out_0_1_xpm_cdc_single
    (src_clk,
     src_in,
@@ -6866,9 +6861,8 @@ module top_design_v_axi4s_vid_out_0_1_xpm_cdc_single__1
 endmodule
 
 (* DEF_VAL = "1'b0" *) (* DEST_SYNC_FF = "4" *) (* INIT = "0" *) 
-(* INIT_SYNC_FF = "1" *) (* ORIG_REF_NAME = "xpm_cdc_sync_rst" *) (* SIM_ASSERT_CHK = "0" *) 
-(* VERSION = "0" *) (* XPM_MODULE = "TRUE" *) (* keep_hierarchy = "soft" *) 
-(* xpm_cdc = "SYNC_RST" *) 
+(* INIT_SYNC_FF = "1" *) (* SIM_ASSERT_CHK = "0" *) (* VERSION = "0" *) 
+(* XPM_MODULE = "TRUE" *) (* keep_hierarchy = "soft" *) (* xpm_cdc = "SYNC_RST" *) 
 module top_design_v_axi4s_vid_out_0_1_xpm_cdc_sync_rst
    (src_rst,
     dest_clk,
@@ -6991,7 +6985,6 @@ module top_design_v_axi4s_vid_out_0_1_xpm_cdc_sync_rst__1
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "xpm_counter_updn" *) 
 module top_design_v_axi4s_vid_out_0_1_xpm_counter_updn
    (S,
     DI,
@@ -8674,13 +8667,13 @@ endmodule
 (* CASCADE_HEIGHT = "1" *) (* CDC_SYNC_STAGES = "4" *) (* DOUT_RESET_VALUE = "0" *) 
 (* ECC_MODE = "no_ecc" *) (* EN_ADV_FEATURE_ASYNC = "16'b0000011100000111" *) (* EN_SIM_ASSERT_ERR = "warning" *) 
 (* FIFO_MEMORY_TYPE = "auto" *) (* FIFO_READ_LATENCY = "0" *) (* FIFO_WRITE_DEPTH = "1024" *) 
-(* FULL_RESET_VALUE = "1" *) (* ORIG_REF_NAME = "xpm_fifo_async" *) (* PROG_EMPTY_THRESH = "10" *) 
-(* PROG_FULL_THRESH = "10" *) (* P_COMMON_CLOCK = "0" *) (* P_ECC_MODE = "0" *) 
-(* P_FIFO_MEMORY_TYPE = "0" *) (* P_READ_MODE = "1" *) (* P_WAKEUP_TIME = "2" *) 
-(* RD_DATA_COUNT_WIDTH = "11" *) (* READ_DATA_WIDTH = "27" *) (* READ_MODE = "fwft" *) 
-(* RELATED_CLOCKS = "0" *) (* SIM_ASSERT_CHK = "0" *) (* USE_ADV_FEATURES = "0707" *) 
-(* WAKEUP_TIME = "0" *) (* WRITE_DATA_WIDTH = "27" *) (* WR_DATA_COUNT_WIDTH = "11" *) 
-(* XPM_MODULE = "TRUE" *) (* dont_touch = "true" *) 
+(* FULL_RESET_VALUE = "1" *) (* PROG_EMPTY_THRESH = "10" *) (* PROG_FULL_THRESH = "10" *) 
+(* P_COMMON_CLOCK = "0" *) (* P_ECC_MODE = "0" *) (* P_FIFO_MEMORY_TYPE = "0" *) 
+(* P_READ_MODE = "1" *) (* P_WAKEUP_TIME = "2" *) (* RD_DATA_COUNT_WIDTH = "11" *) 
+(* READ_DATA_WIDTH = "27" *) (* READ_MODE = "fwft" *) (* RELATED_CLOCKS = "0" *) 
+(* SIM_ASSERT_CHK = "0" *) (* USE_ADV_FEATURES = "0707" *) (* WAKEUP_TIME = "0" *) 
+(* WRITE_DATA_WIDTH = "27" *) (* WR_DATA_COUNT_WIDTH = "11" *) (* XPM_MODULE = "TRUE" *) 
+(* dont_touch = "true" *) 
 module top_design_v_axi4s_vid_out_0_1_xpm_fifo_async
    (sleep,
     rst,
@@ -8872,19 +8865,18 @@ endmodule
 (* FG_EQ_ASYM_DOUT = "1'b0" *) (* FIFO_MEMORY_TYPE = "0" *) (* FIFO_MEM_TYPE = "0" *) 
 (* FIFO_READ_DEPTH = "1024" *) (* FIFO_READ_LATENCY = "0" *) (* FIFO_SIZE = "27648" *) 
 (* FIFO_WRITE_DEPTH = "1024" *) (* FULL_RESET_VALUE = "1" *) (* FULL_RST_VAL = "1'b1" *) 
-(* ORIG_REF_NAME = "xpm_fifo_base" *) (* PE_THRESH_ADJ = "8" *) (* PE_THRESH_MAX = "1019" *) 
-(* PE_THRESH_MIN = "5" *) (* PF_THRESH_ADJ = "8" *) (* PF_THRESH_MAX = "1019" *) 
-(* PF_THRESH_MIN = "9" *) (* PROG_EMPTY_THRESH = "10" *) (* PROG_FULL_THRESH = "10" *) 
-(* RD_DATA_COUNT_WIDTH = "11" *) (* RD_DC_WIDTH_EXT = "11" *) (* RD_LATENCY = "2" *) 
-(* RD_MODE = "1" *) (* RD_PNTR_WIDTH = "10" *) (* READ_DATA_WIDTH = "27" *) 
-(* READ_MODE = "1" *) (* READ_MODE_LL = "1" *) (* RELATED_CLOCKS = "0" *) 
-(* REMOVE_WR_RD_PROT_LOGIC = "0" *) (* SIM_ASSERT_CHK = "0" *) (* USE_ADV_FEATURES = "0707" *) 
-(* VERSION = "0" *) (* WAKEUP_TIME = "0" *) (* WIDTH_RATIO = "1" *) 
-(* WRITE_DATA_WIDTH = "27" *) (* WR_DATA_COUNT_WIDTH = "11" *) (* WR_DC_WIDTH_EXT = "11" *) 
-(* WR_DEPTH_LOG = "10" *) (* WR_PNTR_WIDTH = "10" *) (* WR_RD_RATIO = "0" *) 
-(* WR_WIDTH_LOG = "5" *) (* XPM_MODULE = "TRUE" *) (* both_stages_valid = "3" *) 
-(* invalid = "0" *) (* keep_hierarchy = "soft" *) (* stage1_valid = "2" *) 
-(* stage2_valid = "1" *) 
+(* PE_THRESH_ADJ = "8" *) (* PE_THRESH_MAX = "1019" *) (* PE_THRESH_MIN = "5" *) 
+(* PF_THRESH_ADJ = "8" *) (* PF_THRESH_MAX = "1019" *) (* PF_THRESH_MIN = "9" *) 
+(* PROG_EMPTY_THRESH = "10" *) (* PROG_FULL_THRESH = "10" *) (* RD_DATA_COUNT_WIDTH = "11" *) 
+(* RD_DC_WIDTH_EXT = "11" *) (* RD_LATENCY = "2" *) (* RD_MODE = "1" *) 
+(* RD_PNTR_WIDTH = "10" *) (* READ_DATA_WIDTH = "27" *) (* READ_MODE = "1" *) 
+(* READ_MODE_LL = "1" *) (* RELATED_CLOCKS = "0" *) (* REMOVE_WR_RD_PROT_LOGIC = "0" *) 
+(* SIM_ASSERT_CHK = "0" *) (* USE_ADV_FEATURES = "0707" *) (* VERSION = "0" *) 
+(* WAKEUP_TIME = "0" *) (* WIDTH_RATIO = "1" *) (* WRITE_DATA_WIDTH = "27" *) 
+(* WR_DATA_COUNT_WIDTH = "11" *) (* WR_DC_WIDTH_EXT = "11" *) (* WR_DEPTH_LOG = "10" *) 
+(* WR_PNTR_WIDTH = "10" *) (* WR_RD_RATIO = "0" *) (* WR_WIDTH_LOG = "5" *) 
+(* XPM_MODULE = "TRUE" *) (* both_stages_valid = "3" *) (* invalid = "0" *) 
+(* keep_hierarchy = "soft" *) (* stage1_valid = "2" *) (* stage2_valid = "1" *) 
 module top_design_v_axi4s_vid_out_0_1_xpm_fifo_base
    (sleep,
     rst,
@@ -9815,7 +9807,6 @@ module top_design_v_axi4s_vid_out_0_1_xpm_fifo_base
         .wrst_busy(wrst_busy));
 endmodule
 
-(* ORIG_REF_NAME = "xpm_fifo_reg_bit" *) 
 module top_design_v_axi4s_vid_out_0_1_xpm_fifo_reg_bit
    (rst_d1,
     d_out_int_reg_0,
@@ -9909,7 +9900,6 @@ module top_design_v_axi4s_vid_out_0_1_xpm_fifo_reg_bit
         .O(overflow_i0));
 endmodule
 
-(* ORIG_REF_NAME = "xpm_fifo_reg_vec" *) 
 module top_design_v_axi4s_vid_out_0_1_xpm_fifo_reg_vec
    (Q,
     d_out_int_reg,
@@ -10743,7 +10733,6 @@ module top_design_v_axi4s_vid_out_0_1_xpm_fifo_reg_vec__parameterized0_2
         .R(\reg_out_i_reg[10]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "xpm_fifo_rst" *) 
 module top_design_v_axi4s_vid_out_0_1_xpm_fifo_rst
    (\gen_rst_ic.fifo_rd_rst_ic_reg_0 ,
     wrst_busy,
@@ -11164,28 +11153,27 @@ endmodule
 (* ECC_TYPE = "NONE" *) (* IGNORE_INIT_SYNTH = "0" *) (* MAX_NUM_CHAR = "0" *) 
 (* MEMORY_INIT_FILE = "none" *) (* MEMORY_INIT_PARAM = "" *) (* MEMORY_OPTIMIZATION = "true" *) 
 (* MEMORY_PRIMITIVE = "0" *) (* MEMORY_SIZE = "27648" *) (* MEMORY_TYPE = "1" *) 
-(* MESSAGE_CONTROL = "0" *) (* NUM_CHAR_LOC = "0" *) (* ORIG_REF_NAME = "xpm_memory_base" *) 
-(* P_ECC_MODE = "0" *) (* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) 
-(* P_MAX_DEPTH_DATA = "1024" *) (* P_MEMORY_OPT = "yes" *) (* P_MEMORY_PRIMITIVE = "auto" *) 
-(* P_MIN_WIDTH_DATA = "27" *) (* P_MIN_WIDTH_DATA_A = "27" *) (* P_MIN_WIDTH_DATA_B = "27" *) 
-(* P_MIN_WIDTH_DATA_ECC = "27" *) (* P_MIN_WIDTH_DATA_LDW = "4" *) (* P_MIN_WIDTH_DATA_SHFT = "27" *) 
-(* P_NUM_COLS_WRITE_A = "1" *) (* P_NUM_COLS_WRITE_B = "1" *) (* P_NUM_COL_READ_A = "1" *) 
-(* P_NUM_COL_READ_B = "1" *) (* P_NUM_COL_WRITE_A = "1" *) (* P_NUM_COL_WRITE_B = "1" *) 
-(* P_NUM_ROWS_READ_A = "1" *) (* P_NUM_ROWS_READ_B = "1" *) (* P_NUM_ROWS_WRITE_A = "1" *) 
-(* P_NUM_ROWS_WRITE_B = "1" *) (* P_SDP_WRITE_MODE = "yes" *) (* P_WIDTH_ADDR_LSB_READ_A = "0" *) 
-(* P_WIDTH_ADDR_LSB_READ_B = "0" *) (* P_WIDTH_ADDR_LSB_READ_COLL_A = "1" *) (* P_WIDTH_ADDR_LSB_READ_COLL_B = "1" *) 
-(* P_WIDTH_ADDR_LSB_WRITE_A = "0" *) (* P_WIDTH_ADDR_LSB_WRITE_B = "0" *) (* P_WIDTH_ADDR_LSB_WRITE_COLL_A = "1" *) 
-(* P_WIDTH_ADDR_LSB_WRITE_COLL_B = "1" *) (* P_WIDTH_ADDR_READ_A = "10" *) (* P_WIDTH_ADDR_READ_B = "10" *) 
-(* P_WIDTH_ADDR_WRITE_A = "10" *) (* P_WIDTH_ADDR_WRITE_B = "10" *) (* P_WIDTH_COL_WRITE_A = "27" *) 
-(* P_WIDTH_COL_WRITE_B = "27" *) (* RAM_DECOMP = "auto" *) (* READ_DATA_WIDTH_A = "27" *) 
-(* READ_DATA_WIDTH_B = "27" *) (* READ_LATENCY_A = "2" *) (* READ_LATENCY_B = "2" *) 
-(* READ_RESET_VALUE_A = "0" *) (* READ_RESET_VALUE_B = "0" *) (* RST_MODE_A = "SYNC" *) 
-(* RST_MODE_B = "SYNC" *) (* SIM_ASSERT_CHK = "0" *) (* USE_EMBEDDED_CONSTRAINT = "0" *) 
-(* USE_MEM_INIT = "0" *) (* USE_MEM_INIT_MMI = "0" *) (* VERSION = "0" *) 
-(* WAKEUP_TIME = "0" *) (* WRITE_DATA_WIDTH_A = "27" *) (* WRITE_DATA_WIDTH_B = "27" *) 
-(* WRITE_MODE_A = "2" *) (* WRITE_MODE_B = "2" *) (* WRITE_PROTECT = "1" *) 
-(* XPM_MODULE = "TRUE" *) (* keep_hierarchy = "soft" *) (* rsta_loop_iter = "28" *) 
-(* rstb_loop_iter = "28" *) 
+(* MESSAGE_CONTROL = "0" *) (* NUM_CHAR_LOC = "0" *) (* P_ECC_MODE = "0" *) 
+(* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) (* P_MAX_DEPTH_DATA = "1024" *) 
+(* P_MEMORY_OPT = "yes" *) (* P_MEMORY_PRIMITIVE = "auto" *) (* P_MIN_WIDTH_DATA = "27" *) 
+(* P_MIN_WIDTH_DATA_A = "27" *) (* P_MIN_WIDTH_DATA_B = "27" *) (* P_MIN_WIDTH_DATA_ECC = "27" *) 
+(* P_MIN_WIDTH_DATA_LDW = "4" *) (* P_MIN_WIDTH_DATA_SHFT = "27" *) (* P_NUM_COLS_WRITE_A = "1" *) 
+(* P_NUM_COLS_WRITE_B = "1" *) (* P_NUM_COL_READ_A = "1" *) (* P_NUM_COL_READ_B = "1" *) 
+(* P_NUM_COL_WRITE_A = "1" *) (* P_NUM_COL_WRITE_B = "1" *) (* P_NUM_ROWS_READ_A = "1" *) 
+(* P_NUM_ROWS_READ_B = "1" *) (* P_NUM_ROWS_WRITE_A = "1" *) (* P_NUM_ROWS_WRITE_B = "1" *) 
+(* P_SDP_WRITE_MODE = "yes" *) (* P_WIDTH_ADDR_LSB_READ_A = "0" *) (* P_WIDTH_ADDR_LSB_READ_B = "0" *) 
+(* P_WIDTH_ADDR_LSB_READ_COLL_A = "1" *) (* P_WIDTH_ADDR_LSB_READ_COLL_B = "1" *) (* P_WIDTH_ADDR_LSB_WRITE_A = "0" *) 
+(* P_WIDTH_ADDR_LSB_WRITE_B = "0" *) (* P_WIDTH_ADDR_LSB_WRITE_COLL_A = "1" *) (* P_WIDTH_ADDR_LSB_WRITE_COLL_B = "1" *) 
+(* P_WIDTH_ADDR_READ_A = "10" *) (* P_WIDTH_ADDR_READ_B = "10" *) (* P_WIDTH_ADDR_WRITE_A = "10" *) 
+(* P_WIDTH_ADDR_WRITE_B = "10" *) (* P_WIDTH_COL_WRITE_A = "27" *) (* P_WIDTH_COL_WRITE_B = "27" *) 
+(* RAM_DECOMP = "auto" *) (* READ_DATA_WIDTH_A = "27" *) (* READ_DATA_WIDTH_B = "27" *) 
+(* READ_LATENCY_A = "2" *) (* READ_LATENCY_B = "2" *) (* READ_RESET_VALUE_A = "0" *) 
+(* READ_RESET_VALUE_B = "0" *) (* RST_MODE_A = "SYNC" *) (* RST_MODE_B = "SYNC" *) 
+(* SIM_ASSERT_CHK = "0" *) (* USE_EMBEDDED_CONSTRAINT = "0" *) (* USE_MEM_INIT = "0" *) 
+(* USE_MEM_INIT_MMI = "0" *) (* VERSION = "0" *) (* WAKEUP_TIME = "0" *) 
+(* WRITE_DATA_WIDTH_A = "27" *) (* WRITE_DATA_WIDTH_B = "27" *) (* WRITE_MODE_A = "2" *) 
+(* WRITE_MODE_B = "2" *) (* WRITE_PROTECT = "1" *) (* XPM_MODULE = "TRUE" *) 
+(* keep_hierarchy = "soft" *) (* rsta_loop_iter = "28" *) (* rstb_loop_iter = "28" *) 
 module top_design_v_axi4s_vid_out_0_1_xpm_memory_base
    (sleep,
     clka,
