@@ -69,7 +69,9 @@ void XV_frmbufwr_Start(XV_frmbufwr *InstancePtr) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
+    //printf("=================WRITE\r\n");
     Data = XV_frmbufwr_ReadReg(InstancePtr->Config.BaseAddress, XV_FRMBUFWR_CTRL_ADDR_AP_CTRL) & 0x80;
+    //Data = 0xFF;
     XV_frmbufwr_WriteReg(InstancePtr->Config.BaseAddress, XV_FRMBUFWR_CTRL_ADDR_AP_CTRL, Data | 0x01);
 }
 

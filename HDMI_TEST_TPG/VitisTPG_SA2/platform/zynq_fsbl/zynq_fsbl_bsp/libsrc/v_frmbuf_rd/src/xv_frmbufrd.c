@@ -63,10 +63,12 @@ int XV_frmbufrd_CfgInitialize(XV_frmbufrd *InstancePtr,
 void XV_frmbufrd_Start(XV_frmbufrd *InstancePtr) {
     u32 Data;
 
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+    //Xil_AssertVoid(InstancePtr != NULL);
+    //Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
+    printf("===================READDDD\r\n");
     Data = XV_frmbufrd_ReadReg(InstancePtr->Config.BaseAddress, XV_FRMBUFRD_CTRL_ADDR_AP_CTRL) & 0x80;
+    //Data = 0x45;
     XV_frmbufrd_WriteReg(InstancePtr->Config.BaseAddress, XV_FRMBUFRD_CTRL_ADDR_AP_CTRL, Data | 0x01);
 }
 

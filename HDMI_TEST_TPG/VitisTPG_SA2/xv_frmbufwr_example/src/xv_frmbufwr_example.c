@@ -38,6 +38,7 @@
 #include "xparameters.h"
 #include "platform.h"
 #include "sleep.h"
+#include <stdint.h>
 #ifndef SDT
 #if defined(__MICROBLAZE__) || defined(__riscv)
 #include "xintc.h"
@@ -83,6 +84,10 @@
     Xil_Out32((XPAR_VIDEO_CLK_WIZ_BASEADDR) + (RegOffset), (u32)(Data))
 #define VideoClockGen_ReadReg(RegOffset) \
     Xil_In32((XPAR_VIDEO_CLK_WIZ_BASEADDR) + (RegOffset))
+
+
+#define XV_FBwr_WriteReg(BaseAddress, RegOffset, Data) \
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
 
 
 //mapping between memory and streaming video formats
@@ -144,6 +149,8 @@ u32 volatile *gpio_hlsIpReset;
 
 XV_tpg				  tpg;
 XV_tpg_Config		*tpg_Config;
+
+int wrStop = 0;
 
 
 /*****************************************************************************/
@@ -489,13 +496,14 @@ static void ConfigVtc(XVidC_VideoStream *StreamPtr)
   XVtc_Timing vtc_timing = {0};
   u16 PixelsPerClock = StreamPtr->PixPerClk;
 
-
+/*
 	XV_tpg_Set_height(&tpg, StreamPtr->Timing.VActive);
 	XV_tpg_Set_width(&tpg, StreamPtr->Timing.HActive);
 	XV_tpg_Set_colorFormat(&tpg, 0);
 	XV_tpg_Set_bckgndId(&tpg, XTPG_BKGND_COLOR_BARS);
 	XV_tpg_Set_ovrlayId(&tpg, 0);
 	XV_tpg_WriteReg(tpg_Config->BaseAddress, XV_TPG_CTRL_ADDR_AP_CTRL, 0x81);
+  */
 
   vtc_timing.HActiveVideo  = StreamPtr->Timing.HActive/PixelsPerClock;
   vtc_timing.HFrontPorch   = StreamPtr->Timing.HFrontPorch/PixelsPerClock;
@@ -708,7 +716,7 @@ static int ConfigFrmbuf(u32 StrideInBytes,
   XVFrmbufWr_InterruptEnable(&frmbufwr, XVFRMBUFRD_IRQ_DONE_MASK);
 
   /* Start Frame Buffers */
-  XVFrmbufWr_Start(&frmbufwr);
+  //XVFrmbufWr_Start(&frmbufwr);
   XVFrmbufRd_Start(&frmbufrd);
 
   xil_printf("INFO: FRMBUF configured\r\n");
@@ -816,10 +824,14 @@ static int CheckVidoutLock(void)
  * @param data Pointer to user data (unused).
  * @return Always returns NULL.
  */
+uint32_t b = 0;
 void *XVFrameBufferRdCallback(void *data)
 {
-	//xil_printf("\nFrame Buffer Read interrupt received.\r\n");
-	  XVFrmbufRd_Start(&frmbufrd);
+	  //xil_printf("\nFrame Buffer Read interrupt received.\r\n");
+    //if(b < 90)
+	  //  XVFrmbufRd_Start(&frmbufrd);
+    //b+=1;
+    //XVFrmbufWr_Start(&frmbufwr);
 }
 
 /**
@@ -833,8 +845,10 @@ void *XVFrameBufferRdCallback(void *data)
  */
 void *XVFrameBufferWrCallback(void *data)
 {
-	//xil_printf("\nFrame Buffer Read interrupt received.\r\n");
-	  XVFrmbufWr_Start(&frmbufwr);
+	  xil_printf("\nFrame Buffer Write interrupt received.\r\n");
+    //wrStop = 1;
+	  //XVFrmbufWr_Start(&frmbufwr);
+    //XVFrmbufRd_Start(&frmbufrd);
 }
 
 /**
@@ -896,6 +910,48 @@ void resetIp(void)
   usleep(1000);          //wait
 }
 
+
+
+
+
+
+void FB_Fill_Data(uint32_t buf, uint32_t width, uint32_t height, uint8_t bpp)
+{
+    //uint32_t i = 0;
+    uint32_t *fbe;
+    //uint32_t fs = 0;
+    //fs = (width * height * bpp)/4;
+    fbe = (u32*)DDR_BASEADDR;
+    //for (i=0;i<fs;i++)
+    //{
+    //    *(fbe+i) = buf;
+    //}
+    *(fbe) = 0x45667788;
+}
+
+
+void FB_Print_Data(uint32_t cnt)
+{
+    uint32_t i = 0;
+    uint32_t *fbe;
+    //uint32_t *wbuf = (uint32_t*)malloc(sizeof(uint32_t*)*cnt);
+    fbe = (u32*)XVFRMBUFWR_BUFFER_BASEADDR;
+    //memcpy(wbuf,fbe,sizeof(uint32_t)*cnt);
+    for (i=0;i<cnt;i++)
+    {
+        if(!(i%16))
+        {
+          printf("\r\n");
+          printf(" %04d :", i);
+        }
+        else {
+          //printf(" %08x", *(fbe+i));
+        }
+    }
+}
+
+
+
 /**
  * @brief Main application entry point for the Frame Buffer Example Design Test.
  *
@@ -927,6 +983,8 @@ int main(void)
       XVIDC_VM_UHD_60_P
     };
 
+
+    xil_printf("---------------------------------------------------\r\n");
     init_platform();
 
     xil_printf("Start Frame Buffer Example Design Test\r\n");
@@ -1028,6 +1086,23 @@ int main(void)
 
       ConfigFrmbuf(stride, Cfmt, &VidStream);
 
+      XV_tpg_Set_height(&tpg, VidStream.Timing.VActive);
+      XV_tpg_Set_width(&tpg, VidStream.Timing.HActive);
+      XV_tpg_Set_colorFormat(&tpg, 0);
+      XV_tpg_Set_bckgndId(&tpg, XTPG_BKGND_COLOR_BARS);
+      XV_tpg_Set_ovrlayId(&tpg, 0);
+      //XV_tpg_WriteReg(tpg_Config->BaseAddress, XV_TPG_CTRL_ADDR_AP_CTRL, 0x81);
+
+      //FB_Fill_Data(0xA6,1920,1080,3);
+      
+      //usleep(100000);
+      //for(i = 0; i < 4; i++)
+      //{
+      //  printf(" %08x", *(fbe+i));
+      //}
+      //printf("\r\n");
+      
+
       xil_printf("Wait for vid out lock: ");
       Lock = CheckVidoutLock();
       Overflow = CheckVidinOverflow();
@@ -1062,5 +1137,9 @@ int main(void)
     xil_printf("\r\n\r\nINFO: No tests ran.\r\n");
   }
 
+  //FB_Fill_Data(0xA6,1920,1080,3);
+  XV_FBwr_WriteReg(frmbufwr.FrmbufWr.Config.BaseAddress, XV_FRMBUFWR_CTRL_ADDR_AP_CTRL, 0x44 | 0x01);
+  usleep(1000000);
+  //FB_Print_Data(64);
   return(0);
 }

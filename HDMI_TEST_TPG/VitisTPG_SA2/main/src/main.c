@@ -177,6 +177,7 @@ void videoIpConfig(XVidC_VideoStream *StreamPtr)
 	vtc_timing.V0SyncWidth   = StreamPtr->Timing.F0PVSyncWidth;
 	vtc_timing.V0BackPorch   = StreamPtr->Timing.F0PVBackPorch;
 	vtc_timing.VSyncPolarity = StreamPtr->Timing.VSyncPolarity;
+
 	XVtc_SetGeneratorTiming(&vtc, &vtc_timing);
 	XVtc_Enable(&vtc);
 	XVtc_EnableGenerator(&vtc);
