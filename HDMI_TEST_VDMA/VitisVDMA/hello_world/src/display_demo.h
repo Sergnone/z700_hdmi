@@ -18,8 +18,8 @@
 #define DISPLAY_WIDTH           1920
 #define DISPLAY_HEIGHT          1080
 
-#define DEMO_MAX_FRAME (DISPLAY_WIDTH*DISPLAY_HEIGHT*BYTES_PIXEL)
-#define DEMO_STRIDE (DISPLAY_WIDTH * BYTES_PIXEL)
+#define DISPLAY_MAX_FRAME (DISPLAY_WIDTH*DISPLAY_HEIGHT*BYTES_PIXEL)
+#define DISPLAY_STRIDE (DISPLAY_WIDTH * BYTES_PIXEL)
 
 /* ------------------------------------------------------------ */
 /*					Procedure Declarations						*/

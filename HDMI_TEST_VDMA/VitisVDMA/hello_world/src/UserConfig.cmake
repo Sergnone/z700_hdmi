@@ -28,7 +28,6 @@ set(USER_UNDEFINED_SYMBOLS
 
 set(USER_INCLUDE_DIRECTORIES
 "../dynclk"
-"../dynclk_orig"
 "../display_ctrl"
 )
 
@@ -39,11 +38,7 @@ set(USER_INCLUDE_DIRECTORIES
 set(USER_COMPILE_SOURCES
 "helloworld.c"
 "platform.c"
-"../dynclk/ddynclk.c"
-"../dynclk/ddynclk_g.c"
-"../dynclk/ddynclk_selftest.c"
-"../dynclk/ddynclk_sinit.c"
-"../dynclk_orig/dynclk.c"
+"../dynclk/dynclk.c"
 "../display_ctrl/display_ctrl.c"
 )
 
