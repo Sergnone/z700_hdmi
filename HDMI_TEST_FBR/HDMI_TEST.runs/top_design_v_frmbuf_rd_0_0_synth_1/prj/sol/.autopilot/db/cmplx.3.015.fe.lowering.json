@@ -16,7 +16,7 @@
   },
   "1": {
     "basicblocks": 1,
-    "calls": "5 4 2",
+    "calls": "5 2 3",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "v_frmbuf_rd.cpp",
@@ -27,8 +27,20 @@
     "total_instructions": 419
   },
   "2": {
+    "basicblocks": 39,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 9,
+    "file": "v_frmbuf_rd.cpp",
+    "fileloc": 686,
+    "instructions": 159,
+    "memory_accesses": 11,
+    "name": "Bytes2MultiPixStream",
+    "total_instructions": 247
+  },
+  "3": {
     "basicblocks": 12,
-    "calls": "3 3",
+    "calls": "4 4",
     "control_depth": 2,
     "def_use_depth": 7,
     "file": "v_frmbuf_rd.cpp",
@@ -44,7 +56,7 @@
     },
     "total_instructions": 124
   },
-  "3": {
+  "4": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -55,18 +67,6 @@
     "memory_accesses": 0,
     "name": "reg<unsigned short>",
     "total_instructions": 1
-  },
-  "4": {
-    "basicblocks": 39,
-    "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 9,
-    "file": "v_frmbuf_rd.cpp",
-    "fileloc": 686,
-    "instructions": 159,
-    "memory_accesses": 11,
-    "name": "Bytes2MultiPixStream",
-    "total_instructions": 247
   },
   "5": {
     "basicblocks": 8,

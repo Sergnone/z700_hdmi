@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1766058548">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1770048720">
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="top_design_wrapper_postroute_physopted.rqs"/>
@@ -113,17 +113,16 @@
   <File Type="INIT-TIMING" Name="top_design_wrapper_timing_summary_init.rpt"/>
   <File Type="REPORTS-TCL" Name="top_design_wrapper_reports.tcl"/>
   <File Type="PA-TCL" Name="top_design_wrapper.tcl"/>
-  <File Type="PA-DCP" Name="top_design_wrapper.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/bd/top_design/top_design.bd">
+    <File Path="$PPRDIR/../HDMI_TEST_TPG/HDMI_TEST.srcs/sources_1/bd/top_design/top_design.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PGENDIR/sources_1/bd/top_design/hdl/top_design_wrapper.v">
+    <File Path="$PPRDIR/../HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/hdl/top_design_wrapper.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -136,21 +135,22 @@
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
-  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/phy_constr" RelGenDir="$PGENDIR/phy_constr">
-    <File Path="$PSRCDIR/phy_constr/new/phy_constr.xdc">
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../HDMI_TEST_TPG/HDMI_TEST.srcs/constrs_1/new/phy_constr.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PSRCDIR/phy_constr/new/phy_constr.xdc"/>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../HDMI_TEST_TPG/HDMI_TEST.srcs/constrs_1/new/phy_constr.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
-    <File Path="$PSRCDIR/utils_1/imports/synth_1/top_design_wrapper.dcp">
+    <File Path="$PPRDIR/../HDMI_TEST_TPG/HDMI_TEST.srcs/utils_1/imports/synth_1/top_design_wrapper.dcp">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -163,9 +163,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -176,13 +174,12 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="top_design_v_frmbuf_rd_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="top_design_smartconnect_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="top_design_rgb2dvi_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="top_design_v_tc_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="top_design_v_axi4s_vid_out_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="top_design_rst_ps7_0_148M_1"/>
   <BlockFileSet Type="BlockSrcs" Name="top_design_axi_smc_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="top_design_axi_dynclk_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_design_smartconnect_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_design_v_frmbuf_rd_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_design_video_lock_monitor_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_design_v_tpg_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_design_rgb2dvi_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="top_design_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_design_axi_dynclk_0_0"/>
 </GenRun>

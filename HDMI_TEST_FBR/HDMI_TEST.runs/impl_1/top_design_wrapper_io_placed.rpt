@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date                      : Thu Dec 18 14:49:38 2025
+| Date                      : Mon Feb  2 19:14:04 2026
 | Host                      : serg running 64-bit Ubuntu 24.04.3 LTS
 | Command                   : report_io -file top_design_wrapper_io_placed.rpt
 | Design                    : top_design_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           139 |
+|           140 |
 +---------------+
 
 
@@ -64,9 +64,9 @@ Table of Contents
 | B7         | FIXED_IO_mio[4]   |            | PS_MIO4_500             | BIDIR       | LVCMOS18*         |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | B8         | FIXED_IO_mio[2]   |            | PS_MIO2_500             | BIDIR       | LVCMOS18*         |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | B9         | FIXED_IO_mio[51]  |            | PS_MIO51_501            | BIDIR       | LVCMOS18*         |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| B10        | FIXED_IO_ps_srstb |            | PS_SRST_B_501           | BIDIR       | LVCMOS33          |         |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| B10        | FIXED_IO_ps_srstb |            | PS_SRST_B_501           | BIDIR       | LVCMOS18          |         |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | B11        |                   |            | GND                     | GND         |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
-| B12        | FIXED_IO_mio[48]  |            | PS_MIO48_501            | OUT         | LVCMOS33          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |              |                   |              |
+| B12        | FIXED_IO_mio[48]  |            | PS_MIO48_501            | OUT         | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |              |                   |              |
 | B13        | FIXED_IO_mio[50]  |            | PS_MIO50_501            | BIDIR       | LVCMOS18*         |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | B14        | FIXED_IO_mio[47]  |            | PS_MIO47_501            | BIDIR       | LVCMOS18*         |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | B15        | FIXED_IO_mio[45]  |            | PS_MIO45_501            | BIDIR       | LVCMOS18*         |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
@@ -86,7 +86,7 @@ Table of Contents
 | C9         |                   |            | GND                     | GND         |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | C10        | FIXED_IO_mio[52]  |            | PS_MIO52_501            | BIDIR       | LVCMOS18*         |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | C11        | FIXED_IO_mio[53]  |            | PS_MIO53_501            | BIDIR       | LVCMOS18*         |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| C12        | FIXED_IO_mio[49]  |            | PS_MIO49_501            | IN          | LVCMOS33          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |              |                   |              |
+| C12        | FIXED_IO_mio[49]  |            | PS_MIO49_501            | IN          | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |              |                   |              |
 | C13        | FIXED_IO_mio[29]  |            | PS_MIO29_501            | BIDIR       | LVCMOS18*         |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | C14        |                   |            | GND                     | GND         |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | C15        | FIXED_IO_mio[30]  |            | PS_MIO30_501            | BIDIR       | LVCMOS18*         |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |

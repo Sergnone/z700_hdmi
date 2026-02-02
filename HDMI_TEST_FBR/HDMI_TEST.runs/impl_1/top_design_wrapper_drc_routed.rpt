@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Thu Dec 18 14:49:58 2025
+| Date         : Mon Feb  2 19:14:34 2026
 | Host         : serg running 64-bit Ubuntu 24.04.3 LTS
 | Command      : report_drc -file top_design_wrapper_drc_routed.rpt -pb top_design_wrapper_drc_routed.pb -rpx top_design_wrapper_drc_routed.rpx
 | Design       : top_design_wrapper
@@ -20,16 +20,18 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_top_design_wrapper
+          Floorplan: design_1
       Design limits: <entire design considered>
            Ruledeck: default
              Max checks: <unlimited>
-             Checks found: 4
+             Checks found: 16
 +-----------+------------------+--------------------------------+--------+
 | Rule      | Severity         | Description                    | Checks |
 +-----------+------------------+--------------------------------+--------+
 | AVAL-46   | Critical Warning | v7v8_mmcm_fvco_rule1           | 1      |
-| DPOP-2    | Warning          | MREG Output pipelining         | 1      |
+| DPIP-1    | Warning          | Input pipelining               | 3      |
+| DPOP-1    | Warning          | PREG Output pipelining         | 3      |
+| DPOP-2    | Warning          | MREG Output pipelining         | 7      |
 | PDRC-33   | Warning          | MMCM_adv_ClkFrequency_div_dclk | 1      |
 | RTSTAT-10 | Warning          | No routable loads              | 1      |
 +-----------+------------------+--------------------------------+--------+
@@ -46,35 +48,95 @@ This violation may be corrected by:
   4. The MMCM configuration may be dynamically modified by use of DRP which is recognized by an ACTIVE signal on DCLK pin.
 Related violations: <none>
 
+DPIP-1#1 Warning
+Input pipelining  
+DSP top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mac_muladd_16s_16s_16s_16_4_1_U21/top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0_U/p_reg_reg input top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mac_muladd_16s_16s_16s_16_4_1_U21/top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mac_muladd_8ns_5ns_16ns_17_4_1_U28/top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0_U/p_reg_reg input top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mac_muladd_8ns_5ns_16ns_17_4_1_U28/top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mac_muladd_8ns_8ns_15ns_16_4_1_U24/top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0_U/p_reg_reg input top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mac_muladd_8ns_8ns_15ns_16_4_1_U24/top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mul_11ns_13ns_23_1_1_U7/tmp_product output top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mul_11ns_13ns_23_1_1_U7/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mul_11ns_13ns_23_1_1_U8/tmp_product output top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mul_11ns_13ns_23_1_1_U8/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mul_11ns_13ns_23_1_1_U9/tmp_product output top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mul_11ns_13ns_23_1_1_U9/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
 DPOP-2#1 Warning
 MREG Output pipelining  
 DSP top_design_i/v_frmbuf_rd_0/inst/grp_FrmbufRdHlsDataFlow_fu_166/Bytes2MultiPixStream_U0/mul_11ns_13ns_23_1_1_U25/tmp_product multiplier stage top_design_i/v_frmbuf_rd_0/inst/grp_FrmbufRdHlsDataFlow_fu_166/Bytes2MultiPixStream_U0/mul_11ns_13ns_23_1_1_U25/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP top_design_i/v_frmbuf_wr_0/inst/grp_FrmbufWrHlsDataFlow_fu_164/MultiPixStream2Bytes_U0/mul_11ns_13ns_23_1_1_U62/tmp_product multiplier stage top_design_i/v_frmbuf_wr_0/inst/grp_FrmbufWrHlsDataFlow_fu_164/MultiPixStream2Bytes_U0/mul_11ns_13ns_23_1_1_U62/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mul_11ns_13ns_23_1_1_U7/tmp_product multiplier stage top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mul_11ns_13ns_23_1_1_U7/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mul_11ns_13ns_23_1_1_U8/tmp_product multiplier stage top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mul_11ns_13ns_23_1_1_U8/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mul_11ns_13ns_23_1_1_U9/tmp_product multiplier stage top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mul_11ns_13ns_23_1_1_U9/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mul_ln1356_reg_5203_reg multiplier stage top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mul_ln1356_reg_5203_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/trunc_ln1356_reg_5209_reg multiplier stage top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/trunc_ln1356_reg_5209_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
 PDRC-33#1 Warning
 MMCM_adv_ClkFrequency_div_dclk  
-The computed value 1481.701 MHz (CLKIN1_PERIOD, net FCLK_CLK1) for the VCO operating frequency of the MMCME2_ADV site MMCME2_ADV_X1Y2 (cell top_design_i/axi_dynclk_0/U0/Inst_mmcme2_drp/mmcm_adv_inst) falls outside the operating range of the MMCM VCO frequency for this device (600.000 - 1440.000 MHz). The computed value is (CLKFBOUT_MULT_F * 1000 / (CLKINx_PERIOD * DIVCLK_DIVIDE)). Please adjust either the input period CLKINx_PERIOD (6.749000), multiplication factor CLKFBOUT_MULT_F (10.000000) or the division factor DIVCLK_DIVIDE (1), in order to achieve a VCO frequency within the rated operating range for this device.
+The computed value 1481.701 MHz (CLKIN1_PERIOD, net FCLK_CLK0) for the VCO operating frequency of the MMCME2_ADV site MMCME2_ADV_X1Y2 (cell top_design_i/axi_dynclk_0/U0/Inst_mmcme2_drp/mmcm_adv_inst) falls outside the operating range of the MMCM VCO frequency for this device (600.000 - 1440.000 MHz). The computed value is (CLKFBOUT_MULT_F * 1000 / (CLKINx_PERIOD * DIVCLK_DIVIDE)). Please adjust either the input period CLKINx_PERIOD (6.749000), multiplication factor CLKFBOUT_MULT_F (10.000000) or the division factor DIVCLK_DIVIDE (1), in order to achieve a VCO frequency within the rated operating range for this device.
 Please note that this check is a Warning because the DCLK pin has an ACTIVE signal and it is assumed that dynamic control (DRP) will be exercised to put the VCO frequency into valid operating range.
 Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-36 net(s) have no routable loads. The problem bus(es) and/or net(s) are top_design_i/smartconnect_0/inst/m00_nodes/m00_aw_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/smartconnect_0/inst/m00_nodes/m00_b_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/smartconnect_0/inst/m00_nodes/m00_r_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/smartconnect_0/inst/m01_nodes/m01_ar_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/smartconnect_0/inst/m01_nodes/m01_aw_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/smartconnect_0/inst/m01_nodes/m01_r_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/smartconnect_0/inst/m02_nodes/m02_ar_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/smartconnect_0/inst/m02_nodes/m02_b_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/smartconnect_0/inst/m02_nodes/m02_r_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/smartconnect_0/inst/m02_nodes/m02_w_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/smartconnect_0/inst/s00_nodes/s00_b_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst/mi_handler_m_sc_areset_pipe
- (the first 15 of 25 listed nets/buses).
+50 net(s) have no routable loads. The problem bus(es) and/or net(s) are top_design_i/axi_smc/inst/m01_nodes/m01_ar_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/m01_nodes/m01_b_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/m01_nodes/m01_r_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/m01_nodes/m01_w_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/m02_nodes/m02_aw_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/m02_nodes/m02_b_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/m02_nodes/m02_w_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/m03_nodes/m03_aw_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/m04_nodes/m04_ar_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/m04_nodes/m04_b_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/m05_nodes/m05_ar_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/m05_nodes/m05_r_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/s00_nodes/s00_w_node/inst/mi_handler_m_sc_areset_pipe
+ (the first 15 of 40 listed nets/buses).
 Related violations: <none>
 
 

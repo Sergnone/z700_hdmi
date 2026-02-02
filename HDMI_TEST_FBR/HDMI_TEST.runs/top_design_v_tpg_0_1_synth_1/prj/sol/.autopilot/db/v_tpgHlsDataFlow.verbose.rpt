@@ -1,0 +1,2999 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_tpgHlsDataFlow'
+================================================================
+* Date:           Mon Feb  2 19:12:38 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.75 ns|  4.890 ns|     1.82 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+------------+----------+------------+-----+------------+----------+
+    |   Latency (cycles)   |   Latency (absolute)  |     Interval     | Pipeline |
+    |   min   |     max    |    min   |     max    | min |     max    |   Type   |
+    +---------+------------+----------+------------+-----+------------+----------+
+    |       25|  4296540136|  0.169 us|  29.002 sec|    2|  4296540137|  dataflow|
+    +---------+------------+----------+------------+-----+------------+----------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------+-------------------------+---------+------------+----------+------------+-----+------------+---------+
+        |                            |                         |   Latency (cycles)   |   Latency (absolute)  |     Interval     | Pipeline|
+        |          Instance          |          Module         |   min   |     max    |    min   |     max    | min |     max    |   Type  |
+        +----------------------------+-------------------------+---------+------------+----------+------------+-----+------------+---------+
+        |tpgBackground_U0            |tpgBackground            |        1|  4296540136|  6.750 ns|  29.002 sec|    1|  4296540136|       no|
+        |tpgForeground_U0            |tpgForeground            |        1|  4295229436|  6.750 ns|  28.993 sec|    1|  4295229436|       no|
+        |MultiPixStream2AXIvideo_U0  |MultiPixStream2AXIvideo  |        1|     2081161|  6.750 ns|   14.048 ms|    1|     2081161|       no|
+        +----------------------------+-------------------------+---------+------------+----------+------------+-----+------------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      1|    -|
+|FIFO             |        -|    -|     198|    138|    -|
+|Instance         |        9|   13|    5365|   5557|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|       -|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        9|   13|    5563|   5696|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        3|    5|       5|     10|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+-------------------------+---------+----+------+------+-----+
+    |          Instance          |          Module         | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +----------------------------+-------------------------+---------+----+------+------+-----+
+    |MultiPixStream2AXIvideo_U0  |MultiPixStream2AXIvideo  |        0|   0|   229|   463|    0|
+    |tpgBackground_U0            |tpgBackground            |        9|  13|  4585|  4310|    0|
+    |tpgForeground_U0            |tpgForeground            |        0|   0|   551|   784|    0|
+    +----------------------------+-------------------------+---------+----+------+------+-----+
+    |Total                       |                         |        9|  13|  5365|  5557|    0|
+    +----------------------------+-------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-------------+---------+----+----+-----+------+-----+---------+
+    |     Name    | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +-------------+---------+----+----+-----+------+-----+---------+
+    |bckgndYUV_U  |        0|  99|   0|    -|    16|   24|      384|
+    |ovrlayYUV_U  |        0|  99|   0|    -|    16|   24|      384|
+    +-------------+---------+----+----+-----+------+-----+---------+
+    |Total        |        0| 198|   0|    0|    32|   48|      768|
+    +-------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +--------------+----------+----+---+----+------------+------------+
+    | Variable Name| Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+----+---+----+------------+------------+
+    |ap_idle       |       and|   0|  0|   1|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+    |Total         |          |   0|  0|   1|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------+-----+-----+------------+--------------------------+--------------+
+|            RTL Ports            | Dir | Bits|  Protocol  |       Source Object      |    C Type    |
++---------------------------------+-----+-----+------------+--------------------------+--------------+
+|height_val4                      |   in|   16|     ap_none|               height_val4|        scalar|
+|height_val4_ap_vld               |   in|    1|     ap_none|               height_val4|        scalar|
+|width_val7                       |   in|   16|     ap_none|                width_val7|        scalar|
+|width_val7_ap_vld                |   in|    1|     ap_none|                width_val7|        scalar|
+|field_id_val8                    |   in|   16|     ap_none|             field_id_val8|        scalar|
+|field_id_val8_ap_vld             |   in|    1|     ap_none|             field_id_val8|        scalar|
+|fid_in_val9                      |   in|    1|   ap_stable|               fid_in_val9|        scalar|
+|fid_in_val9_ap_vld               |   in|    1|   ap_stable|               fid_in_val9|        scalar|
+|bckgndId_val10                   |   in|    8|     ap_none|            bckgndId_val10|        scalar|
+|bckgndId_val10_ap_vld            |   in|    1|     ap_none|            bckgndId_val10|        scalar|
+|ovrlayId_val11                   |   in|    8|     ap_none|            ovrlayId_val11|        scalar|
+|ovrlayId_val11_ap_vld            |   in|    1|     ap_none|            ovrlayId_val11|        scalar|
+|maskId_val12                     |   in|    8|     ap_none|              maskId_val12|        scalar|
+|maskId_val12_ap_vld              |   in|    1|     ap_none|              maskId_val12|        scalar|
+|motionSpeed_val14                |   in|    8|     ap_none|         motionSpeed_val14|        scalar|
+|motionSpeed_val14_ap_vld         |   in|    1|     ap_none|         motionSpeed_val14|        scalar|
+|colorFormat_val17                |   in|    8|     ap_none|         colorFormat_val17|        scalar|
+|colorFormat_val17_ap_vld         |   in|    1|     ap_none|         colorFormat_val17|        scalar|
+|crossHairX_val18                 |   in|   16|     ap_none|          crossHairX_val18|        scalar|
+|crossHairX_val18_ap_vld          |   in|    1|     ap_none|          crossHairX_val18|        scalar|
+|crossHairY_val19                 |   in|   16|     ap_none|          crossHairY_val19|        scalar|
+|crossHairY_val19_ap_vld          |   in|    1|     ap_none|          crossHairY_val19|        scalar|
+|ZplateHorContStart_val20         |   in|   16|     ap_none|  ZplateHorContStart_val20|        scalar|
+|ZplateHorContStart_val20_ap_vld  |   in|    1|     ap_none|  ZplateHorContStart_val20|        scalar|
+|ZplateHorContDelta_val21         |   in|   16|     ap_none|  ZplateHorContDelta_val21|        scalar|
+|ZplateHorContDelta_val21_ap_vld  |   in|    1|     ap_none|  ZplateHorContDelta_val21|        scalar|
+|ZplateVerContStart_val22         |   in|   16|     ap_none|  ZplateVerContStart_val22|        scalar|
+|ZplateVerContStart_val22_ap_vld  |   in|    1|     ap_none|  ZplateVerContStart_val22|        scalar|
+|ZplateVerContDelta_val23         |   in|   16|     ap_none|  ZplateVerContDelta_val23|        scalar|
+|ZplateVerContDelta_val23_ap_vld  |   in|    1|     ap_none|  ZplateVerContDelta_val23|        scalar|
+|boxSize_val24                    |   in|   16|     ap_none|             boxSize_val24|        scalar|
+|boxSize_val24_ap_vld             |   in|    1|     ap_none|             boxSize_val24|        scalar|
+|boxColorR_val25                  |   in|    8|     ap_none|           boxColorR_val25|        scalar|
+|boxColorR_val25_ap_vld           |   in|    1|     ap_none|           boxColorR_val25|        scalar|
+|boxColorG_val26                  |   in|    8|     ap_none|           boxColorG_val26|        scalar|
+|boxColorG_val26_ap_vld           |   in|    1|     ap_none|           boxColorG_val26|        scalar|
+|boxColorB_val27                  |   in|    8|     ap_none|           boxColorB_val27|        scalar|
+|boxColorB_val27_ap_vld           |   in|    1|     ap_none|           boxColorB_val27|        scalar|
+|dpDynamicRange_val28             |   in|    8|     ap_none|      dpDynamicRange_val28|        scalar|
+|dpDynamicRange_val28_ap_vld      |   in|    1|     ap_none|      dpDynamicRange_val28|        scalar|
+|dpYUVCoef_val29                  |   in|    8|     ap_none|           dpYUVCoef_val29|        scalar|
+|dpYUVCoef_val29_ap_vld           |   in|    1|     ap_none|           dpYUVCoef_val29|        scalar|
+|m_axis_video_TDATA               |  out|   24|        axis|     m_axis_video_V_data_V|       pointer|
+|m_axis_video_TKEEP               |  out|    3|        axis|     m_axis_video_V_keep_V|       pointer|
+|m_axis_video_TSTRB               |  out|    3|        axis|     m_axis_video_V_strb_V|       pointer|
+|m_axis_video_TUSER               |  out|    1|        axis|     m_axis_video_V_user_V|       pointer|
+|m_axis_video_TLAST               |  out|    1|        axis|     m_axis_video_V_last_V|       pointer|
+|m_axis_video_TID                 |  out|    1|        axis|       m_axis_video_V_id_V|       pointer|
+|m_axis_video_TDEST               |  out|    1|        axis|     m_axis_video_V_dest_V|       pointer|
+|m_axis_video_TVALID              |  out|    1|        axis|     m_axis_video_V_dest_V|       pointer|
+|m_axis_video_TREADY              |   in|    1|        axis|     m_axis_video_V_dest_V|       pointer|
+|fid                              |  out|    1|      ap_vld|                       fid|       pointer|
+|fid_ap_vld                       |  out|    1|      ap_vld|                       fid|       pointer|
+|s                                |   in|   32|     ap_none|                         s|       pointer|
+|s_ap_vld                         |   in|    1|     ap_none|                         s|       pointer|
+|ap_clk                           |   in|    1|  ap_ctrl_hs|          v_tpgHlsDataFlow|  return value|
+|ap_rst                           |   in|    1|  ap_ctrl_hs|          v_tpgHlsDataFlow|  return value|
+|ap_start                         |   in|    1|  ap_ctrl_hs|          v_tpgHlsDataFlow|  return value|
+|ap_done                          |  out|    1|  ap_ctrl_hs|          v_tpgHlsDataFlow|  return value|
+|ap_ready                         |  out|    1|  ap_ctrl_hs|          v_tpgHlsDataFlow|  return value|
+|ap_idle                          |  out|    1|  ap_ctrl_hs|          v_tpgHlsDataFlow|  return value|
+|ap_continue                      |   in|    1|  ap_ctrl_hs|          v_tpgHlsDataFlow|  return value|
++---------------------------------+-----+-----+------------+--------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 6, States = { 1 2 3 4 5 6 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.94>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%dpYUVCoef_val29_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %dpYUVCoef_val29" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 7 'read' 'dpYUVCoef_val29_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%dpDynamicRange_val28_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %dpDynamicRange_val28" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 8 'read' 'dpDynamicRange_val28_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%ZplateVerContDelta_val23_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %ZplateVerContDelta_val23" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 9 'read' 'ZplateVerContDelta_val23_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%ZplateVerContStart_val22_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %ZplateVerContStart_val22" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 10 'read' 'ZplateVerContStart_val22_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%ZplateHorContDelta_val21_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %ZplateHorContDelta_val21" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 11 'read' 'ZplateHorContDelta_val21_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%ZplateHorContStart_val20_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %ZplateHorContStart_val20" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 12 'read' 'ZplateHorContStart_val20_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%colorFormat_val17_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %colorFormat_val17" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 13 'read' 'colorFormat_val17_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%motionSpeed_val14_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %motionSpeed_val14" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 14 'read' 'motionSpeed_val14_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%bckgndId_val10_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %bckgndId_val10" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 15 'read' 'bckgndId_val10_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%width_val7_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %width_val7" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 16 'read' 'width_val7_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%height_val4_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %height_val4" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 17 'read' 'height_val4_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%trunc_ln332 = trunc i16 %width_val7_read" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 18 'trunc' 'trunc_ln332' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%trunc_ln332_1 = trunc i16 %height_val4_read" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 19 'trunc' 'trunc_ln332_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%bckgndYUV = alloca i64 1" [prj/sol/.autopilot/db/v_tpg.cpp:324]   --->   Operation 20 'alloca' 'bckgndYUV' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 16> <FIFO>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%ovrlayYUV = alloca i64 1" [prj/sol/.autopilot/db/v_tpg.cpp:325]   --->   Operation 21 'alloca' 'ovrlayYUV' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 16> <FIFO>
+ST_1 : Operation 22 [2/2] (2.94ns)   --->   "%call_ln345 = call void @tpgBackground, i16 %height_val4_read, i16 %width_val7_read, i8 %bckgndId_val10_read, i16 %ZplateHorContStart_val20_read, i16 %ZplateHorContDelta_val21_read, i16 %ZplateVerContStart_val22_read, i16 %ZplateVerContDelta_val23_read, i8 %dpDynamicRange_val28_read, i8 %dpYUVCoef_val29_read, i8 %motionSpeed_val14_read, i8 %colorFormat_val17_read, i24 %bckgndYUV, i8 %rampStart, i32 %s, i16 %rampVal_1, i8 %rampVal, i8 %tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_hBarSel, i16 %zonePlateVAddr, i3 %vBarSel, i3 %tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign_1, i16 %hdata, i8 %vBarSel_2, i3 %tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_1, i16 %rampVal_2, i1 %vBarSel_1, i3 %tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_1, i8 %redYuv, i8 %grnYuv, i8 %bluYuv, i8 %blkYuv, i8 %whiYuv, i2 %tpgBarSelRgb_r, i8 %tpgBarSelYuv_y, i2 %tpgBarSelRgb_g, i8 %tpgBarSelYuv_u, i8 %tpgBarSelYuv_v, i11 %tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_xBar, i2 %tpgBarSelRgb_b, i20 %tpgSinTableArray, i16 %zonePlateVDelta, i3 %tpgTartanBarArray, i10 %tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign, i10 %yCount, i10 %tpgPatternCrossHatch_unsigned_short_unsigned_short_unsigned_short_unsigned_sh, i1 %vHatch, i10 %yCount_2, i8 %whiYuv_1, i8 %blkYuv_1, i8 %tpgSinTableArray_9bit_0, i8 %tpgSinTableArray_9bit_1, i9 %tpgSinTableArray_9bit_2, i2 %tpgCheckerBoardArray, i10 %tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_s, i10 %yCount_3, i28 %rSerie, i28 %gSerie, i28 %bSerie, i2 %DPtpgBarSelRgb_VESA_r, i2 %DPtpgBarSelRgb_VESA_g, i2 %DPtpgBarSelRgb_VESA_b, i3 %DPtpgBarArray, i10 %tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_s, i6 %yCount_1, i6 %DPtpgBarSelRgb_CEA_r, i6 %DPtpgBarSelRgb_CEA_g, i6 %DPtpgBarSelRgb_CEA_b, i8 %DPtpgBarSelYuv_601_y, i8 %DPtpgBarSelYuv_601_v, i8 %DPtpgBarSelYuv_601_u, i8 %DPtpgBarSelYuv_709_y, i8 %DPtpgBarSelYuv_709_v, i8 %DPtpgBarSelYuv_709_u" [prj/sol/.autopilot/db/v_tpg.cpp:345]   --->   Operation 22 'call' 'call_ln345' <Predicate = true> <Delay = 2.94> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 1.54>
+ST_2 : Operation 23 [1/2] (1.54ns)   --->   "%call_ln345 = call void @tpgBackground, i16 %height_val4_read, i16 %width_val7_read, i8 %bckgndId_val10_read, i16 %ZplateHorContStart_val20_read, i16 %ZplateHorContDelta_val21_read, i16 %ZplateVerContStart_val22_read, i16 %ZplateVerContDelta_val23_read, i8 %dpDynamicRange_val28_read, i8 %dpYUVCoef_val29_read, i8 %motionSpeed_val14_read, i8 %colorFormat_val17_read, i24 %bckgndYUV, i8 %rampStart, i32 %s, i16 %rampVal_1, i8 %rampVal, i8 %tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_hBarSel, i16 %zonePlateVAddr, i3 %vBarSel, i3 %tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign_1, i16 %hdata, i8 %vBarSel_2, i3 %tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_1, i16 %rampVal_2, i1 %vBarSel_1, i3 %tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_1, i8 %redYuv, i8 %grnYuv, i8 %bluYuv, i8 %blkYuv, i8 %whiYuv, i2 %tpgBarSelRgb_r, i8 %tpgBarSelYuv_y, i2 %tpgBarSelRgb_g, i8 %tpgBarSelYuv_u, i8 %tpgBarSelYuv_v, i11 %tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_xBar, i2 %tpgBarSelRgb_b, i20 %tpgSinTableArray, i16 %zonePlateVDelta, i3 %tpgTartanBarArray, i10 %tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign, i10 %yCount, i10 %tpgPatternCrossHatch_unsigned_short_unsigned_short_unsigned_short_unsigned_sh, i1 %vHatch, i10 %yCount_2, i8 %whiYuv_1, i8 %blkYuv_1, i8 %tpgSinTableArray_9bit_0, i8 %tpgSinTableArray_9bit_1, i9 %tpgSinTableArray_9bit_2, i2 %tpgCheckerBoardArray, i10 %tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_s, i10 %yCount_3, i28 %rSerie, i28 %gSerie, i28 %bSerie, i2 %DPtpgBarSelRgb_VESA_r, i2 %DPtpgBarSelRgb_VESA_g, i2 %DPtpgBarSelRgb_VESA_b, i3 %DPtpgBarArray, i10 %tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_s, i6 %yCount_1, i6 %DPtpgBarSelRgb_CEA_r, i6 %DPtpgBarSelRgb_CEA_g, i6 %DPtpgBarSelRgb_CEA_b, i8 %DPtpgBarSelYuv_601_y, i8 %DPtpgBarSelYuv_601_v, i8 %DPtpgBarSelYuv_601_u, i8 %DPtpgBarSelYuv_709_y, i8 %DPtpgBarSelYuv_709_v, i8 %DPtpgBarSelYuv_709_u" [prj/sol/.autopilot/db/v_tpg.cpp:345]   --->   Operation 23 'call' 'call_ln345' <Predicate = true> <Delay = 1.54> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 2.10>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%boxColorB_val27_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %boxColorB_val27" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 24 'read' 'boxColorB_val27_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%boxColorG_val26_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %boxColorG_val26" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 25 'read' 'boxColorG_val26_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%boxColorR_val25_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %boxColorR_val25" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 26 'read' 'boxColorR_val25_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%boxSize_val24_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %boxSize_val24" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 27 'read' 'boxSize_val24_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%crossHairY_val19_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %crossHairY_val19" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 28 'read' 'crossHairY_val19_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%crossHairX_val18_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %crossHairX_val18" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 29 'read' 'crossHairX_val18_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%maskId_val12_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %maskId_val12" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 30 'read' 'maskId_val12_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%ovrlayId_val11_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %ovrlayId_val11" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 31 'read' 'ovrlayId_val11_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [2/2] (2.10ns)   --->   "%call_ln358 = call void @tpgForeground, i24 %bckgndYUV, i16 %height_val4_read, i16 %width_val7_read, i8 %ovrlayId_val11_read, i8 %maskId_val12_read, i8 %colorFormat_val17_read, i16 %crossHairX_val18_read, i16 %crossHairY_val19_read, i16 %boxSize_val24_read, i8 %boxColorR_val25_read, i8 %boxColorG_val26_read, i8 %boxColorB_val27_read, i8 %motionSpeed_val14_read, i24 %ovrlayYUV, i16 %boxHCoord, i16 %boxVCoord, i1 %vDir, i1 %hDir, i8 %whiYuv_2" [prj/sol/.autopilot/db/v_tpg.cpp:358]   --->   Operation 32 'call' 'call_ln358' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 1.54>
+ST_4 : Operation 33 [1/2] (1.54ns)   --->   "%call_ln358 = call void @tpgForeground, i24 %bckgndYUV, i16 %height_val4_read, i16 %width_val7_read, i8 %ovrlayId_val11_read, i8 %maskId_val12_read, i8 %colorFormat_val17_read, i16 %crossHairX_val18_read, i16 %crossHairY_val19_read, i16 %boxSize_val24_read, i8 %boxColorR_val25_read, i8 %boxColorG_val26_read, i8 %boxColorB_val27_read, i8 %motionSpeed_val14_read, i24 %ovrlayYUV, i16 %boxHCoord, i16 %boxVCoord, i1 %vDir, i1 %hDir, i8 %whiYuv_2" [prj/sol/.autopilot/db/v_tpg.cpp:358]   --->   Operation 33 'call' 'call_ln358' <Predicate = true> <Delay = 1.54> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 3.94>
+ST_5 : Operation 34 [1/1] (0.00ns)   --->   "%fid_in_val9_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %fid_in_val9" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 34 'read' 'fid_in_val9_read' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 35 [1/1] (0.00ns)   --->   "%field_id_val8_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %field_id_val8" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 35 'read' 'field_id_val8_read' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 36 [2/2] (3.94ns)   --->   "%call_ln399 = call void @MultiPixStream2AXIvideo, i24 %ovrlayYUV, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i11 %trunc_ln332_1, i11 %trunc_ln332, i8 %colorFormat_val17_read, i1 %fid_in_val9_read, i1 %fid, i16 %field_id_val8_read, i1 %fidStored, i16 %counter" [prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 36 'call' 'call_ln399' <Predicate = true> <Delay = 3.94> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 1.62>
+ST_6 : Operation 37 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %dpYUVCoef_val29, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 37 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 38 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %dpDynamicRange_val28, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 38 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 39 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %boxColorB_val27, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 39 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 40 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %boxColorG_val26, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 40 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 41 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %boxColorR_val25, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 41 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 42 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %boxSize_val24, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 42 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 43 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %ZplateVerContDelta_val23, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 43 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 44 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %ZplateVerContStart_val22, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 44 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 45 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %ZplateHorContDelta_val21, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 45 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 46 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %ZplateHorContStart_val20, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 46 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 47 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %crossHairY_val19, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 47 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 48 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %crossHairX_val18, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 48 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 49 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %colorFormat_val17, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 49 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 50 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %motionSpeed_val14, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 50 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 51 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %maskId_val12, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 51 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 52 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %ovrlayId_val11, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 52 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 53 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %bckgndId_val10, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 53 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 54 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i1 %fid_in_val9, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 54 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 55 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %field_id_val8, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 55 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 56 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %width_val7, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 56 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 57 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %height_val4, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 57 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 58 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln332 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_1" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 58 'specdataflowpipeline' 'specdataflowpipeline_ln332' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 59 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, void @empty_14"   --->   Operation 59 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 60 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %m_axis_video_V_dest_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_user_V, i3 %m_axis_video_V_strb_V, i3 %m_axis_video_V_keep_V, i24 %m_axis_video_V_data_V, void @empty_18, i32 0, i32 0, void @empty_17, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 60 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 61 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @bckgndYUV_str, i32 1, void @p_str, void @p_str, i32 16, i32 16, i24 %bckgndYUV, i24 %bckgndYUV"   --->   Operation 61 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 62 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %bckgndYUV, void @empty_13, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 62 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 63 [1/1] (0.00ns)   --->   "%empty_58 = specchannel i32 @_ssdm_op_SpecChannel, void @ovrlayYUV_str, i32 1, void @p_str, void @p_str, i32 16, i32 16, i24 %ovrlayYUV, i24 %ovrlayYUV"   --->   Operation 63 'specchannel' 'empty_58' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 64 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %ovrlayYUV, void @empty_13, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 64 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 65 [1/2] (1.62ns)   --->   "%call_ln399 = call void @MultiPixStream2AXIvideo, i24 %ovrlayYUV, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i11 %trunc_ln332_1, i11 %trunc_ln332, i8 %colorFormat_val17_read, i1 %fid_in_val9_read, i1 %fid, i16 %field_id_val8_read, i1 %fidStored, i16 %counter" [prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 65 'call' 'call_ln399' <Predicate = true> <Delay = 1.62> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 66 [1/1] (0.00ns)   --->   "%ret_ln401 = ret" [prj/sol/.autopilot/db/v_tpg.cpp:401]   --->   Operation 66 'ret' 'ret_ln401' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ height_val4]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ width_val7]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ field_id_val8]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ fid_in_val9]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_stable:ce=0
+Port [ bckgndId_val10]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ ovrlayId_val11]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ maskId_val12]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ motionSpeed_val14]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ colorFormat_val17]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ crossHairX_val18]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ crossHairY_val19]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ ZplateHorContStart_val20]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ ZplateHorContDelta_val21]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ ZplateVerContStart_val22]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ ZplateVerContDelta_val23]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ boxSize_val24]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ boxColorR_val25]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ boxColorG_val26]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ boxColorB_val27]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ dpDynamicRange_val28]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ dpYUVCoef_val29]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ m_axis_video_V_data_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ m_axis_video_V_keep_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ m_axis_video_V_strb_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ m_axis_video_V_user_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ m_axis_video_V_last_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ m_axis_video_V_id_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ m_axis_video_V_dest_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ fid]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ rampStart]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ s]:  wired=1; compound=0; hidden=0; nouse=0; global=1; static=1; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ rampVal_1]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ rampVal]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_hBarSel]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ zonePlateVAddr]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ vBarSel]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign_1]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ hdata]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ vBarSel_2]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_1]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ rampVal_2]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ vBarSel_1]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_1]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ redYuv]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ grnYuv]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ bluYuv]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ blkYuv]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ whiYuv]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ tpgBarSelRgb_r]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ tpgBarSelYuv_y]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ tpgBarSelRgb_g]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ tpgBarSelYuv_u]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ tpgBarSelYuv_v]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_xBar]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ tpgBarSelRgb_b]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ tpgSinTableArray]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ zonePlateVDelta]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ tpgTartanBarArray]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ yCount]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ tpgPatternCrossHatch_unsigned_short_unsigned_short_unsigned_short_unsigned_sh]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ vHatch]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ yCount_2]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ whiYuv_1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ blkYuv_1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ tpgSinTableArray_9bit_0]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[111]; IO mode=ap_memory:ce=0
+Port [ tpgSinTableArray_9bit_1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[111]; IO mode=ap_memory:ce=0
+Port [ tpgSinTableArray_9bit_2]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[111]; IO mode=ap_memory:ce=0
+Port [ tpgCheckerBoardArray]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_s]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ yCount_3]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ rSerie]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ gSerie]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ bSerie]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ DPtpgBarSelRgb_VESA_r]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ DPtpgBarSelRgb_VESA_g]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ DPtpgBarSelRgb_VESA_b]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ DPtpgBarArray]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_s]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ yCount_1]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ DPtpgBarSelRgb_CEA_r]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ DPtpgBarSelRgb_CEA_g]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ DPtpgBarSelRgb_CEA_b]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ DPtpgBarSelYuv_601_y]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ DPtpgBarSelYuv_601_v]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ DPtpgBarSelYuv_601_u]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ DPtpgBarSelYuv_709_y]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ DPtpgBarSelYuv_709_v]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ DPtpgBarSelYuv_709_u]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ boxHCoord]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ boxVCoord]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ vDir]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ hDir]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ whiYuv_2]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ fidStored]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ counter]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+dpYUVCoef_val29_read          (read                ) [ 0010000]
+dpDynamicRange_val28_read     (read                ) [ 0010000]
+ZplateVerContDelta_val23_read (read                ) [ 0010000]
+ZplateVerContStart_val22_read (read                ) [ 0010000]
+ZplateHorContDelta_val21_read (read                ) [ 0010000]
+ZplateHorContStart_val20_read (read                ) [ 0010000]
+colorFormat_val17_read        (read                ) [ 0011111]
+motionSpeed_val14_read        (read                ) [ 0011100]
+bckgndId_val10_read           (read                ) [ 0010000]
+width_val7_read               (read                ) [ 0011100]
+height_val4_read              (read                ) [ 0011100]
+trunc_ln332                   (trunc               ) [ 0011111]
+trunc_ln332_1                 (trunc               ) [ 0011111]
+bckgndYUV                     (alloca              ) [ 0111111]
+ovrlayYUV                     (alloca              ) [ 0011111]
+call_ln345                    (call                ) [ 0000000]
+boxColorB_val27_read          (read                ) [ 0000100]
+boxColorG_val26_read          (read                ) [ 0000100]
+boxColorR_val25_read          (read                ) [ 0000100]
+boxSize_val24_read            (read                ) [ 0000100]
+crossHairY_val19_read         (read                ) [ 0000100]
+crossHairX_val18_read         (read                ) [ 0000100]
+maskId_val12_read             (read                ) [ 0000100]
+ovrlayId_val11_read           (read                ) [ 0000100]
+call_ln358                    (call                ) [ 0000000]
+fid_in_val9_read              (read                ) [ 0000001]
+field_id_val8_read            (read                ) [ 0000001]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specstablecontent_ln332       (specstablecontent   ) [ 0000000]
+specdataflowpipeline_ln332    (specdataflowpipeline) [ 0000000]
+specaxissidechannel_ln0       (specaxissidechannel ) [ 0000000]
+specinterface_ln0             (specinterface       ) [ 0000000]
+empty                         (specchannel         ) [ 0000000]
+specinterface_ln0             (specinterface       ) [ 0000000]
+empty_58                      (specchannel         ) [ 0000000]
+specinterface_ln0             (specinterface       ) [ 0000000]
+call_ln399                    (call                ) [ 0000000]
+ret_ln401                     (ret                 ) [ 0000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="height_val4">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="height_val4"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="width_val7">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="width_val7"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="field_id_val8">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="field_id_val8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="fid_in_val9">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fid_in_val9"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="bckgndId_val10">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="bckgndId_val10"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="ovrlayId_val11">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ovrlayId_val11"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="maskId_val12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="maskId_val12"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="motionSpeed_val14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="motionSpeed_val14"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="colorFormat_val17">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="colorFormat_val17"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="crossHairX_val18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="crossHairX_val18"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="crossHairY_val19">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="crossHairY_val19"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="ZplateHorContStart_val20">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ZplateHorContStart_val20"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1000" name="ZplateHorContDelta_val21">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ZplateHorContDelta_val21"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1000" name="ZplateVerContStart_val22">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ZplateVerContStart_val22"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1000" name="ZplateVerContDelta_val23">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ZplateVerContDelta_val23"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1000" name="boxSize_val24">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="boxSize_val24"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1000" name="boxColorR_val25">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="boxColorR_val25"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1000" name="boxColorG_val26">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="boxColorG_val26"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1000" name="boxColorB_val27">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="boxColorB_val27"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1000" name="dpDynamicRange_val28">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dpDynamicRange_val28"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1000" name="dpYUVCoef_val29">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dpYUVCoef_val29"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1000" name="m_axis_video_V_data_V">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="m_axis_video_V_data_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1000" name="m_axis_video_V_keep_V">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="m_axis_video_V_keep_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1000" name="m_axis_video_V_strb_V">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="m_axis_video_V_strb_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1000" name="m_axis_video_V_user_V">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="m_axis_video_V_user_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1000" name="m_axis_video_V_last_V">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="m_axis_video_V_last_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1000" name="m_axis_video_V_id_V">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="m_axis_video_V_id_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1000" name="m_axis_video_V_dest_V">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="m_axis_video_V_dest_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1000" name="fid">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fid"/></StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1000" name="rampStart">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="rampStart"/></StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1000" name="s">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1000" name="rampVal_1">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="rampVal_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1000" name="rampVal">
+<pin_list>
+<pin id="65" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="rampVal"/></StgValue>
+</bind>
+</comp>
+
+<comp id="66" class="1000" name="tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_hBarSel">
+<pin_list>
+<pin id="67" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_hBarSel"/></StgValue>
+</bind>
+</comp>
+
+<comp id="68" class="1000" name="zonePlateVAddr">
+<pin_list>
+<pin id="69" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="zonePlateVAddr"/></StgValue>
+</bind>
+</comp>
+
+<comp id="70" class="1000" name="vBarSel">
+<pin_list>
+<pin id="71" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="vBarSel"/></StgValue>
+</bind>
+</comp>
+
+<comp id="72" class="1000" name="tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign_1">
+<pin_list>
+<pin id="73" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="74" class="1000" name="hdata">
+<pin_list>
+<pin id="75" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="hdata"/></StgValue>
+</bind>
+</comp>
+
+<comp id="76" class="1000" name="vBarSel_2">
+<pin_list>
+<pin id="77" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="vBarSel_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="78" class="1000" name="tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_1">
+<pin_list>
+<pin id="79" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="80" class="1000" name="rampVal_2">
+<pin_list>
+<pin id="81" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="rampVal_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="82" class="1000" name="vBarSel_1">
+<pin_list>
+<pin id="83" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="vBarSel_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="84" class="1000" name="tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_1">
+<pin_list>
+<pin id="85" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="86" class="1000" name="redYuv">
+<pin_list>
+<pin id="87" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="redYuv"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="88" class="1000" name="grnYuv">
+<pin_list>
+<pin id="89" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="grnYuv"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="90" class="1000" name="bluYuv">
+<pin_list>
+<pin id="91" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="bluYuv"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="92" class="1000" name="blkYuv">
+<pin_list>
+<pin id="93" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="blkYuv"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="94" class="1000" name="whiYuv">
+<pin_list>
+<pin id="95" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="whiYuv"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="96" class="1000" name="tpgBarSelRgb_r">
+<pin_list>
+<pin id="97" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgBarSelRgb_r"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="98" class="1000" name="tpgBarSelYuv_y">
+<pin_list>
+<pin id="99" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgBarSelYuv_y"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="100" class="1000" name="tpgBarSelRgb_g">
+<pin_list>
+<pin id="101" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgBarSelRgb_g"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="102" class="1000" name="tpgBarSelYuv_u">
+<pin_list>
+<pin id="103" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgBarSelYuv_u"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="104" class="1000" name="tpgBarSelYuv_v">
+<pin_list>
+<pin id="105" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgBarSelYuv_v"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="106" class="1000" name="tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_xBar">
+<pin_list>
+<pin id="107" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_xBar"/></StgValue>
+</bind>
+</comp>
+
+<comp id="108" class="1000" name="tpgBarSelRgb_b">
+<pin_list>
+<pin id="109" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgBarSelRgb_b"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="110" class="1000" name="tpgSinTableArray">
+<pin_list>
+<pin id="111" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgSinTableArray"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="112" class="1000" name="zonePlateVDelta">
+<pin_list>
+<pin id="113" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="zonePlateVDelta"/></StgValue>
+</bind>
+</comp>
+
+<comp id="114" class="1000" name="tpgTartanBarArray">
+<pin_list>
+<pin id="115" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgTartanBarArray"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="116" class="1000" name="tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign">
+<pin_list>
+<pin id="117" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign"/></StgValue>
+</bind>
+</comp>
+
+<comp id="118" class="1000" name="yCount">
+<pin_list>
+<pin id="119" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="yCount"/></StgValue>
+</bind>
+</comp>
+
+<comp id="120" class="1000" name="tpgPatternCrossHatch_unsigned_short_unsigned_short_unsigned_short_unsigned_sh">
+<pin_list>
+<pin id="121" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgPatternCrossHatch_unsigned_short_unsigned_short_unsigned_short_unsigned_sh"/></StgValue>
+</bind>
+</comp>
+
+<comp id="122" class="1000" name="vHatch">
+<pin_list>
+<pin id="123" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="vHatch"/></StgValue>
+</bind>
+</comp>
+
+<comp id="124" class="1000" name="yCount_2">
+<pin_list>
+<pin id="125" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="yCount_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="126" class="1000" name="whiYuv_1">
+<pin_list>
+<pin id="127" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="whiYuv_1"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="128" class="1000" name="blkYuv_1">
+<pin_list>
+<pin id="129" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="blkYuv_1"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="130" class="1000" name="tpgSinTableArray_9bit_0">
+<pin_list>
+<pin id="131" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgSinTableArray_9bit_0"/><MemPortTyVec>1 1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="132" class="1000" name="tpgSinTableArray_9bit_1">
+<pin_list>
+<pin id="133" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgSinTableArray_9bit_1"/><MemPortTyVec>1 1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="134" class="1000" name="tpgSinTableArray_9bit_2">
+<pin_list>
+<pin id="135" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgSinTableArray_9bit_2"/><MemPortTyVec>1 1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="136" class="1000" name="tpgCheckerBoardArray">
+<pin_list>
+<pin id="137" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgCheckerBoardArray"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="138" class="1000" name="tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_s">
+<pin_list>
+<pin id="139" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="140" class="1000" name="yCount_3">
+<pin_list>
+<pin id="141" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="yCount_3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="142" class="1000" name="rSerie">
+<pin_list>
+<pin id="143" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="rSerie"/></StgValue>
+</bind>
+</comp>
+
+<comp id="144" class="1000" name="gSerie">
+<pin_list>
+<pin id="145" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="gSerie"/></StgValue>
+</bind>
+</comp>
+
+<comp id="146" class="1000" name="bSerie">
+<pin_list>
+<pin id="147" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="bSerie"/></StgValue>
+</bind>
+</comp>
+
+<comp id="148" class="1000" name="DPtpgBarSelRgb_VESA_r">
+<pin_list>
+<pin id="149" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DPtpgBarSelRgb_VESA_r"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="150" class="1000" name="DPtpgBarSelRgb_VESA_g">
+<pin_list>
+<pin id="151" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DPtpgBarSelRgb_VESA_g"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="152" class="1000" name="DPtpgBarSelRgb_VESA_b">
+<pin_list>
+<pin id="153" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DPtpgBarSelRgb_VESA_b"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="154" class="1000" name="DPtpgBarArray">
+<pin_list>
+<pin id="155" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DPtpgBarArray"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="156" class="1000" name="tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_s">
+<pin_list>
+<pin id="157" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="158" class="1000" name="yCount_1">
+<pin_list>
+<pin id="159" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="yCount_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="160" class="1000" name="DPtpgBarSelRgb_CEA_r">
+<pin_list>
+<pin id="161" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DPtpgBarSelRgb_CEA_r"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="162" class="1000" name="DPtpgBarSelRgb_CEA_g">
+<pin_list>
+<pin id="163" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DPtpgBarSelRgb_CEA_g"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="164" class="1000" name="DPtpgBarSelRgb_CEA_b">
+<pin_list>
+<pin id="165" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DPtpgBarSelRgb_CEA_b"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="166" class="1000" name="DPtpgBarSelYuv_601_y">
+<pin_list>
+<pin id="167" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DPtpgBarSelYuv_601_y"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="168" class="1000" name="DPtpgBarSelYuv_601_v">
+<pin_list>
+<pin id="169" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DPtpgBarSelYuv_601_v"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="170" class="1000" name="DPtpgBarSelYuv_601_u">
+<pin_list>
+<pin id="171" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DPtpgBarSelYuv_601_u"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="172" class="1000" name="DPtpgBarSelYuv_709_y">
+<pin_list>
+<pin id="173" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DPtpgBarSelYuv_709_y"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="174" class="1000" name="DPtpgBarSelYuv_709_v">
+<pin_list>
+<pin id="175" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DPtpgBarSelYuv_709_v"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="176" class="1000" name="DPtpgBarSelYuv_709_u">
+<pin_list>
+<pin id="177" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DPtpgBarSelYuv_709_u"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="178" class="1000" name="boxHCoord">
+<pin_list>
+<pin id="179" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="boxHCoord"/></StgValue>
+</bind>
+</comp>
+
+<comp id="180" class="1000" name="boxVCoord">
+<pin_list>
+<pin id="181" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="boxVCoord"/></StgValue>
+</bind>
+</comp>
+
+<comp id="182" class="1000" name="vDir">
+<pin_list>
+<pin id="183" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="vDir"/></StgValue>
+</bind>
+</comp>
+
+<comp id="184" class="1000" name="hDir">
+<pin_list>
+<pin id="185" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="hDir"/></StgValue>
+</bind>
+</comp>
+
+<comp id="186" class="1000" name="whiYuv_2">
+<pin_list>
+<pin id="187" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="whiYuv_2"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="188" class="1000" name="fidStored">
+<pin_list>
+<pin id="189" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fidStored"/></StgValue>
+</bind>
+</comp>
+
+<comp id="190" class="1000" name="counter">
+<pin_list>
+<pin id="191" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="counter"/></StgValue>
+</bind>
+</comp>
+
+<comp id="192" class="1001" name="const_192">
+<pin_list>
+<pin id="193" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="194" class="1001" name="const_194">
+<pin_list>
+<pin id="195" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i16"/></StgValue>
+</bind>
+</comp>
+
+<comp id="196" class="1001" name="const_196">
+<pin_list>
+<pin id="197" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="198" class="1001" name="const_198">
+<pin_list>
+<pin id="199" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgBackground"/></StgValue>
+</bind>
+</comp>
+
+<comp id="200" class="1001" name="const_200">
+<pin_list>
+<pin id="201" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tpgForeground"/></StgValue>
+</bind>
+</comp>
+
+<comp id="202" class="1001" name="const_202">
+<pin_list>
+<pin id="203" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="204" class="1001" name="const_204">
+<pin_list>
+<pin id="205" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="MultiPixStream2AXIvideo"/></StgValue>
+</bind>
+</comp>
+
+<comp id="206" class="1001" name="const_206">
+<pin_list>
+<pin id="207" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecStableContent"/></StgValue>
+</bind>
+</comp>
+
+<comp id="208" class="1001" name="const_208">
+<pin_list>
+<pin id="209" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="210" class="1001" name="const_210">
+<pin_list>
+<pin id="211" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="212" class="1001" name="const_212">
+<pin_list>
+<pin id="213" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecDataflowPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="214" class="1001" name="const_214">
+<pin_list>
+<pin id="215" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="216" class="1001" name="const_216">
+<pin_list>
+<pin id="217" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="218" class="1001" name="const_218">
+<pin_list>
+<pin id="219" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="220" class="1001" name="const_220">
+<pin_list>
+<pin id="221" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecAXISSideChannel"/></StgValue>
+</bind>
+</comp>
+
+<comp id="222" class="1001" name="const_222">
+<pin_list>
+<pin id="223" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_14"/></StgValue>
+</bind>
+</comp>
+
+<comp id="224" class="1001" name="const_224">
+<pin_list>
+<pin id="225" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="226" class="1001" name="const_226">
+<pin_list>
+<pin id="227" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_18"/></StgValue>
+</bind>
+</comp>
+
+<comp id="228" class="1001" name="const_228">
+<pin_list>
+<pin id="229" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_17"/></StgValue>
+</bind>
+</comp>
+
+<comp id="230" class="1001" name="const_230">
+<pin_list>
+<pin id="231" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecChannel"/></StgValue>
+</bind>
+</comp>
+
+<comp id="232" class="1001" name="const_232">
+<pin_list>
+<pin id="233" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="bckgndYUV_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="234" class="1001" name="const_234">
+<pin_list>
+<pin id="235" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="236" class="1001" name="const_236">
+<pin_list>
+<pin id="237" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="238" class="1001" name="const_238">
+<pin_list>
+<pin id="239" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_13"/></StgValue>
+</bind>
+</comp>
+
+<comp id="240" class="1001" name="const_240">
+<pin_list>
+<pin id="241" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ovrlayYUV_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="242" class="1004" name="bckgndYUV_fu_242">
+<pin_list>
+<pin id="243" dir="0" index="0" bw="1" slack="0"/>
+<pin id="244" dir="1" index="1" bw="24" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="bckgndYUV/1 "/>
+</bind>
+</comp>
+
+<comp id="246" class="1004" name="ovrlayYUV_fu_246">
+<pin_list>
+<pin id="247" dir="0" index="0" bw="1" slack="0"/>
+<pin id="248" dir="1" index="1" bw="24" slack="2"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="ovrlayYUV/1 "/>
+</bind>
+</comp>
+
+<comp id="250" class="1004" name="dpYUVCoef_val29_read_read_fu_250">
+<pin_list>
+<pin id="251" dir="0" index="0" bw="8" slack="0"/>
+<pin id="252" dir="0" index="1" bw="8" slack="0"/>
+<pin id="253" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="dpYUVCoef_val29_read/1 "/>
+</bind>
+</comp>
+
+<comp id="256" class="1004" name="dpDynamicRange_val28_read_read_fu_256">
+<pin_list>
+<pin id="257" dir="0" index="0" bw="8" slack="0"/>
+<pin id="258" dir="0" index="1" bw="8" slack="0"/>
+<pin id="259" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="dpDynamicRange_val28_read/1 "/>
+</bind>
+</comp>
+
+<comp id="262" class="1004" name="ZplateVerContDelta_val23_read_read_fu_262">
+<pin_list>
+<pin id="263" dir="0" index="0" bw="16" slack="0"/>
+<pin id="264" dir="0" index="1" bw="16" slack="0"/>
+<pin id="265" dir="1" index="2" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="ZplateVerContDelta_val23_read/1 "/>
+</bind>
+</comp>
+
+<comp id="268" class="1004" name="ZplateVerContStart_val22_read_read_fu_268">
+<pin_list>
+<pin id="269" dir="0" index="0" bw="16" slack="0"/>
+<pin id="270" dir="0" index="1" bw="16" slack="0"/>
+<pin id="271" dir="1" index="2" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="ZplateVerContStart_val22_read/1 "/>
+</bind>
+</comp>
+
+<comp id="274" class="1004" name="ZplateHorContDelta_val21_read_read_fu_274">
+<pin_list>
+<pin id="275" dir="0" index="0" bw="16" slack="0"/>
+<pin id="276" dir="0" index="1" bw="16" slack="0"/>
+<pin id="277" dir="1" index="2" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="ZplateHorContDelta_val21_read/1 "/>
+</bind>
+</comp>
+
+<comp id="280" class="1004" name="ZplateHorContStart_val20_read_read_fu_280">
+<pin_list>
+<pin id="281" dir="0" index="0" bw="16" slack="0"/>
+<pin id="282" dir="0" index="1" bw="16" slack="0"/>
+<pin id="283" dir="1" index="2" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="ZplateHorContStart_val20_read/1 "/>
+</bind>
+</comp>
+
+<comp id="286" class="1004" name="colorFormat_val17_read_read_fu_286">
+<pin_list>
+<pin id="287" dir="0" index="0" bw="8" slack="0"/>
+<pin id="288" dir="0" index="1" bw="8" slack="0"/>
+<pin id="289" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="colorFormat_val17_read/1 "/>
+</bind>
+</comp>
+
+<comp id="292" class="1004" name="motionSpeed_val14_read_read_fu_292">
+<pin_list>
+<pin id="293" dir="0" index="0" bw="8" slack="0"/>
+<pin id="294" dir="0" index="1" bw="8" slack="0"/>
+<pin id="295" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="motionSpeed_val14_read/1 "/>
+</bind>
+</comp>
+
+<comp id="298" class="1004" name="bckgndId_val10_read_read_fu_298">
+<pin_list>
+<pin id="299" dir="0" index="0" bw="8" slack="0"/>
+<pin id="300" dir="0" index="1" bw="8" slack="0"/>
+<pin id="301" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="bckgndId_val10_read/1 "/>
+</bind>
+</comp>
+
+<comp id="304" class="1004" name="width_val7_read_read_fu_304">
+<pin_list>
+<pin id="305" dir="0" index="0" bw="16" slack="0"/>
+<pin id="306" dir="0" index="1" bw="16" slack="0"/>
+<pin id="307" dir="1" index="2" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="width_val7_read/1 "/>
+</bind>
+</comp>
+
+<comp id="310" class="1004" name="height_val4_read_read_fu_310">
+<pin_list>
+<pin id="311" dir="0" index="0" bw="16" slack="0"/>
+<pin id="312" dir="0" index="1" bw="16" slack="0"/>
+<pin id="313" dir="1" index="2" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="height_val4_read/1 "/>
+</bind>
+</comp>
+
+<comp id="316" class="1004" name="boxColorB_val27_read_read_fu_316">
+<pin_list>
+<pin id="317" dir="0" index="0" bw="8" slack="0"/>
+<pin id="318" dir="0" index="1" bw="8" slack="0"/>
+<pin id="319" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="boxColorB_val27_read/3 "/>
+</bind>
+</comp>
+
+<comp id="322" class="1004" name="boxColorG_val26_read_read_fu_322">
+<pin_list>
+<pin id="323" dir="0" index="0" bw="8" slack="0"/>
+<pin id="324" dir="0" index="1" bw="8" slack="0"/>
+<pin id="325" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="boxColorG_val26_read/3 "/>
+</bind>
+</comp>
+
+<comp id="328" class="1004" name="boxColorR_val25_read_read_fu_328">
+<pin_list>
+<pin id="329" dir="0" index="0" bw="8" slack="0"/>
+<pin id="330" dir="0" index="1" bw="8" slack="0"/>
+<pin id="331" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="boxColorR_val25_read/3 "/>
+</bind>
+</comp>
+
+<comp id="334" class="1004" name="boxSize_val24_read_read_fu_334">
+<pin_list>
+<pin id="335" dir="0" index="0" bw="16" slack="0"/>
+<pin id="336" dir="0" index="1" bw="16" slack="0"/>
+<pin id="337" dir="1" index="2" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="boxSize_val24_read/3 "/>
+</bind>
+</comp>
+
+<comp id="340" class="1004" name="crossHairY_val19_read_read_fu_340">
+<pin_list>
+<pin id="341" dir="0" index="0" bw="16" slack="0"/>
+<pin id="342" dir="0" index="1" bw="16" slack="0"/>
+<pin id="343" dir="1" index="2" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="crossHairY_val19_read/3 "/>
+</bind>
+</comp>
+
+<comp id="346" class="1004" name="crossHairX_val18_read_read_fu_346">
+<pin_list>
+<pin id="347" dir="0" index="0" bw="16" slack="0"/>
+<pin id="348" dir="0" index="1" bw="16" slack="0"/>
+<pin id="349" dir="1" index="2" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="crossHairX_val18_read/3 "/>
+</bind>
+</comp>
+
+<comp id="352" class="1004" name="maskId_val12_read_read_fu_352">
+<pin_list>
+<pin id="353" dir="0" index="0" bw="8" slack="0"/>
+<pin id="354" dir="0" index="1" bw="8" slack="0"/>
+<pin id="355" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="maskId_val12_read/3 "/>
+</bind>
+</comp>
+
+<comp id="358" class="1004" name="ovrlayId_val11_read_read_fu_358">
+<pin_list>
+<pin id="359" dir="0" index="0" bw="8" slack="0"/>
+<pin id="360" dir="0" index="1" bw="8" slack="0"/>
+<pin id="361" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="ovrlayId_val11_read/3 "/>
+</bind>
+</comp>
+
+<comp id="364" class="1004" name="fid_in_val9_read_read_fu_364">
+<pin_list>
+<pin id="365" dir="0" index="0" bw="1" slack="0"/>
+<pin id="366" dir="0" index="1" bw="1" slack="0"/>
+<pin id="367" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="fid_in_val9_read/5 "/>
+</bind>
+</comp>
+
+<comp id="370" class="1004" name="field_id_val8_read_read_fu_370">
+<pin_list>
+<pin id="371" dir="0" index="0" bw="16" slack="0"/>
+<pin id="372" dir="0" index="1" bw="16" slack="0"/>
+<pin id="373" dir="1" index="2" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="field_id_val8_read/5 "/>
+</bind>
+</comp>
+
+<comp id="376" class="1004" name="grp_tpgBackground_fu_376">
+<pin_list>
+<pin id="377" dir="0" index="0" bw="0" slack="0"/>
+<pin id="378" dir="0" index="1" bw="16" slack="0"/>
+<pin id="379" dir="0" index="2" bw="16" slack="0"/>
+<pin id="380" dir="0" index="3" bw="8" slack="0"/>
+<pin id="381" dir="0" index="4" bw="16" slack="0"/>
+<pin id="382" dir="0" index="5" bw="16" slack="0"/>
+<pin id="383" dir="0" index="6" bw="16" slack="0"/>
+<pin id="384" dir="0" index="7" bw="16" slack="0"/>
+<pin id="385" dir="0" index="8" bw="8" slack="0"/>
+<pin id="386" dir="0" index="9" bw="8" slack="0"/>
+<pin id="387" dir="0" index="10" bw="8" slack="0"/>
+<pin id="388" dir="0" index="11" bw="8" slack="0"/>
+<pin id="389" dir="0" index="12" bw="24" slack="0"/>
+<pin id="390" dir="0" index="13" bw="8" slack="0"/>
+<pin id="391" dir="0" index="14" bw="32" slack="0"/>
+<pin id="392" dir="0" index="15" bw="16" slack="0"/>
+<pin id="393" dir="0" index="16" bw="8" slack="0"/>
+<pin id="394" dir="0" index="17" bw="8" slack="0"/>
+<pin id="395" dir="0" index="18" bw="16" slack="0"/>
+<pin id="396" dir="0" index="19" bw="3" slack="0"/>
+<pin id="397" dir="0" index="20" bw="3" slack="0"/>
+<pin id="398" dir="0" index="21" bw="16" slack="0"/>
+<pin id="399" dir="0" index="22" bw="8" slack="0"/>
+<pin id="400" dir="0" index="23" bw="3" slack="0"/>
+<pin id="401" dir="0" index="24" bw="16" slack="0"/>
+<pin id="402" dir="0" index="25" bw="1" slack="0"/>
+<pin id="403" dir="0" index="26" bw="3" slack="0"/>
+<pin id="404" dir="0" index="27" bw="8" slack="0"/>
+<pin id="405" dir="0" index="28" bw="8" slack="0"/>
+<pin id="406" dir="0" index="29" bw="8" slack="0"/>
+<pin id="407" dir="0" index="30" bw="8" slack="0"/>
+<pin id="408" dir="0" index="31" bw="8" slack="0"/>
+<pin id="409" dir="0" index="32" bw="2" slack="0"/>
+<pin id="410" dir="0" index="33" bw="8" slack="0"/>
+<pin id="411" dir="0" index="34" bw="2" slack="0"/>
+<pin id="412" dir="0" index="35" bw="8" slack="0"/>
+<pin id="413" dir="0" index="36" bw="8" slack="0"/>
+<pin id="414" dir="0" index="37" bw="11" slack="0"/>
+<pin id="415" dir="0" index="38" bw="2" slack="0"/>
+<pin id="416" dir="0" index="39" bw="20" slack="0"/>
+<pin id="417" dir="0" index="40" bw="16" slack="0"/>
+<pin id="418" dir="0" index="41" bw="3" slack="0"/>
+<pin id="419" dir="0" index="42" bw="10" slack="0"/>
+<pin id="420" dir="0" index="43" bw="10" slack="0"/>
+<pin id="421" dir="0" index="44" bw="10" slack="0"/>
+<pin id="422" dir="0" index="45" bw="1" slack="0"/>
+<pin id="423" dir="0" index="46" bw="10" slack="0"/>
+<pin id="424" dir="0" index="47" bw="8" slack="0"/>
+<pin id="425" dir="0" index="48" bw="8" slack="0"/>
+<pin id="426" dir="0" index="49" bw="8" slack="0"/>
+<pin id="427" dir="0" index="50" bw="8" slack="0"/>
+<pin id="428" dir="0" index="51" bw="9" slack="0"/>
+<pin id="429" dir="0" index="52" bw="2" slack="0"/>
+<pin id="430" dir="0" index="53" bw="10" slack="0"/>
+<pin id="431" dir="0" index="54" bw="10" slack="0"/>
+<pin id="432" dir="0" index="55" bw="28" slack="0"/>
+<pin id="433" dir="0" index="56" bw="28" slack="0"/>
+<pin id="434" dir="0" index="57" bw="28" slack="0"/>
+<pin id="435" dir="0" index="58" bw="2" slack="0"/>
+<pin id="436" dir="0" index="59" bw="2" slack="0"/>
+<pin id="437" dir="0" index="60" bw="2" slack="0"/>
+<pin id="438" dir="0" index="61" bw="3" slack="0"/>
+<pin id="439" dir="0" index="62" bw="10" slack="0"/>
+<pin id="440" dir="0" index="63" bw="6" slack="0"/>
+<pin id="441" dir="0" index="64" bw="6" slack="0"/>
+<pin id="442" dir="0" index="65" bw="6" slack="0"/>
+<pin id="443" dir="0" index="66" bw="6" slack="0"/>
+<pin id="444" dir="0" index="67" bw="8" slack="0"/>
+<pin id="445" dir="0" index="68" bw="8" slack="0"/>
+<pin id="446" dir="0" index="69" bw="8" slack="0"/>
+<pin id="447" dir="0" index="70" bw="8" slack="0"/>
+<pin id="448" dir="0" index="71" bw="8" slack="0"/>
+<pin id="449" dir="0" index="72" bw="8" slack="0"/>
+<pin id="450" dir="1" index="73" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln345/1 "/>
+</bind>
+</comp>
+
+<comp id="523" class="1004" name="grp_tpgForeground_fu_523">
+<pin_list>
+<pin id="524" dir="0" index="0" bw="0" slack="0"/>
+<pin id="525" dir="0" index="1" bw="24" slack="2"/>
+<pin id="526" dir="0" index="2" bw="16" slack="2"/>
+<pin id="527" dir="0" index="3" bw="16" slack="2"/>
+<pin id="528" dir="0" index="4" bw="8" slack="0"/>
+<pin id="529" dir="0" index="5" bw="8" slack="0"/>
+<pin id="530" dir="0" index="6" bw="8" slack="2"/>
+<pin id="531" dir="0" index="7" bw="16" slack="0"/>
+<pin id="532" dir="0" index="8" bw="16" slack="0"/>
+<pin id="533" dir="0" index="9" bw="16" slack="0"/>
+<pin id="534" dir="0" index="10" bw="8" slack="0"/>
+<pin id="535" dir="0" index="11" bw="8" slack="0"/>
+<pin id="536" dir="0" index="12" bw="8" slack="0"/>
+<pin id="537" dir="0" index="13" bw="8" slack="2"/>
+<pin id="538" dir="0" index="14" bw="24" slack="2"/>
+<pin id="539" dir="0" index="15" bw="16" slack="0"/>
+<pin id="540" dir="0" index="16" bw="16" slack="0"/>
+<pin id="541" dir="0" index="17" bw="1" slack="0"/>
+<pin id="542" dir="0" index="18" bw="1" slack="0"/>
+<pin id="543" dir="0" index="19" bw="8" slack="0"/>
+<pin id="544" dir="1" index="20" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln358/3 "/>
+</bind>
+</comp>
+
+<comp id="559" class="1004" name="grp_MultiPixStream2AXIvideo_fu_559">
+<pin_list>
+<pin id="560" dir="0" index="0" bw="0" slack="0"/>
+<pin id="561" dir="0" index="1" bw="24" slack="4"/>
+<pin id="562" dir="0" index="2" bw="24" slack="0"/>
+<pin id="563" dir="0" index="3" bw="3" slack="0"/>
+<pin id="564" dir="0" index="4" bw="3" slack="0"/>
+<pin id="565" dir="0" index="5" bw="1" slack="0"/>
+<pin id="566" dir="0" index="6" bw="1" slack="0"/>
+<pin id="567" dir="0" index="7" bw="1" slack="0"/>
+<pin id="568" dir="0" index="8" bw="1" slack="0"/>
+<pin id="569" dir="0" index="9" bw="11" slack="4"/>
+<pin id="570" dir="0" index="10" bw="11" slack="4"/>
+<pin id="571" dir="0" index="11" bw="8" slack="4"/>
+<pin id="572" dir="0" index="12" bw="1" slack="0"/>
+<pin id="573" dir="0" index="13" bw="1" slack="0"/>
+<pin id="574" dir="0" index="14" bw="16" slack="0"/>
+<pin id="575" dir="0" index="15" bw="1" slack="0"/>
+<pin id="576" dir="0" index="16" bw="16" slack="0"/>
+<pin id="577" dir="1" index="17" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln399/5 "/>
+</bind>
+</comp>
+
+<comp id="591" class="1004" name="trunc_ln332_fu_591">
+<pin_list>
+<pin id="592" dir="0" index="0" bw="16" slack="0"/>
+<pin id="593" dir="1" index="1" bw="11" slack="4"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln332/1 "/>
+</bind>
+</comp>
+
+<comp id="595" class="1004" name="trunc_ln332_1_fu_595">
+<pin_list>
+<pin id="596" dir="0" index="0" bw="16" slack="0"/>
+<pin id="597" dir="1" index="1" bw="11" slack="4"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln332_1/1 "/>
+</bind>
+</comp>
+
+<comp id="599" class="1005" name="dpYUVCoef_val29_read_reg_599">
+<pin_list>
+<pin id="600" dir="0" index="0" bw="8" slack="1"/>
+<pin id="601" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="dpYUVCoef_val29_read "/>
+</bind>
+</comp>
+
+<comp id="604" class="1005" name="dpDynamicRange_val28_read_reg_604">
+<pin_list>
+<pin id="605" dir="0" index="0" bw="8" slack="1"/>
+<pin id="606" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="dpDynamicRange_val28_read "/>
+</bind>
+</comp>
+
+<comp id="609" class="1005" name="ZplateVerContDelta_val23_read_reg_609">
+<pin_list>
+<pin id="610" dir="0" index="0" bw="16" slack="1"/>
+<pin id="611" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="ZplateVerContDelta_val23_read "/>
+</bind>
+</comp>
+
+<comp id="614" class="1005" name="ZplateVerContStart_val22_read_reg_614">
+<pin_list>
+<pin id="615" dir="0" index="0" bw="16" slack="1"/>
+<pin id="616" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="ZplateVerContStart_val22_read "/>
+</bind>
+</comp>
+
+<comp id="619" class="1005" name="ZplateHorContDelta_val21_read_reg_619">
+<pin_list>
+<pin id="620" dir="0" index="0" bw="16" slack="1"/>
+<pin id="621" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="ZplateHorContDelta_val21_read "/>
+</bind>
+</comp>
+
+<comp id="624" class="1005" name="ZplateHorContStart_val20_read_reg_624">
+<pin_list>
+<pin id="625" dir="0" index="0" bw="16" slack="1"/>
+<pin id="626" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="ZplateHorContStart_val20_read "/>
+</bind>
+</comp>
+
+<comp id="629" class="1005" name="colorFormat_val17_read_reg_629">
+<pin_list>
+<pin id="630" dir="0" index="0" bw="8" slack="1"/>
+<pin id="631" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="colorFormat_val17_read "/>
+</bind>
+</comp>
+
+<comp id="636" class="1005" name="motionSpeed_val14_read_reg_636">
+<pin_list>
+<pin id="637" dir="0" index="0" bw="8" slack="1"/>
+<pin id="638" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="motionSpeed_val14_read "/>
+</bind>
+</comp>
+
+<comp id="642" class="1005" name="bckgndId_val10_read_reg_642">
+<pin_list>
+<pin id="643" dir="0" index="0" bw="8" slack="1"/>
+<pin id="644" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="bckgndId_val10_read "/>
+</bind>
+</comp>
+
+<comp id="647" class="1005" name="width_val7_read_reg_647">
+<pin_list>
+<pin id="648" dir="0" index="0" bw="16" slack="1"/>
+<pin id="649" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="width_val7_read "/>
+</bind>
+</comp>
+
+<comp id="653" class="1005" name="height_val4_read_reg_653">
+<pin_list>
+<pin id="654" dir="0" index="0" bw="16" slack="1"/>
+<pin id="655" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="height_val4_read "/>
+</bind>
+</comp>
+
+<comp id="659" class="1005" name="trunc_ln332_reg_659">
+<pin_list>
+<pin id="660" dir="0" index="0" bw="11" slack="4"/>
+<pin id="661" dir="1" index="1" bw="11" slack="4"/>
+</pin_list>
+<bind>
+<opset="trunc_ln332 "/>
+</bind>
+</comp>
+
+<comp id="664" class="1005" name="trunc_ln332_1_reg_664">
+<pin_list>
+<pin id="665" dir="0" index="0" bw="11" slack="4"/>
+<pin id="666" dir="1" index="1" bw="11" slack="4"/>
+</pin_list>
+<bind>
+<opset="trunc_ln332_1 "/>
+</bind>
+</comp>
+
+<comp id="669" class="1005" name="bckgndYUV_reg_669">
+<pin_list>
+<pin id="670" dir="0" index="0" bw="24" slack="0"/>
+<pin id="671" dir="1" index="1" bw="24" slack="0"/>
+</pin_list>
+<bind>
+<opset="bckgndYUV "/>
+</bind>
+</comp>
+
+<comp id="675" class="1005" name="ovrlayYUV_reg_675">
+<pin_list>
+<pin id="676" dir="0" index="0" bw="24" slack="2"/>
+<pin id="677" dir="1" index="1" bw="24" slack="2"/>
+</pin_list>
+<bind>
+<opset="ovrlayYUV "/>
+</bind>
+</comp>
+
+<comp id="681" class="1005" name="boxColorB_val27_read_reg_681">
+<pin_list>
+<pin id="682" dir="0" index="0" bw="8" slack="1"/>
+<pin id="683" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="boxColorB_val27_read "/>
+</bind>
+</comp>
+
+<comp id="686" class="1005" name="boxColorG_val26_read_reg_686">
+<pin_list>
+<pin id="687" dir="0" index="0" bw="8" slack="1"/>
+<pin id="688" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="boxColorG_val26_read "/>
+</bind>
+</comp>
+
+<comp id="691" class="1005" name="boxColorR_val25_read_reg_691">
+<pin_list>
+<pin id="692" dir="0" index="0" bw="8" slack="1"/>
+<pin id="693" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="boxColorR_val25_read "/>
+</bind>
+</comp>
+
+<comp id="696" class="1005" name="boxSize_val24_read_reg_696">
+<pin_list>
+<pin id="697" dir="0" index="0" bw="16" slack="1"/>
+<pin id="698" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="boxSize_val24_read "/>
+</bind>
+</comp>
+
+<comp id="701" class="1005" name="crossHairY_val19_read_reg_701">
+<pin_list>
+<pin id="702" dir="0" index="0" bw="16" slack="1"/>
+<pin id="703" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="crossHairY_val19_read "/>
+</bind>
+</comp>
+
+<comp id="706" class="1005" name="crossHairX_val18_read_reg_706">
+<pin_list>
+<pin id="707" dir="0" index="0" bw="16" slack="1"/>
+<pin id="708" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="crossHairX_val18_read "/>
+</bind>
+</comp>
+
+<comp id="711" class="1005" name="maskId_val12_read_reg_711">
+<pin_list>
+<pin id="712" dir="0" index="0" bw="8" slack="1"/>
+<pin id="713" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="maskId_val12_read "/>
+</bind>
+</comp>
+
+<comp id="716" class="1005" name="ovrlayId_val11_read_reg_716">
+<pin_list>
+<pin id="717" dir="0" index="0" bw="8" slack="1"/>
+<pin id="718" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="ovrlayId_val11_read "/>
+</bind>
+</comp>
+
+<comp id="721" class="1005" name="fid_in_val9_read_reg_721">
+<pin_list>
+<pin id="722" dir="0" index="0" bw="1" slack="1"/>
+<pin id="723" dir="1" index="1" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opset="fid_in_val9_read "/>
+</bind>
+</comp>
+
+<comp id="726" class="1005" name="field_id_val8_read_reg_726">
+<pin_list>
+<pin id="727" dir="0" index="0" bw="16" slack="1"/>
+<pin id="728" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="field_id_val8_read "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="245"><net_src comp="196" pin="0"/><net_sink comp="242" pin=0"/></net>
+
+<net id="249"><net_src comp="196" pin="0"/><net_sink comp="246" pin=0"/></net>
+
+<net id="254"><net_src comp="192" pin="0"/><net_sink comp="250" pin=0"/></net>
+
+<net id="255"><net_src comp="40" pin="0"/><net_sink comp="250" pin=1"/></net>
+
+<net id="260"><net_src comp="192" pin="0"/><net_sink comp="256" pin=0"/></net>
+
+<net id="261"><net_src comp="38" pin="0"/><net_sink comp="256" pin=1"/></net>
+
+<net id="266"><net_src comp="194" pin="0"/><net_sink comp="262" pin=0"/></net>
+
+<net id="267"><net_src comp="28" pin="0"/><net_sink comp="262" pin=1"/></net>
+
+<net id="272"><net_src comp="194" pin="0"/><net_sink comp="268" pin=0"/></net>
+
+<net id="273"><net_src comp="26" pin="0"/><net_sink comp="268" pin=1"/></net>
+
+<net id="278"><net_src comp="194" pin="0"/><net_sink comp="274" pin=0"/></net>
+
+<net id="279"><net_src comp="24" pin="0"/><net_sink comp="274" pin=1"/></net>
+
+<net id="284"><net_src comp="194" pin="0"/><net_sink comp="280" pin=0"/></net>
+
+<net id="285"><net_src comp="22" pin="0"/><net_sink comp="280" pin=1"/></net>
+
+<net id="290"><net_src comp="192" pin="0"/><net_sink comp="286" pin=0"/></net>
+
+<net id="291"><net_src comp="16" pin="0"/><net_sink comp="286" pin=1"/></net>
+
+<net id="296"><net_src comp="192" pin="0"/><net_sink comp="292" pin=0"/></net>
+
+<net id="297"><net_src comp="14" pin="0"/><net_sink comp="292" pin=1"/></net>
+
+<net id="302"><net_src comp="192" pin="0"/><net_sink comp="298" pin=0"/></net>
+
+<net id="303"><net_src comp="8" pin="0"/><net_sink comp="298" pin=1"/></net>
+
+<net id="308"><net_src comp="194" pin="0"/><net_sink comp="304" pin=0"/></net>
+
+<net id="309"><net_src comp="2" pin="0"/><net_sink comp="304" pin=1"/></net>
+
+<net id="314"><net_src comp="194" pin="0"/><net_sink comp="310" pin=0"/></net>
+
+<net id="315"><net_src comp="0" pin="0"/><net_sink comp="310" pin=1"/></net>
+
+<net id="320"><net_src comp="192" pin="0"/><net_sink comp="316" pin=0"/></net>
+
+<net id="321"><net_src comp="36" pin="0"/><net_sink comp="316" pin=1"/></net>
+
+<net id="326"><net_src comp="192" pin="0"/><net_sink comp="322" pin=0"/></net>
+
+<net id="327"><net_src comp="34" pin="0"/><net_sink comp="322" pin=1"/></net>
+
+<net id="332"><net_src comp="192" pin="0"/><net_sink comp="328" pin=0"/></net>
+
+<net id="333"><net_src comp="32" pin="0"/><net_sink comp="328" pin=1"/></net>
+
+<net id="338"><net_src comp="194" pin="0"/><net_sink comp="334" pin=0"/></net>
+
+<net id="339"><net_src comp="30" pin="0"/><net_sink comp="334" pin=1"/></net>
+
+<net id="344"><net_src comp="194" pin="0"/><net_sink comp="340" pin=0"/></net>
+
+<net id="345"><net_src comp="20" pin="0"/><net_sink comp="340" pin=1"/></net>
+
+<net id="350"><net_src comp="194" pin="0"/><net_sink comp="346" pin=0"/></net>
+
+<net id="351"><net_src comp="18" pin="0"/><net_sink comp="346" pin=1"/></net>
+
+<net id="356"><net_src comp="192" pin="0"/><net_sink comp="352" pin=0"/></net>
+
+<net id="357"><net_src comp="12" pin="0"/><net_sink comp="352" pin=1"/></net>
+
+<net id="362"><net_src comp="192" pin="0"/><net_sink comp="358" pin=0"/></net>
+
+<net id="363"><net_src comp="10" pin="0"/><net_sink comp="358" pin=1"/></net>
+
+<net id="368"><net_src comp="202" pin="0"/><net_sink comp="364" pin=0"/></net>
+
+<net id="369"><net_src comp="6" pin="0"/><net_sink comp="364" pin=1"/></net>
+
+<net id="374"><net_src comp="194" pin="0"/><net_sink comp="370" pin=0"/></net>
+
+<net id="375"><net_src comp="4" pin="0"/><net_sink comp="370" pin=1"/></net>
+
+<net id="451"><net_src comp="198" pin="0"/><net_sink comp="376" pin=0"/></net>
+
+<net id="452"><net_src comp="310" pin="2"/><net_sink comp="376" pin=1"/></net>
+
+<net id="453"><net_src comp="304" pin="2"/><net_sink comp="376" pin=2"/></net>
+
+<net id="454"><net_src comp="298" pin="2"/><net_sink comp="376" pin=3"/></net>
+
+<net id="455"><net_src comp="280" pin="2"/><net_sink comp="376" pin=4"/></net>
+
+<net id="456"><net_src comp="274" pin="2"/><net_sink comp="376" pin=5"/></net>
+
+<net id="457"><net_src comp="268" pin="2"/><net_sink comp="376" pin=6"/></net>
+
+<net id="458"><net_src comp="262" pin="2"/><net_sink comp="376" pin=7"/></net>
+
+<net id="459"><net_src comp="256" pin="2"/><net_sink comp="376" pin=8"/></net>
+
+<net id="460"><net_src comp="250" pin="2"/><net_sink comp="376" pin=9"/></net>
+
+<net id="461"><net_src comp="292" pin="2"/><net_sink comp="376" pin=10"/></net>
+
+<net id="462"><net_src comp="286" pin="2"/><net_sink comp="376" pin=11"/></net>
+
+<net id="463"><net_src comp="58" pin="0"/><net_sink comp="376" pin=13"/></net>
+
+<net id="464"><net_src comp="60" pin="0"/><net_sink comp="376" pin=14"/></net>
+
+<net id="465"><net_src comp="62" pin="0"/><net_sink comp="376" pin=15"/></net>
+
+<net id="466"><net_src comp="64" pin="0"/><net_sink comp="376" pin=16"/></net>
+
+<net id="467"><net_src comp="66" pin="0"/><net_sink comp="376" pin=17"/></net>
+
+<net id="468"><net_src comp="68" pin="0"/><net_sink comp="376" pin=18"/></net>
+
+<net id="469"><net_src comp="70" pin="0"/><net_sink comp="376" pin=19"/></net>
+
+<net id="470"><net_src comp="72" pin="0"/><net_sink comp="376" pin=20"/></net>
+
+<net id="471"><net_src comp="74" pin="0"/><net_sink comp="376" pin=21"/></net>
+
+<net id="472"><net_src comp="76" pin="0"/><net_sink comp="376" pin=22"/></net>
+
+<net id="473"><net_src comp="78" pin="0"/><net_sink comp="376" pin=23"/></net>
+
+<net id="474"><net_src comp="80" pin="0"/><net_sink comp="376" pin=24"/></net>
+
+<net id="475"><net_src comp="82" pin="0"/><net_sink comp="376" pin=25"/></net>
+
+<net id="476"><net_src comp="84" pin="0"/><net_sink comp="376" pin=26"/></net>
+
+<net id="477"><net_src comp="86" pin="0"/><net_sink comp="376" pin=27"/></net>
+
+<net id="478"><net_src comp="88" pin="0"/><net_sink comp="376" pin=28"/></net>
+
+<net id="479"><net_src comp="90" pin="0"/><net_sink comp="376" pin=29"/></net>
+
+<net id="480"><net_src comp="92" pin="0"/><net_sink comp="376" pin=30"/></net>
+
+<net id="481"><net_src comp="94" pin="0"/><net_sink comp="376" pin=31"/></net>
+
+<net id="482"><net_src comp="96" pin="0"/><net_sink comp="376" pin=32"/></net>
+
+<net id="483"><net_src comp="98" pin="0"/><net_sink comp="376" pin=33"/></net>
+
+<net id="484"><net_src comp="100" pin="0"/><net_sink comp="376" pin=34"/></net>
+
+<net id="485"><net_src comp="102" pin="0"/><net_sink comp="376" pin=35"/></net>
+
+<net id="486"><net_src comp="104" pin="0"/><net_sink comp="376" pin=36"/></net>
+
+<net id="487"><net_src comp="106" pin="0"/><net_sink comp="376" pin=37"/></net>
+
+<net id="488"><net_src comp="108" pin="0"/><net_sink comp="376" pin=38"/></net>
+
+<net id="489"><net_src comp="110" pin="0"/><net_sink comp="376" pin=39"/></net>
+
+<net id="490"><net_src comp="112" pin="0"/><net_sink comp="376" pin=40"/></net>
+
+<net id="491"><net_src comp="114" pin="0"/><net_sink comp="376" pin=41"/></net>
+
+<net id="492"><net_src comp="116" pin="0"/><net_sink comp="376" pin=42"/></net>
+
+<net id="493"><net_src comp="118" pin="0"/><net_sink comp="376" pin=43"/></net>
+
+<net id="494"><net_src comp="120" pin="0"/><net_sink comp="376" pin=44"/></net>
+
+<net id="495"><net_src comp="122" pin="0"/><net_sink comp="376" pin=45"/></net>
+
+<net id="496"><net_src comp="124" pin="0"/><net_sink comp="376" pin=46"/></net>
+
+<net id="497"><net_src comp="126" pin="0"/><net_sink comp="376" pin=47"/></net>
+
+<net id="498"><net_src comp="128" pin="0"/><net_sink comp="376" pin=48"/></net>
+
+<net id="499"><net_src comp="130" pin="0"/><net_sink comp="376" pin=49"/></net>
+
+<net id="500"><net_src comp="132" pin="0"/><net_sink comp="376" pin=50"/></net>
+
+<net id="501"><net_src comp="134" pin="0"/><net_sink comp="376" pin=51"/></net>
+
+<net id="502"><net_src comp="136" pin="0"/><net_sink comp="376" pin=52"/></net>
+
+<net id="503"><net_src comp="138" pin="0"/><net_sink comp="376" pin=53"/></net>
+
+<net id="504"><net_src comp="140" pin="0"/><net_sink comp="376" pin=54"/></net>
+
+<net id="505"><net_src comp="142" pin="0"/><net_sink comp="376" pin=55"/></net>
+
+<net id="506"><net_src comp="144" pin="0"/><net_sink comp="376" pin=56"/></net>
+
+<net id="507"><net_src comp="146" pin="0"/><net_sink comp="376" pin=57"/></net>
+
+<net id="508"><net_src comp="148" pin="0"/><net_sink comp="376" pin=58"/></net>
+
+<net id="509"><net_src comp="150" pin="0"/><net_sink comp="376" pin=59"/></net>
+
+<net id="510"><net_src comp="152" pin="0"/><net_sink comp="376" pin=60"/></net>
+
+<net id="511"><net_src comp="154" pin="0"/><net_sink comp="376" pin=61"/></net>
+
+<net id="512"><net_src comp="156" pin="0"/><net_sink comp="376" pin=62"/></net>
+
+<net id="513"><net_src comp="158" pin="0"/><net_sink comp="376" pin=63"/></net>
+
+<net id="514"><net_src comp="160" pin="0"/><net_sink comp="376" pin=64"/></net>
+
+<net id="515"><net_src comp="162" pin="0"/><net_sink comp="376" pin=65"/></net>
+
+<net id="516"><net_src comp="164" pin="0"/><net_sink comp="376" pin=66"/></net>
+
+<net id="517"><net_src comp="166" pin="0"/><net_sink comp="376" pin=67"/></net>
+
+<net id="518"><net_src comp="168" pin="0"/><net_sink comp="376" pin=68"/></net>
+
+<net id="519"><net_src comp="170" pin="0"/><net_sink comp="376" pin=69"/></net>
+
+<net id="520"><net_src comp="172" pin="0"/><net_sink comp="376" pin=70"/></net>
+
+<net id="521"><net_src comp="174" pin="0"/><net_sink comp="376" pin=71"/></net>
+
+<net id="522"><net_src comp="176" pin="0"/><net_sink comp="376" pin=72"/></net>
+
+<net id="545"><net_src comp="200" pin="0"/><net_sink comp="523" pin=0"/></net>
+
+<net id="546"><net_src comp="358" pin="2"/><net_sink comp="523" pin=4"/></net>
+
+<net id="547"><net_src comp="352" pin="2"/><net_sink comp="523" pin=5"/></net>
+
+<net id="548"><net_src comp="346" pin="2"/><net_sink comp="523" pin=7"/></net>
+
+<net id="549"><net_src comp="340" pin="2"/><net_sink comp="523" pin=8"/></net>
+
+<net id="550"><net_src comp="334" pin="2"/><net_sink comp="523" pin=9"/></net>
+
+<net id="551"><net_src comp="328" pin="2"/><net_sink comp="523" pin=10"/></net>
+
+<net id="552"><net_src comp="322" pin="2"/><net_sink comp="523" pin=11"/></net>
+
+<net id="553"><net_src comp="316" pin="2"/><net_sink comp="523" pin=12"/></net>
+
+<net id="554"><net_src comp="178" pin="0"/><net_sink comp="523" pin=15"/></net>
+
+<net id="555"><net_src comp="180" pin="0"/><net_sink comp="523" pin=16"/></net>
+
+<net id="556"><net_src comp="182" pin="0"/><net_sink comp="523" pin=17"/></net>
+
+<net id="557"><net_src comp="184" pin="0"/><net_sink comp="523" pin=18"/></net>
+
+<net id="558"><net_src comp="186" pin="0"/><net_sink comp="523" pin=19"/></net>
+
+<net id="578"><net_src comp="204" pin="0"/><net_sink comp="559" pin=0"/></net>
+
+<net id="579"><net_src comp="42" pin="0"/><net_sink comp="559" pin=2"/></net>
+
+<net id="580"><net_src comp="44" pin="0"/><net_sink comp="559" pin=3"/></net>
+
+<net id="581"><net_src comp="46" pin="0"/><net_sink comp="559" pin=4"/></net>
+
+<net id="582"><net_src comp="48" pin="0"/><net_sink comp="559" pin=5"/></net>
+
+<net id="583"><net_src comp="50" pin="0"/><net_sink comp="559" pin=6"/></net>
+
+<net id="584"><net_src comp="52" pin="0"/><net_sink comp="559" pin=7"/></net>
+
+<net id="585"><net_src comp="54" pin="0"/><net_sink comp="559" pin=8"/></net>
+
+<net id="586"><net_src comp="364" pin="2"/><net_sink comp="559" pin=12"/></net>
+
+<net id="587"><net_src comp="56" pin="0"/><net_sink comp="559" pin=13"/></net>
+
+<net id="588"><net_src comp="370" pin="2"/><net_sink comp="559" pin=14"/></net>
+
+<net id="589"><net_src comp="188" pin="0"/><net_sink comp="559" pin=15"/></net>
+
+<net id="590"><net_src comp="190" pin="0"/><net_sink comp="559" pin=16"/></net>
+
+<net id="594"><net_src comp="304" pin="2"/><net_sink comp="591" pin=0"/></net>
+
+<net id="598"><net_src comp="310" pin="2"/><net_sink comp="595" pin=0"/></net>
+
+<net id="602"><net_src comp="250" pin="2"/><net_sink comp="599" pin=0"/></net>
+
+<net id="603"><net_src comp="599" pin="1"/><net_sink comp="376" pin=9"/></net>
+
+<net id="607"><net_src comp="256" pin="2"/><net_sink comp="604" pin=0"/></net>
+
+<net id="608"><net_src comp="604" pin="1"/><net_sink comp="376" pin=8"/></net>
+
+<net id="612"><net_src comp="262" pin="2"/><net_sink comp="609" pin=0"/></net>
+
+<net id="613"><net_src comp="609" pin="1"/><net_sink comp="376" pin=7"/></net>
+
+<net id="617"><net_src comp="268" pin="2"/><net_sink comp="614" pin=0"/></net>
+
+<net id="618"><net_src comp="614" pin="1"/><net_sink comp="376" pin=6"/></net>
+
+<net id="622"><net_src comp="274" pin="2"/><net_sink comp="619" pin=0"/></net>
+
+<net id="623"><net_src comp="619" pin="1"/><net_sink comp="376" pin=5"/></net>
+
+<net id="627"><net_src comp="280" pin="2"/><net_sink comp="624" pin=0"/></net>
+
+<net id="628"><net_src comp="624" pin="1"/><net_sink comp="376" pin=4"/></net>
+
+<net id="632"><net_src comp="286" pin="2"/><net_sink comp="629" pin=0"/></net>
+
+<net id="633"><net_src comp="629" pin="1"/><net_sink comp="376" pin=11"/></net>
+
+<net id="634"><net_src comp="629" pin="1"/><net_sink comp="523" pin=6"/></net>
+
+<net id="635"><net_src comp="629" pin="1"/><net_sink comp="559" pin=11"/></net>
+
+<net id="639"><net_src comp="292" pin="2"/><net_sink comp="636" pin=0"/></net>
+
+<net id="640"><net_src comp="636" pin="1"/><net_sink comp="376" pin=10"/></net>
+
+<net id="641"><net_src comp="636" pin="1"/><net_sink comp="523" pin=13"/></net>
+
+<net id="645"><net_src comp="298" pin="2"/><net_sink comp="642" pin=0"/></net>
+
+<net id="646"><net_src comp="642" pin="1"/><net_sink comp="376" pin=3"/></net>
+
+<net id="650"><net_src comp="304" pin="2"/><net_sink comp="647" pin=0"/></net>
+
+<net id="651"><net_src comp="647" pin="1"/><net_sink comp="376" pin=2"/></net>
+
+<net id="652"><net_src comp="647" pin="1"/><net_sink comp="523" pin=3"/></net>
+
+<net id="656"><net_src comp="310" pin="2"/><net_sink comp="653" pin=0"/></net>
+
+<net id="657"><net_src comp="653" pin="1"/><net_sink comp="376" pin=1"/></net>
+
+<net id="658"><net_src comp="653" pin="1"/><net_sink comp="523" pin=2"/></net>
+
+<net id="662"><net_src comp="591" pin="1"/><net_sink comp="659" pin=0"/></net>
+
+<net id="663"><net_src comp="659" pin="1"/><net_sink comp="559" pin=10"/></net>
+
+<net id="667"><net_src comp="595" pin="1"/><net_sink comp="664" pin=0"/></net>
+
+<net id="668"><net_src comp="664" pin="1"/><net_sink comp="559" pin=9"/></net>
+
+<net id="672"><net_src comp="242" pin="1"/><net_sink comp="669" pin=0"/></net>
+
+<net id="673"><net_src comp="669" pin="1"/><net_sink comp="376" pin=12"/></net>
+
+<net id="674"><net_src comp="669" pin="1"/><net_sink comp="523" pin=1"/></net>
+
+<net id="678"><net_src comp="246" pin="1"/><net_sink comp="675" pin=0"/></net>
+
+<net id="679"><net_src comp="675" pin="1"/><net_sink comp="523" pin=14"/></net>
+
+<net id="680"><net_src comp="675" pin="1"/><net_sink comp="559" pin=1"/></net>
+
+<net id="684"><net_src comp="316" pin="2"/><net_sink comp="681" pin=0"/></net>
+
+<net id="685"><net_src comp="681" pin="1"/><net_sink comp="523" pin=12"/></net>
+
+<net id="689"><net_src comp="322" pin="2"/><net_sink comp="686" pin=0"/></net>
+
+<net id="690"><net_src comp="686" pin="1"/><net_sink comp="523" pin=11"/></net>
+
+<net id="694"><net_src comp="328" pin="2"/><net_sink comp="691" pin=0"/></net>
+
+<net id="695"><net_src comp="691" pin="1"/><net_sink comp="523" pin=10"/></net>
+
+<net id="699"><net_src comp="334" pin="2"/><net_sink comp="696" pin=0"/></net>
+
+<net id="700"><net_src comp="696" pin="1"/><net_sink comp="523" pin=9"/></net>
+
+<net id="704"><net_src comp="340" pin="2"/><net_sink comp="701" pin=0"/></net>
+
+<net id="705"><net_src comp="701" pin="1"/><net_sink comp="523" pin=8"/></net>
+
+<net id="709"><net_src comp="346" pin="2"/><net_sink comp="706" pin=0"/></net>
+
+<net id="710"><net_src comp="706" pin="1"/><net_sink comp="523" pin=7"/></net>
+
+<net id="714"><net_src comp="352" pin="2"/><net_sink comp="711" pin=0"/></net>
+
+<net id="715"><net_src comp="711" pin="1"/><net_sink comp="523" pin=5"/></net>
+
+<net id="719"><net_src comp="358" pin="2"/><net_sink comp="716" pin=0"/></net>
+
+<net id="720"><net_src comp="716" pin="1"/><net_sink comp="523" pin=4"/></net>
+
+<net id="724"><net_src comp="364" pin="2"/><net_sink comp="721" pin=0"/></net>
+
+<net id="725"><net_src comp="721" pin="1"/><net_sink comp="559" pin=12"/></net>
+
+<net id="729"><net_src comp="370" pin="2"/><net_sink comp="726" pin=0"/></net>
+
+<net id="730"><net_src comp="726" pin="1"/><net_sink comp="559" pin=14"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: m_axis_video_V_data_V | {5 6 }
+	Port: m_axis_video_V_keep_V | {5 6 }
+	Port: m_axis_video_V_strb_V | {5 6 }
+	Port: m_axis_video_V_user_V | {5 6 }
+	Port: m_axis_video_V_last_V | {5 6 }
+	Port: m_axis_video_V_id_V | {5 6 }
+	Port: m_axis_video_V_dest_V | {5 6 }
+	Port: fid | {5 6 }
+	Port: rampStart | {1 2 }
+	Port: s | {}
+	Port: rampVal_1 | {1 2 }
+	Port: rampVal | {1 2 }
+	Port: tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_hBarSel | {1 2 }
+	Port: zonePlateVAddr | {1 2 }
+	Port: vBarSel | {1 2 }
+	Port: tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign_1 | {1 2 }
+	Port: hdata | {1 2 }
+	Port: vBarSel_2 | {1 2 }
+	Port: tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_1 | {1 2 }
+	Port: rampVal_2 | {1 2 }
+	Port: vBarSel_1 | {1 2 }
+	Port: tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_1 | {1 2 }
+	Port: redYuv | {}
+	Port: grnYuv | {}
+	Port: bluYuv | {}
+	Port: blkYuv | {}
+	Port: whiYuv | {}
+	Port: tpgBarSelRgb_r | {}
+	Port: tpgBarSelYuv_y | {}
+	Port: tpgBarSelRgb_g | {}
+	Port: tpgBarSelYuv_u | {}
+	Port: tpgBarSelYuv_v | {}
+	Port: tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_xBar | {1 2 }
+	Port: tpgBarSelRgb_b | {}
+	Port: tpgSinTableArray | {}
+	Port: zonePlateVDelta | {1 2 }
+	Port: tpgTartanBarArray | {}
+	Port: tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign | {1 2 }
+	Port: yCount | {1 2 }
+	Port: tpgPatternCrossHatch_unsigned_short_unsigned_short_unsigned_short_unsigned_sh | {1 2 }
+	Port: vHatch | {1 2 }
+	Port: yCount_2 | {1 2 }
+	Port: whiYuv_1 | {}
+	Port: blkYuv_1 | {}
+	Port: tpgSinTableArray_9bit_0 | {}
+	Port: tpgSinTableArray_9bit_1 | {}
+	Port: tpgSinTableArray_9bit_2 | {}
+	Port: tpgCheckerBoardArray | {}
+	Port: tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_s | {1 2 }
+	Port: yCount_3 | {1 2 }
+	Port: rSerie | {1 2 }
+	Port: gSerie | {1 2 }
+	Port: bSerie | {1 2 }
+	Port: DPtpgBarSelRgb_VESA_r | {}
+	Port: DPtpgBarSelRgb_VESA_g | {}
+	Port: DPtpgBarSelRgb_VESA_b | {}
+	Port: DPtpgBarArray | {}
+	Port: tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_s | {1 2 }
+	Port: yCount_1 | {1 2 }
+	Port: DPtpgBarSelRgb_CEA_r | {}
+	Port: DPtpgBarSelRgb_CEA_g | {}
+	Port: DPtpgBarSelRgb_CEA_b | {}
+	Port: DPtpgBarSelYuv_601_y | {}
+	Port: DPtpgBarSelYuv_601_v | {}
+	Port: DPtpgBarSelYuv_601_u | {}
+	Port: DPtpgBarSelYuv_709_y | {}
+	Port: DPtpgBarSelYuv_709_v | {}
+	Port: DPtpgBarSelYuv_709_u | {}
+	Port: boxHCoord | {3 4 }
+	Port: boxVCoord | {3 4 }
+	Port: vDir | {3 4 }
+	Port: hDir | {3 4 }
+	Port: whiYuv_2 | {}
+	Port: fidStored | {5 6 }
+	Port: counter | {5 6 }
+ - Input state : 
+	Port: v_tpgHlsDataFlow : height_val4 | {1 }
+	Port: v_tpgHlsDataFlow : width_val7 | {1 }
+	Port: v_tpgHlsDataFlow : field_id_val8 | {5 }
+	Port: v_tpgHlsDataFlow : fid_in_val9 | {5 }
+	Port: v_tpgHlsDataFlow : bckgndId_val10 | {1 }
+	Port: v_tpgHlsDataFlow : ovrlayId_val11 | {3 }
+	Port: v_tpgHlsDataFlow : maskId_val12 | {3 }
+	Port: v_tpgHlsDataFlow : motionSpeed_val14 | {1 }
+	Port: v_tpgHlsDataFlow : colorFormat_val17 | {1 }
+	Port: v_tpgHlsDataFlow : crossHairX_val18 | {3 }
+	Port: v_tpgHlsDataFlow : crossHairY_val19 | {3 }
+	Port: v_tpgHlsDataFlow : ZplateHorContStart_val20 | {1 }
+	Port: v_tpgHlsDataFlow : ZplateHorContDelta_val21 | {1 }
+	Port: v_tpgHlsDataFlow : ZplateVerContStart_val22 | {1 }
+	Port: v_tpgHlsDataFlow : ZplateVerContDelta_val23 | {1 }
+	Port: v_tpgHlsDataFlow : boxSize_val24 | {3 }
+	Port: v_tpgHlsDataFlow : boxColorR_val25 | {3 }
+	Port: v_tpgHlsDataFlow : boxColorG_val26 | {3 }
+	Port: v_tpgHlsDataFlow : boxColorB_val27 | {3 }
+	Port: v_tpgHlsDataFlow : dpDynamicRange_val28 | {1 }
+	Port: v_tpgHlsDataFlow : dpYUVCoef_val29 | {1 }
+	Port: v_tpgHlsDataFlow : m_axis_video_V_data_V | {}
+	Port: v_tpgHlsDataFlow : m_axis_video_V_keep_V | {}
+	Port: v_tpgHlsDataFlow : m_axis_video_V_strb_V | {}
+	Port: v_tpgHlsDataFlow : m_axis_video_V_user_V | {}
+	Port: v_tpgHlsDataFlow : m_axis_video_V_last_V | {}
+	Port: v_tpgHlsDataFlow : m_axis_video_V_id_V | {}
+	Port: v_tpgHlsDataFlow : m_axis_video_V_dest_V | {}
+	Port: v_tpgHlsDataFlow : fid | {}
+	Port: v_tpgHlsDataFlow : rampStart | {1 2 }
+	Port: v_tpgHlsDataFlow : s | {1 2 }
+	Port: v_tpgHlsDataFlow : rampVal_1 | {1 2 }
+	Port: v_tpgHlsDataFlow : rampVal | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_hBarSel | {1 2 }
+	Port: v_tpgHlsDataFlow : zonePlateVAddr | {1 2 }
+	Port: v_tpgHlsDataFlow : vBarSel | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign_1 | {1 2 }
+	Port: v_tpgHlsDataFlow : hdata | {1 2 }
+	Port: v_tpgHlsDataFlow : vBarSel_2 | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_1 | {1 2 }
+	Port: v_tpgHlsDataFlow : rampVal_2 | {1 2 }
+	Port: v_tpgHlsDataFlow : vBarSel_1 | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_1 | {1 2 }
+	Port: v_tpgHlsDataFlow : redYuv | {1 2 }
+	Port: v_tpgHlsDataFlow : grnYuv | {1 2 }
+	Port: v_tpgHlsDataFlow : bluYuv | {1 2 }
+	Port: v_tpgHlsDataFlow : blkYuv | {1 2 }
+	Port: v_tpgHlsDataFlow : whiYuv | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgBarSelRgb_r | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgBarSelYuv_y | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgBarSelRgb_g | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgBarSelYuv_u | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgBarSelYuv_v | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_xBar | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgBarSelRgb_b | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgSinTableArray | {1 2 }
+	Port: v_tpgHlsDataFlow : zonePlateVDelta | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgTartanBarArray | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign | {1 2 }
+	Port: v_tpgHlsDataFlow : yCount | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgPatternCrossHatch_unsigned_short_unsigned_short_unsigned_short_unsigned_sh | {1 2 }
+	Port: v_tpgHlsDataFlow : vHatch | {1 2 }
+	Port: v_tpgHlsDataFlow : yCount_2 | {1 2 }
+	Port: v_tpgHlsDataFlow : whiYuv_1 | {1 2 }
+	Port: v_tpgHlsDataFlow : blkYuv_1 | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgSinTableArray_9bit_0 | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgSinTableArray_9bit_1 | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgSinTableArray_9bit_2 | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgCheckerBoardArray | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_s | {1 2 }
+	Port: v_tpgHlsDataFlow : yCount_3 | {1 2 }
+	Port: v_tpgHlsDataFlow : rSerie | {1 2 }
+	Port: v_tpgHlsDataFlow : gSerie | {1 2 }
+	Port: v_tpgHlsDataFlow : bSerie | {1 2 }
+	Port: v_tpgHlsDataFlow : DPtpgBarSelRgb_VESA_r | {1 2 }
+	Port: v_tpgHlsDataFlow : DPtpgBarSelRgb_VESA_g | {1 2 }
+	Port: v_tpgHlsDataFlow : DPtpgBarSelRgb_VESA_b | {1 2 }
+	Port: v_tpgHlsDataFlow : DPtpgBarArray | {1 2 }
+	Port: v_tpgHlsDataFlow : tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_s | {1 2 }
+	Port: v_tpgHlsDataFlow : yCount_1 | {1 2 }
+	Port: v_tpgHlsDataFlow : DPtpgBarSelRgb_CEA_r | {1 2 }
+	Port: v_tpgHlsDataFlow : DPtpgBarSelRgb_CEA_g | {1 2 }
+	Port: v_tpgHlsDataFlow : DPtpgBarSelRgb_CEA_b | {1 2 }
+	Port: v_tpgHlsDataFlow : DPtpgBarSelYuv_601_y | {1 2 }
+	Port: v_tpgHlsDataFlow : DPtpgBarSelYuv_601_v | {1 2 }
+	Port: v_tpgHlsDataFlow : DPtpgBarSelYuv_601_u | {1 2 }
+	Port: v_tpgHlsDataFlow : DPtpgBarSelYuv_709_y | {1 2 }
+	Port: v_tpgHlsDataFlow : DPtpgBarSelYuv_709_v | {1 2 }
+	Port: v_tpgHlsDataFlow : DPtpgBarSelYuv_709_u | {1 2 }
+	Port: v_tpgHlsDataFlow : boxHCoord | {3 4 }
+	Port: v_tpgHlsDataFlow : boxVCoord | {3 4 }
+	Port: v_tpgHlsDataFlow : vDir | {3 4 }
+	Port: v_tpgHlsDataFlow : hDir | {3 4 }
+	Port: v_tpgHlsDataFlow : whiYuv_2 | {3 4 }
+	Port: v_tpgHlsDataFlow : fidStored | {5 6 }
+	Port: v_tpgHlsDataFlow : counter | {5 6 }
+  - Chain level:
+	State 1
+		call_ln345 : 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-------------------------------------------|---------|---------|---------|---------|
+| Operation|              Functional Unit              |   DSP   |  Delay  |    FF   |   LUT   |
+|----------|-------------------------------------------|---------|---------|---------|---------|
+|          |          grp_tpgBackground_fu_376         |    13   |  78.638 |   2592  |   2810  |
+|   call   |          grp_tpgForeground_fu_523         |    0    |  3.894  |   444   |   510   |
+|          |     grp_MultiPixStream2AXIvideo_fu_559    |    0    |  3.894  |   195   |   233   |
+|----------|-------------------------------------------|---------|---------|---------|---------|
+|          |      dpYUVCoef_val29_read_read_fu_250     |    0    |    0    |    0    |    0    |
+|          |   dpDynamicRange_val28_read_read_fu_256   |    0    |    0    |    0    |    0    |
+|          | ZplateVerContDelta_val23_read_read_fu_262 |    0    |    0    |    0    |    0    |
+|          | ZplateVerContStart_val22_read_read_fu_268 |    0    |    0    |    0    |    0    |
+|          | ZplateHorContDelta_val21_read_read_fu_274 |    0    |    0    |    0    |    0    |
+|          | ZplateHorContStart_val20_read_read_fu_280 |    0    |    0    |    0    |    0    |
+|          |     colorFormat_val17_read_read_fu_286    |    0    |    0    |    0    |    0    |
+|          |     motionSpeed_val14_read_read_fu_292    |    0    |    0    |    0    |    0    |
+|          |      bckgndId_val10_read_read_fu_298      |    0    |    0    |    0    |    0    |
+|          |        width_val7_read_read_fu_304        |    0    |    0    |    0    |    0    |
+|   read   |        height_val4_read_read_fu_310       |    0    |    0    |    0    |    0    |
+|          |      boxColorB_val27_read_read_fu_316     |    0    |    0    |    0    |    0    |
+|          |      boxColorG_val26_read_read_fu_322     |    0    |    0    |    0    |    0    |
+|          |      boxColorR_val25_read_read_fu_328     |    0    |    0    |    0    |    0    |
+|          |       boxSize_val24_read_read_fu_334      |    0    |    0    |    0    |    0    |
+|          |     crossHairY_val19_read_read_fu_340     |    0    |    0    |    0    |    0    |
+|          |     crossHairX_val18_read_read_fu_346     |    0    |    0    |    0    |    0    |
+|          |       maskId_val12_read_read_fu_352       |    0    |    0    |    0    |    0    |
+|          |      ovrlayId_val11_read_read_fu_358      |    0    |    0    |    0    |    0    |
+|          |        fid_in_val9_read_read_fu_364       |    0    |    0    |    0    |    0    |
+|          |       field_id_val8_read_read_fu_370      |    0    |    0    |    0    |    0    |
+|----------|-------------------------------------------|---------|---------|---------|---------|
+|   trunc  |             trunc_ln332_fu_591            |    0    |    0    |    0    |    0    |
+|          |            trunc_ln332_1_fu_595           |    0    |    0    |    0    |    0    |
+|----------|-------------------------------------------|---------|---------|---------|---------|
+|   Total  |                                           |    13   |  86.426 |   3231  |   3553  |
+|----------|-------------------------------------------|---------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++-------------------------------------+--------+
+|                                     |   FF   |
++-------------------------------------+--------+
+|ZplateHorContDelta_val21_read_reg_619|   16   |
+|ZplateHorContStart_val20_read_reg_624|   16   |
+|ZplateVerContDelta_val23_read_reg_609|   16   |
+|ZplateVerContStart_val22_read_reg_614|   16   |
+|     bckgndId_val10_read_reg_642     |    8   |
+|          bckgndYUV_reg_669          |   24   |
+|     boxColorB_val27_read_reg_681    |    8   |
+|     boxColorG_val26_read_reg_686    |    8   |
+|     boxColorR_val25_read_reg_691    |    8   |
+|      boxSize_val24_read_reg_696     |   16   |
+|    colorFormat_val17_read_reg_629   |    8   |
+|    crossHairX_val18_read_reg_706    |   16   |
+|    crossHairY_val19_read_reg_701    |   16   |
+|  dpDynamicRange_val28_read_reg_604  |    8   |
+|     dpYUVCoef_val29_read_reg_599    |    8   |
+|       fid_in_val9_read_reg_721      |    1   |
+|      field_id_val8_read_reg_726     |   16   |
+|       height_val4_read_reg_653      |   16   |
+|      maskId_val12_read_reg_711      |    8   |
+|    motionSpeed_val14_read_reg_636   |    8   |
+|     ovrlayId_val11_read_reg_716     |    8   |
+|          ovrlayYUV_reg_675          |   24   |
+|        trunc_ln332_1_reg_664        |   11   |
+|         trunc_ln332_reg_659         |   11   |
+|       width_val7_read_reg_647       |   16   |
++-------------------------------------+--------+
+|                Total                |   311  |
++-------------------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|------------------------------------|------|------|------|--------||---------||---------||---------|
+|                Comp                |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
+|------------------------------------|------|------|------|--------||---------||---------||---------|
+|      grp_tpgBackground_fu_376      |  p1  |   2  |  16  |   32   ||    0    ||    9    |
+|      grp_tpgBackground_fu_376      |  p2  |   2  |  16  |   32   ||    0    ||    9    |
+|      grp_tpgBackground_fu_376      |  p3  |   2  |   8  |   16   ||    0    ||    9    |
+|      grp_tpgBackground_fu_376      |  p4  |   2  |  16  |   32   ||    0    ||    9    |
+|      grp_tpgBackground_fu_376      |  p5  |   2  |  16  |   32   ||    0    ||    9    |
+|      grp_tpgBackground_fu_376      |  p6  |   2  |  16  |   32   ||    0    ||    9    |
+|      grp_tpgBackground_fu_376      |  p7  |   2  |  16  |   32   ||    0    ||    9    |
+|      grp_tpgBackground_fu_376      |  p8  |   2  |   8  |   16   ||    0    ||    9    |
+|      grp_tpgBackground_fu_376      |  p9  |   2  |   8  |   16   ||    0    ||    9    |
+|      grp_tpgBackground_fu_376      |  p10 |   2  |   8  |   16   ||    0    ||    9    |
+|      grp_tpgBackground_fu_376      |  p11 |   2  |   8  |   16   ||    0    ||    9    |
+|      grp_tpgForeground_fu_523      |  p4  |   2  |   8  |   16   ||    0    ||    9    |
+|      grp_tpgForeground_fu_523      |  p5  |   2  |   8  |   16   ||    0    ||    9    |
+|      grp_tpgForeground_fu_523      |  p7  |   2  |  16  |   32   ||    0    ||    9    |
+|      grp_tpgForeground_fu_523      |  p8  |   2  |  16  |   32   ||    0    ||    9    |
+|      grp_tpgForeground_fu_523      |  p9  |   2  |  16  |   32   ||    0    ||    9    |
+|      grp_tpgForeground_fu_523      |  p10 |   2  |   8  |   16   ||    0    ||    9    |
+|      grp_tpgForeground_fu_523      |  p11 |   2  |   8  |   16   ||    0    ||    9    |
+|      grp_tpgForeground_fu_523      |  p12 |   2  |   8  |   16   ||    0    ||    9    |
+| grp_MultiPixStream2AXIvideo_fu_559 |  p12 |   2  |   1  |    2   ||    0    ||    9    |
+| grp_MultiPixStream2AXIvideo_fu_559 |  p14 |   2  |  16  |   32   ||    0    ||    9    |
+|------------------------------------|------|------|------|--------||---------||---------||---------|
+|                Total               |      |      |      |   482  ||  27.258 ||    0    ||   189   |
+|------------------------------------|------|------|------|--------||---------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+
+|           |   DSP  |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+
+|  Function |   13   |   86   |  3231  |  3553  |
+|   Memory  |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |   27   |    0   |   189  |
+|  Register |    -   |    -   |   311  |    -   |
++-----------+--------+--------+--------+--------+
+|   Total   |   13   |   113  |  3542  |  3742  |
++-----------+--------+--------+--------+--------+

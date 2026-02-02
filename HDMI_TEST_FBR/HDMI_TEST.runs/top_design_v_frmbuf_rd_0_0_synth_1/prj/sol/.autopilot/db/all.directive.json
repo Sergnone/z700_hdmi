@@ -17,7 +17,7 @@
       ]
     },
     "slx": false,
-    "sourceFile": "/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/runhls.tcl",
+    "sourceFile": "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/HDMI_TEST.runs/top_design_v_frmbuf_rd_0_0_synth_1/runhls.tcl",
     "sourceLine": 42,
     "success": true
   }

@@ -40,8 +40,8 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7z020:-clg400:-2
-set SourceFiles {sc {} c /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp}
-set SourceFlags {sc {} c {{-I/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/hls -I/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src}}}
+set SourceFiles {sc {} c /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/src/v_frmbuf_rd.cpp}
+set SourceFlags {sc {} c {{-I/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/src/hls -I/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0_1/src}}}
 set DirectiveFile {}
 set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set SpecLanguage C

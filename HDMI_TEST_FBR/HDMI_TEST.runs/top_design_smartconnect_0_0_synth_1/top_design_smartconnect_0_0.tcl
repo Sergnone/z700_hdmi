@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/top_design_smartconnect_0_0_synth_1/top_design_smartconnect_0_0.tcl"
+  variable script "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/HDMI_TEST.runs/top_design_smartconnect_0_0_synth_1/top_design_smartconnect_0_0.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,7 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "top_design_smartconnect_0_0_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
+set_param bd.open.in_stealth_mode 1
 set_param general.usePosixSpawnForFork 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
@@ -67,60 +67,44 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.cache/wt [current_project]
-set_property parent.project_path /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.xpr [current_project]
+set_property webtalk.parent_dir /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/HDMI_TEST.cache/wt [current_project]
+set_property parent.project_path /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/HDMI_TEST.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths /home/serg/Documents/Xilinx/DigilentLib/vivado-library-master [current_project]
 update_ip_catalog
-set_property ip_output_repo /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.cache/ip [current_project]
+set_property ip_output_repo /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/HDMI_TEST.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.srcs/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/top_design_smartconnect_0_0.xci
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_1/bd_8df6_psr_aclk_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_2/bd_8df6_arinsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_3/bd_8df6_rinsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_4/bd_8df6_awinsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_5/bd_8df6_winsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_6/bd_8df6_binsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_7/bd_8df6_aroutsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_8/bd_8df6_routsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_9/bd_8df6_awoutsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_10/bd_8df6_woutsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_11/bd_8df6_boutsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_12/bd_8df6_arni_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_13/bd_8df6_rni_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_14/bd_8df6_awni_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_15/bd_8df6_wni_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_16/bd_8df6_bni_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_20/bd_8df6_s00a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_21/bd_8df6_sarn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_22/bd_8df6_srn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_23/bd_8df6_sawn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_24/bd_8df6_swn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_25/bd_8df6_sbn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_26/bd_8df6_m00s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_27/bd_8df6_m00arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_28/bd_8df6_m00rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_29/bd_8df6_m00awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_30/bd_8df6_m00wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_31/bd_8df6_m00bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_33/bd_8df6_m01s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_34/bd_8df6_m01arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_35/bd_8df6_m01rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_36/bd_8df6_m01awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_37/bd_8df6_m01wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_38/bd_8df6_m01bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_40/bd_8df6_m02s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_41/bd_8df6_m02arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_42/bd_8df6_m02rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_43/bd_8df6_m02awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_44/bd_8df6_m02wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_45/bd_8df6_m02bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/smartconnect.xdc]
+read_ip -quiet /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.srcs/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/top_design_smartconnect_0_0.xci
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_1/bd_8df6_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_2/bd_8df6_arsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_3/bd_8df6_rsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_4/bd_8df6_awsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_5/bd_8df6_wsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_6/bd_8df6_bsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_10/bd_8df6_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_11/bd_8df6_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_12/bd_8df6_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_13/bd_8df6_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_14/bd_8df6_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_15/bd_8df6_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_19/bd_8df6_s01a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_20/bd_8df6_sarn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_21/bd_8df6_srn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_22/bd_8df6_sawn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_23/bd_8df6_swn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_24/bd_8df6_sbn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_25/bd_8df6_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_26/bd_8df6_m00arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_27/bd_8df6_m00rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_28/bd_8df6_m00awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_29/bd_8df6_m00wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/bd_0/ip/ip_30/bd_8df6_m00bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/smartconnect.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -136,7 +120,7 @@ set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 OPTRACE "Configure IP Cache" START { }
 
-set cacheID [config_ip_cache -export -no_bom  -dir /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/top_design_smartconnect_0_0_synth_1 -new_name top_design_smartconnect_0_0 -ip [get_ips top_design_smartconnect_0_0]]
+set cacheID [config_ip_cache -export -no_bom  -dir /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/HDMI_TEST.runs/top_design_smartconnect_0_0_synth_1 -new_name top_design_smartconnect_0_0 -ip [get_ips top_design_smartconnect_0_0]]
 
 OPTRACE "Configure IP Cache" END { }
 if { $cacheID == "" } {
@@ -191,32 +175,32 @@ generate_parallel_reports -reports { "report_utilization -file top_design_smartc
 OPTRACE "synth reports" END { }
 
 if { [catch {
-  file copy -force /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/top_design_smartconnect_0_0_synth_1/top_design_smartconnect_0_0.dcp /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/top_design_smartconnect_0_0.dcp
+  file copy -force /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/HDMI_TEST.runs/top_design_smartconnect_0_0_synth_1/top_design_smartconnect_0_0.dcp /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/top_design_smartconnect_0_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/top_design_smartconnect_0_0_stub.v
+  write_verilog -force -mode synth_stub /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/top_design_smartconnect_0_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/top_design_smartconnect_0_0_stub.vhdl
+  write_vhdl -force -mode synth_stub /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/top_design_smartconnect_0_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/top_design_smartconnect_0_0_sim_netlist.v
+  write_verilog -force -mode funcsim /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/top_design_smartconnect_0_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/top_design_smartconnect_0_0_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/top_design_smartconnect_0_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -226,32 +210,32 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/top_design_smartconnect_0_0_synth_1/top_design_smartconnect_0_0.dcp /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/top_design_smartconnect_0_0.dcp
+  file copy -force /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/HDMI_TEST.runs/top_design_smartconnect_0_0_synth_1/top_design_smartconnect_0_0.dcp /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/top_design_smartconnect_0_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/top_design_smartconnect_0_0_synth_1/top_design_smartconnect_0_0_stub.v /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/top_design_smartconnect_0_0_stub.v
+  file rename -force /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/HDMI_TEST.runs/top_design_smartconnect_0_0_synth_1/top_design_smartconnect_0_0_stub.v /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/top_design_smartconnect_0_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/top_design_smartconnect_0_0_synth_1/top_design_smartconnect_0_0_stub.vhdl /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/top_design_smartconnect_0_0_stub.vhdl
+  file rename -force /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/HDMI_TEST.runs/top_design_smartconnect_0_0_synth_1/top_design_smartconnect_0_0_stub.vhdl /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/top_design_smartconnect_0_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/top_design_smartconnect_0_0_synth_1/top_design_smartconnect_0_0_sim_netlist.v /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/top_design_smartconnect_0_0_sim_netlist.v
+  file rename -force /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/HDMI_TEST.runs/top_design_smartconnect_0_0_synth_1/top_design_smartconnect_0_0_sim_netlist.v /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/top_design_smartconnect_0_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.runs/top_design_smartconnect_0_0_synth_1/top_design_smartconnect_0_0_sim_netlist.vhdl /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/top_design_smartconnect_0_0_sim_netlist.vhdl
+  file rename -force /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/HDMI_TEST.runs/top_design_smartconnect_0_0_synth_1/top_design_smartconnect_0_0_sim_netlist.vhdl /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/top_design_smartconnect_0_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -259,15 +243,15 @@ if { [catch {
 close [open .end.used_ip_cache.rst w]
 }; # end if cacheID 
 
-if {[file isdir /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.ip_user_files/ip/top_design_smartconnect_0_0]} {
+if {[file isdir /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/HDMI_TEST.ip_user_files/ip/top_design_smartconnect_0_0]} {
   catch { 
-    file copy -force /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/top_design_smartconnect_0_0_stub.v /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.ip_user_files/ip/top_design_smartconnect_0_0
+    file copy -force /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/top_design_smartconnect_0_0_stub.v /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/HDMI_TEST.ip_user_files/ip/top_design_smartconnect_0_0
   }
 }
 
-if {[file isdir /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.ip_user_files/ip/top_design_smartconnect_0_0]} {
+if {[file isdir /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/HDMI_TEST.ip_user_files/ip/top_design_smartconnect_0_0]} {
   catch { 
-    file copy -force /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/top_design_smartconnect_0_0_stub.vhdl /home/serg/Documents/Xilinx/HDMI_TEST/HDMI_TEST.ip_user_files/ip/top_design_smartconnect_0_0
+    file copy -force /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0_1/top_design_smartconnect_0_0_stub.vhdl /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/HDMI_TEST.ip_user_files/ip/top_design_smartconnect_0_0
   }
 }
 file delete __synthesis_is_running__

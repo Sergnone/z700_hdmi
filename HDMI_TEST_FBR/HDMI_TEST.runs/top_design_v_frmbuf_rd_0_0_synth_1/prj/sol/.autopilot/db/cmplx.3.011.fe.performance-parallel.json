@@ -15,20 +15,20 @@
     "total_instructions": 583
   },
   "1": {
-    "basicblocks": 9,
+    "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "v_frmbuf_rd.cpp",
-    "fileloc": 497,
-    "instructions": 33,
-    "memory_accesses": 2,
-    "name": "AXIMMvideo2Bytes",
-    "total_instructions": 33
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "memory_accesses": 0,
+    "name": "reg<unsigned short>",
+    "total_instructions": 1
   },
   "2": {
     "basicblocks": 14,
-    "calls": "5 5",
+    "calls": "1 1",
     "control_depth": 2,
     "def_use_depth": 7,
     "file": "v_frmbuf_rd.cpp",
@@ -46,7 +46,7 @@
   },
   "3": {
     "basicblocks": 1,
-    "calls": "1 4 2",
+    "calls": "5 4 2",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "v_frmbuf_rd.cpp",
@@ -69,15 +69,15 @@
     "total_instructions": 321
   },
   "5": {
-    "basicblocks": 1,
+    "basicblocks": 9,
     "calls": "",
     "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
-    "memory_accesses": 0,
-    "name": "reg<unsigned short>",
-    "total_instructions": 1
+    "def_use_depth": 3,
+    "file": "v_frmbuf_rd.cpp",
+    "fileloc": 497,
+    "instructions": 33,
+    "memory_accesses": 2,
+    "name": "AXIMMvideo2Bytes",
+    "total_instructions": 33
   }
 }
