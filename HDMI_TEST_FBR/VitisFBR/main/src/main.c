@@ -49,7 +49,7 @@ u32 volatile		*gpio_videoLockMonitor;
 #define VideoClockGen_ReadReg(RegOffset) \
     Xil_In32((XPAR_VIDEO_CLK_WIZ_BASEADDR) + (RegOffset))
 
-int driverInit()
+int TPG_Init()
 {
 	int status;
 
@@ -217,24 +217,18 @@ int main()
 	int status;
 	XVidC_VideoMode TestMode;
 
-	xil_printf("Start test\r\n");
+	xil_printf("Start TPG\r\n");
 
 	gpio_hlsIpReset = (u32*)XPAR_HLS_IP_RESET_BASEADDR;
 	//gpio_videoLockMonitor = (u32*)XPAR_VIDEO_LOCK_MONITOR_BASEADDR;
 	*gpio_hlsIpReset = 1;
 
-	status = driverInit();
+	status = TPG_Init();
 	if(status != XST_SUCCESS) {
 		return(XST_FAILURE);
 	}
 
 	//resetIp();
-
-	if(*gpio_videoLockMonitor) {
-		xil_printf("ERR:: Video should not be locked\r\n");
-		return(XST_FAILURE);
-	}
-
 
 	TestMode = XVIDC_VM_1080_60_P;
 	xil_printf("\r\nTest: %s\r\n", XVidC_GetVideoModeStr(TestMode));
@@ -246,15 +240,6 @@ int main()
 
 	usleep(300000);
 
-	/*
-	if(!(*gpio_videoLockMonitor)) {
-		xil_printf("ERR:: Video Lock failed for 1080P60\r\n");
-		return(XST_FAILURE);
-	}
-	else {
-		xil_printf("1080P60 passed\r\n");
-	}
-	*/
 	xil_printf("Successfully ran Example\r\n");
 
 	return 0;

@@ -453,6 +453,15 @@ v_frmbuf_rd_IS_TOP_LEVEL:STATIC=OFF
 v_frmbuf_rd_SOURCE_DIR:STATIC=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/VitisFBR/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/v_frmbuf_rd/src
 
 //Value Computed by CMake
+v_frmbuf_wr_BINARY_DIR:STATIC=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/VitisFBR/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/v_frmbuf_wr/src
+
+//Value Computed by CMake
+v_frmbuf_wr_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+v_frmbuf_wr_SOURCE_DIR:STATIC=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/VitisFBR/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/v_frmbuf_wr/src
+
+//Value Computed by CMake
 v_tpg_BINARY_DIR:STATIC=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/VitisFBR/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/v_tpg/src
 
 //Value Computed by CMake
@@ -618,7 +627,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=28
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=29
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

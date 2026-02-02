@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "1",
+    "calls": "5",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_frmbuf_rd.cpp",
@@ -18,20 +18,8 @@
     "total_instructions": 355
   },
   "1": {
-    "basicblocks": 1,
-    "calls": "3 4 2",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "v_frmbuf_rd.cpp",
-    "fileloc": 78,
-    "instructions": 10,
-    "memory_accesses": 0,
-    "name": "FrmbufRdHlsDataFlow",
-    "total_instructions": 306
-  },
-  "2": {
     "basicblocks": 12,
-    "calls": "5 5",
+    "calls": "4 4",
     "control_depth": 2,
     "def_use_depth": 4,
     "file": "v_frmbuf_rd.cpp",
@@ -48,7 +36,7 @@
     },
     "total_instructions": 116
   },
-  "3": {
+  "2": {
     "basicblocks": 7,
     "calls": "",
     "control_depth": 0,
@@ -63,7 +51,7 @@
     "name": "AXIMMvideo2Bytes",
     "total_instructions": 32
   },
-  "4": {
+  "3": {
     "basicblocks": 39,
     "calls": "",
     "control_depth": 4,
@@ -78,7 +66,7 @@
     "name": "Bytes2MultiPixStream",
     "total_instructions": 148
   },
-  "5": {
+  "4": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -89,5 +77,17 @@
     "memory_accesses": 0,
     "name": "reg<unsigned short>",
     "total_instructions": 1
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "2 3 1",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "v_frmbuf_rd.cpp",
+    "fileloc": 78,
+    "instructions": 10,
+    "memory_accesses": 0,
+    "name": "FrmbufRdHlsDataFlow",
+    "total_instructions": 306
   }
 }
