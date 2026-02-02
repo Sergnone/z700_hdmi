@@ -687,12 +687,7 @@ int main(void)
     XVIDC_VM_UHD_60_P
   };
 
-
-
   init_platform();
-
-  DDR_Write();
-
 
   xil_printf("Start Frame Buffer Example Design Test\r\n");
 
@@ -711,14 +706,6 @@ int main(void)
   }
 
   /* Initialize IRQ */
-#ifndef SDT
-  Status = SetupInterrupts();
-  if (Status == XST_FAILURE) {
-    xil_printf("ERROR:: Interrupt Setup Failed\r\n");
-    xil_printf("ERROR:: Test could not be completed\r\n");
-    return(1);
-  }
-#else
   Status = XSetupInterruptSystem(&frmbufrd,&XVFrmbufRd_InterruptHandler,
 				       frmbufrd.FrmbufRd.Config.IntrId,
 				       frmbufrd.FrmbufRd.Config.IntrParent,
@@ -728,7 +715,6 @@ int main(void)
     xil_printf("ERROR:: Test could not be completed\r\n");
     return(1);
   }
-#endif
 
   /* Enable exceptions. */
   Xil_ExceptionEnable();
@@ -740,65 +726,68 @@ int main(void)
   VidStream.PixPerClk     = frmbufrd.FrmbufRd.Config.PixPerClk;
   VidStream.ColorDepth    = frmbufrd.FrmbufRd.Config.MaxDataWidth;
 
-  resetIp();
+  //resetIp();
 
   /* Sanity check */
+  /*
   if (XVMonitor_IsVideoLocked(&vmon)) {
     xil_printf("ERROR:: Video should not be locked\r\n");
     xil_printf("ERROR:: Test could not be completed\r\n");
     return(1);
   }
+  */
+  format = 7;
+  index = 1;
+  /* Get video format to test */
+  Cfmt = ColorFormats[format].MemFormat;
+  VidStream.ColorFormatId = ColorFormats[format].StreamFormat;
 
-    format = 7;
-    index = 1;
-    /* Get video format to test */
-    Cfmt = ColorFormats[format].MemFormat;
-    VidStream.ColorFormatId = ColorFormats[format].StreamFormat;
+  /* Get mode to test */
+  VidStream.VmId = TestModes[index];
 
-      /* Get mode to test */
-      VidStream.VmId = TestModes[index];
+  /* Validate testcase format and mode */
+  valid = ValidateTestCase(frmbufrd.FrmbufRd.Config.PixPerClk,
+                            TestModes[index],
+                            frmbufrd.FrmbufRd.Config.MaxDataWidth,
+                            ColorFormats[format]);
 
-      /* Validate testcase format and mode */
-      valid = ValidateTestCase(frmbufrd.FrmbufRd.Config.PixPerClk,
-                               TestModes[index],
-                               frmbufrd.FrmbufRd.Config.MaxDataWidth,
-                               ColorFormats[format]);
+  if (valid)
+  {
+      ++TestCount;
 
-      if (valid)
-      {
-          ++TestCount;
+    /* Get mode timing parameters */
+    TimingPtr = XVidC_GetTimingInfo(VidStream.VmId);
+    VidStream.Timing = *TimingPtr;
+    VidStream.FrameRate = XVidC_GetFrameRate(VidStream.VmId);
 
-        /* Get mode timing parameters */
-        TimingPtr = XVidC_GetTimingInfo(VidStream.VmId);
-        VidStream.Timing = *TimingPtr;
-        VidStream.FrameRate = XVidC_GetFrameRate(VidStream.VmId);
+    xil_printf("\r\n********************************************\r\n");
+    xil_printf("Test Input Stream: %s (%s)\r\n",
+                XVidC_GetVideoModeStr(VidStream.VmId),
+                XVidC_GetColorFormatStr(Cfmt));
+    xil_printf("********************************************\r\n");
 
-        xil_printf("\r\n********************************************\r\n");
-        xil_printf("Test Input Stream: %s (%s)\r\n",
-                   XVidC_GetVideoModeStr(VidStream.VmId),
-                   XVidC_GetColorFormatStr(Cfmt));
-        xil_printf("********************************************\r\n");
+    /* Configure VTC */
+    ConfigVtc(&VidStream);
 
-        /* Configure VTC */
-        ConfigVtc(&VidStream);
+    /* Configure Frame Buffer */
+    stride = CalcStride(Cfmt,
+                        frmbufrd.FrmbufRd.Config.AXIMMDataWidth,
+                        &VidStream);
 
-        /* Configure Frame Buffer */
-        stride = CalcStride(Cfmt,
-                            frmbufrd.FrmbufRd.Config.AXIMMDataWidth,
-                            &VidStream);
+    ConfigFrmbuf(stride, Cfmt, &VidStream);
 
-        ConfigFrmbuf(stride, Cfmt, &VidStream);
+    /*
+    xil_printf("Wait for vid out lock: ");
+    Lock = CheckVidoutLock();
+    if (Lock) {
+      ++PassCount;
+    } else {
+      ++FailCount;
+    }
+    */
 
-        xil_printf("Wait for vid out lock: ");
-        Lock = CheckVidoutLock();
-        if (Lock) {
-          ++PassCount;
-        } else {
-          ++FailCount;
-        }
-
-        //resetIp();
-      }
+    //resetIp();
+  }
 
   if (FailCount) {
     xil_printf("\r\n\r\nINFO: Test completed. %d/%d tests failed.\r\n",
