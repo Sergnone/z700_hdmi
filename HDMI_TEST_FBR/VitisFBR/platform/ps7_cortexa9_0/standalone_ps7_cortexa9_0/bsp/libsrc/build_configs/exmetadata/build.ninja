@@ -109,6 +109,12 @@ build vtc_example: phony CMakeFiles/vtc_example xvtc_exlist.yaml
 
 
 #############################################
+# Utility command for v_tpg_example
+
+build v_tpg_example: phony CMakeFiles/v_tpg_example xv_tpg_exlist.yaml
+
+
+#############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -227,6 +233,14 @@ build CMakeFiles/vtc_example xvtc_exlist.yaml | ${cmake_ninja_workdir}CMakeFiles
   COMMAND = cd /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/VitisFBR/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/exmetadata && lopper -f -O /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/VitisFBR/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/vtc /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/VitisFBR/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/hw_artifacts/ps7_cortexa9_0_baremetal.dts -- bmcmake_metadata_xlnx ps7_cortexa9_0 /tools/xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/vtc_v8_7/examples drvcmake_metadata
   restat = 1
 
+
+#############################################
+# Custom command for CMakeFiles/v_tpg_example
+
+build CMakeFiles/v_tpg_example xv_tpg_exlist.yaml | ${cmake_ninja_workdir}CMakeFiles/v_tpg_example ${cmake_ninja_workdir}xv_tpg_exlist.yaml: CUSTOM_COMMAND
+  COMMAND = cd /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/VitisFBR/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/exmetadata && lopper -f -O /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/VitisFBR/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/v_tpg /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/VitisFBR/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/hw_artifacts/ps7_cortexa9_0_baremetal.dts -- bmcmake_metadata_xlnx ps7_cortexa9_0 /tools/xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/v_tpg_v8_6/examples drvcmake_metadata
+  restat = 1
+
 # =============================================================================
 # Target aliases.
 
@@ -238,7 +252,7 @@ build CMakeFiles/vtc_example xvtc_exlist.yaml | ${cmake_ninja_workdir}CMakeFiles
 #############################################
 # Folder: /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/VitisFBR/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/exmetadata
 
-build all: phony gpio_example coresightps_dcc_example devcfg_example dmaps_example scugic_example scutimer_example scuwdt_example ttcps_example uartps_example xadcps_example v_frmbuf_rd_example vtc_example
+build all: phony gpio_example coresightps_dcc_example devcfg_example dmaps_example scugic_example scutimer_example scuwdt_example ttcps_example uartps_example xadcps_example v_frmbuf_rd_example vtc_example v_tpg_example
 
 # =============================================================================
 # Built-in targets

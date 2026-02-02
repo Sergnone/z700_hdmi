@@ -235,6 +235,10 @@ drv_info:
     driver: vtc
     ip_name: v_tc
     path: /tools/xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/vtc_v8_7
+  v_tpg_0:
+    driver: v_tpg
+    ip_name: v_tpg
+    path: /tools/xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/v_tpg_v8_6
 lib_info:
   xiltimer:
     path: /tools/xilinx/2025.2/Vitis/data/embeddedsw/lib/sw_services/xiltimer_v2_3

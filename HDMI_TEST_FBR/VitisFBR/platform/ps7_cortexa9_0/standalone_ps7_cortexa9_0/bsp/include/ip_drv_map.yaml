@@ -94,3 +94,6 @@ v_frmbuf_rd_0:
 v_tc_0:
 - v_tc
 - vtc
+v_tpg_0:
+- v_tpg
+- v_tpg

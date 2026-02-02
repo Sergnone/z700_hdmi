@@ -33,15 +33,15 @@
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
                 <row id="0" col0="v_frmbuf_rd" col1="v_frmbuf_rd.cpp:135" col2="1909" col3="391" col4="636" col5="547" col6="479">
-                    <row id="4" col0="FrmbufRdHlsDataFlow" col1="v_frmbuf_rd.cpp:78" col2="1802" col3="335" col4="580" col5="503" col6="424">
-                        <row id="7" col0="STREAM_PLANES" col1="v_frmbuf_rd.h:250" col2="4" col3="" col4="" col5="" col6=""/>
-                        <row id="3" col0="AXIMMvideo2Bytes" col1="v_frmbuf_rd.cpp:497" col2="50" col3="34" col4="36" col5="32" col6="41"/>
-                        <row id="1" col0="Bytes2MultiPixStream" col1="v_frmbuf_rd.cpp:686" col2="909" col3="160" col4="325" col5="319" col6="265">
-                            <row id="6" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                    <row id="1" col0="FrmbufRdHlsDataFlow" col1="v_frmbuf_rd.cpp:78" col2="1802" col3="335" col4="580" col5="503" col6="424">
+                        <row id="5" col0="STREAM_PLANES" col1="v_frmbuf_rd.h:250" col2="4" col3="" col4="" col5="" col6=""/>
+                        <row id="7" col0="AXIMMvideo2Bytes" col1="v_frmbuf_rd.cpp:497" col2="50" col3="34" col4="36" col5="32" col6="41"/>
+                        <row id="3" col0="Bytes2MultiPixStream" col1="v_frmbuf_rd.cpp:686" col2="909" col3="160" col4="325" col5="319" col6="265">
+                            <row id="2" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
                         </row>
-                        <row id="2" col0="MultiPixStream2AXIvideo" col1="v_frmbuf_rd.cpp:302" col2="815" col3="131" col4="209" col5="142" col6="105">
-                            <row id="6" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
-                            <row id="5" col0="reg&lt;unsigned short&gt;" col1="x_hls_utils.h:222" col2="2" col2_disp="   2 (2 calls)" col3="2" col3_disp="  2 (2 calls)" col4="2" col4_disp="  2 (2 calls)" col5="2" col5_disp="  2 (2 calls)" col6="8" col6_disp="  8 (2 calls)"/>
+                        <row id="4" col0="MultiPixStream2AXIvideo" col1="v_frmbuf_rd.cpp:302" col2="815" col3="131" col4="209" col5="142" col6="105">
+                            <row id="2" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            <row id="6" col0="reg&lt;unsigned short&gt;" col1="x_hls_utils.h:222" col2="2" col2_disp="   2 (2 calls)" col3="2" col3_disp="  2 (2 calls)" col4="2" col4_disp="  2 (2 calls)" col5="2" col5_disp="  2 (2 calls)" col6="8" col6_disp="  8 (2 calls)"/>
                         </row>
                     </row>
                 </row>

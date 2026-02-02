@@ -253,5 +253,51 @@
 			xlnx,gen-f1-vsync-hstart = <2008>;
 			xlnx,gen-f0-vsync-hend = <2008>;
 		};
+		v_tpg_0: v_tpg@43c00000 {
+			interrupts = < 0 31 4 >;
+			compatible = "xlnx,v-tpg-8.2" , "xlnx,v-tpg-8.0";
+			xlnx,max-width = <1920>;
+			xlnx,foreground = <1>;
+			xlnx,max-height = <1080>;
+			interrupt-parent = <&intc>;
+			xlnx,max-rows = <1080>;
+			xlnx,solid-color = <1>;
+			xlnx,has-axi4-yuv422-yuv420 = <0>;
+			xlnx,ip-name = "v_tpg";
+			reg = <0x43c00000 0x10000>;
+			clocks = <&clkc 15>;
+			xlnx,color-bar = <1>;
+			xlnx,s-axi-ctrl-addr-width = <8>;
+			xlnx,samples-per-clock = <1>;
+			xlnx,max-data-width = <8>;
+			xlnx,has-axi4s-slave = <0>;
+			xlnx,ppc = <1>;
+			xlnx,max-cols = <1920>;
+			xlnx,edk-iptype = "PERIPHERAL";
+			status = "okay";
+			clock-names = "ap_clk";
+			xlnx,zone-plate = <1>;
+			xlnx,num-video-components = <3>;
+			interrupt-names = "interrupt";
+			xlnx,ramp = <1>;
+			xlnx,color-sweep = <1>;
+			xlnx,s-axi-ctrl-data-width = <32>;
+			xlnx,display-port = <1>;
+			xlnx,name = "v_tpg_0";
+			tpg_portsv_tpg_0: ports {
+				#address-cells = <1>;
+				#size-cells = <0>;
+				tpg_port1v_tpg_0: port@1 {
+					xlnx,video-width = <8>;
+					reg = <1>;
+					xlnx,video-format = <2>;
+				};
+				tpg_port0v_tpg_0: port@0 {
+					xlnx,video-width = <8>;
+					reg = <0>;
+					xlnx,video-format = <2>;
+				};
+			};
+		};
 	};
 };

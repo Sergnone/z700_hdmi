@@ -56,6 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "top_design_axi_smc_1_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
 set_param general.usePosixSpawnForFork 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
@@ -124,6 +125,12 @@ set_property used_in_implementation false [get_files -all /home/serg/Documents/X
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_50/bd_b6ca_m03awn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_51/bd_b6ca_m03wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_52/bd_b6ca_m03bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_54/bd_b6ca_m04s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_55/bd_b6ca_m04arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_56/bd_b6ca_m04rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_57/bd_b6ca_m04awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_58/bd_b6ca_m04wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_59/bd_b6ca_m04bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_TPG/HDMI_TEST.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/smartconnect.xdc]
 

@@ -15,42 +15,6 @@
     "total_instructions": 473
   },
   "1": {
-    "basicblocks": 8,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "v_frmbuf_rd.cpp",
-    "fileloc": 497,
-    "instructions": 36,
-    "memory_accesses": 2,
-    "name": "AXIMMvideo2Bytes",
-    "total_instructions": 36
-  },
-  "2": {
-    "basicblocks": 39,
-    "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 9,
-    "file": "v_frmbuf_rd.cpp",
-    "fileloc": 686,
-    "instructions": 159,
-    "memory_accesses": 11,
-    "name": "Bytes2MultiPixStream",
-    "total_instructions": 247
-  },
-  "3": {
-    "basicblocks": 1,
-    "calls": "1 2 5",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "v_frmbuf_rd.cpp",
-    "fileloc": 78,
-    "instructions": 12,
-    "memory_accesses": 0,
-    "name": "FrmbufRdHlsDataFlow",
-    "total_instructions": 419
-  },
-  "4": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -62,9 +26,9 @@
     "name": "reg<unsigned short>",
     "total_instructions": 1
   },
-  "5": {
+  "2": {
     "basicblocks": 12,
-    "calls": "4 4",
+    "calls": "1 1",
     "control_depth": 2,
     "def_use_depth": 7,
     "file": "v_frmbuf_rd.cpp",
@@ -79,5 +43,41 @@
       "L": 7
     },
     "total_instructions": 124
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "4 5 2",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "v_frmbuf_rd.cpp",
+    "fileloc": 78,
+    "instructions": 12,
+    "memory_accesses": 0,
+    "name": "FrmbufRdHlsDataFlow",
+    "total_instructions": 419
+  },
+  "4": {
+    "basicblocks": 8,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "v_frmbuf_rd.cpp",
+    "fileloc": 497,
+    "instructions": 36,
+    "memory_accesses": 2,
+    "name": "AXIMMvideo2Bytes",
+    "total_instructions": 36
+  },
+  "5": {
+    "basicblocks": 39,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 9,
+    "file": "v_frmbuf_rd.cpp",
+    "fileloc": 686,
+    "instructions": 159,
+    "memory_accesses": 11,
+    "name": "Bytes2MultiPixStream",
+    "total_instructions": 247
   }
 }
