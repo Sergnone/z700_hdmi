@@ -1,4 +1,4 @@
-# 2026-02-02T19:17:53.354206844
+# 2026-02-02T20:20:42.992620991
 import vitis
 
 client = vitis.create_client()
@@ -12,72 +12,6 @@ status = platform.build()
 status = platform.build()
 
 comp = client.get_component(name="xv_frmbufrd_example")
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-comp.set_app_config(key = "USER_COMPILE_SOURCES", values = ["/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/VitisFBR/xv_frmbufrd_example/display_ctrl/display_ctrl.c"])
-
-comp.set_app_config(key = "USER_COMPILE_SOURCES", values = ["../display_ctrl/display_ctrl.c", "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/VitisFBR/xv_frmbufrd_example/dynclk/dynclk.c"])
-
-comp.set_app_config(key = "USER_INCLUDE_DIRECTORIES", values = ["/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/VitisFBR/xv_frmbufrd_example/display_ctrl"])
-
-comp.set_app_config(key = "USER_INCLUDE_DIRECTORIES", values = ["../display_ctrl"])
-
-comp.set_app_config(key = "USER_INCLUDE_DIRECTORIES", values = ["../display_ctrl", "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_FBR/VitisFBR/xv_frmbufrd_example/dynclk"])
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
 comp.build()
 
 status = platform.build()

@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "4",
+    "calls": "3",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_frmbuf_rd.cpp",
@@ -34,6 +34,33 @@
     "total_instructions": 105
   },
   "2": {
+    "basicblocks": 7,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 4,
+    "file": "v_frmbuf_rd.cpp",
+    "fileloc": 497,
+    "instructions": 41,
+    "memory_accesses": 3,
+    "name": "AXIMMvideo2Bytes",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 41
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "2 4 1",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "v_frmbuf_rd.cpp",
+    "fileloc": 78,
+    "instructions": 13,
+    "memory_accesses": 0,
+    "name": "FrmbufRdHlsDataFlow",
+    "total_instructions": 424
+  },
+  "4": {
     "basicblocks": 39,
     "calls": "",
     "control_depth": 2,
@@ -50,33 +77,6 @@
       "L": 8
     },
     "total_instructions": 265
-  },
-  "3": {
-    "basicblocks": 7,
-    "calls": "",
-    "control_depth": 1,
-    "def_use_depth": 4,
-    "file": "v_frmbuf_rd.cpp",
-    "fileloc": 497,
-    "instructions": 41,
-    "memory_accesses": 3,
-    "name": "AXIMMvideo2Bytes",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 41
-  },
-  "4": {
-    "basicblocks": 1,
-    "calls": "3 2 1",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "v_frmbuf_rd.cpp",
-    "fileloc": 78,
-    "instructions": 13,
-    "memory_accesses": 0,
-    "name": "FrmbufRdHlsDataFlow",
-    "total_instructions": 424
   },
   "5": {
     "basicblocks": 1,

@@ -52,16 +52,6 @@
 #include "xvtc.h"
 #include "xgpio.h"
 
-#include "display_ctrl.h"
-#include "display_demo.h"
-DisplayCtrl dispCtrl;
-#define DYNCLK_BASEADDR XPAR_AXI_DYNCLK_0_BASEADDR
-#define VGA_VDMA_ID 0
-#define DISP_VTC_ID 0
-u8 frameBuf[DISPLAY_NUM_FRAMES][DISPLAY_MAX_FRAME] __attribute__ ((aligned(64)));
-u8 *pFrames[DISPLAY_NUM_FRAMES]; //array of pointers to the frame buffers
-
-
 #if defined(__MICROBLAZE__) || defined(__riscv)
 #ifndef  SDT
 #define DDR_BASEADDR XPAR_MIG7SERIES_0_BASEADDR
@@ -324,7 +314,7 @@ static int DriverInit(void)
   }
 
   //Video Lock Monitor
-/*
+  /*
 #ifndef SDT
   GpioCfgPtr = XGpio_LookupConfig(XPAR_VIDEO_LOCK_MONITOR_DEVICE_ID);
 #else
@@ -686,14 +676,9 @@ int main(void)
   int FailCount = 0;
   int PassCount = 0;
   int TestCount = 0;
+  int Lock = FALSE;
   XVidC_ColorFormat Cfmt;
   XVidC_VideoTiming const *TimingPtr;
-
-  int i = 0;
-  for (i = 0; i < DISPLAY_NUM_FRAMES; i++)
-	{
-		pFrames[i] = frameBuf[i];
-	}
 
   XVidC_VideoMode TestModes[NUM_TEST_MODES] =
   {
@@ -752,9 +737,6 @@ int main(void)
     return(1);
   }
   */
-  
-
-
   format = 7;
   index = 1;
   /* Get video format to test */
@@ -772,7 +754,7 @@ int main(void)
 
   if (valid)
   {
-    ++TestCount;
+      ++TestCount;
 
     /* Get mode timing parameters */
     TimingPtr = XVidC_GetTimingInfo(VidStream.VmId);
@@ -795,20 +777,6 @@ int main(void)
 
     ConfigFrmbuf(stride, Cfmt, &VidStream);
 
-
-    /*
-    Status = DisplayInitialize(&dispCtrl, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DISPLAY_STRIDE);
-    if (Status != XST_SUCCESS)
-    {
-      xil_printf("Display Ctrl initialization failed during demo initialization%d\r\n", Status);
-    }
-    Status = DisplayStart(&dispCtrl);
-    if (Status != XST_SUCCESS)
-    {
-      xil_printf("Couldn't start display during demo initialization%d\r\n", Status);
-    }
-    */
-  
     /*
     xil_printf("Wait for vid out lock: ");
     Lock = CheckVidoutLock();

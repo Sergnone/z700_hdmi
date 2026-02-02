@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1'
 ================================================================
-* Date:           Mon Feb  2 19:12:35 2026
+* Date:           Mon Feb  2 20:18:14 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -145,7 +145,7 @@ The critical path consists of the following:
  <State 2>: 1.755ns
 The critical path consists of the following:
 	'load' operation 2 bit ('map', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:369) on array 'mapComp' [32]  (1.755 ns)
-	'store' operation ('store_ln369', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:369) of variable 'map_cast', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:369 5 bit on local variable 'kMap_1' [36]  (0.000 ns)
+	'store' operation ('store_ln369', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:369) of variable 'map_cast', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:369 5 bit on local variable 'kMap_2' [42]  (0.000 ns)
 
 
 ============================================================
