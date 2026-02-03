@@ -3,8 +3,8 @@
   "type": "PLATFORM",
   "configuration": {
     "description": "",
-    "xsa": "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_IMAGE/top_design_wrapper1.xsa",
-    "xsaPathInPlatform": "platform/hw/top_design_wrapper1.xsa",
+    "xsa": "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_IMAGE/top_design_wrapper2.xsa",
+    "xsaPathInPlatform": "platform/hw/top_design_wrapper2.xsa",
     "emulationXsa": "",
     "emulationXsaPathInPlatform": "",
     "isCustomFSBL": false,

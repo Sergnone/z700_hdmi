@@ -638,7 +638,7 @@ static int ConfigFrmbuf(u32 StrideInBytes,
 
   /* Start Frame Buffers */
   XVFrmbufWr_Start(&frmbufwr);
-  XVFrmbufRd_Start(&frmbufrd);
+  //XVFrmbufRd_Start(&frmbufrd);
 
   xil_printf("INFO: FRMBUF configured\r\n");
   return(Status);
@@ -763,7 +763,9 @@ void *XVFrameBufferRdCallback(void *data)
 void *XVFrameBufferWrCallback(void *data)
 {
 	  xil_printf("\nFrame Buffer Write interrupt received.\r\n");
-	  XVFrmbufWr_Start(&frmbufwr);
+    //XV_tpg_WriteReg(tpg_Config->BaseAddress, XV_TPG_CTRL_ADDR_AP_CTRL, 0x00);
+    //XVFrmbufWr_Stop(&frmbufwr);
+	  //XVFrmbufWr_Start(&frmbufwr);
 }
 
 /**
@@ -854,38 +856,38 @@ int V_TPG_Clock_Config(XVidC_VideoMode videoMode)
 	u32 clock_config_reg_2;
 	u16 PixelsPerClk, mode_index;
 
-    const int ClkOut_Frac[3][XVIDC_PPC_NUM_SUPPORTED] =
-    { {250, 500, 0  , 0}, //1080p
-      {125, 250, 500, 0}, //4K30
-      {0,   125, 250, 500}  //4K60
-    };
-    const int ClkOut_Div[3][XVIDC_PPC_NUM_SUPPORTED] =
-    { {6, 12, 25, 50}, //1080p
-      {3, 6 , 12, 25}, //4K30
-      {0, 3 , 6 , 12}  //4K60
-    };
+  const int ClkOut_Frac[3][XVIDC_PPC_NUM_SUPPORTED] =
+  { {250, 500, 0  , 0}, //1080p
+    {125, 250, 500, 0}, //4K30
+    {0,   125, 250, 500}  //4K60
+  };
+  const int ClkOut_Div[3][XVIDC_PPC_NUM_SUPPORTED] =
+  { {6, 12, 25, 50}, //1080p
+    {3, 6 , 12, 25}, //4K30
+    {0, 3 , 6 , 12}  //4K60
+  };
 
-    /* Validate TPG Parameters */
-    Xil_AssertNonvoid((tpg.Config.PixPerClk == XVIDC_PPC_1) ||
-                      (tpg.Config.PixPerClk == XVIDC_PPC_2) ||
-					  (tpg.Config.PixPerClk == XVIDC_PPC_4) ||
-                      (tpg.Config.PixPerClk == XVIDC_PPC_8));
+  /* Validate TPG Parameters */
+  Xil_AssertNonvoid((tpg.Config.PixPerClk == XVIDC_PPC_1) ||
+                    (tpg.Config.PixPerClk == XVIDC_PPC_2) ||
+                    (tpg.Config.PixPerClk == XVIDC_PPC_4) ||
+                    (tpg.Config.PixPerClk == XVIDC_PPC_8));
 
 
-    mode_index = ((videoMode ==  XVIDC_VM_1080_60_P) ? 0 :
-                  (videoMode ==  XVIDC_VM_UHD_30_P)  ? 1 :
-                  (videoMode ==  XVIDC_VM_UHD_60_P)  ? 2 : 3);
+  mode_index = ((videoMode ==  XVIDC_VM_1080_60_P) ? 0 :
+                (videoMode ==  XVIDC_VM_UHD_30_P)  ? 1 :
+                (videoMode ==  XVIDC_VM_UHD_60_P)  ? 2 : 3);
 
-    if(mode_index > 2)
-    {
-      xil_printf("ERR:: Video Mode %s not supported\r\n", XVidC_GetVideoModeStr(videoMode));
-      return(XST_FAILURE);
-    }
+  if(mode_index > 2)
+  {
+    xil_printf("ERR:: Video Mode %s not supported\r\n", XVidC_GetVideoModeStr(videoMode));
+    return(XST_FAILURE);
+  }
 
-    //map PPC to array index
-    PixelsPerClk = ((tpg.Config.PixPerClk == XVIDC_PPC_8)? 3 : tpg.Config.PixPerClk>>1);
-    CLKOUT0_FRAC   =  ClkOut_Frac[mode_index][PixelsPerClk];
-    CLKOUT0_DIVIDE =  ClkOut_Div[mode_index][PixelsPerClk];
+  //map PPC to array index
+  PixelsPerClk = ((tpg.Config.PixPerClk == XVIDC_PPC_8)? 3 : tpg.Config.PixPerClk>>1);
+  CLKOUT0_FRAC   =  ClkOut_Frac[mode_index][PixelsPerClk];
+  CLKOUT0_DIVIDE =  ClkOut_Div[mode_index][PixelsPerClk];
 
 	clock_config_reg_0 = (1<<26) | (CLKFBOUT_FRAC<<16) | (CLKFBOUT_MULT<<8) | DIVCLK_DIVIDE;
 	clock_config_reg_2 = (1<<18) | (CLKOUT0_FRAC<<8) | CLKOUT0_DIVIDE;
@@ -987,12 +989,15 @@ Status = XSetupInterruptSystem(&frmbufrd,&XVFrmbufRd_InterruptHandler,
   XVFrmbufRd_SetCallback(&frmbufrd, XVFRMBUFRD_HANDLER_DONE, XVFrameBufferRdCallback,
 		(void *)&frmbufrd);
 
-  XVFrmbufWr_SetCallback(&frmbufwr, XVFRMBUFWR_HANDLER_DONE, XVFrameBufferWrCallback,
+  XVFrmbufWr_SetCallback(&frmbufwr, XVFRMBUFWR_HANDLER_READY, XVFrameBufferWrCallback,
 		(void *)&frmbufwr);
 
   /* Setup a default stream */
   VidStream.PixPerClk  = frmbufwr.FrmbufWr.Config.PixPerClk;
   VidStream.ColorDepth = frmbufwr.FrmbufWr.Config.MaxDataWidth;
+
+  xil_printf("FBR:::: PixPerClk: %d\r\n", VidStream.PixPerClk);
+  xil_printf("FBR:::: ColorDepth: %d\r\n", VidStream.ColorDepth);
 
   //resetIp();
 
@@ -1073,6 +1078,10 @@ Status = XSetupInterruptSystem(&frmbufrd,&XVFrmbufRd_InterruptHandler,
       }
     //}
   //}
+
+  //resetIp();
+  usleep(3000000);
+  XVFrmbufWr_Stop(&frmbufwr);
 
   if (FailCount) {
     xil_printf("\r\n\r\nINFO: Test completed. %d/%d tests failed.\r\n",
