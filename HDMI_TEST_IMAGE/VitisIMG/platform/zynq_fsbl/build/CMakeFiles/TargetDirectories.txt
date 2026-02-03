@@ -1,0 +1,4 @@
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_IMAGE/VitisIMG/platform/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_IMAGE/VitisIMG/platform/zynq_fsbl/build/CMakeFiles/print_build_info.dir
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_IMAGE/VitisIMG/platform/zynq_fsbl/build/CMakeFiles/edit_cache.dir
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_IMAGE/VitisIMG/platform/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir
