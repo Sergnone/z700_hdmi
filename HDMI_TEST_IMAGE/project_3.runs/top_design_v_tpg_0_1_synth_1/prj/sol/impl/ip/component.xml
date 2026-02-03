@@ -3516,8 +3516,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>V_tpg</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114464832</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-02-03T15:32:35Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114464864</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-02-03T16:04:54Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>

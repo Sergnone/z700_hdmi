@@ -1,45 +1,19 @@
-# 2026-02-03T18:11:43.883963072
+# 2026-02-03T19:04:33.962568452
 import vitis
 
 client = vitis.create_client()
 client.set_workspace(path="Vitis_tpg")
 
+platform = client.create_platform_component(name = "platform",hw_design = "$COMPONENT_LOCATION/../../top_design_wrapper.xsa",os = "standalone",cpu = "ps7_cortexa9_0",domain_name = "standalone_ps7_cortexa9_0",compiler = "gcc")
+
 platform = client.get_component(name="platform")
 status = platform.build()
 
-comp = client.get_component(name="app_tpg")
-comp.build()
+comp = client.create_app_component(name="app_component",platform = "$COMPONENT_LOCATION/../platform/export/platform/platform.xpfm",domain = "standalone_ps7_cortexa9_0")
 
 status = platform.build()
 
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
-comp.build()
-
-status = platform.build()
-
+comp = client.get_component(name="app_component")
 comp.build()
 
 status = platform.build()

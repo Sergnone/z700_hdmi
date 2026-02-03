@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Tue Feb  3 18:30:29 2026
+| Date         : Tue Feb  3 19:03:16 2026
 | Host         : serg running 64-bit Ubuntu 24.04.3 LTS
 | Command      : report_drc -file top_design_wrapper_drc_routed.rpt -pb top_design_wrapper_drc_routed.pb -rpx top_design_wrapper_drc_routed.rpx
 | Design       : top_design_wrapper
@@ -24,30 +24,18 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max checks: <unlimited>
-             Checks found: 12
-+-----------+------------------+--------------------------------+--------+
-| Rule      | Severity         | Description                    | Checks |
-+-----------+------------------+--------------------------------+--------+
-| AVAL-46   | Critical Warning | v7v8_mmcm_fvco_rule1           | 1      |
-| DPIP-1    | Warning          | Input pipelining               | 3      |
-| DPOP-1    | Warning          | PREG Output pipelining         | 3      |
-| DPOP-2    | Warning          | MREG Output pipelining         | 3      |
-| PDRC-33   | Warning          | MMCM_adv_ClkFrequency_div_dclk | 1      |
-| RTSTAT-10 | Warning          | No routable loads              | 1      |
-+-----------+------------------+--------------------------------+--------+
+             Checks found: 10
++-----------+----------+------------------------+--------+
+| Rule      | Severity | Description            | Checks |
++-----------+----------+------------------------+--------+
+| DPIP-1    | Warning  | Input pipelining       | 3      |
+| DPOP-1    | Warning  | PREG Output pipelining | 3      |
+| DPOP-2    | Warning  | MREG Output pipelining | 3      |
+| RTSTAT-10 | Warning  | No routable loads      | 1      |
++-----------+----------+------------------------+--------+
 
 2. REPORT DETAILS
 -----------------
-AVAL-46#1 Critical Warning
-v7v8_mmcm_fvco_rule1  
-The current computed target frequency, FVCO, is out of range for cell top_design_i/axi_dynclk_0/U0/Inst_mmcme2_drp/mmcm_adv_inst. The computed FVCO is 1500.150 MHz. The valid FVCO range for speed grade -2 is 600MHz to 1440MHz. The cell attribute values used to compute FVCO are CLKFBOUT_MULT_F = 10.000, CLKIN1_PERIOD = 6.66600, and DIVCLK_DIVIDE = 1 (FVCO = 1000 * CLKFBOUT_MULT_F/(CLKIN1_PERIOD * DIVCLK_DIVIDE)).
-This violation may be corrected by:
-  1. The timer uses timing constraints for clock period or clock frequency that affect CLKIN1 to set cell attribute CLKIN1_PERIOD, over-riding any previous value. This may already be in place and, if so this violation will be resolved once Timing is run.  Otherwise, consider modifying timing constraints to adjust the CLKIN1_PERIOD and bring FVCO into the allowed range.
-  2. In the absence of timing constraints that affect CLKIN1, consider modifying the cell CLKIN1_PERIOD to bring FVCO into the allowed range.
-  3. If CLKIN1_PERIOD is satisfactory, modify the CLKFBOUT_MULT_F or DIVCLK_DIVIDE cell attributes to bring FVCO into the allowed range.
-  4. The MMCM configuration may be dynamically modified by use of DRP which is recognized by an ACTIVE signal on DCLK pin.
-Related violations: <none>
-
 DPIP-1#1 Warning
 Input pipelining  
 DSP top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mac_muladd_16s_16s_16s_16_4_1_U21/top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0_U/p_reg_reg input top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mac_muladd_16s_16s_16s_16_4_1_U21/top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
@@ -93,25 +81,19 @@ MREG Output pipelining
 DSP top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mul_11ns_13ns_23_1_1_U9/tmp_product multiplier stage top_design_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_440/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432/mul_11ns_13ns_23_1_1_U9/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
-PDRC-33#1 Warning
-MMCM_adv_ClkFrequency_div_dclk  
-The computed value 1500.150 MHz (CLKIN1_PERIOD, net FCLK_CLK1) for the VCO operating frequency of the MMCME2_ADV site MMCME2_ADV_X1Y2 (cell top_design_i/axi_dynclk_0/U0/Inst_mmcme2_drp/mmcm_adv_inst) falls outside the operating range of the MMCM VCO frequency for this device (600.000 - 1440.000 MHz). The computed value is (CLKFBOUT_MULT_F * 1000 / (CLKINx_PERIOD * DIVCLK_DIVIDE)). Please adjust either the input period CLKINx_PERIOD (6.666000), multiplication factor CLKFBOUT_MULT_F (10.000000) or the division factor DIVCLK_DIVIDE (1), in order to achieve a VCO frequency within the rated operating range for this device.
-Please note that this check is a Warning because the DCLK pin has an ACTIVE signal and it is assumed that dynamic control (DRP) will be exercised to put the VCO frequency into valid operating range.
-Related violations: <none>
-
 RTSTAT-10#1 Warning
 No routable loads  
 35 net(s) have no routable loads. The problem bus(es) and/or net(s) are top_design_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/mi_handler_m_sc_areset_pipe,
 top_design_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/mi_handler_m_sc_areset_pipe,
 top_design_i/axi_smc/inst/m00_nodes/m00_b_node/inst/mi_handler_m_sc_areset_pipe,
 top_design_i/axi_smc/inst/m00_nodes/m00_r_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/m00_nodes/m00_w_node/inst/mi_handler_m_sc_areset_pipe,
 top_design_i/axi_smc/inst/m01_nodes/m01_ar_node/inst/mi_handler_m_sc_areset_pipe,
 top_design_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/mi_handler_m_sc_areset_pipe,
 top_design_i/axi_smc/inst/m01_nodes/m01_b_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/axi_smc/inst/m02_nodes/m02_ar_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/axi_smc/inst/m02_nodes/m02_aw_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/axi_smc/inst/m02_nodes/m02_b_node/inst/mi_handler_m_sc_areset_pipe,
-top_design_i/axi_smc/inst/m02_nodes/m02_w_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/m01_nodes/m01_r_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/m01_nodes/m01_w_node/inst/mi_handler_m_sc_areset_pipe,
+top_design_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/mi_handler_m_sc_areset_pipe,
 top_design_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/mi_handler_m_sc_areset_pipe,
 top_design_i/axi_smc/inst/s00_nodes/s00_b_node/inst/mi_handler_m_sc_areset_pipe,
 top_design_i/axi_smc/inst/s00_nodes/s00_r_node/inst/mi_handler_m_sc_areset_pipe,

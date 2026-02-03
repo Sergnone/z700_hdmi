@@ -215,6 +215,6 @@
 		xlnx,name = "ps7_slcr_0";
 	};
 	&clkc {
-		fclk-enable = <0x2>;
+		fclk-enable = <0x3>;
 		ps-clk-frequency = <33333333>;
 	};

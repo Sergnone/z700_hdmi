@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'tpgBackground_Pipeline_VITIS_LOOP_565_2'
 ================================================================
-* Date:           Tue Feb  3 18:32:29 2026
+* Date:           Tue Feb  3 19:04:47 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -1143,7 +1143,7 @@ The critical path consists of the following:
  <State 3>: 2.742ns
 The critical path consists of the following:
 	'call' operation 10 bit ('barWidthMinSamples_delayed', prj/sol/.autopilot/db/v_tpg.cpp:1442->prj/sol/.autopilot/db/v_tpg.cpp:673) to 'reg<ap_uint<10> >' [627]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln1483', prj/sol/.autopilot/db/v_tpg.cpp:1483->prj/sol/.autopilot/db/v_tpg.cpp:673) [670]  (1.417 ns)
+	'sub' operation 10 bit ('sub_ln1490', prj/sol/.autopilot/db/v_tpg.cpp:1490->prj/sol/.autopilot/db/v_tpg.cpp:673) [673]  (1.417 ns)
 	'store' operation ('store_ln1490', prj/sol/.autopilot/db/v_tpg.cpp:1490->prj/sol/.autopilot/db/v_tpg.cpp:673) of variable 'sub_ln1490', prj/sol/.autopilot/db/v_tpg.cpp:1490->prj/sol/.autopilot/db/v_tpg.cpp:673 10 bit on static variable 'tpgPatternCrossHatch_unsigned_short_unsigned_short_unsigned_short_unsigned_sh' [674]  (1.325 ns)
 
  <State 4>: 3.861ns

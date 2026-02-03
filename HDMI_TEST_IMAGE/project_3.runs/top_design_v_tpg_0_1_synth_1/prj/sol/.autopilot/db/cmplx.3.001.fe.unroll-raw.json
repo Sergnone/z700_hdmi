@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 8,
-    "calls": "16 10",
+    "calls": "14 19",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_tpg.cpp",
@@ -38,115 +38,41 @@
     "total_instructions": 33
   },
   "10": {
-    "basicblocks": 1,
-    "calls": "28 27 25",
+    "basicblocks": 4,
+    "calls": "",
     "control_depth": 0,
-    "def_use_depth": 1,
+    "def_use_depth": 3,
     "file": "v_tpg.cpp",
-    "fileloc": 304,
-    "instructions": 10,
+    "fileloc": 1718,
+    "instructions": 22,
     "memory_accesses": 0,
-    "name": "v_tpgHlsDataFlow",
-    "total_instructions": 2680
+    "name": "tpgPatternDPBlackWhiteVerticalLine",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 22
   },
   "11": {
-    "basicblocks": 10,
+    "basicblocks": 45,
     "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 2,
+    "control_depth": 6,
+    "def_use_depth": 8,
     "file": "v_tpg.cpp",
-    "fileloc": 1983,
-    "instructions": 51,
+    "fileloc": 919,
+    "instructions": 238,
     "loads": {
-      "L": 3
+      "G": 3,
+      "L": 25
     },
-    "memory_accesses": 0,
-    "name": "tpgPatternMask",
-    "stores": {
-      "L": 6
-    },
-    "total_instructions": 51
-  },
-  "12": {
-    "basicblocks": 10,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 2,
-    "file": "v_tpg.cpp",
-    "fileloc": 1151,
-    "instructions": 31,
-    "loads": {
-      "G": 1
-    },
-    "memory_accesses": 0,
-    "name": "tpgPatternSolidGreen",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 31
-  },
-  "13": {
-    "basicblocks": 10,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 2,
-    "file": "v_tpg.cpp",
-    "fileloc": 1172,
-    "instructions": 31,
-    "loads": {
-      "G": 1
-    },
-    "memory_accesses": 0,
-    "name": "tpgPatternSolidBlue",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 31
-  },
-  "14": {
-    "basicblocks": 12,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 2,
-    "file": "v_tpg.cpp",
-    "fileloc": 1067,
-    "instructions": 31,
-    "loads": {
-      "G": 1
-    },
-    "memory_accesses": 0,
-    "name": "tpgPatternHorizontalRamp",
+    "memory_accesses": 25,
+    "name": "MultiPixStream2AXIvideo",
     "stores": {
       "G": 2,
-      "L": 3
+      "L": 16
     },
-    "total_instructions": 31
+    "total_instructions": 245
   },
-  "15": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
-    "memory_accesses": 0,
-    "name": "reg<int>",
-    "total_instructions": 1
-  },
-  "16": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
-    "memory_accesses": 0,
-    "name": "reg<unsigned short>",
-    "total_instructions": 1
-  },
-  "17": {
+  "12": {
     "basicblocks": 50,
     "calls": "",
     "control_depth": 0,
@@ -164,74 +90,158 @@
     },
     "total_instructions": 170
   },
-  "18": {
-    "basicblocks": 4,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "v_tpg.cpp",
-    "fileloc": 1718,
-    "instructions": 22,
-    "memory_accesses": 0,
-    "name": "tpgPatternDPBlackWhiteVerticalLine",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 22
-  },
-  "19": {
+  "13": {
     "basicblocks": 10,
     "calls": "",
     "control_depth": 0,
-    "def_use_depth": 1,
+    "def_use_depth": 2,
     "file": "v_tpg.cpp",
-    "fileloc": 1115,
-    "instructions": 23,
+    "fileloc": 1130,
+    "instructions": 31,
+    "loads": {
+      "G": 1
+    },
     "memory_accesses": 0,
-    "name": "tpgPatternTemporalRamp",
+    "name": "tpgPatternSolidRed",
     "stores": {
       "L": 3
     },
-    "total_instructions": 23
+    "total_instructions": 31
   },
-  "2": {
-    "basicblocks": 36,
+  "14": {
+    "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "v_tpg.cpp",
-    "fileloc": 1551,
-    "instructions": 156,
-    "loads": {
-      "G": 23
-    },
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
     "memory_accesses": 0,
-    "name": "tpgPatternCheckerBoard",
-    "stores": {
-      "G": 10,
-      "L": 3
-    },
-    "total_instructions": 156
+    "name": "reg<unsigned short>",
+    "total_instructions": 1
   },
-  "20": {
+  "15": {
     "basicblocks": 16,
     "calls": "",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_tpg.cpp",
-    "fileloc": 1618,
-    "instructions": 90,
+    "fileloc": 1090,
+    "instructions": 40,
+    "loads": {
+      "G": 4
+    },
+    "memory_accesses": 0,
+    "name": "tpgPatternVerticalRamp",
+    "stores": {
+      "G": 2,
+      "L": 3
+    },
+    "total_instructions": 40
+  },
+  "16": {
+    "basicblocks": 18,
+    "calls": "17 27 2",
+    "control_depth": 4,
+    "def_use_depth": 7,
+    "file": "v_tpg.cpp",
+    "fileloc": 759,
+    "instructions": 226,
+    "loads": {
+      "L": 35
+    },
+    "memory_accesses": 24,
+    "name": "tpgForeground",
+    "stores": {
+      "L": 18
+    },
+    "total_instructions": 455
+  },
+  "17": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "v_tpg.cpp",
+    "fileloc": 1983,
+    "instructions": 51,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 0,
+    "name": "tpgPatternMask",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 51
+  },
+  "18": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "v_tpg.cpp",
+    "fileloc": 1193,
+    "instructions": 31,
+    "loads": {
+      "G": 1
+    },
+    "memory_accesses": 0,
+    "name": "tpgPatternSolidBlack",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 31
+  },
+  "19": {
+    "basicblocks": 1,
+    "calls": "5 16 11",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "v_tpg.cpp",
+    "fileloc": 304,
+    "instructions": 10,
+    "memory_accesses": 0,
+    "name": "v_tpgHlsDataFlow",
+    "total_instructions": 2680
+  },
+  "2": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "v_tpg.cpp",
+    "fileloc": 1956,
+    "instructions": 50,
     "loads": {
       "G": 1,
       "L": 3
     },
     "memory_accesses": 0,
-    "name": "tpgPatternDPColorRamp",
+    "name": "tpgPatternCrossHair",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 50
+  },
+  "20": {
+    "basicblocks": 12,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "v_tpg.cpp",
+    "fileloc": 1067,
+    "instructions": 31,
+    "loads": {
+      "G": 1
+    },
+    "memory_accesses": 0,
+    "name": "tpgPatternHorizontalRamp",
     "stores": {
       "G": 2,
-      "L": 15
+      "L": 3
     },
-    "total_instructions": 90
+    "total_instructions": 31
   },
   "21": {
     "basicblocks": 44,
@@ -254,43 +264,91 @@
     "total_instructions": 154
   },
   "22": {
-    "basicblocks": 35,
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "v_tpg.cpp",
+    "fileloc": 1115,
+    "instructions": 23,
+    "memory_accesses": 0,
+    "name": "tpgPatternTemporalRamp",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 23
+  },
+  "23": {
+    "basicblocks": 36,
     "calls": "",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_tpg.cpp",
-    "fileloc": 1369,
-    "instructions": 159,
+    "fileloc": 1551,
+    "instructions": 156,
     "loads": {
       "G": 23
     },
     "memory_accesses": 0,
-    "name": "tpgPatternTartanColorBars",
+    "name": "tpgPatternCheckerBoard",
     "stores": {
       "G": 10,
       "L": 3
     },
-    "total_instructions": 159
+    "total_instructions": 156
   },
-  "23": {
+  "24": {
     "basicblocks": 10,
     "calls": "",
     "control_depth": 0,
     "def_use_depth": 2,
     "file": "v_tpg.cpp",
-    "fileloc": 1130,
+    "fileloc": 1172,
     "instructions": 31,
     "loads": {
       "G": 1
     },
     "memory_accesses": 0,
-    "name": "tpgPatternSolidRed",
+    "name": "tpgPatternSolidBlue",
     "stores": {
       "L": 3
     },
     "total_instructions": 31
   },
-  "24": {
+  "25": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "v_tpg.cpp",
+    "fileloc": 1151,
+    "instructions": 31,
+    "loads": {
+      "G": 1
+    },
+    "memory_accesses": 0,
+    "name": "tpgPatternSolidGreen",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 31
+  },
+  "26": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 2,
+    "memory_accesses": 1,
+    "name": "reg<ap_uint<10> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2
+  },
+  "27": {
     "basicblocks": 43,
     "calls": "",
     "control_depth": 0,
@@ -310,175 +368,46 @@
     },
     "total_instructions": 128
   },
-  "25": {
-    "basicblocks": 45,
-    "calls": "",
-    "control_depth": 6,
-    "def_use_depth": 8,
-    "file": "v_tpg.cpp",
-    "fileloc": 919,
-    "instructions": 238,
-    "loads": {
-      "G": 3,
-      "L": 25
-    },
-    "memory_accesses": 25,
-    "name": "MultiPixStream2AXIvideo",
-    "stores": {
-      "G": 2,
-      "L": 16
-    },
-    "total_instructions": 245
-  },
-  "26": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 2,
-    "memory_accesses": 1,
-    "name": "reg<ap_uint<10> >",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 2
-  },
-  "27": {
-    "basicblocks": 18,
-    "calls": "11 24 4",
-    "control_depth": 4,
-    "def_use_depth": 7,
-    "file": "v_tpg.cpp",
-    "fileloc": 759,
-    "instructions": 226,
-    "loads": {
-      "L": 35
-    },
-    "memory_accesses": 24,
-    "name": "tpgForeground",
-    "stores": {
-      "L": 18
-    },
-    "total_instructions": 455
-  },
   "28": {
-    "basicblocks": 31,
-    "calls": "14 8 19 23 12 13 5 9 7 29 22 21 17 1 2 6 20 18 3",
-    "control_depth": 2,
-    "def_use_depth": 4,
-    "file": "v_tpg.cpp",
-    "fileloc": 536,
-    "instructions": 447,
-    "loads": {
-      "G": 7,
-      "L": 78
-    },
-    "memory_accesses": 144,
-    "name": "tpgBackground",
-    "stores": {
-      "G": 1,
-      "L": 57
-    },
-    "total_instructions": 1970
-  },
-  "29": {
-    "basicblocks": 17,
-    "calls": "15",
-    "control_depth": 0,
-    "def_use_depth": 7,
-    "file": "v_tpg.cpp",
-    "fileloc": 1319,
-    "instructions": 81,
-    "loads": {
-      "G": 5
-    },
-    "memory_accesses": 0,
-    "name": "tpgPatternZonePlate",
-    "stores": {
-      "G": 9,
-      "L": 3
-    },
-    "total_instructions": 82
-  },
-  "3": {
-    "basicblocks": 40,
+    "basicblocks": 35,
     "calls": "",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_tpg.cpp",
-    "fileloc": 1734,
-    "instructions": 223,
+    "fileloc": 1369,
+    "instructions": 159,
     "loads": {
-      "G": 37
+      "G": 23
     },
     "memory_accesses": 0,
-    "name": "tpgPatternDPColorSquare",
+    "name": "tpgPatternTartanColorBars",
     "stores": {
       "G": 10,
-      "L": 12
+      "L": 3
     },
-    "total_instructions": 223
+    "total_instructions": 159
   },
-  "4": {
-    "basicblocks": 13,
+  "29": {
+    "basicblocks": 16,
     "calls": "",
     "control_depth": 0,
-    "def_use_depth": 2,
+    "def_use_depth": 3,
     "file": "v_tpg.cpp",
-    "fileloc": 1956,
-    "instructions": 50,
+    "fileloc": 1618,
+    "instructions": 90,
     "loads": {
       "G": 1,
       "L": 3
     },
     "memory_accesses": 0,
-    "name": "tpgPatternCrossHair",
+    "name": "tpgPatternDPColorRamp",
     "stores": {
-      "L": 6
+      "G": 2,
+      "L": 15
     },
-    "total_instructions": 50
+    "total_instructions": 90
   },
-  "5": {
-    "basicblocks": 10,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 2,
-    "file": "v_tpg.cpp",
-    "fileloc": 1193,
-    "instructions": 31,
-    "loads": {
-      "G": 1
-    },
-    "memory_accesses": 0,
-    "name": "tpgPatternSolidBlack",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 31
-  },
-  "6": {
-    "basicblocks": 12,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 6,
-    "file": "v_tpg.cpp",
-    "fileloc": 1823,
-    "instructions": 86,
-    "loads": {
-      "G": 3,
-      "L": 2
-    },
-    "memory_accesses": 0,
-    "name": "tpgPRBS",
-    "stores": {
-      "G": 3,
-      "L": 5
-    },
-    "total_instructions": 86
-  },
-  "7": {
+  "3": {
     "basicblocks": 24,
     "calls": "",
     "control_depth": 0,
@@ -497,26 +426,7 @@
     },
     "total_instructions": 99
   },
-  "8": {
-    "basicblocks": 16,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "v_tpg.cpp",
-    "fileloc": 1090,
-    "instructions": 40,
-    "loads": {
-      "G": 4
-    },
-    "memory_accesses": 0,
-    "name": "tpgPatternVerticalRamp",
-    "stores": {
-      "G": 2,
-      "L": 3
-    },
-    "total_instructions": 40
-  },
-  "9": {
+  "4": {
     "basicblocks": 10,
     "calls": "",
     "control_depth": 0,
@@ -533,5 +443,95 @@
       "L": 3
     },
     "total_instructions": 31
+  },
+  "5": {
+    "basicblocks": 31,
+    "calls": "20 15 22 13 25 24 18 4 3 8 28 21 12 1 23 9 29 10 7",
+    "control_depth": 2,
+    "def_use_depth": 4,
+    "file": "v_tpg.cpp",
+    "fileloc": 536,
+    "instructions": 447,
+    "loads": {
+      "G": 7,
+      "L": 78
+    },
+    "memory_accesses": 144,
+    "name": "tpgBackground",
+    "stores": {
+      "G": 1,
+      "L": 57
+    },
+    "total_instructions": 1970
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "memory_accesses": 0,
+    "name": "reg<int>",
+    "total_instructions": 1
+  },
+  "7": {
+    "basicblocks": 40,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "v_tpg.cpp",
+    "fileloc": 1734,
+    "instructions": 223,
+    "loads": {
+      "G": 37
+    },
+    "memory_accesses": 0,
+    "name": "tpgPatternDPColorSquare",
+    "stores": {
+      "G": 10,
+      "L": 12
+    },
+    "total_instructions": 223
+  },
+  "8": {
+    "basicblocks": 17,
+    "calls": "6",
+    "control_depth": 0,
+    "def_use_depth": 7,
+    "file": "v_tpg.cpp",
+    "fileloc": 1319,
+    "instructions": 81,
+    "loads": {
+      "G": 5
+    },
+    "memory_accesses": 0,
+    "name": "tpgPatternZonePlate",
+    "stores": {
+      "G": 9,
+      "L": 3
+    },
+    "total_instructions": 82
+  },
+  "9": {
+    "basicblocks": 12,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 6,
+    "file": "v_tpg.cpp",
+    "fileloc": 1823,
+    "instructions": 86,
+    "loads": {
+      "G": 3,
+      "L": 2
+    },
+    "memory_accesses": 0,
+    "name": "tpgPRBS",
+    "stores": {
+      "G": 3,
+      "L": 5
+    },
+    "total_instructions": 86
   }
 }

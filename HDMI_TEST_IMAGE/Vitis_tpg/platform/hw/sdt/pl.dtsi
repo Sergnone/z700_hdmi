@@ -8,7 +8,7 @@
 		clocking1: clocking1 {
 			compatible = "xlnx,fclk";
 			assigned-clocks = <&clkc 16>;
-			assigned-clock-rates = <100000000>;
+			assigned-clock-rates = <148500000>;
 			#clock-cells = <0>;
 			clock-output-names = "fabric_clk";
 			clocks = <&clkc 16>;
@@ -16,7 +16,7 @@
 		clocking0: clocking0 {
 			compatible = "xlnx,fclk";
 			assigned-clocks = <&clkc 15>;
-			assigned-clock-rates = <148500000>;
+			assigned-clock-rates = <100000000>;
 			#clock-cells = <0>;
 			clock-output-names = "fabric_clk";
 			clocks = <&clkc 15>;
@@ -44,7 +44,7 @@
 			xlnx,ip-name = "axi_dynclk";
 			xlnx,edk-iptype = "PERIPHERAL";
 			reg = <0x43c10000 0x10000>;
-			clocks = <&clkc 16>, <&clkc 16>;
+			clocks = <&clkc 15>, <&clkc 15>;
 			xlnx,name = "axi_dynclk_0";
 		};
 		v_tc_0: v_tc_0@43c20000 {
@@ -119,7 +119,7 @@
 			xlnx,arbitrary-res-en = /bits/ 8 <0x0>;
 			xlnx,fsync-vstart12 = <0>;
 			xlnx,fsync-vstart13 = <0>;
-			clocks = <&misc_clk_0>, <&clkc 16>;
+			clocks = <&misc_clk_0>, <&clkc 15>;
 			xlnx,fsync-vstart14 = <0>;
 			xlnx,fsync-vstart15 = <0>;
 			xlnx,gen-cparity = <0>;

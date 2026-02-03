@@ -472,7 +472,7 @@
                                 bootph-all;
                                 #clock-cells = <0x1>;
                                 compatible = "xlnx,ps7-clkc";
-                                fclk-enable = <0x2>;
+                                fclk-enable = <0x3>;
                                 clock-output-names = "armpll", "ddrpll", "iopll", "cpu_6or4x", "cpu_3or2x", "cpu_2x", "cpu_1x", "ddr2x", "ddr3x", "dci", "lqspi", "smc", "pcap", "gem0", "gem1", "fclk0", "fclk1", "fclk2", "fclk3", "can0", "can1", "sdio0", "sdio1", "uart0", "uart1", "spi0", "spi1", "dma", "usb0_aper", "usb1_aper", "gem0_aper", "gem1_aper", "sdio0_aper", "sdio1_aper", "spi0_aper", "spi1_aper", "can0_aper", "can1_aper", "i2c0_aper", "i2c1_aper", "uart0_aper", "uart1_aper", "gpio_aper", "lqspi_aper", "smc_aper", "swdt", "dbg_trc", "dbg_apb";
                                 reg = <0x100 0x100>;
                                 ps-clk-frequency = <0x1fca055>;
@@ -918,7 +918,7 @@
                         phandle = <0x4d>;
                         compatible = "xlnx,fclk";
                         assigned-clocks = <&clkc 0x10>;
-                        assigned-clock-rates = <0x5f5e100>;
+                        assigned-clock-rates = <0x8d9ee20>;
                         #clock-cells = <0x0>;
                         clock-output-names = "fabric_clk";
                         clocks = <&clkc 0x10>;
@@ -928,7 +928,7 @@
                         phandle = <0x4e>;
                         compatible = "xlnx,fclk";
                         assigned-clocks = <&clkc 0xf>;
-                        assigned-clock-rates = <0x8d9ee20>;
+                        assigned-clock-rates = <0x5f5e100>;
                         #clock-cells = <0x0>;
                         clock-output-names = "fabric_clk";
                         clocks = <&clkc 0xf>;
@@ -962,8 +962,8 @@
                         xlnx,ip-name = "axi_dynclk";
                         xlnx,edk-iptype = "PERIPHERAL";
                         reg = <0x43c10000 0x10000>;
-                        clocks = <&clkc 0x10>,
-                         <&clkc 0x10>;
+                        clocks = <&clkc 0xf>,
+                         <&clkc 0xf>;
                         xlnx,name = "axi_dynclk_0";
                 };
 
@@ -1041,7 +1041,7 @@
                         xlnx,fsync-vstart12 = <0x0>;
                         xlnx,fsync-vstart13 = <0x0>;
                         clocks = <&misc_clk_0>,
-                         <&clkc 0x10>;
+                         <&clkc 0xf>;
                         xlnx,fsync-vstart14 = <0x0>;
                         xlnx,fsync-vstart15 = <0x0>;
                         xlnx,gen-cparity = <0x0>;
