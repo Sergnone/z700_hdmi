@@ -94,6 +94,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_IMAGE/VitisIMG/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/v_frmbuf_wr/src/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_IMAGE/VitisIMG/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/v_tpg/src/cmake_install.cmake")
 endif()
 

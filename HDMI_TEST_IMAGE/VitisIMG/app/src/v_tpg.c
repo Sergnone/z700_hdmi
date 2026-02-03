@@ -30,6 +30,7 @@ int V_TPG_Init(void)
 		xil_printf("ERR:: TPG Initialization failed %d\r\n", Status);
 		return(XST_FAILURE);
 	}
+	xil_printf("TPG: Initialized OK\r\n");
     return(XST_SUCCESS);
 }
 
@@ -38,14 +39,12 @@ uint16_t V_TPG_Start(XVidC_VideoMode videoMode)
 {
     XVidC_VideoTiming const *timing = XVidC_GetTimingInfo(videoMode);
 	uint16_t PixelsPerClk;
-
 	XV_tpg_Set_height(&tpg, timing->VActive);
 	XV_tpg_Set_width(&tpg, timing->HActive);
 	XV_tpg_Set_colorFormat(&tpg, 0);
 	XV_tpg_Set_bckgndId(&tpg, XTPG_BKGND_COLOR_BARS);
 	XV_tpg_Set_ovrlayId(&tpg, 0);
 	XV_tpg_WriteReg(tpg_Config->BaseAddress, XV_TPG_CTRL_ADDR_AP_CTRL, 0x81);
-
 	PixelsPerClk = tpg.Config.PixPerClk;
     return PixelsPerClk;
 }
@@ -61,6 +60,7 @@ uint16_t V_TPG_ConfigStream(XVidC_VideoStream *StreamPtr)
 	XV_tpg_Set_ovrlayId(&tpg, 0);
 	XV_tpg_WriteReg(tpg_Config->BaseAddress, XV_TPG_CTRL_ADDR_AP_CTRL, 0x81);
     StreamPtr->PixPerClk = tpg.Config.PixPerClk;
+	xil_printf("TPG: Stream Configured OK\r\n");
     return StreamPtr->PixPerClk;
 }
 
@@ -117,7 +117,7 @@ int V_TPG_Clock_Config(XVidC_VideoMode videoMode)
 
 	usleep(300000);
 
-	xil_printf("Video Clock Generator locked\r\n");
+	xil_printf("TPG: Clock Configured OK\r\n");
 
 	return(XST_SUCCESS);
 }

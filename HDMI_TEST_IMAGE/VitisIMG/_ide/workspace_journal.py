@@ -189,3 +189,120 @@ status = platform.build()
 
 comp.build()
 
+status = platform.update_hw(hw_design = "$COMPONENT_LOCATION/../../top_design_wrapper1.xsa")
+
+status = platform.build()
+
+status = platform.build()
+
+comp = client.get_component(name="xv_frmbufrd_example")
+comp.build()
+
+status = platform.build()
+
+comp = client.get_component(name="app")
+comp.build()
+
+client.delete_component(name="platform")
+
+client.delete_component(name="xv_frmbufrd_example")
+
+platform = client.create_platform_component(name = "platform",hw_design = "$COMPONENT_LOCATION/../../top_design_wrapper1.xsa",os = "standalone",cpu = "ps7_cortexa9_0",domain_name = "standalone_ps7_cortexa9_0",compiler = "gcc")
+
+status = platform.build()
+
+status = platform.build()
+
+comp = client.get_component(name="xv_frmbufwr_example")
+comp.build()
+
+status = platform.build()
+
+comp = client.get_component(name="app")
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp = client.get_component(name="xv_frmbufwr_example")
+comp.build()
+
+status = platform.build()
+
+comp = client.get_component(name="app")
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp = client.get_component(name="xv_frmbufwr_example")
+comp.build()
+
+status = platform.build()
+
+comp = client.get_component(name="app")
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp = client.get_component(name="xv_frmbufwr_example")
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+

@@ -231,6 +231,10 @@ drv_info:
     driver: v_frmbuf_rd
     ip_name: v_frmbuf_rd
     path: /tools/xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/v_frmbuf_rd_v5_1
+  v_frmbuf_wr_0:
+    driver: v_frmbuf_wr
+    ip_name: v_frmbuf_wr
+    path: /tools/xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/v_frmbuf_wr_v5_1
   v_tc_0:
     driver: vtc
     ip_name: v_tc

@@ -64,5 +64,6 @@ int main()
 	videoStreamConf(VidStream);
 	usleep(300000);
 	xil_printf("Successfully ran Example\r\n");
+	//V_GPIO_Reset();
 	return 0;
 }
