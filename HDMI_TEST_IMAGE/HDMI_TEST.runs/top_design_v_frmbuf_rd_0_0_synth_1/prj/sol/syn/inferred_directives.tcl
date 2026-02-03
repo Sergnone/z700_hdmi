@@ -1,2 +1,0 @@
-# Inferred from syn.compile.pipeline_loops=64
-set_directive_pipeline multipixstream2axivideo/VITIS_LOOP_367_1

@@ -176,3 +176,8 @@ status = platform.build()
 
 comp.build()
 
+status = platform.build()
+
+comp = client.get_component(name="app")
+comp.build()
+
