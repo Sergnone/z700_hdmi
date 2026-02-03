@@ -1,0 +1,24 @@
+[
+  {
+    "csim": false,
+    "functionLabel": "",
+    "functionName": "v_frmbuf_wr",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "v_frmbuf_wr"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_IMAGE/project_2.runs/top_design_v_frmbuf_wr_0_0_synth_1/runhls.tcl",
+    "sourceLine": 42,
+    "success": true
+  }
+]
