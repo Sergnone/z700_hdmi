@@ -88,7 +88,6 @@ void videoStreamConf(XVidC_VideoStream VidStream)
 }
 
 
-/*
 int main()
 {
 	int format = 7;
@@ -163,7 +162,7 @@ int main()
 							frmbufwr.FrmbufWr.Config.AXIMMDataWidth,
 							&VidStream);
 
-		//V_FBWR_ConfigBuf(stride, Cfmt, &VidStream);
+		V_FBWR_ConfigBuf(stride, Cfmt, &VidStream);
 	}
 	  
 	//videoStreamConf(VidStream);
@@ -171,9 +170,9 @@ int main()
 	xil_printf("Successfully ran Example\r\n");
 	return 0;
 }
-*/
 
 
+/*
 int main()
 {
 	int status;
@@ -202,3 +201,4 @@ int main()
 	xil_printf("Successfully ran Example\r\n");
 	return 0;
 }
+*/

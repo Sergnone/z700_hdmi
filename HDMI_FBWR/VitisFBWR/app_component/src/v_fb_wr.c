@@ -314,8 +314,9 @@ int V_FBWR_ConfigBuf(u32 StrideInBytes,
 
   /* Enable Interrupt */
   //XVFrmbufRd_InterruptEnable(&frmbufrd, XVFRMBUFRD_IRQ_DONE_MASK);
-  XVFrmbufWr_InterruptEnable(&frmbufwr, XVFRMBUFWR_IRQ_DONE_MASK);
+  //XVFrmbufWr_InterruptEnable(&frmbufwr, XVFRMBUFWR_IRQ_DONE_MASK);
 
+  XV_frmbufwr_EnableAutoRestart(&frmbufwr.FrmbufWr);
   /* Start Frame Buffers */
   XVFrmbufWr_Start(&frmbufwr);
   //XVFrmbufRd_Start(&frmbufrd);

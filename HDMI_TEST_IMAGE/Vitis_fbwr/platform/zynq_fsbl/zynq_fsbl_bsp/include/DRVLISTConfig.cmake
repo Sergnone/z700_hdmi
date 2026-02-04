@@ -1,1 +1,0 @@
-set(DRIVER_LIST common;coresightps_dcc;devcfg;dmaps;scugic;scutimer;scuwdt;ttcps;uartps;v_frmbuf_wr;v_tpg;video_common;xadcps)
