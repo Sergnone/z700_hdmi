@@ -58,40 +58,8 @@ entry:
   ret void
 }
 
-; Function Attrs: argmemonly noinline norecurse willreturn
-define void @"arraycpy_hls.p0a2073600struct.ap_uint<64>"([2073600 x %"struct.ap_uint<64>"]* %dst, [2073600 x %"struct.ap_uint<64>"]* readonly %src, i64 %num) local_unnamed_addr #2 {
-entry:
-  %0 = icmp eq [2073600 x %"struct.ap_uint<64>"]* %src, null
-  %1 = icmp eq [2073600 x %"struct.ap_uint<64>"]* %dst, null
-  %2 = or i1 %1, %0
-  br i1 %2, label %ret, label %copy
-
-copy:                                             ; preds = %entry
-  %for.loop.cond7 = icmp sgt i64 %num, 0
-  br i1 %for.loop.cond7, label %for.loop.lr.ph, label %copy.split
-
-for.loop.lr.ph:                                   ; preds = %copy
-  br label %for.loop
-
-for.loop:                                         ; preds = %for.loop, %for.loop.lr.ph
-  %for.loop.idx8 = phi i64 [ 0, %for.loop.lr.ph ], [ %for.loop.idx.next, %for.loop ]
-  %src.addr.0.0.05 = getelementptr [2073600 x %"struct.ap_uint<64>"], [2073600 x %"struct.ap_uint<64>"]* %src, i64 0, i64 %for.loop.idx8, i32 0, i32 0, i32 0
-  %dst.addr.0.0.06 = getelementptr [2073600 x %"struct.ap_uint<64>"], [2073600 x %"struct.ap_uint<64>"]* %dst, i64 0, i64 %for.loop.idx8, i32 0, i32 0, i32 0
-  %3 = load i64, i64* %src.addr.0.0.05, align 8
-  store i64 %3, i64* %dst.addr.0.0.06, align 8
-  %for.loop.idx.next = add nuw nsw i64 %for.loop.idx8, 1
-  %exitcond = icmp ne i64 %for.loop.idx.next, %num
-  br i1 %exitcond, label %for.loop, label %copy.split
-
-copy.split:                                       ; preds = %for.loop, %copy
-  br label %ret
-
-ret:                                              ; preds = %copy.split, %entry
-  ret void
-}
-
 ; Function Attrs: argmemonly noinline willreturn
-define internal fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"(%"class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"* %dst, i24* align 512 "unpacked"="1.0" %src_V_data_V, i3* align 512 "unpacked"="1.1" %src_V_keep_V, i3* align 512 "unpacked"="1.2" %src_V_strb_V, i1* align 512 "unpacked"="1.3" %src_V_user_V, i1* align 512 "unpacked"="1.4" %src_V_last_V, i1* align 512 "unpacked"="1.5" %src_V_id_V, i1* align 512 "unpacked"="1.6" %src_V_dest_V) unnamed_addr #3 {
+define internal fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"(%"class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"* %dst, i24* align 512 "unpacked"="1.0" %src_V_data_V, i3* align 512 "unpacked"="1.1" %src_V_keep_V, i3* align 512 "unpacked"="1.2" %src_V_strb_V, i1* align 512 "unpacked"="1.3" %src_V_user_V, i1* align 512 "unpacked"="1.4" %src_V_last_V, i1* align 512 "unpacked"="1.5" %src_V_id_V, i1* align 512 "unpacked"="1.6" %src_V_dest_V) unnamed_addr #2 {
 entry:
   %0 = icmp eq %"class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"* %dst, null
   br i1 %0, label %ret, label %copy
@@ -105,7 +73,7 @@ ret:                                              ; preds = %copy, %entry
 }
 
 ; Function Attrs: argmemonly noinline willreturn
-define internal fastcc void @"streamcpy_hls.p0class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"(%"class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"* nocapture, i24* nocapture align 512 "unpacked"="1.0" %_V_data_V, i3* nocapture align 512 "unpacked"="1.1" %_V_keep_V, i3* nocapture align 512 "unpacked"="1.2" %_V_strb_V, i1* nocapture align 512 "unpacked"="1.3" %_V_user_V, i1* nocapture align 512 "unpacked"="1.4" %_V_last_V, i1* nocapture align 512 "unpacked"="1.5" %_V_id_V, i1* nocapture align 512 "unpacked"="1.6" %_V_dest_V) unnamed_addr #4 {
+define internal fastcc void @"streamcpy_hls.p0class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"(%"class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"* nocapture, i24* nocapture align 512 "unpacked"="1.0" %_V_data_V, i3* nocapture align 512 "unpacked"="1.1" %_V_keep_V, i3* nocapture align 512 "unpacked"="1.2" %_V_strb_V, i1* nocapture align 512 "unpacked"="1.3" %_V_user_V, i1* nocapture align 512 "unpacked"="1.4" %_V_last_V, i1* nocapture align 512 "unpacked"="1.5" %_V_id_V, i1* nocapture align 512 "unpacked"="1.6" %_V_dest_V) unnamed_addr #3 {
 entry:
   %1 = alloca i24
   %2 = alloca i3
@@ -181,7 +149,7 @@ ret:                                              ; preds = %empty
 }
 
 ; Function Attrs: argmemonly noinline willreturn
-define internal fastcc void @copy_out([2073600 x %"struct.ap_uint<64>"]* "unpacked"="0", [2073600 x i64]* nocapture readonly "unpacked"="1.0", [2073600 x %"struct.ap_uint<64>"]* "unpacked"="2", [2073600 x i64]* nocapture readonly "unpacked"="3.0", [2073600 x %"struct.ap_uint<64>"]* "unpacked"="4", [2073600 x i64]* nocapture readonly "unpacked"="5.0", %"class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"* "unpacked"="6", i24* align 512 "unpacked"="7.0" %_V_data_V, i3* align 512 "unpacked"="7.1" %_V_keep_V, i3* align 512 "unpacked"="7.2" %_V_strb_V, i1* align 512 "unpacked"="7.3" %_V_user_V, i1* align 512 "unpacked"="7.4" %_V_last_V, i1* align 512 "unpacked"="7.5" %_V_id_V, i1* align 512 "unpacked"="7.6" %_V_dest_V) unnamed_addr #5 {
+define internal fastcc void @copy_out([2073600 x %"struct.ap_uint<64>"]* "unpacked"="0", [2073600 x i64]* nocapture readonly "unpacked"="1.0", [2073600 x %"struct.ap_uint<64>"]* "unpacked"="2", [2073600 x i64]* nocapture readonly "unpacked"="3.0", [2073600 x %"struct.ap_uint<64>"]* "unpacked"="4", [2073600 x i64]* nocapture readonly "unpacked"="5.0", %"class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"* "unpacked"="6", i24* align 512 "unpacked"="7.0" %_V_data_V, i3* align 512 "unpacked"="7.1" %_V_keep_V, i3* align 512 "unpacked"="7.2" %_V_strb_V, i1* align 512 "unpacked"="7.3" %_V_user_V, i1* align 512 "unpacked"="7.4" %_V_last_V, i1* align 512 "unpacked"="7.5" %_V_id_V, i1* align 512 "unpacked"="7.6" %_V_dest_V) unnamed_addr #4 {
 entry:
   call fastcc void @"onebyonecpy_hls.p0a2073600struct.ap_uint<64>.59"([2073600 x %"struct.ap_uint<64>"]* %0, [2073600 x i64]* %1)
   call fastcc void @"onebyonecpy_hls.p0a2073600struct.ap_uint<64>.59"([2073600 x %"struct.ap_uint<64>"]* %2, [2073600 x i64]* %3)
@@ -195,7 +163,7 @@ declare i8* @malloc(i64) local_unnamed_addr
 declare void @free(i8*) local_unnamed_addr
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define internal fastcc void @"onebyonecpy_hls.p0a2073600struct.ap_uint<64>.59"([2073600 x %"struct.ap_uint<64>"]* "unpacked"="0" %dst, [2073600 x i64]* nocapture readonly "unpacked"="1.0" %src) unnamed_addr #6 {
+define internal fastcc void @"onebyonecpy_hls.p0a2073600struct.ap_uint<64>.59"([2073600 x %"struct.ap_uint<64>"]* "unpacked"="0" %dst, [2073600 x i64]* nocapture readonly "unpacked"="1.0" %src) unnamed_addr #5 {
 entry:
   %0 = icmp eq [2073600 x %"struct.ap_uint<64>"]* %dst, null
   br i1 %0, label %ret, label %copy
@@ -209,7 +177,7 @@ ret:                                              ; preds = %copy, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define void @"arraycpy_hls.p0a2073600struct.ap_uint<64>.62"([2073600 x %"struct.ap_uint<64>"]* "unpacked"="0" %dst, [2073600 x i64]* nocapture readonly "unpacked"="1.0" %src, i64 "unpacked"="2" %num) local_unnamed_addr #2 {
+define void @"arraycpy_hls.p0a2073600struct.ap_uint<64>.62"([2073600 x %"struct.ap_uint<64>"]* "unpacked"="0" %dst, [2073600 x i64]* nocapture readonly "unpacked"="1.0" %src, i64 "unpacked"="2" %num) local_unnamed_addr #6 {
 entry:
   %0 = icmp eq [2073600 x %"struct.ap_uint<64>"]* %dst, null
   br i1 %0, label %ret, label %copy
@@ -239,7 +207,7 @@ ret:                                              ; preds = %copy.split, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define internal fastcc void @"onebyonecpy_hls.p0a2073600struct.ap_uint<64>"([2073600 x i64]* nocapture "unpacked"="0.0" %dst, [2073600 x %"struct.ap_uint<64>"]* readonly "unpacked"="1" %src) unnamed_addr #6 {
+define internal fastcc void @"onebyonecpy_hls.p0a2073600struct.ap_uint<64>"([2073600 x i64]* nocapture "unpacked"="0.0" %dst, [2073600 x %"struct.ap_uint<64>"]* readonly "unpacked"="1" %src) unnamed_addr #5 {
 entry:
   %0 = icmp eq [2073600 x %"struct.ap_uint<64>"]* %src, null
   br i1 %0, label %ret, label %copy
@@ -253,7 +221,7 @@ ret:                                              ; preds = %copy, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define void @"arraycpy_hls.p0a2073600struct.ap_uint<64>.69"([2073600 x i64]* nocapture "unpacked"="0.0" %dst, [2073600 x %"struct.ap_uint<64>"]* readonly "unpacked"="1" %src, i64 "unpacked"="2" %num) local_unnamed_addr #2 {
+define void @"arraycpy_hls.p0a2073600struct.ap_uint<64>.69"([2073600 x i64]* nocapture "unpacked"="0.0" %dst, [2073600 x %"struct.ap_uint<64>"]* readonly "unpacked"="1" %src, i64 "unpacked"="2" %num) local_unnamed_addr #6 {
 entry:
   %0 = icmp eq [2073600 x %"struct.ap_uint<64>"]* %src, null
   br i1 %0, label %ret, label %copy
@@ -283,7 +251,7 @@ ret:                                              ; preds = %copy.split, %entry
 }
 
 ; Function Attrs: argmemonly noinline willreturn
-define internal fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>.91"(i24* align 512 "unpacked"="0.0" %dst_V_data_V, i3* align 512 "unpacked"="0.1" %dst_V_keep_V, i3* align 512 "unpacked"="0.2" %dst_V_strb_V, i1* align 512 "unpacked"="0.3" %dst_V_user_V, i1* align 512 "unpacked"="0.4" %dst_V_last_V, i1* align 512 "unpacked"="0.5" %dst_V_id_V, i1* align 512 "unpacked"="0.6" %dst_V_dest_V, %"class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"* %src) unnamed_addr #3 {
+define internal fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>.91"(i24* align 512 "unpacked"="0.0" %dst_V_data_V, i3* align 512 "unpacked"="0.1" %dst_V_keep_V, i3* align 512 "unpacked"="0.2" %dst_V_strb_V, i1* align 512 "unpacked"="0.3" %dst_V_user_V, i1* align 512 "unpacked"="0.4" %dst_V_last_V, i1* align 512 "unpacked"="0.5" %dst_V_id_V, i1* align 512 "unpacked"="0.6" %dst_V_dest_V, %"class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"* %src) unnamed_addr #2 {
 entry:
   %0 = icmp eq %"class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"* %src, null
   br i1 %0, label %ret, label %copy
@@ -297,7 +265,7 @@ ret:                                              ; preds = %copy, %entry
 }
 
 ; Function Attrs: argmemonly noinline willreturn
-define internal fastcc void @"streamcpy_hls.p0class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>.94"(i24* nocapture align 512 "unpacked"="0.0" %_V_data_V, i3* nocapture align 512 "unpacked"="0.1" %_V_keep_V, i3* nocapture align 512 "unpacked"="0.2" %_V_strb_V, i1* nocapture align 512 "unpacked"="0.3" %_V_user_V, i1* nocapture align 512 "unpacked"="0.4" %_V_last_V, i1* nocapture align 512 "unpacked"="0.5" %_V_id_V, i1* nocapture align 512 "unpacked"="0.6" %_V_dest_V, %"class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"* nocapture) unnamed_addr #4 {
+define internal fastcc void @"streamcpy_hls.p0class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>.94"(i24* nocapture align 512 "unpacked"="0.0" %_V_data_V, i3* nocapture align 512 "unpacked"="0.1" %_V_keep_V, i3* nocapture align 512 "unpacked"="0.2" %_V_strb_V, i1* nocapture align 512 "unpacked"="0.3" %_V_user_V, i1* nocapture align 512 "unpacked"="0.4" %_V_last_V, i1* nocapture align 512 "unpacked"="0.5" %_V_id_V, i1* nocapture align 512 "unpacked"="0.6" %_V_dest_V, %"class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"* nocapture) unnamed_addr #3 {
 entry:
   %1 = alloca %"class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"
   %2 = alloca i24
@@ -363,7 +331,7 @@ ret:                                              ; preds = %empty
 declare void @apatb_v_frmbuf_wr_hw(i16, i16, i16, i16, [2073600 x i64]*, i64*, i64*, i24*, i3*, i3*, i1*, i1*, i1*, i1*)
 
 ; Function Attrs: argmemonly noinline willreturn
-define internal fastcc void @copy_back([2073600 x %"struct.ap_uint<64>"]* "unpacked"="0", [2073600 x i64]* nocapture readonly "unpacked"="1.0", [2073600 x %"struct.ap_uint<64>"]* "unpacked"="2", [2073600 x i64]* nocapture readonly "unpacked"="3.0", [2073600 x %"struct.ap_uint<64>"]* "unpacked"="4", [2073600 x i64]* nocapture readonly "unpacked"="5.0", %"class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"* "unpacked"="6", i24* align 512 "unpacked"="7.0" %_V_data_V, i3* align 512 "unpacked"="7.1" %_V_keep_V, i3* align 512 "unpacked"="7.2" %_V_strb_V, i1* align 512 "unpacked"="7.3" %_V_user_V, i1* align 512 "unpacked"="7.4" %_V_last_V, i1* align 512 "unpacked"="7.5" %_V_id_V, i1* align 512 "unpacked"="7.6" %_V_dest_V) unnamed_addr #5 {
+define internal fastcc void @copy_back([2073600 x %"struct.ap_uint<64>"]* "unpacked"="0", [2073600 x i64]* nocapture readonly "unpacked"="1.0", [2073600 x %"struct.ap_uint<64>"]* "unpacked"="2", [2073600 x i64]* nocapture readonly "unpacked"="3.0", [2073600 x %"struct.ap_uint<64>"]* "unpacked"="4", [2073600 x i64]* nocapture readonly "unpacked"="5.0", %"class.hls::stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>"* "unpacked"="6", i24* align 512 "unpacked"="7.0" %_V_data_V, i3* align 512 "unpacked"="7.1" %_V_keep_V, i3* align 512 "unpacked"="7.2" %_V_strb_V, i1* align 512 "unpacked"="7.3" %_V_user_V, i1* align 512 "unpacked"="7.4" %_V_last_V, i1* align 512 "unpacked"="7.5" %_V_id_V, i1* align 512 "unpacked"="7.6" %_V_dest_V) unnamed_addr #4 {
 entry:
   call fastcc void @"onebyonecpy_hls.p0a2073600struct.ap_uint<64>.59"([2073600 x %"struct.ap_uint<64>"]* %0, [2073600 x i64]* %1)
   call fastcc void @"onebyonecpy_hls.p0a2073600struct.ap_uint<64>.59"([2073600 x %"struct.ap_uint<64>"]* %2, [2073600 x i64]* %3)
@@ -417,11 +385,11 @@ declare void @fpga_fifo_push_1(i8*, i8*)
 
 attributes #0 = { noinline "fpga.wrapper.func"="wrapper" }
 attributes #1 = { argmemonly noinline willreturn "fpga.wrapper.func"="copyin" }
-attributes #2 = { argmemonly noinline norecurse willreturn "fpga.wrapper.func"="arraycpy_hls" }
-attributes #3 = { argmemonly noinline willreturn "fpga.wrapper.func"="onebyonecpy_hls" }
-attributes #4 = { argmemonly noinline willreturn "fpga.wrapper.func"="streamcpy_hls" }
-attributes #5 = { argmemonly noinline willreturn "fpga.wrapper.func"="copyout" }
-attributes #6 = { argmemonly noinline norecurse willreturn "fpga.wrapper.func"="onebyonecpy_hls" }
+attributes #2 = { argmemonly noinline willreturn "fpga.wrapper.func"="onebyonecpy_hls" }
+attributes #3 = { argmemonly noinline willreturn "fpga.wrapper.func"="streamcpy_hls" }
+attributes #4 = { argmemonly noinline willreturn "fpga.wrapper.func"="copyout" }
+attributes #5 = { argmemonly noinline norecurse willreturn "fpga.wrapper.func"="onebyonecpy_hls" }
+attributes #6 = { argmemonly noinline norecurse willreturn "fpga.wrapper.func"="arraycpy_hls" }
 attributes #7 = { "fpga.wrapper.func"="stub" }
 
 !llvm.dbg.cu = !{}

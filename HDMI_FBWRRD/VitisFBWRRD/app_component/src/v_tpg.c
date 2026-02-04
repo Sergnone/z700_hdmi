@@ -56,7 +56,7 @@ uint16_t V_TPG_ConfigStream(XVidC_VideoStream *StreamPtr)
 	XV_tpg_Set_height(&tpg, timing->VActive);
 	XV_tpg_Set_width(&tpg, timing->HActive);
 	XV_tpg_Set_colorFormat(&tpg, 0);
-	XV_tpg_Set_bckgndId(&tpg, XTPG_BKGND_COLOR_BARS);
+	XV_tpg_Set_bckgndId(&tpg, XTPG_BKGND_RAINBOW_COLOR);
 	XV_tpg_Set_ovrlayId(&tpg, 0);
 	XV_tpg_WriteReg(tpg_Config->BaseAddress, XV_TPG_CTRL_ADDR_AP_CTRL, 0x81);
     StreamPtr->PixPerClk = tpg.Config.PixPerClk;

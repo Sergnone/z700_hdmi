@@ -26,6 +26,8 @@
 * </pre>
 *
 ******************************************************************************/
+#include <stdio.h>   
+#include <stdlib.h>
 #include "v_vtc.h"
 #include "v_tpg.h"
 #include "v_dynclk.h"
@@ -73,10 +75,15 @@ VideoFormats ColorFormats[NUM_TEST_FORMATS] =
 extern XV_FrmbufWr_l2     frmbufwr;
 extern XV_frmbufwr_Config frmbufwr_cfg;
 
+extern XV_FrmbufRd_l2     frmbufrd;
+extern XV_frmbufrd_Config frmbufrd_cfg;
+
+void Display_Screen(uint32_t stride);
+
 int Driver_Init()
 {
 	V_VTC_Init();
-	V_TPG_Init();
+	//V_TPG_Init();
 	V_FBWR_Init();
 	V_FBRD_Init();
 	return(XST_SUCCESS);
@@ -84,7 +91,7 @@ int Driver_Init()
 
 void videoStreamConf(XVidC_VideoStream VidStream)
 {
-	V_TPG_ConfigStream(&VidStream);
+	//V_TPG_ConfigStream(&VidStream);
 	V_VTC_ConfigStream(&VidStream);
 }
 
@@ -128,12 +135,12 @@ int main()
     xil_printf("DynClk: Initializing ...\r\n");
 	DynClkSetClk(DYNCLK_BASEADDR, (double)(XVidC_GetPixelClockHzByVmId(VidStream.VmId)/1000000));
 	
-	xil_printf("\r\nTest: %s\r\n", XVidC_GetVideoModeStr(VidStream.VmId));
-	Status = V_TPG_Clock_Config(VidStream.VmId);
-	if(Status != XST_SUCCESS)
-	{
-		return(XST_FAILURE);
-	}	
+	//xil_printf("\r\nTest: %s\r\n", XVidC_GetVideoModeStr(VidStream.VmId));
+	//Status = V_TPG_Clock_Config(VidStream.VmId);
+	//if(Status != XST_SUCCESS)
+	//{
+	//	return(XST_FAILURE);
+	//}	
 
   	VidStream.PixPerClk  = frmbufwr.FrmbufWr.Config.PixPerClk;
   	VidStream.ColorDepth = frmbufwr.FrmbufWr.Config.MaxDataWidth;
@@ -171,11 +178,35 @@ int main()
 	  
 	//videoStreamConf(VidStream);
 	usleep(500000);
+	Display_Screen(stride);
 	xil_printf("Successfully ran Example\r\n");
 	return 0;
 }
 
 
+void Display_Screen(uint32_t stride)
+{
+	int x = 0;
+	int y = 0;
+	uint32_t iPixelAddr = 0;
+	uint32_t *fadd = (uint32_t*)0x10000000;
+	//fadd = (uint32_t*)malloc(192000);
+	//memset(fadd,0xff,192000);
+	
+	for(y = 0; y < 1080; y++)
+	{
+		for(x = 0; x < (1920*2); x+=3)
+		{
+			//frame[xcoi + iPixelAddr + 0] = gImage_pic_800_600[pic_number++];
+			//frame[xcoi + iPixelAddr + 1] = gImage_pic_800_600[pic_number++];
+			//frame[xcoi + iPixelAddr + 2] = gImage_pic_800_600[pic_number++];
+			*(fadd + (x + iPixelAddr + 0)) = 0x00000000;
+			*(fadd + (x + iPixelAddr + 1)) = 0x00000000;
+			*(fadd + (x + iPixelAddr + 2)) = 0x00000000;
+		}
+		iPixelAddr += stride;
+	}
+}
 /*
 int main()
 {

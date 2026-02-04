@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Wed Feb  4 18:14:29 2026
+//Date        : Wed Feb  4 18:43:31 2026
 //Host        : serg running 64-bit Ubuntu 24.04.3 LTS
 //Command     : generate_target top_design.bd
 //Design      : top_design
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "top_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=top_design,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=15,numReposBlks=15,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_board_cnt=5,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "top_design.hwdef" *) 
+(* CORE_GENERATION_INFO = "top_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=top_design,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=14,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_board_cnt=5,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "top_design.hwdef" *) 
 module top_design
    (DDR_addr,
     DDR_ba,
@@ -265,86 +265,78 @@ module top_design
   wire v_axi4s_vid_out_0_vid_io_out_VSYNC;
   wire v_axi4s_vid_out_0_vtg_ce;
   wire v_frmbuf_rd_0_interrupt;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARADDR" *) (* DONT_TOUCH *) wire [31:0]v_frmbuf_rd_0_m_axi_mm_video_ARADDR;
+  wire [31:0]v_frmbuf_rd_0_m_axi_mm_video_ARADDR;
   wire [1:0]v_frmbuf_rd_0_m_axi_mm_video_ARBURST;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARCACHE" *) (* DONT_TOUCH *) wire [3:0]v_frmbuf_rd_0_m_axi_mm_video_ARCACHE;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARLEN" *) (* DONT_TOUCH *) wire [7:0]v_frmbuf_rd_0_m_axi_mm_video_ARLEN;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARLOCK" *) (* DONT_TOUCH *) wire [1:0]v_frmbuf_rd_0_m_axi_mm_video_ARLOCK;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARPROT" *) (* DONT_TOUCH *) wire [2:0]v_frmbuf_rd_0_m_axi_mm_video_ARPROT;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARQOS" *) (* DONT_TOUCH *) wire [3:0]v_frmbuf_rd_0_m_axi_mm_video_ARQOS;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARREADY" *) (* DONT_TOUCH *) wire v_frmbuf_rd_0_m_axi_mm_video_ARREADY;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARREGION" *) (* DONT_TOUCH *) wire [3:0]v_frmbuf_rd_0_m_axi_mm_video_ARREGION;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARSIZE" *) (* DONT_TOUCH *) wire [2:0]v_frmbuf_rd_0_m_axi_mm_video_ARSIZE;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARVALID" *) (* DONT_TOUCH *) wire v_frmbuf_rd_0_m_axi_mm_video_ARVALID;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWADDR" *) (* DONT_TOUCH *) wire [31:0]v_frmbuf_rd_0_m_axi_mm_video_AWADDR;
+  wire [3:0]v_frmbuf_rd_0_m_axi_mm_video_ARCACHE;
+  wire [7:0]v_frmbuf_rd_0_m_axi_mm_video_ARLEN;
+  wire [1:0]v_frmbuf_rd_0_m_axi_mm_video_ARLOCK;
+  wire [2:0]v_frmbuf_rd_0_m_axi_mm_video_ARPROT;
+  wire [3:0]v_frmbuf_rd_0_m_axi_mm_video_ARQOS;
+  wire v_frmbuf_rd_0_m_axi_mm_video_ARREADY;
+  wire [2:0]v_frmbuf_rd_0_m_axi_mm_video_ARSIZE;
+  wire v_frmbuf_rd_0_m_axi_mm_video_ARVALID;
+  wire [31:0]v_frmbuf_rd_0_m_axi_mm_video_AWADDR;
   wire [1:0]v_frmbuf_rd_0_m_axi_mm_video_AWBURST;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWCACHE" *) (* DONT_TOUCH *) wire [3:0]v_frmbuf_rd_0_m_axi_mm_video_AWCACHE;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWLEN" *) (* DONT_TOUCH *) wire [7:0]v_frmbuf_rd_0_m_axi_mm_video_AWLEN;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWLOCK" *) (* DONT_TOUCH *) wire [1:0]v_frmbuf_rd_0_m_axi_mm_video_AWLOCK;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWPROT" *) (* DONT_TOUCH *) wire [2:0]v_frmbuf_rd_0_m_axi_mm_video_AWPROT;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWQOS" *) (* DONT_TOUCH *) wire [3:0]v_frmbuf_rd_0_m_axi_mm_video_AWQOS;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWREADY" *) (* DONT_TOUCH *) wire v_frmbuf_rd_0_m_axi_mm_video_AWREADY;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWREGION" *) (* DONT_TOUCH *) wire [3:0]v_frmbuf_rd_0_m_axi_mm_video_AWREGION;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWSIZE" *) (* DONT_TOUCH *) wire [2:0]v_frmbuf_rd_0_m_axi_mm_video_AWSIZE;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWVALID" *) (* DONT_TOUCH *) wire v_frmbuf_rd_0_m_axi_mm_video_AWVALID;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 BREADY" *) (* DONT_TOUCH *) wire v_frmbuf_rd_0_m_axi_mm_video_BREADY;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 BRESP" *) (* DONT_TOUCH *) wire [1:0]v_frmbuf_rd_0_m_axi_mm_video_BRESP;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 BVALID" *) (* DONT_TOUCH *) wire v_frmbuf_rd_0_m_axi_mm_video_BVALID;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 RDATA" *) (* DONT_TOUCH *) wire [63:0]v_frmbuf_rd_0_m_axi_mm_video_RDATA;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 RLAST" *) (* DONT_TOUCH *) wire v_frmbuf_rd_0_m_axi_mm_video_RLAST;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 RREADY" *) (* DONT_TOUCH *) wire v_frmbuf_rd_0_m_axi_mm_video_RREADY;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 RRESP" *) (* DONT_TOUCH *) wire [1:0]v_frmbuf_rd_0_m_axi_mm_video_RRESP;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 RVALID" *) (* DONT_TOUCH *) wire v_frmbuf_rd_0_m_axi_mm_video_RVALID;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 WDATA" *) (* DONT_TOUCH *) wire [63:0]v_frmbuf_rd_0_m_axi_mm_video_WDATA;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 WLAST" *) (* DONT_TOUCH *) wire v_frmbuf_rd_0_m_axi_mm_video_WLAST;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 WREADY" *) (* DONT_TOUCH *) wire v_frmbuf_rd_0_m_axi_mm_video_WREADY;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 WSTRB" *) (* DONT_TOUCH *) wire [7:0]v_frmbuf_rd_0_m_axi_mm_video_WSTRB;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 WVALID" *) (* DONT_TOUCH *) wire v_frmbuf_rd_0_m_axi_mm_video_WVALID;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axis_video xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [23:0]v_frmbuf_rd_0_m_axis_video_TDATA;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axis_video xilinx.com:interface:axis:1.0 None TDEST" *) (* DONT_TOUCH *) wire [0:0]v_frmbuf_rd_0_m_axis_video_TDEST;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axis_video xilinx.com:interface:axis:1.0 None TID" *) (* DONT_TOUCH *) wire [0:0]v_frmbuf_rd_0_m_axis_video_TID;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axis_video xilinx.com:interface:axis:1.0 None TKEEP" *) (* DONT_TOUCH *) wire [2:0]v_frmbuf_rd_0_m_axis_video_TKEEP;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axis_video xilinx.com:interface:axis:1.0 None TLAST" *) (* DONT_TOUCH *) wire [0:0]v_frmbuf_rd_0_m_axis_video_TLAST;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axis_video xilinx.com:interface:axis:1.0 None TREADY" *) (* DONT_TOUCH *) wire v_frmbuf_rd_0_m_axis_video_TREADY;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axis_video xilinx.com:interface:axis:1.0 None TSTRB" *) (* DONT_TOUCH *) wire [2:0]v_frmbuf_rd_0_m_axis_video_TSTRB;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axis_video xilinx.com:interface:axis:1.0 None TUSER" *) (* DONT_TOUCH *) wire [0:0]v_frmbuf_rd_0_m_axis_video_TUSER;
-  (* CONN_BUS_INFO = "v_frmbuf_rd_0_m_axis_video xilinx.com:interface:axis:1.0 None TVALID" *) (* DONT_TOUCH *) wire v_frmbuf_rd_0_m_axis_video_TVALID;
+  wire [3:0]v_frmbuf_rd_0_m_axi_mm_video_AWCACHE;
+  wire [7:0]v_frmbuf_rd_0_m_axi_mm_video_AWLEN;
+  wire [1:0]v_frmbuf_rd_0_m_axi_mm_video_AWLOCK;
+  wire [2:0]v_frmbuf_rd_0_m_axi_mm_video_AWPROT;
+  wire [3:0]v_frmbuf_rd_0_m_axi_mm_video_AWQOS;
+  wire v_frmbuf_rd_0_m_axi_mm_video_AWREADY;
+  wire [2:0]v_frmbuf_rd_0_m_axi_mm_video_AWSIZE;
+  wire v_frmbuf_rd_0_m_axi_mm_video_AWVALID;
+  wire v_frmbuf_rd_0_m_axi_mm_video_BREADY;
+  wire [1:0]v_frmbuf_rd_0_m_axi_mm_video_BRESP;
+  wire v_frmbuf_rd_0_m_axi_mm_video_BVALID;
+  wire [63:0]v_frmbuf_rd_0_m_axi_mm_video_RDATA;
+  wire v_frmbuf_rd_0_m_axi_mm_video_RLAST;
+  wire v_frmbuf_rd_0_m_axi_mm_video_RREADY;
+  wire [1:0]v_frmbuf_rd_0_m_axi_mm_video_RRESP;
+  wire v_frmbuf_rd_0_m_axi_mm_video_RVALID;
+  wire [63:0]v_frmbuf_rd_0_m_axi_mm_video_WDATA;
+  wire v_frmbuf_rd_0_m_axi_mm_video_WLAST;
+  wire v_frmbuf_rd_0_m_axi_mm_video_WREADY;
+  wire [7:0]v_frmbuf_rd_0_m_axi_mm_video_WSTRB;
+  wire v_frmbuf_rd_0_m_axi_mm_video_WVALID;
+  wire [23:0]v_frmbuf_rd_0_m_axis_video_TDATA;
+  wire [0:0]v_frmbuf_rd_0_m_axis_video_TLAST;
+  wire v_frmbuf_rd_0_m_axis_video_TREADY;
+  wire [0:0]v_frmbuf_rd_0_m_axis_video_TUSER;
+  wire v_frmbuf_rd_0_m_axis_video_TVALID;
   wire v_frmbuf_wr_0_interrupt;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARADDR" *) (* DONT_TOUCH *) wire [31:0]v_frmbuf_wr_0_m_axi_mm_video_ARADDR;
+  wire [31:0]v_frmbuf_wr_0_m_axi_mm_video_ARADDR;
   wire [1:0]v_frmbuf_wr_0_m_axi_mm_video_ARBURST;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARCACHE" *) (* DONT_TOUCH *) wire [3:0]v_frmbuf_wr_0_m_axi_mm_video_ARCACHE;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARLEN" *) (* DONT_TOUCH *) wire [7:0]v_frmbuf_wr_0_m_axi_mm_video_ARLEN;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARLOCK" *) (* DONT_TOUCH *) wire v_frmbuf_wr_0_m_axi_mm_video_ARLOCK;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARPROT" *) (* DONT_TOUCH *) wire [2:0]v_frmbuf_wr_0_m_axi_mm_video_ARPROT;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARQOS" *) (* DONT_TOUCH *) wire [3:0]v_frmbuf_wr_0_m_axi_mm_video_ARQOS;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARREADY" *) (* DONT_TOUCH *) wire v_frmbuf_wr_0_m_axi_mm_video_ARREADY;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARREGION" *) (* DONT_TOUCH *) wire [3:0]v_frmbuf_wr_0_m_axi_mm_video_ARREGION;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARSIZE" *) (* DONT_TOUCH *) wire [2:0]v_frmbuf_wr_0_m_axi_mm_video_ARSIZE;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 ARVALID" *) (* DONT_TOUCH *) wire v_frmbuf_wr_0_m_axi_mm_video_ARVALID;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWADDR" *) (* DONT_TOUCH *) wire [31:0]v_frmbuf_wr_0_m_axi_mm_video_AWADDR;
+  wire [3:0]v_frmbuf_wr_0_m_axi_mm_video_ARCACHE;
+  wire [7:0]v_frmbuf_wr_0_m_axi_mm_video_ARLEN;
+  wire v_frmbuf_wr_0_m_axi_mm_video_ARLOCK;
+  wire [2:0]v_frmbuf_wr_0_m_axi_mm_video_ARPROT;
+  wire [3:0]v_frmbuf_wr_0_m_axi_mm_video_ARQOS;
+  wire v_frmbuf_wr_0_m_axi_mm_video_ARREADY;
+  wire [2:0]v_frmbuf_wr_0_m_axi_mm_video_ARSIZE;
+  wire v_frmbuf_wr_0_m_axi_mm_video_ARVALID;
+  wire [31:0]v_frmbuf_wr_0_m_axi_mm_video_AWADDR;
   wire [1:0]v_frmbuf_wr_0_m_axi_mm_video_AWBURST;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWCACHE" *) (* DONT_TOUCH *) wire [3:0]v_frmbuf_wr_0_m_axi_mm_video_AWCACHE;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWLEN" *) (* DONT_TOUCH *) wire [7:0]v_frmbuf_wr_0_m_axi_mm_video_AWLEN;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWLOCK" *) (* DONT_TOUCH *) wire v_frmbuf_wr_0_m_axi_mm_video_AWLOCK;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWPROT" *) (* DONT_TOUCH *) wire [2:0]v_frmbuf_wr_0_m_axi_mm_video_AWPROT;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWQOS" *) (* DONT_TOUCH *) wire [3:0]v_frmbuf_wr_0_m_axi_mm_video_AWQOS;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWREADY" *) (* DONT_TOUCH *) wire v_frmbuf_wr_0_m_axi_mm_video_AWREADY;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWREGION" *) (* DONT_TOUCH *) wire [3:0]v_frmbuf_wr_0_m_axi_mm_video_AWREGION;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWSIZE" *) (* DONT_TOUCH *) wire [2:0]v_frmbuf_wr_0_m_axi_mm_video_AWSIZE;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 AWVALID" *) (* DONT_TOUCH *) wire v_frmbuf_wr_0_m_axi_mm_video_AWVALID;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 BREADY" *) (* DONT_TOUCH *) wire v_frmbuf_wr_0_m_axi_mm_video_BREADY;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 BRESP" *) (* DONT_TOUCH *) wire [1:0]v_frmbuf_wr_0_m_axi_mm_video_BRESP;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 BVALID" *) (* DONT_TOUCH *) wire v_frmbuf_wr_0_m_axi_mm_video_BVALID;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 RDATA" *) (* DONT_TOUCH *) wire [63:0]v_frmbuf_wr_0_m_axi_mm_video_RDATA;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 RLAST" *) (* DONT_TOUCH *) wire v_frmbuf_wr_0_m_axi_mm_video_RLAST;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 RREADY" *) (* DONT_TOUCH *) wire v_frmbuf_wr_0_m_axi_mm_video_RREADY;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 RRESP" *) (* DONT_TOUCH *) wire [1:0]v_frmbuf_wr_0_m_axi_mm_video_RRESP;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 RVALID" *) (* DONT_TOUCH *) wire v_frmbuf_wr_0_m_axi_mm_video_RVALID;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 WDATA" *) (* DONT_TOUCH *) wire [63:0]v_frmbuf_wr_0_m_axi_mm_video_WDATA;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 WLAST" *) (* DONT_TOUCH *) wire v_frmbuf_wr_0_m_axi_mm_video_WLAST;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 WREADY" *) (* DONT_TOUCH *) wire v_frmbuf_wr_0_m_axi_mm_video_WREADY;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 WSTRB" *) (* DONT_TOUCH *) wire [7:0]v_frmbuf_wr_0_m_axi_mm_video_WSTRB;
-  (* CONN_BUS_INFO = "v_frmbuf_wr_0_m_axi_mm_video xilinx.com:interface:aximm:1.0 AXI4 WVALID" *) (* DONT_TOUCH *) wire v_frmbuf_wr_0_m_axi_mm_video_WVALID;
+  wire [3:0]v_frmbuf_wr_0_m_axi_mm_video_AWCACHE;
+  wire [7:0]v_frmbuf_wr_0_m_axi_mm_video_AWLEN;
+  wire v_frmbuf_wr_0_m_axi_mm_video_AWLOCK;
+  wire [2:0]v_frmbuf_wr_0_m_axi_mm_video_AWPROT;
+  wire [3:0]v_frmbuf_wr_0_m_axi_mm_video_AWQOS;
+  wire v_frmbuf_wr_0_m_axi_mm_video_AWREADY;
+  wire [2:0]v_frmbuf_wr_0_m_axi_mm_video_AWSIZE;
+  wire v_frmbuf_wr_0_m_axi_mm_video_AWVALID;
+  wire v_frmbuf_wr_0_m_axi_mm_video_BREADY;
+  wire [1:0]v_frmbuf_wr_0_m_axi_mm_video_BRESP;
+  wire v_frmbuf_wr_0_m_axi_mm_video_BVALID;
+  wire [63:0]v_frmbuf_wr_0_m_axi_mm_video_RDATA;
+  wire v_frmbuf_wr_0_m_axi_mm_video_RLAST;
+  wire v_frmbuf_wr_0_m_axi_mm_video_RREADY;
+  wire [1:0]v_frmbuf_wr_0_m_axi_mm_video_RRESP;
+  wire v_frmbuf_wr_0_m_axi_mm_video_RVALID;
+  wire [63:0]v_frmbuf_wr_0_m_axi_mm_video_WDATA;
+  wire v_frmbuf_wr_0_m_axi_mm_video_WLAST;
+  wire v_frmbuf_wr_0_m_axi_mm_video_WREADY;
+  wire [7:0]v_frmbuf_wr_0_m_axi_mm_video_WSTRB;
+  wire v_frmbuf_wr_0_m_axi_mm_video_WVALID;
   wire v_tc_0_irq;
   wire v_tc_0_vtiming_out_ACTIVE_VIDEO;
   wire v_tc_0_vtiming_out_HBLANK;
@@ -352,15 +344,15 @@ module top_design
   wire v_tc_0_vtiming_out_VBLANK;
   wire v_tc_0_vtiming_out_VSYNC;
   wire v_tpg_0_interrupt;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video1 xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [23:0]v_tpg_0_m_axis_video1_TDATA;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video1 xilinx.com:interface:axis:1.0 None TDEST" *) (* DONT_TOUCH *) wire [0:0]v_tpg_0_m_axis_video1_TDEST;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video1 xilinx.com:interface:axis:1.0 None TID" *) (* DONT_TOUCH *) wire [0:0]v_tpg_0_m_axis_video1_TID;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video1 xilinx.com:interface:axis:1.0 None TKEEP" *) (* DONT_TOUCH *) wire [2:0]v_tpg_0_m_axis_video1_TKEEP;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video1 xilinx.com:interface:axis:1.0 None TLAST" *) (* DONT_TOUCH *) wire [0:0]v_tpg_0_m_axis_video1_TLAST;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video1 xilinx.com:interface:axis:1.0 None TREADY" *) (* DONT_TOUCH *) wire v_tpg_0_m_axis_video1_TREADY;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video1 xilinx.com:interface:axis:1.0 None TSTRB" *) (* DONT_TOUCH *) wire [2:0]v_tpg_0_m_axis_video1_TSTRB;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video1 xilinx.com:interface:axis:1.0 None TUSER" *) (* DONT_TOUCH *) wire [0:0]v_tpg_0_m_axis_video1_TUSER;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video1 xilinx.com:interface:axis:1.0 None TVALID" *) (* DONT_TOUCH *) wire v_tpg_0_m_axis_video1_TVALID;
+  wire [23:0]v_tpg_0_m_axis_video1_TDATA;
+  wire [0:0]v_tpg_0_m_axis_video1_TDEST;
+  wire [0:0]v_tpg_0_m_axis_video1_TID;
+  wire [2:0]v_tpg_0_m_axis_video1_TKEEP;
+  wire [0:0]v_tpg_0_m_axis_video1_TLAST;
+  wire v_tpg_0_m_axis_video1_TREADY;
+  wire [2:0]v_tpg_0_m_axis_video1_TSTRB;
+  wire [0:0]v_tpg_0_m_axis_video1_TUSER;
+  wire v_tpg_0_m_axis_video1_TVALID;
 
   top_design_axi_dynclk_0_0 axi_dynclk_0
        (.LOCKED_O(axi_dynclk_0_LOCKED_O),
@@ -751,93 +743,6 @@ module top_design
         .S01_AXI_wvalid(v_frmbuf_rd_0_m_axi_mm_video_WVALID),
         .aclk(processing_system7_0_FCLK_CLK0),
         .aresetn(rst_ps7_0_148M_peripheral_aresetn));
-  top_design_system_ila_0_0 system_ila_0
-       (.SLOT_0_AXIS_tdata(v_tpg_0_m_axis_video1_TDATA),
-        .SLOT_0_AXIS_tdest(v_tpg_0_m_axis_video1_TDEST),
-        .SLOT_0_AXIS_tid(v_tpg_0_m_axis_video1_TID),
-        .SLOT_0_AXIS_tkeep(v_tpg_0_m_axis_video1_TKEEP),
-        .SLOT_0_AXIS_tlast(v_tpg_0_m_axis_video1_TLAST),
-        .SLOT_0_AXIS_tready(v_tpg_0_m_axis_video1_TREADY),
-        .SLOT_0_AXIS_tstrb(v_tpg_0_m_axis_video1_TSTRB),
-        .SLOT_0_AXIS_tuser(v_tpg_0_m_axis_video1_TUSER),
-        .SLOT_0_AXIS_tvalid(v_tpg_0_m_axis_video1_TVALID),
-        .SLOT_1_AXI_araddr(v_frmbuf_wr_0_m_axi_mm_video_ARADDR),
-        .SLOT_1_AXI_arcache(v_frmbuf_wr_0_m_axi_mm_video_ARCACHE),
-        .SLOT_1_AXI_arlen(v_frmbuf_wr_0_m_axi_mm_video_ARLEN),
-        .SLOT_1_AXI_arlock(v_frmbuf_wr_0_m_axi_mm_video_ARLOCK),
-        .SLOT_1_AXI_arprot(v_frmbuf_wr_0_m_axi_mm_video_ARPROT),
-        .SLOT_1_AXI_arqos(v_frmbuf_wr_0_m_axi_mm_video_ARQOS),
-        .SLOT_1_AXI_arready(v_frmbuf_wr_0_m_axi_mm_video_ARREADY),
-        .SLOT_1_AXI_arregion(v_frmbuf_wr_0_m_axi_mm_video_ARREGION),
-        .SLOT_1_AXI_arsize(v_frmbuf_wr_0_m_axi_mm_video_ARSIZE),
-        .SLOT_1_AXI_arvalid(v_frmbuf_wr_0_m_axi_mm_video_ARVALID),
-        .SLOT_1_AXI_awaddr(v_frmbuf_wr_0_m_axi_mm_video_AWADDR),
-        .SLOT_1_AXI_awcache(v_frmbuf_wr_0_m_axi_mm_video_AWCACHE),
-        .SLOT_1_AXI_awlen(v_frmbuf_wr_0_m_axi_mm_video_AWLEN),
-        .SLOT_1_AXI_awlock(v_frmbuf_wr_0_m_axi_mm_video_AWLOCK),
-        .SLOT_1_AXI_awprot(v_frmbuf_wr_0_m_axi_mm_video_AWPROT),
-        .SLOT_1_AXI_awqos(v_frmbuf_wr_0_m_axi_mm_video_AWQOS),
-        .SLOT_1_AXI_awready(v_frmbuf_wr_0_m_axi_mm_video_AWREADY),
-        .SLOT_1_AXI_awregion(v_frmbuf_wr_0_m_axi_mm_video_AWREGION),
-        .SLOT_1_AXI_awsize(v_frmbuf_wr_0_m_axi_mm_video_AWSIZE),
-        .SLOT_1_AXI_awvalid(v_frmbuf_wr_0_m_axi_mm_video_AWVALID),
-        .SLOT_1_AXI_bready(v_frmbuf_wr_0_m_axi_mm_video_BREADY),
-        .SLOT_1_AXI_bresp(v_frmbuf_wr_0_m_axi_mm_video_BRESP),
-        .SLOT_1_AXI_bvalid(v_frmbuf_wr_0_m_axi_mm_video_BVALID),
-        .SLOT_1_AXI_rdata(v_frmbuf_wr_0_m_axi_mm_video_RDATA),
-        .SLOT_1_AXI_rlast(v_frmbuf_wr_0_m_axi_mm_video_RLAST),
-        .SLOT_1_AXI_rready(v_frmbuf_wr_0_m_axi_mm_video_RREADY),
-        .SLOT_1_AXI_rresp(v_frmbuf_wr_0_m_axi_mm_video_RRESP),
-        .SLOT_1_AXI_rvalid(v_frmbuf_wr_0_m_axi_mm_video_RVALID),
-        .SLOT_1_AXI_wdata(v_frmbuf_wr_0_m_axi_mm_video_WDATA),
-        .SLOT_1_AXI_wlast(v_frmbuf_wr_0_m_axi_mm_video_WLAST),
-        .SLOT_1_AXI_wready(v_frmbuf_wr_0_m_axi_mm_video_WREADY),
-        .SLOT_1_AXI_wstrb(v_frmbuf_wr_0_m_axi_mm_video_WSTRB),
-        .SLOT_1_AXI_wvalid(v_frmbuf_wr_0_m_axi_mm_video_WVALID),
-        .SLOT_2_AXI_araddr(v_frmbuf_rd_0_m_axi_mm_video_ARADDR),
-        .SLOT_2_AXI_arcache(v_frmbuf_rd_0_m_axi_mm_video_ARCACHE),
-        .SLOT_2_AXI_arlen(v_frmbuf_rd_0_m_axi_mm_video_ARLEN),
-        .SLOT_2_AXI_arlock(v_frmbuf_rd_0_m_axi_mm_video_ARLOCK[0]),
-        .SLOT_2_AXI_arprot(v_frmbuf_rd_0_m_axi_mm_video_ARPROT),
-        .SLOT_2_AXI_arqos(v_frmbuf_rd_0_m_axi_mm_video_ARQOS),
-        .SLOT_2_AXI_arready(v_frmbuf_rd_0_m_axi_mm_video_ARREADY),
-        .SLOT_2_AXI_arregion(v_frmbuf_rd_0_m_axi_mm_video_ARREGION),
-        .SLOT_2_AXI_arsize(v_frmbuf_rd_0_m_axi_mm_video_ARSIZE),
-        .SLOT_2_AXI_arvalid(v_frmbuf_rd_0_m_axi_mm_video_ARVALID),
-        .SLOT_2_AXI_awaddr(v_frmbuf_rd_0_m_axi_mm_video_AWADDR),
-        .SLOT_2_AXI_awcache(v_frmbuf_rd_0_m_axi_mm_video_AWCACHE),
-        .SLOT_2_AXI_awlen(v_frmbuf_rd_0_m_axi_mm_video_AWLEN),
-        .SLOT_2_AXI_awlock(v_frmbuf_rd_0_m_axi_mm_video_AWLOCK[0]),
-        .SLOT_2_AXI_awprot(v_frmbuf_rd_0_m_axi_mm_video_AWPROT),
-        .SLOT_2_AXI_awqos(v_frmbuf_rd_0_m_axi_mm_video_AWQOS),
-        .SLOT_2_AXI_awready(v_frmbuf_rd_0_m_axi_mm_video_AWREADY),
-        .SLOT_2_AXI_awregion(v_frmbuf_rd_0_m_axi_mm_video_AWREGION),
-        .SLOT_2_AXI_awsize(v_frmbuf_rd_0_m_axi_mm_video_AWSIZE),
-        .SLOT_2_AXI_awvalid(v_frmbuf_rd_0_m_axi_mm_video_AWVALID),
-        .SLOT_2_AXI_bready(v_frmbuf_rd_0_m_axi_mm_video_BREADY),
-        .SLOT_2_AXI_bresp(v_frmbuf_rd_0_m_axi_mm_video_BRESP),
-        .SLOT_2_AXI_bvalid(v_frmbuf_rd_0_m_axi_mm_video_BVALID),
-        .SLOT_2_AXI_rdata(v_frmbuf_rd_0_m_axi_mm_video_RDATA),
-        .SLOT_2_AXI_rlast(v_frmbuf_rd_0_m_axi_mm_video_RLAST),
-        .SLOT_2_AXI_rready(v_frmbuf_rd_0_m_axi_mm_video_RREADY),
-        .SLOT_2_AXI_rresp(v_frmbuf_rd_0_m_axi_mm_video_RRESP),
-        .SLOT_2_AXI_rvalid(v_frmbuf_rd_0_m_axi_mm_video_RVALID),
-        .SLOT_2_AXI_wdata(v_frmbuf_rd_0_m_axi_mm_video_WDATA),
-        .SLOT_2_AXI_wlast(v_frmbuf_rd_0_m_axi_mm_video_WLAST),
-        .SLOT_2_AXI_wready(v_frmbuf_rd_0_m_axi_mm_video_WREADY),
-        .SLOT_2_AXI_wstrb(v_frmbuf_rd_0_m_axi_mm_video_WSTRB),
-        .SLOT_2_AXI_wvalid(v_frmbuf_rd_0_m_axi_mm_video_WVALID),
-        .SLOT_3_AXIS_tdata(v_frmbuf_rd_0_m_axis_video_TDATA),
-        .SLOT_3_AXIS_tdest(v_frmbuf_rd_0_m_axis_video_TDEST),
-        .SLOT_3_AXIS_tid(v_frmbuf_rd_0_m_axis_video_TID),
-        .SLOT_3_AXIS_tkeep(v_frmbuf_rd_0_m_axis_video_TKEEP),
-        .SLOT_3_AXIS_tlast(v_frmbuf_rd_0_m_axis_video_TLAST),
-        .SLOT_3_AXIS_tready(v_frmbuf_rd_0_m_axis_video_TREADY),
-        .SLOT_3_AXIS_tstrb(v_frmbuf_rd_0_m_axis_video_TSTRB),
-        .SLOT_3_AXIS_tuser(v_frmbuf_rd_0_m_axis_video_TUSER),
-        .SLOT_3_AXIS_tvalid(v_frmbuf_rd_0_m_axis_video_TVALID),
-        .clk(processing_system7_0_FCLK_CLK0),
-        .resetn(rst_ps7_0_148M_peripheral_aresetn));
   top_design_v_axi4s_vid_out_0_1 v_axi4s_vid_out_0
        (.aclk(processing_system7_0_FCLK_CLK0),
         .aclken(1'b1),
@@ -875,7 +780,6 @@ module top_design
         .m_axi_mm_video_ARPROT(v_frmbuf_rd_0_m_axi_mm_video_ARPROT),
         .m_axi_mm_video_ARQOS(v_frmbuf_rd_0_m_axi_mm_video_ARQOS),
         .m_axi_mm_video_ARREADY(v_frmbuf_rd_0_m_axi_mm_video_ARREADY),
-        .m_axi_mm_video_ARREGION(v_frmbuf_rd_0_m_axi_mm_video_ARREGION),
         .m_axi_mm_video_ARSIZE(v_frmbuf_rd_0_m_axi_mm_video_ARSIZE),
         .m_axi_mm_video_ARVALID(v_frmbuf_rd_0_m_axi_mm_video_ARVALID),
         .m_axi_mm_video_AWADDR(v_frmbuf_rd_0_m_axi_mm_video_AWADDR),
@@ -886,7 +790,6 @@ module top_design
         .m_axi_mm_video_AWPROT(v_frmbuf_rd_0_m_axi_mm_video_AWPROT),
         .m_axi_mm_video_AWQOS(v_frmbuf_rd_0_m_axi_mm_video_AWQOS),
         .m_axi_mm_video_AWREADY(v_frmbuf_rd_0_m_axi_mm_video_AWREADY),
-        .m_axi_mm_video_AWREGION(v_frmbuf_rd_0_m_axi_mm_video_AWREGION),
         .m_axi_mm_video_AWSIZE(v_frmbuf_rd_0_m_axi_mm_video_AWSIZE),
         .m_axi_mm_video_AWVALID(v_frmbuf_rd_0_m_axi_mm_video_AWVALID),
         .m_axi_mm_video_BREADY(v_frmbuf_rd_0_m_axi_mm_video_BREADY),
@@ -903,12 +806,8 @@ module top_design
         .m_axi_mm_video_WSTRB(v_frmbuf_rd_0_m_axi_mm_video_WSTRB),
         .m_axi_mm_video_WVALID(v_frmbuf_rd_0_m_axi_mm_video_WVALID),
         .m_axis_video_TDATA(v_frmbuf_rd_0_m_axis_video_TDATA),
-        .m_axis_video_TDEST(v_frmbuf_rd_0_m_axis_video_TDEST),
-        .m_axis_video_TID(v_frmbuf_rd_0_m_axis_video_TID),
-        .m_axis_video_TKEEP(v_frmbuf_rd_0_m_axis_video_TKEEP),
         .m_axis_video_TLAST(v_frmbuf_rd_0_m_axis_video_TLAST),
         .m_axis_video_TREADY(v_frmbuf_rd_0_m_axis_video_TREADY),
-        .m_axis_video_TSTRB(v_frmbuf_rd_0_m_axis_video_TSTRB),
         .m_axis_video_TUSER(v_frmbuf_rd_0_m_axis_video_TUSER),
         .m_axis_video_TVALID(v_frmbuf_rd_0_m_axis_video_TVALID),
         .s_axi_CTRL_ARADDR(axi_smc_M04_AXI_ARADDR),
@@ -940,7 +839,6 @@ module top_design
         .m_axi_mm_video_ARPROT(v_frmbuf_wr_0_m_axi_mm_video_ARPROT),
         .m_axi_mm_video_ARQOS(v_frmbuf_wr_0_m_axi_mm_video_ARQOS),
         .m_axi_mm_video_ARREADY(v_frmbuf_wr_0_m_axi_mm_video_ARREADY),
-        .m_axi_mm_video_ARREGION(v_frmbuf_wr_0_m_axi_mm_video_ARREGION),
         .m_axi_mm_video_ARSIZE(v_frmbuf_wr_0_m_axi_mm_video_ARSIZE),
         .m_axi_mm_video_ARVALID(v_frmbuf_wr_0_m_axi_mm_video_ARVALID),
         .m_axi_mm_video_AWADDR(v_frmbuf_wr_0_m_axi_mm_video_AWADDR),
@@ -951,7 +849,6 @@ module top_design
         .m_axi_mm_video_AWPROT(v_frmbuf_wr_0_m_axi_mm_video_AWPROT),
         .m_axi_mm_video_AWQOS(v_frmbuf_wr_0_m_axi_mm_video_AWQOS),
         .m_axi_mm_video_AWREADY(v_frmbuf_wr_0_m_axi_mm_video_AWREADY),
-        .m_axi_mm_video_AWREGION(v_frmbuf_wr_0_m_axi_mm_video_AWREGION),
         .m_axi_mm_video_AWSIZE(v_frmbuf_wr_0_m_axi_mm_video_AWSIZE),
         .m_axi_mm_video_AWVALID(v_frmbuf_wr_0_m_axi_mm_video_AWVALID),
         .m_axi_mm_video_BREADY(v_frmbuf_wr_0_m_axi_mm_video_BREADY),

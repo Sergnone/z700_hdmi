@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "2",
+    "calls": "3",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_frmbuf_wr.cpp",
@@ -18,38 +18,8 @@
     "total_instructions": 585
   },
   "1": {
-    "basicblocks": 9,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "v_frmbuf_wr.cpp",
-    "fileloc": 1526,
-    "instructions": 34,
-    "loads": {
-      "L": 3
-    },
-    "memory_accesses": 2,
-    "name": "Bytes2AXIMMvideo",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 34
-  },
-  "2": {
-    "basicblocks": 1,
-    "calls": "3 5 1",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "v_frmbuf_wr.cpp",
-    "fileloc": 89,
-    "instructions": 10,
-    "memory_accesses": 0,
-    "name": "FrmbufWrHlsDataFlow",
-    "total_instructions": 529
-  },
-  "3": {
     "basicblocks": 17,
-    "calls": "4 4",
+    "calls": "2 2",
     "control_depth": 2,
     "def_use_depth": 7,
     "file": "v_frmbuf_wr.cpp",
@@ -65,7 +35,7 @@
     },
     "total_instructions": 299
   },
-  "4": {
+  "2": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -77,7 +47,19 @@
     "name": "reg<unsigned short>",
     "total_instructions": 1
   },
-  "5": {
+  "3": {
+    "basicblocks": 1,
+    "calls": "1 4 5",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "v_frmbuf_wr.cpp",
+    "fileloc": 89,
+    "instructions": 10,
+    "memory_accesses": 0,
+    "name": "FrmbufWrHlsDataFlow",
+    "total_instructions": 529
+  },
+  "4": {
     "basicblocks": 48,
     "calls": "",
     "control_depth": 4,
@@ -94,5 +76,23 @@
       "L": 3
     },
     "total_instructions": 186
+  },
+  "5": {
+    "basicblocks": 9,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "v_frmbuf_wr.cpp",
+    "fileloc": 1526,
+    "instructions": 34,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 2,
+    "name": "Bytes2AXIMMvideo",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 34
   }
 }

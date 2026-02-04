@@ -33,9 +33,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_design_
 # IP: bd/top_design/ip/top_design_rst_ps7_0_148M_2/top_design_rst_ps7_0_148M_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_design_rst_ps7_0_148M_2 || ORIG_REF_NAME==top_design_rst_ps7_0_148M_2} -quiet] -quiet
 
-# IP: bd/top_design/ip/top_design_system_ila_0_0/top_design_system_ila_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_design_system_ila_0_0 || ORIG_REF_NAME==top_design_system_ila_0_0} -quiet] -quiet
-
 # IP: bd/top_design/ip/top_design_v_frmbuf_wr_0_0/top_design_v_frmbuf_wr_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_design_v_frmbuf_wr_0_0 || ORIG_REF_NAME==top_design_v_frmbuf_wr_0_0} -quiet] -quiet
 

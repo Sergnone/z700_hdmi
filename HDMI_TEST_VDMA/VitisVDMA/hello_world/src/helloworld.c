@@ -1,0 +1,288 @@
+/******************************************************************************
+* Copyright (C) 2023 Advanced Micro Devices, Inc. All Rights Reserved.
+* SPDX-License-Identifier: MIT
+******************************************************************************/
+/*
+ * helloworld.c: simple test application
+ *
+ * This application configures UART 16550 to baud rate 9600.
+ * PS7 UART (Zynq) is not initialized by this application, since
+ * bootrom/bsp configures it to baud rate 115200
+ *
+ * ------------------------------------------------
+ * | UART TYPE   BAUD RATE                        |
+ * ------------------------------------------------
+ *   uartns550   9600
+ *   uartlite    Configurable only in HW design
+ *   ps7_uart    115200 (configured by bootrom/bsp)
+ */
+
+/*
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+
+
+int main()
+{
+    init_platform();
+
+    print("Hello World\n\r");
+    print("Successfully ran Hello World application");
+    cleanup_platform();
+    return 0;
+}
+
+*/
+
+
+/* ------------------------------------------------------------ */
+/*				Include File Definitions						*/
+/* ------------------------------------------------------------ */
+
+#include "display_demo.h"
+#include "display_ctrl.h"
+#include <stdio.h>
+#include "math.h"
+#include <ctype.h>
+#include <stdlib.h>
+#include "xil_types.h"
+#include "xil_cache.h"
+#include "xparameters.h"
+//#include "pic_800_600.h"
+//#include "pic_800600.h"
+//#include "redblue_800_600.h"
+#include "wsun_wall.h"
+#include "sleep.h"
+/*
+ * XPAR redefines
+ */
+#define DYNCLK_BASEADDR XPAR_AXI_DYNCLK_0_BASEADDR
+#define VGA_VDMA_ID 0
+#define DISP_VTC_ID 0
+
+/* ------------------------------------------------------------ */
+/*				Global Variables								*/
+/* ------------------------------------------------------------ */
+
+/*
+ * Display Driver structs
+ */
+DisplayCtrl dispCtrl;
+XAxiVdma vdma;
+
+/*
+ * Framebuffers for video data
+ */
+u8 frameBuf[DISPLAY_NUM_FRAMES][DEMO_MAX_FRAME] __attribute__ ((aligned(64)));
+u8 *pFrames[DISPLAY_NUM_FRAMES]; //array of pointers to the frame buffers
+
+/* ------------------------------------------------------------ */
+/*				Procedure Definitions							*/
+/* ------------------------------------------------------------ */
+
+int main(void)
+{
+
+	int Status;
+	XAxiVdma_Config *vdmaConfig;
+	int i;
+
+	/*
+	 * Initialize an array of pointers to the 3 frame buffers
+	 */
+	for (i = 0; i < DISPLAY_NUM_FRAMES; i++)
+	{
+		pFrames[i] = frameBuf[i];
+	}
+
+
+	/*
+	 * Initialize VDMA driver
+	 */
+	vdmaConfig = XAxiVdma_LookupConfig(VGA_VDMA_ID);
+	if (!vdmaConfig)
+	{
+		xil_printf("No video DMA found for ID %d\r\n", VGA_VDMA_ID);
+
+	}
+	Status = XAxiVdma_CfgInitialize(&vdma, vdmaConfig, vdmaConfig->BaseAddress);
+	if (Status != XST_SUCCESS)
+	{
+		xil_printf("VDMA Configuration Initialization failed %d\r\n", Status);
+
+	}
+
+	/*
+	 * Initialize the Display controller and start it
+	 */
+	Status = DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
+	if (Status != XST_SUCCESS)
+	{
+		xil_printf("Display Ctrl initialization failed during demo initialization%d\r\n", Status);
+
+	}
+	Status = DisplayStart(&dispCtrl);
+	if (Status != XST_SUCCESS)
+	{
+		xil_printf("Couldn't start display during demo initialization%d\r\n", Status);
+
+	}
+    
+	DemoPrintTest(dispCtrl.framePtr[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, dispCtrl.stride, DEMO_PATTERN_0);
+
+
+	return 0;
+}
+
+
+void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern)
+{
+	u32 xcoi, ycoi;
+	u32 iPixelAddr = 0;
+	u8 wRed, wBlue, wGreen;
+	u32 xInt;
+	u32 pic_number = 0;
+
+
+	switch (pattern)
+	{
+	case DEMO_PATTERN_0:
+
+		for(ycoi = 0; ycoi < DISPLAY_HEIGHT; ycoi++)
+		{
+			for(xcoi = 0; xcoi < (DISPLAY_WIDTH * BYTES_PIXEL); xcoi+=BYTES_PIXEL)
+			{
+				frame[xcoi + iPixelAddr + 1] = gImage_pic_800_600[pic_number];
+				pic_number+=1;
+				frame[xcoi + iPixelAddr + 0] = gImage_pic_800_600[pic_number];
+				pic_number+=1;
+				frame[xcoi + iPixelAddr + 2] = gImage_pic_800_600[pic_number];
+				pic_number+=1;
+			}
+			iPixelAddr += 5760;
+		}
+		/*
+		 * Flush the framebuffer memory range to ensure changes are written to the
+		 * actual memory, and therefore accessible by the VDMA.
+		 */
+		Xil_DCacheFlushRange((unsigned int) frame, DEMO_MAX_FRAME);
+		break;
+	case DEMO_PATTERN_1:         //Grid
+
+		for(ycoi = 0; ycoi < height; ycoi++)
+		{
+			for(xcoi = 0; xcoi < (width * BYTES_PIXEL); xcoi+=BYTES_PIXEL)
+			{
+				wRed = 0x16;
+				wGreen = 0x16;
+				wBlue = 0xff;
+				frame[xcoi + iPixelAddr + 0] = wGreen;
+				frame[xcoi + iPixelAddr + 1] = wBlue;
+				frame[xcoi + iPixelAddr + 2] = wRed;
+			}
+			iPixelAddr += stride;
+		}
+		/*
+		 * Flush the framebuffer memory range to ensure changes are written to the
+		 * actual memory, and therefore accessible by the VDMA.
+		 */
+		Xil_DCacheFlushRange((unsigned int) frame, DEMO_MAX_FRAME);
+		break;
+	case DEMO_PATTERN_2://8 intervals color bar
+
+		for(ycoi = 0; ycoi < height; ycoi++)
+		{
+			for(xcoi = 0; xcoi < (width * BYTES_PIXEL); xcoi+=BYTES_PIXEL)
+			{
+
+				frame[xcoi + iPixelAddr + 0] = xcoi/BYTES_PIXEL;
+				frame[xcoi + iPixelAddr + 1] = xcoi/BYTES_PIXEL;
+				frame[xcoi + iPixelAddr + 2] = xcoi/BYTES_PIXEL;
+			}
+			iPixelAddr += stride;
+		}
+		/*
+		 * Flush the framebuffer memory range to ensure changes are written to the
+		 * actual memory, and therefore accessible by the VDMA.
+		 */
+		Xil_DCacheFlushRange((unsigned int) frame, DEMO_MAX_FRAME);
+		break;
+	case DEMO_PATTERN_3: //8 intervals color bar
+
+		xInt = width*BYTES_PIXEL / 8; //each with width/8 pixels
+
+		for(ycoi = 0; ycoi < height; ycoi++)
+		{
+
+			/*
+			 * Just draw white in the last partial interval (when width is not divisible by 7)
+			 */
+
+			for(xcoi = 0; xcoi < (width*BYTES_PIXEL); xcoi+=BYTES_PIXEL)
+			{
+
+				if (xcoi < xInt) {                                   //White color
+					wRed = 255;
+					wGreen = 255;
+					wBlue = 255;
+				}
+
+				else if ((xcoi >= xInt) && (xcoi < xInt*2)){         //YELLOW color
+					wRed = 255;
+					wGreen = 255;
+					wBlue = 0;
+				}
+				else if ((xcoi >= xInt*2) && (xcoi < xInt*3)){        //CYAN color
+					wRed = 0;
+					wGreen = 255;
+					wBlue = 255;
+				}
+				else if ((xcoi >= xInt*3) && (xcoi < xInt*4)){        //GREEN color
+					wRed = 0;
+					wGreen = 255;
+					wBlue = 0;
+				}
+				else if ((xcoi >= xInt*4) && (xcoi < xInt*5)){        //MAGENTA color
+					wRed = 255;
+					wGreen = 0;
+					wBlue = 255;
+				}
+				else if ((xcoi >= xInt*5) && (xcoi < xInt*6)){        //RED color
+					wRed = 255;
+					wGreen = 0;
+					wBlue = 0;
+				}
+				else if ((xcoi >= xInt*6) && (xcoi < xInt*7)){        //BLUE color
+					wRed = 0;
+					wGreen = 0;
+					wBlue = 255;
+				}
+				else {                                                //BLACK color
+					wRed = 0;
+					wGreen = 0;
+					wBlue = 0;
+				}
+
+				frame[xcoi+iPixelAddr + 0] = wBlue;
+				frame[xcoi+iPixelAddr + 1] = wGreen;
+				frame[xcoi+iPixelAddr + 2] = wRed;
+				/*
+				 * This pattern is printed one vertical line at a time, so the address must be incremented
+				 * by the stride instead of just 1.
+				 */
+			}
+			iPixelAddr += stride;
+
+		}
+		/*
+		 * Flush the framebuffer memory range to ensure changes are written to the
+		 * actual memory, and therefore accessible by the VDMA.
+		 */
+		Xil_DCacheFlushRange((unsigned int) frame, DEMO_MAX_FRAME);
+		break;
+	default :
+		xil_printf("Error: invalid pattern passed to DemoPrintTest");
+	}
+}
+

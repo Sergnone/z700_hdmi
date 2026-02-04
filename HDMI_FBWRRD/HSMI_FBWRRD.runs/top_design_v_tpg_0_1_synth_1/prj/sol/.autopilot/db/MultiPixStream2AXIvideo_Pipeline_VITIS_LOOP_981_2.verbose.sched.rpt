@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2'
 ================================================================
-* Date:           Wed Feb  4 18:20:16 2026
+* Date:           Wed Feb  4 18:52:13 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -167,7 +167,7 @@ The critical path consists of the following:
  <State 2>: 2.780ns
 The critical path consists of the following:
 	'load' operation 11 bit ('j', prj/sol/.autopilot/db/v_tpg.cpp:981->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399) on local variable 'j', prj/sol/.autopilot/db/v_tpg.cpp:981->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399 [36]  (0.000 ns)
-	'add' operation 11 bit ('j', prj/sol/.autopilot/db/v_tpg.cpp:981->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399) [39]  (1.482 ns)
+	'icmp' operation 1 bit ('icmp_ln981', prj/sol/.autopilot/db/v_tpg.cpp:981->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399) [37]  (1.482 ns)
 	'store' operation ('store_ln981', prj/sol/.autopilot/db/v_tpg.cpp:981->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399) of variable 'j', prj/sol/.autopilot/db/v_tpg.cpp:981->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399 11 bit on local variable 'j', prj/sol/.autopilot/db/v_tpg.cpp:981->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399 [68]  (1.298 ns)
 
  <State 3>: 4.210ns

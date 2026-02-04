@@ -21,7 +21,6 @@
       "ilconstant_1": "",
       "axi_dynclk_0": "",
       "rst_ps7_0_100M": "",
-      "system_ila_0": "",
       "v_frmbuf_wr_0": "",
       "smartconnect_0": "",
       "ilconcat_0": "",
@@ -1846,60 +1845,6 @@
         "inst_hier_path": "rst_ps7_0_100M",
         "has_run_ip_tcl": "true"
       },
-      "system_ila_0": {
-        "vlnv": "xilinx.com:ip:system_ila:1.1",
-        "ip_revision": "22",
-        "xci_name": "top_design_system_ila_0_0",
-        "xci_path": "ip/top_design_system_ila_0_0/top_design_system_ila_0_0.xci",
-        "inst_hier_path": "system_ila_0",
-        "has_run_ip_tcl": "true",
-        "parameters": {
-          "C_NUM_MONITOR_SLOTS": {
-            "value": "4"
-          },
-          "C_SLOT": {
-            "value": "3"
-          },
-          "C_SLOT_0_INTF_TYPE": {
-            "value": "xilinx.com:interface:axis_rtl:1.0"
-          },
-          "C_SLOT_1_INTF_TYPE": {
-            "value": "xilinx.com:interface:aximm_rtl:1.0"
-          },
-          "C_SLOT_2_INTF_TYPE": {
-            "value": "xilinx.com:interface:aximm_rtl:1.0"
-          },
-          "C_SLOT_3_INTF_TYPE": {
-            "value": "xilinx.com:interface:axis_rtl:1.0"
-          }
-        },
-        "interface_ports": {
-          "SLOT_0_AXIS": {
-            "mode": "Monitor",
-            "monitor_type": "SlaveType",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          },
-          "SLOT_1_AXI": {
-            "mode": "Monitor",
-            "monitor_type": "SlaveType",
-            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
-          },
-          "SLOT_2_AXI": {
-            "mode": "Monitor",
-            "monitor_type": "SlaveType",
-            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
-          },
-          "SLOT_3_AXIS": {
-            "mode": "Monitor",
-            "monitor_type": "SlaveType",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          }
-        }
-      },
       "v_frmbuf_wr_0": {
         "vlnv": "xilinx.com:ip:v_frmbuf_wr:3.0",
         "ip_revision": "2",
@@ -2193,22 +2138,19 @@
       "v_frmbuf_rd_0_m_axi_mm_video": {
         "interface_ports": [
           "v_frmbuf_rd_0/m_axi_mm_video",
-          "smartconnect_0/S01_AXI",
-          "system_ila_0/SLOT_2_AXI"
+          "smartconnect_0/S01_AXI"
         ]
       },
       "v_frmbuf_rd_0_m_axis_video": {
         "interface_ports": [
           "v_frmbuf_rd_0/m_axis_video",
-          "v_axi4s_vid_out_0/video_in",
-          "system_ila_0/SLOT_3_AXIS"
+          "v_axi4s_vid_out_0/video_in"
         ]
       },
       "v_frmbuf_wr_0_m_axi_mm_video": {
         "interface_ports": [
           "v_frmbuf_wr_0/m_axi_mm_video",
-          "smartconnect_0/S00_AXI",
-          "system_ila_0/SLOT_1_AXI"
+          "smartconnect_0/S00_AXI"
         ]
       },
       "v_tc_0_vtiming_out": {
@@ -2220,8 +2162,7 @@
       "v_tpg_0_m_axis_video1": {
         "interface_ports": [
           "v_tpg_0/m_axis_video",
-          "v_frmbuf_wr_0/s_axis_video",
-          "system_ila_0/SLOT_0_AXIS"
+          "v_frmbuf_wr_0/s_axis_video"
         ]
       }
     },
@@ -2273,7 +2214,6 @@
           "rst_ps7_0_150M/slowest_sync_clk",
           "v_axi4s_vid_out_0/aclk",
           "processing_system7_0/S_AXI_HP0_ACLK",
-          "system_ila_0/clk",
           "v_frmbuf_wr_0/ap_clk",
           "smartconnect_0/aclk",
           "v_frmbuf_rd_0/ap_clk"
@@ -2303,7 +2243,6 @@
           "axi_smc/aresetn",
           "v_axi4s_vid_out_0/aresetn",
           "v_tpg_0/ap_rst_n",
-          "system_ila_0/resetn",
           "v_frmbuf_wr_0/ap_rst_n",
           "smartconnect_0/aresetn",
           "v_frmbuf_rd_0/ap_rst_n"
