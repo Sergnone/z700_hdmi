@@ -1,0 +1,283 @@
+
+
+================================================================
+== Vitis HLS Report for 'tpgForeground_Pipeline_VITIS_LOOP_774_2'
+================================================================
+* Date:           Wed Feb  4 13:35:12 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.75 ns|  4.141 ns|     1.82 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval |      Pipeline     |
+    |   min   |   max   |    min    |    max   | min | max |        Type       |
+    +---------+---------+-----------+----------+-----+-----+-------------------+
+    |        2|    65539|  13.500 ns|  0.442 ms|    0|    0|  loop pipeline stp|
+    +---------+---------+-----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+-----------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |    Trip   |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  |   Count   | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+-----------+----------+
+        |- VITIS_LOOP_774_2  |        0|    65537|         4|          1|          1|  0 ~ 65535|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+-----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 4
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 4, States = { 1 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.14>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%x = alloca i32 1" [prj/sol/.autopilot/db/v_tpg.cpp:1956->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 7 'alloca' 'x' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %zext_ln789, i1 1, void @p_str"   --->   Operation 8 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%colorFormat_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %colorFormat_val"   --->   Operation 9 'read' 'colorFormat_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%icmp_ln1963_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp_ln1963"   --->   Operation 10 'read' 'icmp_ln1963_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%crossHairX_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %crossHairX_val"   --->   Operation 11 'read' 'crossHairX_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%boxColorG_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %boxColorG_val"   --->   Operation 12 'read' 'boxColorG_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%icmp_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp"   --->   Operation 13 'read' 'icmp_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%hMax_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %hMax"   --->   Operation 14 'read' 'hMax_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln789_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %zext_ln789"   --->   Operation 15 'read' 'zext_ln789_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%vMax_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %vMax"   --->   Operation 16 'read' 'vMax_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%y_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %y"   --->   Operation 17 'read' 'y_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%boxSize_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %boxSize_val"   --->   Operation 18 'read' 'boxSize_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%patternId_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %patternId_val"   --->   Operation 19 'read' 'patternId_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%and_ln1993_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %and_ln1993"   --->   Operation 20 'read' 'and_ln1993_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%and_ln1991_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %and_ln1991"   --->   Operation 21 'read' 'and_ln1991_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%and_ln1989_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %and_ln1989"   --->   Operation 22 'read' 'and_ln1989_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%boxColorR_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %boxColorR_val"   --->   Operation 23 'read' 'boxColorR_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%select_ln1977_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %select_ln1977"   --->   Operation 24 'read' 'select_ln1977_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%boxColorB_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %boxColorB_val"   --->   Operation 25 'read' 'boxColorB_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%width_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %width_val"   --->   Operation 26 'read' 'width_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%maskId_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %maskId_val"   --->   Operation 27 'read' 'maskId_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%shl_ln_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %shl_ln"   --->   Operation 28 'read' 'shl_ln_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln789_cast = zext i8 %zext_ln789_read"   --->   Operation 29 'zext' 'zext_ln789_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %width_val, i1 1, void @p_str"   --->   Operation 30 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %patternId_val, i1 1, void @p_str"   --->   Operation 31 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %maskId_val, i1 1, void @p_str"   --->   Operation 32 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %colorFormat_val, i1 1, void @p_str"   --->   Operation 33 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %crossHairX_val, i1 1, void @p_str"   --->   Operation 34 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %boxSize_val, i1 1, void @p_str"   --->   Operation 35 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %boxColorR_val, i1 1, void @p_str"   --->   Operation 36 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %boxColorG_val, i1 1, void @p_str"   --->   Operation 37 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %boxColorB_val, i1 1, void @p_str"   --->   Operation 38 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %bckgndYUV, void @empty_13, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %ovrlayYUV, void @empty_13, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 40 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%zext_ln1889 = zext i9 %shl_ln_read" [prj/sol/.autopilot/db/v_tpg.cpp:1889->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 41 'zext' 'zext_ln1889' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (1.30ns)   --->   "%icmp_ln801 = icmp_eq  i8 %maskId_val_read, i8 0" [prj/sol/.autopilot/db/v_tpg.cpp:801]   --->   Operation 42 'icmp' 'icmp_ln801' <Predicate = true> <Delay = 1.30> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 43 [1/1] (1.29ns)   --->   "%store_ln1956 = store i16 0, i16 %x" [prj/sol/.autopilot/db/v_tpg.cpp:1956->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 43 'store' 'store_ln1956' <Predicate = true> <Delay = 1.29>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%br_ln774 = br void %for.body6" [prj/sol/.autopilot/db/v_tpg.cpp:774]   --->   Operation 44 'br' 'br_ln774' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%x_1 = load i16 %x" [prj/sol/.autopilot/db/v_tpg.cpp:1884->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 45 'load' 'x_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (1.54ns)   --->   "%icmp_ln774 = icmp_eq  i16 %x_1, i16 %width_val_read" [prj/sol/.autopilot/db/v_tpg.cpp:774]   --->   Operation 46 'icmp' 'icmp_ln774' <Predicate = true> <Delay = 1.54> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 47 [1/1] (1.54ns)   --->   "%x_2 = add i16 %x_1, i16 1" [prj/sol/.autopilot/db/v_tpg.cpp:774]   --->   Operation 47 'add' 'x_2' <Predicate = true> <Delay = 1.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%br_ln774 = br i1 %icmp_ln774, void %for.body6.split, void %for.inc17.exitStub" [prj/sol/.autopilot/db/v_tpg.cpp:774]   --->   Operation 48 'br' 'br_ln774' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (1.35ns)   --->   "%switch_ln780 = switch i8 %patternId_val_read, void %sw.epilog_ifconv, i8 2, void %sw.bb10, i8 1, void %sw.bb8" [prj/sol/.autopilot/db/v_tpg.cpp:780]   --->   Operation 49 'switch' 'switch_ln780' <Predicate = (!icmp_ln774)> <Delay = 1.35>
+ST_1 : Operation 50 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln1884)   --->   "%or_ln1884 = or i16 %x_1, i16 %y_read" [prj/sol/.autopilot/db/v_tpg.cpp:1884->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 50 'or' 'or_ln1884' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 51 [1/1] (1.54ns) (out node of the LUT)   --->   "%icmp_ln1884 = icmp_eq  i16 %or_ln1884, i16 0" [prj/sol/.autopilot/db/v_tpg.cpp:1884->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 51 'icmp' 'icmp_ln1884' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 1.54> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln1884 = br i1 %icmp_ln1884, void %if.end64.i, void %if.then.i" [prj/sol/.autopilot/db/v_tpg.cpp:1884->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 52 'br' 'br_ln1884' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%boxHCoord_loc_1_out_load = load i16 %boxHCoord_loc_1_out" [prj/sol/.autopilot/db/v_tpg.cpp:1912->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 53 'load' 'boxHCoord_loc_1_out_load' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884)> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%hDir_load = load i1 %hDir" [prj/sol/.autopilot/db/v_tpg.cpp:1887->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 54 'load' 'hDir_load' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884)> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%vDir_load = load i1 %vDir" [prj/sol/.autopilot/db/v_tpg.cpp:1899->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 55 'load' 'vDir_load' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884)> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (1.54ns)   --->   "%sub_ln1914 = sub i16 %boxHCoord_loc_1_out_load, i16 %zext_ln789_cast" [prj/sol/.autopilot/db/v_tpg.cpp:1914->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 56 'sub' 'sub_ln1914' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884)> <Delay = 1.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 57 [1/1] (1.54ns)   --->   "%add_ln1912 = add i16 %boxHCoord_loc_1_out_load, i16 %zext_ln789_cast" [prj/sol/.autopilot/db/v_tpg.cpp:1912->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 57 'add' 'add_ln1912' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884)> <Delay = 1.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln1887 = br i1 %hDir_load, void %if.then12.i, void %if.else.i" [prj/sol/.autopilot/db/v_tpg.cpp:1887->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 58 'br' 'br_ln1887' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884)> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (1.54ns)   --->   "%icmp_ln1889 = icmp_ugt  i16 %boxHCoord_loc_1_out_load, i16 %hMax_read" [prj/sol/.autopilot/db/v_tpg.cpp:1889->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 59 'icmp' 'icmp_ln1889' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & !hDir_load)> <Delay = 1.54> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%br_ln1889 = br i1 %icmp_ln1889, void %if.then12.i._crit_edge, void %if.then16.i" [prj/sol/.autopilot/db/v_tpg.cpp:1889->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 60 'br' 'br_ln1889' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & !hDir_load)> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (1.29ns)   --->   "%store_ln1890 = store i1 1, i1 %hDir" [prj/sol/.autopilot/db/v_tpg.cpp:1890->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 61 'store' 'store_ln1890' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & !hDir_load & icmp_ln1889)> <Delay = 1.29>
+ST_1 : Operation 62 [1/1] (1.29ns)   --->   "%store_ln1914 = store i16 %sub_ln1914, i16 %boxHCoord_loc_1_out" [prj/sol/.autopilot/db/v_tpg.cpp:1914->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 62 'store' 'store_ln1914' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & !hDir_load & icmp_ln1889)> <Delay = 1.29>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%br_ln1890 = br void %if.end22.i" [prj/sol/.autopilot/db/v_tpg.cpp:1890->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 63 'br' 'br_ln1890' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & !hDir_load & icmp_ln1889)> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (1.54ns)   --->   "%icmp_ln1894 = icmp_ugt  i16 %zext_ln1889, i16 %boxHCoord_loc_1_out_load" [prj/sol/.autopilot/db/v_tpg.cpp:1894->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 64 'icmp' 'icmp_ln1894' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & hDir_load)> <Delay = 1.54> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%br_ln1894 = br i1 %icmp_ln1894, void %if.else.i.if.end22.i_crit_edge, void %if.then20.i" [prj/sol/.autopilot/db/v_tpg.cpp:1894->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 65 'br' 'br_ln1894' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & hDir_load)> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (1.29ns)   --->   "%store_ln1914 = store i16 %sub_ln1914, i16 %boxHCoord_loc_1_out" [prj/sol/.autopilot/db/v_tpg.cpp:1914->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 66 'store' 'store_ln1914' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & hDir_load & !icmp_ln1894)> <Delay = 1.29>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%br_ln1894 = br void %if.end22.i" [prj/sol/.autopilot/db/v_tpg.cpp:1894->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 67 'br' 'br_ln1894' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & hDir_load & !icmp_ln1894)> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (1.29ns)   --->   "%store_ln1895 = store i1 0, i1 %hDir" [prj/sol/.autopilot/db/v_tpg.cpp:1895->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 68 'store' 'store_ln1895' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & hDir_load & icmp_ln1894)> <Delay = 1.29>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%br_ln1895 = br void %if.then12.i._crit_edge" [prj/sol/.autopilot/db/v_tpg.cpp:1895->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 69 'br' 'br_ln1895' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & hDir_load & icmp_ln1894)> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (1.29ns)   --->   "%store_ln1912 = store i16 %add_ln1912, i16 %boxHCoord_loc_1_out" [prj/sol/.autopilot/db/v_tpg.cpp:1912->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 70 'store' 'store_ln1912' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & hDir_load & icmp_ln1894) | (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & !hDir_load & !icmp_ln1889)> <Delay = 1.29>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%br_ln1911 = br void %if.end22.i" [prj/sol/.autopilot/db/v_tpg.cpp:1911->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 71 'br' 'br_ln1911' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & hDir_load & icmp_ln1894) | (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & !hDir_load & !icmp_ln1889)> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%boxVCoord_loc_1_out_load = load i16 %boxVCoord_loc_1_out" [prj/sol/.autopilot/db/v_tpg.cpp:1916->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 72 'load' 'boxVCoord_loc_1_out_load' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884)> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (1.54ns)   --->   "%sub_ln1918 = sub i16 %boxVCoord_loc_1_out_load, i16 %zext_ln789_cast" [prj/sol/.autopilot/db/v_tpg.cpp:1918->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 73 'sub' 'sub_ln1918' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884)> <Delay = 1.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 74 [1/1] (1.54ns)   --->   "%add_ln1916 = add i16 %boxVCoord_loc_1_out_load, i16 %zext_ln789_cast" [prj/sol/.autopilot/db/v_tpg.cpp:1916->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 74 'add' 'add_ln1916' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884)> <Delay = 1.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%br_ln1899 = br i1 %vDir_load, void %if.then25.i, void %if.else31.i" [prj/sol/.autopilot/db/v_tpg.cpp:1899->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 75 'br' 'br_ln1899' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884)> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (1.54ns)   --->   "%icmp_ln1901 = icmp_ugt  i16 %boxVCoord_loc_1_out_load, i16 %vMax_read" [prj/sol/.autopilot/db/v_tpg.cpp:1901->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 76 'icmp' 'icmp_ln1901' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & !vDir_load)> <Delay = 1.54> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%br_ln1901 = br i1 %icmp_ln1901, void %if.then25.i._crit_edge, void %if.then29.i" [prj/sol/.autopilot/db/v_tpg.cpp:1901->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 77 'br' 'br_ln1901' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & !vDir_load)> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (1.29ns)   --->   "%store_ln1902 = store i1 1, i1 %vDir" [prj/sol/.autopilot/db/v_tpg.cpp:1902->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 78 'store' 'store_ln1902' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & !vDir_load & icmp_ln1901)> <Delay = 1.29>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%br_ln1902 = br void %if.end38.i" [prj/sol/.autopilot/db/v_tpg.cpp:1902->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 79 'br' 'br_ln1902' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & !vDir_load & icmp_ln1901)> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (1.54ns)   --->   "%icmp_ln1906 = icmp_ugt  i16 %zext_ln1889, i16 %boxVCoord_loc_1_out_load" [prj/sol/.autopilot/db/v_tpg.cpp:1906->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 80 'icmp' 'icmp_ln1906' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & vDir_load)> <Delay = 1.54> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%br_ln1906 = br i1 %icmp_ln1906, void %if.end38.i, void %if.then36.i" [prj/sol/.autopilot/db/v_tpg.cpp:1906->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 81 'br' 'br_ln1906' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & vDir_load)> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (1.29ns)   --->   "%store_ln1918 = store i16 %sub_ln1918, i16 %boxVCoord_loc_1_out" [prj/sol/.autopilot/db/v_tpg.cpp:1918->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 82 'store' 'store_ln1918' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & vDir_load & !icmp_ln1906) | (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & !vDir_load & icmp_ln1901)> <Delay = 1.29>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%br_ln1915 = br void" [prj/sol/.autopilot/db/v_tpg.cpp:1915->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 83 'br' 'br_ln1915' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & vDir_load & !icmp_ln1906) | (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & !vDir_load & icmp_ln1901)> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (1.29ns)   --->   "%store_ln1907 = store i1 0, i1 %vDir" [prj/sol/.autopilot/db/v_tpg.cpp:1907->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 84 'store' 'store_ln1907' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & vDir_load & icmp_ln1906)> <Delay = 1.29>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%br_ln1907 = br void %if.then25.i._crit_edge" [prj/sol/.autopilot/db/v_tpg.cpp:1907->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 85 'br' 'br_ln1907' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & vDir_load & icmp_ln1906)> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (1.29ns)   --->   "%store_ln1916 = store i16 %add_ln1916, i16 %boxVCoord_loc_1_out" [prj/sol/.autopilot/db/v_tpg.cpp:1916->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 86 'store' 'store_ln1916' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & vDir_load & icmp_ln1906) | (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & !vDir_load & !icmp_ln1901)> <Delay = 1.29>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%br_ln1915 = br void" [prj/sol/.autopilot/db/v_tpg.cpp:1915->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 87 'br' 'br_ln1915' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & vDir_load & icmp_ln1906) | (!icmp_ln774 & patternId_val_read == 1 & icmp_ln1884 & !vDir_load & !icmp_ln1901)> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (1.54ns)   --->   "%icmp_ln1963_1 = icmp_eq  i16 %x_1, i16 %crossHairX_val_read" [prj/sol/.autopilot/db/v_tpg.cpp:1963->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 88 'icmp' 'icmp_ln1963_1' <Predicate = (!icmp_ln774 & patternId_val_read == 2)> <Delay = 1.54> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 89 [1/1] (0.80ns)   --->   "%or_ln1963 = or i1 %icmp_ln1963_read, i1 %icmp_ln1963_1" [prj/sol/.autopilot/db/v_tpg.cpp:1963->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 89 'or' 'or_ln1963' <Predicate = (!icmp_ln774 & patternId_val_read == 2)> <Delay = 0.80> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 90 [1/1] (1.35ns)   --->   "%switch_ln1974 = switch i8 %colorFormat_val_read, void %cond.false15.i, i8 0, void %sw.epilog_ifconv, i8 1, void %cond.end.i" [prj/sol/.autopilot/db/v_tpg.cpp:1974->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 90 'switch' 'switch_ln1974' <Predicate = (!icmp_ln774 & patternId_val_read == 2 & or_ln1963)> <Delay = 1.35>
+ST_1 : Operation 91 [1/1] (1.29ns)   --->   "%store_ln1956 = store i16 %x_2, i16 %x" [prj/sol/.autopilot/db/v_tpg.cpp:1956->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 91 'store' 'store_ln1956' <Predicate = (!icmp_ln774)> <Delay = 1.29>
+
+State 2 <SV = 1> <Delay = 3.89>
+ST_2 : Operation 92 [1/1] (0.00ns)   --->   "%trunc_ln774 = trunc i16 %x_1" [prj/sol/.autopilot/db/v_tpg.cpp:774]   --->   Operation 92 'trunc' 'trunc_ln774' <Predicate = (!icmp_ln774)> <Delay = 0.00>
+ST_2 : Operation 93 [1/1] (0.00ns)   --->   "%boxHCoord_loc_1_out_load_1 = load i16 %boxHCoord_loc_1_out"   --->   Operation 93 'load' 'boxHCoord_loc_1_out_load_1' <Predicate = (patternId_val_read == 1 & icmp_ln1884)> <Delay = 0.00>
+ST_2 : Operation 94 [1/1] (0.00ns)   --->   "%store_ln0 = store i16 %boxHCoord_loc_1_out_load_1, i16 %boxHCoord"   --->   Operation 94 'store' 'store_ln0' <Predicate = (patternId_val_read == 1 & icmp_ln1884)> <Delay = 0.00>
+ST_2 : Operation 95 [1/1] (0.00ns)   --->   "%boxVCoord_loc_1_out_load_1 = load i16 %boxVCoord_loc_1_out"   --->   Operation 95 'load' 'boxVCoord_loc_1_out_load_1' <Predicate = (patternId_val_read == 1 & icmp_ln1884)> <Delay = 0.00>
+ST_2 : Operation 96 [1/1] (0.00ns)   --->   "%store_ln0 = store i16 %boxVCoord_loc_1_out_load_1, i16 %boxVCoord"   --->   Operation 96 'store' 'store_ln0' <Predicate = (patternId_val_read == 1 & icmp_ln1884)> <Delay = 0.00>
+ST_2 : Operation 97 [1/1] (0.00ns)   --->   "%br_ln1922 = br void %if.end64.i" [prj/sol/.autopilot/db/v_tpg.cpp:1922->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 97 'br' 'br_ln1922' <Predicate = (patternId_val_read == 1 & icmp_ln1884)> <Delay = 0.00>
+ST_2 : Operation 98 [1/1] (0.00ns)   --->   "%boxTop = load i16 %boxVCoord_loc_1_out" [prj/sol/.autopilot/db/v_tpg.cpp:1928->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 98 'load' 'boxTop' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 0.00>
+ST_2 : Operation 99 [1/1] (0.00ns)   --->   "%boxLeft = load i16 %boxHCoord_loc_1_out" [prj/sol/.autopilot/db/v_tpg.cpp:1926->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 99 'load' 'boxLeft' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 0.00>
+ST_2 : Operation 100 [1/1] (1.54ns)   --->   "%boxRight = add i16 %boxLeft, i16 %boxSize_val_read" [prj/sol/.autopilot/db/v_tpg.cpp:1926->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 100 'add' 'boxRight' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 1.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 101 [1/1] (1.54ns)   --->   "%boxBottom = add i16 %boxTop, i16 %boxSize_val_read" [prj/sol/.autopilot/db/v_tpg.cpp:1928->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 101 'add' 'boxBottom' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 1.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 102 [1/1] (1.54ns)   --->   "%icmp_ln1932 = icmp_ult  i16 %y_read, i16 %boxTop" [prj/sol/.autopilot/db/v_tpg.cpp:1932->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 102 'icmp' 'icmp_ln1932' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 1.54> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 103 [1/1] (0.00ns) (grouped into LUT with out node and_ln1942)   --->   "%xor_ln1932 = xor i1 %icmp_ln1932, i1 1" [prj/sol/.autopilot/db/v_tpg.cpp:1932->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 103 'xor' 'xor_ln1932' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 104 [1/1] (1.54ns)   --->   "%icmp_ln1932_1 = icmp_ult  i16 %y_read, i16 %boxBottom" [prj/sol/.autopilot/db/v_tpg.cpp:1932->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 104 'icmp' 'icmp_ln1932_1' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 1.54> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 105 [1/1] (1.54ns)   --->   "%icmp_ln1937 = icmp_ult  i16 %x_1, i16 %boxLeft" [prj/sol/.autopilot/db/v_tpg.cpp:1937->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 105 'icmp' 'icmp_ln1937' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 1.54> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 106 [1/1] (0.00ns) (grouped into LUT with out node and_ln1942)   --->   "%xor_ln1937 = xor i1 %icmp_ln1937, i1 1" [prj/sol/.autopilot/db/v_tpg.cpp:1937->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 106 'xor' 'xor_ln1937' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 107 [1/1] (1.54ns)   --->   "%icmp_ln1937_1 = icmp_ult  i16 %x_1, i16 %boxRight" [prj/sol/.autopilot/db/v_tpg.cpp:1937->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 107 'icmp' 'icmp_ln1937_1' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 1.54> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 108 [1/1] (0.00ns) (grouped into LUT with out node and_ln1942)   --->   "%and_ln1942_2 = and i1 %icmp_ln1937_1, i1 %xor_ln1937" [prj/sol/.autopilot/db/v_tpg.cpp:1942->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 108 'and' 'and_ln1942_2' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 109 [1/1] (0.00ns) (grouped into LUT with out node and_ln1942)   --->   "%and_ln1942_1 = and i1 %xor_ln1932, i1 %icmp_ln1932_1" [prj/sol/.autopilot/db/v_tpg.cpp:1942->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 109 'and' 'and_ln1942_1' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 110 [1/1] (0.80ns) (out node of the LUT)   --->   "%and_ln1942 = and i1 %and_ln1942_1, i1 %and_ln1942_2" [prj/sol/.autopilot/db/v_tpg.cpp:1942->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 110 'and' 'and_ln1942' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 0.80> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 111 [1/1] (1.35ns)   --->   "%br_ln1963 = br i1 %or_ln1963, void %sw.epilog_ifconv, void %if.then.i130" [prj/sol/.autopilot/db/v_tpg.cpp:1963->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 111 'br' 'br_ln1963' <Predicate = (!icmp_ln774 & patternId_val_read == 2)> <Delay = 1.35>
+ST_2 : Operation 112 [1/1] (0.81ns)   --->   "%select_ln1975 = select i1 %trunc_ln774, i2 2, i2 1" [prj/sol/.autopilot/db/v_tpg.cpp:1975->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 112 'select' 'select_ln1975' <Predicate = (!icmp_ln774 & patternId_val_read == 2 & or_ln1963 & colorFormat_val_read != 0 & colorFormat_val_read != 1)> <Delay = 0.81> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.81> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 113 [1/1] (1.29ns)   --->   "%br_ln1975 = br void %cond.end.i" [prj/sol/.autopilot/db/v_tpg.cpp:1975->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 113 'br' 'br_ln1975' <Predicate = (!icmp_ln774 & patternId_val_read == 2 & or_ln1963 & colorFormat_val_read != 0 & colorFormat_val_read != 1)> <Delay = 1.29>
+ST_2 : Operation 114 [1/1] (0.00ns)   --->   "%phi_ln1975 = phi i2 %select_ln1975, void %cond.false15.i, i2 1, void %if.then.i130" [prj/sol/.autopilot/db/v_tpg.cpp:1975->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 114 'phi' 'phi_ln1975' <Predicate = (!icmp_ln774 & patternId_val_read == 2 & or_ln1963 & colorFormat_val_read != 0)> <Delay = 0.00>
+ST_2 : Operation 115 [1/1] (0.00ns)   --->   "%zext_ln1975 = zext i2 %phi_ln1975" [prj/sol/.autopilot/db/v_tpg.cpp:1975->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 115 'zext' 'zext_ln1975' <Predicate = (!icmp_ln774 & patternId_val_read == 2 & or_ln1963 & colorFormat_val_read != 0)> <Delay = 0.00>
+ST_2 : Operation 116 [1/1] (0.00ns)   --->   "%whiYuv_2_addr = getelementptr i8 %whiYuv_2, i64 0, i64 %zext_ln1975" [prj/sol/.autopilot/db/v_tpg.cpp:1975->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 116 'getelementptr' 'whiYuv_2_addr' <Predicate = (!icmp_ln774 & patternId_val_read == 2 & or_ln1963 & colorFormat_val_read != 0)> <Delay = 0.00>
+ST_2 : Operation 117 [2/2] (1.75ns)   --->   "%whiYuv_2_load = load i2 %whiYuv_2_addr" [prj/sol/.autopilot/db/v_tpg.cpp:1974->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 117 'load' 'whiYuv_2_load' <Predicate = (!icmp_ln774 & patternId_val_read == 2 & or_ln1963 & colorFormat_val_read != 0)> <Delay = 1.75> <CoreInst = "ROM">   --->   Core 94 'ROM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 3> <ROM>
+ST_2 : Operation 118 [1/1] (1.35ns)   --->   "%br_ln1974 = br void %sw.epilog_ifconv" [prj/sol/.autopilot/db/v_tpg.cpp:1974->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 118 'br' 'br_ln1974' <Predicate = (!icmp_ln774 & patternId_val_read == 2 & or_ln1963 & colorFormat_val_read != 0)> <Delay = 1.35>
+
+State 3 <SV = 2> <Delay = 2.46>
+ST_3 : Operation 119 [1/1] (0.00ns)   --->   "%specpipeline_ln777 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_1" [prj/sol/.autopilot/db/v_tpg.cpp:777]   --->   Operation 119 'specpipeline' 'specpipeline_ln777' <Predicate = (!icmp_ln774)> <Delay = 0.00>
+ST_3 : Operation 120 [1/1] (0.00ns)   --->   "%speclooptripcount_ln763 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 65535, i64 32767" [prj/sol/.autopilot/db/v_tpg.cpp:763]   --->   Operation 120 'speclooptripcount' 'speclooptripcount_ln763' <Predicate = (!icmp_ln774)> <Delay = 0.00>
+ST_3 : Operation 121 [1/1] (0.00ns)   --->   "%specloopname_ln774 = specloopname void @_ssdm_op_SpecLoopName, void @empty_26" [prj/sol/.autopilot/db/v_tpg.cpp:774]   --->   Operation 121 'specloopname' 'specloopname_ln774' <Predicate = (!icmp_ln774)> <Delay = 0.00>
+ST_3 : Operation 122 [1/1] ( I:2.46ns O:2.46ns )   --->   "%bckgndYUV_read = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %bckgndYUV" [prj/sol/.autopilot/db/v_tpg.cpp:778]   --->   Operation 122 'read' 'bckgndYUV_read' <Predicate = (!icmp_ln774)> <Delay = 2.46> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 16> <FIFO>
+ST_3 : Operation 123 [1/1] (0.00ns)   --->   "%pixIn = trunc i24 %bckgndYUV_read" [prj/sol/.autopilot/db/v_tpg.cpp:778]   --->   Operation 123 'trunc' 'pixIn' <Predicate = (!icmp_ln774)> <Delay = 0.00>
+ST_3 : Operation 124 [1/1] (0.00ns)   --->   "%pixIn_5 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %bckgndYUV_read, i32 8, i32 15" [prj/sol/.autopilot/db/v_tpg.cpp:778]   --->   Operation 124 'partselect' 'pixIn_5' <Predicate = (!icmp_ln774)> <Delay = 0.00>
+ST_3 : Operation 125 [1/1] (0.00ns)   --->   "%pixIn_6 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %bckgndYUV_read, i32 16, i32 23" [prj/sol/.autopilot/db/v_tpg.cpp:778]   --->   Operation 125 'partselect' 'pixIn_6' <Predicate = (!icmp_ln774)> <Delay = 0.00>
+ST_3 : Operation 126 [1/1] (1.35ns)   --->   "%br_ln1942 = br i1 %and_ln1942, void %sw.epilog_ifconv, void %if.then97.i" [prj/sol/.autopilot/db/v_tpg.cpp:1942->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 126 'br' 'br_ln1942' <Predicate = (!icmp_ln774 & patternId_val_read == 1)> <Delay = 1.35>
+ST_3 : Operation 127 [1/1] (0.00ns) (grouped into LUT with out node pixOut_5)   --->   "%and_ln1947 = and i1 %icmp_read, i1 %trunc_ln774" [prj/sol/.autopilot/db/v_tpg.cpp:1947->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 127 'and' 'and_ln1947' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & and_ln1942)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 128 [1/1] (0.80ns) (out node of the LUT)   --->   "%pixOut_5 = select i1 %and_ln1947, i8 %boxColorB_val_read, i8 %boxColorG_val_read" [prj/sol/.autopilot/db/v_tpg.cpp:1947->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 128 'select' 'pixOut_5' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & and_ln1942)> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 129 [1/1] (1.35ns)   --->   "%br_ln1951 = br void %sw.epilog_ifconv" [prj/sol/.autopilot/db/v_tpg.cpp:1951->prj/sol/.autopilot/db/v_tpg.cpp:788]   --->   Operation 129 'br' 'br_ln1951' <Predicate = (!icmp_ln774 & patternId_val_read == 1 & and_ln1942)> <Delay = 1.35>
+ST_3 : Operation 130 [1/2] ( I:1.75ns O:1.75ns )   --->   "%whiYuv_2_load = load i2 %whiYuv_2_addr" [prj/sol/.autopilot/db/v_tpg.cpp:1974->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 130 'load' 'whiYuv_2_load' <Predicate = (!icmp_ln774 & patternId_val_read == 2 & or_ln1963 & colorFormat_val_read != 0)> <Delay = 1.75> <CoreInst = "ROM">   --->   Core 94 'ROM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 3> <ROM>
+ST_3 : Operation 143 [1/1] (1.29ns)   --->   "%ret_ln0 = ret"   --->   Operation 143 'ret' 'ret_ln0' <Predicate = (icmp_ln774)> <Delay = 1.29>
+
+State 4 <SV = 3> <Delay = 2.91>
+ST_4 : Operation 131 [1/1] (0.00ns)   --->   "%pix_4 = phi i8 %pixIn_6, void %for.body6.split, i8 %boxColorB_val_read, void %if.then97.i, i8 %pixIn_6, void %if.end64.i, i8 %select_ln1977_read, void %cond.end.i, i8 %select_ln1977_read, void %if.then.i130, i8 %pixIn_6, void %sw.bb10"   --->   Operation 131 'phi' 'pix_4' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 132 [1/1] (0.00ns)   --->   "%pix_3 = phi i8 %pixIn_5, void %for.body6.split, i8 %pixOut_5, void %if.then97.i, i8 %pixIn_5, void %if.end64.i, i8 %whiYuv_2_load, void %cond.end.i, i8 240, void %if.then.i130, i8 %pixIn_5, void %sw.bb10"   --->   Operation 132 'phi' 'pix_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 133 [1/1] (0.00ns)   --->   "%pix = phi i8 %pixIn, void %for.body6.split, i8 %boxColorR_val_read, void %if.then97.i, i8 %pixIn, void %if.end64.i, i8 240, void %cond.end.i, i8 240, void %if.then.i130, i8 %pixIn, void %sw.bb10"   --->   Operation 133 'phi' 'pix' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 134 [1/1] (0.00ns) (grouped into LUT with out node pixOut_12)   --->   "%pixOut_9 = select i1 %and_ln1989_read, i8 0, i8 %pix" [prj/sol/.autopilot/db/v_tpg.cpp:1989->prj/sol/.autopilot/db/v_tpg.cpp:803]   --->   Operation 134 'select' 'pixOut_9' <Predicate = (!icmp_ln801)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 135 [1/1] (0.00ns) (grouped into LUT with out node pixOut_11)   --->   "%pixOut_10 = select i1 %and_ln1991_read, i8 0, i8 %pix_3" [prj/sol/.autopilot/db/v_tpg.cpp:1991->prj/sol/.autopilot/db/v_tpg.cpp:803]   --->   Operation 135 'select' 'pixOut_10' <Predicate = (!icmp_ln801)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 136 [1/1] (0.00ns) (grouped into LUT with out node p_0_2_0_0_0269598)   --->   "%select_ln1993 = select i1 %and_ln1993_read, i8 0, i8 %pix_4" [prj/sol/.autopilot/db/v_tpg.cpp:1993->prj/sol/.autopilot/db/v_tpg.cpp:803]   --->   Operation 136 'select' 'select_ln1993' <Predicate = (!icmp_ln801)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 137 [1/1] (0.44ns) (out node of the LUT)   --->   "%p_0_2_0_0_0269598 = select i1 %icmp_ln801, i8 %pix_4, i8 %select_ln1993" [prj/sol/.autopilot/db/v_tpg.cpp:801]   --->   Operation 137 'select' 'p_0_2_0_0_0269598' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 138 [1/1] (0.44ns) (out node of the LUT)   --->   "%pixOut_11 = select i1 %icmp_ln801, i8 %pix_3, i8 %pixOut_10" [prj/sol/.autopilot/db/v_tpg.cpp:801]   --->   Operation 138 'select' 'pixOut_11' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 139 [1/1] (0.44ns) (out node of the LUT)   --->   "%pixOut_12 = select i1 %icmp_ln801, i8 %pix, i8 %pixOut_9" [prj/sol/.autopilot/db/v_tpg.cpp:801]   --->   Operation 139 'select' 'pixOut_12' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 140 [1/1] (0.00ns)   --->   "%or_ln808_3 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i8.i8.i8, i8 %p_0_2_0_0_0269598, i8 %pixOut_11, i8 %pixOut_12" [prj/sol/.autopilot/db/v_tpg.cpp:808]   --->   Operation 140 'bitconcatenate' 'or_ln808_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 141 [1/1] ( I:2.46ns O:2.46ns )   --->   "%write_ln808 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %ovrlayYUV, i24 %or_ln808_3" [prj/sol/.autopilot/db/v_tpg.cpp:808]   --->   Operation 141 'write' 'write_ln808' <Predicate = true> <Delay = 2.46> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 16> <FIFO>
+ST_4 : Operation 142 [1/1] (0.00ns)   --->   "%br_ln774 = br void %for.body6" [prj/sol/.autopilot/db/v_tpg.cpp:774]   --->   Operation 142 'br' 'br_ln774' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.750ns, clock uncertainty: 1.822ns.
+
+ <State 1>: 4.141ns
+The critical path consists of the following:
+	'store' operation ('store_ln1956', prj/sol/.autopilot/db/v_tpg.cpp:1956->prj/sol/.autopilot/db/v_tpg.cpp:793) of constant 0 16 bit on local variable 'x', prj/sol/.autopilot/db/v_tpg.cpp:1956->prj/sol/.autopilot/db/v_tpg.cpp:793 [66]  (1.298 ns)
+	'load' operation 16 bit ('x', prj/sol/.autopilot/db/v_tpg.cpp:1884->prj/sol/.autopilot/db/v_tpg.cpp:788) on local variable 'x', prj/sol/.autopilot/db/v_tpg.cpp:1956->prj/sol/.autopilot/db/v_tpg.cpp:793 [69]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln774', prj/sol/.autopilot/db/v_tpg.cpp:774) [70]  (1.545 ns)
+	'store' operation ('store_ln1914', prj/sol/.autopilot/db/v_tpg.cpp:1914->prj/sol/.autopilot/db/v_tpg.cpp:788) of variable 'sub_ln1914', prj/sol/.autopilot/db/v_tpg.cpp:1914->prj/sol/.autopilot/db/v_tpg.cpp:788 16 bit on local variable 'boxHCoord_loc_1_out' [105]  (1.298 ns)
+
+ <State 2>: 3.890ns
+The critical path consists of the following:
+	'load' operation 16 bit ('boxTop', prj/sol/.autopilot/db/v_tpg.cpp:1928->prj/sol/.autopilot/db/v_tpg.cpp:788) on local variable 'boxVCoord_loc_1_out' [143]  (0.000 ns)
+	'add' operation 16 bit ('boxBottom', prj/sol/.autopilot/db/v_tpg.cpp:1928->prj/sol/.autopilot/db/v_tpg.cpp:788) [146]  (1.545 ns)
+	'icmp' operation 1 bit ('icmp_ln1932_1', prj/sol/.autopilot/db/v_tpg.cpp:1932->prj/sol/.autopilot/db/v_tpg.cpp:788) [149]  (1.545 ns)
+	'and' operation 1 bit ('and_ln1942_1', prj/sol/.autopilot/db/v_tpg.cpp:1942->prj/sol/.autopilot/db/v_tpg.cpp:788) [154]  (0.000 ns)
+	'and' operation 1 bit ('and_ln1942', prj/sol/.autopilot/db/v_tpg.cpp:1942->prj/sol/.autopilot/db/v_tpg.cpp:788) [155]  (0.800 ns)
+
+ <State 3>: 2.464ns
+The critical path consists of the following:
+	fifo read operation ('bckgndYUV_read', prj/sol/.autopilot/db/v_tpg.cpp:778) on port 'bckgndYUV' (prj/sol/.autopilot/db/v_tpg.cpp:778) [78]  (2.464 ns)
+
+ <State 4>: 2.912ns
+The critical path consists of the following:
+	'phi' operation 8 bit ('pixIn') with incoming values : ('select_ln1977_read') ('boxColorB_val_read') ('pixIn', prj/sol/.autopilot/db/v_tpg.cpp:778) [177]  (0.000 ns)
+	'select' operation 8 bit ('p_0_2_0_0_0269598', prj/sol/.autopilot/db/v_tpg.cpp:801) [183]  (0.448 ns)
+	fifo write operation ('write_ln808', prj/sol/.autopilot/db/v_tpg.cpp:808) on port 'ovrlayYUV' (prj/sol/.autopilot/db/v_tpg.cpp:808) [187]  (2.464 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
