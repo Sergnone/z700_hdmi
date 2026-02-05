@@ -1,0 +1,47 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Thu Feb  5 12:23:25 2026
+| Host         : serg running 64-bit Ubuntu 24.04.3 LTS
+| Command      : report_methodology -file top_design_wrapper_methodology_drc_routed.rpt -pb top_design_wrapper_methodology_drc_routed.pb -rpx top_design_wrapper_methodology_drc_routed.rpx
+| Design       : top_design_wrapper
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 2
++----------+----------+---------------------------------------------+--------+
+| Rule     | Severity | Description                                 | Checks |
++----------+----------+---------------------------------------------+--------+
+| TIMING-9 | Warning  | Unknown CDC Logic                           | 1      |
+| XDCB-5   | Warning  | Runtime inefficient way to find pin objects | 1      |
++----------+----------+---------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '6' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VDMA/HDMI_VDMA.gen/sources_1/bd/top_design/ip/top_design_rgb2dvi_0_0/src/rgb2dvi.xdc (Line: 5)
+Related violations: <none>
+
+
