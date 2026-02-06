@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date             : Wed Feb  4 18:54:18 2026
+| Date             : Fri Feb  6 18:12:14 2026
 | Host             : serg running 64-bit Ubuntu 24.04.3 LTS
 | Command          : report_power -file top_design_wrapper_power_routed.rpt -pb top_design_wrapper_power_summary_routed.pb -rpx top_design_wrapper_power_routed.rpx
 | Design           : top_design_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.893        |
+| Total On-Chip Power (W)  | 1.895        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.745        |
+| Dynamic (W)              | 1.747        |
 | Device Static (W)        | 0.148        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 63.2         |
-| Junction Temperature (C) | 46.8         |
+| Max Ambient (C)          | 63.1         |
+| Junction Temperature (C) | 46.9         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -66,9 +66,9 @@ Table of Contents
 | MMCM                     |     0.107 |        1 |         4 |           25.00 |
 | DSPs                     |     0.022 |       16 |       220 |            7.27 |
 | I/O                      |     0.133 |        9 |       125 |            7.20 |
-| PS7                      |     1.279 |        1 |       --- |             --- |
+| PS7                      |     1.281 |        1 |       --- |             --- |
 | Static Power             |     0.148 |          |           |                 |
-| Total                    |     1.893 |          |           |                 |
+| Total                    |     1.895 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -96,7 +96,7 @@ Table of Contents
 | Vccpll    |       1.800 |     0.019 |       0.016 |      0.003 |       NA    | Unspecified | NA         |
 | Vcco_ddr  |       1.500 |     0.356 |       0.354 |      0.002 |       NA    | Unspecified | NA         |
 | Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco_mio1 |       1.800 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco_mio1 |       1.800 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 
@@ -158,14 +158,14 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| top_design_wrapper       |     1.745 |
-|   top_design_i           |     1.745 |
+| top_design_wrapper       |     1.747 |
+|   top_design_i           |     1.747 |
 |     axi_dynclk_0         |     0.110 |
 |       U0                 |     0.110 |
 |     axi_smc              |     0.021 |
 |       inst               |     0.021 |
-|     processing_system7_0 |     1.280 |
-|       inst               |     1.280 |
+|     processing_system7_0 |     1.282 |
+|       inst               |     1.282 |
 |     rgb2dvi_0            |     0.134 |
 |       U0                 |     0.134 |
 |     smartconnect_0       |     0.052 |

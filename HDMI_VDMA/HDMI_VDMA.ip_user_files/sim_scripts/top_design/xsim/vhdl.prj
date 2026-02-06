@@ -1,0 +1,22 @@
+vhdl xil_defaultlib  \
+"../../../bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_1/sim/bd_b6ca_psr_aclk_0.vhd" \
+"../../../bd/top_design/ip/top_design_rst_ps7_0_148M_1/sim/top_design_rst_ps7_0_148M_1.vhd" \
+"../../../bd/top_design/ip/top_design_v_tc_0_1/sim/top_design_v_tc_0_1.vhd" \
+"../../../../HDMI_VDMA.gen/sources_1/bd/top_design/ipshared/d57c/src/ClockGen.vhd" \
+"../../../../HDMI_VDMA.gen/sources_1/bd/top_design/ipshared/d57c/src/SyncAsync.vhd" \
+"../../../../HDMI_VDMA.gen/sources_1/bd/top_design/ipshared/d57c/src/SyncAsyncReset.vhd" \
+"../../../../HDMI_VDMA.gen/sources_1/bd/top_design/ipshared/d57c/src/DVI_Constants.vhd" \
+"../../../../HDMI_VDMA.gen/sources_1/bd/top_design/ipshared/d57c/src/OutputSERDES.vhd" \
+"../../../../HDMI_VDMA.gen/sources_1/bd/top_design/ipshared/d57c/src/TMDS_Encoder.vhd" \
+"../../../../HDMI_VDMA.gen/sources_1/bd/top_design/ipshared/d57c/src/rgb2dvi.vhd" \
+"../../../bd/top_design/ip/top_design_rgb2dvi_0_0/sim/top_design_rgb2dvi_0_0.vhd" \
+"../../../bd/top_design/ip/top_design_proc_sys_reset_0_0/sim/top_design_proc_sys_reset_0_0.vhd" \
+"../../../bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_8df6_psr_aclk_0.vhd" \
+"../../../bd/top_design/ipshared/2a7c/src/SyncAsync.vhd" \
+"../../../../HDMI_VDMA.gen/sources_1/bd/top_design/ipshared/2a7c/src/axi_dynclk_S00_AXI.vhd" \
+"../../../../HDMI_VDMA.gen/sources_1/bd/top_design/ipshared/2a7c/src/axi_dynclk.vhd" \
+"../../../bd/top_design/ip/top_design_axi_dynclk_0_0/sim/top_design_axi_dynclk_0_0.vhd" \
+"../../../bd/top_design/ip/top_design_axi_vdma_0_0/sim/top_design_axi_vdma_0_0.vhd" \
+
+# Do not sort compile order
+nosort

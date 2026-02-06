@@ -60,6 +60,13 @@
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/scuwdt/src/CMakeFiles/install.dir
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/scuwdt/src/CMakeFiles/install/local.dir
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/scuwdt/src/CMakeFiles/install/strip.dir
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/sdps/src/CMakeFiles/sdps.dir
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/sdps/src/CMakeFiles/edit_cache.dir
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/sdps/src/CMakeFiles/rebuild_cache.dir
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/sdps/src/CMakeFiles/list_install_components.dir
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/sdps/src/CMakeFiles/install.dir
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/sdps/src/CMakeFiles/install/local.dir
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/sdps/src/CMakeFiles/install/strip.dir
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/ttcps/src/CMakeFiles/ttcps.dir
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/ttcps/src/CMakeFiles/edit_cache.dir
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/ttcps/src/CMakeFiles/rebuild_cache.dir

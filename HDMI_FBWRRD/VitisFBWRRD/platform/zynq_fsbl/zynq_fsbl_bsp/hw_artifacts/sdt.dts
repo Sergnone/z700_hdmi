@@ -18,7 +18,7 @@
         };
 
         cpus_a9: cpus-a9@0 {
-                phandle = <0x33>;
+                phandle = <0x34>;
                 #address-cells = <0x1>;
                 #size-cells = <0x0>;
                 compatible = "cpus,cluster";
@@ -50,6 +50,7 @@
                  <0xf8f00000 &ps7_scuc_0 0xf8f00000 0xfd>,
                  <0xf8f00600 &scutimer 0xf8f00600 0x20>,
                  <0xf8f00620 &scuwdt 0xf8f00620 0xe0>,
+                 <0xe0100000 &sdhci0 0xe0100000 0x1000>,
                  <0xf8000000 &slcr 0xf8000000 0x1000>,
                  <0xf8001000 &ttc0 0xf8001000 0x1000>,
                  <0xf8002000 &ttc1 0xf8002000 0x1000>,
@@ -59,7 +60,7 @@
                 #ranges-size-cells = <0x1>;
 
                 ps7_cortexa9_0: cpu@0 {
-                        phandle = <0x2c>;
+                        phandle = <0x2d>;
                         compatible = "arm,cortex-a9";
                         device_type = "cpu";
                         reg = <0x0>;
@@ -79,7 +80,7 @@
                 };
 
                 ps7_cortexa9_1: cpu@1 {
-                        phandle = <0x2e>;
+                        phandle = <0x2f>;
                         compatible = "arm,cortex-a9";
                         device_type = "cpu";
                         reg = <0x1>;
@@ -96,7 +97,7 @@
         };
 
         fpga_full: fpga-region {
-                phandle = <0x34>;
+                phandle = <0x35>;
                 compatible = "fpga-region";
                 fpga-mgr = <&devcfg>;
                 #address-cells = <0x1>;
@@ -112,7 +113,7 @@
         };
 
         regulator_vccpint: fixedregulator {
-                phandle = <0x23>;
+                phandle = <0x24>;
                 compatible = "regulator-fixed";
                 regulator-name = "VCCPINT";
                 regulator-min-microvolt = <0xf4240>;
@@ -136,7 +137,7 @@
                                 reg = <0x0>;
 
                                 replicator_out_port0: endpoint {
-                                        phandle = <0x28>;
+                                        phandle = <0x29>;
                                         remote-endpoint = <&tpiu_in_port>;
                                 };
                         };
@@ -145,7 +146,7 @@
                                 reg = <0x1>;
 
                                 replicator_out_port1: endpoint {
-                                        phandle = <0x27>;
+                                        phandle = <0x28>;
                                         remote-endpoint = <&etb_in_port>;
                                 };
                         };
@@ -156,7 +157,7 @@
                         port {
 
                                 replicator_in_port0: endpoint {
-                                        phandle = <0x29>;
+                                        phandle = <0x2a>;
                                         remote-endpoint = <&funnel_out_port>;
                                 };
                         };
@@ -173,7 +174,7 @@
                 ranges;
 
                 adc: adc@f8007100 {
-                        phandle = <0x21>;
+                        phandle = <0x22>;
                         compatible = "xlnx,zynq-xadc-1.00.a";
                         reg = <0xf8007100 0x20>;
                         interrupts = <0x0 0x7 0x4>;
@@ -185,7 +186,7 @@
                 };
 
                 can0: can@e0008000 {
-                        phandle = <0x35>;
+                        phandle = <0x36>;
                         compatible = "xlnx,zynq-can-1.0";
                         status = "disabled";
                         clocks = <&clkc 0x13>,
@@ -199,7 +200,7 @@
                 };
 
                 can1: can@e0009000 {
-                        phandle = <0x36>;
+                        phandle = <0x37>;
                         compatible = "xlnx,zynq-can-1.0";
                         status = "disabled";
                         clocks = <&clkc 0x14>,
@@ -213,7 +214,7 @@
                 };
 
                 gpio0: gpio@e000a000 {
-                        phandle = <0x37>;
+                        phandle = <0x38>;
                         compatible = "xlnx,zynq-gpio-1.0";
                         #gpio-cells = <0x2>;
                         clocks = <&clkc 0x2a>;
@@ -226,7 +227,7 @@
                 };
 
                 i2c0: i2c@e0004000 {
-                        phandle = <0x38>;
+                        phandle = <0x39>;
                         compatible = "cdns,i2c-r1p10";
                         status = "disabled";
                         clocks = <&clkc 0x26>;
@@ -239,7 +240,7 @@
                 };
 
                 i2c1: i2c@e0005000 {
-                        phandle = <0x39>;
+                        phandle = <0x3a>;
                         compatible = "cdns,i2c-r1p10";
                         status = "disabled";
                         clocks = <&clkc 0x27>;
@@ -289,7 +290,7 @@
                 };
 
                 ocm: sram@fffc0000 {
-                        phandle = <0x3a>;
+                        phandle = <0x3b>;
                         compatible = "mmio-sram";
                         reg = <0xfffc0000 0x10000>;
                         #address-cells = <0x1>;
@@ -302,7 +303,7 @@
                 };
 
                 uart0: serial@e0000000 {
-                        phandle = <0x3b>;
+                        phandle = <0x3c>;
                         compatible = "xlnx,xuartps", "cdns,uart-r1p8";
                         status = "disabled";
                         clocks = <&clkc 0x17>,
@@ -314,7 +315,7 @@
                 };
 
                 uart1: serial@e0001000 {
-                        phandle = <0x20>;
+                        phandle = <0x21>;
                         compatible = "xlnx,xuartps", "cdns,uart-r1p8";
                         status = "okay";
                         clocks = <&clkc 0x18>,
@@ -333,7 +334,7 @@
                 };
 
                 spi0: spi@e0006000 {
-                        phandle = <0x3c>;
+                        phandle = <0x3d>;
                         compatible = "xlnx,zynq-spi-r1p6";
                         reg = <0xe0006000 0x1000>;
                         status = "disabled";
@@ -347,7 +348,7 @@
                 };
 
                 spi1: spi@e0007000 {
-                        phandle = <0x3d>;
+                        phandle = <0x3e>;
                         compatible = "xlnx,zynq-spi-r1p6";
                         reg = <0xe0007000 0x1000>;
                         status = "disabled";
@@ -361,7 +362,7 @@
                 };
 
                 qspi: spi@e000d000 {
-                        phandle = <0x3e>;
+                        phandle = <0x3f>;
                         compatible = "xlnx,zynq-qspi-1.0";
                         reg = <0xe000d000 0x1000>;
                         interrupt-parent = <&intc>;
@@ -375,7 +376,7 @@
                 };
 
                 gem0: ethernet@e000b000 {
-                        phandle = <0x3f>;
+                        phandle = <0x40>;
                         compatible = "xlnx,zynq-gem", "cdns,gem";
                         reg = <0xe000b000 0x1000>;
                         status = "disabled";
@@ -390,7 +391,7 @@
                 };
 
                 gem1: ethernet@e000c000 {
-                        phandle = <0x40>;
+                        phandle = <0x41>;
                         compatible = "xlnx,zynq-gem", "cdns,gem";
                         reg = <0xe000c000 0x1000>;
                         status = "disabled";
@@ -405,7 +406,7 @@
                 };
 
                 smcc: memory-controller@e000e000 {
-                        phandle = <0x41>;
+                        phandle = <0x42>;
                         compatible = "arm,pl353-smc-r2p1", "arm,primecell";
                         reg = <0xe000e000 0x1000>;
                         status = "disabled";
@@ -419,14 +420,14 @@
                         interrupts = <0x0 0x12 0x4>;
 
                         nfc0: nand-controller@0,0 {
-                                phandle = <0x42>;
+                                phandle = <0x43>;
                                 compatible = "arm,pl353-nand-r2p1";
                                 reg = <0x0 0x0 0x1000000>;
                                 status = "disabled";
                         };
 
                         nor0: flash@1,0 {
-                                phandle = <0x43>;
+                                phandle = <0x44>;
                                 status = "disabled";
                                 compatible = "cfi-flash";
                                 reg = <0x1 0x0 0x2000000>;
@@ -434,15 +435,21 @@
                 };
 
                 sdhci0: mmc@e0100000 {
-                        phandle = <0x44>;
+                        phandle = <0x1d>;
                         compatible = "arasan,sdhci-8.9a";
-                        status = "disabled";
+                        status = "okay";
                         clock-names = "clk_xin", "clk_ahb";
                         clocks = <&clkc 0x15>,
                          <&clkc 0x20>;
                         interrupt-parent = <&intc>;
                         interrupts = <0x0 0x18 0x4>;
                         reg = <0xe0100000 0x1000>;
+                        xlnx,has-power = <0x0>;
+                        xlnx,ip-name = "ps7_sdio";
+                        xlnx,sdio-clk-freq-hz = <0x5f5e100>;
+                        xlnx,has-wp = <0x0>;
+                        xlnx,has-cd = <0x1>;
+                        xlnx,name = "ps7_sd_0";
                 };
 
                 sdhci1: mmc@e0101000 {
@@ -458,7 +465,7 @@
                 };
 
                 slcr: slcr@f8000000 {
-                        phandle = <0x1d>;
+                        phandle = <0x1e>;
                         bootph-all;
                         #address-cells = <0x1>;
                         #size-cells = <0x1>;
@@ -470,7 +477,7 @@
                         xlnx,name = "ps7_slcr_0";
 
                         clkc: clkc@100 {
-                                phandle = <0x22>;
+                                phandle = <0x23>;
                                 bootph-all;
                                 #clock-cells = <0x1>;
                                 compatible = "xlnx,ps7-clkc";
@@ -548,7 +555,7 @@
                 };
 
                 ttc0: timer@f8001000 {
-                        phandle = <0x1e>;
+                        phandle = <0x1f>;
                         interrupt-parent = <&intc>;
                         interrupts = <0x0 0xa 0x4 0x0 0xb 0x4 0x0 0xc 0x4>;
                         compatible = "cdns,ttc";
@@ -567,7 +574,7 @@
                 };
 
                 ttc1: timer@f8002000 {
-                        phandle = <0x1f>;
+                        phandle = <0x20>;
                         interrupt-parent = <&intc>;
                         interrupts = <0x0 0x25 0x4 0x0 0x26 0x4 0x0 0x27 0x4>;
                         compatible = "cdns,ttc";
@@ -663,7 +670,7 @@
                                 port {
 
                                         etb_in_port: endpoint {
-                                                phandle = <0x25>;
+                                                phandle = <0x26>;
                                                 remote-endpoint = <&replicator_out_port1>;
                                         };
                                 };
@@ -683,7 +690,7 @@
                                 port {
 
                                         tpiu_in_port: endpoint {
-                                                phandle = <0x24>;
+                                                phandle = <0x25>;
                                                 remote-endpoint = <&replicator_out_port0>;
                                         };
                                 };
@@ -703,7 +710,7 @@
                                 port {
 
                                         funnel_out_port: endpoint {
-                                                phandle = <0x26>;
+                                                phandle = <0x27>;
                                                 remote-endpoint = <&replicator_in_port0>;
                                         };
                                 };
@@ -717,7 +724,7 @@
                                         reg = <0x0>;
 
                                         funnel0_in_port0: endpoint {
-                                                phandle = <0x2d>;
+                                                phandle = <0x2e>;
                                                 remote-endpoint = <&ptm0_out_port>;
                                         };
                                 };
@@ -726,7 +733,7 @@
                                         reg = <0x1>;
 
                                         funnel0_in_port1: endpoint {
-                                                phandle = <0x2f>;
+                                                phandle = <0x30>;
                                                 remote-endpoint = <&ptm1_out_port>;
                                         };
                                 };
@@ -751,7 +758,7 @@
                                 port {
 
                                         ptm0_out_port: endpoint {
-                                                phandle = <0x2a>;
+                                                phandle = <0x2b>;
                                                 remote-endpoint = <&funnel0_in_port0>;
                                         };
                                 };
@@ -772,7 +779,7 @@
                                 port {
 
                                         ptm1_out_port: endpoint {
-                                                phandle = <0x2b>;
+                                                phandle = <0x2c>;
                                                 remote-endpoint = <&funnel0_in_port1>;
                                         };
                                 };
@@ -801,7 +808,7 @@
                         xlnx,pcw-enet-reset-polarity = "Active , Low";
                         xlnx,pcw-mio-5-direction = "<Select>";
                         xlnx,pcw-p2f-dmac1-intr = <0x0>;
-                        xlnx,pcw-sd0-grp-cd-enable = <0x0>;
+                        xlnx,pcw-sd0-grp-cd-enable = <0x1>;
                         xlnx,pcw-act-fpga1-peripheral-freqmhz = <0x8d48fc3>;
                         xlnx,pcw-mio-24-iotype = "<Select>";
                         xlnx,pcw-ddr-port1-hpr-enable = <0x0>;
@@ -832,7 +839,7 @@
                         xlnx,mio-primitive = <0x36>;
                         xlnx,pcw-gp0-num-write-threads = <0x4>;
                         xlnx,pcw-mio-4-iotype = "<Select>";
-                        xlnx,pcw-mio-41-iotype = "<Select>";
+                        xlnx,pcw-mio-41-iotype = "LVCMOS , 1.8V";
                         xlnx,pcw-nor-cs1-t-rc = <0xb>;
                         xlnx,pcw-i2c0-grp-int-enable = <0x0>;
                         xlnx,pcw-ddr-port2-hpr-enable = <0x0>;
@@ -862,7 +869,7 @@
                         xlnx,pcw-mio-15-iotype = "<Select>";
                         xlnx,pcw-nor-cs1-t-tr = <0x1>;
                         xlnx,pcw-mio-7-pullup = "<Select>";
-                        xlnx,pcw-mio-44-pullup = "<Select>";
+                        xlnx,pcw-mio-44-pullup = "enabled";
                         xlnx,pcw-uiparam-act-ddr-freq-mhz = <0x1fca057e>;
                         xlnx,pcw-use-ps-slcr-registers = <0x0>;
                         xlnx,pcw-mio-48-direction = "out";
@@ -894,7 +901,7 @@
                         xlnx,pcw-mio-48-iotype = "LVCMOS , 1.8V";
                         xlnx,pcw-gp1-num-read-threads = <0x4>;
                         xlnx,pcw-i2c1-i2c1-io = "<Select>";
-                        xlnx,pcw-sd0-sd0-io = "<Select>";
+                        xlnx,pcw-sd0-sd0-io = "MIO , 40 , .. , 45";
                         xlnx,pcw-can0-grp-clk-enable = <0x0>;
                         xlnx,pcw-mio-4-direction = "<Select>";
                         xlnx,pcw-use-s-axi-acp = <0x0>;
@@ -913,9 +920,9 @@
                         xlnx,pcw-mio-48-slew = "slow";
                         xlnx,pcw-m-axi-gp0-freqmhz = <0x64>;
                         xlnx,pcw-ttc0-clk2-peripheral-divisor0 = <0x1>;
-                        xlnx,pcw-mio-45-slew = "<Select>";
+                        xlnx,pcw-mio-45-slew = "slow";
                         xlnx,pcw-mio-23-iotype = "<Select>";
-                        xlnx,pcw-mio-42-slew = "<Select>";
+                        xlnx,pcw-mio-42-slew = "slow";
                         xlnx,pcw-mio-52-pullup = "<Select>";
                         xlnx,m-axi-gp1-id-width = <0xc>;
                         xlnx,pcw-fclk-clk1-buf;
@@ -937,7 +944,7 @@
                         xlnx,pcw-mio-28-slew = "<Select>";
                         xlnx,pcw-mio-3-iotype = "<Select>";
                         xlnx,pcw-mio-39-iotype = "<Select>";
-                        xlnx,pcw-mio-40-iotype = "<Select>";
+                        xlnx,pcw-mio-40-iotype = "LVCMOS , 1.8V";
                         xlnx,pcw-nor-cs1-we-time = <0x0>;
                         xlnx,pcw-enet1-reset-enable = <0x0>;
                         xlnx,pcw-mio-25-slew = "<Select>";
@@ -948,7 +955,7 @@
                         xlnx,pcw-nand-cycles-t-wc = <0xb>;
                         xlnx,pcw-fpga2-peripheral-freqmhz = <0x32>;
                         xlnx,pcw-mio-18-slew = "<Select>";
-                        xlnx,pcw-mio-47-direction = "<Select>";
+                        xlnx,pcw-mio-47-direction = "in";
                         xlnx,pcw-nor-sram-cs0-t-pc = <0x1>;
                         xlnx,pcw-can-peripheral-freqmhz = <0x64>;
                         xlnx,pcw-uiparam-ddr-dq-2-package-length = <0x561cad8>;
@@ -968,7 +975,7 @@
                         xlnx,pcw-mio-14-iotype = "<Select>";
                         xlnx,pcw-mio-6-pullup = "<Select>";
                         xlnx,pcw-enet-reset-enable = <0x0>;
-                        xlnx,pcw-mio-43-pullup = "<Select>";
+                        xlnx,pcw-mio-43-pullup = "enabled";
                         xlnx,pcw-spi0-peripheral-enable = <0x0>;
                         xlnx,pcw-act-ttc0-clk0-peripheral-freqmhz = <0x69f6bcb>;
                         xlnx,pcw-nor-grp-a25-enable = <0x0>;
@@ -1009,7 +1016,7 @@
                         xlnx,pcw-nor-sram-cs0-t-wc = <0xb>;
                         xlnx,pcw-spi0-grp-ss1-enable = <0x0>;
                         xlnx,pcw-ttc0-clk1-peripheral-clksrc = "CPU_1X";
-                        xlnx,pcw-mio-47-iotype = "<Select>";
+                        xlnx,pcw-mio-47-iotype = "LVCMOS , 1.8V";
                         xlnx,pcw-nand-grp-d8-io = "<Select>";
                         xlnx,pcw-nor-grp-cs1-io = "<Select>";
                         xlnx,pcw-en-clktrig1-port = <0x0>;
@@ -1022,7 +1029,7 @@
                         xlnx,pcw-nor-sram-cs0-t-wp = <0x1>;
                         xlnx,pcw-mio-34-pullup = "<Select>";
                         xlnx,pcw-act-qspi-peripheral-freqmhz = <0xa>;
-                        xlnx,pcw-sdio-peripheral-valid = <0x0>;
+                        xlnx,pcw-sdio-peripheral-valid = <0x1>;
                         xlnx,pcw-en-emio-trace = <0x0>;
                         xlnx,pcw-uart0-grp-full-enable = <0x0>;
                         xlnx,pcw-uiparam-ddr-dqs-1-length-mm = <0x0>;
@@ -1082,7 +1089,7 @@
                         xlnx,pcw-en-ptp-enet1 = <0x0>;
                         xlnx,pcw-mio-5-pullup = "<Select>";
                         xlnx,pcw-en-clk3-port = <0x0>;
-                        xlnx,pcw-mio-42-pullup = "<Select>";
+                        xlnx,pcw-mio-42-pullup = "enabled";
                         xlnx,pcw-sd1-grp-wp-io = "<Select>";
                         xlnx,pcw-fpga-fclk3-enable = <0x0>;
                         xlnx,pcw-mio-2-direction = "<Select>";
@@ -1144,7 +1151,7 @@
                         xlnx,pcw-ftm-cti-in2 = "<Select>";
                         xlnx,pcw-ftm-cti-in3 = "<Select>";
                         xlnx,pcw-uiparam-ddr-dq-1-length-mm = <0x0>;
-                        xlnx,pcw-mio-45-direction = "<Select>";
+                        xlnx,pcw-mio-45-direction = "inout";
                         xlnx,pcw-uart-peripheral-divisor0 = <0x12>;
                         xlnx,use-m-axi-gp0 = <0x1>;
                         xlnx,pcw-mio-primitive = <0x36>;
@@ -1166,7 +1173,7 @@
                         xlnx,pcw-mio-49-pullup = "enabled";
                         xlnx,pcw-mio-50-pullup = "<Select>";
                         xlnx,pcw-p2f-cti-intr = <0x0>;
-                        xlnx,pcw-mio-tree-signals = "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#tx#rx#unassigned#unassigned#unassigned#unassigned";
+                        xlnx,pcw-mio-tree-signals = "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#clk#cmd#data[0]#data[1]#data[2]#data[3]#unassigned#cd#tx#rx#unassigned#unassigned#unassigned#unassigned";
                         xlnx,pcw-nor-cs0-t-wc = <0xb>;
                         xlnx,pcw-p2f-smc-intr = <0x0>;
                         xlnx,pcw-qspi-grp-ss1-enable = <0x0>;
@@ -1209,7 +1216,7 @@
                         xlnx,irq-f2p-mode = "DIRECT";
                         xlnx,pcw-mio-12-iotype = "<Select>";
                         xlnx,pcw-mio-4-pullup = "<Select>";
-                        xlnx,pcw-mio-41-pullup = "<Select>";
+                        xlnx,pcw-mio-41-pullup = "enabled";
                         xlnx,pcw-clk3-freq = <0x989680>;
                         xlnx,pcw-can1-peripheral-enable = <0x0>;
                         xlnx,pcw-fclk2-peripheral-divisor0 = <0x1>;
@@ -1217,15 +1224,15 @@
                         xlnx,pcw-fclk2-peripheral-divisor1 = <0x1>;
                         xlnx,pcw-fpga-fclk2-enable = <0x0>;
                         xlnx,pcw-clk0-freq = <0x5f5e100>;
-                        xlnx,pcw-mio-47-slew = "<Select>";
-                        xlnx,pcw-sdio-peripheral-divisor0 = <0x1>;
+                        xlnx,pcw-mio-47-slew = "slow";
+                        xlnx,pcw-sdio-peripheral-divisor0 = <0x12>;
                         xlnx,pcw-use-expanded-iop = <0x0>;
-                        xlnx,pcw-mio-44-slew = "<Select>";
+                        xlnx,pcw-mio-44-slew = "slow";
                         xlnx,pcw-qspi-peripheral-divisor0 = <0x1>;
                         xlnx,pcw-gp0-num-read-threads = <0x4>;
                         xlnx,pcw-en-rst3-port = <0x0>;
                         xlnx,pcw-mio-34-direction = "<Select>";
-                        xlnx,pcw-mio-41-slew = "<Select>";
+                        xlnx,pcw-mio-41-slew = "slow";
                         xlnx,pcw-tpiu-peripheral-divisor0 = <0x1>;
                         xlnx,pcw-en-rst0-port = <0x1>;
                         xlnx,pcw-mio-28-iotype = "<Select>";
@@ -1249,11 +1256,11 @@
                         xlnx,pcw-wdt-wdt-io = "<Select>";
                         xlnx,pcw-uiparam-ddr-dq-0-propogation-delay = <0xa0>;
                         xlnx,pcw-mio-24-slew = "<Select>";
-                        xlnx,pcw-mio-44-direction = "<Select>";
+                        xlnx,pcw-mio-44-direction = "inout";
                         xlnx,pcw-fpga0-peripheral-freqmhz = <0x64>;
                         xlnx,pcw-mio-8-iotype = "<Select>";
                         xlnx,pcw-iopll-ctrl-fbdiv = <0x36>;
-                        xlnx,pcw-mio-45-iotype = "<Select>";
+                        xlnx,pcw-mio-45-iotype = "LVCMOS , 1.8V";
                         xlnx,pcw-p2f-can1-intr = <0x0>;
                         xlnx,pcw-ddr-priority-writeport-0 = "<Select>";
                         xlnx,pcw-i2c0-reset-io = "<Select>";
@@ -1280,7 +1287,7 @@
                         xlnx,pcw-en-emio-modem-uart0 = <0x0>;
                         xlnx,pcw-dq-width = <0x20>;
                         xlnx,pcw-en-emio-modem-uart1 = <0x0>;
-                        xlnx,pcw-sd0-peripheral-enable = <0x0>;
+                        xlnx,pcw-sd0-peripheral-enable = <0x1>;
                         xlnx,pcw-nor-grp-cs0-io = "<Select>";
                         xlnx,pcw-can-peripheral-valid = <0x0>;
                         xlnx,pcw-m-axi-gp1-id-width = <0xc>;
@@ -1295,7 +1302,7 @@
                         xlnx,pcw-sdio-peripheral-clksrc = "IO , PLL";
                         xlnx,pcw-p2f-dmac-abort-intr = <0x0>;
                         xlnx,pcw-nor-peripheral-enable = <0x0>;
-                        xlnx,pcw-en-sdio0 = <0x0>;
+                        xlnx,pcw-en-sdio0 = <0x1>;
                         xlnx,pcw-ddr-peripheral-divisor0 = <0x2>;
                         xlnx,pcw-en-sdio1 = <0x0>;
                         xlnx,pcw-mio-0-direction = "<Select>";
@@ -1340,7 +1347,7 @@
                         xlnx,pcw-mio-3-pullup = "<Select>";
                         xlnx,fclk-clk3-buf;
                         xlnx,pcw-mio-39-pullup = "<Select>";
-                        xlnx,pcw-mio-40-pullup = "<Select>";
+                        xlnx,pcw-mio-40-pullup = "enabled";
                         xlnx,pcw-uart0-grp-full-io = "<Select>";
                         xlnx,pcw-fpga-fclk1-enable = <0x1>;
                         xlnx,pcw-ttc0-peripheral-enable = <0x1>;
@@ -1355,7 +1362,7 @@
                         xlnx,pcw-use-proc-event-bus = <0x0>;
                         xlnx,pcw-uiparam-ddr-t-rp = <0x7>;
                         xlnx,pcw-p2f-sdio0-intr = <0x0>;
-                        xlnx,pcw-mio-43-direction = "<Select>";
+                        xlnx,pcw-mio-43-direction = "inout";
                         xlnx,s-axi-hp3-id-width = <0x6>;
                         xlnx,pcw-mio-27-iotype = "<Select>";
                         xlnx,pcw-uiparam-ddr-dq-3-propogation-delay = <0xa0>;
@@ -1369,7 +1376,7 @@
                         xlnx,pcw-mio-53-direction = "<Select>";
                         xlnx,pcw-mio-6-slew = "<Select>";
                         xlnx,pcw-mio-7-iotype = "<Select>";
-                        xlnx,pcw-mio-44-iotype = "<Select>";
+                        xlnx,pcw-mio-44-iotype = "LVCMOS , 1.8V";
                         xlnx,pcw-use-fabric-interrupt = <0x1>;
                         xlnx,pcw-act-ttc1-clk0-peripheral-freqmhz = <0x69f6bcb>;
                         xlnx,pcw-mio-3-slew = "<Select>";
@@ -1386,7 +1393,7 @@
                         xlnx,pcw-m-axi-gp1-thread-id-width = <0xc>;
                         xlnx,pcw-mio-31-pullup = "<Select>";
                         xlnx,pcw-usb-reset-enable = <0x0>;
-                        xlnx,pcw-mio-tree-peripherals = "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#UART , 1#UART , 1#unassigned#unassigned#unassigned#unassigned";
+                        xlnx,pcw-mio-tree-peripherals = "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#SD , 0#SD , 0#SD , 0#SD , 0#SD , 0#SD , 0#unassigned#SD , 0#UART , 1#UART , 1#unassigned#unassigned#unassigned#unassigned";
                         xlnx,s-axi-hp0-id-width = <0x6>;
                         xlnx,include-trace-buffer = <0x0>;
                         xlnx,pcw-use-cr-fabric = <0x1>;
@@ -1397,7 +1404,7 @@
                         xlnx,pcw-p2f-dmac5-intr = <0x0>;
                         xlnx,pcw-mio-18-iotype = "<Select>";
                         xlnx,pcw-mio-22-direction = "<Select>";
-                        xlnx,pcw-mio-47-pullup = "<Select>";
+                        xlnx,pcw-mio-47-pullup = "enabled";
                         xlnx,pcw-apu-clk-ratio-enable = "6:2:1";
                         xlnx,pcw-act-fpga0-peripheral-freqmhz = <0x64>;
                         xlnx,pcw-p2f-dmac2-intr = <0x0>;
@@ -1432,7 +1439,7 @@
                         xlnx,pcw-uiparam-ddr-clock-0-package-length = <0x4cb9f7c>;
                         xlnx,pcw-en-emio-enet1 = <0x0>;
                         xlnx,pcw-uiparam-ddr-dqs-2-propogation-delay = <0xa0>;
-                        xlnx,pcw-mio-42-direction = "<Select>";
+                        xlnx,pcw-mio-42-direction = "inout";
                         xlnx,pcw-use-s-axi-hp0 = <0x1>;
                         xlnx,pcw-use-s-axi-hp1 = <0x0>;
                         xlnx,pcw-enet0-peripheral-divisor0 = <0x1>;
@@ -1462,7 +1469,7 @@
                         xlnx,pcw-ttc0-clk0-peripheral-freqmhz = <0x7f28155>;
                         xlnx,pcw-en-emio-i2c1 = <0x0>;
                         xlnx,use-s-axi-acp = <0x0>;
-                        xlnx,pcw-sd0-grp-cd-io = "<Select>";
+                        xlnx,pcw-sd0-grp-cd-io = "MIO , 47";
                         xlnx,pcw-uiparam-ddr-clock-0-propogation-delay = <0xa0>;
                         xlnx,pcw-pcap-peripheral-freqmhz = <0xc8>;
                         xlnx,pcw-act-dci-peripheral-freqmhz = <0x9b028a>;
@@ -1481,7 +1488,7 @@
                         xlnx,pcw-en-emio-cd-sdio1 = <0x0>;
                         xlnx,pcw-core1-irq-intr = <0x0>;
                         xlnx,pcw-mio-6-iotype = "<Select>";
-                        xlnx,pcw-mio-43-iotype = "<Select>";
+                        xlnx,pcw-mio-43-iotype = "LVCMOS , 1.8V";
                         xlnx,pcw-i2c1-reset-enable = <0x0>;
                         xlnx,pcw-s-axi-hp1-data-width = <0x40>;
                         xlnx,pcw-trace-grp-8bit-enable = <0x0>;
@@ -1512,12 +1519,12 @@
                         xlnx,pcw-sd1-grp-cd-enable = <0x0>;
                         xlnx,dm-width = <0x4>;
                         xlnx,pcw-i2c0-grp-int-io = "<Select>";
-                        xlnx,pcw-mio-43-slew = "<Select>";
+                        xlnx,pcw-mio-43-slew = "slow";
                         xlnx,pcw-use-axi-fabric-idle = <0x0>;
                         xlnx,pcw-en-rst2-port = <0x0>;
                         xlnx,pcw-gpio-emio-gpio-enable = <0x0>;
                         xlnx,pcw-mio-39-slew = "<Select>";
-                        xlnx,pcw-mio-40-slew = "<Select>";
+                        xlnx,pcw-mio-40-slew = "slow";
                         xlnx,gp0-en-modifiable-txn = <0x1>;
                         xlnx,pcw-uart1-grp-full-io = "<Select>";
                         xlnx,pcw-uart-peripheral-valid = <0x1>;
@@ -1536,7 +1543,7 @@
                         xlnx,pcw-i2c1-reset-io = "<Select>";
                         xlnx,pcw-mio-29-slew = "<Select>";
                         xlnx,pcw-mio-30-slew = "<Select>";
-                        xlnx,pcw-mio-41-direction = "<Select>";
+                        xlnx,pcw-mio-41-direction = "inout";
                         xlnx,pcw-use-debug = <0x0>;
                         xlnx,pcw-smc-peripheral-divisor0 = <0x1>;
                         xlnx,pcw-i2c1-grp-int-io = "<Select>";
@@ -1595,7 +1602,7 @@
                         xlnx,pcw-uiparam-ddr-clock-1-package-length = <0x4cb9f7c>;
                         xlnx,pcw-mio-5-iotype = "<Select>";
                         xlnx,pcw-mio-6-direction = "<Select>";
-                        xlnx,pcw-mio-42-iotype = "<Select>";
+                        xlnx,pcw-mio-42-iotype = "LVCMOS , 1.8V";
                         xlnx,pcw-s-axi-acp-awuser-val = <0x1f>;
                         xlnx,pcw-use-expanded-ps-slcr-registers = <0x0>;
                         xlnx,pcw-uiparam-ddr-cwl = <0x6>;
@@ -1614,14 +1621,14 @@
                         xlnx,pcw-usb0-peripheral-freqmhz = <0x3c>;
                         xlnx,pcw-nor-sram-cs1-t-wp = <0x1>;
                         xlnx,pcw-act-ttc-peripheral-freqmhz = <0x32>;
-                        xlnx,pcw-act-sdio-peripheral-freqmhz = <0xa>;
+                        xlnx,pcw-act-sdio-peripheral-freqmhz = <0x64>;
                         xlnx,pcw-import-board-preset = "None";
                         xlnx,pcw-mio-16-iotype = "<Select>";
                         xlnx,pcw-mio-8-pullup = "<Select>";
                         xlnx,pcw-enet0-enet0-io = "<Select>";
-                        xlnx,pcw-mio-45-pullup = "<Select>";
+                        xlnx,pcw-mio-45-pullup = "enabled";
                         xlnx,pcw-mio-39-direction = "<Select>";
-                        xlnx,pcw-mio-40-direction = "<Select>";
+                        xlnx,pcw-mio-40-direction = "inout";
                         xlnx,pcw-uiparam-ddr-device-capacity = "4096 , MBits";
                         xlnx,pcw-uiparam-ddr-al = <0x0>;
                         xlnx,pcw-can-peripheral-divisor0 = <0x1>;
@@ -1845,7 +1852,7 @@
                 };
 
                 misc_clk_0: misc_clk_0 {
-                        phandle = <0x30>;
+                        phandle = <0x31>;
                         compatible = "fixed-clock";
                         clock-frequency = <0x5f5e100>;
                         #clock-cells = <0x0>;
@@ -2176,7 +2183,7 @@
                                         xlnx,video-format = <0x2>;
 
                                         tpg_outv_tpg_0: endpoint {
-                                                phandle = <0x32>;
+                                                phandle = <0x33>;
                                                 remote-endpoint = <&v_frmbuf_wr_0v_tpg_0>;
                                         };
                                 };
@@ -2206,7 +2213,7 @@
                                         reg = <0x0>;
 
                                         v_frmbuf_wr_0v_tpg_0: endpoint {
-                                                phandle = <0x31>;
+                                                phandle = <0x32>;
                                                 remote-endpoint = <&tpg_outv_tpg_0>;
                                         };
                                 };

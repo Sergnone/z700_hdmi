@@ -7,6 +7,7 @@ addlib /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zy
 addlib /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/v_frmbuf_rd/src/libv_frmbuf_rd.a
 addlib /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/uartps/src/libuartps.a
 addlib /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/ttcps/src/libttcps.a
+addlib /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/sdps/src/libsdps.a
 addlib /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/scuwdt/src/libscuwdt.a
 addlib /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/scutimer/src/libscutimer.a
 addlib /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/scugic/src/libscugic.a

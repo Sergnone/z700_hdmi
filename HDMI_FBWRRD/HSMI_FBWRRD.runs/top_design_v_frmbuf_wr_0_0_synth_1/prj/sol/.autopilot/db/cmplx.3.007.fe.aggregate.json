@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "5",
+    "calls": "1",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_frmbuf_wr.cpp",
@@ -18,21 +18,30 @@
     "total_instructions": 486
   },
   "1": {
-    "basicblocks": 46,
-    "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 14,
+    "basicblocks": 1,
+    "calls": "4 5 3",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "v_frmbuf_wr.cpp",
-    "fileloc": 428,
-    "instructions": 184,
-    "loads": {
-      "L": 4
-    },
-    "memory_accesses": 11,
-    "name": "MultiPixStream2Bytes",
-    "total_instructions": 184
+    "fileloc": 89,
+    "instructions": 10,
+    "memory_accesses": 0,
+    "name": "FrmbufWrHlsDataFlow",
+    "total_instructions": 437
   },
   "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "memory_accesses": 0,
+    "name": "reg<unsigned short>",
+    "total_instructions": 1
+  },
+  "3": {
     "basicblocks": 7,
     "calls": "",
     "control_depth": 0,
@@ -50,21 +59,9 @@
     },
     "total_instructions": 32
   },
-  "3": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
-    "memory_accesses": 0,
-    "name": "reg<unsigned short>",
-    "total_instructions": 1
-  },
   "4": {
     "basicblocks": 15,
-    "calls": "3 3",
+    "calls": "2 2",
     "control_depth": 2,
     "def_use_depth": 8,
     "file": "v_frmbuf_wr.cpp",
@@ -81,15 +78,18 @@
     "total_instructions": 211
   },
   "5": {
-    "basicblocks": 1,
-    "calls": "4 1 2",
-    "control_depth": 0,
-    "def_use_depth": 1,
+    "basicblocks": 46,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 14,
     "file": "v_frmbuf_wr.cpp",
-    "fileloc": 89,
-    "instructions": 10,
-    "memory_accesses": 0,
-    "name": "FrmbufWrHlsDataFlow",
-    "total_instructions": 437
+    "fileloc": 428,
+    "instructions": 184,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 11,
+    "name": "MultiPixStream2Bytes",
+    "total_instructions": 184
   }
 }

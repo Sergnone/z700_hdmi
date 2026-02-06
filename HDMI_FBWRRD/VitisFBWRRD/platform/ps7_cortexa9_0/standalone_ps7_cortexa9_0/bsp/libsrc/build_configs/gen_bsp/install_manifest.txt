@@ -5,6 +5,7 @@
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xadcps_hw.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xv_frmbufrd.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xreg_cortexa9.h
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps_hw.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xscuwdt_hw.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xil_testcache.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xdebug.h
@@ -43,6 +44,7 @@
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/vectors.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xscutimer.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xcortexa9.h
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps_core.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xvidc_edid.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xil_testio.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xpm_counter.h
@@ -50,6 +52,7 @@
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xbasic_types.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xplatform_info.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xcortexa9_config.h
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xcommon_drv_config.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xil_testmem.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xvtc.h
@@ -83,6 +86,7 @@
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xadcps_hw.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xv_frmbufrd.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xreg_cortexa9.h
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps_hw.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xscuwdt_hw.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xil_testcache.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xdebug.h
@@ -121,6 +125,7 @@
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/vectors.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xscutimer.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xcortexa9.h
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps_core.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xvidc_edid.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xil_testio.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xpm_counter.h
@@ -128,6 +133,7 @@
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xbasic_types.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xplatform_info.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xcortexa9_config.h
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xcommon_drv_config.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xil_testmem.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xvtc.h
@@ -161,6 +167,7 @@
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xadcps_hw.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xv_frmbufrd.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xreg_cortexa9.h
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps_hw.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xscuwdt_hw.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xil_testcache.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xdebug.h
@@ -199,6 +206,7 @@
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/vectors.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xscutimer.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xcortexa9.h
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps_core.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xvidc_edid.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xil_testio.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xpm_counter.h
@@ -206,6 +214,7 @@
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xbasic_types.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xplatform_info.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xcortexa9_config.h
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xcommon_drv_config.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xil_testmem.h
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xvtc.h

@@ -20,7 +20,7 @@
   },
   "1": {
     "basicblocks": 1,
-    "calls": "7 4 9",
+    "calls": "6 4 9",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "v_tpg.cpp",
@@ -75,21 +75,6 @@
     "total_instructions": 331
   },
   "5": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 2,
-    "memory_accesses": 1,
-    "name": "reg<ap_uint<10> >",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 2
-  },
-  "6": {
     "basicblocks": 30,
     "calls": "",
     "control_depth": 0,
@@ -108,9 +93,9 @@
     },
     "total_instructions": 166
   },
-  "7": {
+  "6": {
     "basicblocks": 137,
-    "calls": "2 8 6",
+    "calls": "2 7 5",
     "control_depth": 4,
     "def_use_depth": 18,
     "file": "v_tpg.cpp",
@@ -128,9 +113,9 @@
     },
     "total_instructions": 1361
   },
-  "8": {
+  "7": {
     "basicblocks": 29,
-    "calls": "5",
+    "calls": "8",
     "control_depth": 0,
     "def_use_depth": 4,
     "file": "v_tpg.cpp",
@@ -147,6 +132,21 @@
       "L": 6
     },
     "total_instructions": 123
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 2,
+    "memory_accesses": 1,
+    "name": "reg<ap_uint<10> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2
   },
   "9": {
     "basicblocks": 15,

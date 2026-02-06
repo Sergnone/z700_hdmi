@@ -1,9 +1,9 @@
-# (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-# (c) Copyright 2022-2025 Advanced Micro Devices, Inc. All rights reserved.
+# (c) Copyright 2009 - 2023 Advanced Micro Devices, Inc. All rights reserved.
 # 
 # This file contains confidential and proprietary information
-# of AMD and is protected under U.S. and international copyright
-# and other intellectual property laws.
+# of Advanced Micro Devices, Inc. and is protected under U.S. and
+# international copyright and other intellectual property
+# laws.
 # 
 # DISCLAIMER
 # This disclaimer is not a license and does not grant any
@@ -43,19 +43,13 @@
 # 
 # THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 # PART OF THIS FILE AT ALL TIMES.
-# 
-# DO NOT MODIFY THIS FILE.
-# #########################################################
-#
-# This XDC is used only in OOC mode for synthesis, implementation
-#
-# #########################################################
 
 
-create_clock -period 6.750 -name m_axis_mm2s_aclk [get_ports m_axis_mm2s_aclk]
-
-create_clock -period 10 -name s_axi_lite_aclk [get_ports s_axi_lite_aclk]
-
-create_clock -period 6.750 -name m_axi_mm2s_aclk [get_ports m_axi_mm2s_aclk]
+# This XDC is used only for OOC mode of synthesis, implementation
+# User should update the correct clock period before proceeding further
 
 
+ create_clock -name all_clock -period 10 [get_ports {s_axi_lite_aclk m_axi_mm2s_aclk m_axis_mm2s_aclk   }]
+## set_property HD.CLK_SRC BUFGCTRL_X0Y0 [get_ports s_axi_lite_aclk]
+## set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports m_axi_mm2s_aclk]
+## set_property HD.CLK_SRC BUFGCTRL_X0Y4 [get_ports m_axis_mm2s_aclk]

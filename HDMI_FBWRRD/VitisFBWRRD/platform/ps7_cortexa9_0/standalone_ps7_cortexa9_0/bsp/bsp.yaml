@@ -190,6 +190,10 @@ drv_info:
     driver: scuwdt
     ip_name: ps7_scuwdt
     path: /tools/xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/scuwdt_v2_6
+  ps7_sd_0:
+    driver: sdps
+    ip_name: ps7_sdio
+    path: /tools/xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/sdps_v4_5
   ps7_slcr_0: None
   ps7_ttc_0:
     driver: ttcps

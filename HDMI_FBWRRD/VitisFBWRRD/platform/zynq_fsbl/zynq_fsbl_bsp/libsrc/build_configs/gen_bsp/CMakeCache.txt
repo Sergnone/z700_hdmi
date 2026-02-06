@@ -439,6 +439,15 @@ scuwdt_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 scuwdt_SOURCE_DIR:STATIC=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/scuwdt/src
 
+//Value Computed by CMake
+sdps_BINARY_DIR:STATIC=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/sdps/src
+
+//Value Computed by CMake
+sdps_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+sdps_SOURCE_DIR:STATIC=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/sdps/src
+
 //This option is not supported in the Unified Vitis IDE in this
 // version. Change to the classic IDE if you want to use this option
 standalone_enable_sw_intrusive_profiling:STRING=None
@@ -688,7 +697,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=31
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=32
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

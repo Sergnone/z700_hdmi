@@ -98,6 +98,26 @@
 #define XPAR_XSCUWDT_0_INTERRUPTS 0x10400e
 #define XPAR_XSCUWDT_0_INTERRUPT_PARENT 0xf8f01000
 
+#define XPAR_XSDPS_NUM_INSTANCES 1
+
+/* Definitions for peripheral SDHCI0 */
+#define XPAR_SDHCI0_COMPATIBLE "arasan,sdhci-8.9a"
+#define XPAR_SDHCI0_BASEADDR 0xe0100000
+#define XPAR_SDHCI0_HIGHADDR 0xe0100fff
+#define XPAR_SDHCI0_SDIO_CLK_FREQ_HZ 0x5f5e100
+#define XPAR_SDHCI0_HAS_CD 0x1
+#define XPAR_SDHCI0_HAS_WP 0x0
+#define XPAR_SDHCI0_CLOCKS 0x15
+
+/* Canonical definitions for peripheral SDHCI0 */
+#define XPAR_XSDPS_0_BASEADDR 0xe0100000
+#define XPAR_XSDPS_0_HIGHADDR 0xe0100fff
+#define XPAR_XSDPS_0_COMPATIBLE "arasan,sdhci-8.9a"
+#define XPAR_XSDPS_0_CLOCKS 0x15
+#define XPAR_XSDPS_0_HAS_CD 0x1
+#define XPAR_XSDPS_0_HAS_WP 0x0
+#define XPAR_XSDPS_0_SDIO_CLK_FREQ_HZ 0x5f5e100
+
 #define XPAR_XTTCPS_NUM_INSTANCES 6
 
 /* Definitions for peripheral TTC0 */

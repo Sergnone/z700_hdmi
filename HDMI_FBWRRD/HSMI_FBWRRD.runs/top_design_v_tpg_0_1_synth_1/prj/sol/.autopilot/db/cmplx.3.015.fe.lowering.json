@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 5,
-    "calls": "1 4",
+    "calls": "6 3",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_tpg.cpp",
@@ -19,33 +19,25 @@
     "total_instructions": 1345
   },
   "1": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
-    "memory_accesses": 0,
-    "name": "reg<unsigned short>",
-    "total_instructions": 1
-  },
-  "2": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 2,
-    "memory_accesses": 1,
-    "name": "reg<ap_uint<10> >",
-    "stores": {
+    "basicblocks": 181,
+    "calls": "5 4",
+    "control_depth": 5,
+    "def_use_depth": 25,
+    "file": "v_tpg.cpp",
+    "fileloc": 536,
+    "instructions": 869,
+    "loads": {
+      "G": 97,
       "L": 1
     },
-    "total_instructions": 2
+    "memory_accesses": 160,
+    "name": "tpgBackground",
+    "stores": {
+      "G": 62
+    },
+    "total_instructions": 883
   },
-  "3": {
+  "2": {
     "basicblocks": 31,
     "calls": "",
     "control_depth": 7,
@@ -63,9 +55,9 @@
     },
     "total_instructions": 169
   },
-  "4": {
+  "3": {
     "basicblocks": 1,
-    "calls": "7 3 6",
+    "calls": "1 2 7",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "v_tpg.cpp",
@@ -74,6 +66,21 @@
     "memory_accesses": 0,
     "name": "v_tpgHlsDataFlow",
     "total_instructions": 1198
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 2,
+    "memory_accesses": 1,
+    "name": "reg<ap_uint<10> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2
   },
   "5": {
     "basicblocks": 1,
@@ -88,6 +95,18 @@
     "total_instructions": 1
   },
   "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "memory_accesses": 0,
+    "name": "reg<unsigned short>",
+    "total_instructions": 1
+  },
+  "7": {
     "basicblocks": 14,
     "calls": "",
     "control_depth": 4,
@@ -105,24 +124,5 @@
       "L": 9
     },
     "total_instructions": 134
-  },
-  "7": {
-    "basicblocks": 181,
-    "calls": "5 2",
-    "control_depth": 5,
-    "def_use_depth": 25,
-    "file": "v_tpg.cpp",
-    "fileloc": 536,
-    "instructions": 869,
-    "loads": {
-      "G": 97,
-      "L": 1
-    },
-    "memory_accesses": 160,
-    "name": "tpgBackground",
-    "stores": {
-      "G": 62
-    },
-    "total_instructions": 883
   }
 }

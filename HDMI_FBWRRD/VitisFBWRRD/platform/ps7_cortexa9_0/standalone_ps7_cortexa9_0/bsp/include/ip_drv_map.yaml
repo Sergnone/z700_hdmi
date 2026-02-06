@@ -58,6 +58,9 @@ ps7_scutimer_0:
 ps7_scuwdt_0:
 - ps7_scuwdt
 - scuwdt
+ps7_sd_0:
+- ps7_sdio
+- sdps
 ps7_slcr_0:
 - ps7_slcr
 - None
