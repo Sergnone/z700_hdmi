@@ -34,6 +34,8 @@
 #include "v_fb_wr.h"
 #include "v_fb_rd.h"
 
+#include "v_gpio.h"
+
 
 VideoFormats ColorFormats[NUM_TEST_FORMATS] =
 {
@@ -84,6 +86,7 @@ int Driver_Init()
 {
 	V_VTC_Init();
 	V_TPG_Init();
+	V_GPIO_Init();
 	V_FBWR_Init();
 	V_FBRD_Init();
 	return(XST_SUCCESS);

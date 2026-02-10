@@ -28,7 +28,7 @@
 					"psDevice": "Auto Detect"
 				},
 				"resetAPU": false,
-				"bitstreamFile": "${workspaceFolder}/app_component/_ide/bitstream/top_design_wrapper.bit",
+				"bitstreamFile": "${workspaceFolder}/app_component/_ide/bitstream/top_design_wrapper_01.bit",
 				"zynqInitialization": {
 					"isFsbl": false,
 					"usingFSBL": {

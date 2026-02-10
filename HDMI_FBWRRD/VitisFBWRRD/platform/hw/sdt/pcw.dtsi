@@ -193,7 +193,7 @@
 			xlnx,pcw-can-peripheral-freqmhz = <100>;
 			xlnx,pcw-uiparam-ddr-dq-2-package-length = <0x561cad8>;
 			xlnx,pcw-mio-15-slew = "<Select>";
-			xlnx,emio-gpio-width = <64>;
+			xlnx,emio-gpio-width = <32>;
 			xlnx,fclk-clk2-buf;
 			xlnx,s-axi-hp0-data-width = <32>;
 			xlnx,pcw-mio-12-slew = "<Select>";
@@ -335,7 +335,7 @@
 			xlnx,pcw-p2f-dmac0-intr = <0>;
 			xlnx,pcw-uiparam-ddr-bank-addr-count = <3>;
 			xlnx,edk-iptype = "PERIPHERAL";
-			xlnx,pcw-en-emio-gpio = <0>;
+			xlnx,pcw-en-emio-gpio = <1>;
 			xlnx,pcw-act-apu-peripheral-freqmhz = <0x27bc86bf>;
 			xlnx,pcw-trace-internal-width = <2>;
 			xlnx,pcw-mio-25-direction = "<Select>";
@@ -397,7 +397,7 @@
 			xlnx,pcw-nor-cs0-t-tr = <1>;
 			xlnx,pcw-ddr-priority-readport-3 = "<Select>";
 			xlnx,pcw-fclk0-peripheral-divisor1 = <3>;
-			xlnx,pcw-gpio-emio-gpio-io = "<Select>";
+			xlnx,pcw-gpio-emio-gpio-io = <32>;
 			xlnx,pcw-smc-peripheral-valid = <0>;
 			xlnx,pcw-uart1-peripheral-enable = <1>;
 			xlnx,pcw-act-smc-peripheral-freqmhz = <10>;
@@ -444,7 +444,7 @@
 			xlnx,pcw-uiparam-ddr-clock-1-length-mm = <0>;
 			xlnx,s-axi-acp-id-width = <3>;
 			xlnx,pcw-mio-24-direction = "<Select>";
-			xlnx,pcw-gpio-emio-gpio-width = <64>;
+			xlnx,pcw-gpio-emio-gpio-width = <32>;
 			xlnx,pcw-uiparam-ddr-clock-1-propogation-delay = <160>;
 			xlnx,irq-f2p-mode = "DIRECT";
 			xlnx,pcw-mio-12-iotype = "<Select>";
@@ -755,7 +755,7 @@
 			xlnx,pcw-mio-43-slew = "slow";
 			xlnx,pcw-use-axi-fabric-idle = <0>;
 			xlnx,pcw-en-rst2-port = <0>;
-			xlnx,pcw-gpio-emio-gpio-enable = <0>;
+			xlnx,pcw-gpio-emio-gpio-enable = <1>;
 			xlnx,pcw-mio-39-slew = "<Select>";
 			xlnx,pcw-mio-40-slew = "slow";
 			xlnx,gp0-en-modifiable-txn = <1>;
@@ -1059,6 +1059,16 @@
 		xlnx,ttc-clk1-freq-hz = <111111115>;
 		xlnx,ttc-clk0-clksrc = <0>;
 		xlnx,name = "ps7_ttc_1";
+	};
+	&gpio0 {
+		xlnx,mio-gpio-mask = <0x5600>;
+		status = "okay";
+		gpio-mask-high = <0>;
+		xlnx,emio-gpio-width = <32>;
+		xlnx,ip-name = "ps7_gpio";
+		gpio-mask-low = <22016>;
+		emio-gpio-width = <0x20>;
+		xlnx,name = "ps7_gpio_0";
 	};
 	&mc {
 		status = "okay";

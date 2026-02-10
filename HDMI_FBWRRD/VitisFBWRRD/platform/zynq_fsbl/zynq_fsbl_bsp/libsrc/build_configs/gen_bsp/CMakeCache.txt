@@ -384,6 +384,15 @@ dmaps_IS_TOP_LEVEL:STATIC=OFF
 dmaps_SOURCE_DIR:STATIC=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/dmaps/src
 
 //Value Computed by CMake
+gpiops_BINARY_DIR:STATIC=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src
+
+//Value Computed by CMake
+gpiops_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+gpiops_SOURCE_DIR:STATIC=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/gpiops/src
+
+//Value Computed by CMake
 libxil_BINARY_DIR:STATIC=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc
 
 //Value Computed by CMake
@@ -697,7 +706,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=32
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=33
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -31,6 +31,9 @@ ps7_dma_s:
 ps7_globaltimer_0:
 - ps7_globaltimer
 - None
+ps7_gpio_0:
+- ps7_gpio
+- gpiops
 ps7_gpv_0:
 - ps7_gpv
 - None

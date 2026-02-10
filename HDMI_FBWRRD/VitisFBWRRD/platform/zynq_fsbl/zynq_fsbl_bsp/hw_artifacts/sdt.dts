@@ -18,7 +18,7 @@
         };
 
         cpus_a9: cpus-a9@0 {
-                phandle = <0x34>;
+                phandle = <0x35>;
                 #address-cells = <0x1>;
                 #size-cells = <0x0>;
                 compatible = "cpus,cluster";
@@ -41,6 +41,7 @@
                  <0xf8004000 &ps7_dma_ns 0xf8004000 0x1000>,
                  <0xf8003000 &dmac_s 0xf8003000 0x1000>,
                  <0xf8f00200 &global_timer 0xf8f00200 0x100>,
+                 <0xe000a000 &gpio0 0xe000a000 0x1000>,
                  <0xf8900000 &ps7_gpv_0 0xf8900000 0x100000>,
                  <0xf8f01000 &intc 0xf8f01000 0x1000>,
                  <0xe0200000 &ps7_iop_bus_config_0 0xe0200000 0x1000>,
@@ -60,7 +61,7 @@
                 #ranges-size-cells = <0x1>;
 
                 ps7_cortexa9_0: cpu@0 {
-                        phandle = <0x2d>;
+                        phandle = <0x2e>;
                         compatible = "arm,cortex-a9";
                         device_type = "cpu";
                         reg = <0x0>;
@@ -80,7 +81,7 @@
                 };
 
                 ps7_cortexa9_1: cpu@1 {
-                        phandle = <0x2f>;
+                        phandle = <0x30>;
                         compatible = "arm,cortex-a9";
                         device_type = "cpu";
                         reg = <0x1>;
@@ -97,7 +98,7 @@
         };
 
         fpga_full: fpga-region {
-                phandle = <0x35>;
+                phandle = <0x36>;
                 compatible = "fpga-region";
                 fpga-mgr = <&devcfg>;
                 #address-cells = <0x1>;
@@ -113,7 +114,7 @@
         };
 
         regulator_vccpint: fixedregulator {
-                phandle = <0x24>;
+                phandle = <0x25>;
                 compatible = "regulator-fixed";
                 regulator-name = "VCCPINT";
                 regulator-min-microvolt = <0xf4240>;
@@ -137,7 +138,7 @@
                                 reg = <0x0>;
 
                                 replicator_out_port0: endpoint {
-                                        phandle = <0x29>;
+                                        phandle = <0x2a>;
                                         remote-endpoint = <&tpiu_in_port>;
                                 };
                         };
@@ -146,7 +147,7 @@
                                 reg = <0x1>;
 
                                 replicator_out_port1: endpoint {
-                                        phandle = <0x28>;
+                                        phandle = <0x29>;
                                         remote-endpoint = <&etb_in_port>;
                                 };
                         };
@@ -157,7 +158,7 @@
                         port {
 
                                 replicator_in_port0: endpoint {
-                                        phandle = <0x2a>;
+                                        phandle = <0x2b>;
                                         remote-endpoint = <&funnel_out_port>;
                                 };
                         };
@@ -174,7 +175,7 @@
                 ranges;
 
                 adc: adc@f8007100 {
-                        phandle = <0x22>;
+                        phandle = <0x23>;
                         compatible = "xlnx,zynq-xadc-1.00.a";
                         reg = <0xf8007100 0x20>;
                         interrupts = <0x0 0x7 0x4>;
@@ -186,7 +187,7 @@
                 };
 
                 can0: can@e0008000 {
-                        phandle = <0x36>;
+                        phandle = <0x37>;
                         compatible = "xlnx,zynq-can-1.0";
                         status = "disabled";
                         clocks = <&clkc 0x13>,
@@ -200,7 +201,7 @@
                 };
 
                 can1: can@e0009000 {
-                        phandle = <0x37>;
+                        phandle = <0x38>;
                         compatible = "xlnx,zynq-can-1.0";
                         status = "disabled";
                         clocks = <&clkc 0x14>,
@@ -214,7 +215,7 @@
                 };
 
                 gpio0: gpio@e000a000 {
-                        phandle = <0x38>;
+                        phandle = <0x14>;
                         compatible = "xlnx,zynq-gpio-1.0";
                         #gpio-cells = <0x2>;
                         clocks = <&clkc 0x2a>;
@@ -224,6 +225,14 @@
                         interrupt-parent = <&intc>;
                         interrupts = <0x0 0x14 0x4>;
                         reg = <0xe000a000 0x1000>;
+                        xlnx,mio-gpio-mask = <0x5600>;
+                        status = "okay";
+                        gpio-mask-high = <0x0>;
+                        xlnx,emio-gpio-width = <0x20>;
+                        xlnx,ip-name = "ps7_gpio";
+                        gpio-mask-low = <0x5600>;
+                        emio-gpio-width = <0x20>;
+                        xlnx,name = "ps7_gpio_0";
                 };
 
                 i2c0: i2c@e0004000 {
@@ -253,7 +262,7 @@
                 };
 
                 intc: interrupt-controller@f8f01000 {
-                        phandle = <0x15>;
+                        phandle = <0x16>;
                         compatible = "arm,cortex-a9-gic";
                         #interrupt-cells = <0x3>;
                         interrupt-controller;
@@ -265,7 +274,7 @@
                 };
 
                 L2: cache-controller@f8f02000 {
-                        phandle = <0x17>;
+                        phandle = <0x18>;
                         compatible = "arm,pl310-cache";
                         reg = <0xf8f02000 0x1000>;
                         interrupts = <0x0 0x2 0x4>;
@@ -315,7 +324,7 @@
                 };
 
                 uart1: serial@e0001000 {
-                        phandle = <0x21>;
+                        phandle = <0x22>;
                         compatible = "xlnx,xuartps", "cdns,uart-r1p8";
                         status = "okay";
                         clocks = <&clkc 0x18>,
@@ -435,7 +444,7 @@
                 };
 
                 sdhci0: mmc@e0100000 {
-                        phandle = <0x1d>;
+                        phandle = <0x1e>;
                         compatible = "arasan,sdhci-8.9a";
                         status = "okay";
                         clock-names = "clk_xin", "clk_ahb";
@@ -465,7 +474,7 @@
                 };
 
                 slcr: slcr@f8000000 {
-                        phandle = <0x1e>;
+                        phandle = <0x1f>;
                         bootph-all;
                         #address-cells = <0x1>;
                         #size-cells = <0x1>;
@@ -477,7 +486,7 @@
                         xlnx,name = "ps7_slcr_0";
 
                         clkc: clkc@100 {
-                                phandle = <0x23>;
+                                phandle = <0x24>;
                                 bootph-all;
                                 #clock-cells = <0x1>;
                                 compatible = "xlnx,ps7-clkc";
@@ -555,7 +564,7 @@
                 };
 
                 ttc0: timer@f8001000 {
-                        phandle = <0x1f>;
+                        phandle = <0x20>;
                         interrupt-parent = <&intc>;
                         interrupts = <0x0 0xa 0x4 0x0 0xb 0x4 0x0 0xc 0x4>;
                         compatible = "cdns,ttc";
@@ -574,7 +583,7 @@
                 };
 
                 ttc1: timer@f8002000 {
-                        phandle = <0x20>;
+                        phandle = <0x21>;
                         interrupt-parent = <&intc>;
                         interrupts = <0x0 0x25 0x4 0x0 0x26 0x4 0x0 0x27 0x4>;
                         compatible = "cdns,ttc";
@@ -593,7 +602,7 @@
                 };
 
                 scutimer: timer@f8f00600 {
-                        phandle = <0x1b>;
+                        phandle = <0x1c>;
                         bootph-all;
                         interrupt-parent = <&intc>;
                         interrupts = <0x1 0xd 0x301>;
@@ -606,7 +615,7 @@
                 };
 
                 scuwdt: scuwatchdog@f8f00620 {
-                        phandle = <0x1c>;
+                        phandle = <0x1d>;
                         interrupt-parent = <&intc>;
                         interrupts = <0x1 0xe 0x4>;
                         compatible = "xlnx,ps7-scuwdt-1.00.a";
@@ -670,7 +679,7 @@
                                 port {
 
                                         etb_in_port: endpoint {
-                                                phandle = <0x26>;
+                                                phandle = <0x27>;
                                                 remote-endpoint = <&replicator_out_port1>;
                                         };
                                 };
@@ -690,7 +699,7 @@
                                 port {
 
                                         tpiu_in_port: endpoint {
-                                                phandle = <0x25>;
+                                                phandle = <0x26>;
                                                 remote-endpoint = <&replicator_out_port0>;
                                         };
                                 };
@@ -710,7 +719,7 @@
                                 port {
 
                                         funnel_out_port: endpoint {
-                                                phandle = <0x27>;
+                                                phandle = <0x28>;
                                                 remote-endpoint = <&replicator_in_port0>;
                                         };
                                 };
@@ -724,7 +733,7 @@
                                         reg = <0x0>;
 
                                         funnel0_in_port0: endpoint {
-                                                phandle = <0x2e>;
+                                                phandle = <0x2f>;
                                                 remote-endpoint = <&ptm0_out_port>;
                                         };
                                 };
@@ -733,7 +742,7 @@
                                         reg = <0x1>;
 
                                         funnel0_in_port1: endpoint {
-                                                phandle = <0x30>;
+                                                phandle = <0x31>;
                                                 remote-endpoint = <&ptm1_out_port>;
                                         };
                                 };
@@ -758,7 +767,7 @@
                                 port {
 
                                         ptm0_out_port: endpoint {
-                                                phandle = <0x2b>;
+                                                phandle = <0x2c>;
                                                 remote-endpoint = <&funnel0_in_port0>;
                                         };
                                 };
@@ -779,7 +788,7 @@
                                 port {
 
                                         ptm1_out_port: endpoint {
-                                                phandle = <0x2c>;
+                                                phandle = <0x2d>;
                                                 remote-endpoint = <&funnel0_in_port1>;
                                         };
                                 };
@@ -960,7 +969,7 @@
                         xlnx,pcw-can-peripheral-freqmhz = <0x64>;
                         xlnx,pcw-uiparam-ddr-dq-2-package-length = <0x561cad8>;
                         xlnx,pcw-mio-15-slew = "<Select>";
-                        xlnx,emio-gpio-width = <0x40>;
+                        xlnx,emio-gpio-width = <0x20>;
                         xlnx,fclk-clk2-buf;
                         xlnx,s-axi-hp0-data-width = <0x20>;
                         xlnx,pcw-mio-12-slew = "<Select>";
@@ -1102,7 +1111,7 @@
                         xlnx,pcw-p2f-dmac0-intr = <0x0>;
                         xlnx,pcw-uiparam-ddr-bank-addr-count = <0x3>;
                         xlnx,edk-iptype = "PERIPHERAL";
-                        xlnx,pcw-en-emio-gpio = <0x0>;
+                        xlnx,pcw-en-emio-gpio = <0x1>;
                         xlnx,pcw-act-apu-peripheral-freqmhz = <0x27bc86bf>;
                         xlnx,pcw-trace-internal-width = <0x2>;
                         xlnx,pcw-mio-25-direction = "<Select>";
@@ -1164,7 +1173,7 @@
                         xlnx,pcw-nor-cs0-t-tr = <0x1>;
                         xlnx,pcw-ddr-priority-readport-3 = "<Select>";
                         xlnx,pcw-fclk0-peripheral-divisor1 = <0x3>;
-                        xlnx,pcw-gpio-emio-gpio-io = "<Select>";
+                        xlnx,pcw-gpio-emio-gpio-io = <0x20>;
                         xlnx,pcw-smc-peripheral-valid = <0x0>;
                         xlnx,pcw-uart1-peripheral-enable = <0x1>;
                         xlnx,pcw-act-smc-peripheral-freqmhz = <0xa>;
@@ -1211,7 +1220,7 @@
                         xlnx,pcw-uiparam-ddr-clock-1-length-mm = <0x0>;
                         xlnx,s-axi-acp-id-width = <0x3>;
                         xlnx,pcw-mio-24-direction = "<Select>";
-                        xlnx,pcw-gpio-emio-gpio-width = <0x40>;
+                        xlnx,pcw-gpio-emio-gpio-width = <0x20>;
                         xlnx,pcw-uiparam-ddr-clock-1-propogation-delay = <0xa0>;
                         xlnx,irq-f2p-mode = "DIRECT";
                         xlnx,pcw-mio-12-iotype = "<Select>";
@@ -1522,7 +1531,7 @@
                         xlnx,pcw-mio-43-slew = "slow";
                         xlnx,pcw-use-axi-fabric-idle = <0x0>;
                         xlnx,pcw-en-rst2-port = <0x0>;
-                        xlnx,pcw-gpio-emio-gpio-enable = <0x0>;
+                        xlnx,pcw-gpio-emio-gpio-enable = <0x1>;
                         xlnx,pcw-mio-39-slew = "<Select>";
                         xlnx,pcw-mio-40-slew = "slow";
                         xlnx,gp0-en-modifiable-txn = <0x1>;
@@ -1685,7 +1694,7 @@
                 };
 
                 ps7_pmu_0: ps7_pmu@f8891000 {
-                        phandle = <0x19>;
+                        phandle = <0x1a>;
                         compatible = "xlnx,ps7-pmu-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_pmu";
@@ -1703,7 +1712,7 @@
                 };
 
                 ps7_ocmc_0: ps7_ocmc@f800c000 {
-                        phandle = <0x18>;
+                        phandle = <0x19>;
                         compatible = "xlnx,ps7-ocmc-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_ocmc";
@@ -1712,7 +1721,7 @@
                 };
 
                 ps7_gpv_0: ps7_gpv@f8900000 {
-                        phandle = <0x14>;
+                        phandle = <0x15>;
                         compatible = "xlnx,ps7-gpv-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_gpv";
@@ -1721,7 +1730,7 @@
                 };
 
                 ps7_scuc_0: ps7_scuc@f8f00000 {
-                        phandle = <0x1a>;
+                        phandle = <0x1b>;
                         compatible = "xlnx,ps7-scuc-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_scuc";
@@ -1730,7 +1739,7 @@
                 };
 
                 ps7_iop_bus_config_0: ps7_iop_bus_config@e0200000 {
-                        phandle = <0x16>;
+                        phandle = <0x17>;
                         compatible = "xlnx,ps7-iop-bus-config-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_iop_bus_config";
@@ -1819,7 +1828,7 @@
                 compatible = "simple-bus";
                 #address-cells = <0x1>;
                 #size-cells = <0x1>;
-                firmware-name = "top_design_wrapper.bit.bin";
+                firmware-name = "top_design_wrapper_01.bit.bin";
 
                 clocking1: clocking1 {
                         phandle = <0x52>;
@@ -1852,7 +1861,7 @@
                 };
 
                 misc_clk_0: misc_clk_0 {
-                        phandle = <0x31>;
+                        phandle = <0x32>;
                         compatible = "fixed-clock";
                         clock-frequency = <0x5f5e100>;
                         #clock-cells = <0x0>;
@@ -2183,7 +2192,7 @@
                                         xlnx,video-format = <0x2>;
 
                                         tpg_outv_tpg_0: endpoint {
-                                                phandle = <0x33>;
+                                                phandle = <0x34>;
                                                 remote-endpoint = <&v_frmbuf_wr_0v_tpg_0>;
                                         };
                                 };
@@ -2213,7 +2222,7 @@
                                         reg = <0x0>;
 
                                         v_frmbuf_wr_0v_tpg_0: endpoint {
-                                                phandle = <0x32>;
+                                                phandle = <0x33>;
                                                 remote-endpoint = <&tpg_outv_tpg_0>;
                                         };
                                 };

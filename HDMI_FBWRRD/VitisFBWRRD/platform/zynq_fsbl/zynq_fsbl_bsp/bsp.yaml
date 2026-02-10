@@ -172,6 +172,10 @@ drv_info:
     ip_name: ps7_dma
     path: /tools/xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_11
   ps7_globaltimer_0: None
+  ps7_gpio_0:
+    driver: gpiops
+    ip_name: ps7_gpio
+    path: /tools/xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/gpiops_v3_14
   ps7_gpv_0: None
   ps7_intc_dist_0:
     driver: scugic
