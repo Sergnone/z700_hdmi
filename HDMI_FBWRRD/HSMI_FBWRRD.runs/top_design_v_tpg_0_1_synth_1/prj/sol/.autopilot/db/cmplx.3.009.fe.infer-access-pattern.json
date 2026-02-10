@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 5,
-    "calls": "3 9",
+    "calls": "3 7",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_tpg.cpp",
@@ -19,24 +19,23 @@
     "total_instructions": 1480
   },
   "1": {
-    "basicblocks": 15,
-    "calls": "",
+    "basicblocks": 132,
+    "calls": "2 6 5",
     "control_depth": 4,
-    "def_use_depth": 6,
+    "def_use_depth": 22,
     "file": "v_tpg.cpp",
-    "fileloc": 919,
-    "instructions": 173,
+    "fileloc": 536,
+    "instructions": 683,
     "loads": {
-      "G": 3,
-      "L": 12
+      "G": 65,
+      "L": 17
     },
-    "memory_accesses": 26,
-    "name": "MultiPixStream2AXIvideo",
+    "memory_accesses": 113,
+    "name": "tpgBackground",
     "stores": {
-      "G": 2,
-      "L": 16
+      "G": 41
     },
-    "total_instructions": 219
+    "total_instructions": 950
   },
   "2": {
     "basicblocks": 1,
@@ -63,24 +62,19 @@
     "total_instructions": 1
   },
   "4": {
-    "basicblocks": 27,
-    "calls": "7",
+    "basicblocks": 1,
+    "calls": "",
     "control_depth": 0,
-    "def_use_depth": 4,
-    "file": "v_tpg.cpp",
-    "fileloc": 1437,
-    "instructions": 108,
-    "loads": {
-      "G": 5,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 2,
+    "memory_accesses": 1,
+    "name": "reg<ap_uint<10> >",
+    "stores": {
       "L": 1
     },
-    "memory_accesses": 0,
-    "name": "tpgPatternCrossHatch",
-    "stores": {
-      "G": 11,
-      "L": 4
-    },
-    "total_instructions": 110
+    "total_instructions": 2
   },
   "5": {
     "basicblocks": 29,
@@ -102,40 +96,58 @@
     "total_instructions": 135
   },
   "6": {
-    "basicblocks": 132,
-    "calls": "2 4 5",
-    "control_depth": 4,
-    "def_use_depth": 22,
+    "basicblocks": 27,
+    "calls": "4",
+    "control_depth": 0,
+    "def_use_depth": 4,
     "file": "v_tpg.cpp",
-    "fileloc": 536,
-    "instructions": 683,
+    "fileloc": 1437,
+    "instructions": 108,
     "loads": {
-      "G": 65,
-      "L": 17
+      "G": 5,
+      "L": 1
     },
-    "memory_accesses": 113,
-    "name": "tpgBackground",
+    "memory_accesses": 0,
+    "name": "tpgPatternCrossHatch",
     "stores": {
-      "G": 41
+      "G": 11,
+      "L": 4
     },
-    "total_instructions": 950
+    "total_instructions": 110
   },
   "7": {
     "basicblocks": 1,
-    "calls": "",
+    "calls": "1 9 8",
     "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 2,
-    "memory_accesses": 1,
-    "name": "reg<ap_uint<10> >",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 2
+    "def_use_depth": 1,
+    "file": "v_tpg.cpp",
+    "fileloc": 304,
+    "instructions": 10,
+    "memory_accesses": 0,
+    "name": "v_tpgHlsDataFlow",
+    "total_instructions": 1406
   },
   "8": {
+    "basicblocks": 15,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 6,
+    "file": "v_tpg.cpp",
+    "fileloc": 919,
+    "instructions": 173,
+    "loads": {
+      "G": 3,
+      "L": 12
+    },
+    "memory_accesses": 26,
+    "name": "MultiPixStream2AXIvideo",
+    "stores": {
+      "G": 2,
+      "L": 16
+    },
+    "total_instructions": 219
+  },
+  "9": {
     "basicblocks": 36,
     "calls": "",
     "control_depth": 5,
@@ -154,17 +166,5 @@
       "L": 12
     },
     "total_instructions": 227
-  },
-  "9": {
-    "basicblocks": 1,
-    "calls": "6 8 1",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "v_tpg.cpp",
-    "fileloc": 304,
-    "instructions": 10,
-    "memory_accesses": 0,
-    "name": "v_tpgHlsDataFlow",
-    "total_instructions": 1406
   }
 }

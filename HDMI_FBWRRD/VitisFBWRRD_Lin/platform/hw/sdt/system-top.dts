@@ -56,6 +56,7 @@
 			      <0xf8004000 &ps7_dma_ns 0xf8004000 0x1000>, 
 			      <0xf8003000 &dmac_s 0xf8003000 0x1000>, 
 			      <0xf8f00200 &global_timer 0xf8f00200 0x100>, 
+			      <0xe000a000 &gpio0 0xe000a000 0x1000>, 
 			      <0xf8900000 &ps7_gpv_0 0xf8900000 0x100000>, 
 			      <0xf8f01000 &intc 0xf8f01000 0x1000>, 
 			      <0xe0200000 &ps7_iop_bus_config_0 0xe0200000 0x1000>, 
@@ -75,5 +76,3 @@
 		#ranges-size-cells = <0x1>;
 	};
 };
-#include "zc702.dtsi"
-#include "system-user.dtsi"

@@ -24,7 +24,10 @@
       "v_frmbuf_wr_0": "",
       "smartconnect_0": "",
       "ilconcat_0": "",
-      "v_frmbuf_rd_0": ""
+      "v_frmbuf_rd_0": "",
+      "ilslice_0": "",
+      "ilslice_1": "",
+      "ilslice_2": ""
     },
     "interface_ports": {
       "DDR": {
@@ -495,7 +498,7 @@
             "value": "0"
           },
           "PCW_EN_EMIO_GPIO": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_EN_EMIO_I2C0": {
             "value": "0"
@@ -690,7 +693,13 @@
             "value": "4"
           },
           "PCW_GPIO_EMIO_GPIO_ENABLE": {
-            "value": "0"
+            "value": "1"
+          },
+          "PCW_GPIO_EMIO_GPIO_IO": {
+            "value": "32"
+          },
+          "PCW_GPIO_EMIO_GPIO_WIDTH": {
+            "value": "32"
           },
           "PCW_GPIO_MIO_GPIO_ENABLE": {
             "value": "0"
@@ -2147,6 +2156,48 @@
             }
           }
         }
+      },
+      "ilslice_0": {
+        "vlnv": "xilinx.com:inline_hdl:ilslice:1.0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "0"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "ilslice_1": {
+        "vlnv": "xilinx.com:inline_hdl:ilslice:1.0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "1"
+          },
+          "DIN_TO": {
+            "value": "1"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "ilslice_2": {
+        "vlnv": "xilinx.com:inline_hdl:ilslice:1.0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "2"
+          },
+          "DIN_TO": {
+            "value": "2"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -2287,6 +2338,24 @@
           "HDMI_EN"
         ]
       },
+      "ilslice_0_Dout": {
+        "ports": [
+          "ilslice_0/Dout",
+          "v_frmbuf_rd_0/ap_rst_n"
+        ]
+      },
+      "ilslice_1_Dout": {
+        "ports": [
+          "ilslice_1/Dout",
+          "v_frmbuf_wr_0/ap_rst_n"
+        ]
+      },
+      "ilslice_2_Dout": {
+        "ports": [
+          "ilslice_2/Dout",
+          "v_tpg_0/ap_rst_n"
+        ]
+      },
       "processing_system7_0_FCLK_CLK0": {
         "ports": [
           "processing_system7_0/FCLK_CLK1",
@@ -2318,15 +2387,20 @@
           "rst_ps7_0_100M/ext_reset_in"
         ]
       },
+      "processing_system7_0_GPIO_O": {
+        "ports": [
+          "processing_system7_0/GPIO_O",
+          "ilslice_0/Din",
+          "ilslice_1/Din",
+          "ilslice_2/Din"
+        ]
+      },
       "rst_ps7_0_148M_peripheral_aresetn": {
         "ports": [
           "rst_ps7_0_150M/peripheral_aresetn",
           "axi_smc/aresetn",
           "v_axi4s_vid_out_0/aresetn",
-          "v_tpg_0/ap_rst_n",
-          "v_frmbuf_wr_0/ap_rst_n",
-          "smartconnect_0/aresetn",
-          "v_frmbuf_rd_0/ap_rst_n"
+          "smartconnect_0/aresetn"
         ]
       },
       "v_axi4s_vid_out_0_sof_state_out": {

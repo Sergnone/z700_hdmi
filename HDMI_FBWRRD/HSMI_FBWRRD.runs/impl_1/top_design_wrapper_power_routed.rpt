@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date             : Fri Feb  6 18:12:14 2026
+| Date             : Tue Feb 10 12:37:38 2026
 | Host             : serg running 64-bit Ubuntu 24.04.3 LTS
 | Command          : report_power -file top_design_wrapper_power_routed.rpt -pb top_design_wrapper_power_summary_routed.pb -rpx top_design_wrapper_power_routed.rpx
 | Design           : top_design_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.895        |
+| Total On-Chip Power (W)  | 1.894        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.747        |
+| Dynamic (W)              | 1.746        |
 | Device Static (W)        | 0.148        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 63.1         |
-| Junction Temperature (C) | 46.9         |
+| Max Ambient (C)          | 63.2         |
+| Junction Temperature (C) | 46.8         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,23 +52,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.084 |        7 |       --- |             --- |
+| Clocks                   |     0.085 |        7 |       --- |             --- |
 | Slice Logic              |     0.041 |    33971 |       --- |             --- |
-|   LUT as Logic           |     0.034 |    10568 |     53200 |           19.86 |
+|   LUT as Logic           |     0.034 |    10569 |     53200 |           19.87 |
 |   Register               |     0.003 |    16614 |    106400 |           15.61 |
 |   CARRY4                 |     0.002 |      573 |     13300 |            4.31 |
 |   LUT as Distributed RAM |    <0.001 |      576 |     17400 |            3.31 |
-|   LUT as Shift Register  |    <0.001 |      565 |     17400 |            3.25 |
+|   LUT as Shift Register  |    <0.001 |      566 |     17400 |            3.25 |
 |   F7/F8 Muxes            |    <0.001 |      402 |     53200 |            0.76 |
 |   Others                 |     0.000 |     1375 |       --- |             --- |
-| Signals                  |     0.051 |    23153 |       --- |             --- |
-| Block RAM                |     0.027 |      8.5 |       140 |            6.07 |
+| Signals                  |     0.053 |    23154 |       --- |             --- |
+| Block RAM                |     0.028 |      8.5 |       140 |            6.07 |
 | MMCM                     |     0.107 |        1 |         4 |           25.00 |
-| DSPs                     |     0.022 |       16 |       220 |            7.27 |
+| DSPs                     |     0.019 |       16 |       220 |            7.27 |
 | I/O                      |     0.133 |        9 |       125 |            7.20 |
 | PS7                      |     1.281 |        1 |       --- |             --- |
 | Static Power             |     0.148 |          |           |                 |
-| Total                    |     1.895 |          |           |                 |
+| Total                    |     1.894 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -158,8 +158,8 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| top_design_wrapper       |     1.747 |
-|   top_design_i           |     1.747 |
+| top_design_wrapper       |     1.746 |
+|   top_design_i           |     1.746 |
 |     axi_dynclk_0         |     0.110 |
 |       U0                 |     0.110 |
 |     axi_smc              |     0.021 |
@@ -168,18 +168,18 @@ Table of Contents
 |       inst               |     1.282 |
 |     rgb2dvi_0            |     0.134 |
 |       U0                 |     0.134 |
-|     smartconnect_0       |     0.052 |
-|       inst               |     0.052 |
-|     v_axi4s_vid_out_0    |     0.007 |
-|       inst               |     0.007 |
-|     v_frmbuf_rd_0        |     0.023 |
-|       inst               |     0.023 |
-|     v_frmbuf_wr_0        |     0.021 |
-|       inst               |     0.021 |
+|     smartconnect_0       |     0.051 |
+|       inst               |     0.051 |
+|     v_axi4s_vid_out_0    |     0.006 |
+|       inst               |     0.006 |
+|     v_frmbuf_rd_0        |     0.029 |
+|       inst               |     0.029 |
+|     v_frmbuf_wr_0        |     0.024 |
+|       inst               |     0.024 |
 |     v_tc_0               |     0.015 |
 |       U0                 |     0.015 |
-|     v_tpg_0              |     0.081 |
-|       inst               |     0.081 |
+|     v_tpg_0              |     0.073 |
+|       inst               |     0.073 |
 +--------------------------+-----------+
 
 

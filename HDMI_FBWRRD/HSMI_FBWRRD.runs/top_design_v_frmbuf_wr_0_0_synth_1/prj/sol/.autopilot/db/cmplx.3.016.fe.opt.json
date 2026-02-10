@@ -15,26 +15,20 @@
     "total_instructions": 518
   },
   "1": {
-    "basicblocks": 46,
+    "basicblocks": 1,
     "calls": "",
-    "control_depth": 2,
-    "def_use_depth": 17,
-    "file": "v_frmbuf_wr.cpp",
-    "fileloc": 428,
-    "instructions": 282,
-    "loads": {
-      "L": 8
-    },
-    "memory_accesses": 22,
-    "name": "MultiPixStream2Bytes",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 282
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 4,
+    "memory_accesses": 1,
+    "name": "reg<unsigned short>",
+    "total_instructions": 4
   },
   "2": {
     "basicblocks": 1,
-    "calls": "3 1 4",
+    "calls": "3 5 4",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "v_frmbuf_wr.cpp",
@@ -46,7 +40,7 @@
   },
   "3": {
     "basicblocks": 15,
-    "calls": "5 5",
+    "calls": "1 1",
     "control_depth": 2,
     "def_use_depth": 11,
     "file": "v_frmbuf_wr.cpp",
@@ -78,15 +72,21 @@
     "total_instructions": 42
   },
   "5": {
-    "basicblocks": 1,
+    "basicblocks": 46,
     "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 4,
-    "memory_accesses": 1,
-    "name": "reg<unsigned short>",
-    "total_instructions": 4
+    "control_depth": 2,
+    "def_use_depth": 17,
+    "file": "v_frmbuf_wr.cpp",
+    "fileloc": 428,
+    "instructions": 282,
+    "loads": {
+      "L": 8
+    },
+    "memory_accesses": 22,
+    "name": "MultiPixStream2Bytes",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 282
   }
 }

@@ -1,23 +1,28 @@
 {
-    "0": {
-        "name": "v_tpg",
+    "1": {
+        "name": "tpgBackground",
         "file": "v_tpg.cpp",
-        "fileloc": "409",
-        "instructions": "144",
-        "total_instructions": "1516",
-        "calls": "1 3",
-        "basicblocks": "5",
+        "fileloc": "536",
+        "instructions": "145",
+        "total_instructions": "1000",
+        "calls": "7",
+        "basicblocks": "10",
         "memory_accesses": "0",
         "control_depth": "0",
-        "def_use_depth": "4",
+        "def_use_depth": "3",
         "loads": {
-            "G": "2"
+            "G": "14",
+            "L": "7"
         },
         "stores": {
-            "G": "2"
+            "G": "4",
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
         }
     },
-    "1": {
+    "2": {
         "name": "reg<unsigned short>",
         "file": "x_hls_utils.h",
         "fileloc": "222",
@@ -29,7 +34,41 @@
         "control_depth": "0",
         "def_use_depth": "1"
     },
-    "2": {
+    "3": {
+        "name": "MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2",
+        "file": "prj\/sol\/.autopilot\/db\/v_tpg.cpp",
+        "fileloc": "399",
+        "instructions": "53",
+        "total_instructions": "53",
+        "calls": "",
+        "basicblocks": "6",
+        "memory_accesses": "8",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "G": "1",
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "reg<ap_uint<10> >",
+        "file": "\/tools\/xilinx\/2025.2\/Vitis\/common\/technology\/autopilot\/utils\/x_hls_utils.h",
+        "fileloc": "222",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "1",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "5": {
         "name": "reg<int>",
         "file": "x_hls_utils.h",
         "fileloc": "222",
@@ -41,19 +80,7 @@
         "control_depth": "0",
         "def_use_depth": "1"
     },
-    "3": {
-        "name": "v_tpgHlsDataFlow",
-        "file": "v_tpg.cpp",
-        "fileloc": "304",
-        "instructions": "57",
-        "total_instructions": "1368",
-        "calls": "9 7 5",
-        "basicblocks": "1",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "1"
-    },
-    "4": {
+    "6": {
         "name": "tpgForeground_Pipeline_VITIS_LOOP_774_2",
         "file": "prj\/sol\/.autopilot\/db\/v_tpg.cpp",
         "fileloc": "763",
@@ -76,36 +103,31 @@
             "L": "1"
         }
     },
-    "5": {
-        "name": "MultiPixStream2AXIvideo",
-        "file": "prj\/sol\/.autopilot\/db\/v_tpg.cpp",
-        "fileloc": "399",
-        "instructions": "63",
-        "total_instructions": "116",
-        "calls": "8",
-        "basicblocks": "6",
+    "0": {
+        "name": "v_tpg",
+        "file": "v_tpg.cpp",
+        "fileloc": "409",
+        "instructions": "144",
+        "total_instructions": "1516",
+        "calls": "2 9",
+        "basicblocks": "5",
         "memory_accesses": "0",
         "control_depth": "0",
-        "def_use_depth": "3",
+        "def_use_depth": "4",
         "loads": {
-            "G": "2",
-            "L": "6"
+            "G": "2"
         },
         "stores": {
-            "G": "1",
-            "L": "8"
-        },
-        "loops": {
-            "L": "1"
+            "G": "2"
         }
     },
-    "6": {
+    "7": {
         "name": "tpgBackground_Pipeline_VITIS_LOOP_565_2",
         "file": "prj\/sol\/.autopilot\/db\/v_tpg.cpp",
         "fileloc": "549",
         "instructions": "847",
         "total_instructions": "855",
-        "calls": "2 10",
+        "calls": "5 4",
         "basicblocks": "128",
         "memory_accesses": "275",
         "control_depth": "6",
@@ -122,13 +144,13 @@
             "L": "1"
         }
     },
-    "7": {
+    "8": {
         "name": "tpgForeground",
         "file": "v_tpg.cpp",
         "fileloc": "759",
         "instructions": "59",
         "total_instructions": "195",
-        "calls": "4",
+        "calls": "6",
         "basicblocks": "4",
         "memory_accesses": "0",
         "control_depth": "0",
@@ -144,61 +166,39 @@
             "L": "1"
         }
     },
-    "8": {
-        "name": "MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2",
+    "9": {
+        "name": "v_tpgHlsDataFlow",
+        "file": "v_tpg.cpp",
+        "fileloc": "304",
+        "instructions": "57",
+        "total_instructions": "1368",
+        "calls": "1 8 10",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "10": {
+        "name": "MultiPixStream2AXIvideo",
         "file": "prj\/sol\/.autopilot\/db\/v_tpg.cpp",
         "fileloc": "399",
-        "instructions": "53",
-        "total_instructions": "53",
-        "calls": "",
+        "instructions": "63",
+        "total_instructions": "116",
+        "calls": "3",
         "basicblocks": "6",
-        "memory_accesses": "8",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "4"
-        },
-        "stores": {
-            "G": "1",
-            "L": "4"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "9": {
-        "name": "tpgBackground",
-        "file": "v_tpg.cpp",
-        "fileloc": "536",
-        "instructions": "145",
-        "total_instructions": "1000",
-        "calls": "6",
-        "basicblocks": "10",
         "memory_accesses": "0",
         "control_depth": "0",
         "def_use_depth": "3",
         "loads": {
-            "G": "14",
-            "L": "7"
+            "G": "2",
+            "L": "6"
         },
         "stores": {
-            "G": "4",
-            "L": "14"
+            "G": "1",
+            "L": "8"
         },
         "loops": {
             "L": "1"
         }
-    },
-    "10": {
-        "name": "reg<ap_uint<10> >",
-        "file": "\/tools\/xilinx\/2025.2\/Vitis\/common\/technology\/autopilot\/utils\/x_hls_utils.h",
-        "fileloc": "222",
-        "instructions": "4",
-        "total_instructions": "4",
-        "calls": "",
-        "basicblocks": "1",
-        "memory_accesses": "1",
-        "control_depth": "0",
-        "def_use_depth": "1"
     }
 }

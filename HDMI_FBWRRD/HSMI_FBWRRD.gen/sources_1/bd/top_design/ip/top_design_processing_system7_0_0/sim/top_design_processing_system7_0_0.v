@@ -56,6 +56,9 @@
 `timescale 1ns/1ps
 
 module top_design_processing_system7_0_0 (
+GPIO_I, 
+GPIO_O, 
+GPIO_T, 
 TTC0_WAVE0_OUT, 
 TTC0_WAVE1_OUT, 
 TTC0_WAVE2_OUT, 
@@ -172,6 +175,9 @@ PS_SRSTB,
 PS_CLK, 
 PS_PORB 
 );
+input [31 : 0] GPIO_I;
+output [31 : 0] GPIO_O;
+output [31 : 0] GPIO_T;
 output TTC0_WAVE0_OUT;
 output TTC0_WAVE1_OUT;
 output TTC0_WAVE2_OUT;

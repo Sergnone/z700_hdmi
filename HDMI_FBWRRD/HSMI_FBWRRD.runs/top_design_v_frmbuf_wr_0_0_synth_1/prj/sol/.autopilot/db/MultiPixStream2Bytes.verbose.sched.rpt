@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'MultiPixStream2Bytes'
 ================================================================
-* Date:           Fri Feb  6 18:13:09 2026
+* Date:           Tue Feb 10 12:35:24 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -191,7 +191,7 @@ The critical path consists of the following:
  <State 4>: 2.780ns
 The critical path consists of the following:
 	'load' operation 11 bit ('y', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1086) on local variable 'y', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1086 [53]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln1086', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1086) [54]  (1.482 ns)
+	'add' operation 11 bit ('y', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1086) [56]  (1.482 ns)
 	'store' operation ('store_ln1086', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1086) of variable 'y', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1086 11 bit on local variable 'y', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1086 [61]  (1.298 ns)
 
  <State 5>: 3.515ns

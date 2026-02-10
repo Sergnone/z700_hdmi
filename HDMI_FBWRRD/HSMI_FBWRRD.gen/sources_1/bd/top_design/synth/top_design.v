@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Fri Feb  6 17:56:37 2026
+//Date        : Tue Feb 10 12:28:57 2026
 //Host        : serg running 64-bit Ubuntu 24.04.3 LTS
 //Command     : generate_target top_design.bd
 //Design      : top_design
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "top_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=top_design,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=14,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_board_cnt=5,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "top_design.hwdef" *) 
+(* CORE_GENERATION_INFO = "top_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=top_design,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=17,numReposBlks=17,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_board_cnt=5,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "top_design.hwdef" *) 
 module top_design
    (DDR_addr,
     DDR_ba,
@@ -183,9 +183,13 @@ module top_design
   wire [3:0]axi_smc_M04_AXI_WSTRB;
   wire axi_smc_M04_AXI_WVALID;
   wire [3:0]ilconcat_0_dout;
+  wire [0:0]ilslice_0_Dout;
+  wire [0:0]ilslice_1_Dout;
+  wire [0:0]ilslice_2_Dout;
   wire processing_system7_0_FCLK_CLK0;
   wire processing_system7_0_FCLK_CLK1;
   wire processing_system7_0_FCLK_RESET0_N;
+  wire [31:0]processing_system7_0_GPIO_O;
   wire [31:0]processing_system7_0_M_AXI_GP0_ARADDR;
   wire [1:0]processing_system7_0_M_AXI_GP0_ARBURST;
   wire [3:0]processing_system7_0_M_AXI_GP0_ARCACHE;
@@ -511,6 +515,9 @@ module top_design
         .aresetn(rst_ps7_0_148M_peripheral_aresetn));
   assign ilconcat_0_dout = {v_tc_0_irq, v_tpg_0_interrupt, v_frmbuf_rd_0_interrupt, v_frmbuf_wr_0_interrupt};
   assign HDMI_EN = 1'h1;
+  assign ilslice_0_Dout = processing_system7_0_GPIO_O[0:0];
+  assign ilslice_1_Dout = processing_system7_0_GPIO_O[1:1];
+  assign ilslice_2_Dout = processing_system7_0_GPIO_O[2:2];
   top_design_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr),
         .DDR_BankAddr(DDR_ba),
@@ -532,6 +539,8 @@ module top_design
         .FCLK_CLK0(processing_system7_0_FCLK_CLK1),
         .FCLK_CLK1(processing_system7_0_FCLK_CLK0),
         .FCLK_RESET0_N(processing_system7_0_FCLK_RESET0_N),
+        .GPIO_I({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .GPIO_O(processing_system7_0_GPIO_O),
         .IRQ_F2P(ilconcat_0_dout),
         .MIO(FIXED_IO_mio),
         .M_AXI_GP0_ACLK(processing_system7_0_FCLK_CLK1),
@@ -770,7 +779,7 @@ module top_design
         .vtg_vsync(v_tc_0_vtiming_out_VSYNC));
   top_design_v_frmbuf_rd_0_0 v_frmbuf_rd_0
        (.ap_clk(processing_system7_0_FCLK_CLK0),
-        .ap_rst_n(rst_ps7_0_148M_peripheral_aresetn),
+        .ap_rst_n(ilslice_0_Dout),
         .interrupt(v_frmbuf_rd_0_interrupt),
         .m_axi_mm_video_ARADDR(v_frmbuf_rd_0_m_axi_mm_video_ARADDR),
         .m_axi_mm_video_ARBURST(v_frmbuf_rd_0_m_axi_mm_video_ARBURST),
@@ -829,7 +838,7 @@ module top_design
         .s_axi_CTRL_WVALID(axi_smc_M04_AXI_WVALID));
   top_design_v_frmbuf_wr_0_0 v_frmbuf_wr_0
        (.ap_clk(processing_system7_0_FCLK_CLK0),
-        .ap_rst_n(rst_ps7_0_148M_peripheral_aresetn),
+        .ap_rst_n(ilslice_1_Dout),
         .interrupt(v_frmbuf_wr_0_interrupt),
         .m_axi_mm_video_ARADDR(v_frmbuf_wr_0_m_axi_mm_video_ARADDR),
         .m_axi_mm_video_ARBURST(v_frmbuf_wr_0_m_axi_mm_video_ARBURST),
@@ -925,7 +934,7 @@ module top_design
         .vsync_out(v_tc_0_vtiming_out_VSYNC));
   top_design_v_tpg_0_1 v_tpg_0
        (.ap_clk(processing_system7_0_FCLK_CLK0),
-        .ap_rst_n(rst_ps7_0_148M_peripheral_aresetn),
+        .ap_rst_n(ilslice_2_Dout),
         .fid_in(1'b1),
         .interrupt(v_tpg_0_interrupt),
         .m_axis_video_TDATA(v_tpg_0_m_axis_video1_TDATA),
