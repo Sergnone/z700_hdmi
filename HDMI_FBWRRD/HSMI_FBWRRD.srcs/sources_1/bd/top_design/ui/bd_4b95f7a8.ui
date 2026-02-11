@@ -1,69 +1,69 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.508384",
-   "Default View_TopLeft":"228,49",
+   "Default View_ScaleFactor":"0.825872",
+   "Default View_TopLeft":"1053,263",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 7 -x 2520 -y 600 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 7 -x 2520 -y 630 -defaultsOSRD
-preplace port TMDS_0 -pg 1 -lvl 7 -x 2520 -y 160 -defaultsOSRD
-preplace portBus HDMI_EN -pg 1 -lvl 7 -x 2520 -y 960 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 6 -x 2250 -y 690 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 2530 -y 600 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 2530 -y 630 -defaultsOSRD
+preplace port TMDS_0 -pg 1 -lvl 7 -x 2530 -y 160 -defaultsOSRD
+preplace portBus HDMI_EN -pg 1 -lvl 7 -x 2530 -y 960 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -x 2260 -y 690 -defaultsOSRD
 preplace inst v_tpg_0 -pg 1 -lvl 3 -x 1000 -y 500 -defaultsOSRD
 preplace inst axi_smc -pg 1 -lvl 2 -x 600 -y 560 -defaultsOSRD
 preplace inst rst_ps7_0_150M -pg 1 -lvl 1 -x 210 -y 450 -defaultsOSRD
-preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 5 -x 1830 -y 200 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 5 -x 1840 -y 200 -defaultsOSRD
 preplace inst v_tc_0 -pg 1 -lvl 4 -x 1400 -y 160 -defaultsOSRD
-preplace inst rgb2dvi_0 -pg 1 -lvl 6 -x 2250 -y 160 -defaultsOSRD
-preplace inst ilconstant_1 -pg 1 -lvl 6 -x 2250 -y 960 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 6 -x 2260 -y 160 -defaultsOSRD
+preplace inst ilconstant_1 -pg 1 -lvl 6 -x 2260 -y 960 -defaultsOSRD
 preplace inst axi_dynclk_0 -pg 1 -lvl 3 -x 1000 -y 310 -defaultsOSRD
 preplace inst rst_ps7_0_100M -pg 1 -lvl 2 -x 600 -y 290 -defaultsOSRD
 preplace inst v_frmbuf_wr_0 -pg 1 -lvl 4 -x 1400 -y 770 -defaultsOSRD
-preplace inst smartconnect_0 -pg 1 -lvl 5 -x 1830 -y 670 -defaultsOSRD
-preplace inst ilconcat_0 -pg 1 -lvl 5 -x 1830 -y 490 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 5 -x 1840 -y 670 -defaultsOSRD
+preplace inst ilconcat_0 -pg 1 -lvl 5 -x 1840 -y 490 -defaultsOSRD
 preplace inst v_frmbuf_rd_0 -pg 1 -lvl 4 -x 1400 -y 620 -defaultsOSRD
 preplace inst ilslice_0 -pg 1 -lvl 3 -x 1000 -y 660 -defaultsOSRD
 preplace inst ilslice_1 -pg 1 -lvl 3 -x 1000 -y 800 -defaultsOSRD
 preplace inst ilslice_2 -pg 1 -lvl 2 -x 600 -y 700 -defaultsOSRD
 preplace netloc Net 1 2 2 820 220 1180J
-preplace netloc axi_dynclk_0_LOCKED_O 1 3 3 NJ 330 1580J 40 2030
-preplace netloc axi_dynclk_0_PXL_CLK_5X_O 1 3 3 NJ 310 1610J 60 2000
-preplace netloc axi_dynclk_0_PXL_CLK_O 1 3 3 1200 320 1600 50 2020J
-preplace netloc ilconcat_0_dout 1 5 1 1990 490n
+preplace netloc axi_dynclk_0_LOCKED_O 1 3 3 NJ 330 1580J 40 2040
+preplace netloc axi_dynclk_0_PXL_CLK_5X_O 1 3 3 NJ 310 1620J 60 2010
+preplace netloc axi_dynclk_0_PXL_CLK_O 1 3 3 1200 320 1610 50 2030J
+preplace netloc ilconcat_0_dout 1 5 1 2000 490n
 preplace netloc ilconstant_1_dout 1 6 1 NJ 960
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 30 550 390 760 810 720 1220 540 1650 580 1980 890 2470
-preplace netloc processing_system7_0_FCLK_CLK1 1 1 6 410 180 800 130 1180 10 NJ 10 2010 900 2500
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 20 350 390 410 NJ 410 NJ 410 1630J 400 NJ 400 2480
-preplace netloc rst_ps7_0_148M_peripheral_aresetn 1 1 4 400 400 NJ 400 NJ 400 1590
-preplace netloc v_axi4s_vid_out_0_sof_state_out 1 3 3 1210 350 NJ 350 1980
-preplace netloc v_axi4s_vid_out_0_vtg_ce 1 3 3 1220 340 NJ 340 1990
-preplace netloc v_frmbuf_rd_0_interrupt 1 4 1 1660 480n
-preplace netloc v_frmbuf_wr_0_interrupt 1 4 1 1670 460n
-preplace netloc v_tc_0_irq 1 4 1 1640 160n
-preplace netloc v_tpg_0_interrupt 1 3 2 1210 500 NJ
-preplace netloc processing_system7_0_GPIO_O 1 1 6 420 770 830 880 NJ 880 NJ 880 NJ 880 2490
 preplace netloc ilslice_0_Dout 1 3 1 1190J 640n
 preplace netloc ilslice_1_Dout 1 3 1 NJ 800
 preplace netloc ilslice_2_Dout 1 2 1 820J 510n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 30 550 390 760 810 720 1220 540 1660 580 1990 890 2480
+preplace netloc processing_system7_0_FCLK_CLK1 1 1 6 410 180 800 130 1180 10 NJ 10 2020 900 2510
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 20 350 390 410 NJ 410 NJ 410 1640J 400 NJ 400 2490
+preplace netloc processing_system7_0_GPIO_O 1 1 6 420 770 830 880 NJ 880 NJ 880 NJ 880 2500
+preplace netloc rst_ps7_0_148M_peripheral_aresetn 1 1 4 400 400 NJ 400 NJ 400 1600
+preplace netloc v_axi4s_vid_out_0_sof_state_out 1 3 3 1210 350 NJ 350 1990
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 3 3 1220 340 NJ 340 2000
+preplace netloc v_frmbuf_rd_0_interrupt 1 4 1 1670 480n
+preplace netloc v_frmbuf_wr_0_interrupt 1 4 1 1680 460n
+preplace netloc v_tc_0_irq 1 4 1 1650 160n
+preplace netloc v_tpg_0_interrupt 1 3 2 1210 500 NJ
 preplace netloc axi_smc_M00_AXI 1 2 2 780 70 NJ
 preplace netloc axi_smc_M01_AXI 1 2 1 790 280n
 preplace netloc axi_smc_M02_AXI 1 2 1 800 470n
 preplace netloc axi_smc_M03_AXI 1 2 2 780J 590 1170
 preplace netloc axi_smc_M04_AXI 1 2 2 N 600 NJ
 preplace netloc processing_system7_0_DDR 1 6 1 NJ 600
-preplace netloc processing_system7_0_FIXED_IO 1 6 1 2500J 620n
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 6 420 190 NJ 190 1170J 360 NJ 360 NJ 360 2470
+preplace netloc processing_system7_0_FIXED_IO 1 6 1 2510J 620n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 6 420 190 NJ 190 1170J 360 NJ 360 NJ 360 2480
 preplace netloc rgb2dvi_0_TMDS 1 6 1 NJ 160
 preplace netloc smartconnect_0_M00_AXI 1 5 1 N 670
 preplace netloc v_axi4s_vid_out_0_vid_io_out 1 5 1 N 130
-preplace netloc v_frmbuf_rd_0_m_axi_mm_video 1 4 1 1640 600n
-preplace netloc v_frmbuf_rd_0_m_axis_video 1 4 1 1620 120n
-preplace netloc v_frmbuf_wr_0_m_axi_mm_video 1 4 1 1680 640n
+preplace netloc v_frmbuf_rd_0_m_axi_mm_video 1 4 1 1650 600n
+preplace netloc v_frmbuf_rd_0_m_axis_video 1 4 1 1630 120n
+preplace netloc v_frmbuf_wr_0_m_axi_mm_video 1 4 1 1690 640n
 preplace netloc v_tc_0_vtiming_out 1 4 1 N 140
 preplace netloc v_tpg_0_m_axis_video1 1 3 1 1180 480n
-levelinfo -pg 1 0 210 600 1000 1400 1830 2250 2520
-pagesize -pg 1 -db -bbox -sgen 0 0 2670 1020
+levelinfo -pg 1 0 210 600 1000 1400 1840 2260 2530
+pagesize -pg 1 -db -bbox -sgen 0 0 2680 1020
 "
 }
 {

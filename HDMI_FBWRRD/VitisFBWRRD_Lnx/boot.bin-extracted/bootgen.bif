@@ -1,0 +1,7 @@
+the_ROM_image:
+{
+	 [bootloader] fsbl.elf
+	 download-zynq-generic-7z020.bit
+	 u-boot.elf
+	 [load=0x100000] system-top.dtb
+}

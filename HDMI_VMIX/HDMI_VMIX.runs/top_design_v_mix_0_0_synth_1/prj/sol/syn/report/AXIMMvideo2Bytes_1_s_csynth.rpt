@@ -1,0 +1,233 @@
+
+
+================================================================
+== Vitis HLS Report for 'AXIMMvideo2Bytes_1_s'
+================================================================
+* Date:           Tue Feb 10 17:47:00 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.75 ns|  4.927 ns|     1.82 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+----------+----------+-----------+-----+----------+---------+
+    |  Latency (cycles)  |  Latency (absolute)  |    Interval    | Pipeline|
+    |   min   |    max   |    min   |    max    | min |    max   |   Type  |
+    +---------+----------+----------+-----------+-----+----------+---------+
+    |        1|  17938801|  6.750 ns|  0.121 sec|    1|  17938801|       no|
+    +---------+----------+----------+-----------+-----+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------------------------+----------------------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
+        |                                                         |                                              |  Latency (cycles) |   Latency (absolute)  |  Interval |      Pipeline     |
+        |                         Instance                        |                    Module                    |   min   |   max   |    min    |    max    | min | max |        Type       |
+        +---------------------------------------------------------+----------------------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
+        |grp_AXIMMvideo2Bytes_1_Pipeline_VITIS_LOOP_203_2_fu_138  |AXIMMvideo2Bytes_1_Pipeline_VITIS_LOOP_203_2  |        2|     8195|  13.500 ns|  55.316 us|    0|    0|  loop pipeline stp|
+        +---------------------------------------------------------+----------------------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
+
+        * Loop: 
+        +--------------------+---------+----------+------------+-----------+-----------+----------+----------+
+        |                    |  Latency (cycles)  |  Iteration |  Initiation Interval  |   Trip   |          |
+        |      Loop Name     |   min   |    max   |   Latency  |  achieved |   target  |   Count  | Pipelined|
+        +--------------------+---------+----------+------------+-----------+-----------+----------+----------+
+        |- VITIS_LOOP_196_1  |        0|  17938800|  112 ~ 8305|          -|          -|  0 ~ 2160|        no|
+        +--------------------+---------+----------+------------+-----------+-----------+----------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    114|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|      83|     85|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|    733|    -|
+|Register         |        -|    -|     284|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     367|    932|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------------------------+----------------------------------------------+---------+----+----+----+-----+
+    |                         Instance                        |                    Module                    | BRAM_18K| DSP| FF | LUT| URAM|
+    +---------------------------------------------------------+----------------------------------------------+---------+----+----+----+-----+
+    |grp_AXIMMvideo2Bytes_1_Pipeline_VITIS_LOOP_203_2_fu_138  |AXIMMvideo2Bytes_1_Pipeline_VITIS_LOOP_203_2  |        0|   0|  83|  85|    0|
+    +---------------------------------------------------------+----------------------------------------------+---------+----+----+----+-----+
+    |Total                                                    |                                              |        0|   0|  83|  85|    0|
+    +---------------------------------------------------------+----------------------------------------------+---------+----+----+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln196_fu_200_p2   |         +|   0|  0|  32|          32|          32|
+    |add_ln199_fu_234_p2   |         +|   0|  0|  32|          32|          32|
+    |add_ln200_fu_164_p2   |         +|   0|  0|  17|          17|           3|
+    |y_22_fu_210_p2        |         +|   0|  0|  16|          16|           1|
+    |icmp_ln196_fu_205_p2  |      icmp|   0|  0|  16|          16|          16|
+    |ap_block_state1       |        or|   0|  0|   1|           1|           1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0| 114|         114|          85|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------+-----+-----------+-----+-----------+
+    |            Name            | LUT | Input Size| Bits| Total Bits|
+    +----------------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm                   |  559|        112|    1|        112|
+    |ap_done                     |    9|          2|    1|          2|
+    |m_axi_mm_video1_0_ARADDR    |   13|          3|   32|         96|
+    |m_axi_mm_video1_0_ARBURST   |    9|          2|    2|          4|
+    |m_axi_mm_video1_0_ARCACHE   |    9|          2|    4|          8|
+    |m_axi_mm_video1_0_ARID      |    9|          2|    1|          2|
+    |m_axi_mm_video1_0_ARLEN     |   13|          3|   32|         96|
+    |m_axi_mm_video1_0_ARLOCK    |    9|          2|    2|          4|
+    |m_axi_mm_video1_0_ARPROT    |    9|          2|    3|          6|
+    |m_axi_mm_video1_0_ARQOS     |    9|          2|    4|          8|
+    |m_axi_mm_video1_0_ARREGION  |    9|          2|    4|          8|
+    |m_axi_mm_video1_0_ARSIZE    |    9|          2|    3|          6|
+    |m_axi_mm_video1_0_ARUSER    |    9|          2|    1|          2|
+    |m_axi_mm_video1_0_ARVALID   |   13|          3|    1|          3|
+    |m_axi_mm_video1_0_RREADY    |    9|          2|    1|          2|
+    |mm_video1_blk_n_AR          |    9|          2|    1|          2|
+    |phi_mul_i_fu_94             |    9|          2|   32|         64|
+    |real_start                  |    9|          2|    1|          2|
+    |y_fu_98                     |    9|          2|   16|         32|
+    +----------------------------+-----+-----------+-----+-----------+
+    |Total                       |  733|        151|  142|        459|
+    +----------------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------------------------------+-----+----+-----+-----------+
+    |                                 Name                                 |  FF | LUT| Bits| Const Bits|
+    +----------------------------------------------------------------------+-----+----+-----+-----------+
+    |HwReg_layer1_buf1_read_reg_278                                        |   32|   0|   32|          0|
+    |HwReg_layerEnableFlag_1_val_read_reg_269                              |    1|   0|    1|          0|
+    |HwReg_layerHeight_1_val_read_reg_273                                  |   16|   0|   16|          0|
+    |ap_CS_fsm                                                             |  111|   0|  111|          0|
+    |ap_done_reg                                                           |    1|   0|    1|          0|
+    |grp_AXIMMvideo2Bytes_1_Pipeline_VITIS_LOOP_203_2_fu_138_ap_start_reg  |    1|   0|    1|          0|
+    |loopWidth_i_reg_302                                                   |   14|   0|   14|          0|
+    |phi_mul_i_fu_94                                                       |   32|   0|   32|          0|
+    |start_once_reg                                                        |    1|   0|    1|          0|
+    |trunc_ln3_i_reg_315                                                   |   29|   0|   29|          0|
+    |y_fu_98                                                               |   16|   0|   16|          0|
+    |zext_ln199_reg_297                                                    |   16|   0|   32|         16|
+    |zext_ln203_reg_307                                                    |   14|   0|   32|         18|
+    +----------------------------------------------------------------------+-----+----+-----+-----------+
+    |Total                                                                 |  284|   0|  318|         34|
+    +----------------------------------------------------------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------------+-----+-----+------------+-----------------------------+--------------+
+|             RTL Ports             | Dir | Bits|  Protocol  |        Source Object        |    C Type    |
++-----------------------------------+-----+-----+------------+-----------------------------+--------------+
+|ap_clk                             |   in|    1|  ap_ctrl_hs|          AXIMMvideo2Bytes<1>|  return value|
+|ap_rst                             |   in|    1|  ap_ctrl_hs|          AXIMMvideo2Bytes<1>|  return value|
+|ap_start                           |   in|    1|  ap_ctrl_hs|          AXIMMvideo2Bytes<1>|  return value|
+|start_full_n                       |   in|    1|  ap_ctrl_hs|          AXIMMvideo2Bytes<1>|  return value|
+|ap_done                            |  out|    1|  ap_ctrl_hs|          AXIMMvideo2Bytes<1>|  return value|
+|ap_continue                        |   in|    1|  ap_ctrl_hs|          AXIMMvideo2Bytes<1>|  return value|
+|ap_idle                            |  out|    1|  ap_ctrl_hs|          AXIMMvideo2Bytes<1>|  return value|
+|ap_ready                           |  out|    1|  ap_ctrl_hs|          AXIMMvideo2Bytes<1>|  return value|
+|start_out                          |  out|    1|  ap_ctrl_hs|          AXIMMvideo2Bytes<1>|  return value|
+|start_write                        |  out|    1|  ap_ctrl_hs|          AXIMMvideo2Bytes<1>|  return value|
+|HwReg_layerWidth_1_val             |   in|   14|   ap_stable|       HwReg_layerWidth_1_val|        scalar|
+|m_axi_mm_video1_0_AWVALID          |  out|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_AWREADY          |   in|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_AWADDR           |  out|   32|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_AWID             |  out|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_AWLEN            |  out|   32|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_AWSIZE           |  out|    3|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_AWBURST          |  out|    2|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_AWLOCK           |  out|    2|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_AWCACHE          |  out|    4|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_AWPROT           |  out|    3|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_AWQOS            |  out|    4|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_AWREGION         |  out|    4|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_AWUSER           |  out|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_WVALID           |  out|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_WREADY           |   in|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_WDATA            |  out|   64|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_WSTRB            |  out|    8|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_WLAST            |  out|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_WID              |  out|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_WUSER            |  out|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_ARVALID          |  out|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_ARREADY          |   in|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_ARADDR           |  out|   32|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_ARID             |  out|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_ARLEN            |  out|   32|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_ARSIZE           |  out|    3|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_ARBURST          |  out|    2|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_ARLOCK           |  out|    2|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_ARCACHE          |  out|    4|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_ARPROT           |  out|    3|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_ARQOS            |  out|    4|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_ARREGION         |  out|    4|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_ARUSER           |  out|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_RVALID           |   in|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_RREADY           |  out|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_RDATA            |   in|   64|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_RLAST            |   in|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_RID              |   in|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_RFIFONUM         |   in|    7|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_RUSER            |   in|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_RRESP            |   in|    2|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_BVALID           |   in|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_BREADY           |  out|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_BRESP            |   in|    2|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_BID              |   in|    1|       m_axi|                    mm_video1|       pointer|
+|m_axi_mm_video1_0_BUSER            |   in|    1|       m_axi|                    mm_video1|       pointer|
+|HwReg_layer1_buf1                  |   in|   32|   ap_stable|            HwReg_layer1_buf1|        scalar|
+|bytesLayer1_plane0_din             |  out|   64|     ap_fifo|           bytesLayer1_plane0|       pointer|
+|bytesLayer1_plane0_full_n          |   in|    1|     ap_fifo|           bytesLayer1_plane0|       pointer|
+|bytesLayer1_plane0_write           |  out|    1|     ap_fifo|           bytesLayer1_plane0|       pointer|
+|bytesLayer1_plane0_num_data_valid  |   in|    3|     ap_fifo|           bytesLayer1_plane0|       pointer|
+|bytesLayer1_plane0_fifo_cap        |   in|    3|     ap_fifo|           bytesLayer1_plane0|       pointer|
+|HwReg_layerHeight_1_val            |   in|   16|   ap_stable|      HwReg_layerHeight_1_val|        scalar|
+|HwReg_layerStride_1_val            |   in|   16|   ap_stable|      HwReg_layerStride_1_val|        scalar|
+|HwReg_layerEnableFlag_1_val        |   in|    1|   ap_stable|  HwReg_layerEnableFlag_1_val|        scalar|
++-----------------------------------+-----+-----+------------+-----------------------------+--------------+
+

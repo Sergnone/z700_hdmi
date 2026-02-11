@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 5,
-    "calls": "1 7",
+    "calls": "1 2",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_tpg.cpp",
@@ -32,6 +32,18 @@
   },
   "2": {
     "basicblocks": 1,
+    "calls": "7 4 6",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "v_tpg.cpp",
+    "fileloc": 304,
+    "instructions": 12,
+    "memory_accesses": 0,
+    "name": "v_tpgHlsDataFlow",
+    "total_instructions": 1168
+  },
+  "3": {
+    "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
     "def_use_depth": 0,
@@ -42,7 +54,7 @@
     "name": "reg<int>",
     "total_instructions": 4
   },
-  "3": {
+  "4": {
     "basicblocks": 31,
     "calls": "",
     "control_depth": 6,
@@ -62,7 +74,7 @@
     },
     "total_instructions": 167
   },
-  "4": {
+  "5": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -76,26 +88,6 @@
       "L": 1
     },
     "total_instructions": 5
-  },
-  "5": {
-    "basicblocks": 181,
-    "calls": "2 4",
-    "control_depth": 6,
-    "def_use_depth": 28,
-    "file": "v_tpg.cpp",
-    "fileloc": 536,
-    "instructions": 874,
-    "loads": {
-      "G": 92,
-      "L": 1
-    },
-    "memory_accesses": 155,
-    "name": "tpgBackground",
-    "stores": {
-      "G": 62,
-      "L": 1
-    },
-    "total_instructions": 883
   },
   "6": {
     "basicblocks": 15,
@@ -118,15 +110,23 @@
     "total_instructions": 106
   },
   "7": {
-    "basicblocks": 1,
-    "calls": "5 3 6",
-    "control_depth": 0,
-    "def_use_depth": 1,
+    "basicblocks": 181,
+    "calls": "3 5",
+    "control_depth": 6,
+    "def_use_depth": 28,
     "file": "v_tpg.cpp",
-    "fileloc": 304,
-    "instructions": 12,
-    "memory_accesses": 0,
-    "name": "v_tpgHlsDataFlow",
-    "total_instructions": 1168
+    "fileloc": 536,
+    "instructions": 874,
+    "loads": {
+      "G": 92,
+      "L": 1
+    },
+    "memory_accesses": 155,
+    "name": "tpgBackground",
+    "stores": {
+      "G": 62,
+      "L": 1
+    },
+    "total_instructions": 883
   }
 }

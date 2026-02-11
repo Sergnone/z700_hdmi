@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 5,
-    "calls": "7 1",
+    "calls": "6 3",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_tpg.cpp",
@@ -19,51 +19,8 @@
     "total_instructions": 1345
   },
   "1": {
-    "basicblocks": 1,
-    "calls": "4 6 3",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "v_tpg.cpp",
-    "fileloc": 304,
-    "instructions": 12,
-    "memory_accesses": 0,
-    "name": "v_tpgHlsDataFlow",
-    "total_instructions": 1198
-  },
-  "2": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
-    "memory_accesses": 0,
-    "name": "reg<int>",
-    "total_instructions": 1
-  },
-  "3": {
-    "basicblocks": 14,
-    "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 8,
-    "file": "v_tpg.cpp",
-    "fileloc": 919,
-    "instructions": 115,
-    "loads": {
-      "G": 3
-    },
-    "memory_accesses": 12,
-    "name": "MultiPixStream2AXIvideo",
-    "stores": {
-      "G": 2,
-      "L": 9
-    },
-    "total_instructions": 134
-  },
-  "4": {
     "basicblocks": 181,
-    "calls": "2 5",
+    "calls": "2 4",
     "control_depth": 5,
     "def_use_depth": 25,
     "file": "v_tpg.cpp",
@@ -80,7 +37,31 @@
     },
     "total_instructions": 883
   },
-  "5": {
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "memory_accesses": 0,
+    "name": "reg<int>",
+    "total_instructions": 1
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "1 5 7",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "v_tpg.cpp",
+    "fileloc": 304,
+    "instructions": 12,
+    "memory_accesses": 0,
+    "name": "v_tpgHlsDataFlow",
+    "total_instructions": 1198
+  },
+  "4": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -95,7 +76,7 @@
     },
     "total_instructions": 2
   },
-  "6": {
+  "5": {
     "basicblocks": 31,
     "calls": "",
     "control_depth": 7,
@@ -113,7 +94,7 @@
     },
     "total_instructions": 169
   },
-  "7": {
+  "6": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -124,5 +105,24 @@
     "memory_accesses": 0,
     "name": "reg<unsigned short>",
     "total_instructions": 1
+  },
+  "7": {
+    "basicblocks": 14,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 8,
+    "file": "v_tpg.cpp",
+    "fileloc": 919,
+    "instructions": 115,
+    "loads": {
+      "G": 3
+    },
+    "memory_accesses": 12,
+    "name": "MultiPixStream2AXIvideo",
+    "stores": {
+      "G": 2,
+      "L": 9
+    },
+    "total_instructions": 134
   }
 }

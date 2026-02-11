@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date                      : Tue Feb 10 12:36:59 2026
+| Date                      : Wed Feb 11 14:50:32 2026
 | Host                      : serg running 64-bit Ubuntu 24.04.3 LTS
 | Command                   : report_io -file top_design_wrapper_io_placed.rpt
 | Design                    : top_design_wrapper
@@ -68,7 +68,7 @@ Table of Contents
 | B11        |                   |            | GND                     | GND         |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | B12        | FIXED_IO_mio[48]  |            | PS_MIO48_501            | OUT         | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |              |                   |              |
 | B13        | FIXED_IO_mio[50]  |            | PS_MIO50_501            | BIDIR       | LVCMOS18*         |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| B14        | FIXED_IO_mio[47]  |            | PS_MIO47_501            | IN          | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |              |                   |              |
+| B14        | FIXED_IO_mio[47]  |            | PS_MIO47_501            | BIDIR       | LVCMOS18*         |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | B15        | FIXED_IO_mio[45]  |            | PS_MIO45_501            | INOUT       | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |              |                   |              |
 | B16        |                   |            | VCCO_MIO1_501           | VCCO        |                   |         |            |      |                     |                      |   any** |            |           |          |      |                  |              |                   |              |
 | B17        | FIXED_IO_mio[22]  |            | PS_MIO22_501            | BIDIR       | LVCMOS18*         |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |

@@ -275,7 +275,7 @@
                 "MA": "Data",
                 "MX": "/processing_system7_0",
                 "MI": "M_AXI_GP0",
-                "MS": "SEG_axi_dynclk_0_S_AXI_LITE_reg",
+                "MS": "SEG_axi_dynclk_1_S_AXI_LITE_reg",
                 "MV": "xilinx.com:ip:processing_system7:5.5",
                 "SX": "/axi_dynclk_0",
                 "SI": "S_AXI_LITE",

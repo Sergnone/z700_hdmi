@@ -3512,8 +3512,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>V_frmbuf_wr</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114474555</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-02-10T09:35:29Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114476129</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-02-11T11:49:14Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>

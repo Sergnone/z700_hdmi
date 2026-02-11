@@ -1,0 +1,7 @@
+the_ROM_image:
+{
+	 [bootloader] fsbl.elf
+	 top_design_wrapper_02.bit
+	 u-boot.elf
+	 [load=0x100000] system-top.dtb
+}

@@ -1,0 +1,142 @@
+
+
+================================================================
+== Vitis HLS Report for 'AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol'
+================================================================
+* Date:           Tue Feb 10 17:46:59 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.75 ns|  2.596 ns|     1.82 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval |      Pipeline     |
+    |   min   |   max   |    min    |    max    | min | max |        Type       |
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+    |        2|        2|  13.500 ns|  13.500 ns|    0|    0|  loop pipeline stp|
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- loop_wait_for_eol  |        0|        0|         1|          1|          1|     0|       yes|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.59>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_31"   --->   Operation 4 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_dest_V, void @empty_26, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_44, void @empty_44, void @empty_44, i32 0, i32 0, i32 0, i32 0, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_id_V, void @empty_26, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_44, void @empty_44, void @empty_44, i32 0, i32 0, i32 0, i32 0, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_last_V, void @empty_26, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_44, void @empty_44, void @empty_44, i32 0, i32 0, i32 0, i32 0, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_user_V, void @empty_26, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_44, void @empty_44, void @empty_44, i32 0, i32 0, i32 0, i32 0, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %s_axis_video_V_strb_V, void @empty_26, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_44, void @empty_44, void @empty_44, i32 0, i32 0, i32 0, i32 0, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %s_axis_video_V_keep_V, void @empty_26, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_44, void @empty_44, void @empty_44, i32 0, i32 0, i32 0, i32 0, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %s_axis_video_V_data_V, void @empty_26, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_44, void @empty_44, void @empty_44, i32 0, i32 0, i32 0, i32 0, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%and_ln3820_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %and_ln3820"   --->   Operation 12 'read' 'and_ln3820_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%p_0_0_0_0144310_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %p_0_0_0_0144310_reload"   --->   Operation 13 'read' 'p_0_0_0_0144310_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%p_4_0_0_0152319_reload_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %p_4_0_0_0152319_reload"   --->   Operation 14 'read' 'p_4_0_0_0152319_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (1.29ns)   --->   "%store_ln0 = store i24 %p_0_0_0_0144310_reload_read, i24 %p_0_0_0_0144311_lcssa325_out"   --->   Operation 15 'store' 'store_ln0' <Predicate = true> <Delay = 1.29>
+ST_1 : Operation 16 [1/1] (1.29ns)   --->   "%br_ln3820 = br void %while.cond62" [prj/sol/.autopilot/db/v_mix.cpp:3820]   --->   Operation 16 'br' 'br_ln3820' <Predicate = true> <Delay = 1.29>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%p_4_0_0_0152318_lcssa341 = phi i1 %p_4_0_0_0152319_reload_read, void %newFuncRoot, i1 %eol, void %while.body64"   --->   Operation 17 'phi' 'p_4_0_0_0152318_lcssa341' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%eol_1 = phi i1 %and_ln3820_read, void %newFuncRoot, i1 %eol, void %while.body64"   --->   Operation 18 'phi' 'eol_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln3820 = br i1 %eol_1, void %while.body64, void %for.inc70.exitStub" [prj/sol/.autopilot/db/v_mix.cpp:3820]   --->   Operation 19 'br' 'br_ln3820' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specpipeline_ln3822 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_44" [prj/sol/.autopilot/db/v_mix.cpp:3822]   --->   Operation 20 'specpipeline' 'specpipeline_ln3822' <Predicate = (!eol_1)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%speclooptripcount_ln3823 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 0, i64 0" [prj/sol/.autopilot/db/v_mix.cpp:3823]   --->   Operation 21 'speclooptripcount' 'speclooptripcount_ln3823' <Predicate = (!eol_1)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specloopname_ln3820 = specloopname void @_ssdm_op_SpecLoopName, void @empty_51" [prj/sol/.autopilot/db/v_mix.cpp:3820]   --->   Operation 22 'specloopname' 'specloopname_ln3820' <Predicate = (!eol_1)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] ( I:0.41ns O:0.41ns )   --->   "%empty = read i34 @_ssdm_op_Read.axis.volatile.i24P0A.i3P0A.i3P0A.i1P0A.i1P0A.i1P0A.i1P0A, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V" [prj/sol/.autopilot/db/v_mix.cpp:3825]   --->   Operation 23 'read' 'empty' <Predicate = (!eol_1)> <Delay = 0.41> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 1.52> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%p_s = extractvalue i34 %empty" [prj/sol/.autopilot/db/v_mix.cpp:3825]   --->   Operation 24 'extractvalue' 'p_s' <Predicate = (!eol_1)> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%eol = extractvalue i34 %empty" [prj/sol/.autopilot/db/v_mix.cpp:3825]   --->   Operation 25 'extractvalue' 'eol' <Predicate = (!eol_1)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (1.29ns)   --->   "%store_ln3825 = store i24 %p_s, i24 %p_0_0_0_0144311_lcssa325_out" [prj/sol/.autopilot/db/v_mix.cpp:3825]   --->   Operation 26 'store' 'store_ln3825' <Predicate = (!eol_1)> <Delay = 1.29>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln3820 = br void %while.cond62" [prj/sol/.autopilot/db/v_mix.cpp:3820]   --->   Operation 27 'br' 'br_ln3820' <Predicate = (!eol_1)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%write_ln3825 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %p_4_0_0_0152318_lcssa341_out, i1 %p_4_0_0_0152318_lcssa341" [prj/sol/.autopilot/db/v_mix.cpp:3825]   --->   Operation 28 'write' 'write_ln3825' <Predicate = (eol_1)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (1.29ns)   --->   "%ret_ln0 = ret"   --->   Operation 29 'ret' 'ret_ln0' <Predicate = (eol_1)> <Delay = 1.29>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.750ns, clock uncertainty: 1.822ns.
+
+ <State 1>: 2.596ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation 1 bit ('eol') with incoming values : ('and_ln3820_read') ('eol', prj/sol/.autopilot/db/v_mix.cpp:3825) [28]  (1.298 ns)
+	'br' operation ('br_ln3820', prj/sol/.autopilot/db/v_mix.cpp:3820) [25]  (1.298 ns)
+	'phi' operation 1 bit ('eol') with incoming values : ('and_ln3820_read') ('eol', prj/sol/.autopilot/db/v_mix.cpp:3825) [28]  (0.000 ns)
+	'store' operation ('store_ln3825', prj/sol/.autopilot/db/v_mix.cpp:3825) of variable 'p_s', prj/sol/.autopilot/db/v_mix.cpp:3825 24 bit on local variable 'p_0_0_0_0144311_lcssa325_out' [37]  (1.298 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

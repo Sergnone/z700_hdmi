@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Wed Feb  4 15:23:24 2026
+-- Date        : Tue Feb 10 17:33:26 2026
 -- Host        : serg running 64-bit Ubuntu 24.04.3 LTS
 -- Command     : write_vhdl -force -mode synth_stub
---               /home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/HSMI_FBWRRD.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_stub.vhdl
+--               /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/HDMI_VMIX.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_stub.vhdl
 -- Design      : top_design_v_tc_0_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-2

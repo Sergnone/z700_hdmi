@@ -1,0 +1,8 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD_Lnx/BIfBuilder/fsbl.elf
+	/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD_Lnx/BIfBuilder/top_design_wrapper_02.bit
+	/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD_Lnx/BIfBuilder/u-boot.elf
+	/home/serg/Documents/Xilinx/z700_hdmi/HDMI_FBWRRD/VitisFBWRRD_Lnx/BIfBuilder/system-top.dtb
+}
