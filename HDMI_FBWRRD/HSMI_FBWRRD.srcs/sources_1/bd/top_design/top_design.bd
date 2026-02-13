@@ -7,8 +7,7 @@
       "name": "top_design",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2025.2",
-      "validated": "true"
+      "tool_version": "2025.2"
     },
     "design_tree": {
       "processing_system7_0": "",
@@ -1620,6 +1619,9 @@
         "inst_hier_path": "v_tpg_0",
         "has_run_ip_tcl": "true",
         "parameters": {
+          "HAS_AXI4_YUV422_YUV420": {
+            "value": "1"
+          },
           "MAX_COLS": {
             "value": "1920"
           },
