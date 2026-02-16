@@ -16,10 +16,6 @@ extern "C" {
 #include "xil_io.h"
 #include "xstatus.h"
 
-#define XPAR_DDYNCLK_NUM_INSTANCES			1
-#define XPAR_DYNCLK_0_DEVICE_ID				0
-#define XPAR_DYNCLK_0_S_AXI_LITE_BASEADDR	0
-
 #define DDYNCLK_CTRL          0x0
 #define DDYNCLK_STATUS        0x4
 #define DDYNCLK_CLK_L         0x8
@@ -84,5 +80,9 @@ XStatus DDynClk_SelfTest(void * baseaddr_p);
 #ifdef __cplusplus
 }
 #endif
+
+#define XPAR_DDYNCLK_NUM_INSTANCES		        1
+#define XPAR_DYNCLK_0_DEVICE_ID			        0
+#define XPAR_DYNCLK_0_S_AXI_LITE_BASEADDR       0x43C10000
 
 #endif /* DDYNCLK_H_ */

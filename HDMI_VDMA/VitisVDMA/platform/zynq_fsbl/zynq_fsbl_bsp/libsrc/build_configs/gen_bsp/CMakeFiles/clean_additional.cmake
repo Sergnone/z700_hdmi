@@ -3,17 +3,17 @@ cmake_minimum_required(VERSION 3.16)
 
 if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   file(REMOVE_RECURSE
-  "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_VDMA/VitisVDMA/platform/zynq_fsbl/zynq_fsbl_bsp/include/diskio.h"
-  "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_VDMA/VitisVDMA/platform/zynq_fsbl/zynq_fsbl_bsp/include/ff.h"
-  "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_VDMA/VitisVDMA/platform/zynq_fsbl/zynq_fsbl_bsp/include/ffconf.h"
-  "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_VDMA/VitisVDMA/platform/zynq_fsbl/zynq_fsbl_bsp/include/sleep.h"
-  "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_VDMA/VitisVDMA/platform/zynq_fsbl/zynq_fsbl_bsp/include/xilffs.h"
-  "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_VDMA/VitisVDMA/platform/zynq_fsbl/zynq_fsbl_bsp/include/xilffs_config.h"
-  "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_VDMA/VitisVDMA/platform/zynq_fsbl/zynq_fsbl_bsp/include/xilrsa.h"
-  "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_VDMA/VitisVDMA/platform/zynq_fsbl/zynq_fsbl_bsp/include/xiltimer.h"
-  "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_VDMA/VitisVDMA/platform/zynq_fsbl/zynq_fsbl_bsp/include/xtimer_config.h"
-  "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_VDMA/VitisVDMA/platform/zynq_fsbl/zynq_fsbl_bsp/lib/libxilffs.a"
-  "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_VDMA/VitisVDMA/platform/zynq_fsbl/zynq_fsbl_bsp/lib/libxilrsa.a"
-  "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TEST_VDMA/VitisVDMA/platform/zynq_fsbl/zynq_fsbl_bsp/lib/libxiltimer.a"
+  "C:\\Users\\Sergey\\Documents\\Xilinx\\z7000_hdmi\\HDMI_VDMA\\VitisVDMA\\platform\\zynq_fsbl\\zynq_fsbl_bsp\\include\\diskio.h"
+  "C:\\Users\\Sergey\\Documents\\Xilinx\\z7000_hdmi\\HDMI_VDMA\\VitisVDMA\\platform\\zynq_fsbl\\zynq_fsbl_bsp\\include\\ff.h"
+  "C:\\Users\\Sergey\\Documents\\Xilinx\\z7000_hdmi\\HDMI_VDMA\\VitisVDMA\\platform\\zynq_fsbl\\zynq_fsbl_bsp\\include\\ffconf.h"
+  "C:\\Users\\Sergey\\Documents\\Xilinx\\z7000_hdmi\\HDMI_VDMA\\VitisVDMA\\platform\\zynq_fsbl\\zynq_fsbl_bsp\\include\\sleep.h"
+  "C:\\Users\\Sergey\\Documents\\Xilinx\\z7000_hdmi\\HDMI_VDMA\\VitisVDMA\\platform\\zynq_fsbl\\zynq_fsbl_bsp\\include\\xilffs.h"
+  "C:\\Users\\Sergey\\Documents\\Xilinx\\z7000_hdmi\\HDMI_VDMA\\VitisVDMA\\platform\\zynq_fsbl\\zynq_fsbl_bsp\\include\\xilffs_config.h"
+  "C:\\Users\\Sergey\\Documents\\Xilinx\\z7000_hdmi\\HDMI_VDMA\\VitisVDMA\\platform\\zynq_fsbl\\zynq_fsbl_bsp\\include\\xilrsa.h"
+  "C:\\Users\\Sergey\\Documents\\Xilinx\\z7000_hdmi\\HDMI_VDMA\\VitisVDMA\\platform\\zynq_fsbl\\zynq_fsbl_bsp\\include\\xiltimer.h"
+  "C:\\Users\\Sergey\\Documents\\Xilinx\\z7000_hdmi\\HDMI_VDMA\\VitisVDMA\\platform\\zynq_fsbl\\zynq_fsbl_bsp\\include\\xtimer_config.h"
+  "C:\\Users\\Sergey\\Documents\\Xilinx\\z7000_hdmi\\HDMI_VDMA\\VitisVDMA\\platform\\zynq_fsbl\\zynq_fsbl_bsp\\lib\\libxilffs.a"
+  "C:\\Users\\Sergey\\Documents\\Xilinx\\z7000_hdmi\\HDMI_VDMA\\VitisVDMA\\platform\\zynq_fsbl\\zynq_fsbl_bsp\\lib\\libxilrsa.a"
+  "C:\\Users\\Sergey\\Documents\\Xilinx\\z7000_hdmi\\HDMI_VDMA\\VitisVDMA\\platform\\zynq_fsbl\\zynq_fsbl_bsp\\lib\\libxiltimer.a"
   )
 endif()

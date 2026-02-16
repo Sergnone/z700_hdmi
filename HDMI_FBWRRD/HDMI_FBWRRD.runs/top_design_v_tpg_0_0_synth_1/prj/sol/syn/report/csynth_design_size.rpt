@@ -1,0 +1,103 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                       | Instructions | Description                                                                            |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                            | 9,938        | After all functions are compiled and linked into a single design                       |
+|               |                            |              |                                                                                        |
+| Unroll/Inline |                            |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                 | 2,751        | user unroll pragmas are applied                                                        |
+|               | (2) simplification         | 2,031        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                 | 1,943        | user inline pragmas are applied                                                        |
+|               | (4) simplification         | 1,634        | simplification of applied user inline pragmas                                          |
+|               |                            |              |                                                                                        |
+| Array/Struct  |                            |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition        | 1,408        | user array partition pragmas are applied                                               |
+|               | (2) simplification         | 1,341        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate | 1,345        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape          | 1,415        | apply array reshape pragmas                                                            |
+|               | (5) access patterns        | 1,480        | array access pattern optmizations                                                      |
+|               |                            |              |                                                                                        |
+| Performance   |                            |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification    | 1,467        | loop and instruction simplification                                                    |
+|               | (2) parallelization        | 1,415        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition        | 1,412        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification         | 1,335        | simplification of design after performance transformations                             |
+|               |                            |              |                                                                                        |
+| HW Transforms |                            |              | After hardware transfomations                                                          |
+|               | (1) lowering               | 1,345        | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations          | 1,319        | high level synthesis optimizations                                                     |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++--------------------------------------+----------------------+----------------+---------------+--------------+-------------+---------------+
+| Function                             | Location             | Compile/Link   | Unroll/Inline | Array/Struct | Performance | HW Transforms |
++--------------------------------------+----------------------+----------------+---------------+--------------+-------------+---------------+
+| + v_tpg                              | v_tpg.cpp:409        | 9,938          | 1,634         | 1,480        | 1,335       | 1,319         |
+|    reg<unsigned short>               | x_hls_utils.h:222    |    1           |    1          |    1         |    1        |    4          |
+|  + v_tpgHlsDataFlow                  | v_tpg.cpp:304        | 9,864          | 1,567         | 1,406        | 1,234       | 1,168         |
+|   + tpgBackground                    | v_tpg.cpp:536        | 8,094          | 1,096         |  950         |  893        |  883          |
+|      Scalar                          | hls_video_core.h:196 |   10 (2 calls) |               |              |             |               |
+|    + tpgPatternHorizontalRamp        | v_tpg.cpp:1067       |  134           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|    + tpgPatternVerticalRamp          | v_tpg.cpp:1090       |  142           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|    + tpgPatternTemporalRamp          | v_tpg.cpp:1115       |  120           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|    + tpgPatternSolidRed              | v_tpg.cpp:1130       |  138           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|    + tpgPatternSolidGreen            | v_tpg.cpp:1151       |  138           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|    + tpgPatternSolidBlue             | v_tpg.cpp:1172       |  138           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|    + tpgPatternSolidBlack            | v_tpg.cpp:1193       |  138           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|    + tpgPatternSolidWhite            | v_tpg.cpp:1214       |  138           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|    + tpgPatternColorBars             | v_tpg.cpp:1235       |  758           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|    + tpgPatternZonePlate             | v_tpg.cpp:1319       |  203           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|       reg<int>                       | x_hls_utils.h:222    |    1           |               |              |             |               |
+|    + tpgPatternTartanColorBars       | v_tpg.cpp:1369       |  638           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |   10 (2 calls) |               |              |             |               |
+|    + tpgPatternCrossHatch            | v_tpg.cpp:1437       |  781           |  120          |  110         |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|       reg<ap_uint<10> >              | x_hls_utils.h:222    |    3           |    2          |    2         |             |               |
+|    + tpgPatternRainbow               | v_tpg.cpp:1273       |  277           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|    + tpgPatternVerticalHorizontal... | v_tpg.cpp:1527       |  139           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|    + tpgPatternCheckerBoard          | v_tpg.cpp:1551       |  648           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|    + tpgPRBS                         | v_tpg.cpp:1823       | 1,767          |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|    + tpgPatternDPColorRamp           | v_tpg.cpp:1618       |  469           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |   10 (2 calls) |               |              |             |               |
+|    + tpgPatternDPBlackWhiteVertic... | v_tpg.cpp:1718       |  124           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|    + tpgPatternDPColorSquare         | v_tpg.cpp:1734       |  947           |  144          |  135         |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|      reg<int>                        | x_hls_utils.h:222    |                |    1          |    1         |    1        |    4          |
+|      reg<ap_uint<10> >               | x_hls_utils.h:222    |                |               |              |    2        |    5          |
+|   + tpgForeground                    | v_tpg.cpp:759        |  666           |  318          |  227         |  179        |  167          |
+|      Scalar                          | hls_video_core.h:196 |   15 (3 calls) |               |              |             |               |
+|    + tpgPatternMask                  | v_tpg.cpp:1983       |  137           |               |              |             |               |
+|       Scalar                         | hls_video_core.h:196 |    5           |               |              |             |               |
+|      tpgPatternBox                   | v_tpg.cpp:1869       |  248           |               |              |             |               |
+|      tpgPatternCrossHair             | v_tpg.cpp:1956       |  144           |               |              |             |               |
+|   + MultiPixStream2AXIvideo          | v_tpg.cpp:919        | 1,028          |  143          |  219         |  152        |  106          |
+|      Scalar                          | hls_video_core.h:196 |    5           |               |              |             |               |
++--------------------------------------+----------------------+----------------+---------------+--------------+-------------+---------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

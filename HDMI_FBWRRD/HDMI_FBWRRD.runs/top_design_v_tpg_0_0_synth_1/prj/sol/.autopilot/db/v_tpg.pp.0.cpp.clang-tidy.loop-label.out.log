@@ -1,0 +1,1860 @@
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:3281:5: remark: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_676_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:3281:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:3295:5: remark: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_690_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:3295:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:3309:5: remark: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_704_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:3309:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:6800:7: remark: Added loop label VITIS_LOOP_1251_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^
+      VITIS_LOOP_1251_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:6800:7: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:52439:5: remark: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^
+    VITIS_LOOP_61_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:52439:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:52485:5: remark: Added loop label VITIS_LOOP_117_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^
+    VITIS_LOOP_117_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:52485:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:52648:9: remark: Added loop label VITIS_LOOP_289_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^
+        VITIS_LOOP_289_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:52648:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:52800:9: remark: Added loop label VITIS_LOOP_449_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^
+        VITIS_LOOP_449_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:52800:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:52980:5: remark: Added loop label VITIS_LOOP_629_1:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^
+    VITIS_LOOP_629_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:52980:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:52984:5: remark: Added loop label VITIS_LOOP_633_2:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^
+    VITIS_LOOP_633_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:52984:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:53094:5: remark: Added loop label VITIS_LOOP_743_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^
+    VITIS_LOOP_743_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:53094:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:53184:7: remark: Added loop label VITIS_LOOP_840_1:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^
+      VITIS_LOOP_840_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:53184:7: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:53203:7: remark: Added loop label VITIS_LOOP_859_2:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^
+      VITIS_LOOP_859_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:53203:7: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:53496:5: remark: Added loop label VITIS_LOOP_1176_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^
+    VITIS_LOOP_1176_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:53496:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:53579:5: remark: Added loop label VITIS_LOOP_1259_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^
+    VITIS_LOOP_1259_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:53579:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:53985:13: remark: Added loop label VITIS_LOOP_68_1:   [xilinx-label-all-loops]
+            for (int j = 3; j >= I_+1; j--) {
+            ^
+            VITIS_LOOP_68_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:53985:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:53991:17: remark: Added loop label VITIS_LOOP_74_2:   [xilinx-label-all-loops]
+                for (int j = 3; j >= I_+1; j--){
+                ^
+                VITIS_LOOP_74_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:53991:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:53995:17: remark: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--){
+                ^
+                VITIS_LOOP_78_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:53995:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54042:13: remark: Added loop label VITIS_LOOP_145_4:   [xilinx-label-all-loops]
+            for (int j = 9; j >= I_+4; j--) {
+            ^
+            VITIS_LOOP_145_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54042:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54048:17: remark: Added loop label VITIS_LOOP_151_5:   [xilinx-label-all-loops]
+                for (int j = 9; j >= I_+4; j--){
+                ^
+                VITIS_LOOP_151_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54048:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54052:17: remark: Added loop label VITIS_LOOP_155_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--){
+                ^
+                VITIS_LOOP_155_6: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54052:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54067:9: remark: Added loop label VITIS_LOOP_170_7:   [xilinx-label-all-loops]
+        for (int j = 14; j < 22; j++){
+        ^
+        VITIS_LOOP_170_7: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54067:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54075:17: remark: Added loop label VITIS_LOOP_178_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++){
+                ^
+                VITIS_LOOP_178_8: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54075:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54140:13: remark: Added loop label VITIS_LOOP_243_9:   [xilinx-label-all-loops]
+            for (int j = 21; j >= I_+10; j--) {
+            ^
+            VITIS_LOOP_243_9: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54140:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54146:17: remark: Added loop label VITIS_LOOP_249_10:   [xilinx-label-all-loops]
+                for (int j = 21; j >= I_+10; j--) {
+                ^
+                VITIS_LOOP_249_10: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54146:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54150:17: remark: Added loop label VITIS_LOOP_253_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^
+                VITIS_LOOP_253_11: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54150:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54165:9: remark: Added loop label VITIS_LOOP_268_12:   [xilinx-label-all-loops]
+        for (int j = 27; j < 46; j++){
+        ^
+        VITIS_LOOP_268_12: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54165:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54173:17: remark: Added loop label VITIS_LOOP_276_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^
+                VITIS_LOOP_276_13: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54173:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54402:13: remark: Added loop label VITIS_LOOP_505_14:   [xilinx-label-all-loops]
+            for (int j = 45; j >= I_+22; j--) {
+            ^
+            VITIS_LOOP_505_14: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54402:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54408:17: remark: Added loop label VITIS_LOOP_511_15:   [xilinx-label-all-loops]
+                for (int j = 45; j >= I_+22; j--){
+                ^
+                VITIS_LOOP_511_15: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54408:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54412:17: remark: Added loop label VITIS_LOOP_515_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^
+                VITIS_LOOP_515_16: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54412:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54422:9: remark: Added loop label VITIS_LOOP_525_17:   [xilinx-label-all-loops]
+        for (int j = 32-F_; j < 32+I_; j++){
+        ^
+        VITIS_LOOP_525_17: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54422:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54426:9: remark: Added loop label VITIS_LOOP_529_18:   [xilinx-label-all-loops]
+        for (int j = 32+I_; j <= 64; j++){
+        ^
+        VITIS_LOOP_529_18: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54426:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54436:9: remark: Added loop label VITIS_LOOP_539_19:   [xilinx-label-all-loops]
+        for (int j = 37; j < 64; j++) {
+        ^
+        VITIS_LOOP_539_19: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54436:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54444:17: remark: Added loop label VITIS_LOOP_547_20:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++){
+                ^
+                VITIS_LOOP_547_20: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54444:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54805:13: remark: Added loop label VITIS_LOOP_908_21:   [xilinx-label-all-loops]
+            for (int j = 63; j >= I_+31; j--) {
+            ^
+            VITIS_LOOP_908_21: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54805:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54811:17: remark: Added loop label VITIS_LOOP_914_22:   [xilinx-label-all-loops]
+                for (int j = 63; j >= I_+31; j--) {
+                ^
+                VITIS_LOOP_914_22: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54811:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54815:17: remark: Added loop label VITIS_LOOP_918_23:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^
+                VITIS_LOOP_918_23: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54815:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54931:13: remark: Added loop label VITIS_LOOP_1034_1:   [xilinx-label-all-loops]
+            for (int j = 4; j >= I_+1; j--) {
+            ^
+            VITIS_LOOP_1034_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54931:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54937:17: remark: Added loop label VITIS_LOOP_1040_2:   [xilinx-label-all-loops]
+                for (int j = 4; j >= I_+1; j--) {
+                ^
+                VITIS_LOOP_1040_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54937:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54941:17: remark: Added loop label VITIS_LOOP_1044_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--) {
+                ^
+                VITIS_LOOP_1044_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:54941:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55028:13: remark: Added loop label VITIS_LOOP_1131_4:   [xilinx-label-all-loops]
+            for (int j = 10; j >= I_+4; j--) {
+            ^
+            VITIS_LOOP_1131_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55028:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55034:17: remark: Added loop label VITIS_LOOP_1137_5:   [xilinx-label-all-loops]
+                for (int j = 10; j >= I_+4; j--) {
+                ^
+                VITIS_LOOP_1137_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55034:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55038:17: remark: Added loop label VITIS_LOOP_1141_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--) {
+                ^
+                VITIS_LOOP_1141_6: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55038:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55057:9: remark: Added loop label VITIS_LOOP_1160_7:   [xilinx-label-all-loops]
+        for (int j = wf+3; j < w-1; j++) {
+        ^
+        VITIS_LOOP_1160_7: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55057:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55064:17: remark: Added loop label VITIS_LOOP_1167_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++) {
+                ^
+                VITIS_LOOP_1167_8: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55064:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55180:13: remark: Added loop label VITIS_LOOP_1283_9:   [xilinx-label-all-loops]
+            for (int j = 22; j >= I_+10; j--) {
+            ^
+            VITIS_LOOP_1283_9: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55180:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55186:17: remark: Added loop label VITIS_LOOP_1289_10:   [xilinx-label-all-loops]
+                for (int j = 22; j >= I_+10; j--){
+                ^
+                VITIS_LOOP_1289_10: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55186:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55190:17: remark: Added loop label VITIS_LOOP_1293_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^
+                VITIS_LOOP_1293_11: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55190:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55210:9: remark: Added loop label VITIS_LOOP_1313_12:   [xilinx-label-all-loops]
+        for (int j = wf+4; j < w-1; j++){
+        ^
+        VITIS_LOOP_1313_12: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55210:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55217:17: remark: Added loop label VITIS_LOOP_1320_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^
+                VITIS_LOOP_1320_13: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55217:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55479:13: remark: Added loop label VITIS_LOOP_1582_14:   [xilinx-label-all-loops]
+            for (int j = 46; j >= I_+22; j--) {
+            ^
+            VITIS_LOOP_1582_14: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55479:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55485:17: remark: Added loop label VITIS_LOOP_1588_15:   [xilinx-label-all-loops]
+                for (int j = 46; j >= I_+22; j--) {
+                ^
+                VITIS_LOOP_1588_15: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55485:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55489:17: remark: Added loop label VITIS_LOOP_1592_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^
+                VITIS_LOOP_1592_16: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55489:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55513:9: remark: Added loop label VITIS_LOOP_1616_17:   [xilinx-label-all-loops]
+        for (int j = wf+5; j < w-1; j++){
+        ^
+        VITIS_LOOP_1616_17: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55513:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55520:17: remark: Added loop label VITIS_LOOP_1623_18:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++) {
+                ^
+                VITIS_LOOP_1623_18: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55520:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55950:13: remark: Added loop label VITIS_LOOP_2053_19:   [xilinx-label-all-loops]
+            for (int j = 64; j >= I_+31; j--) {
+            ^
+            VITIS_LOOP_2053_19: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55950:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55956:17: remark: Added loop label VITIS_LOOP_2059_20:   [xilinx-label-all-loops]
+                for (int j = 64; j >= I_+31; j--) {
+                ^
+                VITIS_LOOP_2059_20: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55956:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55960:17: remark: Added loop label VITIS_LOOP_2063_21:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^
+                VITIS_LOOP_2063_21: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:55960:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56089:13: remark: Added loop label VITIS_LOOP_2192_1:   [xilinx-label-all-loops]
+            for(int j=3; j>=I+1; j--) {
+            ^
+            VITIS_LOOP_2192_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56089:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56096:17: remark: Added loop label VITIS_LOOP_2199_2:   [xilinx-label-all-loops]
+                for(int j=3; j>=I+1; j--) {
+                ^
+                VITIS_LOOP_2199_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56096:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56100:17: remark: Added loop label VITIS_LOOP_2203_3:   [xilinx-label-all-loops]
+                for(int j=I; j>=0; j--) {
+                ^
+                VITIS_LOOP_2203_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56100:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56147:13: remark: Added loop label VITIS_LOOP_2250_4:   [xilinx-label-all-loops]
+            for(int j=7; j>=3+I; j--) {
+            ^
+            VITIS_LOOP_2250_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56147:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56154:17: remark: Added loop label VITIS_LOOP_2257_5:   [xilinx-label-all-loops]
+                for(int j=7; j>=3+I; j--) {
+                ^
+                VITIS_LOOP_2257_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56154:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56158:17: remark: Added loop label VITIS_LOOP_2261_6:   [xilinx-label-all-loops]
+                for(int j=I+2; j>=0; j--) {
+                ^
+                VITIS_LOOP_2261_6: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56158:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56176:9: remark: Added loop label VITIS_LOOP_2279_7:   [xilinx-label-all-loops]
+        for(int j=11; j<16; j++) {
+        ^
+        VITIS_LOOP_2279_7: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56176:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56231:13: remark: Added loop label VITIS_LOOP_2334_8:   [xilinx-label-all-loops]
+            for(int j=15; j>=7+I; j--) {
+            ^
+            VITIS_LOOP_2334_8: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56231:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56238:17: remark: Added loop label VITIS_LOOP_2341_9:   [xilinx-label-all-loops]
+                for(int j=15; j>=7+I; j--) {
+                ^
+                VITIS_LOOP_2341_9: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56238:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56242:17: remark: Added loop label VITIS_LOOP_2345_10:   [xilinx-label-all-loops]
+                for(int j=6+I; j>=0; j--) {
+                ^
+                VITIS_LOOP_2345_10: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56242:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56260:9: remark: Added loop label VITIS_LOOP_2363_11:   [xilinx-label-all-loops]
+        for(int j=20; j<32; j++) {
+        ^
+        VITIS_LOOP_2363_11: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56260:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56349:13: remark: Added loop label VITIS_LOOP_2452_12:   [xilinx-label-all-loops]
+            for(int j=31; j>=I+15; j--) {
+            ^
+            VITIS_LOOP_2452_12: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56349:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56356:17: remark: Added loop label VITIS_LOOP_2459_13:   [xilinx-label-all-loops]
+                for(int j=31; j>=I+15; j--) {
+                ^
+                VITIS_LOOP_2459_13: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56356:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56360:17: remark: Added loop label VITIS_LOOP_2463_14:   [xilinx-label-all-loops]
+                for(int j=I+14; j>=0; j--) {
+                ^
+                VITIS_LOOP_2463_14: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56360:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56370:9: remark: Added loop label VITIS_LOOP_2473_15:   [xilinx-label-all-loops]
+        for(int j=32-F; j<32+I; j++) {
+        ^
+        VITIS_LOOP_2473_15: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56370:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56374:9: remark: Added loop label VITIS_LOOP_2477_16:   [xilinx-label-all-loops]
+        for(int j=32+I; j<=64; j++) {
+        ^
+        VITIS_LOOP_2477_16: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56374:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56385:9: remark: Added loop label VITIS_LOOP_2488_17:   [xilinx-label-all-loops]
+        for(int j=37; j<64; j++) {
+        ^
+        VITIS_LOOP_2488_17: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56385:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56393:17: remark: Added loop label VITIS_LOOP_2496_18:   [xilinx-label-all-loops]
+                for(int j=0; j<64; j++) {
+                ^
+                VITIS_LOOP_2496_18: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56393:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56718:13: remark: Added loop label VITIS_LOOP_2821_19:   [xilinx-label-all-loops]
+            for(int j=63; j>=I+31; j--) {
+            ^
+            VITIS_LOOP_2821_19: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56718:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56725:17: remark: Added loop label VITIS_LOOP_2828_20:   [xilinx-label-all-loops]
+                for(int j=63; j>=I+31; j--) {
+                ^
+                VITIS_LOOP_2828_20: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56725:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56729:17: remark: Added loop label VITIS_LOOP_2832_21:   [xilinx-label-all-loops]
+                for(int j=I+30; j>=0; j--) {
+                ^
+                VITIS_LOOP_2832_21: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56729:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56817:4: remark: Added loop label VITIS_LOOP_2920_1:   [xilinx-label-all-loops]
+   for(int j = 5; j>=I_+2; j--) {
+   ^
+   VITIS_LOOP_2920_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56817:4: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56824:5: remark: Added loop label VITIS_LOOP_2927_2:   [xilinx-label-all-loops]
+    for(int j = 5; j>=I_+2; j--) {
+    ^
+    VITIS_LOOP_2927_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56824:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56828:5: remark: Added loop label VITIS_LOOP_2931_3:   [xilinx-label-all-loops]
+    for(int j = I_+1; j>=0; j--) {
+    ^
+    VITIS_LOOP_2931_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56828:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56843:3: remark: Added loop label VITIS_LOOP_2946_4:   [xilinx-label-all-loops]
+  for(int j = 11; j >=7; j--) {
+  ^
+  VITIS_LOOP_2946_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56843:3: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56875:4: remark: Added loop label VITIS_LOOP_2978_5:   [xilinx-label-all-loops]
+   for(int j = 11; j >= I_+5; j--) {
+   ^
+   VITIS_LOOP_2978_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56875:4: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56882:5: remark: Added loop label VITIS_LOOP_2985_6:   [xilinx-label-all-loops]
+    for(int j = 11; j>= I_+5; j--) {
+    ^
+    VITIS_LOOP_2985_6: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56882:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56886:5: remark: Added loop label VITIS_LOOP_2989_7:   [xilinx-label-all-loops]
+    for(int j = I_+4; j>=0; j--) {
+    ^
+    VITIS_LOOP_2989_7: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56886:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56901:3: remark: Added loop label VITIS_LOOP_3004_8:   [xilinx-label-all-loops]
+  for(int j = 25; j>=15; j--) {
+  ^
+  VITIS_LOOP_3004_8: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56901:3: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56951:4: remark: Added loop label VITIS_LOOP_3054_9:   [xilinx-label-all-loops]
+   for(int j = 25; j>= I_+12; j--) {
+   ^
+   VITIS_LOOP_3054_9: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56951:4: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56958:5: remark: Added loop label VITIS_LOOP_3061_10:   [xilinx-label-all-loops]
+    for(int j = 25; j>=I_+12; j--) {
+    ^
+    VITIS_LOOP_3061_10: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56958:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56962:5: remark: Added loop label VITIS_LOOP_3065_11:   [xilinx-label-all-loops]
+    for(int j = I_+11; j>=0; j--) {
+    ^
+    VITIS_LOOP_3065_11: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56962:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56977:3: remark: Added loop label VITIS_LOOP_3080_12:   [xilinx-label-all-loops]
+  for(int j = 51; j >= 29; j--) {
+  ^
+  VITIS_LOOP_3080_12: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:56977:3: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:57114:4: remark: Added loop label VITIS_LOOP_3217_13:   [xilinx-label-all-loops]
+   for(int j = 51; j >= 25 + I_; j--) {
+   ^
+   VITIS_LOOP_3217_13: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:57114:4: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:57121:5: remark: Added loop label VITIS_LOOP_3224_14:   [xilinx-label-all-loops]
+    for(int j = 51; j>=25 + I_; j--) {
+    ^
+    VITIS_LOOP_3224_14: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:57121:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:57125:5: remark: Added loop label VITIS_LOOP_3228_15:   [xilinx-label-all-loops]
+    for(int j = 24 + I_; j >= 0; j--) {
+    ^
+    VITIS_LOOP_3228_15: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:57125:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:57140:3: remark: Added loop label VITIS_LOOP_3243_16:   [xilinx-label-all-loops]
+  for(int j = 63; j >= 36; j--) {
+  ^
+  VITIS_LOOP_3243_16: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:57140:3: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:57300:4: remark: Added loop label VITIS_LOOP_3403_17:   [xilinx-label-all-loops]
+   for(int j = 63; j >= 31 + I_; j--) {
+   ^
+   VITIS_LOOP_3403_17: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:57300:4: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:57307:5: remark: Added loop label VITIS_LOOP_3410_18:   [xilinx-label-all-loops]
+    for(int j = 63; j >= 31 + I_; j--) {
+    ^
+    VITIS_LOOP_3410_18: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:57307:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:57311:5: remark: Added loop label VITIS_LOOP_3414_19:   [xilinx-label-all-loops]
+    for(int j = 30 + I_; j >= 0; j--) {
+    ^
+    VITIS_LOOP_3414_19: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:57311:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:58026:13: remark: Added loop label VITIS_LOOP_703_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^
+            VITIS_LOOP_703_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:58026:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:58244:13: remark: Added loop label VITIS_LOOP_921_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^
+            VITIS_LOOP_921_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:58244:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:58661:13: remark: Added loop label VITIS_LOOP_1345_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^
+            VITIS_LOOP_1345_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:58661:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:58984:9: remark: Added loop label VITIS_LOOP_243_1:   [xilinx-label-all-loops]
+        for ( int pos = msbr-1; pos >= 0; pos-- ) {
+        ^
+        VITIS_LOOP_243_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:58984:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:59012:9: remark: Added loop label VITIS_LOOP_271_2:   [xilinx-label-all-loops]
+        for ( int pos = -1; pos >= -F_-1; pos-- ) {
+        ^
+        VITIS_LOOP_271_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:59012:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:59716:13: remark: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
+            for (int j = 0; j < W_-1; j++){
+            ^
+            VITIS_LOOP_48_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:59716:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:59769:5: remark: Added loop label VITIS_LOOP_109_2:   [xilinx-label-all-loops]
+    for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
+    ^
+    VITIS_LOOP_109_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:59769:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:59783:13: remark: Added loop label VITIS_LOOP_123_3:   [xilinx-label-all-loops]
+            for (int j = WO_m-1; j >= W_-1; j--) {
+            ^
+            VITIS_LOOP_123_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:59783:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:59813:13: remark: Added loop label VITIS_LOOP_153_4:   [xilinx-label-all-loops]
+            for (int j = W_-2; j >= 0; j--){
+            ^
+            VITIS_LOOP_153_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:59813:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:59898:12: remark: Added loop label VITIS_LOOP_281_1:   [xilinx-label-all-loops]
+           for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
+           ^
+           VITIS_LOOP_281_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:59898:12: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:59918:16: remark: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+               for (int j = WO_e-1; j >= W_-1; j--) {
+               ^
+               VITIS_LOOP_301_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:59918:16: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:59932:20: remark: Added loop label VITIS_LOOP_315_3:   [xilinx-label-all-loops]
+                   for(int i = 0; i < W_-1; ++i) {
+                   ^
+                   VITIS_LOOP_315_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:59932:20: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60025:12: remark: Added loop label VITIS_LOOP_433_1:   [xilinx-label-all-loops]
+           for (int j =WO_d-1; j >= W_-1; j--) {
+           ^
+           VITIS_LOOP_433_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60025:12: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60039:15: remark: Added loop label VITIS_LOOP_447_2:   [xilinx-label-all-loops]
+              for(int i = 0; i < W_-1; ++i) {
+              ^
+              VITIS_LOOP_447_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60039:15: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60159:13: remark: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^
+            VITIS_LOOP_33_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60159:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60283:13: remark: Added loop label VITIS_LOOP_183_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^
+            VITIS_LOOP_183_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60283:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60338:13: remark: Added loop label VITIS_LOOP_248_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^
+            VITIS_LOOP_248_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60338:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60605:5: remark: Added loop label VITIS_LOOP_44_1:   [xilinx-label-all-loops]
+    for(int l = loop_nm; l > 0; --l){
+    ^
+    VITIS_LOOP_44_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60605:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60856:5: remark: Added loop label VITIS_LOOP_16_1:   [xilinx-label-all-loops]
+    for (int i=0; i<W_;i++)
+    ^
+    VITIS_LOOP_16_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60856:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60867:5: remark: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+    for (int i=0; i<W_;i++)
+    ^
+    VITIS_LOOP_27_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60867:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60878:5: remark: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
+    for (int i=0; i<I_;i++)
+    ^
+    VITIS_LOOP_38_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60878:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60889:5: remark: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+    for (int i=0; i<I_;i++)
+    ^
+    VITIS_LOOP_49_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60889:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60900:5: remark: Added loop label VITIS_LOOP_60_1:   [xilinx-label-all-loops]
+    for (int i=0; i<W_;i++)
+    ^
+    VITIS_LOOP_60_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60900:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60911:5: remark: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+    for (int i=0; i<W_;i++)
+    ^
+    VITIS_LOOP_71_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60911:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60922:5: remark: Added loop label VITIS_LOOP_82_1:   [xilinx-label-all-loops]
+    for (int i=0; i<I_;i++)
+    ^
+    VITIS_LOOP_82_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60922:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60933:5: remark: Added loop label VITIS_LOOP_93_1:   [xilinx-label-all-loops]
+    for (int i=0; i<I_;i++)
+    ^
+    VITIS_LOOP_93_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:60933:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:63292:12: remark: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+           for(int i = 0; i < W_-1; ++i) {
+           ^
+           VITIS_LOOP_26_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:63292:12: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:63356:7: remark: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+      for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
+      ^
+      VITIS_LOOP_40_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:63356:7: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:63473:9: remark: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+        for(int pos = msbr - 1; pos >= 0; pos--) {
+        ^
+        VITIS_LOOP_49_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:63473:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:63498:5: remark: Added loop label VITIS_LOOP_81_2:   [xilinx-label-all-loops]
+    for(int pos = -1; pos >= -F-1; pos--) {
+    ^
+    VITIS_LOOP_81_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:63498:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:63568:8: remark: Added loop label VITIS_LOOP_169_3:   [xilinx-label-all-loops]
+       for(int i = 0; i < W - 1; ++i) {
+       ^
+       VITIS_LOOP_169_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:63568:8: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66233:5: remark: Added loop label VITIS_LOOP_137_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS; i++) {
+    ^
+    VITIS_LOOP_137_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66233:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66235:9: remark: Added loop label VITIS_LOOP_139_2:   [xilinx-label-all-loops]
+        for(j = 0; j < COLS-1; j++) {
+        ^
+        VITIS_LOOP_139_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66235:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66257:5: remark: Added loop label VITIS_LOOP_175_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS; i++) {
+    ^
+    VITIS_LOOP_175_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66257:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66259:9: remark: Added loop label VITIS_LOOP_177_2:   [xilinx-label-all-loops]
+        for(j = COLS-1; j > 0; j--) {
+        ^
+        VITIS_LOOP_177_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66259:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66281:5: remark: Added loop label VITIS_LOOP_213_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS-1; i++) {
+    ^
+    VITIS_LOOP_213_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66281:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66283:9: remark: Added loop label VITIS_LOOP_215_2:   [xilinx-label-all-loops]
+        for(j = 0; j < COLS; j++) {
+        ^
+        VITIS_LOOP_215_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66283:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66305:5: remark: Added loop label VITIS_LOOP_251_1:   [xilinx-label-all-loops]
+    for(i = ROWS-1; i > 0; i--) {
+    ^
+    VITIS_LOOP_251_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66305:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66307:9: remark: Added loop label VITIS_LOOP_253_2:   [xilinx-label-all-loops]
+        for(j = 0; j < COLS; j++) {
+        ^
+        VITIS_LOOP_253_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66307:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66345:5: remark: Added loop label VITIS_LOOP_320_1:   [xilinx-label-all-loops]
+    for(j = 0; j < COLS; j++) {
+    ^
+    VITIS_LOOP_320_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66345:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66397:5: remark: Added loop label VITIS_LOOP_417_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS; i++) {
+    ^
+    VITIS_LOOP_417_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66397:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66587:5: remark: Added loop label VITIS_LOOP_702_1:   [xilinx-label-all-loops]
+    for(i = ROWS-1; i > 0; i--) {
+    ^
+    VITIS_LOOP_702_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66587:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66609:5: remark: Added loop label VITIS_LOOP_742_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS-1; i++) {
+    ^
+    VITIS_LOOP_742_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66609:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66657:5: remark: Added loop label VITIS_LOOP_838_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS; i++) {
+    ^
+    VITIS_LOOP_838_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66657:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66764:5: remark: Added loop label VITIS_LOOP_990_1:   [xilinx-label-all-loops]
+    for(i = ROWS-1; i > 0; i--) {
+    ^
+    VITIS_LOOP_990_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66764:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66786:5: remark: Added loop label VITIS_LOOP_1030_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS-1; i++) {
+    ^
+    VITIS_LOOP_1030_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66786:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66834:5: remark: Added loop label VITIS_LOOP_1126_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS; i++) {
+    ^
+    VITIS_LOOP_1126_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:66834:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67035:9: remark: Added loop label VITIS_LOOP_232_1:   [xilinx-label-all-loops]
+        for (int k = 0; k < N; k++) {
+        ^
+        VITIS_LOOP_232_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67035:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67056:5: remark: Added loop label VITIS_LOOP_253_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_253_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67056:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67066:5: remark: Added loop label VITIS_LOOP_263_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_263_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67066:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67077:5: remark: Added loop label VITIS_LOOP_274_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_274_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67077:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67088:5: remark: Added loop label VITIS_LOOP_285_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_285_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67088:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67099:5: remark: Added loop label VITIS_LOOP_296_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_296_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67099:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67111:5: remark: Added loop label VITIS_LOOP_308_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_308_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67111:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67122:5: remark: Added loop label VITIS_LOOP_319_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_319_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67122:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67134:5: remark: Added loop label VITIS_LOOP_331_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_331_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67134:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67145:5: remark: Added loop label VITIS_LOOP_342_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_342_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67145:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67422:13: remark: Added loop label VITIS_LOOP_619_1:   [xilinx-label-all-loops]
+            for (i = 0; i < ((((T) & ((512 - 1) << 11)) >> 11) + 1); i++) {
+            ^
+            VITIS_LOOP_619_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67422:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67499:9: remark: Added loop label VITIS_LOOP_696_1:   [xilinx-label-all-loops]
+        for (i = 0; i < ((((T) & ((512 - 1) << 11)) >> 11) + 1); i++) {
+        ^
+        VITIS_LOOP_696_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67499:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67523:9: remark: Added loop label VITIS_LOOP_720_1:   [xilinx-label-all-loops]
+        for (i = 0; i < ((((T) & ((512 - 1) << 11)) >> 11) + 1); i++) {
+        ^
+        VITIS_LOOP_720_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67523:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67546:5: remark: Added loop label VITIS_LOOP_743_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T i = 0; i < ((((T) & ((512 - 1) << 11)) >> 11) + 1); i++) {
+    ^
+    VITIS_LOOP_743_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67546:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67676:25: remark: Added loop label VITIS_LOOP_208_1:   [xilinx-label-all-loops]
+                        for(int k=0;k<num;k++)
+                        ^
+                        VITIS_LOOP_208_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67676:25: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67812:9: remark: Added loop label VITIS_LOOP_189_1:   [xilinx-label-all-loops]
+        for (HLS_SIZE_T col = 0; col < cols; col++) {
+        ^
+        VITIS_LOOP_189_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67812:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67878:9: remark: Added loop label VITIS_LOOP_255_1:   [xilinx-label-all-loops]
+        for (HLS_SIZE_T col = 0; col < cols; col++) {
+        ^
+        VITIS_LOOP_255_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:67878:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:68782:5: remark: Added loop label VITIS_LOOP_1025_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^
+    VITIS_LOOP_1025_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:68782:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:68841:13: remark: Added loop label VITIS_LOOP_1105_1:   [xilinx-label-all-loops]
+            for (HLS_CHANNEL_T k = 0; k < ((((DST_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+            ^
+            VITIS_LOOP_1105_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:68841:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:68857:5: remark: Added loop label VITIS_LOOP_1121_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^
+    VITIS_LOOP_1121_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:68857:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:68873:5: remark: Added loop label VITIS_LOOP_1137_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^
+    VITIS_LOOP_1137_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:68873:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:68891:5: remark: Added loop label VITIS_LOOP_1155_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^
+    VITIS_LOOP_1155_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:68891:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:68929:5: remark: Added loop label VITIS_LOOP_1193_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^
+    VITIS_LOOP_1193_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:68929:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:68949:5: remark: Added loop label VITIS_LOOP_1213_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^
+    VITIS_LOOP_1213_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:68949:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69237:13: remark: Added loop label VITIS_LOOP_1508_1:   [xilinx-label-all-loops]
+            for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+            ^
+            VITIS_LOOP_1508_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69237:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69786:21: remark: Added loop label VITIS_LOOP_471_1:   [xilinx-label-all-loops]
+                    for(int buf_row=0; buf_row<K_HEIGHT; buf_row++) {
+                    ^
+                    VITIS_LOOP_471_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69786:21: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69799:29: remark: Added loop label VITIS_LOOP_484_2:   [xilinx-label-all-loops]
+                            for(int buf_row=2*K_HEIGHT-1; buf_row>=0; buf_row--) {
+                            ^
+                            VITIS_LOOP_484_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69799:29: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69808:29: remark: Added loop label VITIS_LOOP_493_3:   [xilinx-label-all-loops]
+                            for(int buf_row=0; buf_row<K_HEIGHT; buf_row++) {
+                            ^
+                            VITIS_LOOP_493_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69808:29: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69809:33: remark: Added loop label VITIS_LOOP_494_4:   [xilinx-label-all-loops]
+                                for(int buf_col=K_WIDTH-1; buf_col>0; buf_col--) {
+                                ^
+                                VITIS_LOOP_494_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69809:33: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69817:29: remark: Added loop label VITIS_LOOP_502_5:   [xilinx-label-all-loops]
+                            for(int buf_row=2*K_HEIGHT-1; buf_row>0; buf_row--) {
+                            ^
+                            VITIS_LOOP_502_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69817:29: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69831:21: remark: Added loop label VITIS_LOOP_516_6:   [xilinx-label-all-loops]
+                    for(int buf_row=0; buf_row<K_HEIGHT; buf_row++){
+                    ^
+                    VITIS_LOOP_516_6: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69831:21: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69967:25: remark: Added loop label VITIS_LOOP_652_1:   [xilinx-label-all-loops]
+                        for(int buf_row=K_HEIGHT-1; buf_row>0; buf_row--) {
+                        ^
+                        VITIS_LOOP_652_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69967:25: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69971:25: remark: Added loop label VITIS_LOOP_656_2:   [xilinx-label-all-loops]
+                        for(int buf_row=K_HEIGHT-1; buf_row>=0; buf_row--) {
+                        ^
+                        VITIS_LOOP_656_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69971:25: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69978:29: remark: Added loop label VITIS_LOOP_663_3:   [xilinx-label-all-loops]
+                            for(int buf_row=K_HEIGHT-1; buf_row>0; buf_row--) {
+                            ^
+                            VITIS_LOOP_663_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69978:29: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69995:25: remark: Added loop label VITIS_LOOP_680_4:   [xilinx-label-all-loops]
+                        for(int buf_row=K_HEIGHT-1; buf_row>=0; buf_row--) {
+                        ^
+                        VITIS_LOOP_680_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69995:25: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69996:29: remark: Added loop label VITIS_LOOP_681_5:   [xilinx-label-all-loops]
+                            for(int buf_col=K_WIDTH-1; buf_col>0; buf_col--) {
+                            ^
+                            VITIS_LOOP_681_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:69996:29: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70098:17: remark: Added loop label VITIS_LOOP_783_1:   [xilinx-label-all-loops]
+                for(int buf_row=0; buf_row<K_HEIGHT; buf_row++) {
+                ^
+                VITIS_LOOP_783_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70098:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70108:21: remark: Added loop label VITIS_LOOP_793_2:   [xilinx-label-all-loops]
+                    for(int buf_row=2*K_HEIGHT-1; buf_row>=0; buf_row--) {
+                    ^
+                    VITIS_LOOP_793_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70108:21: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70115:21: remark: Added loop label VITIS_LOOP_800_3:   [xilinx-label-all-loops]
+                    for(int buf_row=2*K_HEIGHT-1; buf_row>0; buf_row--) {
+                    ^
+                    VITIS_LOOP_800_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70115:21: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70125:17: remark: Added loop label VITIS_LOOP_810_4:   [xilinx-label-all-loops]
+                for(int buf_row=0; buf_row<K_HEIGHT; buf_row++){
+                ^
+                VITIS_LOOP_810_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70125:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70251:17: remark: Added loop label VITIS_LOOP_936_1:   [xilinx-label-all-loops]
+                for (int buf_col=K_WIDTH-1; buf_col>0; buf_col--) {
+                ^
+                VITIS_LOOP_936_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70251:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70273:17: remark: Added loop label VITIS_LOOP_958_2:   [xilinx-label-all-loops]
+                for (int buf_col=0; buf_col<2*K_WIDTH; buf_col++) {
+                ^
+                VITIS_LOOP_958_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70273:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70279:17: remark: Added loop label VITIS_LOOP_964_3:   [xilinx-label-all-loops]
+                for (int buf_col=0; buf_col<K_WIDTH; buf_col++) {
+                ^
+                VITIS_LOOP_964_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70279:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70399:17: remark: Added loop label VITIS_LOOP_1084_1:   [xilinx-label-all-loops]
+                for(int buf_col=K_WIDTH-1; buf_col>=1; buf_col--) {
+                ^
+                VITIS_LOOP_1084_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70399:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70404:21: remark: Added loop label VITIS_LOOP_1089_2:   [xilinx-label-all-loops]
+                    for(int buf_row= K_HEIGHT-1;buf_row >= 1;buf_row--) {
+                    ^
+                    VITIS_LOOP_1089_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70404:21: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70432:17: remark: Added loop label VITIS_LOOP_1117_3:   [xilinx-label-all-loops]
+                for (int buf_col=0; buf_col<K_WIDTH; buf_col++) {
+                ^
+                VITIS_LOOP_1117_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70432:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70840:2: remark: Added loop label VITIS_LOOP_1525_1:   [xilinx-label-all-loops]
+ for(int i=0; i<CN1; i++) {
+ ^
+ VITIS_LOOP_1525_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70840:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70849:2: remark: Added loop label VITIS_LOOP_1534_1:   [xilinx-label-all-loops]
+ for(int i=0; i<CN1; i++) {
+ ^
+ VITIS_LOOP_1534_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:70849:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71410:5: remark: Added loop label VITIS_LOOP_2095_1:   [xilinx-label-all-loops]
+    for (i=0; i<NPHASES; i++) {
+    ^
+    VITIS_LOOP_2095_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71410:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71417:5: remark: Added loop label VITIS_LOOP_2102_2:   [xilinx-label-all-loops]
+    for (i = 0; i < NPHASES; i++) {
+    ^
+    VITIS_LOOP_2102_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71417:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71418:9: remark: Added loop label VITIS_LOOP_2103_3:   [xilinx-label-all-loops]
+        for (j = 0; j < NTAPS; j++) {
+        ^
+        VITIS_LOOP_2103_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71418:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71561:27: remark: Added loop label VITIS_LOOP_2246_1:   [xilinx-label-all-loops]
+                          for (int m = 0; m < ((((T) & ((512 - 1) << 11)) >> 11) + 1); m++)
+                          ^
+                          VITIS_LOOP_2246_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71561:27: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71568:15: remark: Added loop label VITIS_LOOP_2253_2:   [xilinx-label-all-loops]
+              for (int i = 0; i < NTAPS; i++) {
+              ^
+              VITIS_LOOP_2253_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71568:15: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71574:23: remark: Added loop label VITIS_LOOP_2259_3:   [xilinx-label-all-loops]
+                      for (int i = NTAPS - 1; i > 0; i--) {
+                      ^
+                      VITIS_LOOP_2259_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71574:23: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71588:23: remark: Added loop label VITIS_LOOP_2273_4:   [xilinx-label-all-loops]
+                      for (int i = NTAPS - 1; i >= 0; i--) {
+                      ^
+                      VITIS_LOOP_2273_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71588:23: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71599:15: remark: Added loop label VITIS_LOOP_2284_5:   [xilinx-label-all-loops]
+              for (int i = 0; i < NTAPS; i++) {
+              ^
+              VITIS_LOOP_2284_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71599:15: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71644:5: remark: Added loop label VITIS_LOOP_2329_1:   [xilinx-label-all-loops]
+    for(short i= 0;i<rows;i++) {
+    ^
+    VITIS_LOOP_2329_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71644:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71645:9: remark: Added loop label VITIS_LOOP_2330_2:   [xilinx-label-all-loops]
+        for(short j= 0;j<cols;j++) {
+        ^
+        VITIS_LOOP_2330_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71645:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71725:17: remark: Added loop label VITIS_LOOP_2410_3:   [xilinx-label-all-loops]
+                for(int r= 0;r<2;r++)
+                ^
+                VITIS_LOOP_2410_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71725:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71749:21: remark: Added loop label VITIS_LOOP_2434_4:   [xilinx-label-all-loops]
+                    for(int r= 0;r<2;r++)
+                    ^
+                    VITIS_LOOP_2434_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71749:21: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71759:17: remark: Added loop label VITIS_LOOP_2444_5:   [xilinx-label-all-loops]
+                for(int k=0;k<((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1);k++)
+                ^
+                VITIS_LOOP_2444_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71759:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71877:5: remark: Added loop label VITIS_LOOP_2562_1:   [xilinx-label-all-loops]
+    for(int k=0; k<2; k++)
+    ^
+    VITIS_LOOP_2562_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71877:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71894:13: remark: Added loop label VITIS_LOOP_2579_2:   [xilinx-label-all-loops]
+            for(int i=0; i<SIZE; i++)
+            ^
+            VITIS_LOOP_2579_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71894:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71897:13: remark: Added loop label VITIS_LOOP_2582_3:   [xilinx-label-all-loops]
+            for(int i=0; i<SIZE-order-1; i++)
+            ^
+            VITIS_LOOP_2582_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71897:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71900:17: remark: Added loop label VITIS_LOOP_2585_4:   [xilinx-label-all-loops]
+                for(int j = 1; j <= SIZE; j++ )
+                ^
+                VITIS_LOOP_2585_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71900:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71908:13: remark: Added loop label VITIS_LOOP_2593_5:   [xilinx-label-all-loops]
+            for(int i = 0; i < order; i++ )
+            ^
+            VITIS_LOOP_2593_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71908:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71911:17: remark: Added loop label VITIS_LOOP_2596_6:   [xilinx-label-all-loops]
+                for(int j = 1; j <= SIZE; j++ )
+                ^
+                VITIS_LOOP_2596_6: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71911:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71920:9: remark: Added loop label VITIS_LOOP_2605_7:   [xilinx-label-all-loops]
+        for(int i=0; i<SIZE; i++) {
+        ^
+        VITIS_LOOP_2605_7: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71920:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71928:5: remark: Added loop label VITIS_LOOP_2613_8:   [xilinx-label-all-loops]
+    for(int i=0; i<SIZE; i++) {
+    ^
+    VITIS_LOOP_2613_8: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71928:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71929:9: remark: Added loop label VITIS_LOOP_2614_9:   [xilinx-label-all-loops]
+        for(int j=0; j<SIZE; j++) {
+        ^
+        VITIS_LOOP_2614_9: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71929:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71979:6: remark: Added loop label VITIS_LOOP_2664_1:   [xilinx-label-all-loops]
+     for (int i = 0; i < KH; i++) {
+     ^
+     VITIS_LOOP_2664_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71979:6: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71980:13: remark: Added loop label VITIS_LOOP_2665_2:   [xilinx-label-all-loops]
+            for (int j = 0; j < KW; j++) {
+            ^
+            VITIS_LOOP_2665_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71980:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71988:6: remark: Added loop label VITIS_LOOP_2673_3:   [xilinx-label-all-loops]
+     for (int i = 0; i < KH; i++) {
+     ^
+     VITIS_LOOP_2673_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71988:6: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71989:10: remark: Added loop label VITIS_LOOP_2674_4:   [xilinx-label-all-loops]
+         for (int j = 0; j < KW; j++) {
+         ^
+         VITIS_LOOP_2674_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:71989:10: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72031:5: remark: Added loop label VITIS_LOOP_2716_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < KW; i++) {
+    ^
+    VITIS_LOOP_2716_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72031:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72035:5: remark: Added loop label VITIS_LOOP_2720_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < KH; i++) {
+    ^
+    VITIS_LOOP_2720_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72035:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72089:5: remark: Added loop label VITIS_LOOP_2774_1:   [xilinx-label-all-loops]
+    for(int i=0; i<5; i++)
+    ^
+    VITIS_LOOP_2774_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72089:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72090:9: remark: Added loop label VITIS_LOOP_2775_2:   [xilinx-label-all-loops]
+        for(int j=0; j<5; j++)
+        ^
+        VITIS_LOOP_2775_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72090:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72149:25: remark: Added loop label VITIS_LOOP_2834_1:   [xilinx-label-all-loops]
+                        for(int row= 0;row<K_HEIGHT;row++)
+                        ^
+                        VITIS_LOOP_2834_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72149:25: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72150:29: remark: Added loop label VITIS_LOOP_2835_2:   [xilinx-label-all-loops]
+                            for(int col= K_WIDTH-1;col>=1;col--)
+                            ^
+                            VITIS_LOOP_2835_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72150:29: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72153:25: remark: Added loop label VITIS_LOOP_2838_3:   [xilinx-label-all-loops]
+                        for(int buf_row = 0; buf_row < K_HEIGHT; buf_row++)
+                        ^
+                        VITIS_LOOP_2838_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72153:25: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72165:33: remark: Added loop label VITIS_LOOP_2850_4:   [xilinx-label-all-loops]
+                                for(int buf_row= K_HEIGHT-1;buf_row >= 1;buf_row--)
+                                ^
+                                VITIS_LOOP_2850_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72165:33: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72176:37: remark: Added loop label VITIS_LOOP_2861_5:   [xilinx-label-all-loops]
+                                    for(int buf_row= K_HEIGHT-1;buf_row >= 1;buf_row--)
+                                    ^
+                                    VITIS_LOOP_2861_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72176:37: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72192:33: remark: Added loop label VITIS_LOOP_2877_6:   [xilinx-label-all-loops]
+                                for(int buf_row = 0;buf_row < K_HEIGHT; buf_row++)
+                                ^
+                                VITIS_LOOP_2877_6: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72192:33: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72198:33: remark: Added loop label VITIS_LOOP_2883_7:   [xilinx-label-all-loops]
+                                for(int buf_row= 0;buf_row < K_HEIGHT; buf_row++)
+                                ^
+                                VITIS_LOOP_2883_7: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72198:33: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72204:36: remark: Added loop label VITIS_LOOP_2889_8:   [xilinx-label-all-loops]
+                                   for(int buf_row= K_HEIGHT-1;buf_row>0;buf_row--)
+                                   ^
+                                   VITIS_LOOP_2889_8: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72204:36: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72216:29: remark: Added loop label VITIS_LOOP_2901_9:   [xilinx-label-all-loops]
+                            for(int buf_row= 0;buf_row<K_HEIGHT;buf_row++)
+                            ^
+                            VITIS_LOOP_2901_9: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72216:29: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72230:33: remark: Added loop label VITIS_LOOP_2915_10:   [xilinx-label-all-loops]
+                                for(int buf_row= K_HEIGHT-1;buf_row>0;buf_row--)
+                                ^
+                                VITIS_LOOP_2915_10: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72230:33: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72244:33: remark: Added loop label VITIS_LOOP_2929_11:   [xilinx-label-all-loops]
+                                for(int m=0; m<K_HEIGHT; m++)
+                                ^
+                                VITIS_LOOP_2929_11: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72244:33: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72245:37: remark: Added loop label VITIS_LOOP_2930_12:   [xilinx-label-all-loops]
+                                    for(int n=0; n<K_WIDTH; n++)
+                                    ^
+                                    VITIS_LOOP_2930_12: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72245:37: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72250:33: remark: Added loop label VITIS_LOOP_2935_13:   [xilinx-label-all-loops]
+                                for(int m=0; m<K_HEIGHT; m++)
+                                ^
+                                VITIS_LOOP_2935_13: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72250:33: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72251:37: remark: Added loop label VITIS_LOOP_2936_14:   [xilinx-label-all-loops]
+                                    for(int n=1; n<K_WIDTH; n++)
+                                    ^
+                                    VITIS_LOOP_2936_14: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72251:37: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72258:33: remark: Added loop label VITIS_LOOP_2943_15:   [xilinx-label-all-loops]
+                                for(int m=0; m<K_HEIGHT-1; m++)
+                                ^
+                                VITIS_LOOP_2943_15: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72258:33: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72259:37: remark: Added loop label VITIS_LOOP_2944_16:   [xilinx-label-all-loops]
+                                    for(int n=0; n<K_WIDTH; n++)
+                                    ^
+                                    VITIS_LOOP_2944_16: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72259:37: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72265:33: remark: Added loop label VITIS_LOOP_2950_17:   [xilinx-label-all-loops]
+                                for(int m=0; m<K_HEIGHT-1; m++)
+                                ^
+                                VITIS_LOOP_2950_17: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72265:33: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72266:37: remark: Added loop label VITIS_LOOP_2951_18:   [xilinx-label-all-loops]
+                                    for(int n=1; n<K_WIDTH; n++)
+                                    ^
+                                    VITIS_LOOP_2951_18: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72266:37: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72349:21: remark: Added loop label VITIS_LOOP_3034_1:   [xilinx-label-all-loops]
+                    for(int row= 0;row<K_HEIGHT;row++)
+                    ^
+                    VITIS_LOOP_3034_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72349:21: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72350:25: remark: Added loop label VITIS_LOOP_3035_2:   [xilinx-label-all-loops]
+                        for(int col= K_WIDTH-1;col>=1;col--)
+                        ^
+                        VITIS_LOOP_3035_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72350:25: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72353:21: remark: Added loop label VITIS_LOOP_3038_3:   [xilinx-label-all-loops]
+                    for(int buf_row = 0; buf_row < K_HEIGHT; buf_row++)
+                    ^
+                    VITIS_LOOP_3038_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72353:21: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72370:29: remark: Added loop label VITIS_LOOP_3055_4:   [xilinx-label-all-loops]
+                            for(int buf_row= K_HEIGHT-1;buf_row >= 1;buf_row--)
+                            ^
+                            VITIS_LOOP_3055_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72370:29: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72386:29: remark: Added loop label VITIS_LOOP_3071_5:   [xilinx-label-all-loops]
+                            for(int buf_row = 0;buf_row < K_HEIGHT; buf_row++)
+                            ^
+                            VITIS_LOOP_3071_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72386:29: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72393:29: remark: Added loop label VITIS_LOOP_3078_6:   [xilinx-label-all-loops]
+                            for(int buf_row= 0;buf_row < K_HEIGHT; buf_row++)
+                            ^
+                            VITIS_LOOP_3078_6: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72393:29: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72405:25: remark: Added loop label VITIS_LOOP_3090_7:   [xilinx-label-all-loops]
+                        for(int buf_row= 0;buf_row<K_HEIGHT;buf_row++)
+                        ^
+                        VITIS_LOOP_3090_7: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72405:25: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72424:29: remark: Added loop label VITIS_LOOP_3109_8:   [xilinx-label-all-loops]
+                            for(int m=0; m<K_HEIGHT; m++)
+                            ^
+                            VITIS_LOOP_3109_8: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72424:29: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72425:33: remark: Added loop label VITIS_LOOP_3110_9:   [xilinx-label-all-loops]
+                                for(int n=0; n<K_WIDTH; n++)
+                                ^
+                                VITIS_LOOP_3110_9: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72425:33: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72473:5: remark: Added loop label VITIS_LOOP_77_1:   [xilinx-label-all-loops]
+    for(int i=0;i<NUM_STATES;i++) {
+    ^
+    VITIS_LOOP_77_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72473:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72479:5: remark: Added loop label VITIS_LOOP_83_2:   [xilinx-label-all-loops]
+    for(int i=0;i<N;i++)
+    ^
+    VITIS_LOOP_83_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72479:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72500:13: remark: Added loop label VITIS_LOOP_104_3:   [xilinx-label-all-loops]
+            for (int m=0; m<NUM_STATES; m++) {
+            ^
+            VITIS_LOOP_104_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72500:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72512:13: remark: Added loop label VITIS_LOOP_116_4:   [xilinx-label-all-loops]
+            for (int m=NUM_STATES-1; m>0; m--) {
+            ^
+            VITIS_LOOP_116_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72512:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72552:5: remark: Added loop label VITIS_LOOP_156_5:   [xilinx-label-all-loops]
+    for (int m=0; m<NUM_STATES/2; m++) {
+    ^
+    VITIS_LOOP_156_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72552:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72611:5: remark: Added loop label VITIS_LOOP_69_1:   [xilinx-label-all-loops]
+    for(int index=0;index<K;index++) {
+    ^
+    VITIS_LOOP_69_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72611:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72660:9: remark: Added loop label VITIS_LOOP_118_1:   [xilinx-label-all-loops]
+        for(int i=0;i<NUM-1;i++) {
+        ^
+        VITIS_LOOP_118_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72660:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72664:9: remark: Added loop label VITIS_LOOP_122_2:   [xilinx-label-all-loops]
+        for(int i=0;i<NUM-3;i++) {
+        ^
+        VITIS_LOOP_122_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72664:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72669:9: remark: Added loop label VITIS_LOOP_127_3:   [xilinx-label-all-loops]
+        for(int i=0;i<NUM-7;i++) {
+        ^
+        VITIS_LOOP_127_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72669:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72680:5: remark: Added loop label VITIS_LOOP_138_4:   [xilinx-label-all-loops]
+    for(int i=0;i<PSize;i+=2) {
+    ^
+    VITIS_LOOP_138_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72680:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72685:13: remark: Added loop label VITIS_LOOP_143_5:   [xilinx-label-all-loops]
+            for(int j=1;j<PSize/2+1;j++) {
+            ^
+            VITIS_LOOP_143_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72685:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72693:5: remark: Added loop label VITIS_LOOP_151_6:   [xilinx-label-all-loops]
+    for(int i=0;i<PSize;i+=2) {
+    ^
+    VITIS_LOOP_151_6: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72693:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72698:13: remark: Added loop label VITIS_LOOP_156_7:   [xilinx-label-all-loops]
+            for(int j=1;j<PSize/2+1;j++) {
+            ^
+            VITIS_LOOP_156_7: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72698:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72724:5: remark: Added loop label VITIS_LOOP_182_1:   [xilinx-label-all-loops]
+    for(int c=1;c<PSize+PSize/2+1;c++)
+    ^
+    VITIS_LOOP_182_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72724:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72751:5: remark: Added loop label VITIS_LOOP_209_1:   [xilinx-label-all-loops]
+    for(int k=0;k<3;k++) {
+    ^
+    VITIS_LOOP_209_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72751:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72757:5: remark: Added loop label VITIS_LOOP_215_2:   [xilinx-label-all-loops]
+    for(int k=0;k<3;k++) {
+    ^
+    VITIS_LOOP_215_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72757:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72806:17: remark: Added loop label VITIS_LOOP_264_1:   [xilinx-label-all-loops]
+                for(int r= 0;r<KERNEL_SIZE;r++) {
+                ^
+                VITIS_LOOP_264_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72806:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72807:21: remark: Added loop label VITIS_LOOP_265_2:   [xilinx-label-all-loops]
+                    for(int c=0;c<KERNEL_SIZE-1;c++) {
+                    ^
+                    VITIS_LOOP_265_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72807:21: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72812:17: remark: Added loop label VITIS_LOOP_270_3:   [xilinx-label-all-loops]
+                for(int buf_row= 1;buf_row< KERNEL_SIZE-1;buf_row++) {
+                ^
+                VITIS_LOOP_270_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72812:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72822:13: remark: Added loop label VITIS_LOOP_280_4:   [xilinx-label-all-loops]
+            for(int r= 0;r<3;r++)
+            ^
+            VITIS_LOOP_280_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72822:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72824:17: remark: Added loop label VITIS_LOOP_282_5:   [xilinx-label-all-loops]
+                for(int c=0;c<3-1;c++)
+                ^
+                VITIS_LOOP_282_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72824:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72830:13: remark: Added loop label VITIS_LOOP_288_6:   [xilinx-label-all-loops]
+            for(int buf_row= 1;buf_row< 3-1;buf_row++)
+            ^
+            VITIS_LOOP_288_6: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72830:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72922:17: remark: Added loop label VITIS_LOOP_380_1:   [xilinx-label-all-loops]
+                for(int r= 0;r<KERNEL_SIZE;r++) {
+                ^
+                VITIS_LOOP_380_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72922:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72923:21: remark: Added loop label VITIS_LOOP_381_2:   [xilinx-label-all-loops]
+                    for(int c=0;c<KERNEL_SIZE-1;c++) {
+                    ^
+                    VITIS_LOOP_381_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72923:21: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72928:17: remark: Added loop label VITIS_LOOP_386_3:   [xilinx-label-all-loops]
+                for(int buf_row= 1;buf_row< KERNEL_SIZE-1;buf_row++) {
+                ^
+                VITIS_LOOP_386_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72928:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72938:13: remark: Added loop label VITIS_LOOP_396_4:   [xilinx-label-all-loops]
+            for(int r= 0;r<3;r++)
+            ^
+            VITIS_LOOP_396_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72938:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72940:17: remark: Added loop label VITIS_LOOP_398_5:   [xilinx-label-all-loops]
+                for(int c=0;c<3-1;c++)
+                ^
+                VITIS_LOOP_398_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72940:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72946:13: remark: Added loop label VITIS_LOOP_404_6:   [xilinx-label-all-loops]
+            for(int buf_row= 1;buf_row< 3-1;buf_row++)
+            ^
+            VITIS_LOOP_404_6: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:72946:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73057:5: remark: Added loop label VITIS_LOOP_104_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++)
+    ^
+    VITIS_LOOP_104_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73057:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73061:5: remark: Added loop label VITIS_LOOP_108_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^
+    VITIS_LOOP_108_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73061:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73063:9: remark: Added loop label VITIS_LOOP_110_3:   [xilinx-label-all-loops]
+        for (int j = 0; j < N; j++) {
+        ^
+        VITIS_LOOP_110_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73063:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73069:5: remark: Added loop label VITIS_LOOP_116_4:   [xilinx-label-all-loops]
+    for (int j = 0; j < N; j++) {
+    ^
+    VITIS_LOOP_116_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73069:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73070:9: remark: Added loop label VITIS_LOOP_117_5:   [xilinx-label-all-loops]
+        for (int i = 0; i < j; i++) {
+        ^
+        VITIS_LOOP_117_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73070:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73072:13: remark: Added loop label VITIS_LOOP_119_6:   [xilinx-label-all-loops]
+            for (int k = 0; k < i; k++) sum -= A[i][k] * A[k][j];
+            ^
+            VITIS_LOOP_119_6: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73072:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73076:9: remark: Added loop label VITIS_LOOP_123_7:   [xilinx-label-all-loops]
+        for (int i = j; i < N; i++) {
+        ^
+        VITIS_LOOP_123_7: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73076:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73078:13: remark: Added loop label VITIS_LOOP_125_8:   [xilinx-label-all-loops]
+            for (int k = 0; k < j; k++) sum -= A[i][k] * A[k][j];
+            ^
+            VITIS_LOOP_125_8: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73078:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73087:13: remark: Added loop label VITIS_LOOP_134_9:   [xilinx-label-all-loops]
+            for (int i = 0; i < N; i++) {
+            ^
+            VITIS_LOOP_134_9: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73087:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73099:13: remark: Added loop label VITIS_LOOP_146_10:   [xilinx-label-all-loops]
+            for (int i = j + 1; i < N; i++) A[i][j] *= dum;
+            ^
+            VITIS_LOOP_146_10: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73099:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73107:5: remark: Added loop label VITIS_LOOP_154_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^
+    VITIS_LOOP_154_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73107:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73116:13: remark: Added loop label VITIS_LOOP_163_2:   [xilinx-label-all-loops]
+            for (int j = ii - 1; j < i; j++) sum -= A[i][j] * b[j];
+            ^
+            VITIS_LOOP_163_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73116:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73121:5: remark: Added loop label VITIS_LOOP_168_3:   [xilinx-label-all-loops]
+    for (int i = N - 1; i >= 0; i--) {
+    ^
+    VITIS_LOOP_168_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73121:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73123:9: remark: Added loop label VITIS_LOOP_170_4:   [xilinx-label-all-loops]
+        for (int j = i + 1; j < N; j++) sum -= A[i][j]*b[j];
+        ^
+        VITIS_LOOP_170_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73123:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73134:5: remark: Added loop label VITIS_LOOP_181_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^
+    VITIS_LOOP_181_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73134:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73139:5: remark: Added loop label VITIS_LOOP_186_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^
+    VITIS_LOOP_186_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73139:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73140:9: remark: Added loop label VITIS_LOOP_187_3:   [xilinx-label-all-loops]
+        for (int j = 0; j < N; j++) b[j] = 0;
+        ^
+        VITIS_LOOP_187_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73140:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73143:9: remark: Added loop label VITIS_LOOP_190_4:   [xilinx-label-all-loops]
+        for (int j = 0; j < N; j++) Ar[j][i] = b[j];
+        ^
+        VITIS_LOOP_190_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73143:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73219:21: remark: Added loop label VITIS_LOOP_266_1:   [xilinx-label-all-loops]
+                    for(int k=0;k<((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1);k++) {
+                    ^
+                    VITIS_LOOP_266_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73219:21: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73339:17: remark: Added loop label VITIS_LOOP_398_1:   [xilinx-label-all-loops]
+                for(int k = 0; k < ((((DST_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+                ^
+                VITIS_LOOP_398_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73339:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73757:13: remark: Added loop label VITIS_LOOP_215_1:   [xilinx-label-all-loops]
+            for(int row=2;row>=0;row--)
+            ^
+            VITIS_LOOP_215_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73757:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73759:17: remark: Added loop label VITIS_LOOP_217_2:   [xilinx-label-all-loops]
+                for(int col=2;col>=1;col--)
+                ^
+                VITIS_LOOP_217_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73759:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73892:5: remark: Added loop label VITIS_LOOP_104_1:   [xilinx-label-all-loops]
+    for(int i=0;i<KH;i++) {
+    ^
+    VITIS_LOOP_104_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73892:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73893:9: remark: Added loop label VITIS_LOOP_105_2:   [xilinx-label-all-loops]
+        for(int j=0;j<KW;j++) {
+        ^
+        VITIS_LOOP_105_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73893:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73915:5: remark: Added loop label VITIS_LOOP_127_1:   [xilinx-label-all-loops]
+    for(HLS_SIZE_T i=0;i<rows+ioffset;i++)
+    ^
+    VITIS_LOOP_127_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73915:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73918:9: remark: Added loop label VITIS_LOOP_130_2:   [xilinx-label-all-loops]
+        for(HLS_SIZE_T j=0;j<cols+joffset;j++)
+        ^
+        VITIS_LOOP_130_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73918:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73925:13: remark: Added loop label VITIS_LOOP_137_3:   [xilinx-label-all-loops]
+            for(int r= 0;r<KH;r++)
+            ^
+            VITIS_LOOP_137_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73925:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73927:17: remark: Added loop label VITIS_LOOP_139_4:   [xilinx-label-all-loops]
+                for(int c=0;c<KW-1;c++)
+                ^
+                VITIS_LOOP_139_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73927:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73935:17: remark: Added loop label VITIS_LOOP_147_5:   [xilinx-label-all-loops]
+                for(int buf_row= 1;buf_row< KH-1;buf_row++)
+                ^
+                VITIS_LOOP_147_5: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73935:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73948:17: remark: Added loop label VITIS_LOOP_160_6:   [xilinx-label-all-loops]
+                for(int i= 1;i< KW;i++)
+                ^
+                VITIS_LOOP_160_6: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73948:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73984:5: remark: Added loop label VITIS_LOOP_196_1:   [xilinx-label-all-loops]
+    for(HLS_SIZE_T i=0;i<rows;i++)
+    ^
+    VITIS_LOOP_196_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73984:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73987:9: remark: Added loop label VITIS_LOOP_199_2:   [xilinx-label-all-loops]
+        for(HLS_SIZE_T j=0;j<cols;j++)
+        ^
+        VITIS_LOOP_199_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:73987:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74216:9: remark: Added loop label VITIS_LOOP_148_1:   [xilinx-label-all-loops]
+        for(int i=0;i<STAGE;i++)
+        ^
+        VITIS_LOOP_148_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74216:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74224:9: remark: Added loop label VITIS_LOOP_156_2:   [xilinx-label-all-loops]
+        for(int i=0;i<CLASSIFIER_ALL;i++)
+        ^
+        VITIS_LOOP_156_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74224:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74227:16: remark: Added loop label VITIS_LOOP_159_3:   [xilinx-label-all-loops]
+               for(int j=0;j<FEATURE_MAX;j++)
+               ^
+               VITIS_LOOP_159_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74227:16: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74235:23: remark: Added loop label VITIS_LOOP_167_4:   [xilinx-label-all-loops]
+                      for(int n=0;n<3;n++)
+                      ^
+                      VITIS_LOOP_167_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74235:23: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74258:5: remark: Added loop label VITIS_LOOP_190_1:   [xilinx-label-all-loops]
+    for(int j=0;j<COLS;j++)
+    ^
+    VITIS_LOOP_190_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74258:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74261:9: remark: Added loop label VITIS_LOOP_193_2:   [xilinx-label-all-loops]
+        for(int i=0;i<ROWS;i++)
+        ^
+        VITIS_LOOP_193_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74261:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74278:5: remark: Added loop label VITIS_LOOP_210_1:   [xilinx-label-all-loops]
+    for(m=0;m<FEATURE_MAX;m++)
+    ^
+    VITIS_LOOP_210_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74278:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74285:13: remark: Added loop label VITIS_LOOP_217_2:   [xilinx-label-all-loops]
+            for(int j=1;j<3;j++)
+            ^
+            VITIS_LOOP_217_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74285:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74314:5: remark: Added loop label VITIS_LOOP_246_1:   [xilinx-label-all-loops]
+    for (int i=0;i<CLASSIFIER_ALL;i++)
+    ^
+    VITIS_LOOP_246_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74314:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74362:5: remark: Added loop label VITIS_LOOP_294_1:   [xilinx-label-all-loops]
+    for(int i=0;i<rows;i++)
+    ^
+    VITIS_LOOP_294_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74362:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74364:9: remark: Added loop label VITIS_LOOP_296_2:   [xilinx-label-all-loops]
+        for(int j=0;j<cols;j++)
+        ^
+        VITIS_LOOP_296_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74364:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74377:13: remark: Added loop label VITIS_LOOP_309_3:   [xilinx-label-all-loops]
+            for(int buf_row= 1;buf_row<K_H;buf_row++)
+            ^
+            VITIS_LOOP_309_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74377:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74477:9: remark: Added loop label VITIS_LOOP_430_1:   [xilinx-label-all-loops]
+        for(int i=0;i<m;i++)
+        ^
+        VITIS_LOOP_430_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74477:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74479:17: remark: Added loop label VITIS_LOOP_432_2:   [xilinx-label-all-loops]
+                for(int j=0;j<num;j++)
+                ^
+                VITIS_LOOP_432_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74479:17: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74487:9: remark: Added loop label VITIS_LOOP_440_3:   [xilinx-label-all-loops]
+        for(int i=0;i<num;i++)
+        ^
+        VITIS_LOOP_440_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74487:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74516:5: remark: Added loop label VITIS_LOOP_469_1:   [xilinx-label-all-loops]
+    for(int i=0;i<rows;i++)
+    ^
+    VITIS_LOOP_469_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74516:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74521:9: remark: Added loop label VITIS_LOOP_474_2:   [xilinx-label-all-loops]
+        for(int j=0;j<cols;j++)
+        ^
+        VITIS_LOOP_474_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74521:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74683:13: remark: Added loop label VITIS_LOOP_189_1:   [xilinx-label-all-loops]
+            for (int i = 0; i< PWSIZE; i++) {
+            ^
+            VITIS_LOOP_189_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74683:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74689:13: remark: Added loop label VITIS_LOOP_195_2:   [xilinx-label-all-loops]
+            for (int i = 0; i < PWSIZE; i++) {
+            ^
+            VITIS_LOOP_195_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74689:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74693:13: remark: Added loop label VITIS_LOOP_199_3:   [xilinx-label-all-loops]
+            for (int j = PWSIZE-1; j > 0; j--) {
+            ^
+            VITIS_LOOP_199_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74693:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74724:5: remark: Added loop label VITIS_LOOP_230_1:   [xilinx-label-all-loops]
+    for (HLS_SIZE_T i = 0; i < rows; i++) {
+    ^
+    VITIS_LOOP_230_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74724:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74725:9: remark: Added loop label VITIS_LOOP_231_2:   [xilinx-label-all-loops]
+        for (HLS_SIZE_T j = 0; j < cols; j++) {
+        ^
+        VITIS_LOOP_231_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74725:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74728:13: remark: Added loop label VITIS_LOOP_234_3:   [xilinx-label-all-loops]
+            for (HLS_SIZE_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+            ^
+            VITIS_LOOP_234_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74728:13: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74764:5: remark: Added loop label VITIS_LOOP_270_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < WSIZE; i++) {
+    ^
+    VITIS_LOOP_270_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74764:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74782:5: remark: Added loop label VITIS_LOOP_288_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < WSIZE; i++) {
+    ^
+    VITIS_LOOP_288_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74782:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74790:5: remark: Added loop label VITIS_LOOP_296_2:   [xilinx-label-all-loops]
+    for (int j = WSIZE-1; j > 0; j--) {
+    ^
+    VITIS_LOOP_296_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74790:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74808:9: remark: Added loop label VITIS_LOOP_314_1:   [xilinx-label-all-loops]
+        for(int i = 0; i < SIZE/2; i++) {
+        ^
+        VITIS_LOOP_314_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74808:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74811:9: remark: Added loop label VITIS_LOOP_317_2:   [xilinx-label-all-loops]
+        for(int i = 0; i < SIZE-SIZE/2; i++) {
+        ^
+        VITIS_LOOP_317_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74811:9: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74915:25: remark: Added loop label VITIS_LOOP_421_1:   [xilinx-label-all-loops]
+                        for (int i = 0; i < WSIZE; i++) {
+                        ^
+                        VITIS_LOOP_421_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:74915:25: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:77677:2: remark: Added loop label VITIS_LOOP_563_1:   [xilinx-label-all-loops]
+ for (y = 0; y < loopHeight; ++y)
+ ^
+ VITIS_LOOP_563_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:77677:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:77679:3: remark: Added loop label VITIS_LOOP_565_2:   [xilinx-label-all-loops]
+  for (x = 0; x < loopWidth; x += 1)
+  ^
+  VITIS_LOOP_565_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:77679:3: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:77870:2: remark: Added loop label VITIS_LOOP_772_1:   [xilinx-label-all-loops]
+ for (y = 0; y < loopHeight; ++y)
+ ^
+ VITIS_LOOP_772_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:77870:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:77872:3: remark: Added loop label VITIS_LOOP_774_2:   [xilinx-label-all-loops]
+  for (x = 0; x < loopWidth; x += 1)
+  ^
+  VITIS_LOOP_774_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:77872:3: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:77959:5: remark: Added loop label VITIS_LOOP_869_1:   [xilinx-label-all-loops]
+    for (int l = 0; l < 1; l++)
+    ^
+    VITIS_LOOP_869_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:77959:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:77961:6: remark: Added loop label VITIS_LOOP_871_2:   [xilinx-label-all-loops]
+     for (int k = 0; k < 3; k++)
+     ^
+     VITIS_LOOP_871_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:77961:6: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78030:2: remark: Added loop label VITIS_LOOP_979_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < rows; i++)
+ ^
+ VITIS_LOOP_979_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78030:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78032:3: remark: Added loop label VITIS_LOOP_981_2:   [xilinx-label-all-loops]
+  for (int j = 0; j < cols / 1; j++)
+  ^
+  VITIS_LOOP_981_2: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78032:3: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78062:4: remark: Added loop label VITIS_LOOP_1011_3:   [xilinx-label-all-loops]
+   for (int l = 0; l < 1; l++)
+   ^
+   VITIS_LOOP_1011_3: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78062:4: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78064:5: remark: Added loop label VITIS_LOOP_1013_4:   [xilinx-label-all-loops]
+    for (int k = 0; k < 3; k++)
+    ^
+    VITIS_LOOP_1013_4: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78064:5: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78126:2: remark: Added loop label VITIS_LOOP_1075_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1075_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78126:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78154:2: remark: Added loop label VITIS_LOOP_1103_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1103_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78154:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78169:2: remark: Added loop label VITIS_LOOP_1118_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1118_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78169:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78184:2: remark: Added loop label VITIS_LOOP_1133_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1133_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78184:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78205:2: remark: Added loop label VITIS_LOOP_1154_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1154_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78205:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78226:2: remark: Added loop label VITIS_LOOP_1175_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1175_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78226:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78247:2: remark: Added loop label VITIS_LOOP_1196_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1196_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78247:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78269:2: remark: Added loop label VITIS_LOOP_1218_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1218_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78269:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78294:2: remark: Added loop label VITIS_LOOP_1243_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1243_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78294:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78328:2: remark: Added loop label VITIS_LOOP_1277_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1277_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78328:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78400:2: remark: Added loop label VITIS_LOOP_1349_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1349_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78400:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78447:2: remark: Added loop label VITIS_LOOP_1396_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1396_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78447:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78516:2: remark: Added loop label VITIS_LOOP_1465_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1465_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78516:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78586:2: remark: Added loop label VITIS_LOOP_1535_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1535_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78586:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78629:2: remark: Added loop label VITIS_LOOP_1578_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1578_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78629:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78686:2: remark: Added loop label VITIS_LOOP_1635_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1635_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78686:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78727:2: remark: Added loop label VITIS_LOOP_1724_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1724_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78727:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78764:2: remark: Added loop label VITIS_LOOP_1761_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1761_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78764:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78836:2: remark: Added loop label VITIS_LOOP_1833_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1833_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78836:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78933:2: remark: Added loop label VITIS_LOOP_1930_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1930_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78933:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78964:2: remark: Added loop label VITIS_LOOP_1961_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1961_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78964:2: note: FIX-IT applied suggested code changes
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78990:2: remark: Added loop label VITIS_LOOP_1987_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1987_1: 
+C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\HDMI_FBWRRD.runs\top_design_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:78990:2: note: FIX-IT applied suggested code changes

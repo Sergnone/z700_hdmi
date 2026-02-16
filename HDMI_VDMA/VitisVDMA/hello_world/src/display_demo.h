@@ -15,11 +15,13 @@
 
 #define BYTES_PIXEL 3
 
-#define DISPLAY_WIDTH           1920
-#define DISPLAY_HEIGHT          1080
+#define DISPLAY_WIDTH           1280
+#define DISPLAY_HEIGHT          720
 
-#define DEMO_MAX_FRAME (DISPLAY_WIDTH*DISPLAY_HEIGHT*BYTES_PIXEL)
-#define DEMO_STRIDE (DISPLAY_WIDTH * BYTES_PIXEL)
+#define DISPLAY_NUM_FRAMES      1
+
+#define DISPLAY_MAX_FRAME (DISPLAY_WIDTH*DISPLAY_HEIGHT*BYTES_PIXEL)
+#define DISPLAY_STRIDE (DISPLAY_WIDTH * BYTES_PIXEL)
 
 /* ------------------------------------------------------------ */
 /*					Procedure Declarations						*/

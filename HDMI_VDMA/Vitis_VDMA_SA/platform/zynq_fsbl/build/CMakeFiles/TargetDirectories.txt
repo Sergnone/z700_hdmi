@@ -1,0 +1,4 @@
+C:/Users/Sergey/Documents/Xilinx/z7000_hdmi/HDMI_VDMA/Vitis_VDMA_SA/platform/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
+C:/Users/Sergey/Documents/Xilinx/z7000_hdmi/HDMI_VDMA/Vitis_VDMA_SA/platform/zynq_fsbl/build/CMakeFiles/print_build_info.dir
+C:/Users/Sergey/Documents/Xilinx/z7000_hdmi/HDMI_VDMA/Vitis_VDMA_SA/platform/zynq_fsbl/build/CMakeFiles/edit_cache.dir
+C:/Users/Sergey/Documents/Xilinx/z7000_hdmi/HDMI_VDMA/Vitis_VDMA_SA/platform/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir

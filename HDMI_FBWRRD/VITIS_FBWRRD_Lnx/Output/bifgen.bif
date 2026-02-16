@@ -1,0 +1,8 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\VITIS_FBWRRD_Lnx\platform\zynq_fsbl\build\fsbl.elf
+	C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\HDMI_FBWRRD\VITIS_FBWRRD_Lnx\platform\hw\sdt\top_design_wrapper.bit
+	C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\bifimage\u-boot.elf
+	[load = 0x100000]C:\Users\Sergey\Documents\Xilinx\z7000_hdmi\zynq_baremetal.dtb
+}

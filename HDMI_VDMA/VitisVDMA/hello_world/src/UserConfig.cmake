@@ -27,9 +27,8 @@ set(USER_UNDEFINED_SYMBOLS
 # Example 3: Adding ${CMAKE_SOURCE_DIR}/data/include to add data/include from this project.
 
 set(USER_INCLUDE_DIRECTORIES
-"../dynclk"
-"../dynclk_orig"
 "../display_ctrl"
+"../dynclk"
 )
 
 #Add any source below, they will be added as Compile sources.
@@ -37,14 +36,15 @@ set(USER_INCLUDE_DIRECTORIES
 #Example 2: Adding ../../common/helloworld.c will consider the path as relative to this component directory
 #Example 3: Adding ${MY_ENV}/data/helloworld.c are expanded using project-specific environment settings.
 set(USER_COMPILE_SOURCES
-"helloworld.c"
-"platform.c"
+"v_ddynclk.c"
 "../dynclk/ddynclk.c"
 "../dynclk/ddynclk_g.c"
 "../dynclk/ddynclk_selftest.c"
 "../dynclk/ddynclk_sinit.c"
-"../dynclk_orig/dynclk.c"
-"../display_ctrl/display_ctrl.c"
+"helloworld.c"
+"platform.c"
+"v_vdma.c"
+"v_vtc.c"
 )
 
 # -----------------------------------------
