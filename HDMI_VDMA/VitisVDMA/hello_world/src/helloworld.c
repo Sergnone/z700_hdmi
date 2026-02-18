@@ -98,7 +98,7 @@ int main(void)
 	xil_printf("Start Drivers\r\n");
 	V_VTC_Init();
 	V_VDMA_Init();
-	V_DDYNCLK_Init();
+	//V_DDYNCLK_Init();
 	VidStream.VmId = XVIDC_VM_720_60_P;
 	TimingPtr = XVidC_GetTimingInfo(VidStream.VmId);
 	VidStream.Timing = *TimingPtr;
@@ -109,7 +109,7 @@ int main(void)
 	vdma_DmaSetup->EnableSync = 0;
 	vdma_DmaSetup->PointNum = 0;
 	vdma_DmaSetup->EnableFrameCounter = 0;
-	V_DDYNCLK_Start(pix_freq);
+	//V_DDYNCLK_Start(pix_freq);
 	VidStream.PixPerClk = pix_freq;
 	V_VTC_Config(VidStream.VmId, 1);
 	V_DMA_ConfigStream(vdma_DmaSetup,

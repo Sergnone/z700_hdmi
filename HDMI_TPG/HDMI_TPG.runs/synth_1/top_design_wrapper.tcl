@@ -56,7 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param bd.open.in_stealth_mode 1
+set_param bd.open.in_stealth_mode 3
 set_param chipscope.maxJobs 4
 set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }
@@ -138,12 +138,6 @@ set_property used_in_implementation false [get_files -all /home/serg/Documents/X
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_axi_dynclk_0_0/src/axi_dynclk.xdc]
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/top_design_rst_ps7_0_148M_2_board.xdc]
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/top_design_rst_ps7_0_148M_2_ooc.xdc]
-set_property used_in_synthesis false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_system_ila_0_0/bd_0/ip/ip_0/bd_7ad6_ila_lib_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_system_ila_0_0/bd_0/bd_7ad6_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_system_ila_0_0/top_design_system_ila_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/top_design_ooc.xdc]
 
 OPTRACE "Adding files" END { }

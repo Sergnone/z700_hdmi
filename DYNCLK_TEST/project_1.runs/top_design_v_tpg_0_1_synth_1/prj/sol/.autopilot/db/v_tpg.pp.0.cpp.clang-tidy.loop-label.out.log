@@ -1,0 +1,1860 @@
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:2309:5: remark: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_676_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:2309:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:2323:5: remark: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_690_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:2323:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:2337:5: remark: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_704_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:2337:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:5857:7: remark: Added loop label VITIS_LOOP_1251_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^
+      VITIS_LOOP_1251_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:5857:7: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:57587:5: remark: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^
+    VITIS_LOOP_61_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:57587:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:57633:5: remark: Added loop label VITIS_LOOP_117_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^
+    VITIS_LOOP_117_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:57633:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:57796:9: remark: Added loop label VITIS_LOOP_289_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^
+        VITIS_LOOP_289_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:57796:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:57948:9: remark: Added loop label VITIS_LOOP_449_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^
+        VITIS_LOOP_449_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:57948:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:58128:5: remark: Added loop label VITIS_LOOP_629_1:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^
+    VITIS_LOOP_629_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:58128:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:58132:5: remark: Added loop label VITIS_LOOP_633_2:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^
+    VITIS_LOOP_633_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:58132:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:58242:5: remark: Added loop label VITIS_LOOP_743_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^
+    VITIS_LOOP_743_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:58242:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:58332:7: remark: Added loop label VITIS_LOOP_840_1:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^
+      VITIS_LOOP_840_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:58332:7: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:58351:7: remark: Added loop label VITIS_LOOP_859_2:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^
+      VITIS_LOOP_859_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:58351:7: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:58644:5: remark: Added loop label VITIS_LOOP_1176_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^
+    VITIS_LOOP_1176_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:58644:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:58727:5: remark: Added loop label VITIS_LOOP_1259_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^
+    VITIS_LOOP_1259_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:58727:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59133:13: remark: Added loop label VITIS_LOOP_68_1:   [xilinx-label-all-loops]
+            for (int j = 3; j >= I_+1; j--) {
+            ^
+            VITIS_LOOP_68_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59133:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59139:17: remark: Added loop label VITIS_LOOP_74_2:   [xilinx-label-all-loops]
+                for (int j = 3; j >= I_+1; j--){
+                ^
+                VITIS_LOOP_74_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59139:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59143:17: remark: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--){
+                ^
+                VITIS_LOOP_78_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59143:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59190:13: remark: Added loop label VITIS_LOOP_145_4:   [xilinx-label-all-loops]
+            for (int j = 9; j >= I_+4; j--) {
+            ^
+            VITIS_LOOP_145_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59190:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59196:17: remark: Added loop label VITIS_LOOP_151_5:   [xilinx-label-all-loops]
+                for (int j = 9; j >= I_+4; j--){
+                ^
+                VITIS_LOOP_151_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59196:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59200:17: remark: Added loop label VITIS_LOOP_155_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--){
+                ^
+                VITIS_LOOP_155_6: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59200:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59215:9: remark: Added loop label VITIS_LOOP_170_7:   [xilinx-label-all-loops]
+        for (int j = 14; j < 22; j++){
+        ^
+        VITIS_LOOP_170_7: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59215:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59223:17: remark: Added loop label VITIS_LOOP_178_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++){
+                ^
+                VITIS_LOOP_178_8: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59223:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59288:13: remark: Added loop label VITIS_LOOP_243_9:   [xilinx-label-all-loops]
+            for (int j = 21; j >= I_+10; j--) {
+            ^
+            VITIS_LOOP_243_9: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59288:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59294:17: remark: Added loop label VITIS_LOOP_249_10:   [xilinx-label-all-loops]
+                for (int j = 21; j >= I_+10; j--) {
+                ^
+                VITIS_LOOP_249_10: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59294:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59298:17: remark: Added loop label VITIS_LOOP_253_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^
+                VITIS_LOOP_253_11: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59298:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59313:9: remark: Added loop label VITIS_LOOP_268_12:   [xilinx-label-all-loops]
+        for (int j = 27; j < 46; j++){
+        ^
+        VITIS_LOOP_268_12: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59313:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59321:17: remark: Added loop label VITIS_LOOP_276_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^
+                VITIS_LOOP_276_13: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59321:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59550:13: remark: Added loop label VITIS_LOOP_505_14:   [xilinx-label-all-loops]
+            for (int j = 45; j >= I_+22; j--) {
+            ^
+            VITIS_LOOP_505_14: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59550:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59556:17: remark: Added loop label VITIS_LOOP_511_15:   [xilinx-label-all-loops]
+                for (int j = 45; j >= I_+22; j--){
+                ^
+                VITIS_LOOP_511_15: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59556:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59560:17: remark: Added loop label VITIS_LOOP_515_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^
+                VITIS_LOOP_515_16: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59560:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59570:9: remark: Added loop label VITIS_LOOP_525_17:   [xilinx-label-all-loops]
+        for (int j = 32-F_; j < 32+I_; j++){
+        ^
+        VITIS_LOOP_525_17: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59570:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59574:9: remark: Added loop label VITIS_LOOP_529_18:   [xilinx-label-all-loops]
+        for (int j = 32+I_; j <= 64; j++){
+        ^
+        VITIS_LOOP_529_18: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59574:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59584:9: remark: Added loop label VITIS_LOOP_539_19:   [xilinx-label-all-loops]
+        for (int j = 37; j < 64; j++) {
+        ^
+        VITIS_LOOP_539_19: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59584:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59592:17: remark: Added loop label VITIS_LOOP_547_20:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++){
+                ^
+                VITIS_LOOP_547_20: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59592:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59953:13: remark: Added loop label VITIS_LOOP_908_21:   [xilinx-label-all-loops]
+            for (int j = 63; j >= I_+31; j--) {
+            ^
+            VITIS_LOOP_908_21: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59953:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59959:17: remark: Added loop label VITIS_LOOP_914_22:   [xilinx-label-all-loops]
+                for (int j = 63; j >= I_+31; j--) {
+                ^
+                VITIS_LOOP_914_22: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59959:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59963:17: remark: Added loop label VITIS_LOOP_918_23:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^
+                VITIS_LOOP_918_23: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:59963:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60079:13: remark: Added loop label VITIS_LOOP_1034_1:   [xilinx-label-all-loops]
+            for (int j = 4; j >= I_+1; j--) {
+            ^
+            VITIS_LOOP_1034_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60079:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60085:17: remark: Added loop label VITIS_LOOP_1040_2:   [xilinx-label-all-loops]
+                for (int j = 4; j >= I_+1; j--) {
+                ^
+                VITIS_LOOP_1040_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60085:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60089:17: remark: Added loop label VITIS_LOOP_1044_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--) {
+                ^
+                VITIS_LOOP_1044_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60089:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60176:13: remark: Added loop label VITIS_LOOP_1131_4:   [xilinx-label-all-loops]
+            for (int j = 10; j >= I_+4; j--) {
+            ^
+            VITIS_LOOP_1131_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60176:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60182:17: remark: Added loop label VITIS_LOOP_1137_5:   [xilinx-label-all-loops]
+                for (int j = 10; j >= I_+4; j--) {
+                ^
+                VITIS_LOOP_1137_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60182:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60186:17: remark: Added loop label VITIS_LOOP_1141_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--) {
+                ^
+                VITIS_LOOP_1141_6: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60186:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60205:9: remark: Added loop label VITIS_LOOP_1160_7:   [xilinx-label-all-loops]
+        for (int j = wf+3; j < w-1; j++) {
+        ^
+        VITIS_LOOP_1160_7: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60205:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60212:17: remark: Added loop label VITIS_LOOP_1167_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++) {
+                ^
+                VITIS_LOOP_1167_8: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60212:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60328:13: remark: Added loop label VITIS_LOOP_1283_9:   [xilinx-label-all-loops]
+            for (int j = 22; j >= I_+10; j--) {
+            ^
+            VITIS_LOOP_1283_9: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60328:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60334:17: remark: Added loop label VITIS_LOOP_1289_10:   [xilinx-label-all-loops]
+                for (int j = 22; j >= I_+10; j--){
+                ^
+                VITIS_LOOP_1289_10: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60334:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60338:17: remark: Added loop label VITIS_LOOP_1293_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^
+                VITIS_LOOP_1293_11: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60338:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60358:9: remark: Added loop label VITIS_LOOP_1313_12:   [xilinx-label-all-loops]
+        for (int j = wf+4; j < w-1; j++){
+        ^
+        VITIS_LOOP_1313_12: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60358:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60365:17: remark: Added loop label VITIS_LOOP_1320_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^
+                VITIS_LOOP_1320_13: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60365:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60627:13: remark: Added loop label VITIS_LOOP_1582_14:   [xilinx-label-all-loops]
+            for (int j = 46; j >= I_+22; j--) {
+            ^
+            VITIS_LOOP_1582_14: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60627:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60633:17: remark: Added loop label VITIS_LOOP_1588_15:   [xilinx-label-all-loops]
+                for (int j = 46; j >= I_+22; j--) {
+                ^
+                VITIS_LOOP_1588_15: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60633:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60637:17: remark: Added loop label VITIS_LOOP_1592_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^
+                VITIS_LOOP_1592_16: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60637:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60661:9: remark: Added loop label VITIS_LOOP_1616_17:   [xilinx-label-all-loops]
+        for (int j = wf+5; j < w-1; j++){
+        ^
+        VITIS_LOOP_1616_17: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60661:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60668:17: remark: Added loop label VITIS_LOOP_1623_18:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++) {
+                ^
+                VITIS_LOOP_1623_18: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:60668:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61098:13: remark: Added loop label VITIS_LOOP_2053_19:   [xilinx-label-all-loops]
+            for (int j = 64; j >= I_+31; j--) {
+            ^
+            VITIS_LOOP_2053_19: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61098:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61104:17: remark: Added loop label VITIS_LOOP_2059_20:   [xilinx-label-all-loops]
+                for (int j = 64; j >= I_+31; j--) {
+                ^
+                VITIS_LOOP_2059_20: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61104:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61108:17: remark: Added loop label VITIS_LOOP_2063_21:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^
+                VITIS_LOOP_2063_21: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61108:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61237:13: remark: Added loop label VITIS_LOOP_2192_1:   [xilinx-label-all-loops]
+            for(int j=3; j>=I+1; j--) {
+            ^
+            VITIS_LOOP_2192_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61237:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61244:17: remark: Added loop label VITIS_LOOP_2199_2:   [xilinx-label-all-loops]
+                for(int j=3; j>=I+1; j--) {
+                ^
+                VITIS_LOOP_2199_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61244:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61248:17: remark: Added loop label VITIS_LOOP_2203_3:   [xilinx-label-all-loops]
+                for(int j=I; j>=0; j--) {
+                ^
+                VITIS_LOOP_2203_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61248:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61295:13: remark: Added loop label VITIS_LOOP_2250_4:   [xilinx-label-all-loops]
+            for(int j=7; j>=3+I; j--) {
+            ^
+            VITIS_LOOP_2250_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61295:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61302:17: remark: Added loop label VITIS_LOOP_2257_5:   [xilinx-label-all-loops]
+                for(int j=7; j>=3+I; j--) {
+                ^
+                VITIS_LOOP_2257_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61302:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61306:17: remark: Added loop label VITIS_LOOP_2261_6:   [xilinx-label-all-loops]
+                for(int j=I+2; j>=0; j--) {
+                ^
+                VITIS_LOOP_2261_6: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61306:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61324:9: remark: Added loop label VITIS_LOOP_2279_7:   [xilinx-label-all-loops]
+        for(int j=11; j<16; j++) {
+        ^
+        VITIS_LOOP_2279_7: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61324:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61379:13: remark: Added loop label VITIS_LOOP_2334_8:   [xilinx-label-all-loops]
+            for(int j=15; j>=7+I; j--) {
+            ^
+            VITIS_LOOP_2334_8: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61379:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61386:17: remark: Added loop label VITIS_LOOP_2341_9:   [xilinx-label-all-loops]
+                for(int j=15; j>=7+I; j--) {
+                ^
+                VITIS_LOOP_2341_9: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61386:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61390:17: remark: Added loop label VITIS_LOOP_2345_10:   [xilinx-label-all-loops]
+                for(int j=6+I; j>=0; j--) {
+                ^
+                VITIS_LOOP_2345_10: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61390:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61408:9: remark: Added loop label VITIS_LOOP_2363_11:   [xilinx-label-all-loops]
+        for(int j=20; j<32; j++) {
+        ^
+        VITIS_LOOP_2363_11: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61408:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61497:13: remark: Added loop label VITIS_LOOP_2452_12:   [xilinx-label-all-loops]
+            for(int j=31; j>=I+15; j--) {
+            ^
+            VITIS_LOOP_2452_12: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61497:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61504:17: remark: Added loop label VITIS_LOOP_2459_13:   [xilinx-label-all-loops]
+                for(int j=31; j>=I+15; j--) {
+                ^
+                VITIS_LOOP_2459_13: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61504:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61508:17: remark: Added loop label VITIS_LOOP_2463_14:   [xilinx-label-all-loops]
+                for(int j=I+14; j>=0; j--) {
+                ^
+                VITIS_LOOP_2463_14: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61508:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61518:9: remark: Added loop label VITIS_LOOP_2473_15:   [xilinx-label-all-loops]
+        for(int j=32-F; j<32+I; j++) {
+        ^
+        VITIS_LOOP_2473_15: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61518:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61522:9: remark: Added loop label VITIS_LOOP_2477_16:   [xilinx-label-all-loops]
+        for(int j=32+I; j<=64; j++) {
+        ^
+        VITIS_LOOP_2477_16: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61522:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61533:9: remark: Added loop label VITIS_LOOP_2488_17:   [xilinx-label-all-loops]
+        for(int j=37; j<64; j++) {
+        ^
+        VITIS_LOOP_2488_17: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61533:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61541:17: remark: Added loop label VITIS_LOOP_2496_18:   [xilinx-label-all-loops]
+                for(int j=0; j<64; j++) {
+                ^
+                VITIS_LOOP_2496_18: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61541:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61866:13: remark: Added loop label VITIS_LOOP_2821_19:   [xilinx-label-all-loops]
+            for(int j=63; j>=I+31; j--) {
+            ^
+            VITIS_LOOP_2821_19: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61866:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61873:17: remark: Added loop label VITIS_LOOP_2828_20:   [xilinx-label-all-loops]
+                for(int j=63; j>=I+31; j--) {
+                ^
+                VITIS_LOOP_2828_20: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61873:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61877:17: remark: Added loop label VITIS_LOOP_2832_21:   [xilinx-label-all-loops]
+                for(int j=I+30; j>=0; j--) {
+                ^
+                VITIS_LOOP_2832_21: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61877:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61965:4: remark: Added loop label VITIS_LOOP_2920_1:   [xilinx-label-all-loops]
+   for(int j = 5; j>=I_+2; j--) {
+   ^
+   VITIS_LOOP_2920_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61965:4: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61972:5: remark: Added loop label VITIS_LOOP_2927_2:   [xilinx-label-all-loops]
+    for(int j = 5; j>=I_+2; j--) {
+    ^
+    VITIS_LOOP_2927_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61972:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61976:5: remark: Added loop label VITIS_LOOP_2931_3:   [xilinx-label-all-loops]
+    for(int j = I_+1; j>=0; j--) {
+    ^
+    VITIS_LOOP_2931_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61976:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61991:3: remark: Added loop label VITIS_LOOP_2946_4:   [xilinx-label-all-loops]
+  for(int j = 11; j >=7; j--) {
+  ^
+  VITIS_LOOP_2946_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:61991:3: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62023:4: remark: Added loop label VITIS_LOOP_2978_5:   [xilinx-label-all-loops]
+   for(int j = 11; j >= I_+5; j--) {
+   ^
+   VITIS_LOOP_2978_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62023:4: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62030:5: remark: Added loop label VITIS_LOOP_2985_6:   [xilinx-label-all-loops]
+    for(int j = 11; j>= I_+5; j--) {
+    ^
+    VITIS_LOOP_2985_6: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62030:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62034:5: remark: Added loop label VITIS_LOOP_2989_7:   [xilinx-label-all-loops]
+    for(int j = I_+4; j>=0; j--) {
+    ^
+    VITIS_LOOP_2989_7: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62034:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62049:3: remark: Added loop label VITIS_LOOP_3004_8:   [xilinx-label-all-loops]
+  for(int j = 25; j>=15; j--) {
+  ^
+  VITIS_LOOP_3004_8: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62049:3: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62099:4: remark: Added loop label VITIS_LOOP_3054_9:   [xilinx-label-all-loops]
+   for(int j = 25; j>= I_+12; j--) {
+   ^
+   VITIS_LOOP_3054_9: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62099:4: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62106:5: remark: Added loop label VITIS_LOOP_3061_10:   [xilinx-label-all-loops]
+    for(int j = 25; j>=I_+12; j--) {
+    ^
+    VITIS_LOOP_3061_10: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62106:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62110:5: remark: Added loop label VITIS_LOOP_3065_11:   [xilinx-label-all-loops]
+    for(int j = I_+11; j>=0; j--) {
+    ^
+    VITIS_LOOP_3065_11: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62110:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62125:3: remark: Added loop label VITIS_LOOP_3080_12:   [xilinx-label-all-loops]
+  for(int j = 51; j >= 29; j--) {
+  ^
+  VITIS_LOOP_3080_12: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62125:3: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62262:4: remark: Added loop label VITIS_LOOP_3217_13:   [xilinx-label-all-loops]
+   for(int j = 51; j >= 25 + I_; j--) {
+   ^
+   VITIS_LOOP_3217_13: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62262:4: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62269:5: remark: Added loop label VITIS_LOOP_3224_14:   [xilinx-label-all-loops]
+    for(int j = 51; j>=25 + I_; j--) {
+    ^
+    VITIS_LOOP_3224_14: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62269:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62273:5: remark: Added loop label VITIS_LOOP_3228_15:   [xilinx-label-all-loops]
+    for(int j = 24 + I_; j >= 0; j--) {
+    ^
+    VITIS_LOOP_3228_15: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62273:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62288:3: remark: Added loop label VITIS_LOOP_3243_16:   [xilinx-label-all-loops]
+  for(int j = 63; j >= 36; j--) {
+  ^
+  VITIS_LOOP_3243_16: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62288:3: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62448:4: remark: Added loop label VITIS_LOOP_3403_17:   [xilinx-label-all-loops]
+   for(int j = 63; j >= 31 + I_; j--) {
+   ^
+   VITIS_LOOP_3403_17: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62448:4: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62455:5: remark: Added loop label VITIS_LOOP_3410_18:   [xilinx-label-all-loops]
+    for(int j = 63; j >= 31 + I_; j--) {
+    ^
+    VITIS_LOOP_3410_18: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62455:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62459:5: remark: Added loop label VITIS_LOOP_3414_19:   [xilinx-label-all-loops]
+    for(int j = 30 + I_; j >= 0; j--) {
+    ^
+    VITIS_LOOP_3414_19: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:62459:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:63174:13: remark: Added loop label VITIS_LOOP_703_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^
+            VITIS_LOOP_703_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:63174:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:63392:13: remark: Added loop label VITIS_LOOP_921_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^
+            VITIS_LOOP_921_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:63392:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:63809:13: remark: Added loop label VITIS_LOOP_1345_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^
+            VITIS_LOOP_1345_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:63809:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:64132:9: remark: Added loop label VITIS_LOOP_243_1:   [xilinx-label-all-loops]
+        for ( int pos = msbr-1; pos >= 0; pos-- ) {
+        ^
+        VITIS_LOOP_243_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:64132:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:64160:9: remark: Added loop label VITIS_LOOP_271_2:   [xilinx-label-all-loops]
+        for ( int pos = -1; pos >= -F_-1; pos-- ) {
+        ^
+        VITIS_LOOP_271_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:64160:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:64864:13: remark: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
+            for (int j = 0; j < W_-1; j++){
+            ^
+            VITIS_LOOP_48_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:64864:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:64917:5: remark: Added loop label VITIS_LOOP_109_2:   [xilinx-label-all-loops]
+    for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
+    ^
+    VITIS_LOOP_109_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:64917:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:64931:13: remark: Added loop label VITIS_LOOP_123_3:   [xilinx-label-all-loops]
+            for (int j = WO_m-1; j >= W_-1; j--) {
+            ^
+            VITIS_LOOP_123_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:64931:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:64961:13: remark: Added loop label VITIS_LOOP_153_4:   [xilinx-label-all-loops]
+            for (int j = W_-2; j >= 0; j--){
+            ^
+            VITIS_LOOP_153_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:64961:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65046:12: remark: Added loop label VITIS_LOOP_281_1:   [xilinx-label-all-loops]
+           for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
+           ^
+           VITIS_LOOP_281_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65046:12: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65066:16: remark: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+               for (int j = WO_e-1; j >= W_-1; j--) {
+               ^
+               VITIS_LOOP_301_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65066:16: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65080:20: remark: Added loop label VITIS_LOOP_315_3:   [xilinx-label-all-loops]
+                   for(int i = 0; i < W_-1; ++i) {
+                   ^
+                   VITIS_LOOP_315_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65080:20: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65173:12: remark: Added loop label VITIS_LOOP_433_1:   [xilinx-label-all-loops]
+           for (int j =WO_d-1; j >= W_-1; j--) {
+           ^
+           VITIS_LOOP_433_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65173:12: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65187:15: remark: Added loop label VITIS_LOOP_447_2:   [xilinx-label-all-loops]
+              for(int i = 0; i < W_-1; ++i) {
+              ^
+              VITIS_LOOP_447_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65187:15: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65307:13: remark: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^
+            VITIS_LOOP_33_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65307:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65431:13: remark: Added loop label VITIS_LOOP_183_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^
+            VITIS_LOOP_183_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65431:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65486:13: remark: Added loop label VITIS_LOOP_248_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^
+            VITIS_LOOP_248_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65486:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65753:5: remark: Added loop label VITIS_LOOP_44_1:   [xilinx-label-all-loops]
+    for(int l = loop_nm; l > 0; --l){
+    ^
+    VITIS_LOOP_44_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:65753:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:66004:5: remark: Added loop label VITIS_LOOP_16_1:   [xilinx-label-all-loops]
+    for (int i=0; i<W_;i++)
+    ^
+    VITIS_LOOP_16_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:66004:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:66015:5: remark: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+    for (int i=0; i<W_;i++)
+    ^
+    VITIS_LOOP_27_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:66015:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:66026:5: remark: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
+    for (int i=0; i<I_;i++)
+    ^
+    VITIS_LOOP_38_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:66026:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:66037:5: remark: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+    for (int i=0; i<I_;i++)
+    ^
+    VITIS_LOOP_49_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:66037:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:66048:5: remark: Added loop label VITIS_LOOP_60_1:   [xilinx-label-all-loops]
+    for (int i=0; i<W_;i++)
+    ^
+    VITIS_LOOP_60_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:66048:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:66059:5: remark: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+    for (int i=0; i<W_;i++)
+    ^
+    VITIS_LOOP_71_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:66059:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:66070:5: remark: Added loop label VITIS_LOOP_82_1:   [xilinx-label-all-loops]
+    for (int i=0; i<I_;i++)
+    ^
+    VITIS_LOOP_82_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:66070:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:66081:5: remark: Added loop label VITIS_LOOP_93_1:   [xilinx-label-all-loops]
+    for (int i=0; i<I_;i++)
+    ^
+    VITIS_LOOP_93_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:66081:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:68440:12: remark: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+           for(int i = 0; i < W_-1; ++i) {
+           ^
+           VITIS_LOOP_26_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:68440:12: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:68504:7: remark: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+      for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
+      ^
+      VITIS_LOOP_40_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:68504:7: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:68621:9: remark: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+        for(int pos = msbr - 1; pos >= 0; pos--) {
+        ^
+        VITIS_LOOP_49_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:68621:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:68646:5: remark: Added loop label VITIS_LOOP_81_2:   [xilinx-label-all-loops]
+    for(int pos = -1; pos >= -F-1; pos--) {
+    ^
+    VITIS_LOOP_81_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:68646:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:68716:8: remark: Added loop label VITIS_LOOP_169_3:   [xilinx-label-all-loops]
+       for(int i = 0; i < W - 1; ++i) {
+       ^
+       VITIS_LOOP_169_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:68716:8: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71381:5: remark: Added loop label VITIS_LOOP_137_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS; i++) {
+    ^
+    VITIS_LOOP_137_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71381:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71383:9: remark: Added loop label VITIS_LOOP_139_2:   [xilinx-label-all-loops]
+        for(j = 0; j < COLS-1; j++) {
+        ^
+        VITIS_LOOP_139_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71383:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71405:5: remark: Added loop label VITIS_LOOP_175_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS; i++) {
+    ^
+    VITIS_LOOP_175_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71405:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71407:9: remark: Added loop label VITIS_LOOP_177_2:   [xilinx-label-all-loops]
+        for(j = COLS-1; j > 0; j--) {
+        ^
+        VITIS_LOOP_177_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71407:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71429:5: remark: Added loop label VITIS_LOOP_213_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS-1; i++) {
+    ^
+    VITIS_LOOP_213_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71429:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71431:9: remark: Added loop label VITIS_LOOP_215_2:   [xilinx-label-all-loops]
+        for(j = 0; j < COLS; j++) {
+        ^
+        VITIS_LOOP_215_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71431:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71453:5: remark: Added loop label VITIS_LOOP_251_1:   [xilinx-label-all-loops]
+    for(i = ROWS-1; i > 0; i--) {
+    ^
+    VITIS_LOOP_251_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71453:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71455:9: remark: Added loop label VITIS_LOOP_253_2:   [xilinx-label-all-loops]
+        for(j = 0; j < COLS; j++) {
+        ^
+        VITIS_LOOP_253_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71455:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71493:5: remark: Added loop label VITIS_LOOP_320_1:   [xilinx-label-all-loops]
+    for(j = 0; j < COLS; j++) {
+    ^
+    VITIS_LOOP_320_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71493:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71545:5: remark: Added loop label VITIS_LOOP_417_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS; i++) {
+    ^
+    VITIS_LOOP_417_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71545:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71735:5: remark: Added loop label VITIS_LOOP_702_1:   [xilinx-label-all-loops]
+    for(i = ROWS-1; i > 0; i--) {
+    ^
+    VITIS_LOOP_702_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71735:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71757:5: remark: Added loop label VITIS_LOOP_742_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS-1; i++) {
+    ^
+    VITIS_LOOP_742_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71757:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71805:5: remark: Added loop label VITIS_LOOP_838_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS; i++) {
+    ^
+    VITIS_LOOP_838_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71805:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71912:5: remark: Added loop label VITIS_LOOP_990_1:   [xilinx-label-all-loops]
+    for(i = ROWS-1; i > 0; i--) {
+    ^
+    VITIS_LOOP_990_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71912:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71934:5: remark: Added loop label VITIS_LOOP_1030_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS-1; i++) {
+    ^
+    VITIS_LOOP_1030_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71934:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71982:5: remark: Added loop label VITIS_LOOP_1126_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS; i++) {
+    ^
+    VITIS_LOOP_1126_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:71982:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72183:9: remark: Added loop label VITIS_LOOP_232_1:   [xilinx-label-all-loops]
+        for (int k = 0; k < N; k++) {
+        ^
+        VITIS_LOOP_232_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72183:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72204:5: remark: Added loop label VITIS_LOOP_253_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_253_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72204:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72214:5: remark: Added loop label VITIS_LOOP_263_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_263_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72214:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72225:5: remark: Added loop label VITIS_LOOP_274_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_274_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72225:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72236:5: remark: Added loop label VITIS_LOOP_285_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_285_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72236:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72247:5: remark: Added loop label VITIS_LOOP_296_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_296_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72247:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72259:5: remark: Added loop label VITIS_LOOP_308_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_308_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72259:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72270:5: remark: Added loop label VITIS_LOOP_319_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_319_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72270:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72282:5: remark: Added loop label VITIS_LOOP_331_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_331_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72282:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72293:5: remark: Added loop label VITIS_LOOP_342_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^
+    VITIS_LOOP_342_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72293:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72570:13: remark: Added loop label VITIS_LOOP_619_1:   [xilinx-label-all-loops]
+            for (i = 0; i < ((((T) & ((512 - 1) << 11)) >> 11) + 1); i++) {
+            ^
+            VITIS_LOOP_619_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72570:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72647:9: remark: Added loop label VITIS_LOOP_696_1:   [xilinx-label-all-loops]
+        for (i = 0; i < ((((T) & ((512 - 1) << 11)) >> 11) + 1); i++) {
+        ^
+        VITIS_LOOP_696_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72647:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72671:9: remark: Added loop label VITIS_LOOP_720_1:   [xilinx-label-all-loops]
+        for (i = 0; i < ((((T) & ((512 - 1) << 11)) >> 11) + 1); i++) {
+        ^
+        VITIS_LOOP_720_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72671:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72694:5: remark: Added loop label VITIS_LOOP_743_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T i = 0; i < ((((T) & ((512 - 1) << 11)) >> 11) + 1); i++) {
+    ^
+    VITIS_LOOP_743_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72694:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72824:25: remark: Added loop label VITIS_LOOP_208_1:   [xilinx-label-all-loops]
+                        for(int k=0;k<num;k++)
+                        ^
+                        VITIS_LOOP_208_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72824:25: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72960:9: remark: Added loop label VITIS_LOOP_189_1:   [xilinx-label-all-loops]
+        for (HLS_SIZE_T col = 0; col < cols; col++) {
+        ^
+        VITIS_LOOP_189_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:72960:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:73026:9: remark: Added loop label VITIS_LOOP_255_1:   [xilinx-label-all-loops]
+        for (HLS_SIZE_T col = 0; col < cols; col++) {
+        ^
+        VITIS_LOOP_255_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:73026:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:73930:5: remark: Added loop label VITIS_LOOP_1025_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^
+    VITIS_LOOP_1025_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:73930:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:73989:13: remark: Added loop label VITIS_LOOP_1105_1:   [xilinx-label-all-loops]
+            for (HLS_CHANNEL_T k = 0; k < ((((DST_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+            ^
+            VITIS_LOOP_1105_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:73989:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74005:5: remark: Added loop label VITIS_LOOP_1121_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^
+    VITIS_LOOP_1121_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74005:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74021:5: remark: Added loop label VITIS_LOOP_1137_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^
+    VITIS_LOOP_1137_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74021:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74039:5: remark: Added loop label VITIS_LOOP_1155_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^
+    VITIS_LOOP_1155_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74039:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74077:5: remark: Added loop label VITIS_LOOP_1193_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^
+    VITIS_LOOP_1193_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74077:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74097:5: remark: Added loop label VITIS_LOOP_1213_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^
+    VITIS_LOOP_1213_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74097:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74385:13: remark: Added loop label VITIS_LOOP_1508_1:   [xilinx-label-all-loops]
+            for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+            ^
+            VITIS_LOOP_1508_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74385:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74934:21: remark: Added loop label VITIS_LOOP_471_1:   [xilinx-label-all-loops]
+                    for(int buf_row=0; buf_row<K_HEIGHT; buf_row++) {
+                    ^
+                    VITIS_LOOP_471_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74934:21: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74947:29: remark: Added loop label VITIS_LOOP_484_2:   [xilinx-label-all-loops]
+                            for(int buf_row=2*K_HEIGHT-1; buf_row>=0; buf_row--) {
+                            ^
+                            VITIS_LOOP_484_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74947:29: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74956:29: remark: Added loop label VITIS_LOOP_493_3:   [xilinx-label-all-loops]
+                            for(int buf_row=0; buf_row<K_HEIGHT; buf_row++) {
+                            ^
+                            VITIS_LOOP_493_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74956:29: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74957:33: remark: Added loop label VITIS_LOOP_494_4:   [xilinx-label-all-loops]
+                                for(int buf_col=K_WIDTH-1; buf_col>0; buf_col--) {
+                                ^
+                                VITIS_LOOP_494_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74957:33: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74965:29: remark: Added loop label VITIS_LOOP_502_5:   [xilinx-label-all-loops]
+                            for(int buf_row=2*K_HEIGHT-1; buf_row>0; buf_row--) {
+                            ^
+                            VITIS_LOOP_502_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74965:29: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74979:21: remark: Added loop label VITIS_LOOP_516_6:   [xilinx-label-all-loops]
+                    for(int buf_row=0; buf_row<K_HEIGHT; buf_row++){
+                    ^
+                    VITIS_LOOP_516_6: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:74979:21: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75115:25: remark: Added loop label VITIS_LOOP_652_1:   [xilinx-label-all-loops]
+                        for(int buf_row=K_HEIGHT-1; buf_row>0; buf_row--) {
+                        ^
+                        VITIS_LOOP_652_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75115:25: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75119:25: remark: Added loop label VITIS_LOOP_656_2:   [xilinx-label-all-loops]
+                        for(int buf_row=K_HEIGHT-1; buf_row>=0; buf_row--) {
+                        ^
+                        VITIS_LOOP_656_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75119:25: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75126:29: remark: Added loop label VITIS_LOOP_663_3:   [xilinx-label-all-loops]
+                            for(int buf_row=K_HEIGHT-1; buf_row>0; buf_row--) {
+                            ^
+                            VITIS_LOOP_663_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75126:29: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75143:25: remark: Added loop label VITIS_LOOP_680_4:   [xilinx-label-all-loops]
+                        for(int buf_row=K_HEIGHT-1; buf_row>=0; buf_row--) {
+                        ^
+                        VITIS_LOOP_680_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75143:25: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75144:29: remark: Added loop label VITIS_LOOP_681_5:   [xilinx-label-all-loops]
+                            for(int buf_col=K_WIDTH-1; buf_col>0; buf_col--) {
+                            ^
+                            VITIS_LOOP_681_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75144:29: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75246:17: remark: Added loop label VITIS_LOOP_783_1:   [xilinx-label-all-loops]
+                for(int buf_row=0; buf_row<K_HEIGHT; buf_row++) {
+                ^
+                VITIS_LOOP_783_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75246:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75256:21: remark: Added loop label VITIS_LOOP_793_2:   [xilinx-label-all-loops]
+                    for(int buf_row=2*K_HEIGHT-1; buf_row>=0; buf_row--) {
+                    ^
+                    VITIS_LOOP_793_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75256:21: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75263:21: remark: Added loop label VITIS_LOOP_800_3:   [xilinx-label-all-loops]
+                    for(int buf_row=2*K_HEIGHT-1; buf_row>0; buf_row--) {
+                    ^
+                    VITIS_LOOP_800_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75263:21: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75273:17: remark: Added loop label VITIS_LOOP_810_4:   [xilinx-label-all-loops]
+                for(int buf_row=0; buf_row<K_HEIGHT; buf_row++){
+                ^
+                VITIS_LOOP_810_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75273:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75399:17: remark: Added loop label VITIS_LOOP_936_1:   [xilinx-label-all-loops]
+                for (int buf_col=K_WIDTH-1; buf_col>0; buf_col--) {
+                ^
+                VITIS_LOOP_936_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75399:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75421:17: remark: Added loop label VITIS_LOOP_958_2:   [xilinx-label-all-loops]
+                for (int buf_col=0; buf_col<2*K_WIDTH; buf_col++) {
+                ^
+                VITIS_LOOP_958_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75421:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75427:17: remark: Added loop label VITIS_LOOP_964_3:   [xilinx-label-all-loops]
+                for (int buf_col=0; buf_col<K_WIDTH; buf_col++) {
+                ^
+                VITIS_LOOP_964_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75427:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75547:17: remark: Added loop label VITIS_LOOP_1084_1:   [xilinx-label-all-loops]
+                for(int buf_col=K_WIDTH-1; buf_col>=1; buf_col--) {
+                ^
+                VITIS_LOOP_1084_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75547:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75552:21: remark: Added loop label VITIS_LOOP_1089_2:   [xilinx-label-all-loops]
+                    for(int buf_row= K_HEIGHT-1;buf_row >= 1;buf_row--) {
+                    ^
+                    VITIS_LOOP_1089_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75552:21: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75580:17: remark: Added loop label VITIS_LOOP_1117_3:   [xilinx-label-all-loops]
+                for (int buf_col=0; buf_col<K_WIDTH; buf_col++) {
+                ^
+                VITIS_LOOP_1117_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75580:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75988:2: remark: Added loop label VITIS_LOOP_1525_1:   [xilinx-label-all-loops]
+ for(int i=0; i<CN1; i++) {
+ ^
+ VITIS_LOOP_1525_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75988:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75997:2: remark: Added loop label VITIS_LOOP_1534_1:   [xilinx-label-all-loops]
+ for(int i=0; i<CN1; i++) {
+ ^
+ VITIS_LOOP_1534_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:75997:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76558:5: remark: Added loop label VITIS_LOOP_2095_1:   [xilinx-label-all-loops]
+    for (i=0; i<NPHASES; i++) {
+    ^
+    VITIS_LOOP_2095_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76558:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76565:5: remark: Added loop label VITIS_LOOP_2102_2:   [xilinx-label-all-loops]
+    for (i = 0; i < NPHASES; i++) {
+    ^
+    VITIS_LOOP_2102_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76565:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76566:9: remark: Added loop label VITIS_LOOP_2103_3:   [xilinx-label-all-loops]
+        for (j = 0; j < NTAPS; j++) {
+        ^
+        VITIS_LOOP_2103_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76566:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76709:27: remark: Added loop label VITIS_LOOP_2246_1:   [xilinx-label-all-loops]
+                          for (int m = 0; m < ((((T) & ((512 - 1) << 11)) >> 11) + 1); m++)
+                          ^
+                          VITIS_LOOP_2246_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76709:27: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76716:15: remark: Added loop label VITIS_LOOP_2253_2:   [xilinx-label-all-loops]
+              for (int i = 0; i < NTAPS; i++) {
+              ^
+              VITIS_LOOP_2253_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76716:15: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76722:23: remark: Added loop label VITIS_LOOP_2259_3:   [xilinx-label-all-loops]
+                      for (int i = NTAPS - 1; i > 0; i--) {
+                      ^
+                      VITIS_LOOP_2259_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76722:23: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76736:23: remark: Added loop label VITIS_LOOP_2273_4:   [xilinx-label-all-loops]
+                      for (int i = NTAPS - 1; i >= 0; i--) {
+                      ^
+                      VITIS_LOOP_2273_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76736:23: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76747:15: remark: Added loop label VITIS_LOOP_2284_5:   [xilinx-label-all-loops]
+              for (int i = 0; i < NTAPS; i++) {
+              ^
+              VITIS_LOOP_2284_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76747:15: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76792:5: remark: Added loop label VITIS_LOOP_2329_1:   [xilinx-label-all-loops]
+    for(short i= 0;i<rows;i++) {
+    ^
+    VITIS_LOOP_2329_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76792:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76793:9: remark: Added loop label VITIS_LOOP_2330_2:   [xilinx-label-all-loops]
+        for(short j= 0;j<cols;j++) {
+        ^
+        VITIS_LOOP_2330_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76793:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76873:17: remark: Added loop label VITIS_LOOP_2410_3:   [xilinx-label-all-loops]
+                for(int r= 0;r<2;r++)
+                ^
+                VITIS_LOOP_2410_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76873:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76897:21: remark: Added loop label VITIS_LOOP_2434_4:   [xilinx-label-all-loops]
+                    for(int r= 0;r<2;r++)
+                    ^
+                    VITIS_LOOP_2434_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76897:21: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76907:17: remark: Added loop label VITIS_LOOP_2444_5:   [xilinx-label-all-loops]
+                for(int k=0;k<((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1);k++)
+                ^
+                VITIS_LOOP_2444_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:76907:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77025:5: remark: Added loop label VITIS_LOOP_2562_1:   [xilinx-label-all-loops]
+    for(int k=0; k<2; k++)
+    ^
+    VITIS_LOOP_2562_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77025:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77042:13: remark: Added loop label VITIS_LOOP_2579_2:   [xilinx-label-all-loops]
+            for(int i=0; i<SIZE; i++)
+            ^
+            VITIS_LOOP_2579_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77042:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77045:13: remark: Added loop label VITIS_LOOP_2582_3:   [xilinx-label-all-loops]
+            for(int i=0; i<SIZE-order-1; i++)
+            ^
+            VITIS_LOOP_2582_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77045:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77048:17: remark: Added loop label VITIS_LOOP_2585_4:   [xilinx-label-all-loops]
+                for(int j = 1; j <= SIZE; j++ )
+                ^
+                VITIS_LOOP_2585_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77048:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77056:13: remark: Added loop label VITIS_LOOP_2593_5:   [xilinx-label-all-loops]
+            for(int i = 0; i < order; i++ )
+            ^
+            VITIS_LOOP_2593_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77056:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77059:17: remark: Added loop label VITIS_LOOP_2596_6:   [xilinx-label-all-loops]
+                for(int j = 1; j <= SIZE; j++ )
+                ^
+                VITIS_LOOP_2596_6: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77059:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77068:9: remark: Added loop label VITIS_LOOP_2605_7:   [xilinx-label-all-loops]
+        for(int i=0; i<SIZE; i++) {
+        ^
+        VITIS_LOOP_2605_7: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77068:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77076:5: remark: Added loop label VITIS_LOOP_2613_8:   [xilinx-label-all-loops]
+    for(int i=0; i<SIZE; i++) {
+    ^
+    VITIS_LOOP_2613_8: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77076:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77077:9: remark: Added loop label VITIS_LOOP_2614_9:   [xilinx-label-all-loops]
+        for(int j=0; j<SIZE; j++) {
+        ^
+        VITIS_LOOP_2614_9: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77077:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77127:6: remark: Added loop label VITIS_LOOP_2664_1:   [xilinx-label-all-loops]
+     for (int i = 0; i < KH; i++) {
+     ^
+     VITIS_LOOP_2664_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77127:6: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77128:13: remark: Added loop label VITIS_LOOP_2665_2:   [xilinx-label-all-loops]
+            for (int j = 0; j < KW; j++) {
+            ^
+            VITIS_LOOP_2665_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77128:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77136:6: remark: Added loop label VITIS_LOOP_2673_3:   [xilinx-label-all-loops]
+     for (int i = 0; i < KH; i++) {
+     ^
+     VITIS_LOOP_2673_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77136:6: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77137:10: remark: Added loop label VITIS_LOOP_2674_4:   [xilinx-label-all-loops]
+         for (int j = 0; j < KW; j++) {
+         ^
+         VITIS_LOOP_2674_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77137:10: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77179:5: remark: Added loop label VITIS_LOOP_2716_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < KW; i++) {
+    ^
+    VITIS_LOOP_2716_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77179:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77183:5: remark: Added loop label VITIS_LOOP_2720_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < KH; i++) {
+    ^
+    VITIS_LOOP_2720_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77183:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77237:5: remark: Added loop label VITIS_LOOP_2774_1:   [xilinx-label-all-loops]
+    for(int i=0; i<5; i++)
+    ^
+    VITIS_LOOP_2774_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77237:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77238:9: remark: Added loop label VITIS_LOOP_2775_2:   [xilinx-label-all-loops]
+        for(int j=0; j<5; j++)
+        ^
+        VITIS_LOOP_2775_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77238:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77297:25: remark: Added loop label VITIS_LOOP_2834_1:   [xilinx-label-all-loops]
+                        for(int row= 0;row<K_HEIGHT;row++)
+                        ^
+                        VITIS_LOOP_2834_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77297:25: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77298:29: remark: Added loop label VITIS_LOOP_2835_2:   [xilinx-label-all-loops]
+                            for(int col= K_WIDTH-1;col>=1;col--)
+                            ^
+                            VITIS_LOOP_2835_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77298:29: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77301:25: remark: Added loop label VITIS_LOOP_2838_3:   [xilinx-label-all-loops]
+                        for(int buf_row = 0; buf_row < K_HEIGHT; buf_row++)
+                        ^
+                        VITIS_LOOP_2838_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77301:25: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77313:33: remark: Added loop label VITIS_LOOP_2850_4:   [xilinx-label-all-loops]
+                                for(int buf_row= K_HEIGHT-1;buf_row >= 1;buf_row--)
+                                ^
+                                VITIS_LOOP_2850_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77313:33: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77324:37: remark: Added loop label VITIS_LOOP_2861_5:   [xilinx-label-all-loops]
+                                    for(int buf_row= K_HEIGHT-1;buf_row >= 1;buf_row--)
+                                    ^
+                                    VITIS_LOOP_2861_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77324:37: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77340:33: remark: Added loop label VITIS_LOOP_2877_6:   [xilinx-label-all-loops]
+                                for(int buf_row = 0;buf_row < K_HEIGHT; buf_row++)
+                                ^
+                                VITIS_LOOP_2877_6: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77340:33: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77346:33: remark: Added loop label VITIS_LOOP_2883_7:   [xilinx-label-all-loops]
+                                for(int buf_row= 0;buf_row < K_HEIGHT; buf_row++)
+                                ^
+                                VITIS_LOOP_2883_7: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77346:33: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77352:36: remark: Added loop label VITIS_LOOP_2889_8:   [xilinx-label-all-loops]
+                                   for(int buf_row= K_HEIGHT-1;buf_row>0;buf_row--)
+                                   ^
+                                   VITIS_LOOP_2889_8: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77352:36: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77364:29: remark: Added loop label VITIS_LOOP_2901_9:   [xilinx-label-all-loops]
+                            for(int buf_row= 0;buf_row<K_HEIGHT;buf_row++)
+                            ^
+                            VITIS_LOOP_2901_9: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77364:29: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77378:33: remark: Added loop label VITIS_LOOP_2915_10:   [xilinx-label-all-loops]
+                                for(int buf_row= K_HEIGHT-1;buf_row>0;buf_row--)
+                                ^
+                                VITIS_LOOP_2915_10: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77378:33: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77392:33: remark: Added loop label VITIS_LOOP_2929_11:   [xilinx-label-all-loops]
+                                for(int m=0; m<K_HEIGHT; m++)
+                                ^
+                                VITIS_LOOP_2929_11: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77392:33: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77393:37: remark: Added loop label VITIS_LOOP_2930_12:   [xilinx-label-all-loops]
+                                    for(int n=0; n<K_WIDTH; n++)
+                                    ^
+                                    VITIS_LOOP_2930_12: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77393:37: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77398:33: remark: Added loop label VITIS_LOOP_2935_13:   [xilinx-label-all-loops]
+                                for(int m=0; m<K_HEIGHT; m++)
+                                ^
+                                VITIS_LOOP_2935_13: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77398:33: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77399:37: remark: Added loop label VITIS_LOOP_2936_14:   [xilinx-label-all-loops]
+                                    for(int n=1; n<K_WIDTH; n++)
+                                    ^
+                                    VITIS_LOOP_2936_14: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77399:37: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77406:33: remark: Added loop label VITIS_LOOP_2943_15:   [xilinx-label-all-loops]
+                                for(int m=0; m<K_HEIGHT-1; m++)
+                                ^
+                                VITIS_LOOP_2943_15: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77406:33: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77407:37: remark: Added loop label VITIS_LOOP_2944_16:   [xilinx-label-all-loops]
+                                    for(int n=0; n<K_WIDTH; n++)
+                                    ^
+                                    VITIS_LOOP_2944_16: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77407:37: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77413:33: remark: Added loop label VITIS_LOOP_2950_17:   [xilinx-label-all-loops]
+                                for(int m=0; m<K_HEIGHT-1; m++)
+                                ^
+                                VITIS_LOOP_2950_17: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77413:33: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77414:37: remark: Added loop label VITIS_LOOP_2951_18:   [xilinx-label-all-loops]
+                                    for(int n=1; n<K_WIDTH; n++)
+                                    ^
+                                    VITIS_LOOP_2951_18: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77414:37: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77497:21: remark: Added loop label VITIS_LOOP_3034_1:   [xilinx-label-all-loops]
+                    for(int row= 0;row<K_HEIGHT;row++)
+                    ^
+                    VITIS_LOOP_3034_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77497:21: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77498:25: remark: Added loop label VITIS_LOOP_3035_2:   [xilinx-label-all-loops]
+                        for(int col= K_WIDTH-1;col>=1;col--)
+                        ^
+                        VITIS_LOOP_3035_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77498:25: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77501:21: remark: Added loop label VITIS_LOOP_3038_3:   [xilinx-label-all-loops]
+                    for(int buf_row = 0; buf_row < K_HEIGHT; buf_row++)
+                    ^
+                    VITIS_LOOP_3038_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77501:21: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77518:29: remark: Added loop label VITIS_LOOP_3055_4:   [xilinx-label-all-loops]
+                            for(int buf_row= K_HEIGHT-1;buf_row >= 1;buf_row--)
+                            ^
+                            VITIS_LOOP_3055_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77518:29: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77534:29: remark: Added loop label VITIS_LOOP_3071_5:   [xilinx-label-all-loops]
+                            for(int buf_row = 0;buf_row < K_HEIGHT; buf_row++)
+                            ^
+                            VITIS_LOOP_3071_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77534:29: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77541:29: remark: Added loop label VITIS_LOOP_3078_6:   [xilinx-label-all-loops]
+                            for(int buf_row= 0;buf_row < K_HEIGHT; buf_row++)
+                            ^
+                            VITIS_LOOP_3078_6: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77541:29: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77553:25: remark: Added loop label VITIS_LOOP_3090_7:   [xilinx-label-all-loops]
+                        for(int buf_row= 0;buf_row<K_HEIGHT;buf_row++)
+                        ^
+                        VITIS_LOOP_3090_7: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77553:25: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77572:29: remark: Added loop label VITIS_LOOP_3109_8:   [xilinx-label-all-loops]
+                            for(int m=0; m<K_HEIGHT; m++)
+                            ^
+                            VITIS_LOOP_3109_8: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77572:29: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77573:33: remark: Added loop label VITIS_LOOP_3110_9:   [xilinx-label-all-loops]
+                                for(int n=0; n<K_WIDTH; n++)
+                                ^
+                                VITIS_LOOP_3110_9: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77573:33: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77621:5: remark: Added loop label VITIS_LOOP_77_1:   [xilinx-label-all-loops]
+    for(int i=0;i<NUM_STATES;i++) {
+    ^
+    VITIS_LOOP_77_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77621:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77627:5: remark: Added loop label VITIS_LOOP_83_2:   [xilinx-label-all-loops]
+    for(int i=0;i<N;i++)
+    ^
+    VITIS_LOOP_83_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77627:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77648:13: remark: Added loop label VITIS_LOOP_104_3:   [xilinx-label-all-loops]
+            for (int m=0; m<NUM_STATES; m++) {
+            ^
+            VITIS_LOOP_104_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77648:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77660:13: remark: Added loop label VITIS_LOOP_116_4:   [xilinx-label-all-loops]
+            for (int m=NUM_STATES-1; m>0; m--) {
+            ^
+            VITIS_LOOP_116_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77660:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77700:5: remark: Added loop label VITIS_LOOP_156_5:   [xilinx-label-all-loops]
+    for (int m=0; m<NUM_STATES/2; m++) {
+    ^
+    VITIS_LOOP_156_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77700:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77759:5: remark: Added loop label VITIS_LOOP_69_1:   [xilinx-label-all-loops]
+    for(int index=0;index<K;index++) {
+    ^
+    VITIS_LOOP_69_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77759:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77808:9: remark: Added loop label VITIS_LOOP_118_1:   [xilinx-label-all-loops]
+        for(int i=0;i<NUM-1;i++) {
+        ^
+        VITIS_LOOP_118_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77808:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77812:9: remark: Added loop label VITIS_LOOP_122_2:   [xilinx-label-all-loops]
+        for(int i=0;i<NUM-3;i++) {
+        ^
+        VITIS_LOOP_122_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77812:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77817:9: remark: Added loop label VITIS_LOOP_127_3:   [xilinx-label-all-loops]
+        for(int i=0;i<NUM-7;i++) {
+        ^
+        VITIS_LOOP_127_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77817:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77828:5: remark: Added loop label VITIS_LOOP_138_4:   [xilinx-label-all-loops]
+    for(int i=0;i<PSize;i+=2) {
+    ^
+    VITIS_LOOP_138_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77828:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77833:13: remark: Added loop label VITIS_LOOP_143_5:   [xilinx-label-all-loops]
+            for(int j=1;j<PSize/2+1;j++) {
+            ^
+            VITIS_LOOP_143_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77833:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77841:5: remark: Added loop label VITIS_LOOP_151_6:   [xilinx-label-all-loops]
+    for(int i=0;i<PSize;i+=2) {
+    ^
+    VITIS_LOOP_151_6: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77841:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77846:13: remark: Added loop label VITIS_LOOP_156_7:   [xilinx-label-all-loops]
+            for(int j=1;j<PSize/2+1;j++) {
+            ^
+            VITIS_LOOP_156_7: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77846:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77872:5: remark: Added loop label VITIS_LOOP_182_1:   [xilinx-label-all-loops]
+    for(int c=1;c<PSize+PSize/2+1;c++)
+    ^
+    VITIS_LOOP_182_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77872:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77899:5: remark: Added loop label VITIS_LOOP_209_1:   [xilinx-label-all-loops]
+    for(int k=0;k<3;k++) {
+    ^
+    VITIS_LOOP_209_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77899:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77905:5: remark: Added loop label VITIS_LOOP_215_2:   [xilinx-label-all-loops]
+    for(int k=0;k<3;k++) {
+    ^
+    VITIS_LOOP_215_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77905:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77954:17: remark: Added loop label VITIS_LOOP_264_1:   [xilinx-label-all-loops]
+                for(int r= 0;r<KERNEL_SIZE;r++) {
+                ^
+                VITIS_LOOP_264_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77954:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77955:21: remark: Added loop label VITIS_LOOP_265_2:   [xilinx-label-all-loops]
+                    for(int c=0;c<KERNEL_SIZE-1;c++) {
+                    ^
+                    VITIS_LOOP_265_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77955:21: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77960:17: remark: Added loop label VITIS_LOOP_270_3:   [xilinx-label-all-loops]
+                for(int buf_row= 1;buf_row< KERNEL_SIZE-1;buf_row++) {
+                ^
+                VITIS_LOOP_270_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77960:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77970:13: remark: Added loop label VITIS_LOOP_280_4:   [xilinx-label-all-loops]
+            for(int r= 0;r<3;r++)
+            ^
+            VITIS_LOOP_280_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77970:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77972:17: remark: Added loop label VITIS_LOOP_282_5:   [xilinx-label-all-loops]
+                for(int c=0;c<3-1;c++)
+                ^
+                VITIS_LOOP_282_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77972:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77978:13: remark: Added loop label VITIS_LOOP_288_6:   [xilinx-label-all-loops]
+            for(int buf_row= 1;buf_row< 3-1;buf_row++)
+            ^
+            VITIS_LOOP_288_6: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:77978:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78070:17: remark: Added loop label VITIS_LOOP_380_1:   [xilinx-label-all-loops]
+                for(int r= 0;r<KERNEL_SIZE;r++) {
+                ^
+                VITIS_LOOP_380_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78070:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78071:21: remark: Added loop label VITIS_LOOP_381_2:   [xilinx-label-all-loops]
+                    for(int c=0;c<KERNEL_SIZE-1;c++) {
+                    ^
+                    VITIS_LOOP_381_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78071:21: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78076:17: remark: Added loop label VITIS_LOOP_386_3:   [xilinx-label-all-loops]
+                for(int buf_row= 1;buf_row< KERNEL_SIZE-1;buf_row++) {
+                ^
+                VITIS_LOOP_386_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78076:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78086:13: remark: Added loop label VITIS_LOOP_396_4:   [xilinx-label-all-loops]
+            for(int r= 0;r<3;r++)
+            ^
+            VITIS_LOOP_396_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78086:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78088:17: remark: Added loop label VITIS_LOOP_398_5:   [xilinx-label-all-loops]
+                for(int c=0;c<3-1;c++)
+                ^
+                VITIS_LOOP_398_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78088:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78094:13: remark: Added loop label VITIS_LOOP_404_6:   [xilinx-label-all-loops]
+            for(int buf_row= 1;buf_row< 3-1;buf_row++)
+            ^
+            VITIS_LOOP_404_6: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78094:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78205:5: remark: Added loop label VITIS_LOOP_104_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++)
+    ^
+    VITIS_LOOP_104_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78205:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78209:5: remark: Added loop label VITIS_LOOP_108_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^
+    VITIS_LOOP_108_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78209:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78211:9: remark: Added loop label VITIS_LOOP_110_3:   [xilinx-label-all-loops]
+        for (int j = 0; j < N; j++) {
+        ^
+        VITIS_LOOP_110_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78211:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78217:5: remark: Added loop label VITIS_LOOP_116_4:   [xilinx-label-all-loops]
+    for (int j = 0; j < N; j++) {
+    ^
+    VITIS_LOOP_116_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78217:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78218:9: remark: Added loop label VITIS_LOOP_117_5:   [xilinx-label-all-loops]
+        for (int i = 0; i < j; i++) {
+        ^
+        VITIS_LOOP_117_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78218:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78220:13: remark: Added loop label VITIS_LOOP_119_6:   [xilinx-label-all-loops]
+            for (int k = 0; k < i; k++) sum -= A[i][k] * A[k][j];
+            ^
+            VITIS_LOOP_119_6: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78220:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78224:9: remark: Added loop label VITIS_LOOP_123_7:   [xilinx-label-all-loops]
+        for (int i = j; i < N; i++) {
+        ^
+        VITIS_LOOP_123_7: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78224:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78226:13: remark: Added loop label VITIS_LOOP_125_8:   [xilinx-label-all-loops]
+            for (int k = 0; k < j; k++) sum -= A[i][k] * A[k][j];
+            ^
+            VITIS_LOOP_125_8: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78226:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78235:13: remark: Added loop label VITIS_LOOP_134_9:   [xilinx-label-all-loops]
+            for (int i = 0; i < N; i++) {
+            ^
+            VITIS_LOOP_134_9: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78235:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78247:13: remark: Added loop label VITIS_LOOP_146_10:   [xilinx-label-all-loops]
+            for (int i = j + 1; i < N; i++) A[i][j] *= dum;
+            ^
+            VITIS_LOOP_146_10: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78247:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78255:5: remark: Added loop label VITIS_LOOP_154_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^
+    VITIS_LOOP_154_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78255:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78264:13: remark: Added loop label VITIS_LOOP_163_2:   [xilinx-label-all-loops]
+            for (int j = ii - 1; j < i; j++) sum -= A[i][j] * b[j];
+            ^
+            VITIS_LOOP_163_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78264:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78269:5: remark: Added loop label VITIS_LOOP_168_3:   [xilinx-label-all-loops]
+    for (int i = N - 1; i >= 0; i--) {
+    ^
+    VITIS_LOOP_168_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78269:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78271:9: remark: Added loop label VITIS_LOOP_170_4:   [xilinx-label-all-loops]
+        for (int j = i + 1; j < N; j++) sum -= A[i][j]*b[j];
+        ^
+        VITIS_LOOP_170_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78271:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78282:5: remark: Added loop label VITIS_LOOP_181_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^
+    VITIS_LOOP_181_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78282:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78287:5: remark: Added loop label VITIS_LOOP_186_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^
+    VITIS_LOOP_186_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78287:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78288:9: remark: Added loop label VITIS_LOOP_187_3:   [xilinx-label-all-loops]
+        for (int j = 0; j < N; j++) b[j] = 0;
+        ^
+        VITIS_LOOP_187_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78288:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78291:9: remark: Added loop label VITIS_LOOP_190_4:   [xilinx-label-all-loops]
+        for (int j = 0; j < N; j++) Ar[j][i] = b[j];
+        ^
+        VITIS_LOOP_190_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78291:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78367:21: remark: Added loop label VITIS_LOOP_266_1:   [xilinx-label-all-loops]
+                    for(int k=0;k<((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1);k++) {
+                    ^
+                    VITIS_LOOP_266_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78367:21: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78487:17: remark: Added loop label VITIS_LOOP_398_1:   [xilinx-label-all-loops]
+                for(int k = 0; k < ((((DST_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+                ^
+                VITIS_LOOP_398_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78487:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78905:13: remark: Added loop label VITIS_LOOP_215_1:   [xilinx-label-all-loops]
+            for(int row=2;row>=0;row--)
+            ^
+            VITIS_LOOP_215_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78905:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78907:17: remark: Added loop label VITIS_LOOP_217_2:   [xilinx-label-all-loops]
+                for(int col=2;col>=1;col--)
+                ^
+                VITIS_LOOP_217_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:78907:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79040:5: remark: Added loop label VITIS_LOOP_104_1:   [xilinx-label-all-loops]
+    for(int i=0;i<KH;i++) {
+    ^
+    VITIS_LOOP_104_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79040:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79041:9: remark: Added loop label VITIS_LOOP_105_2:   [xilinx-label-all-loops]
+        for(int j=0;j<KW;j++) {
+        ^
+        VITIS_LOOP_105_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79041:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79063:5: remark: Added loop label VITIS_LOOP_127_1:   [xilinx-label-all-loops]
+    for(HLS_SIZE_T i=0;i<rows+ioffset;i++)
+    ^
+    VITIS_LOOP_127_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79063:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79066:9: remark: Added loop label VITIS_LOOP_130_2:   [xilinx-label-all-loops]
+        for(HLS_SIZE_T j=0;j<cols+joffset;j++)
+        ^
+        VITIS_LOOP_130_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79066:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79073:13: remark: Added loop label VITIS_LOOP_137_3:   [xilinx-label-all-loops]
+            for(int r= 0;r<KH;r++)
+            ^
+            VITIS_LOOP_137_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79073:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79075:17: remark: Added loop label VITIS_LOOP_139_4:   [xilinx-label-all-loops]
+                for(int c=0;c<KW-1;c++)
+                ^
+                VITIS_LOOP_139_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79075:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79083:17: remark: Added loop label VITIS_LOOP_147_5:   [xilinx-label-all-loops]
+                for(int buf_row= 1;buf_row< KH-1;buf_row++)
+                ^
+                VITIS_LOOP_147_5: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79083:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79096:17: remark: Added loop label VITIS_LOOP_160_6:   [xilinx-label-all-loops]
+                for(int i= 1;i< KW;i++)
+                ^
+                VITIS_LOOP_160_6: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79096:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79132:5: remark: Added loop label VITIS_LOOP_196_1:   [xilinx-label-all-loops]
+    for(HLS_SIZE_T i=0;i<rows;i++)
+    ^
+    VITIS_LOOP_196_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79132:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79135:9: remark: Added loop label VITIS_LOOP_199_2:   [xilinx-label-all-loops]
+        for(HLS_SIZE_T j=0;j<cols;j++)
+        ^
+        VITIS_LOOP_199_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79135:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79364:9: remark: Added loop label VITIS_LOOP_148_1:   [xilinx-label-all-loops]
+        for(int i=0;i<STAGE;i++)
+        ^
+        VITIS_LOOP_148_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79364:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79372:9: remark: Added loop label VITIS_LOOP_156_2:   [xilinx-label-all-loops]
+        for(int i=0;i<CLASSIFIER_ALL;i++)
+        ^
+        VITIS_LOOP_156_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79372:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79375:16: remark: Added loop label VITIS_LOOP_159_3:   [xilinx-label-all-loops]
+               for(int j=0;j<FEATURE_MAX;j++)
+               ^
+               VITIS_LOOP_159_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79375:16: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79383:23: remark: Added loop label VITIS_LOOP_167_4:   [xilinx-label-all-loops]
+                      for(int n=0;n<3;n++)
+                      ^
+                      VITIS_LOOP_167_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79383:23: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79406:5: remark: Added loop label VITIS_LOOP_190_1:   [xilinx-label-all-loops]
+    for(int j=0;j<COLS;j++)
+    ^
+    VITIS_LOOP_190_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79406:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79409:9: remark: Added loop label VITIS_LOOP_193_2:   [xilinx-label-all-loops]
+        for(int i=0;i<ROWS;i++)
+        ^
+        VITIS_LOOP_193_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79409:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79426:5: remark: Added loop label VITIS_LOOP_210_1:   [xilinx-label-all-loops]
+    for(m=0;m<FEATURE_MAX;m++)
+    ^
+    VITIS_LOOP_210_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79426:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79433:13: remark: Added loop label VITIS_LOOP_217_2:   [xilinx-label-all-loops]
+            for(int j=1;j<3;j++)
+            ^
+            VITIS_LOOP_217_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79433:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79462:5: remark: Added loop label VITIS_LOOP_246_1:   [xilinx-label-all-loops]
+    for (int i=0;i<CLASSIFIER_ALL;i++)
+    ^
+    VITIS_LOOP_246_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79462:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79510:5: remark: Added loop label VITIS_LOOP_294_1:   [xilinx-label-all-loops]
+    for(int i=0;i<rows;i++)
+    ^
+    VITIS_LOOP_294_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79510:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79512:9: remark: Added loop label VITIS_LOOP_296_2:   [xilinx-label-all-loops]
+        for(int j=0;j<cols;j++)
+        ^
+        VITIS_LOOP_296_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79512:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79525:13: remark: Added loop label VITIS_LOOP_309_3:   [xilinx-label-all-loops]
+            for(int buf_row= 1;buf_row<K_H;buf_row++)
+            ^
+            VITIS_LOOP_309_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79525:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79625:9: remark: Added loop label VITIS_LOOP_430_1:   [xilinx-label-all-loops]
+        for(int i=0;i<m;i++)
+        ^
+        VITIS_LOOP_430_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79625:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79627:17: remark: Added loop label VITIS_LOOP_432_2:   [xilinx-label-all-loops]
+                for(int j=0;j<num;j++)
+                ^
+                VITIS_LOOP_432_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79627:17: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79635:9: remark: Added loop label VITIS_LOOP_440_3:   [xilinx-label-all-loops]
+        for(int i=0;i<num;i++)
+        ^
+        VITIS_LOOP_440_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79635:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79664:5: remark: Added loop label VITIS_LOOP_469_1:   [xilinx-label-all-loops]
+    for(int i=0;i<rows;i++)
+    ^
+    VITIS_LOOP_469_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79664:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79669:9: remark: Added loop label VITIS_LOOP_474_2:   [xilinx-label-all-loops]
+        for(int j=0;j<cols;j++)
+        ^
+        VITIS_LOOP_474_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79669:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79831:13: remark: Added loop label VITIS_LOOP_189_1:   [xilinx-label-all-loops]
+            for (int i = 0; i< PWSIZE; i++) {
+            ^
+            VITIS_LOOP_189_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79831:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79837:13: remark: Added loop label VITIS_LOOP_195_2:   [xilinx-label-all-loops]
+            for (int i = 0; i < PWSIZE; i++) {
+            ^
+            VITIS_LOOP_195_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79837:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79841:13: remark: Added loop label VITIS_LOOP_199_3:   [xilinx-label-all-loops]
+            for (int j = PWSIZE-1; j > 0; j--) {
+            ^
+            VITIS_LOOP_199_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79841:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79872:5: remark: Added loop label VITIS_LOOP_230_1:   [xilinx-label-all-loops]
+    for (HLS_SIZE_T i = 0; i < rows; i++) {
+    ^
+    VITIS_LOOP_230_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79872:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79873:9: remark: Added loop label VITIS_LOOP_231_2:   [xilinx-label-all-loops]
+        for (HLS_SIZE_T j = 0; j < cols; j++) {
+        ^
+        VITIS_LOOP_231_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79873:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79876:13: remark: Added loop label VITIS_LOOP_234_3:   [xilinx-label-all-loops]
+            for (HLS_SIZE_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+            ^
+            VITIS_LOOP_234_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79876:13: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79912:5: remark: Added loop label VITIS_LOOP_270_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < WSIZE; i++) {
+    ^
+    VITIS_LOOP_270_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79912:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79930:5: remark: Added loop label VITIS_LOOP_288_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < WSIZE; i++) {
+    ^
+    VITIS_LOOP_288_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79930:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79938:5: remark: Added loop label VITIS_LOOP_296_2:   [xilinx-label-all-loops]
+    for (int j = WSIZE-1; j > 0; j--) {
+    ^
+    VITIS_LOOP_296_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79938:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79956:9: remark: Added loop label VITIS_LOOP_314_1:   [xilinx-label-all-loops]
+        for(int i = 0; i < SIZE/2; i++) {
+        ^
+        VITIS_LOOP_314_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79956:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79959:9: remark: Added loop label VITIS_LOOP_317_2:   [xilinx-label-all-loops]
+        for(int i = 0; i < SIZE-SIZE/2; i++) {
+        ^
+        VITIS_LOOP_317_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:79959:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:80063:25: remark: Added loop label VITIS_LOOP_421_1:   [xilinx-label-all-loops]
+                        for (int i = 0; i < WSIZE; i++) {
+                        ^
+                        VITIS_LOOP_421_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:80063:25: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:82825:2: remark: Added loop label VITIS_LOOP_563_1:   [xilinx-label-all-loops]
+ for (y = 0; y < loopHeight; ++y)
+ ^
+ VITIS_LOOP_563_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:82825:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:82827:3: remark: Added loop label VITIS_LOOP_565_2:   [xilinx-label-all-loops]
+  for (x = 0; x < loopWidth; x += 1)
+  ^
+  VITIS_LOOP_565_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:82827:3: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83018:2: remark: Added loop label VITIS_LOOP_772_1:   [xilinx-label-all-loops]
+ for (y = 0; y < loopHeight; ++y)
+ ^
+ VITIS_LOOP_772_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83018:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83020:3: remark: Added loop label VITIS_LOOP_774_2:   [xilinx-label-all-loops]
+  for (x = 0; x < loopWidth; x += 1)
+  ^
+  VITIS_LOOP_774_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83020:3: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83107:5: remark: Added loop label VITIS_LOOP_869_1:   [xilinx-label-all-loops]
+    for (int l = 0; l < 1; l++)
+    ^
+    VITIS_LOOP_869_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83107:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83109:6: remark: Added loop label VITIS_LOOP_871_2:   [xilinx-label-all-loops]
+     for (int k = 0; k < 3; k++)
+     ^
+     VITIS_LOOP_871_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83109:6: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83178:2: remark: Added loop label VITIS_LOOP_979_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < rows; i++)
+ ^
+ VITIS_LOOP_979_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83178:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83180:3: remark: Added loop label VITIS_LOOP_981_2:   [xilinx-label-all-loops]
+  for (int j = 0; j < cols / 1; j++)
+  ^
+  VITIS_LOOP_981_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83180:3: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83210:4: remark: Added loop label VITIS_LOOP_1011_3:   [xilinx-label-all-loops]
+   for (int l = 0; l < 1; l++)
+   ^
+   VITIS_LOOP_1011_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83210:4: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83212:5: remark: Added loop label VITIS_LOOP_1013_4:   [xilinx-label-all-loops]
+    for (int k = 0; k < 3; k++)
+    ^
+    VITIS_LOOP_1013_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83212:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83274:2: remark: Added loop label VITIS_LOOP_1075_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1075_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83274:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83302:2: remark: Added loop label VITIS_LOOP_1103_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1103_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83302:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83317:2: remark: Added loop label VITIS_LOOP_1118_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1118_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83317:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83332:2: remark: Added loop label VITIS_LOOP_1133_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1133_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83332:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83353:2: remark: Added loop label VITIS_LOOP_1154_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1154_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83353:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83374:2: remark: Added loop label VITIS_LOOP_1175_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1175_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83374:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83395:2: remark: Added loop label VITIS_LOOP_1196_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1196_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83395:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83417:2: remark: Added loop label VITIS_LOOP_1218_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1218_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83417:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83442:2: remark: Added loop label VITIS_LOOP_1243_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1243_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83442:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83476:2: remark: Added loop label VITIS_LOOP_1277_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1277_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83476:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83548:2: remark: Added loop label VITIS_LOOP_1349_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1349_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83548:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83595:2: remark: Added loop label VITIS_LOOP_1396_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1396_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83595:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83664:2: remark: Added loop label VITIS_LOOP_1465_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1465_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83664:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83734:2: remark: Added loop label VITIS_LOOP_1535_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1535_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83734:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83777:2: remark: Added loop label VITIS_LOOP_1578_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1578_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83777:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83834:2: remark: Added loop label VITIS_LOOP_1635_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1635_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83834:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83875:2: remark: Added loop label VITIS_LOOP_1724_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1724_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83875:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83912:2: remark: Added loop label VITIS_LOOP_1761_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1761_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83912:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83984:2: remark: Added loop label VITIS_LOOP_1833_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1833_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:83984:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:84081:2: remark: Added loop label VITIS_LOOP_1930_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1930_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:84081:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:84112:2: remark: Added loop label VITIS_LOOP_1961_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1961_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:84112:2: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:84138:2: remark: Added loop label VITIS_LOOP_1987_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 1; k++)
+ ^
+ VITIS_LOOP_1987_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/DYNCLK_TEST/project_1.runs/top_design_v_tpg_0_1_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp:84138:2: note: FIX-IT applied suggested code changes

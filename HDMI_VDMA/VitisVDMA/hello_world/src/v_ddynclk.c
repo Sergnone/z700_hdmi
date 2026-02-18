@@ -25,12 +25,14 @@ int V_DDYNCLK_Init(void)
 int V_DDYNCLK_Start(uint32_t pixelrate)
 {
     int Status = -1;
+	/*
 	Status = DDynClk_SetRate(&dClk, pixelrate);
 	if(Status != XST_SUCCESS)
 	{
 		xil_printf("ERR:: DYNCLK Set Rate failed %d\r\n", Status);
 		return(XST_FAILURE);
 	}
+	*/
     Status = DDynClk_Enable(&dClk);
 	if(Status != XST_SUCCESS)
 	{

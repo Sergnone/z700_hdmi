@@ -128,15 +128,15 @@ int main()
 		return(XST_FAILURE);
 	}
 
-	V_FBRD_SetupInterrupts();
-	V_FBRD_SetCallback();
-	V_FBWR_SetupInterrupts();
-	V_FBWR_SetCallback();
+	//V_FBRD_SetupInterrupts();
+	//V_FBRD_SetCallback();
+	//V_FBWR_SetupInterrupts();
+	//V_FBWR_SetCallback();
 
-	VidStream.VmId = XVIDC_VM_1080_60_P;
+	VidStream.VmId = XVIDC_VM_720_60_P;
 	
-    xil_printf("DynClk: Initializing ...\r\n");
-	DynClkSetClk(DYNCLK_BASEADDR, (double)(XVidC_GetPixelClockHzByVmId(VidStream.VmId)/1000000));
+    //xil_printf("DynClk: Initializing ...\r\n");
+	//DynClkSetClk(DYNCLK_BASEADDR, (double)(XVidC_GetPixelClockHzByVmId(VidStream.VmId)/1000000));
 	
 	xil_printf("\r\nTest: %s\r\n", XVidC_GetVideoModeStr(VidStream.VmId));
 	Status = V_TPG_Clock_Config(VidStream.VmId);

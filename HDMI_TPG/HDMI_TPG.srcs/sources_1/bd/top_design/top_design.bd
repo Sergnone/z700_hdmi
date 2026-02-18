@@ -20,8 +20,7 @@
       "rgb2dvi_0": "",
       "ilconstant_1": "",
       "axi_dynclk_0": "",
-      "rst_ps7_0_100M": "",
-      "system_ila_0": ""
+      "rst_ps7_0_100M": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1598,6 +1597,10 @@
               "M02_AXI"
             ],
             "bd_attributes": {
+              "BRIDGES": {
+                "value": "M00_AXI:M01_AXI:M02_AXI",
+                "value_src": "auto"
+              },
               "TYPE": {
                 "value": "interior",
                 "value_src": "default"
@@ -1773,27 +1776,6 @@
         "xci_path": "ip/top_design_rst_ps7_0_148M_2/top_design_rst_ps7_0_148M_2.xci",
         "inst_hier_path": "rst_ps7_0_100M",
         "has_run_ip_tcl": "true"
-      },
-      "system_ila_0": {
-        "vlnv": "xilinx.com:ip:system_ila:1.1",
-        "ip_revision": "22",
-        "xci_name": "top_design_system_ila_0_0",
-        "xci_path": "ip/top_design_system_ila_0_0/top_design_system_ila_0_0.xci",
-        "inst_hier_path": "system_ila_0",
-        "has_run_ip_tcl": "true",
-        "parameters": {
-          "C_SLOT_0_INTF_TYPE": {
-            "value": "xilinx.com:interface:axis_rtl:1.0"
-          }
-        },
-        "interface_ports": {
-          "SLOT_0_AXIS": {
-            "mode": "Monitor",
-            "monitor_type": "SlaveType",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          }
-        }
       }
     },
     "interface_nets": {
@@ -1854,8 +1836,7 @@
       "v_tpg_0_m_axis_video": {
         "interface_ports": [
           "v_tpg_0/m_axis_video",
-          "v_axi4s_vid_out_0/video_in",
-          "system_ila_0/SLOT_0_AXIS"
+          "v_axi4s_vid_out_0/video_in"
         ]
       }
     },
@@ -1900,8 +1881,7 @@
           "v_tpg_0/ap_clk",
           "rst_ps7_0_150M/slowest_sync_clk",
           "v_axi4s_vid_out_0/aclk",
-          "processing_system7_0/S_AXI_HP0_ACLK",
-          "system_ila_0/clk"
+          "processing_system7_0/S_AXI_HP0_ACLK"
         ]
       },
       "processing_system7_0_FCLK_CLK1": {
@@ -1927,8 +1907,7 @@
           "rst_ps7_0_150M/peripheral_aresetn",
           "axi_smc/aresetn",
           "v_axi4s_vid_out_0/aresetn",
-          "v_tpg_0/ap_rst_n",
-          "system_ila_0/resetn"
+          "v_tpg_0/ap_rst_n"
         ]
       },
       "v_axi4s_vid_out_0_sof_state_out": {

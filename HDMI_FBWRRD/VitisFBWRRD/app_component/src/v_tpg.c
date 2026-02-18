@@ -94,11 +94,12 @@ int V_TPG_Clock_Config(XVidC_VideoMode videoMode)
                       (tpg.Config.PixPerClk == XVIDC_PPC_8));
 
 
-    mode_index = ((videoMode ==  XVIDC_VM_1080_60_P) ? 0 :
-                  (videoMode ==  XVIDC_VM_UHD_30_P)  ? 1 :
-                  (videoMode ==  XVIDC_VM_UHD_60_P)  ? 2 : 3);
+    mode_index = (	(videoMode ==  XVIDC_VM_720_60_P) ? 0 :
+					(videoMode ==  XVIDC_VM_1080_60_P) ? 0 :
+                  	(videoMode ==  XVIDC_VM_UHD_30_P)  ? 1 :
+                  	(videoMode ==  XVIDC_VM_UHD_60_P)  ? 2 : 3);
 
-    if(mode_index > 2)
+    if(mode_index > 3)
     {
       xil_printf("ERR:: Video Mode %s not supported\r\n", XVidC_GetVideoModeStr(videoMode));
       return(XST_FAILURE);

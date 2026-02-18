@@ -343,7 +343,11 @@ static uint32_t dglnt_dynclk_find_mode(uint32_t freq, uint32_t parentFreq,
 static int dglnt_dynclk_enable(DDynClk* drv_inst)
 {
 	unsigned int clock_state;
-
+	uint32_t reg_ctrl = 0;
+	reg_ctrl = DDynClk_ReadReg(0x43c10000,0);
+	xil_printf("Reg Ctrl: %08x\r\n", reg_ctrl);
+	
+	/*
 	if (drv_inst->IsReady == XIL_COMPONENT_IS_READY && drv_inst->freq) {
 		DDynClk_WriteReg(drv_inst->Config.BaseAddress, DDYNCLK_CTRL, 1);
 		do {
@@ -351,6 +355,7 @@ static int dglnt_dynclk_enable(DDynClk* drv_inst)
 					    DDYNCLK_STATUS);
 		} while (!clock_state);
 	}
+	*/
 	return 0;
 }
 
@@ -362,6 +367,7 @@ static void dglnt_dynclk_disable(DDynClk* drv_inst)
 static int dglnt_dynclk_set_rate(DDynClk* drv_inst,
 	unsigned long rate, unsigned long parent_rate)
 {
+	uint32_t mode_clk = 0;
 	struct dglnt_dynclk_reg clkReg;
 	struct dglnt_dynclk_mode clkMode;
 
@@ -377,18 +383,27 @@ static int dglnt_dynclk_set_rate(DDynClk* drv_inst,
 	rate = (rate + 100) / 200;
 	/* convert from Hz to KHz */
 	parent_rate = (parent_rate + 500) / 1000;
-	if (!dglnt_dynclk_find_mode(rate, parent_rate, &clkMode))
+
+	mode_clk = dglnt_dynclk_find_mode(rate, parent_rate, &clkMode);
+	if (!mode_clk)
 		return XST_FAILURE;
 
+	xil_printf("Mode Freq: %d\r\n", mode_clk);
+	xil_printf("DYNCLK: CLK: freq: %d\r\n", clkMode.freq);
+	xil_printf("DYNCLK: CLK: fbmult: %d\r\n", clkMode.fbmult);
+	xil_printf("DYNCLK: CLK: clkdiv: %d\r\n", clkMode.clkdiv);
+	xil_printf("DYNCLK: CLK: maindiv: %d\r\n", clkMode.maindiv);
 	/*
 	 * Write to the PLL dynamic configuration registers to configure it
 	 * with the calculated parameters.
 	 */
 	dglnt_dynclk_find_reg(&clkReg, &clkMode);
+	xil_printf("DYNCLK: Writing reg %08x\r\n", drv_inst->Config.BaseAddress);
 	dglnt_dynclk_write_reg(&clkReg, drv_inst->Config.BaseAddress);
 	drv_inst->freq = clkMode.freq * 200;
+	xil_printf("DYNCLK: CLK: %d\r\n", drv_inst->freq);
 	dglnt_dynclk_disable(drv_inst);
-	dglnt_dynclk_enable(drv_inst);
+	//dglnt_dynclk_enable(drv_inst);
 
 	return 0;
 }

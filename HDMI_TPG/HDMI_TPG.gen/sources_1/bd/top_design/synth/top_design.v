@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Wed Feb  4 12:54:28 2026
+//Date        : Wed Feb 18 18:46:06 2026
 //Host        : serg running 64-bit Ubuntu 24.04.3 LTS
 //Command     : generate_target top_design.bd
 //Design      : top_design
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "top_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=top_design,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=11,numReposBlks=11,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_board_cnt=5,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "top_design.hwdef" *) 
+(* CORE_GENERATION_INFO = "top_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=top_design,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=10,numReposBlks=10,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_board_cnt=5,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "top_design.hwdef" *) 
 module top_design
    (DDR_addr,
     DDR_ba,
@@ -201,15 +201,11 @@ module top_design
   wire v_tc_0_vtiming_out_HSYNC;
   wire v_tc_0_vtiming_out_VBLANK;
   wire v_tc_0_vtiming_out_VSYNC;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [23:0]v_tpg_0_m_axis_video_TDATA;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video xilinx.com:interface:axis:1.0 None TDEST" *) (* DONT_TOUCH *) wire [0:0]v_tpg_0_m_axis_video_TDEST;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video xilinx.com:interface:axis:1.0 None TID" *) (* DONT_TOUCH *) wire [0:0]v_tpg_0_m_axis_video_TID;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video xilinx.com:interface:axis:1.0 None TKEEP" *) (* DONT_TOUCH *) wire [2:0]v_tpg_0_m_axis_video_TKEEP;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video xilinx.com:interface:axis:1.0 None TLAST" *) (* DONT_TOUCH *) wire [0:0]v_tpg_0_m_axis_video_TLAST;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video xilinx.com:interface:axis:1.0 None TREADY" *) (* DONT_TOUCH *) wire v_tpg_0_m_axis_video_TREADY;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video xilinx.com:interface:axis:1.0 None TSTRB" *) (* DONT_TOUCH *) wire [2:0]v_tpg_0_m_axis_video_TSTRB;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video xilinx.com:interface:axis:1.0 None TUSER" *) (* DONT_TOUCH *) wire [0:0]v_tpg_0_m_axis_video_TUSER;
-  (* CONN_BUS_INFO = "v_tpg_0_m_axis_video xilinx.com:interface:axis:1.0 None TVALID" *) (* DONT_TOUCH *) wire v_tpg_0_m_axis_video_TVALID;
+  wire [23:0]v_tpg_0_m_axis_video_TDATA;
+  wire [0:0]v_tpg_0_m_axis_video_TLAST;
+  wire v_tpg_0_m_axis_video_TREADY;
+  wire [0:0]v_tpg_0_m_axis_video_TUSER;
+  wire v_tpg_0_m_axis_video_TVALID;
 
   top_design_axi_dynclk_0_0 axi_dynclk_0
        (.LOCKED_O(axi_dynclk_0_LOCKED_O),
@@ -454,18 +450,6 @@ module top_design
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_ps7_0_148M_peripheral_aresetn),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
-  top_design_system_ila_0_0 system_ila_0
-       (.SLOT_0_AXIS_tdata(v_tpg_0_m_axis_video_TDATA),
-        .SLOT_0_AXIS_tdest(v_tpg_0_m_axis_video_TDEST),
-        .SLOT_0_AXIS_tid(v_tpg_0_m_axis_video_TID),
-        .SLOT_0_AXIS_tkeep(v_tpg_0_m_axis_video_TKEEP),
-        .SLOT_0_AXIS_tlast(v_tpg_0_m_axis_video_TLAST),
-        .SLOT_0_AXIS_tready(v_tpg_0_m_axis_video_TREADY),
-        .SLOT_0_AXIS_tstrb(v_tpg_0_m_axis_video_TSTRB),
-        .SLOT_0_AXIS_tuser(v_tpg_0_m_axis_video_TUSER),
-        .SLOT_0_AXIS_tvalid(v_tpg_0_m_axis_video_TVALID),
-        .clk(processing_system7_0_FCLK_CLK0),
-        .resetn(rst_ps7_0_148M_peripheral_aresetn));
   top_design_v_axi4s_vid_out_0_1 v_axi4s_vid_out_0
        (.aclk(processing_system7_0_FCLK_CLK0),
         .aclken(1'b1),
@@ -528,12 +512,8 @@ module top_design
         .ap_rst_n(rst_ps7_0_148M_peripheral_aresetn),
         .fid_in(1'b1),
         .m_axis_video_TDATA(v_tpg_0_m_axis_video_TDATA),
-        .m_axis_video_TDEST(v_tpg_0_m_axis_video_TDEST),
-        .m_axis_video_TID(v_tpg_0_m_axis_video_TID),
-        .m_axis_video_TKEEP(v_tpg_0_m_axis_video_TKEEP),
         .m_axis_video_TLAST(v_tpg_0_m_axis_video_TLAST),
         .m_axis_video_TREADY(v_tpg_0_m_axis_video_TREADY),
-        .m_axis_video_TSTRB(v_tpg_0_m_axis_video_TSTRB),
         .m_axis_video_TUSER(v_tpg_0_m_axis_video_TUSER),
         .m_axis_video_TVALID(v_tpg_0_m_axis_video_TVALID),
         .s_axi_CTRL_ARADDR(axi_smc_M02_AXI_ARADDR),
