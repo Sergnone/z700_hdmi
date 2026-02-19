@@ -1,0 +1,28 @@
+#ifndef __V_PL_ADDRESSES_H_
+#define __V_PL_ADDRESSES_H_
+
+#include "xparameters.h"
+#include "platform.h"
+#include "sleep.h"
+#include "xvidc.h"
+
+#if defined(__MICROBLAZE__) || defined(__riscv)
+#ifndef  SDT
+#define DDR_BASEADDR XPAR_MIG7SERIES_0_BASEADDR
+#else
+#define DDR_BASEADDR XPAR_MIG_0_BASEADDRESS
+#endif
+#else
+#define DDR_BASEADDR XPAR_DDR_MEM_BASEADDR
+#endif
+
+#define CHROMA_ADDR_OFFSET   (0x01000000U)
+#define V_CHROMA_ADDR_OFFSET (0x03000000U)
+//#define XVFRMBUFWR_BUFFER_BASEADDR (DDR_BASEADDR + (0x21000000))
+//#define XVFRMBUFRD_BUFFER_BASEADDR (DDR_BASEADDR + (0x20000000))
+
+#define	BUFFER_SIZE	0x800000//8MB
+#define XVFRMBUFRD_BUFFER_BASEADDR (DDR_BASEADDR + (0x10000000))//read OUT
+#define XVFRMBUFWR_BUFFER_BASEADDR (DDR_BASEADDR + (0x10000000) + BUFFER_SIZE)//write IN TPG
+
+#endif
