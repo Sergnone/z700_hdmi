@@ -12804,11 +12804,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>3952</second>
+              <second>4123</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>3866</second>
+              <second>3928</second>
             </item>
           </second>
         </item>

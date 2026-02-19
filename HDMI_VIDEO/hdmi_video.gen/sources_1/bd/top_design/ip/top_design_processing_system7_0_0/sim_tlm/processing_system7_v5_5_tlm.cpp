@@ -144,6 +144,9 @@ void add_extensions_to_tlm(const xtlm::aximm_payload* xtlm_pay, tlm::tlm_generic
 
 processing_system7_v5_5_tlm :: processing_system7_v5_5_tlm (sc_core::sc_module_name name,
     xsc::common_cpp::properties& _prop): sc_module(name)//registering module name with parent
+        ,GPIO_I("GPIO_I")
+        ,GPIO_O("GPIO_O")
+        ,GPIO_T("GPIO_T")
         ,M_AXI_GP0_ACLK("M_AXI_GP0_ACLK")
         ,S_AXI_HP0_RCOUNT("S_AXI_HP0_RCOUNT")
         ,S_AXI_HP0_WCOUNT("S_AXI_HP0_WCOUNT")
@@ -180,7 +183,7 @@ processing_system7_v5_5_tlm :: processing_system7_v5_5_tlm (sc_core::sc_module_n
     ,S_AXI_HP0_xtlm_brdg("S_AXI_HP0_xtlm_brdg")
     ,m_rp_bridge_M_AXI_GP0("m_rp_bridge_M_AXI_GP0")     
         ,FCLK_CLK0_clk("FCLK_CLK0_clk", sc_time(10000.0,sc_core::SC_PS))//clock period in picoseconds = 1000000/freq(in MZ)
-        ,FCLK_CLK1_clk("FCLK_CLK1_clk", sc_time(6749.999323312567,sc_core::SC_PS))//clock period in picoseconds = 1000000/freq(in MZ)
+        ,FCLK_CLK1_clk("FCLK_CLK1_clk", sc_time(6666.666666666667,sc_core::SC_PS))//clock period in picoseconds = 1000000/freq(in MZ)
     ,prop(_prop)
     {
         //creating instances of xtlm slave sockets

@@ -2,8 +2,8 @@ set clock_constraint { \
     name clk \
     module v_tpg \
     port ap_clk \
-    period 6.75 \
-    uncertainty 1.8225 \
+    period 6.667 \
+    uncertainty 1.80009 \
 }
 
 set all_path {}

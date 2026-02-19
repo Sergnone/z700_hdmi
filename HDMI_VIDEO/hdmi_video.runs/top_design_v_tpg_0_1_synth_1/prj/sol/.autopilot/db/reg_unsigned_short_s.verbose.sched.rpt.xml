@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'reg_unsigned_short_s'" level="0">
-<item name = "Date">Thu Feb 19 12:16:26 2026
+<item name = "Date">Thu Feb 19 12:59:58 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">6.75 ns, 0 ns, 1.82 ns</column>
+<column name="ap_clk">6.67 ns, 0 ns, 1.80 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1, 1, 6.750 ns, 6.750 ns, 1, 1, yes</column>
+<column name="">1, 1, 6.667 ns, 6.667 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Detail">

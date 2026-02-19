@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'tpgBackground'" level="0">
-<item name = "Date">Thu Feb 19 12:16:27 2026
+<item name = "Date">Thu Feb 19 13:00:00 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">6.75 ns, 4.890 ns, 1.82 ns</column>
+<column name="ap_clk">6.67 ns, 4.854 ns, 1.80 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1, 4296540136, 6.750 ns, 29.002 sec, 1, 4296540136, no</column>
+<column name="">1, 4296540136, 6.667 ns, 28.645 sec, 1, 4296540136, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432">tpgBackground_Pipeline_VITIS_LOOP_565_2, 2, 65558, 13.500 ns, 0.443 ms, 0, 0, loop pipeline stp</column>
+<column name="grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432">tpgBackground_Pipeline_VITIS_LOOP_565_2, 2, 65558, 13.334 ns, 0.437 ms, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -51,7 +51,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 261, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">9, 13, 3952, 3866, -</column>
+<column name="Instance">9, 13, 4123, 3928, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 183, -</column>
 <column name="Register">-, -, 633, -, -</column>
@@ -63,7 +63,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432">tpgBackground_Pipeline_VITIS_LOOP_565_2, 9, 13, 3952, 3866, 0</column>
+<column name="grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_432">tpgBackground_Pipeline_VITIS_LOOP_565_2, 9, 13, 4123, 3928, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">

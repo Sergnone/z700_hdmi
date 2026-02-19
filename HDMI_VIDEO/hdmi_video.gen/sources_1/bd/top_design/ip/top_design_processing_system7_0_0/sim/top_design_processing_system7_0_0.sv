@@ -56,9 +56,9 @@
       bit  ENET1_MDIO_I;
       bit  ENET1_EXT_INTIN;
       bit  [7 : 0] ENET1_GMII_RXD;
-      bit  [63 : 0] GPIO_I;
-      bit  [63 : 0] GPIO_O;
-      bit  [63 : 0] GPIO_T;
+      bit  [7 : 0] GPIO_I;
+      bit  [7 : 0] GPIO_O;
+      bit  [7 : 0] GPIO_T;
       bit  I2C0_SDA_I;
       bit  I2C0_SDA_O;
       bit  I2C0_SDA_T;
@@ -677,6 +677,9 @@
 
 //MODULE DECLARATION
  module top_design_processing_system7_0_0 (
+  GPIO_I,
+  GPIO_O,
+  GPIO_T,
   M_AXI_GP0_ARVALID,
   M_AXI_GP0_AWVALID,
   M_AXI_GP0_BREADY,
@@ -799,7 +802,7 @@
       parameter USE_TRACE_DATA_EDGE_DETECTOR = 0;
       parameter C_TRACE_PIPELINE_WIDTH = 8;
       parameter C_TRACE_BUFFER_CLOCK_DELAY = 12;
-      parameter C_EMIO_GPIO_WIDTH = 64;
+      parameter C_EMIO_GPIO_WIDTH = 8;
       parameter C_INCLUDE_ACP_TRANS_CHECK = 0;
       parameter C_USE_DEFAULT_ACP_USER_VAL = 0;
       parameter C_S_AXI_ACP_ARUSER_VAL = 31;
@@ -849,6 +852,9 @@
 
 //INPUT AND OUTPUT PORTS
 
+      input  [7 : 0] GPIO_I;
+      output  [7 : 0] GPIO_O;
+      output  [7 : 0] GPIO_T;
       output  M_AXI_GP0_ARVALID;
       output  M_AXI_GP0_AWVALID;
       output  M_AXI_GP0_BREADY;
@@ -961,6 +967,8 @@
 
 //REG DECLARATIONS
 
+      reg [7 : 0] GPIO_O;
+      reg [7 : 0] GPIO_T;
       reg M_AXI_GP0_ARVALID;
       reg M_AXI_GP0_AWVALID;
       reg M_AXI_GP0_BREADY;
@@ -1224,7 +1232,7 @@ output bit S_AXI_HP0_RVALID
      FCLK_CLK1 = 1'b0;
   end
 
-  always #(3.367003367003367) FCLK_CLK1 <= ~FCLK_CLK1;
+  always #(3.3333333333333335) FCLK_CLK1 <= ~FCLK_CLK1;
 
   always@(posedge FCLK_CLK1)
   begin

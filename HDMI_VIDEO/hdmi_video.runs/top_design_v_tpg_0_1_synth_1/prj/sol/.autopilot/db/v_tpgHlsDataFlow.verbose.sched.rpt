@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'v_tpgHlsDataFlow'
 ================================================================
-* Date:           Thu Feb 19 12:16:26 2026
+* Date:           Thu Feb 19 12:59:59 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  6.75 ns|  4.890 ns|     1.82 ns|
+    |ap_clk  |  6.67 ns|  4.854 ns|     1.80 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |   Latency (cycles)   |   Latency (absolute)  |     Interval     | Pipeline |
     |   min   |     max    |    min   |     max    | min |     max    |   Type   |
     +---------+------------+----------+------------+-----+------------+----------+
-    |       25|  4296540136|  0.169 us|  29.002 sec|    2|  4296540137|  dataflow|
+    |       25|  4296540136|  0.167 us|  28.645 sec|    2|  4296540137|  dataflow|
     +---------+------------+----------+------------+-----+------------+----------+
 
     + Detail: 
@@ -115,10 +115,10 @@ ST_3 : Operation 32 [2/2] (2.10ns)   --->   "%call_ln358 = call void @tpgForegro
 State 4 <SV = 3> <Delay = 1.54>
 ST_4 : Operation 33 [1/2] (1.54ns)   --->   "%call_ln358 = call void @tpgForeground, i24 %bckgndYUV, i16 %height_val4_read, i16 %width_val7_read, i8 %ovrlayId_val11_read, i8 %maskId_val12_read, i8 %colorFormat_val17_read, i16 %crossHairX_val18_read, i16 %crossHairY_val19_read, i16 %boxSize_val24_read, i8 %boxColorR_val25_read, i8 %boxColorG_val26_read, i8 %boxColorB_val27_read, i8 %motionSpeed_val14_read, i24 %ovrlayYUV, i16 %boxHCoord, i16 %boxVCoord, i1 %vDir, i1 %hDir, i8 %whiYuv_2" [prj/sol/.autopilot/db/v_tpg.cpp:358]   --->   Operation 33 'call' 'call_ln358' <Predicate = true> <Delay = 1.54> <CoreType = "Generic">   --->   Generic Core
 
-State 5 <SV = 4> <Delay = 3.94>
+State 5 <SV = 4> <Delay = 3.91>
 ST_5 : Operation 34 [1/1] (0.00ns)   --->   "%fid_in_val9_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %fid_in_val9" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 34 'read' 'fid_in_val9_read' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 35 [1/1] (0.00ns)   --->   "%field_id_val8_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %field_id_val8" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 35 'read' 'field_id_val8_read' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 36 [2/2] (3.94ns)   --->   "%call_ln399 = call void @MultiPixStream2AXIvideo, i24 %ovrlayYUV, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i11 %trunc_ln332_1, i11 %trunc_ln332, i8 %colorFormat_val17_read, i1 %fid_in_val9_read, i1 %fid, i16 %field_id_val8_read, i1 %fidStored, i16 %counter" [prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 36 'call' 'call_ln399' <Predicate = true> <Delay = 3.94> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 36 [2/2] (3.91ns)   --->   "%call_ln399 = call void @MultiPixStream2AXIvideo, i24 %ovrlayYUV, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i11 %trunc_ln332_1, i11 %trunc_ln332, i8 %colorFormat_val17_read, i1 %fid_in_val9_read, i1 %fid, i16 %field_id_val8_read, i1 %fidStored, i16 %counter" [prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 36 'call' 'call_ln399' <Predicate = true> <Delay = 3.91> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 1.62>
 ST_6 : Operation 37 [1/1] (0.00ns)   --->   "%specstablecontent_ln332 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %dpYUVCoef_val29, i1 1, void @p_str" [prj/sol/.autopilot/db/v_tpg.cpp:332]   --->   Operation 37 'specstablecontent' 'specstablecontent_ln332' <Predicate = true> <Delay = 0.00>
@@ -156,7 +156,7 @@ ST_6 : Operation 66 [1/1] (0.00ns)   --->   "%ret_ln401 = ret" [prj/sol/.autopil
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 6.750ns, clock uncertainty: 1.822ns.
+Target clock period: 6.667ns, clock uncertainty: 1.800ns.
 
  <State 1>: 2.945ns
 The critical path consists of the following:
@@ -176,10 +176,10 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'call' operation ('call_ln358', prj/sol/.autopilot/db/v_tpg.cpp:358) to 'tpgForeground' [151]  (1.545 ns)
 
- <State 5>: 3.945ns
+ <State 5>: 3.915ns
 The critical path consists of the following:
 	wire read operation ('fid_in_val9_read', prj/sol/.autopilot/db/v_tpg.cpp:332) on port 'fid_in_val9' (prj/sol/.autopilot/db/v_tpg.cpp:332) [114]  (0.000 ns)
-	'call' operation ('call_ln399', prj/sol/.autopilot/db/v_tpg.cpp:399) to 'MultiPixStream2AXIvideo' [152]  (3.945 ns)
+	'call' operation ('call_ln399', prj/sol/.autopilot/db/v_tpg.cpp:399) to 'MultiPixStream2AXIvideo' [152]  (3.915 ns)
 
  <State 6>: 1.626ns
 The critical path consists of the following:

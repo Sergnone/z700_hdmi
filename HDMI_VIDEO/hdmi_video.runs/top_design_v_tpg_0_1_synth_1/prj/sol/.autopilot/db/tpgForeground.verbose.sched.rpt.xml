@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'tpgForeground'" level="0">
-<item name = "Date">Thu Feb 19 12:16:26 2026
+<item name = "Date">Thu Feb 19 12:59:59 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">6.75 ns, 4.388 ns, 1.82 ns</column>
+<column name="ap_clk">6.67 ns, 4.388 ns, 1.80 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1, 4295229436, 6.750 ns, 28.993 sec, 1, 4295229436, no</column>
+<column name="">1, 4295229436, 6.667 ns, 28.636 sec, 1, 4295229436, no</column>
 </table>
 </item>
 <item name = "Detail">

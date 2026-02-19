@@ -1,5 +1,5 @@
 # (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-# (c) Copyright 2022-2025 Advanced Micro Devices, Inc. All rights reserved.
+# (c) Copyright 2022-2026 Advanced Micro Devices, Inc. All rights reserved.
 # 
 # This file contains confidential and proprietary information
 # of AMD and is protected under U.S. and international copyright
@@ -54,6 +54,6 @@
 
 create_clock -period 10 -name vid_io_out_clk [get_ports vid_io_out_clk]
 
-create_clock -period 6.750 -name aclk [get_ports aclk]
+create_clock -period 6.667 -name aclk [get_ports aclk]
 
 

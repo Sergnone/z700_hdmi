@@ -17,9 +17,9 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 }
 
 
-set name top_design_v_tpg_0_1_mul_20s_9ns_28_1_1
+set name top_design_v_tpg_0_1_mul_20s_9ns_28_4_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 3 ALLOW_PRAGMA 1
 }
 
 

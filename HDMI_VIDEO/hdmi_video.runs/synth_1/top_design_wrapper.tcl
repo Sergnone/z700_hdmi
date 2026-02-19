@@ -56,7 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param bd.open.in_stealth_mode 1
+set_param chipscope.maxJobs 4
 set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-2
@@ -123,6 +123,18 @@ set_property used_in_implementation false [get_files -all /home/serg/Documents/X
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_45/bd_b6ca_m02awn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_46/bd_b6ca_m02wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_47/bd_b6ca_m02bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_49/bd_b6ca_m03s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_50/bd_b6ca_m03arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_51/bd_b6ca_m03rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_52/bd_b6ca_m03awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_53/bd_b6ca_m03wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_54/bd_b6ca_m03bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_56/bd_b6ca_m04s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_57/bd_b6ca_m04arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_58/bd_b6ca_m04rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_59/bd_b6ca_m04awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_60/bd_b6ca_m04wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/bd_0/ip/ip_61/bd_b6ca_m04bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_smc_1/smartconnect.xdc]
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_1/top_design_rst_ps7_0_148M_1_board.xdc]
@@ -137,6 +149,36 @@ set_property used_in_implementation false [get_files -all /home/serg/Documents/X
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_axi_dynclk_0_0/src/axi_dynclk.xdc]
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/top_design_rst_ps7_0_148M_2_board.xdc]
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/top_design_rst_ps7_0_148M_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/top_design_v_frmbuf_wr_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/top_design_v_frmbuf_wr_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/top_design_v_frmbuf_rd_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/top_design_v_frmbuf_rd_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_1/bd_8df6_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_2/bd_8df6_arsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_3/bd_8df6_rsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_4/bd_8df6_awsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_5/bd_8df6_wsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_6/bd_8df6_bsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_10/bd_8df6_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_11/bd_8df6_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_12/bd_8df6_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_13/bd_8df6_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_14/bd_8df6_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_15/bd_8df6_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_19/bd_8df6_s01a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_20/bd_8df6_sarn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_21/bd_8df6_srn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_22/bd_8df6_sawn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_23/bd_8df6_swn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_24/bd_8df6_sbn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_25/bd_8df6_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_26/bd_8df6_m00arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_27/bd_8df6_m00rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_28/bd_8df6_m00awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_29/bd_8df6_m00wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/bd_0/ip/ip_30/bd_8df6_m00bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_smartconnect_0_0/smartconnect.xdc]
 set_property used_in_implementation false [get_files -all /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/top_design_ooc.xdc]
 
 OPTRACE "Adding files" END { }

@@ -52,7 +52,7 @@ architecture behav of top_design_v_tpg_0_1_v_tpg is
     attribute DowngradeIPIdentifiedWarnings of behav : architecture is "yes";
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "top_design_v_tpg_0_1_v_tpg,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-2,HLS_INPUT_CLOCK=6.750000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=4.890000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=9,HLS_SYN_DSP=0,HLS_SYN_FF=6405,HLS_SYN_LUT=6587,HLS_VERSION=2025_2}";
+    "top_design_v_tpg_0_1_v_tpg,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-2,HLS_INPUT_CLOCK=6.667000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=4.853750,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=9,HLS_SYN_DSP=0,HLS_SYN_FF=6576,HLS_SYN_LUT=6649,HLS_VERSION=2025_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (5 downto 0) := "000001";

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'tpgForeground_Pipeline_VITIS_LOOP_774_2'
 ================================================================
-* Date:           Thu Feb 19 12:16:26 2026
+* Date:           Thu Feb 19 12:59:59 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  6.75 ns|  4.141 ns|     1.82 ns|
+    |ap_clk  |  6.67 ns|  4.141 ns|     1.80 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute)  |  Interval |      Pipeline     |
     |   min   |   max   |    min    |    max   | min | max |        Type       |
     +---------+---------+-----------+----------+-----+-----+-------------------+
-    |        2|    65539|  13.500 ns|  0.442 ms|    0|    0|  loop pipeline stp|
+    |        2|    65539|  13.334 ns|  0.437 ms|    0|    0|  loop pipeline stp|
     +---------+---------+-----------+----------+-----+-----+-------------------+
 
     + Detail: 
@@ -202,11 +202,11 @@ ST_2 : Operation 116 [1/1] (0.00ns)   --->   "%whiYuv_2_addr = getelementptr i8 
 ST_2 : Operation 117 [2/2] (1.75ns)   --->   "%whiYuv_2_load = load i2 %whiYuv_2_addr" [prj/sol/.autopilot/db/v_tpg.cpp:1974->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 117 'load' 'whiYuv_2_load' <Predicate = (!icmp_ln774 & patternId_val_read == 2 & or_ln1963 & colorFormat_val_read != 0)> <Delay = 1.75> <CoreInst = "ROM">   --->   Core 94 'ROM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 3> <ROM>
 ST_2 : Operation 118 [1/1] (1.35ns)   --->   "%br_ln1974 = br void %sw.epilog_ifconv" [prj/sol/.autopilot/db/v_tpg.cpp:1974->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 118 'br' 'br_ln1974' <Predicate = (!icmp_ln774 & patternId_val_read == 2 & or_ln1963 & colorFormat_val_read != 0)> <Delay = 1.35>
 
-State 3 <SV = 2> <Delay = 2.46>
+State 3 <SV = 2> <Delay = 2.43>
 ST_3 : Operation 119 [1/1] (0.00ns)   --->   "%specpipeline_ln777 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_1" [prj/sol/.autopilot/db/v_tpg.cpp:777]   --->   Operation 119 'specpipeline' 'specpipeline_ln777' <Predicate = (!icmp_ln774)> <Delay = 0.00>
 ST_3 : Operation 120 [1/1] (0.00ns)   --->   "%speclooptripcount_ln763 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 65535, i64 32767" [prj/sol/.autopilot/db/v_tpg.cpp:763]   --->   Operation 120 'speclooptripcount' 'speclooptripcount_ln763' <Predicate = (!icmp_ln774)> <Delay = 0.00>
 ST_3 : Operation 121 [1/1] (0.00ns)   --->   "%specloopname_ln774 = specloopname void @_ssdm_op_SpecLoopName, void @empty_26" [prj/sol/.autopilot/db/v_tpg.cpp:774]   --->   Operation 121 'specloopname' 'specloopname_ln774' <Predicate = (!icmp_ln774)> <Delay = 0.00>
-ST_3 : Operation 122 [1/1] ( I:2.46ns O:2.46ns )   --->   "%bckgndYUV_read = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %bckgndYUV" [prj/sol/.autopilot/db/v_tpg.cpp:778]   --->   Operation 122 'read' 'bckgndYUV_read' <Predicate = (!icmp_ln774)> <Delay = 2.46> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 16> <FIFO>
+ST_3 : Operation 122 [1/1] ( I:2.43ns O:2.43ns )   --->   "%bckgndYUV_read = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %bckgndYUV" [prj/sol/.autopilot/db/v_tpg.cpp:778]   --->   Operation 122 'read' 'bckgndYUV_read' <Predicate = (!icmp_ln774)> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 16> <FIFO>
 ST_3 : Operation 123 [1/1] (0.00ns)   --->   "%pixIn = trunc i24 %bckgndYUV_read" [prj/sol/.autopilot/db/v_tpg.cpp:778]   --->   Operation 123 'trunc' 'pixIn' <Predicate = (!icmp_ln774)> <Delay = 0.00>
 ST_3 : Operation 124 [1/1] (0.00ns)   --->   "%pixIn_5 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %bckgndYUV_read, i32 8, i32 15" [prj/sol/.autopilot/db/v_tpg.cpp:778]   --->   Operation 124 'partselect' 'pixIn_5' <Predicate = (!icmp_ln774)> <Delay = 0.00>
 ST_3 : Operation 125 [1/1] (0.00ns)   --->   "%pixIn_6 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %bckgndYUV_read, i32 16, i32 23" [prj/sol/.autopilot/db/v_tpg.cpp:778]   --->   Operation 125 'partselect' 'pixIn_6' <Predicate = (!icmp_ln774)> <Delay = 0.00>
@@ -217,7 +217,7 @@ ST_3 : Operation 129 [1/1] (1.35ns)   --->   "%br_ln1951 = br void %sw.epilog_if
 ST_3 : Operation 130 [1/2] ( I:1.75ns O:1.75ns )   --->   "%whiYuv_2_load = load i2 %whiYuv_2_addr" [prj/sol/.autopilot/db/v_tpg.cpp:1974->prj/sol/.autopilot/db/v_tpg.cpp:793]   --->   Operation 130 'load' 'whiYuv_2_load' <Predicate = (!icmp_ln774 & patternId_val_read == 2 & or_ln1963 & colorFormat_val_read != 0)> <Delay = 1.75> <CoreInst = "ROM">   --->   Core 94 'ROM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 3> <ROM>
 ST_3 : Operation 143 [1/1] (1.29ns)   --->   "%ret_ln0 = ret"   --->   Operation 143 'ret' 'ret_ln0' <Predicate = (icmp_ln774)> <Delay = 1.29>
 
-State 4 <SV = 3> <Delay = 2.91>
+State 4 <SV = 3> <Delay = 2.88>
 ST_4 : Operation 131 [1/1] (0.00ns)   --->   "%pix_4 = phi i8 %pixIn_6, void %for.body6.split, i8 %boxColorB_val_read, void %if.then97.i, i8 %pixIn_6, void %if.end64.i, i8 %select_ln1977_read, void %cond.end.i, i8 %select_ln1977_read, void %if.then.i130, i8 %pixIn_6, void %sw.bb10"   --->   Operation 131 'phi' 'pix_4' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 132 [1/1] (0.00ns)   --->   "%pix_3 = phi i8 %pixIn_5, void %for.body6.split, i8 %pixOut_5, void %if.then97.i, i8 %pixIn_5, void %if.end64.i, i8 %whiYuv_2_load, void %cond.end.i, i8 240, void %if.then.i130, i8 %pixIn_5, void %sw.bb10"   --->   Operation 132 'phi' 'pix_3' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 133 [1/1] (0.00ns)   --->   "%pix = phi i8 %pixIn, void %for.body6.split, i8 %boxColorR_val_read, void %if.then97.i, i8 %pixIn, void %if.end64.i, i8 240, void %cond.end.i, i8 240, void %if.then.i130, i8 %pixIn, void %sw.bb10"   --->   Operation 133 'phi' 'pix' <Predicate = true> <Delay = 0.00>
@@ -228,21 +228,22 @@ ST_4 : Operation 137 [1/1] (0.44ns) (out node of the LUT)   --->   "%p_0_2_0_0_0
 ST_4 : Operation 138 [1/1] (0.44ns) (out node of the LUT)   --->   "%pixOut_11 = select i1 %icmp_ln801, i8 %pix_3, i8 %pixOut_10" [prj/sol/.autopilot/db/v_tpg.cpp:801]   --->   Operation 138 'select' 'pixOut_11' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_4 : Operation 139 [1/1] (0.44ns) (out node of the LUT)   --->   "%pixOut_12 = select i1 %icmp_ln801, i8 %pix, i8 %pixOut_9" [prj/sol/.autopilot/db/v_tpg.cpp:801]   --->   Operation 139 'select' 'pixOut_12' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_4 : Operation 140 [1/1] (0.00ns)   --->   "%or_ln808_3 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i8.i8.i8, i8 %p_0_2_0_0_0269598, i8 %pixOut_11, i8 %pixOut_12" [prj/sol/.autopilot/db/v_tpg.cpp:808]   --->   Operation 140 'bitconcatenate' 'or_ln808_3' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 141 [1/1] ( I:2.46ns O:2.46ns )   --->   "%write_ln808 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %ovrlayYUV, i24 %or_ln808_3" [prj/sol/.autopilot/db/v_tpg.cpp:808]   --->   Operation 141 'write' 'write_ln808' <Predicate = true> <Delay = 2.46> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 16> <FIFO>
+ST_4 : Operation 141 [1/1] ( I:2.43ns O:2.43ns )   --->   "%write_ln808 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %ovrlayYUV, i24 %or_ln808_3" [prj/sol/.autopilot/db/v_tpg.cpp:808]   --->   Operation 141 'write' 'write_ln808' <Predicate = true> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 16> <FIFO>
 ST_4 : Operation 142 [1/1] (0.00ns)   --->   "%br_ln774 = br void %for.body6" [prj/sol/.autopilot/db/v_tpg.cpp:774]   --->   Operation 142 'br' 'br_ln774' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 6.750ns, clock uncertainty: 1.822ns.
+Target clock period: 6.667ns, clock uncertainty: 1.800ns.
 
  <State 1>: 4.141ns
 The critical path consists of the following:
 	'store' operation ('store_ln1956', prj/sol/.autopilot/db/v_tpg.cpp:1956->prj/sol/.autopilot/db/v_tpg.cpp:793) of constant 0 16 bit on local variable 'x', prj/sol/.autopilot/db/v_tpg.cpp:1956->prj/sol/.autopilot/db/v_tpg.cpp:793 [66]  (1.298 ns)
 	'load' operation 16 bit ('x', prj/sol/.autopilot/db/v_tpg.cpp:1884->prj/sol/.autopilot/db/v_tpg.cpp:788) on local variable 'x', prj/sol/.autopilot/db/v_tpg.cpp:1956->prj/sol/.autopilot/db/v_tpg.cpp:793 [69]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln774', prj/sol/.autopilot/db/v_tpg.cpp:774) [70]  (1.545 ns)
-	'store' operation ('store_ln1916', prj/sol/.autopilot/db/v_tpg.cpp:1916->prj/sol/.autopilot/db/v_tpg.cpp:788) of variable 'add_ln1916', prj/sol/.autopilot/db/v_tpg.cpp:1916->prj/sol/.autopilot/db/v_tpg.cpp:788 16 bit on local variable 'boxVCoord_loc_1_out' [136]  (1.298 ns)
+	'or' operation 16 bit ('or_ln1884', prj/sol/.autopilot/db/v_tpg.cpp:1884->prj/sol/.autopilot/db/v_tpg.cpp:788) [84]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln1884', prj/sol/.autopilot/db/v_tpg.cpp:1884->prj/sol/.autopilot/db/v_tpg.cpp:788) [85]  (1.545 ns)
+	'store' operation ('store_ln1912', prj/sol/.autopilot/db/v_tpg.cpp:1912->prj/sol/.autopilot/db/v_tpg.cpp:788) of variable 'add_ln1912', prj/sol/.autopilot/db/v_tpg.cpp:1912->prj/sol/.autopilot/db/v_tpg.cpp:788 16 bit on local variable 'boxHCoord_loc_1_out' [111]  (1.298 ns)
 
  <State 2>: 3.890ns
 The critical path consists of the following:
@@ -252,15 +253,15 @@ The critical path consists of the following:
 	'and' operation 1 bit ('and_ln1942_1', prj/sol/.autopilot/db/v_tpg.cpp:1942->prj/sol/.autopilot/db/v_tpg.cpp:788) [154]  (0.000 ns)
 	'and' operation 1 bit ('and_ln1942', prj/sol/.autopilot/db/v_tpg.cpp:1942->prj/sol/.autopilot/db/v_tpg.cpp:788) [155]  (0.800 ns)
 
- <State 3>: 2.464ns
+ <State 3>: 2.433ns
 The critical path consists of the following:
-	fifo read operation ('bckgndYUV_read', prj/sol/.autopilot/db/v_tpg.cpp:778) on port 'bckgndYUV' (prj/sol/.autopilot/db/v_tpg.cpp:778) [78]  (2.464 ns)
+	fifo read operation ('bckgndYUV_read', prj/sol/.autopilot/db/v_tpg.cpp:778) on port 'bckgndYUV' (prj/sol/.autopilot/db/v_tpg.cpp:778) [78]  (2.433 ns)
 
- <State 4>: 2.912ns
+ <State 4>: 2.881ns
 The critical path consists of the following:
 	'phi' operation 8 bit ('pixIn') with incoming values : ('select_ln1977_read') ('boxColorB_val_read') ('pixIn', prj/sol/.autopilot/db/v_tpg.cpp:778) [177]  (0.000 ns)
 	'select' operation 8 bit ('p_0_2_0_0_0269598', prj/sol/.autopilot/db/v_tpg.cpp:801) [183]  (0.448 ns)
-	fifo write operation ('write_ln808', prj/sol/.autopilot/db/v_tpg.cpp:808) on port 'ovrlayYUV' (prj/sol/.autopilot/db/v_tpg.cpp:808) [187]  (2.464 ns)
+	fifo write operation ('write_ln808', prj/sol/.autopilot/db/v_tpg.cpp:808) on port 'ovrlayYUV' (prj/sol/.autopilot/db/v_tpg.cpp:808) [187]  (2.433 ns)
 
 
 ============================================================

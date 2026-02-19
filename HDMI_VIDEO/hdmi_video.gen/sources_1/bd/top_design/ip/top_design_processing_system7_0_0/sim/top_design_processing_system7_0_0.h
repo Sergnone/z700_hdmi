@@ -80,6 +80,9 @@ public:
 
   // module pin-to-pin RTL interface
 
+  sc_core::sc_in< sc_dt::sc_bv<8> > GPIO_I;
+  sc_core::sc_out< sc_dt::sc_bv<8> > GPIO_O;
+  sc_core::sc_out< sc_dt::sc_bv<8> > GPIO_T;
   sc_core::sc_out< bool > M_AXI_GP0_ARVALID;
   sc_core::sc_out< bool > M_AXI_GP0_AWVALID;
   sc_core::sc_out< bool > M_AXI_GP0_BREADY;
@@ -236,6 +239,9 @@ public:
 
   // module pin-to-pin RTL interface
 
+  sc_core::sc_in< sc_dt::sc_bv<8> > GPIO_I;
+  sc_core::sc_out< sc_dt::sc_bv<8> > GPIO_O;
+  sc_core::sc_out< sc_dt::sc_bv<8> > GPIO_T;
   sc_core::sc_out< bool > M_AXI_GP0_ARVALID;
   sc_core::sc_out< bool > M_AXI_GP0_AWVALID;
   sc_core::sc_out< bool > M_AXI_GP0_BREADY;
@@ -392,6 +398,9 @@ public:
 
   // module pin-to-pin RTL interface
 
+  sc_core::sc_in< sc_dt::sc_bv<8> > GPIO_I;
+  sc_core::sc_out< sc_dt::sc_bv<8> > GPIO_O;
+  sc_core::sc_out< sc_dt::sc_bv<8> > GPIO_T;
   sc_core::sc_out< bool > M_AXI_GP0_ARVALID;
   sc_core::sc_out< bool > M_AXI_GP0_AWVALID;
   sc_core::sc_out< bool > M_AXI_GP0_BREADY;
@@ -552,6 +561,9 @@ public:
 
   // module pin-to-pin RTL interface
 
+  sc_core::sc_in< sc_dt::sc_bv<8> > GPIO_I;
+  sc_core::sc_out< sc_dt::sc_bv<8> > GPIO_O;
+  sc_core::sc_out< sc_dt::sc_bv<8> > GPIO_T;
   sc_core::sc_out< bool > M_AXI_GP0_ARVALID;
   sc_core::sc_out< bool > M_AXI_GP0_AWVALID;
   sc_core::sc_out< bool > M_AXI_GP0_BREADY;
@@ -720,6 +732,9 @@ public:
 
   // module pin-to-pin RTL interface
 
+  sc_core::sc_in< sc_dt::sc_bv<8> > GPIO_I;
+  sc_core::sc_out< sc_dt::sc_bv<8> > GPIO_O;
+  sc_core::sc_out< sc_dt::sc_bv<8> > GPIO_T;
   sc_core::sc_out< bool > M_AXI_GP0_ARVALID;
   sc_core::sc_out< bool > M_AXI_GP0_AWVALID;
   sc_core::sc_out< bool > M_AXI_GP0_BREADY;

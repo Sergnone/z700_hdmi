@@ -1430,7 +1430,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>91e1cc94</spirit:value>
+            <spirit:value>e5eb880a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1446,7 +1446,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>02145796</spirit:value>
+            <spirit:value>ae95cb91</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1462,7 +1462,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>b302dd96</spirit:value>
+            <spirit:value>91bb50a4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1478,7 +1478,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e6458f32</spirit:value>
+            <spirit:value>5d1dc004</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2102,7 +2102,7 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_design_v_tpg_0_1_mul_20s_9ns_28_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/top_design_v_tpg_0_1_mul_20s_9ns_28_4_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2494,7 +2494,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_design_v_tpg_0_1_mul_20s_9ns_28_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/top_design_v_tpg_0_1_mul_20s_9ns_28_4_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2908,7 +2908,7 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_design_v_tpg_0_1_mul_20s_9ns_28_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_design_v_tpg_0_1_mul_20s_9ns_28_4_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3098,7 +3098,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/top_design_v_tpg_0_1_v_tpg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_8578f6e5</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_697df804</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -3164,7 +3164,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_design_v_tpg_0_1_mul_20s_9ns_28_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_design_v_tpg_0_1_mul_20s_9ns_28_4_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3487,7 +3487,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>clk_period</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="1">6.75</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="1">6.667</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>machine</spirit:name>
@@ -3516,8 +3516,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>V_tpg</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114487496</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-02-19T09:16:32Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114487540</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-02-19T10:00:05Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -3527,10 +3527,10 @@
       <xilinx:xilinxVersion>2025.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="203d73ef"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="e98d7c3d"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d1270c11"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4eeef147"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="eb986cf1"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="4395c73a"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="0cbfd1a7"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="9bdb7735"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

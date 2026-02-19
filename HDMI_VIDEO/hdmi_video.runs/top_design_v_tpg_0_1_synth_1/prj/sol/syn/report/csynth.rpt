@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'v_tpg'
 ================================================================
 + General Information: 
-    * Date:           Thu Feb 19 12:16:27 2026
+    * Date:           Thu Feb 19 13:00:00 2026
     * Version:        2025.2 (Build 6295257 on Nov 14 2025)
     * Project:        prj
     * Solution:       sol (Vivado IP Flow Target)
@@ -17,23 +17,23 @@
 |                         Modules                         | Issue|               | Iteration|            |  Trip |          |         Latency        |      |        |         |           |            |     |
 |                         & Loops                         | Type | Violation Type|  Latency |  Interval  | Count | Pipelined|  (cycles)  |    (ns)   | Slack|  BRAM  |   DSP   |     FF    |     LUT    | URAM|
 +---------------------------------------------------------+------+---------------+----------+------------+-------+----------+------------+-----------+------+--------+---------+-----------+------------+-----+
-|+ v_tpg                                                  |     -|              -|         -|  4296540142|      -|        no|  4296540141|  2.900e+10|  0.04|  9 (3%)|  13 (5%)|  6405 (6%)|  6587 (12%)|    -|
-| + v_tpgHlsDataFlow*                                     |     -|              -|         -|  4296540137|      -|  dataflow|  4296540136|  2.900e+10|  0.04|  9 (3%)|  13 (5%)|  5563 (5%)|  5696 (10%)|    -|
-|  + tpgBackground                                        |     -|              -|         -|  4296540136|      -|        no|  4296540136|  2.900e+10|  0.04|  9 (3%)|  13 (5%)|  4585 (4%)|   4310 (8%)|    -|
-|   o VITIS_LOOP_563_1                                    |     -|              -|     65561|           -|  65535|        no|  4296540135|  2.900e+10|  4.93|       -|        -|          -|           -|    -|
-|    + tpgBackground_Pipeline_VITIS_LOOP_565_2            |     -|              -|         -|           -|      -|       yes|       65558|  4.425e+05|  0.04|  9 (3%)|  13 (5%)|  3952 (3%)|   3866 (7%)|    -|
-|     o VITIS_LOOP_565_2                                  |     -|              -|        23|           1|  65535|       yes|       65556|  4.425e+05|  4.93|       -|        -|          -|           -|    -|
-|      + reg_ap_uint_10_s                                 |     -|              -|         -|           1|      -|       yes|           1|      6.750|  4.93|       -|        -|   12 (~0%)|     2 (~0%)|    -|
-|      + reg_int_s                                        |     -|              -|         -|           1|      -|       yes|           1|      6.750|  4.93|       -|        -|   18 (~0%)|     2 (~0%)|    -|
-|  + tpgForeground                                        |     -|              -|         -|  4295229436|      -|        no|  4295229436|  2.899e+10|  0.54|       -|        -|  551 (~0%)|    784 (1%)|    -|
-|   o VITIS_LOOP_772_1                                    |     -|              -|     65541|           -|  65535|        no|  4295229435|  2.899e+10|  4.93|       -|        -|          -|           -|    -|
-|    + tpgForeground_Pipeline_VITIS_LOOP_774_2            |     -|              -|         -|           -|      -|       yes|       65539|  4.424e+05|  0.79|       -|        -|  265 (~0%)|    614 (1%)|    -|
-|     o VITIS_LOOP_774_2                                  |     -|              -|         4|           1|  65535|       yes|       65537|  4.424e+05|  4.93|       -|        -|          -|           -|    -|
-|  + MultiPixStream2AXIvideo                              |     -|              -|         -|     2081161|      -|        no|     2081161|  1.405e+07|  0.72|       -|        -|  229 (~0%)|   463 (~0%)|    -|
-|   o VITIS_LOOP_979_1                                    |     -|              -|      1927|           -|   1080|        no|     2081160|  1.405e+07|  4.93|       -|        -|          -|           -|    -|
-|    + MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2  |     -|              -|         -|        1924|      -|        no|        1924|  1.299e+04|  0.72|       -|        -|   66 (~0%)|   202 (~0%)|    -|
-|     o VITIS_LOOP_981_2                                  |     -|              -|         3|           1|   1920|       yes|        1921|  1.297e+04|  4.93|       -|        -|          -|           -|    -|
-| + reg_unsigned_short_s                                  |     -|              -|         -|           1|      -|       yes|           1|      6.750|  4.93|       -|        -|   18 (~0%)|     2 (~0%)|    -|
+|+ v_tpg                                                  |     -|              -|         -|  4296540142|      -|        no|  4296540141|  2.865e+10|  0.02|  9 (3%)|  13 (5%)|  6576 (6%)|  6649 (12%)|    -|
+| + v_tpgHlsDataFlow*                                     |     -|              -|         -|  4296540137|      -|  dataflow|  4296540136|  2.865e+10|  0.02|  9 (3%)|  13 (5%)|  5734 (5%)|  5758 (10%)|    -|
+|  + tpgBackground                                        |     -|              -|         -|  4296540136|      -|        no|  4296540136|  2.865e+10|  0.02|  9 (3%)|  13 (5%)|  4756 (4%)|   4372 (8%)|    -|
+|   o VITIS_LOOP_563_1                                    |     -|              -|     65561|           -|  65535|        no|  4296540135|  2.865e+10|  4.87|       -|        -|          -|           -|    -|
+|    + tpgBackground_Pipeline_VITIS_LOOP_565_2            |     -|              -|         -|           -|      -|       yes|       65558|  4.371e+05|  0.02|  9 (3%)|  13 (5%)|  4123 (3%)|   3928 (7%)|    -|
+|     o VITIS_LOOP_565_2                                  |     -|              -|        23|           1|  65535|       yes|       65556|  4.371e+05|  4.87|       -|        -|          -|           -|    -|
+|      + reg_ap_uint_10_s                                 |     -|              -|         -|           1|      -|       yes|           1|      6.667|  4.87|       -|        -|   12 (~0%)|     2 (~0%)|    -|
+|      + reg_int_s                                        |     -|              -|         -|           1|      -|       yes|           1|      6.667|  4.87|       -|        -|   18 (~0%)|     2 (~0%)|    -|
+|  + tpgForeground                                        |     -|              -|         -|  4295229436|      -|        no|  4295229436|  2.864e+10|  0.48|       -|        -|  551 (~0%)|    784 (1%)|    -|
+|   o VITIS_LOOP_772_1                                    |     -|              -|     65541|           -|  65535|        no|  4295229435|  2.864e+10|  4.87|       -|        -|          -|           -|    -|
+|    + tpgForeground_Pipeline_VITIS_LOOP_774_2            |     -|              -|         -|           -|      -|       yes|       65539|  4.369e+05|  0.73|       -|        -|  265 (~0%)|    614 (1%)|    -|
+|     o VITIS_LOOP_774_2                                  |     -|              -|         4|           1|  65535|       yes|       65537|  4.369e+05|  4.87|       -|        -|          -|           -|    -|
+|  + MultiPixStream2AXIvideo                              |     -|              -|         -|     2081161|      -|        no|     2081161|  1.388e+07|  0.69|       -|        -|  229 (~0%)|   463 (~0%)|    -|
+|   o VITIS_LOOP_979_1                                    |     -|              -|      1927|           -|   1080|        no|     2081160|  1.388e+07|  4.87|       -|        -|          -|           -|    -|
+|    + MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2  |     -|              -|         -|        1924|      -|        no|        1924|  1.283e+04|  0.69|       -|        -|   66 (~0%)|   202 (~0%)|    -|
+|     o VITIS_LOOP_981_2                                  |     -|              -|         3|           1|   1920|       yes|        1921|  1.281e+04|  4.87|       -|        -|          -|           -|    -|
+| + reg_unsigned_short_s                                  |     -|              -|         -|           1|      -|       yes|           1|      6.667|  4.87|       -|        -|   18 (~0%)|     2 (~0%)|    -|
 +---------------------------------------------------------+------+---------------+----------+------------+-------+----------+------------+-----------+------+--------+---------+-----------+------------+-----+
     Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
 
@@ -225,13 +225,13 @@
 |      icmp_ln1746_fu_1638_p2                            |     |        | icmp_ln1746       | seteq     | auto                    | 0       |
 |      icmp_ln1751_fu_1797_p2                            |     |        | icmp_ln1751       | setne     | auto                    | 0       |
 |      and_ln1751_fu_1803_p2                             |     |        | and_ln1751        | and       | auto                    | 0       |
-|      xor_ln1758_fu_2783_p2                             |     |        | xor_ln1758        | xor       | auto                    | 0       |
+|      xor_ln1758_fu_2792_p2                             |     |        | xor_ln1758        | xor       | auto                    | 0       |
 |      add_ln1753_fu_1814_p2                             |     |        | add_ln1753        | add       | fabric                  | 0       |
-|      icmp_ln1768_fu_2825_p2                            |     |        | icmp_ln1768       | setlt     | auto                    | 0       |
-|      add_ln1774_fu_2831_p2                             |     |        | add_ln1774        | add       | fabric                  | 0       |
-|      add_ln1775_fu_2843_p2                             |     |        | add_ln1775        | add       | fabric                  | 0       |
-|      add_ln1770_fu_2865_p2                             |     |        | add_ln1770        | add       | fabric                  | 0       |
-|      or_ln1778_fu_3039_p2                              |     |        | or_ln1778         | or        | auto                    | 0       |
+|      icmp_ln1768_fu_2834_p2                            |     |        | icmp_ln1768       | setlt     | auto                    | 0       |
+|      add_ln1774_fu_2840_p2                             |     |        | add_ln1774        | add       | fabric                  | 0       |
+|      add_ln1775_fu_2852_p2                             |     |        | add_ln1775        | add       | fabric                  | 0       |
+|      add_ln1770_fu_2874_p2                             |     |        | add_ln1770        | add       | fabric                  | 0       |
+|      or_ln1778_fu_3048_p2                              |     |        | or_ln1778         | or        | auto                    | 0       |
 |      and_ln1801_fu_3621_p2                             |     |        | and_ln1801        | and       | auto                    | 0       |
 |      phi_ln1811_fu_3625_p3                             |     |        | phi_ln1811        | select    | auto_sel                | 0       |
 |      phi_ln1801_fu_3651_p3                             |     |        | phi_ln1801        | select    | auto_sel                | 0       |
@@ -253,13 +253,13 @@
 |      icmp_ln1563_fu_1656_p2                            |     |        | icmp_ln1563       | seteq     | auto                    | 0       |
 |      icmp_ln1568_fu_1840_p2                            |     |        | icmp_ln1568       | setgt     | auto                    | 0       |
 |      and_ln1568_fu_1845_p2                             |     |        | and_ln1568        | and       | auto                    | 0       |
-|      add_ln1575_fu_2620_p2                             |     |        | add_ln1575        | add       | fabric                  | 0       |
+|      add_ln1575_fu_2633_p2                             |     |        | add_ln1575        | add       | fabric                  | 0       |
 |      add_ln1570_fu_1856_p2                             |     |        | add_ln1570        | add       | fabric                  | 0       |
 |      icmp_ln1586_fu_1878_p2                            |     |        | icmp_ln1586       | setlt     | auto                    | 0       |
 |      sub_ln1592_fu_1883_p2                             |     |        | sub_ln1592        | sub       | fabric                  | 0       |
-|      add_ln1593_fu_2650_p2                             |     |        | add_ln1593        | add       | fabric                  | 0       |
+|      add_ln1593_fu_2663_p2                             |     |        | add_ln1593        | add       | fabric                  | 0       |
 |      add_ln1588_fu_1894_p2                             |     |        | add_ln1588        | add       | fabric                  | 0       |
-|      tBarSel_fu_2923_p2                                |     |        | tBarSel           | or        | auto                    | 0       |
+|      tBarSel_fu_2932_p2                                |     |        | tBarSel           | or        | auto                    | 0       |
 |      phi_ln1599_fu_3284_p3                             |     |        | phi_ln1599        | select    | auto_sel                | 0       |
 |      grp_fu_1440_p2                                    |     |        | icmp_ln1603       | seteq     | auto                    | 0       |
 |      grp_fu_1445_p2                                    |     |        | icmp_ln1603_1     | setne     | auto                    | 0       |
@@ -273,18 +273,18 @@
 |      mul_11ns_13ns_23_1_1_U7                           | 1   |        | mul_ln1281        | mul       | auto                    | 0       |
 |      urem_11ns_3ns_2_15_1_U4                           |     |        | urem_ln1281       | urem      | auto                    | 14      |
 |      sparsemux_7_2_9_1_1_U10                           |     |        | tmp               | sparsemux | onehotencoding_realdef  | 0       |
-|      add_ln1281_fu_2441_p2                             |     |        | add_ln1281        | add       | fabric                  | 0       |
-|      r_fu_2458_p3                                      |     |        | r                 | select    | auto_sel                | 0       |
+|      add_ln1281_fu_2445_p2                             |     |        | add_ln1281        | add       | fabric                  | 0       |
+|      r_fu_2462_p3                                      |     |        | r                 | select    | auto_sel                | 0       |
 |      mul_11ns_13ns_23_1_1_U8                           | 1   |        | mul_ln1285        | mul       | auto                    | 0       |
 |      urem_11ns_3ns_2_15_1_U5                           |     |        | urem_ln1285       | urem      | auto                    | 14      |
 |      sparsemux_7_2_9_1_1_U11                           |     |        | tmp_3             | sparsemux | onehotencoding_realdef  | 0       |
-|      add_ln1285_fu_2534_p2                             |     |        | add_ln1285        | add       | fabric                  | 0       |
-|      g_fu_2551_p3                                      |     |        | g                 | select    | auto_sel                | 0       |
+|      add_ln1285_fu_2538_p2                             |     |        | add_ln1285        | add       | fabric                  | 0       |
+|      g_fu_2555_p3                                      |     |        | g                 | select    | auto_sel                | 0       |
 |      mul_11ns_13ns_23_1_1_U9                           | 1   |        | mul_ln1289        | mul       | auto                    | 0       |
 |      urem_11ns_3ns_2_15_1_U6                           |     |        | urem_ln1289       | urem      | auto                    | 14      |
 |      sparsemux_7_2_9_1_1_U12                           |     |        | tmp_4             | sparsemux | onehotencoding_realdef  | 0       |
-|      add_ln1289_fu_2559_p2                             |     |        | add_ln1289        | add       | fabric                  | 0       |
-|      b_fu_2576_p3                                      |     |        | b                 | select    | auto_sel                | 0       |
+|      add_ln1289_fu_2563_p2                             |     |        | add_ln1289        | add       | fabric                  | 0       |
+|      b_fu_2580_p3                                      |     |        | b                 | select    | auto_sel                | 0       |
 |      mac_muladd_8ns_5ns_16ns_17_4_1_U28                | 1   |        | mul_ln1302        | mul       | dsp_slice               | 3       |
 |      mac_muladd_8ns_5ns_16ns_17_4_1_U28                | 1   |        | zext_ln1302_4     | zext      | dsp_slice               | 3       |
 |      mac_muladd_8ns_7ns_13ns_15_4_1_U22                | 1   |        | mul_ln1302_1      | mul       | dsp_slice               | 3       |
@@ -297,20 +297,20 @@
 |      mac_muladd_8ns_8s_16s_16_4_1_U25                  | 1   |        | mul65_i_neg       | mul       | dsp_slice               | 3       |
 |      mac_muladd_8ns_7s_16s_16_4_1_U23                  | 1   |        | add_ln1303        | add       | dsp_slice               | 3       |
 |      mac_muladd_8ns_8s_16s_16_4_1_U25                  | 1   |        | add_ln1303_1      | add       | dsp_slice               | 3       |
-|      add_ln1303_2_fu_3081_p2                           |     |        | add_ln1303_2      | add       | fabric                  | 0       |
+|      add_ln1303_2_fu_3090_p2                           |     |        | add_ln1303_2      | add       | fabric                  | 0       |
 |      mac_muladd_8ns_8s_16s_16_4_1_U26                  | 1   |        | mul74_i_neg       | mul       | dsp_slice               | 3       |
 |      mac_muladd_8ns_6s_15ns_16_4_1_U27                 | 1   |        | mul77_i_neg       | mul       | dsp_slice               | 3       |
 |      mac_muladd_8ns_6s_15ns_16_4_1_U27                 | 1   |        | sext_ln1304       | sext      | dsp_slice               | 3       |
 |      mac_muladd_8ns_8s_16s_16_4_1_U26                  | 1   |        | add_ln1304        | add       | dsp_slice               | 3       |
 |      mac_muladd_8ns_6s_15ns_16_4_1_U27                 | 1   |        | add_ln1304_1      | add       | dsp_slice               | 3       |
-|      add_ln1304_3_fu_3093_p2                           |     |        | add_ln1304_3      | add       | fabric                  | 0       |
-|      add_ln1304_2_fu_3097_p2                           |     |        | add_ln1304_2      | add       | fabric                  | 0       |
+|      add_ln1304_3_fu_3102_p2                           |     |        | add_ln1304_3      | add       | fabric                  | 0       |
+|      add_ln1304_2_fu_3106_p2                           |     |        | add_ln1304_2      | add       | fabric                  | 0       |
 |      r_1_fu_3355_p3                                    |     |        | r_1               | select    | auto_sel                | 0       |
-|      g_1_fu_3121_p3                                    |     |        | g_1               | select    | auto_sel                | 0       |
-|      b_1_fu_3147_p3                                    |     |        | b_1               | select    | auto_sel                | 0       |
+|      g_1_fu_3130_p3                                    |     |        | g_1               | select    | auto_sel                | 0       |
+|      b_1_fu_3156_p3                                    |     |        | b_1               | select    | auto_sel                | 0       |
 |      r_2_fu_3363_p3                                    |     |        | r_2               | select    | auto_sel                | 0       |
-|      g_2_fu_3155_p3                                    |     |        | g_2               | select    | auto_sel                | 0       |
-|      b_2_fu_3161_p3                                    |     |        | b_2               | select    | auto_sel                | 0       |
+|      g_2_fu_3164_p3                                    |     |        | g_2               | select    | auto_sel                | 0       |
+|      b_2_fu_3170_p3                                    |     |        | b_2               | select    | auto_sel                | 0       |
 |      and_ln1449_fu_1668_p2                             |     |        | and_ln1449        | and       | auto                    | 0       |
 |      icmp_ln1454_fu_1937_p2                            |     |        | icmp_ln1454       | seteq     | auto                    | 0       |
 |      and_ln1454_fu_1942_p2                             |     |        | and_ln1454        | and       | auto                    | 0       |
@@ -327,13 +327,13 @@
 |      icmp_ln1381_fu_1686_p2                            |     |        | icmp_ln1381       | seteq     | auto                    | 0       |
 |      icmp_ln1386_fu_1979_p2                            |     |        | icmp_ln1386       | setgt     | auto                    | 0       |
 |      and_ln1386_fu_1984_p2                             |     |        | and_ln1386        | and       | auto                    | 0       |
-|      add_ln1393_fu_2687_p2                             |     |        | add_ln1393        | add       | fabric                  | 0       |
+|      add_ln1393_fu_2700_p2                             |     |        | add_ln1393        | add       | fabric                  | 0       |
 |      add_ln1388_fu_1995_p2                             |     |        | add_ln1388        | add       | fabric                  | 0       |
 |      icmp_ln1405_fu_2017_p2                            |     |        | icmp_ln1405       | setlt     | auto                    | 0       |
 |      sub_ln1411_fu_2022_p2                             |     |        | sub_ln1411        | sub       | fabric                  | 0       |
-|      add_ln1412_fu_2721_p2                             |     |        | add_ln1412        | add       | fabric                  | 0       |
+|      add_ln1412_fu_2734_p2                             |     |        | add_ln1412        | add       | fabric                  | 0       |
 |      add_ln1407_fu_2033_p2                             |     |        | add_ln1407        | add       | fabric                  | 0       |
-|      or_ln1415_fu_2972_p2                              |     |        | or_ln1415         | or        | auto                    | 0       |
+|      or_ln1415_fu_2981_p2                              |     |        | or_ln1415         | or        | auto                    | 0       |
 |      phi_ln1418_fu_3383_p3                             |     |        | phi_ln1418        | select    | auto_sel                | 0       |
 |      grp_fu_1440_p2                                    |     |        | icmp_ln1422       | seteq     | auto                    | 0       |
 |      grp_fu_1445_p2                                    |     |        | icmp_ln1422_1     | setne     | auto                    | 0       |
@@ -351,7 +351,7 @@
 |      mac_muladd_16s_16s_16s_16_4_1_U21                 | 1   |        | mul_ln1347_1      | mul       | dsp_slice               | 3       |
 |      grp_fu_4537_p2                                    |     |        | add_ln1351_1      | add       | fabric                  | 0       |
 |      mac_muladd_16s_16s_16s_16_4_1_U21                 | 1   |        | add_ln1351        | add       | dsp_slice               | 3       |
-|      mul_20s_9ns_28_1_1_U13                            | 1   |        | mul_ln1356        | mul       | auto                    | 0       |
+|      mul_20s_9ns_28_4_1_U13                            | 1   |        | mul_ln1356        | mul       | auto                    | 3       |
 |      sub_ln1356_fu_3445_p2                             |     |        | sub_ln1356        | sub       | fabric                  | 0       |
 |      sub_ln1356_1_fu_3460_p2                           |     |        | sub_ln1356_1      | sub       | fabric                  | 0       |
 |      select_ln1356_fu_3475_p3                          |     |        | select_ln1356     | select    | auto_sel                | 0       |
@@ -361,7 +361,7 @@
 |      icmp_ln1250_fu_1730_p2                            |     |        | icmp_ln1250       | setlt     | auto                    | 0       |
 |      add_ln1252_fu_1736_p2                             |     |        | add_ln1252        | add       | fabric                  | 0       |
 |      sub_ln1256_fu_1742_p2                             |     |        | sub_ln1256        | sub       | fabric                  | 0       |
-|      add_ln1257_fu_2983_p2                             |     |        | add_ln1257        | add       | fabric                  | 0       |
+|      add_ln1257_fu_2992_p2                             |     |        | add_ln1257        | add       | fabric                  | 0       |
 |      phi_ln1260_fu_3493_p3                             |     |        | phi_ln1260        | select    | auto_sel                | 0       |
 |      grp_fu_1440_p2                                    |     |        | icmp_ln1262       | seteq     | auto                    | 0       |
 |      grp_fu_1445_p2                                    |     |        | icmp_ln1262_1     | setne     | auto                    | 0       |

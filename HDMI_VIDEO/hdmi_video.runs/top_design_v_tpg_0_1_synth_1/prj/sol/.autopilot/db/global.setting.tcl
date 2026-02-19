@@ -1,6 +1,6 @@
 
 set TopModule "v_tpg"
-set ClockPeriod 6.75
+set ClockPeriod 6.667
 set ClockList ap_clk
 set AxiliteClockList {}
 set HasVivadoClockPeriod 0

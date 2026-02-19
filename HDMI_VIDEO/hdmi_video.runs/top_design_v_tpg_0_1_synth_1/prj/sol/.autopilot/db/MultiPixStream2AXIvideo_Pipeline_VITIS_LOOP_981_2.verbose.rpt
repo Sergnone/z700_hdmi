@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2'
 ================================================================
-* Date:           Thu Feb 19 12:16:27 2026
+* Date:           Thu Feb 19 13:00:00 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  6.75 ns|  4.210 ns|     1.82 ns|
+    |ap_clk  |  6.67 ns|  4.179 ns|     1.80 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |  Interval  | Pipeline|
     |   min   |   max   |    min    |    max    | min |  max |   Type  |
     +---------+---------+-----------+-----------+-----+------+---------+
-    |        4|     1924|  27.000 ns|  12.987 us|    4|  1924|       no|
+    |        4|     1924|  26.668 ns|  12.827 us|    4|  1924|       no|
     +---------+---------+-----------+-----------+-----+------+---------+
 
     + Detail: 
@@ -263,7 +263,7 @@ ST_2 : Operation 29 [1/1] (1.30ns)   --->   "%icmp_ln1020_1 = icmp_eq  i8 %color
 ST_2 : Operation 30 [1/1] (1.29ns)   --->   "%store_ln981 = store i11 %j_2, i11 %j" [prj/sol/.autopilot/db/v_tpg.cpp:981->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 30 'store' 'store_ln981' <Predicate = (!icmp_ln981)> <Delay = 1.29>
 ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln981 = br void %for.body22.i.i" [prj/sol/.autopilot/db/v_tpg.cpp:981->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 31 'br' 'br_ln981' <Predicate = (!icmp_ln981)> <Delay = 0.00>
 
-State 3 <SV = 2> <Delay = 4.20>
+State 3 <SV = 2> <Delay = 4.17>
 ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%sof = phi i1 %sof_i_read, void %newFuncRoot, i1 0, void %VITIS_LOOP_1011_3.i_ifconv.i"   --->   Operation 32 'phi' 'sof' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%phi_ln1036 = phi i1 0, void %newFuncRoot, i1 %trunc_ln1008, void %VITIS_LOOP_1011_3.i_ifconv.i" [prj/sol/.autopilot/db/v_tpg.cpp:1036->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 33 'phi' 'phi_ln1036' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 1920, i64 0"   --->   Operation 34 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
@@ -275,7 +275,7 @@ ST_3 : Operation 39 [1/1] (1.54ns)   --->   "%add_ln1005 = add i16 %counter_loc_
 ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%store_ln1005 = store i16 %add_ln1005, i16 %counter" [prj/sol/.autopilot/db/v_tpg.cpp:1005->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 40 'store' 'store_ln1005' <Predicate = (!icmp_ln981 & sof)> <Delay = 0.00>
 ST_3 : Operation 41 [1/1] (1.29ns)   --->   "%store_ln1005 = store i16 %add_ln1005, i16 %counter_loc_1_i_i" [prj/sol/.autopilot/db/v_tpg.cpp:1005->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 41 'store' 'store_ln1005' <Predicate = (!icmp_ln981 & sof)> <Delay = 1.29>
 ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%br_ln1006 = br void %VITIS_LOOP_1011_3.i_ifconv.i" [prj/sol/.autopilot/db/v_tpg.cpp:1006->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 42 'br' 'br_ln1006' <Predicate = (!icmp_ln981 & sof)> <Delay = 0.00>
-ST_3 : Operation 43 [1/1] ( I:2.46ns O:2.46ns )   --->   "%ovrlayYUV_read = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %ovrlayYUV" [prj/sol/.autopilot/db/v_tpg.cpp:1008->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 43 'read' 'ovrlayYUV_read' <Predicate = (!icmp_ln981)> <Delay = 2.46> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 16> <FIFO>
+ST_3 : Operation 43 [1/1] ( I:2.43ns O:2.43ns )   --->   "%ovrlayYUV_read = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %ovrlayYUV" [prj/sol/.autopilot/db/v_tpg.cpp:1008->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 43 'read' 'ovrlayYUV_read' <Predicate = (!icmp_ln981)> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 16> <FIFO>
 ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%pix_444 = trunc i24 %ovrlayYUV_read" [prj/sol/.autopilot/db/v_tpg.cpp:1008->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 44 'trunc' 'pix_444' <Predicate = (!icmp_ln981)> <Delay = 0.00>
 ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%pix_rgb_2 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %ovrlayYUV_read, i32 8, i32 15" [prj/sol/.autopilot/db/v_tpg.cpp:1008->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 45 'partselect' 'pix_rgb_2' <Predicate = (!icmp_ln981)> <Delay = 0.00>
 ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%pix_rgb = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %ovrlayYUV_read, i32 16, i32 23" [prj/sol/.autopilot/db/v_tpg.cpp:1008->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 46 'partselect' 'pix_rgb' <Predicate = (!icmp_ln981)> <Delay = 0.00>

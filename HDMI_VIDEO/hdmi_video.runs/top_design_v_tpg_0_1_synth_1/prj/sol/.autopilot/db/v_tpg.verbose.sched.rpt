@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'v_tpg'
 ================================================================
-* Date:           Thu Feb 19 12:16:26 2026
+* Date:           Thu Feb 19 12:59:59 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  6.75 ns|  4.890 ns|     1.82 ns|
+    |ap_clk  |  6.67 ns|  4.854 ns|     1.80 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |   Latency (cycles)   |   Latency (absolute)  |     Interval     | Pipeline|
     |   min   |     max    |    min   |     max    | min |     max    |   Type  |
     +---------+------------+----------+------------+-----+------------+---------+
-    |       30|  4296540141|  0.203 us|  29.002 sec|   31|  4296540142|       no|
+    |       30|  4296540141|  0.200 us|  28.645 sec|   31|  4296540142|       no|
     +---------+------------+----------+------------+-----+------------+---------+
 
     + Detail: 
@@ -227,9 +227,9 @@ ST_3 : Operation 146 [1/1] (0.00ns)   --->   "%empty_60 = trunc i16 %boxColorB_r
 ST_3 : Operation 147 [1/1] (1.00ns)   --->   "%dpDynamicRange_read = read i8 @_ssdm_op_Read.s_axilite.i8P0A, i8 %dpDynamicRange"   --->   Operation 147 'read' 'dpDynamicRange_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
 ST_3 : Operation 148 [1/1] (1.00ns)   --->   "%dpYUVCoef_read = read i8 @_ssdm_op_Read.s_axilite.i8P0A, i8 %dpYUVCoef"   --->   Operation 148 'read' 'dpYUVCoef_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
 
-State 4 <SV = 3> <Delay = 3.94>
+State 4 <SV = 3> <Delay = 3.91>
 ST_4 : Operation 149 [1/1] (0.00ns)   --->   "%fid_in_read = read i1 @_ssdm_op_Read.ap_auto.i1P0A, i1 %fid_in"   --->   Operation 149 'read' 'fid_in_read' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 150 [2/2] (3.94ns)   --->   "%call_ln517 = call void @v_tpgHlsDataFlow, i16 %height_read, i16 %width_read, i16 %field_id_read, i1 %fid_in_read, i8 %bckgndId_read, i8 %ovrlayId_read, i8 %maskId_read, i8 %motionSpeed_read, i8 %colorFormat_read, i16 %crossHairX_read, i16 %crossHairY_read, i16 %ZplateHorContStart_read, i16 %ZplateHorContDelta_read, i16 %ZplateVerContStart_read, i16 %ZplateVerContDelta_read, i16 %boxSize_read, i8 %empty, i8 %empty_59, i8 %empty_60, i8 %dpDynamicRange_read, i8 %dpYUVCoef_read, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i1 %fid, i8 %rampStart, i32 %s, i16 %rampVal_1, i8 %rampVal, i8 %tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_hBarSel, i16 %zonePlateVAddr, i3 %vBarSel, i3 %tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign_1, i16 %hdata, i8 %vBarSel_2, i3 %tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_1, i16 %rampVal_2, i1 %vBarSel_1, i3 %tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_1, i8 %redYuv, i8 %grnYuv, i8 %bluYuv, i8 %blkYuv, i8 %whiYuv, i2 %tpgBarSelRgb_r, i8 %tpgBarSelYuv_y, i2 %tpgBarSelRgb_g, i8 %tpgBarSelYuv_u, i8 %tpgBarSelYuv_v, i11 %tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_xBar, i2 %tpgBarSelRgb_b, i20 %tpgSinTableArray, i16 %zonePlateVDelta, i3 %tpgTartanBarArray, i10 %tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign, i10 %yCount, i10 %tpgPatternCrossHatch_unsigned_short_unsigned_short_unsigned_short_unsigned_sh, i1 %vHatch, i10 %yCount_2, i8 %whiYuv_1, i8 %blkYuv_1, i8 %tpgSinTableArray_9bit_0, i8 %tpgSinTableArray_9bit_1, i9 %tpgSinTableArray_9bit_2, i2 %tpgCheckerBoardArray, i10 %tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_s, i10 %yCount_3, i28 %rSerie, i28 %gSerie, i28 %bSerie, i2 %DPtpgBarSelRgb_VESA_r, i2 %DPtpgBarSelRgb_VESA_g, i2 %DPtpgBarSelRgb_VESA_b, i3 %DPtpgBarArray, i10 %tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_s, i6 %yCount_1, i6 %DPtpgBarSelRgb_CEA_r, i6 %DPtpgBarSelRgb_CEA_g, i6 %DPtpgBarSelRgb_CEA_b, i8 %DPtpgBarSelYuv_601_y, i8 %DPtpgBarSelYuv_601_v, i8 %DPtpgBarSelYuv_601_u, i8 %DPtpgBarSelYuv_709_y, i8 %DPtpgBarSelYuv_709_v, i8 %DPtpgBarSelYuv_709_u, i16 %boxHCoord, i16 %boxVCoord, i1 %vDir, i1 %hDir, i8 %whiYuv_2, i1 %fidStored, i16 %counter" [prj/sol/.autopilot/db/v_tpg.cpp:517]   --->   Operation 150 'call' 'call_ln517' <Predicate = true> <Delay = 3.94> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 150 [2/2] (3.91ns)   --->   "%call_ln517 = call void @v_tpgHlsDataFlow, i16 %height_read, i16 %width_read, i16 %field_id_read, i1 %fid_in_read, i8 %bckgndId_read, i8 %ovrlayId_read, i8 %maskId_read, i8 %motionSpeed_read, i8 %colorFormat_read, i16 %crossHairX_read, i16 %crossHairY_read, i16 %ZplateHorContStart_read, i16 %ZplateHorContDelta_read, i16 %ZplateVerContStart_read, i16 %ZplateVerContDelta_read, i16 %boxSize_read, i8 %empty, i8 %empty_59, i8 %empty_60, i8 %dpDynamicRange_read, i8 %dpYUVCoef_read, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i1 %fid, i8 %rampStart, i32 %s, i16 %rampVal_1, i8 %rampVal, i8 %tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_hBarSel, i16 %zonePlateVAddr, i3 %vBarSel, i3 %tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign_1, i16 %hdata, i8 %vBarSel_2, i3 %tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_1, i16 %rampVal_2, i1 %vBarSel_1, i3 %tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_1, i8 %redYuv, i8 %grnYuv, i8 %bluYuv, i8 %blkYuv, i8 %whiYuv, i2 %tpgBarSelRgb_r, i8 %tpgBarSelYuv_y, i2 %tpgBarSelRgb_g, i8 %tpgBarSelYuv_u, i8 %tpgBarSelYuv_v, i11 %tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_xBar, i2 %tpgBarSelRgb_b, i20 %tpgSinTableArray, i16 %zonePlateVDelta, i3 %tpgTartanBarArray, i10 %tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign, i10 %yCount, i10 %tpgPatternCrossHatch_unsigned_short_unsigned_short_unsigned_short_unsigned_sh, i1 %vHatch, i10 %yCount_2, i8 %whiYuv_1, i8 %blkYuv_1, i8 %tpgSinTableArray_9bit_0, i8 %tpgSinTableArray_9bit_1, i9 %tpgSinTableArray_9bit_2, i2 %tpgCheckerBoardArray, i10 %tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_s, i10 %yCount_3, i28 %rSerie, i28 %gSerie, i28 %bSerie, i2 %DPtpgBarSelRgb_VESA_r, i2 %DPtpgBarSelRgb_VESA_g, i2 %DPtpgBarSelRgb_VESA_b, i3 %DPtpgBarArray, i10 %tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_s, i6 %yCount_1, i6 %DPtpgBarSelRgb_CEA_r, i6 %DPtpgBarSelRgb_CEA_g, i6 %DPtpgBarSelRgb_CEA_b, i8 %DPtpgBarSelYuv_601_y, i8 %DPtpgBarSelYuv_601_v, i8 %DPtpgBarSelYuv_601_u, i8 %DPtpgBarSelYuv_709_y, i8 %DPtpgBarSelYuv_709_v, i8 %DPtpgBarSelYuv_709_u, i16 %boxHCoord, i16 %boxVCoord, i1 %vDir, i1 %hDir, i8 %whiYuv_2, i1 %fidStored, i16 %counter" [prj/sol/.autopilot/db/v_tpg.cpp:517]   --->   Operation 150 'call' 'call_ln517' <Predicate = true> <Delay = 3.91> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.00>
 ST_5 : Operation 151 [1/2] (0.00ns)   --->   "%call_ln517 = call void @v_tpgHlsDataFlow, i16 %height_read, i16 %width_read, i16 %field_id_read, i1 %fid_in_read, i8 %bckgndId_read, i8 %ovrlayId_read, i8 %maskId_read, i8 %motionSpeed_read, i8 %colorFormat_read, i16 %crossHairX_read, i16 %crossHairY_read, i16 %ZplateHorContStart_read, i16 %ZplateHorContDelta_read, i16 %ZplateVerContStart_read, i16 %ZplateVerContDelta_read, i16 %boxSize_read, i8 %empty, i8 %empty_59, i8 %empty_60, i8 %dpDynamicRange_read, i8 %dpYUVCoef_read, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i1 %fid, i8 %rampStart, i32 %s, i16 %rampVal_1, i8 %rampVal, i8 %tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_hBarSel, i16 %zonePlateVAddr, i3 %vBarSel, i3 %tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign_1, i16 %hdata, i8 %vBarSel_2, i3 %tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_1, i16 %rampVal_2, i1 %vBarSel_1, i3 %tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_1, i8 %redYuv, i8 %grnYuv, i8 %bluYuv, i8 %blkYuv, i8 %whiYuv, i2 %tpgBarSelRgb_r, i8 %tpgBarSelYuv_y, i2 %tpgBarSelRgb_g, i8 %tpgBarSelYuv_u, i8 %tpgBarSelYuv_v, i11 %tpgPatternColorBars_unsigned_short_unsigned_short_unsigned_char_int_xBar, i2 %tpgBarSelRgb_b, i20 %tpgSinTableArray, i16 %zonePlateVDelta, i3 %tpgTartanBarArray, i10 %tpgPatternTartanColorBars_unsigned_short_unsigned_short_unsigned_short_unsign, i10 %yCount, i10 %tpgPatternCrossHatch_unsigned_short_unsigned_short_unsigned_short_unsigned_sh, i1 %vHatch, i10 %yCount_2, i8 %whiYuv_1, i8 %blkYuv_1, i8 %tpgSinTableArray_9bit_0, i8 %tpgSinTableArray_9bit_1, i9 %tpgSinTableArray_9bit_2, i2 %tpgCheckerBoardArray, i10 %tpgPatternCheckerBoard_unsigned_short_unsigned_short_unsigned_short_unsigned_s, i10 %yCount_3, i28 %rSerie, i28 %gSerie, i28 %bSerie, i2 %DPtpgBarSelRgb_VESA_r, i2 %DPtpgBarSelRgb_VESA_g, i2 %DPtpgBarSelRgb_VESA_b, i3 %DPtpgBarArray, i10 %tpgPatternDPColorSquare_unsigned_short_unsigned_short_unsigned_char_unsigned_s, i6 %yCount_1, i6 %DPtpgBarSelRgb_CEA_r, i6 %DPtpgBarSelRgb_CEA_g, i6 %DPtpgBarSelRgb_CEA_b, i8 %DPtpgBarSelYuv_601_y, i8 %DPtpgBarSelYuv_601_v, i8 %DPtpgBarSelYuv_601_u, i8 %DPtpgBarSelYuv_709_y, i8 %DPtpgBarSelYuv_709_v, i8 %DPtpgBarSelYuv_709_u, i16 %boxHCoord, i16 %boxVCoord, i1 %vDir, i1 %hDir, i8 %whiYuv_2, i1 %fidStored, i16 %counter" [prj/sol/.autopilot/db/v_tpg.cpp:517]   --->   Operation 151 'call' 'call_ln517' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -241,7 +241,7 @@ ST_6 : Operation 152 [1/1] (0.00ns)   --->   "%ret_ln528 = ret" [prj/sol/.autopi
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 6.750ns, clock uncertainty: 1.822ns.
+Target clock period: 6.667ns, clock uncertainty: 1.800ns.
 
  <State 1>: 1.000ns
 The critical path consists of the following:
@@ -259,10 +259,10 @@ The critical path consists of the following:
 	'br' operation ('br_ln514', prj/sol/.autopilot/db/v_tpg.cpp:514) [215]  (1.298 ns)
 	'phi' operation 32 bit ('count_new_0', prj/sol/.autopilot/db/v_tpg.cpp:502) with incoming values : ('add_ln502', prj/sol/.autopilot/db/v_tpg.cpp:502) [217]  (0.000 ns)
 
- <State 4>: 3.945ns
+ <State 4>: 3.915ns
 The critical path consists of the following:
 	wire read operation ('fid_in_read') on port 'fid_in' [224]  (0.000 ns)
-	'call' operation ('call_ln517', prj/sol/.autopilot/db/v_tpg.cpp:517) to 'v_tpgHlsDataFlow' [245]  (3.945 ns)
+	'call' operation ('call_ln517', prj/sol/.autopilot/db/v_tpg.cpp:517) to 'v_tpgHlsDataFlow' [245]  (3.915 ns)
 
  <State 5>: 0.000ns
 The critical path consists of the following:

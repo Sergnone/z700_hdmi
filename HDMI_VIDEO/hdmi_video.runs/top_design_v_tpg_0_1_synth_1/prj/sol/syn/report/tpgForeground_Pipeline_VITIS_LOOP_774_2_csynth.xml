@@ -9,8 +9,8 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020-clg400-2</Part>
 <TopModelName>tpgForeground_Pipeline_VITIS_LOOP_774_2</TopModelName>
-<TargetClockPeriod>6.75</TargetClockPeriod>
-<ClockUncertainty>1.82</ClockUncertainty>
+<TargetClockPeriod>6.67</TargetClockPeriod>
+<ClockUncertainty>1.80</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
@@ -25,16 +25,16 @@
 <Best-caseLatency>2</Best-caseLatency>
 <Average-caseLatency>32771</Average-caseLatency>
 <Worst-caseLatency>65539</Worst-caseLatency>
-<Best-caseRealTimeLatency>13.500 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.221 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.442 ms</Worst-caseRealTimeLatency>
+<Best-caseRealTimeLatency>13.334 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.218 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.437 ms</Worst-caseRealTimeLatency>
 <Interval-min>1</Interval-min>
 <Interval-max>65536</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <VITIS_LOOP_774_2>
-<Slack>4.93</Slack>
+<Slack>4.87</Slack>
 <TripCount>
 <range>
 <min>0</min>
@@ -51,7 +51,7 @@
 <AbsoluteTimeLatency>
 <range>
 <min>0</min>
-<max>442374</max>
+<max>436935</max>
 </range>
 </AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>

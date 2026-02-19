@@ -9,8 +9,8 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020-clg400-2</Part>
 <TopModelName>MultiPixStream2AXIvideo</TopModelName>
-<TargetClockPeriod>6.75</TargetClockPeriod>
-<ClockUncertainty>1.82</ClockUncertainty>
+<TargetClockPeriod>6.67</TargetClockPeriod>
+<ClockUncertainty>1.80</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
@@ -18,23 +18,23 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>4.210</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.179</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
 <Best-caseLatency>1</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
 <Worst-caseLatency>2081161</Worst-caseLatency>
-<Best-caseRealTimeLatency>6.750 ns</Best-caseRealTimeLatency>
+<Best-caseRealTimeLatency>6.667 ns</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>14.048 ms</Worst-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>13.875 ms</Worst-caseRealTimeLatency>
 <Interval-min>1</Interval-min>
 <Interval-max>2081161</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <VITIS_LOOP_979_1>
-<Slack>4.93</Slack>
+<Slack>4.87</Slack>
 <TripCount>
 <range>
 <min>0</min>
@@ -51,7 +51,7 @@
 <AbsoluteTimeLatency>
 <range>
 <min>0</min>
-<max>14047830</max>
+<max>13875093</max>
 </range>
 </AbsoluteTimeLatency>
 <IterationLatency>

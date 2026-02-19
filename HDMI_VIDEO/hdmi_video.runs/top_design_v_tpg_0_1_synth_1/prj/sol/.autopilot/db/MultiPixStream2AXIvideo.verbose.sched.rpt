@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'MultiPixStream2AXIvideo'
 ================================================================
-* Date:           Thu Feb 19 12:16:26 2026
+* Date:           Thu Feb 19 12:59:59 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  6.75 ns|  4.210 ns|     1.82 ns|
+    |ap_clk  |  6.67 ns|  4.179 ns|     1.80 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute)  |    Interval   | Pipeline|
     |   min   |   max   |    min   |    max    | min |   max   |   Type  |
     +---------+---------+----------+-----------+-----+---------+---------+
-    |        1|  2081161|  6.750 ns|  14.048 ms|    1|  2081161|       no|
+    |        1|  2081161|  6.667 ns|  13.875 ms|    1|  2081161|       no|
     +---------+---------+----------+-----------+-----+---------+---------+
 
     + Detail: 
@@ -82,7 +82,7 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 3.94>
+State 1 <SV = 0> <Delay = 3.91>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [prj/sol/.autopilot/db/v_tpg.cpp:979->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 5 'alloca' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%counter_loc_0_i_i = alloca i32 1"   --->   Operation 6 'alloca' 'counter_loc_0_i_i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sof = alloca i32 1" [prj/sol/.autopilot/db/v_tpg.cpp:973->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 7 'alloca' 'sof' <Predicate = true> <Delay = 0.00>
@@ -90,8 +90,8 @@ ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%empty = alloca i32 1"   --->   Oper
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%field_id_val8_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %field_id_val8"   --->   Operation 9 'read' 'field_id_val8_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%fid_in_val9_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %fid_in_val9"   --->   Operation 10 'read' 'fid_in_val9_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%colorFormat_val17_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %colorFormat_val17"   --->   Operation 11 'read' 'colorFormat_val17_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (2.46ns)   --->   "%width_val7_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %width_val7"   --->   Operation 12 'read' 'width_val7_read' <Predicate = true> <Delay = 2.46> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
-ST_1 : Operation 13 [1/1] (2.46ns)   --->   "%height_val4_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %height_val4"   --->   Operation 13 'read' 'height_val4_read' <Predicate = true> <Delay = 2.46> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 12 [1/1] (2.43ns)   --->   "%width_val7_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %width_val7"   --->   Operation 12 'read' 'width_val7_read' <Predicate = true> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 13 [1/1] (2.43ns)   --->   "%height_val4_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %height_val4"   --->   Operation 13 'read' 'height_val4_read' <Predicate = true> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%phi_ln1036_i_loc = alloca i64 1"   --->   Operation 14 'alloca' 'phi_ln1036_i_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%counter_loc_1_i_i_loc = alloca i64 1"   --->   Operation 15 'alloca' 'counter_loc_1_i_i_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %colorFormat_val17, i1 1, void @p_str"   --->   Operation 16 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
@@ -158,11 +158,11 @@ ST_4 : Operation 68 [1/1] (0.00ns)   --->   "%br_ln979 = br void %VITIS_LOOP_981
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 6.750ns, clock uncertainty: 1.822ns.
+Target clock period: 6.667ns, clock uncertainty: 1.800ns.
 
- <State 1>: 3.945ns
+ <State 1>: 3.915ns
 The critical path consists of the following:
-	wire read operation ('width_val7_read') on port 'width_val7' [24]  (2.464 ns)
+	wire read operation ('width_val7_read') on port 'width_val7' [24]  (2.433 ns)
 	'add' operation 12 bit ('add_ln994', prj/sol/.autopilot/db/v_tpg.cpp:994->prj/sol/.autopilot/db/v_tpg.cpp:399->prj/sol/.autopilot/db/v_tpg.cpp:399) [39]  (1.482 ns)
 
  <State 2>: 2.788ns

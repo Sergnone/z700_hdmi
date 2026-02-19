@@ -7,7 +7,7 @@ set SynModuleInfo {
       {MODELNAME top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1 RTLNAME top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1 BINDTYPE op TYPE urem IMPL auto LATENCY 14 ALLOW_PRAGMA 1}
       {MODELNAME top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1 RTLNAME top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME top_design_v_tpg_0_1_sparsemux_7_2_9_1_1 RTLNAME top_design_v_tpg_0_1_sparsemux_7_2_9_1_1 BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}
-      {MODELNAME top_design_v_tpg_0_1_mul_20s_9ns_28_1_1 RTLNAME top_design_v_tpg_0_1_mul_20s_9ns_28_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_mul_20s_9ns_28_4_1 RTLNAME top_design_v_tpg_0_1_mul_20s_9ns_28_4_1 BINDTYPE op TYPE mul IMPL auto LATENCY 3 ALLOW_PRAGMA 1}
       {MODELNAME top_design_v_tpg_0_1_sparsemux_7_16_8_1_1 RTLNAME top_design_v_tpg_0_1_sparsemux_7_16_8_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_realdef}
       {MODELNAME top_design_v_tpg_0_1_sparsemux_7_2_8_1_1 RTLNAME top_design_v_tpg_0_1_sparsemux_7_2_8_1_1 BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}
       {MODELNAME top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1 RTLNAME top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
