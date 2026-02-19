@@ -1,0 +1,511 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Feb 19 12:15:43 2026
+# Process ID         : 223537
+# Current directory  : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_tc_0_1_synth_1
+# Command line       : vivado -log top_design_v_tc_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_design_v_tc_0_1.tcl
+# Log file           : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_tc_0_1_synth_1/top_design_v_tc_0_1.vds
+# Journal file       : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_tc_0_1_synth_1/vivado.jou
+# Running On         : serg
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13400
+# CPU Frequency      : 4100.000 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 33409 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 41999 MB
+# Available Virtual  : 30722 MB
+#-----------------------------------------------------------
+source top_design_v_tc_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/serg/Documents/Xilinx/DigilentLib/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/2025.2/data/ip'.
+Command: synth_design -top top_design_v_tc_0_1 -part xc7z020clg400-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 224227
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2241.645 ; gain = 483.594 ; free physical = 4448 ; free virtual = 20738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_design_v_tc_0_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/synth/top_design_v_tc_0_1.vhd:97]
+	Parameter C_HAS_AXI4_LITE bound to: 1 - type: integer 
+	Parameter C_HAS_INTC_IF bound to: 0 - type: integer 
+	Parameter C_ARBITRARY_RES_EN bound to: 0 - type: integer 
+	Parameter C_VID_PPC bound to: 4 - type: integer 
+	Parameter C_GEN_INTERLACED bound to: 0 - type: integer 
+	Parameter C_GEN_HACTIVE_SIZE bound to: 1920 - type: integer 
+	Parameter C_GEN_VACTIVE_SIZE bound to: 1080 - type: integer 
+	Parameter C_GEN_CPARITY bound to: 0 - type: integer 
+	Parameter C_GEN_FIELDID_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_VBLANK_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_HBLANK_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_VSYNC_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_HSYNC_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_AVIDEO_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_ACHROMA_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_VIDEO_FORMAT bound to: 2 - type: integer 
+	Parameter C_GEN_HFRAME_SIZE bound to: 2200 - type: integer 
+	Parameter C_GEN_F0_VFRAME_SIZE bound to: 1125 - type: integer 
+	Parameter C_GEN_F1_VFRAME_SIZE bound to: 1125 - type: integer 
+	Parameter C_GEN_HSYNC_START bound to: 2008 - type: integer 
+	Parameter C_GEN_HSYNC_END bound to: 2052 - type: integer 
+	Parameter C_GEN_F0_VBLANK_HSTART bound to: 2008 - type: integer 
+	Parameter C_GEN_F0_VBLANK_HEND bound to: 2008 - type: integer 
+	Parameter C_GEN_F0_VSYNC_VSTART bound to: 1083 - type: integer 
+	Parameter C_GEN_F0_VSYNC_VEND bound to: 1088 - type: integer 
+	Parameter C_GEN_F0_VSYNC_HSTART bound to: 2008 - type: integer 
+	Parameter C_GEN_F0_VSYNC_HEND bound to: 2008 - type: integer 
+	Parameter C_GEN_F1_VBLANK_HSTART bound to: 2008 - type: integer 
+	Parameter C_GEN_F1_VBLANK_HEND bound to: 2008 - type: integer 
+	Parameter C_GEN_F1_VSYNC_VSTART bound to: 1083 - type: integer 
+	Parameter C_GEN_F1_VSYNC_VEND bound to: 1088 - type: integer 
+	Parameter C_GEN_F1_VSYNC_HSTART bound to: 2008 - type: integer 
+	Parameter C_GEN_F1_VSYNC_HEND bound to: 2008 - type: integer 
+	Parameter C_FSYNC_HSTART0 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART0 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART1 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART1 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART2 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART2 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART3 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART3 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART4 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART4 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART5 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART5 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART6 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART6 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART7 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART7 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART8 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART8 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART9 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART9 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART10 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART10 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART11 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART11 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART12 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART12 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART13 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART13 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART14 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART14 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART15 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART15 bound to: 0 - type: integer 
+	Parameter C_MAX_PIXELS bound to: 4096 - type: integer 
+	Parameter C_MAX_LINES bound to: 4096 - type: integer 
+	Parameter C_NUM_FSYNCS bound to: 1 - type: integer 
+	Parameter C_INTERLACE_EN bound to: 0 - type: integer 
+	Parameter C_GEN_AUTO_SWITCH bound to: 0 - type: integer 
+	Parameter C_DETECT_EN bound to: 0 - type: integer 
+	Parameter C_SYNC_EN bound to: 0 - type: integer 
+	Parameter C_GENERATE_EN bound to: 1 - type: integer 
+	Parameter C_DET_HSYNC_EN bound to: 1 - type: integer 
+	Parameter C_DET_VSYNC_EN bound to: 1 - type: integer 
+	Parameter C_DET_HBLANK_EN bound to: 1 - type: integer 
+	Parameter C_DET_VBLANK_EN bound to: 1 - type: integer 
+	Parameter C_DET_AVIDEO_EN bound to: 1 - type: integer 
+	Parameter C_DET_ACHROMA_EN bound to: 0 - type: integer 
+	Parameter C_GEN_HSYNC_EN bound to: 1 - type: integer 
+	Parameter C_GEN_VSYNC_EN bound to: 1 - type: integer 
+	Parameter C_GEN_HBLANK_EN bound to: 1 - type: integer 
+	Parameter C_GEN_VBLANK_EN bound to: 1 - type: integer 
+	Parameter C_GEN_AVIDEO_EN bound to: 1 - type: integer 
+	Parameter C_GEN_ACHROMA_EN bound to: 0 - type: integer 
+	Parameter C_GEN_FIELDID_EN bound to: 0 - type: integer 
+	Parameter C_DET_FIELDID_EN bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'v_tc' declared at '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ipshared/c219/hdl/v_tc_v6_2_vh_rfs.vhd:9571' bound to instance 'U0' of component 'v_tc' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/synth/top_design_v_tc_0_1.vhd:303]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'top_design_v_tc_0_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/synth/top_design_v_tc_0_1.vhd:97]
+INFO: [Synth 8-7129] Port gen_v0chroma_start[11] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v0chroma_start[10] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v0chroma_start[9] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v0chroma_start[8] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v0chroma_start[7] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v0chroma_start[6] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v0chroma_start[5] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v0chroma_start[4] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v0chroma_start[3] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v0chroma_start[2] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v0chroma_start[1] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v0chroma_start[0] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1total[11] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1total[10] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1total[9] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1total[8] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1total[7] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1total[6] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1total[5] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1total[4] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1total[3] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1total[2] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1total[1] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1total[0] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start[11] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start[10] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start[9] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start[8] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start[7] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start[6] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start[5] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start[4] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start[3] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start[2] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start[1] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start[0] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1sync_start[11] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1sync_start[10] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1sync_start[9] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1sync_start[8] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1sync_start[7] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1sync_start[6] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1sync_start[5] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1sync_start[4] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1sync_start[3] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1sync_start[2] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1sync_start[1] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1sync_start[0] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1bp_start[11] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1bp_start[10] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1bp_start[9] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1bp_start[8] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1bp_start[7] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1bp_start[6] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1bp_start[5] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1bp_start[4] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1bp_start[3] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1bp_start[2] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1bp_start[1] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1bp_start[0] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1active_start[11] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1active_start[10] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1active_start[9] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1active_start[8] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1active_start[7] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1active_start[6] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1active_start[5] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1active_start[4] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1active_start[3] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1active_start[2] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1active_start[1] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1active_start[0] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1chroma_start[11] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1chroma_start[10] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1chroma_start[9] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1chroma_start[8] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1chroma_start[7] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1chroma_start[6] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1chroma_start[5] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1chroma_start[4] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1chroma_start[3] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1chroma_start[2] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1chroma_start[1] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1chroma_start[0] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start_hori[11] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start_hori[10] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start_hori[9] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start_hori[8] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start_hori[7] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start_hori[6] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start_hori[5] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start_hori[4] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start_hori[3] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start_hori[2] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start_hori[1] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1fp_start_hori[0] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1sync_start_hori[11] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1sync_start_hori[10] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1sync_start_hori[9] in module tc_generator is either unconnected or has no load
+INFO: [Synth 8-7129] Port gen_v1sync_start_hori[8] in module tc_generator is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2380.613 ; gain = 622.562 ; free physical = 3421 ; free virtual = 19714
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2383.582 ; gain = 625.531 ; free physical = 3421 ; free virtual = 19714
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2383.582 ; gain = 625.531 ; free physical = 3421 ; free virtual = 19714
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2383.582 ; gain = 0.000 ; free physical = 3387 ; free virtual = 19683
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_tc_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_tc_0_1_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_clocks.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_tc_0_1/top_design_v_tc_0_1_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_design_v_tc_0_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_design_v_tc_0_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_design_v_tc_0_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_design_v_tc_0_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2490.047 ; gain = 0.000 ; free physical = 3457 ; free virtual = 19753
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2490.082 ; gain = 0.000 ; free physical = 3442 ; free virtual = 19736
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2490.082 ; gain = 732.031 ; free physical = 3406 ; free virtual = 19711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2498.051 ; gain = 740.000 ; free physical = 3406 ; free virtual = 19711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2498.051 ; gain = 740.000 ; free physical = 3406 ; free virtual = 19711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2498.051 ; gain = 740.000 ; free physical = 3512 ; free virtual = 19816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 3     
+	   3 Input   12 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 7     
++---Registers : 
+	               45 Bit    Registers := 4     
+	               34 Bit    Registers := 3     
+	               32 Bit    Registers := 103   
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 18    
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 6     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 62    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 82    
+	   4 Input   32 Bit        Muxes := 2     
+	   4 Input   28 Bit        Muxes := 17    
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 15    
+	   3 Input   12 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 7     
+	   2 Input    2 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 61    
+	   4 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2498.051 ; gain = 740.000 ; free physical = 2607 ; free virtual = 18910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2544.051 ; gain = 786.000 ; free physical = 5848 ; free virtual = 22154
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2587.098 ; gain = 829.047 ; free physical = 8626 ; free virtual = 24929
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2587.098 ; gain = 829.047 ; free physical = 8646 ; free virtual = 24972
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2748.910 ; gain = 990.859 ; free physical = 8557 ; free virtual = 24875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2748.910 ; gain = 990.859 ; free physical = 8557 ; free virtual = 24875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2748.910 ; gain = 990.859 ; free physical = 8566 ; free virtual = 24884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2748.910 ; gain = 990.859 ; free physical = 8566 ; free virtual = 24884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2748.910 ; gain = 990.859 ; free physical = 8566 ; free virtual = 24884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2748.910 ; gain = 990.859 ; free physical = 8566 ; free virtual = 24884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|video_ctrl  | AXI4_LITE_INTERFACE.GENR_MUX0/GEN_SEL_DELAY[5].sel_int_reg[5][0] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|video_ctrl  | AXI4_LITE_INTERFACE.GENR_MUX0/GEN_SEL_DELAY[4].sel_int_reg[4][0] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|video_ctrl  | AXI4_LITE_INTERFACE.CORE_MUX0/GEN_SEL_DELAY[3].sel_int_reg[3][0] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|v_tc        | U_TC_TOP/detect_en_d_reg[3]                                      | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|v_tc        | U_TC_TOP/generate_en_d_reg[3]                                    | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    45|
+|2     |LUT1   |    43|
+|3     |LUT2   |    79|
+|4     |LUT3   |   582|
+|5     |LUT4   |    86|
+|6     |LUT5   |   130|
+|7     |LUT6   |   427|
+|8     |MUXF7  |   160|
+|9     |SRL16E |     5|
+|10    |FDRE   |  2984|
+|11    |FDSE   |   259|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2748.910 ; gain = 990.859 ; free physical = 8566 ; free virtual = 24884
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2748.910 ; gain = 884.359 ; free physical = 8573 ; free virtual = 24891
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2748.918 ; gain = 990.859 ; free physical = 8573 ; free virtual = 24891
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2748.918 ; gain = 0.000 ; free physical = 8738 ; free virtual = 25056
+INFO: [Netlist 29-17] Analyzing 205 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2804.938 ; gain = 0.000 ; free physical = 8930 ; free virtual = 25403
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7f8aa1c7
+INFO: [Common 17-83] Releasing license: Synthesis
+140 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 2804.973 ; gain = 1228.625 ; free physical = 8907 ; free virtual = 25380
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1848.543; main = 1733.100; forked = 224.294
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3630.320; main = 2804.941; forked = 994.219
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2828.949 ; gain = 0.000 ; free physical = 8907 ; free virtual = 25380
+INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_tc_0_1_synth_1/top_design_v_tc_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP top_design_v_tc_0_1, cache-ID = f8e5419d15b68812
+INFO: [Coretcl 2-1174] Renamed 12 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2828.949 ; gain = 0.000 ; free physical = 8797 ; free virtual = 25273
+INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_tc_0_1_synth_1/top_design_v_tc_0_1.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_design_v_tc_0_1_utilization_synth.rpt -pb top_design_v_tc_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 19 12:16:14 2026...
