@@ -31,6 +31,7 @@ set(USER_INCLUDE_DIRECTORIES
 "drivers/xl_tpg"
 "drivers/xl_vidc"
 "drivers/xl_vtc"
+"drivers/xl_dynclk"
 )
 
 #Add any source below, they will be added as Compile sources.
@@ -46,6 +47,10 @@ set(USER_COMPILE_SOURCES
 "drivers/xl_vtc/xl_vtc_g.c"
 "drivers/xl_vtc/xl_vtc_sinit.c"
 "drivers/xl_tpg/xl_tpg.c"
+"drivers/xl_dynclk/xl_dynclk.c"
+"drivers/xl_dynclk/xl_dynclk_g.c"
+"drivers/xl_dynclk/xl_dynclk_selftest.c"
+"drivers/xl_dynclk/xl_dynclk_sinit.c"
 )
 
 # -----------------------------------------

@@ -98,7 +98,7 @@ int main(void)
 	xil_printf("Start Drivers\r\n");
 	V_VTC_Init();
 	V_VDMA_Init();
-	//V_DDYNCLK_Init();
+	V_DDYNCLK_Init();
 	VidStream.VmId = XVIDC_VM_720_60_P;
 	TimingPtr = XVidC_GetTimingInfo(VidStream.VmId);
 	VidStream.Timing = *TimingPtr;

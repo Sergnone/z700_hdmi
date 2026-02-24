@@ -1,0 +1,626 @@
+<stg><name>v_mix_yuv2rgb<false></name>
+
+
+<trans_list>
+
+<trans id="29" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="31" from="2" to="3">
+<condition id="-1">
+<or_exp><and_exp><literal name="HwReg_layerEnableFlag_1_val_read" val="1"/>
+<literal name="icmp_ln895" val="0"/>
+</and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="33" from="3" to="4">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="34" from="4" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="1" op_3_bw="0">
+<![CDATA[
+entry:0 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i11 %HwReg_layerHeight_1_val, i1 1, void @p_str
+
+]]></Node>
+<StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="1" op_3_bw="0">
+<![CDATA[
+entry:1 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i11 %HwReg_layerWidth_1_val, i1 1, void @p_str
+
+]]></Node>
+<StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1" op_3_bw="0">
+<![CDATA[
+entry:2 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i1 %HwReg_layerEnableFlag_1_val, i1 1, void @p_str
+
+]]></Node>
+<StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
+<![CDATA[
+entry:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %srcLayer1Rgb, void @empty_21, i32 0, i32 0, void @empty_44, i32 0, i32 0, void @empty_44, void @empty_44, void @empty_44, i32 0, i32 0, i32 0, i32 0, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
+<![CDATA[
+entry:4 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %srcLayer1Yuv, void @empty_21, i32 0, i32 0, void @empty_44, i32 0, i32 0, void @empty_44, void @empty_44, void @empty_44, i32 0, i32 0, i32 0, i32 0, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="10" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+entry:5 %HwReg_layerEnableFlag_1_val_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %HwReg_layerEnableFlag_1_val
+
+]]></Node>
+<StgValue><ssdm name="HwReg_layerEnableFlag_1_val_read"/></StgValue>
+</operation>
+
+<operation id="11" st_id="1" stage="1" lat="1">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="12" bw="11" op_0_bw="11" op_1_bw="11">
+<![CDATA[
+entry:6 %HwReg_layerWidth_1_val_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %HwReg_layerWidth_1_val
+
+]]></Node>
+<StgValue><ssdm name="HwReg_layerWidth_1_val_read"/></StgValue>
+</operation>
+
+<operation id="12" st_id="1" stage="1" lat="1">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="13" bw="11" op_0_bw="11" op_1_bw="11">
+<![CDATA[
+entry:7 %HwReg_layerHeight_1_val_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %HwReg_layerHeight_1_val
+
+]]></Node>
+<StgValue><ssdm name="HwReg_layerHeight_1_val_read"/></StgValue>
+</operation>
+
+<operation id="13" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="14" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+entry:8 %br_ln893 = br i1 %HwReg_layerEnableFlag_1_val_read, void %v_mix_yuv2rgb<false>.exit, void %VITIS_LOOP_897_2.i.i.preheader
+
+]]></Node>
+<StgValue><ssdm name="br_ln893"/></StgValue>
+</operation>
+
+<operation id="14" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="HwReg_layerEnableFlag_1_val_read" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="16" bw="11" op_0_bw="32">
+<![CDATA[
+VITIS_LOOP_897_2.i.i.preheader:0 %y = alloca i32 1
+
+]]></Node>
+<StgValue><ssdm name="y"/></StgValue>
+</operation>
+
+<operation id="15" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="HwReg_layerEnableFlag_1_val_read" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="17" bw="0" op_0_bw="11" op_1_bw="11">
+<![CDATA[
+VITIS_LOOP_897_2.i.i.preheader:1 %store_ln887 = store i11 0, i11 %y
+
+]]></Node>
+<StgValue><ssdm name="store_ln887"/></StgValue>
+</operation>
+
+<operation id="16" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="HwReg_layerEnableFlag_1_val_read" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="18" bw="0" op_0_bw="0">
+<![CDATA[
+VITIS_LOOP_897_2.i.i.preheader:2 %br_ln895 = br void %VITIS_LOOP_897_2.i.i
+
+]]></Node>
+<StgValue><ssdm name="br_ln895"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="17" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="HwReg_layerEnableFlag_1_val_read" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="20" bw="11" op_0_bw="11" op_1_bw="0">
+<![CDATA[
+VITIS_LOOP_897_2.i.i:0 %y_3 = load i11 %y
+
+]]></Node>
+<StgValue><ssdm name="y_3"/></StgValue>
+</operation>
+
+<operation id="18" st_id="2" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="HwReg_layerEnableFlag_1_val_read" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="21" bw="1" op_0_bw="11" op_1_bw="11">
+<![CDATA[
+VITIS_LOOP_897_2.i.i:1 %icmp_ln895 = icmp_eq  i11 %y_3, i11 %HwReg_layerHeight_1_val_read
+
+]]></Node>
+<StgValue><ssdm name="icmp_ln895"/></StgValue>
+</operation>
+
+<operation id="19" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="HwReg_layerEnableFlag_1_val_read" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="22" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<![CDATA[
+VITIS_LOOP_897_2.i.i:2 %speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 1080, i64 0
+
+]]></Node>
+<StgValue><ssdm name="speclooptripcount_ln0"/></StgValue>
+</operation>
+
+<operation id="20" st_id="2" stage="1" lat="1">
+<core>Adder</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="HwReg_layerEnableFlag_1_val_read" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="23" bw="11" op_0_bw="11" op_1_bw="11">
+<![CDATA[
+VITIS_LOOP_897_2.i.i:3 %y_4 = add i11 %y_3, i11 1
+
+]]></Node>
+<StgValue><ssdm name="y_4"/></StgValue>
+</operation>
+
+<operation id="21" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="HwReg_layerEnableFlag_1_val_read" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="24" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+VITIS_LOOP_897_2.i.i:4 %br_ln895 = br i1 %icmp_ln895, void %for.inc.lr.ph.i.i, void %v_mix_yuv2rgb<false>.exit.loopexit
+
+]]></Node>
+<StgValue><ssdm name="br_ln895"/></StgValue>
+</operation>
+
+<operation id="22" st_id="2" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="HwReg_layerEnableFlag_1_val_read" val="1"/>
+<literal name="icmp_ln895" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="27" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="24" op_3_bw="24">
+<![CDATA[
+for.inc.lr.ph.i.i:1 %call_ln866 = call void @v_mix_yuv2rgb<false>_Pipeline_VITIS_LOOP_897_2, i11 %HwReg_layerWidth_1_val_read, i24 %srcLayer1Yuv, i24 %srcLayer1Rgb
+
+]]></Node>
+<StgValue><ssdm name="call_ln866"/></StgValue>
+</operation>
+
+<operation id="23" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="HwReg_layerEnableFlag_1_val_read" val="1"/>
+<literal name="icmp_ln895" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="31" bw="0" op_0_bw="0">
+<![CDATA[
+v_mix_yuv2rgb<false>.exit.loopexit:0 %br_ln0 = br void %v_mix_yuv2rgb<false>.exit
+
+]]></Node>
+<StgValue><ssdm name="br_ln0"/></StgValue>
+</operation>
+
+<operation id="24" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln895" val="1"/>
+</and_exp><and_exp><literal name="HwReg_layerEnableFlag_1_val_read" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="33" bw="0">
+<![CDATA[
+v_mix_yuv2rgb<false>.exit:0 %ret_ln741 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln741"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="25" st_id="3" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="27" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="24" op_3_bw="24">
+<![CDATA[
+for.inc.lr.ph.i.i:1 %call_ln866 = call void @v_mix_yuv2rgb<false>_Pipeline_VITIS_LOOP_897_2, i11 %HwReg_layerWidth_1_val_read, i24 %srcLayer1Yuv, i24 %srcLayer1Rgb
+
+]]></Node>
+<StgValue><ssdm name="call_ln866"/></StgValue>
+</operation>
+</state>
+
+<state id="4" st_id="4">
+
+<operation id="26" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="26" bw="0" op_0_bw="0" op_1_bw="0">
+<![CDATA[
+for.inc.lr.ph.i.i:0 %specloopname_ln895 = specloopname void @_ssdm_op_SpecLoopName, void @empty_31
+
+]]></Node>
+<StgValue><ssdm name="specloopname_ln895"/></StgValue>
+</operation>
+
+<operation id="27" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="28" bw="0" op_0_bw="11" op_1_bw="11" op_2_bw="0" op_3_bw="0">
+<![CDATA[
+for.inc.lr.ph.i.i:2 %store_ln887 = store i11 %y_4, i11 %y
+
+]]></Node>
+<StgValue><ssdm name="store_ln887"/></StgValue>
+</operation>
+
+<operation id="28" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="29" bw="0" op_0_bw="0">
+<![CDATA[
+for.inc.lr.ph.i.i:3 %br_ln895 = br void %VITIS_LOOP_897_2.i.i
+
+]]></Node>
+<StgValue><ssdm name="br_ln895"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="35" name="srcLayer1Yuv" dir="0" iftype="3">
+<core>NULL</core><StgValue><ssdm name="srcLayer1Yuv"/></StgValue>
+</port>
+<port id="36" name="HwReg_layerHeight_1_val" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="HwReg_layerHeight_1_val"/></StgValue>
+</port>
+<port id="37" name="HwReg_layerWidth_1_val" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="HwReg_layerWidth_1_val"/></StgValue>
+</port>
+<port id="38" name="HwReg_layerEnableFlag_1_val" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="HwReg_layerEnableFlag_1_val"/></StgValue>
+</port>
+<port id="39" name="srcLayer1Rgb" dir="1" iftype="3">
+<core>NULL</core><StgValue><ssdm name="srcLayer1Rgb"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="41" from="_ssdm_op_SpecStableContent" to="specstablecontent_ln0" fromId="40" toId="5">
+</dataflow>
+<dataflow id="42" from="HwReg_layerHeight_1_val" to="specstablecontent_ln0" fromId="36" toId="5">
+</dataflow>
+<dataflow id="44" from="StgValue_43" to="specstablecontent_ln0" fromId="43" toId="5">
+</dataflow>
+<dataflow id="46" from="p_str" to="specstablecontent_ln0" fromId="45" toId="5">
+</dataflow>
+<dataflow id="47" from="_ssdm_op_SpecStableContent" to="specstablecontent_ln0" fromId="40" toId="6">
+</dataflow>
+<dataflow id="48" from="HwReg_layerWidth_1_val" to="specstablecontent_ln0" fromId="37" toId="6">
+</dataflow>
+<dataflow id="49" from="StgValue_43" to="specstablecontent_ln0" fromId="43" toId="6">
+</dataflow>
+<dataflow id="50" from="p_str" to="specstablecontent_ln0" fromId="45" toId="6">
+</dataflow>
+<dataflow id="51" from="_ssdm_op_SpecStableContent" to="specstablecontent_ln0" fromId="40" toId="7">
+</dataflow>
+<dataflow id="52" from="HwReg_layerEnableFlag_1_val" to="specstablecontent_ln0" fromId="38" toId="7">
+</dataflow>
+<dataflow id="53" from="StgValue_43" to="specstablecontent_ln0" fromId="43" toId="7">
+</dataflow>
+<dataflow id="54" from="p_str" to="specstablecontent_ln0" fromId="45" toId="7">
+</dataflow>
+<dataflow id="56" from="_ssdm_op_SpecInterface" to="specinterface_ln0" fromId="55" toId="8">
+</dataflow>
+<dataflow id="57" from="srcLayer1Rgb" to="specinterface_ln0" fromId="39" toId="8">
+</dataflow>
+<dataflow id="59" from="empty_21" to="specinterface_ln0" fromId="58" toId="8">
+</dataflow>
+<dataflow id="61" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="8">
+</dataflow>
+<dataflow id="62" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="8">
+</dataflow>
+<dataflow id="64" from="empty_44" to="specinterface_ln0" fromId="63" toId="8">
+</dataflow>
+<dataflow id="65" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="8">
+</dataflow>
+<dataflow id="66" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="8">
+</dataflow>
+<dataflow id="67" from="empty_44" to="specinterface_ln0" fromId="63" toId="8">
+</dataflow>
+<dataflow id="68" from="empty_44" to="specinterface_ln0" fromId="63" toId="8">
+</dataflow>
+<dataflow id="69" from="empty_44" to="specinterface_ln0" fromId="63" toId="8">
+</dataflow>
+<dataflow id="70" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="8">
+</dataflow>
+<dataflow id="71" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="8">
+</dataflow>
+<dataflow id="72" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="8">
+</dataflow>
+<dataflow id="73" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="8">
+</dataflow>
+<dataflow id="74" from="empty_44" to="specinterface_ln0" fromId="63" toId="8">
+</dataflow>
+<dataflow id="75" from="empty_44" to="specinterface_ln0" fromId="63" toId="8">
+</dataflow>
+<dataflow id="77" from="StgValue_76" to="specinterface_ln0" fromId="76" toId="8">
+</dataflow>
+<dataflow id="78" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="8">
+</dataflow>
+<dataflow id="79" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="8">
+</dataflow>
+<dataflow id="80" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="8">
+</dataflow>
+<dataflow id="81" from="_ssdm_op_SpecInterface" to="specinterface_ln0" fromId="55" toId="9">
+</dataflow>
+<dataflow id="82" from="srcLayer1Yuv" to="specinterface_ln0" fromId="35" toId="9">
+</dataflow>
+<dataflow id="83" from="empty_21" to="specinterface_ln0" fromId="58" toId="9">
+</dataflow>
+<dataflow id="84" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="9">
+</dataflow>
+<dataflow id="85" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="9">
+</dataflow>
+<dataflow id="86" from="empty_44" to="specinterface_ln0" fromId="63" toId="9">
+</dataflow>
+<dataflow id="87" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="9">
+</dataflow>
+<dataflow id="88" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="9">
+</dataflow>
+<dataflow id="89" from="empty_44" to="specinterface_ln0" fromId="63" toId="9">
+</dataflow>
+<dataflow id="90" from="empty_44" to="specinterface_ln0" fromId="63" toId="9">
+</dataflow>
+<dataflow id="91" from="empty_44" to="specinterface_ln0" fromId="63" toId="9">
+</dataflow>
+<dataflow id="92" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="9">
+</dataflow>
+<dataflow id="93" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="9">
+</dataflow>
+<dataflow id="94" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="9">
+</dataflow>
+<dataflow id="95" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="9">
+</dataflow>
+<dataflow id="96" from="empty_44" to="specinterface_ln0" fromId="63" toId="9">
+</dataflow>
+<dataflow id="97" from="empty_44" to="specinterface_ln0" fromId="63" toId="9">
+</dataflow>
+<dataflow id="98" from="StgValue_76" to="specinterface_ln0" fromId="76" toId="9">
+</dataflow>
+<dataflow id="99" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="9">
+</dataflow>
+<dataflow id="100" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="9">
+</dataflow>
+<dataflow id="101" from="StgValue_60" to="specinterface_ln0" fromId="60" toId="9">
+</dataflow>
+<dataflow id="103" from="_ssdm_op_Read.ap_auto.i1" to="HwReg_layerEnableFlag_1_val_read" fromId="102" toId="10">
+</dataflow>
+<dataflow id="104" from="HwReg_layerEnableFlag_1_val" to="HwReg_layerEnableFlag_1_val_read" fromId="38" toId="10">
+</dataflow>
+<dataflow id="106" from="_ssdm_op_Read.ap_auto.i11" to="HwReg_layerWidth_1_val_read" fromId="105" toId="11">
+</dataflow>
+<dataflow id="107" from="HwReg_layerWidth_1_val" to="HwReg_layerWidth_1_val_read" fromId="37" toId="11">
+</dataflow>
+<dataflow id="108" from="_ssdm_op_Read.ap_auto.i11" to="HwReg_layerHeight_1_val_read" fromId="105" toId="12">
+</dataflow>
+<dataflow id="109" from="HwReg_layerHeight_1_val" to="HwReg_layerHeight_1_val_read" fromId="36" toId="12">
+</dataflow>
+<dataflow id="110" from="HwReg_layerEnableFlag_1_val_read" to="br_ln893" fromId="10" toId="13">
+</dataflow>
+<dataflow id="112" from="StgValue_111" to="y" fromId="111" toId="14">
+</dataflow>
+<dataflow id="114" from="StgValue_113" to="store_ln887" fromId="113" toId="15">
+</dataflow>
+<dataflow id="115" from="y" to="store_ln887" fromId="14" toId="15">
+</dataflow>
+<dataflow id="116" from="y" to="y_3" fromId="14" toId="17">
+</dataflow>
+<dataflow id="117" from="y_3" to="icmp_ln895" fromId="17" toId="18">
+</dataflow>
+<dataflow id="118" from="HwReg_layerHeight_1_val_read" to="icmp_ln895" fromId="12" toId="18">
+</dataflow>
+<dataflow id="120" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln0" fromId="119" toId="19">
+</dataflow>
+<dataflow id="122" from="StgValue_121" to="speclooptripcount_ln0" fromId="121" toId="19">
+</dataflow>
+<dataflow id="124" from="StgValue_123" to="speclooptripcount_ln0" fromId="123" toId="19">
+</dataflow>
+<dataflow id="125" from="StgValue_121" to="speclooptripcount_ln0" fromId="121" toId="19">
+</dataflow>
+<dataflow id="126" from="y_3" to="y_4" fromId="17" toId="20">
+</dataflow>
+<dataflow id="128" from="StgValue_127" to="y_4" fromId="127" toId="20">
+</dataflow>
+<dataflow id="129" from="icmp_ln895" to="br_ln895" fromId="18" toId="21">
+</dataflow>
+<dataflow id="131" from="v_mix_yuv2rgb<false>_Pipeline_VITIS_LOOP_897_2" to="call_ln866" fromId="130" toId="22">
+</dataflow>
+<dataflow id="132" from="HwReg_layerWidth_1_val_read" to="call_ln866" fromId="11" toId="22">
+</dataflow>
+<dataflow id="133" from="srcLayer1Yuv" to="call_ln866" fromId="35" toId="22">
+</dataflow>
+<dataflow id="134" from="srcLayer1Rgb" to="call_ln866" fromId="39" toId="22">
+</dataflow>
+<dataflow id="135" from="v_mix_yuv2rgb<false>_Pipeline_VITIS_LOOP_897_2" to="call_ln866" fromId="130" toId="25">
+</dataflow>
+<dataflow id="136" from="HwReg_layerWidth_1_val_read" to="call_ln866" fromId="11" toId="25">
+</dataflow>
+<dataflow id="137" from="srcLayer1Yuv" to="call_ln866" fromId="35" toId="25">
+</dataflow>
+<dataflow id="138" from="srcLayer1Rgb" to="call_ln866" fromId="39" toId="25">
+</dataflow>
+<dataflow id="140" from="_ssdm_op_SpecLoopName" to="specloopname_ln895" fromId="139" toId="26">
+</dataflow>
+<dataflow id="142" from="empty_31" to="specloopname_ln895" fromId="141" toId="26">
+</dataflow>
+<dataflow id="143" from="y_4" to="store_ln887" fromId="20" toId="27">
+</dataflow>
+<dataflow id="144" from="y" to="store_ln887" fromId="14" toId="27">
+</dataflow>
+<dataflow id="145" from="HwReg_layerEnableFlag_1_val_read" to="StgValue_1" fromId="10" toId="1">
+</dataflow>
+<dataflow id="146" from="HwReg_layerEnableFlag_1_val_read" to="StgValue_2" fromId="10" toId="2">
+</dataflow>
+<dataflow id="147" from="icmp_ln895" to="StgValue_2" fromId="18" toId="2">
+</dataflow>
+</dataflows>
+
+
+</stg>

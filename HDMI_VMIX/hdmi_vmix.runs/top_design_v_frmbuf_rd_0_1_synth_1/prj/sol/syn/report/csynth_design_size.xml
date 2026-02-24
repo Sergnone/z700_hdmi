@@ -1,0 +1,58 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 1909, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll,   825, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,   465, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,   420, user inline pragmas are applied</column>
+            <column name="">(4) simplification,   391, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,   377, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,   355, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate,   364, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,   549, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,   636, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,   614, loop and instruction simplification</column>
+            <column name="">(2) parallelization,   583, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,   547, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,   547, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,   473, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,   479, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="v_frmbuf_rd" col1="v_frmbuf_rd.cpp:135" col2="1909" col3="391" col4="636" col5="547" col6="479">
+                    <row id="5" col0="FrmbufRdHlsDataFlow" col1="v_frmbuf_rd.cpp:78" col2="1802" col3="335" col4="580" col5="503" col6="424">
+                        <row id="2" col0="STREAM_PLANES" col1="v_frmbuf_rd.h:250" col2="4" col3="" col4="" col5="" col6=""/>
+                        <row id="1" col0="AXIMMvideo2Bytes" col1="v_frmbuf_rd.cpp:497" col2="50" col3="34" col4="36" col5="32" col6="41"/>
+                        <row id="7" col0="Bytes2MultiPixStream" col1="v_frmbuf_rd.cpp:686" col2="909" col3="160" col4="325" col5="319" col6="265">
+                            <row id="4" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="3" col0="MultiPixStream2AXIvideo" col1="v_frmbuf_rd.cpp:302" col2="815" col3="131" col4="209" col5="142" col6="105">
+                            <row id="4" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            <row id="6" col0="reg&lt;unsigned short&gt;" col1="x_hls_utils.h:222" col2="2" col2_disp="   2 (2 calls)" col3="2" col3_disp="  2 (2 calls)" col4="2" col4_disp="  2 (2 calls)" col5="2" col5_disp="  2 (2 calls)" col6="8" col6_disp="  8 (2 calls)"/>
+                        </row>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>

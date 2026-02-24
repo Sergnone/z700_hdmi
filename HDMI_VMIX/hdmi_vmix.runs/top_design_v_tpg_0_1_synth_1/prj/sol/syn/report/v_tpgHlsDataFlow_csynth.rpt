@@ -1,0 +1,188 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_tpgHlsDataFlow'
+================================================================
+* Date:           Tue Feb 24 12:57:53 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.67 ns|  4.854 ns|     1.80 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+------------+----------+------------+-----+------------+----------+
+    |   Latency (cycles)   |   Latency (absolute)  |     Interval     | Pipeline |
+    |   min   |     max    |    min   |     max    | min |     max    |   Type   |
+    +---------+------------+----------+------------+-----+------------+----------+
+    |       25|  4296540136|  0.167 us|  28.645 sec|    2|  4296540137|  dataflow|
+    +---------+------------+----------+------------+-----+------------+----------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------+-------------------------+---------+------------+----------+------------+-----+------------+---------+
+        |                            |                         |   Latency (cycles)   |   Latency (absolute)  |     Interval     | Pipeline|
+        |          Instance          |          Module         |   min   |     max    |    min   |     max    | min |     max    |   Type  |
+        +----------------------------+-------------------------+---------+------------+----------+------------+-----+------------+---------+
+        |tpgBackground_U0            |tpgBackground            |        1|  4296540136|  6.667 ns|  28.645 sec|    1|  4296540136|       no|
+        |tpgForeground_U0            |tpgForeground            |        1|  4295229436|  6.667 ns|  28.636 sec|    1|  4295229436|       no|
+        |MultiPixStream2AXIvideo_U0  |MultiPixStream2AXIvideo  |        1|     2081161|  6.667 ns|   13.875 ms|    1|     2081161|       no|
+        +----------------------------+-------------------------+---------+------------+----------+------------+-----+------------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      1|    -|
+|FIFO             |        -|    -|     198|    138|    -|
+|Instance         |        9|   13|    5536|   5619|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|       -|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        9|   13|    5734|   5758|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        3|    5|       5|     10|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+-------------------------+---------+----+------+------+-----+
+    |          Instance          |          Module         | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +----------------------------+-------------------------+---------+----+------+------+-----+
+    |MultiPixStream2AXIvideo_U0  |MultiPixStream2AXIvideo  |        0|   0|   229|   463|    0|
+    |tpgBackground_U0            |tpgBackground            |        9|  13|  4756|  4372|    0|
+    |tpgForeground_U0            |tpgForeground            |        0|   0|   551|   784|    0|
+    +----------------------------+-------------------------+---------+----+------+------+-----+
+    |Total                       |                         |        9|  13|  5536|  5619|    0|
+    +----------------------------+-------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-------------+---------+----+----+-----+------+-----+---------+
+    |     Name    | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +-------------+---------+----+----+-----+------+-----+---------+
+    |bckgndYUV_U  |        0|  99|   0|    -|    16|   24|      384|
+    |ovrlayYUV_U  |        0|  99|   0|    -|    16|   24|      384|
+    +-------------+---------+----+----+-----+------+-----+---------+
+    |Total        |        0| 198|   0|    0|    32|   48|      768|
+    +-------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +--------------+----------+----+---+----+------------+------------+
+    | Variable Name| Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+----+---+----+------------+------------+
+    |ap_idle       |       and|   0|  0|   1|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+    |Total         |          |   0|  0|   1|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------+-----+-----+------------+--------------------------+--------------+
+|            RTL Ports            | Dir | Bits|  Protocol  |       Source Object      |    C Type    |
++---------------------------------+-----+-----+------------+--------------------------+--------------+
+|height_val4                      |   in|   16|     ap_none|               height_val4|        scalar|
+|height_val4_ap_vld               |   in|    1|     ap_none|               height_val4|        scalar|
+|width_val7                       |   in|   16|     ap_none|                width_val7|        scalar|
+|width_val7_ap_vld                |   in|    1|     ap_none|                width_val7|        scalar|
+|field_id_val8                    |   in|   16|     ap_none|             field_id_val8|        scalar|
+|field_id_val8_ap_vld             |   in|    1|     ap_none|             field_id_val8|        scalar|
+|fid_in_val9                      |   in|    1|   ap_stable|               fid_in_val9|        scalar|
+|fid_in_val9_ap_vld               |   in|    1|   ap_stable|               fid_in_val9|        scalar|
+|bckgndId_val10                   |   in|    8|     ap_none|            bckgndId_val10|        scalar|
+|bckgndId_val10_ap_vld            |   in|    1|     ap_none|            bckgndId_val10|        scalar|
+|ovrlayId_val11                   |   in|    8|     ap_none|            ovrlayId_val11|        scalar|
+|ovrlayId_val11_ap_vld            |   in|    1|     ap_none|            ovrlayId_val11|        scalar|
+|maskId_val12                     |   in|    8|     ap_none|              maskId_val12|        scalar|
+|maskId_val12_ap_vld              |   in|    1|     ap_none|              maskId_val12|        scalar|
+|motionSpeed_val14                |   in|    8|     ap_none|         motionSpeed_val14|        scalar|
+|motionSpeed_val14_ap_vld         |   in|    1|     ap_none|         motionSpeed_val14|        scalar|
+|colorFormat_val17                |   in|    8|     ap_none|         colorFormat_val17|        scalar|
+|colorFormat_val17_ap_vld         |   in|    1|     ap_none|         colorFormat_val17|        scalar|
+|crossHairX_val18                 |   in|   16|     ap_none|          crossHairX_val18|        scalar|
+|crossHairX_val18_ap_vld          |   in|    1|     ap_none|          crossHairX_val18|        scalar|
+|crossHairY_val19                 |   in|   16|     ap_none|          crossHairY_val19|        scalar|
+|crossHairY_val19_ap_vld          |   in|    1|     ap_none|          crossHairY_val19|        scalar|
+|ZplateHorContStart_val20         |   in|   16|     ap_none|  ZplateHorContStart_val20|        scalar|
+|ZplateHorContStart_val20_ap_vld  |   in|    1|     ap_none|  ZplateHorContStart_val20|        scalar|
+|ZplateHorContDelta_val21         |   in|   16|     ap_none|  ZplateHorContDelta_val21|        scalar|
+|ZplateHorContDelta_val21_ap_vld  |   in|    1|     ap_none|  ZplateHorContDelta_val21|        scalar|
+|ZplateVerContStart_val22         |   in|   16|     ap_none|  ZplateVerContStart_val22|        scalar|
+|ZplateVerContStart_val22_ap_vld  |   in|    1|     ap_none|  ZplateVerContStart_val22|        scalar|
+|ZplateVerContDelta_val23         |   in|   16|     ap_none|  ZplateVerContDelta_val23|        scalar|
+|ZplateVerContDelta_val23_ap_vld  |   in|    1|     ap_none|  ZplateVerContDelta_val23|        scalar|
+|boxSize_val24                    |   in|   16|     ap_none|             boxSize_val24|        scalar|
+|boxSize_val24_ap_vld             |   in|    1|     ap_none|             boxSize_val24|        scalar|
+|boxColorR_val25                  |   in|    8|     ap_none|           boxColorR_val25|        scalar|
+|boxColorR_val25_ap_vld           |   in|    1|     ap_none|           boxColorR_val25|        scalar|
+|boxColorG_val26                  |   in|    8|     ap_none|           boxColorG_val26|        scalar|
+|boxColorG_val26_ap_vld           |   in|    1|     ap_none|           boxColorG_val26|        scalar|
+|boxColorB_val27                  |   in|    8|     ap_none|           boxColorB_val27|        scalar|
+|boxColorB_val27_ap_vld           |   in|    1|     ap_none|           boxColorB_val27|        scalar|
+|dpDynamicRange_val28             |   in|    8|     ap_none|      dpDynamicRange_val28|        scalar|
+|dpDynamicRange_val28_ap_vld      |   in|    1|     ap_none|      dpDynamicRange_val28|        scalar|
+|dpYUVCoef_val29                  |   in|    8|     ap_none|           dpYUVCoef_val29|        scalar|
+|dpYUVCoef_val29_ap_vld           |   in|    1|     ap_none|           dpYUVCoef_val29|        scalar|
+|m_axis_video_TDATA               |  out|   24|        axis|     m_axis_video_V_data_V|       pointer|
+|m_axis_video_TKEEP               |  out|    3|        axis|     m_axis_video_V_keep_V|       pointer|
+|m_axis_video_TSTRB               |  out|    3|        axis|     m_axis_video_V_strb_V|       pointer|
+|m_axis_video_TUSER               |  out|    1|        axis|     m_axis_video_V_user_V|       pointer|
+|m_axis_video_TLAST               |  out|    1|        axis|     m_axis_video_V_last_V|       pointer|
+|m_axis_video_TID                 |  out|    1|        axis|       m_axis_video_V_id_V|       pointer|
+|m_axis_video_TDEST               |  out|    1|        axis|     m_axis_video_V_dest_V|       pointer|
+|m_axis_video_TVALID              |  out|    1|        axis|     m_axis_video_V_dest_V|       pointer|
+|m_axis_video_TREADY              |   in|    1|        axis|     m_axis_video_V_dest_V|       pointer|
+|fid                              |  out|    1|      ap_vld|                       fid|       pointer|
+|fid_ap_vld                       |  out|    1|      ap_vld|                       fid|       pointer|
+|s                                |   in|   32|     ap_none|                         s|       pointer|
+|s_ap_vld                         |   in|    1|     ap_none|                         s|       pointer|
+|ap_clk                           |   in|    1|  ap_ctrl_hs|          v_tpgHlsDataFlow|  return value|
+|ap_rst                           |   in|    1|  ap_ctrl_hs|          v_tpgHlsDataFlow|  return value|
+|ap_start                         |   in|    1|  ap_ctrl_hs|          v_tpgHlsDataFlow|  return value|
+|ap_done                          |  out|    1|  ap_ctrl_hs|          v_tpgHlsDataFlow|  return value|
+|ap_ready                         |  out|    1|  ap_ctrl_hs|          v_tpgHlsDataFlow|  return value|
+|ap_idle                          |  out|    1|  ap_ctrl_hs|          v_tpgHlsDataFlow|  return value|
+|ap_continue                      |   in|    1|  ap_ctrl_hs|          v_tpgHlsDataFlow|  return value|
++---------------------------------+-----+-----+------------+--------------------------+--------------+
+

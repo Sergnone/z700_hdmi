@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Feb 24 12:50:36 2026
+# Process ID         : 18959
+# Current directory  : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_axi_smc_1_synth_1
+# Command line       : vivado -log top_design_axi_smc_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_design_axi_smc_1.tcl
+# Log file           : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_axi_smc_1_synth_1/top_design_axi_smc_1.vds
+# Journal file       : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_axi_smc_1_synth_1/vivado.jou
+# Running On         : serg
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13400
+# CPU Frequency      : 4100.041 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 33409 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 41999 MB
+# Available Virtual  : 34448 MB
+#-----------------------------------------------------------
+source top_design_axi_smc_1.tcl -notrace

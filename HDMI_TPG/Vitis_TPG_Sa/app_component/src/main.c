@@ -28,36 +28,37 @@
 ******************************************************************************/
 #include "v_vtc.h"
 #include "v_tpg.h"
-#include "v_ddynclk.h"
+#include "v_dynclk.h"
 #include <stdio.h>
 
 extern XL_Vtc					vtc;
 XL_VidC_VideoStream 			VidStream;
 
+extern DDynClk					dClk;
+
 
 int main()
 {
-	double freq = 0;
-	//XL_VidC_VideoTiming const *TimingPtr;
-
+	uint32_t pix_freq = 0;
+	XL_VidC_VideoTiming const *TimingPtr;
 	printf("=========================================================\r\n");
 	printf("Start Drivers\r\n");
 	V_VTC_Init();
 	V_TPG_Init();
-
+	V_DDYNCLK_Init();
 	VidStream.VmId = XVIDC_VM_1080_60_P;
-	
-	freq = ((double)XL_VidC_GetPixelClockHzByVmId(VidStream.VmId)/1000000);
-
+	TimingPtr = XL_VidC_GetTimingInfo(VidStream.VmId);
+	VidStream.Timing = *TimingPtr;
+	VidStream.FrameRate = XL_VidC_GetFrameRate(VidStream.VmId);
+	pix_freq = (uint32_t)(XL_VidC_GetPixelClockHzByVmId(VidStream.VmId));
+	printf("Pix Freq: %d\r\n", pix_freq);
+	VidStream.PixPerClk = pix_freq;
 	printf("\r\nTest: %s\r\n", XL_VidC_GetVideoModeStr(VidStream.VmId));
-	DynClkSetClk(DYNCLK_BASEADDR, freq);
-	
+	DDynClk_SetRate(&dClk, pix_freq);
+    DDynClk_Enable(&dClk);
 	V_TPG_Clock_Config(VidStream.VmId);
 	V_TPG_ConfigStream(&VidStream);
 	V_VTC_ConfigStream(&VidStream);
-	//usleep(3000000);
-	//XV_tpg_Set_bckgndId(&tpg, XTPG_BKGND_RAINBOW_COLOR);
 	printf("Successfully ran Example\r\n");
-
 	return 0;
 }

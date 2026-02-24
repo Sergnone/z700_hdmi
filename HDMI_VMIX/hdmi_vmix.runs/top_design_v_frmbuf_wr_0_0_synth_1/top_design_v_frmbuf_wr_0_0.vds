@@ -1,0 +1,734 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Feb 24 12:50:36 2026
+# Process ID         : 18960
+# Current directory  : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_frmbuf_wr_0_0_synth_1
+# Command line       : vivado -log top_design_v_frmbuf_wr_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_design_v_frmbuf_wr_0_0.tcl
+# Log file           : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_frmbuf_wr_0_0_synth_1/top_design_v_frmbuf_wr_0_0.vds
+# Journal file       : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_frmbuf_wr_0_0_synth_1/vivado.jou
+# Running On         : serg
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13400
+# CPU Frequency      : 4099.958 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 33409 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 41999 MB
+# Available Virtual  : 34268 MB
+#-----------------------------------------------------------
+source top_design_v_frmbuf_wr_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/serg/Documents/Xilinx/DigilentLib/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/2025.2/data/ip'.
+Converted RTL already exists. Skipping compile_c
+Command: synth_design -top top_design_v_frmbuf_wr_0_0 -part xc7z020clg400-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20201
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2242.738 ; gain = 483.875 ; free physical = 2198 ; free virtual = 19501
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/synth/top_design_v_frmbuf_wr_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_v_frmbuf_wr' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_v_frmbuf_wr.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './top_design_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R.dat' is read successfully [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './top_design_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R.dat' is read successfully [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_width' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_width.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_width' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_width.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_reg_unsigned_short_s' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_reg_unsigned_short_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_reg_unsigned_short_s' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_reg_unsigned_short_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mul_11ns_13ns_23_1_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mul_11ns_13ns_23_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mul_11ns_13ns_23_1_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mul_11ns_13ns_23_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_Bytes2AXIMMvideo' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_Bytes2AXIMMvideo.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1552_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1552_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1552_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1552_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_Bytes2AXIMMvideo' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_Bytes2AXIMMvideo.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_fifo_w24_d2_S' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_fifo_w24_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_fifo_w24_d2_S_ShiftReg' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_fifo_w24_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_fifo_w24_d2_S_ShiftReg' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_fifo_w24_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_fifo_w24_d2_S' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_fifo_w24_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_fifo_w64_d481_B' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_fifo_w64_d481_B.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_fifo_w64_d481_B_ram' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_fifo_w64_d481_B.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_fifo_w64_d481_B_ram' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_fifo_w64_d481_B.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_fifo_w64_d481_B' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_fifo_w64_d481_B.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0_ShiftReg' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0_ShiftReg' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0_ShiftReg' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0_ShiftReg' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_CTRL_s_axi' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_CTRL_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_CTRL_s_axi.v:256]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_CTRL_s_axi' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_CTRL_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_store' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:355]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2954]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_srl' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:3167]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_srl' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:3167]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2954]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2954]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:3167]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:3167]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2954]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2954]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:3167]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:3167]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2954]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized2' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2954]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized2' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:3167]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized2' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:3167]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized2' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2954]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized3' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2954]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized3' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:3167]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized3' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:3167]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized3' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2954]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_store' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:355]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_write' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:1285]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_burst_converter' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:1580]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_burst_sequential' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2186]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2850]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2850]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_burst_sequential' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2186]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_burst_converter' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:1580]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_throttle' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2581]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized4' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2954]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized4' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:3167]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized4' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:3167]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized4' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2954]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2850]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2850]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2850]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2850]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_throttle' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2581]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized2' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2850]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized2' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2850]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_write' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:1285]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_flushManager' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:1145]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized5' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2954]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized5' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2954]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_flushManager' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:1145]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_mul_14s_3ns_14_1_1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mul_14s_3ns_14_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_mul_14s_3ns_14_1_1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mul_14s_3ns_14_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_regslice_both' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_regslice_both' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_regslice_both__parameterized0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_regslice_both__parameterized0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_frmbuf_wr_0_0_regslice_both__parameterized1' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_regslice_both__parameterized1' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0_v_frmbuf_wr' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_v_frmbuf_wr.v:9]
+WARNING: [Synth 8-689] width (1) of port connection 'm_axi_mm_video_AWLOCK' does not match port width (2) of module 'top_design_v_frmbuf_wr_0_0_v_frmbuf_wr' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/synth/top_design_v_frmbuf_wr_0_0.v:300]
+WARNING: [Synth 8-689] width (1) of port connection 'm_axi_mm_video_ARLOCK' does not match port width (2) of module 'top_design_v_frmbuf_wr_0_0_v_frmbuf_wr' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/synth/top_design_v_frmbuf_wr_0_0.v:319]
+INFO: [Synth 8-7071] port 'm_axi_mm_video_AWID' of module 'top_design_v_frmbuf_wr_0_0_v_frmbuf_wr' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/synth/top_design_v_frmbuf_wr_0_0.v:275]
+INFO: [Synth 8-7071] port 'm_axi_mm_video_AWUSER' of module 'top_design_v_frmbuf_wr_0_0_v_frmbuf_wr' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/synth/top_design_v_frmbuf_wr_0_0.v:275]
+INFO: [Synth 8-7071] port 'm_axi_mm_video_WID' of module 'top_design_v_frmbuf_wr_0_0_v_frmbuf_wr' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/synth/top_design_v_frmbuf_wr_0_0.v:275]
+INFO: [Synth 8-7071] port 'm_axi_mm_video_WUSER' of module 'top_design_v_frmbuf_wr_0_0_v_frmbuf_wr' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/synth/top_design_v_frmbuf_wr_0_0.v:275]
+INFO: [Synth 8-7071] port 'm_axi_mm_video_ARID' of module 'top_design_v_frmbuf_wr_0_0_v_frmbuf_wr' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/synth/top_design_v_frmbuf_wr_0_0.v:275]
+INFO: [Synth 8-7071] port 'm_axi_mm_video_ARUSER' of module 'top_design_v_frmbuf_wr_0_0_v_frmbuf_wr' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/synth/top_design_v_frmbuf_wr_0_0.v:275]
+INFO: [Synth 8-7071] port 'm_axi_mm_video_RID' of module 'top_design_v_frmbuf_wr_0_0_v_frmbuf_wr' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/synth/top_design_v_frmbuf_wr_0_0.v:275]
+INFO: [Synth 8-7071] port 'm_axi_mm_video_RUSER' of module 'top_design_v_frmbuf_wr_0_0_v_frmbuf_wr' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/synth/top_design_v_frmbuf_wr_0_0.v:275]
+INFO: [Synth 8-7071] port 'm_axi_mm_video_BID' of module 'top_design_v_frmbuf_wr_0_0_v_frmbuf_wr' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/synth/top_design_v_frmbuf_wr_0_0.v:275]
+INFO: [Synth 8-7071] port 'm_axi_mm_video_BUSER' of module 'top_design_v_frmbuf_wr_0_0_v_frmbuf_wr' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/synth/top_design_v_frmbuf_wr_0_0.v:275]
+INFO: [Synth 8-7023] instance 'inst' of module 'top_design_v_frmbuf_wr_0_0_v_frmbuf_wr' has 74 connections declared, but only 64 given [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/synth/top_design_v_frmbuf_wr_0_0.v:275]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_frmbuf_wr_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/synth/top_design_v_frmbuf_wr_0_0.v:53]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_CTRL_s_axi.v:344]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-7129] Port clk in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clk_en in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[7] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[6] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[5] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[4] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[3] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[2] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[1] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[0] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BUS_BID[0] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi_write is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BUS_BRESP[1] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi_write is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BUS_BRESP[0] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi_write is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BUS_BUSER[0] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi_write is either unconnected or has no load
+INFO: [Synth 8-7129] Port RID[0] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[63] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[62] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[61] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[60] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[59] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[58] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[57] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[56] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[55] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[54] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[53] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[52] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[51] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[50] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[49] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[48] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[47] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[46] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[45] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[44] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[43] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[42] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[41] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[40] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[39] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[38] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[37] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[36] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[35] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[34] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[33] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[32] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[31] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[30] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[29] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[28] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[27] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[26] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[25] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[24] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[23] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[22] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[21] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[20] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[19] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[18] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[17] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[16] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[15] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[14] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[13] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[12] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[11] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[10] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[9] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[8] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[7] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[6] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[5] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[4] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[3] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[2] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[1] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[0] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RRESP[1] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RRESP[0] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RUSER[0] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[31] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[30] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[29] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[28] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[27] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[26] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[25] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[24] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[23] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[22] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[21] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[20] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[19] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[18] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[17] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[16] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port I_CH0_ARADDR[15] in module top_design_v_frmbuf_wr_0_0_mm_video_m_axi is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2435.676 ; gain = 676.812 ; free physical = 1123 ; free virtual = 18443
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2438.645 ; gain = 679.781 ; free physical = 1082 ; free virtual = 18392
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2438.645 ; gain = 679.781 ; free physical = 1082 ; free virtual = 18392
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2438.645 ; gain = 0.000 ; free physical = 949 ; free virtual = 18259
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/top_design_v_frmbuf_wr_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/top_design_v_frmbuf_wr_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_frmbuf_wr_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_frmbuf_wr_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/top_design_v_frmbuf_wr_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/top_design_v_frmbuf_wr_0_0.xdc] for cell 'inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2532.109 ; gain = 0.000 ; free physical = 716 ; free virtual = 18039
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2532.145 ; gain = 0.000 ; free physical = 704 ; free virtual = 18022
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2532.145 ; gain = 773.281 ; free physical = 277 ; free virtual = 17597
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2540.113 ; gain = 781.250 ; free physical = 277 ; free virtual = 17597
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2540.113 ; gain = 781.250 ; free physical = 273 ; free virtual = 17593
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3936] Found unconnected internal register 'ap_phi_reg_pp0_iter0_phi_ln1096_reg_191_reg' and it is trimmed from '24' to '8' bits. [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1.v:764]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'top_design_v_frmbuf_wr_0_0_CTRL_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'top_design_v_frmbuf_wr_0_0_CTRL_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_design_v_frmbuf_wr_0_0_regslice_both'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_design_v_frmbuf_wr_0_0_regslice_both__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_design_v_frmbuf_wr_0_0_regslice_both__parameterized1'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'top_design_v_frmbuf_wr_0_0_CTRL_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'top_design_v_frmbuf_wr_0_0_CTRL_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_design_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_design_v_frmbuf_wr_0_0_regslice_both'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_design_v_frmbuf_wr_0_0_regslice_both__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_design_v_frmbuf_wr_0_0_regslice_both__parameterized1'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2540.113 ; gain = 781.250 ; free physical = 426 ; free virtual = 17479
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 6     
+	   2 Input   10 Bit       Adders := 3     
+	   3 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 3     
+	   3 Input    9 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 5     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 18    
+	   2 Input    2 Bit       Adders := 13    
+	   2 Input    1 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	              109 Bit    Registers := 1     
+	               72 Bit    Registers := 1     
+	               65 Bit    Registers := 2     
+	               64 Bit    Registers := 4     
+	               41 Bit    Registers := 2     
+	               32 Bit    Registers := 11    
+	               29 Bit    Registers := 1     
+	               24 Bit    Registers := 7     
+	               21 Bit    Registers := 1     
+	               20 Bit    Registers := 2     
+	               16 Bit    Registers := 6     
+	               14 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 17    
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 9     
+	                8 Bit    Registers := 47    
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 21    
+	                2 Bit    Registers := 20    
+	                1 Bit    Registers := 200   
++---RAMs : 
+	              30K Bit	(480 X 64 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input  109 Bit        Muxes := 1     
+	   2 Input   65 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 4     
+	   2 Input   41 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 5     
+	   2 Input   24 Bit        Muxes := 5     
+	   2 Input   20 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 1     
+	   3 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 32    
+	   4 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 5     
+	   2 Input    5 Bit        Muxes := 6     
+	   2 Input    4 Bit        Muxes := 11    
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 22    
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 143   
+	   3 Input    2 Bit        Muxes := 12    
+	   4 Input    2 Bit        Muxes := 32    
+	   2 Input    1 Bit        Muxes := 200   
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP mul_11ns_13ns_23_1_1_U62/tmp_product, operation Mode is: (A:0xaab)*B2.
+DSP Report: register mul_11ns_13ns_23_1_1_U62/tmp_product is absorbed into DSP mul_11ns_13ns_23_1_1_U62/tmp_product.
+DSP Report: operator mul_11ns_13ns_23_1_1_U62/tmp_product is absorbed into DSP mul_11ns_13ns_23_1_1_U62/tmp_product.
+INFO: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p1_reg' and it is trimmed from '41' to '40' bits. [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2883]
+INFO: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p2_reg' and it is trimmed from '41' to '40' bits. [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/hdl/verilog/top_design_v_frmbuf_wr_0_0_mm_video_m_axi.v:2904]
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module top_design_v_frmbuf_wr_0_0_CTRL_s_axi.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module top_design_v_frmbuf_wr_0_0_CTRL_s_axi.
+INFO: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module top_design_v_frmbuf_wr_0_0_regslice_both__parameterized0.
+INFO: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module top_design_v_frmbuf_wr_0_0_regslice_both__parameterized0.
+INFO: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module top_design_v_frmbuf_wr_0_0_regslice_both__parameterized1__3.
+INFO: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module top_design_v_frmbuf_wr_0_0_regslice_both__parameterized1__3.
+INFO: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module top_design_v_frmbuf_wr_0_0_regslice_both__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module top_design_v_frmbuf_wr_0_0_regslice_both__parameterized1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2540.113 ; gain = 781.250 ; free physical = 3387 ; free virtual = 19888
+---------------------------------------------------------------------------------
+ Sort Area is  mul_11ns_13ns_23_1_1_U62/tmp_product_0 : 0 0 : 704 704 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-------------------------------------------------------+------------+---------------+----------------+
+|Module Name                                            | RTL Object | Depth x Width | Implemented As | 
++-------------------------------------------------------+------------+---------------+----------------+
+|top_design_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R | rom0       | 64x3          | LUT            | 
+|top_design_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R     | rom0       | 64x3          | LUT            | 
+|top_design_v_frmbuf_wr_0_0_v_frmbuf_wr                 | p_0_out    | 64x3          | LUT            | 
+|top_design_v_frmbuf_wr_0_0_v_frmbuf_wr                 | p_0_out    | 64x3          | LUT            | 
++-------------------------------------------------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------------------------+-----------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                         | RTL Object                                                            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------------------+-----------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/grp_FrmbufWrHlsDataFlow_fu_164 | bytePlanes_U/U_top_design_v_frmbuf_wr_0_0_fifo_w64_d481_B_ram/mem_reg | 480 x 64(READ_FIRST)   | W |   | 480 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++------------------------------------+-----------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                     | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes | (A:0xaab)*B2 | 12     | 13     | -      | -      | 25     | 1    | 0    | -    | -    | -     | 0    | 0    | 
++------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2590.113 ; gain = 831.250 ; free physical = 2712 ; free virtual = 19379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2625.160 ; gain = 866.297 ; free physical = 4279 ; free virtual = 20945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------------------------------+-----------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                         | RTL Object                                                            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------------------+-----------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/grp_FrmbufWrHlsDataFlow_fu_164 | bytePlanes_U/U_top_design_v_frmbuf_wr_0_0_fifo_w64_d481_B_ram/mem_reg | 480 x 64(READ_FIRST)   | W |   | 480 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++------------------------------------+-----------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2633.168 ; gain = 874.305 ; free physical = 4457 ; free virtual = 21126
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2787.980 ; gain = 1029.117 ; free physical = 5617 ; free virtual = 22191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2787.980 ; gain = 1029.117 ; free physical = 5613 ; free virtual = 22187
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2787.980 ; gain = 1029.117 ; free physical = 5533 ; free virtual = 22118
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2787.980 ; gain = 1029.117 ; free physical = 5533 ; free virtual = 22118
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2790.949 ; gain = 1032.086 ; free physical = 5533 ; free virtual = 22118
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2790.949 ; gain = 1032.086 ; free physical = 5525 ; free virtual = 22111
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+--------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name     | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+--------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[2]   | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[101] | 64     | 64         | 0      | 256     | 128    | 64     | 0      | 
+|dsrl__2     | mem_reg[30]  | 72     | 72         | 0      | 72      | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[2]   | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__4     | mem_reg[101] | 1      | 1          | 0      | 4       | 2      | 1      | 0      | 
+|dsrl__5     | mem_reg[2]   | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
++------------+--------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes | (A'*B)'     | 11     | 12     | -      | -      | 25     | 1    | 0    | -    | -    | -     | 0    | 1    | 
++------------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    77|
+|2     |DSP48E1  |     1|
+|3     |LUT1     |    54|
+|4     |LUT2     |   179|
+|5     |LUT3     |   374|
+|6     |LUT4     |   288|
+|7     |LUT5     |   297|
+|8     |LUT6     |   522|
+|9     |MUXF7    |    81|
+|10    |MUXF8    |    40|
+|11    |RAMB36E1 |     1|
+|12    |SRL16E   |    35|
+|13    |SRLC32E  |   232|
+|14    |FDRE     |  2065|
+|15    |FDSE     |    29|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2790.949 ; gain = 1032.086 ; free physical = 5525 ; free virtual = 22111
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2790.949 ; gain = 938.586 ; free physical = 5516 ; free virtual = 22103
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2790.957 ; gain = 1032.086 ; free physical = 5516 ; free virtual = 22103
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2790.957 ; gain = 0.000 ; free physical = 5644 ; free virtual = 22246
+INFO: [Netlist 29-17] Analyzing 200 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2846.977 ; gain = 0.000 ; free physical = 7238 ; free virtual = 23886
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 31f435c7
+INFO: [Common 17-83] Releasing license: Synthesis
+284 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:36 . Memory (MB): peak = 2847.012 ; gain = 1236.977 ; free physical = 7213 ; free virtual = 23862
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1788.970; main = 1702.992; forked = 193.390
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3675.391; main = 2846.980; forked = 994.219
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2870.988 ; gain = 0.000 ; free physical = 7213 ; free virtual = 23862
+INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_frmbuf_wr_0_0_synth_1/top_design_v_frmbuf_wr_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP top_design_v_frmbuf_wr_0_0, cache-ID = 5054f4acd1398439
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2870.988 ; gain = 0.000 ; free physical = 6919 ; free virtual = 23573
+INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_frmbuf_wr_0_0_synth_1/top_design_v_frmbuf_wr_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_design_v_frmbuf_wr_0_0_utilization_synth.rpt -pb top_design_v_frmbuf_wr_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 24 12:51:21 2026...

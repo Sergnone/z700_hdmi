@@ -1,0 +1,239 @@
+
+
+================================================================
+== Vitis HLS Report for 'VMixHlsDataFlowFunction'
+================================================================
+* Date:           Tue Feb 24 12:52:09 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.67 ns|  4.867 ns|     1.80 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+---------+----------+
+    |  Latency (cycles) |   Latency (absolute)  |    Interval    | Pipeline |
+    |   min   |   max   |    min    |    max    |  min |   max   |   Type   |
+    +---------+---------+-----------+-----------+------+---------+----------+
+    |     4493|  2084406|  29.955 us|  13.897 ms|  4482|  2084407|  dataflow|
+    +---------+---------+-----------+-----------+------+---------+----------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------+--------------------------------+---------+---------+-----------+-----------+------+---------+---------+
+        |                                 |                                |  Latency (cycles) |   Latency (absolute)  |    Interval    | Pipeline|
+        |             Instance            |             Module             |   min   |   max   |    min    |    max    |  min |   max   |   Type  |
+        +---------------------------------+--------------------------------+---------+---------+-----------+-----------+------+---------+---------+
+        |AXIvideo2MultiPixStream_1_U0     |AXIvideo2MultiPixStream_1       |        2|  2084406|  13.334 ns|  13.897 ms|     2|  2084406|       no|
+        |AXIvideo2MultiPixStream_U0       |AXIvideo2MultiPixStream         |        2|  2084406|  13.334 ns|  13.897 ms|     2|  2084406|       no|
+        |v_mix_420_to_422_false_2_U0      |v_mix_420_to_422_false_2        |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
+        |v_mix_420_to_422_false_U0        |v_mix_420_to_422_false_s        |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
+        |v_mix_422_to_444_false_3_U0      |v_mix_422_to_444_false_3        |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
+        |v_mix_422_to_444_false_U0        |v_mix_422_to_444_false_s        |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
+        |v_mix_yuv2rgb_false_4_U0         |v_mix_yuv2rgb_false_4           |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
+        |v_mix_yuv2rgb_false_U0           |v_mix_yuv2rgb_false_s           |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
+        |v_mix_upsample_false_U0          |v_mix_upsample_false_s          |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
+        |v_mix_core_alpha_false_false_U0  |v_mix_core_alpha_false_false_s  |     4481|  2080081|  29.875 us|  13.868 ms|  4481|  2080081|       no|
+        |v_mix_rgb2yuv_false_U0           |v_mix_rgb2yuv_false_s           |     4417|  2079001|  29.448 us|  13.861 ms|  4417|  2079001|       no|
+        |v_mix_444_to_422_false_U0        |v_mix_444_to_422_false_s        |     4417|  2079001|  29.448 us|  13.861 ms|  4417|  2079001|       no|
+        |v_mix_422_to_420_false_U0        |v_mix_422_to_420_false_s        |     4417|  2079001|  29.448 us|  13.861 ms|  4417|  2079001|       no|
+        |MultiPixStream2AXIvideo_U0       |MultiPixStream2AXIvideo         |        2|  2080082|  13.334 ns|  13.868 ms|     2|  2080082|       no|
+        +---------------------------------+--------------------------------+---------+---------+-----------+-----------+------+---------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      6|    -|
+|FIFO             |        -|    -|    1287|    884|    -|
+|Instance         |        -|    -|    1370|   2996|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     18|    -|
+|Register         |        -|    -|       3|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|    2660|   3904|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|       2|      7|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |             Instance            |             Module             | BRAM_18K| DSP|  FF | LUT | URAM|
+    +---------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |AXIvideo2MultiPixStream_U0       |AXIvideo2MultiPixStream         |        0|   0|  159|  388|    0|
+    |AXIvideo2MultiPixStream_1_U0     |AXIvideo2MultiPixStream_1       |        0|   0|  159|  388|    0|
+    |MultiPixStream2AXIvideo_U0       |MultiPixStream2AXIvideo         |        0|   0|  144|  269|    0|
+    |v_mix_420_to_422_false_2_U0      |v_mix_420_to_422_false_2        |        0|   0|   66|  151|    0|
+    |v_mix_420_to_422_false_U0        |v_mix_420_to_422_false_s        |        0|   0|   66|  151|    0|
+    |v_mix_422_to_420_false_U0        |v_mix_422_to_420_false_s        |        0|   0|   65|  151|    0|
+    |v_mix_422_to_444_false_3_U0      |v_mix_422_to_444_false_3        |        0|   0|   66|  151|    0|
+    |v_mix_422_to_444_false_U0        |v_mix_422_to_444_false_s        |        0|   0|   66|  151|    0|
+    |v_mix_444_to_422_false_U0        |v_mix_444_to_422_false_s        |        0|   0|   65|  151|    0|
+    |v_mix_core_alpha_false_false_U0  |v_mix_core_alpha_false_false_s  |        0|   0|  252|  450|    0|
+    |v_mix_rgb2yuv_false_U0           |v_mix_rgb2yuv_false_s           |        0|   0|   65|  151|    0|
+    |v_mix_upsample_false_U0          |v_mix_upsample_false_s          |        0|   0|   65|  142|    0|
+    |v_mix_yuv2rgb_false_4_U0         |v_mix_yuv2rgb_false_4           |        0|   0|   66|  151|    0|
+    |v_mix_yuv2rgb_false_U0           |v_mix_yuv2rgb_false_s           |        0|   0|   66|  151|    0|
+    +---------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |Total                            |                                |        0|   0| 1370| 2996|    0|
+    +---------------------------------+--------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-------------------+---------+----+----+-----+------+-----+---------+
+    |        Name       | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +-------------------+---------+----+----+-----+------+-----+---------+
+    |out420_U           |        0|  99|   0|    -|     2|   24|       48|
+    |out422_U           |        0|  99|   0|    -|     2|   24|       48|
+    |outLayer0_U        |        0|  99|   0|    -|     2|   24|       48|
+    |outLayer1_U        |        0|  99|   0|    -|     2|   24|       48|
+    |outYuv_U           |        0|  99|   0|    -|     2|   24|       48|
+    |srcLayer0Yuv422_U  |        0|  99|   0|    -|     2|   24|       48|
+    |srcLayer0Yuv_U     |        0|  99|   0|    -|     2|   24|       48|
+    |srcLayer0_U        |        0|  99|   0|    -|     2|   24|       48|
+    |srcLayer1Rgb_U     |        0|  99|   0|    -|     2|   24|       48|
+    |srcLayer1Yuv422_U  |        0|  99|   0|    -|     2|   24|       48|
+    |srcLayer1Yuv_U     |        0|  99|   0|    -|     2|   24|       48|
+    |srcLayer1_U        |        0|  99|   0|    -|     2|   24|       48|
+    |srcLayer1x_U       |        0|  99|   0|    -|     2|   24|       48|
+    +-------------------+---------+----+----+-----+------+-----+---------+
+    |Total              |        0|1287|   0|    0|    26|  312|      624|
+    +-------------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +-----------------------------------------------+----------+----+---+----+------------+------------+
+    |                 Variable Name                 | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------------------+----------+----+---+----+------------+------------+
+    |AXIvideo2MultiPixStream_1_U0_ap_start          |       and|   0|  0|   1|           1|           1|
+    |AXIvideo2MultiPixStream_U0_ap_start            |       and|   0|  0|   1|           1|           1|
+    |ap_idle                                        |       and|   0|  0|   1|           1|           1|
+    |ap_sync_ready                                  |       and|   0|  0|   1|           1|           1|
+    |ap_sync_AXIvideo2MultiPixStream_1_U0_ap_ready  |        or|   0|  0|   1|           1|           1|
+    |ap_sync_AXIvideo2MultiPixStream_U0_ap_ready    |        or|   0|  0|   1|           1|           1|
+    +-----------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                          |          |   0|  0|   6|           6|           6|
+    +-----------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------------------------+----+-----------+-----+-----------+
+    |                        Name                       | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_AXIvideo2MultiPixStream_1_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_AXIvideo2MultiPixStream_U0_ap_ready    |   9|          2|    1|          2|
+    +---------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                              |  18|          4|    2|          4|
+    +---------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------+---+----+-----+-----------+
+    |                        Name                       | FF| LUT| Bits| Const Bits|
+    +---------------------------------------------------+---+----+-----+-----------+
+    |ap_sync_ready                                      |  1|   0|    1|          0|
+    |ap_sync_reg_AXIvideo2MultiPixStream_1_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_AXIvideo2MultiPixStream_U0_ap_ready    |  1|   0|    1|          0|
+    +---------------------------------------------------+---+----+-----+-----------+
+    |Total                                              |  3|   0|    3|          0|
+    +---------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------------+-----+-----+------------+--------------------------------+--------------+
+|               RTL Ports               | Dir | Bits|  Protocol  |          Source Object         |    C Type    |
++---------------------------------------+-----+-----+------------+--------------------------------+--------------+
+|HwReg_width_val                        |   in|   11|     ap_none|                 HwReg_width_val|        scalar|
+|HwReg_width_val_ap_vld                 |   in|    1|     ap_none|                 HwReg_width_val|        scalar|
+|HwReg_height_val                       |   in|   11|     ap_none|                HwReg_height_val|        scalar|
+|HwReg_height_val_ap_vld                |   in|    1|     ap_none|                HwReg_height_val|        scalar|
+|HwReg_background_Y_R_val10             |   in|    8|     ap_none|      HwReg_background_Y_R_val10|        scalar|
+|HwReg_background_Y_R_val10_ap_vld      |   in|    1|     ap_none|      HwReg_background_Y_R_val10|        scalar|
+|HwReg_background_U_G_val11             |   in|    8|     ap_none|      HwReg_background_U_G_val11|        scalar|
+|HwReg_background_U_G_val11_ap_vld      |   in|    1|     ap_none|      HwReg_background_U_G_val11|        scalar|
+|HwReg_background_V_B_val12             |   in|    8|     ap_none|      HwReg_background_V_B_val12|        scalar|
+|HwReg_background_V_B_val12_ap_vld      |   in|    1|     ap_none|      HwReg_background_V_B_val12|        scalar|
+|HwReg_layerEnable_val13                |   in|    2|     ap_none|         HwReg_layerEnable_val13|        scalar|
+|HwReg_layerEnable_val13_ap_vld         |   in|    1|     ap_none|         HwReg_layerEnable_val13|        scalar|
+|HwReg_layerEnableFlag_0_val            |   in|    1|     ap_none|     HwReg_layerEnableFlag_0_val|        scalar|
+|HwReg_layerEnableFlag_0_val_ap_vld     |   in|    1|     ap_none|     HwReg_layerEnableFlag_0_val|        scalar|
+|HwReg_layerEnableFlag_1_val            |   in|    1|     ap_none|     HwReg_layerEnableFlag_1_val|        scalar|
+|HwReg_layerEnableFlag_1_val_ap_vld     |   in|    1|     ap_none|     HwReg_layerEnableFlag_1_val|        scalar|
+|HwReg_layerStartX_1_val14              |   in|   16|     ap_none|       HwReg_layerStartX_1_val14|        scalar|
+|HwReg_layerStartX_1_val14_ap_vld       |   in|    1|     ap_none|       HwReg_layerStartX_1_val14|        scalar|
+|HwReg_layerStartY_1_val15              |   in|   16|     ap_none|       HwReg_layerStartY_1_val15|        scalar|
+|HwReg_layerStartY_1_val15_ap_vld       |   in|    1|     ap_none|       HwReg_layerStartY_1_val15|        scalar|
+|HwReg_layerWidth_1_val                 |   in|   16|     ap_none|          HwReg_layerWidth_1_val|        scalar|
+|HwReg_layerWidth_1_val_ap_vld          |   in|    1|     ap_none|          HwReg_layerWidth_1_val|        scalar|
+|HwReg_layerHeight_1_val                |   in|   16|     ap_none|         HwReg_layerHeight_1_val|        scalar|
+|HwReg_layerHeight_1_val_ap_vld         |   in|    1|     ap_none|         HwReg_layerHeight_1_val|        scalar|
+|HwReg_layerScaleFactor_1_val18         |   in|    8|     ap_none|  HwReg_layerScaleFactor_1_val18|        scalar|
+|HwReg_layerScaleFactor_1_val18_ap_vld  |   in|    1|     ap_none|  HwReg_layerScaleFactor_1_val18|        scalar|
+|s_axis_video_TDATA                     |   in|   24|        axis|           s_axis_video_V_data_V|       pointer|
+|s_axis_video_TKEEP                     |   in|    3|        axis|           s_axis_video_V_keep_V|       pointer|
+|s_axis_video_TSTRB                     |   in|    3|        axis|           s_axis_video_V_strb_V|       pointer|
+|s_axis_video_TUSER                     |   in|    1|        axis|           s_axis_video_V_user_V|       pointer|
+|s_axis_video_TLAST                     |   in|    1|        axis|           s_axis_video_V_last_V|       pointer|
+|s_axis_video_TID                       |   in|    1|        axis|             s_axis_video_V_id_V|       pointer|
+|s_axis_video_TDEST                     |   in|    1|        axis|           s_axis_video_V_dest_V|       pointer|
+|s_axis_video_TVALID                    |   in|    1|        axis|           s_axis_video_V_dest_V|       pointer|
+|s_axis_video_TREADY                    |  out|    1|        axis|           s_axis_video_V_dest_V|       pointer|
+|s_axis_video1_TDATA                    |   in|   24|        axis|          s_axis_video1_V_data_V|       pointer|
+|s_axis_video1_TKEEP                    |   in|    3|        axis|          s_axis_video1_V_keep_V|       pointer|
+|s_axis_video1_TSTRB                    |   in|    3|        axis|          s_axis_video1_V_strb_V|       pointer|
+|s_axis_video1_TUSER                    |   in|    1|        axis|          s_axis_video1_V_user_V|       pointer|
+|s_axis_video1_TLAST                    |   in|    1|        axis|          s_axis_video1_V_last_V|       pointer|
+|s_axis_video1_TID                      |   in|    1|        axis|            s_axis_video1_V_id_V|       pointer|
+|s_axis_video1_TDEST                    |   in|    1|        axis|          s_axis_video1_V_dest_V|       pointer|
+|s_axis_video1_TVALID                   |   in|    1|        axis|          s_axis_video1_V_dest_V|       pointer|
+|s_axis_video1_TREADY                   |  out|    1|        axis|          s_axis_video1_V_dest_V|       pointer|
+|m_axis_video_TDATA                     |  out|   24|        axis|           m_axis_video_V_data_V|       pointer|
+|m_axis_video_TKEEP                     |  out|    3|        axis|           m_axis_video_V_keep_V|       pointer|
+|m_axis_video_TSTRB                     |  out|    3|        axis|           m_axis_video_V_strb_V|       pointer|
+|m_axis_video_TUSER                     |  out|    1|        axis|           m_axis_video_V_user_V|       pointer|
+|m_axis_video_TLAST                     |  out|    1|        axis|           m_axis_video_V_last_V|       pointer|
+|m_axis_video_TID                       |  out|    1|        axis|             m_axis_video_V_id_V|       pointer|
+|m_axis_video_TDEST                     |  out|    1|        axis|           m_axis_video_V_dest_V|       pointer|
+|m_axis_video_TVALID                    |  out|    1|        axis|           m_axis_video_V_dest_V|       pointer|
+|m_axis_video_TREADY                    |   in|    1|        axis|           m_axis_video_V_dest_V|       pointer|
+|ap_clk                                 |   in|    1|  ap_ctrl_hs|         VMixHlsDataFlowFunction|  return value|
+|ap_rst                                 |   in|    1|  ap_ctrl_hs|         VMixHlsDataFlowFunction|  return value|
+|ap_start                               |   in|    1|  ap_ctrl_hs|         VMixHlsDataFlowFunction|  return value|
+|ap_done                                |  out|    1|  ap_ctrl_hs|         VMixHlsDataFlowFunction|  return value|
+|ap_ready                               |  out|    1|  ap_ctrl_hs|         VMixHlsDataFlowFunction|  return value|
+|ap_idle                                |  out|    1|  ap_ctrl_hs|         VMixHlsDataFlowFunction|  return value|
+|ap_continue                            |   in|    1|  ap_ctrl_hs|         VMixHlsDataFlowFunction|  return value|
++---------------------------------------+-----+-----+------------+--------------------------------+--------------+
+
