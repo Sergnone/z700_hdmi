@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Wed Feb  4 12:54:40 2026
-# Process ID         : 53403
+# Start of session at: Tue Feb 24 13:48:06 2026
+# Process ID         : 446012
 # Current directory  : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.runs/top_design_processing_system7_0_0_synth_1
 # Command line       : vivado -log top_design_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_design_processing_system7_0_0.tcl
 # Log file           : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.runs/top_design_processing_system7_0_0_synth_1/top_design_processing_system7_0_0.vds
@@ -13,13 +13,13 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.3 LTS
 # Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13400
-# CPU Frequency      : 4098.364 MHz
+# CPU Frequency      : 4477.798 MHz
 # CPU Physical cores : 10
 # CPU Logical cores  : 16
-# Host memory        : 33411 MB
+# Host memory        : 33409 MB
 # Swap memory        : 8589 MB
-# Total Virtual      : 42001 MB
-# Available Virtual  : 34772 MB
+# Total Virtual      : 41999 MB
+# Available Virtual  : 34370 MB
 #-----------------------------------------------------------
 source top_design_processing_system7_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -32,9 +32,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 53931
+INFO: [Synth 8-7075] Helper process launched with PID 446334
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2247.730 ; gain = 484.875 ; free physical = 2133 ; free virtual = 23427
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2247.641 ; gain = 485.875 ; free physical = 12628 ; free virtual = 30368
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top_design_processing_system7_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
@@ -45,20 +45,20 @@ INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (0#1) [/tools/xilinx/2025.
 INFO: [Synth 8-6157] synthesizing module 'PS7' [/tools/xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:140294]
 INFO: [Synth 8-6155] done synthesizing module 'PS7' (0#1) [/tools/xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:140294]
 INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
-INFO: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:483]
-INFO: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:483]
-INFO: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:483]
-INFO: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:483]
-INFO: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:483]
-INFO: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:483]
-INFO: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:483]
-INFO: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:483]
-INFO: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:483]
-INFO: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:483]
-INFO: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:483]
-INFO: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:483]
-INFO: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:483]
-INFO: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:483]
+INFO: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:471]
+INFO: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:471]
+INFO: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:471]
+INFO: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:471]
+INFO: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:471]
+INFO: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:471]
+INFO: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:471]
+INFO: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:471]
+INFO: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:471]
+INFO: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:471]
+INFO: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:471]
+INFO: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:471]
+INFO: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:471]
+INFO: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:471]
 INFO: [Synth 8-6155] done synthesizing module 'top_design_processing_system7_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.gen/sources_1/bd/top_design/ip/top_design_processing_system7_0_0/synth/top_design_processing_system7_0_0.v:53]
 INFO: [Synth 8-7129] Port ENET0_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 INFO: [Synth 8-7129] Port ENET0_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
@@ -140,18 +140,18 @@ INFO: [Synth 8-7129] Port FTMD_TRACEIN_ATID[2] in module processing_system7_v5_5
 INFO: [Synth 8-7129] Port FTMD_TRACEIN_ATID[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 INFO: [Synth 8-7129] Port FTMD_TRACEIN_ATID[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2344.699 ; gain = 581.844 ; free physical = 1520 ; free virtual = 22803
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2344.578 ; gain = 582.812 ; free physical = 12384 ; free virtual = 30125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2347.668 ; gain = 584.812 ; free physical = 1520 ; free virtual = 22803
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2347.547 ; gain = 585.781 ; free physical = 12384 ; free virtual = 30125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2347.668 ; gain = 584.812 ; free physical = 1520 ; free virtual = 22803
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2347.547 ; gain = 585.781 ; free physical = 12384 ; free virtual = 30125
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2350.637 ; gain = 0.000 ; free physical = 1487 ; free virtual = 22770
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2350.516 ; gain = 0.000 ; free physical = 12368 ; free virtual = 30109
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -164,30 +164,30 @@ Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.runs/t
 Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.runs/top_design_processing_system7_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2398.289 ; gain = 0.000 ; free physical = 1045 ; free virtual = 22331
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2393.504 ; gain = 0.000 ; free physical = 12369 ; free virtual = 30110
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2398.324 ; gain = 0.000 ; free physical = 1037 ; free virtual = 22323
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2393.539 ; gain = 0.000 ; free physical = 12369 ; free virtual = 30110
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2398.324 ; gain = 635.469 ; free physical = 974 ; free virtual = 22267
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2393.539 ; gain = 631.773 ; free physical = 12221 ; free virtual = 29962
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2406.293 ; gain = 643.438 ; free physical = 974 ; free virtual = 22267
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2401.508 ; gain = 639.742 ; free physical = 12221 ; free virtual = 29962
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2406.293 ; gain = 643.438 ; free physical = 939 ; free virtual = 22232
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2401.508 ; gain = 639.742 ; free physical = 12197 ; free virtual = 29938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2406.293 ; gain = 643.438 ; free physical = 910 ; free virtual = 22205
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2401.508 ; gain = 639.742 ; free physical = 12162 ; free virtual = 29904
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -231,25 +231,25 @@ INFO: [Synth 8-7129] Port ENET1_GMII_RXD[4] in module processing_system7_v5_5_pr
 INFO: [Synth 8-7129] Port ENET1_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2406.293 ; gain = 643.438 ; free physical = 824 ; free virtual = 22121
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2401.508 ; gain = 639.742 ; free physical = 12115 ; free virtual = 29857
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2668.293 ; gain = 905.438 ; free physical = 316 ; free virtual = 21631
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2668.508 ; gain = 906.742 ; free physical = 11789 ; free virtual = 29532
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2689.301 ; gain = 926.445 ; free physical = 292 ; free virtual = 21606
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2688.516 ; gain = 926.750 ; free physical = 11774 ; free virtual = 29516
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2697.309 ; gain = 934.453 ; free physical = 269 ; free virtual = 21585
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2696.523 ; gain = 934.758 ; free physical = 11774 ; free virtual = 29516
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -267,37 +267,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2877.121 ; gain = 1114.266 ; free physical = 338 ; free virtual = 20665
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2877.336 ; gain = 1115.570 ; free physical = 11634 ; free virtual = 29376
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2877.121 ; gain = 1114.266 ; free physical = 338 ; free virtual = 20665
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2877.336 ; gain = 1115.570 ; free physical = 11634 ; free virtual = 29376
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2877.121 ; gain = 1114.266 ; free physical = 338 ; free virtual = 20665
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2877.336 ; gain = 1115.570 ; free physical = 11634 ; free virtual = 29376
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2877.121 ; gain = 1114.266 ; free physical = 338 ; free virtual = 20665
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2877.336 ; gain = 1115.570 ; free physical = 11634 ; free virtual = 29376
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2877.121 ; gain = 1114.266 ; free physical = 338 ; free virtual = 20665
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2877.336 ; gain = 1115.570 ; free physical = 11634 ; free virtual = 29376
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2877.121 ; gain = 1114.266 ; free physical = 338 ; free virtual = 20665
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2877.336 ; gain = 1115.570 ; free physical = 11634 ; free virtual = 29376
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -319,27 +319,27 @@ Report Cell Usage:
 |4     |PS7   |     1|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2877.121 ; gain = 1114.266 ; free physical = 338 ; free virtual = 20665
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2877.336 ; gain = 1115.570 ; free physical = 11634 ; free virtual = 29376
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2877.121 ; gain = 1063.609 ; free physical = 338 ; free virtual = 20665
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2877.129 ; gain = 1114.266 ; free physical = 338 ; free virtual = 20665
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2877.336 ; gain = 1069.578 ; free physical = 11633 ; free virtual = 29376
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2877.344 ; gain = 1115.570 ; free physical = 11633 ; free virtual = 29376
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2877.129 ; gain = 0.000 ; free physical = 330 ; free virtual = 20657
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2877.344 ; gain = 0.000 ; free physical = 11649 ; free virtual = 29392
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2877.129 ; gain = 0.000 ; free physical = 573 ; free virtual = 20901
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2877.344 ; gain = 0.000 ; free physical = 12137 ; free virtual = 29879
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 5634203c
+Synth Design complete | Checksum: 180e9be2
 INFO: [Common 17-83] Releasing license: Synthesis
 142 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 2877.156 ; gain = 1267.129 ; free physical = 572 ; free virtual = 20900
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1760.481; main = 1760.481; forked = 188.956
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3400.492; main = 2877.125; forked = 994.195
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2901.133 ; gain = 0.000 ; free physical = 572 ; free virtual = 20900
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 2877.371 ; gain = 1253.465 ; free physical = 12146 ; free virtual = 29889
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1917.084; main = 1917.084; forked = 253.177
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3395.730; main = 2877.340; forked = 994.219
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2901.348 ; gain = 0.000 ; free physical = 12146 ; free virtual = 29889
 INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_TPG/HDMI_TPG.runs/top_design_processing_system7_0_0_synth_1/top_design_processing_system7_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file top_design_processing_system7_0_0_utilization_synth.rpt -pb top_design_processing_system7_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Feb  4 12:55:06 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 24 13:48:25 2026...

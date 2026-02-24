@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 5,
-    "calls": "4 6",
+    "calls": "5 6",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_tpg.cpp",
@@ -71,18 +71,6 @@
     "total_instructions": 4
   },
   "4": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 4,
-    "memory_accesses": 1,
-    "name": "reg<unsigned short>",
-    "total_instructions": 4
-  },
-  "5": {
     "basicblocks": 15,
     "calls": "",
     "control_depth": 2,
@@ -102,9 +90,21 @@
     },
     "total_instructions": 106
   },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 4,
+    "memory_accesses": 1,
+    "name": "reg<unsigned short>",
+    "total_instructions": 4
+  },
   "6": {
     "basicblocks": 1,
-    "calls": "1 2 5",
+    "calls": "1 2 4",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "v_tpg.cpp",

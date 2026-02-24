@@ -677,12 +677,6 @@
 
 //MODULE DECLARATION
  module top_design_processing_system7_0_0 (
-  TTC0_WAVE0_OUT,
-  TTC0_WAVE1_OUT,
-  TTC0_WAVE2_OUT,
-  TTC1_WAVE0_OUT,
-  TTC1_WAVE1_OUT,
-  TTC1_WAVE2_OUT,
   M_AXI_GP0_ARVALID,
   M_AXI_GP0_AWVALID,
   M_AXI_GP0_BREADY,
@@ -855,12 +849,6 @@
 
 //INPUT AND OUTPUT PORTS
 
-      output  TTC0_WAVE0_OUT;
-      output  TTC0_WAVE1_OUT;
-      output  TTC0_WAVE2_OUT;
-      output  TTC1_WAVE0_OUT;
-      output  TTC1_WAVE1_OUT;
-      output  TTC1_WAVE2_OUT;
       output  M_AXI_GP0_ARVALID;
       output  M_AXI_GP0_AWVALID;
       output  M_AXI_GP0_BREADY;
@@ -973,12 +961,6 @@
 
 //REG DECLARATIONS
 
-      reg TTC0_WAVE0_OUT;
-      reg TTC0_WAVE1_OUT;
-      reg TTC0_WAVE2_OUT;
-      reg TTC1_WAVE0_OUT;
-      reg TTC1_WAVE1_OUT;
-      reg TTC1_WAVE2_OUT;
       reg M_AXI_GP0_ARVALID;
       reg M_AXI_GP0_AWVALID;
       reg M_AXI_GP0_BREADY;
@@ -1242,7 +1224,7 @@ output bit S_AXI_HP0_RVALID
      FCLK_CLK1 = 1'b0;
   end
 
-  always #(3.367003367003367) FCLK_CLK1 <= ~FCLK_CLK1;
+  always #(3.3333333333333335) FCLK_CLK1 <= ~FCLK_CLK1;
 
   always@(posedge FCLK_CLK1)
   begin

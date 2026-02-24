@@ -80,12 +80,6 @@ public:
 
   // module pin-to-pin RTL interface
 
-  sc_core::sc_out< bool > TTC0_WAVE0_OUT;
-  sc_core::sc_out< bool > TTC0_WAVE1_OUT;
-  sc_core::sc_out< bool > TTC0_WAVE2_OUT;
-  sc_core::sc_out< bool > TTC1_WAVE0_OUT;
-  sc_core::sc_out< bool > TTC1_WAVE1_OUT;
-  sc_core::sc_out< bool > TTC1_WAVE2_OUT;
   sc_core::sc_out< bool > M_AXI_GP0_ARVALID;
   sc_core::sc_out< bool > M_AXI_GP0_AWVALID;
   sc_core::sc_out< bool > M_AXI_GP0_BREADY;
@@ -242,12 +236,6 @@ public:
 
   // module pin-to-pin RTL interface
 
-  sc_core::sc_out< bool > TTC0_WAVE0_OUT;
-  sc_core::sc_out< bool > TTC0_WAVE1_OUT;
-  sc_core::sc_out< bool > TTC0_WAVE2_OUT;
-  sc_core::sc_out< bool > TTC1_WAVE0_OUT;
-  sc_core::sc_out< bool > TTC1_WAVE1_OUT;
-  sc_core::sc_out< bool > TTC1_WAVE2_OUT;
   sc_core::sc_out< bool > M_AXI_GP0_ARVALID;
   sc_core::sc_out< bool > M_AXI_GP0_AWVALID;
   sc_core::sc_out< bool > M_AXI_GP0_BREADY;
@@ -404,12 +392,6 @@ public:
 
   // module pin-to-pin RTL interface
 
-  sc_core::sc_out< bool > TTC0_WAVE0_OUT;
-  sc_core::sc_out< bool > TTC0_WAVE1_OUT;
-  sc_core::sc_out< bool > TTC0_WAVE2_OUT;
-  sc_core::sc_out< bool > TTC1_WAVE0_OUT;
-  sc_core::sc_out< bool > TTC1_WAVE1_OUT;
-  sc_core::sc_out< bool > TTC1_WAVE2_OUT;
   sc_core::sc_out< bool > M_AXI_GP0_ARVALID;
   sc_core::sc_out< bool > M_AXI_GP0_AWVALID;
   sc_core::sc_out< bool > M_AXI_GP0_BREADY;
@@ -570,12 +552,6 @@ public:
 
   // module pin-to-pin RTL interface
 
-  sc_core::sc_out< bool > TTC0_WAVE0_OUT;
-  sc_core::sc_out< bool > TTC0_WAVE1_OUT;
-  sc_core::sc_out< bool > TTC0_WAVE2_OUT;
-  sc_core::sc_out< bool > TTC1_WAVE0_OUT;
-  sc_core::sc_out< bool > TTC1_WAVE1_OUT;
-  sc_core::sc_out< bool > TTC1_WAVE2_OUT;
   sc_core::sc_out< bool > M_AXI_GP0_ARVALID;
   sc_core::sc_out< bool > M_AXI_GP0_AWVALID;
   sc_core::sc_out< bool > M_AXI_GP0_BREADY;
@@ -744,12 +720,6 @@ public:
 
   // module pin-to-pin RTL interface
 
-  sc_core::sc_out< bool > TTC0_WAVE0_OUT;
-  sc_core::sc_out< bool > TTC0_WAVE1_OUT;
-  sc_core::sc_out< bool > TTC0_WAVE2_OUT;
-  sc_core::sc_out< bool > TTC1_WAVE0_OUT;
-  sc_core::sc_out< bool > TTC1_WAVE1_OUT;
-  sc_core::sc_out< bool > TTC1_WAVE2_OUT;
   sc_core::sc_out< bool > M_AXI_GP0_ARVALID;
   sc_core::sc_out< bool > M_AXI_GP0_AWVALID;
   sc_core::sc_out< bool > M_AXI_GP0_BREADY;

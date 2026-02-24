@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 5,
-    "calls": "9 2",
+    "calls": "4 2",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_tpg.cpp",
@@ -19,20 +19,27 @@
     "total_instructions": 1408
   },
   "1": {
-    "basicblocks": 1,
+    "basicblocks": 30,
     "calls": "",
     "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
+    "def_use_depth": 3,
+    "file": "v_tpg.cpp",
+    "fileloc": 1734,
+    "instructions": 137,
+    "loads": {
+      "G": 21
+    },
     "memory_accesses": 0,
-    "name": "reg<int>",
-    "total_instructions": 1
+    "name": "tpgPatternDPColorSquare",
+    "stores": {
+      "G": 10,
+      "L": 11
+    },
+    "total_instructions": 137
   },
   "2": {
     "basicblocks": 1,
-    "calls": "5 6 4",
+    "calls": "8 5 9",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "v_tpg.cpp",
@@ -49,55 +56,24 @@
     "def_use_depth": 0,
     "file": "x_hls_utils.h",
     "fileloc": 222,
-    "instructions": 2,
-    "memory_accesses": 1,
-    "name": "reg<ap_uint<10> >",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 2
+    "instructions": 1,
+    "memory_accesses": 0,
+    "name": "reg<int>",
+    "total_instructions": 1
   },
   "4": {
-    "basicblocks": 14,
+    "basicblocks": 1,
     "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 5,
-    "file": "v_tpg.cpp",
-    "fileloc": 919,
-    "instructions": 128,
-    "loads": {
-      "G": 3,
-      "L": 5
-    },
-    "memory_accesses": 12,
-    "name": "MultiPixStream2AXIvideo",
-    "stores": {
-      "G": 2,
-      "L": 9
-    },
-    "total_instructions": 128
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "memory_accesses": 0,
+    "name": "reg<unsigned short>",
+    "total_instructions": 1
   },
   "5": {
-    "basicblocks": 135,
-    "calls": "1 7 8",
-    "control_depth": 4,
-    "def_use_depth": 21,
-    "file": "v_tpg.cpp",
-    "fileloc": 536,
-    "instructions": 738,
-    "loads": {
-      "G": 65,
-      "L": 19
-    },
-    "memory_accesses": 127,
-    "name": "tpgBackground",
-    "stores": {
-      "G": 41,
-      "L": 12
-    },
-    "total_instructions": 990
-  },
-  "6": {
     "basicblocks": 40,
     "calls": "",
     "control_depth": 5,
@@ -117,9 +93,24 @@
     },
     "total_instructions": 213
   },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 2,
+    "memory_accesses": 1,
+    "name": "reg<ap_uint<10> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2
+  },
   "7": {
     "basicblocks": 29,
-    "calls": "3",
+    "calls": "6",
     "control_depth": 0,
     "def_use_depth": 4,
     "file": "v_tpg.cpp",
@@ -138,34 +129,43 @@
     "total_instructions": 114
   },
   "8": {
-    "basicblocks": 30,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
+    "basicblocks": 135,
+    "calls": "3 7 1",
+    "control_depth": 4,
+    "def_use_depth": 21,
     "file": "v_tpg.cpp",
-    "fileloc": 1734,
-    "instructions": 137,
+    "fileloc": 536,
+    "instructions": 738,
     "loads": {
-      "G": 21
+      "G": 65,
+      "L": 19
     },
-    "memory_accesses": 0,
-    "name": "tpgPatternDPColorSquare",
+    "memory_accesses": 127,
+    "name": "tpgBackground",
     "stores": {
-      "G": 10,
-      "L": 11
+      "G": 41,
+      "L": 12
     },
-    "total_instructions": 137
+    "total_instructions": 990
   },
   "9": {
-    "basicblocks": 1,
+    "basicblocks": 14,
     "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
-    "memory_accesses": 0,
-    "name": "reg<unsigned short>",
-    "total_instructions": 1
+    "control_depth": 4,
+    "def_use_depth": 5,
+    "file": "v_tpg.cpp",
+    "fileloc": 919,
+    "instructions": 128,
+    "loads": {
+      "G": 3,
+      "L": 5
+    },
+    "memory_accesses": 12,
+    "name": "MultiPixStream2AXIvideo",
+    "stores": {
+      "G": 2,
+      "L": 9
+    },
+    "total_instructions": 128
   }
 }
