@@ -24,7 +24,7 @@ static int SetupInterrupts(void)
     Status = XIntc_Initialize(IntcPtr,
                             XPAR_PROCESSOR_SS_PROCESSOR_AXI_INTC_DEVICE_ID);
     if (Status != XST_SUCCESS) {
-        xil_printf("ERROR:: Interrupt controller device not found\r\n");
+        printf("ERROR:: Interrupt controller device not found\r\n");
         return(XST_FAILURE);
     }
     Status = XIntc_Connect(IntcPtr,
@@ -32,7 +32,7 @@ static int SetupInterrupts(void)
                             (XInterruptHandler)XVFrmbufWr_InterruptHandler,
                             &frmbufwr);
     if (Status != XST_SUCCESS) {
-        xil_printf("ERROR:: FRMBUF WR interrupt connect failed!\r\n");
+        printf("ERROR:: FRMBUF WR interrupt connect failed!\r\n");
         return XST_FAILURE;
     }
 
@@ -46,7 +46,7 @@ static int SetupInterrupts(void)
     */
     Status = XIntc_Start(IntcPtr, XIN_REAL_MODE);
     if (Status != XST_SUCCESS) {
-        xil_printf("ERROR:: Failed to start interrupt controller\r\n");
+        printf("ERROR:: Failed to start interrupt controller\r\n");
         return XST_FAILURE;
     }
 
@@ -79,7 +79,7 @@ static int SetupInterrupts(void)
                             (XInterruptHandler)XVFrmbufWr_InterruptHandler,
                             (void *)&frmbufwr);
     if (Status != XST_SUCCESS) {
-        xil_printf("ERR:: Frame Buffer Write interrupt connect failed!\r\n");
+        printf("ERR:: Frame Buffer Write interrupt connect failed!\r\n");
         return XST_FAILURE;
     }
 
@@ -94,16 +94,12 @@ static int SetupInterrupts(void)
 int V_FBWR_Init(void)
 {
     int Status = -1;
-#ifndef SDT
-    Status = XVFrmbufWr_Initialize(&frmbufwr, XPAR_V_FRMBUF_WR_0_DEVICE_ID);
-#else
     Status = XVFrmbufWr_Initialize(&frmbufwr, XPAR_V_FRMBUF_WR_0_BASEADDR);
-#endif
     if (Status != XST_SUCCESS) {
-        xil_printf("ERROR:: Frame Buffer Write initialization failed\r\n");
+        printf("ERROR:: Frame Buffer Write initialization failed\r\n");
         return(XST_FAILURE);
     }
-	  xil_printf("FBWR: Initialized OK\r\n");
+	  printf("FBWR: Initialized OK\r\n");
     return(XST_SUCCESS);
 }
 
@@ -114,22 +110,22 @@ int V_FBWR_SetupInterrupts(void)
 #ifndef SDT
     Status = SetupInterrupts();
     if (Status == XST_FAILURE) {
-        xil_printf("ERROR:: Interrupt Setup Failed\r\n");
-        xil_printf("ERROR:: Test could not be completed\r\n");
+        printf("ERROR:: Interrupt Setup Failed\r\n");
+        printf("ERROR:: Test could not be completed\r\n");
         return(1);
     }
     return(XST_SUCCESS);
 #else
-    Status = XSetupInterruptSystem(&frmbufwr,&XVFrmbufWr_InterruptHandler,
+    Status = XL_SetupInterruptSystem(&frmbufwr,&XVFrmbufWr_InterruptHandler,
                         frmbufwr.FrmbufWr.Config.IntrId,
                         frmbufwr.FrmbufWr.Config.IntrParent,
                         XINTERRUPT_DEFAULT_PRIORITY);
     if (Status == XST_FAILURE) {
-        xil_printf("ERROR:: frmbufwr Interrupt Setup Failed\r\n");
-        xil_printf("ERROR:: Test could not be completed\r\n");
+        printf("ERROR:: frmbufwr Interrupt Setup Failed\r\n");
+        printf("ERROR:: Test could not be completed\r\n");
         return(1);
     }
-    xil_printf("FBWR: Setup Interrupts OK\r\n");
+    printf("FBWR: Setup Interrupts OK\r\n");
     return(XST_SUCCESS);
 #endif
 }
@@ -141,54 +137,15 @@ int V_FBWR_SetCallback(void)
                         XVFRMBUFWR_HANDLER_DONE,
                         XVFrameBufferWrCallback,
 		                    (void *)&frmbufwr);
-    xil_printf("FBWR: Set Callbacks OK\r\n");
+    printf("FBWR: Set Callbacks OK\r\n");
     return(XST_SUCCESS);
 }
 /*--------------------------------------------------------------------------------*/
 
-int V_FBWR_ValidateCase(u16 PixPerClk,
-                            XVidC_VideoMode Mode,
-                            u16 DataWidth,
-                            VideoFormats Format)
-{
-  int Status = TRUE;
-  int valid_mode = TRUE;
-  int valid_format = TRUE;
-
-  if ((PixPerClk == 1) && (Mode == XVIDC_VM_UHD_60_P)) {
-    xil_printf("Video Mode %s not supported for 1 pixel/clock\r\n", XVidC_GetVideoModeStr(Mode));
-    valid_mode = 0;
-  } else {
-    valid_mode = 1;
-  }
-
-  if (DataWidth == 16 && Format.FormatBits <= 16) {
-      //all Memory Video Formats supported
-      valid_format = TRUE;
-  } else if (DataWidth == 12 && Format.FormatBits <= 12) {
-      //only 12-bit 10-bit and 8-bit Memory Video Formats supported
-      valid_format = TRUE;
-  } else if (DataWidth == 10 && Format.FormatBits <= 10) {
-      //only 10-bit and 8-bit Memory Video Formats supported
-      valid_format = TRUE;
-  } else if (DataWidth == 8 && Format.FormatBits == 8) {
-      //only 8-bit Memory Video Formats supported
-      valid_format = TRUE;
-  } else {
-      valid_format = FALSE;
-      xil_printf("Video Format %s is not supported in hardware\r\n",
-                 XVidC_GetColorFormatStr(Format.MemFormat));
-  }
-
-  Status = (valid_mode && valid_format);
-  return(Status);
-}
-
-
 /*--------------------------------------------------------------------------------*/
-uint32_t V_FBWR_CalcStride(XVidC_ColorFormat Cfmt,
-                            u16 AXIMMDataWidth,
-                            XVidC_VideoStream *StreamPtr)
+uint32_t V_FBWR_CalcStride(XL_VidC_ColorFormat Cfmt,
+                            uint16_t AXIMMDataWidth,
+                            XL_VidC_VideoStream *StreamPtr)
 {
   u32 stride;
   int width = StreamPtr->Timing.HActive;
@@ -255,9 +212,9 @@ uint32_t V_FBWR_CalcStride(XVidC_ColorFormat Cfmt,
 
 
 /*--------------------------------------------------------------------------------*/
-int V_FBWR_ConfigBuf(u32 StrideInBytes,
-                        XVidC_ColorFormat Cfmt,
-                        XVidC_VideoStream *StreamPtr)
+int V_FBWR_ConfigBuf(uint32_t StrideInBytes,
+                        XL_VidC_ColorFormat Cfmt,
+                        XL_VidC_VideoStream *StreamPtr)
 {
   int Status;
   /* Stop Frame Buffers */

@@ -6,7 +6,7 @@ XV_frmbufrd_Config frmbufrd_cfg;
 
 void *XVFrameBufferRdCallback(void *data)
 {
-	xil_printf("\nFrame Buffer Read interrupt received.\r\n");
+	printf("\nFrame Buffer Read interrupt received.\r\n");
 	XVFrmbufRd_Start(&frmbufrd);
 }
 
@@ -40,7 +40,7 @@ int V_FBRD_SetupInterrupts(void)
     }
     return(XST_SUCCESS);
 #else
-    Status = XSetupInterruptSystem(&frmbufrd,&XVFrmbufRd_InterruptHandler,
+    Status = XL_SetupInterruptSystem(&frmbufrd,&XVFrmbufRd_InterruptHandler,
                         frmbufrd.FrmbufRd.Config.IntrId,
                         frmbufrd.FrmbufRd.Config.IntrParent,
                         XINTERRUPT_DEFAULT_PRIORITY);
@@ -65,50 +65,10 @@ int V_FBRD_SetCallback(void)
     return(XST_SUCCESS);
 }
 
-
 /*--------------------------------------------------------------------------------*/
-int V_FBRD_ValidateCase(u16 PixPerClk,
-                            XVidC_VideoMode Mode,
-                            u16 DataWidth,
-                            VideoFormats Format)
-{
-  int Status = TRUE;
-  int valid_mode = TRUE;
-  int valid_format = TRUE;
-
-  if ((PixPerClk == 1) && (Mode == XVIDC_VM_UHD_60_P)) {
-    xil_printf("Video Mode %s not supported for 1 pixel/clock\r\n", XVidC_GetVideoModeStr(Mode));
-    valid_mode = 0;
-  } else {
-    valid_mode = 1;
-  }
-
-  if (DataWidth == 16 && Format.FormatBits <= 16) {
-      //all Memory Video Formats supported
-      valid_format = TRUE;
-  } else if (DataWidth == 12 && Format.FormatBits <= 12) {
-      //only 12-bit 10-bit and 8-bit Memory Video Formats supported
-      valid_format = TRUE;
-  } else if (DataWidth == 10 && Format.FormatBits <= 10) {
-      //only 10-bit and 8-bit Memory Video Formats supported
-      valid_format = TRUE;
-  } else if (DataWidth == 8 && Format.FormatBits == 8) {
-      //only 8-bit Memory Video Formats supported
-      valid_format = TRUE;
-  } else {
-      valid_format = FALSE;
-      xil_printf("Video Format %s is not supported in hardware\r\n",
-                 XVidC_GetColorFormatStr(Format.MemFormat));
-  }
-
-  Status = (valid_mode && valid_format);
-  return(Status);
-}
-
-/*--------------------------------------------------------------------------------*/
-uint32_t V_FBRD_CalcStride(XVidC_ColorFormat Cfmt,
-                            u16 AXIMMDataWidth,
-                            XVidC_VideoStream *StreamPtr)
+uint32_t V_FBRD_CalcStride(XL_VidC_ColorFormat Cfmt,
+                            uint16_t AXIMMDataWidth,
+                            XL_VidC_VideoStream *StreamPtr)
 {
     u32 stride;
     int width = StreamPtr->Timing.HActive;
@@ -175,9 +135,9 @@ uint32_t V_FBRD_CalcStride(XVidC_ColorFormat Cfmt,
 
 
 /*--------------------------------------------------------------------------------*/
-int V_FBRD_ConfigBuf(u32 StrideInBytes,
-                        XVidC_ColorFormat Cfmt,
-                        XVidC_VideoStream *StreamPtr)
+int V_FBRD_ConfigBuf(uint32_t StrideInBytes,
+                        XL_VidC_ColorFormat Cfmt,
+                        XL_VidC_VideoStream *StreamPtr)
 {
     int Status;
 

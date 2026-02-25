@@ -1,8 +1,10 @@
 #include "v_vtc.h"
+#include <stdio.h>
 
-XVtc				vtc;
-XVtc_Config			*vtc_Config;
-XVtc_Timing			vtc_timing;
+
+XL_Vtc					vtc;
+XL_Vtc_Config			*vtc_Config;
+XL_Vtc_Timing			vtc_timing;
 
 
 //XVidC_VideoStream VidStream;
@@ -11,30 +13,25 @@ XVtc_Timing			vtc_timing;
 int V_VTC_Init(void)
 {
     int Status = -1;
-#ifndef SDT
-	vtc_Config = XVtc_LookupConfig(XPAR_V_TC_0_DEVICE_ID);
-#else
-	vtc_Config = XVtc_LookupConfig(XPAR_V_TC_0_BASEADDR);
-#endif
+	vtc_Config = XL_Vtc_LookupConfig(XPAR_V_TC_0_BASEADDR);
 	if(vtc_Config == NULL)
 	{
-		xil_printf("ERR:: VTC device not found\r\n");
+		printf("ERR:: VTC device not found\r\n");
 		return(XST_DEVICE_NOT_FOUND);
 	}
-	Status = XVtc_CfgInitialize(&vtc, vtc_Config, vtc_Config->BaseAddress);
+	Status = XL_Vtc_CfgInitialize(&vtc, vtc_Config, vtc_Config->BaseAddress);
 	if(Status != XST_SUCCESS)
 	{
-		xil_printf("ERR:: VTC Initialization failed %d\r\n", Status);
+		printf("ERR:: VTC Initialization failed %d\r\n", Status);
 		return(XST_FAILURE);
 	}
-	xil_printf("VTC: Initialized OK\r\n");
     return(XST_SUCCESS);
 }
 
 
-void V_VTC_Config(XVidC_VideoMode videoMode, uint16_t pixClock)
+void V_VTC_Config(XL_VidC_VideoMode videoMode, uint16_t pixClock)
 {
-	XVidC_VideoTiming const *timing = XVidC_GetTimingInfo(videoMode);
+	XL_VidC_VideoTiming const *timing =XL_VidC_GetTimingInfo(videoMode);
 	vtc_timing.HActiveVideo  = timing->HActive/pixClock;
 	vtc_timing.HFrontPorch   = timing->HFrontPorch/pixClock;
 	vtc_timing.HSyncWidth    = timing->HSyncWidth/pixClock;
@@ -45,18 +42,18 @@ void V_VTC_Config(XVidC_VideoMode videoMode, uint16_t pixClock)
 	vtc_timing.V0SyncWidth   = timing->F0PVSyncWidth;
 	vtc_timing.V0BackPorch   = timing->F0PVBackPorch;
 	vtc_timing.VSyncPolarity = timing->VSyncPolarity;
-	XVtc_SetGeneratorTiming(&vtc, &vtc_timing);
-	XVtc_Enable(&vtc);
-	XVtc_EnableGenerator(&vtc);
-	XVtc_RegUpdateEnable(&vtc);
+	XL_Vtc_SetGeneratorTiming(&vtc, &vtc_timing);
+	XL_Vtc_Enable(&vtc);
+	XL_Vtc_EnableGenerator(&vtc);
+	XL_Vtc_RegUpdateEnable(&vtc);
 }
 
 
 
-void V_VTC_ConfigStream(XVidC_VideoStream *StreamPtr)
+void V_VTC_ConfigStream(XL_VidC_VideoStream *StreamPtr)
 {
-  XVtc_Timing vtc_timing = {0};
-  u16 PixelsPerClock = StreamPtr->PixPerClk;
+  XL_Vtc_Timing vtc_timing = {0};
+  uint16_t PixelsPerClock = StreamPtr->PixPerClk;
   vtc_timing.HActiveVideo  = StreamPtr->Timing.HActive/PixelsPerClock;
   vtc_timing.HFrontPorch   = StreamPtr->Timing.HFrontPorch/PixelsPerClock;
   vtc_timing.HSyncWidth    = StreamPtr->Timing.HSyncWidth/PixelsPerClock;
@@ -67,9 +64,9 @@ void V_VTC_ConfigStream(XVidC_VideoStream *StreamPtr)
   vtc_timing.V0SyncWidth   = StreamPtr->Timing.F0PVSyncWidth;
   vtc_timing.V0BackPorch   = StreamPtr->Timing.F0PVBackPorch;
   vtc_timing.VSyncPolarity = StreamPtr->Timing.VSyncPolarity;
-  XVtc_SetGeneratorTiming(&vtc, &vtc_timing);
-  XVtc_Enable(&vtc);
-  XVtc_EnableGenerator(&vtc);
-  XVtc_RegUpdateEnable(&vtc);
-  xil_printf("INFO: VTC configured\r\n");
+  XL_Vtc_SetGeneratorTiming(&vtc, &vtc_timing);
+  XL_Vtc_Enable(&vtc);
+  XL_Vtc_EnableGenerator(&vtc);
+  XL_Vtc_RegUpdateEnable(&vtc);
+  printf("INFO: VTC configured\r\n");
 }

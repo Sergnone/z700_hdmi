@@ -27,6 +27,13 @@ set(USER_UNDEFINED_SYMBOLS
 # Example 3: Adding ${CMAKE_SOURCE_DIR}/data/include to add data/include from this project.
 
 set(USER_INCLUDE_DIRECTORIES
+"drivers/xl_dynclk"
+"drivers/xl_gpio"
+"drivers/xl_tpg"
+"drivers/xl_vtc"
+"drivers/xl_vidc"
+"drivers/include"
+"drivers/xl_interrupts"
 )
 
 #Add any source below, they will be added as Compile sources.
@@ -34,7 +41,20 @@ set(USER_INCLUDE_DIRECTORIES
 #Example 2: Adding ../../common/helloworld.c will consider the path as relative to this component directory
 #Example 3: Adding ${MY_ENV}/data/helloworld.c are expanded using project-specific environment settings.
 set(USER_COMPILE_SOURCES
-"main.c"
+"drivers/xl_dynclk/xl_dynclk.c"
+"drivers/xl_dynclk/xl_dynclk_g.c"
+"drivers/xl_dynclk/xl_dynclk_selftest.c"
+"drivers/xl_dynclk/xl_dynclk_sinit.c"
+"drivers/xl_gpio/xl_gpios.c"
+"drivers/xl_tpg/xl_tpg.c"
+"drivers/xl_tpg/xl_tpg_g.c"
+"drivers/xl_tpg/xl_tpg_sinit.c"
+"drivers/xl_vtc/xl_vtc.c"
+"drivers/xl_vtc/xl_vtc_g.c"
+"drivers/xl_vtc/xl_vtc_sinit.c"
+"drivers/xl_vidc/xl_vidc.c"
+"drivers/xl_vidc/xl_vidc_timing_table.c"
+"drivers/xl_interrupts/xl_interrupt_wrap.c"
 )
 
 # -----------------------------------------

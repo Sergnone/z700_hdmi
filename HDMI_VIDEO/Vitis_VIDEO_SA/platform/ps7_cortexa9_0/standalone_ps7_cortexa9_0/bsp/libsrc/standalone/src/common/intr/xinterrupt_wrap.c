@@ -495,7 +495,7 @@ void XRegisterInterruptHandler(void *IntrHandler,  UINTPTR IntcParent)
 * @note     None.
 *
 ******************************************************************************/
-int XSetupInterruptSystem(void *DriverInstance, void *IntrHandler, u32 IntrId,  UINTPTR IntcParent,
+int XL_SetupInterruptSystem(void *DriverInstance, void *IntrHandler, u32 IntrId,  UINTPTR IntcParent,
 			  u16 Priority)
 {
 	int Status;

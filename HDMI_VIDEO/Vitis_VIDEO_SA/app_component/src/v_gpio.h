@@ -1,9 +1,7 @@
 #ifndef __V_GPIO_H_
 #define __V_GPIO_H_
 
-#include "xparameters.h"
-#include "platform.h"
-#include "sleep.h"
+#include "xl_params.h"
 #include "xgpiops.h"
 
 #define   GPIO_FB_RD            54;

@@ -1,10 +1,8 @@
 #ifndef __V_PL_ADDRESSES_H_
 #define __V_PL_ADDRESSES_H_
 
-#include "xparameters.h"
-#include "platform.h"
-#include "sleep.h"
-#include "xvidc.h"
+#include "xl_params.h"
+#include "xl_vidc.h"
 
 #if defined(__MICROBLAZE__) || defined(__riscv)
 #ifndef  SDT
