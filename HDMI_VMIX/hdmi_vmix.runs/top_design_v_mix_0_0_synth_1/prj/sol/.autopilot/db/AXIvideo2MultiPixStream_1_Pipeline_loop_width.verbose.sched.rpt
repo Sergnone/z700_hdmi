@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'AXIvideo2MultiPixStream_1_Pipeline_loop_width'
 ================================================================
-* Date:           Tue Feb 24 12:52:08 2026
+* Date:           Sat Feb 28 15:10:43 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -136,9 +136,9 @@ ST_2 : Operation 55 [1/1] (1.29ns)   --->   "%ret_ln0 = ret"   --->   Operation 
 State 3 <SV = 2> <Delay = 3.39>
 ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%axi_data = load i24 %p_0_0_0_0144310" [prj/sol/.autopilot/db/v_mix.cpp:3817]   --->   Operation 45 'load' 'axi_data' <Predicate = (!icmp_ln3775)> <Delay = 0.00>
 ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%eol_5 = load i1 %p_4_0_0_0152319"   --->   Operation 46 'load' 'eol_5' <Predicate = (!icmp_ln3775)> <Delay = 0.00>
-ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%tmp_5 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32, i24 %axi_data, i32 16" [hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/hls/hls_axi_io.h:63->hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/hls/hls_axi_io.h:85->prj/sol/.autopilot/db/v_mix.cpp:3801]   --->   Operation 47 'partselect' 'tmp_5' <Predicate = (!icmp_ln3775)> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%tmp_6 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32, i24 %axi_data, i32 16" [hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/hls/hls_axi_io.h:63->hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/hls/hls_axi_io.h:85->prj/sol/.autopilot/db/v_mix.cpp:3801]   --->   Operation 47 'partselect' 'tmp_6' <Predicate = (!icmp_ln3775)> <Delay = 0.00>
 ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%trunc_ln3817 = trunc i24 %axi_data" [prj/sol/.autopilot/db/v_mix.cpp:3817]   --->   Operation 48 'trunc' 'trunc_ln3817' <Predicate = (!icmp_ln3775)> <Delay = 0.00>
-ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%or_ln3817_3 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i16.i8, i16 %trunc_ln3817, i8 %tmp_5" [prj/sol/.autopilot/db/v_mix.cpp:3817]   --->   Operation 49 'bitconcatenate' 'or_ln3817_3' <Predicate = (!icmp_ln3775)> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%or_ln3817_3 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i16.i8, i16 %trunc_ln3817, i8 %tmp_6" [prj/sol/.autopilot/db/v_mix.cpp:3817]   --->   Operation 49 'bitconcatenate' 'or_ln3817_3' <Predicate = (!icmp_ln3775)> <Delay = 0.00>
 ST_3 : Operation 50 [1/1] ( I:2.43ns O:2.43ns )   --->   "%write_ln3817 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %srcLayer0, i24 %or_ln3817_3" [prj/sol/.autopilot/db/v_mix.cpp:3817]   --->   Operation 50 'write' 'write_ln3817' <Predicate = (!icmp_ln3775)> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
 
 

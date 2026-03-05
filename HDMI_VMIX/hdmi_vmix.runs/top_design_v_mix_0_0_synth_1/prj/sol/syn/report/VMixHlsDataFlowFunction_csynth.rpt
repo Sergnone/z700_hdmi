@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'VMixHlsDataFlowFunction'
 ================================================================
-* Date:           Tue Feb 24 12:52:09 2026
+* Date:           Sat Feb 28 15:10:44 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -29,30 +29,30 @@
     |  Latency (cycles) |   Latency (absolute)  |    Interval    | Pipeline |
     |   min   |   max   |    min    |    max    |  min |   max   |   Type   |
     +---------+---------+-----------+-----------+------+---------+----------+
-    |     4493|  2084406|  29.955 us|  13.897 ms|  4482|  2084407|  dataflow|
+    |     4685|  2084406|  31.235 us|  13.897 ms|  4675|  2084407|  dataflow|
     +---------+---------+-----------+-----------+------+---------+----------+
 
     + Detail: 
         * Instance: 
-        +---------------------------------+--------------------------------+---------+---------+-----------+-----------+------+---------+---------+
-        |                                 |                                |  Latency (cycles) |   Latency (absolute)  |    Interval    | Pipeline|
-        |             Instance            |             Module             |   min   |   max   |    min    |    max    |  min |   max   |   Type  |
-        +---------------------------------+--------------------------------+---------+---------+-----------+-----------+------+---------+---------+
-        |AXIvideo2MultiPixStream_1_U0     |AXIvideo2MultiPixStream_1       |        2|  2084406|  13.334 ns|  13.897 ms|     2|  2084406|       no|
-        |AXIvideo2MultiPixStream_U0       |AXIvideo2MultiPixStream         |        2|  2084406|  13.334 ns|  13.897 ms|     2|  2084406|       no|
-        |v_mix_420_to_422_false_2_U0      |v_mix_420_to_422_false_2        |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
-        |v_mix_420_to_422_false_U0        |v_mix_420_to_422_false_s        |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
-        |v_mix_422_to_444_false_3_U0      |v_mix_422_to_444_false_3        |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
-        |v_mix_422_to_444_false_U0        |v_mix_422_to_444_false_s        |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
-        |v_mix_yuv2rgb_false_4_U0         |v_mix_yuv2rgb_false_4           |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
-        |v_mix_yuv2rgb_false_U0           |v_mix_yuv2rgb_false_s           |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
-        |v_mix_upsample_false_U0          |v_mix_upsample_false_s          |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
-        |v_mix_core_alpha_false_false_U0  |v_mix_core_alpha_false_false_s  |     4481|  2080081|  29.875 us|  13.868 ms|  4481|  2080081|       no|
-        |v_mix_rgb2yuv_false_U0           |v_mix_rgb2yuv_false_s           |     4417|  2079001|  29.448 us|  13.861 ms|  4417|  2079001|       no|
-        |v_mix_444_to_422_false_U0        |v_mix_444_to_422_false_s        |     4417|  2079001|  29.448 us|  13.861 ms|  4417|  2079001|       no|
-        |v_mix_422_to_420_false_U0        |v_mix_422_to_420_false_s        |     4417|  2079001|  29.448 us|  13.861 ms|  4417|  2079001|       no|
-        |MultiPixStream2AXIvideo_U0       |MultiPixStream2AXIvideo         |        2|  2080082|  13.334 ns|  13.868 ms|     2|  2080082|       no|
-        +---------------------------------+--------------------------------+---------+---------+-----------+-----------+------+---------+---------+
+        +--------------------------------+-------------------------------+---------+---------+-----------+-----------+------+---------+---------+
+        |                                |                               |  Latency (cycles) |   Latency (absolute)  |    Interval    | Pipeline|
+        |            Instance            |             Module            |   min   |   max   |    min    |    max    |  min |   max   |   Type  |
+        +--------------------------------+-------------------------------+---------+---------+-----------+-----------+------+---------+---------+
+        |AXIvideo2MultiPixStream_1_U0    |AXIvideo2MultiPixStream_1      |        2|  2084406|  13.334 ns|  13.897 ms|     2|  2084406|       no|
+        |AXIvideo2MultiPixStream_U0      |AXIvideo2MultiPixStream        |        2|  2084406|  13.334 ns|  13.897 ms|     2|  2084406|       no|
+        |v_mix_420_to_422_false_2_U0     |v_mix_420_to_422_false_2       |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
+        |v_mix_420_to_422_false_U0       |v_mix_420_to_422_false_s       |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
+        |v_mix_422_to_444_false_3_U0     |v_mix_422_to_444_false_3       |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
+        |v_mix_422_to_444_false_U0       |v_mix_422_to_444_false_s       |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
+        |v_mix_yuv2rgb_false_4_U0        |v_mix_yuv2rgb_false_4          |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
+        |v_mix_yuv2rgb_false_U0          |v_mix_yuv2rgb_false_s          |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
+        |v_mix_upsample_false_U0         |v_mix_upsample_false_s         |        1|  2079001|   6.667 ns|  13.861 ms|     1|  2079001|       no|
+        |v_mix_core_alpha_true_false_U0  |v_mix_core_alpha_true_false_s  |     4674|  2083322|  31.162 us|  13.890 ms|  4674|  2083322|       no|
+        |v_mix_rgb2yuv_false_U0          |v_mix_rgb2yuv_false_s          |     4417|  2079001|  29.448 us|  13.861 ms|  4417|  2079001|       no|
+        |v_mix_444_to_422_false_U0       |v_mix_444_to_422_false_s       |     4417|  2079001|  29.448 us|  13.861 ms|  4417|  2079001|       no|
+        |v_mix_422_to_420_false_U0       |v_mix_422_to_420_false_s       |     4417|  2079001|  29.448 us|  13.861 ms|  4417|  2079001|       no|
+        |MultiPixStream2AXIvideo_U0      |MultiPixStream2AXIvideo        |        2|  2080082|  13.334 ns|  13.868 ms|     2|  2080082|       no|
+        +--------------------------------+-------------------------------+---------+---------+-----------+-----------+------+---------+---------+
 
         * Loop: 
         N/A
@@ -69,40 +69,40 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       0|      6|    -|
 |FIFO             |        -|    -|    1287|    884|    -|
-|Instance         |        -|    -|    1370|   2996|    -|
+|Instance         |        -|    3|    1581|   3111|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       0|     18|    -|
 |Register         |        -|    -|       3|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|    2660|   3904|    0|
+|Total            |        0|    3|    2871|   4019|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |        0|    0|       2|      7|    0|
+|Utilization (%)  |        0|    1|       2|      7|    0|
 +-----------------+---------+-----+--------+-------+-----+
 
 + Detail: 
     * Instance: 
-    +---------------------------------+--------------------------------+---------+----+-----+-----+-----+
-    |             Instance            |             Module             | BRAM_18K| DSP|  FF | LUT | URAM|
-    +---------------------------------+--------------------------------+---------+----+-----+-----+-----+
-    |AXIvideo2MultiPixStream_U0       |AXIvideo2MultiPixStream         |        0|   0|  159|  388|    0|
-    |AXIvideo2MultiPixStream_1_U0     |AXIvideo2MultiPixStream_1       |        0|   0|  159|  388|    0|
-    |MultiPixStream2AXIvideo_U0       |MultiPixStream2AXIvideo         |        0|   0|  144|  269|    0|
-    |v_mix_420_to_422_false_2_U0      |v_mix_420_to_422_false_2        |        0|   0|   66|  151|    0|
-    |v_mix_420_to_422_false_U0        |v_mix_420_to_422_false_s        |        0|   0|   66|  151|    0|
-    |v_mix_422_to_420_false_U0        |v_mix_422_to_420_false_s        |        0|   0|   65|  151|    0|
-    |v_mix_422_to_444_false_3_U0      |v_mix_422_to_444_false_3        |        0|   0|   66|  151|    0|
-    |v_mix_422_to_444_false_U0        |v_mix_422_to_444_false_s        |        0|   0|   66|  151|    0|
-    |v_mix_444_to_422_false_U0        |v_mix_444_to_422_false_s        |        0|   0|   65|  151|    0|
-    |v_mix_core_alpha_false_false_U0  |v_mix_core_alpha_false_false_s  |        0|   0|  252|  450|    0|
-    |v_mix_rgb2yuv_false_U0           |v_mix_rgb2yuv_false_s           |        0|   0|   65|  151|    0|
-    |v_mix_upsample_false_U0          |v_mix_upsample_false_s          |        0|   0|   65|  142|    0|
-    |v_mix_yuv2rgb_false_4_U0         |v_mix_yuv2rgb_false_4           |        0|   0|   66|  151|    0|
-    |v_mix_yuv2rgb_false_U0           |v_mix_yuv2rgb_false_s           |        0|   0|   66|  151|    0|
-    +---------------------------------+--------------------------------+---------+----+-----+-----+-----+
-    |Total                            |                                |        0|   0| 1370| 2996|    0|
-    +---------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    +--------------------------------+-------------------------------+---------+----+-----+-----+-----+
+    |            Instance            |             Module            | BRAM_18K| DSP|  FF | LUT | URAM|
+    +--------------------------------+-------------------------------+---------+----+-----+-----+-----+
+    |AXIvideo2MultiPixStream_U0      |AXIvideo2MultiPixStream        |        0|   0|  159|  388|    0|
+    |AXIvideo2MultiPixStream_1_U0    |AXIvideo2MultiPixStream_1      |        0|   0|  159|  388|    0|
+    |MultiPixStream2AXIvideo_U0      |MultiPixStream2AXIvideo        |        0|   0|  144|  269|    0|
+    |v_mix_420_to_422_false_2_U0     |v_mix_420_to_422_false_2       |        0|   0|   66|  151|    0|
+    |v_mix_420_to_422_false_U0       |v_mix_420_to_422_false_s       |        0|   0|   66|  151|    0|
+    |v_mix_422_to_420_false_U0       |v_mix_422_to_420_false_s       |        0|   0|   65|  151|    0|
+    |v_mix_422_to_444_false_3_U0     |v_mix_422_to_444_false_3       |        0|   0|   66|  151|    0|
+    |v_mix_422_to_444_false_U0       |v_mix_422_to_444_false_s       |        0|   0|   66|  151|    0|
+    |v_mix_444_to_422_false_U0       |v_mix_444_to_422_false_s       |        0|   0|   65|  151|    0|
+    |v_mix_core_alpha_true_false_U0  |v_mix_core_alpha_true_false_s  |        0|   3|  463|  565|    0|
+    |v_mix_rgb2yuv_false_U0          |v_mix_rgb2yuv_false_s          |        0|   0|   65|  151|    0|
+    |v_mix_upsample_false_U0         |v_mix_upsample_false_s         |        0|   0|   65|  142|    0|
+    |v_mix_yuv2rgb_false_4_U0        |v_mix_yuv2rgb_false_4          |        0|   0|   66|  151|    0|
+    |v_mix_yuv2rgb_false_U0          |v_mix_yuv2rgb_false_s          |        0|   0|   66|  151|    0|
+    +--------------------------------+-------------------------------+---------+----+-----+-----+-----+
+    |Total                           |                               |        0|   3| 1581| 3111|    0|
+    +--------------------------------+-------------------------------+---------+----+-----+-----+-----+
 
     * DSP: 
     N/A
@@ -191,16 +191,18 @@
 |HwReg_layerEnableFlag_0_val_ap_vld     |   in|    1|     ap_none|     HwReg_layerEnableFlag_0_val|        scalar|
 |HwReg_layerEnableFlag_1_val            |   in|    1|     ap_none|     HwReg_layerEnableFlag_1_val|        scalar|
 |HwReg_layerEnableFlag_1_val_ap_vld     |   in|    1|     ap_none|     HwReg_layerEnableFlag_1_val|        scalar|
-|HwReg_layerStartX_1_val14              |   in|   16|     ap_none|       HwReg_layerStartX_1_val14|        scalar|
-|HwReg_layerStartX_1_val14_ap_vld       |   in|    1|     ap_none|       HwReg_layerStartX_1_val14|        scalar|
-|HwReg_layerStartY_1_val15              |   in|   16|     ap_none|       HwReg_layerStartY_1_val15|        scalar|
-|HwReg_layerStartY_1_val15_ap_vld       |   in|    1|     ap_none|       HwReg_layerStartY_1_val15|        scalar|
+|HwReg_layerAlpha_1_val14               |   in|    9|     ap_none|        HwReg_layerAlpha_1_val14|        scalar|
+|HwReg_layerAlpha_1_val14_ap_vld        |   in|    1|     ap_none|        HwReg_layerAlpha_1_val14|        scalar|
+|HwReg_layerStartX_1_val15              |   in|   16|     ap_none|       HwReg_layerStartX_1_val15|        scalar|
+|HwReg_layerStartX_1_val15_ap_vld       |   in|    1|     ap_none|       HwReg_layerStartX_1_val15|        scalar|
+|HwReg_layerStartY_1_val16              |   in|   16|     ap_none|       HwReg_layerStartY_1_val16|        scalar|
+|HwReg_layerStartY_1_val16_ap_vld       |   in|    1|     ap_none|       HwReg_layerStartY_1_val16|        scalar|
 |HwReg_layerWidth_1_val                 |   in|   16|     ap_none|          HwReg_layerWidth_1_val|        scalar|
 |HwReg_layerWidth_1_val_ap_vld          |   in|    1|     ap_none|          HwReg_layerWidth_1_val|        scalar|
 |HwReg_layerHeight_1_val                |   in|   16|     ap_none|         HwReg_layerHeight_1_val|        scalar|
 |HwReg_layerHeight_1_val_ap_vld         |   in|    1|     ap_none|         HwReg_layerHeight_1_val|        scalar|
-|HwReg_layerScaleFactor_1_val18         |   in|    8|     ap_none|  HwReg_layerScaleFactor_1_val18|        scalar|
-|HwReg_layerScaleFactor_1_val18_ap_vld  |   in|    1|     ap_none|  HwReg_layerScaleFactor_1_val18|        scalar|
+|HwReg_layerScaleFactor_1_val19         |   in|    8|     ap_none|  HwReg_layerScaleFactor_1_val19|        scalar|
+|HwReg_layerScaleFactor_1_val19_ap_vld  |   in|    1|     ap_none|  HwReg_layerScaleFactor_1_val19|        scalar|
 |s_axis_video_TDATA                     |   in|   24|        axis|           s_axis_video_V_data_V|       pointer|
 |s_axis_video_TKEEP                     |   in|    3|        axis|           s_axis_video_V_keep_V|       pointer|
 |s_axis_video_TSTRB                     |   in|    3|        axis|           s_axis_video_V_strb_V|       pointer|

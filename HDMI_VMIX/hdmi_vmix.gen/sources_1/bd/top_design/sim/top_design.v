@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Tue Feb 24 12:50:28 2026
+//Date        : Sat Feb 28 17:55:51 2026
 //Host        : serg running 64-bit Ubuntu 24.04.3 LTS
 //Command     : generate_target top_design.bd
 //Design      : top_design
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "top_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=top_design,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=21,numReposBlks=21,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=16,da_board_cnt=5,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "top_design.hwdef" *) 
+(* CORE_GENERATION_INFO = "top_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=top_design,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=20,numReposBlks=20,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_board_cnt=5,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "top_design.hwdef" *) 
 module top_design
    (DDR_addr,
     DDR_ba,
@@ -199,10 +199,10 @@ module top_design
   wire axi_smc_M05_AXI_WREADY;
   wire [3:0]axi_smc_M05_AXI_WSTRB;
   wire axi_smc_M05_AXI_WVALID;
-  wire [6:0]axi_smc_M06_AXI_ARADDR;
+  wire [7:0]axi_smc_M06_AXI_ARADDR;
   wire axi_smc_M06_AXI_ARREADY;
   wire axi_smc_M06_AXI_ARVALID;
-  wire [6:0]axi_smc_M06_AXI_AWADDR;
+  wire [7:0]axi_smc_M06_AXI_AWADDR;
   wire axi_smc_M06_AXI_AWREADY;
   wire axi_smc_M06_AXI_AWVALID;
   wire axi_smc_M06_AXI_BREADY;
@@ -216,12 +216,11 @@ module top_design
   wire axi_smc_M06_AXI_WREADY;
   wire [3:0]axi_smc_M06_AXI_WSTRB;
   wire axi_smc_M06_AXI_WVALID;
-  wire [5:0]ilconcat_0_dout;
+  wire [3:0]ilconcat_0_dout;
   wire [0:0]ilslice_0_Dout;
   wire [0:0]ilslice_1_Dout;
   wire [0:0]ilslice_2_Dout;
   wire [0:0]ilslice_3_Dout;
-  wire [0:0]ilslice_4_Dout;
   wire processing_system7_0_FCLK_CLK0;
   wire processing_system7_0_FCLK_CLK1;
   wire processing_system7_0_FCLK_RESET0_N;
@@ -347,49 +346,6 @@ module top_design
   wire [2:0]v_frmbuf_rd_0_m_axis_video_TSTRB;
   wire [0:0]v_frmbuf_rd_0_m_axis_video_TUSER;
   wire v_frmbuf_rd_0_m_axis_video_TVALID;
-  wire v_frmbuf_rd_1_interrupt;
-  wire [31:0]v_frmbuf_rd_1_m_axi_mm_video_ARADDR;
-  wire [1:0]v_frmbuf_rd_1_m_axi_mm_video_ARBURST;
-  wire [3:0]v_frmbuf_rd_1_m_axi_mm_video_ARCACHE;
-  wire [7:0]v_frmbuf_rd_1_m_axi_mm_video_ARLEN;
-  wire [1:0]v_frmbuf_rd_1_m_axi_mm_video_ARLOCK;
-  wire [2:0]v_frmbuf_rd_1_m_axi_mm_video_ARPROT;
-  wire [3:0]v_frmbuf_rd_1_m_axi_mm_video_ARQOS;
-  wire v_frmbuf_rd_1_m_axi_mm_video_ARREADY;
-  wire [2:0]v_frmbuf_rd_1_m_axi_mm_video_ARSIZE;
-  wire v_frmbuf_rd_1_m_axi_mm_video_ARVALID;
-  wire [31:0]v_frmbuf_rd_1_m_axi_mm_video_AWADDR;
-  wire [1:0]v_frmbuf_rd_1_m_axi_mm_video_AWBURST;
-  wire [3:0]v_frmbuf_rd_1_m_axi_mm_video_AWCACHE;
-  wire [7:0]v_frmbuf_rd_1_m_axi_mm_video_AWLEN;
-  wire [1:0]v_frmbuf_rd_1_m_axi_mm_video_AWLOCK;
-  wire [2:0]v_frmbuf_rd_1_m_axi_mm_video_AWPROT;
-  wire [3:0]v_frmbuf_rd_1_m_axi_mm_video_AWQOS;
-  wire v_frmbuf_rd_1_m_axi_mm_video_AWREADY;
-  wire [2:0]v_frmbuf_rd_1_m_axi_mm_video_AWSIZE;
-  wire v_frmbuf_rd_1_m_axi_mm_video_AWVALID;
-  wire v_frmbuf_rd_1_m_axi_mm_video_BREADY;
-  wire [1:0]v_frmbuf_rd_1_m_axi_mm_video_BRESP;
-  wire v_frmbuf_rd_1_m_axi_mm_video_BVALID;
-  wire [63:0]v_frmbuf_rd_1_m_axi_mm_video_RDATA;
-  wire v_frmbuf_rd_1_m_axi_mm_video_RLAST;
-  wire v_frmbuf_rd_1_m_axi_mm_video_RREADY;
-  wire [1:0]v_frmbuf_rd_1_m_axi_mm_video_RRESP;
-  wire v_frmbuf_rd_1_m_axi_mm_video_RVALID;
-  wire [63:0]v_frmbuf_rd_1_m_axi_mm_video_WDATA;
-  wire v_frmbuf_rd_1_m_axi_mm_video_WLAST;
-  wire v_frmbuf_rd_1_m_axi_mm_video_WREADY;
-  wire [7:0]v_frmbuf_rd_1_m_axi_mm_video_WSTRB;
-  wire v_frmbuf_rd_1_m_axi_mm_video_WVALID;
-  wire [23:0]v_frmbuf_rd_1_m_axis_video_TDATA;
-  wire [0:0]v_frmbuf_rd_1_m_axis_video_TDEST;
-  wire [0:0]v_frmbuf_rd_1_m_axis_video_TID;
-  wire [2:0]v_frmbuf_rd_1_m_axis_video_TKEEP;
-  wire [0:0]v_frmbuf_rd_1_m_axis_video_TLAST;
-  wire v_frmbuf_rd_1_m_axis_video_TREADY;
-  wire [2:0]v_frmbuf_rd_1_m_axis_video_TSTRB;
-  wire [0:0]v_frmbuf_rd_1_m_axis_video_TUSER;
-  wire v_frmbuf_rd_1_m_axis_video_TVALID;
   wire v_frmbuf_wr_0_interrupt;
   wire [31:0]v_frmbuf_wr_0_m_axi_mm_video_ARADDR;
   wire [1:0]v_frmbuf_wr_0_m_axi_mm_video_ARBURST;
@@ -424,7 +380,6 @@ module top_design
   wire v_frmbuf_wr_0_m_axi_mm_video_WREADY;
   wire [7:0]v_frmbuf_wr_0_m_axi_mm_video_WSTRB;
   wire v_frmbuf_wr_0_m_axi_mm_video_WVALID;
-  wire v_mix_0_interrupt;
   wire [23:0]v_mix_0_m_axis_video_TDATA;
   wire [0:0]v_mix_0_m_axis_video_TLAST;
   wire v_mix_0_m_axis_video_TREADY;
@@ -446,6 +401,15 @@ module top_design
   wire [2:0]v_tpg_0_m_axis_video_TSTRB;
   wire [0:0]v_tpg_0_m_axis_video_TUSER;
   wire v_tpg_0_m_axis_video_TVALID;
+  wire [23:0]v_tpg_1_m_axis_video_TDATA;
+  wire [0:0]v_tpg_1_m_axis_video_TDEST;
+  wire [0:0]v_tpg_1_m_axis_video_TID;
+  wire [2:0]v_tpg_1_m_axis_video_TKEEP;
+  wire [0:0]v_tpg_1_m_axis_video_TLAST;
+  wire v_tpg_1_m_axis_video_TREADY;
+  wire [2:0]v_tpg_1_m_axis_video_TSTRB;
+  wire [0:0]v_tpg_1_m_axis_video_TUSER;
+  wire v_tpg_1_m_axis_video_TVALID;
 
   top_design_axi_dynclk_0_0 axi_dynclk_0
        (.LOCKED_O(axi_dynclk_0_LOCKED_O),
@@ -636,13 +600,12 @@ module top_design
         .aclk(processing_system7_0_FCLK_CLK0),
         .aclk1(processing_system7_0_FCLK_CLK1),
         .aresetn(rst_ps7_0_148M_peripheral_aresetn));
-  assign ilconcat_0_dout = {v_frmbuf_rd_1_interrupt, v_mix_0_interrupt, v_tpg_0_interrupt, v_frmbuf_wr_0_interrupt, v_frmbuf_rd_0_interrupt, v_tc_0_irq};
+  assign ilconcat_0_dout = {v_tpg_0_interrupt, v_frmbuf_wr_0_interrupt, v_frmbuf_rd_0_interrupt, v_tc_0_irq};
   assign HDMI_EN = 1'h1;
   assign ilslice_0_Dout = processing_system7_0_GPIO_O[0:0];
   assign ilslice_1_Dout = processing_system7_0_GPIO_O[1:1];
   assign ilslice_2_Dout = processing_system7_0_GPIO_O[2:2];
   assign ilslice_3_Dout = processing_system7_0_GPIO_O[3:3];
-  assign ilslice_4_Dout = processing_system7_0_GPIO_O[4:4];
   top_design_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr),
         .DDR_BankAddr(DDR_ba),
@@ -875,39 +838,6 @@ module top_design
         .S01_AXI_wready(v_frmbuf_wr_0_m_axi_mm_video_WREADY),
         .S01_AXI_wstrb(v_frmbuf_wr_0_m_axi_mm_video_WSTRB),
         .S01_AXI_wvalid(v_frmbuf_wr_0_m_axi_mm_video_WVALID),
-        .S02_AXI_araddr(v_frmbuf_rd_1_m_axi_mm_video_ARADDR),
-        .S02_AXI_arburst(v_frmbuf_rd_1_m_axi_mm_video_ARBURST),
-        .S02_AXI_arcache(v_frmbuf_rd_1_m_axi_mm_video_ARCACHE),
-        .S02_AXI_arlen(v_frmbuf_rd_1_m_axi_mm_video_ARLEN),
-        .S02_AXI_arlock(v_frmbuf_rd_1_m_axi_mm_video_ARLOCK[0]),
-        .S02_AXI_arprot(v_frmbuf_rd_1_m_axi_mm_video_ARPROT),
-        .S02_AXI_arqos(v_frmbuf_rd_1_m_axi_mm_video_ARQOS),
-        .S02_AXI_arready(v_frmbuf_rd_1_m_axi_mm_video_ARREADY),
-        .S02_AXI_arsize(v_frmbuf_rd_1_m_axi_mm_video_ARSIZE),
-        .S02_AXI_arvalid(v_frmbuf_rd_1_m_axi_mm_video_ARVALID),
-        .S02_AXI_awaddr(v_frmbuf_rd_1_m_axi_mm_video_AWADDR),
-        .S02_AXI_awburst(v_frmbuf_rd_1_m_axi_mm_video_AWBURST),
-        .S02_AXI_awcache(v_frmbuf_rd_1_m_axi_mm_video_AWCACHE),
-        .S02_AXI_awlen(v_frmbuf_rd_1_m_axi_mm_video_AWLEN),
-        .S02_AXI_awlock(v_frmbuf_rd_1_m_axi_mm_video_AWLOCK[0]),
-        .S02_AXI_awprot(v_frmbuf_rd_1_m_axi_mm_video_AWPROT),
-        .S02_AXI_awqos(v_frmbuf_rd_1_m_axi_mm_video_AWQOS),
-        .S02_AXI_awready(v_frmbuf_rd_1_m_axi_mm_video_AWREADY),
-        .S02_AXI_awsize(v_frmbuf_rd_1_m_axi_mm_video_AWSIZE),
-        .S02_AXI_awvalid(v_frmbuf_rd_1_m_axi_mm_video_AWVALID),
-        .S02_AXI_bready(v_frmbuf_rd_1_m_axi_mm_video_BREADY),
-        .S02_AXI_bresp(v_frmbuf_rd_1_m_axi_mm_video_BRESP),
-        .S02_AXI_bvalid(v_frmbuf_rd_1_m_axi_mm_video_BVALID),
-        .S02_AXI_rdata(v_frmbuf_rd_1_m_axi_mm_video_RDATA),
-        .S02_AXI_rlast(v_frmbuf_rd_1_m_axi_mm_video_RLAST),
-        .S02_AXI_rready(v_frmbuf_rd_1_m_axi_mm_video_RREADY),
-        .S02_AXI_rresp(v_frmbuf_rd_1_m_axi_mm_video_RRESP),
-        .S02_AXI_rvalid(v_frmbuf_rd_1_m_axi_mm_video_RVALID),
-        .S02_AXI_wdata(v_frmbuf_rd_1_m_axi_mm_video_WDATA),
-        .S02_AXI_wlast(v_frmbuf_rd_1_m_axi_mm_video_WLAST),
-        .S02_AXI_wready(v_frmbuf_rd_1_m_axi_mm_video_WREADY),
-        .S02_AXI_wstrb(v_frmbuf_rd_1_m_axi_mm_video_WSTRB),
-        .S02_AXI_wvalid(v_frmbuf_rd_1_m_axi_mm_video_WVALID),
         .aclk(processing_system7_0_FCLK_CLK0),
         .aresetn(rst_ps7_0_148M_peripheral_aresetn));
   top_design_v_axi4s_vid_out_0_1 v_axi4s_vid_out_0
@@ -998,69 +928,6 @@ module top_design
         .s_axi_CTRL_WREADY(axi_smc_M02_AXI_WREADY),
         .s_axi_CTRL_WSTRB(axi_smc_M02_AXI_WSTRB),
         .s_axi_CTRL_WVALID(axi_smc_M02_AXI_WVALID));
-  top_design_v_frmbuf_rd_0_1 v_frmbuf_rd_1
-       (.ap_clk(processing_system7_0_FCLK_CLK0),
-        .ap_rst_n(ilslice_4_Dout),
-        .interrupt(v_frmbuf_rd_1_interrupt),
-        .m_axi_mm_video_ARADDR(v_frmbuf_rd_1_m_axi_mm_video_ARADDR),
-        .m_axi_mm_video_ARBURST(v_frmbuf_rd_1_m_axi_mm_video_ARBURST),
-        .m_axi_mm_video_ARCACHE(v_frmbuf_rd_1_m_axi_mm_video_ARCACHE),
-        .m_axi_mm_video_ARLEN(v_frmbuf_rd_1_m_axi_mm_video_ARLEN),
-        .m_axi_mm_video_ARLOCK(v_frmbuf_rd_1_m_axi_mm_video_ARLOCK),
-        .m_axi_mm_video_ARPROT(v_frmbuf_rd_1_m_axi_mm_video_ARPROT),
-        .m_axi_mm_video_ARQOS(v_frmbuf_rd_1_m_axi_mm_video_ARQOS),
-        .m_axi_mm_video_ARREADY(v_frmbuf_rd_1_m_axi_mm_video_ARREADY),
-        .m_axi_mm_video_ARSIZE(v_frmbuf_rd_1_m_axi_mm_video_ARSIZE),
-        .m_axi_mm_video_ARVALID(v_frmbuf_rd_1_m_axi_mm_video_ARVALID),
-        .m_axi_mm_video_AWADDR(v_frmbuf_rd_1_m_axi_mm_video_AWADDR),
-        .m_axi_mm_video_AWBURST(v_frmbuf_rd_1_m_axi_mm_video_AWBURST),
-        .m_axi_mm_video_AWCACHE(v_frmbuf_rd_1_m_axi_mm_video_AWCACHE),
-        .m_axi_mm_video_AWLEN(v_frmbuf_rd_1_m_axi_mm_video_AWLEN),
-        .m_axi_mm_video_AWLOCK(v_frmbuf_rd_1_m_axi_mm_video_AWLOCK),
-        .m_axi_mm_video_AWPROT(v_frmbuf_rd_1_m_axi_mm_video_AWPROT),
-        .m_axi_mm_video_AWQOS(v_frmbuf_rd_1_m_axi_mm_video_AWQOS),
-        .m_axi_mm_video_AWREADY(v_frmbuf_rd_1_m_axi_mm_video_AWREADY),
-        .m_axi_mm_video_AWSIZE(v_frmbuf_rd_1_m_axi_mm_video_AWSIZE),
-        .m_axi_mm_video_AWVALID(v_frmbuf_rd_1_m_axi_mm_video_AWVALID),
-        .m_axi_mm_video_BREADY(v_frmbuf_rd_1_m_axi_mm_video_BREADY),
-        .m_axi_mm_video_BRESP(v_frmbuf_rd_1_m_axi_mm_video_BRESP),
-        .m_axi_mm_video_BVALID(v_frmbuf_rd_1_m_axi_mm_video_BVALID),
-        .m_axi_mm_video_RDATA(v_frmbuf_rd_1_m_axi_mm_video_RDATA),
-        .m_axi_mm_video_RLAST(v_frmbuf_rd_1_m_axi_mm_video_RLAST),
-        .m_axi_mm_video_RREADY(v_frmbuf_rd_1_m_axi_mm_video_RREADY),
-        .m_axi_mm_video_RRESP(v_frmbuf_rd_1_m_axi_mm_video_RRESP),
-        .m_axi_mm_video_RVALID(v_frmbuf_rd_1_m_axi_mm_video_RVALID),
-        .m_axi_mm_video_WDATA(v_frmbuf_rd_1_m_axi_mm_video_WDATA),
-        .m_axi_mm_video_WLAST(v_frmbuf_rd_1_m_axi_mm_video_WLAST),
-        .m_axi_mm_video_WREADY(v_frmbuf_rd_1_m_axi_mm_video_WREADY),
-        .m_axi_mm_video_WSTRB(v_frmbuf_rd_1_m_axi_mm_video_WSTRB),
-        .m_axi_mm_video_WVALID(v_frmbuf_rd_1_m_axi_mm_video_WVALID),
-        .m_axis_video_TDATA(v_frmbuf_rd_1_m_axis_video_TDATA),
-        .m_axis_video_TDEST(v_frmbuf_rd_1_m_axis_video_TDEST),
-        .m_axis_video_TID(v_frmbuf_rd_1_m_axis_video_TID),
-        .m_axis_video_TKEEP(v_frmbuf_rd_1_m_axis_video_TKEEP),
-        .m_axis_video_TLAST(v_frmbuf_rd_1_m_axis_video_TLAST),
-        .m_axis_video_TREADY(v_frmbuf_rd_1_m_axis_video_TREADY),
-        .m_axis_video_TSTRB(v_frmbuf_rd_1_m_axis_video_TSTRB),
-        .m_axis_video_TUSER(v_frmbuf_rd_1_m_axis_video_TUSER),
-        .m_axis_video_TVALID(v_frmbuf_rd_1_m_axis_video_TVALID),
-        .s_axi_CTRL_ARADDR(axi_smc_M06_AXI_ARADDR),
-        .s_axi_CTRL_ARREADY(axi_smc_M06_AXI_ARREADY),
-        .s_axi_CTRL_ARVALID(axi_smc_M06_AXI_ARVALID),
-        .s_axi_CTRL_AWADDR(axi_smc_M06_AXI_AWADDR),
-        .s_axi_CTRL_AWREADY(axi_smc_M06_AXI_AWREADY),
-        .s_axi_CTRL_AWVALID(axi_smc_M06_AXI_AWVALID),
-        .s_axi_CTRL_BREADY(axi_smc_M06_AXI_BREADY),
-        .s_axi_CTRL_BRESP(axi_smc_M06_AXI_BRESP),
-        .s_axi_CTRL_BVALID(axi_smc_M06_AXI_BVALID),
-        .s_axi_CTRL_RDATA(axi_smc_M06_AXI_RDATA),
-        .s_axi_CTRL_RREADY(axi_smc_M06_AXI_RREADY),
-        .s_axi_CTRL_RRESP(axi_smc_M06_AXI_RRESP),
-        .s_axi_CTRL_RVALID(axi_smc_M06_AXI_RVALID),
-        .s_axi_CTRL_WDATA(axi_smc_M06_AXI_WDATA),
-        .s_axi_CTRL_WREADY(axi_smc_M06_AXI_WREADY),
-        .s_axi_CTRL_WSTRB(axi_smc_M06_AXI_WSTRB),
-        .s_axi_CTRL_WVALID(axi_smc_M06_AXI_WVALID));
   top_design_v_frmbuf_wr_0_0 v_frmbuf_wr_0
        (.ap_clk(processing_system7_0_FCLK_CLK0),
         .ap_rst_n(ilslice_1_Dout),
@@ -1126,8 +993,7 @@ module top_design
         .s_axis_video_TVALID(v_tpg_0_m_axis_video_TVALID));
   top_design_v_mix_0_0 v_mix_0
        (.ap_clk(processing_system7_0_FCLK_CLK0),
-        .ap_rst_n(ilslice_3_Dout),
-        .interrupt(v_mix_0_interrupt),
+        .ap_rst_n(rst_ps7_0_148M_peripheral_aresetn),
         .m_axis_video_TDATA(v_mix_0_m_axis_video_TDATA),
         .m_axis_video_TLAST(v_mix_0_m_axis_video_TLAST),
         .m_axis_video_TREADY(v_mix_0_m_axis_video_TREADY),
@@ -1150,24 +1016,24 @@ module top_design
         .s_axi_CTRL_WREADY(axi_smc_M05_AXI_WREADY),
         .s_axi_CTRL_WSTRB(axi_smc_M05_AXI_WSTRB),
         .s_axi_CTRL_WVALID(axi_smc_M05_AXI_WVALID),
-        .s_axis_video1_TDATA(v_frmbuf_rd_1_m_axis_video_TDATA),
-        .s_axis_video1_TDEST(v_frmbuf_rd_1_m_axis_video_TDEST),
-        .s_axis_video1_TID(v_frmbuf_rd_1_m_axis_video_TID),
-        .s_axis_video1_TKEEP(v_frmbuf_rd_1_m_axis_video_TKEEP),
-        .s_axis_video1_TLAST(v_frmbuf_rd_1_m_axis_video_TLAST),
-        .s_axis_video1_TREADY(v_frmbuf_rd_1_m_axis_video_TREADY),
-        .s_axis_video1_TSTRB(v_frmbuf_rd_1_m_axis_video_TSTRB),
-        .s_axis_video1_TUSER(v_frmbuf_rd_1_m_axis_video_TUSER),
-        .s_axis_video1_TVALID(v_frmbuf_rd_1_m_axis_video_TVALID),
-        .s_axis_video_TDATA(v_frmbuf_rd_0_m_axis_video_TDATA),
-        .s_axis_video_TDEST(v_frmbuf_rd_0_m_axis_video_TDEST),
-        .s_axis_video_TID(v_frmbuf_rd_0_m_axis_video_TID),
-        .s_axis_video_TKEEP(v_frmbuf_rd_0_m_axis_video_TKEEP),
-        .s_axis_video_TLAST(v_frmbuf_rd_0_m_axis_video_TLAST),
-        .s_axis_video_TREADY(v_frmbuf_rd_0_m_axis_video_TREADY),
-        .s_axis_video_TSTRB(v_frmbuf_rd_0_m_axis_video_TSTRB),
-        .s_axis_video_TUSER(v_frmbuf_rd_0_m_axis_video_TUSER),
-        .s_axis_video_TVALID(v_frmbuf_rd_0_m_axis_video_TVALID));
+        .s_axis_video1_TDATA(v_frmbuf_rd_0_m_axis_video_TDATA),
+        .s_axis_video1_TDEST(v_frmbuf_rd_0_m_axis_video_TDEST),
+        .s_axis_video1_TID(v_frmbuf_rd_0_m_axis_video_TID),
+        .s_axis_video1_TKEEP(v_frmbuf_rd_0_m_axis_video_TKEEP),
+        .s_axis_video1_TLAST(v_frmbuf_rd_0_m_axis_video_TLAST),
+        .s_axis_video1_TREADY(v_frmbuf_rd_0_m_axis_video_TREADY),
+        .s_axis_video1_TSTRB(v_frmbuf_rd_0_m_axis_video_TSTRB),
+        .s_axis_video1_TUSER(v_frmbuf_rd_0_m_axis_video_TUSER),
+        .s_axis_video1_TVALID(v_frmbuf_rd_0_m_axis_video_TVALID),
+        .s_axis_video_TDATA(v_tpg_1_m_axis_video_TDATA),
+        .s_axis_video_TDEST(v_tpg_1_m_axis_video_TDEST),
+        .s_axis_video_TID(v_tpg_1_m_axis_video_TID),
+        .s_axis_video_TKEEP(v_tpg_1_m_axis_video_TKEEP),
+        .s_axis_video_TLAST(v_tpg_1_m_axis_video_TLAST),
+        .s_axis_video_TREADY(v_tpg_1_m_axis_video_TREADY),
+        .s_axis_video_TSTRB(v_tpg_1_m_axis_video_TSTRB),
+        .s_axis_video_TUSER(v_tpg_1_m_axis_video_TUSER),
+        .s_axis_video_TVALID(v_tpg_1_m_axis_video_TVALID));
   top_design_v_tc_0_1 v_tc_0
        (.active_video_out(v_tc_0_vtiming_out_ACTIVE_VIDEO),
         .clk(axi_dynclk_0_PXL_CLK_O),
@@ -1232,4 +1098,34 @@ module top_design
         .s_axi_CTRL_WREADY(axi_smc_M04_AXI_WREADY),
         .s_axi_CTRL_WSTRB(axi_smc_M04_AXI_WSTRB),
         .s_axi_CTRL_WVALID(axi_smc_M04_AXI_WVALID));
+  top_design_v_tpg_0_2 v_tpg_1
+       (.ap_clk(processing_system7_0_FCLK_CLK0),
+        .ap_rst_n(ilslice_3_Dout),
+        .fid_in(1'b1),
+        .m_axis_video_TDATA(v_tpg_1_m_axis_video_TDATA),
+        .m_axis_video_TDEST(v_tpg_1_m_axis_video_TDEST),
+        .m_axis_video_TID(v_tpg_1_m_axis_video_TID),
+        .m_axis_video_TKEEP(v_tpg_1_m_axis_video_TKEEP),
+        .m_axis_video_TLAST(v_tpg_1_m_axis_video_TLAST),
+        .m_axis_video_TREADY(v_tpg_1_m_axis_video_TREADY),
+        .m_axis_video_TSTRB(v_tpg_1_m_axis_video_TSTRB),
+        .m_axis_video_TUSER(v_tpg_1_m_axis_video_TUSER),
+        .m_axis_video_TVALID(v_tpg_1_m_axis_video_TVALID),
+        .s_axi_CTRL_ARADDR(axi_smc_M06_AXI_ARADDR),
+        .s_axi_CTRL_ARREADY(axi_smc_M06_AXI_ARREADY),
+        .s_axi_CTRL_ARVALID(axi_smc_M06_AXI_ARVALID),
+        .s_axi_CTRL_AWADDR(axi_smc_M06_AXI_AWADDR),
+        .s_axi_CTRL_AWREADY(axi_smc_M06_AXI_AWREADY),
+        .s_axi_CTRL_AWVALID(axi_smc_M06_AXI_AWVALID),
+        .s_axi_CTRL_BREADY(axi_smc_M06_AXI_BREADY),
+        .s_axi_CTRL_BRESP(axi_smc_M06_AXI_BRESP),
+        .s_axi_CTRL_BVALID(axi_smc_M06_AXI_BVALID),
+        .s_axi_CTRL_RDATA(axi_smc_M06_AXI_RDATA),
+        .s_axi_CTRL_RREADY(axi_smc_M06_AXI_RREADY),
+        .s_axi_CTRL_RRESP(axi_smc_M06_AXI_RRESP),
+        .s_axi_CTRL_RVALID(axi_smc_M06_AXI_RVALID),
+        .s_axi_CTRL_WDATA(axi_smc_M06_AXI_WDATA),
+        .s_axi_CTRL_WREADY(axi_smc_M06_AXI_WREADY),
+        .s_axi_CTRL_WSTRB(axi_smc_M06_AXI_WSTRB),
+        .s_axi_CTRL_WVALID(axi_smc_M06_AXI_WVALID));
 endmodule

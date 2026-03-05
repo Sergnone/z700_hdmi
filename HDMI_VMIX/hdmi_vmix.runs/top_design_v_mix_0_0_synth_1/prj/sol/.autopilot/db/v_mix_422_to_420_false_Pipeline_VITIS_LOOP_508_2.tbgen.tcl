@@ -15,7 +15,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 38
+set cdfgNum 39
 set C_modelName {v_mix_422_to_420<false>_Pipeline_VITIS_LOOP_508_2}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'AXIvideo2MultiPixStream_Pipeline_loop_width'
 ================================================================
-* Date:           Tue Feb 24 12:52:08 2026
+* Date:           Sat Feb 28 15:10:43 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -151,7 +151,7 @@ Target clock period: 6.667ns, clock uncertainty: 1.800ns.
 The critical path consists of the following:
 	'store' operation ('store_ln3775', prj/sol/.autopilot/db/v_mix.cpp:3775->prj/sol/.autopilot/db/v_mix.cpp:730->prj/sol/.autopilot/db/v_mix.cpp:730) of constant 0 11 bit on local variable 'j', prj/sol/.autopilot/db/v_mix.cpp:3775->prj/sol/.autopilot/db/v_mix.cpp:730->prj/sol/.autopilot/db/v_mix.cpp:730 [33]  (1.298 ns)
 	'load' operation 11 bit ('j', prj/sol/.autopilot/db/v_mix.cpp:3775->prj/sol/.autopilot/db/v_mix.cpp:730->prj/sol/.autopilot/db/v_mix.cpp:730) on local variable 'j', prj/sol/.autopilot/db/v_mix.cpp:3775->prj/sol/.autopilot/db/v_mix.cpp:730->prj/sol/.autopilot/db/v_mix.cpp:730 [38]  (0.000 ns)
-	'add' operation 11 bit ('j', prj/sol/.autopilot/db/v_mix.cpp:3775->prj/sol/.autopilot/db/v_mix.cpp:730->prj/sol/.autopilot/db/v_mix.cpp:730) [41]  (1.482 ns)
+	'icmp' operation 1 bit ('icmp_ln3775', prj/sol/.autopilot/db/v_mix.cpp:3775->prj/sol/.autopilot/db/v_mix.cpp:730->prj/sol/.autopilot/db/v_mix.cpp:730) [39]  (1.482 ns)
 	'store' operation ('store_ln3775', prj/sol/.autopilot/db/v_mix.cpp:3775->prj/sol/.autopilot/db/v_mix.cpp:730->prj/sol/.autopilot/db/v_mix.cpp:730) of variable 'j', prj/sol/.autopilot/db/v_mix.cpp:3775->prj/sol/.autopilot/db/v_mix.cpp:730->prj/sol/.autopilot/db/v_mix.cpp:730 11 bit on local variable 'j', prj/sol/.autopilot/db/v_mix.cpp:3775->prj/sol/.autopilot/db/v_mix.cpp:730->prj/sol/.autopilot/db/v_mix.cpp:730 [62]  (1.298 ns)
 
  <State 2>: 2.098ns

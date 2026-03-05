@@ -17,7 +17,7 @@
       ]
     },
     "slx": false,
-    "sourceFile": "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_mix_0_0_synth_1/runhls.tcl",
+    "sourceFile": "/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_mix_0_0_synth_1/runhls.tcl",
     "sourceLine": 44,
     "success": true
   }

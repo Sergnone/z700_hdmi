@@ -7,13 +7,13 @@
   **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Tue Feb 24 12:50:36 2026
+  **** Start of session at: Sat Feb 28 15:09:17 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source top_design_rst_ps7_0_148M_2.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/serg/Documents/Xilinx/DigilentLib/vivado-library-master'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/serg/Documents/Xilinx/vivado-library-master'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/2025.2/data/ip'.
 Command: synth_design -top top_design_rst_ps7_0_148M_2 -part xc7z020clg400-2 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -22,11 +22,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 20110
+INFO: [Synth 8-7075] Helper process launched with PID 515479
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2241.535 ; gain = 485.156 ; free physical = 1753 ; free virtual = 19057
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2240.145 ; gain = 482.844 ; free physical = 3168 ; free virtual = 32133
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top_design_rst_ps7_0_148M_2' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/synth/top_design_rst_ps7_0_148M_2.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'top_design_rst_ps7_0_148M_2' [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/synth/top_design_rst_ps7_0_148M_2.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
@@ -36,97 +36,97 @@ INFO: [Synth 8-638] synthesizing module 'top_design_rst_ps7_0_148M_2' [/home/ser
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1243' bound to instance 'U0' of component 'proc_sys_reset' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/synth/top_design_rst_ps7_0_148M_2.vhd:139]
-INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1243' bound to instance 'U0' of component 'proc_sys_reset' [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/synth/top_design_rst_ps7_0_148M_2.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1371]
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1371]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1387]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1387]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1413]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1413]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1436]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1436]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1460]
-INFO: [Synth 8-638] synthesizing module 'lpf' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
-INFO: [Synth 8-3491] module 'SRL16' declared at '/tools/xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165318' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1460]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/tools/xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165318' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
 INFO: [Synth 8-6157] synthesizing module 'SRL16' [/tools/xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165318]
 INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [/tools/xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165318]
 	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
 	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
 	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at '/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_EXT' of component 'xpm_cdc_single' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:968]
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at '/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_EXT' of component 'xpm_cdc_single' [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:968]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
 	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
 	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
 	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at '/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_AUX' of component 'xpm_cdc_single' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1015]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
-INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
-INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
-INFO: [Synth 8-256] done synthesizing module 'top_design_rst_ps7_0_148M_2' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/synth/top_design_rst_ps7_0_148M_2.vhd:74]
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at '/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_AUX' of component 'xpm_cdc_single' [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1015]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+INFO: [Synth 8-256] done synthesizing module 'top_design_rst_ps7_0_148M_2' (0#1) [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/synth/top_design_rst_ps7_0_148M_2.vhd:74]
 INFO: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2340.473 ; gain = 584.094 ; free physical = 1123 ; free virtual = 18441
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2331.113 ; gain = 573.812 ; free physical = 2534 ; free virtual = 31499
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2352.348 ; gain = 595.969 ; free physical = 1100 ; free virtual = 18410
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2345.957 ; gain = 588.656 ; free physical = 2510 ; free virtual = 31475
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2352.348 ; gain = 595.969 ; free physical = 1100 ; free virtual = 18410
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2345.957 ; gain = 588.656 ; free physical = 2510 ; free virtual = 31475
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2358.285 ; gain = 0.000 ; free physical = 1066 ; free virtual = 18376
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2351.895 ; gain = 0.000 ; free physical = 2707 ; free virtual = 31673
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/top_design_rst_ps7_0_148M_2_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/top_design_rst_ps7_0_148M_2_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/top_design_rst_ps7_0_148M_2_board.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/top_design_rst_ps7_0_148M_2_board.xdc] for cell 'U0'
-Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_rst_ps7_0_148M_2_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_rst_ps7_0_148M_2_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/top_design_rst_ps7_0_148M_2_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/top_design_rst_ps7_0_148M_2_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/top_design_rst_ps7_0_148M_2_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_rst_ps7_0_148M_2/top_design_rst_ps7_0_148M_2_board.xdc] for cell 'U0'
+Parsing XDC File [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_rst_ps7_0_148M_2_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_rst_ps7_0_148M_2_synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_design_rst_ps7_0_148M_2_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_design_rst_ps7_0_148M_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Project 1-1714] 2 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2472.086 ; gain = 0.000 ; free physical = 711 ; free virtual = 18035
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2457.727 ; gain = 0.000 ; free physical = 2263 ; free virtual = 31231
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2472.121 ; gain = 0.000 ; free physical = 703 ; free virtual = 18028
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2457.762 ; gain = 0.000 ; free physical = 2255 ; free virtual = 31223
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2472.121 ; gain = 715.742 ; free physical = 729 ; free virtual = 17911
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2457.762 ; gain = 700.461 ; free physical = 1503 ; free virtual = 30493
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2480.090 ; gain = 723.711 ; free physical = 721 ; free virtual = 17902
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2465.730 ; gain = 708.430 ; free physical = 1503 ; free virtual = 30493
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2480.090 ; gain = 723.711 ; free physical = 713 ; free virtual = 17895
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2465.730 ; gain = 708.430 ; free physical = 1503 ; free virtual = 30494
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2480.090 ; gain = 723.711 ; free physical = 565 ; free virtual = 17752
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2465.730 ; gain = 708.430 ; free physical = 1704 ; free virtual = 30690
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -159,25 +159,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2480.090 ; gain = 723.711 ; free physical = 447 ; free virtual = 17228
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2465.730 ; gain = 708.430 ; free physical = 1606 ; free virtual = 30593
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2515.090 ; gain = 758.711 ; free physical = 3408 ; free virtual = 19911
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2512.730 ; gain = 755.430 ; free physical = 729 ; free virtual = 29717
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2515.090 ; gain = 758.711 ; free physical = 3401 ; free virtual = 19903
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2512.730 ; gain = 755.430 ; free physical = 729 ; free virtual = 29717
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2544.137 ; gain = 787.758 ; free physical = 3361 ; free virtual = 19863
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2540.777 ; gain = 783.477 ; free physical = 679 ; free virtual = 29668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -195,37 +195,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2711.949 ; gain = 955.570 ; free physical = 4184 ; free virtual = 20850
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2708.590 ; gain = 951.289 ; free physical = 761 ; free virtual = 29402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2711.949 ; gain = 955.570 ; free physical = 4184 ; free virtual = 20850
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2708.590 ; gain = 951.289 ; free physical = 764 ; free virtual = 29406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2711.949 ; gain = 955.570 ; free physical = 4184 ; free virtual = 20850
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2708.590 ; gain = 951.289 ; free physical = 763 ; free virtual = 29405
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2711.949 ; gain = 955.570 ; free physical = 4184 ; free virtual = 20850
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2708.590 ; gain = 951.289 ; free physical = 763 ; free virtual = 29405
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2711.949 ; gain = 955.570 ; free physical = 4184 ; free virtual = 20850
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2708.590 ; gain = 951.289 ; free physical = 763 ; free virtual = 29405
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2711.949 ; gain = 955.570 ; free physical = 4184 ; free virtual = 20850
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2708.590 ; gain = 951.289 ; free physical = 763 ; free virtual = 29404
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -252,18 +252,18 @@ Report Cell Usage:
 |9     |FDSE  |     4|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2711.949 ; gain = 955.570 ; free physical = 4184 ; free virtual = 20850
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2708.590 ; gain = 951.289 ; free physical = 762 ; free virtual = 29404
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2711.949 ; gain = 835.797 ; free physical = 4161 ; free virtual = 20827
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2711.957 ; gain = 955.570 ; free physical = 4161 ; free virtual = 20827
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2708.590 ; gain = 839.484 ; free physical = 722 ; free virtual = 29364
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2708.598 ; gain = 951.289 ; free physical = 722 ; free virtual = 29364
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2711.957 ; gain = 0.000 ; free physical = 4161 ; free virtual = 20827
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2708.598 ; gain = 0.000 ; free physical = 722 ; free virtual = 29364
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2767.977 ; gain = 0.000 ; free physical = 4436 ; free virtual = 20951
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2764.617 ; gain = 0.000 ; free physical = 3285 ; free virtual = 31929
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   SRL16 => SRL16E: 1 instance 
@@ -272,14 +272,14 @@ Synth Design complete | Checksum: cecda6d0
 INFO: [Common 17-83] Releasing license: Synthesis
 47 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:32 . Memory (MB): peak = 2768.012 ; gain = 1202.273 ; free physical = 4401 ; free virtual = 20919
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1603.409; main = 1603.409; forked = 185.026
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3474.312; main = 2767.980; forked = 994.219
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2791.988 ; gain = 0.000 ; free physical = 4393 ; free virtual = 20911
-INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_rst_ps7_0_148M_2_synth_1/top_design_rst_ps7_0_148M_2.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 2764.652 ; gain = 1141.211 ; free physical = 3261 ; free virtual = 31905
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1597.137; main = 1597.137; forked = 183.692
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3451.914; main = 2764.621; forked = 994.184
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2788.629 ; gain = 0.000 ; free physical = 3253 ; free virtual = 31897
+INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_rst_ps7_0_148M_2_synth_1/top_design_rst_ps7_0_148M_2.dcp' has been generated.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP top_design_rst_ps7_0_148M_2, cache-ID = 5d0dbbef41d3e02a
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2791.988 ; gain = 0.000 ; free physical = 4576 ; free virtual = 21094
-INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_rst_ps7_0_148M_2_synth_1/top_design_rst_ps7_0_148M_2.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2788.629 ; gain = 0.000 ; free physical = 3259 ; free virtual = 31903
+INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_rst_ps7_0_148M_2_synth_1/top_design_rst_ps7_0_148M_2.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file top_design_rst_ps7_0_148M_2_utilization_synth.rpt -pb top_design_rst_ps7_0_148M_2_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Feb 24 12:51:17 2026...
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 28 15:09:48 2026...

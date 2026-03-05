@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_3903_3'
 ================================================================
-* Date:           Tue Feb 24 12:52:08 2026
+* Date:           Sat Feb 28 15:10:43 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -111,8 +111,8 @@ ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specloopname_ln3903 = specloopname
 ST_2 : Operation 26 [1/1] ( I:2.43ns O:2.43ns )   --->   "%out420_read = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %out420" [prj/sol/.autopilot/db/v_mix.cpp:3924]   --->   Operation 26 'read' 'out420_read' <Predicate = (!icmp_ln3903)> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
 ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln3924 = trunc i24 %out420_read" [prj/sol/.autopilot/db/v_mix.cpp:3924]   --->   Operation 27 'trunc' 'trunc_ln3924' <Predicate = (!icmp_ln3903)> <Delay = 0.00>
 ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%tmp = partselect i16 @_ssdm_op_PartSelect.i16.i24.i32.i32, i24 %out420_read, i32 8, i32 23" [prj/sol/.autopilot/db/v_mix.cpp:3933]   --->   Operation 28 'partselect' 'tmp' <Predicate = (!icmp_ln3903)> <Delay = 0.00>
-ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%tmp_4 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i8.i16, i8 %trunc_ln3924, i16 %tmp" [prj/sol/.autopilot/db/v_mix.cpp:3933]   --->   Operation 29 'bitconcatenate' 'tmp_4' <Predicate = (!icmp_ln3903)> <Delay = 0.00>
-ST_2 : Operation 30 [1/1] ( I:1.24ns O:1.24ns )   --->   "%write_ln3937 = write void @_ssdm_op_Write.axis.volatile.i24P0A.i3P0A.i3P0A.i1P0A.i1P0A.i1P0A.i1P0A, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i24 %tmp_4, i3 7, i3 7, i1 %sof_1, i1 %icmp_ln3916, i1 0, i1 0" [prj/sol/.autopilot/db/v_mix.cpp:3937]   --->   Operation 30 'write' 'write_ln3937' <Predicate = (!icmp_ln3903)> <Delay = 1.24> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 1.52> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%tmp_5 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i8.i16, i8 %trunc_ln3924, i16 %tmp" [prj/sol/.autopilot/db/v_mix.cpp:3933]   --->   Operation 29 'bitconcatenate' 'tmp_5' <Predicate = (!icmp_ln3903)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] ( I:1.24ns O:1.24ns )   --->   "%write_ln3937 = write void @_ssdm_op_Write.axis.volatile.i24P0A.i3P0A.i3P0A.i1P0A.i1P0A.i1P0A.i1P0A, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i24 %tmp_5, i3 7, i3 7, i1 %sof_1, i1 %icmp_ln3916, i1 0, i1 0" [prj/sol/.autopilot/db/v_mix.cpp:3937]   --->   Operation 30 'write' 'write_ln3937' <Predicate = (!icmp_ln3903)> <Delay = 1.24> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 1.52> <Adapter> <Opcode : 'read' 'write'>
 ST_2 : Operation 31 [1/1] (1.29ns)   --->   "%ret_ln0 = ret"   --->   Operation 31 'ret' 'ret_ln0' <Predicate = (icmp_ln3903)> <Delay = 1.29>
 
 

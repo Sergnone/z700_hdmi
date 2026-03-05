@@ -1,6 +1,6 @@
 `timescale 1 ns / 1 ps
 
-module top_design_v_mix_0_0_hls_deadlock_idx6_monitor ( // for module top_design_v_mix_0_0_v_mix_inst.grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_U0
+module top_design_v_mix_0_0_hls_deadlock_idx6_monitor ( // for module top_design_v_mix_0_0_v_mix_inst.grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_U0
     input wire clock,
     input wire reset,
     input wire [6:0] axis_block_sigs,

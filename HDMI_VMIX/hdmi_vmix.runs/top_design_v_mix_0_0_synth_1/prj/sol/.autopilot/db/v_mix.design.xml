@@ -5,16 +5,16 @@
 <ModuleName>v_mix</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_VMixHlsDataFlowFunction_fu_375</InstName>
+<InstName>grp_VMixHlsDataFlowFunction_fu_391</InstName>
 <ModuleName>VMixHlsDataFlowFunction</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>375</ID>
+<ID>391</ID>
 <InstancesList>
 <Instance>
 <InstName>AXIvideo2MultiPixStream_1_U0</InstName>
 <ModuleName>AXIvideo2MultiPixStream_1</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>300</ID>
+<ID>310</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_reg_unsigned_short_1_fu_213</InstName>
@@ -52,7 +52,7 @@
 <InstName>AXIvideo2MultiPixStream_U0</InstName>
 <ModuleName>AXIvideo2MultiPixStream</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>325</ID>
+<ID>335</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_reg_unsigned_short_s_fu_211</InstName>
@@ -90,7 +90,7 @@
 <InstName>v_mix_420_to_422_false_2_U0</InstName>
 <ModuleName>v_mix_420_to_422_false_2</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>348</ID>
+<ID>358</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_v_mix_420_to_422_false_2_Pipeline_VITIS_LOOP_76_2_fu_74</InstName>
@@ -104,7 +104,7 @@
 <InstName>v_mix_420_to_422_false_U0</InstName>
 <ModuleName>v_mix_420_to_422_false_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>357</ID>
+<ID>367</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_v_mix_420_to_422_false_Pipeline_VITIS_LOOP_76_2_fu_70</InstName>
@@ -118,7 +118,7 @@
 <InstName>v_mix_422_to_444_false_3_U0</InstName>
 <ModuleName>v_mix_422_to_444_false_3</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>366</ID>
+<ID>376</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_v_mix_422_to_444_false_3_Pipeline_VITIS_LOOP_105_2_fu_74</InstName>
@@ -132,7 +132,7 @@
 <InstName>v_mix_422_to_444_false_U0</InstName>
 <ModuleName>v_mix_422_to_444_false_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>375</ID>
+<ID>385</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_v_mix_422_to_444_false_Pipeline_VITIS_LOOP_105_2_fu_70</InstName>
@@ -146,7 +146,7 @@
 <InstName>v_mix_yuv2rgb_false_4_U0</InstName>
 <ModuleName>v_mix_yuv2rgb_false_4</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>384</ID>
+<ID>394</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_v_mix_yuv2rgb_false_4_Pipeline_VITIS_LOOP_897_2_fu_74</InstName>
@@ -160,7 +160,7 @@
 <InstName>v_mix_yuv2rgb_false_U0</InstName>
 <ModuleName>v_mix_yuv2rgb_false_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>393</ID>
+<ID>403</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_v_mix_yuv2rgb_false_Pipeline_VITIS_LOOP_897_2_fu_70</InstName>
@@ -174,7 +174,7 @@
 <InstName>v_mix_upsample_false_U0</InstName>
 <ModuleName>v_mix_upsample_false_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>402</ID>
+<ID>412</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_v_mix_upsample_false_Pipeline_VITIS_LOOP_107_2_fu_70</InstName>
@@ -185,16 +185,22 @@
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>v_mix_core_alpha_false_false_U0</InstName>
-<ModuleName>v_mix_core_alpha_false_false_s</ModuleName>
+<InstName>v_mix_core_alpha_true_false_U0</InstName>
+<ModuleName>v_mix_core_alpha_true_false_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>411</ID>
+<ID>421</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_v_mix_core_alpha_false_false_Pipeline_VITIS_LOOP_465_3_fu_146</InstName>
-<ModuleName>v_mix_core_alpha_false_false_Pipeline_VITIS_LOOP_465_3</ModuleName>
+<InstName>grp_reg_unsigned_short_7_fu_194</InstName>
+<ModuleName>reg_unsigned_short_7</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>146</ID>
+<ID>194</ID>
+</Instance>
+<Instance>
+<InstName>grp_v_mix_core_alpha_true_false_Pipeline_VITIS_LOOP_395_3_fu_170</InstName>
+<ModuleName>v_mix_core_alpha_true_false_Pipeline_VITIS_LOOP_395_3</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>170</ID>
 </Instance>
 </InstancesList>
 </Instance>
@@ -202,7 +208,7 @@
 <InstName>v_mix_rgb2yuv_false_U0</InstName>
 <ModuleName>v_mix_rgb2yuv_false_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>436</ID>
+<ID>448</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_v_mix_rgb2yuv_false_Pipeline_VITIS_LOOP_1042_2_fu_62</InstName>
@@ -216,7 +222,7 @@
 <InstName>v_mix_444_to_422_false_U0</InstName>
 <ModuleName>v_mix_444_to_422_false_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>444</ID>
+<ID>456</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_v_mix_444_to_422_false_Pipeline_VITIS_LOOP_718_2_fu_62</InstName>
@@ -230,7 +236,7 @@
 <InstName>v_mix_422_to_420_false_U0</InstName>
 <ModuleName>v_mix_422_to_420_false_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>452</ID>
+<ID>464</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_v_mix_422_to_420_false_Pipeline_VITIS_LOOP_508_2_fu_62</InstName>
@@ -244,7 +250,7 @@
 <InstName>MultiPixStream2AXIvideo_U0</InstName>
 <ModuleName>MultiPixStream2AXIvideo</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>460</ID>
+<ID>472</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_reg_unsigned_short_1_fu_120</InstName>
@@ -7503,68 +7509,38 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>v_mix_core_alpha_false_false_Pipeline_VITIS_LOOP_465_3</Name>
-<Loops>
-<VITIS_LOOP_465_3></VITIS_LOOP_465_3>
-</Loops>
+<Name>reg_unsigned_short_7</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>6.67</TargetClockPeriod>
 <ClockUncertainty>1.80</ClockUncertainty>
-<EstimatedClockPeriod>4.078</EstimatedClockPeriod>
+<TargetInitiationInterval>1</TargetInitiationInterval>
+<EstimatedClockPeriod>0.000</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>67</Best-caseLatency>
-<Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>1923</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.447 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>12.821 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>65 ~ 1921</PipelineInitiationInterval>
-<PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
-<PerformancePragma>-</PerformancePragma>
-</SummaryOfOverallLatency>
-<SummaryOfLoopLatency>
-<VITIS_LOOP_465_3>
-<Name>VITIS_LOOP_465_3</Name>
-<Slack>4.87</Slack>
-<TripCount>
-<range>
-<min>64</min>
-<max>1920</max>
-</range>
-</TripCount>
-<isPerfectNested>1</isPerfectNested>
-<Latency>65 ~ 1921</Latency>
-<AbsoluteTimeLatency>0.433 us ~ 12.807 us</AbsoluteTimeLatency>
-<PipelineII>1</PipelineII>
-<PipelineDepth>3</PipelineDepth>
+<Best-caseLatency>1</Best-caseLatency>
+<Average-caseLatency>1</Average-caseLatency>
+<Worst-caseLatency>1</Worst-caseLatency>
+<Best-caseRealTimeLatency>6.667 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>6.667 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>6.667 ns</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>1</PipelineInitiationInterval>
+<PipelineDepth>2</PipelineDepth>
 <PipelineType>yes</PipelineType>
 <PerformancePragma>-</PerformancePragma>
-<InstanceList>
-</InstanceList>
-</VITIS_LOOP_465_3>
-</SummaryOfLoopLatency>
+</SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>prj/sol/.autopilot/db/v_mix.cpp:440</SourceLocation>
-<SummaryOfLoopViolations>
-<VITIS_LOOP_465_3>
-<Name>VITIS_LOOP_465_3</Name>
-<IssueType>-</IssueType>
-<ViolationType>-</ViolationType>
-<SourceLocation>prj/sol/.autopilot/db/v_mix.cpp:465</SourceLocation>
-</VITIS_LOOP_465_3>
-</SummaryOfLoopViolations>
+<SourceLocation>/tools/xilinx/2025.2/Vitis/common/technology/autopilot/utils/x_hls_utils.h:224</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>117</FF>
+<FF>11</FF>
 <AVAIL_FF>106400</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>240</LUT>
+<LUT>2</LUT>
 <AVAIL_LUT>53200</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -7581,7 +7557,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>v_mix_core_alpha&lt;false, false&gt;_Pipeline_VITIS_LOOP_465_3</Object>
+<Object>reg&lt;unsigned short&gt;7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7592,7 +7568,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>v_mix_core_alpha&lt;false, false&gt;_Pipeline_VITIS_LOOP_465_3</Object>
+<Object>reg&lt;unsigned short&gt;7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7603,7 +7579,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>v_mix_core_alpha&lt;false, false&gt;_Pipeline_VITIS_LOOP_465_3</Object>
+<Object>reg&lt;unsigned short&gt;7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7614,7 +7590,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>v_mix_core_alpha&lt;false, false&gt;_Pipeline_VITIS_LOOP_465_3</Object>
+<Object>reg&lt;unsigned short&gt;7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7625,7 +7601,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>v_mix_core_alpha&lt;false, false&gt;_Pipeline_VITIS_LOOP_465_3</Object>
+<Object>reg&lt;unsigned short&gt;7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7636,7 +7612,174 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>v_mix_core_alpha&lt;false, false&gt;_Pipeline_VITIS_LOOP_465_3</Object>
+<Object>reg&lt;unsigned short&gt;7</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return</name>
+<Object>reg&lt;unsigned short&gt;7</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>9</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>d</name>
+<Object>d</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_stable</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>9</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+</InterfaceSummary>
+</Module>
+<Module>
+<Name>v_mix_core_alpha_true_false_Pipeline_VITIS_LOOP_395_3</Name>
+<Loops>
+<VITIS_LOOP_395_3></VITIS_LOOP_395_3>
+</Loops>
+<PerformanceEstimates>
+<SummaryOfTimingAnalysis>
+<TargetClockPeriod>6.67</TargetClockPeriod>
+<ClockUncertainty>1.80</ClockUncertainty>
+<EstimatedClockPeriod>4.193</EstimatedClockPeriod>
+</SummaryOfTimingAnalysis>
+<SummaryOfOverallLatency>
+<Best-caseLatency>70</Best-caseLatency>
+<Average-caseLatency>undef</Average-caseLatency>
+<Worst-caseLatency>1926</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.467 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>12.841 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>65 ~ 1921</PipelineInitiationInterval>
+<PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+<PerformancePragma>-</PerformancePragma>
+</SummaryOfOverallLatency>
+<SummaryOfLoopLatency>
+<VITIS_LOOP_395_3>
+<Name>VITIS_LOOP_395_3</Name>
+<Slack>4.87</Slack>
+<TripCount>
+<range>
+<min>64</min>
+<max>1920</max>
+</range>
+</TripCount>
+<isPerfectNested>1</isPerfectNested>
+<Latency>68 ~ 1924</Latency>
+<AbsoluteTimeLatency>0.453 us ~ 12.827 us</AbsoluteTimeLatency>
+<PipelineII>1</PipelineII>
+<PipelineDepth>6</PipelineDepth>
+<PipelineType>yes</PipelineType>
+<PerformancePragma>-</PerformancePragma>
+<InstanceList>
+</InstanceList>
+</VITIS_LOOP_395_3>
+</SummaryOfLoopLatency>
+<SummaryOfViolations>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>prj/sol/.autopilot/db/v_mix.cpp:366</SourceLocation>
+<SummaryOfLoopViolations>
+<VITIS_LOOP_395_3>
+<Name>VITIS_LOOP_395_3</Name>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>prj/sol/.autopilot/db/v_mix.cpp:395</SourceLocation>
+</VITIS_LOOP_395_3>
+</SummaryOfLoopViolations>
+</SummaryOfViolations>
+</PerformanceEstimates>
+<AreaEstimates>
+<Resources>
+<DSP>3</DSP>
+<AVAIL_DSP>220</AVAIL_DSP>
+<UTIL_DSP>1</UTIL_DSP>
+<FF>283</FF>
+<AVAIL_FF>106400</AVAIL_FF>
+<UTIL_FF>~0</UTIL_FF>
+<LUT>349</LUT>
+<AVAIL_LUT>53200</AVAIL_LUT>
+<UTIL_LUT>~0</UTIL_LUT>
+<BRAM_18K>0</BRAM_18K>
+<AVAIL_BRAM>280</AVAIL_BRAM>
+<UTIL_BRAM>0</UTIL_BRAM>
+<URAM>0</URAM>
+<AVAIL_URAM>0</AVAIL_URAM>
+<UTIL_URAM>0</UTIL_URAM>
+</Resources>
+</AreaEstimates>
+<InterfaceSummary>
+<RtlPorts>
+<name>ap_clk</name>
+<Object>v_mix_core_alpha&lt;true, false&gt;_Pipeline_VITIS_LOOP_395_3</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_rst</name>
+<Object>v_mix_core_alpha&lt;true, false&gt;_Pipeline_VITIS_LOOP_395_3</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>v_mix_core_alpha&lt;true, false&gt;_Pipeline_VITIS_LOOP_395_3</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>v_mix_core_alpha&lt;true, false&gt;_Pipeline_VITIS_LOOP_395_3</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>v_mix_core_alpha&lt;true, false&gt;_Pipeline_VITIS_LOOP_395_3</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>v_mix_core_alpha&lt;true, false&gt;_Pipeline_VITIS_LOOP_395_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7822,6 +7965,17 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
+<name>alpha</name>
+<Object>alpha</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>9</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
 <name>hwReg_background_Y_R_val</name>
 <Object>hwReg_background_Y_R_val</Object>
 <Type>scalar</Type>
@@ -7866,8 +8020,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>add_ln478</name>
-<Object>add_ln478</Object>
+<name>add_ln409</name>
+<Object>add_ln409</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_stable</IOProtocol>
@@ -7877,8 +8031,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>icmp_ln476_1</name>
-<Object>icmp_ln476_1</Object>
+<name>icmp_ln407_1</name>
+<Object>icmp_ln407_1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -7888,8 +8042,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>rev5</name>
-<Object>rev5</Object>
+<name>rev7</name>
+<Object>rev7</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -7920,12 +8074,111 @@
 <Bits>1</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
+<RtlPorts>
+<name>p_out_i</name>
+<Object>p_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_ovld</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>p_out_o</name>
+<Object>p_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_ovld</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>p_out_o_ap_vld</name>
+<Object>p_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_ovld</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>p_out1_i</name>
+<Object>p_out1</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_ovld</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>p_out1_o</name>
+<Object>p_out1</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_ovld</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>p_out1_o_ap_vld</name>
+<Object>p_out1</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_ovld</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>p_out2_i</name>
+<Object>p_out2</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_ovld</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>p_out2_o</name>
+<Object>p_out2</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_ovld</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>p_out2_o_ap_vld</name>
+<Object>p_out2</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_ovld</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>v_mix_core_alpha_false_false_s</Name>
+<Name>v_mix_core_alpha_true_false_s</Name>
 <Loops>
-<VITIS_LOOP_463_2></VITIS_LOOP_463_2>
+<VITIS_LOOP_393_2></VITIS_LOOP_393_2>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -7934,19 +8187,19 @@
 <EstimatedClockPeriod>4.666</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>4481</Best-caseLatency>
+<Best-caseLatency>4674</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>2080081</Worst-caseLatency>
-<Best-caseRealTimeLatency>29.875 us</Best-caseRealTimeLatency>
+<Worst-caseLatency>2083322</Worst-caseLatency>
+<Best-caseRealTimeLatency>31.162 us</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>13.868 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>4481 ~ 2080081</PipelineInitiationInterval>
+<Worst-caseRealTimeLatency>13.890 ms</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4674 ~ 2083322</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_463_2>
-<Name>VITIS_LOOP_463_2</Name>
+<VITIS_LOOP_393_2>
+<Name>VITIS_LOOP_393_2</Name>
 <Slack>4.87</Slack>
 <TripCount>
 <range>
@@ -7955,50 +8208,50 @@
 </range>
 </TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>4480 ~ 2080080</Latency>
-<AbsoluteTimeLatency>29.868 us ~ 13.868 ms</AbsoluteTimeLatency>
+<Latency>4672 ~ 2083320</Latency>
+<AbsoluteTimeLatency>31.148 us ~ 13.889 ms</AbsoluteTimeLatency>
 <IterationLatency>
 <range>
-<min>70</min>
-<max>1926</max>
+<min>73</min>
+<max>1929</max>
 </range>
 </IterationLatency>
-<PipelineDepth>70 ~ 1926</PipelineDepth>
+<PipelineDepth>73 ~ 1929</PipelineDepth>
 <PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
-<Instance>grp_v_mix_core_alpha_false_false_Pipeline_VITIS_LOOP_465_3_fu_146</Instance>
+<Instance>grp_v_mix_core_alpha_true_false_Pipeline_VITIS_LOOP_395_3_fu_170</Instance>
 </InstanceList>
-</VITIS_LOOP_463_2>
+</VITIS_LOOP_393_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>prj/sol/.autopilot/db/v_mix.cpp:440</SourceLocation>
+<SourceLocation>prj/sol/.autopilot/db/v_mix.cpp:366</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_463_2>
-<Name>VITIS_LOOP_463_2</Name>
+<VITIS_LOOP_393_2>
+<Name>VITIS_LOOP_393_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>prj/sol/.autopilot/db/v_mix.cpp:463</SourceLocation>
-</VITIS_LOOP_463_2>
+<SourceLocation>prj/sol/.autopilot/db/v_mix.cpp:393</SourceLocation>
+</VITIS_LOOP_393_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>252</FF>
+<DSP>3</DSP>
+<AVAIL_DSP>220</AVAIL_DSP>
+<UTIL_DSP>1</UTIL_DSP>
+<FF>463</FF>
 <AVAIL_FF>106400</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>450</LUT>
+<LUT>565</LUT>
 <AVAIL_LUT>53200</AVAIL_LUT>
-<UTIL_LUT>~0</UTIL_LUT>
+<UTIL_LUT>1</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>280</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
-<DSP>0</DSP>
-<AVAIL_DSP>220</AVAIL_DSP>
-<UTIL_DSP>0</UTIL_DSP>
 <URAM>0</URAM>
 <AVAIL_URAM>0</AVAIL_URAM>
 <UTIL_URAM>0</UTIL_URAM>
@@ -8007,7 +8260,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>v_mix_core_alpha&lt;false, false&gt;</Object>
+<Object>v_mix_core_alpha&lt;true, false&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -8018,7 +8271,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>v_mix_core_alpha&lt;false, false&gt;</Object>
+<Object>v_mix_core_alpha&lt;true, false&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -8029,7 +8282,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>v_mix_core_alpha&lt;false, false&gt;</Object>
+<Object>v_mix_core_alpha&lt;true, false&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -8040,7 +8293,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_full_n</name>
-<Object>v_mix_core_alpha&lt;false, false&gt;</Object>
+<Object>v_mix_core_alpha&lt;true, false&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -8051,7 +8304,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>v_mix_core_alpha&lt;false, false&gt;</Object>
+<Object>v_mix_core_alpha&lt;true, false&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -8062,7 +8315,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_continue</name>
-<Object>v_mix_core_alpha&lt;false, false&gt;</Object>
+<Object>v_mix_core_alpha&lt;true, false&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -8073,7 +8326,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>v_mix_core_alpha&lt;false, false&gt;</Object>
+<Object>v_mix_core_alpha&lt;true, false&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -8084,7 +8337,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>v_mix_core_alpha&lt;false, false&gt;</Object>
+<Object>v_mix_core_alpha&lt;true, false&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -8095,7 +8348,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_out</name>
-<Object>v_mix_core_alpha&lt;false, false&gt;</Object>
+<Object>v_mix_core_alpha&lt;true, false&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -8106,7 +8359,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_write</name>
-<Object>v_mix_core_alpha&lt;false, false&gt;</Object>
+<Object>v_mix_core_alpha&lt;true, false&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -8289,6 +8542,17 @@
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>2</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>hwReg_layerAlpha_1_val</name>
+<Object>hwReg_layerAlpha_1_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_stable</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>9</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -10861,19 +11125,19 @@
 <EstimatedClockPeriod>4.867</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>4493</Best-caseLatency>
+<Best-caseLatency>4685</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
 <Worst-caseLatency>2084406</Worst-caseLatency>
-<Best-caseRealTimeLatency>29.955 us</Best-caseRealTimeLatency>
+<Best-caseRealTimeLatency>31.235 us</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>13.897 ms</Worst-caseRealTimeLatency>
 <DataflowPipelineThroughput>
 <range>
-<min>4482</min>
+<min>4675</min>
 <max>2084407</max>
 </range>
 </DataflowPipelineThroughput>
-<PipelineInitiationInterval>4482 ~ 2084407</PipelineInitiationInterval>
+<PipelineInitiationInterval>4675 ~ 2084407</PipelineInitiationInterval>
 <PipelineType>dataflow</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
@@ -10885,18 +11149,18 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>2660</FF>
+<DSP>3</DSP>
+<AVAIL_DSP>220</AVAIL_DSP>
+<UTIL_DSP>1</UTIL_DSP>
+<FF>2871</FF>
 <AVAIL_FF>106400</AVAIL_FF>
 <UTIL_FF>2</UTIL_FF>
-<LUT>3906</LUT>
+<LUT>4021</LUT>
 <AVAIL_LUT>53200</AVAIL_LUT>
 <UTIL_LUT>7</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>280</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
-<DSP>0</DSP>
-<AVAIL_DSP>220</AVAIL_DSP>
-<UTIL_DSP>0</UTIL_DSP>
 <URAM>0</URAM>
 <AVAIL_URAM>0</AVAIL_URAM>
 <UTIL_URAM>0</UTIL_URAM>
@@ -11080,19 +11344,19 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>HwReg_layerStartX_1_val14</name>
-<Object>HwReg_layerStartX_1_val14</Object>
+<name>HwReg_layerAlpha_1_val14</name>
+<Object>HwReg_layerAlpha_1_val14</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>16</Bits>
+<Bits>9</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>HwReg_layerStartX_1_val14_ap_vld</name>
-<Object>HwReg_layerStartX_1_val14</Object>
+<name>HwReg_layerAlpha_1_val14_ap_vld</name>
+<Object>HwReg_layerAlpha_1_val14</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -11102,8 +11366,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>HwReg_layerStartY_1_val15</name>
-<Object>HwReg_layerStartY_1_val15</Object>
+<name>HwReg_layerStartX_1_val15</name>
+<Object>HwReg_layerStartX_1_val15</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -11113,8 +11377,30 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>HwReg_layerStartY_1_val15_ap_vld</name>
-<Object>HwReg_layerStartY_1_val15</Object>
+<name>HwReg_layerStartX_1_val15_ap_vld</name>
+<Object>HwReg_layerStartX_1_val15</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>HwReg_layerStartY_1_val16</name>
+<Object>HwReg_layerStartY_1_val16</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>HwReg_layerStartY_1_val16_ap_vld</name>
+<Object>HwReg_layerStartY_1_val16</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -11168,8 +11454,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>HwReg_layerScaleFactor_1_val18</name>
-<Object>HwReg_layerScaleFactor_1_val18</Object>
+<name>HwReg_layerScaleFactor_1_val19</name>
+<Object>HwReg_layerScaleFactor_1_val19</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -11179,8 +11465,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>HwReg_layerScaleFactor_1_val18_ap_vld</name>
-<Object>HwReg_layerScaleFactor_1_val18</Object>
+<name>HwReg_layerScaleFactor_1_val19_ap_vld</name>
+<Object>HwReg_layerScaleFactor_1_val19</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -11577,13 +11863,13 @@
 <EstimatedClockPeriod>4.867</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>4498</Best-caseLatency>
+<Best-caseLatency>4690</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
 <Worst-caseLatency>2084411</Worst-caseLatency>
-<Best-caseRealTimeLatency>29.988 us</Best-caseRealTimeLatency>
+<Best-caseRealTimeLatency>31.268 us</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>13.897 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>4499 ~ 2084412</PipelineInitiationInterval>
+<PipelineInitiationInterval>4691 ~ 2084412</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
@@ -11622,15 +11908,15 @@
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>280</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
-<FF>3377</FF>
+<DSP>3</DSP>
+<AVAIL_DSP>220</AVAIL_DSP>
+<UTIL_DSP>1</UTIL_DSP>
+<FF>3645</FF>
 <AVAIL_FF>106400</AVAIL_FF>
 <UTIL_FF>3</UTIL_FF>
-<LUT>4646</LUT>
+<LUT>4777</LUT>
 <AVAIL_LUT>53200</AVAIL_LUT>
 <UTIL_LUT>8</UTIL_LUT>
-<DSP>0</DSP>
-<AVAIL_DSP>220</AVAIL_DSP>
-<UTIL_DSP>0</UTIL_DSP>
 <URAM>0</URAM>
 <AVAIL_URAM>0</AVAIL_URAM>
 <UTIL_URAM>0</UTIL_URAM>
@@ -12680,7 +12966,7 @@
 <FIFOInformation>
 <FIFOInst>
 <Name>srcLayer0_U</Name>
-<ParentInst>grp_VMixHlsDataFlowFunction_fu_375</ParentInst>
+<ParentInst>grp_VMixHlsDataFlowFunction_fu_391</ParentInst>
 <StaticDepth>2</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
 <InterfaceList>
@@ -12695,7 +12981,7 @@
 </FIFOInst>
 <FIFOInst>
 <Name>srcLayer0Yuv422_U</Name>
-<ParentInst>grp_VMixHlsDataFlowFunction_fu_375</ParentInst>
+<ParentInst>grp_VMixHlsDataFlowFunction_fu_391</ParentInst>
 <StaticDepth>2</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
 <InterfaceList>
@@ -12710,7 +12996,7 @@
 </FIFOInst>
 <FIFOInst>
 <Name>srcLayer0Yuv_U</Name>
-<ParentInst>grp_VMixHlsDataFlowFunction_fu_375</ParentInst>
+<ParentInst>grp_VMixHlsDataFlowFunction_fu_391</ParentInst>
 <StaticDepth>2</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
 <InterfaceList>
@@ -12725,7 +13011,7 @@
 </FIFOInst>
 <FIFOInst>
 <Name>outLayer0_U</Name>
-<ParentInst>grp_VMixHlsDataFlowFunction_fu_375</ParentInst>
+<ParentInst>grp_VMixHlsDataFlowFunction_fu_391</ParentInst>
 <StaticDepth>2</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
 <InterfaceList>
@@ -12740,7 +13026,7 @@
 </FIFOInst>
 <FIFOInst>
 <Name>srcLayer1_U</Name>
-<ParentInst>grp_VMixHlsDataFlowFunction_fu_375</ParentInst>
+<ParentInst>grp_VMixHlsDataFlowFunction_fu_391</ParentInst>
 <StaticDepth>2</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
 <InterfaceList>
@@ -12755,7 +13041,7 @@
 </FIFOInst>
 <FIFOInst>
 <Name>srcLayer1Yuv422_U</Name>
-<ParentInst>grp_VMixHlsDataFlowFunction_fu_375</ParentInst>
+<ParentInst>grp_VMixHlsDataFlowFunction_fu_391</ParentInst>
 <StaticDepth>2</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
 <InterfaceList>
@@ -12770,7 +13056,7 @@
 </FIFOInst>
 <FIFOInst>
 <Name>srcLayer1Yuv_U</Name>
-<ParentInst>grp_VMixHlsDataFlowFunction_fu_375</ParentInst>
+<ParentInst>grp_VMixHlsDataFlowFunction_fu_391</ParentInst>
 <StaticDepth>2</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
 <InterfaceList>
@@ -12785,7 +13071,7 @@
 </FIFOInst>
 <FIFOInst>
 <Name>srcLayer1Rgb_U</Name>
-<ParentInst>grp_VMixHlsDataFlowFunction_fu_375</ParentInst>
+<ParentInst>grp_VMixHlsDataFlowFunction_fu_391</ParentInst>
 <StaticDepth>2</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
 <InterfaceList>
@@ -12800,7 +13086,7 @@
 </FIFOInst>
 <FIFOInst>
 <Name>srcLayer1x_U</Name>
-<ParentInst>grp_VMixHlsDataFlowFunction_fu_375</ParentInst>
+<ParentInst>grp_VMixHlsDataFlowFunction_fu_391</ParentInst>
 <StaticDepth>2</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
 <InterfaceList>
@@ -12815,7 +13101,7 @@
 </FIFOInst>
 <FIFOInst>
 <Name>outLayer1_U</Name>
-<ParentInst>grp_VMixHlsDataFlowFunction_fu_375</ParentInst>
+<ParentInst>grp_VMixHlsDataFlowFunction_fu_391</ParentInst>
 <StaticDepth>2</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
 <InterfaceList>
@@ -12830,7 +13116,7 @@
 </FIFOInst>
 <FIFOInst>
 <Name>outYuv_U</Name>
-<ParentInst>grp_VMixHlsDataFlowFunction_fu_375</ParentInst>
+<ParentInst>grp_VMixHlsDataFlowFunction_fu_391</ParentInst>
 <StaticDepth>2</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
 <InterfaceList>
@@ -12845,7 +13131,7 @@
 </FIFOInst>
 <FIFOInst>
 <Name>out422_U</Name>
-<ParentInst>grp_VMixHlsDataFlowFunction_fu_375</ParentInst>
+<ParentInst>grp_VMixHlsDataFlowFunction_fu_391</ParentInst>
 <StaticDepth>2</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
 <InterfaceList>
@@ -12860,7 +13146,7 @@
 </FIFOInst>
 <FIFOInst>
 <Name>out420_U</Name>
-<ParentInst>grp_VMixHlsDataFlowFunction_fu_375</ParentInst>
+<ParentInst>grp_VMixHlsDataFlowFunction_fu_391</ParentInst>
 <StaticDepth>2</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
 <InterfaceList>

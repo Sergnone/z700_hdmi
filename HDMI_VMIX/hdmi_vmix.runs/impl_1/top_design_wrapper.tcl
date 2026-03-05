@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/impl_1/top_design_wrapper.tcl"
+  variable script "/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/impl_1/top_design_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -104,7 +104,8 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 4
+  set_param bd.open.in_stealth_mode 1
+  set_param chipscope.maxJobs 7
   set_param general.usePosixSpawnForFork 1
   set_param runs.launchOptions { -jobs 14  }
 OPTRACE "create in-memory project" START { }
@@ -113,22 +114,22 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.cache/wt [current_project]
-  set_property parent.project_path /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.xpr [current_project]
-  set_property ip_repo_paths /home/serg/Documents/Xilinx/DigilentLib/vivado-library-master [current_project]
+  set_property webtalk.parent_dir /home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.cache/wt [current_project]
+  set_property parent.project_path /home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.xpr [current_project]
+  set_property ip_repo_paths /home/serg/Documents/Xilinx/vivado-library-master [current_project]
   update_ip_catalog
-  set_property ip_output_repo /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.cache/ip [current_project]
+  set_property ip_output_repo /home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/synth_1/top_design_wrapper.dcp
+  add_files -quiet /home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/synth_1/top_design_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.srcs/sources_1/bd/top_design/top_design.bd
+  add_files /home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.srcs/sources_1/bd/top_design/top_design.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.srcs/constrs_1/new/phy_constr.xdc
+  read_xdc /home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.srcs/constrs_1/new/phy_constr.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

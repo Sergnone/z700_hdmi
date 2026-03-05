@@ -15,7 +15,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 38
+set cdfgNum 39
 set C_modelName {reg<unsigned short>}
 set C_modelType { int 11 }
 set ap_memory_interface_dict [dict create]

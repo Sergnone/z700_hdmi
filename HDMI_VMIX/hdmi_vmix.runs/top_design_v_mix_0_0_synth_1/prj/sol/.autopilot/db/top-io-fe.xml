@@ -46,7 +46,7 @@
           <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="64"/>
         </hw>
       </arg>
-      <arg id="9" access_type="" src_name="layerAlpha" src_type="unsigned short*" src_isptr="1" src_bitwidth="16" src_size_or_depth="2">
+      <arg id="9" access_type="r" src_name="layerAlpha" src_type="unsigned short*" src_isptr="1" src_bitwidth="16" src_size_or_depth="2">
         <hw hw_usage="data" hw_interface="S_AXILite" hw_name="CTRL" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="true">
           <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="512"/>
         </hw>

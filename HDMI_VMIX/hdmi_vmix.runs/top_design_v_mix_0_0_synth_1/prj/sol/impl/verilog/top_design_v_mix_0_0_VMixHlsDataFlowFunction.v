@@ -16,11 +16,12 @@ module top_design_v_mix_0_0_VMixHlsDataFlowFunction (
         HwReg_layerEnable_val13,
         HwReg_layerEnableFlag_0_val,
         HwReg_layerEnableFlag_1_val,
-        HwReg_layerStartX_1_val14,
-        HwReg_layerStartY_1_val15,
+        HwReg_layerAlpha_1_val14,
+        HwReg_layerStartX_1_val15,
+        HwReg_layerStartY_1_val16,
         HwReg_layerWidth_1_val,
         HwReg_layerHeight_1_val,
-        HwReg_layerScaleFactor_1_val18,
+        HwReg_layerScaleFactor_1_val19,
         s_axis_video_TDATA,
         s_axis_video_TKEEP,
         s_axis_video_TSTRB,
@@ -59,9 +60,10 @@ module top_design_v_mix_0_0_VMixHlsDataFlowFunction (
         HwReg_background_U_G_val11_ap_vld,
         HwReg_background_V_B_val12_ap_vld,
         HwReg_layerEnable_val13_ap_vld,
-        HwReg_layerStartX_1_val14_ap_vld,
-        HwReg_layerStartY_1_val15_ap_vld,
-        HwReg_layerScaleFactor_1_val18_ap_vld,
+        HwReg_layerAlpha_1_val14_ap_vld,
+        HwReg_layerStartX_1_val15_ap_vld,
+        HwReg_layerStartY_1_val16_ap_vld,
+        HwReg_layerScaleFactor_1_val19_ap_vld,
         m_axis_video_TVALID,
         m_axis_video_TREADY,
         ap_done,
@@ -79,11 +81,12 @@ input  [7:0] HwReg_background_V_B_val12;
 input  [1:0] HwReg_layerEnable_val13;
 input  [0:0] HwReg_layerEnableFlag_0_val;
 input  [0:0] HwReg_layerEnableFlag_1_val;
-input  [15:0] HwReg_layerStartX_1_val14;
-input  [15:0] HwReg_layerStartY_1_val15;
+input  [8:0] HwReg_layerAlpha_1_val14;
+input  [15:0] HwReg_layerStartX_1_val15;
+input  [15:0] HwReg_layerStartY_1_val16;
 input  [15:0] HwReg_layerWidth_1_val;
 input  [15:0] HwReg_layerHeight_1_val;
-input  [7:0] HwReg_layerScaleFactor_1_val18;
+input  [7:0] HwReg_layerScaleFactor_1_val19;
 input  [23:0] s_axis_video_TDATA;
 input  [2:0] s_axis_video_TKEEP;
 input  [2:0] s_axis_video_TSTRB;
@@ -122,9 +125,10 @@ input   HwReg_background_Y_R_val10_ap_vld;
 input   HwReg_background_U_G_val11_ap_vld;
 input   HwReg_background_V_B_val12_ap_vld;
 input   HwReg_layerEnable_val13_ap_vld;
-input   HwReg_layerStartX_1_val14_ap_vld;
-input   HwReg_layerStartY_1_val15_ap_vld;
-input   HwReg_layerScaleFactor_1_val18_ap_vld;
+input   HwReg_layerAlpha_1_val14_ap_vld;
+input   HwReg_layerStartX_1_val15_ap_vld;
+input   HwReg_layerStartY_1_val16_ap_vld;
+input   HwReg_layerScaleFactor_1_val19_ap_vld;
 output   m_axis_video_TVALID;
 input   m_axis_video_TREADY;
 output   ap_done;
@@ -244,19 +248,19 @@ wire   [23:0] v_mix_upsample_false_U0_srcLayer1x_din;
 wire    v_mix_upsample_false_U0_srcLayer1x_write;
 wire   [31:0] v_mix_upsample_false_U0_srcLayer1x_num_data_valid;
 wire   [31:0] v_mix_upsample_false_U0_srcLayer1x_fifo_cap;
-wire    v_mix_core_alpha_false_false_U0_ap_start;
-wire    v_mix_core_alpha_false_false_U0_ap_done;
-wire    v_mix_core_alpha_false_false_U0_ap_continue;
-wire    v_mix_core_alpha_false_false_U0_ap_idle;
-wire    v_mix_core_alpha_false_false_U0_ap_ready;
-wire    v_mix_core_alpha_false_false_U0_start_out;
-wire    v_mix_core_alpha_false_false_U0_start_write;
-wire    v_mix_core_alpha_false_false_U0_outLayer0_read;
-wire    v_mix_core_alpha_false_false_U0_srcLayer1x_read;
-wire   [23:0] v_mix_core_alpha_false_false_U0_outLayer1_din;
-wire    v_mix_core_alpha_false_false_U0_outLayer1_write;
-wire   [31:0] v_mix_core_alpha_false_false_U0_outLayer1_num_data_valid;
-wire   [31:0] v_mix_core_alpha_false_false_U0_outLayer1_fifo_cap;
+wire    v_mix_core_alpha_true_false_U0_ap_start;
+wire    v_mix_core_alpha_true_false_U0_ap_done;
+wire    v_mix_core_alpha_true_false_U0_ap_continue;
+wire    v_mix_core_alpha_true_false_U0_ap_idle;
+wire    v_mix_core_alpha_true_false_U0_ap_ready;
+wire    v_mix_core_alpha_true_false_U0_start_out;
+wire    v_mix_core_alpha_true_false_U0_start_write;
+wire    v_mix_core_alpha_true_false_U0_outLayer0_read;
+wire    v_mix_core_alpha_true_false_U0_srcLayer1x_read;
+wire   [23:0] v_mix_core_alpha_true_false_U0_outLayer1_din;
+wire    v_mix_core_alpha_true_false_U0_outLayer1_write;
+wire   [31:0] v_mix_core_alpha_true_false_U0_outLayer1_num_data_valid;
+wire   [31:0] v_mix_core_alpha_true_false_U0_outLayer1_fifo_cap;
 wire    v_mix_rgb2yuv_false_U0_ap_start;
 wire    v_mix_rgb2yuv_false_U0_ap_done;
 wire    v_mix_rgb2yuv_false_U0_ap_continue;
@@ -389,10 +393,10 @@ wire   [0:0] start_for_v_mix_yuv2rgb_false_4_U0_din;
 wire    start_for_v_mix_yuv2rgb_false_4_U0_full_n;
 wire   [0:0] start_for_v_mix_yuv2rgb_false_4_U0_dout;
 wire    start_for_v_mix_yuv2rgb_false_4_U0_empty_n;
-wire   [0:0] start_for_v_mix_core_alpha_false_false_U0_din;
-wire    start_for_v_mix_core_alpha_false_false_U0_full_n;
-wire   [0:0] start_for_v_mix_core_alpha_false_false_U0_dout;
-wire    start_for_v_mix_core_alpha_false_false_U0_empty_n;
+wire   [0:0] start_for_v_mix_core_alpha_true_false_U0_din;
+wire    start_for_v_mix_core_alpha_true_false_U0_full_n;
+wire   [0:0] start_for_v_mix_core_alpha_true_false_U0_dout;
+wire    start_for_v_mix_core_alpha_true_false_U0_empty_n;
 wire   [0:0] start_for_v_mix_420_to_422_false_U0_din;
 wire    start_for_v_mix_420_to_422_false_U0_full_n;
 wire   [0:0] start_for_v_mix_420_to_422_false_U0_dout;
@@ -519,7 +523,7 @@ top_design_v_mix_0_0_v_mix_yuv2rgb_false_4 v_mix_yuv2rgb_false_4_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
     .ap_start(v_mix_yuv2rgb_false_4_U0_ap_start),
-    .start_full_n(start_for_v_mix_core_alpha_false_false_U0_full_n),
+    .start_full_n(start_for_v_mix_core_alpha_true_false_U0_full_n),
     .ap_done(v_mix_yuv2rgb_false_4_U0_ap_done),
     .ap_continue(v_mix_yuv2rgb_false_4_U0_ap_continue),
     .ap_idle(v_mix_yuv2rgb_false_4_U0_ap_idle),
@@ -672,25 +676,25 @@ top_design_v_mix_0_0_v_mix_upsample_false_s v_mix_upsample_false_U0(
     .srcLayer1x_fifo_cap(v_mix_upsample_false_U0_srcLayer1x_fifo_cap)
 );
 
-top_design_v_mix_0_0_v_mix_core_alpha_false_false_s v_mix_core_alpha_false_false_U0(
+top_design_v_mix_0_0_v_mix_core_alpha_true_false_s v_mix_core_alpha_true_false_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(v_mix_core_alpha_false_false_U0_ap_start),
+    .ap_start(v_mix_core_alpha_true_false_U0_ap_start),
     .start_full_n(start_for_v_mix_rgb2yuv_false_U0_full_n),
-    .ap_done(v_mix_core_alpha_false_false_U0_ap_done),
-    .ap_continue(v_mix_core_alpha_false_false_U0_ap_continue),
-    .ap_idle(v_mix_core_alpha_false_false_U0_ap_idle),
-    .ap_ready(v_mix_core_alpha_false_false_U0_ap_ready),
-    .start_out(v_mix_core_alpha_false_false_U0_start_out),
-    .start_write(v_mix_core_alpha_false_false_U0_start_write),
+    .ap_done(v_mix_core_alpha_true_false_U0_ap_done),
+    .ap_continue(v_mix_core_alpha_true_false_U0_ap_continue),
+    .ap_idle(v_mix_core_alpha_true_false_U0_ap_idle),
+    .ap_ready(v_mix_core_alpha_true_false_U0_ap_ready),
+    .start_out(v_mix_core_alpha_true_false_U0_start_out),
+    .start_write(v_mix_core_alpha_true_false_U0_start_write),
     .outLayer0_dout(outLayer0_dout),
     .outLayer0_empty_n(outLayer0_empty_n),
-    .outLayer0_read(v_mix_core_alpha_false_false_U0_outLayer0_read),
+    .outLayer0_read(v_mix_core_alpha_true_false_U0_outLayer0_read),
     .outLayer0_num_data_valid(outLayer0_num_data_valid),
     .outLayer0_fifo_cap(outLayer0_fifo_cap),
     .srcLayer1x_dout(srcLayer1x_dout),
     .srcLayer1x_empty_n(srcLayer1x_empty_n),
-    .srcLayer1x_read(v_mix_core_alpha_false_false_U0_srcLayer1x_read),
+    .srcLayer1x_read(v_mix_core_alpha_true_false_U0_srcLayer1x_read),
     .srcLayer1x_num_data_valid(srcLayer1x_num_data_valid),
     .srcLayer1x_fifo_cap(srcLayer1x_fifo_cap),
     .hwReg_width_val(HwReg_width_val),
@@ -699,16 +703,17 @@ top_design_v_mix_0_0_v_mix_core_alpha_false_false_s v_mix_core_alpha_false_false
     .hwReg_background_U_G_val(HwReg_background_U_G_val11),
     .hwReg_background_V_B_val(HwReg_background_V_B_val12),
     .hwReg_layerEnable_val(HwReg_layerEnable_val13),
-    .hwReg_layerStartX_1_val(HwReg_layerStartX_1_val14),
-    .hwReg_layerStartY_1_val(HwReg_layerStartY_1_val15),
+    .hwReg_layerAlpha_1_val(HwReg_layerAlpha_1_val14),
+    .hwReg_layerStartX_1_val(HwReg_layerStartX_1_val15),
+    .hwReg_layerStartY_1_val(HwReg_layerStartY_1_val16),
     .hwReg_layerWidth_1_val(HwReg_layerWidth_1_val),
     .hwReg_layerHeight_1_val(HwReg_layerHeight_1_val),
-    .hwReg_layerScaleFactor_1_val(HwReg_layerScaleFactor_1_val18),
-    .outLayer1_din(v_mix_core_alpha_false_false_U0_outLayer1_din),
+    .hwReg_layerScaleFactor_1_val(HwReg_layerScaleFactor_1_val19),
+    .outLayer1_din(v_mix_core_alpha_true_false_U0_outLayer1_din),
     .outLayer1_full_n(outLayer1_full_n),
-    .outLayer1_write(v_mix_core_alpha_false_false_U0_outLayer1_write),
-    .outLayer1_num_data_valid(v_mix_core_alpha_false_false_U0_outLayer1_num_data_valid),
-    .outLayer1_fifo_cap(v_mix_core_alpha_false_false_U0_outLayer1_fifo_cap)
+    .outLayer1_write(v_mix_core_alpha_true_false_U0_outLayer1_write),
+    .outLayer1_num_data_valid(v_mix_core_alpha_true_false_U0_outLayer1_num_data_valid),
+    .outLayer1_fifo_cap(v_mix_core_alpha_true_false_U0_outLayer1_fifo_cap)
 );
 
 top_design_v_mix_0_0_v_mix_rgb2yuv_false_s v_mix_rgb2yuv_false_U0(
@@ -867,7 +872,7 @@ top_design_v_mix_0_0_fifo_w24_d2_S outLayer0_U(
     .if_write(v_mix_yuv2rgb_false_4_U0_outLayer0_write),
     .if_dout(outLayer0_dout),
     .if_empty_n(outLayer0_empty_n),
-    .if_read(v_mix_core_alpha_false_false_U0_outLayer0_read),
+    .if_read(v_mix_core_alpha_true_false_U0_outLayer0_read),
     .if_num_data_valid(outLayer0_num_data_valid),
     .if_fifo_cap(outLayer0_fifo_cap)
 );
@@ -942,7 +947,7 @@ top_design_v_mix_0_0_fifo_w24_d2_S srcLayer1x_U(
     .if_write(v_mix_upsample_false_U0_srcLayer1x_write),
     .if_dout(srcLayer1x_dout),
     .if_empty_n(srcLayer1x_empty_n),
-    .if_read(v_mix_core_alpha_false_false_U0_srcLayer1x_read),
+    .if_read(v_mix_core_alpha_true_false_U0_srcLayer1x_read),
     .if_num_data_valid(srcLayer1x_num_data_valid),
     .if_fifo_cap(srcLayer1x_fifo_cap)
 );
@@ -952,9 +957,9 @@ top_design_v_mix_0_0_fifo_w24_d2_S outLayer1_U(
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(v_mix_core_alpha_false_false_U0_outLayer1_din),
+    .if_din(v_mix_core_alpha_true_false_U0_outLayer1_din),
     .if_full_n(outLayer1_full_n),
-    .if_write(v_mix_core_alpha_false_false_U0_outLayer1_write),
+    .if_write(v_mix_core_alpha_true_false_U0_outLayer1_write),
     .if_dout(outLayer1_dout),
     .if_empty_n(outLayer1_empty_n),
     .if_read(v_mix_rgb2yuv_false_U0_outLayer1_read),
@@ -1046,17 +1051,17 @@ top_design_v_mix_0_0_start_for_v_mix_yuv2rgb_false_4_U0 start_for_v_mix_yuv2rgb_
     .if_read(v_mix_yuv2rgb_false_4_U0_ap_ready)
 );
 
-top_design_v_mix_0_0_start_for_v_mix_core_alpha_false_false_U0 start_for_v_mix_core_alpha_false_false_U0_U(
+top_design_v_mix_0_0_start_for_v_mix_core_alpha_true_false_U0 start_for_v_mix_core_alpha_true_false_U0_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(start_for_v_mix_core_alpha_false_false_U0_din),
-    .if_full_n(start_for_v_mix_core_alpha_false_false_U0_full_n),
+    .if_din(start_for_v_mix_core_alpha_true_false_U0_din),
+    .if_full_n(start_for_v_mix_core_alpha_true_false_U0_full_n),
     .if_write(v_mix_yuv2rgb_false_4_U0_start_write),
-    .if_dout(start_for_v_mix_core_alpha_false_false_U0_dout),
-    .if_empty_n(start_for_v_mix_core_alpha_false_false_U0_empty_n),
-    .if_read(v_mix_core_alpha_false_false_U0_ap_ready)
+    .if_dout(start_for_v_mix_core_alpha_true_false_U0_dout),
+    .if_empty_n(start_for_v_mix_core_alpha_true_false_U0_empty_n),
+    .if_read(v_mix_core_alpha_true_false_U0_ap_ready)
 );
 
 top_design_v_mix_0_0_start_for_v_mix_420_to_422_false_U0 start_for_v_mix_420_to_422_false_U0_U(
@@ -1118,7 +1123,7 @@ top_design_v_mix_0_0_start_for_v_mix_rgb2yuv_false_U0 start_for_v_mix_rgb2yuv_fa
     .if_write_ce(1'b1),
     .if_din(start_for_v_mix_rgb2yuv_false_U0_din),
     .if_full_n(start_for_v_mix_rgb2yuv_false_U0_full_n),
-    .if_write(v_mix_core_alpha_false_false_U0_start_write),
+    .if_write(v_mix_core_alpha_true_false_U0_start_write),
     .if_dout(start_for_v_mix_rgb2yuv_false_U0_dout),
     .if_empty_n(start_for_v_mix_rgb2yuv_false_U0_empty_n),
     .if_read(v_mix_rgb2yuv_false_U0_ap_ready)
@@ -1209,7 +1214,7 @@ assign MultiPixStream2AXIvideo_U0_ap_start = start_for_MultiPixStream2AXIvideo_U
 
 assign ap_done = MultiPixStream2AXIvideo_U0_ap_done;
 
-assign ap_idle = (v_mix_yuv2rgb_false_U0_ap_idle & v_mix_yuv2rgb_false_4_U0_ap_idle & v_mix_upsample_false_U0_ap_idle & v_mix_rgb2yuv_false_U0_ap_idle & v_mix_core_alpha_false_false_U0_ap_idle & v_mix_444_to_422_false_U0_ap_idle & v_mix_422_to_444_false_U0_ap_idle & v_mix_422_to_444_false_3_U0_ap_idle & v_mix_422_to_420_false_U0_ap_idle & v_mix_420_to_422_false_U0_ap_idle & v_mix_420_to_422_false_2_U0_ap_idle & MultiPixStream2AXIvideo_U0_ap_idle & AXIvideo2MultiPixStream_U0_ap_idle & AXIvideo2MultiPixStream_1_U0_ap_idle);
+assign ap_idle = (v_mix_yuv2rgb_false_U0_ap_idle & v_mix_yuv2rgb_false_4_U0_ap_idle & v_mix_upsample_false_U0_ap_idle & v_mix_rgb2yuv_false_U0_ap_idle & v_mix_core_alpha_true_false_U0_ap_idle & v_mix_444_to_422_false_U0_ap_idle & v_mix_422_to_444_false_U0_ap_idle & v_mix_422_to_444_false_3_U0_ap_idle & v_mix_422_to_420_false_U0_ap_idle & v_mix_420_to_422_false_U0_ap_idle & v_mix_420_to_422_false_2_U0_ap_idle & MultiPixStream2AXIvideo_U0_ap_idle & AXIvideo2MultiPixStream_U0_ap_idle & AXIvideo2MultiPixStream_1_U0_ap_idle);
 
 assign ap_ready = ap_sync_ready;
 
@@ -1251,7 +1256,7 @@ assign start_for_v_mix_422_to_444_false_U0_din = 1'b1;
 
 assign start_for_v_mix_444_to_422_false_U0_din = 1'b1;
 
-assign start_for_v_mix_core_alpha_false_false_U0_din = 1'b1;
+assign start_for_v_mix_core_alpha_true_false_U0_din = 1'b1;
 
 assign start_for_v_mix_rgb2yuv_false_U0_din = 1'b1;
 
@@ -1317,13 +1322,13 @@ assign v_mix_444_to_422_false_U0_out422_fifo_cap = out422_fifo_cap;
 
 assign v_mix_444_to_422_false_U0_out422_num_data_valid = out422_num_data_valid;
 
-assign v_mix_core_alpha_false_false_U0_ap_continue = 1'b1;
+assign v_mix_core_alpha_true_false_U0_ap_continue = 1'b1;
 
-assign v_mix_core_alpha_false_false_U0_ap_start = start_for_v_mix_core_alpha_false_false_U0_empty_n;
+assign v_mix_core_alpha_true_false_U0_ap_start = start_for_v_mix_core_alpha_true_false_U0_empty_n;
 
-assign v_mix_core_alpha_false_false_U0_outLayer1_fifo_cap = outLayer1_fifo_cap;
+assign v_mix_core_alpha_true_false_U0_outLayer1_fifo_cap = outLayer1_fifo_cap;
 
-assign v_mix_core_alpha_false_false_U0_outLayer1_num_data_valid = outLayer1_num_data_valid;
+assign v_mix_core_alpha_true_false_U0_outLayer1_num_data_valid = outLayer1_num_data_valid;
 
 assign v_mix_rgb2yuv_false_U0_ap_continue = 1'b1;
 

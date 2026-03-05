@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 5,
-    "calls": "1 4",
+    "calls": "3 7",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_tpg.cpp",
@@ -27,29 +27,10 @@
     "fileloc": 222,
     "instructions": 1,
     "memory_accesses": 0,
-    "name": "reg<unsigned short>",
+    "name": "reg<int>",
     "total_instructions": 1
   },
   "2": {
-    "basicblocks": 132,
-    "calls": "6 9 7",
-    "control_depth": 4,
-    "def_use_depth": 22,
-    "file": "v_tpg.cpp",
-    "fileloc": 536,
-    "instructions": 683,
-    "loads": {
-      "G": 65,
-      "L": 17
-    },
-    "memory_accesses": 113,
-    "name": "tpgBackground",
-    "stores": {
-      "G": 41
-    },
-    "total_instructions": 950
-  },
-  "3": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -64,39 +45,7 @@
     },
     "total_instructions": 2
   },
-  "4": {
-    "basicblocks": 1,
-    "calls": "2 8 5",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "v_tpg.cpp",
-    "fileloc": 304,
-    "instructions": 10,
-    "memory_accesses": 0,
-    "name": "v_tpgHlsDataFlow",
-    "total_instructions": 1406
-  },
-  "5": {
-    "basicblocks": 15,
-    "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 6,
-    "file": "v_tpg.cpp",
-    "fileloc": 919,
-    "instructions": 173,
-    "loads": {
-      "G": 3,
-      "L": 12
-    },
-    "memory_accesses": 26,
-    "name": "MultiPixStream2AXIvideo",
-    "stores": {
-      "G": 2,
-      "L": 16
-    },
-    "total_instructions": 219
-  },
-  "6": {
+  "3": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -105,29 +54,30 @@
     "fileloc": 222,
     "instructions": 1,
     "memory_accesses": 0,
-    "name": "reg<int>",
+    "name": "reg<unsigned short>",
     "total_instructions": 1
   },
-  "7": {
-    "basicblocks": 29,
-    "calls": "",
+  "4": {
+    "basicblocks": 27,
+    "calls": "2",
     "control_depth": 0,
-    "def_use_depth": 3,
+    "def_use_depth": 4,
     "file": "v_tpg.cpp",
-    "fileloc": 1734,
-    "instructions": 135,
+    "fileloc": 1437,
+    "instructions": 108,
     "loads": {
-      "G": 21
+      "G": 5,
+      "L": 1
     },
     "memory_accesses": 0,
-    "name": "tpgPatternDPColorSquare",
+    "name": "tpgPatternCrossHatch",
     "stores": {
-      "G": 10,
-      "L": 8
+      "G": 11,
+      "L": 4
     },
-    "total_instructions": 135
+    "total_instructions": 110
   },
-  "8": {
+  "5": {
     "basicblocks": 36,
     "calls": "",
     "control_depth": 5,
@@ -147,24 +97,74 @@
     },
     "total_instructions": 227
   },
-  "9": {
-    "basicblocks": 27,
-    "calls": "3",
-    "control_depth": 0,
-    "def_use_depth": 4,
+  "6": {
+    "basicblocks": 15,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 6,
     "file": "v_tpg.cpp",
-    "fileloc": 1437,
-    "instructions": 108,
+    "fileloc": 919,
+    "instructions": 173,
     "loads": {
-      "G": 5,
-      "L": 1
+      "G": 3,
+      "L": 12
+    },
+    "memory_accesses": 26,
+    "name": "MultiPixStream2AXIvideo",
+    "stores": {
+      "G": 2,
+      "L": 16
+    },
+    "total_instructions": 219
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "9 5 6",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "v_tpg.cpp",
+    "fileloc": 304,
+    "instructions": 10,
+    "memory_accesses": 0,
+    "name": "v_tpgHlsDataFlow",
+    "total_instructions": 1406
+  },
+  "8": {
+    "basicblocks": 29,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "v_tpg.cpp",
+    "fileloc": 1734,
+    "instructions": 135,
+    "loads": {
+      "G": 21
     },
     "memory_accesses": 0,
-    "name": "tpgPatternCrossHatch",
+    "name": "tpgPatternDPColorSquare",
     "stores": {
-      "G": 11,
-      "L": 4
+      "G": 10,
+      "L": 8
     },
-    "total_instructions": 110
+    "total_instructions": 135
+  },
+  "9": {
+    "basicblocks": 132,
+    "calls": "1 4 8",
+    "control_depth": 4,
+    "def_use_depth": 22,
+    "file": "v_tpg.cpp",
+    "fileloc": 536,
+    "instructions": 683,
+    "loads": {
+      "G": 65,
+      "L": 17
+    },
+    "memory_accesses": 113,
+    "name": "tpgBackground",
+    "stores": {
+      "G": 41
+    },
+    "total_instructions": 950
   }
 }

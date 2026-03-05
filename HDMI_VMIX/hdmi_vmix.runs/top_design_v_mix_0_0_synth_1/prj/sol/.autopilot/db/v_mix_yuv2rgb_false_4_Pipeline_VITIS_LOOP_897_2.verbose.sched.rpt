@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'v_mix_yuv2rgb_false_4_Pipeline_VITIS_LOOP_897_2'
 ================================================================
-* Date:           Tue Feb 24 12:52:08 2026
+* Date:           Sat Feb 28 15:10:43 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -117,7 +117,7 @@ Target clock period: 6.667ns, clock uncertainty: 1.800ns.
 The critical path consists of the following:
 	'store' operation ('store_ln887', prj/sol/.autopilot/db/v_csc.cpp:887) of constant 0 11 bit on local variable 'x', prj/sol/.autopilot/db/v_csc.cpp:887 [9]  (1.298 ns)
 	'load' operation 11 bit ('x', prj/sol/.autopilot/db/v_csc.cpp:897) on local variable 'x', prj/sol/.autopilot/db/v_csc.cpp:887 [12]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln897', prj/sol/.autopilot/db/v_csc.cpp:897) [13]  (1.482 ns)
+	'add' operation 11 bit ('x', prj/sol/.autopilot/db/v_csc.cpp:897) [15]  (1.482 ns)
 	'store' operation ('store_ln887', prj/sol/.autopilot/db/v_csc.cpp:887) of variable 'x', prj/sol/.autopilot/db/v_csc.cpp:897 11 bit on local variable 'x', prj/sol/.autopilot/db/v_csc.cpp:887 [22]  (1.298 ns)
 
  <State 2>: 4.867ns

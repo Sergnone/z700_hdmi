@@ -6,38 +6,38 @@
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
 | Phase         | Step                       | Instructions | Description                                                                            |
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
-| Compile/Link  |                            | 4,704        | After all functions are compiled and linked into a single design                       |
+| Compile/Link  |                            | 5,120        | After all functions are compiled and linked into a single design                       |
 |               |                            |              |                                                                                        |
 | Unroll/Inline |                            |              | After user unroll and inline pragmas are applied                                       |
-|               | (1) unroll                 | 2,082        | user unroll pragmas are applied                                                        |
-|               | (2) simplification         | 1,506        | simplification of applied user unroll pragmas                                          |
-|               | (3) inline                 | 1,518        | user inline pragmas are applied                                                        |
-|               | (4) simplification         | 1,346        | simplification of applied user inline pragmas                                          |
+|               | (1) unroll                 | 2,152        | user unroll pragmas are applied                                                        |
+|               | (2) simplification         | 1,567        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                 | 1,589        | user inline pragmas are applied                                                        |
+|               | (4) simplification         | 1,418        | simplification of applied user inline pragmas                                          |
 |               |                            |              |                                                                                        |
 | Array/Struct  |                            |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
-|               | (1) array partition        | 1,045        | user array partition pragmas are applied                                               |
-|               | (2) simplification         |   997        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
-|               | (3) aggregate/disaggregate | 1,016        | user struct aggregate/disaggregate pragmas are applied                                 |
-|               | (4) array reshape          | 1,223        | apply array reshape pragmas                                                            |
-|               | (5) access patterns        | 1,457        | array access pattern optmizations                                                      |
+|               | (1) array partition        | 1,107        | user array partition pragmas are applied                                               |
+|               | (2) simplification         | 1,066        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate | 1,085        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape          | 1,292        | apply array reshape pragmas                                                            |
+|               | (5) access patterns        | 1,531        | array access pattern optmizations                                                      |
 |               |                            |              |                                                                                        |
 | Performance   |                            |              | After transformations are applied to meet performance pragma targets                   |
-|               | (1) loop simplification    | 1,372        | loop and instruction simplification                                                    |
-|               | (2) parallelization        | 1,291        | loops are unrolled or pipelined to meet performance targets                            |
-|               | (3) array partition        | 1,162        | arrays are partitioned to meet performance targets                                     |
-|               | (4) simplification         | 1,162        | simplification of design after performance transformations                             |
+|               | (1) loop simplification    | 1,442        | loop and instruction simplification                                                    |
+|               | (2) parallelization        | 1,357        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition        | 1,228        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification         | 1,228        | simplification of design after performance transformations                             |
 |               |                            |              |                                                                                        |
 | HW Transforms |                            |              | After hardware transfomations                                                          |
-|               | (1) lowering               | 1,137        | initial conversion to HW specific instructions                                         |
-|               | (2) optimizations          | 1,073        | high level synthesis optimizations                                                     |
+|               | (1) lowering               | 1,203        | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations          | 1,139        | high level synthesis optimizations                                                     |
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
 
 * Instructions per Function for each Compilation Phase
 +---------------------------------------+----------------------+-----------------+----------------+----------------+----------------+----------------+
 | Function                              | Location             | Compile/Link    | Unroll/Inline  | Array/Struct   | Performance    | HW Transforms  |
 +---------------------------------------+----------------------+-----------------+----------------+----------------+----------------+----------------+
-| + v_mix                               | v_mix.cpp:2417       | 4,704           | 1,346          | 1,457          | 1,162          | 1,073          |
-|  + VMixHlsDataFlowFunction            | v_mix.cpp:498        | 4,466           | 1,172          | 1,290          | 1,052          |  866           |
+| + v_mix                               | v_mix.cpp:2417       | 5,120           | 1,418          | 1,531          | 1,228          | 1,139          |
+|  + VMixHlsDataFlowFunction            | v_mix.cpp:498        | 4,882           | 1,244          | 1,355          | 1,113          |  927           |
 |   + AXIvideo2MultiPixStream           | v_mix.cpp:3742       | 2,566 (2 calls) |  444 (2 calls) |  546 (2 calls) |  416 (2 calls) |  248 (2 calls) |
 |      Scalar                           | hls_video_core.h:196 |   10 (2 calls)  |                |                |                |                |
 |      reg<unsigned short>              | x_hls_utils.h:222    |    4 (4 calls)  |    4 (4 calls) |    4 (4 calls) |    4 (4 calls) |   16 (4 calls) |
@@ -51,8 +51,9 @@
 |      Scalar                           | hls_video_core.h:196 |   10 (2 calls)  |                |                |                |                |
 |   + v_mix_upsample<false>             | v_mix.cpp:93         |   55            |   44           |   67           |   65           |   52           |
 |      Scalar                           | hls_video_core.h:196 |    5            |                |                |                |                |
-|   + v_mix_core_alpha<false, fals...   | v_mix.cpp:435        |  309            |  128           |  141           |  128           |  113           |
+|   + v_mix_core_alpha<true, false...   | v_mix.cpp:361        |  725            |  200           |  206           |  189           |  174           |
 |      Scalar                           | hls_video_core.h:196 |   20 (4 calls)  |                |                |                |                |
+|      reg<unsigned short>              | x_hls_utils.h:222    |    1            |    1           |    1           |    1           |    4           |
 |   + v_mix_rgb2yuv<false>              | v_csc.cpp:1013       |   57            |   44           |   67           |   63           |   50           |
 |      Scalar                           | hls_video_core.h:196 |    5            |                |                |                |                |
 |   + v_mix_444_to_422<false>           | v_csc.cpp:702        |   57            |   44           |   25           |   21           |   30           |

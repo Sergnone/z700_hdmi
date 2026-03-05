@@ -753,10 +753,10 @@ if.end:1 %eol_5 = load i1 %p_4_0_0_0152319
 
 <Node id="58" bw="8" op_0_bw="8" op_1_bw="24" op_2_bw="32">
 <![CDATA[
-if.end:2 %tmp_5 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32, i24 %axi_data, i32 16
+if.end:2 %tmp_6 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32, i24 %axi_data, i32 16
 
 ]]></Node>
-<StgValue><ssdm name="tmp_5"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 
 <operation id="48" st_id="3" stage="1" lat="1">
@@ -785,7 +785,7 @@ if.end:3 %trunc_ln3817 = trunc i24 %axi_data
 
 <Node id="60" bw="24" op_0_bw="24" op_1_bw="16" op_2_bw="8">
 <![CDATA[
-if.end:4 %or_ln3817_3 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i16.i8, i16 %trunc_ln3817, i8 %tmp_5
+if.end:4 %or_ln3817_3 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i16.i8, i16 %trunc_ln3817, i8 %tmp_6
 
 ]]></Node>
 <StgValue><ssdm name="or_ln3817_3"/></StgValue>

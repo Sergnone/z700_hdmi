@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xCD73DC91F34EA3B8",
+      "boundary_crc": "0x6DF448AAB0DFF117",
       "design_src": "SBD",
       "device": "xc7z020clg400-2",
       "name": "bd_b6ca",
@@ -1074,7 +1074,7 @@
         "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
         "parameters": {
           "ADDR_WIDTH": {
-            "value": "7",
+            "value": "8",
             "value_src": "ip_prop"
           },
           "ARUSER_WIDTH": {
@@ -14438,7 +14438,7 @@
         "has_run_ip_tcl": "true",
         "parameters": {
           "AXI_ADDR_WIDTH": {
-            "value": "7"
+            "value": "8"
           },
           "AXI_ID_WIDTH": {
             "value": "1"
@@ -15704,7 +15704,7 @@
             "has_run_ip_tcl": "true",
             "parameters": {
               "ADDR_WIDTH": {
-                "value": "7"
+                "value": "8"
               },
               "ENABLE_PIPELINING": {
                 "value": "0"

@@ -18,11 +18,12 @@ port (
     HwReg_layerEnable_val13 : IN STD_LOGIC_VECTOR (1 downto 0);
     HwReg_layerEnableFlag_0_val : IN STD_LOGIC_VECTOR (0 downto 0);
     HwReg_layerEnableFlag_1_val : IN STD_LOGIC_VECTOR (0 downto 0);
-    HwReg_layerStartX_1_val14 : IN STD_LOGIC_VECTOR (15 downto 0);
-    HwReg_layerStartY_1_val15 : IN STD_LOGIC_VECTOR (15 downto 0);
+    HwReg_layerAlpha_1_val14 : IN STD_LOGIC_VECTOR (8 downto 0);
+    HwReg_layerStartX_1_val15 : IN STD_LOGIC_VECTOR (15 downto 0);
+    HwReg_layerStartY_1_val16 : IN STD_LOGIC_VECTOR (15 downto 0);
     HwReg_layerWidth_1_val : IN STD_LOGIC_VECTOR (15 downto 0);
     HwReg_layerHeight_1_val : IN STD_LOGIC_VECTOR (15 downto 0);
-    HwReg_layerScaleFactor_1_val18 : IN STD_LOGIC_VECTOR (7 downto 0);
+    HwReg_layerScaleFactor_1_val19 : IN STD_LOGIC_VECTOR (7 downto 0);
     s_axis_video_TDATA : IN STD_LOGIC_VECTOR (23 downto 0);
     s_axis_video_TKEEP : IN STD_LOGIC_VECTOR (2 downto 0);
     s_axis_video_TSTRB : IN STD_LOGIC_VECTOR (2 downto 0);
@@ -61,9 +62,10 @@ port (
     HwReg_background_U_G_val11_ap_vld : IN STD_LOGIC;
     HwReg_background_V_B_val12_ap_vld : IN STD_LOGIC;
     HwReg_layerEnable_val13_ap_vld : IN STD_LOGIC;
-    HwReg_layerStartX_1_val14_ap_vld : IN STD_LOGIC;
-    HwReg_layerStartY_1_val15_ap_vld : IN STD_LOGIC;
-    HwReg_layerScaleFactor_1_val18_ap_vld : IN STD_LOGIC;
+    HwReg_layerAlpha_1_val14_ap_vld : IN STD_LOGIC;
+    HwReg_layerStartX_1_val15_ap_vld : IN STD_LOGIC;
+    HwReg_layerStartY_1_val16_ap_vld : IN STD_LOGIC;
+    HwReg_layerScaleFactor_1_val19_ap_vld : IN STD_LOGIC;
     m_axis_video_TVALID : OUT STD_LOGIC;
     m_axis_video_TREADY : IN STD_LOGIC;
     ap_done : OUT STD_LOGIC;
@@ -195,19 +197,19 @@ attribute shreg_extract : string;
     signal v_mix_upsample_false_U0_srcLayer1x_write : STD_LOGIC;
     signal v_mix_upsample_false_U0_srcLayer1x_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
     signal v_mix_upsample_false_U0_srcLayer1x_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
-    signal v_mix_core_alpha_false_false_U0_ap_start : STD_LOGIC;
-    signal v_mix_core_alpha_false_false_U0_ap_done : STD_LOGIC;
-    signal v_mix_core_alpha_false_false_U0_ap_continue : STD_LOGIC;
-    signal v_mix_core_alpha_false_false_U0_ap_idle : STD_LOGIC;
-    signal v_mix_core_alpha_false_false_U0_ap_ready : STD_LOGIC;
-    signal v_mix_core_alpha_false_false_U0_start_out : STD_LOGIC;
-    signal v_mix_core_alpha_false_false_U0_start_write : STD_LOGIC;
-    signal v_mix_core_alpha_false_false_U0_outLayer0_read : STD_LOGIC;
-    signal v_mix_core_alpha_false_false_U0_srcLayer1x_read : STD_LOGIC;
-    signal v_mix_core_alpha_false_false_U0_outLayer1_din : STD_LOGIC_VECTOR (23 downto 0);
-    signal v_mix_core_alpha_false_false_U0_outLayer1_write : STD_LOGIC;
-    signal v_mix_core_alpha_false_false_U0_outLayer1_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
-    signal v_mix_core_alpha_false_false_U0_outLayer1_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
+    signal v_mix_core_alpha_true_false_U0_ap_start : STD_LOGIC;
+    signal v_mix_core_alpha_true_false_U0_ap_done : STD_LOGIC;
+    signal v_mix_core_alpha_true_false_U0_ap_continue : STD_LOGIC;
+    signal v_mix_core_alpha_true_false_U0_ap_idle : STD_LOGIC;
+    signal v_mix_core_alpha_true_false_U0_ap_ready : STD_LOGIC;
+    signal v_mix_core_alpha_true_false_U0_start_out : STD_LOGIC;
+    signal v_mix_core_alpha_true_false_U0_start_write : STD_LOGIC;
+    signal v_mix_core_alpha_true_false_U0_outLayer0_read : STD_LOGIC;
+    signal v_mix_core_alpha_true_false_U0_srcLayer1x_read : STD_LOGIC;
+    signal v_mix_core_alpha_true_false_U0_outLayer1_din : STD_LOGIC_VECTOR (23 downto 0);
+    signal v_mix_core_alpha_true_false_U0_outLayer1_write : STD_LOGIC;
+    signal v_mix_core_alpha_true_false_U0_outLayer1_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
+    signal v_mix_core_alpha_true_false_U0_outLayer1_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
     signal v_mix_rgb2yuv_false_U0_ap_start : STD_LOGIC;
     signal v_mix_rgb2yuv_false_U0_ap_done : STD_LOGIC;
     signal v_mix_rgb2yuv_false_U0_ap_continue : STD_LOGIC;
@@ -340,10 +342,10 @@ attribute shreg_extract : string;
     signal start_for_v_mix_yuv2rgb_false_4_U0_full_n : STD_LOGIC;
     signal start_for_v_mix_yuv2rgb_false_4_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
     signal start_for_v_mix_yuv2rgb_false_4_U0_empty_n : STD_LOGIC;
-    signal start_for_v_mix_core_alpha_false_false_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_v_mix_core_alpha_false_false_U0_full_n : STD_LOGIC;
-    signal start_for_v_mix_core_alpha_false_false_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_v_mix_core_alpha_false_false_U0_empty_n : STD_LOGIC;
+    signal start_for_v_mix_core_alpha_true_false_U0_din : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_v_mix_core_alpha_true_false_U0_full_n : STD_LOGIC;
+    signal start_for_v_mix_core_alpha_true_false_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_v_mix_core_alpha_true_false_U0_empty_n : STD_LOGIC;
     signal start_for_v_mix_420_to_422_false_U0_din : STD_LOGIC_VECTOR (0 downto 0);
     signal start_for_v_mix_420_to_422_false_U0_full_n : STD_LOGIC;
     signal start_for_v_mix_420_to_422_false_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
@@ -635,7 +637,7 @@ attribute shreg_extract : string;
     end component;
 
 
-    component top_design_v_mix_0_0_v_mix_core_alpha_false_false_s IS
+    component top_design_v_mix_0_0_v_mix_core_alpha_true_false_s IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -663,6 +665,7 @@ attribute shreg_extract : string;
         hwReg_background_U_G_val : IN STD_LOGIC_VECTOR (7 downto 0);
         hwReg_background_V_B_val : IN STD_LOGIC_VECTOR (7 downto 0);
         hwReg_layerEnable_val : IN STD_LOGIC_VECTOR (1 downto 0);
+        hwReg_layerAlpha_1_val : IN STD_LOGIC_VECTOR (8 downto 0);
         hwReg_layerStartX_1_val : IN STD_LOGIC_VECTOR (15 downto 0);
         hwReg_layerStartY_1_val : IN STD_LOGIC_VECTOR (15 downto 0);
         hwReg_layerWidth_1_val : IN STD_LOGIC_VECTOR (15 downto 0);
@@ -847,7 +850,7 @@ attribute shreg_extract : string;
     end component;
 
 
-    component top_design_v_mix_0_0_start_for_v_mix_core_alpha_false_false_U0 IS
+    component top_design_v_mix_0_0_start_for_v_mix_core_alpha_true_false_U0 IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -1071,7 +1074,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst,
         ap_start => v_mix_yuv2rgb_false_4_U0_ap_start,
-        start_full_n => start_for_v_mix_core_alpha_false_false_U0_full_n,
+        start_full_n => start_for_v_mix_core_alpha_true_false_U0_full_n,
         ap_done => v_mix_yuv2rgb_false_4_U0_ap_done,
         ap_continue => v_mix_yuv2rgb_false_4_U0_ap_continue,
         ap_idle => v_mix_yuv2rgb_false_4_U0_ap_idle,
@@ -1223,26 +1226,26 @@ begin
         srcLayer1x_num_data_valid => v_mix_upsample_false_U0_srcLayer1x_num_data_valid,
         srcLayer1x_fifo_cap => v_mix_upsample_false_U0_srcLayer1x_fifo_cap);
 
-    v_mix_core_alpha_false_false_U0 : component top_design_v_mix_0_0_v_mix_core_alpha_false_false_s
+    v_mix_core_alpha_true_false_U0 : component top_design_v_mix_0_0_v_mix_core_alpha_true_false_s
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => v_mix_core_alpha_false_false_U0_ap_start,
+        ap_start => v_mix_core_alpha_true_false_U0_ap_start,
         start_full_n => start_for_v_mix_rgb2yuv_false_U0_full_n,
-        ap_done => v_mix_core_alpha_false_false_U0_ap_done,
-        ap_continue => v_mix_core_alpha_false_false_U0_ap_continue,
-        ap_idle => v_mix_core_alpha_false_false_U0_ap_idle,
-        ap_ready => v_mix_core_alpha_false_false_U0_ap_ready,
-        start_out => v_mix_core_alpha_false_false_U0_start_out,
-        start_write => v_mix_core_alpha_false_false_U0_start_write,
+        ap_done => v_mix_core_alpha_true_false_U0_ap_done,
+        ap_continue => v_mix_core_alpha_true_false_U0_ap_continue,
+        ap_idle => v_mix_core_alpha_true_false_U0_ap_idle,
+        ap_ready => v_mix_core_alpha_true_false_U0_ap_ready,
+        start_out => v_mix_core_alpha_true_false_U0_start_out,
+        start_write => v_mix_core_alpha_true_false_U0_start_write,
         outLayer0_dout => outLayer0_dout,
         outLayer0_empty_n => outLayer0_empty_n,
-        outLayer0_read => v_mix_core_alpha_false_false_U0_outLayer0_read,
+        outLayer0_read => v_mix_core_alpha_true_false_U0_outLayer0_read,
         outLayer0_num_data_valid => outLayer0_num_data_valid,
         outLayer0_fifo_cap => outLayer0_fifo_cap,
         srcLayer1x_dout => srcLayer1x_dout,
         srcLayer1x_empty_n => srcLayer1x_empty_n,
-        srcLayer1x_read => v_mix_core_alpha_false_false_U0_srcLayer1x_read,
+        srcLayer1x_read => v_mix_core_alpha_true_false_U0_srcLayer1x_read,
         srcLayer1x_num_data_valid => srcLayer1x_num_data_valid,
         srcLayer1x_fifo_cap => srcLayer1x_fifo_cap,
         hwReg_width_val => HwReg_width_val,
@@ -1251,16 +1254,17 @@ begin
         hwReg_background_U_G_val => HwReg_background_U_G_val11,
         hwReg_background_V_B_val => HwReg_background_V_B_val12,
         hwReg_layerEnable_val => HwReg_layerEnable_val13,
-        hwReg_layerStartX_1_val => HwReg_layerStartX_1_val14,
-        hwReg_layerStartY_1_val => HwReg_layerStartY_1_val15,
+        hwReg_layerAlpha_1_val => HwReg_layerAlpha_1_val14,
+        hwReg_layerStartX_1_val => HwReg_layerStartX_1_val15,
+        hwReg_layerStartY_1_val => HwReg_layerStartY_1_val16,
         hwReg_layerWidth_1_val => HwReg_layerWidth_1_val,
         hwReg_layerHeight_1_val => HwReg_layerHeight_1_val,
-        hwReg_layerScaleFactor_1_val => HwReg_layerScaleFactor_1_val18,
-        outLayer1_din => v_mix_core_alpha_false_false_U0_outLayer1_din,
+        hwReg_layerScaleFactor_1_val => HwReg_layerScaleFactor_1_val19,
+        outLayer1_din => v_mix_core_alpha_true_false_U0_outLayer1_din,
         outLayer1_full_n => outLayer1_full_n,
-        outLayer1_write => v_mix_core_alpha_false_false_U0_outLayer1_write,
-        outLayer1_num_data_valid => v_mix_core_alpha_false_false_U0_outLayer1_num_data_valid,
-        outLayer1_fifo_cap => v_mix_core_alpha_false_false_U0_outLayer1_fifo_cap);
+        outLayer1_write => v_mix_core_alpha_true_false_U0_outLayer1_write,
+        outLayer1_num_data_valid => v_mix_core_alpha_true_false_U0_outLayer1_num_data_valid,
+        outLayer1_fifo_cap => v_mix_core_alpha_true_false_U0_outLayer1_fifo_cap);
 
     v_mix_rgb2yuv_false_U0 : component top_design_v_mix_0_0_v_mix_rgb2yuv_false_s
     port map (
@@ -1419,7 +1423,7 @@ begin
         if_write => v_mix_yuv2rgb_false_4_U0_outLayer0_write,
         if_dout => outLayer0_dout,
         if_empty_n => outLayer0_empty_n,
-        if_read => v_mix_core_alpha_false_false_U0_outLayer0_read,
+        if_read => v_mix_core_alpha_true_false_U0_outLayer0_read,
         if_num_data_valid => outLayer0_num_data_valid,
         if_fifo_cap => outLayer0_fifo_cap);
 
@@ -1494,7 +1498,7 @@ begin
         if_write => v_mix_upsample_false_U0_srcLayer1x_write,
         if_dout => srcLayer1x_dout,
         if_empty_n => srcLayer1x_empty_n,
-        if_read => v_mix_core_alpha_false_false_U0_srcLayer1x_read,
+        if_read => v_mix_core_alpha_true_false_U0_srcLayer1x_read,
         if_num_data_valid => srcLayer1x_num_data_valid,
         if_fifo_cap => srcLayer1x_fifo_cap);
 
@@ -1504,9 +1508,9 @@ begin
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => v_mix_core_alpha_false_false_U0_outLayer1_din,
+        if_din => v_mix_core_alpha_true_false_U0_outLayer1_din,
         if_full_n => outLayer1_full_n,
-        if_write => v_mix_core_alpha_false_false_U0_outLayer1_write,
+        if_write => v_mix_core_alpha_true_false_U0_outLayer1_write,
         if_dout => outLayer1_dout,
         if_empty_n => outLayer1_empty_n,
         if_read => v_mix_rgb2yuv_false_U0_outLayer1_read,
@@ -1597,18 +1601,18 @@ begin
         if_empty_n => start_for_v_mix_yuv2rgb_false_4_U0_empty_n,
         if_read => v_mix_yuv2rgb_false_4_U0_ap_ready);
 
-    start_for_v_mix_core_alpha_false_false_U0_U : component top_design_v_mix_0_0_start_for_v_mix_core_alpha_false_false_U0
+    start_for_v_mix_core_alpha_true_false_U0_U : component top_design_v_mix_0_0_start_for_v_mix_core_alpha_true_false_U0
     port map (
         clk => ap_clk,
         reset => ap_rst,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => start_for_v_mix_core_alpha_false_false_U0_din,
-        if_full_n => start_for_v_mix_core_alpha_false_false_U0_full_n,
+        if_din => start_for_v_mix_core_alpha_true_false_U0_din,
+        if_full_n => start_for_v_mix_core_alpha_true_false_U0_full_n,
         if_write => v_mix_yuv2rgb_false_4_U0_start_write,
-        if_dout => start_for_v_mix_core_alpha_false_false_U0_dout,
-        if_empty_n => start_for_v_mix_core_alpha_false_false_U0_empty_n,
-        if_read => v_mix_core_alpha_false_false_U0_ap_ready);
+        if_dout => start_for_v_mix_core_alpha_true_false_U0_dout,
+        if_empty_n => start_for_v_mix_core_alpha_true_false_U0_empty_n,
+        if_read => v_mix_core_alpha_true_false_U0_ap_ready);
 
     start_for_v_mix_420_to_422_false_U0_U : component top_design_v_mix_0_0_start_for_v_mix_420_to_422_false_U0
     port map (
@@ -1670,7 +1674,7 @@ begin
         if_write_ce => ap_const_logic_1,
         if_din => start_for_v_mix_rgb2yuv_false_U0_din,
         if_full_n => start_for_v_mix_rgb2yuv_false_U0_full_n,
-        if_write => v_mix_core_alpha_false_false_U0_start_write,
+        if_write => v_mix_core_alpha_true_false_U0_start_write,
         if_dout => start_for_v_mix_rgb2yuv_false_U0_dout,
         if_empty_n => start_for_v_mix_rgb2yuv_false_U0_empty_n,
         if_read => v_mix_rgb2yuv_false_U0_ap_ready);
@@ -1829,7 +1833,7 @@ begin
     MultiPixStream2AXIvideo_U0_ap_continue <= ap_continue;
     MultiPixStream2AXIvideo_U0_ap_start <= start_for_MultiPixStream2AXIvideo_U0_empty_n;
     ap_done <= MultiPixStream2AXIvideo_U0_ap_done;
-    ap_idle <= (v_mix_yuv2rgb_false_U0_ap_idle and v_mix_yuv2rgb_false_4_U0_ap_idle and v_mix_upsample_false_U0_ap_idle and v_mix_rgb2yuv_false_U0_ap_idle and v_mix_core_alpha_false_false_U0_ap_idle and v_mix_444_to_422_false_U0_ap_idle and v_mix_422_to_444_false_U0_ap_idle and v_mix_422_to_444_false_3_U0_ap_idle and v_mix_422_to_420_false_U0_ap_idle and v_mix_420_to_422_false_U0_ap_idle and v_mix_420_to_422_false_2_U0_ap_idle and MultiPixStream2AXIvideo_U0_ap_idle and AXIvideo2MultiPixStream_U0_ap_idle and AXIvideo2MultiPixStream_1_U0_ap_idle);
+    ap_idle <= (v_mix_yuv2rgb_false_U0_ap_idle and v_mix_yuv2rgb_false_4_U0_ap_idle and v_mix_upsample_false_U0_ap_idle and v_mix_rgb2yuv_false_U0_ap_idle and v_mix_core_alpha_true_false_U0_ap_idle and v_mix_444_to_422_false_U0_ap_idle and v_mix_422_to_444_false_U0_ap_idle and v_mix_422_to_444_false_3_U0_ap_idle and v_mix_422_to_420_false_U0_ap_idle and v_mix_420_to_422_false_U0_ap_idle and v_mix_420_to_422_false_2_U0_ap_idle and MultiPixStream2AXIvideo_U0_ap_idle and AXIvideo2MultiPixStream_U0_ap_idle and AXIvideo2MultiPixStream_1_U0_ap_idle);
     ap_ready <= ap_sync_ready;
     ap_sync_AXIvideo2MultiPixStream_1_U0_ap_ready <= (ap_sync_reg_AXIvideo2MultiPixStream_1_U0_ap_ready or AXIvideo2MultiPixStream_1_U0_ap_ready);
     ap_sync_AXIvideo2MultiPixStream_U0_ap_ready <= (ap_sync_reg_AXIvideo2MultiPixStream_U0_ap_ready or AXIvideo2MultiPixStream_U0_ap_ready);
@@ -1850,7 +1854,7 @@ begin
     start_for_v_mix_422_to_444_false_3_U0_din <= (0=>ap_const_logic_1, others=>'-');
     start_for_v_mix_422_to_444_false_U0_din <= (0=>ap_const_logic_1, others=>'-');
     start_for_v_mix_444_to_422_false_U0_din <= (0=>ap_const_logic_1, others=>'-');
-    start_for_v_mix_core_alpha_false_false_U0_din <= (0=>ap_const_logic_1, others=>'-');
+    start_for_v_mix_core_alpha_true_false_U0_din <= (0=>ap_const_logic_1, others=>'-');
     start_for_v_mix_rgb2yuv_false_U0_din <= (0=>ap_const_logic_1, others=>'-');
     start_for_v_mix_upsample_false_U0_din <= (0=>ap_const_logic_1, others=>'-');
     start_for_v_mix_yuv2rgb_false_4_U0_din <= (0=>ap_const_logic_1, others=>'-');
@@ -2011,10 +2015,10 @@ begin
     v_mix_444_to_422_false_U0_ap_start <= start_for_v_mix_444_to_422_false_U0_empty_n;
     v_mix_444_to_422_false_U0_out422_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(out422_fifo_cap),3))),32));
     v_mix_444_to_422_false_U0_out422_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(out422_num_data_valid),3))),32));
-    v_mix_core_alpha_false_false_U0_ap_continue <= ap_const_logic_1;
-    v_mix_core_alpha_false_false_U0_ap_start <= start_for_v_mix_core_alpha_false_false_U0_empty_n;
-    v_mix_core_alpha_false_false_U0_outLayer1_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(outLayer1_fifo_cap),3))),32));
-    v_mix_core_alpha_false_false_U0_outLayer1_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(outLayer1_num_data_valid),3))),32));
+    v_mix_core_alpha_true_false_U0_ap_continue <= ap_const_logic_1;
+    v_mix_core_alpha_true_false_U0_ap_start <= start_for_v_mix_core_alpha_true_false_U0_empty_n;
+    v_mix_core_alpha_true_false_U0_outLayer1_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(outLayer1_fifo_cap),3))),32));
+    v_mix_core_alpha_true_false_U0_outLayer1_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(outLayer1_num_data_valid),3))),32));
     v_mix_rgb2yuv_false_U0_ap_continue <= ap_const_logic_1;
     v_mix_rgb2yuv_false_U0_ap_start <= start_for_v_mix_rgb2yuv_false_U0_empty_n;
     v_mix_rgb2yuv_false_U0_outYuv_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(outYuv_fifo_cap),3))),32));

@@ -27,8 +27,14 @@ set SynModuleInfo {
   {SRCNAME v_mix_yuv2rgb<false> MODELNAME v_mix_yuv2rgb_false_s RTLNAME top_design_v_mix_0_0_v_mix_yuv2rgb_false_s}
   {SRCNAME v_mix_upsample<false>_Pipeline_VITIS_LOOP_107_2 MODELNAME v_mix_upsample_false_Pipeline_VITIS_LOOP_107_2 RTLNAME top_design_v_mix_0_0_v_mix_upsample_false_Pipeline_VITIS_LOOP_107_2}
   {SRCNAME v_mix_upsample<false> MODELNAME v_mix_upsample_false_s RTLNAME top_design_v_mix_0_0_v_mix_upsample_false_s}
-  {SRCNAME {v_mix_core_alpha<false, false>_Pipeline_VITIS_LOOP_465_3} MODELNAME v_mix_core_alpha_false_false_Pipeline_VITIS_LOOP_465_3 RTLNAME top_design_v_mix_0_0_v_mix_core_alpha_false_false_Pipeline_VITIS_LOOP_465_3}
-  {SRCNAME {v_mix_core_alpha<false, false>} MODELNAME v_mix_core_alpha_false_false_s RTLNAME top_design_v_mix_0_0_v_mix_core_alpha_false_false_s}
+  {SRCNAME {reg<unsigned short>7} MODELNAME reg_unsigned_short_7 RTLNAME top_design_v_mix_0_0_reg_unsigned_short_7}
+  {SRCNAME {v_mix_core_alpha<true, false>_Pipeline_VITIS_LOOP_395_3} MODELNAME v_mix_core_alpha_true_false_Pipeline_VITIS_LOOP_395_3 RTLNAME top_design_v_mix_0_0_v_mix_core_alpha_true_false_Pipeline_VITIS_LOOP_395_3
+    SUBMODULES {
+      {MODELNAME top_design_v_mix_0_0_mac_muladd_9s_9ns_16s_16_4_1 RTLNAME top_design_v_mix_0_0_mac_muladd_9s_9ns_16s_16_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
+      {MODELNAME top_design_v_mix_0_0_mac_muladd_9ns_9s_16s_16_4_1 RTLNAME top_design_v_mix_0_0_mac_muladd_9ns_9s_16s_16_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
+    }
+  }
+  {SRCNAME {v_mix_core_alpha<true, false>} MODELNAME v_mix_core_alpha_true_false_s RTLNAME top_design_v_mix_0_0_v_mix_core_alpha_true_false_s}
   {SRCNAME v_mix_rgb2yuv<false>_Pipeline_VITIS_LOOP_1042_2 MODELNAME v_mix_rgb2yuv_false_Pipeline_VITIS_LOOP_1042_2 RTLNAME top_design_v_mix_0_0_v_mix_rgb2yuv_false_Pipeline_VITIS_LOOP_1042_2}
   {SRCNAME v_mix_rgb2yuv<false> MODELNAME v_mix_rgb2yuv_false_s RTLNAME top_design_v_mix_0_0_v_mix_rgb2yuv_false_s}
   {SRCNAME v_mix_444_to_422<false>_Pipeline_VITIS_LOOP_718_2 MODELNAME v_mix_444_to_422_false_Pipeline_VITIS_LOOP_718_2 RTLNAME top_design_v_mix_0_0_v_mix_444_to_422_false_Pipeline_VITIS_LOOP_718_2}
@@ -55,7 +61,7 @@ set SynModuleInfo {
       {MODELNAME top_design_v_mix_0_0_start_for_v_mix_420_to_422_false_2_U0 RTLNAME top_design_v_mix_0_0_start_for_v_mix_420_to_422_false_2_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_v_mix_420_to_422_false_2_U0_U}
       {MODELNAME top_design_v_mix_0_0_start_for_v_mix_422_to_444_false_3_U0 RTLNAME top_design_v_mix_0_0_start_for_v_mix_422_to_444_false_3_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_v_mix_422_to_444_false_3_U0_U}
       {MODELNAME top_design_v_mix_0_0_start_for_v_mix_yuv2rgb_false_4_U0 RTLNAME top_design_v_mix_0_0_start_for_v_mix_yuv2rgb_false_4_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_v_mix_yuv2rgb_false_4_U0_U}
-      {MODELNAME top_design_v_mix_0_0_start_for_v_mix_core_alpha_false_false_U0 RTLNAME top_design_v_mix_0_0_start_for_v_mix_core_alpha_false_false_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_v_mix_core_alpha_false_false_U0_U}
+      {MODELNAME top_design_v_mix_0_0_start_for_v_mix_core_alpha_true_false_U0 RTLNAME top_design_v_mix_0_0_start_for_v_mix_core_alpha_true_false_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_v_mix_core_alpha_true_false_U0_U}
       {MODELNAME top_design_v_mix_0_0_start_for_v_mix_420_to_422_false_U0 RTLNAME top_design_v_mix_0_0_start_for_v_mix_420_to_422_false_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_v_mix_420_to_422_false_U0_U}
       {MODELNAME top_design_v_mix_0_0_start_for_v_mix_422_to_444_false_U0 RTLNAME top_design_v_mix_0_0_start_for_v_mix_422_to_444_false_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_v_mix_422_to_444_false_U0_U}
       {MODELNAME top_design_v_mix_0_0_start_for_v_mix_yuv2rgb_false_U0 RTLNAME top_design_v_mix_0_0_start_for_v_mix_yuv2rgb_false_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_v_mix_yuv2rgb_false_U0_U}

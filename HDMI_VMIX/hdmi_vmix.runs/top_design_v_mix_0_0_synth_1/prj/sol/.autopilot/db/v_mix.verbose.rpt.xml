@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'v_mix'" level="0">
-<item name = "Date">Tue Feb 24 12:52:09 2026
+<item name = "Date">Sat Feb 28 15:10:44 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">4498, 2084411, 29.988 us, 13.897 ms, 4499, 2084412, no</column>
+<column name="">4690, 2084411, 31.268 us, 13.897 ms, 4691, 2084412, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_VMixHlsDataFlowFunction_fu_375">VMixHlsDataFlowFunction, 4493, 2084406, 29.955 us, 13.897 ms, 4482, 2084407, dataflow</column>
+<column name="grp_VMixHlsDataFlowFunction_fu_391">VMixHlsDataFlowFunction, 4685, 2084406, 31.235 us, 13.897 ms, 4675, 2084407, dataflow</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -49,14 +49,14 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 80, -</column>
+<column name="Expression">-, -, 0, 96, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, -, 3034, 4449, -</column>
+<column name="Instance">0, 3, 3245, 4564, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 115, -</column>
-<column name="Register">-, -, 343, -, -</column>
+<column name="Register">-, -, 400, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 0, 3, 8, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 1, 3, 8, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -64,8 +64,8 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 374, 536, 0</column>
-<column name="grp_VMixHlsDataFlowFunction_fu_375">VMixHlsDataFlowFunction, 0, 0, 2660, 3904, 0</column>
-<column name="bitselect_1ns_32ns_1ns_1_1_1_U279">bitselect_1ns_32ns_1ns_1_1_1, 0, 0, 0, 9, 0</column>
+<column name="grp_VMixHlsDataFlowFunction_fu_391">VMixHlsDataFlowFunction, 0, 3, 2871, 4019, 0</column>
+<column name="bitselect_1ns_32ns_1ns_1_1_1_U291">bitselect_1ns_32ns_1ns_1_1_1, 0, 0, 0, 9, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -82,22 +82,23 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TREADY">and, 0, 0, 1, 1, 1</column>
-<column name="ap_sync_grp_VMixHlsDataFlowFunction_fu_375_ap_ready">or, 0, 0, 1, 1, 1</column>
-<column name="HwReg_layerEnableFlag_4_fu_486_p3">select, 0, 0, 2, 1, 1</column>
-<column name="HwReg_layerEnableFlag_fu_494_p3">select, 0, 0, 2, 1, 1</column>
-<column name="HwReg_layerHeight_fu_509_p3">select, 0, 0, 16, 1, 16</column>
-<column name="HwReg_layerScaleFactor_fu_502_p3">select, 0, 0, 8, 1, 8</column>
-<column name="HwReg_layerStartX_fu_530_p3">select, 0, 0, 16, 1, 16</column>
-<column name="HwReg_layerStartY_fu_523_p3">select, 0, 0, 16, 1, 16</column>
-<column name="HwReg_layerWidth_fu_516_p3">select, 0, 0, 16, 1, 16</column>
-<column name="i_2_fu_537_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TREADY">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sync_grp_VMixHlsDataFlowFunction_fu_391_ap_ready">or, 0, 0, 1, 1, 1</column>
+<column name="HwReg_layerAlpha_fu_557_p3">select, 0, 0, 16, 1, 16</column>
+<column name="HwReg_layerEnableFlag_4_fu_506_p3">select, 0, 0, 2, 1, 1</column>
+<column name="HwReg_layerEnableFlag_fu_514_p3">select, 0, 0, 2, 1, 1</column>
+<column name="HwReg_layerHeight_fu_529_p3">select, 0, 0, 16, 1, 16</column>
+<column name="HwReg_layerScaleFactor_fu_522_p3">select, 0, 0, 8, 1, 8</column>
+<column name="HwReg_layerStartX_fu_550_p3">select, 0, 0, 16, 1, 16</column>
+<column name="HwReg_layerStartY_fu_543_p3">select, 0, 0, 16, 1, 16</column>
+<column name="HwReg_layerWidth_fu_536_p3">select, 0, 0, 16, 1, 16</column>
+<column name="i_2_fu_564_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">25, 6, 1, 6</column>
-<column name="i_reg_364">9, 2, 1, 2</column>
+<column name="i_reg_380">9, 2, 1, 2</column>
 <column name="m_axis_video_TDATA_int_regslice">9, 2, 24, 48</column>
 <column name="m_axis_video_TDEST_int_regslice">9, 2, 1, 2</column>
 <column name="m_axis_video_TID_int_regslice">9, 2, 1, 2</column>
@@ -111,31 +112,34 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="HwReg_layerAlpha_reg_762">16, 0, 16, 0</column>
 <column name="HwReg_layerEnableFlag_1_fu_240">1, 0, 1, 0</column>
 <column name="HwReg_layerEnableFlag_3_fu_244">1, 0, 1, 0</column>
-<column name="HwReg_layerEnableFlag_4_reg_680">1, 0, 1, 0</column>
-<column name="HwReg_layerEnableFlag_reg_685">1, 0, 1, 0</column>
-<column name="HwReg_layerHeight_reg_695">16, 0, 16, 0</column>
-<column name="HwReg_layerScaleFactor_reg_690">8, 0, 8, 0</column>
-<column name="HwReg_layerStartX_reg_710">16, 0, 16, 0</column>
-<column name="HwReg_layerStartY_reg_705">16, 0, 16, 0</column>
-<column name="HwReg_layerWidth_reg_700">16, 0, 16, 0</column>
+<column name="HwReg_layerEnableFlag_4_reg_727">1, 0, 1, 0</column>
+<column name="HwReg_layerEnableFlag_reg_732">1, 0, 1, 0</column>
+<column name="HwReg_layerHeight_reg_742">16, 0, 16, 0</column>
+<column name="HwReg_layerScaleFactor_reg_737">8, 0, 8, 0</column>
+<column name="HwReg_layerStartX_reg_757">16, 0, 16, 0</column>
+<column name="HwReg_layerStartY_reg_752">16, 0, 16, 0</column>
+<column name="HwReg_layerWidth_reg_747">16, 0, 16, 0</column>
 <column name="ap_CS_fsm">5, 0, 5, 0</column>
-<column name="ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_done">1, 0, 1, 0</column>
-<column name="ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_done">1, 0, 1, 0</column>
+<column name="ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_ready">1, 0, 1, 0</column>
 <column name="empty_61_fu_252">16, 0, 16, 0</column>
 <column name="empty_62_fu_256">16, 0, 16, 0</column>
 <column name="empty_63_fu_260">16, 0, 16, 0</column>
 <column name="empty_64_fu_264">16, 0, 16, 0</column>
+<column name="empty_65_fu_268">16, 0, 16, 0</column>
 <column name="empty_fu_248">8, 0, 8, 0</column>
-<column name="grp_VMixHlsDataFlowFunction_fu_375_ap_start_reg">1, 0, 1, 0</column>
-<column name="i_reg_364">1, 0, 1, 0</column>
-<column name="layerEnable_read_reg_620">32, 0, 32, 0</column>
-<column name="layerHeight_1_read_reg_670">16, 0, 16, 0</column>
-<column name="layerScaleFactor_1_read_reg_675">8, 0, 8, 0</column>
-<column name="layerStartX_1_read_reg_655">16, 0, 16, 0</column>
-<column name="layerStartY_1_read_reg_660">16, 0, 16, 0</column>
-<column name="layerWidth_1_read_reg_665">16, 0, 16, 0</column>
+<column name="grp_VMixHlsDataFlowFunction_fu_391_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_reg_380">1, 0, 1, 0</column>
+<column name="layerAlpha_1_read_reg_697">16, 0, 16, 0</column>
+<column name="layerEnable_read_reg_662">32, 0, 32, 0</column>
+<column name="layerHeight_1_read_reg_717">16, 0, 16, 0</column>
+<column name="layerScaleFactor_1_read_reg_722">8, 0, 8, 0</column>
+<column name="layerStartX_1_read_reg_702">16, 0, 16, 0</column>
+<column name="layerStartY_1_read_reg_707">16, 0, 16, 0</column>
+<column name="layerWidth_1_read_reg_712">16, 0, 16, 0</column>
 <column name="m_axis_video_TDATA_reg">24, 0, 24, 0</column>
 <column name="m_axis_video_TDEST_reg">1, 0, 1, 0</column>
 <column name="m_axis_video_TID_reg">1, 0, 1, 0</column>
@@ -143,12 +147,13 @@
 <column name="m_axis_video_TLAST_reg">1, 0, 1, 0</column>
 <column name="m_axis_video_TSTRB_reg">3, 0, 3, 0</column>
 <column name="m_axis_video_TUSER_reg">1, 0, 1, 0</column>
-<column name="trunc_ln2417_1_reg_630">8, 0, 8, 0</column>
-<column name="trunc_ln2417_2_reg_635">8, 0, 8, 0</column>
-<column name="trunc_ln2417_3_reg_640">8, 0, 8, 0</column>
-<column name="trunc_ln2417_4_reg_645">11, 0, 11, 0</column>
-<column name="trunc_ln2417_5_reg_650">11, 0, 11, 0</column>
-<column name="trunc_ln2417_reg_625">2, 0, 2, 0</column>
+<column name="trunc_ln2417_1_reg_672">8, 0, 8, 0</column>
+<column name="trunc_ln2417_2_reg_677">8, 0, 8, 0</column>
+<column name="trunc_ln2417_3_reg_682">8, 0, 8, 0</column>
+<column name="trunc_ln2417_4_reg_687">11, 0, 11, 0</column>
+<column name="trunc_ln2417_5_reg_692">11, 0, 11, 0</column>
+<column name="trunc_ln2417_reg_667">2, 0, 2, 0</column>
+<column name="trunc_ln3296_reg_772">9, 0, 9, 0</column>
 </table>
 </item>
 </section>

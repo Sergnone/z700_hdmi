@@ -45,7 +45,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_design_
 # IP: bd/top_design/ip/top_design_v_mix_0_0/top_design_v_mix_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_design_v_mix_0_0 || ORIG_REF_NAME==top_design_v_mix_0_0} -quiet] -quiet
 
-# IP: bd/top_design/ip/top_design_v_frmbuf_rd_0_1/top_design_v_frmbuf_rd_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_design_v_frmbuf_rd_0_1 || ORIG_REF_NAME==top_design_v_frmbuf_rd_0_1} -quiet] -quiet
+# IP: bd/top_design/ip/top_design_v_tpg_0_2/top_design_v_tpg_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_design_v_tpg_0_2 || ORIG_REF_NAME==top_design_v_tpg_0_2} -quiet] -quiet
 
-# XDC: /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/top_design_ooc.xdc
+# XDC: /home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.gen/sources_1/bd/top_design/top_design_ooc.xdc

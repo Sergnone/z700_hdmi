@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'v_mix'
 ================================================================
-* Date:           Tue Feb 24 12:52:09 2026
+* Date:           Sat Feb 28 15:10:44 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |    Interval    | Pipeline|
     |   min   |   max   |    min    |    max    |  min |   max   |   Type  |
     +---------+---------+-----------+-----------+------+---------+---------+
-    |     4498|  2084411|  29.988 us|  13.897 ms|  4499|  2084412|       no|
+    |     4690|  2084411|  31.268 us|  13.897 ms|  4691|  2084412|       no|
     +---------+---------+-----------+-----------+------+---------+---------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                                    |                         |  Latency (cycles) |   Latency (absolute)  |    Interval    | Pipeline |
         |              Instance              |          Module         |   min   |   max   |    min    |    max    |  min |   max   |   Type   |
         +------------------------------------+-------------------------+---------+---------+-----------+-----------+------+---------+----------+
-        |grp_VMixHlsDataFlowFunction_fu_375  |VMixHlsDataFlowFunction  |     4493|  2084406|  29.955 us|  13.897 ms|  4482|  2084407|  dataflow|
+        |grp_VMixHlsDataFlowFunction_fu_391  |VMixHlsDataFlowFunction  |     4685|  2084406|  31.235 us|  13.897 ms|  4675|  2084407|  dataflow|
         +------------------------------------+-------------------------+---------+---------+-----------+-----------+------+---------+----------+
 
         * Loop: 
@@ -59,18 +59,18 @@
 |       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
 +-----------------+---------+-----+--------+-------+-----+
 |DSP              |        -|    -|       -|      -|    -|
-|Expression       |        -|    -|       0|     80|    -|
+|Expression       |        -|    -|       0|     96|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        0|    -|    3034|   4449|    -|
+|Instance         |        0|    3|    3245|   4564|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       0|    115|    -|
-|Register         |        -|    -|     343|      -|    -|
+|Register         |        -|    -|     400|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|    3377|   4644|    0|
+|Total            |        0|    3|    3645|   4775|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |        0|    0|       3|      8|    0|
+|Utilization (%)  |        0|    1|       3|      8|    0|
 +-----------------+---------+-----+--------+-------+-----+
 
 + Detail: 
@@ -79,10 +79,10 @@
     |              Instance              |            Module            | BRAM_18K| DSP|  FF  |  LUT | URAM|
     +------------------------------------+------------------------------+---------+----+------+------+-----+
     |CTRL_s_axi_U                        |CTRL_s_axi                    |        0|   0|   374|   536|    0|
-    |grp_VMixHlsDataFlowFunction_fu_375  |VMixHlsDataFlowFunction       |        0|   0|  2660|  3904|    0|
-    |bitselect_1ns_32ns_1ns_1_1_1_U279   |bitselect_1ns_32ns_1ns_1_1_1  |        0|   0|     0|     9|    0|
+    |grp_VMixHlsDataFlowFunction_fu_391  |VMixHlsDataFlowFunction       |        0|   3|  2871|  4019|    0|
+    |bitselect_1ns_32ns_1ns_1_1_1_U291   |bitselect_1ns_32ns_1ns_1_1_1  |        0|   0|     0|     9|    0|
     +------------------------------------+------------------------------+---------+----+------+------+-----+
-    |Total                               |                              |        0|   0|  3034|  4449|    0|
+    |Total                               |                              |        0|   3|  3245|  4564|    0|
     +------------------------------------+------------------------------+---------+----+------+------+-----+
 
     * DSP: 
@@ -98,18 +98,19 @@
     +--------------------------------------------------------+----------+----+---+----+------------+------------+
     |                      Variable Name                     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------------------------------------------------+----------+----+---+----+------------+------------+
-    |grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TREADY  |       and|   0|  0|   1|           1|           1|
-    |ap_sync_grp_VMixHlsDataFlowFunction_fu_375_ap_ready     |        or|   0|  0|   1|           1|           1|
-    |HwReg_layerEnableFlag_4_fu_486_p3                       |    select|   0|  0|   2|           1|           1|
-    |HwReg_layerEnableFlag_fu_494_p3                         |    select|   0|  0|   2|           1|           1|
-    |HwReg_layerHeight_fu_509_p3                             |    select|   0|  0|  16|           1|          16|
-    |HwReg_layerScaleFactor_fu_502_p3                        |    select|   0|  0|   8|           1|           8|
-    |HwReg_layerStartX_fu_530_p3                             |    select|   0|  0|  16|           1|          16|
-    |HwReg_layerStartY_fu_523_p3                             |    select|   0|  0|  16|           1|          16|
-    |HwReg_layerWidth_fu_516_p3                              |    select|   0|  0|  16|           1|          16|
-    |i_2_fu_537_p2                                           |       xor|   0|  0|   2|           1|           2|
+    |grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TREADY  |       and|   0|  0|   1|           1|           1|
+    |ap_sync_grp_VMixHlsDataFlowFunction_fu_391_ap_ready     |        or|   0|  0|   1|           1|           1|
+    |HwReg_layerAlpha_fu_557_p3                              |    select|   0|  0|  16|           1|          16|
+    |HwReg_layerEnableFlag_4_fu_506_p3                       |    select|   0|  0|   2|           1|           1|
+    |HwReg_layerEnableFlag_fu_514_p3                         |    select|   0|  0|   2|           1|           1|
+    |HwReg_layerHeight_fu_529_p3                             |    select|   0|  0|  16|           1|          16|
+    |HwReg_layerScaleFactor_fu_522_p3                        |    select|   0|  0|   8|           1|           8|
+    |HwReg_layerStartX_fu_550_p3                             |    select|   0|  0|  16|           1|          16|
+    |HwReg_layerStartY_fu_543_p3                             |    select|   0|  0|  16|           1|          16|
+    |HwReg_layerWidth_fu_536_p3                              |    select|   0|  0|  16|           1|          16|
+    |i_2_fu_564_p2                                           |       xor|   0|  0|   2|           1|           2|
     +--------------------------------------------------------+----------+----+---+----+------------+------------+
-    |Total                                                   |          |   0|  0|  80|          10|          78|
+    |Total                                                   |          |   0|  0|  96|          11|          94|
     +--------------------------------------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
@@ -117,7 +118,7 @@
     |                Name               | LUT| Input Size| Bits| Total Bits|
     +-----------------------------------+----+-----------+-----+-----------+
     |ap_NS_fsm                          |  25|          6|    1|          6|
-    |i_reg_364                          |   9|          2|    1|          2|
+    |i_reg_380                          |   9|          2|    1|          2|
     |m_axis_video_TDATA_int_regslice    |   9|          2|   24|         48|
     |m_axis_video_TDEST_int_regslice    |   9|          2|    1|          2|
     |m_axis_video_TID_int_regslice      |   9|          2|    1|          2|
@@ -135,31 +136,34 @@
     +---------------------------------------------------------+----+----+-----+-----------+
     |                           Name                          | FF | LUT| Bits| Const Bits|
     +---------------------------------------------------------+----+----+-----+-----------+
+    |HwReg_layerAlpha_reg_762                                 |  16|   0|   16|          0|
     |HwReg_layerEnableFlag_1_fu_240                           |   1|   0|    1|          0|
     |HwReg_layerEnableFlag_3_fu_244                           |   1|   0|    1|          0|
-    |HwReg_layerEnableFlag_4_reg_680                          |   1|   0|    1|          0|
-    |HwReg_layerEnableFlag_reg_685                            |   1|   0|    1|          0|
-    |HwReg_layerHeight_reg_695                                |  16|   0|   16|          0|
-    |HwReg_layerScaleFactor_reg_690                           |   8|   0|    8|          0|
-    |HwReg_layerStartX_reg_710                                |  16|   0|   16|          0|
-    |HwReg_layerStartY_reg_705                                |  16|   0|   16|          0|
-    |HwReg_layerWidth_reg_700                                 |  16|   0|   16|          0|
+    |HwReg_layerEnableFlag_4_reg_727                          |   1|   0|    1|          0|
+    |HwReg_layerEnableFlag_reg_732                            |   1|   0|    1|          0|
+    |HwReg_layerHeight_reg_742                                |  16|   0|   16|          0|
+    |HwReg_layerScaleFactor_reg_737                           |   8|   0|    8|          0|
+    |HwReg_layerStartX_reg_757                                |  16|   0|   16|          0|
+    |HwReg_layerStartY_reg_752                                |  16|   0|   16|          0|
+    |HwReg_layerWidth_reg_747                                 |  16|   0|   16|          0|
     |ap_CS_fsm                                                |   5|   0|    5|          0|
-    |ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_done   |   1|   0|    1|          0|
-    |ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_ready  |   1|   0|    1|          0|
+    |ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_done   |   1|   0|    1|          0|
+    |ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_ready  |   1|   0|    1|          0|
     |empty_61_fu_252                                          |  16|   0|   16|          0|
     |empty_62_fu_256                                          |  16|   0|   16|          0|
     |empty_63_fu_260                                          |  16|   0|   16|          0|
     |empty_64_fu_264                                          |  16|   0|   16|          0|
+    |empty_65_fu_268                                          |  16|   0|   16|          0|
     |empty_fu_248                                             |   8|   0|    8|          0|
-    |grp_VMixHlsDataFlowFunction_fu_375_ap_start_reg          |   1|   0|    1|          0|
-    |i_reg_364                                                |   1|   0|    1|          0|
-    |layerEnable_read_reg_620                                 |  32|   0|   32|          0|
-    |layerHeight_1_read_reg_670                               |  16|   0|   16|          0|
-    |layerScaleFactor_1_read_reg_675                          |   8|   0|    8|          0|
-    |layerStartX_1_read_reg_655                               |  16|   0|   16|          0|
-    |layerStartY_1_read_reg_660                               |  16|   0|   16|          0|
-    |layerWidth_1_read_reg_665                                |  16|   0|   16|          0|
+    |grp_VMixHlsDataFlowFunction_fu_391_ap_start_reg          |   1|   0|    1|          0|
+    |i_reg_380                                                |   1|   0|    1|          0|
+    |layerAlpha_1_read_reg_697                                |  16|   0|   16|          0|
+    |layerEnable_read_reg_662                                 |  32|   0|   32|          0|
+    |layerHeight_1_read_reg_717                               |  16|   0|   16|          0|
+    |layerScaleFactor_1_read_reg_722                          |   8|   0|    8|          0|
+    |layerStartX_1_read_reg_702                               |  16|   0|   16|          0|
+    |layerStartY_1_read_reg_707                               |  16|   0|   16|          0|
+    |layerWidth_1_read_reg_712                                |  16|   0|   16|          0|
     |m_axis_video_TDATA_reg                                   |  24|   0|   24|          0|
     |m_axis_video_TDEST_reg                                   |   1|   0|    1|          0|
     |m_axis_video_TID_reg                                     |   1|   0|    1|          0|
@@ -167,14 +171,15 @@
     |m_axis_video_TLAST_reg                                   |   1|   0|    1|          0|
     |m_axis_video_TSTRB_reg                                   |   3|   0|    3|          0|
     |m_axis_video_TUSER_reg                                   |   1|   0|    1|          0|
-    |trunc_ln2417_1_reg_630                                   |   8|   0|    8|          0|
-    |trunc_ln2417_2_reg_635                                   |   8|   0|    8|          0|
-    |trunc_ln2417_3_reg_640                                   |   8|   0|    8|          0|
-    |trunc_ln2417_4_reg_645                                   |  11|   0|   11|          0|
-    |trunc_ln2417_5_reg_650                                   |  11|   0|   11|          0|
-    |trunc_ln2417_reg_625                                     |   2|   0|    2|          0|
+    |trunc_ln2417_1_reg_672                                   |   8|   0|    8|          0|
+    |trunc_ln2417_2_reg_677                                   |   8|   0|    8|          0|
+    |trunc_ln2417_3_reg_682                                   |   8|   0|    8|          0|
+    |trunc_ln2417_4_reg_687                                   |  11|   0|   11|          0|
+    |trunc_ln2417_5_reg_692                                   |  11|   0|   11|          0|
+    |trunc_ln2417_reg_667                                     |   2|   0|    2|          0|
+    |trunc_ln3296_reg_772                                     |   9|   0|    9|          0|
     +---------------------------------------------------------+----+----+-----+-----------+
-    |Total                                                    | 343|   0|  343|          0|
+    |Total                                                    | 400|   0|  400|          0|
     +---------------------------------------------------------+----+----+-----+-----------+
 
 

@@ -598,7 +598,7 @@
 						<id>17</id>
 						<name>j</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>981</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -606,7 +606,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>2</count>
 									<item_version>0</item_version>
@@ -918,7 +918,7 @@
 						<id>29</id>
 						<name>icmp_ln1020</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1020</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -926,7 +926,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1025,7 +1025,7 @@
 						<id>31</id>
 						<name>j_write_ln981</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>981</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -1033,7 +1033,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1089,7 +1089,7 @@
 						<id>32</id>
 						<name>br_ln981</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>981</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -1097,7 +1097,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1197,7 +1197,7 @@
 						<id>35</id>
 						<name>phi_ln1036</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1036</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -1205,7 +1205,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1263,7 +1263,7 @@
 						<id>36</id>
 						<name>j_1</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>981</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -1271,7 +1271,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1327,7 +1327,7 @@
 						<id>37</id>
 						<name>icmp_ln981</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>981</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -1335,7 +1335,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1391,7 +1391,7 @@
 						<id>39</id>
 						<name>j_2</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>981</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -1399,7 +1399,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1455,7 +1455,7 @@
 						<id>40</id>
 						<name>br_ln981</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>981</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -1463,7 +1463,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1520,7 +1520,7 @@
 						<id>42</id>
 						<name>zext_ln981</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>981</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -1528,7 +1528,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1583,7 +1583,7 @@
 						<id>45</id>
 						<name>icmp_ln994</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>994</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -1591,7 +1591,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1647,7 +1647,7 @@
 						<id>46</id>
 						<name>br_ln1003</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1003</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -1655,7 +1655,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1712,7 +1712,7 @@
 						<id>48</id>
 						<name>counter_loc_1_i_i_load</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1005</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -1720,7 +1720,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1776,7 +1776,7 @@
 						<id>49</id>
 						<name>add_ln1005</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1005</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -1784,7 +1784,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1840,7 +1840,7 @@
 						<id>50</id>
 						<name>counter_write_ln1005</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1005</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -1848,7 +1848,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1904,7 +1904,7 @@
 						<id>51</id>
 						<name>counter_loc_1_i_i_write_ln1005</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1005</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -1912,7 +1912,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1970,7 +1970,7 @@
 						<id>52</id>
 						<name>br_ln1006</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1006</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -1978,7 +1978,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2033,7 +2033,7 @@
 						<id>54</id>
 						<name>counter_loc_1_i_i_load_2</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1008</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -2041,7 +2041,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2098,7 +2098,7 @@
 						<id>55</id>
 						<name>trunc_ln1008</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1008</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -2106,7 +2106,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2161,7 +2161,7 @@
 						<id>56</id>
 						<name>ovrlayYUV_read</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1008</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -2169,7 +2169,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2225,7 +2225,7 @@
 						<id>57</id>
 						<name>pix_444</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1008</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -2233,7 +2233,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2288,7 +2288,7 @@
 						<id>58</id>
 						<name>pix_rgb_2</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1008</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -2296,7 +2296,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2354,7 +2354,7 @@
 						<id>59</id>
 						<name>pix_rgb</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1008</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -2362,7 +2362,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2420,7 +2420,7 @@
 						<id>60</id>
 						<name>select_ln1020</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1020</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -2428,7 +2428,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2485,7 +2485,7 @@
 						<id>61</id>
 						<name>select_ln1020_1</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1020</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -2493,7 +2493,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2550,7 +2550,7 @@
 						<id>62</id>
 						<name>tmp_i_i</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1029</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -2558,7 +2558,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2616,7 +2616,7 @@
 						<id>63</id>
 						<name>tmp_i_i_134</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1023</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -2624,7 +2624,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2682,7 +2682,7 @@
 						<id>64</id>
 						<name>icmp_ln1020_1</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1020</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -2690,7 +2690,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2746,7 +2746,7 @@
 						<id>65</id>
 						<name>sel_tmp2_i</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1020</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -2754,7 +2754,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2811,7 +2811,7 @@
 						<id>66</id>
 						<name>tmp_i</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1023</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -2819,7 +2819,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2882,7 +2882,7 @@
 						<id>67</id>
 						<name>m_axis_video_V_data_V_write_ln1035</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1035</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -2890,7 +2890,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2959,7 +2959,7 @@
 						<id>68</id>
 						<name>j_write_ln981</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>981</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -2967,7 +2967,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -3025,7 +3025,7 @@
 						<id>69</id>
 						<name>br_ln981</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>981</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -3033,7 +3033,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -3175,7 +3175,7 @@
 						<id>73</id>
 						<name>phi_ln1036_i_out_write_ln1036</name>
 						<fileName>prj/sol/.autopilot/db/v_tpg.cpp</fileName>
-						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
+						<fileDirectory>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</fileDirectory>
 						<lineNumber>1036</lineNumber>
 						<contextFuncName>MultiPixStream2AXIvideo</contextFuncName>
 						<contextNormFuncName>MultiPixStream2AXIvideo</contextNormFuncName>
@@ -3183,7 +3183,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
+								<first>/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_tpg_0_1_synth_1</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>

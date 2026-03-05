@@ -1,7 +1,7 @@
 set ModuleHierarchy {[{
 "Name" : "v_mix", "RefName" : "v_mix","ID" : "0","Type" : "sequential",
 "SubInsts" : [
-	{"Name" : "grp_VMixHlsDataFlowFunction_fu_375", "RefName" : "VMixHlsDataFlowFunction","ID" : "1","Type" : "dataflow",
+	{"Name" : "grp_VMixHlsDataFlowFunction_fu_391", "RefName" : "VMixHlsDataFlowFunction","ID" : "1","Type" : "dataflow",
 		"SubInsts" : [
 		{"Name" : "AXIvideo2MultiPixStream_1_U0", "RefName" : "AXIvideo2MultiPixStream_1","ID" : "2","Type" : "sequential",
 			"SubInsts" : [
@@ -84,44 +84,46 @@ set ModuleHierarchy {[{
 			{"Name" : "grp_v_mix_upsample_false_Pipeline_VITIS_LOOP_107_2_fu_70", "RefName" : "v_mix_upsample_false_Pipeline_VITIS_LOOP_107_2","ID" : "48","Type" : "sequential",
 					"SubLoops" : [
 					{"Name" : "VITIS_LOOP_107_2","RefName" : "VITIS_LOOP_107_2","ID" : "49","Type" : "pipeline"},]},]},]},
-		{"Name" : "v_mix_core_alpha_false_false_U0", "RefName" : "v_mix_core_alpha_false_false_s","ID" : "50","Type" : "sequential",
+		{"Name" : "v_mix_core_alpha_true_false_U0", "RefName" : "v_mix_core_alpha_true_false_s","ID" : "50","Type" : "sequential",
+			"SubInsts" : [
+			{"Name" : "grp_reg_unsigned_short_7_fu_194", "RefName" : "reg_unsigned_short_7","ID" : "51","Type" : "pipeline"},],
 			"SubLoops" : [
-			{"Name" : "VITIS_LOOP_463_2","RefName" : "VITIS_LOOP_463_2","ID" : "51","Type" : "no",
+			{"Name" : "VITIS_LOOP_393_2","RefName" : "VITIS_LOOP_393_2","ID" : "52","Type" : "no",
 			"SubInsts" : [
-			{"Name" : "grp_v_mix_core_alpha_false_false_Pipeline_VITIS_LOOP_465_3_fu_146", "RefName" : "v_mix_core_alpha_false_false_Pipeline_VITIS_LOOP_465_3","ID" : "52","Type" : "sequential",
+			{"Name" : "grp_v_mix_core_alpha_true_false_Pipeline_VITIS_LOOP_395_3_fu_170", "RefName" : "v_mix_core_alpha_true_false_Pipeline_VITIS_LOOP_395_3","ID" : "53","Type" : "sequential",
 					"SubLoops" : [
-					{"Name" : "VITIS_LOOP_465_3","RefName" : "VITIS_LOOP_465_3","ID" : "53","Type" : "pipeline"},]},]},]},
-		{"Name" : "v_mix_rgb2yuv_false_U0", "RefName" : "v_mix_rgb2yuv_false_s","ID" : "54","Type" : "sequential",
+					{"Name" : "VITIS_LOOP_395_3","RefName" : "VITIS_LOOP_395_3","ID" : "54","Type" : "pipeline"},]},]},]},
+		{"Name" : "v_mix_rgb2yuv_false_U0", "RefName" : "v_mix_rgb2yuv_false_s","ID" : "55","Type" : "sequential",
 			"SubLoops" : [
-			{"Name" : "VITIS_LOOP_1040_1","RefName" : "VITIS_LOOP_1040_1","ID" : "55","Type" : "no",
+			{"Name" : "VITIS_LOOP_1040_1","RefName" : "VITIS_LOOP_1040_1","ID" : "56","Type" : "no",
 			"SubInsts" : [
-			{"Name" : "grp_v_mix_rgb2yuv_false_Pipeline_VITIS_LOOP_1042_2_fu_62", "RefName" : "v_mix_rgb2yuv_false_Pipeline_VITIS_LOOP_1042_2","ID" : "56","Type" : "sequential",
+			{"Name" : "grp_v_mix_rgb2yuv_false_Pipeline_VITIS_LOOP_1042_2_fu_62", "RefName" : "v_mix_rgb2yuv_false_Pipeline_VITIS_LOOP_1042_2","ID" : "57","Type" : "sequential",
 					"SubLoops" : [
-					{"Name" : "VITIS_LOOP_1042_2","RefName" : "VITIS_LOOP_1042_2","ID" : "57","Type" : "pipeline"},]},]},]},
-		{"Name" : "v_mix_444_to_422_false_U0", "RefName" : "v_mix_444_to_422_false_s","ID" : "58","Type" : "sequential",
+					{"Name" : "VITIS_LOOP_1042_2","RefName" : "VITIS_LOOP_1042_2","ID" : "58","Type" : "pipeline"},]},]},]},
+		{"Name" : "v_mix_444_to_422_false_U0", "RefName" : "v_mix_444_to_422_false_s","ID" : "59","Type" : "sequential",
 			"SubLoops" : [
-			{"Name" : "VITIS_LOOP_716_1","RefName" : "VITIS_LOOP_716_1","ID" : "59","Type" : "no",
+			{"Name" : "VITIS_LOOP_716_1","RefName" : "VITIS_LOOP_716_1","ID" : "60","Type" : "no",
 			"SubInsts" : [
-			{"Name" : "grp_v_mix_444_to_422_false_Pipeline_VITIS_LOOP_718_2_fu_62", "RefName" : "v_mix_444_to_422_false_Pipeline_VITIS_LOOP_718_2","ID" : "60","Type" : "sequential",
+			{"Name" : "grp_v_mix_444_to_422_false_Pipeline_VITIS_LOOP_718_2_fu_62", "RefName" : "v_mix_444_to_422_false_Pipeline_VITIS_LOOP_718_2","ID" : "61","Type" : "sequential",
 					"SubLoops" : [
-					{"Name" : "VITIS_LOOP_718_2","RefName" : "VITIS_LOOP_718_2","ID" : "61","Type" : "pipeline"},]},]},]},
-		{"Name" : "v_mix_422_to_420_false_U0", "RefName" : "v_mix_422_to_420_false_s","ID" : "62","Type" : "sequential",
+					{"Name" : "VITIS_LOOP_718_2","RefName" : "VITIS_LOOP_718_2","ID" : "62","Type" : "pipeline"},]},]},]},
+		{"Name" : "v_mix_422_to_420_false_U0", "RefName" : "v_mix_422_to_420_false_s","ID" : "63","Type" : "sequential",
 			"SubLoops" : [
-			{"Name" : "VITIS_LOOP_506_1","RefName" : "VITIS_LOOP_506_1","ID" : "63","Type" : "no",
+			{"Name" : "VITIS_LOOP_506_1","RefName" : "VITIS_LOOP_506_1","ID" : "64","Type" : "no",
 			"SubInsts" : [
-			{"Name" : "grp_v_mix_422_to_420_false_Pipeline_VITIS_LOOP_508_2_fu_62", "RefName" : "v_mix_422_to_420_false_Pipeline_VITIS_LOOP_508_2","ID" : "64","Type" : "sequential",
+			{"Name" : "grp_v_mix_422_to_420_false_Pipeline_VITIS_LOOP_508_2_fu_62", "RefName" : "v_mix_422_to_420_false_Pipeline_VITIS_LOOP_508_2","ID" : "65","Type" : "sequential",
 					"SubLoops" : [
-					{"Name" : "VITIS_LOOP_508_2","RefName" : "VITIS_LOOP_508_2","ID" : "65","Type" : "pipeline"},]},]},]},
-		{"Name" : "MultiPixStream2AXIvideo_U0", "RefName" : "MultiPixStream2AXIvideo","ID" : "66","Type" : "sequential",
+					{"Name" : "VITIS_LOOP_508_2","RefName" : "VITIS_LOOP_508_2","ID" : "66","Type" : "pipeline"},]},]},]},
+		{"Name" : "MultiPixStream2AXIvideo_U0", "RefName" : "MultiPixStream2AXIvideo","ID" : "67","Type" : "sequential",
 			"SubInsts" : [
-			{"Name" : "grp_reg_unsigned_short_1_fu_120", "RefName" : "reg_unsigned_short_1","ID" : "67","Type" : "pipeline"},
-			{"Name" : "grp_reg_unsigned_short_1_fu_126", "RefName" : "reg_unsigned_short_1","ID" : "68","Type" : "pipeline"},],
+			{"Name" : "grp_reg_unsigned_short_1_fu_120", "RefName" : "reg_unsigned_short_1","ID" : "68","Type" : "pipeline"},
+			{"Name" : "grp_reg_unsigned_short_1_fu_126", "RefName" : "reg_unsigned_short_1","ID" : "69","Type" : "pipeline"},],
 			"SubLoops" : [
-			{"Name" : "VITIS_LOOP_3901_2","RefName" : "VITIS_LOOP_3901_2","ID" : "69","Type" : "no",
+			{"Name" : "VITIS_LOOP_3901_2","RefName" : "VITIS_LOOP_3901_2","ID" : "70","Type" : "no",
 			"SubInsts" : [
-			{"Name" : "grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_3903_3_fu_96", "RefName" : "MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_3903_3","ID" : "70","Type" : "sequential",
+			{"Name" : "grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_3903_3_fu_96", "RefName" : "MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_3903_3","ID" : "71","Type" : "sequential",
 					"SubLoops" : [
-					{"Name" : "VITIS_LOOP_3903_3","RefName" : "VITIS_LOOP_3903_3","ID" : "71","Type" : "pipeline"},]},]},]},]},],
+					{"Name" : "VITIS_LOOP_3903_3","RefName" : "VITIS_LOOP_3903_3","ID" : "72","Type" : "pipeline"},]},]},]},]},],
 "SubLoops" : [
-	{"Name" : "VITIS_LOOP_3296_1","RefName" : "VITIS_LOOP_3296_1","ID" : "72","Type" : "pipeline"},]
+	{"Name" : "VITIS_LOOP_3296_1","RefName" : "VITIS_LOOP_3296_1","ID" : "73","Type" : "pipeline"},]
 }]}

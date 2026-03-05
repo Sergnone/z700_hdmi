@@ -112,7 +112,7 @@ reg    ap_loop_exit_ready_pp0_iter1_reg;
 reg   [0:0] p_4_0_0_0152319_fu_94;
 reg    ap_block_pp0_stage0_01001;
 wire   [15:0] trunc_ln3817_fu_256_p1;
-wire   [7:0] tmp_5_fu_248_p3;
+wire   [7:0] tmp_6_fu_248_p3;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -433,9 +433,9 @@ assign p_0_0_0_0144310_out = p_0_0_0_0144310_fu_90;
 
 assign p_4_0_0_0152319_out = p_4_0_0_0152319_fu_94;
 
-assign srcLayer0_din = {{trunc_ln3817_fu_256_p1}, {tmp_5_fu_248_p3}};
+assign srcLayer0_din = {{trunc_ln3817_fu_256_p1}, {tmp_6_fu_248_p3}};
 
-assign tmp_5_fu_248_p3 = {{p_0_0_0_0144310_fu_90[23:16]}};
+assign tmp_6_fu_248_p3 = {{p_0_0_0_0144310_fu_90[23:16]}};
 
 assign trunc_ln3817_fu_256_p1 = p_0_0_0_0144310_fu_90[15:0];
 

@@ -15,7 +15,7 @@
 #define AXIMM_NUM_OUTSTANDING   4
 #define AXIMM_BURST_LENGTH      16
 
-#define LAYER1_ALPHA			false
+#define LAYER1_ALPHA			true
 #define LAYER2_ALPHA			false
 #define LAYER3_ALPHA			false
 #define LAYER4_ALPHA			false

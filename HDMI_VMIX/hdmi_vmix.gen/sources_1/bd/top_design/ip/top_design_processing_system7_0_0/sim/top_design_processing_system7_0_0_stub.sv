@@ -153,7 +153,7 @@ module top_design_processing_system7_0_0 (
   input bit [5 : 0] S_AXI_HP0_WID,
   input bit [31 : 0] S_AXI_HP0_WDATA,
   input bit [3 : 0] S_AXI_HP0_WSTRB,
-  input bit [5 : 0] IRQ_F2P,
+  input bit [3 : 0] IRQ_F2P,
   output bit_as_bool FCLK_CLK0,
   output bit_as_bool FCLK_CLK1,
   output bit_as_bool FCLK_RESET0_N,
@@ -274,7 +274,7 @@ module top_design_processing_system7_0_0 (GPIO_I,GPIO_O,GPIO_T,M_AXI_GP0_ARVALID
   input bit [5 : 0] S_AXI_HP0_WID;
   input bit [31 : 0] S_AXI_HP0_WDATA;
   input bit [3 : 0] S_AXI_HP0_WSTRB;
-  input bit [5 : 0] IRQ_F2P;
+  input bit [3 : 0] IRQ_F2P;
   output wire FCLK_CLK0;
   output wire FCLK_CLK1;
   output wire FCLK_RESET0_N;

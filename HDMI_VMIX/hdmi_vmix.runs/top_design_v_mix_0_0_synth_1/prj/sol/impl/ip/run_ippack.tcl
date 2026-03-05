@@ -6,8 +6,8 @@
 # 
 # ==============================================================
 source -notrace "/tools/xilinx/2025.2/Vitis/common/scripts/ipxhls.tcl"
-set ip_out_dir "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_mix_0_0_synth_1/prj/sol/impl/ip"
-set data_file "/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_mix_0_0_synth_1/prj/sol/sol_data.json"
+set ip_out_dir "/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_mix_0_0_synth_1/prj/sol/impl/ip"
+set data_file "/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_mix_0_0_synth_1/prj/sol/sol_data.json"
 set src_dir [file dir $data_file]
 set ip_types {vitis sysgen}
 set ippack_opts_dict {subcore_use_xci_files false}

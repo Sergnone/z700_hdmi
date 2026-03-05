@@ -109,7 +109,7 @@ architecture behav of top_design_v_mix_0_0_v_mix is
     attribute DowngradeIPIdentifiedWarnings of behav : architecture is "yes";
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "top_design_v_mix_0_0_v_mix,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-2,HLS_INPUT_CLOCK=6.667000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=4.866910,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=3377,HLS_SYN_LUT=4644,HLS_VERSION=2025_2}";
+    "top_design_v_mix_0_0_v_mix,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-2,HLS_INPUT_CLOCK=6.667000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=4.866910,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=3645,HLS_SYN_LUT=4775,HLS_VERSION=2025_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (4 downto 0) := "00001";
@@ -120,9 +120,9 @@ architecture behav of top_design_v_mix_0_0_v_mix is
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_boolean_1 : BOOLEAN := true;
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
+    constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
     constant C_S_AXI_DATA_WIDTH : INTEGER := 32;
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
-    constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
     constant ap_const_lv32_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000011";
     constant ap_const_boolean_0 : BOOLEAN := false;
     constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
@@ -154,68 +154,73 @@ architecture behav of top_design_v_mix_0_0_v_mix is
     signal layerScaleFactor_1 : STD_LOGIC_VECTOR (7 downto 0);
     signal layerStride_1 : STD_LOGIC_VECTOR (15 downto 0);
     signal reserve : STD_LOGIC_VECTOR (15 downto 0);
-    signal layerEnable_read_reg_620 : STD_LOGIC_VECTOR (31 downto 0);
-    signal trunc_ln2417_fu_434_p1 : STD_LOGIC_VECTOR (1 downto 0);
-    signal trunc_ln2417_reg_625 : STD_LOGIC_VECTOR (1 downto 0);
-    signal trunc_ln2417_1_fu_438_p1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal trunc_ln2417_1_reg_630 : STD_LOGIC_VECTOR (7 downto 0);
-    signal trunc_ln2417_2_fu_442_p1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal trunc_ln2417_2_reg_635 : STD_LOGIC_VECTOR (7 downto 0);
-    signal trunc_ln2417_3_fu_446_p1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal trunc_ln2417_3_reg_640 : STD_LOGIC_VECTOR (7 downto 0);
-    signal trunc_ln2417_4_fu_450_p1 : STD_LOGIC_VECTOR (10 downto 0);
-    signal trunc_ln2417_4_reg_645 : STD_LOGIC_VECTOR (10 downto 0);
-    signal trunc_ln2417_5_fu_454_p1 : STD_LOGIC_VECTOR (10 downto 0);
-    signal trunc_ln2417_5_reg_650 : STD_LOGIC_VECTOR (10 downto 0);
-    signal layerStartX_1_read_reg_655 : STD_LOGIC_VECTOR (15 downto 0);
-    signal layerStartY_1_read_reg_660 : STD_LOGIC_VECTOR (15 downto 0);
-    signal layerWidth_1_read_reg_665 : STD_LOGIC_VECTOR (15 downto 0);
-    signal layerHeight_1_read_reg_670 : STD_LOGIC_VECTOR (15 downto 0);
-    signal layerScaleFactor_1_read_reg_675 : STD_LOGIC_VECTOR (7 downto 0);
-    signal HwReg_layerEnableFlag_4_fu_486_p3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal HwReg_layerEnableFlag_4_reg_680 : STD_LOGIC_VECTOR (0 downto 0);
+    signal layerEnable_read_reg_662 : STD_LOGIC_VECTOR (31 downto 0);
+    signal trunc_ln2417_fu_451_p1 : STD_LOGIC_VECTOR (1 downto 0);
+    signal trunc_ln2417_reg_667 : STD_LOGIC_VECTOR (1 downto 0);
+    signal trunc_ln2417_1_fu_455_p1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal trunc_ln2417_1_reg_672 : STD_LOGIC_VECTOR (7 downto 0);
+    signal trunc_ln2417_2_fu_459_p1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal trunc_ln2417_2_reg_677 : STD_LOGIC_VECTOR (7 downto 0);
+    signal trunc_ln2417_3_fu_463_p1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal trunc_ln2417_3_reg_682 : STD_LOGIC_VECTOR (7 downto 0);
+    signal trunc_ln2417_4_fu_467_p1 : STD_LOGIC_VECTOR (10 downto 0);
+    signal trunc_ln2417_4_reg_687 : STD_LOGIC_VECTOR (10 downto 0);
+    signal trunc_ln2417_5_fu_471_p1 : STD_LOGIC_VECTOR (10 downto 0);
+    signal trunc_ln2417_5_reg_692 : STD_LOGIC_VECTOR (10 downto 0);
+    signal layerAlpha_1_read_reg_697 : STD_LOGIC_VECTOR (15 downto 0);
+    signal layerStartX_1_read_reg_702 : STD_LOGIC_VECTOR (15 downto 0);
+    signal layerStartY_1_read_reg_707 : STD_LOGIC_VECTOR (15 downto 0);
+    signal layerWidth_1_read_reg_712 : STD_LOGIC_VECTOR (15 downto 0);
+    signal layerHeight_1_read_reg_717 : STD_LOGIC_VECTOR (15 downto 0);
+    signal layerScaleFactor_1_read_reg_722 : STD_LOGIC_VECTOR (7 downto 0);
+    signal HwReg_layerEnableFlag_4_fu_506_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal HwReg_layerEnableFlag_4_reg_727 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
-    signal HwReg_layerEnableFlag_fu_494_p3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal HwReg_layerEnableFlag_reg_685 : STD_LOGIC_VECTOR (0 downto 0);
-    signal HwReg_layerScaleFactor_fu_502_p3 : STD_LOGIC_VECTOR (7 downto 0);
-    signal HwReg_layerScaleFactor_reg_690 : STD_LOGIC_VECTOR (7 downto 0);
-    signal HwReg_layerHeight_fu_509_p3 : STD_LOGIC_VECTOR (15 downto 0);
-    signal HwReg_layerHeight_reg_695 : STD_LOGIC_VECTOR (15 downto 0);
-    signal HwReg_layerWidth_fu_516_p3 : STD_LOGIC_VECTOR (15 downto 0);
-    signal HwReg_layerWidth_reg_700 : STD_LOGIC_VECTOR (15 downto 0);
-    signal HwReg_layerStartY_fu_523_p3 : STD_LOGIC_VECTOR (15 downto 0);
-    signal HwReg_layerStartY_reg_705 : STD_LOGIC_VECTOR (15 downto 0);
-    signal HwReg_layerStartX_fu_530_p3 : STD_LOGIC_VECTOR (15 downto 0);
-    signal HwReg_layerStartX_reg_710 : STD_LOGIC_VECTOR (15 downto 0);
-    signal i_2_fu_537_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TDATA : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TKEEP : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TSTRB : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TLAST : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TDEST : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_VMixHlsDataFlowFunction_fu_375_s_axis_video_TREADY : STD_LOGIC;
-    signal grp_VMixHlsDataFlowFunction_fu_375_ap_start : STD_LOGIC;
-    signal grp_VMixHlsDataFlowFunction_fu_375_s_axis_video1_TREADY : STD_LOGIC;
-    signal grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID : STD_LOGIC;
-    signal grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TREADY : STD_LOGIC;
-    signal grp_VMixHlsDataFlowFunction_fu_375_ap_done : STD_LOGIC;
-    signal grp_VMixHlsDataFlowFunction_fu_375_ap_ready : STD_LOGIC;
-    signal grp_VMixHlsDataFlowFunction_fu_375_ap_idle : STD_LOGIC;
-    signal grp_VMixHlsDataFlowFunction_fu_375_ap_continue : STD_LOGIC;
-    signal ap_phi_mux_i_phi_fu_368_p4 : STD_LOGIC_VECTOR (0 downto 0);
-    signal i_reg_364 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_VMixHlsDataFlowFunction_fu_375_ap_start_reg : STD_LOGIC := '0';
+    signal HwReg_layerEnableFlag_fu_514_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal HwReg_layerEnableFlag_reg_732 : STD_LOGIC_VECTOR (0 downto 0);
+    signal HwReg_layerScaleFactor_fu_522_p3 : STD_LOGIC_VECTOR (7 downto 0);
+    signal HwReg_layerScaleFactor_reg_737 : STD_LOGIC_VECTOR (7 downto 0);
+    signal HwReg_layerHeight_fu_529_p3 : STD_LOGIC_VECTOR (15 downto 0);
+    signal HwReg_layerHeight_reg_742 : STD_LOGIC_VECTOR (15 downto 0);
+    signal HwReg_layerWidth_fu_536_p3 : STD_LOGIC_VECTOR (15 downto 0);
+    signal HwReg_layerWidth_reg_747 : STD_LOGIC_VECTOR (15 downto 0);
+    signal HwReg_layerStartY_fu_543_p3 : STD_LOGIC_VECTOR (15 downto 0);
+    signal HwReg_layerStartY_reg_752 : STD_LOGIC_VECTOR (15 downto 0);
+    signal HwReg_layerStartX_fu_550_p3 : STD_LOGIC_VECTOR (15 downto 0);
+    signal HwReg_layerStartX_reg_757 : STD_LOGIC_VECTOR (15 downto 0);
+    signal HwReg_layerAlpha_fu_557_p3 : STD_LOGIC_VECTOR (15 downto 0);
+    signal HwReg_layerAlpha_reg_762 : STD_LOGIC_VECTOR (15 downto 0);
+    signal i_2_fu_564_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal trunc_ln3296_fu_610_p1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal trunc_ln3296_reg_772 : STD_LOGIC_VECTOR (8 downto 0);
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
+    signal grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TDATA : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TKEEP : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TSTRB : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TLAST : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TDEST : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_VMixHlsDataFlowFunction_fu_391_s_axis_video_TREADY : STD_LOGIC;
+    signal grp_VMixHlsDataFlowFunction_fu_391_ap_start : STD_LOGIC;
+    signal grp_VMixHlsDataFlowFunction_fu_391_s_axis_video1_TREADY : STD_LOGIC;
+    signal grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID : STD_LOGIC;
+    signal grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TREADY : STD_LOGIC;
+    signal grp_VMixHlsDataFlowFunction_fu_391_ap_done : STD_LOGIC;
+    signal grp_VMixHlsDataFlowFunction_fu_391_ap_ready : STD_LOGIC;
+    signal grp_VMixHlsDataFlowFunction_fu_391_ap_idle : STD_LOGIC;
+    signal grp_VMixHlsDataFlowFunction_fu_391_ap_continue : STD_LOGIC;
+    signal ap_phi_mux_i_phi_fu_384_p4 : STD_LOGIC_VECTOR (0 downto 0);
+    signal i_reg_380 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_VMixHlsDataFlowFunction_fu_391_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state4 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
-    signal ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_ready : STD_LOGIC := '0';
-    signal ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_done : STD_LOGIC := '0';
+    signal ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_ready : STD_LOGIC := '0';
+    signal ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_done : STD_LOGIC := '0';
     signal ap_block_state4_on_subcall_done : BOOLEAN;
-    signal ap_sync_grp_VMixHlsDataFlowFunction_fu_375_ap_ready : STD_LOGIC;
+    signal ap_sync_grp_VMixHlsDataFlowFunction_fu_391_ap_ready : STD_LOGIC;
     signal m_axis_video_TDATA_reg : STD_LOGIC_VECTOR (23 downto 0);
     signal m_axis_video_TKEEP_reg : STD_LOGIC_VECTOR (2 downto 0);
     signal m_axis_video_TSTRB_reg : STD_LOGIC_VECTOR (2 downto 0);
@@ -230,7 +235,8 @@ architecture behav of top_design_v_mix_0_0_v_mix is
     signal empty_62_fu_256 : STD_LOGIC_VECTOR (15 downto 0) := "0000000000000000";
     signal empty_63_fu_260 : STD_LOGIC_VECTOR (15 downto 0) := "0000000000000000";
     signal empty_64_fu_264 : STD_LOGIC_VECTOR (15 downto 0) := "0000000000000000";
-    signal tobool_fu_479_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal empty_65_fu_268 : STD_LOGIC_VECTOR (15 downto 0) := "0000000000000000";
+    signal tobool_fu_499_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state5 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
     signal regslice_both_m_axis_video_V_data_V_U_apdone_blk : STD_LOGIC;
@@ -326,7 +332,7 @@ architecture behav of top_design_v_mix_0_0_v_mix is
     signal m_axis_video_TDEST_int_regslice : STD_LOGIC_VECTOR (0 downto 0);
     signal regslice_both_m_axis_video_V_dest_V_U_ack_in_dummy : STD_LOGIC;
     signal regslice_both_m_axis_video_V_dest_V_U_vld_out : STD_LOGIC;
-    signal tobool_fu_479_p0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tobool_fu_499_p0 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_ce_reg : STD_LOGIC;
 
     component top_design_v_mix_0_0_VMixHlsDataFlowFunction IS
@@ -339,11 +345,12 @@ architecture behav of top_design_v_mix_0_0_v_mix is
         HwReg_layerEnable_val13 : IN STD_LOGIC_VECTOR (1 downto 0);
         HwReg_layerEnableFlag_0_val : IN STD_LOGIC_VECTOR (0 downto 0);
         HwReg_layerEnableFlag_1_val : IN STD_LOGIC_VECTOR (0 downto 0);
-        HwReg_layerStartX_1_val14 : IN STD_LOGIC_VECTOR (15 downto 0);
-        HwReg_layerStartY_1_val15 : IN STD_LOGIC_VECTOR (15 downto 0);
+        HwReg_layerAlpha_1_val14 : IN STD_LOGIC_VECTOR (8 downto 0);
+        HwReg_layerStartX_1_val15 : IN STD_LOGIC_VECTOR (15 downto 0);
+        HwReg_layerStartY_1_val16 : IN STD_LOGIC_VECTOR (15 downto 0);
         HwReg_layerWidth_1_val : IN STD_LOGIC_VECTOR (15 downto 0);
         HwReg_layerHeight_1_val : IN STD_LOGIC_VECTOR (15 downto 0);
-        HwReg_layerScaleFactor_1_val18 : IN STD_LOGIC_VECTOR (7 downto 0);
+        HwReg_layerScaleFactor_1_val19 : IN STD_LOGIC_VECTOR (7 downto 0);
         s_axis_video_TDATA : IN STD_LOGIC_VECTOR (23 downto 0);
         s_axis_video_TKEEP : IN STD_LOGIC_VECTOR (2 downto 0);
         s_axis_video_TSTRB : IN STD_LOGIC_VECTOR (2 downto 0);
@@ -382,9 +389,10 @@ architecture behav of top_design_v_mix_0_0_v_mix is
         HwReg_background_U_G_val11_ap_vld : IN STD_LOGIC;
         HwReg_background_V_B_val12_ap_vld : IN STD_LOGIC;
         HwReg_layerEnable_val13_ap_vld : IN STD_LOGIC;
-        HwReg_layerStartX_1_val14_ap_vld : IN STD_LOGIC;
-        HwReg_layerStartY_1_val15_ap_vld : IN STD_LOGIC;
-        HwReg_layerScaleFactor_1_val18_ap_vld : IN STD_LOGIC;
+        HwReg_layerAlpha_1_val14_ap_vld : IN STD_LOGIC;
+        HwReg_layerStartX_1_val15_ap_vld : IN STD_LOGIC;
+        HwReg_layerStartY_1_val16_ap_vld : IN STD_LOGIC;
+        HwReg_layerScaleFactor_1_val19_ap_vld : IN STD_LOGIC;
         m_axis_video_TVALID : OUT STD_LOGIC;
         m_axis_video_TREADY : IN STD_LOGIC;
         ap_done : OUT STD_LOGIC;
@@ -471,21 +479,22 @@ architecture behav of top_design_v_mix_0_0_v_mix is
 
 
 begin
-    grp_VMixHlsDataFlowFunction_fu_375 : component top_design_v_mix_0_0_VMixHlsDataFlowFunction
+    grp_VMixHlsDataFlowFunction_fu_391 : component top_design_v_mix_0_0_VMixHlsDataFlowFunction
     port map (
-        HwReg_width_val => trunc_ln2417_4_reg_645,
-        HwReg_height_val => trunc_ln2417_5_reg_650,
-        HwReg_background_Y_R_val10 => trunc_ln2417_3_reg_640,
-        HwReg_background_U_G_val11 => trunc_ln2417_2_reg_635,
-        HwReg_background_V_B_val12 => trunc_ln2417_1_reg_630,
-        HwReg_layerEnable_val13 => trunc_ln2417_reg_625,
-        HwReg_layerEnableFlag_0_val => HwReg_layerEnableFlag_4_reg_680,
-        HwReg_layerEnableFlag_1_val => HwReg_layerEnableFlag_reg_685,
-        HwReg_layerStartX_1_val14 => HwReg_layerStartX_reg_710,
-        HwReg_layerStartY_1_val15 => HwReg_layerStartY_reg_705,
-        HwReg_layerWidth_1_val => HwReg_layerWidth_reg_700,
-        HwReg_layerHeight_1_val => HwReg_layerHeight_reg_695,
-        HwReg_layerScaleFactor_1_val18 => HwReg_layerScaleFactor_reg_690,
+        HwReg_width_val => trunc_ln2417_4_reg_687,
+        HwReg_height_val => trunc_ln2417_5_reg_692,
+        HwReg_background_Y_R_val10 => trunc_ln2417_3_reg_682,
+        HwReg_background_U_G_val11 => trunc_ln2417_2_reg_677,
+        HwReg_background_V_B_val12 => trunc_ln2417_1_reg_672,
+        HwReg_layerEnable_val13 => trunc_ln2417_reg_667,
+        HwReg_layerEnableFlag_0_val => HwReg_layerEnableFlag_4_reg_727,
+        HwReg_layerEnableFlag_1_val => HwReg_layerEnableFlag_reg_732,
+        HwReg_layerAlpha_1_val14 => trunc_ln3296_reg_772,
+        HwReg_layerStartX_1_val15 => HwReg_layerStartX_reg_757,
+        HwReg_layerStartY_1_val16 => HwReg_layerStartY_reg_752,
+        HwReg_layerWidth_1_val => HwReg_layerWidth_reg_747,
+        HwReg_layerHeight_1_val => HwReg_layerHeight_reg_742,
+        HwReg_layerScaleFactor_1_val19 => HwReg_layerScaleFactor_reg_737,
         s_axis_video_TDATA => s_axis_video_TDATA_int_regslice,
         s_axis_video_TKEEP => s_axis_video_TKEEP_int_regslice,
         s_axis_video_TSTRB => s_axis_video_TSTRB_int_regslice,
@@ -500,23 +509,23 @@ begin
         s_axis_video1_TLAST => s_axis_video1_TLAST_int_regslice,
         s_axis_video1_TID => s_axis_video1_TID_int_regslice,
         s_axis_video1_TDEST => s_axis_video1_TDEST_int_regslice,
-        m_axis_video_TDATA => grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TDATA,
-        m_axis_video_TKEEP => grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TKEEP,
-        m_axis_video_TSTRB => grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TSTRB,
-        m_axis_video_TUSER => grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TUSER,
-        m_axis_video_TLAST => grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TLAST,
-        m_axis_video_TID => grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TID,
-        m_axis_video_TDEST => grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TDEST,
+        m_axis_video_TDATA => grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TDATA,
+        m_axis_video_TKEEP => grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TKEEP,
+        m_axis_video_TSTRB => grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TSTRB,
+        m_axis_video_TUSER => grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TUSER,
+        m_axis_video_TLAST => grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TLAST,
+        m_axis_video_TID => grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TID,
+        m_axis_video_TDEST => grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TDEST,
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         s_axis_video_TVALID => s_axis_video_TVALID_int_regslice,
-        s_axis_video_TREADY => grp_VMixHlsDataFlowFunction_fu_375_s_axis_video_TREADY,
+        s_axis_video_TREADY => grp_VMixHlsDataFlowFunction_fu_391_s_axis_video_TREADY,
         HwReg_height_val_ap_vld => ap_const_logic_1,
         HwReg_width_val_ap_vld => ap_const_logic_1,
         HwReg_layerEnableFlag_0_val_ap_vld => ap_const_logic_1,
-        ap_start => grp_VMixHlsDataFlowFunction_fu_375_ap_start,
+        ap_start => grp_VMixHlsDataFlowFunction_fu_391_ap_start,
         s_axis_video1_TVALID => s_axis_video1_TVALID_int_regslice,
-        s_axis_video1_TREADY => grp_VMixHlsDataFlowFunction_fu_375_s_axis_video1_TREADY,
+        s_axis_video1_TREADY => grp_VMixHlsDataFlowFunction_fu_391_s_axis_video1_TREADY,
         HwReg_layerHeight_1_val_ap_vld => ap_const_logic_1,
         HwReg_layerWidth_1_val_ap_vld => ap_const_logic_1,
         HwReg_layerEnableFlag_1_val_ap_vld => ap_const_logic_1,
@@ -524,15 +533,16 @@ begin
         HwReg_background_U_G_val11_ap_vld => ap_const_logic_1,
         HwReg_background_V_B_val12_ap_vld => ap_const_logic_1,
         HwReg_layerEnable_val13_ap_vld => ap_const_logic_1,
-        HwReg_layerStartX_1_val14_ap_vld => ap_const_logic_1,
-        HwReg_layerStartY_1_val15_ap_vld => ap_const_logic_1,
-        HwReg_layerScaleFactor_1_val18_ap_vld => ap_const_logic_1,
-        m_axis_video_TVALID => grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID,
-        m_axis_video_TREADY => grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TREADY,
-        ap_done => grp_VMixHlsDataFlowFunction_fu_375_ap_done,
-        ap_ready => grp_VMixHlsDataFlowFunction_fu_375_ap_ready,
-        ap_idle => grp_VMixHlsDataFlowFunction_fu_375_ap_idle,
-        ap_continue => grp_VMixHlsDataFlowFunction_fu_375_ap_continue);
+        HwReg_layerAlpha_1_val14_ap_vld => ap_const_logic_1,
+        HwReg_layerStartX_1_val15_ap_vld => ap_const_logic_1,
+        HwReg_layerStartY_1_val16_ap_vld => ap_const_logic_1,
+        HwReg_layerScaleFactor_1_val19_ap_vld => ap_const_logic_1,
+        m_axis_video_TVALID => grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID,
+        m_axis_video_TREADY => grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TREADY,
+        ap_done => grp_VMixHlsDataFlowFunction_fu_391_ap_done,
+        ap_ready => grp_VMixHlsDataFlowFunction_fu_391_ap_ready,
+        ap_idle => grp_VMixHlsDataFlowFunction_fu_391_ap_idle,
+        ap_continue => grp_VMixHlsDataFlowFunction_fu_391_ap_continue);
 
     CTRL_s_axi_U : component top_design_v_mix_0_0_CTRL_s_axi
     generic map (
@@ -580,14 +590,14 @@ begin
         ap_done => ap_done,
         ap_idle => ap_idle);
 
-    bitselect_1ns_32ns_1ns_1_1_1_U279 : component top_design_v_mix_0_0_bitselect_1ns_32ns_1ns_1_1_1
+    bitselect_1ns_32ns_1ns_1_1_1_U291 : component top_design_v_mix_0_0_bitselect_1ns_32ns_1ns_1_1_1
     generic map (
         DATAWIDTH => 32,
         ADDRWIDTH => 1)
     port map (
-        din => layerEnable_read_reg_620,
-        sel => i_reg_364,
-        dout => tobool_fu_479_p3);
+        din => layerEnable_read_reg_662,
+        sel => i_reg_380,
+        dout => tobool_fu_499_p3);
 
     regslice_both_s_axis_video_V_data_V_U : component top_design_v_mix_0_0_regslice_both
     generic map (
@@ -792,7 +802,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => m_axis_video_TDATA_int_regslice,
-        vld_in => grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID,
+        vld_in => grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID,
         ack_in => m_axis_video_TREADY_int_regslice,
         data_out => m_axis_video_TDATA,
         vld_out => regslice_both_m_axis_video_V_data_V_U_vld_out,
@@ -806,7 +816,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => m_axis_video_TKEEP_int_regslice,
-        vld_in => grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID,
+        vld_in => grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID,
         ack_in => regslice_both_m_axis_video_V_keep_V_U_ack_in_dummy,
         data_out => m_axis_video_TKEEP,
         vld_out => regslice_both_m_axis_video_V_keep_V_U_vld_out,
@@ -820,7 +830,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => m_axis_video_TSTRB_int_regslice,
-        vld_in => grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID,
+        vld_in => grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID,
         ack_in => regslice_both_m_axis_video_V_strb_V_U_ack_in_dummy,
         data_out => m_axis_video_TSTRB,
         vld_out => regslice_both_m_axis_video_V_strb_V_U_vld_out,
@@ -834,7 +844,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => m_axis_video_TUSER_int_regslice,
-        vld_in => grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID,
+        vld_in => grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID,
         ack_in => regslice_both_m_axis_video_V_user_V_U_ack_in_dummy,
         data_out => m_axis_video_TUSER,
         vld_out => regslice_both_m_axis_video_V_user_V_U_vld_out,
@@ -848,7 +858,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => m_axis_video_TLAST_int_regslice,
-        vld_in => grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID,
+        vld_in => grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID,
         ack_in => regslice_both_m_axis_video_V_last_V_U_ack_in_dummy,
         data_out => m_axis_video_TLAST,
         vld_out => regslice_both_m_axis_video_V_last_V_U_vld_out,
@@ -862,7 +872,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => m_axis_video_TID_int_regslice,
-        vld_in => grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID,
+        vld_in => grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID,
         ack_in => regslice_both_m_axis_video_V_id_V_U_ack_in_dummy,
         data_out => m_axis_video_TID,
         vld_out => regslice_both_m_axis_video_V_id_V_U_vld_out,
@@ -876,7 +886,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => m_axis_video_TDEST_int_regslice,
-        vld_in => grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID,
+        vld_in => grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID,
         ack_in => regslice_both_m_axis_video_V_dest_V_U_ack_in_dummy,
         data_out => m_axis_video_TDEST,
         vld_out => regslice_both_m_axis_video_V_dest_V_U_vld_out,
@@ -899,61 +909,61 @@ begin
     end process;
 
 
-    ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_done_assign_proc : process(ap_clk)
+    ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_done_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_done <= ap_const_logic_0;
+                ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_done <= ap_const_logic_0;
             else
                 if (((ap_const_boolean_0 = ap_block_state4_on_subcall_done) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-                    ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_done <= ap_const_logic_0;
-                elsif ((grp_VMixHlsDataFlowFunction_fu_375_ap_done = ap_const_logic_1)) then 
-                    ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_done <= ap_const_logic_1;
+                    ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_done <= ap_const_logic_0;
+                elsif ((grp_VMixHlsDataFlowFunction_fu_391_ap_done = ap_const_logic_1)) then 
+                    ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_done <= ap_const_logic_1;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_ready_assign_proc : process(ap_clk)
+    ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_ready_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_ready <= ap_const_logic_0;
+                ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_ready <= ap_const_logic_0;
             else
                 if (((ap_const_boolean_0 = ap_block_state4_on_subcall_done) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-                    ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_ready <= ap_const_logic_0;
-                elsif ((grp_VMixHlsDataFlowFunction_fu_375_ap_ready = ap_const_logic_1)) then 
-                    ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_ready <= ap_const_logic_1;
+                    ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_ready <= ap_const_logic_0;
+                elsif ((grp_VMixHlsDataFlowFunction_fu_391_ap_ready = ap_const_logic_1)) then 
+                    ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_ready <= ap_const_logic_1;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_VMixHlsDataFlowFunction_fu_375_ap_start_reg_assign_proc : process(ap_clk)
+    grp_VMixHlsDataFlowFunction_fu_391_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_VMixHlsDataFlowFunction_fu_375_ap_start_reg <= ap_const_logic_0;
+                grp_VMixHlsDataFlowFunction_fu_391_ap_start_reg <= ap_const_logic_0;
             else
-                if (((ap_const_logic_1 = ap_CS_fsm_state3) or ((ap_sync_grp_VMixHlsDataFlowFunction_fu_375_ap_ready = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state4)))) then 
-                    grp_VMixHlsDataFlowFunction_fu_375_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_VMixHlsDataFlowFunction_fu_375_ap_ready = ap_const_logic_1)) then 
-                    grp_VMixHlsDataFlowFunction_fu_375_ap_start_reg <= ap_const_logic_0;
+                if (((ap_const_logic_1 = ap_CS_fsm_state3) or ((ap_sync_grp_VMixHlsDataFlowFunction_fu_391_ap_ready = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state4)))) then 
+                    grp_VMixHlsDataFlowFunction_fu_391_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_VMixHlsDataFlowFunction_fu_391_ap_ready = ap_const_logic_1)) then 
+                    grp_VMixHlsDataFlowFunction_fu_391_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    i_reg_364_assign_proc : process (ap_clk)
+    i_reg_380_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_phi_mux_i_phi_fu_368_p4 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
-                i_reg_364 <= i_2_fu_537_p2;
+            if (((ap_phi_mux_i_phi_fu_384_p4 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+                i_reg_380 <= i_2_fu_564_p2;
             elsif (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_1))) then 
-                i_reg_364 <= ap_const_lv1_0;
+                i_reg_380 <= ap_const_lv1_0;
             end if; 
         end if;
     end process;
@@ -961,20 +971,22 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state2)) then
-                HwReg_layerEnableFlag_1_fu_240 <= HwReg_layerEnableFlag_4_fu_486_p3;
-                HwReg_layerEnableFlag_3_fu_244 <= HwReg_layerEnableFlag_fu_494_p3;
-                HwReg_layerEnableFlag_4_reg_680 <= HwReg_layerEnableFlag_4_fu_486_p3;
-                HwReg_layerEnableFlag_reg_685 <= HwReg_layerEnableFlag_fu_494_p3;
-                HwReg_layerHeight_reg_695 <= HwReg_layerHeight_fu_509_p3;
-                HwReg_layerScaleFactor_reg_690 <= HwReg_layerScaleFactor_fu_502_p3;
-                HwReg_layerStartX_reg_710 <= HwReg_layerStartX_fu_530_p3;
-                HwReg_layerStartY_reg_705 <= HwReg_layerStartY_fu_523_p3;
-                HwReg_layerWidth_reg_700 <= HwReg_layerWidth_fu_516_p3;
-                empty_61_fu_252 <= HwReg_layerHeight_fu_509_p3;
-                empty_62_fu_256 <= HwReg_layerWidth_fu_516_p3;
-                empty_63_fu_260 <= HwReg_layerStartY_fu_523_p3;
-                empty_64_fu_264 <= HwReg_layerStartX_fu_530_p3;
-                empty_fu_248 <= HwReg_layerScaleFactor_fu_502_p3;
+                HwReg_layerAlpha_reg_762 <= HwReg_layerAlpha_fu_557_p3;
+                HwReg_layerEnableFlag_1_fu_240 <= HwReg_layerEnableFlag_4_fu_506_p3;
+                HwReg_layerEnableFlag_3_fu_244 <= HwReg_layerEnableFlag_fu_514_p3;
+                HwReg_layerEnableFlag_4_reg_727 <= HwReg_layerEnableFlag_4_fu_506_p3;
+                HwReg_layerEnableFlag_reg_732 <= HwReg_layerEnableFlag_fu_514_p3;
+                HwReg_layerHeight_reg_742 <= HwReg_layerHeight_fu_529_p3;
+                HwReg_layerScaleFactor_reg_737 <= HwReg_layerScaleFactor_fu_522_p3;
+                HwReg_layerStartX_reg_757 <= HwReg_layerStartX_fu_550_p3;
+                HwReg_layerStartY_reg_752 <= HwReg_layerStartY_fu_543_p3;
+                HwReg_layerWidth_reg_747 <= HwReg_layerWidth_fu_536_p3;
+                empty_61_fu_252 <= HwReg_layerHeight_fu_529_p3;
+                empty_62_fu_256 <= HwReg_layerWidth_fu_536_p3;
+                empty_63_fu_260 <= HwReg_layerStartY_fu_543_p3;
+                empty_64_fu_264 <= HwReg_layerStartX_fu_550_p3;
+                empty_65_fu_268 <= HwReg_layerAlpha_fu_557_p3;
+                empty_fu_248 <= HwReg_layerScaleFactor_fu_522_p3;
             end if;
         end if;
     end process;
@@ -982,37 +994,46 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state1)) then
-                layerEnable_read_reg_620 <= layerEnable;
-                layerHeight_1_read_reg_670 <= layerHeight_1;
-                layerScaleFactor_1_read_reg_675 <= layerScaleFactor_1;
-                layerStartX_1_read_reg_655 <= layerStartX_1;
-                layerStartY_1_read_reg_660 <= layerStartY_1;
-                layerWidth_1_read_reg_665 <= layerWidth_1;
-                trunc_ln2417_1_reg_630 <= trunc_ln2417_1_fu_438_p1;
-                trunc_ln2417_2_reg_635 <= trunc_ln2417_2_fu_442_p1;
-                trunc_ln2417_3_reg_640 <= trunc_ln2417_3_fu_446_p1;
-                trunc_ln2417_4_reg_645 <= trunc_ln2417_4_fu_450_p1;
-                trunc_ln2417_5_reg_650 <= trunc_ln2417_5_fu_454_p1;
-                trunc_ln2417_reg_625 <= trunc_ln2417_fu_434_p1;
+                layerAlpha_1_read_reg_697 <= layerAlpha_1;
+                layerEnable_read_reg_662 <= layerEnable;
+                layerHeight_1_read_reg_717 <= layerHeight_1;
+                layerScaleFactor_1_read_reg_722 <= layerScaleFactor_1;
+                layerStartX_1_read_reg_702 <= layerStartX_1;
+                layerStartY_1_read_reg_707 <= layerStartY_1;
+                layerWidth_1_read_reg_712 <= layerWidth_1;
+                trunc_ln2417_1_reg_672 <= trunc_ln2417_1_fu_455_p1;
+                trunc_ln2417_2_reg_677 <= trunc_ln2417_2_fu_459_p1;
+                trunc_ln2417_3_reg_682 <= trunc_ln2417_3_fu_463_p1;
+                trunc_ln2417_4_reg_687 <= trunc_ln2417_4_fu_467_p1;
+                trunc_ln2417_5_reg_692 <= trunc_ln2417_5_fu_471_p1;
+                trunc_ln2417_reg_667 <= trunc_ln2417_fu_451_p1;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then
-                m_axis_video_TDATA_reg <= grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TDATA;
-                m_axis_video_TDEST_reg <= grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TDEST;
-                m_axis_video_TID_reg <= grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TID;
-                m_axis_video_TKEEP_reg <= grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TKEEP;
-                m_axis_video_TLAST_reg <= grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TLAST;
-                m_axis_video_TSTRB_reg <= grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TSTRB;
-                m_axis_video_TUSER_reg <= grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TUSER;
+            if (((grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then
+                m_axis_video_TDATA_reg <= grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TDATA;
+                m_axis_video_TDEST_reg <= grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TDEST;
+                m_axis_video_TID_reg <= grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TID;
+                m_axis_video_TKEEP_reg <= grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TKEEP;
+                m_axis_video_TLAST_reg <= grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TLAST;
+                m_axis_video_TSTRB_reg <= grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TSTRB;
+                m_axis_video_TUSER_reg <= grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TUSER;
+            end if;
+        end if;
+    end process;
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if ((ap_const_logic_1 = ap_CS_fsm_state3)) then
+                trunc_ln3296_reg_772 <= trunc_ln3296_fu_610_p1;
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, ap_phi_mux_i_phi_fu_368_p4, ap_CS_fsm_state4, ap_block_state4_on_subcall_done, ap_CS_fsm_state5, regslice_both_m_axis_video_V_data_V_U_apdone_blk)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, ap_phi_mux_i_phi_fu_384_p4, ap_CS_fsm_state4, ap_block_state4_on_subcall_done, ap_CS_fsm_state5, regslice_both_m_axis_video_V_data_V_U_apdone_blk)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -1022,7 +1043,7 @@ begin
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 end if;
             when ap_ST_fsm_state2 => 
-                if (((ap_phi_mux_i_phi_fu_368_p4 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
+                if (((ap_phi_mux_i_phi_fu_384_p4 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
                     ap_NS_fsm <= ap_ST_fsm_state2;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state3;
@@ -1045,26 +1066,29 @@ begin
                 ap_NS_fsm <= "XXXXX";
         end case;
     end process;
-    HwReg_layerEnableFlag_4_fu_486_p3 <= 
-        HwReg_layerEnableFlag_1_fu_240 when (i_reg_364(0) = '1') else 
-        tobool_fu_479_p3;
-    HwReg_layerEnableFlag_fu_494_p3 <= 
-        tobool_fu_479_p3 when (i_reg_364(0) = '1') else 
+    HwReg_layerAlpha_fu_557_p3 <= 
+        layerAlpha_1_read_reg_697 when (i_reg_380(0) = '1') else 
+        empty_65_fu_268;
+    HwReg_layerEnableFlag_4_fu_506_p3 <= 
+        HwReg_layerEnableFlag_1_fu_240 when (i_reg_380(0) = '1') else 
+        tobool_fu_499_p3;
+    HwReg_layerEnableFlag_fu_514_p3 <= 
+        tobool_fu_499_p3 when (i_reg_380(0) = '1') else 
         HwReg_layerEnableFlag_3_fu_244;
-    HwReg_layerHeight_fu_509_p3 <= 
-        layerHeight_1_read_reg_670 when (i_reg_364(0) = '1') else 
+    HwReg_layerHeight_fu_529_p3 <= 
+        layerHeight_1_read_reg_717 when (i_reg_380(0) = '1') else 
         empty_61_fu_252;
-    HwReg_layerScaleFactor_fu_502_p3 <= 
-        layerScaleFactor_1_read_reg_675 when (i_reg_364(0) = '1') else 
+    HwReg_layerScaleFactor_fu_522_p3 <= 
+        layerScaleFactor_1_read_reg_722 when (i_reg_380(0) = '1') else 
         empty_fu_248;
-    HwReg_layerStartX_fu_530_p3 <= 
-        layerStartX_1_read_reg_655 when (i_reg_364(0) = '1') else 
+    HwReg_layerStartX_fu_550_p3 <= 
+        layerStartX_1_read_reg_702 when (i_reg_380(0) = '1') else 
         empty_64_fu_264;
-    HwReg_layerStartY_fu_523_p3 <= 
-        layerStartY_1_read_reg_660 when (i_reg_364(0) = '1') else 
+    HwReg_layerStartY_fu_543_p3 <= 
+        layerStartY_1_read_reg_707 when (i_reg_380(0) = '1') else 
         empty_63_fu_260;
-    HwReg_layerWidth_fu_516_p3 <= 
-        layerWidth_1_read_reg_665 when (i_reg_364(0) = '1') else 
+    HwReg_layerWidth_fu_536_p3 <= 
+        layerWidth_1_read_reg_712 when (i_reg_380(0) = '1') else 
         empty_62_fu_256;
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
@@ -1104,9 +1128,9 @@ begin
     end process;
 
 
-    ap_block_state4_on_subcall_done_assign_proc : process(ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_ready, ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_done)
+    ap_block_state4_on_subcall_done_assign_proc : process(ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_ready, ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_done)
     begin
-                ap_block_state4_on_subcall_done <= ((ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_ready and ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_done) = ap_const_logic_0);
+                ap_block_state4_on_subcall_done <= ((ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_ready and ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_done) = ap_const_logic_0);
     end process;
 
 
@@ -1129,7 +1153,7 @@ begin
         end if; 
     end process;
 
-    ap_phi_mux_i_phi_fu_368_p4 <= i_reg_364;
+    ap_phi_mux_i_phi_fu_384_p4 <= i_reg_380;
 
     ap_ready_assign_proc : process(ap_CS_fsm_state5, regslice_both_m_axis_video_V_data_V_U_apdone_blk)
     begin
@@ -1146,20 +1170,20 @@ begin
                 ap_rst_n_inv <= not(ap_rst_n);
     end process;
 
-    ap_sync_grp_VMixHlsDataFlowFunction_fu_375_ap_ready <= (grp_VMixHlsDataFlowFunction_fu_375_ap_ready or ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_375_ap_ready);
+    ap_sync_grp_VMixHlsDataFlowFunction_fu_391_ap_ready <= (grp_VMixHlsDataFlowFunction_fu_391_ap_ready or ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_391_ap_ready);
 
-    grp_VMixHlsDataFlowFunction_fu_375_ap_continue_assign_proc : process(ap_CS_fsm_state4, ap_block_state4_on_subcall_done)
+    grp_VMixHlsDataFlowFunction_fu_391_ap_continue_assign_proc : process(ap_CS_fsm_state4, ap_block_state4_on_subcall_done)
     begin
         if (((ap_const_boolean_0 = ap_block_state4_on_subcall_done) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            grp_VMixHlsDataFlowFunction_fu_375_ap_continue <= ap_const_logic_1;
+            grp_VMixHlsDataFlowFunction_fu_391_ap_continue <= ap_const_logic_1;
         else 
-            grp_VMixHlsDataFlowFunction_fu_375_ap_continue <= ap_const_logic_0;
+            grp_VMixHlsDataFlowFunction_fu_391_ap_continue <= ap_const_logic_0;
         end if; 
     end process;
 
-    grp_VMixHlsDataFlowFunction_fu_375_ap_start <= grp_VMixHlsDataFlowFunction_fu_375_ap_start_reg;
-    grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TREADY <= (m_axis_video_TREADY_int_regslice and ap_CS_fsm_state4);
-    i_2_fu_537_p2 <= (i_reg_364 xor ap_const_lv1_1);
+    grp_VMixHlsDataFlowFunction_fu_391_ap_start <= grp_VMixHlsDataFlowFunction_fu_391_ap_start_reg;
+    grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TREADY <= (m_axis_video_TREADY_int_regslice and ap_CS_fsm_state4);
+    i_2_fu_564_p2 <= (i_reg_380 xor ap_const_lv1_1);
     layerVideoFormat_address0 <= ap_const_lv1_0;
     layerVideoFormat_address1 <= ap_const_lv1_0;
     layerVideoFormat_ce0 <= ap_const_logic_0;
@@ -1169,83 +1193,83 @@ begin
     layerVideoFormat_we0 <= ap_const_logic_0;
     layerVideoFormat_we1 <= ap_const_logic_0;
 
-    m_axis_video_TDATA_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TDATA, grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TDATA_reg)
+    m_axis_video_TDATA_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TDATA, grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TDATA_reg)
     begin
-        if (((grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            m_axis_video_TDATA_int_regslice <= grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TDATA;
+        if (((grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            m_axis_video_TDATA_int_regslice <= grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TDATA;
         else 
             m_axis_video_TDATA_int_regslice <= m_axis_video_TDATA_reg;
         end if; 
     end process;
 
 
-    m_axis_video_TDEST_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TDEST, grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TDEST_reg)
+    m_axis_video_TDEST_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TDEST, grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TDEST_reg)
     begin
-        if (((grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            m_axis_video_TDEST_int_regslice <= grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TDEST;
+        if (((grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            m_axis_video_TDEST_int_regslice <= grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TDEST;
         else 
             m_axis_video_TDEST_int_regslice <= m_axis_video_TDEST_reg;
         end if; 
     end process;
 
 
-    m_axis_video_TID_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TID, grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TID_reg)
+    m_axis_video_TID_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TID, grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TID_reg)
     begin
-        if (((grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            m_axis_video_TID_int_regslice <= grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TID;
+        if (((grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            m_axis_video_TID_int_regslice <= grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TID;
         else 
             m_axis_video_TID_int_regslice <= m_axis_video_TID_reg;
         end if; 
     end process;
 
 
-    m_axis_video_TKEEP_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TKEEP, grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TKEEP_reg)
+    m_axis_video_TKEEP_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TKEEP, grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TKEEP_reg)
     begin
-        if (((grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            m_axis_video_TKEEP_int_regslice <= grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TKEEP;
+        if (((grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            m_axis_video_TKEEP_int_regslice <= grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TKEEP;
         else 
             m_axis_video_TKEEP_int_regslice <= m_axis_video_TKEEP_reg;
         end if; 
     end process;
 
 
-    m_axis_video_TLAST_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TLAST, grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TLAST_reg)
+    m_axis_video_TLAST_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TLAST, grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TLAST_reg)
     begin
-        if (((grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            m_axis_video_TLAST_int_regslice <= grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TLAST;
+        if (((grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            m_axis_video_TLAST_int_regslice <= grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TLAST;
         else 
             m_axis_video_TLAST_int_regslice <= m_axis_video_TLAST_reg;
         end if; 
     end process;
 
 
-    m_axis_video_TSTRB_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TSTRB, grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TSTRB_reg)
+    m_axis_video_TSTRB_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TSTRB, grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TSTRB_reg)
     begin
-        if (((grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            m_axis_video_TSTRB_int_regslice <= grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TSTRB;
+        if (((grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            m_axis_video_TSTRB_int_regslice <= grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TSTRB;
         else 
             m_axis_video_TSTRB_int_regslice <= m_axis_video_TSTRB_reg;
         end if; 
     end process;
 
 
-    m_axis_video_TUSER_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TUSER, grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TUSER_reg)
+    m_axis_video_TUSER_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TUSER, grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID, ap_CS_fsm_state4, m_axis_video_TUSER_reg)
     begin
-        if (((grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            m_axis_video_TUSER_int_regslice <= grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TUSER;
+        if (((grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            m_axis_video_TUSER_int_regslice <= grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TUSER;
         else 
             m_axis_video_TUSER_int_regslice <= m_axis_video_TUSER_reg;
         end if; 
     end process;
 
     m_axis_video_TVALID <= regslice_both_m_axis_video_V_data_V_U_vld_out;
-    m_axis_video_TVALID_int_regslice <= grp_VMixHlsDataFlowFunction_fu_375_m_axis_video_TVALID;
+    m_axis_video_TVALID_int_regslice <= grp_VMixHlsDataFlowFunction_fu_391_m_axis_video_TVALID;
     s_axis_video1_TREADY <= regslice_both_s_axis_video1_V_data_V_U_ack_in;
 
-    s_axis_video1_TREADY_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_375_s_axis_video1_TREADY, ap_CS_fsm_state4)
+    s_axis_video1_TREADY_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_391_s_axis_video1_TREADY, ap_CS_fsm_state4)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            s_axis_video1_TREADY_int_regslice <= grp_VMixHlsDataFlowFunction_fu_375_s_axis_video1_TREADY;
+            s_axis_video1_TREADY_int_regslice <= grp_VMixHlsDataFlowFunction_fu_391_s_axis_video1_TREADY;
         else 
             s_axis_video1_TREADY_int_regslice <= ap_const_logic_0;
         end if; 
@@ -1253,19 +1277,20 @@ begin
 
     s_axis_video_TREADY <= regslice_both_s_axis_video_V_data_V_U_ack_in;
 
-    s_axis_video_TREADY_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_375_s_axis_video_TREADY, ap_CS_fsm_state4)
+    s_axis_video_TREADY_int_regslice_assign_proc : process(grp_VMixHlsDataFlowFunction_fu_391_s_axis_video_TREADY, ap_CS_fsm_state4)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            s_axis_video_TREADY_int_regslice <= grp_VMixHlsDataFlowFunction_fu_375_s_axis_video_TREADY;
+            s_axis_video_TREADY_int_regslice <= grp_VMixHlsDataFlowFunction_fu_391_s_axis_video_TREADY;
         else 
             s_axis_video_TREADY_int_regslice <= ap_const_logic_0;
         end if; 
     end process;
 
-    trunc_ln2417_1_fu_438_p1 <= background_V_B(8 - 1 downto 0);
-    trunc_ln2417_2_fu_442_p1 <= background_U_G(8 - 1 downto 0);
-    trunc_ln2417_3_fu_446_p1 <= background_Y_R(8 - 1 downto 0);
-    trunc_ln2417_4_fu_450_p1 <= width(11 - 1 downto 0);
-    trunc_ln2417_5_fu_454_p1 <= height(11 - 1 downto 0);
-    trunc_ln2417_fu_434_p1 <= layerEnable(2 - 1 downto 0);
+    trunc_ln2417_1_fu_455_p1 <= background_V_B(8 - 1 downto 0);
+    trunc_ln2417_2_fu_459_p1 <= background_U_G(8 - 1 downto 0);
+    trunc_ln2417_3_fu_463_p1 <= background_Y_R(8 - 1 downto 0);
+    trunc_ln2417_4_fu_467_p1 <= width(11 - 1 downto 0);
+    trunc_ln2417_5_fu_471_p1 <= height(11 - 1 downto 0);
+    trunc_ln2417_fu_451_p1 <= layerEnable(2 - 1 downto 0);
+    trunc_ln3296_fu_610_p1 <= HwReg_layerAlpha_reg_762(9 - 1 downto 0);
 end behav;

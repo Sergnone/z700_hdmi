@@ -15,7 +15,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 38
+set cdfgNum 39
 set C_modelName {AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]

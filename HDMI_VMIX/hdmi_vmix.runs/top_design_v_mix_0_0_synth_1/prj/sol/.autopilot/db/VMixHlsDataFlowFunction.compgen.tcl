@@ -81,7 +81,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler top_design_v_mix_0_0_start_for_v_mix_core_alpha_false_false_U0 BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {start_for_v_mix_core_alpha_false_false_U0_U}
+	::AP::rtl_comp_handler top_design_v_mix_0_0_start_for_v_mix_core_alpha_true_false_U0 BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {start_for_v_mix_core_alpha_true_false_U0_U}
 }
 
 
@@ -136,7 +136,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 258 \
+    id 270 \
     name s_axis_video_V_data_V \
     reset_level 1 \
     sync_rst true \
@@ -155,7 +155,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 259 \
+    id 271 \
     name s_axis_video_V_keep_V \
     reset_level 1 \
     sync_rst true \
@@ -174,7 +174,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 260 \
+    id 272 \
     name s_axis_video_V_strb_V \
     reset_level 1 \
     sync_rst true \
@@ -193,7 +193,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 261 \
+    id 273 \
     name s_axis_video_V_user_V \
     reset_level 1 \
     sync_rst true \
@@ -212,7 +212,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 262 \
+    id 274 \
     name s_axis_video_V_last_V \
     reset_level 1 \
     sync_rst true \
@@ -231,7 +231,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 263 \
+    id 275 \
     name s_axis_video_V_id_V \
     reset_level 1 \
     sync_rst true \
@@ -250,7 +250,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 264 \
+    id 276 \
     name s_axis_video_V_dest_V \
     reset_level 1 \
     sync_rst true \
@@ -269,7 +269,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 265 \
+    id 277 \
     name s_axis_video1_V_data_V \
     reset_level 1 \
     sync_rst true \
@@ -288,7 +288,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 266 \
+    id 278 \
     name s_axis_video1_V_keep_V \
     reset_level 1 \
     sync_rst true \
@@ -307,7 +307,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 267 \
+    id 279 \
     name s_axis_video1_V_strb_V \
     reset_level 1 \
     sync_rst true \
@@ -326,7 +326,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 268 \
+    id 280 \
     name s_axis_video1_V_user_V \
     reset_level 1 \
     sync_rst true \
@@ -345,7 +345,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 269 \
+    id 281 \
     name s_axis_video1_V_last_V \
     reset_level 1 \
     sync_rst true \
@@ -364,7 +364,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 270 \
+    id 282 \
     name s_axis_video1_V_id_V \
     reset_level 1 \
     sync_rst true \
@@ -383,7 +383,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 271 \
+    id 283 \
     name s_axis_video1_V_dest_V \
     reset_level 1 \
     sync_rst true \
@@ -402,7 +402,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 272 \
+    id 284 \
     name m_axis_video_V_data_V \
     reset_level 1 \
     sync_rst true \
@@ -421,7 +421,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 273 \
+    id 285 \
     name m_axis_video_V_keep_V \
     reset_level 1 \
     sync_rst true \
@@ -440,7 +440,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 274 \
+    id 286 \
     name m_axis_video_V_strb_V \
     reset_level 1 \
     sync_rst true \
@@ -459,7 +459,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 275 \
+    id 287 \
     name m_axis_video_V_user_V \
     reset_level 1 \
     sync_rst true \
@@ -478,7 +478,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 276 \
+    id 288 \
     name m_axis_video_V_last_V \
     reset_level 1 \
     sync_rst true \
@@ -497,7 +497,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 277 \
+    id 289 \
     name m_axis_video_V_id_V \
     reset_level 1 \
     sync_rst true \
@@ -516,7 +516,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 278 \
+    id 290 \
     name m_axis_video_V_dest_V \
     reset_level 1 \
     sync_rst true \
@@ -534,7 +534,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 245 \
+    id 256 \
     name HwReg_width_val \
     type other \
     dir I \
@@ -549,7 +549,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 246 \
+    id 257 \
     name HwReg_height_val \
     type other \
     dir I \
@@ -564,7 +564,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 247 \
+    id 258 \
     name HwReg_background_Y_R_val10 \
     type other \
     dir I \
@@ -579,7 +579,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 248 \
+    id 259 \
     name HwReg_background_U_G_val11 \
     type other \
     dir I \
@@ -594,7 +594,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 249 \
+    id 260 \
     name HwReg_background_V_B_val12 \
     type other \
     dir I \
@@ -609,7 +609,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 250 \
+    id 261 \
     name HwReg_layerEnable_val13 \
     type other \
     dir I \
@@ -624,7 +624,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 251 \
+    id 262 \
     name HwReg_layerEnableFlag_0_val \
     type other \
     dir I \
@@ -639,7 +639,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 252 \
+    id 263 \
     name HwReg_layerEnableFlag_1_val \
     type other \
     dir I \
@@ -654,37 +654,52 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 253 \
-    name HwReg_layerStartX_1_val14 \
+    id 264 \
+    name HwReg_layerAlpha_1_val14 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_HwReg_layerStartX_1_val14 \
+    corename dc_HwReg_layerAlpha_1_val14 \
     op interface \
-    ports { HwReg_layerStartX_1_val14 { I 16 vector } HwReg_layerStartX_1_val14_ap_vld { I 1 bit } } \
+    ports { HwReg_layerAlpha_1_val14 { I 9 vector } HwReg_layerAlpha_1_val14_ap_vld { I 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 254 \
-    name HwReg_layerStartY_1_val15 \
+    id 265 \
+    name HwReg_layerStartX_1_val15 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_HwReg_layerStartY_1_val15 \
+    corename dc_HwReg_layerStartX_1_val15 \
     op interface \
-    ports { HwReg_layerStartY_1_val15 { I 16 vector } HwReg_layerStartY_1_val15_ap_vld { I 1 bit } } \
+    ports { HwReg_layerStartX_1_val15 { I 16 vector } HwReg_layerStartX_1_val15_ap_vld { I 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 255 \
+    id 266 \
+    name HwReg_layerStartY_1_val16 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_HwReg_layerStartY_1_val16 \
+    op interface \
+    ports { HwReg_layerStartY_1_val16 { I 16 vector } HwReg_layerStartY_1_val16_ap_vld { I 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 267 \
     name HwReg_layerWidth_1_val \
     type other \
     dir I \
@@ -699,7 +714,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 256 \
+    id 268 \
     name HwReg_layerHeight_1_val \
     type other \
     dir I \
@@ -714,15 +729,15 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 257 \
-    name HwReg_layerScaleFactor_1_val18 \
+    id 269 \
+    name HwReg_layerScaleFactor_1_val19 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_HwReg_layerScaleFactor_1_val18 \
+    corename dc_HwReg_layerScaleFactor_1_val19 \
     op interface \
-    ports { HwReg_layerScaleFactor_1_val18 { I 8 vector } HwReg_layerScaleFactor_1_val18_ap_vld { I 1 bit } } \
+    ports { HwReg_layerScaleFactor_1_val19 { I 8 vector } HwReg_layerScaleFactor_1_val19_ap_vld { I 1 bit } } \
 } "
 }
 

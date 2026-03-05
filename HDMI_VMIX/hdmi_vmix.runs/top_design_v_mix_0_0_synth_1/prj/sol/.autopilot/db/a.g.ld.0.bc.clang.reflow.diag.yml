@@ -129,18 +129,33 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 441, Column: 18 }
-Function:        _Z16v_mix_core_alphaILb0ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 367, Column: 18 }
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
     DebugLoc:        { File: hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/hls/hls_video_core.h, 
                        Line: 196, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void v_mix_core_alpha<false, false>(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<1, unsigned char>, 0>&, mix_hw_struct&, unsigned char, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
-    DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 438, 
+  - Caller:          'void v_mix_core_alpha<true, false>(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<1, unsigned char>, 0>&, mix_hw_struct&, unsigned char, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 364, 
                        Column: 0 }
   - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 377, Column: 14 }
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+Args:            
+  - Callee:          'unsigned short reg<unsigned short>(unsigned short)'
+    DebugLoc:        { File: /tools/xilinx/2025.2/Vitis/common/technology/autopilot/utils/x_hls_utils.h, 
+                       Line: 223, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void v_mix_core_alpha<true, false>(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<1, unsigned char>, 0>&, mix_hw_struct&, unsigned char, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 364, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Passed
 Pass:            inline
@@ -302,8 +317,8 @@ Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 756, Column: 2 }
 Function:        _ZL23VMixHlsDataFlowFunctionR13mix_hw_structRN3hls6streamINS1_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEES8_S8_
 Args:            
-  - Callee:          'void v_mix_core_alpha<false, false>(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<1, unsigned char>, 0>&, mix_hw_struct&, unsigned char, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
-    DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 438, 
+  - Callee:          'void v_mix_core_alpha<true, false>(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<1, unsigned char>, 0>&, mix_hw_struct&, unsigned char, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 364, 
                        Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'VMixHlsDataFlowFunction(mix_hw_struct&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
@@ -439,19 +454,7 @@ Pass:            reflow-reg2mem-ssa
 Name:            DisaggrReason
 DebugLoc:        { File: hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/hls/hls_video_core.h, 
                    Line: 198, Column: 1 }
-Function:        _Z16v_mix_core_alphaILb0ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
-Args:            
-  - String:          'Adding '''
-  - Name:            lyrpix
-  - String:          ''' into disaggregation list because there''s '
-  - String:          array-partition pragma applied on the struct field
-...
---- !Passed
-Pass:            reflow-reg2mem-ssa
-Name:            DisaggrReason
-DebugLoc:        { File: hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/hls/hls_video_core.h, 
-                   Line: 198, Column: 1 }
-Function:        _Z16v_mix_core_alphaILb0ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
 Args:            
   - String:          'Adding '''
   - Name:            dstpix
@@ -463,7 +466,7 @@ Pass:            reflow-reg2mem-ssa
 Name:            DisaggrReason
 DebugLoc:        { File: hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/hls/hls_video_core.h, 
                    Line: 198, Column: 1 }
-Function:        _Z16v_mix_core_alphaILb0ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
 Args:            
   - String:          'Adding '''
   - Name:            bkgpix
@@ -475,7 +478,19 @@ Pass:            reflow-reg2mem-ssa
 Name:            DisaggrReason
 DebugLoc:        { File: hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/hls/hls_video_core.h, 
                    Line: 198, Column: 1 }
-Function:        _Z16v_mix_core_alphaILb0ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+Args:            
+  - String:          'Adding '''
+  - Name:            lyrpix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/hls/hls_video_core.h, 
+                   Line: 198, Column: 1 }
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
 Args:            
   - String:          'Adding '''
   - Name:            srcpix
@@ -683,7 +698,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/hls/hls_video_core.h, 
                    Line: 198, Column: 1 }
-Function:        _Z16v_mix_core_alphaILb0ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
 Args:            
   - String:          'Adding '''
   - Name:            dstpix
@@ -695,7 +710,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/hls/hls_video_core.h, 
                    Line: 198, Column: 1 }
-Function:        _Z16v_mix_core_alphaILb0ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
 Args:            
   - String:          'Adding '''
   - Name:            bkgpix
@@ -707,7 +722,19 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/hls/hls_video_core.h, 
                    Line: 198, Column: 1 }
-Function:        _Z16v_mix_core_alphaILb0ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+Args:            
+  - String:          'Adding '''
+  - Name:            lyrpix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: hdmi_vmix.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/hls/hls_video_core.h, 
+                   Line: 198, Column: 1 }
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
 Args:            
   - String:          'Adding '''
   - Name:            srcpix
@@ -915,8 +942,8 @@ Args:
 --- !Passed
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
-DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 444, Column: 18 }
-Function:        _Z16v_mix_core_alphaILb0ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 370, Column: 18 }
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            bkgpix
@@ -925,8 +952,8 @@ Args:
 --- !Passed
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
-DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 443, Column: 18 }
-Function:        _Z16v_mix_core_alphaILb0ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 369, Column: 18 }
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            dstpix
@@ -935,8 +962,18 @@ Args:
 --- !Passed
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
-DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 441, Column: 18 }
-Function:        _Z16v_mix_core_alphaILb0ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 368, Column: 18 }
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            lyrpix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 367, Column: 18 }
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            srcpix
@@ -1015,21 +1052,21 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 486, Column: 22 }
-Function:        _Z16v_mix_core_alphaILb0ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 419, Column: 22 }
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_486_4
+  - LoopName:        VITIS_LOOP_419_4
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 488, Column: 23 }
-Function:        _Z16v_mix_core_alphaILb0ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 421, Column: 23 }
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_488_5
+  - LoopName:        VITIS_LOOP_421_5
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
@@ -1087,32 +1124,32 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 438, Column: 0 }
-Function:        _Z16v_mix_core_alphaILb0ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 364, Column: 0 }
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_486_4
+  - LoopName:        VITIS_LOOP_419_4
   - String:          ''' ('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_mix.cpp:486:22'
+  - LoopLoc:         'prj/sol/.autopilot/db/v_mix.cpp:419:22'
   - String:          ') '
   - String:          'in function '''
-  - String:          'v_mix_core_alpha<false, false>'
+  - String:          'v_mix_core_alpha<true, false>'
   - String:          ''' completely with a factor of '
   - Factor:          '1'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 438, Column: 0 }
-Function:        _Z16v_mix_core_alphaILb0ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 364, Column: 0 }
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_488_5
+  - LoopName:        VITIS_LOOP_421_5
   - String:          ''' ('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_mix.cpp:488:23'
+  - LoopLoc:         'prj/sol/.autopilot/db/v_mix.cpp:421:23'
   - String:          ') '
   - String:          'in function '''
-  - String:          'v_mix_core_alpha<false, false>'
+  - String:          'v_mix_core_alpha<true, false>'
   - String:          ''' completely with a factor of '
   - Factor:          '3'
 ...
@@ -1160,6 +1197,21 @@ Args:
   - String:          ' not inlined into '
   - Caller:          'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short, unsigned short, bool, unsigned char)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 3744, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 377, Column: 14 }
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+Args:            
+  - Callee:          'unsigned short reg<unsigned short>(unsigned short)'
+    DebugLoc:        { File: /tools/xilinx/2025.2/Vitis/common/technology/autopilot/utils/x_hls_utils.h, 
+                       Line: 223, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void v_mix_core_alpha<true, false>(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<1, unsigned char>, 0>&, mix_hw_struct&, unsigned char, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 364, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -1259,8 +1311,8 @@ Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 756, Column: 2 }
 Function:        _ZL23VMixHlsDataFlowFunctionR13mix_hw_structRN3hls6streamINS1_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEES8_S8_
 Args:            
-  - Callee:          'void v_mix_core_alpha<false, false>(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<1, unsigned char>, 0>&, mix_hw_struct&, unsigned char, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
-    DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 438, 
+  - Callee:          'void v_mix_core_alpha<true, false>(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<1, unsigned char>, 0>&, mix_hw_struct&, unsigned char, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 364, 
                        Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'VMixHlsDataFlowFunction(mix_hw_struct&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
@@ -1952,15 +2004,15 @@ Args:
 --- !Failure
 Pass:            reflow-occurrence-analysis
 Name:            CouldNotAnalyzeBBInfo
-DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 482, Column: 15 }
-Function:        _Z16v_mix_core_alphaILb0ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 414, Column: 15 }
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
 Args:            
   - String:          'Could not analyze occurrence information for '''
-  - BBName:          if.then80
+  - BBName:          if.then84
   - String:          ''' living in '''
-  - LoopName:        VITIS_LOOP_465_3
+  - LoopName:        VITIS_LOOP_395_3
   - String:          '''('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_mix.cpp:465:21'
+  - LoopLoc:         'prj/sol/.autopilot/db/v_mix.cpp:395:21'
   - String:          ') .'
 ...
 --- !Failure
@@ -2034,6 +2086,21 @@ Args:
   - String:          ' not inlined into '
   - Caller:          'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short, unsigned short, bool, unsigned char)'
     DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 3744, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 377, Column: 14 }
+Function:        _Z16v_mix_core_alphaILb1ELb0EEvRN3hls6streamINS0_6ScalarILi3E7ap_uintILi8EEEELi0EEES7_RNS1_INS2_ILi1EhEELi0EEER13mix_hw_structhS7_
+Args:            
+  - Callee:          'unsigned short reg<unsigned short>(unsigned short)'
+    DebugLoc:        { File: /tools/xilinx/2025.2/Vitis/common/technology/autopilot/utils/x_hls_utils.h, 
+                       Line: 223, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void v_mix_core_alpha<true, false>(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<1, unsigned char>, 0>&, mix_hw_struct&, unsigned char, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 364, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -2193,8 +2260,8 @@ Name:            NeverInline
 DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 756, Column: 2 }
 Function:        _ZL23VMixHlsDataFlowFunctionR13mix_hw_structRN3hls6streamINS1_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEES8_S8_
 Args:            
-  - Callee:          'void v_mix_core_alpha<false, false>(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<1, unsigned char>, 0>&, mix_hw_struct&, unsigned char, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
-    DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 438, 
+  - Callee:          'void v_mix_core_alpha<true, false>(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::Scalar<1, unsigned char>, 0>&, mix_hw_struct&, unsigned char, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: prj/sol/.autopilot/db/v_mix.cpp, Line: 364, 
                        Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'VMixHlsDataFlowFunction(mix_hw_struct&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'

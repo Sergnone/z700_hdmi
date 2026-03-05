@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'v_mix'" level="0">
-<item name = "Date">Tue Feb 24 12:52:09 2026
+<item name = "Date">Sat Feb 28 15:10:43 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">4498, 2084411, 29.988 us, 13.897 ms, 4499, 2084412, no</column>
+<column name="">4690, 2084411, 31.268 us, 13.897 ms, 4691, 2084412, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_VMixHlsDataFlowFunction_fu_375">VMixHlsDataFlowFunction, 4493, 2084406, 29.955 us, 13.897 ms, 4482, 2084407, dataflow</column>
+<column name="grp_VMixHlsDataFlowFunction_fu_391">VMixHlsDataFlowFunction, 4685, 2084406, 31.235 us, 13.897 ms, 4675, 2084407, dataflow</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

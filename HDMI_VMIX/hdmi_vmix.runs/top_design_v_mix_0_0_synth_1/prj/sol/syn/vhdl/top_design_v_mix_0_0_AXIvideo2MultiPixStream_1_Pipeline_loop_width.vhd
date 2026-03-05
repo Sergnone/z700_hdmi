@@ -97,7 +97,7 @@ attribute shreg_extract : string;
     signal p_4_0_0_0152319_fu_94 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     signal ap_block_pp0_stage0_01001 : BOOLEAN;
     signal trunc_ln3817_fu_256_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal tmp_5_fu_248_p3 : STD_LOGIC_VECTOR (7 downto 0);
+    signal tmp_6_fu_248_p3 : STD_LOGIC_VECTOR (7 downto 0);
     signal ap_done_reg : STD_LOGIC := '0';
     signal ap_continue_int : STD_LOGIC;
     signal ap_done_int : STD_LOGIC;
@@ -481,7 +481,7 @@ begin
         end if; 
     end process;
 
-    srcLayer0_din <= (trunc_ln3817_fu_256_p1 & tmp_5_fu_248_p3);
+    srcLayer0_din <= (trunc_ln3817_fu_256_p1 & tmp_6_fu_248_p3);
 
     srcLayer0_write_assign_proc : process(ap_enable_reg_pp0_iter2, icmp_ln3775_reg_305_pp0_iter1_reg, ap_block_pp0_stage0_11001)
     begin
@@ -492,6 +492,6 @@ begin
         end if; 
     end process;
 
-    tmp_5_fu_248_p3 <= p_0_0_0_0144310_fu_90(23 downto 16);
+    tmp_6_fu_248_p3 <= p_0_0_0_0144310_fu_90(23 downto 16);
     trunc_ln3817_fu_256_p1 <= p_0_0_0_0144310_fu_90(16 - 1 downto 0);
 end behav;

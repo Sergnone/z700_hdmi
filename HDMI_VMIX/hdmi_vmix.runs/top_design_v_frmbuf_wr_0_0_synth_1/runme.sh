@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_frmbuf_wr_0_0_synth_1'
+HD_PWD='/home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_frmbuf_wr_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

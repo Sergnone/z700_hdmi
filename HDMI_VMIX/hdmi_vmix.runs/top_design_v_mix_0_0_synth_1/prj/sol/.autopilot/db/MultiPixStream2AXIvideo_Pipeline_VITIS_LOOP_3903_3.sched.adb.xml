@@ -398,10 +398,10 @@ for.body34.split:6 %tmp = partselect i16 @_ssdm_op_PartSelect.i16.i24.i32.i32, i
 
 <Node id="36" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="16">
 <![CDATA[
-for.body34.split:7 %tmp_4 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i8.i16, i8 %trunc_ln3924, i16 %tmp
+for.body34.split:7 %tmp_5 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i8.i16, i8 %trunc_ln3924, i16 %tmp
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_5"/></StgValue>
 </operation>
 
 <operation id="30" st_id="2" stage="1" lat="1">
@@ -414,7 +414,7 @@ for.body34.split:7 %tmp_4 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i8.i
 
 <Node id="37" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="3" op_3_bw="3" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="24" op_9_bw="3" op_10_bw="3" op_11_bw="1" op_12_bw="1" op_13_bw="1" op_14_bw="1">
 <![CDATA[
-for.body34.split:8 %write_ln3937 = write void @_ssdm_op_Write.axis.volatile.i24P0A.i3P0A.i3P0A.i1P0A.i1P0A.i1P0A.i1P0A, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i24 %tmp_4, i3 7, i3 7, i1 %sof_1, i1 %icmp_ln3916, i1 0, i1 0
+for.body34.split:8 %write_ln3937 = write void @_ssdm_op_Write.axis.volatile.i24P0A.i3P0A.i3P0A.i1P0A.i1P0A.i1P0A.i1P0A, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i24 %tmp_5, i3 7, i3 7, i1 %sof_1, i1 %icmp_ln3916, i1 0, i1 0
 
 ]]></Node>
 <StgValue><ssdm name="write_ln3937"/></StgValue>

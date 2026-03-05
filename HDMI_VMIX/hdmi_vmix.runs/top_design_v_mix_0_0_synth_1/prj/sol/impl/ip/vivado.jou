@@ -3,22 +3,22 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Tue Feb 24 12:52:13 2026
-# Process ID         : 23194
-# Current directory  : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_mix_0_0_synth_1/prj/sol/impl/ip
+# Start of session at: Sat Feb 28 15:10:47 2026
+# Process ID         : 518799
+# Current directory  : /home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_mix_0_0_synth_1/prj/sol/impl/ip
 # Command line       : vivado -notrace -mode batch -source run_ippack.tcl
-# Log file           : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_mix_0_0_synth_1/prj/sol/impl/ip/vivado.log
-# Journal file       : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_mix_0_0_synth_1/prj/sol/impl/ip/vivado.jou
+# Log file           : /home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_mix_0_0_synth_1/prj/sol/impl/ip/vivado.log
+# Journal file       : /home/serg/Documents/Xilinx/z7000_hdmi/HDMI_VMIX/hdmi_vmix.runs/top_design_v_mix_0_0_synth_1/prj/sol/impl/ip/vivado.jou
 # Running On         : serg
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.3 LTS
-# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13400
-# CPU Frequency      : 4201.522 MHz
-# CPU Physical cores : 10
-# CPU Logical cores  : 16
-# Host memory        : 33409 MB
+# Processor Detail   : Intel(R) Core(TM) i7-14700
+# CPU Frequency      : 5092.933 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 67150 MB
 # Swap memory        : 8589 MB
-# Total Virtual      : 41999 MB
-# Available Virtual  : 29815 MB
+# Total Virtual      : 75740 MB
+# Available Virtual  : 45419 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace

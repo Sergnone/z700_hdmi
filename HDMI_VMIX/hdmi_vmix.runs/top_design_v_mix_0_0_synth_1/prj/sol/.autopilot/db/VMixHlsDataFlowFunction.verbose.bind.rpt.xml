@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'VMixHlsDataFlowFunction'" level="0">
-<item name = "Date">Tue Feb 24 12:52:09 2026
+<item name = "Date">Sat Feb 28 15:10:43 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -24,27 +24,27 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">4493, 2084406, 29.955 us, 13.897 ms, 4482, 2084407, dataflow</column>
+<column name="">4685, 2084406, 31.235 us, 13.897 ms, 4675, 2084407, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_AXIvideo2MultiPixStream_1_fu_300">AXIvideo2MultiPixStream_1, 2, 2084406, 13.334 ns, 13.897 ms, 2, 2084406, no</column>
-<column name="grp_AXIvideo2MultiPixStream_fu_325">AXIvideo2MultiPixStream, 2, 2084406, 13.334 ns, 13.897 ms, 2, 2084406, no</column>
-<column name="grp_v_mix_420_to_422_false_2_fu_348">v_mix_420_to_422_false_2, 1, 2079001, 6.667 ns, 13.861 ms, 1, 2079001, no</column>
-<column name="grp_v_mix_420_to_422_false_s_fu_357">v_mix_420_to_422_false_s, 1, 2079001, 6.667 ns, 13.861 ms, 1, 2079001, no</column>
-<column name="grp_v_mix_422_to_444_false_3_fu_366">v_mix_422_to_444_false_3, 1, 2079001, 6.667 ns, 13.861 ms, 1, 2079001, no</column>
-<column name="grp_v_mix_422_to_444_false_s_fu_375">v_mix_422_to_444_false_s, 1, 2079001, 6.667 ns, 13.861 ms, 1, 2079001, no</column>
-<column name="grp_v_mix_yuv2rgb_false_4_fu_384">v_mix_yuv2rgb_false_4, 1, 2079001, 6.667 ns, 13.861 ms, 1, 2079001, no</column>
-<column name="grp_v_mix_yuv2rgb_false_s_fu_393">v_mix_yuv2rgb_false_s, 1, 2079001, 6.667 ns, 13.861 ms, 1, 2079001, no</column>
-<column name="grp_v_mix_upsample_false_s_fu_402">v_mix_upsample_false_s, 1, 2079001, 6.667 ns, 13.861 ms, 1, 2079001, no</column>
-<column name="grp_v_mix_core_alpha_false_false_s_fu_411">v_mix_core_alpha_false_false_s, 4481, 2080081, 29.875 us, 13.868 ms, 4481, 2080081, no</column>
-<column name="grp_v_mix_rgb2yuv_false_s_fu_436">v_mix_rgb2yuv_false_s, 4417, 2079001, 29.448 us, 13.861 ms, 4417, 2079001, no</column>
-<column name="grp_v_mix_444_to_422_false_s_fu_444">v_mix_444_to_422_false_s, 4417, 2079001, 29.448 us, 13.861 ms, 4417, 2079001, no</column>
-<column name="grp_v_mix_422_to_420_false_s_fu_452">v_mix_422_to_420_false_s, 4417, 2079001, 29.448 us, 13.861 ms, 4417, 2079001, no</column>
-<column name="grp_MultiPixStream2AXIvideo_fu_460">MultiPixStream2AXIvideo, 2, 2080082, 13.334 ns, 13.868 ms, 2, 2080082, no</column>
+<column name="grp_AXIvideo2MultiPixStream_1_fu_310">AXIvideo2MultiPixStream_1, 2, 2084406, 13.334 ns, 13.897 ms, 2, 2084406, no</column>
+<column name="grp_AXIvideo2MultiPixStream_fu_335">AXIvideo2MultiPixStream, 2, 2084406, 13.334 ns, 13.897 ms, 2, 2084406, no</column>
+<column name="grp_v_mix_420_to_422_false_2_fu_358">v_mix_420_to_422_false_2, 1, 2079001, 6.667 ns, 13.861 ms, 1, 2079001, no</column>
+<column name="grp_v_mix_420_to_422_false_s_fu_367">v_mix_420_to_422_false_s, 1, 2079001, 6.667 ns, 13.861 ms, 1, 2079001, no</column>
+<column name="grp_v_mix_422_to_444_false_3_fu_376">v_mix_422_to_444_false_3, 1, 2079001, 6.667 ns, 13.861 ms, 1, 2079001, no</column>
+<column name="grp_v_mix_422_to_444_false_s_fu_385">v_mix_422_to_444_false_s, 1, 2079001, 6.667 ns, 13.861 ms, 1, 2079001, no</column>
+<column name="grp_v_mix_yuv2rgb_false_4_fu_394">v_mix_yuv2rgb_false_4, 1, 2079001, 6.667 ns, 13.861 ms, 1, 2079001, no</column>
+<column name="grp_v_mix_yuv2rgb_false_s_fu_403">v_mix_yuv2rgb_false_s, 1, 2079001, 6.667 ns, 13.861 ms, 1, 2079001, no</column>
+<column name="grp_v_mix_upsample_false_s_fu_412">v_mix_upsample_false_s, 1, 2079001, 6.667 ns, 13.861 ms, 1, 2079001, no</column>
+<column name="grp_v_mix_core_alpha_true_false_s_fu_421">v_mix_core_alpha_true_false_s, 4674, 2083322, 31.162 us, 13.890 ms, 4674, 2083322, no</column>
+<column name="grp_v_mix_rgb2yuv_false_s_fu_448">v_mix_rgb2yuv_false_s, 4417, 2079001, 29.448 us, 13.861 ms, 4417, 2079001, no</column>
+<column name="grp_v_mix_444_to_422_false_s_fu_456">v_mix_444_to_422_false_s, 4417, 2079001, 29.448 us, 13.861 ms, 4417, 2079001, no</column>
+<column name="grp_v_mix_422_to_420_false_s_fu_464">v_mix_422_to_420_false_s, 4417, 2079001, 29.448 us, 13.861 ms, 4417, 2079001, no</column>
+<column name="grp_MultiPixStream2AXIvideo_fu_472">MultiPixStream2AXIvideo, 2, 2080082, 13.334 ns, 13.868 ms, 2, 2080082, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

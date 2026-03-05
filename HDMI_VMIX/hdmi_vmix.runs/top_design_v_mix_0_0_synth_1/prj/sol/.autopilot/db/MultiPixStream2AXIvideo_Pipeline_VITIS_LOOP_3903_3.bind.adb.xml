@@ -398,10 +398,10 @@ for.body34.split:6 %tmp = partselect i16 @_ssdm_op_PartSelect.i16.i24.i32.i32, i
 
 <Node id="36" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="16">
 <![CDATA[
-for.body34.split:7 %tmp_4 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i8.i16, i8 %trunc_ln3924, i16 %tmp
+for.body34.split:7 %tmp_5 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i8.i16, i8 %trunc_ln3924, i16 %tmp
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_5"/></StgValue>
 </operation>
 
 <operation id="30" st_id="2" stage="1" lat="1">
@@ -414,7 +414,7 @@ for.body34.split:7 %tmp_4 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i8.i
 
 <Node id="37" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="3" op_3_bw="3" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="24" op_9_bw="3" op_10_bw="3" op_11_bw="1" op_12_bw="1" op_13_bw="1" op_14_bw="1">
 <![CDATA[
-for.body34.split:8 %write_ln3937 = write void @_ssdm_op_Write.axis.volatile.i24P0A.i3P0A.i3P0A.i1P0A.i1P0A.i1P0A.i1P0A, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i24 %tmp_4, i3 7, i3 7, i1 %sof_1, i1 %icmp_ln3916, i1 0, i1 0
+for.body34.split:8 %write_ln3937 = write void @_ssdm_op_Write.axis.volatile.i24P0A.i3P0A.i3P0A.i1P0A.i1P0A.i1P0A.i1P0A, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i24 %tmp_5, i3 7, i3 7, i1 %sof_1, i1 %icmp_ln3916, i1 0, i1 0
 
 ]]></Node>
 <StgValue><ssdm name="write_ln3937"/></StgValue>
@@ -687,11 +687,11 @@ for.inc79.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="178" from="StgValue_177" to="tmp" fromId="177" toId="28">
 </dataflow>
-<dataflow id="180" from="_ssdm_op_BitConcatenate.i24.i8.i16" to="tmp_4" fromId="179" toId="29">
+<dataflow id="180" from="_ssdm_op_BitConcatenate.i24.i8.i16" to="tmp_5" fromId="179" toId="29">
 </dataflow>
-<dataflow id="181" from="trunc_ln3924" to="tmp_4" fromId="27" toId="29">
+<dataflow id="181" from="trunc_ln3924" to="tmp_5" fromId="27" toId="29">
 </dataflow>
-<dataflow id="182" from="tmp" to="tmp_4" fromId="28" toId="29">
+<dataflow id="182" from="tmp" to="tmp_5" fromId="28" toId="29">
 </dataflow>
 <dataflow id="184" from="_ssdm_op_Write.axis.volatile.i24P0A.i3P0A.i3P0A.i1P0A.i1P0A.i1P0A.i1P0A" to="write_ln3937" fromId="183" toId="30">
 </dataflow>
@@ -709,7 +709,7 @@ for.inc79.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="191" from="m_axis_video_V_dest_V" to="write_ln3937" fromId="51" toId="30">
 </dataflow>
-<dataflow id="192" from="tmp_4" to="write_ln3937" fromId="29" toId="30">
+<dataflow id="192" from="tmp_5" to="write_ln3937" fromId="29" toId="30">
 </dataflow>
 <dataflow id="194" from="StgValue_193" to="write_ln3937" fromId="193" toId="30">
 </dataflow>

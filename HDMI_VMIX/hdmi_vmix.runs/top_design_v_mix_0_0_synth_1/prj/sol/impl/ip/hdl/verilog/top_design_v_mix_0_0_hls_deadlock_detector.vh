@@ -302,12 +302,12 @@
     wire token_clear;
     reg [13:0] origin;
 
-reg [15:0] trans_in_cnt_0;// for process grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_1_U0
+reg [15:0] trans_in_cnt_0;// for process grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_1_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_in_cnt_0 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_1_U0.start_write == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_1_U0.start_write == 1'b1) begin
         trans_in_cnt_0 <= trans_in_cnt_0 + 16'h1;
     end
     else begin
@@ -315,12 +315,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_0;// for process grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_1_U0
+reg [15:0] trans_out_cnt_0;// for process grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_1_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_out_cnt_0 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_1_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_1_U0.ap_continue == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_1_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_1_U0.ap_continue == 1'b1) begin
         trans_out_cnt_0 <= trans_out_cnt_0 + 16'h1;
     end
     else begin
@@ -328,12 +328,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_in_cnt_1;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_2_U0
+reg [15:0] trans_in_cnt_1;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_2_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_in_cnt_1 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_2_U0.start_write == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_2_U0.start_write == 1'b1) begin
         trans_in_cnt_1 <= trans_in_cnt_1 + 16'h1;
     end
     else begin
@@ -341,12 +341,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_1;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_2_U0
+reg [15:0] trans_out_cnt_1;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_2_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_out_cnt_1 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_2_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_2_U0.ap_continue == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_2_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_2_U0.ap_continue == 1'b1) begin
         trans_out_cnt_1 <= trans_out_cnt_1 + 16'h1;
     end
     else begin
@@ -354,12 +354,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_in_cnt_2;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_3_U0
+reg [15:0] trans_in_cnt_2;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_3_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_in_cnt_2 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_3_U0.start_write == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_3_U0.start_write == 1'b1) begin
         trans_in_cnt_2 <= trans_in_cnt_2 + 16'h1;
     end
     else begin
@@ -367,12 +367,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_2;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_3_U0
+reg [15:0] trans_out_cnt_2;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_3_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_out_cnt_2 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_3_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_3_U0.ap_continue == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_3_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_3_U0.ap_continue == 1'b1) begin
         trans_out_cnt_2 <= trans_out_cnt_2 + 16'h1;
     end
     else begin
@@ -380,12 +380,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_in_cnt_3;// for process grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_U0
+reg [15:0] trans_in_cnt_3;// for process grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_in_cnt_3 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_U0.start_write == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_U0.start_write == 1'b1) begin
         trans_in_cnt_3 <= trans_in_cnt_3 + 16'h1;
     end
     else begin
@@ -393,12 +393,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_3;// for process grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_U0
+reg [15:0] trans_out_cnt_3;// for process grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_out_cnt_3 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_U0.ap_continue == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_U0.ap_continue == 1'b1) begin
         trans_out_cnt_3 <= trans_out_cnt_3 + 16'h1;
     end
     else begin
@@ -406,12 +406,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_in_cnt_4;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_U0
+reg [15:0] trans_in_cnt_4;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_in_cnt_4 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_U0.start_write == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_U0.start_write == 1'b1) begin
         trans_in_cnt_4 <= trans_in_cnt_4 + 16'h1;
     end
     else begin
@@ -419,12 +419,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_4;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_U0
+reg [15:0] trans_out_cnt_4;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_out_cnt_4 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_U0.ap_continue == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_U0.ap_continue == 1'b1) begin
         trans_out_cnt_4 <= trans_out_cnt_4 + 16'h1;
     end
     else begin
@@ -432,12 +432,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_in_cnt_5;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_U0
+reg [15:0] trans_in_cnt_5;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_in_cnt_5 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_U0.start_write == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_U0.start_write == 1'b1) begin
         trans_in_cnt_5 <= trans_in_cnt_5 + 16'h1;
     end
     else begin
@@ -445,12 +445,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_5;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_U0
+reg [15:0] trans_out_cnt_5;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_out_cnt_5 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_U0.ap_continue == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_U0.ap_continue == 1'b1) begin
         trans_out_cnt_5 <= trans_out_cnt_5 + 16'h1;
     end
     else begin
@@ -458,12 +458,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_in_cnt_6;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_U0
+reg [15:0] trans_in_cnt_6;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_in_cnt_6 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_U0.start_write == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_U0.start_write == 1'b1) begin
         trans_in_cnt_6 <= trans_in_cnt_6 + 16'h1;
     end
     else begin
@@ -471,12 +471,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_6;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_U0
+reg [15:0] trans_out_cnt_6;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_out_cnt_6 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_U0.ap_continue == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_U0.ap_continue == 1'b1) begin
         trans_out_cnt_6 <= trans_out_cnt_6 + 16'h1;
     end
     else begin
@@ -484,12 +484,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_in_cnt_7;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_4_U0
+reg [15:0] trans_in_cnt_7;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_4_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_in_cnt_7 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_4_U0.start_write == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_4_U0.start_write == 1'b1) begin
         trans_in_cnt_7 <= trans_in_cnt_7 + 16'h1;
     end
     else begin
@@ -497,12 +497,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_7;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_4_U0
+reg [15:0] trans_out_cnt_7;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_4_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_out_cnt_7 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_4_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_4_U0.ap_continue == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_4_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_4_U0.ap_continue == 1'b1) begin
         trans_out_cnt_7 <= trans_out_cnt_7 + 16'h1;
     end
     else begin
@@ -510,12 +510,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_in_cnt_8;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_core_alpha_false_false_U0
+reg [15:0] trans_in_cnt_8;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_core_alpha_true_false_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_in_cnt_8 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_core_alpha_false_false_U0.start_write == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_core_alpha_true_false_U0.start_write == 1'b1) begin
         trans_in_cnt_8 <= trans_in_cnt_8 + 16'h1;
     end
     else begin
@@ -523,12 +523,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_8;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_core_alpha_false_false_U0
+reg [15:0] trans_out_cnt_8;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_core_alpha_true_false_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_out_cnt_8 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_core_alpha_false_false_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_375.v_mix_core_alpha_false_false_U0.ap_continue == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_core_alpha_true_false_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_391.v_mix_core_alpha_true_false_U0.ap_continue == 1'b1) begin
         trans_out_cnt_8 <= trans_out_cnt_8 + 16'h1;
     end
     else begin
@@ -536,12 +536,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_in_cnt_9;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_rgb2yuv_false_U0
+reg [15:0] trans_in_cnt_9;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_rgb2yuv_false_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_in_cnt_9 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_rgb2yuv_false_U0.start_write == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_rgb2yuv_false_U0.start_write == 1'b1) begin
         trans_in_cnt_9 <= trans_in_cnt_9 + 16'h1;
     end
     else begin
@@ -549,12 +549,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_9;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_rgb2yuv_false_U0
+reg [15:0] trans_out_cnt_9;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_rgb2yuv_false_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_out_cnt_9 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_rgb2yuv_false_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_375.v_mix_rgb2yuv_false_U0.ap_continue == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_rgb2yuv_false_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_391.v_mix_rgb2yuv_false_U0.ap_continue == 1'b1) begin
         trans_out_cnt_9 <= trans_out_cnt_9 + 16'h1;
     end
     else begin
@@ -562,12 +562,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_in_cnt_10;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_444_to_422_false_U0
+reg [15:0] trans_in_cnt_10;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_444_to_422_false_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_in_cnt_10 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_444_to_422_false_U0.start_write == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_444_to_422_false_U0.start_write == 1'b1) begin
         trans_in_cnt_10 <= trans_in_cnt_10 + 16'h1;
     end
     else begin
@@ -575,12 +575,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_10;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_444_to_422_false_U0
+reg [15:0] trans_out_cnt_10;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_444_to_422_false_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_out_cnt_10 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_444_to_422_false_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_375.v_mix_444_to_422_false_U0.ap_continue == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_444_to_422_false_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_391.v_mix_444_to_422_false_U0.ap_continue == 1'b1) begin
         trans_out_cnt_10 <= trans_out_cnt_10 + 16'h1;
     end
     else begin
@@ -588,12 +588,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_in_cnt_11;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_420_false_U0
+reg [15:0] trans_in_cnt_11;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_420_false_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_in_cnt_11 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_420_false_U0.start_write == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_420_false_U0.start_write == 1'b1) begin
         trans_in_cnt_11 <= trans_in_cnt_11 + 16'h1;
     end
     else begin
@@ -601,12 +601,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_11;// for process grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_420_false_U0
+reg [15:0] trans_out_cnt_11;// for process grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_420_false_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_out_cnt_11 <= 16'h0;
     end
-    else if (grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_420_false_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_420_false_U0.ap_continue == 1'b1) begin
+    else if (grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_420_false_U0.ap_done == 1'b1 && grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_420_false_U0.ap_continue == 1'b1) begin
         trans_out_cnt_11 <= trans_out_cnt_11 + 16'h1;
     end
     else begin
@@ -614,7 +614,7 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-    // Process: grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_1_U0
+    // Process: grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_1_U0
     top_design_v_mix_0_0_hls_deadlock_detect_unit #(14, 0, 2, 2) top_design_v_mix_0_0_hls_deadlock_detect_unit_0 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -630,9 +630,9 @@ end
         .token_out_vec(token_out_vec_0),
         .dl_detect_out(dl_in_vec[0]));
 
-    assign proc_0_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_1_U0.grp_AXIvideo2MultiPixStream_1_Pipeline_loop_width_fu_162.srcLayer0_blk_n);
+    assign proc_0_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_1_U0.grp_AXIvideo2MultiPixStream_1_Pipeline_loop_width_fu_162.srcLayer0_blk_n);
     assign proc_0_data_PIPO_blk[0] = 1'b0;
-    assign proc_0_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_420_to_422_false_2_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_1_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_1_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_420_to_422_false_2_U0_U.if_read);
+    assign proc_0_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_420_to_422_false_2_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_1_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_1_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_420_to_422_false_2_U0_U.if_read);
     assign proc_0_TLF_FIFO_blk[0] = 1'b0;
     assign proc_0_input_sync_blk[0] = 1'b0;
     assign proc_0_output_sync_blk[0] = 1'b0;
@@ -641,7 +641,7 @@ end
     assign proc_0_data_PIPO_blk[1] = 1'b0;
     assign proc_0_start_FIFO_blk[1] = 1'b0;
     assign proc_0_TLF_FIFO_blk[1] = 1'b0;
-    assign proc_0_input_sync_blk[1] = 1'b0 | (grp_VMixHlsDataFlowFunction_fu_375.ap_sync_AXIvideo2MultiPixStream_1_U0_ap_ready & grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_1_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_375.ap_sync_AXIvideo2MultiPixStream_U0_ap_ready);
+    assign proc_0_input_sync_blk[1] = 1'b0 | (grp_VMixHlsDataFlowFunction_fu_391.ap_sync_AXIvideo2MultiPixStream_1_U0_ap_ready & grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_1_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_391.ap_sync_AXIvideo2MultiPixStream_U0_ap_ready);
     assign proc_0_output_sync_blk[1] = 1'b0;
     assign proc_dep_vld_vec_0[1] = dl_detect_out ? proc_dep_vld_vec_0_reg[1] : (proc_0_data_FIFO_blk[1] | proc_0_data_PIPO_blk[1] | proc_0_start_FIFO_blk[1] | proc_0_TLF_FIFO_blk[1] | proc_0_input_sync_blk[1] | proc_0_output_sync_blk[1]);
     always @ (negedge dl_reset or posedge dl_clock) begin
@@ -665,7 +665,7 @@ end
     assign dep_chan_data_0_4 = out_chan_dep_data_0;
     assign token_0_4 = token_out_vec_0[1];
 
-    // Process: grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_2_U0
+    // Process: grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_2_U0
     top_design_v_mix_0_0_hls_deadlock_detect_unit #(14, 1, 2, 2) top_design_v_mix_0_0_hls_deadlock_detect_unit_1 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -681,16 +681,16 @@ end
         .token_out_vec(token_out_vec_1),
         .dl_detect_out(dl_in_vec[1]));
 
-    assign proc_1_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_2_U0.grp_v_mix_420_to_422_false_2_Pipeline_VITIS_LOOP_76_2_fu_74.srcLayer0_blk_n);
+    assign proc_1_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_2_U0.grp_v_mix_420_to_422_false_2_Pipeline_VITIS_LOOP_76_2_fu_74.srcLayer0_blk_n);
     assign proc_1_data_PIPO_blk[0] = 1'b0;
-    assign proc_1_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_420_to_422_false_2_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_2_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_420_to_422_false_2_U0_U.if_write);
+    assign proc_1_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_420_to_422_false_2_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_2_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_420_to_422_false_2_U0_U.if_write);
     assign proc_1_TLF_FIFO_blk[0] = 1'b0;
     assign proc_1_input_sync_blk[0] = 1'b0;
     assign proc_1_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_1[0] = dl_detect_out ? proc_dep_vld_vec_1_reg[0] : (proc_1_data_FIFO_blk[0] | proc_1_data_PIPO_blk[0] | proc_1_start_FIFO_blk[0] | proc_1_TLF_FIFO_blk[0] | proc_1_input_sync_blk[0] | proc_1_output_sync_blk[0]);
-    assign proc_1_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_2_U0.grp_v_mix_420_to_422_false_2_Pipeline_VITIS_LOOP_76_2_fu_74.srcLayer0Yuv422_blk_n);
+    assign proc_1_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_2_U0.grp_v_mix_420_to_422_false_2_Pipeline_VITIS_LOOP_76_2_fu_74.srcLayer0Yuv422_blk_n);
     assign proc_1_data_PIPO_blk[1] = 1'b0;
-    assign proc_1_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_422_to_444_false_3_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_2_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_2_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_422_to_444_false_3_U0_U.if_read);
+    assign proc_1_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_422_to_444_false_3_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_2_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_2_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_422_to_444_false_3_U0_U.if_read);
     assign proc_1_TLF_FIFO_blk[1] = 1'b0;
     assign proc_1_input_sync_blk[1] = 1'b0;
     assign proc_1_output_sync_blk[1] = 1'b0;
@@ -716,7 +716,7 @@ end
     assign dep_chan_data_1_2 = out_chan_dep_data_1;
     assign token_1_2 = token_out_vec_1[1];
 
-    // Process: grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_3_U0
+    // Process: grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_3_U0
     top_design_v_mix_0_0_hls_deadlock_detect_unit #(14, 2, 2, 2) top_design_v_mix_0_0_hls_deadlock_detect_unit_2 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -732,16 +732,16 @@ end
         .token_out_vec(token_out_vec_2),
         .dl_detect_out(dl_in_vec[2]));
 
-    assign proc_2_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_3_U0.grp_v_mix_422_to_444_false_3_Pipeline_VITIS_LOOP_105_2_fu_74.srcLayer0Yuv422_blk_n);
+    assign proc_2_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_3_U0.grp_v_mix_422_to_444_false_3_Pipeline_VITIS_LOOP_105_2_fu_74.srcLayer0Yuv422_blk_n);
     assign proc_2_data_PIPO_blk[0] = 1'b0;
-    assign proc_2_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_422_to_444_false_3_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_3_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_422_to_444_false_3_U0_U.if_write);
+    assign proc_2_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_422_to_444_false_3_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_3_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_422_to_444_false_3_U0_U.if_write);
     assign proc_2_TLF_FIFO_blk[0] = 1'b0;
     assign proc_2_input_sync_blk[0] = 1'b0;
     assign proc_2_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_2[0] = dl_detect_out ? proc_dep_vld_vec_2_reg[0] : (proc_2_data_FIFO_blk[0] | proc_2_data_PIPO_blk[0] | proc_2_start_FIFO_blk[0] | proc_2_TLF_FIFO_blk[0] | proc_2_input_sync_blk[0] | proc_2_output_sync_blk[0]);
-    assign proc_2_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_3_U0.grp_v_mix_422_to_444_false_3_Pipeline_VITIS_LOOP_105_2_fu_74.srcLayer0Yuv_blk_n);
+    assign proc_2_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_3_U0.grp_v_mix_422_to_444_false_3_Pipeline_VITIS_LOOP_105_2_fu_74.srcLayer0Yuv_blk_n);
     assign proc_2_data_PIPO_blk[1] = 1'b0;
-    assign proc_2_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_yuv2rgb_false_4_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_3_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_3_U0.real_start & (trans_in_cnt_2 == trans_out_cnt_2) & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_yuv2rgb_false_4_U0_U.if_read);
+    assign proc_2_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_yuv2rgb_false_4_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_3_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_3_U0.real_start & (trans_in_cnt_2 == trans_out_cnt_2) & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_yuv2rgb_false_4_U0_U.if_read);
     assign proc_2_TLF_FIFO_blk[1] = 1'b0;
     assign proc_2_input_sync_blk[1] = 1'b0;
     assign proc_2_output_sync_blk[1] = 1'b0;
@@ -767,7 +767,7 @@ end
     assign dep_chan_data_2_3 = out_chan_dep_data_2;
     assign token_2_3 = token_out_vec_2[1];
 
-    // Process: grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_4_U0
+    // Process: grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_4_U0
     top_design_v_mix_0_0_hls_deadlock_detect_unit #(14, 3, 2, 2) top_design_v_mix_0_0_hls_deadlock_detect_unit_3 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -783,16 +783,16 @@ end
         .token_out_vec(token_out_vec_3),
         .dl_detect_out(dl_in_vec[3]));
 
-    assign proc_3_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_4_U0.grp_v_mix_yuv2rgb_false_4_Pipeline_VITIS_LOOP_897_2_fu_74.srcLayer0Yuv_blk_n);
+    assign proc_3_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_4_U0.grp_v_mix_yuv2rgb_false_4_Pipeline_VITIS_LOOP_897_2_fu_74.srcLayer0Yuv_blk_n);
     assign proc_3_data_PIPO_blk[0] = 1'b0;
-    assign proc_3_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_yuv2rgb_false_4_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_4_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_yuv2rgb_false_4_U0_U.if_write);
+    assign proc_3_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_yuv2rgb_false_4_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_4_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_yuv2rgb_false_4_U0_U.if_write);
     assign proc_3_TLF_FIFO_blk[0] = 1'b0;
     assign proc_3_input_sync_blk[0] = 1'b0;
     assign proc_3_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_3[0] = dl_detect_out ? proc_dep_vld_vec_3_reg[0] : (proc_3_data_FIFO_blk[0] | proc_3_data_PIPO_blk[0] | proc_3_start_FIFO_blk[0] | proc_3_TLF_FIFO_blk[0] | proc_3_input_sync_blk[0] | proc_3_output_sync_blk[0]);
-    assign proc_3_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_4_U0.grp_v_mix_yuv2rgb_false_4_Pipeline_VITIS_LOOP_897_2_fu_74.outLayer0_blk_n);
+    assign proc_3_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_4_U0.grp_v_mix_yuv2rgb_false_4_Pipeline_VITIS_LOOP_897_2_fu_74.outLayer0_blk_n);
     assign proc_3_data_PIPO_blk[1] = 1'b0;
-    assign proc_3_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_core_alpha_false_false_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_4_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_4_U0.real_start & (trans_in_cnt_7 == trans_out_cnt_7) & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_core_alpha_false_false_U0_U.if_read);
+    assign proc_3_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_core_alpha_true_false_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_4_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_4_U0.real_start & (trans_in_cnt_7 == trans_out_cnt_7) & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_core_alpha_true_false_U0_U.if_read);
     assign proc_3_TLF_FIFO_blk[1] = 1'b0;
     assign proc_3_input_sync_blk[1] = 1'b0;
     assign proc_3_output_sync_blk[1] = 1'b0;
@@ -818,7 +818,7 @@ end
     assign dep_chan_data_3_9 = out_chan_dep_data_3;
     assign token_3_9 = token_out_vec_3[1];
 
-    // Process: grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_U0
+    // Process: grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_U0
     top_design_v_mix_0_0_hls_deadlock_detect_unit #(14, 4, 2, 2) top_design_v_mix_0_0_hls_deadlock_detect_unit_4 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -834,9 +834,9 @@ end
         .token_out_vec(token_out_vec_4),
         .dl_detect_out(dl_in_vec[4]));
 
-    assign proc_4_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_U0.grp_AXIvideo2MultiPixStream_Pipeline_loop_width_fu_160.srcLayer1_blk_n);
+    assign proc_4_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_U0.grp_AXIvideo2MultiPixStream_Pipeline_loop_width_fu_160.srcLayer1_blk_n);
     assign proc_4_data_PIPO_blk[0] = 1'b0;
-    assign proc_4_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_420_to_422_false_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_420_to_422_false_U0_U.if_read);
+    assign proc_4_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_420_to_422_false_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_420_to_422_false_U0_U.if_read);
     assign proc_4_TLF_FIFO_blk[0] = 1'b0;
     assign proc_4_input_sync_blk[0] = 1'b0;
     assign proc_4_output_sync_blk[0] = 1'b0;
@@ -845,7 +845,7 @@ end
     assign proc_4_data_PIPO_blk[1] = 1'b0;
     assign proc_4_start_FIFO_blk[1] = 1'b0;
     assign proc_4_TLF_FIFO_blk[1] = 1'b0;
-    assign proc_4_input_sync_blk[1] = 1'b0 | (grp_VMixHlsDataFlowFunction_fu_375.ap_sync_AXIvideo2MultiPixStream_U0_ap_ready & grp_VMixHlsDataFlowFunction_fu_375.AXIvideo2MultiPixStream_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_375.ap_sync_AXIvideo2MultiPixStream_1_U0_ap_ready);
+    assign proc_4_input_sync_blk[1] = 1'b0 | (grp_VMixHlsDataFlowFunction_fu_391.ap_sync_AXIvideo2MultiPixStream_U0_ap_ready & grp_VMixHlsDataFlowFunction_fu_391.AXIvideo2MultiPixStream_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_391.ap_sync_AXIvideo2MultiPixStream_1_U0_ap_ready);
     assign proc_4_output_sync_blk[1] = 1'b0;
     assign proc_dep_vld_vec_4[1] = dl_detect_out ? proc_dep_vld_vec_4_reg[1] : (proc_4_data_FIFO_blk[1] | proc_4_data_PIPO_blk[1] | proc_4_start_FIFO_blk[1] | proc_4_TLF_FIFO_blk[1] | proc_4_input_sync_blk[1] | proc_4_output_sync_blk[1]);
     always @ (negedge dl_reset or posedge dl_clock) begin
@@ -869,7 +869,7 @@ end
     assign dep_chan_data_4_0 = out_chan_dep_data_4;
     assign token_4_0 = token_out_vec_4[1];
 
-    // Process: grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_U0
+    // Process: grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_U0
     top_design_v_mix_0_0_hls_deadlock_detect_unit #(14, 5, 2, 2) top_design_v_mix_0_0_hls_deadlock_detect_unit_5 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -885,16 +885,16 @@ end
         .token_out_vec(token_out_vec_5),
         .dl_detect_out(dl_in_vec[5]));
 
-    assign proc_5_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_U0.grp_v_mix_420_to_422_false_Pipeline_VITIS_LOOP_76_2_fu_70.srcLayer1_blk_n);
+    assign proc_5_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_U0.grp_v_mix_420_to_422_false_Pipeline_VITIS_LOOP_76_2_fu_70.srcLayer1_blk_n);
     assign proc_5_data_PIPO_blk[0] = 1'b0;
-    assign proc_5_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_420_to_422_false_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_420_to_422_false_U0_U.if_write);
+    assign proc_5_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_420_to_422_false_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_420_to_422_false_U0_U.if_write);
     assign proc_5_TLF_FIFO_blk[0] = 1'b0;
     assign proc_5_input_sync_blk[0] = 1'b0;
     assign proc_5_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_5[0] = dl_detect_out ? proc_dep_vld_vec_5_reg[0] : (proc_5_data_FIFO_blk[0] | proc_5_data_PIPO_blk[0] | proc_5_start_FIFO_blk[0] | proc_5_TLF_FIFO_blk[0] | proc_5_input_sync_blk[0] | proc_5_output_sync_blk[0]);
-    assign proc_5_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_U0.grp_v_mix_420_to_422_false_Pipeline_VITIS_LOOP_76_2_fu_70.srcLayer1Yuv422_blk_n);
+    assign proc_5_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_U0.grp_v_mix_420_to_422_false_Pipeline_VITIS_LOOP_76_2_fu_70.srcLayer1Yuv422_blk_n);
     assign proc_5_data_PIPO_blk[1] = 1'b0;
-    assign proc_5_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_422_to_444_false_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_375.v_mix_420_to_422_false_U0.real_start & (trans_in_cnt_4 == trans_out_cnt_4) & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_422_to_444_false_U0_U.if_read);
+    assign proc_5_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_422_to_444_false_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_391.v_mix_420_to_422_false_U0.real_start & (trans_in_cnt_4 == trans_out_cnt_4) & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_422_to_444_false_U0_U.if_read);
     assign proc_5_TLF_FIFO_blk[1] = 1'b0;
     assign proc_5_input_sync_blk[1] = 1'b0;
     assign proc_5_output_sync_blk[1] = 1'b0;
@@ -920,7 +920,7 @@ end
     assign dep_chan_data_5_6 = out_chan_dep_data_5;
     assign token_5_6 = token_out_vec_5[1];
 
-    // Process: grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_U0
+    // Process: grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_U0
     top_design_v_mix_0_0_hls_deadlock_detect_unit #(14, 6, 2, 2) top_design_v_mix_0_0_hls_deadlock_detect_unit_6 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -936,16 +936,16 @@ end
         .token_out_vec(token_out_vec_6),
         .dl_detect_out(dl_in_vec[6]));
 
-    assign proc_6_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_U0.grp_v_mix_422_to_444_false_Pipeline_VITIS_LOOP_105_2_fu_70.srcLayer1Yuv422_blk_n);
+    assign proc_6_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_U0.grp_v_mix_422_to_444_false_Pipeline_VITIS_LOOP_105_2_fu_70.srcLayer1Yuv422_blk_n);
     assign proc_6_data_PIPO_blk[0] = 1'b0;
-    assign proc_6_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_422_to_444_false_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_422_to_444_false_U0_U.if_write);
+    assign proc_6_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_422_to_444_false_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_422_to_444_false_U0_U.if_write);
     assign proc_6_TLF_FIFO_blk[0] = 1'b0;
     assign proc_6_input_sync_blk[0] = 1'b0;
     assign proc_6_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_6[0] = dl_detect_out ? proc_dep_vld_vec_6_reg[0] : (proc_6_data_FIFO_blk[0] | proc_6_data_PIPO_blk[0] | proc_6_start_FIFO_blk[0] | proc_6_TLF_FIFO_blk[0] | proc_6_input_sync_blk[0] | proc_6_output_sync_blk[0]);
-    assign proc_6_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_U0.grp_v_mix_422_to_444_false_Pipeline_VITIS_LOOP_105_2_fu_70.srcLayer1Yuv_blk_n);
+    assign proc_6_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_U0.grp_v_mix_422_to_444_false_Pipeline_VITIS_LOOP_105_2_fu_70.srcLayer1Yuv_blk_n);
     assign proc_6_data_PIPO_blk[1] = 1'b0;
-    assign proc_6_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_yuv2rgb_false_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_444_false_U0.real_start & (trans_in_cnt_5 == trans_out_cnt_5) & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_yuv2rgb_false_U0_U.if_read);
+    assign proc_6_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_yuv2rgb_false_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_444_false_U0.real_start & (trans_in_cnt_5 == trans_out_cnt_5) & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_yuv2rgb_false_U0_U.if_read);
     assign proc_6_TLF_FIFO_blk[1] = 1'b0;
     assign proc_6_input_sync_blk[1] = 1'b0;
     assign proc_6_output_sync_blk[1] = 1'b0;
@@ -971,7 +971,7 @@ end
     assign dep_chan_data_6_7 = out_chan_dep_data_6;
     assign token_6_7 = token_out_vec_6[1];
 
-    // Process: grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_U0
+    // Process: grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_U0
     top_design_v_mix_0_0_hls_deadlock_detect_unit #(14, 7, 2, 2) top_design_v_mix_0_0_hls_deadlock_detect_unit_7 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -987,16 +987,16 @@ end
         .token_out_vec(token_out_vec_7),
         .dl_detect_out(dl_in_vec[7]));
 
-    assign proc_7_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_U0.grp_v_mix_yuv2rgb_false_Pipeline_VITIS_LOOP_897_2_fu_70.srcLayer1Yuv_blk_n);
+    assign proc_7_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_U0.grp_v_mix_yuv2rgb_false_Pipeline_VITIS_LOOP_897_2_fu_70.srcLayer1Yuv_blk_n);
     assign proc_7_data_PIPO_blk[0] = 1'b0;
-    assign proc_7_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_yuv2rgb_false_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_yuv2rgb_false_U0_U.if_write);
+    assign proc_7_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_yuv2rgb_false_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_yuv2rgb_false_U0_U.if_write);
     assign proc_7_TLF_FIFO_blk[0] = 1'b0;
     assign proc_7_input_sync_blk[0] = 1'b0;
     assign proc_7_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_7[0] = dl_detect_out ? proc_dep_vld_vec_7_reg[0] : (proc_7_data_FIFO_blk[0] | proc_7_data_PIPO_blk[0] | proc_7_start_FIFO_blk[0] | proc_7_TLF_FIFO_blk[0] | proc_7_input_sync_blk[0] | proc_7_output_sync_blk[0]);
-    assign proc_7_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_U0.grp_v_mix_yuv2rgb_false_Pipeline_VITIS_LOOP_897_2_fu_70.srcLayer1Rgb_blk_n);
+    assign proc_7_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_U0.grp_v_mix_yuv2rgb_false_Pipeline_VITIS_LOOP_897_2_fu_70.srcLayer1Rgb_blk_n);
     assign proc_7_data_PIPO_blk[1] = 1'b0;
-    assign proc_7_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_upsample_false_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_375.v_mix_yuv2rgb_false_U0.real_start & (trans_in_cnt_6 == trans_out_cnt_6) & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_upsample_false_U0_U.if_read);
+    assign proc_7_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_upsample_false_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_391.v_mix_yuv2rgb_false_U0.real_start & (trans_in_cnt_6 == trans_out_cnt_6) & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_upsample_false_U0_U.if_read);
     assign proc_7_TLF_FIFO_blk[1] = 1'b0;
     assign proc_7_input_sync_blk[1] = 1'b0;
     assign proc_7_output_sync_blk[1] = 1'b0;
@@ -1022,7 +1022,7 @@ end
     assign dep_chan_data_7_8 = out_chan_dep_data_7;
     assign token_7_8 = token_out_vec_7[1];
 
-    // Process: grp_VMixHlsDataFlowFunction_fu_375.v_mix_upsample_false_U0
+    // Process: grp_VMixHlsDataFlowFunction_fu_391.v_mix_upsample_false_U0
     top_design_v_mix_0_0_hls_deadlock_detect_unit #(14, 8, 2, 2) top_design_v_mix_0_0_hls_deadlock_detect_unit_8 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -1038,14 +1038,14 @@ end
         .token_out_vec(token_out_vec_8),
         .dl_detect_out(dl_in_vec[8]));
 
-    assign proc_8_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_upsample_false_U0.grp_v_mix_upsample_false_Pipeline_VITIS_LOOP_107_2_fu_70.srcLayer1Rgb_blk_n);
+    assign proc_8_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_upsample_false_U0.grp_v_mix_upsample_false_Pipeline_VITIS_LOOP_107_2_fu_70.srcLayer1Rgb_blk_n);
     assign proc_8_data_PIPO_blk[0] = 1'b0;
-    assign proc_8_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_upsample_false_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_upsample_false_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_upsample_false_U0_U.if_write);
+    assign proc_8_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_upsample_false_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_upsample_false_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_upsample_false_U0_U.if_write);
     assign proc_8_TLF_FIFO_blk[0] = 1'b0;
     assign proc_8_input_sync_blk[0] = 1'b0;
     assign proc_8_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_8[0] = dl_detect_out ? proc_dep_vld_vec_8_reg[0] : (proc_8_data_FIFO_blk[0] | proc_8_data_PIPO_blk[0] | proc_8_start_FIFO_blk[0] | proc_8_TLF_FIFO_blk[0] | proc_8_input_sync_blk[0] | proc_8_output_sync_blk[0]);
-    assign proc_8_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_upsample_false_U0.grp_v_mix_upsample_false_Pipeline_VITIS_LOOP_107_2_fu_70.srcLayer1x_blk_n);
+    assign proc_8_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_upsample_false_U0.grp_v_mix_upsample_false_Pipeline_VITIS_LOOP_107_2_fu_70.srcLayer1x_blk_n);
     assign proc_8_data_PIPO_blk[1] = 1'b0;
     assign proc_8_start_FIFO_blk[1] = 1'b0;
     assign proc_8_TLF_FIFO_blk[1] = 1'b0;
@@ -1073,7 +1073,7 @@ end
     assign dep_chan_data_8_9 = out_chan_dep_data_8;
     assign token_8_9 = token_out_vec_8[1];
 
-    // Process: grp_VMixHlsDataFlowFunction_fu_375.v_mix_core_alpha_false_false_U0
+    // Process: grp_VMixHlsDataFlowFunction_fu_391.v_mix_core_alpha_true_false_U0
     top_design_v_mix_0_0_hls_deadlock_detect_unit #(14, 9, 3, 3) top_design_v_mix_0_0_hls_deadlock_detect_unit_9 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -1089,23 +1089,23 @@ end
         .token_out_vec(token_out_vec_9),
         .dl_detect_out(dl_in_vec[9]));
 
-    assign proc_9_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_core_alpha_false_false_U0.grp_v_mix_core_alpha_false_false_Pipeline_VITIS_LOOP_465_3_fu_146.outLayer0_blk_n);
+    assign proc_9_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_core_alpha_true_false_U0.grp_v_mix_core_alpha_true_false_Pipeline_VITIS_LOOP_395_3_fu_170.outLayer0_blk_n);
     assign proc_9_data_PIPO_blk[0] = 1'b0;
-    assign proc_9_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_core_alpha_false_false_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_core_alpha_false_false_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_core_alpha_false_false_U0_U.if_write);
+    assign proc_9_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_core_alpha_true_false_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_core_alpha_true_false_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_core_alpha_true_false_U0_U.if_write);
     assign proc_9_TLF_FIFO_blk[0] = 1'b0;
     assign proc_9_input_sync_blk[0] = 1'b0;
     assign proc_9_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_9[0] = dl_detect_out ? proc_dep_vld_vec_9_reg[0] : (proc_9_data_FIFO_blk[0] | proc_9_data_PIPO_blk[0] | proc_9_start_FIFO_blk[0] | proc_9_TLF_FIFO_blk[0] | proc_9_input_sync_blk[0] | proc_9_output_sync_blk[0]);
-    assign proc_9_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_core_alpha_false_false_U0.grp_v_mix_core_alpha_false_false_Pipeline_VITIS_LOOP_465_3_fu_146.srcLayer1x_blk_n);
+    assign proc_9_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_core_alpha_true_false_U0.grp_v_mix_core_alpha_true_false_Pipeline_VITIS_LOOP_395_3_fu_170.srcLayer1x_blk_n);
     assign proc_9_data_PIPO_blk[1] = 1'b0;
     assign proc_9_start_FIFO_blk[1] = 1'b0;
     assign proc_9_TLF_FIFO_blk[1] = 1'b0;
     assign proc_9_input_sync_blk[1] = 1'b0;
     assign proc_9_output_sync_blk[1] = 1'b0;
     assign proc_dep_vld_vec_9[1] = dl_detect_out ? proc_dep_vld_vec_9_reg[1] : (proc_9_data_FIFO_blk[1] | proc_9_data_PIPO_blk[1] | proc_9_start_FIFO_blk[1] | proc_9_TLF_FIFO_blk[1] | proc_9_input_sync_blk[1] | proc_9_output_sync_blk[1]);
-    assign proc_9_data_FIFO_blk[2] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_core_alpha_false_false_U0.grp_v_mix_core_alpha_false_false_Pipeline_VITIS_LOOP_465_3_fu_146.outLayer1_blk_n);
+    assign proc_9_data_FIFO_blk[2] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_core_alpha_true_false_U0.grp_v_mix_core_alpha_true_false_Pipeline_VITIS_LOOP_395_3_fu_170.outLayer1_blk_n);
     assign proc_9_data_PIPO_blk[2] = 1'b0;
-    assign proc_9_start_FIFO_blk[2] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_rgb2yuv_false_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_core_alpha_false_false_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_375.v_mix_core_alpha_false_false_U0.real_start & (trans_in_cnt_8 == trans_out_cnt_8) & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_rgb2yuv_false_U0_U.if_read);
+    assign proc_9_start_FIFO_blk[2] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_rgb2yuv_false_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_core_alpha_true_false_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_391.v_mix_core_alpha_true_false_U0.real_start & (trans_in_cnt_8 == trans_out_cnt_8) & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_rgb2yuv_false_U0_U.if_read);
     assign proc_9_TLF_FIFO_blk[2] = 1'b0;
     assign proc_9_input_sync_blk[2] = 1'b0;
     assign proc_9_output_sync_blk[2] = 1'b0;
@@ -1137,7 +1137,7 @@ end
     assign dep_chan_data_9_10 = out_chan_dep_data_9;
     assign token_9_10 = token_out_vec_9[2];
 
-    // Process: grp_VMixHlsDataFlowFunction_fu_375.v_mix_rgb2yuv_false_U0
+    // Process: grp_VMixHlsDataFlowFunction_fu_391.v_mix_rgb2yuv_false_U0
     top_design_v_mix_0_0_hls_deadlock_detect_unit #(14, 10, 2, 2) top_design_v_mix_0_0_hls_deadlock_detect_unit_10 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -1153,16 +1153,16 @@ end
         .token_out_vec(token_out_vec_10),
         .dl_detect_out(dl_in_vec[10]));
 
-    assign proc_10_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_rgb2yuv_false_U0.grp_v_mix_rgb2yuv_false_Pipeline_VITIS_LOOP_1042_2_fu_62.outLayer1_blk_n);
+    assign proc_10_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_rgb2yuv_false_U0.grp_v_mix_rgb2yuv_false_Pipeline_VITIS_LOOP_1042_2_fu_62.outLayer1_blk_n);
     assign proc_10_data_PIPO_blk[0] = 1'b0;
-    assign proc_10_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_rgb2yuv_false_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_rgb2yuv_false_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_rgb2yuv_false_U0_U.if_write);
+    assign proc_10_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_rgb2yuv_false_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_rgb2yuv_false_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_rgb2yuv_false_U0_U.if_write);
     assign proc_10_TLF_FIFO_blk[0] = 1'b0;
     assign proc_10_input_sync_blk[0] = 1'b0;
     assign proc_10_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_10[0] = dl_detect_out ? proc_dep_vld_vec_10_reg[0] : (proc_10_data_FIFO_blk[0] | proc_10_data_PIPO_blk[0] | proc_10_start_FIFO_blk[0] | proc_10_TLF_FIFO_blk[0] | proc_10_input_sync_blk[0] | proc_10_output_sync_blk[0]);
-    assign proc_10_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_rgb2yuv_false_U0.grp_v_mix_rgb2yuv_false_Pipeline_VITIS_LOOP_1042_2_fu_62.outYuv_blk_n);
+    assign proc_10_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_rgb2yuv_false_U0.grp_v_mix_rgb2yuv_false_Pipeline_VITIS_LOOP_1042_2_fu_62.outYuv_blk_n);
     assign proc_10_data_PIPO_blk[1] = 1'b0;
-    assign proc_10_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_444_to_422_false_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_rgb2yuv_false_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_375.v_mix_rgb2yuv_false_U0.real_start & (trans_in_cnt_9 == trans_out_cnt_9) & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_444_to_422_false_U0_U.if_read);
+    assign proc_10_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_444_to_422_false_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_rgb2yuv_false_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_391.v_mix_rgb2yuv_false_U0.real_start & (trans_in_cnt_9 == trans_out_cnt_9) & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_444_to_422_false_U0_U.if_read);
     assign proc_10_TLF_FIFO_blk[1] = 1'b0;
     assign proc_10_input_sync_blk[1] = 1'b0;
     assign proc_10_output_sync_blk[1] = 1'b0;
@@ -1188,7 +1188,7 @@ end
     assign dep_chan_data_10_11 = out_chan_dep_data_10;
     assign token_10_11 = token_out_vec_10[1];
 
-    // Process: grp_VMixHlsDataFlowFunction_fu_375.v_mix_444_to_422_false_U0
+    // Process: grp_VMixHlsDataFlowFunction_fu_391.v_mix_444_to_422_false_U0
     top_design_v_mix_0_0_hls_deadlock_detect_unit #(14, 11, 2, 2) top_design_v_mix_0_0_hls_deadlock_detect_unit_11 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -1204,16 +1204,16 @@ end
         .token_out_vec(token_out_vec_11),
         .dl_detect_out(dl_in_vec[11]));
 
-    assign proc_11_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_444_to_422_false_U0.grp_v_mix_444_to_422_false_Pipeline_VITIS_LOOP_718_2_fu_62.outYuv_blk_n);
+    assign proc_11_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_444_to_422_false_U0.grp_v_mix_444_to_422_false_Pipeline_VITIS_LOOP_718_2_fu_62.outYuv_blk_n);
     assign proc_11_data_PIPO_blk[0] = 1'b0;
-    assign proc_11_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_444_to_422_false_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_444_to_422_false_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_444_to_422_false_U0_U.if_write);
+    assign proc_11_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_444_to_422_false_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_444_to_422_false_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_444_to_422_false_U0_U.if_write);
     assign proc_11_TLF_FIFO_blk[0] = 1'b0;
     assign proc_11_input_sync_blk[0] = 1'b0;
     assign proc_11_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_11[0] = dl_detect_out ? proc_dep_vld_vec_11_reg[0] : (proc_11_data_FIFO_blk[0] | proc_11_data_PIPO_blk[0] | proc_11_start_FIFO_blk[0] | proc_11_TLF_FIFO_blk[0] | proc_11_input_sync_blk[0] | proc_11_output_sync_blk[0]);
-    assign proc_11_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_444_to_422_false_U0.grp_v_mix_444_to_422_false_Pipeline_VITIS_LOOP_718_2_fu_62.out422_blk_n);
+    assign proc_11_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_444_to_422_false_U0.grp_v_mix_444_to_422_false_Pipeline_VITIS_LOOP_718_2_fu_62.out422_blk_n);
     assign proc_11_data_PIPO_blk[1] = 1'b0;
-    assign proc_11_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_422_to_420_false_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_444_to_422_false_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_375.v_mix_444_to_422_false_U0.real_start & (trans_in_cnt_10 == trans_out_cnt_10) & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_422_to_420_false_U0_U.if_read);
+    assign proc_11_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_422_to_420_false_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_444_to_422_false_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_391.v_mix_444_to_422_false_U0.real_start & (trans_in_cnt_10 == trans_out_cnt_10) & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_422_to_420_false_U0_U.if_read);
     assign proc_11_TLF_FIFO_blk[1] = 1'b0;
     assign proc_11_input_sync_blk[1] = 1'b0;
     assign proc_11_output_sync_blk[1] = 1'b0;
@@ -1239,7 +1239,7 @@ end
     assign dep_chan_data_11_12 = out_chan_dep_data_11;
     assign token_11_12 = token_out_vec_11[1];
 
-    // Process: grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_420_false_U0
+    // Process: grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_420_false_U0
     top_design_v_mix_0_0_hls_deadlock_detect_unit #(14, 12, 2, 2) top_design_v_mix_0_0_hls_deadlock_detect_unit_12 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -1255,16 +1255,16 @@ end
         .token_out_vec(token_out_vec_12),
         .dl_detect_out(dl_in_vec[12]));
 
-    assign proc_12_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_420_false_U0.grp_v_mix_422_to_420_false_Pipeline_VITIS_LOOP_508_2_fu_62.out422_blk_n);
+    assign proc_12_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_420_false_U0.grp_v_mix_422_to_420_false_Pipeline_VITIS_LOOP_508_2_fu_62.out422_blk_n);
     assign proc_12_data_PIPO_blk[0] = 1'b0;
-    assign proc_12_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_422_to_420_false_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_420_false_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_v_mix_422_to_420_false_U0_U.if_write);
+    assign proc_12_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_422_to_420_false_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_420_false_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_v_mix_422_to_420_false_U0_U.if_write);
     assign proc_12_TLF_FIFO_blk[0] = 1'b0;
     assign proc_12_input_sync_blk[0] = 1'b0;
     assign proc_12_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_12[0] = dl_detect_out ? proc_dep_vld_vec_12_reg[0] : (proc_12_data_FIFO_blk[0] | proc_12_data_PIPO_blk[0] | proc_12_start_FIFO_blk[0] | proc_12_TLF_FIFO_blk[0] | proc_12_input_sync_blk[0] | proc_12_output_sync_blk[0]);
-    assign proc_12_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_420_false_U0.grp_v_mix_422_to_420_false_Pipeline_VITIS_LOOP_508_2_fu_62.out420_blk_n);
+    assign proc_12_data_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_420_false_U0.grp_v_mix_422_to_420_false_Pipeline_VITIS_LOOP_508_2_fu_62.out420_blk_n);
     assign proc_12_data_PIPO_blk[1] = 1'b0;
-    assign proc_12_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_MultiPixStream2AXIvideo_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_420_false_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_375.v_mix_422_to_420_false_U0.real_start & (trans_in_cnt_11 == trans_out_cnt_11) & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_MultiPixStream2AXIvideo_U0_U.if_read);
+    assign proc_12_start_FIFO_blk[1] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_MultiPixStream2AXIvideo_U0_U.if_full_n & grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_420_false_U0.ap_start & ~grp_VMixHlsDataFlowFunction_fu_391.v_mix_422_to_420_false_U0.real_start & (trans_in_cnt_11 == trans_out_cnt_11) & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_MultiPixStream2AXIvideo_U0_U.if_read);
     assign proc_12_TLF_FIFO_blk[1] = 1'b0;
     assign proc_12_input_sync_blk[1] = 1'b0;
     assign proc_12_output_sync_blk[1] = 1'b0;
@@ -1290,7 +1290,7 @@ end
     assign dep_chan_data_12_13 = out_chan_dep_data_12;
     assign token_12_13 = token_out_vec_12[1];
 
-    // Process: grp_VMixHlsDataFlowFunction_fu_375.MultiPixStream2AXIvideo_U0
+    // Process: grp_VMixHlsDataFlowFunction_fu_391.MultiPixStream2AXIvideo_U0
     top_design_v_mix_0_0_hls_deadlock_detect_unit #(14, 13, 1, 1) top_design_v_mix_0_0_hls_deadlock_detect_unit_13 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -1306,9 +1306,9 @@ end
         .token_out_vec(token_out_vec_13),
         .dl_detect_out(dl_in_vec[13]));
 
-    assign proc_13_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.MultiPixStream2AXIvideo_U0.grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_3903_3_fu_96.out420_blk_n);
+    assign proc_13_data_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.MultiPixStream2AXIvideo_U0.grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_3903_3_fu_96.out420_blk_n);
     assign proc_13_data_PIPO_blk[0] = 1'b0;
-    assign proc_13_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_375.start_for_MultiPixStream2AXIvideo_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_375.MultiPixStream2AXIvideo_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_375.start_for_MultiPixStream2AXIvideo_U0_U.if_write);
+    assign proc_13_start_FIFO_blk[0] = 1'b0 | (~grp_VMixHlsDataFlowFunction_fu_391.start_for_MultiPixStream2AXIvideo_U0_U.if_empty_n & grp_VMixHlsDataFlowFunction_fu_391.MultiPixStream2AXIvideo_U0.ap_idle & ~grp_VMixHlsDataFlowFunction_fu_391.start_for_MultiPixStream2AXIvideo_U0_U.if_write);
     assign proc_13_TLF_FIFO_blk[0] = 1'b0;
     assign proc_13_input_sync_blk[0] = 1'b0;
     assign proc_13_output_sync_blk[0] = 1'b0;

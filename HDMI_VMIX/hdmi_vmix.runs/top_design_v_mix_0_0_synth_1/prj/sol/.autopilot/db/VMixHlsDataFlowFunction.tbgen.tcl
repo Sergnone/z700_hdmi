@@ -15,7 +15,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 38
+set cdfgNum 39
 set C_modelName {VMixHlsDataFlowFunction}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
@@ -28,11 +28,12 @@ set C_modelArgList {
 	{ HwReg_layerEnable_val13 int 2 regular {ap_stable 0} }
 	{ HwReg_layerEnableFlag_0_val int 1 regular {ap_stable 0} }
 	{ HwReg_layerEnableFlag_1_val int 1 regular {ap_stable 0} }
-	{ HwReg_layerStartX_1_val14 int 16 regular {ap_stable 0} }
-	{ HwReg_layerStartY_1_val15 int 16 regular {ap_stable 0} }
+	{ HwReg_layerAlpha_1_val14 int 9 regular {ap_stable 0} }
+	{ HwReg_layerStartX_1_val15 int 16 regular {ap_stable 0} }
+	{ HwReg_layerStartY_1_val16 int 16 regular {ap_stable 0} }
 	{ HwReg_layerWidth_1_val int 16 regular {ap_stable 0} }
 	{ HwReg_layerHeight_1_val int 16 regular {ap_stable 0} }
-	{ HwReg_layerScaleFactor_1_val18 int 8 regular {ap_stable 0} }
+	{ HwReg_layerScaleFactor_1_val19 int 8 regular {ap_stable 0} }
 	{ s_axis_video_V_data_V int 24 regular {axi_s 0 volatile  { s_axis_video Data } }  }
 	{ s_axis_video_V_keep_V int 3 regular {axi_s 0 volatile  { s_axis_video Keep } }  }
 	{ s_axis_video_V_strb_V int 3 regular {axi_s 0 volatile  { s_axis_video Strb } }  }
@@ -67,11 +68,12 @@ set C_modelArgMapList {[
  	{ "Name" : "HwReg_layerEnable_val13", "interface" : "wire", "bitwidth" : 2, "direction" : "READONLY"} , 
  	{ "Name" : "HwReg_layerEnableFlag_0_val", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "HwReg_layerEnableFlag_1_val", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
- 	{ "Name" : "HwReg_layerStartX_1_val14", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
- 	{ "Name" : "HwReg_layerStartY_1_val15", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
+ 	{ "Name" : "HwReg_layerAlpha_1_val14", "interface" : "wire", "bitwidth" : 9, "direction" : "READONLY"} , 
+ 	{ "Name" : "HwReg_layerStartX_1_val15", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
+ 	{ "Name" : "HwReg_layerStartY_1_val16", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
  	{ "Name" : "HwReg_layerWidth_1_val", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
  	{ "Name" : "HwReg_layerHeight_1_val", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
- 	{ "Name" : "HwReg_layerScaleFactor_1_val18", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "HwReg_layerScaleFactor_1_val19", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
  	{ "Name" : "s_axis_video_V_data_V", "interface" : "axis", "bitwidth" : 24, "direction" : "READONLY"} , 
  	{ "Name" : "s_axis_video_V_keep_V", "interface" : "axis", "bitwidth" : 3, "direction" : "READONLY"} , 
  	{ "Name" : "s_axis_video_V_strb_V", "interface" : "axis", "bitwidth" : 3, "direction" : "READONLY"} , 
@@ -94,7 +96,7 @@ set C_modelArgMapList {[
  	{ "Name" : "m_axis_video_V_id_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
  	{ "Name" : "m_axis_video_V_dest_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 60
+set portNum 62
 set portList { 
 	{ HwReg_width_val sc_in sc_lv 11 signal 0 } 
 	{ HwReg_height_val sc_in sc_lv 11 signal 1 } 
@@ -104,54 +106,56 @@ set portList {
 	{ HwReg_layerEnable_val13 sc_in sc_lv 2 signal 5 } 
 	{ HwReg_layerEnableFlag_0_val sc_in sc_lv 1 signal 6 } 
 	{ HwReg_layerEnableFlag_1_val sc_in sc_lv 1 signal 7 } 
-	{ HwReg_layerStartX_1_val14 sc_in sc_lv 16 signal 8 } 
-	{ HwReg_layerStartY_1_val15 sc_in sc_lv 16 signal 9 } 
-	{ HwReg_layerWidth_1_val sc_in sc_lv 16 signal 10 } 
-	{ HwReg_layerHeight_1_val sc_in sc_lv 16 signal 11 } 
-	{ HwReg_layerScaleFactor_1_val18 sc_in sc_lv 8 signal 12 } 
-	{ s_axis_video_TDATA sc_in sc_lv 24 signal 13 } 
-	{ s_axis_video_TKEEP sc_in sc_lv 3 signal 14 } 
-	{ s_axis_video_TSTRB sc_in sc_lv 3 signal 15 } 
-	{ s_axis_video_TUSER sc_in sc_lv 1 signal 16 } 
-	{ s_axis_video_TLAST sc_in sc_lv 1 signal 17 } 
-	{ s_axis_video_TID sc_in sc_lv 1 signal 18 } 
-	{ s_axis_video_TDEST sc_in sc_lv 1 signal 19 } 
-	{ s_axis_video1_TDATA sc_in sc_lv 24 signal 20 } 
-	{ s_axis_video1_TKEEP sc_in sc_lv 3 signal 21 } 
-	{ s_axis_video1_TSTRB sc_in sc_lv 3 signal 22 } 
-	{ s_axis_video1_TUSER sc_in sc_lv 1 signal 23 } 
-	{ s_axis_video1_TLAST sc_in sc_lv 1 signal 24 } 
-	{ s_axis_video1_TID sc_in sc_lv 1 signal 25 } 
-	{ s_axis_video1_TDEST sc_in sc_lv 1 signal 26 } 
-	{ m_axis_video_TDATA sc_out sc_lv 24 signal 27 } 
-	{ m_axis_video_TKEEP sc_out sc_lv 3 signal 28 } 
-	{ m_axis_video_TSTRB sc_out sc_lv 3 signal 29 } 
-	{ m_axis_video_TUSER sc_out sc_lv 1 signal 30 } 
-	{ m_axis_video_TLAST sc_out sc_lv 1 signal 31 } 
-	{ m_axis_video_TID sc_out sc_lv 1 signal 32 } 
-	{ m_axis_video_TDEST sc_out sc_lv 1 signal 33 } 
+	{ HwReg_layerAlpha_1_val14 sc_in sc_lv 9 signal 8 } 
+	{ HwReg_layerStartX_1_val15 sc_in sc_lv 16 signal 9 } 
+	{ HwReg_layerStartY_1_val16 sc_in sc_lv 16 signal 10 } 
+	{ HwReg_layerWidth_1_val sc_in sc_lv 16 signal 11 } 
+	{ HwReg_layerHeight_1_val sc_in sc_lv 16 signal 12 } 
+	{ HwReg_layerScaleFactor_1_val19 sc_in sc_lv 8 signal 13 } 
+	{ s_axis_video_TDATA sc_in sc_lv 24 signal 14 } 
+	{ s_axis_video_TKEEP sc_in sc_lv 3 signal 15 } 
+	{ s_axis_video_TSTRB sc_in sc_lv 3 signal 16 } 
+	{ s_axis_video_TUSER sc_in sc_lv 1 signal 17 } 
+	{ s_axis_video_TLAST sc_in sc_lv 1 signal 18 } 
+	{ s_axis_video_TID sc_in sc_lv 1 signal 19 } 
+	{ s_axis_video_TDEST sc_in sc_lv 1 signal 20 } 
+	{ s_axis_video1_TDATA sc_in sc_lv 24 signal 21 } 
+	{ s_axis_video1_TKEEP sc_in sc_lv 3 signal 22 } 
+	{ s_axis_video1_TSTRB sc_in sc_lv 3 signal 23 } 
+	{ s_axis_video1_TUSER sc_in sc_lv 1 signal 24 } 
+	{ s_axis_video1_TLAST sc_in sc_lv 1 signal 25 } 
+	{ s_axis_video1_TID sc_in sc_lv 1 signal 26 } 
+	{ s_axis_video1_TDEST sc_in sc_lv 1 signal 27 } 
+	{ m_axis_video_TDATA sc_out sc_lv 24 signal 28 } 
+	{ m_axis_video_TKEEP sc_out sc_lv 3 signal 29 } 
+	{ m_axis_video_TSTRB sc_out sc_lv 3 signal 30 } 
+	{ m_axis_video_TUSER sc_out sc_lv 1 signal 31 } 
+	{ m_axis_video_TLAST sc_out sc_lv 1 signal 32 } 
+	{ m_axis_video_TID sc_out sc_lv 1 signal 33 } 
+	{ m_axis_video_TDEST sc_out sc_lv 1 signal 34 } 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
-	{ s_axis_video_TVALID sc_in sc_logic 1 invld 19 } 
-	{ s_axis_video_TREADY sc_out sc_logic 1 inacc 19 } 
+	{ s_axis_video_TVALID sc_in sc_logic 1 invld 20 } 
+	{ s_axis_video_TREADY sc_out sc_logic 1 inacc 20 } 
 	{ HwReg_height_val_ap_vld sc_in sc_logic 1 invld 1 } 
 	{ HwReg_width_val_ap_vld sc_in sc_logic 1 invld 0 } 
 	{ HwReg_layerEnableFlag_0_val_ap_vld sc_in sc_logic 1 invld 6 } 
 	{ ap_start sc_in sc_logic 1 start -1 } 
-	{ s_axis_video1_TVALID sc_in sc_logic 1 invld 26 } 
-	{ s_axis_video1_TREADY sc_out sc_logic 1 inacc 26 } 
-	{ HwReg_layerHeight_1_val_ap_vld sc_in sc_logic 1 invld 11 } 
-	{ HwReg_layerWidth_1_val_ap_vld sc_in sc_logic 1 invld 10 } 
+	{ s_axis_video1_TVALID sc_in sc_logic 1 invld 27 } 
+	{ s_axis_video1_TREADY sc_out sc_logic 1 inacc 27 } 
+	{ HwReg_layerHeight_1_val_ap_vld sc_in sc_logic 1 invld 12 } 
+	{ HwReg_layerWidth_1_val_ap_vld sc_in sc_logic 1 invld 11 } 
 	{ HwReg_layerEnableFlag_1_val_ap_vld sc_in sc_logic 1 invld 7 } 
 	{ HwReg_background_Y_R_val10_ap_vld sc_in sc_logic 1 invld 2 } 
 	{ HwReg_background_U_G_val11_ap_vld sc_in sc_logic 1 invld 3 } 
 	{ HwReg_background_V_B_val12_ap_vld sc_in sc_logic 1 invld 4 } 
 	{ HwReg_layerEnable_val13_ap_vld sc_in sc_logic 1 invld 5 } 
-	{ HwReg_layerStartX_1_val14_ap_vld sc_in sc_logic 1 invld 8 } 
-	{ HwReg_layerStartY_1_val15_ap_vld sc_in sc_logic 1 invld 9 } 
-	{ HwReg_layerScaleFactor_1_val18_ap_vld sc_in sc_logic 1 invld 12 } 
-	{ m_axis_video_TVALID sc_out sc_logic 1 outvld 33 } 
-	{ m_axis_video_TREADY sc_in sc_logic 1 outacc 33 } 
+	{ HwReg_layerAlpha_1_val14_ap_vld sc_in sc_logic 1 invld 8 } 
+	{ HwReg_layerStartX_1_val15_ap_vld sc_in sc_logic 1 invld 9 } 
+	{ HwReg_layerStartY_1_val16_ap_vld sc_in sc_logic 1 invld 10 } 
+	{ HwReg_layerScaleFactor_1_val19_ap_vld sc_in sc_logic 1 invld 13 } 
+	{ m_axis_video_TVALID sc_out sc_logic 1 outvld 34 } 
+	{ m_axis_video_TREADY sc_in sc_logic 1 outacc 34 } 
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
@@ -166,11 +170,12 @@ set NewPortList {[
  	{ "name": "HwReg_layerEnable_val13", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "HwReg_layerEnable_val13", "role": "default" }} , 
  	{ "name": "HwReg_layerEnableFlag_0_val", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "HwReg_layerEnableFlag_0_val", "role": "default" }} , 
  	{ "name": "HwReg_layerEnableFlag_1_val", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "HwReg_layerEnableFlag_1_val", "role": "default" }} , 
- 	{ "name": "HwReg_layerStartX_1_val14", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "HwReg_layerStartX_1_val14", "role": "default" }} , 
- 	{ "name": "HwReg_layerStartY_1_val15", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "HwReg_layerStartY_1_val15", "role": "default" }} , 
+ 	{ "name": "HwReg_layerAlpha_1_val14", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "HwReg_layerAlpha_1_val14", "role": "default" }} , 
+ 	{ "name": "HwReg_layerStartX_1_val15", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "HwReg_layerStartX_1_val15", "role": "default" }} , 
+ 	{ "name": "HwReg_layerStartY_1_val16", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "HwReg_layerStartY_1_val16", "role": "default" }} , 
  	{ "name": "HwReg_layerWidth_1_val", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "HwReg_layerWidth_1_val", "role": "default" }} , 
  	{ "name": "HwReg_layerHeight_1_val", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "HwReg_layerHeight_1_val", "role": "default" }} , 
- 	{ "name": "HwReg_layerScaleFactor_1_val18", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "HwReg_layerScaleFactor_1_val18", "role": "default" }} , 
+ 	{ "name": "HwReg_layerScaleFactor_1_val19", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "HwReg_layerScaleFactor_1_val19", "role": "default" }} , 
  	{ "name": "s_axis_video_TDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "s_axis_video_V_data_V", "role": "default" }} , 
  	{ "name": "s_axis_video_TKEEP", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "s_axis_video_V_keep_V", "role": "default" }} , 
  	{ "name": "s_axis_video_TSTRB", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "s_axis_video_V_strb_V", "role": "default" }} , 
@@ -209,9 +214,10 @@ set NewPortList {[
  	{ "name": "HwReg_background_U_G_val11_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "HwReg_background_U_G_val11", "role": "ap_vld" }} , 
  	{ "name": "HwReg_background_V_B_val12_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "HwReg_background_V_B_val12", "role": "ap_vld" }} , 
  	{ "name": "HwReg_layerEnable_val13_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "HwReg_layerEnable_val13", "role": "ap_vld" }} , 
- 	{ "name": "HwReg_layerStartX_1_val14_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "HwReg_layerStartX_1_val14", "role": "ap_vld" }} , 
- 	{ "name": "HwReg_layerStartY_1_val15_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "HwReg_layerStartY_1_val15", "role": "ap_vld" }} , 
- 	{ "name": "HwReg_layerScaleFactor_1_val18_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "HwReg_layerScaleFactor_1_val18", "role": "ap_vld" }} , 
+ 	{ "name": "HwReg_layerAlpha_1_val14_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "HwReg_layerAlpha_1_val14", "role": "ap_vld" }} , 
+ 	{ "name": "HwReg_layerStartX_1_val15_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "HwReg_layerStartX_1_val15", "role": "ap_vld" }} , 
+ 	{ "name": "HwReg_layerStartY_1_val16_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "HwReg_layerStartY_1_val16", "role": "ap_vld" }} , 
+ 	{ "name": "HwReg_layerScaleFactor_1_val19_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "HwReg_layerScaleFactor_1_val19", "role": "ap_vld" }} , 
  	{ "name": "m_axis_video_TVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "m_axis_video_V_dest_V", "role": "default" }} , 
  	{ "name": "m_axis_video_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "m_axis_video_V_dest_V", "role": "default" }} , 
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
@@ -229,11 +235,12 @@ set ArgLastReadFirstWriteLatency {
 		HwReg_layerEnable_val13 {Type I LastRead 10 FirstWrite -1}
 		HwReg_layerEnableFlag_0_val {Type I LastRead 0 FirstWrite -1}
 		HwReg_layerEnableFlag_1_val {Type I LastRead 0 FirstWrite -1}
-		HwReg_layerStartX_1_val14 {Type I LastRead 10 FirstWrite -1}
-		HwReg_layerStartY_1_val15 {Type I LastRead 10 FirstWrite -1}
+		HwReg_layerAlpha_1_val14 {Type I LastRead 10 FirstWrite -1}
+		HwReg_layerStartX_1_val15 {Type I LastRead 10 FirstWrite -1}
+		HwReg_layerStartY_1_val16 {Type I LastRead 10 FirstWrite -1}
 		HwReg_layerWidth_1_val {Type I LastRead 0 FirstWrite -1}
 		HwReg_layerHeight_1_val {Type I LastRead 0 FirstWrite -1}
-		HwReg_layerScaleFactor_1_val18 {Type I LastRead 10 FirstWrite -1}
+		HwReg_layerScaleFactor_1_val19 {Type I LastRead 10 FirstWrite -1}
 		s_axis_video_V_data_V {Type I LastRead 1 FirstWrite -1}
 		s_axis_video_V_keep_V {Type I LastRead 1 FirstWrite -1}
 		s_axis_video_V_strb_V {Type I LastRead 1 FirstWrite -1}
@@ -433,35 +440,42 @@ set ArgLastReadFirstWriteLatency {
 		empty {Type I LastRead 0 FirstWrite -1}
 		srcLayer1Rgb {Type I LastRead 1 FirstWrite -1}
 		srcLayer1x {Type O LastRead -1 FirstWrite 1}}
-	v_mix_core_alpha_false_false_s {
+	v_mix_core_alpha_true_false_s {
 		outLayer0 {Type I LastRead 1 FirstWrite -1}
 		srcLayer1x {Type I LastRead 1 FirstWrite -1}
+		hwReg_width_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_height_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_background_Y_R_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_background_U_G_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_background_V_B_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_layerEnable_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_layerAlpha_1_val {Type I LastRead 0 FirstWrite -1}
+		hwReg_layerStartX_1_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_layerStartY_1_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_layerWidth_1_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_layerHeight_1_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_layerScaleFactor_1_val {Type I LastRead 1 FirstWrite -1}
+		outLayer1 {Type O LastRead -1 FirstWrite 5}}
+	v_mix_core_alpha_true_false_Pipeline_VITIS_LOOP_395_3 {
 		hwReg_width_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_height_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_background_Y_R_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_background_U_G_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_background_V_B_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_layerEnable_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_layerStartX_1_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_layerStartY_1_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_layerWidth_1_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_layerHeight_1_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_layerScaleFactor_1_val {Type I LastRead 0 FirstWrite -1}
-		outLayer1 {Type O LastRead -1 FirstWrite 2}}
-	v_mix_core_alpha_false_false_Pipeline_VITIS_LOOP_465_3 {
-		hwReg_width_val {Type I LastRead 0 FirstWrite -1}
-		outLayer1 {Type O LastRead -1 FirstWrite 2}
+		alpha {Type I LastRead 0 FirstWrite -1}
+		outLayer1 {Type O LastRead -1 FirstWrite 5}
 		srcLayer1x {Type I LastRead 1 FirstWrite -1}
 		hwReg_background_Y_R_val {Type I LastRead 0 FirstWrite -1}
 		hwReg_background_U_G_val {Type I LastRead 0 FirstWrite -1}
 		hwReg_background_V_B_val {Type I LastRead 0 FirstWrite -1}
 		hwReg_layerStartX_1_val {Type I LastRead 0 FirstWrite -1}
-		add_ln478 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln476_1 {Type I LastRead 0 FirstWrite -1}
-		rev5 {Type I LastRead 0 FirstWrite -1}
+		add_ln409 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln407_1 {Type I LastRead 0 FirstWrite -1}
+		rev7 {Type I LastRead 0 FirstWrite -1}
 		empty_50 {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
-		outLayer0 {Type I LastRead 1 FirstWrite -1}}
+		outLayer0 {Type I LastRead 1 FirstWrite -1}
+		p_out {Type IO LastRead 2 FirstWrite 1}
+		p_out1 {Type IO LastRead 2 FirstWrite 1}
+		p_out2 {Type IO LastRead 2 FirstWrite 1}}
+	reg_unsigned_short_7 {
+		d {Type I LastRead 1 FirstWrite -1}}
 	v_mix_rgb2yuv_false_s {
 		outLayer1 {Type I LastRead 1 FirstWrite -1}
 		height_val {Type I LastRead 0 FirstWrite -1}
@@ -520,8 +534,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "4493", "Max" : "2084406"}
-	, {"Name" : "Interval", "Min" : "4482", "Max" : "2084407"}
+	{"Name" : "Latency", "Min" : "4685", "Max" : "2084406"}
+	, {"Name" : "Interval", "Min" : "4675", "Max" : "2084407"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -536,11 +550,12 @@ set Spec2ImplPortList {
 	HwReg_layerEnable_val13 { ap_none {  { HwReg_layerEnable_val13 in_data 0 2 }  { HwReg_layerEnable_val13_ap_vld in_vld 0 1 } } }
 	HwReg_layerEnableFlag_0_val { ap_none {  { HwReg_layerEnableFlag_0_val in_data 0 1 }  { HwReg_layerEnableFlag_0_val_ap_vld in_vld 0 1 } } }
 	HwReg_layerEnableFlag_1_val { ap_none {  { HwReg_layerEnableFlag_1_val in_data 0 1 }  { HwReg_layerEnableFlag_1_val_ap_vld in_vld 0 1 } } }
-	HwReg_layerStartX_1_val14 { ap_none {  { HwReg_layerStartX_1_val14 in_data 0 16 }  { HwReg_layerStartX_1_val14_ap_vld in_vld 0 1 } } }
-	HwReg_layerStartY_1_val15 { ap_none {  { HwReg_layerStartY_1_val15 in_data 0 16 }  { HwReg_layerStartY_1_val15_ap_vld in_vld 0 1 } } }
+	HwReg_layerAlpha_1_val14 { ap_none {  { HwReg_layerAlpha_1_val14 in_data 0 9 }  { HwReg_layerAlpha_1_val14_ap_vld in_vld 0 1 } } }
+	HwReg_layerStartX_1_val15 { ap_none {  { HwReg_layerStartX_1_val15 in_data 0 16 }  { HwReg_layerStartX_1_val15_ap_vld in_vld 0 1 } } }
+	HwReg_layerStartY_1_val16 { ap_none {  { HwReg_layerStartY_1_val16 in_data 0 16 }  { HwReg_layerStartY_1_val16_ap_vld in_vld 0 1 } } }
 	HwReg_layerWidth_1_val { ap_none {  { HwReg_layerWidth_1_val in_data 0 16 }  { HwReg_layerWidth_1_val_ap_vld in_vld 0 1 } } }
 	HwReg_layerHeight_1_val { ap_none {  { HwReg_layerHeight_1_val in_data 0 16 }  { HwReg_layerHeight_1_val_ap_vld in_vld 0 1 } } }
-	HwReg_layerScaleFactor_1_val18 { ap_none {  { HwReg_layerScaleFactor_1_val18 in_data 0 8 }  { HwReg_layerScaleFactor_1_val18_ap_vld in_vld 0 1 } } }
+	HwReg_layerScaleFactor_1_val19 { ap_none {  { HwReg_layerScaleFactor_1_val19 in_data 0 8 }  { HwReg_layerScaleFactor_1_val19_ap_vld in_vld 0 1 } } }
 	s_axis_video_V_data_V { axis {  { s_axis_video_TDATA in_data 0 24 } } }
 	s_axis_video_V_keep_V { axis {  { s_axis_video_TKEEP in_data 0 3 } } }
 	s_axis_video_V_strb_V { axis {  { s_axis_video_TSTRB in_data 0 3 } } }

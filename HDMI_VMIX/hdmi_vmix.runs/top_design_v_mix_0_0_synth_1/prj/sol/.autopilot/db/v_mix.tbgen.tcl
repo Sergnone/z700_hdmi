@@ -15,7 +15,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 38
+set cdfgNum 39
 set C_modelName {v_mix}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
@@ -42,8 +42,8 @@ set C_modelArgList {
 	{ background_U_G uint 16 regular {axi_slave 0 stable }  }
 	{ background_V_B uint 16 regular {axi_slave 0 stable }  }
 	{ layerEnable int 32 regular {axi_slave 0}  }
-	{ layerAlpha_0 int 16 unused {pointer 0 stable }  }
-	{ layerAlpha_1 int 16 unused {axi_slave 0 stable }  }
+	{ layerAlpha_0 int 16 regular {pointer 0 stable }  }
+	{ layerAlpha_1 int 16 regular {axi_slave 0 stable }  }
 	{ layerStartX_0 int 16 regular {pointer 0}  }
 	{ layerStartX_1 int 16 regular {axi_slave 0}  }
 	{ layerStartY_0 int 16 regular {pointer 0}  }
@@ -367,8 +367,8 @@ set ArgLastReadFirstWriteLatency {
 		background_U_G {Type I LastRead 0 FirstWrite -1}
 		background_V_B {Type I LastRead 0 FirstWrite -1}
 		layerEnable {Type I LastRead 0 FirstWrite -1}
-		layerAlpha_0 {Type I LastRead -1 FirstWrite -1}
-		layerAlpha_1 {Type I LastRead -1 FirstWrite -1}
+		layerAlpha_0 {Type I LastRead 0 FirstWrite -1}
+		layerAlpha_1 {Type I LastRead 0 FirstWrite -1}
 		layerStartX_0 {Type I LastRead 0 FirstWrite -1}
 		layerStartX_1 {Type I LastRead 0 FirstWrite -1}
 		layerStartY_0 {Type I LastRead 0 FirstWrite -1}
@@ -423,11 +423,12 @@ set ArgLastReadFirstWriteLatency {
 		HwReg_layerEnable_val13 {Type I LastRead 10 FirstWrite -1}
 		HwReg_layerEnableFlag_0_val {Type I LastRead 0 FirstWrite -1}
 		HwReg_layerEnableFlag_1_val {Type I LastRead 0 FirstWrite -1}
-		HwReg_layerStartX_1_val14 {Type I LastRead 10 FirstWrite -1}
-		HwReg_layerStartY_1_val15 {Type I LastRead 10 FirstWrite -1}
+		HwReg_layerAlpha_1_val14 {Type I LastRead 10 FirstWrite -1}
+		HwReg_layerStartX_1_val15 {Type I LastRead 10 FirstWrite -1}
+		HwReg_layerStartY_1_val16 {Type I LastRead 10 FirstWrite -1}
 		HwReg_layerWidth_1_val {Type I LastRead 0 FirstWrite -1}
 		HwReg_layerHeight_1_val {Type I LastRead 0 FirstWrite -1}
-		HwReg_layerScaleFactor_1_val18 {Type I LastRead 10 FirstWrite -1}
+		HwReg_layerScaleFactor_1_val19 {Type I LastRead 10 FirstWrite -1}
 		s_axis_video_V_data_V {Type I LastRead 1 FirstWrite -1}
 		s_axis_video_V_keep_V {Type I LastRead 1 FirstWrite -1}
 		s_axis_video_V_strb_V {Type I LastRead 1 FirstWrite -1}
@@ -627,35 +628,42 @@ set ArgLastReadFirstWriteLatency {
 		empty {Type I LastRead 0 FirstWrite -1}
 		srcLayer1Rgb {Type I LastRead 1 FirstWrite -1}
 		srcLayer1x {Type O LastRead -1 FirstWrite 1}}
-	v_mix_core_alpha_false_false_s {
+	v_mix_core_alpha_true_false_s {
 		outLayer0 {Type I LastRead 1 FirstWrite -1}
 		srcLayer1x {Type I LastRead 1 FirstWrite -1}
+		hwReg_width_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_height_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_background_Y_R_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_background_U_G_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_background_V_B_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_layerEnable_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_layerAlpha_1_val {Type I LastRead 0 FirstWrite -1}
+		hwReg_layerStartX_1_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_layerStartY_1_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_layerWidth_1_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_layerHeight_1_val {Type I LastRead 1 FirstWrite -1}
+		hwReg_layerScaleFactor_1_val {Type I LastRead 1 FirstWrite -1}
+		outLayer1 {Type O LastRead -1 FirstWrite 5}}
+	v_mix_core_alpha_true_false_Pipeline_VITIS_LOOP_395_3 {
 		hwReg_width_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_height_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_background_Y_R_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_background_U_G_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_background_V_B_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_layerEnable_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_layerStartX_1_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_layerStartY_1_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_layerWidth_1_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_layerHeight_1_val {Type I LastRead 0 FirstWrite -1}
-		hwReg_layerScaleFactor_1_val {Type I LastRead 0 FirstWrite -1}
-		outLayer1 {Type O LastRead -1 FirstWrite 2}}
-	v_mix_core_alpha_false_false_Pipeline_VITIS_LOOP_465_3 {
-		hwReg_width_val {Type I LastRead 0 FirstWrite -1}
-		outLayer1 {Type O LastRead -1 FirstWrite 2}
+		alpha {Type I LastRead 0 FirstWrite -1}
+		outLayer1 {Type O LastRead -1 FirstWrite 5}
 		srcLayer1x {Type I LastRead 1 FirstWrite -1}
 		hwReg_background_Y_R_val {Type I LastRead 0 FirstWrite -1}
 		hwReg_background_U_G_val {Type I LastRead 0 FirstWrite -1}
 		hwReg_background_V_B_val {Type I LastRead 0 FirstWrite -1}
 		hwReg_layerStartX_1_val {Type I LastRead 0 FirstWrite -1}
-		add_ln478 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln476_1 {Type I LastRead 0 FirstWrite -1}
-		rev5 {Type I LastRead 0 FirstWrite -1}
+		add_ln409 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln407_1 {Type I LastRead 0 FirstWrite -1}
+		rev7 {Type I LastRead 0 FirstWrite -1}
 		empty_50 {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
-		outLayer0 {Type I LastRead 1 FirstWrite -1}}
+		outLayer0 {Type I LastRead 1 FirstWrite -1}
+		p_out {Type IO LastRead 2 FirstWrite 1}
+		p_out1 {Type IO LastRead 2 FirstWrite 1}
+		p_out2 {Type IO LastRead 2 FirstWrite 1}}
+	reg_unsigned_short_7 {
+		d {Type I LastRead 1 FirstWrite -1}}
 	v_mix_rgb2yuv_false_s {
 		outLayer1 {Type I LastRead 1 FirstWrite -1}
 		height_val {Type I LastRead 0 FirstWrite -1}
@@ -714,8 +722,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "4498", "Max" : "2084411"}
-	, {"Name" : "Interval", "Min" : "4499", "Max" : "2084412"}
+	{"Name" : "Latency", "Min" : "4690", "Max" : "2084411"}
+	, {"Name" : "Interval", "Min" : "4691", "Max" : "2084412"}
 ]}
 
 set PipelineEnableSignalInfo {[
