@@ -1,0 +1,328 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_mix'
+================================================================
+* Date:           Thu Mar  5 12:49:41 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.67 ns|  4.867 ns|     1.80 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+-----------+-----------+-----------+------+-----------+---------+
+    |   Latency (cycles)  |   Latency (absolute)  |     Interval     | Pipeline|
+    |   min   |    max    |    min    |    max    |  min |    max    |   Type  |
+    +---------+-----------+-----------+-----------+------+-----------+---------+
+    |     4799|  141566516|  31.995 us|  0.944 sec|  4800|  141566517|       no|
+    +---------+-----------+-----------+-----------+------+-----------+---------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------------+-------------------------+---------+-----------+-----------+-----------+------+-----------+----------+
+        |                                    |                         |   Latency (cycles)  |   Latency (absolute)  |     Interval     | Pipeline |
+        |              Instance              |          Module         |   min   |    max    |    min    |    max    |  min |    max    |   Type   |
+        +------------------------------------+-------------------------+---------+-----------+-----------+-----------+------+-----------+----------+
+        |grp_VMixHlsDataFlowFunction_fu_431  |VMixHlsDataFlowFunction  |     4794|  141566511|  31.962 us|  0.944 sec|  4675|  141566402|  dataflow|
+        +------------------------------------+-------------------------+---------+-----------+-----------+-----------+------+-----------+----------+
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_3296_1  |        1|        1|         1|          1|          1|     2|       yes|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    113|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |       10|    3|    4850|   6647|    0|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|    124|    -|
+|Register         |        -|    -|     481|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |       10|    3|    5331|   6884|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        3|    1|       5|     12|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------+------------------------------+---------+----+------+------+-----+
+    |              Instance              |            Module            | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +------------------------------------+------------------------------+---------+----+------+------+-----+
+    |CTRL_s_axi_U                        |CTRL_s_axi                    |        0|   0|   488|   728|    0|
+    |grp_VMixHlsDataFlowFunction_fu_431  |VMixHlsDataFlowFunction       |        6|   3|  3641|  5072|    0|
+    |bitselect_1ns_32ns_1ns_1_1_1_U267   |bitselect_1ns_32ns_1ns_1_1_1  |        0|   0|     0|     9|    0|
+    |mm_video1_m_axi_U                   |mm_video1_m_axi               |        4|   0|   721|   838|    0|
+    +------------------------------------+------------------------------+---------+----+------+------+-----+
+    |Total                               |                              |       10|   3|  4850|  6647|    0|
+    +------------------------------------+------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                      Variable Name                     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------------------------------+----------+----+---+----+------------+------------+
+    |grp_VMixHlsDataFlowFunction_fu_431_m_axis_video_TREADY  |       and|   0|  0|   1|           1|           1|
+    |s_axi_CTRL_flush_done                                   |       and|   0|  0|   1|           1|           0|
+    |ap_sync_grp_VMixHlsDataFlowFunction_fu_431_ap_ready     |        or|   0|  0|   1|           1|           1|
+    |HwReg_layerAlpha_fu_597_p3                              |    select|   0|  0|  16|           1|          16|
+    |HwReg_layerEnableFlag_4_fu_539_p3                       |    select|   0|  0|   2|           1|           1|
+    |HwReg_layerEnableFlag_fu_547_p3                         |    select|   0|  0|   2|           1|           1|
+    |HwReg_layerHeight_fu_569_p3                             |    select|   0|  0|  16|           1|          16|
+    |HwReg_layerScaleFactor_fu_562_p3                        |    select|   0|  0|   8|           1|           8|
+    |HwReg_layerStartX_fu_590_p3                             |    select|   0|  0|  16|           1|          16|
+    |HwReg_layerStartY_fu_583_p3                             |    select|   0|  0|  16|           1|          16|
+    |HwReg_layerStride_fu_555_p3                             |    select|   0|  0|  16|           1|          16|
+    |HwReg_layerWidth_fu_576_p3                              |    select|   0|  0|  16|           1|          16|
+    |i_2_fu_604_p2                                           |       xor|   0|  0|   2|           1|           2|
+    +--------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                   |          |   0|  0| 113|          13|         110|
+    +--------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------+----+-----------+-----+-----------+
+    |               Name               | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                         |  25|          6|    1|          6|
+    |i_reg_420                         |   9|          2|    1|          2|
+    |m_axis_video_TDATA_int_regslice   |   9|          2|   24|         48|
+    |m_axis_video_TDEST_int_regslice   |   9|          2|    1|          2|
+    |m_axis_video_TID_int_regslice     |   9|          2|    1|          2|
+    |m_axis_video_TKEEP_int_regslice   |   9|          2|    3|          6|
+    |m_axis_video_TLAST_int_regslice   |   9|          2|    1|          2|
+    |m_axis_video_TSTRB_int_regslice   |   9|          2|    3|          6|
+    |m_axis_video_TUSER_int_regslice   |   9|          2|    1|          2|
+    |mm_video1_0_ARVALID               |   9|          2|    1|          2|
+    |mm_video1_0_RREADY                |   9|          2|    1|          2|
+    |s_axis_video_TREADY_int_regslice  |   9|          2|    1|          2|
+    +----------------------------------+----+-----------+-----+-----------+
+    |Total                             | 124|         28|   39|         82|
+    +----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------------+----+----+-----+-----------+
+    |                           Name                          | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------------+----+----+-----+-----------+
+    |HwReg_layerAlpha_reg_828                                 |  16|   0|   16|          0|
+    |HwReg_layerEnableFlag_1_fu_258                           |   1|   0|    1|          0|
+    |HwReg_layerEnableFlag_3_fu_262                           |   1|   0|    1|          0|
+    |HwReg_layerEnableFlag_4_reg_788                          |   1|   0|    1|          0|
+    |HwReg_layerEnableFlag_reg_793                            |   1|   0|    1|          0|
+    |HwReg_layerHeight_reg_808                                |  16|   0|   16|          0|
+    |HwReg_layerScaleFactor_reg_803                           |   8|   0|    8|          0|
+    |HwReg_layerStartX_reg_823                                |  16|   0|   16|          0|
+    |HwReg_layerStartY_reg_818                                |  16|   0|   16|          0|
+    |HwReg_layerStride_reg_798                                |  16|   0|   16|          0|
+    |HwReg_layerWidth_reg_813                                 |  16|   0|   16|          0|
+    |ap_CS_fsm                                                |   5|   0|    5|          0|
+    |ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_431_ap_done   |   1|   0|    1|          0|
+    |ap_sync_reg_grp_VMixHlsDataFlowFunction_fu_431_ap_ready  |   1|   0|    1|          0|
+    |empty_78_fu_270                                          |   8|   0|    8|          0|
+    |empty_79_fu_274                                          |  16|   0|   16|          0|
+    |empty_80_fu_278                                          |  16|   0|   16|          0|
+    |empty_81_fu_282                                          |  16|   0|   16|          0|
+    |empty_82_fu_286                                          |  16|   0|   16|          0|
+    |empty_83_fu_290                                          |  16|   0|   16|          0|
+    |empty_fu_266                                             |  16|   0|   16|          0|
+    |grp_VMixHlsDataFlowFunction_fu_431_ap_start_reg          |   1|   0|    1|          0|
+    |i_reg_420                                                |   1|   0|    1|          0|
+    |layer1_buf1_read_reg_713                                 |  32|   0|   32|          0|
+    |layerAlpha_1_read_reg_753                                |  16|   0|   16|          0|
+    |layerEnable_read_reg_718                                 |  32|   0|   32|          0|
+    |layerHeight_1_read_reg_773                               |  16|   0|   16|          0|
+    |layerScaleFactor_1_read_reg_778                          |   8|   0|    8|          0|
+    |layerStartX_1_read_reg_758                               |  16|   0|   16|          0|
+    |layerStartY_1_read_reg_763                               |  16|   0|   16|          0|
+    |layerStride_1_read_reg_783                               |  16|   0|   16|          0|
+    |layerWidth_1_read_reg_768                                |  16|   0|   16|          0|
+    |m_axis_video_TDATA_reg                                   |  24|   0|   24|          0|
+    |m_axis_video_TDEST_reg                                   |   1|   0|    1|          0|
+    |m_axis_video_TID_reg                                     |   1|   0|    1|          0|
+    |m_axis_video_TKEEP_reg                                   |   3|   0|    3|          0|
+    |m_axis_video_TLAST_reg                                   |   1|   0|    1|          0|
+    |m_axis_video_TSTRB_reg                                   |   3|   0|    3|          0|
+    |m_axis_video_TUSER_reg                                   |   1|   0|    1|          0|
+    |s_axi_CTRL_flush_done                                    |   1|   0|    1|          0|
+    |trunc_ln2417_1_reg_728                                   |   8|   0|    8|          0|
+    |trunc_ln2417_2_reg_733                                   |   8|   0|    8|          0|
+    |trunc_ln2417_3_reg_738                                   |   8|   0|    8|          0|
+    |trunc_ln2417_4_reg_743                                   |  11|   0|   11|          0|
+    |trunc_ln2417_5_reg_748                                   |  11|   0|   11|          0|
+    |trunc_ln2417_reg_723                                     |   2|   0|    2|          0|
+    |trunc_ln3296_reg_838                                     |   9|   0|    9|          0|
+    +---------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                    | 481|   0|  481|          0|
+    +---------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+-----------------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++---------------------------+-----+-----+------------+-----------------------+--------------+
+|s_axi_CTRL_AWVALID         |   in|    1|       s_axi|                   CTRL|        scalar|
+|s_axi_CTRL_AWREADY         |  out|    1|       s_axi|                   CTRL|        scalar|
+|s_axi_CTRL_AWADDR          |   in|   12|       s_axi|                   CTRL|        scalar|
+|s_axi_CTRL_WVALID          |   in|    1|       s_axi|                   CTRL|        scalar|
+|s_axi_CTRL_WREADY          |  out|    1|       s_axi|                   CTRL|        scalar|
+|s_axi_CTRL_WDATA           |   in|   32|       s_axi|                   CTRL|        scalar|
+|s_axi_CTRL_WSTRB           |   in|    4|       s_axi|                   CTRL|        scalar|
+|s_axi_CTRL_ARVALID         |   in|    1|       s_axi|                   CTRL|        scalar|
+|s_axi_CTRL_ARREADY         |  out|    1|       s_axi|                   CTRL|        scalar|
+|s_axi_CTRL_ARADDR          |   in|   12|       s_axi|                   CTRL|        scalar|
+|s_axi_CTRL_RVALID          |  out|    1|       s_axi|                   CTRL|        scalar|
+|s_axi_CTRL_RREADY          |   in|    1|       s_axi|                   CTRL|        scalar|
+|s_axi_CTRL_RDATA           |  out|   32|       s_axi|                   CTRL|        scalar|
+|s_axi_CTRL_RRESP           |  out|    2|       s_axi|                   CTRL|        scalar|
+|s_axi_CTRL_BVALID          |  out|    1|       s_axi|                   CTRL|        scalar|
+|s_axi_CTRL_BREADY          |   in|    1|       s_axi|                   CTRL|        scalar|
+|s_axi_CTRL_BRESP           |  out|    2|       s_axi|                   CTRL|        scalar|
+|ap_clk                     |   in|    1|  ap_ctrl_hs|                  v_mix|  return value|
+|ap_rst_n                   |   in|    1|  ap_ctrl_hs|                  v_mix|  return value|
+|interrupt                  |  out|    1|  ap_ctrl_hs|                  v_mix|  return value|
+|m_axi_mm_video1_AWVALID    |  out|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_AWREADY    |   in|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_AWADDR     |  out|   32|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_AWID       |  out|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_AWLEN      |  out|    8|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_AWSIZE     |  out|    3|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_AWBURST    |  out|    2|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_AWLOCK     |  out|    2|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_AWCACHE    |  out|    4|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_AWPROT     |  out|    3|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_AWQOS      |  out|    4|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_AWREGION   |  out|    4|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_AWUSER     |  out|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_WVALID     |  out|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_WREADY     |   in|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_WDATA      |  out|   64|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_WSTRB      |  out|    8|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_WLAST      |  out|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_WID        |  out|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_WUSER      |  out|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_ARVALID    |  out|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_ARREADY    |   in|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_ARADDR     |  out|   32|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_ARID       |  out|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_ARLEN      |  out|    8|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_ARSIZE     |  out|    3|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_ARBURST    |  out|    2|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_ARLOCK     |  out|    2|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_ARCACHE    |  out|    4|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_ARPROT     |  out|    3|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_ARQOS      |  out|    4|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_ARREGION   |  out|    4|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_ARUSER     |  out|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_RVALID     |   in|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_RREADY     |  out|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_RDATA      |   in|   64|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_RLAST      |   in|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_RID        |   in|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_RUSER      |   in|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_RRESP      |   in|    2|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_BVALID     |   in|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_BREADY     |  out|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_BRESP      |   in|    2|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_BID        |   in|    1|       m_axi|              mm_video1|       pointer|
+|m_axi_mm_video1_BUSER      |   in|    1|       m_axi|              mm_video1|       pointer|
+|s_axis_video_TDATA         |   in|   24|        axis|  s_axis_video_V_data_V|       pointer|
+|s_axis_video_TVALID        |   in|    1|        axis|  s_axis_video_V_dest_V|       pointer|
+|s_axis_video_TREADY        |  out|    1|        axis|  s_axis_video_V_dest_V|       pointer|
+|s_axis_video_TDEST         |   in|    1|        axis|  s_axis_video_V_dest_V|       pointer|
+|s_axis_video_TKEEP         |   in|    3|        axis|  s_axis_video_V_keep_V|       pointer|
+|s_axis_video_TSTRB         |   in|    3|        axis|  s_axis_video_V_strb_V|       pointer|
+|s_axis_video_TUSER         |   in|    1|        axis|  s_axis_video_V_user_V|       pointer|
+|s_axis_video_TLAST         |   in|    1|        axis|  s_axis_video_V_last_V|       pointer|
+|s_axis_video_TID           |   in|    1|        axis|    s_axis_video_V_id_V|       pointer|
+|layerAlpha_0               |   in|   16|     ap_none|           layerAlpha_0|       pointer|
+|layerStartX_0              |   in|   16|     ap_none|          layerStartX_0|       pointer|
+|layerStartY_0              |   in|   16|     ap_none|          layerStartY_0|       pointer|
+|layerWidth_0               |   in|   16|     ap_none|           layerWidth_0|       pointer|
+|layerHeight_0              |   in|   16|     ap_none|          layerHeight_0|       pointer|
+|layerScaleFactor_0         |   in|    8|     ap_none|     layerScaleFactor_0|       pointer|
+|layerVideoFormat_address0  |  out|    1|   ap_memory|       layerVideoFormat|         array|
+|layerVideoFormat_ce0       |  out|    1|   ap_memory|       layerVideoFormat|         array|
+|layerVideoFormat_we0       |  out|    1|   ap_memory|       layerVideoFormat|         array|
+|layerVideoFormat_d0        |  out|    8|   ap_memory|       layerVideoFormat|         array|
+|layerVideoFormat_q0        |   in|    8|   ap_memory|       layerVideoFormat|         array|
+|layerVideoFormat_address1  |  out|    1|   ap_memory|       layerVideoFormat|         array|
+|layerVideoFormat_ce1       |  out|    1|   ap_memory|       layerVideoFormat|         array|
+|layerVideoFormat_we1       |  out|    1|   ap_memory|       layerVideoFormat|         array|
+|layerVideoFormat_d1        |  out|    8|   ap_memory|       layerVideoFormat|         array|
+|layerVideoFormat_q1        |   in|    8|   ap_memory|       layerVideoFormat|         array|
+|layerStride_0              |   in|   16|     ap_none|          layerStride_0|       pointer|
+|K11                        |   in|   32|     ap_none|                    K11|        scalar|
+|K12                        |   in|   32|     ap_none|                    K12|        scalar|
+|K13                        |   in|   32|     ap_none|                    K13|        scalar|
+|K21                        |   in|   32|     ap_none|                    K21|        scalar|
+|K22                        |   in|   32|     ap_none|                    K22|        scalar|
+|K23                        |   in|   32|     ap_none|                    K23|        scalar|
+|K31                        |   in|   32|     ap_none|                    K31|        scalar|
+|K32                        |   in|   32|     ap_none|                    K32|        scalar|
+|K33                        |   in|   32|     ap_none|                    K33|        scalar|
+|ROffset                    |   in|   32|     ap_none|                ROffset|        scalar|
+|GOffset                    |   in|   32|     ap_none|                GOffset|        scalar|
+|BOffset                    |   in|   32|     ap_none|                BOffset|        scalar|
+|K11_2                      |   in|   32|     ap_none|                  K11_2|        scalar|
+|K12_2                      |   in|   32|     ap_none|                  K12_2|        scalar|
+|K13_2                      |   in|   32|     ap_none|                  K13_2|        scalar|
+|K21_2                      |   in|   32|     ap_none|                  K21_2|        scalar|
+|K22_2                      |   in|   32|     ap_none|                  K22_2|        scalar|
+|K23_2                      |   in|   32|     ap_none|                  K23_2|        scalar|
+|K31_2                      |   in|   32|     ap_none|                  K31_2|        scalar|
+|K32_2                      |   in|   32|     ap_none|                  K32_2|        scalar|
+|K33_2                      |   in|   32|     ap_none|                  K33_2|        scalar|
+|YOffset                    |   in|   32|     ap_none|                YOffset|        scalar|
+|UOffset                    |   in|   32|     ap_none|                UOffset|        scalar|
+|VOffset                    |   in|   32|     ap_none|                VOffset|        scalar|
+|m_axis_video_TDATA         |  out|   24|        axis|  m_axis_video_V_data_V|       pointer|
+|m_axis_video_TVALID        |  out|    1|        axis|  m_axis_video_V_dest_V|       pointer|
+|m_axis_video_TREADY        |   in|    1|        axis|  m_axis_video_V_dest_V|       pointer|
+|m_axis_video_TDEST         |  out|    1|        axis|  m_axis_video_V_dest_V|       pointer|
+|m_axis_video_TKEEP         |  out|    3|        axis|  m_axis_video_V_keep_V|       pointer|
+|m_axis_video_TSTRB         |  out|    3|        axis|  m_axis_video_V_strb_V|       pointer|
+|m_axis_video_TUSER         |  out|    1|        axis|  m_axis_video_V_user_V|       pointer|
+|m_axis_video_TLAST         |  out|    1|        axis|  m_axis_video_V_last_V|       pointer|
+|m_axis_video_TID           |  out|    1|        axis|    m_axis_video_V_id_V|       pointer|
++---------------------------+-----+-----+------------+-----------------------+--------------+
+

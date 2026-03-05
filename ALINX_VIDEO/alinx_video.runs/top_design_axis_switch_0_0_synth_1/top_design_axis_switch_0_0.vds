@@ -1,0 +1,419 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Mar  4 15:18:35 2026
+# Process ID         : 297845
+# Current directory  : /home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_axis_switch_0_0_synth_1
+# Command line       : vivado -log top_design_axis_switch_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_design_axis_switch_0_0.tcl
+# Log file           : /home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_axis_switch_0_0_synth_1/top_design_axis_switch_0_0.vds
+# Journal file       : /home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_axis_switch_0_0_synth_1/vivado.jou
+# Running On         : serg
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13400
+# CPU Frequency      : 4100.093 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 33409 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 41999 MB
+# Available Virtual  : 27985 MB
+#-----------------------------------------------------------
+source top_design_axis_switch_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1623.875 ; gain = 64.059 ; free physical = 2845 ; free virtual = 21011
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/serg/Documents/Xilinx/DigilentLib/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/2025.2/data/ip'.
+Command: synth_design -top top_design_axis_switch_0_0 -part xc7z020clg400-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 299392
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2243.609 ; gain = 485.875 ; free physical = 383 ; free virtual = 12103
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_design_axis_switch_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_switch_0_0/synth/top_design_axis_switch_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_35_axis_switch' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:3078]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_1_util_axis2vector' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/434f/hdl/axis_infrastructure_v1_1_vl_rfs.v:805]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_1_util_axis2vector' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/434f/hdl/axis_infrastructure_v1_1_vl_rfs.v:805]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_35_axisc_decoder' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:475]
+INFO: [Synth 8-6157] synthesizing module 'axis_register_slice_v1_1_35_axisc_register_slice' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/be12/hdl/axis_register_slice_v1_1_vl_rfs.v:1929]
+INFO: [Synth 8-6155] done synthesizing module 'axis_register_slice_v1_1_35_axisc_register_slice' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/be12/hdl/axis_register_slice_v1_1_vl_rfs.v:1929]
+INFO: [Synth 8-7071] port 'ACLK2X' of module 'axis_register_slice_v1_1_35_axisc_register_slice' is unconnected for instance 'inst_decoder_pipeline' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:724]
+INFO: [Synth 8-7023] instance 'inst_decoder_pipeline' of module 'axis_register_slice_v1_1_35_axisc_register_slice' has 10 connections declared, but only 9 given [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:724]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_35_axisc_decoder' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:475]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_35_axisc_transfer_mux' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:814]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_35_axisc_transfer_mux' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:814]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_1_util_vector2axis' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/434f/hdl/axis_infrastructure_v1_1_vl_rfs.v:986]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_1_util_vector2axis' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/434f/hdl/axis_infrastructure_v1_1_vl_rfs.v:986]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_1_clock_synchronizer' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/434f/hdl/axis_infrastructure_v1_1_vl_rfs.v:1166]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_1_clock_synchronizer' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/434f/hdl/axis_infrastructure_v1_1_vl_rfs.v:1166]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_1_cdc_handshake' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/434f/hdl/axis_infrastructure_v1_1_vl_rfs.v:1259]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake' [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized0' [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized0' (0#1) [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake' (0#1) [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_1_cdc_handshake' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/434f/hdl/axis_infrastructure_v1_1_vl_rfs.v:1259]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_35_static_router' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:2777]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_35_axi_ctrl_top' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:2070]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_35_axi_ctrl_read' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:1738]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_35_axi_ctrl_read' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:1738]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_35_axi_ctrl_write' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:1913]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_35_axi_ctrl_write' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:1913]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_35_reg_bank_16x32' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:2961]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_35_reg_bank_16x32' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:2961]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_35_reg_bank_16x32__parameterized0' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:2961]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_35_reg_bank_16x32__parameterized0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:2961]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_35_axi_ctrl_top' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:2070]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_35_static_router_config' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:2569]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_35_static_router_config_dp' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:2338]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_35_static_router_config_dp' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:2338]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_35_static_router_config' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:2569]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_35_static_router' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:2777]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_35_axis_switch' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/4eea/hdl/axis_switch_v1_1_vl_rfs.v:3078]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_axis_switch_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_switch_0_0/synth/top_design_axis_switch_0_0.v:53]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'state_reg' through user attribute
+INFO: [Synth 8-7129] Port reg_mi_mux[511] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[510] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[509] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[508] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[507] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[506] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[505] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[504] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[503] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[502] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[501] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[500] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[499] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[498] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[497] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[496] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[495] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[494] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[493] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[492] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[491] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[490] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[489] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[488] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[487] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[486] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[485] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[484] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[483] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[482] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[481] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[480] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[479] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[478] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[477] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[476] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[475] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[474] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[473] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[472] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[471] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[470] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[469] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[468] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[467] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[466] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[465] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[464] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[463] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[462] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[461] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[460] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[459] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[458] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[457] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[456] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[455] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[454] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[453] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[452] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[451] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[450] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[449] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[448] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[447] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[446] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[445] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[444] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[443] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[442] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[441] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[440] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[439] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[438] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[437] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[436] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[435] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[434] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[433] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[432] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[431] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[430] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[429] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[428] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[427] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[426] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[425] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[424] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[423] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[422] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[421] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[420] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[419] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[418] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[417] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[416] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[415] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[414] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[413] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_mi_mux[412] in module axis_switch_v1_1_35_static_router_config_dp is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2341.547 ; gain = 583.812 ; free physical = 328 ; free virtual = 10241
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2353.422 ; gain = 595.688 ; free physical = 338 ; free virtual = 10184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2353.422 ; gain = 595.688 ; free physical = 338 ; free virtual = 10183
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2353.422 ; gain = 0.000 ; free physical = 330 ; free virtual = 10074
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_switch_0_0/top_design_axis_switch_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_switch_0_0/top_design_axis_switch_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_axis_switch_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_axis_switch_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_design_axis_switch_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_design_axis_switch_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_design_axis_switch_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_design_axis_switch_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 4 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2465.160 ; gain = 0.000 ; free physical = 880 ; free virtual = 10056
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2465.195 ; gain = 0.000 ; free physical = 879 ; free virtual = 10058
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2465.195 ; gain = 707.461 ; free physical = 819 ; free virtual = 9605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2473.164 ; gain = 715.430 ; free physical = 819 ; free virtual = 9605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2473.164 ; gain = 715.430 ; free physical = 815 ; free virtual = 9604
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axis_switch_v1_1_35_axi_ctrl_read'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'state_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axis_switch_v1_1_35_static_router_config'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                              001 |                               00
+                 SM_READ |                              010 |                               01
+                 SM_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axis_switch_v1_1_35_axi_ctrl_read'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                            00001 |                              000
+                SM_START |                            00010 |                              001
+                 SM_WAIT |                            00100 |                              010
+               SM_COMMIT |                            01000 |                              011
+             SM_COMPLETE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axis_switch_v1_1_35_static_router_config'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2473.164 ; gain = 715.430 ; free physical = 588 ; free virtual = 9416
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 4     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 31    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2473.164 ; gain = 715.430 ; free physical = 371 ; free virtual = 8861
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2521.164 ; gain = 763.430 ; free physical = 385 ; free virtual = 8231
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2521.164 ; gain = 763.430 ; free physical = 376 ; free virtual = 8181
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2540.195 ; gain = 782.461 ; free physical = 307 ; free virtual = 8041
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2718.008 ; gain = 960.273 ; free physical = 442 ; free virtual = 6562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2718.008 ; gain = 960.273 ; free physical = 442 ; free virtual = 6562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2718.008 ; gain = 960.273 ; free physical = 434 ; free virtual = 6554
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2718.008 ; gain = 960.273 ; free physical = 434 ; free virtual = 6554
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2718.008 ; gain = 960.273 ; free physical = 426 ; free virtual = 6546
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2718.008 ; gain = 960.273 ; free physical = 425 ; free virtual = 6545
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     7|
+|2     |LUT2 |    43|
+|3     |LUT3 |    35|
+|4     |LUT4 |    65|
+|5     |LUT5 |    14|
+|6     |LUT6 |    40|
+|7     |FDRE |   250|
+|8     |FDSE |     4|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2718.008 ; gain = 960.273 ; free physical = 424 ; free virtual = 6545
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2718.008 ; gain = 848.500 ; free physical = 497 ; free virtual = 6619
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2718.016 ; gain = 960.273 ; free physical = 496 ; free virtual = 6619
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2718.016 ; gain = 0.000 ; free physical = 475 ; free virtual = 6601
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2774.035 ; gain = 0.000 ; free physical = 1839 ; free virtual = 8160
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d1b3fbe9
+INFO: [Common 17-83] Releasing license: Synthesis
+169 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 2774.070 ; gain = 1150.195 ; free physical = 2178 ; free virtual = 8503
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1497.822; main = 1450.545; forked = 180.841
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3467.391; main = 2774.039; forked = 994.223
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2798.047 ; gain = 0.000 ; free physical = 2215 ; free virtual = 8541
+INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_axis_switch_0_0_synth_1/top_design_axis_switch_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP top_design_axis_switch_0_0, cache-ID = b164f4f90cac881c
+INFO: [Coretcl 2-1174] Renamed 15 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2798.047 ; gain = 0.000 ; free physical = 2230 ; free virtual = 8571
+INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_axis_switch_0_0_synth_1/top_design_axis_switch_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_design_axis_switch_0_0_utilization_synth.rpt -pb top_design_axis_switch_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  4 15:19:16 2026...

@@ -1,0 +1,5 @@
+4 warnings and 2 errors generated.
+Error while processing /home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_v_mix_0_0_synth_1/prj/sol/.autopilot/db/v_csc.pp.0.cpp.
+clang-tidy applied 405 of 405 suggested fixes.
+Suppressed 342 warnings (338 in non-user code, 4 with check filters).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

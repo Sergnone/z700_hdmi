@@ -1,0 +1,438 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Mar  4 15:18:35 2026
+# Process ID         : 297846
+# Current directory  : /home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_v_vid_in_axi4s_0_0_synth_1
+# Command line       : vivado -log top_design_v_vid_in_axi4s_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_design_v_vid_in_axi4s_0_0.tcl
+# Log file           : /home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_v_vid_in_axi4s_0_0_synth_1/top_design_v_vid_in_axi4s_0_0.vds
+# Journal file       : /home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_v_vid_in_axi4s_0_0_synth_1/vivado.jou
+# Running On         : serg
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13400
+# CPU Frequency      : 4067.942 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 33409 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 41999 MB
+# Available Virtual  : 27824 MB
+#-----------------------------------------------------------
+source top_design_v_vid_in_axi4s_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/serg/Documents/Xilinx/DigilentLib/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/2025.2/data/ip'.
+Command: synth_design -top top_design_v_vid_in_axi4s_0_0 -part xc7z020clg400-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 299944
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2242.230 ; gain = 486.875 ; free physical = 319 ; free virtual = 10525
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_design_v_vid_in_axi4s_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_vid_in_axi4s_0_0/synth/top_design_v_vid_in_axi4s_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'v_vid_in_axi4s_v5_0_7' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/ece2/hdl/v_vid_in_axi4s_v5_0_vl_rfs.v:1903]
+INFO: [Synth 8-6157] synthesizing module 'v_vid_in_axi4s_v5_0_7_cdc_single' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/ece2/hdl/v_vid_in_axi4s_v5_0_vl_rfs.v:214]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'v_vid_in_axi4s_v5_0_7_cdc_single' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/ece2/hdl/v_vid_in_axi4s_v5_0_vl_rfs.v:214]
+INFO: [Synth 8-6157] synthesizing module 'v_vid_in_axi4s_v5_0_7_formatter' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/ece2/hdl/v_vid_in_axi4s_v5_0_vl_rfs.v:523]
+INFO: [Synth 8-6155] done synthesizing module 'v_vid_in_axi4s_v5_0_7_formatter' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/ece2/hdl/v_vid_in_axi4s_v5_0_vl_rfs.v:523]
+INFO: [Synth 8-6157] synthesizing module 'v_vid_in_axi4s_v5_0_7_coupler' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/ece2/hdl/v_vid_in_axi4s_v5_0_vl_rfs.v:297]
+INFO: [Synth 8-6157] synthesizing module 'v_vid_in_axi4s_v5_0_7_fifo_sync' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/ece2/hdl/v_vid_in_axi4s_v5_0_vl_rfs.v:138]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1975]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/tools/xilinx/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [/tools/xilinx/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:522]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [/tools/xilinx/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-226] default block is never used [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1220]
+INFO: [Synth 8-226] default block is never used [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1287]
+INFO: [Synth 8-226] default block is never used [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1309]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync' (0#1) [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1975]
+INFO: [Synth 8-6155] done synthesizing module 'v_vid_in_axi4s_v5_0_7_fifo_sync' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/ece2/hdl/v_vid_in_axi4s_v5_0_vl_rfs.v:138]
+INFO: [Synth 8-6155] done synthesizing module 'v_vid_in_axi4s_v5_0_7_coupler' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/ece2/hdl/v_vid_in_axi4s_v5_0_vl_rfs.v:297]
+INFO: [Synth 8-6155] done synthesizing module 'v_vid_in_axi4s_v5_0_7' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/ece2/hdl/v_vid_in_axi4s_v5_0_vl_rfs.v:1903]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_v_vid_in_axi4s_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_vid_in_axi4s_0_0/synth/top_design_v_vid_in_axi4s_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/tools/xilinx/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3087]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1404]
+INFO: [Synth 8-7129] Port rd_clk in module xpm_fifo_rst is either unconnected or has no load
+INFO: [Synth 8-7129] Port sleep in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port rsta in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port regcea in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port clkb in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[26] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[25] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[24] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[23] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[22] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[21] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[20] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[19] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[18] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[17] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[16] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[15] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[14] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[13] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[12] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[11] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[10] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[9] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[8] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[7] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[6] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[5] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[4] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[3] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[2] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[1] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[0] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port injectsbiterrb in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port injectdbiterrb in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port VID_IN_CLK in module v_vid_in_axi4s_v5_0_7_coupler is either unconnected or has no load
+INFO: [Synth 8-7129] Port ARESETN in module v_vid_in_axi4s_v5_0_7_coupler is either unconnected or has no load
+INFO: [Synth 8-7129] Port VID_FORMAT[1] in module v_vid_in_axi4s_v5_0_7_formatter is either unconnected or has no load
+INFO: [Synth 8-7129] Port VID_FORMAT[0] in module v_vid_in_axi4s_v5_0_7_formatter is either unconnected or has no load
+INFO: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_io_in_clk in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_io_in_reset in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_de_arb[0] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_vsync_arb[0] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_hsync_arb[0] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_field_id_arb in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[23] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[22] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[21] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[20] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[19] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[18] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[17] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[16] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[15] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[14] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[13] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[12] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[11] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[10] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[9] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[8] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[7] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[6] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[5] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[4] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[3] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[2] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[1] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_data_arb[0] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_format[1] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port vid_format[0] in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port drop_en in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port remap_420_en in module v_vid_in_axi4s_v5_0_7 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2335.199 ; gain = 579.844 ; free physical = 985 ; free virtual = 10121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2347.074 ; gain = 591.719 ; free physical = 962 ; free virtual = 10105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2347.074 ; gain = 591.719 ; free physical = 962 ; free virtual = 10105
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2347.074 ; gain = 0.000 ; free physical = 940 ; free virtual = 10089
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_vid_in_axi4s_0_0/top_design_v_vid_in_axi4s_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_vid_in_axi4s_0_0/top_design_v_vid_in_axi4s_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_v_vid_in_axi4s_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_v_vid_in_axi4s_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_vid_in_axi4s_0_0/top_design_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_vid_in_axi4s_0_0/top_design_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_design_v_vid_in_axi4s_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_design_v_vid_in_axi4s_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/xilinx/2025.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_design_v_vid_in_axi4s_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_design_v_vid_in_axi4s_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 3 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2459.844 ; gain = 0.000 ; free physical = 751 ; free virtual = 9971
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2459.879 ; gain = 0.000 ; free physical = 751 ; free virtual = 9971
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2459.879 ; gain = 704.523 ; free physical = 655 ; free virtual = 9471
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2467.848 ; gain = 712.492 ; free physical = 655 ; free virtual = 9472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2467.848 ; gain = 712.492 ; free physical = 655 ; free virtual = 9476
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2467.848 ; gain = 712.492 ; free physical = 512 ; free virtual = 9347
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input   11 Bit       Adders := 4     
+	   2 Input   11 Bit       Adders := 1     
+	   4 Input   10 Bit       Adders := 3     
+	   3 Input   10 Bit       Adders := 1     
+	   4 Input    2 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 2     
+	               24 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 5     
+	               10 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 34    
++---RAMs : 
+	              27K Bit	(1024 X 27 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input    2 Bit        Muxes := 31    
+	   4 Input    2 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7129] Port rsta in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port regcea in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port clkb in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[26] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[25] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[24] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[23] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[22] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[21] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[20] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[19] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[18] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[17] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[16] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[15] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[14] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[13] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[12] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[11] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[10] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[9] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[8] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[7] in module xpm_memory_base is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2467.848 ; gain = 712.492 ; free physical = 355 ; free virtual = 8845
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++-------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                                                                              | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/\COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 1 K x 27(READ_FIRST)   | W |   | 1 K x 27(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++-------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2518.848 ; gain = 763.492 ; free physical = 298 ; free virtual = 7952
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2548.895 ; gain = 793.539 ; free physical = 456 ; free virtual = 7761
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                                                                              | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/\COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 1 K x 27(READ_FIRST)   | W |   | 1 K x 27(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++-------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2549.902 ; gain = 794.547 ; free physical = 514 ; free virtual = 7711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2718.715 ; gain = 963.359 ; free physical = 432 ; free virtual = 6577
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2718.715 ; gain = 963.359 ; free physical = 432 ; free virtual = 6577
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2718.715 ; gain = 963.359 ; free physical = 432 ; free virtual = 6582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2718.715 ; gain = 963.359 ; free physical = 432 ; free virtual = 6583
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2721.684 ; gain = 966.328 ; free physical = 432 ; free virtual = 6584
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2721.684 ; gain = 966.328 ; free physical = 432 ; free virtual = 6585
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |     9|
+|2     |LUT1     |     3|
+|3     |LUT2     |    10|
+|4     |LUT3     |     8|
+|5     |LUT4     |    13|
+|6     |LUT5     |    10|
+|7     |LUT6     |    38|
+|8     |RAMB36E1 |     1|
+|9     |FDRE     |   158|
+|10    |FDSE     |     8|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2721.684 ; gain = 966.328 ; free physical = 432 ; free virtual = 6586
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2721.684 ; gain = 853.523 ; free physical = 418 ; free virtual = 6583
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2721.691 ; gain = 966.328 ; free physical = 418 ; free virtual = 6583
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2721.691 ; gain = 0.000 ; free physical = 410 ; free virtual = 6580
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2777.711 ; gain = 0.000 ; free physical = 3845 ; free virtual = 10270
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: fc507f76
+INFO: [Common 17-83] Releasing license: Synthesis
+160 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 2777.746 ; gain = 1217.000 ; free physical = 3843 ; free virtual = 10276
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1506.923; main = 1506.923; forked = 180.837
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3462.070; main = 2777.715; forked = 994.219
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2801.723 ; gain = 0.000 ; free physical = 3839 ; free virtual = 10279
+INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_v_vid_in_axi4s_0_0_synth_1/top_design_v_vid_in_axi4s_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP top_design_v_vid_in_axi4s_0_0, cache-ID = 8058139a6b9f7098
+INFO: [Coretcl 2-1174] Renamed 17 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2801.723 ; gain = 0.000 ; free physical = 5603 ; free virtual = 12194
+INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_v_vid_in_axi4s_0_0_synth_1/top_design_v_vid_in_axi4s_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_design_v_vid_in_axi4s_0_0_utilization_synth.rpt -pb top_design_v_vid_in_axi4s_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  4 15:19:17 2026...

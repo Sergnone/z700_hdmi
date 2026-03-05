@@ -1,0 +1,6 @@
+set_property SRC_FILE_INFO {cfile:/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axi_dynclk_0_0/src/axi_dynclk.xdc rfile:../../../../../alinx_video.gen/sources_1/bd/top_design/ip/top_design_axi_dynclk_0_0/src/axi_dynclk.xdc id:1 order:EARLY scoped_inst:U0} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_axi_dynclk_0_0_synth_1/dont_touch.xdc rfile:../../../dont_touch.xdc id:2} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_false_path -through [get_pins [list {U0/SyncAsyncLocked/oSyncStages_reg[0]/CLR} {U0/SyncAsyncLocked/oSyncStages_reg[0]/D} {U0/SyncAsyncLocked/oSyncStages_reg[1]/CLR}]]
+set_property src_info {type:XDC file:2 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property KEEP_HIERARCHY SOFT [get_cells U0]

@@ -1,0 +1,82 @@
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:1:25: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80>
+                        ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:1:26: warning: null character ignored [-Wnull-character]
+XlxVV0EB0000000000000098<80><U+0000>
+                            ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:1:27: warning: null character ignored [-Wnull-character]
+XlxVV0EB0000000000000098<80><U+0000><U+0000>
+                                    ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:1:28: warning: null character ignored [-Wnull-character]
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000>
+                                            ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:2:1: error: source file is not valid UTF-8
+<E2><U+0010><BD><U+000F><E5><CF><E4><BA><U+001F>g7[<B4>t
+^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:1:1: error: unknown type name 'XlxVV0EB0000000000000098'
+XlxVV0EB0000000000000098<80>
+^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:2:2: error: expected unqualified-id
+<E2><U+0010><BD><U+000F><E5><CF><E4><BA><U+001F>g7[<B4>t
+    ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:2:3: error: source file is not valid UTF-8
+<E2><U+0010><BD><U+000F><E5><CF><E4><BA><U+001F>g7[<B4>t
+            ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:2:5: error: source file is not valid UTF-8
+<E2><U+0010><BD><U+000F><E5><CF><E4><BA><U+001F>g7[<B4>t
+                        ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:2:6: error: source file is not valid UTF-8
+<E2><U+0010><BD><U+000F><E5><CF><E4><BA><U+001F>g7[<B4>t
+                            ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:2:7: error: source file is not valid UTF-8
+<E2><U+0010><BD><U+000F><E5><CF><E4><BA><U+001F>g7[<B4>t
+                                ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:2:8: error: source file is not valid UTF-8
+<E2><U+0010><BD><U+000F><E5><CF><E4><BA><U+001F>g7[<B4>t
+                                    ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:2:13: error: source file is not valid UTF-8
+<E2><U+0010><BD><U+000F><E5><CF><E4><BA><U+001F>g7[<B4>t
+                                                   ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:3:1: error: source file is not valid UTF-8
+<B4><BA>Iԏ1'\<C2><U+000E>p<FA><DF><CB>qK<FB><E4>n<E8>jXO<EA>ƥ吘<96><D5>>I<C8>F<U+0002>}C<B0>/<E5>R<AA>$}<U+001F><96><8F>4<F3>*0<89><97><AC><9F><AE>(I70<C9>Ż<A5><9C><U+001F><U+03A2><FC><ED><B2>X<9B>;h@>{M<E5><DD><U+0018><9F><U+007F>t/<U+007F>=<U+0018><ED>m<AA><EE><C6><D5>
+^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:3:2: error: source file is not valid UTF-8
+<B4><BA>Iԏ1'\<C2><U+000E>p<FA><DF><CB>qK<FB><E4>n<E8>jXO<EA>ƥ吘<96><D5>>I<C8>F<U+0002>}C<B0>/<E5>R<AA>$}<U+001F><96><8F>4<F3>*0<89><97><AC><9F><AE>(I70<C9>Ż<A5><9C><U+001F><U+03A2><FC><ED><B2>X<9B>;h@>{M<E5><DD><U+0018><9F><U+007F>t/<U+007F>=<U+0018><ED>m<AA><EE><C6><D5>
+    ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:3:7: warning: missing terminating ' character [-Winvalid-pp-token]
+<B4><BA>Iԏ1'\<C2><U+000E>p<FA><DF><CB>qK<FB><E4>n<E8>jXO<EA>ƥ吘<96><D5>>I<C8>F<U+0002>}C<B0>/<E5>R<AA>$}<U+001F><96><8F>4<F3>*0<89><97><AC><9F><AE>(I70<C9>Ż<A5><9C><U+001F><U+03A2><FC><ED><B2>X<9B>;h@>{M<E5><DD><U+0018><9F><U+007F>t/<U+007F>=<U+0018><ED>m<AA><EE><C6><D5>
+           ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:4:1: error: source file is not valid UTF-8
+<DA><F9><U+0014><E5>/<C6>Ò<U+0000>lU(<D4>j<E1><U+0010><U+0000><U+0000><U+0000><A1><EA>|<88><CD><U+0017><U+0015><E4><EF><U+001E><EA>T<A2>om<DC>XlxVV0EB0002000000002f00<90>8<B0><U+0002><B8>(<A7><AE>H<C5><U+0019><F1><B7><F5><U+0014><A7><C6><F6>K<FD><9D>W<A4>Ն<FB>b<D0>g<93><U+001D>1<B8>oԥ<9E><9E><BA>e<A5>0<F3>O<D6>z$<AA>W<F0><9A><CA>4<U+001B><8D><U+0007><U+0019><93><E5>0u<E1><U+0018><DA>g<FD>u?<9A><FD><DE>u<ED>Fh<9F><D2>ی<E1>\<A2>W<U+0016>2<92><D9><F7><8E>{<U+0018>m<U+001F><BB><DE>A<U+001D>e<A9>k<E6><BB><U+001E><82><U+0013>5<B9>-[<F3><EC><FC>Y6<D9><CB><U+0015><82><D4><C6>j<88>*<E2><U+000E><A7><F0>Vw<D5>STV<D1>b<89><E3>6<D4><C7>l<E6><BF><CB><C4><F6><E6><AF>H<EF><BC>k)<E1><U+0014><9F><U+0008> <E6>؍<85>_/<U+0012><F2>V<AF><BE>!:1<AB>-[Ǖ<8E>Dq<DF>U\<FF><A5>K
+^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:4:2: error: source file is not valid UTF-8
+<DA><F9><U+0014><E5>/<C6>Ò<U+0000>lU(<D4>j<E1><U+0010><U+0000><U+0000><U+0000><A1><EA>|<88><CD><U+0017><U+0015><E4><EF><U+001E><EA>T<A2>om<DC>XlxVV0EB0002000000002f00<90>8<B0><U+0002><B8>(<A7><AE>H<C5><U+0019><F1><B7><F5><U+0014><A7><C6><F6>K<FD><9D>W<A4>Ն<FB>b<D0>g<93><U+001D>1<B8>oԥ<9E><9E><BA>e<A5>0<F3>O<D6>z$<AA>W<F0><9A><CA>4<U+001B><8D><U+0007><U+0019><93><E5>0u<E1><U+0018><DA>g<FD>u?<9A><FD><DE>u<ED>Fh<9F><D2>ی<E1>\<A2>W<U+0016>2<92><D9><F7><8E>{<U+0018>m<U+001F><BB><DE>A<U+001D>e<A9>k<E6><BB><U+001E><82><U+0013>5<B9>-[<F3><EC><FC>Y6<D9><CB><U+0015><82><D4><C6>j<88>*<E2><U+000E><A7><F0>Vw<D5>STV<D1>b<89><E3>6<D4><C7>l<E6><BF><CB><C4><F6><E6><AF>H<EF><BC>k)<E1><U+0014><9F><U+0008> <E6>؍<85>_/<U+0012><F2>V<AF><BE>!:1<AB>-[Ǖ<8E>Dq<DF>U\<FF><A5>K
+    ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:4:4: error: source file is not valid UTF-8
+<DA><F9><U+0014><E5>/<C6>Ò<U+0000>lU(<D4>j<E1><U+0010><U+0000><U+0000><U+0000><A1><EA>|<88><CD><U+0017><U+0015><E4><EF><U+001E><EA>T<A2>om<DC>XlxVV0EB0002000000002f00<90>8<B0><U+0002><B8>(<A7><AE>H<C5><U+0019><F1><B7><F5><U+0014><A7><C6><F6>K<FD><9D>W<A4>Ն<FB>b<D0>g<93><U+001D>1<B8>oԥ<9E><9E><BA>e<A5>0<F3>O<D6>z$<AA>W<F0><9A><CA>4<U+001B><8D><U+0007><U+0019><93><E5>0u<E1><U+0018><DA>g<FD>u?<9A><FD><DE>u<ED>Fh<9F><D2>ی<E1>\<A2>W<U+0016>2<92><D9><F7><8E>{<U+0018>m<U+001F><BB><DE>A<U+001D>e<A9>k<E6><BB><U+001E><82><U+0013>5<B9>-[<F3><EC><FC>Y6<D9><CB><U+0015><82><D4><C6>j<88>*<E2><U+000E><A7><F0>Vw<D5>STV<D1>b<89><E3>6<D4><C7>l<E6><BF><CB><C4><F6><E6><AF>H<EF><BC>k)<E1><U+0014><9F><U+0008> <E6>؍<85>_/<U+0012><F2>V<AF><BE>!:1<AB>-[Ǖ<8E>Dq<DF>U\<FF><A5>K
+                ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:4:6: error: source file is not valid UTF-8
+<DA><F9><U+0014><E5>/<C6>Ò<U+0000>lU(<D4>j<E1><U+0010><U+0000><U+0000><U+0000><A1><EA>|<88><CD><U+0017><U+0015><E4><EF><U+001E><EA>T<A2>om<DC>XlxVV0EB0002000000002f00<90>8<B0><U+0002><B8>(<A7><AE>H<C5><U+0019><F1><B7><F5><U+0014><A7><C6><F6>K<FD><9D>W<A4>Ն<FB>b<D0>g<93><U+001D>1<B8>oԥ<9E><9E><BA>e<A5>0<F3>O<D6>z$<AA>W<F0><9A><CA>4<U+001B><8D><U+0007><U+0019><93><E5>0u<E1><U+0018><DA>g<FD>u?<9A><FD><DE>u<ED>Fh<9F><D2>ی<E1>\<A2>W<U+0016>2<92><D9><F7><8E>{<U+0018>m<U+001F><BB><DE>A<U+001D>e<A9>k<E6><BB><U+001E><82><U+0013>5<B9>-[<F3><EC><FC>Y6<D9><CB><U+0015><82><D4><C6>j<88>*<E2><U+000E><A7><F0>Vw<D5>STV<D1>b<89><E3>6<D4><C7>l<E6><BF><CB><C4><F6><E6><AF>H<EF><BC>k)<E1><U+0014><9F><U+0008> <E6>؍<85>_/<U+0012><F2>V<AF><BE>!:1<AB>-[Ǖ<8E>Dq<DF>U\<FF><A5>K
+                     ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:4:9: warning: null character ignored [-Wnull-character]
+<DA><F9><U+0014><E5>/<C6>Ò<U+0000>lU(<D4>j<E1><U+0010><U+0000><U+0000><U+0000><A1><EA>|<88><CD><U+0017><U+0015><E4><EF><U+001E><EA>T<A2>om<DC>XlxVV0EB0002000000002f00<90>8<B0><U+0002><B8>(<A7><AE>H<C5><U+0019><F1><B7><F5><U+0014><A7><C6><F6>K<FD><9D>W<A4>Ն<FB>b<D0>g<93><U+001D>1<B8>oԥ<9E><9E><BA>e<A5>0<F3>O<D6>z$<AA>W<F0><9A><CA>4<U+001B><8D><U+0007><U+0019><93><E5>0u<E1><U+0018><DA>g<FD>u?<9A><FD><DE>u<ED>Fh<9F><D2>ی<E1>\<A2>W<U+0016>2<92><D9><F7><8E>{<U+0018>m<U+001F><BB><DE>A<U+001D>e<A9>k<E6><BB><U+001E><82><U+0013>5<B9>-[<F3><EC><FC>Y6<D9><CB><U+0015><82><D4><C6>j<88>*<E2><U+000E><A7><F0>Vw<D5>STV<D1>b<89><E3>6<D4><C7>l<E6><BF><CB><C4><F6><E6><AF>H<EF><BC>k)<E1><U+0014><9F><U+0008> <E6>؍<85>_/<U+0012><F2>V<AF><BE>!:1<AB>-[Ǖ<8E>Dq<DF>U\<FF><A5>K
+                          ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:4:13: error: source file is not valid UTF-8
+<DA><F9><U+0014><E5>/<C6>Ò<U+0000>lU(<D4>j<E1><U+0010><U+0000><U+0000><U+0000><A1><EA>|<88><CD><U+0017><U+0015><E4><EF><U+001E><EA>T<A2>om<DC>XlxVV0EB0002000000002f00<90>8<B0><U+0002><B8>(<A7><AE>H<C5><U+0019><F1><B7><F5><U+0014><A7><C6><F6>K<FD><9D>W<A4>Ն<FB>b<D0>g<93><U+001D>1<B8>oԥ<9E><9E><BA>e<A5>0<F3>O<D6>z$<AA>W<F0><9A><CA>4<U+001B><8D><U+0007><U+0019><93><E5>0u<E1><U+0018><DA>g<FD>u?<9A><FD><DE>u<ED>Fh<9F><D2>ی<E1>\<A2>W<U+0016>2<92><D9><F7><8E>{<U+0018>m<U+001F><BB><DE>A<U+001D>e<A9>k<E6><BB><U+001E><82><U+0013>5<B9>-[<F3><EC><FC>Y6<D9><CB><U+0015><82><D4><C6>j<88>*<E2><U+000E><A7><F0>Vw<D5>STV<D1>b<89><E3>6<D4><C7>l<E6><BF><CB><C4><F6><E6><AF>H<EF><BC>k)<E1><U+0014><9F><U+0008> <E6>؍<85>_/<U+0012><F2>V<AF><BE>!:1<AB>-[Ǖ<8E>Dq<DF>U\<FF><A5>K
+                                     ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:4:15: error: source file is not valid UTF-8
+<DA><F9><U+0014><E5>/<C6>Ò<U+0000>lU(<D4>j<E1><U+0010><U+0000><U+0000><U+0000><A1><EA>|<88><CD><U+0017><U+0015><E4><EF><U+001E><EA>T<A2>om<DC>XlxVV0EB0002000000002f00<90>8<B0><U+0002><B8>(<A7><AE>H<C5><U+0019><F1><B7><F5><U+0014><A7><C6><F6>K<FD><9D>W<A4>Ն<FB>b<D0>g<93><U+001D>1<B8>oԥ<9E><9E><BA>e<A5>0<F3>O<D6>z$<AA>W<F0><9A><CA>4<U+001B><8D><U+0007><U+0019><93><E5>0u<E1><U+0018><DA>g<FD>u?<9A><FD><DE>u<ED>Fh<9F><D2>ی<E1>\<A2>W<U+0016>2<92><D9><F7><8E>{<U+0018>m<U+001F><BB><DE>A<U+001D>e<A9>k<E6><BB><U+001E><82><U+0013>5<B9>-[<F3><EC><FC>Y6<D9><CB><U+0015><82><D4><C6>j<88>*<E2><U+000E><A7><F0>Vw<D5>STV<D1>b<89><E3>6<D4><C7>l<E6><BF><CB><C4><F6><E6><AF>H<EF><BC>k)<E1><U+0014><9F><U+0008> <E6>؍<85>_/<U+0012><F2>V<AF><BE>!:1<AB>-[Ǖ<8E>Dq<DF>U\<FF><A5>K
+                                          ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:4:17: warning: null character ignored [-Wnull-character]
+<DA><F9><U+0014><E5>/<C6>Ò<U+0000>lU(<D4>j<E1><U+0010><U+0000><U+0000><U+0000><A1><EA>|<88><CD><U+0017><U+0015><E4><EF><U+001E><EA>T<A2>om<DC>XlxVV0EB0002000000002f00<90>8<B0><U+0002><B8>(<A7><AE>H<C5><U+0019><F1><B7><F5><U+0014><A7><C6><F6>K<FD><9D>W<A4>Ն<FB>b<D0>g<93><U+001D>1<B8>oԥ<9E><9E><BA>e<A5>0<F3>O<D6>z$<AA>W<F0><9A><CA>4<U+001B><8D><U+0007><U+0019><93><E5>0u<E1><U+0018><DA>g<FD>u?<9A><FD><DE>u<ED>Fh<9F><D2>ی<E1>\<A2>W<U+0016>2<92><D9><F7><8E>{<U+0018>m<U+001F><BB><DE>A<U+001D>e<A9>k<E6><BB><U+001E><82><U+0013>5<B9>-[<F3><EC><FC>Y6<D9><CB><U+0015><82><D4><C6>j<88>*<E2><U+000E><A7><F0>Vw<D5>STV<D1>b<89><E3>6<D4><C7>l<E6><BF><CB><C4><F6><E6><AF>H<EF><BC>k)<E1><U+0014><9F><U+0008> <E6>؍<85>_/<U+0012><F2>V<AF><BE>!:1<AB>-[Ǖ<8E>Dq<DF>U\<FF><A5>K
+                                                      ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:4:18: warning: null character ignored [-Wnull-character]
+<DA><F9><U+0014><E5>/<C6>Ò<U+0000>lU(<D4>j<E1><U+0010><U+0000><U+0000><U+0000><A1><EA>|<88><CD><U+0017><U+0015><E4><EF><U+001E><EA>T<A2>om<DC>XlxVV0EB0002000000002f00<90>8<B0><U+0002><B8>(<A7><AE>H<C5><U+0019><F1><B7><F5><U+0014><A7><C6><F6>K<FD><9D>W<A4>Ն<FB>b<D0>g<93><U+001D>1<B8>oԥ<9E><9E><BA>e<A5>0<F3>O<D6>z$<AA>W<F0><9A><CA>4<U+001B><8D><U+0007><U+0019><93><E5>0u<E1><U+0018><DA>g<FD>u?<9A><FD><DE>u<ED>Fh<9F><D2>ی<E1>\<A2>W<U+0016>2<92><D9><F7><8E>{<U+0018>m<U+001F><BB><DE>A<U+001D>e<A9>k<E6><BB><U+001E><82><U+0013>5<B9>-[<F3><EC><FC>Y6<D9><CB><U+0015><82><D4><C6>j<88>*<E2><U+000E><A7><F0>Vw<D5>STV<D1>b<89><E3>6<D4><C7>l<E6><BF><CB><C4><F6><E6><AF>H<EF><BC>k)<E1><U+0014><9F><U+0008> <E6>؍<85>_/<U+0012><F2>V<AF><BE>!:1<AB>-[Ǖ<8E>Dq<DF>U\<FF><A5>K
+                                                              ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:4:19: warning: null character ignored [-Wnull-character]
+<DA><F9><U+0014><E5>/<C6>Ò<U+0000>lU(<D4>j<E1><U+0010><U+0000><U+0000><U+0000><A1><EA>|<88><CD><U+0017><U+0015><E4><EF><U+001E><EA>T<A2>om<DC>XlxVV0EB0002000000002f00<90>8<B0><U+0002><B8>(<A7><AE>H<C5><U+0019><F1><B7><F5><U+0014><A7><C6><F6>K<FD><9D>W<A4>Ն<FB>b<D0>g<93><U+001D>1<B8>oԥ<9E><9E><BA>e<A5>0<F3>O<D6>z$<AA>W<F0><9A><CA>4<U+001B><8D><U+0007><U+0019><93><E5>0u<E1><U+0018><DA>g<FD>u?<9A><FD><DE>u<ED>Fh<9F><D2>ی<E1>\<A2>W<U+0016>2<92><D9><F7><8E>{<U+0018>m<U+001F><BB><DE>A<U+001D>e<A9>k<E6><BB><U+001E><82><U+0013>5<B9>-[<F3><EC><FC>Y6<D9><CB><U+0015><82><D4><C6>j<88>*<E2><U+000E><A7><F0>Vw<D5>STV<D1>b<89><E3>6<D4><C7>l<E6><BF><CB><C4><F6><E6><AF>H<EF><BC>k)<E1><U+0014><9F><U+0008> <E6>؍<85>_/<U+0012><F2>V<AF><BE>!:1<AB>-[Ǖ<8E>Dq<DF>U\<FF><A5>K
+                                                                      ^
+/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_v_mix_0_0/src/v_mix.cpp:4:20: error: source file is not valid UTF-8
+<DA><F9><U+0014><E5>/<C6>Ò<U+0000>lU(<D4>j<E1><U+0010><U+0000><U+0000><U+0000><A1><EA>|<88><CD><U+0017><U+0015><E4><EF><U+001E><EA>T<A2>om<DC>XlxVV0EB0002000000002f00<90>8<B0><U+0002><B8>(<A7><AE>H<C5><U+0019><F1><B7><F5><U+0014><A7><C6><F6>K<FD><9D>W<A4>Ն<FB>b<D0>g<93><U+001D>1<B8>oԥ<9E><9E><BA>e<A5>0<F3>O<D6>z$<AA>W<F0><9A><CA>4<U+001B><8D><U+0007><U+0019><93><E5>0u<E1><U+0018><DA>g<FD>u?<9A><FD><DE>u<ED>Fh<9F><D2>ی<E1>\<A2>W<U+0016>2<92><D9><F7><8E>{<U+0018>m<U+001F><BB><DE>A<U+001D>e<A9>k<E6><BB><U+001E><82><U+0013>5<B9>-[<F3><EC><FC>Y6<D9><CB><U+0015><82><D4><C6>j<88>*<E2><U+000E><A7><F0>Vw<D5>STV<D1>b<89><E3>6<D4><C7>l<E6><BF><CB><C4><F6><E6><AF>H<EF><BC>k)<E1><U+0014><9F><U+0008> <E6>؍<85>_/<U+0012><F2>V<AF><BE>!:1<AB>-[Ǖ<8E>Dq<DF>U\<FF><A5>K
+                                                                              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]

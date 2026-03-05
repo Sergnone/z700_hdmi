@@ -1,0 +1,159 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_mix_422_to_444_false_s'
+================================================================
+* Date:           Thu Mar  5 12:49:40 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.67 ns|  4.867 ns|     1.80 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+-----------+-----+---------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max    | min |   max   |   Type  |
+    +---------+---------+----------+-----------+-----+---------+---------+
+    |        1|  2079001|  6.667 ns|  13.861 ms|    1|  2079001|       no|
+    +---------+---------+----------+-----------+-----+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip   |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |- VITIS_LOOP_103_1  |        0|  2079000|  5 ~ 1925|          -|          -|  0 ~ 1080|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.43>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i11 %HwReg_layerHeight_1_val, i1 1, void @p_str"   --->   Operation 5 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i11 %HwReg_layerWidth_1_val, i1 1, void @p_str"   --->   Operation 6 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i1 %HwReg_layerEnableFlag_1_val, i1 1, void @p_str"   --->   Operation 7 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %srcLayer1Yuv422, void @empty_40, i32 0, i32 0, void @empty_44, i32 0, i32 0, void @empty_44, void @empty_44, void @empty_44, i32 0, i32 0, i32 0, i32 0, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %srcLayer1Yuv, void @empty_40, i32 0, i32 0, void @empty_44, i32 0, i32 0, void @empty_44, void @empty_44, void @empty_44, i32 0, i32 0, i32 0, i32 0, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%HwReg_layerEnableFlag_1_val_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %HwReg_layerEnableFlag_1_val" [prj/sol/.autopilot/db/v_csc.cpp:88->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 10 'read' 'HwReg_layerEnableFlag_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (2.43ns)   --->   "%HwReg_layerWidth_1_val_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %HwReg_layerWidth_1_val" [prj/sol/.autopilot/db/v_csc.cpp:88->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 11 'read' 'HwReg_layerWidth_1_val_read' <Predicate = true> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 12 [1/1] (2.43ns)   --->   "%HwReg_layerHeight_1_val_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %HwReg_layerHeight_1_val" [prj/sol/.autopilot/db/v_csc.cpp:88->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 12 'read' 'HwReg_layerHeight_1_val_read' <Predicate = true> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln101 = br i1 %HwReg_layerEnableFlag_1_val_read, void %v_mix_422_to_444<false>.exit, void %VITIS_LOOP_105_2.i.i.preheader" [prj/sol/.autopilot/db/v_csc.cpp:101->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 13 'br' 'br_ln101' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%y = alloca i32 1" [prj/sol/.autopilot/db/v_csc.cpp:95->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 14 'alloca' 'y' <Predicate = (HwReg_layerEnableFlag_1_val_read)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (1.29ns)   --->   "%store_ln95 = store i11 0, i11 %y" [prj/sol/.autopilot/db/v_csc.cpp:95->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 15 'store' 'store_ln95' <Predicate = (HwReg_layerEnableFlag_1_val_read)> <Delay = 1.29>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln103 = br void %VITIS_LOOP_105_2.i.i" [prj/sol/.autopilot/db/v_csc.cpp:103->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 16 'br' 'br_ln103' <Predicate = (HwReg_layerEnableFlag_1_val_read)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 4.26>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%y_14 = load i11 %y" [prj/sol/.autopilot/db/v_csc.cpp:103->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 17 'load' 'y_14' <Predicate = (HwReg_layerEnableFlag_1_val_read)> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (1.48ns)   --->   "%icmp_ln103 = icmp_eq  i11 %y_14, i11 %HwReg_layerHeight_1_val_read" [prj/sol/.autopilot/db/v_csc.cpp:103->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 18 'icmp' 'icmp_ln103' <Predicate = (HwReg_layerEnableFlag_1_val_read)> <Delay = 1.48> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 1080, i64 0"   --->   Operation 19 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = (HwReg_layerEnableFlag_1_val_read)> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (1.48ns)   --->   "%y_15 = add i11 %y_14, i11 1" [prj/sol/.autopilot/db/v_csc.cpp:103->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 20 'add' 'y_15' <Predicate = (HwReg_layerEnableFlag_1_val_read)> <Delay = 1.48> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln103 = br i1 %icmp_ln103, void %for.inc.lr.ph.i.i, void %v_mix_422_to_444<false>.exit.loopexit" [prj/sol/.autopilot/db/v_csc.cpp:103->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 21 'br' 'br_ln103' <Predicate = (HwReg_layerEnableFlag_1_val_read)> <Delay = 0.00>
+ST_2 : Operation 22 [2/2] (2.77ns)   --->   "%call_ln88 = call void @v_mix_422_to_444<false>_Pipeline_VITIS_LOOP_105_2, i11 %HwReg_layerWidth_1_val_read, i24 %srcLayer1Yuv422, i24 %srcLayer1Yuv" [prj/sol/.autopilot/db/v_csc.cpp:88->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 22 'call' 'call_ln88' <Predicate = (HwReg_layerEnableFlag_1_val_read & !icmp_ln103)> <Delay = 2.77> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln0 = br void %v_mix_422_to_444<false>.exit"   --->   Operation 23 'br' 'br_ln0' <Predicate = (HwReg_layerEnableFlag_1_val_read & icmp_ln103)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%ret_ln738 = ret" [prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 24 'ret' 'ret_ln738' <Predicate = (icmp_ln103) | (!HwReg_layerEnableFlag_1_val_read)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 4.07>
+ST_3 : Operation 25 [1/2] (4.07ns)   --->   "%call_ln88 = call void @v_mix_422_to_444<false>_Pipeline_VITIS_LOOP_105_2, i11 %HwReg_layerWidth_1_val_read, i24 %srcLayer1Yuv422, i24 %srcLayer1Yuv" [prj/sol/.autopilot/db/v_csc.cpp:88->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 25 'call' 'call_ln88' <Predicate = true> <Delay = 4.07> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 1.29>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%specloopname_ln103 = specloopname void @_ssdm_op_SpecLoopName, void @empty_36" [prj/sol/.autopilot/db/v_csc.cpp:103->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 26 'specloopname' 'specloopname_ln103' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (1.29ns)   --->   "%store_ln95 = store i11 %y_15, i11 %y" [prj/sol/.autopilot/db/v_csc.cpp:95->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 27 'store' 'store_ln95' <Predicate = true> <Delay = 1.29>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln103 = br void %VITIS_LOOP_105_2.i.i" [prj/sol/.autopilot/db/v_csc.cpp:103->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738]   --->   Operation 28 'br' 'br_ln103' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.667ns, clock uncertainty: 1.800ns.
+
+ <State 1>: 2.433ns
+The critical path consists of the following:
+	wire read operation ('HwReg_layerWidth_1_val_read', prj/sol/.autopilot/db/v_csc.cpp:88->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738) on port 'HwReg_layerWidth_1_val' (prj/sol/.autopilot/db/v_csc.cpp:88->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738) [12]  (2.433 ns)
+
+ <State 2>: 4.261ns
+The critical path consists of the following:
+	'load' operation 11 bit ('y', prj/sol/.autopilot/db/v_csc.cpp:103->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738) on local variable 'y', prj/sol/.autopilot/db/v_csc.cpp:95->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738 [20]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln103', prj/sol/.autopilot/db/v_csc.cpp:103->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738) [21]  (1.482 ns)
+	'call' operation ('call_ln88', prj/sol/.autopilot/db/v_csc.cpp:88->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738) to 'v_mix_422_to_444<false>_Pipeline_VITIS_LOOP_105_2' [27]  (2.780 ns)
+
+ <State 3>: 4.078ns
+The critical path consists of the following:
+	'call' operation ('call_ln88', prj/sol/.autopilot/db/v_csc.cpp:88->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738) to 'v_mix_422_to_444<false>_Pipeline_VITIS_LOOP_105_2' [27]  (4.078 ns)
+
+ <State 4>: 1.298ns
+The critical path consists of the following:
+	'store' operation ('store_ln95', prj/sol/.autopilot/db/v_csc.cpp:95->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738) of variable 'y', prj/sol/.autopilot/db/v_csc.cpp:103->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738 11 bit on local variable 'y', prj/sol/.autopilot/db/v_csc.cpp:95->prj/sol/.autopilot/db/v_mix.cpp:738->prj/sol/.autopilot/db/v_mix.cpp:738 [28]  (1.298 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

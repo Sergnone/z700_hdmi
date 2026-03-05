@@ -1,0 +1,305 @@
+
+
+================================================================
+== Vitis HLS Report for 'MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1'
+================================================================
+* Date:           Thu Mar  5 12:48:55 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.67 ns|  4.813 ns|     1.80 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval |      Pipeline     |
+    |   min   |   max   |    min    |    max    | min | max |        Type       |
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+    |        2|     3843|  13.334 ns|  25.621 us|    0|    0|  loop pipeline stp|
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip  |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- VITIS_LOOP_1090_1  |        0|     3841|        10|          8|          8|  0 ~ 480|       yes|
+        +---------------------+---------+---------+----------+-----------+-----------+---------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 8, depth = 10
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 1
+  Pipeline-0 : II = 8, D = 10, States = { 1 2 3 4 5 6 7 8 9 10 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.81>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%x = alloca i32 1" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1090]   --->   Operation 13 'alloca' 'x' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%icmp6_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp6"   --->   Operation 14 'read' 'icmp6_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%add_ln1095_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %add_ln1095"   --->   Operation 15 'read' 'add_ln1095_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%icmp_ln1095_1_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp_ln1095_1"   --->   Operation 16 'read' 'icmp_ln1095_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%icmp9_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp9"   --->   Operation 17 'read' 'icmp9_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%icmp_ln1095_3_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp_ln1095_3"   --->   Operation 18 'read' 'icmp_ln1095_3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%icmp_ln1095_4_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp_ln1095_4"   --->   Operation 19 'read' 'icmp_ln1095_4_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%icmp_ln1095_5_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp_ln1095_5"   --->   Operation 20 'read' 'icmp_ln1095_5_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%icmp_ln1077_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp_ln1077"   --->   Operation 21 'read' 'icmp_ln1077_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%tmp = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %empty"   --->   Operation 22 'read' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%icmp_ln1110_1_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp_ln1110_1"   --->   Operation 23 'read' 'icmp_ln1110_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%trunc_ln1_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %trunc_ln1"   --->   Operation 24 'read' 'trunc_ln1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %bytePlanes, i64 666, i64 8, i64 18446744073709551615, i1 0"   --->   Operation 25 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %img, void @empty_7, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %bytePlanes, void @empty_7, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (1.29ns)   --->   "%store_ln1090 = store i9 0, i9 %x" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1090]   --->   Operation 28 'store' 'store_ln1090' <Predicate = true> <Delay = 1.29>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%br_ln1090 = br void %VITIS_LOOP_1093_2" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1090]   --->   Operation 29 'br' 'br_ln1090' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%x_1 = load i9 %x" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1090]   --->   Operation 30 'load' 'x_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln1090 = zext i9 %x_1" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1090]   --->   Operation 31 'zext' 'zext_ln1090' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (1.36ns)   --->   "%icmp_ln1090 = icmp_ult  i9 %x_1, i9 %trunc_ln1_read" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1090]   --->   Operation 32 'icmp' 'icmp_ln1090' <Predicate = true> <Delay = 1.36> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 480, i64 0"   --->   Operation 33 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (1.36ns)   --->   "%x_2 = add i9 %x_1, i9 1" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1090]   --->   Operation 34 'add' 'x_2' <Predicate = true> <Delay = 1.36> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%br_ln1090 = br i1 %icmp_ln1090, void %for.inc153.exitStub, void %VITIS_LOOP_1093_2.split" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1090]   --->   Operation 35 'br' 'br_ln1090' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (1.41ns)   --->   "%icmp_ln1095 = icmp_slt  i10 %zext_ln1090, i10 %add_ln1095_read" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095]   --->   Operation 36 'icmp' 'icmp_ln1095' <Predicate = (icmp_ln1090)> <Delay = 1.41> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.41> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 37 [1/1] (0.80ns)   --->   "%or_ln1095 = or i1 %icmp_ln1095, i1 %icmp6_read" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095]   --->   Operation 37 'or' 'or_ln1095' <Predicate = (icmp_ln1090)> <Delay = 0.80> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 38 [1/1] (1.29ns)   --->   "%br_ln1095 = br i1 %or_ln1095, void %for.inc.1, void %if.then99.1" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095]   --->   Operation 38 'br' 'br_ln1095' <Predicate = (icmp_ln1090)> <Delay = 1.29>
+ST_1 : Operation 39 [1/1] (0.80ns)   --->   "%or_ln1110 = or i1 %icmp_ln1095, i1 %tmp" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1110]   --->   Operation 39 'or' 'or_ln1110' <Predicate = (icmp_ln1090)> <Delay = 0.80> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln1110 = br i1 %or_ln1110, void %for.inc147.1, void %if.then139.1" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1110]   --->   Operation 40 'br' 'br_ln1110' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.80ns)   --->   "%or_ln1110_1 = or i1 %icmp_ln1095, i1 %icmp_ln1110_1_read" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1110]   --->   Operation 41 'or' 'or_ln1110_1' <Predicate = (icmp_ln1090)> <Delay = 0.80> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%br_ln1110 = br i1 %or_ln1110_1, void %for.inc147.2, void %if.then139.2" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1110]   --->   Operation 42 'br' 'br_ln1110' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (1.29ns)   --->   "%store_ln1090 = store i9 %x_2, i9 %x" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1090]   --->   Operation 43 'store' 'store_ln1090' <Predicate = (icmp_ln1090)> <Delay = 1.29>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%br_ln1090 = br void %VITIS_LOOP_1093_2" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1090]   --->   Operation 44 'br' 'br_ln1090' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 2.43>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%specpipeline_ln1092 = specpipeline void @_ssdm_op_SpecPipeline, i32 8, i32 0, i32 0, i32 0, i32 4294967295, void @empty_5" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1092]   --->   Operation 45 'specpipeline' 'specpipeline_ln1092' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%specloopname_ln1090 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1090]   --->   Operation 46 'specloopname' 'specloopname_ln1090' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] ( I:2.43ns O:2.43ns )   --->   "%img_read = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %img" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 47 'read' 'img_read' <Predicate = (icmp_ln1090)> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%trunc_ln1096_1 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %img_read, i32 8, i32 15" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 48 'partselect' 'trunc_ln1096_1' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%trunc_ln1096_2 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %img_read, i32 16, i32 23" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 49 'partselect' 'trunc_ln1096_2' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (1.29ns)   --->   "%br_ln1096 = br void %for.inc.1" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 50 'br' 'br_ln1096' <Predicate = (icmp_ln1090 & or_ln1095)> <Delay = 1.29>
+ST_2 : Operation 126 [1/1] (1.29ns)   --->   "%ret_ln0 = ret"   --->   Operation 126 'ret' 'ret_ln0' <Predicate = (!icmp_ln1090)> <Delay = 1.29>
+
+State 3 <SV = 2> <Delay = 2.43>
+ST_3 : Operation 51 [1/1] ( I:2.43ns O:2.43ns )   --->   "%img_read_1 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %img" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 51 'read' 'img_read_1' <Predicate = (icmp_ln1090 & or_ln1095)> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%trunc_ln1096_4 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %img_read_1, i32 8, i32 15" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 52 'partselect' 'trunc_ln1096_4' <Predicate = (icmp_ln1090 & or_ln1095)> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%trunc_ln1096_5 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %img_read_1, i32 16, i32 23" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 53 'partselect' 'trunc_ln1096_5' <Predicate = (icmp_ln1090 & or_ln1095)> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%empty_149 = phi i8 %trunc_ln1096_5, void %if.then99.1, i8 %trunc_ln1096_2, void %VITIS_LOOP_1093_2.split" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 54 'phi' 'empty_149' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%empty_150 = phi i8 %trunc_ln1096_4, void %if.then99.1, i8 %trunc_ln1096_1, void %VITIS_LOOP_1093_2.split" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 55 'phi' 'empty_150' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_3 : Operation 56 [1/1] (0.80ns)   --->   "%or_ln1095_1 = or i1 %icmp_ln1095, i1 %icmp_ln1095_1_read" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095]   --->   Operation 56 'or' 'or_ln1095_1' <Predicate = (icmp_ln1090)> <Delay = 0.80> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 2.43>
+ST_4 : Operation 57 [1/1] (1.29ns)   --->   "%br_ln1095 = br i1 %or_ln1095_1, void %for.inc.2, void %if.then99.2" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095]   --->   Operation 57 'br' 'br_ln1095' <Predicate = (icmp_ln1090)> <Delay = 1.29>
+ST_4 : Operation 58 [1/1] ( I:2.43ns O:2.43ns )   --->   "%img_read_2 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %img" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 58 'read' 'img_read_2' <Predicate = (icmp_ln1090 & or_ln1095_1)> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%trunc_ln1096_3 = trunc i24 %img_read_2" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 59 'trunc' 'trunc_ln1096_3' <Predicate = (icmp_ln1090 & or_ln1095_1)> <Delay = 0.00>
+ST_4 : Operation 60 [1/1] (0.00ns)   --->   "%trunc_ln1096_7 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %img_read_2, i32 8, i32 15" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 60 'partselect' 'trunc_ln1096_7' <Predicate = (icmp_ln1090 & or_ln1095_1)> <Delay = 0.00>
+ST_4 : Operation 61 [1/1] (0.00ns)   --->   "%trunc_ln1096_8 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %img_read_2, i32 16, i32 23" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 61 'partselect' 'trunc_ln1096_8' <Predicate = (icmp_ln1090 & or_ln1095_1)> <Delay = 0.00>
+ST_4 : Operation 62 [1/1] (1.29ns)   --->   "%br_ln1096 = br void %for.inc.2" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 62 'br' 'br_ln1096' <Predicate = (icmp_ln1090 & or_ln1095_1)> <Delay = 1.29>
+ST_4 : Operation 63 [1/1] (0.80ns)   --->   "%or_ln1095_2 = or i1 %icmp_ln1095, i1 %icmp9_read" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095]   --->   Operation 63 'or' 'or_ln1095_2' <Predicate = (icmp_ln1090)> <Delay = 0.80> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 2.43>
+ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%phi_ln1096 = phi i24 %img_read_1, void %if.then99.1, i24 %img_read, void %VITIS_LOOP_1093_2.split" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 64 'phi' 'phi_ln1096' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_5 : Operation 65 [1/1] (0.00ns)   --->   "%trunc_ln1096 = trunc i24 %phi_ln1096" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 65 'trunc' 'trunc_ln1096' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_5 : Operation 66 [1/1] (0.00ns)   --->   "%empty_146 = phi i8 %trunc_ln1096_8, void %if.then99.2, i8 %empty_149, void %for.inc.1" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 66 'phi' 'empty_146' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_5 : Operation 67 [1/1] (0.00ns)   --->   "%empty_147 = phi i8 %trunc_ln1096_7, void %if.then99.2, i8 %empty_150, void %for.inc.1" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 67 'phi' 'empty_147' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_5 : Operation 68 [1/1] (0.00ns)   --->   "%empty_148 = phi i8 %trunc_ln1096_3, void %if.then99.2, i8 %trunc_ln1096, void %for.inc.1" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 68 'phi' 'empty_148' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_5 : Operation 69 [1/1] (1.29ns)   --->   "%br_ln1095 = br i1 %or_ln1095_2, void %for.inc.3, void %if.then99.3" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095]   --->   Operation 69 'br' 'br_ln1095' <Predicate = (icmp_ln1090)> <Delay = 1.29>
+ST_5 : Operation 70 [1/1] ( I:2.43ns O:2.43ns )   --->   "%img_read_3 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %img" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 70 'read' 'img_read_3' <Predicate = (icmp_ln1090 & or_ln1095_2)> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_5 : Operation 71 [1/1] (0.00ns)   --->   "%trunc_ln1096_6 = trunc i24 %img_read_3" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 71 'trunc' 'trunc_ln1096_6' <Predicate = (icmp_ln1090 & or_ln1095_2)> <Delay = 0.00>
+ST_5 : Operation 72 [1/1] (0.00ns)   --->   "%trunc_ln1096_s = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %img_read_3, i32 8, i32 15" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 72 'partselect' 'trunc_ln1096_s' <Predicate = (icmp_ln1090 & or_ln1095_2)> <Delay = 0.00>
+ST_5 : Operation 73 [1/1] (0.00ns)   --->   "%trunc_ln1096_9 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %img_read_3, i32 16, i32 23" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 73 'partselect' 'trunc_ln1096_9' <Predicate = (icmp_ln1090 & or_ln1095_2)> <Delay = 0.00>
+ST_5 : Operation 74 [1/1] (1.29ns)   --->   "%br_ln1096 = br void %for.inc.3" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 74 'br' 'br_ln1096' <Predicate = (icmp_ln1090 & or_ln1095_2)> <Delay = 1.29>
+ST_5 : Operation 75 [1/1] (0.80ns)   --->   "%or_ln1095_3 = or i1 %icmp_ln1095, i1 %icmp_ln1095_3_read" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095]   --->   Operation 75 'or' 'or_ln1095_3' <Predicate = (icmp_ln1090)> <Delay = 0.80> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 76 [1/1] (0.80ns)   --->   "%or_ln1095_4 = or i1 %icmp_ln1095, i1 %icmp_ln1095_4_read" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095]   --->   Operation 76 'or' 'or_ln1095_4' <Predicate = (icmp_ln1090)> <Delay = 0.80> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 77 [1/1] (0.80ns)   --->   "%or_ln1095_5 = or i1 %icmp_ln1095, i1 %icmp_ln1095_5_read" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095]   --->   Operation 77 'or' 'or_ln1095_5' <Predicate = (icmp_ln1090)> <Delay = 0.80> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 78 [1/1] (0.80ns)   --->   "%or_ln1095_6 = or i1 %icmp_ln1095, i1 %icmp_ln1077_read" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095]   --->   Operation 78 'or' 'or_ln1095_6' <Predicate = (icmp_ln1090)> <Delay = 0.80> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 79 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i8.i8.i8.i8.i8.i24, i8 %empty_147, i8 %empty_148, i8 %empty_149, i8 %empty_150, i8 %trunc_ln1096, i24 %img_read" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1111]   --->   Operation 79 'bitconcatenate' 'tmp_s' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_5 : Operation 80 [1/1] ( I:2.43ns O:2.43ns )   --->   "%write_ln1111 = write void @_ssdm_op_Write.ap_fifo.volatile.i64P0A, i64 %bytePlanes, i64 %tmp_s" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1111]   --->   Operation 80 'write' 'write_ln1111' <Predicate = (icmp_ln1090)> <Delay = 2.43> <CoreInst = "FIFO_BRAM">   --->   Core 78 'FIFO_BRAM' <Latency = 0> <II = 1> <Delay = 3.41> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 481> <FIFO>
+
+State 6 <SV = 5> <Delay = 2.43>
+ST_6 : Operation 81 [1/1] (0.00ns)   --->   "%empty_143 = phi i8 %trunc_ln1096_9, void %if.then99.3, i8 %empty_146, void %for.inc.2" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 81 'phi' 'empty_143' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_6 : Operation 82 [1/1] (0.00ns)   --->   "%empty_144 = phi i8 %trunc_ln1096_s, void %if.then99.3, i8 %empty_147, void %for.inc.2" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 82 'phi' 'empty_144' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_6 : Operation 83 [1/1] (0.00ns)   --->   "%empty_145 = phi i8 %trunc_ln1096_6, void %if.then99.3, i8 %empty_148, void %for.inc.2" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 83 'phi' 'empty_145' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_6 : Operation 84 [1/1] (1.29ns)   --->   "%br_ln1095 = br i1 %or_ln1095_3, void %for.inc.4, void %if.then99.4" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095]   --->   Operation 84 'br' 'br_ln1095' <Predicate = (icmp_ln1090)> <Delay = 1.29>
+ST_6 : Operation 85 [1/1] ( I:2.43ns O:2.43ns )   --->   "%img_read_4 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %img" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 85 'read' 'img_read_4' <Predicate = (icmp_ln1090 & or_ln1095_3)> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_6 : Operation 86 [1/1] (0.00ns)   --->   "%trunc_ln1096_10 = trunc i24 %img_read_4" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 86 'trunc' 'trunc_ln1096_10' <Predicate = (icmp_ln1090 & or_ln1095_3)> <Delay = 0.00>
+ST_6 : Operation 87 [1/1] (0.00ns)   --->   "%trunc_ln1096_11 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %img_read_4, i32 8, i32 15" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 87 'partselect' 'trunc_ln1096_11' <Predicate = (icmp_ln1090 & or_ln1095_3)> <Delay = 0.00>
+ST_6 : Operation 88 [1/1] (0.00ns)   --->   "%trunc_ln1096_12 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %img_read_4, i32 16, i32 23" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 88 'partselect' 'trunc_ln1096_12' <Predicate = (icmp_ln1090 & or_ln1095_3)> <Delay = 0.00>
+ST_6 : Operation 89 [1/1] (1.29ns)   --->   "%br_ln1096 = br void %for.inc.4" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 89 'br' 'br_ln1096' <Predicate = (icmp_ln1090 & or_ln1095_3)> <Delay = 1.29>
+
+State 7 <SV = 6> <Delay = 2.43>
+ST_7 : Operation 90 [1/1] (0.00ns)   --->   "%empty_140 = phi i8 %trunc_ln1096_12, void %if.then99.4, i8 %empty_143, void %for.inc.3" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 90 'phi' 'empty_140' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_7 : Operation 91 [1/1] (0.00ns)   --->   "%empty_141 = phi i8 %trunc_ln1096_11, void %if.then99.4, i8 %empty_144, void %for.inc.3" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 91 'phi' 'empty_141' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_7 : Operation 92 [1/1] (0.00ns)   --->   "%empty_142 = phi i8 %trunc_ln1096_10, void %if.then99.4, i8 %empty_145, void %for.inc.3" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 92 'phi' 'empty_142' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_7 : Operation 93 [1/1] (1.29ns)   --->   "%br_ln1095 = br i1 %or_ln1095_4, void %for.inc.5, void %if.then99.5" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095]   --->   Operation 93 'br' 'br_ln1095' <Predicate = (icmp_ln1090)> <Delay = 1.29>
+ST_7 : Operation 94 [1/1] ( I:2.43ns O:2.43ns )   --->   "%img_read_5 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %img" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 94 'read' 'img_read_5' <Predicate = (icmp_ln1090 & or_ln1095_4)> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_7 : Operation 95 [1/1] (0.00ns)   --->   "%trunc_ln1096_13 = trunc i24 %img_read_5" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 95 'trunc' 'trunc_ln1096_13' <Predicate = (icmp_ln1090 & or_ln1095_4)> <Delay = 0.00>
+ST_7 : Operation 96 [1/1] (0.00ns)   --->   "%trunc_ln1096_14 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %img_read_5, i32 8, i32 15" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 96 'partselect' 'trunc_ln1096_14' <Predicate = (icmp_ln1090 & or_ln1095_4)> <Delay = 0.00>
+ST_7 : Operation 97 [1/1] (0.00ns)   --->   "%trunc_ln1096_15 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %img_read_5, i32 16, i32 23" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 97 'partselect' 'trunc_ln1096_15' <Predicate = (icmp_ln1090 & or_ln1095_4)> <Delay = 0.00>
+ST_7 : Operation 98 [1/1] (1.29ns)   --->   "%br_ln1096 = br void %for.inc.5" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 98 'br' 'br_ln1096' <Predicate = (icmp_ln1090 & or_ln1095_4)> <Delay = 1.29>
+
+State 8 <SV = 7> <Delay = 2.43>
+ST_8 : Operation 99 [1/1] (0.00ns)   --->   "%empty_137 = phi i8 %trunc_ln1096_15, void %if.then99.5, i8 %empty_140, void %for.inc.4" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 99 'phi' 'empty_137' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_8 : Operation 100 [1/1] (0.00ns)   --->   "%empty_138 = phi i8 %trunc_ln1096_14, void %if.then99.5, i8 %empty_141, void %for.inc.4" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 100 'phi' 'empty_138' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_8 : Operation 101 [1/1] (0.00ns)   --->   "%empty_139 = phi i8 %trunc_ln1096_13, void %if.then99.5, i8 %empty_142, void %for.inc.4" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 101 'phi' 'empty_139' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_8 : Operation 102 [1/1] (1.29ns)   --->   "%br_ln1095 = br i1 %or_ln1095_5, void %for.inc.6, void %if.then99.6" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095]   --->   Operation 102 'br' 'br_ln1095' <Predicate = (icmp_ln1090)> <Delay = 1.29>
+ST_8 : Operation 103 [1/1] ( I:2.43ns O:2.43ns )   --->   "%img_read_6 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %img" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 103 'read' 'img_read_6' <Predicate = (icmp_ln1090 & or_ln1095_5)> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_8 : Operation 104 [1/1] (0.00ns)   --->   "%trunc_ln1096_16 = trunc i24 %img_read_6" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 104 'trunc' 'trunc_ln1096_16' <Predicate = (icmp_ln1090 & or_ln1095_5)> <Delay = 0.00>
+ST_8 : Operation 105 [1/1] (0.00ns)   --->   "%trunc_ln1096_17 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %img_read_6, i32 8, i32 15" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 105 'partselect' 'trunc_ln1096_17' <Predicate = (icmp_ln1090 & or_ln1095_5)> <Delay = 0.00>
+ST_8 : Operation 106 [1/1] (0.00ns)   --->   "%trunc_ln1096_18 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %img_read_6, i32 16, i32 23" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 106 'partselect' 'trunc_ln1096_18' <Predicate = (icmp_ln1090 & or_ln1095_5)> <Delay = 0.00>
+ST_8 : Operation 107 [1/1] (1.29ns)   --->   "%br_ln1096 = br void %for.inc.6" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 107 'br' 'br_ln1096' <Predicate = (icmp_ln1090 & or_ln1095_5)> <Delay = 1.29>
+ST_8 : Operation 108 [1/1] (0.00ns)   --->   "%tmp_1 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i8.i8.i8.i8.i8.i8.i8.i8, i8 %empty_139, i8 %empty_140, i8 %empty_141, i8 %empty_142, i8 %empty_143, i8 %empty_144, i8 %empty_145, i8 %empty_146" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1111]   --->   Operation 108 'bitconcatenate' 'tmp_1' <Predicate = (icmp_ln1090 & or_ln1110)> <Delay = 0.00>
+ST_8 : Operation 109 [1/1] ( I:2.43ns O:2.43ns )   --->   "%write_ln1111 = write void @_ssdm_op_Write.ap_fifo.volatile.i64P0A, i64 %bytePlanes, i64 %tmp_1" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1111]   --->   Operation 109 'write' 'write_ln1111' <Predicate = (icmp_ln1090 & or_ln1110)> <Delay = 2.43> <CoreInst = "FIFO_BRAM">   --->   Core 78 'FIFO_BRAM' <Latency = 0> <II = 1> <Delay = 3.41> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 481> <FIFO>
+ST_8 : Operation 110 [1/1] (0.00ns)   --->   "%br_ln1111 = br void %for.inc147.1" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1111]   --->   Operation 110 'br' 'br_ln1111' <Predicate = (icmp_ln1090 & or_ln1110)> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 2.43>
+ST_9 : Operation 111 [1/1] (0.00ns)   --->   "%empty_134 = phi i8 %trunc_ln1096_18, void %if.then99.6, i8 %empty_137, void %for.inc.5" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 111 'phi' 'empty_134' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_9 : Operation 112 [1/1] (0.00ns)   --->   "%empty_135 = phi i8 %trunc_ln1096_17, void %if.then99.6, i8 %empty_138, void %for.inc.5" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 112 'phi' 'empty_135' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_9 : Operation 113 [1/1] (0.00ns)   --->   "%empty_136 = phi i8 %trunc_ln1096_16, void %if.then99.6, i8 %empty_139, void %for.inc.5" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 113 'phi' 'empty_136' <Predicate = (icmp_ln1090)> <Delay = 0.00>
+ST_9 : Operation 114 [1/1] (1.29ns)   --->   "%br_ln1095 = br i1 %or_ln1095_6, void %for.inc.7, void %if.then99.7" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095]   --->   Operation 114 'br' 'br_ln1095' <Predicate = (icmp_ln1090)> <Delay = 1.29>
+ST_9 : Operation 115 [1/1] ( I:2.43ns O:2.43ns )   --->   "%img_read_7 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %img" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 115 'read' 'img_read_7' <Predicate = (icmp_ln1090 & or_ln1095_6)> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_9 : Operation 116 [1/1] (0.00ns)   --->   "%trunc_ln1096_19 = trunc i24 %img_read_7" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 116 'trunc' 'trunc_ln1096_19' <Predicate = (icmp_ln1090 & or_ln1095_6)> <Delay = 0.00>
+ST_9 : Operation 117 [1/1] (0.00ns)   --->   "%trunc_ln1096_20 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %img_read_7, i32 8, i32 15" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 117 'partselect' 'trunc_ln1096_20' <Predicate = (icmp_ln1090 & or_ln1095_6)> <Delay = 0.00>
+ST_9 : Operation 118 [1/1] (0.00ns)   --->   "%trunc_ln1096_21 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %img_read_7, i32 16, i32 23" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 118 'partselect' 'trunc_ln1096_21' <Predicate = (icmp_ln1090 & or_ln1095_6)> <Delay = 0.00>
+ST_9 : Operation 119 [1/1] (1.29ns)   --->   "%br_ln1096 = br void %for.inc.7" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 119 'br' 'br_ln1096' <Predicate = (icmp_ln1090 & or_ln1095_6)> <Delay = 1.29>
+
+State 10 <SV = 9> <Delay = 2.43>
+ST_10 : Operation 120 [1/1] (0.00ns)   --->   "%empty_131 = phi i8 %trunc_ln1096_21, void %if.then99.7, i8 %empty_134, void %for.inc.6" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 120 'phi' 'empty_131' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 121 [1/1] (0.00ns)   --->   "%empty_132 = phi i8 %trunc_ln1096_20, void %if.then99.7, i8 %empty_135, void %for.inc.6" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 121 'phi' 'empty_132' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 122 [1/1] (0.00ns)   --->   "%empty_133 = phi i8 %trunc_ln1096_19, void %if.then99.7, i8 %empty_136, void %for.inc.6" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096]   --->   Operation 122 'phi' 'empty_133' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 123 [1/1] (0.00ns)   --->   "%tmp_2 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i8.i8.i8.i8.i8.i8.i8.i8, i8 %empty_131, i8 %empty_132, i8 %empty_133, i8 %empty_134, i8 %empty_135, i8 %empty_136, i8 %empty_137, i8 %empty_138" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1111]   --->   Operation 123 'bitconcatenate' 'tmp_2' <Predicate = (or_ln1110_1)> <Delay = 0.00>
+ST_10 : Operation 124 [1/1] ( I:2.43ns O:2.43ns )   --->   "%write_ln1111 = write void @_ssdm_op_Write.ap_fifo.volatile.i64P0A, i64 %bytePlanes, i64 %tmp_2" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1111]   --->   Operation 124 'write' 'write_ln1111' <Predicate = (or_ln1110_1)> <Delay = 2.43> <CoreInst = "FIFO_BRAM">   --->   Core 78 'FIFO_BRAM' <Latency = 0> <II = 1> <Delay = 3.41> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 481> <FIFO>
+ST_10 : Operation 125 [1/1] (0.00ns)   --->   "%br_ln1111 = br void %for.inc147.2" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1111]   --->   Operation 125 'br' 'br_ln1111' <Predicate = (or_ln1110_1)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.667ns, clock uncertainty: 1.800ns.
+
+ <State 1>: 4.813ns
+The critical path consists of the following:
+	'store' operation ('store_ln1090', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1090) of constant 0 9 bit on local variable 'x', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1090 [29]  (1.298 ns)
+	'load' operation 9 bit ('x', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1090) on local variable 'x', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1090 [32]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln1095', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095) [41]  (1.417 ns)
+	'or' operation 1 bit ('or_ln1095', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095) [45]  (0.800 ns)
+	multiplexor before 'phi' operation 8 bit ('empty_149', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) with incoming values : ('trunc_ln1096_2', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) ('trunc_ln1096_5', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) [53]  (1.298 ns)
+	'br' operation ('br_ln1095', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1095) [46]  (1.298 ns)
+
+ <State 2>: 2.433ns
+The critical path consists of the following:
+	fifo read operation ('img_read', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) on port 'img' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) [42]  (2.433 ns)
+
+ <State 3>: 2.433ns
+The critical path consists of the following:
+	fifo read operation ('img_read_1', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) on port 'img' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) [48]  (2.433 ns)
+
+ <State 4>: 2.433ns
+The critical path consists of the following:
+	fifo read operation ('img_read_2', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) on port 'img' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) [60]  (2.433 ns)
+
+ <State 5>: 2.433ns
+The critical path consists of the following:
+	fifo read operation ('img_read_3', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) on port 'img' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) [72]  (2.433 ns)
+
+ <State 6>: 2.433ns
+The critical path consists of the following:
+	fifo read operation ('img_read_4', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) on port 'img' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) [84]  (2.433 ns)
+
+ <State 7>: 2.433ns
+The critical path consists of the following:
+	fifo read operation ('img_read_5', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) on port 'img' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) [96]  (2.433 ns)
+
+ <State 8>: 2.433ns
+The critical path consists of the following:
+	fifo read operation ('img_read_6', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) on port 'img' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) [108]  (2.433 ns)
+
+ <State 9>: 2.433ns
+The critical path consists of the following:
+	fifo read operation ('img_read_7', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) on port 'img' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) [120]  (2.433 ns)
+
+ <State 10>: 2.433ns
+The critical path consists of the following:
+	'phi' operation 8 bit ('empty_131', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) with incoming values : ('trunc_ln1096_2', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) ('trunc_ln1096_5', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) ('trunc_ln1096_8', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) ('trunc_ln1096_9', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) ('trunc_ln1096_12', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) ('trunc_ln1096_15', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) ('trunc_ln1096_18', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) ('trunc_ln1096_21', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1096) [126]  (0.000 ns)
+	fifo write operation ('write_ln1111', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1111) on port 'bytePlanes' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1111) [142]  (2.433 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

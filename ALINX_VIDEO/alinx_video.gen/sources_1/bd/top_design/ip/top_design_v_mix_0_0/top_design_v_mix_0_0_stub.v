@@ -1,0 +1,122 @@
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+// --------------------------------------------------------------------------------
+// Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+// Date        : Wed Mar  4 15:21:01 2026
+// Host        : serg running 64-bit Ubuntu 24.04.3 LTS
+// Command     : write_verilog -force -mode synth_stub -rename_top top_design_v_mix_0_0 -prefix
+//               top_design_v_mix_0_0_ top_design_v_mix_0_0_stub.v
+// Design      : top_design_v_mix_0_0
+// Purpose     : Stub declaration of top-level module interface
+// Device      : xc7z020clg400-2
+// --------------------------------------------------------------------------------
+
+// This empty module with port declaration file causes synthesis tools to infer a black box for IP.
+// The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
+// Please paste the declaration into a Verilog source file or add the file as an additional source.
+(* CHECK_LICENSE_TYPE = "top_design_v_mix_0_0,top_design_v_mix_0_0_v_mix,{}" *) (* CORE_GENERATION_INFO = "top_design_v_mix_0_0,top_design_v_mix_0_0_v_mix,{x_ipProduct=Vivado 2025.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=v_mix,x_ipVersion=6.0,x_ipCoreRevision=0,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_ADDR_WIDTH=13,C_S_AXI_CTRL_DATA_WIDTH=32,C_M_AXI_MM_VIDEO1_ID_WIDTH=1,C_M_AXI_MM_VIDEO1_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO1_DATA_WIDTH=64,C_M_AXI_MM_VIDEO1_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO1_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO1_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO1_RUSER_WIDTH=1,C_M_AXI_MM_VIDEO1_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO1_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO1_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO1_CACHE_VALUE=0x3,C_M_AXI_MM_VIDEO2_ID_WIDTH=1,C_M_AXI_MM_VIDEO2_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO2_DATA_WIDTH=64,C_M_AXI_MM_VIDEO2_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO2_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO2_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO2_RUSER_WIDTH=1,C_M_AXI_MM_VIDEO2_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO2_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO2_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO2_CACHE_VALUE=0x3,C_M_AXI_MM_VIDEO3_ID_WIDTH=1,C_M_AXI_MM_VIDEO3_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO3_DATA_WIDTH=64,C_M_AXI_MM_VIDEO3_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO3_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO3_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO3_RUSER_WIDTH=1,C_M_AXI_MM_VIDEO3_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO3_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO3_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO3_CACHE_VALUE=0x3,C_M_AXI_MM_VIDEO4_ID_WIDTH=1,C_M_AXI_MM_VIDEO4_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO4_DATA_WIDTH=64,C_M_AXI_MM_VIDEO4_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO4_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO4_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO4_RUSER_WIDTH=1,C_M_AXI_MM_VIDEO4_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO4_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO4_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO4_CACHE_VALUE=0x3,C_M_AXI_MM_VIDEO5_ID_WIDTH=1,C_M_AXI_MM_VIDEO5_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO5_DATA_WIDTH=64,C_M_AXI_MM_VIDEO5_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO5_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO5_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO5_RUSER_WIDTH=1,C_M_AXI_MM_VIDEO5_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO5_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO5_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO5_CACHE_VALUE=0x3,C_M_AXI_MM_VIDEO6_ID_WIDTH=1,C_M_AXI_MM_VIDEO6_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO6_DATA_WIDTH=64,C_M_AXI_MM_VIDEO6_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO6_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO6_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO6_RUSER_WIDTH=1,C_M_AXI_MM_VIDEO6_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO6_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO6_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO6_CACHE_VALUE=0x3,C_M_AXI_MM_VIDEO7_ID_WIDTH=1,C_M_AXI_MM_VIDEO7_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO7_DATA_WIDTH=64,C_M_AXI_MM_VIDEO7_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO7_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO7_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO7_RUSER_WIDTH=1,C_M_AXI_MM_VIDEO7_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO7_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO7_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO7_CACHE_VALUE=0x3,C_M_AXI_MM_VIDEO8_ID_WIDTH=1,C_M_AXI_MM_VIDEO8_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO8_DATA_WIDTH=64,C_M_AXI_MM_VIDEO8_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO8_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO8_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO8_RUSER_WIDTH=1,C_M_AXI_MM_VIDEO8_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO8_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO8_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO8_CACHE_VALUE=0x3,C_M_AXI_MM_VIDEO9_ID_WIDTH=1,C_M_AXI_MM_VIDEO9_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO9_DATA_WIDTH=64,C_M_AXI_MM_VIDEO9_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO9_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO9_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO9_RUSER_WIDTH=1,C_M_AXI_MM_VIDEO9_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO9_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO9_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO9_CACHE_VALUE=0x3,C_M_AXI_MM_VIDEO10_ID_WIDTH=1,C_M_AXI_MM_VIDEO10_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO10_DATA_WIDTH=64,C_M_AXI_MM_VIDEO10_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO10_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO10_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO10_RUSER_WIDTH=1,C_M_AXI_MM_VIDEO10_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO10_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO10_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO10_CACHE_VALUE=0x3,C_M_AXI_MM_VIDEO11_ID_WIDTH=1,C_M_AXI_MM_VIDEO11_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO11_DATA_WIDTH=64,C_M_AXI_MM_VIDEO11_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO11_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO11_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO11_RUSER_WIDTH=1,C_M_AXI_MM_VIDEO11_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO11_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO11_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO11_CACHE_VALUE=0x3,C_M_AXI_MM_VIDEO12_ID_WIDTH=1,C_M_AXI_MM_VIDEO12_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO12_DATA_WIDTH=64,C_M_AXI_MM_VIDEO12_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO12_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO12_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO12_RUSER_WIDTH=1,C_M_AXI_MM_VIDEO12_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO12_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO12_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO12_CACHE_VALUE=0x3,C_M_AXI_MM_VIDEO13_ID_WIDTH=1,C_M_AXI_MM_VIDEO13_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO13_DATA_WIDTH=64,C_M_AXI_MM_VIDEO13_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO13_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO13_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO13_RUSER_WIDTH=1,C_M_AXI_MM_VIDEO13_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO13_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO13_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO13_CACHE_VALUE=0x3,C_M_AXI_MM_VIDEO14_ID_WIDTH=1,C_M_AXI_MM_VIDEO14_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO14_DATA_WIDTH=64,C_M_AXI_MM_VIDEO14_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO14_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO14_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO14_RUSER_WIDTH=1,C_M_AXI_MM_VIDEO14_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO14_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO14_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO14_CACHE_VALUE=0x3,C_M_AXI_MM_VIDEO15_ID_WIDTH=1,C_M_AXI_MM_VIDEO15_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO15_DATA_WIDTH=64,C_M_AXI_MM_VIDEO15_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO15_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO15_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO15_RUSER_WIDTH=1,C_M_AXI_MM_VIDEO15_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO15_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO15_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO15_CACHE_VALUE=0x3,C_M_AXI_MM_VIDEO16_ID_WIDTH=1,C_M_AXI_MM_VIDEO16_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO16_DATA_WIDTH=64,C_M_AXI_MM_VIDEO16_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO16_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO16_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO16_RUSER_WIDTH=1,C_M_AXI_MM_VIDEO16_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO16_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO16_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO16_CACHE_VALUE=0x3}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) 
+(* X_CORE_INFO = "top_design_v_mix_0_0_v_mix,Vivado 2025.2" *) (* hls_module = "yes" *) 
+module top_design_v_mix_0_0(s_axi_CTRL_AWADDR, s_axi_CTRL_AWVALID, 
+  s_axi_CTRL_AWREADY, s_axi_CTRL_WDATA, s_axi_CTRL_WSTRB, s_axi_CTRL_WVALID, 
+  s_axi_CTRL_WREADY, s_axi_CTRL_BRESP, s_axi_CTRL_BVALID, s_axi_CTRL_BREADY, 
+  s_axi_CTRL_ARADDR, s_axi_CTRL_ARVALID, s_axi_CTRL_ARREADY, s_axi_CTRL_RDATA, 
+  s_axi_CTRL_RRESP, s_axi_CTRL_RVALID, s_axi_CTRL_RREADY, ap_clk, ap_rst_n, interrupt, 
+  m_axi_mm_video1_AWID, m_axi_mm_video1_AWADDR, m_axi_mm_video1_AWLEN, 
+  m_axi_mm_video1_AWSIZE, m_axi_mm_video1_AWBURST, m_axi_mm_video1_AWLOCK, 
+  m_axi_mm_video1_AWREGION, m_axi_mm_video1_AWCACHE, m_axi_mm_video1_AWPROT, 
+  m_axi_mm_video1_AWQOS, m_axi_mm_video1_AWVALID, m_axi_mm_video1_AWREADY, 
+  m_axi_mm_video1_WID, m_axi_mm_video1_WDATA, m_axi_mm_video1_WSTRB, 
+  m_axi_mm_video1_WLAST, m_axi_mm_video1_WVALID, m_axi_mm_video1_WREADY, 
+  m_axi_mm_video1_BID, m_axi_mm_video1_BRESP, m_axi_mm_video1_BVALID, 
+  m_axi_mm_video1_BREADY, m_axi_mm_video1_ARID, m_axi_mm_video1_ARADDR, 
+  m_axi_mm_video1_ARLEN, m_axi_mm_video1_ARSIZE, m_axi_mm_video1_ARBURST, 
+  m_axi_mm_video1_ARLOCK, m_axi_mm_video1_ARREGION, m_axi_mm_video1_ARCACHE, 
+  m_axi_mm_video1_ARPROT, m_axi_mm_video1_ARQOS, m_axi_mm_video1_ARVALID, 
+  m_axi_mm_video1_ARREADY, m_axi_mm_video1_RID, m_axi_mm_video1_RDATA, 
+  m_axi_mm_video1_RRESP, m_axi_mm_video1_RLAST, m_axi_mm_video1_RVALID, 
+  m_axi_mm_video1_RREADY, s_axis_video_TVALID, s_axis_video_TREADY, s_axis_video_TDATA, 
+  s_axis_video_TKEEP, s_axis_video_TSTRB, s_axis_video_TUSER, s_axis_video_TLAST, 
+  s_axis_video_TID, s_axis_video_TDEST, m_axis_video_TVALID, m_axis_video_TREADY, 
+  m_axis_video_TDATA, m_axis_video_TKEEP, m_axis_video_TSTRB, m_axis_video_TUSER, 
+  m_axis_video_TLAST, m_axis_video_TID, m_axis_video_TDEST)
+/* synthesis syn_black_box black_box_pad_pin="s_axi_CTRL_AWADDR[12:0],s_axi_CTRL_AWVALID,s_axi_CTRL_AWREADY,s_axi_CTRL_WDATA[31:0],s_axi_CTRL_WSTRB[3:0],s_axi_CTRL_WVALID,s_axi_CTRL_WREADY,s_axi_CTRL_BRESP[1:0],s_axi_CTRL_BVALID,s_axi_CTRL_BREADY,s_axi_CTRL_ARADDR[12:0],s_axi_CTRL_ARVALID,s_axi_CTRL_ARREADY,s_axi_CTRL_RDATA[31:0],s_axi_CTRL_RRESP[1:0],s_axi_CTRL_RVALID,s_axi_CTRL_RREADY,ap_rst_n,interrupt,m_axi_mm_video1_AWID[0:0],m_axi_mm_video1_AWADDR[31:0],m_axi_mm_video1_AWLEN[7:0],m_axi_mm_video1_AWSIZE[2:0],m_axi_mm_video1_AWBURST[1:0],m_axi_mm_video1_AWLOCK[1:0],m_axi_mm_video1_AWREGION[3:0],m_axi_mm_video1_AWCACHE[3:0],m_axi_mm_video1_AWPROT[2:0],m_axi_mm_video1_AWQOS[3:0],m_axi_mm_video1_AWVALID,m_axi_mm_video1_AWREADY,m_axi_mm_video1_WID[0:0],m_axi_mm_video1_WDATA[63:0],m_axi_mm_video1_WSTRB[7:0],m_axi_mm_video1_WLAST,m_axi_mm_video1_WVALID,m_axi_mm_video1_WREADY,m_axi_mm_video1_BID[0:0],m_axi_mm_video1_BRESP[1:0],m_axi_mm_video1_BVALID,m_axi_mm_video1_BREADY,m_axi_mm_video1_ARID[0:0],m_axi_mm_video1_ARADDR[31:0],m_axi_mm_video1_ARLEN[7:0],m_axi_mm_video1_ARSIZE[2:0],m_axi_mm_video1_ARBURST[1:0],m_axi_mm_video1_ARLOCK[1:0],m_axi_mm_video1_ARREGION[3:0],m_axi_mm_video1_ARCACHE[3:0],m_axi_mm_video1_ARPROT[2:0],m_axi_mm_video1_ARQOS[3:0],m_axi_mm_video1_ARVALID,m_axi_mm_video1_ARREADY,m_axi_mm_video1_RID[0:0],m_axi_mm_video1_RDATA[63:0],m_axi_mm_video1_RRESP[1:0],m_axi_mm_video1_RLAST,m_axi_mm_video1_RVALID,m_axi_mm_video1_RREADY,s_axis_video_TVALID,s_axis_video_TREADY,s_axis_video_TDATA[23:0],s_axis_video_TKEEP[2:0],s_axis_video_TSTRB[2:0],s_axis_video_TUSER[0:0],s_axis_video_TLAST[0:0],s_axis_video_TID[0:0],s_axis_video_TDEST[0:0],m_axis_video_TVALID,m_axis_video_TREADY,m_axis_video_TDATA[23:0],m_axis_video_TKEEP[2:0],m_axis_video_TSTRB[2:0],m_axis_video_TUSER[0:0],m_axis_video_TLAST[0:0],m_axis_video_TID[0:0],m_axis_video_TDEST[0:0]" */
+/* synthesis syn_force_seq_prim="ap_clk" */;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL AWADDR" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_CTRL, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 1.5e+08, ID_WIDTH 0, ADDR_WIDTH 13, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [12:0]s_axi_CTRL_AWADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL AWVALID" *) input s_axi_CTRL_AWVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL AWREADY" *) output s_axi_CTRL_AWREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL WDATA" *) input [31:0]s_axi_CTRL_WDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL WSTRB" *) input [3:0]s_axi_CTRL_WSTRB;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL WVALID" *) input s_axi_CTRL_WVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL WREADY" *) output s_axi_CTRL_WREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL BRESP" *) output [1:0]s_axi_CTRL_BRESP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL BVALID" *) output s_axi_CTRL_BVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL BREADY" *) input s_axi_CTRL_BREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL ARADDR" *) input [12:0]s_axi_CTRL_ARADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL ARVALID" *) input s_axi_CTRL_ARVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL ARREADY" *) output s_axi_CTRL_ARREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL RDATA" *) output [31:0]s_axi_CTRL_RDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL RRESP" *) output [1:0]s_axi_CTRL_RRESP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL RVALID" *) output s_axi_CTRL_RVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL RREADY" *) input s_axi_CTRL_RREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_CTRL:m_axi_mm_video1:m_axi_mm_video2:m_axi_mm_video3:m_axi_mm_video4:m_axi_mm_video5:m_axi_mm_video6:m_axi_mm_video7:m_axi_mm_video8:m_axi_mm_video9:m_axi_mm_video10:m_axi_mm_video11:m_axi_mm_video12:m_axi_mm_video13:m_axi_mm_video14:m_axi_mm_video15:m_axi_mm_video16:s_axis_video:m_axis_video:s_axis_video1:s_axis_video2:s_axis_video3:s_axis_video4:s_axis_video5:s_axis_video6:s_axis_video7:s_axis_video8:s_axis_video9:s_axis_video10:s_axis_video11:s_axis_video12:s_axis_video13:s_axis_video14:s_axis_video15:s_axis_video16, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 1.5e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0" *) input ap_clk /* synthesis syn_isclock = 1 */;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ap_rst_n RST" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0, PortWidth 1" *) input ap_rst_n;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 interrupt INTERRUPT" *) (* X_INTERFACE_MODE = "master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME interrupt, SENSITIVITY LEVEL_HIGH, PortWidth 1" *) output interrupt;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 AWID" *) (* X_INTERFACE_MODE = "master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axi_mm_video1, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 1.5e+08, ID_WIDTH 1, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 4, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 16, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output [0:0]m_axi_mm_video1_AWID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 AWADDR" *) output [31:0]m_axi_mm_video1_AWADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 AWLEN" *) output [7:0]m_axi_mm_video1_AWLEN;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 AWSIZE" *) output [2:0]m_axi_mm_video1_AWSIZE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 AWBURST" *) output [1:0]m_axi_mm_video1_AWBURST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 AWLOCK" *) output [1:0]m_axi_mm_video1_AWLOCK;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 AWREGION" *) output [3:0]m_axi_mm_video1_AWREGION;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 AWCACHE" *) output [3:0]m_axi_mm_video1_AWCACHE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 AWPROT" *) output [2:0]m_axi_mm_video1_AWPROT;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 AWQOS" *) output [3:0]m_axi_mm_video1_AWQOS;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 AWVALID" *) output m_axi_mm_video1_AWVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 AWREADY" *) input m_axi_mm_video1_AWREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 WID" *) output [0:0]m_axi_mm_video1_WID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 WDATA" *) output [63:0]m_axi_mm_video1_WDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 WSTRB" *) output [7:0]m_axi_mm_video1_WSTRB;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 WLAST" *) output m_axi_mm_video1_WLAST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 WVALID" *) output m_axi_mm_video1_WVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 WREADY" *) input m_axi_mm_video1_WREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 BID" *) input [0:0]m_axi_mm_video1_BID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 BRESP" *) input [1:0]m_axi_mm_video1_BRESP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 BVALID" *) input m_axi_mm_video1_BVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 BREADY" *) output m_axi_mm_video1_BREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 ARID" *) output [0:0]m_axi_mm_video1_ARID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 ARADDR" *) output [31:0]m_axi_mm_video1_ARADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 ARLEN" *) output [7:0]m_axi_mm_video1_ARLEN;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 ARSIZE" *) output [2:0]m_axi_mm_video1_ARSIZE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 ARBURST" *) output [1:0]m_axi_mm_video1_ARBURST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 ARLOCK" *) output [1:0]m_axi_mm_video1_ARLOCK;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 ARREGION" *) output [3:0]m_axi_mm_video1_ARREGION;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 ARCACHE" *) output [3:0]m_axi_mm_video1_ARCACHE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 ARPROT" *) output [2:0]m_axi_mm_video1_ARPROT;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 ARQOS" *) output [3:0]m_axi_mm_video1_ARQOS;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 ARVALID" *) output m_axi_mm_video1_ARVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 ARREADY" *) input m_axi_mm_video1_ARREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 RID" *) input [0:0]m_axi_mm_video1_RID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 RDATA" *) input [63:0]m_axi_mm_video1_RDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 RRESP" *) input [1:0]m_axi_mm_video1_RRESP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 RLAST" *) input m_axi_mm_video1_RLAST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 RVALID" *) input m_axi_mm_video1_RVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_mm_video1 RREADY" *) output m_axi_mm_video1_RREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TVALID" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_video, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 1.5e+08, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK1, LAYERED_METADATA undef, INSERT_VIP 0" *) input s_axis_video_TVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TREADY" *) output s_axis_video_TREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TDATA" *) input [23:0]s_axis_video_TDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TKEEP" *) input [2:0]s_axis_video_TKEEP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TSTRB" *) input [2:0]s_axis_video_TSTRB;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TUSER" *) input [0:0]s_axis_video_TUSER;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TLAST" *) input [0:0]s_axis_video_TLAST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TID" *) input [0:0]s_axis_video_TID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TDEST" *) input [0:0]s_axis_video_TDEST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TVALID" *) (* X_INTERFACE_MODE = "master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_video, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 1.5e+08, PHASE 0.0, CLK_DOMAIN top_design_processing_system7_0_0_FCLK_CLK1, LAYERED_METADATA undef, INSERT_VIP 0" *) output m_axis_video_TVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TREADY" *) input m_axis_video_TREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TDATA" *) output [23:0]m_axis_video_TDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TKEEP" *) output [2:0]m_axis_video_TKEEP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TSTRB" *) output [2:0]m_axis_video_TSTRB;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TUSER" *) output [0:0]m_axis_video_TUSER;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TLAST" *) output [0:0]m_axis_video_TLAST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TID" *) output [0:0]m_axis_video_TID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TDEST" *) output [0:0]m_axis_video_TDEST;
+endmodule

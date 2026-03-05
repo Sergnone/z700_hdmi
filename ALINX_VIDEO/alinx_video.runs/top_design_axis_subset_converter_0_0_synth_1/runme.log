@@ -1,0 +1,327 @@
+
+*** Running vivado
+    with args -log top_design_axis_subset_converter_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_design_axis_subset_converter_0_0.tcl
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Wed Mar  4 15:18:35 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_design_axis_subset_converter_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1559.430 ; gain = 80.059 ; free physical = 2888 ; free virtual = 21054
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/serg/Documents/Xilinx/DigilentLib/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/2025.2/data/ip'.
+Command: synth_design -top top_design_axis_subset_converter_0_0 -part xc7z020clg400-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 299570
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2242.164 ; gain = 486.156 ; free physical = 327 ; free virtual = 10814
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_design_axis_subset_converter_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/synth/top_design_axis_subset_converter_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_top_design_axis_subset_converter_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/hdl/top_top_design_axis_subset_converter_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axis_subset_converter_v1_1_36_core' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/5e96/hdl/axis_subset_converter_v1_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'axis_subset_converter_v1_1_36_core' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ipshared/5e96/hdl/axis_subset_converter_v1_1_vl_rfs.v:61]
+INFO: [Synth 8-6157] synthesizing module 'tdata_top_design_axis_subset_converter_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/hdl/tdata_top_design_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tdata_top_design_axis_subset_converter_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/hdl/tdata_top_design_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tuser_top_design_axis_subset_converter_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/hdl/tuser_top_design_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tuser_top_design_axis_subset_converter_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/hdl/tuser_top_design_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tid_top_design_axis_subset_converter_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/hdl/tid_top_design_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tid_top_design_axis_subset_converter_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/hdl/tid_top_design_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tdest_top_design_axis_subset_converter_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/hdl/tdest_top_design_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tdest_top_design_axis_subset_converter_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/hdl/tdest_top_design_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tstrb_top_design_axis_subset_converter_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/hdl/tstrb_top_design_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tstrb_top_design_axis_subset_converter_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/hdl/tstrb_top_design_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tkeep_top_design_axis_subset_converter_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/hdl/tkeep_top_design_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tkeep_top_design_axis_subset_converter_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/hdl/tkeep_top_design_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tlast_top_design_axis_subset_converter_0_0' [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/hdl/tlast_top_design_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tlast_top_design_axis_subset_converter_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/hdl/tlast_top_design_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'top_top_design_axis_subset_converter_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/hdl/top_top_design_axis_subset_converter_0_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_axis_subset_converter_0_0' (0#1) [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/synth/top_design_axis_subset_converter_0_0.v:53]
+INFO: [Synth 8-7129] Port tid[0] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[23] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[22] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[21] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[20] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[19] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[18] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[17] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[16] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[15] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[14] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[13] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[12] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[11] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[10] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[9] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[8] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[7] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[6] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[5] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[4] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[3] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[2] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[1] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[0] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tuser[0] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdest[0] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tkeep[2] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tkeep[1] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tkeep[0] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tstrb[2] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tstrb[1] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tstrb[0] in module tlast_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[23] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[22] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[21] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[20] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[19] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[18] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[17] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[16] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[15] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[14] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[13] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[12] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[11] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[10] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[9] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[8] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[7] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[6] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[5] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[4] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[3] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[2] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[1] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[0] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tuser[0] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tid[0] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdest[0] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tstrb[2] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tstrb[1] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tstrb[0] in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tlast in module tkeep_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[23] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[22] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[21] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[20] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[19] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[18] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[17] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[16] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[15] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[14] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[13] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[12] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[11] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[10] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[9] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[8] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[7] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[6] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[5] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[4] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[3] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[2] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[1] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[0] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tuser[0] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tid[0] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdest[0] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tkeep[2] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tkeep[1] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tkeep[0] in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tlast in module tstrb_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[23] in module tdest_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[22] in module tdest_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[21] in module tdest_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[20] in module tdest_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port tdata[19] in module tdest_top_design_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2334.102 ; gain = 578.094 ; free physical = 319 ; free virtual = 9621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2345.977 ; gain = 589.969 ; free physical = 331 ; free virtual = 9608
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2345.977 ; gain = 589.969 ; free physical = 330 ; free virtual = 9607
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2345.977 ; gain = 0.000 ; free physical = 330 ; free virtual = 9607
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/top_design_axis_subset_converter_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.gen/sources_1/bd/top_design/ip/top_design_axis_subset_converter_0_0/top_design_axis_subset_converter_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_axis_subset_converter_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_axis_subset_converter_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2394.902 ; gain = 0.000 ; free physical = 875 ; free virtual = 10098
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2394.938 ; gain = 0.000 ; free physical = 864 ; free virtual = 10087
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2394.938 ; gain = 638.930 ; free physical = 698 ; free virtual = 9508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2402.906 ; gain = 646.898 ; free physical = 697 ; free virtual = 9508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2402.906 ; gain = 646.898 ; free physical = 695 ; free virtual = 9508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2402.906 ; gain = 646.898 ; free physical = 646 ; free virtual = 9470
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2402.906 ; gain = 646.898 ; free physical = 286 ; free virtual = 9080
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2494.906 ; gain = 738.898 ; free physical = 854 ; free virtual = 8998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2494.906 ; gain = 738.898 ; free physical = 853 ; free virtual = 8997
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2503.922 ; gain = 747.914 ; free physical = 831 ; free virtual = 8975
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2690.734 ; gain = 934.727 ; free physical = 289 ; free virtual = 6770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2690.734 ; gain = 934.727 ; free physical = 290 ; free virtual = 6770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2690.734 ; gain = 934.727 ; free physical = 292 ; free virtual = 6767
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2690.734 ; gain = 934.727 ; free physical = 291 ; free virtual = 6765
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2690.734 ; gain = 934.727 ; free physical = 281 ; free virtual = 6752
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2690.734 ; gain = 934.727 ; free physical = 283 ; free virtual = 6753
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2690.734 ; gain = 934.727 ; free physical = 270 ; free virtual = 6738
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2690.734 ; gain = 885.766 ; free physical = 333 ; free virtual = 6715
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2690.742 ; gain = 934.727 ; free physical = 325 ; free virtual = 6708
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2690.742 ; gain = 0.000 ; free physical = 326 ; free virtual = 6708
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2690.742 ; gain = 0.000 ; free physical = 342 ; free virtual = 6510
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: fec5d10b
+INFO: [Common 17-83] Releasing license: Synthesis
+137 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2690.770 ; gain = 1129.668 ; free physical = 424 ; free virtual = 6546
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1487.047; main = 1376.761; forked = 180.835
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3411.129; main = 2690.738; forked = 994.219
+INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_axis_subset_converter_0_0_synth_1/top_design_axis_subset_converter_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP top_design_axis_subset_converter_0_0, cache-ID = e6c677ce0a96beb9
+INFO: [Common 17-1381] The checkpoint '/home/serg/Documents/Xilinx/z700_hdmi/ALINX_VIDEO/alinx_video.runs/top_design_axis_subset_converter_0_0_synth_1/top_design_axis_subset_converter_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_design_axis_subset_converter_0_0_utilization_synth.rpt -pb top_design_axis_subset_converter_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  4 15:19:14 2026...
