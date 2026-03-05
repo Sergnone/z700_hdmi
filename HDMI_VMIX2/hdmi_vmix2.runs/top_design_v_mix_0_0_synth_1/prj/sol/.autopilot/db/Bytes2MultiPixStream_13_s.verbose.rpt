@@ -1,0 +1,822 @@
+
+
+================================================================
+== Vitis HLS Report for 'Bytes2MultiPixStream_13_s'
+================================================================
+* Date:           Thu Mar  5 21:15:28 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.67 ns|  4.388 ns|     1.80 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+-----------+----------+-----------+-----+-----------+---------+
+    |   Latency (cycles)  |  Latency (absolute)  |     Interval    | Pipeline|
+    |   min   |    max    |    min   |    max    | min |    max    |   Type  |
+    +---------+-----------+----------+-----------+-----+-----------+---------+
+    |        1|  141566401|  6.667 ns|  0.944 sec|    1|  141566401|       no|
+    +---------+-----------+----------+-----------+-----+-----------+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------------------------+----------------------------------------------------+---------+---------+-----------+----------+-----+-----+-------------------+
+        |                                                              |                                                    |  Latency (cycles) |  Latency (absolute)  |  Interval |      Pipeline     |
+        |                           Instance                           |                       Module                       |   min   |   max   |    min    |    max   | min | max |        Type       |
+        +--------------------------------------------------------------+----------------------------------------------------+---------+---------+-----------+----------+-----+-----+-------------------+
+        |grp_Bytes2MultiPixStream_13_Pipeline_VITIS_LOOP_1383_2_fu_74  |Bytes2MultiPixStream_13_Pipeline_VITIS_LOOP_1383_2  |        2|    65538|  13.334 ns|  0.437 ms|    0|    0|  loop pipeline stp|
+        +--------------------------------------------------------------+----------------------------------------------------+---------+---------+-----------+----------+-----+-----+-------------------+
+
+        * Loop: 
+        +---------------------+---------+-----------+-----------+-----------+-----------+----------+----------+
+        |                     |   Latency (cycles)  | Iteration |  Initiation Interval  |   Trip   |          |
+        |      Loop Name      |   min   |    max    |  Latency  |  achieved |   target  |   Count  | Pipelined|
+        +---------------------+---------+-----------+-----------+-----------+-----------+----------+----------+
+        |- VITIS_LOOP_1376_1  |        0|  141566400|  4 ~ 65540|          -|          -|  0 ~ 2160|        no|
+        +---------------------+---------+-----------+-----------+-----------+-----------+----------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     33|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|      86|    113|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     44|    -|
+|Register         |        -|    -|      55|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     141|    190|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------------------+----------------------------------------------------+---------+----+----+-----+-----+
+    |                           Instance                           |                       Module                       | BRAM_18K| DSP| FF | LUT | URAM|
+    +--------------------------------------------------------------+----------------------------------------------------+---------+----+----+-----+-----+
+    |grp_Bytes2MultiPixStream_13_Pipeline_VITIS_LOOP_1383_2_fu_74  |Bytes2MultiPixStream_13_Pipeline_VITIS_LOOP_1383_2  |        0|   0|  86|  113|    0|
+    +--------------------------------------------------------------+----------------------------------------------------+---------+----+----+-----+-----+
+    |Total                                                         |                                                    |        0|   0|  86|  113|    0|
+    +--------------------------------------------------------------+----------------------------------------------------+---------+----+----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |y_22_fu_98_p2         |         +|   0|  0|  16|          16|           1|
+    |icmp_ln1376_fu_93_p2  |      icmp|   0|  0|  16|          16|          16|
+    |ap_block_state1       |        or|   0|  0|   1|           1|           1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  33|          33|          18|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------+----+-----------+-----+-----------+
+    |    Name    | LUT| Input Size| Bits| Total Bits|
+    +------------+----+-----------+-----+-----------+
+    |ap_NS_fsm   |  17|          4|    1|          4|
+    |ap_done     |   9|          2|    1|          2|
+    |real_start  |   9|          2|    1|          2|
+    |y_06_fu_52  |   9|          2|   16|         32|
+    +------------+----+-----------+-----+-----------+
+    |Total       |  44|         10|   19|         40|
+    +------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                    Name                                   | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------------------------------+----+----+-----+-----------+
+    |Height_read_reg_118                                                        |  16|   0|   16|          0|
+    |Width_read_reg_113                                                         |  16|   0|   16|          0|
+    |ap_CS_fsm                                                                  |   3|   0|    3|          0|
+    |ap_done_reg                                                                |   1|   0|    1|          0|
+    |enable_read_reg_109                                                        |   1|   0|    1|          0|
+    |grp_Bytes2MultiPixStream_13_Pipeline_VITIS_LOOP_1383_2_fu_74_ap_start_reg  |   1|   0|    1|          0|
+    |start_once_reg                                                             |   1|   0|    1|          0|
+    |y_06_fu_52                                                                 |  16|   0|   16|          0|
+    +---------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                      |  55|   0|   55|          0|
+    +---------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------------+-----+-----+------------+--------------------------+--------------+
+|             RTL Ports             | Dir | Bits|  Protocol  |       Source Object      |    C Type    |
++-----------------------------------+-----+-----+------------+--------------------------+--------------+
+|ap_clk                             |   in|    1|  ap_ctrl_hs|  Bytes2MultiPixStream<13>|  return value|
+|ap_rst                             |   in|    1|  ap_ctrl_hs|  Bytes2MultiPixStream<13>|  return value|
+|ap_start                           |   in|    1|  ap_ctrl_hs|  Bytes2MultiPixStream<13>|  return value|
+|start_full_n                       |   in|    1|  ap_ctrl_hs|  Bytes2MultiPixStream<13>|  return value|
+|ap_done                            |  out|    1|  ap_ctrl_hs|  Bytes2MultiPixStream<13>|  return value|
+|ap_continue                        |   in|    1|  ap_ctrl_hs|  Bytes2MultiPixStream<13>|  return value|
+|ap_idle                            |  out|    1|  ap_ctrl_hs|  Bytes2MultiPixStream<13>|  return value|
+|ap_ready                           |  out|    1|  ap_ctrl_hs|  Bytes2MultiPixStream<13>|  return value|
+|start_out                          |  out|    1|  ap_ctrl_hs|  Bytes2MultiPixStream<13>|  return value|
+|start_write                        |  out|    1|  ap_ctrl_hs|  Bytes2MultiPixStream<13>|  return value|
+|bytesLayer1_plane0_dout            |   in|   64|     ap_fifo|        bytesLayer1_plane0|       pointer|
+|bytesLayer1_plane0_empty_n         |   in|    1|     ap_fifo|        bytesLayer1_plane0|       pointer|
+|bytesLayer1_plane0_read            |  out|    1|     ap_fifo|        bytesLayer1_plane0|       pointer|
+|bytesLayer1_plane0_num_data_valid  |   in|    3|     ap_fifo|        bytesLayer1_plane0|       pointer|
+|bytesLayer1_plane0_fifo_cap        |   in|    3|     ap_fifo|        bytesLayer1_plane0|       pointer|
+|srcLayer1_din                      |  out|   24|     ap_fifo|                 srcLayer1|       pointer|
+|srcLayer1_full_n                   |   in|    1|     ap_fifo|                 srcLayer1|       pointer|
+|srcLayer1_write                    |  out|    1|     ap_fifo|                 srcLayer1|       pointer|
+|srcLayer1_num_data_valid           |   in|   32|     ap_fifo|                 srcLayer1|       pointer|
+|srcLayer1_fifo_cap                 |   in|   32|     ap_fifo|                 srcLayer1|       pointer|
+|srcLayer1Alpha_din                 |  out|    8|     ap_fifo|            srcLayer1Alpha|       pointer|
+|srcLayer1Alpha_full_n              |   in|    1|     ap_fifo|            srcLayer1Alpha|       pointer|
+|srcLayer1Alpha_write               |  out|    1|     ap_fifo|            srcLayer1Alpha|       pointer|
+|srcLayer1Alpha_num_data_valid      |   in|   32|     ap_fifo|            srcLayer1Alpha|       pointer|
+|srcLayer1Alpha_fifo_cap            |   in|   32|     ap_fifo|            srcLayer1Alpha|       pointer|
+|Height                             |   in|   16|   ap_stable|                    Height|        scalar|
+|Width                              |   in|   16|   ap_stable|                     Width|        scalar|
+|enable                             |   in|    1|   ap_stable|                    enable|        scalar|
++-----------------------------------+-----+-----+------------+--------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.29>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %Height, i1 1, void @p_str"   --->   Operation 4 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %Width, i1 1, void @p_str"   --->   Operation 5 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i1 %enable, i1 1, void @p_str"   --->   Operation 6 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %bytesLayer1_plane0, void @empty_32, i32 0, i32 0, void @empty_47, i32 0, i32 0, void @empty_47, void @empty_47, void @empty_47, i32 0, i32 0, i32 0, i32 0, void @empty_47, void @empty_47, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %srcLayer1Alpha, void @empty_32, i32 0, i32 0, void @empty_47, i32 0, i32 0, void @empty_47, void @empty_47, void @empty_47, i32 0, i32 0, i32 0, i32 0, void @empty_47, void @empty_47, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %srcLayer1, void @empty_32, i32 0, i32 0, void @empty_47, i32 0, i32 0, void @empty_47, void @empty_47, void @empty_47, i32 0, i32 0, i32 0, i32 0, void @empty_47, void @empty_47, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%enable_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %enable" [prj/sol/.autopilot/db/v_dma.cpp:1359]   --->   Operation 10 'read' 'enable_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%Width_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %Width" [prj/sol/.autopilot/db/v_dma.cpp:1359]   --->   Operation 11 'read' 'Width_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%Height_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %Height" [prj/sol/.autopilot/db/v_dma.cpp:1359]   --->   Operation 12 'read' 'Height_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln1374 = br i1 %enable_read, void %if.end74, void %VITIS_LOOP_1383_2.preheader" [prj/sol/.autopilot/db/v_dma.cpp:1374]   --->   Operation 13 'br' 'br_ln1374' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%y_06 = alloca i32 1" [prj/sol/.autopilot/db/v_dma.cpp:1376]   --->   Operation 14 'alloca' 'y_06' <Predicate = (enable_read)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (1.29ns)   --->   "%store_ln1376 = store i16 0, i16 %y_06" [prj/sol/.autopilot/db/v_dma.cpp:1376]   --->   Operation 15 'store' 'store_ln1376' <Predicate = (enable_read)> <Delay = 1.29>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln1376 = br void %VITIS_LOOP_1383_2" [prj/sol/.autopilot/db/v_dma.cpp:1376]   --->   Operation 16 'br' 'br_ln1376' <Predicate = (enable_read)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 4.38>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%y = load i16 %y_06" [prj/sol/.autopilot/db/v_dma.cpp:1376]   --->   Operation 17 'load' 'y' <Predicate = (enable_read)> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (1.54ns)   --->   "%icmp_ln1376 = icmp_eq  i16 %y, i16 %Height_read" [prj/sol/.autopilot/db/v_dma.cpp:1376]   --->   Operation 18 'icmp' 'icmp_ln1376' <Predicate = (enable_read)> <Delay = 1.54> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (1.54ns)   --->   "%y_22 = add i16 %y, i16 1" [prj/sol/.autopilot/db/v_dma.cpp:1376]   --->   Operation 19 'add' 'y_22' <Predicate = (enable_read)> <Delay = 1.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln1376 = br i1 %icmp_ln1376, void %for.body5.lr.ph, void %if.end74.loopexit" [prj/sol/.autopilot/db/v_dma.cpp:1376]   --->   Operation 20 'br' 'br_ln1376' <Predicate = (enable_read)> <Delay = 0.00>
+ST_2 : Operation 21 [2/2] (2.84ns)   --->   "%call_ln1359 = call void @Bytes2MultiPixStream<13>_Pipeline_VITIS_LOOP_1383_2, i16 %Width_read, i24 %srcLayer1, i8 %srcLayer1Alpha, i64 %bytesLayer1_plane0" [prj/sol/.autopilot/db/v_dma.cpp:1359]   --->   Operation 21 'call' 'call_ln1359' <Predicate = (enable_read & !icmp_ln1376)> <Delay = 2.84> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 22 [1/1] (1.29ns)   --->   "%store_ln1376 = store i16 %y_22, i16 %y_06" [prj/sol/.autopilot/db/v_dma.cpp:1376]   --->   Operation 22 'store' 'store_ln1376' <Predicate = (enable_read & !icmp_ln1376)> <Delay = 1.29>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end74"   --->   Operation 23 'br' 'br_ln0' <Predicate = (enable_read & icmp_ln1376)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%ret_ln1412 = ret" [prj/sol/.autopilot/db/v_dma.cpp:1412]   --->   Operation 24 'ret' 'ret_ln1412' <Predicate = (icmp_ln1376) | (!enable_read)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%speclooptripcount_ln1378 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 2160, i64 1080" [prj/sol/.autopilot/db/v_dma.cpp:1378]   --->   Operation 25 'speclooptripcount' 'speclooptripcount_ln1378' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%specloopname_ln1376 = specloopname void @_ssdm_op_SpecLoopName, void @empty_43" [prj/sol/.autopilot/db/v_dma.cpp:1376]   --->   Operation 26 'specloopname' 'specloopname_ln1376' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/2] (0.00ns)   --->   "%call_ln1359 = call void @Bytes2MultiPixStream<13>_Pipeline_VITIS_LOOP_1383_2, i16 %Width_read, i24 %srcLayer1, i8 %srcLayer1Alpha, i64 %bytesLayer1_plane0" [prj/sol/.autopilot/db/v_dma.cpp:1359]   --->   Operation 27 'call' 'call_ln1359' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln1376 = br void %VITIS_LOOP_1383_2" [prj/sol/.autopilot/db/v_dma.cpp:1376]   --->   Operation 28 'br' 'br_ln1376' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ bytesLayer1_plane0]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ srcLayer1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ srcLayer1Alpha]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ Height]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_stable:ce=0
+Port [ Width]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_stable:ce=0
+Port [ enable]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_stable:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+specstablecontent_ln0    (specstablecontent) [ 0000]
+specstablecontent_ln0    (specstablecontent) [ 0000]
+specstablecontent_ln0    (specstablecontent) [ 0000]
+specinterface_ln0        (specinterface    ) [ 0000]
+specinterface_ln0        (specinterface    ) [ 0000]
+specinterface_ln0        (specinterface    ) [ 0000]
+enable_read              (read             ) [ 0111]
+Width_read               (read             ) [ 0011]
+Height_read              (read             ) [ 0011]
+br_ln1374                (br               ) [ 0000]
+y_06                     (alloca           ) [ 0111]
+store_ln1376             (store            ) [ 0000]
+br_ln1376                (br               ) [ 0000]
+y                        (load             ) [ 0000]
+icmp_ln1376              (icmp             ) [ 0011]
+y_22                     (add              ) [ 0000]
+br_ln1376                (br               ) [ 0000]
+store_ln1376             (store            ) [ 0000]
+br_ln0                   (br               ) [ 0000]
+ret_ln1412               (ret              ) [ 0000]
+speclooptripcount_ln1378 (speclooptripcount) [ 0000]
+specloopname_ln1376      (specloopname     ) [ 0000]
+call_ln1359              (call             ) [ 0000]
+br_ln1376                (br               ) [ 0000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="bytesLayer1_plane0">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="bytesLayer1_plane0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="srcLayer1">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="srcLayer1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="srcLayer1Alpha">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="srcLayer1Alpha"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="Height">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Height"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="Width">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Width"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="enable">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="enable"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecStableContent"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_47"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i16"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Bytes2MultiPixStream<13>_Pipeline_VITIS_LOOP_1383_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecLoopTripCount"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecLoopName"/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_43"/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1004" name="y_06_fu_52">
+<pin_list>
+<pin id="53" dir="0" index="0" bw="1" slack="0"/>
+<pin id="54" dir="1" index="1" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="y_06/1 "/>
+</bind>
+</comp>
+
+<comp id="56" class="1004" name="enable_read_read_fu_56">
+<pin_list>
+<pin id="57" dir="0" index="0" bw="1" slack="0"/>
+<pin id="58" dir="0" index="1" bw="1" slack="0"/>
+<pin id="59" dir="1" index="2" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="enable_read/1 "/>
+</bind>
+</comp>
+
+<comp id="62" class="1004" name="Width_read_read_fu_62">
+<pin_list>
+<pin id="63" dir="0" index="0" bw="16" slack="0"/>
+<pin id="64" dir="0" index="1" bw="16" slack="0"/>
+<pin id="65" dir="1" index="2" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="Width_read/1 "/>
+</bind>
+</comp>
+
+<comp id="68" class="1004" name="Height_read_read_fu_68">
+<pin_list>
+<pin id="69" dir="0" index="0" bw="16" slack="0"/>
+<pin id="70" dir="0" index="1" bw="16" slack="0"/>
+<pin id="71" dir="1" index="2" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="Height_read/1 "/>
+</bind>
+</comp>
+
+<comp id="74" class="1004" name="grp_Bytes2MultiPixStream_13_Pipeline_VITIS_LOOP_1383_2_fu_74">
+<pin_list>
+<pin id="75" dir="0" index="0" bw="0" slack="0"/>
+<pin id="76" dir="0" index="1" bw="16" slack="1"/>
+<pin id="77" dir="0" index="2" bw="24" slack="0"/>
+<pin id="78" dir="0" index="3" bw="8" slack="0"/>
+<pin id="79" dir="0" index="4" bw="64" slack="0"/>
+<pin id="80" dir="1" index="5" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln1359/2 "/>
+</bind>
+</comp>
+
+<comp id="85" class="1004" name="store_ln1376_store_fu_85">
+<pin_list>
+<pin id="86" dir="0" index="0" bw="1" slack="0"/>
+<pin id="87" dir="0" index="1" bw="16" slack="0"/>
+<pin id="88" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="store_ln1376/1 "/>
+</bind>
+</comp>
+
+<comp id="90" class="1004" name="y_load_fu_90">
+<pin_list>
+<pin id="91" dir="0" index="0" bw="16" slack="1"/>
+<pin id="92" dir="1" index="1" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="y/2 "/>
+</bind>
+</comp>
+
+<comp id="93" class="1004" name="icmp_ln1376_fu_93">
+<pin_list>
+<pin id="94" dir="0" index="0" bw="16" slack="0"/>
+<pin id="95" dir="0" index="1" bw="16" slack="1"/>
+<pin id="96" dir="1" index="2" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln1376/2 "/>
+</bind>
+</comp>
+
+<comp id="98" class="1004" name="y_22_fu_98">
+<pin_list>
+<pin id="99" dir="0" index="0" bw="16" slack="0"/>
+<pin id="100" dir="0" index="1" bw="1" slack="0"/>
+<pin id="101" dir="1" index="2" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="y_22/2 "/>
+</bind>
+</comp>
+
+<comp id="104" class="1004" name="store_ln1376_store_fu_104">
+<pin_list>
+<pin id="105" dir="0" index="0" bw="16" slack="0"/>
+<pin id="106" dir="0" index="1" bw="16" slack="1"/>
+<pin id="107" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="store_ln1376/2 "/>
+</bind>
+</comp>
+
+<comp id="109" class="1005" name="enable_read_reg_109">
+<pin_list>
+<pin id="110" dir="0" index="0" bw="1" slack="1"/>
+<pin id="111" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="enable_read "/>
+</bind>
+</comp>
+
+<comp id="113" class="1005" name="Width_read_reg_113">
+<pin_list>
+<pin id="114" dir="0" index="0" bw="16" slack="1"/>
+<pin id="115" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="Width_read "/>
+</bind>
+</comp>
+
+<comp id="118" class="1005" name="Height_read_reg_118">
+<pin_list>
+<pin id="119" dir="0" index="0" bw="16" slack="1"/>
+<pin id="120" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="Height_read "/>
+</bind>
+</comp>
+
+<comp id="123" class="1005" name="y_06_reg_123">
+<pin_list>
+<pin id="124" dir="0" index="0" bw="16" slack="0"/>
+<pin id="125" dir="1" index="1" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opset="y_06 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="55"><net_src comp="32" pin="0"/><net_sink comp="52" pin=0"/></net>
+
+<net id="60"><net_src comp="28" pin="0"/><net_sink comp="56" pin=0"/></net>
+
+<net id="61"><net_src comp="10" pin="0"/><net_sink comp="56" pin=1"/></net>
+
+<net id="66"><net_src comp="30" pin="0"/><net_sink comp="62" pin=0"/></net>
+
+<net id="67"><net_src comp="8" pin="0"/><net_sink comp="62" pin=1"/></net>
+
+<net id="72"><net_src comp="30" pin="0"/><net_sink comp="68" pin=0"/></net>
+
+<net id="73"><net_src comp="6" pin="0"/><net_sink comp="68" pin=1"/></net>
+
+<net id="81"><net_src comp="38" pin="0"/><net_sink comp="74" pin=0"/></net>
+
+<net id="82"><net_src comp="2" pin="0"/><net_sink comp="74" pin=2"/></net>
+
+<net id="83"><net_src comp="4" pin="0"/><net_sink comp="74" pin=3"/></net>
+
+<net id="84"><net_src comp="0" pin="0"/><net_sink comp="74" pin=4"/></net>
+
+<net id="89"><net_src comp="34" pin="0"/><net_sink comp="85" pin=0"/></net>
+
+<net id="97"><net_src comp="90" pin="1"/><net_sink comp="93" pin=0"/></net>
+
+<net id="102"><net_src comp="90" pin="1"/><net_sink comp="98" pin=0"/></net>
+
+<net id="103"><net_src comp="36" pin="0"/><net_sink comp="98" pin=1"/></net>
+
+<net id="108"><net_src comp="98" pin="2"/><net_sink comp="104" pin=0"/></net>
+
+<net id="112"><net_src comp="56" pin="2"/><net_sink comp="109" pin=0"/></net>
+
+<net id="116"><net_src comp="62" pin="2"/><net_sink comp="113" pin=0"/></net>
+
+<net id="117"><net_src comp="113" pin="1"/><net_sink comp="74" pin=1"/></net>
+
+<net id="121"><net_src comp="68" pin="2"/><net_sink comp="118" pin=0"/></net>
+
+<net id="122"><net_src comp="118" pin="1"/><net_sink comp="93" pin=1"/></net>
+
+<net id="126"><net_src comp="52" pin="1"/><net_sink comp="123" pin=0"/></net>
+
+<net id="127"><net_src comp="123" pin="1"/><net_sink comp="85" pin=1"/></net>
+
+<net id="128"><net_src comp="123" pin="1"/><net_sink comp="90" pin=0"/></net>
+
+<net id="129"><net_src comp="123" pin="1"/><net_sink comp="104" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: srcLayer1 | {2 3 }
+	Port: srcLayer1Alpha | {2 3 }
+ - Input state : 
+	Port: Bytes2MultiPixStream<13> : bytesLayer1_plane0 | {2 3 }
+	Port: Bytes2MultiPixStream<13> : Height | {1 }
+	Port: Bytes2MultiPixStream<13> : Width | {1 }
+	Port: Bytes2MultiPixStream<13> : enable | {1 }
+  - Chain level:
+	State 1
+		store_ln1376 : 1
+	State 2
+		icmp_ln1376 : 1
+		y_22 : 1
+		br_ln1376 : 2
+		store_ln1376 : 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|--------------------------------------------------------------|---------|---------|
+| Operation|                        Functional Unit                       |    FF   |   LUT   |
+|----------|--------------------------------------------------------------|---------|---------|
+|   call   | grp_Bytes2MultiPixStream_13_Pipeline_VITIS_LOOP_1383_2_fu_74 |    82   |    32   |
+|----------|--------------------------------------------------------------|---------|---------|
+|   icmp   |                       icmp_ln1376_fu_93                      |    0    |    16   |
+|----------|--------------------------------------------------------------|---------|---------|
+|    add   |                          y_22_fu_98                          |    0    |    16   |
+|----------|--------------------------------------------------------------|---------|---------|
+|          |                    enable_read_read_fu_56                    |    0    |    0    |
+|   read   |                     Width_read_read_fu_62                    |    0    |    0    |
+|          |                    Height_read_read_fu_68                    |    0    |    0    |
+|----------|--------------------------------------------------------------|---------|---------|
+|   Total  |                                                              |    82   |    64   |
+|----------|--------------------------------------------------------------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++-------------------+--------+
+|                   |   FF   |
++-------------------+--------+
+|Height_read_reg_118|   16   |
+| Width_read_reg_113|   16   |
+|enable_read_reg_109|    1   |
+|    y_06_reg_123   |   16   |
++-------------------+--------+
+|       Total       |   49   |
++-------------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+
+|           |   FF   |   LUT  |
++-----------+--------+--------+
+|  Function |   82   |   64   |
+|   Memory  |    -   |    -   |
+|Multiplexer|    -   |    -   |
+|  Register |   49   |    -   |
++-----------+--------+--------+
+|   Total   |   131  |   64   |
++-----------+--------+--------+

@@ -1,0 +1,274 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_mix_core_alpha_true_true_Pipeline_VITIS_LOOP_316_3'
+================================================================
+* Date:           Thu Mar  5 21:15:27 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.67 ns|  4.570 ns|     1.80 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+-----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max    | min | max |        Type       |
+    +---------+---------+----------+-----------+-----+-----+-------------------+
+    |       71|     1927|  0.473 us|  12.847 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+-----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+-----------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |    Trip   |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  |   Count   | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+-----------+----------+
+        |- VITIS_LOOP_316_3  |       69|     1925|         7|          1|          1|  64 ~ 1920|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+-----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 7
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 7
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 7, States = { 1 2 3 4 5 6 7 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.07>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%x = alloca i32 1" [prj/sol/.autopilot/db/v_mix.cpp:286]   --->   Operation 10 'alloca' 'x' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%tmp_5 = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %empty"   --->   Operation 11 'read' 'tmp_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_6 = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %empty_62"   --->   Operation 12 'read' 'tmp_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%rev7_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %rev7"   --->   Operation 13 'read' 'rev7_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%icmp_ln330_1_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp_ln330_1"   --->   Operation 14 'read' 'icmp_ln330_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%add_ln332_read = read i17 @_ssdm_op_Read.ap_auto.i17, i17 %add_ln332"   --->   Operation 15 'read' 'add_ln332_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%hwReg_layerStartX_1_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %hwReg_layerStartX_1_val"   --->   Operation 16 'read' 'hwReg_layerStartX_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%hwReg_background_V_B_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %hwReg_background_V_B_val"   --->   Operation 17 'read' 'hwReg_background_V_B_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%hwReg_background_U_G_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %hwReg_background_U_G_val"   --->   Operation 18 'read' 'hwReg_background_U_G_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%hwReg_background_Y_R_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %hwReg_background_Y_R_val"   --->   Operation 19 'read' 'hwReg_background_Y_R_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln346_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %zext_ln346"   --->   Operation 20 'read' 'zext_ln346_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%hwReg_width_val_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %hwReg_width_val"   --->   Operation 21 'read' 'hwReg_width_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%zext_ln346_cast = zext i9 %zext_ln346_read"   --->   Operation 22 'zext' 'zext_ln346_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i11 %hwReg_width_val, i1 1, void "   --->   Operation 23 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %hwReg_background_Y_R_val, i1 1, void "   --->   Operation 24 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %hwReg_background_U_G_val, i1 1, void "   --->   Operation 25 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %hwReg_background_V_B_val, i1 1, void "   --->   Operation 26 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %hwReg_layerStartX_1_val, i1 1, void @p_str"   --->   Operation 27 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %outLayer0, void @empty_32, i32 0, i32 0, void @empty_47, i32 0, i32 0, void @empty_47, void @empty_47, void @empty_47, i32 0, i32 0, i32 0, i32 0, void @empty_47, void @empty_47, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 28 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %srcLayer1x, void @empty_32, i32 0, i32 0, void @empty_47, i32 0, i32 0, void @empty_47, void @empty_47, void @empty_47, i32 0, i32 0, i32 0, i32 0, void @empty_47, void @empty_47, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 29 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %srcLayer1Alphax, void @empty_32, i32 0, i32 0, void @empty_47, i32 0, i32 0, void @empty_47, void @empty_47, void @empty_47, i32 0, i32 0, i32 0, i32 0, void @empty_47, void @empty_47, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %outLayer1, void @empty_32, i32 0, i32 0, void @empty_47, i32 0, i32 0, void @empty_47, void @empty_47, void @empty_47, i32 0, i32 0, i32 0, i32 0, void @empty_47, void @empty_47, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (1.29ns)   --->   "%store_ln286 = store i11 0, i11 %x" [prj/sol/.autopilot/db/v_mix.cpp:286]   --->   Operation 32 'store' 'store_ln286' <Predicate = true> <Delay = 1.29>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%br_ln316 = br void %for.body55" [prj/sol/.autopilot/db/v_mix.cpp:316]   --->   Operation 33 'br' 'br_ln316' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%x_11 = load i11 %x" [prj/sol/.autopilot/db/v_mix.cpp:316]   --->   Operation 34 'load' 'x_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (1.48ns)   --->   "%icmp_ln316 = icmp_eq  i11 %x_11, i11 %hwReg_width_val_read" [prj/sol/.autopilot/db/v_mix.cpp:316]   --->   Operation 35 'icmp' 'icmp_ln316' <Predicate = true> <Delay = 1.48> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 64, i64 1920, i64 0"   --->   Operation 36 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (1.48ns)   --->   "%add_ln316 = add i11 %x_11, i11 1" [prj/sol/.autopilot/db/v_mix.cpp:316]   --->   Operation 37 'add' 'add_ln316' <Predicate = true> <Delay = 1.48> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%br_ln316 = br i1 %icmp_ln316, void %for.body55.split, void %for.inc151.exitStub" [prj/sol/.autopilot/db/v_mix.cpp:316]   --->   Operation 38 'br' 'br_ln316' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%zext_ln316 = zext i11 %x_11" [prj/sol/.autopilot/db/v_mix.cpp:316]   --->   Operation 39 'zext' 'zext_ln316' <Predicate = (!icmp_ln316)> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%zext_ln316_1 = zext i11 %x_11" [prj/sol/.autopilot/db/v_mix.cpp:316]   --->   Operation 40 'zext' 'zext_ln316_1' <Predicate = (!icmp_ln316)> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%specpipeline_ln320 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_47" [prj/sol/.autopilot/db/v_mix.cpp:320]   --->   Operation 41 'specpipeline' 'specpipeline_ln320' <Predicate = (!icmp_ln316)> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%specloopname_ln316 = specloopname void @_ssdm_op_SpecLoopName, void @empty_58" [prj/sol/.autopilot/db/v_mix.cpp:316]   --->   Operation 42 'specloopname' 'specloopname_ln316' <Predicate = (!icmp_ln316)> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (1.29ns)   --->   "%br_ln322 = br i1 %tmp_5, void %if.end, void %if.then" [prj/sol/.autopilot/db/v_mix.cpp:322]   --->   Operation 43 'br' 'br_ln322' <Predicate = (!icmp_ln316)> <Delay = 1.29>
+ST_1 : Operation 44 [1/1] (1.54ns)   --->   "%icmp_ln331 = icmp_ult  i16 %zext_ln316_1, i16 %hwReg_layerStartX_1_val_read" [prj/sol/.autopilot/db/v_mix.cpp:331]   --->   Operation 44 'icmp' 'icmp_ln331' <Predicate = (!icmp_ln316)> <Delay = 1.54> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 45 [1/1] (0.00ns) (grouped into LUT with out node and_ln330_3)   --->   "%xor_ln331 = xor i1 %icmp_ln331, i1 1" [prj/sol/.autopilot/db/v_mix.cpp:331]   --->   Operation 45 'xor' 'xor_ln331' <Predicate = (!icmp_ln316)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 46 [1/1] (1.55ns)   --->   "%icmp_ln332 = icmp_ugt  i17 %add_ln332_read, i17 %zext_ln316" [prj/sol/.autopilot/db/v_mix.cpp:332]   --->   Operation 46 'icmp' 'icmp_ln332' <Predicate = (!icmp_ln316)> <Delay = 1.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 47 [1/1] (0.00ns) (grouped into LUT with out node and_ln330_3)   --->   "%and_ln330 = and i1 %icmp_ln330_1_read, i1 %rev7_read" [prj/sol/.autopilot/db/v_mix.cpp:330]   --->   Operation 47 'and' 'and_ln330' <Predicate = (!icmp_ln316)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 48 [1/1] (0.00ns) (grouped into LUT with out node and_ln330_3)   --->   "%and_ln330_1 = and i1 %tmp_6, i1 %and_ln330" [prj/sol/.autopilot/db/v_mix.cpp:330]   --->   Operation 48 'and' 'and_ln330_1' <Predicate = (!icmp_ln316)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 49 [1/1] (0.00ns) (grouped into LUT with out node and_ln330_3)   --->   "%and_ln330_2 = and i1 %icmp_ln332, i1 %and_ln330_1" [prj/sol/.autopilot/db/v_mix.cpp:330]   --->   Operation 49 'and' 'and_ln330_2' <Predicate = (!icmp_ln316)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 50 [1/1] (0.80ns) (out node of the LUT)   --->   "%and_ln330_3 = and i1 %and_ln330_2, i1 %xor_ln331" [prj/sol/.autopilot/db/v_mix.cpp:330]   --->   Operation 50 'and' 'and_ln330_3' <Predicate = (!icmp_ln316)> <Delay = 0.80> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 51 [1/1] (1.29ns)   --->   "%store_ln286 = store i11 %add_ln316, i11 %x" [prj/sol/.autopilot/db/v_mix.cpp:286]   --->   Operation 51 'store' 'store_ln286' <Predicate = (!icmp_ln316)> <Delay = 1.29>
+
+State 2 <SV = 1> <Delay = 2.43>
+ST_2 : Operation 52 [1/1] (1.29ns)   --->   "%br_ln323 = br void %if.end" [prj/sol/.autopilot/db/v_mix.cpp:323]   --->   Operation 52 'br' 'br_ln323' <Predicate = (!icmp_ln316 & tmp_5)> <Delay = 1.29>
+ST_2 : Operation 53 [1/1] (1.29ns)   --->   "%br_ln330 = br i1 %and_ln330_3, void %for.body90, void %if.then84" [prj/sol/.autopilot/db/v_mix.cpp:330]   --->   Operation 53 'br' 'br_ln330' <Predicate = (!icmp_ln316)> <Delay = 1.29>
+ST_2 : Operation 54 [1/1] ( I:2.43ns O:2.43ns )   --->   "%srcLayer1x_read = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %srcLayer1x" [prj/sol/.autopilot/db/v_mix.cpp:337]   --->   Operation 54 'read' 'srcLayer1x_read' <Predicate = (!icmp_ln316 & and_ln330_3)> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%trunc_ln337 = trunc i24 %srcLayer1x_read" [prj/sol/.autopilot/db/v_mix.cpp:337]   --->   Operation 55 'trunc' 'trunc_ln337' <Predicate = (!icmp_ln316 & and_ln330_3)> <Delay = 0.00>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%trunc_ln337_1 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %srcLayer1x_read, i32 8, i32 15" [prj/sol/.autopilot/db/v_mix.cpp:337]   --->   Operation 56 'partselect' 'trunc_ln337_1' <Predicate = (!icmp_ln316 & and_ln330_3)> <Delay = 0.00>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%trunc_ln337_2 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %srcLayer1x_read, i32 16, i32 23" [prj/sol/.autopilot/db/v_mix.cpp:337]   --->   Operation 57 'partselect' 'trunc_ln337_2' <Predicate = (!icmp_ln316 & and_ln330_3)> <Delay = 0.00>
+ST_2 : Operation 58 [1/1] ( I:2.43ns O:2.43ns )   --->   "%srcLayer1Alphax_read = read i8 @_ssdm_op_Read.ap_fifo.volatile.i8P0A, i8 %srcLayer1Alphax" [prj/sol/.autopilot/db/v_mix.cpp:338]   --->   Operation 58 'read' 'srcLayer1Alphax_read' <Predicate = (!icmp_ln316 & and_ln330_3)> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 16> <FIFO>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%store_ln337 = store i8 %trunc_ln337_2, i8 %p_out" [prj/sol/.autopilot/db/v_mix.cpp:337]   --->   Operation 59 'store' 'store_ln337' <Predicate = (!icmp_ln316 & and_ln330_3)> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%store_ln337 = store i8 %trunc_ln337_1, i8 %p_out1" [prj/sol/.autopilot/db/v_mix.cpp:337]   --->   Operation 60 'store' 'store_ln337' <Predicate = (!icmp_ln316 & and_ln330_3)> <Delay = 0.00>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%store_ln337 = store i8 %trunc_ln337, i8 %p_out2" [prj/sol/.autopilot/db/v_mix.cpp:337]   --->   Operation 61 'store' 'store_ln337' <Predicate = (!icmp_ln316 & and_ln330_3)> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (1.29ns)   --->   "%br_ln340 = br void %for.body90" [prj/sol/.autopilot/db/v_mix.cpp:340]   --->   Operation 62 'br' 'br_ln340' <Predicate = (!icmp_ln316 & and_ln330_3)> <Delay = 1.29>
+
+State 3 <SV = 2> <Delay = 2.43>
+ST_3 : Operation 63 [1/1] ( I:2.43ns O:2.43ns )   --->   "%outLayer0_read = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %outLayer0" [prj/sol/.autopilot/db/v_mix.cpp:323]   --->   Operation 63 'read' 'outLayer0_read' <Predicate = (!icmp_ln316 & tmp_5)> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_3 : Operation 64 [1/1] (0.00ns)   --->   "%trunc_ln323 = trunc i24 %outLayer0_read" [prj/sol/.autopilot/db/v_mix.cpp:323]   --->   Operation 64 'trunc' 'trunc_ln323' <Predicate = (!icmp_ln316 & tmp_5)> <Delay = 0.00>
+ST_3 : Operation 65 [1/1] (0.00ns)   --->   "%trunc_ln323_1 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %outLayer0_read, i32 8, i32 15" [prj/sol/.autopilot/db/v_mix.cpp:323]   --->   Operation 65 'partselect' 'trunc_ln323_1' <Predicate = (!icmp_ln316 & tmp_5)> <Delay = 0.00>
+ST_3 : Operation 66 [1/1] (0.00ns)   --->   "%trunc_ln323_2 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %outLayer0_read, i32 16, i32 23" [prj/sol/.autopilot/db/v_mix.cpp:323]   --->   Operation 66 'partselect' 'trunc_ln323_2' <Predicate = (!icmp_ln316 & tmp_5)> <Delay = 0.00>
+ST_3 : Operation 67 [1/1] (0.00ns)   --->   "%storemerge_0_0_0_0_020 = phi i8 %trunc_ln323, void %if.then, i8 %hwReg_background_Y_R_val_read, void %for.body55.split" [prj/sol/.autopilot/db/v_mix.cpp:323]   --->   Operation 67 'phi' 'storemerge_0_0_0_0_020' <Predicate = (!icmp_ln316)> <Delay = 0.00>
+ST_3 : Operation 68 [1/1] (0.00ns)   --->   "%storemerge_0_1_0_0_021 = phi i8 %trunc_ln323_1, void %if.then, i8 %hwReg_background_U_G_val_read, void %for.body55.split" [prj/sol/.autopilot/db/v_mix.cpp:323]   --->   Operation 68 'phi' 'storemerge_0_1_0_0_021' <Predicate = (!icmp_ln316)> <Delay = 0.00>
+ST_3 : Operation 69 [1/1] (0.00ns)   --->   "%storemerge_0_2_0_0_022 = phi i8 %trunc_ln323_2, void %if.then, i8 %hwReg_background_V_B_val_read, void %for.body55.split" [prj/sol/.autopilot/db/v_mix.cpp:323]   --->   Operation 69 'phi' 'storemerge_0_2_0_0_022' <Predicate = (!icmp_ln316)> <Delay = 0.00>
+ST_3 : Operation 70 [1/1] (0.00ns)   --->   "%empty_81 = phi i8 %srcLayer1Alphax_read, void %if.then84, i8 0, void %if.end" [prj/sol/.autopilot/db/v_mix.cpp:338]   --->   Operation 70 'phi' 'empty_81' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 71 [1/1] (0.00ns)   --->   "%p_out2_load = load i8 %p_out2" [prj/sol/.autopilot/db/v_mix.cpp:352]   --->   Operation 71 'load' 'p_out2_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 72 [1/1] (0.00ns)   --->   "%p_out1_load = load i8 %p_out1" [prj/sol/.autopilot/db/v_mix.cpp:352]   --->   Operation 72 'load' 'p_out1_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 73 [1/1] (0.00ns)   --->   "%p_out_load = load i8 %p_out" [prj/sol/.autopilot/db/v_mix.cpp:352]   --->   Operation 73 'load' 'p_out_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 74 [1/1] (1.30ns)   --->   "%icmp_ln345 = icmp_eq  i8 %empty_81, i8 255" [prj/sol/.autopilot/db/v_mix.cpp:345]   --->   Operation 74 'icmp' 'icmp_ln345' <Predicate = true> <Delay = 1.30> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 75 [1/1] (0.00ns)   --->   "%zext_ln345 = zext i8 %empty_81" [prj/sol/.autopilot/db/v_mix.cpp:345]   --->   Operation 75 'zext' 'zext_ln345' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 76 [1/1] (0.72ns)   --->   "%ppalpha = select i1 %icmp_ln345, i9 256, i9 %zext_ln345" [prj/sol/.autopilot/db/v_mix.cpp:345]   --->   Operation 76 'select' 'ppalpha' <Predicate = true> <Delay = 0.72> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.72> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 4.57>
+ST_4 : Operation 77 [1/1] (0.00ns)   --->   "%zext_ln346_1 = zext i9 %ppalpha" [prj/sol/.autopilot/db/v_mix.cpp:346]   --->   Operation 77 'zext' 'zext_ln346_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 78 [1/1] (3.59ns)   --->   "%mul_ln346 = mul i17 %zext_ln346_1, i17 %zext_ln346_cast" [prj/sol/.autopilot/db/v_mix.cpp:346]   --->   Operation 78 'mul' 'mul_ln346' <Predicate = true> <Delay = 3.59> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.59> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 79 [1/1] (0.00ns)   --->   "%zext_ln352 = zext i8 %p_out2_load" [prj/sol/.autopilot/db/v_mix.cpp:352]   --->   Operation 79 'zext' 'zext_ln352' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 80 [1/1] (0.00ns)   --->   "%zext_ln352_1 = zext i8 %storemerge_0_0_0_0_020" [prj/sol/.autopilot/db/v_mix.cpp:352]   --->   Operation 80 'zext' 'zext_ln352_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 81 [1/1] (1.30ns)   --->   "%sub_ln352 = sub i9 %zext_ln352, i9 %zext_ln352_1" [prj/sol/.autopilot/db/v_mix.cpp:352]   --->   Operation 81 'sub' 'sub_ln352' <Predicate = true> <Delay = 1.30> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 82 [1/1] (0.00ns)   --->   "%tmp = partselect i9 @_ssdm_op_PartSelect.i9.i17.i32.i32, i17 %mul_ln346, i32 8, i32 16" [prj/sol/.autopilot/db/v_mix.cpp:351]   --->   Operation 82 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 83 [1/1] (0.00ns)   --->   "%zext_ln351 = zext i9 %tmp" [prj/sol/.autopilot/db/v_mix.cpp:351]   --->   Operation 83 'zext' 'zext_ln351' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 84 [1/1] (0.00ns)   --->   "%sext_ln351 = sext i9 %sub_ln352" [prj/sol/.autopilot/db/v_mix.cpp:351]   --->   Operation 84 'sext' 'sext_ln351' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 85 [3/3] (0.98ns) (grouped into DSP with root node add_ln353)   --->   "%mul_ln353 = mul i16 %zext_ln351, i16 %sext_ln351" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 85 'mul' 'mul_ln353' <Predicate = true> <Delay = 0.98> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 86 [1/1] (0.00ns)   --->   "%zext_ln352_2 = zext i8 %p_out1_load" [prj/sol/.autopilot/db/v_mix.cpp:352]   --->   Operation 86 'zext' 'zext_ln352_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 87 [1/1] (0.00ns)   --->   "%zext_ln352_3 = zext i8 %storemerge_0_1_0_0_021" [prj/sol/.autopilot/db/v_mix.cpp:352]   --->   Operation 87 'zext' 'zext_ln352_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 88 [1/1] (1.30ns)   --->   "%sub_ln352_1 = sub i9 %zext_ln352_2, i9 %zext_ln352_3" [prj/sol/.autopilot/db/v_mix.cpp:352]   --->   Operation 88 'sub' 'sub_ln352_1' <Predicate = true> <Delay = 1.30> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 89 [1/1] (0.00ns)   --->   "%sext_ln351_1 = sext i9 %sub_ln352_1" [prj/sol/.autopilot/db/v_mix.cpp:351]   --->   Operation 89 'sext' 'sext_ln351_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 90 [3/3] (0.98ns) (grouped into DSP with root node add_ln353_1)   --->   "%mul_ln353_1 = mul i16 %zext_ln351, i16 %sext_ln351_1" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 90 'mul' 'mul_ln353_1' <Predicate = true> <Delay = 0.98> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 91 [1/1] (0.00ns)   --->   "%zext_ln352_4 = zext i8 %p_out_load" [prj/sol/.autopilot/db/v_mix.cpp:352]   --->   Operation 91 'zext' 'zext_ln352_4' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 92 [1/1] (0.00ns)   --->   "%zext_ln352_5 = zext i8 %storemerge_0_2_0_0_022" [prj/sol/.autopilot/db/v_mix.cpp:352]   --->   Operation 92 'zext' 'zext_ln352_5' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 93 [1/1] (1.30ns)   --->   "%sub_ln352_2 = sub i9 %zext_ln352_4, i9 %zext_ln352_5" [prj/sol/.autopilot/db/v_mix.cpp:352]   --->   Operation 93 'sub' 'sub_ln352_2' <Predicate = true> <Delay = 1.30> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 94 [1/1] (0.00ns)   --->   "%sext_ln351_2 = sext i9 %sub_ln352_2" [prj/sol/.autopilot/db/v_mix.cpp:351]   --->   Operation 94 'sext' 'sext_ln351_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 95 [3/3] (0.98ns) (grouped into DSP with root node add_ln353_2)   --->   "%mul_ln353_2 = mul i16 %zext_ln351, i16 %sext_ln351_2" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 95 'mul' 'mul_ln353_2' <Predicate = true> <Delay = 0.98> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 5 <SV = 4> <Delay = 0.98>
+ST_5 : Operation 96 [2/3] (0.98ns) (grouped into DSP with root node add_ln353)   --->   "%mul_ln353 = mul i16 %zext_ln351, i16 %sext_ln351" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 96 'mul' 'mul_ln353' <Predicate = true> <Delay = 0.98> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 97 [2/3] (0.98ns) (grouped into DSP with root node add_ln353_1)   --->   "%mul_ln353_1 = mul i16 %zext_ln351, i16 %sext_ln351_1" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 97 'mul' 'mul_ln353_1' <Predicate = true> <Delay = 0.98> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 98 [2/3] (0.98ns) (grouped into DSP with root node add_ln353_2)   --->   "%mul_ln353_2 = mul i16 %zext_ln351, i16 %sext_ln351_2" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 98 'mul' 'mul_ln353_2' <Predicate = true> <Delay = 0.98> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 6 <SV = 5> <Delay = 1.76>
+ST_6 : Operation 99 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i16 @_ssdm_op_BitConcatenate.i16.i8.i8, i8 %storemerge_0_0_0_0_020, i8 0" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 99 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 100 [1/3] (0.00ns) (grouped into DSP with root node add_ln353)   --->   "%mul_ln353 = mul i16 %zext_ln351, i16 %sext_ln351" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 100 'mul' 'mul_ln353' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 101 [2/2] (1.76ns) (root node of the DSP)   --->   "%add_ln353 = add i16 %mul_ln353, i16 %shl_ln" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 101 'add' 'add_ln353' <Predicate = true> <Delay = 1.76> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 102 [1/1] (0.00ns)   --->   "%shl_ln353_1 = bitconcatenate i16 @_ssdm_op_BitConcatenate.i16.i8.i8, i8 %storemerge_0_1_0_0_021, i8 0" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 102 'bitconcatenate' 'shl_ln353_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 103 [1/3] (0.00ns) (grouped into DSP with root node add_ln353_1)   --->   "%mul_ln353_1 = mul i16 %zext_ln351, i16 %sext_ln351_1" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 103 'mul' 'mul_ln353_1' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 104 [2/2] (1.76ns) (root node of the DSP)   --->   "%add_ln353_1 = add i16 %mul_ln353_1, i16 %shl_ln353_1" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 104 'add' 'add_ln353_1' <Predicate = true> <Delay = 1.76> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 105 [1/1] (0.00ns)   --->   "%shl_ln353_2 = bitconcatenate i16 @_ssdm_op_BitConcatenate.i16.i8.i8, i8 %storemerge_0_2_0_0_022, i8 0" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 105 'bitconcatenate' 'shl_ln353_2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 106 [1/3] (0.00ns) (grouped into DSP with root node add_ln353_2)   --->   "%mul_ln353_2 = mul i16 %zext_ln351, i16 %sext_ln351_2" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 106 'mul' 'mul_ln353_2' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 107 [2/2] (1.76ns) (root node of the DSP)   --->   "%add_ln353_2 = add i16 %mul_ln353_2, i16 %shl_ln353_2" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 107 'add' 'add_ln353_2' <Predicate = true> <Delay = 1.76> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 117 [1/1] (1.29ns)   --->   "%ret_ln0 = ret"   --->   Operation 117 'ret' 'ret_ln0' <Predicate = (icmp_ln316)> <Delay = 1.29>
+
+State 7 <SV = 6> <Delay = 4.19>
+ST_7 : Operation 108 [1/2] (1.76ns) (root node of the DSP)   --->   "%add_ln353 = add i16 %mul_ln353, i16 %shl_ln" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 108 'add' 'add_ln353' <Predicate = true> <Delay = 1.76> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 109 [1/1] (0.00ns)   --->   "%trunc_ln8 = partselect i8 @_ssdm_op_PartSelect.i8.i16.i32.i32, i16 %add_ln353, i32 8, i32 15" [prj/sol/.autopilot/db/v_mix.cpp:350]   --->   Operation 109 'partselect' 'trunc_ln8' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 110 [1/2] (1.76ns) (root node of the DSP)   --->   "%add_ln353_1 = add i16 %mul_ln353_1, i16 %shl_ln353_1" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 110 'add' 'add_ln353_1' <Predicate = true> <Delay = 1.76> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 111 [1/1] (0.00ns)   --->   "%tmp_1 = partselect i8 @_ssdm_op_PartSelect.i8.i16.i32.i32, i16 %add_ln353_1, i32 8, i32 15" [prj/sol/.autopilot/db/v_mix.cpp:356]   --->   Operation 111 'partselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 112 [1/2] (1.76ns) (root node of the DSP)   --->   "%add_ln353_2 = add i16 %mul_ln353_2, i16 %shl_ln353_2" [prj/sol/.autopilot/db/v_mix.cpp:353]   --->   Operation 112 'add' 'add_ln353_2' <Predicate = true> <Delay = 1.76> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 113 [1/1] (0.00ns)   --->   "%trunc_ln9 = partselect i8 @_ssdm_op_PartSelect.i8.i16.i32.i32, i16 %add_ln353_2, i32 8, i32 15" [prj/sol/.autopilot/db/v_mix.cpp:356]   --->   Operation 113 'partselect' 'trunc_ln9' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 114 [1/1] (0.00ns)   --->   "%or_ln356_3 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i8.i8.i8, i8 %trunc_ln9, i8 %tmp_1, i8 %trunc_ln8" [prj/sol/.autopilot/db/v_mix.cpp:356]   --->   Operation 114 'bitconcatenate' 'or_ln356_3' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 115 [1/1] ( I:2.43ns O:2.43ns )   --->   "%write_ln356 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %outLayer1, i24 %or_ln356_3" [prj/sol/.autopilot/db/v_mix.cpp:356]   --->   Operation 115 'write' 'write_ln356' <Predicate = true> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_7 : Operation 116 [1/1] (0.00ns)   --->   "%br_ln316 = br void %for.body55" [prj/sol/.autopilot/db/v_mix.cpp:316]   --->   Operation 116 'br' 'br_ln316' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.667ns, clock uncertainty: 1.800ns.
+
+ <State 1>: 4.078ns
+The critical path consists of the following:
+	'store' operation ('store_ln286', prj/sol/.autopilot/db/v_mix.cpp:286) of constant 0 11 bit on local variable 'x', prj/sol/.autopilot/db/v_mix.cpp:286 [41]  (1.298 ns)
+	'load' operation 11 bit ('x', prj/sol/.autopilot/db/v_mix.cpp:316) on local variable 'x', prj/sol/.autopilot/db/v_mix.cpp:286 [44]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln316', prj/sol/.autopilot/db/v_mix.cpp:316) [45]  (1.482 ns)
+	'store' operation ('store_ln286', prj/sol/.autopilot/db/v_mix.cpp:286) of variable 'add_ln316', prj/sol/.autopilot/db/v_mix.cpp:316 11 bit on local variable 'x', prj/sol/.autopilot/db/v_mix.cpp:286 [121]  (1.298 ns)
+
+ <State 2>: 2.433ns
+The critical path consists of the following:
+	fifo read operation ('srcLayer1x_read', prj/sol/.autopilot/db/v_mix.cpp:337) on port 'srcLayer1x' (prj/sol/.autopilot/db/v_mix.cpp:337) [74]  (2.433 ns)
+
+ <State 3>: 2.433ns
+The critical path consists of the following:
+	fifo read operation ('outLayer0_read', prj/sol/.autopilot/db/v_mix.cpp:323) on port 'outLayer0' (prj/sol/.autopilot/db/v_mix.cpp:323) [56]  (2.433 ns)
+
+ <State 4>: 4.570ns
+The critical path consists of the following:
+	'mul' operation 17 bit ('mul_ln346', prj/sol/.autopilot/db/v_mix.cpp:346) [92]  (3.590 ns)
+	'mul' operation 16 bit of DSP[101] ('mul_ln353', prj/sol/.autopilot/db/v_mix.cpp:353) [100]  (0.980 ns)
+
+ <State 5>: 0.980ns
+The critical path consists of the following:
+	'mul' operation 16 bit of DSP[101] ('mul_ln353', prj/sol/.autopilot/db/v_mix.cpp:353) [100]  (0.980 ns)
+
+ <State 6>: 1.760ns
+The critical path consists of the following:
+	'add' operation 16 bit of DSP[101] ('add_ln353', prj/sol/.autopilot/db/v_mix.cpp:353) [101]  (1.760 ns)
+
+ <State 7>: 4.193ns
+The critical path consists of the following:
+	'add' operation 16 bit of DSP[101] ('add_ln353', prj/sol/.autopilot/db/v_mix.cpp:353) [101]  (1.760 ns)
+	fifo write operation ('write_ln356', prj/sol/.autopilot/db/v_mix.cpp:356) on port 'outLayer1' (prj/sol/.autopilot/db/v_mix.cpp:356) [120]  (2.433 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

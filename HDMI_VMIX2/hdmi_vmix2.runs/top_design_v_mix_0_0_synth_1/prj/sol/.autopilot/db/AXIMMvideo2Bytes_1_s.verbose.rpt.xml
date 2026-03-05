@@ -1,0 +1,207 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'AXIMMvideo2Bytes_1_s'" level="0">
+<item name = "Date">Thu Mar  5 21:15:28 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">prj</item>
+<item name = "Solution">sol (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">6.67 ns, 4.867 ns, 1.80 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1, 17938801, 6.667 ns, 0.120 sec, 1, 17938801, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_AXIMMvideo2Bytes_1_Pipeline_VITIS_LOOP_203_2_fu_138">AXIMMvideo2Bytes_1_Pipeline_VITIS_LOOP_203_2, 2, 8195, 13.334 ns, 54.636 us, 0, 0, loop pipeline stp</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_196_1">0, 17938800, 112 ~ 8305, -, -, 0 ~ 2160, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 114, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 83, 85, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 733, -</column>
+<column name="Register">-, -, 284, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 1, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_AXIMMvideo2Bytes_1_Pipeline_VITIS_LOOP_203_2_fu_138">AXIMMvideo2Bytes_1_Pipeline_VITIS_LOOP_203_2, 0, 0, 83, 85, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln196_fu_200_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln199_fu_234_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln200_fu_164_p2">+, 0, 0, 17, 17, 3</column>
+<column name="y_24_fu_210_p2">+, 0, 0, 16, 16, 1</column>
+<column name="icmp_ln196_fu_205_p2">icmp, 0, 0, 16, 16, 16</column>
+<column name="ap_block_state1">or, 0, 0, 1, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">559, 112, 1, 112</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="m_axi_mm_video1_0_ARADDR">13, 3, 32, 96</column>
+<column name="m_axi_mm_video1_0_ARBURST">9, 2, 2, 4</column>
+<column name="m_axi_mm_video1_0_ARCACHE">9, 2, 4, 8</column>
+<column name="m_axi_mm_video1_0_ARID">9, 2, 1, 2</column>
+<column name="m_axi_mm_video1_0_ARLEN">13, 3, 32, 96</column>
+<column name="m_axi_mm_video1_0_ARLOCK">9, 2, 2, 4</column>
+<column name="m_axi_mm_video1_0_ARPROT">9, 2, 3, 6</column>
+<column name="m_axi_mm_video1_0_ARQOS">9, 2, 4, 8</column>
+<column name="m_axi_mm_video1_0_ARREGION">9, 2, 4, 8</column>
+<column name="m_axi_mm_video1_0_ARSIZE">9, 2, 3, 6</column>
+<column name="m_axi_mm_video1_0_ARUSER">9, 2, 1, 2</column>
+<column name="m_axi_mm_video1_0_ARVALID">13, 3, 1, 3</column>
+<column name="m_axi_mm_video1_0_RREADY">9, 2, 1, 2</column>
+<column name="mm_video1_blk_n_AR">9, 2, 1, 2</column>
+<column name="phi_mul_i_fu_94">9, 2, 32, 64</column>
+<column name="real_start">9, 2, 1, 2</column>
+<column name="y_fu_98">9, 2, 16, 32</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="HwReg_layer1_buf1_read_reg_278">32, 0, 32, 0</column>
+<column name="HwReg_layerEnableFlag_1_val_read_reg_269">1, 0, 1, 0</column>
+<column name="HwReg_layerHeight_1_val_read_reg_273">16, 0, 16, 0</column>
+<column name="ap_CS_fsm">111, 0, 111, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="grp_AXIMMvideo2Bytes_1_Pipeline_VITIS_LOOP_203_2_fu_138_ap_start_reg">1, 0, 1, 0</column>
+<column name="loopWidth_i_reg_302">14, 0, 14, 0</column>
+<column name="phi_mul_i_fu_94">32, 0, 32, 0</column>
+<column name="start_once_reg">1, 0, 1, 0</column>
+<column name="trunc_ln12_i_reg_315">29, 0, 29, 0</column>
+<column name="y_fu_98">16, 0, 16, 0</column>
+<column name="zext_ln199_reg_297">16, 0, 32, 16</column>
+<column name="zext_ln203_reg_307">14, 0, 32, 18</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, AXIMMvideo2Bytes&lt;1&gt;, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, AXIMMvideo2Bytes&lt;1&gt;, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, AXIMMvideo2Bytes&lt;1&gt;, return value</column>
+<column name="start_full_n">in, 1, ap_ctrl_hs, AXIMMvideo2Bytes&lt;1&gt;, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, AXIMMvideo2Bytes&lt;1&gt;, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, AXIMMvideo2Bytes&lt;1&gt;, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, AXIMMvideo2Bytes&lt;1&gt;, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, AXIMMvideo2Bytes&lt;1&gt;, return value</column>
+<column name="start_out">out, 1, ap_ctrl_hs, AXIMMvideo2Bytes&lt;1&gt;, return value</column>
+<column name="start_write">out, 1, ap_ctrl_hs, AXIMMvideo2Bytes&lt;1&gt;, return value</column>
+<column name="HwReg_layerWidth_1_val">in, 14, ap_stable, HwReg_layerWidth_1_val, scalar</column>
+<column name="m_axi_mm_video1_0_AWVALID">out, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_AWREADY">in, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_AWADDR">out, 32, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_AWID">out, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_AWLEN">out, 32, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_AWSIZE">out, 3, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_AWBURST">out, 2, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_AWLOCK">out, 2, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_AWCACHE">out, 4, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_AWPROT">out, 3, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_AWQOS">out, 4, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_AWREGION">out, 4, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_AWUSER">out, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_WVALID">out, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_WREADY">in, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_WDATA">out, 64, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_WSTRB">out, 8, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_WLAST">out, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_WID">out, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_WUSER">out, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_ARVALID">out, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_ARREADY">in, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_ARADDR">out, 32, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_ARID">out, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_ARLEN">out, 32, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_ARSIZE">out, 3, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_ARBURST">out, 2, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_ARLOCK">out, 2, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_ARCACHE">out, 4, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_ARPROT">out, 3, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_ARQOS">out, 4, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_ARREGION">out, 4, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_ARUSER">out, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_RVALID">in, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_RREADY">out, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_RDATA">in, 64, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_RLAST">in, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_RID">in, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_RFIFONUM">in, 7, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_RUSER">in, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_RRESP">in, 2, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_BVALID">in, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_BREADY">out, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_BRESP">in, 2, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_BID">in, 1, m_axi, mm_video1, pointer</column>
+<column name="m_axi_mm_video1_0_BUSER">in, 1, m_axi, mm_video1, pointer</column>
+<column name="HwReg_layer1_buf1">in, 32, ap_stable, HwReg_layer1_buf1, scalar</column>
+<column name="bytesLayer1_plane0_din">out, 64, ap_fifo, bytesLayer1_plane0, pointer</column>
+<column name="bytesLayer1_plane0_full_n">in, 1, ap_fifo, bytesLayer1_plane0, pointer</column>
+<column name="bytesLayer1_plane0_write">out, 1, ap_fifo, bytesLayer1_plane0, pointer</column>
+<column name="bytesLayer1_plane0_num_data_valid">in, 3, ap_fifo, bytesLayer1_plane0, pointer</column>
+<column name="bytesLayer1_plane0_fifo_cap">in, 3, ap_fifo, bytesLayer1_plane0, pointer</column>
+<column name="HwReg_layerHeight_1_val">in, 16, ap_stable, HwReg_layerHeight_1_val, scalar</column>
+<column name="HwReg_layerStride_1_val">in, 16, ap_stable, HwReg_layerStride_1_val, scalar</column>
+<column name="HwReg_layerEnableFlag_1_val">in, 1, ap_stable, HwReg_layerEnableFlag_1_val, scalar</column>
+</table>
+</item>
+</section>
+</profile>

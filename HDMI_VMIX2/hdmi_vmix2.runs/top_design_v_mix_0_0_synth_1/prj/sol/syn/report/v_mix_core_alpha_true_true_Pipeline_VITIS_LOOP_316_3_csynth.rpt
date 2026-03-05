@@ -1,0 +1,253 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_mix_core_alpha_true_true_Pipeline_VITIS_LOOP_316_3'
+================================================================
+* Date:           Thu Mar  5 21:15:28 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.67 ns|  4.570 ns|     1.80 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+-----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max    | min | max |        Type       |
+    +---------+---------+----------+-----------+-----+-----+-------------------+
+    |       71|     1927|  0.473 us|  12.847 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+-----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+-----------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |    Trip   |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  |   Count   | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+-----------+----------+
+        |- VITIS_LOOP_316_3  |       69|     1925|         7|          1|          1|  64 ~ 1920|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+-----------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    3|       -|      -|    -|
+|Expression       |        -|    -|       0|    115|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    0|       0|     50|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|    166|    -|
+|Register         |        -|    -|     413|    128|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    3|     413|    459|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    1|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+--------------------+---------+----+---+----+-----+
+    |         Instance        |       Module       | BRAM_18K| DSP| FF| LUT| URAM|
+    +-------------------------+--------------------+---------+----+---+----+-----+
+    |mul_9ns_9ns_17_1_1_U146  |mul_9ns_9ns_17_1_1  |        0|   0|  0|  50|    0|
+    +-------------------------+--------------------+---------+----+---+----+-----+
+    |Total                    |                    |        0|   0|  0|  50|    0|
+    +-------------------------+--------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    +-----------------------------------+------------------------------+--------------+
+    |              Instance             |            Module            |  Expression  |
+    +-----------------------------------+------------------------------+--------------+
+    |mac_muladd_9ns_9s_16s_16_4_1_U147  |mac_muladd_9ns_9s_16s_16_4_1  |  i0 * i1 + i2|
+    |mac_muladd_9ns_9s_16s_16_4_1_U148  |mac_muladd_9ns_9s_16s_16_4_1  |  i0 * i1 + i2|
+    |mac_muladd_9ns_9s_16s_16_4_1_U149  |mac_muladd_9ns_9s_16s_16_4_1  |  i0 * i1 + i2|
+    +-----------------------------------+------------------------------+--------------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln316_fu_270_p2               |         +|   0|  0|  11|          11|           1|
+    |sub_ln352_1_fu_476_p2             |         -|   0|  0|   9|           9|           9|
+    |sub_ln352_2_fu_493_p2             |         -|   0|  0|   9|           9|           9|
+    |sub_ln352_fu_445_p2               |         -|   0|  0|   9|           9|           9|
+    |and_ln330_1_fu_308_p2             |       and|   0|  0|   1|           1|           1|
+    |and_ln330_2_fu_314_p2             |       and|   0|  0|   1|           1|           1|
+    |and_ln330_3_fu_320_p2             |       and|   0|  0|   1|           1|           1|
+    |and_ln330_fu_302_p2               |       and|   0|  0|   1|           1|           1|
+    |ap_block_state3_pp0_stage0_iter2  |       and|   0|  0|   1|           1|           1|
+    |ap_condition_241                  |       and|   0|  0|   1|           1|           1|
+    |ap_condition_242                  |       and|   0|  0|   1|           1|           1|
+    |ap_predicate_op54_read_state2     |       and|   0|  0|   1|           1|           1|
+    |ap_predicate_op63_read_state3     |       and|   0|  0|   1|           1|           1|
+    |icmp_ln316_fu_264_p2              |      icmp|   0|  0|  11|          11|          11|
+    |icmp_ln331_fu_284_p2              |      icmp|   0|  0|  16|          16|          16|
+    |icmp_ln332_fu_296_p2              |      icmp|   0|  0|  17|          17|          17|
+    |icmp_ln345_fu_412_p2              |      icmp|   0|  0|   8|           8|           2|
+    |ap_block_pp0_stage0_01001         |        or|   0|  0|   1|           1|           1|
+    |ap_block_state2_pp0_stage0_iter1  |        or|   0|  0|   1|           1|           1|
+    |ppalpha_fu_422_p3                 |    select|   0|  0|  10|           1|          10|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    |xor_ln331_fu_290_p2               |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 115|         104|          99|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------------------------+----+-----------+-----+-----------+
+    |                         Name                        | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                                          |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1                              |   9|          2|    1|          2|
+    |ap_phi_reg_pp0_iter1_storemerge_0_0_0_0_020_reg_211  |   9|          2|    8|         16|
+    |ap_phi_reg_pp0_iter1_storemerge_0_1_0_0_021_reg_221  |   9|          2|    8|         16|
+    |ap_phi_reg_pp0_iter1_storemerge_0_2_0_0_022_reg_231  |   9|          2|    8|         16|
+    |ap_phi_reg_pp0_iter2_empty_81_reg_241                |  13|          3|    8|         24|
+    |ap_sig_allocacmp_x_11                                |   9|          2|   11|         22|
+    |outLayer0_blk_n                                      |   9|          2|    1|          2|
+    |outLayer1_blk_n                                      |   9|          2|    1|          2|
+    |p_out1_o                                             |   9|          2|    8|         16|
+    |p_out2_o                                             |   9|          2|    8|         16|
+    |p_out_o                                              |   9|          2|    8|         16|
+    |srcLayer1Alphax_blk_n                                |   9|          2|    1|          2|
+    |srcLayer1x_blk_n                                     |   9|          2|    1|          2|
+    |storemerge_0_0_0_0_020_reg_211                       |   9|          2|    8|         16|
+    |storemerge_0_1_0_0_021_reg_221                       |   9|          2|    8|         16|
+    |storemerge_0_2_0_0_022_reg_231                       |   9|          2|    8|         16|
+    |x_fu_116                                             |   9|          2|   11|         22|
+    +-----------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                                | 166|         37|  108|        224|
+    +-----------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------------+----+----+-----+-----------+
+    |                         Name                        | FF | LUT| Bits| Const Bits|
+    +-----------------------------------------------------+----+----+-----+-----------+
+    |and_ln330_3_reg_627                                  |   1|   0|    1|          0|
+    |ap_CS_fsm                                            |   1|   0|    1|          0|
+    |ap_done_reg                                          |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2                              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3                              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4                              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5                              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6                              |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg                     |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg                     |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg                     |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg                     |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter5_reg                     |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter1_empty_81_reg_241                |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter1_storemerge_0_0_0_0_020_reg_211  |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter1_storemerge_0_1_0_0_021_reg_221  |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter1_storemerge_0_2_0_0_022_reg_231  |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter2_empty_81_reg_241                |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter2_storemerge_0_0_0_0_020_reg_211  |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter2_storemerge_0_1_0_0_021_reg_221  |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter2_storemerge_0_2_0_0_022_reg_231  |   8|   0|    8|          0|
+    |icmp_ln316_reg_623                                   |   1|   0|    1|          0|
+    |p_out1_load_reg_641                                  |   8|   0|    8|          0|
+    |p_out2_load_reg_636                                  |   8|   0|    8|          0|
+    |p_out_load_reg_646                                   |   8|   0|    8|          0|
+    |ppalpha_reg_651                                      |   9|   0|    9|          0|
+    |storemerge_0_0_0_0_020_reg_211                       |   8|   0|    8|          0|
+    |storemerge_0_1_0_0_021_reg_221                       |   8|   0|    8|          0|
+    |storemerge_0_2_0_0_022_reg_231                       |   8|   0|    8|          0|
+    |tmp_5_reg_599                                        |   1|   0|    1|          0|
+    |x_fu_116                                             |  11|   0|   11|          0|
+    |zext_ln346_cast_reg_618                              |   9|   0|   17|          8|
+    |icmp_ln316_reg_623                                   |  64|  32|    1|          0|
+    |storemerge_0_0_0_0_020_reg_211                       |  64|  32|    8|          0|
+    |storemerge_0_1_0_0_021_reg_221                       |  64|  32|    8|          0|
+    |storemerge_0_2_0_0_022_reg_231                       |  64|  32|    8|          0|
+    +-----------------------------------------------------+----+----+-----+-----------+
+    |Total                                                | 413| 128|  190|          8|
+    +-----------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+--------------------------------------------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |                      Source Object                     |    C Type    |
++--------------------------------+-----+-----+------------+--------------------------------------------------------+--------------+
+|ap_clk                          |   in|    1|  ap_ctrl_hs|  v_mix_core_alpha<true, true>_Pipeline_VITIS_LOOP_316_3|  return value|
+|ap_rst                          |   in|    1|  ap_ctrl_hs|  v_mix_core_alpha<true, true>_Pipeline_VITIS_LOOP_316_3|  return value|
+|ap_start                        |   in|    1|  ap_ctrl_hs|  v_mix_core_alpha<true, true>_Pipeline_VITIS_LOOP_316_3|  return value|
+|ap_done                         |  out|    1|  ap_ctrl_hs|  v_mix_core_alpha<true, true>_Pipeline_VITIS_LOOP_316_3|  return value|
+|ap_idle                         |  out|    1|  ap_ctrl_hs|  v_mix_core_alpha<true, true>_Pipeline_VITIS_LOOP_316_3|  return value|
+|ap_ready                        |  out|    1|  ap_ctrl_hs|  v_mix_core_alpha<true, true>_Pipeline_VITIS_LOOP_316_3|  return value|
+|srcLayer1x_dout                 |   in|   24|     ap_fifo|                                              srcLayer1x|       pointer|
+|srcLayer1x_empty_n              |   in|    1|     ap_fifo|                                              srcLayer1x|       pointer|
+|srcLayer1x_read                 |  out|    1|     ap_fifo|                                              srcLayer1x|       pointer|
+|srcLayer1x_num_data_valid       |   in|    3|     ap_fifo|                                              srcLayer1x|       pointer|
+|srcLayer1x_fifo_cap             |   in|    3|     ap_fifo|                                              srcLayer1x|       pointer|
+|srcLayer1Alphax_dout            |   in|    8|     ap_fifo|                                         srcLayer1Alphax|       pointer|
+|srcLayer1Alphax_empty_n         |   in|    1|     ap_fifo|                                         srcLayer1Alphax|       pointer|
+|srcLayer1Alphax_read            |  out|    1|     ap_fifo|                                         srcLayer1Alphax|       pointer|
+|srcLayer1Alphax_num_data_valid  |   in|    5|     ap_fifo|                                         srcLayer1Alphax|       pointer|
+|srcLayer1Alphax_fifo_cap        |   in|    5|     ap_fifo|                                         srcLayer1Alphax|       pointer|
+|outLayer0_dout                  |   in|   24|     ap_fifo|                                               outLayer0|       pointer|
+|outLayer0_empty_n               |   in|    1|     ap_fifo|                                               outLayer0|       pointer|
+|outLayer0_read                  |  out|    1|     ap_fifo|                                               outLayer0|       pointer|
+|outLayer0_num_data_valid        |   in|    3|     ap_fifo|                                               outLayer0|       pointer|
+|outLayer0_fifo_cap              |   in|    3|     ap_fifo|                                               outLayer0|       pointer|
+|outLayer1_din                   |  out|   24|     ap_fifo|                                               outLayer1|       pointer|
+|outLayer1_full_n                |   in|    1|     ap_fifo|                                               outLayer1|       pointer|
+|outLayer1_write                 |  out|    1|     ap_fifo|                                               outLayer1|       pointer|
+|outLayer1_num_data_valid        |   in|   32|     ap_fifo|                                               outLayer1|       pointer|
+|outLayer1_fifo_cap              |   in|   32|     ap_fifo|                                               outLayer1|       pointer|
+|hwReg_width_val                 |   in|   11|   ap_stable|                                         hwReg_width_val|        scalar|
+|zext_ln346                      |   in|    9|     ap_none|                                              zext_ln346|        scalar|
+|hwReg_background_Y_R_val        |   in|    8|   ap_stable|                                hwReg_background_Y_R_val|        scalar|
+|hwReg_background_U_G_val        |   in|    8|   ap_stable|                                hwReg_background_U_G_val|        scalar|
+|hwReg_background_V_B_val        |   in|    8|   ap_stable|                                hwReg_background_V_B_val|        scalar|
+|hwReg_layerStartX_1_val         |   in|   16|   ap_stable|                                 hwReg_layerStartX_1_val|        scalar|
+|add_ln332                       |   in|   17|   ap_stable|                                               add_ln332|        scalar|
+|icmp_ln330_1                    |   in|    1|     ap_none|                                            icmp_ln330_1|        scalar|
+|rev7                            |   in|    1|     ap_none|                                                    rev7|        scalar|
+|empty_62                        |   in|    1|   ap_stable|                                                empty_62|        scalar|
+|empty                           |   in|    1|   ap_stable|                                                   empty|        scalar|
+|p_out_i                         |   in|    8|     ap_ovld|                                                   p_out|       pointer|
+|p_out_o                         |  out|    8|     ap_ovld|                                                   p_out|       pointer|
+|p_out_o_ap_vld                  |  out|    1|     ap_ovld|                                                   p_out|       pointer|
+|p_out1_i                        |   in|    8|     ap_ovld|                                                  p_out1|       pointer|
+|p_out1_o                        |  out|    8|     ap_ovld|                                                  p_out1|       pointer|
+|p_out1_o_ap_vld                 |  out|    1|     ap_ovld|                                                  p_out1|       pointer|
+|p_out2_i                        |   in|    8|     ap_ovld|                                                  p_out2|       pointer|
+|p_out2_o                        |  out|    8|     ap_ovld|                                                  p_out2|       pointer|
+|p_out2_o_ap_vld                 |  out|    1|     ap_ovld|                                                  p_out2|       pointer|
++--------------------------------+-----+-----+------------+--------------------------------------------------------+--------------+
+

@@ -1,0 +1,78 @@
+set SynModuleInfo {
+  {SRCNAME {reg<unsigned short>} MODELNAME reg_unsigned_short_s RTLNAME top_design_v_tpg_0_1_reg_unsigned_short_s}
+  {SRCNAME {reg<ap_uint<10> >} MODELNAME reg_ap_uint_10_s RTLNAME top_design_v_tpg_0_1_reg_ap_uint_10_s}
+  {SRCNAME reg<int> MODELNAME reg_int_s RTLNAME top_design_v_tpg_0_1_reg_int_s}
+  {SRCNAME tpgBackground_Pipeline_VITIS_LOOP_565_2 MODELNAME tpgBackground_Pipeline_VITIS_LOOP_565_2 RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2
+    SUBMODULES {
+      {MODELNAME top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1 RTLNAME top_design_v_tpg_0_1_urem_11ns_3ns_2_15_1 BINDTYPE op TYPE urem IMPL auto LATENCY 14 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1 RTLNAME top_design_v_tpg_0_1_mul_11ns_13ns_23_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_sparsemux_7_2_9_1_1 RTLNAME top_design_v_tpg_0_1_sparsemux_7_2_9_1_1 BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}
+      {MODELNAME top_design_v_tpg_0_1_mul_20s_9ns_28_4_1 RTLNAME top_design_v_tpg_0_1_mul_20s_9ns_28_4_1 BINDTYPE op TYPE mul IMPL auto LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_sparsemux_7_16_8_1_1 RTLNAME top_design_v_tpg_0_1_sparsemux_7_16_8_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_realdef}
+      {MODELNAME top_design_v_tpg_0_1_sparsemux_7_2_8_1_1 RTLNAME top_design_v_tpg_0_1_sparsemux_7_2_8_1_1 BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}
+      {MODELNAME top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1 RTLNAME top_design_v_tpg_0_1_am_addmul_16ns_1s_16ns_17_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
+      {MODELNAME top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1 RTLNAME top_design_v_tpg_0_1_mac_muladd_16s_16s_16s_16_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
+      {MODELNAME top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1 RTLNAME top_design_v_tpg_0_1_mac_muladd_8ns_7ns_13ns_15_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
+      {MODELNAME top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1 RTLNAME top_design_v_tpg_0_1_mac_muladd_8ns_7s_16s_16_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
+      {MODELNAME top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1 RTLNAME top_design_v_tpg_0_1_mac_muladd_8ns_8ns_15ns_16_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
+      {MODELNAME top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1 RTLNAME top_design_v_tpg_0_1_mac_muladd_8ns_8s_16s_16_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
+      {MODELNAME top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1 RTLNAME top_design_v_tpg_0_1_mac_muladd_8ns_6s_15ns_16_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
+      {MODELNAME top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1 RTLNAME top_design_v_tpg_0_1_mac_muladd_8ns_5ns_16ns_17_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_9bit_0_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_9bit_0_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_9bit_1_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_9bit_1_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_9bit_2_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_9bit_2_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_b_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_b_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init RTLNAME top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME top_design_v_tpg_0_1_flow_control_loop_pipe_sequential_init_U}
+    }
+  }
+  {SRCNAME tpgBackground MODELNAME tpgBackground RTLNAME top_design_v_tpg_0_1_tpgBackground}
+  {SRCNAME tpgForeground_Pipeline_VITIS_LOOP_774_2 MODELNAME tpgForeground_Pipeline_VITIS_LOOP_774_2 RTLNAME top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2
+    SUBMODULES {
+      {MODELNAME top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R RTLNAME top_design_v_tpg_0_1_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME tpgForeground MODELNAME tpgForeground RTLNAME top_design_v_tpg_0_1_tpgForeground}
+  {SRCNAME MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 MODELNAME MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 RTLNAME top_design_v_tpg_0_1_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2
+    SUBMODULES {
+      {MODELNAME top_design_v_tpg_0_1_sparsemux_7_2_24_1_1 RTLNAME top_design_v_tpg_0_1_sparsemux_7_2_24_1_1 BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}
+    }
+  }
+  {SRCNAME MultiPixStream2AXIvideo MODELNAME MultiPixStream2AXIvideo RTLNAME top_design_v_tpg_0_1_MultiPixStream2AXIvideo}
+  {SRCNAME v_tpgHlsDataFlow MODELNAME v_tpgHlsDataFlow RTLNAME top_design_v_tpg_0_1_v_tpgHlsDataFlow
+    SUBMODULES {
+      {MODELNAME top_design_v_tpg_0_1_fifo_w24_d16_S RTLNAME top_design_v_tpg_0_1_fifo_w24_d16_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME bckgndYUV_U}
+      {MODELNAME top_design_v_tpg_0_1_fifo_w24_d16_S RTLNAME top_design_v_tpg_0_1_fifo_w24_d16_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME ovrlayYUV_U}
+      {MODELNAME top_design_v_tpg_0_1_start_for_tpgForeground_U0 RTLNAME top_design_v_tpg_0_1_start_for_tpgForeground_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_tpgForeground_U0_U}
+      {MODELNAME top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvideo_U0 RTLNAME top_design_v_tpg_0_1_start_for_MultiPixStream2AXIvideo_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_MultiPixStream2AXIvideo_U0_U}
+    }
+  }
+  {SRCNAME v_tpg MODELNAME v_tpg RTLNAME top_design_v_tpg_0_1_v_tpg IS_TOP 1
+    SUBMODULES {
+      {MODELNAME top_design_v_tpg_0_1_CTRL_s_axi RTLNAME top_design_v_tpg_0_1_CTRL_s_axi BINDTYPE interface TYPE interface_s_axilite}
+      {MODELNAME top_design_v_tpg_0_1_regslice_both RTLNAME top_design_v_tpg_0_1_regslice_both BINDTYPE interface TYPE adapter IMPL reg_slice}
+    }
+  }
+}
