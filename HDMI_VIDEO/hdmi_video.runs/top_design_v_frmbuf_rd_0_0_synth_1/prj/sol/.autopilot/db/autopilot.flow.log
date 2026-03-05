@@ -1,6 +1,6 @@
 Execute       source -notrace -encoding utf-8 /tools/xilinx/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
 Execute         source -encoding utf-8 /tools/xilinx/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-INFO-FLOW: Workspace /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol opened at Thu Feb 19 12:54:38 MSK 2026
+INFO-FLOW: Workspace /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol opened at Thu Mar 05 14:47:02 MSK 2026
 Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
 Execute     set_part xc7z020clg400-2 
@@ -25,7 +25,7 @@ Execute         source /tools/xilinx/2025.2/Vitis/common/technology/xilinx/ip/xf
 Execute         source /tools/xilinx/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
 Execute       ap_part_info -name xc7z020-clg400-2 -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 0.18 sec.
+Command     set_part done; 0.17 sec.
 Execute     add_files -cflags  -I /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/hls -I /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src  /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd_config.h 
 INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/hls -I /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src  /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd_config.h 
 INFO: [HLS 200-10] Adding design file '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd_config.h' to the project
@@ -110,7 +110,7 @@ Execute       ap_part_info -name xc7z020-clg400-2 -data info
 INFO-FLOW: run_clang v_frmbuf_rd.cpp.xilinx-performance-pragma-detector exec: /tools/xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/xilinx-performance-pragma-detector /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp -- -fhls -I/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/hls -I/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/xilinx/2025.2/Vitis/common/technology/autopilot -I /tools/xilinx/2025.2/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -target fpga64-xilinx-linux-gnu -I /usr/include/x86_64-linux-gnu --gcc-toolchain=/tools/xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0 -hls-platform-db-name=/tools/xilinx/2025.2/Vitis/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_medium -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-2 > /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp.xilinx-performance-pragma-detector.out.log 2> /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp.xilinx-performance-pragma-detector.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=48
 Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.07 seconds; current allocated memory: 234.609 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.03 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.06 seconds; current allocated memory: 234.609 MB.
 Execute         send_msg_by_id INFO @200-2191@%s%s C-Synthesis clang-16 
 INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
 Execute         set_directive_top v_frmbuf_rd -name=v_frmbuf_rd 
@@ -126,17 +126,17 @@ INFO-FLOW: Running: GCC PP 39
 INFO-FLOW: Source preprocessing
 INFO-FLOW: run_clang v_frmbuf_rd.cpp.clang exec: /tools/xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/clang /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp -foptimization-record-file=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --gcc-toolchain=/tools/xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -insert-hls-directive=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/all.directive.json -hls-directive-location -E -I/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/hls -I/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Xclang -no-opaque-pointers -Xclang -fmerge-all-constants -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=6.667 -fno-threadsafe-statics -fno-use-cxa-atexit -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/xilinx/2025.2/Vitis/common/technology/autopilot -I /tools/xilinx/2025.2/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.pp.0.cpp -hls-platform-db-name=/tools/xilinx/2025.2/Vitis/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_medium -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-2 > /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp.clang.out.log 2> /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp.clang.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
-INFO-FLOW: Done: GCC PP 39 time: 0.9 seconds 
+INFO-FLOW: Done: GCC PP 39 time: 0.7 seconds 
 INFO-FLOW: Source syntax check for synthesis
 INFO-FLOW: run_clang clang exec: /tools/xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/clang -foptimization-record-file=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.pp.0.cpp -hls-platform-db-name=/tools/xilinx/2025.2/Vitis/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_medium -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-2 > /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/clang.out.log 2> /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/clang.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
 Execute         clang_tidy xilinx-systemc-detector -desc systemc-detector /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.pp.0.cpp  -target fpga -directive=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /tools/xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/.systemc_flag -fix-errors /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0
-Command         clang_tidy done; 2.69 sec.
+Command         clang_tidy done; 2.62 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute         clang_tidy xilinx-directive2pragma -desc directive2pragma /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.pp.0.cpp  -target fpga -directive=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /tools/xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/all.directive.json -fix-errors /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0
-Command         clang_tidy done; 2.94 sec.
+Command         clang_tidy done; 2.89 sec.
 INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 2.9 seconds 
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
@@ -145,7 +145,7 @@ INFO-FLOW: run_clang loop-label exec: /tools/xilinx/2025.2/Vitis/lnx64/tools/cla
 Execute           source /tools/xilinx/2025.2/Vitis/tps/tcl/tcllib2.0/yaml/yaml.tcl 
 Execute             source /tools/xilinx/2025.2/Vitis/tps/tcl/tcllib2.0/cmdline/cmdline.tcl 
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=1748
-Command         clang_tidy done; 7.18 sec.
+Command         clang_tidy done; 6.75 sec.
 INFO-FLOW: run_clang v_frmbuf_rd.pp.0.cpp.xilinx-dataflow-lawyer exec: /tools/xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/xilinx-dataflow-lawyer -export-fixes=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.pp.0.cpp.xilinx-dataflow-lawyer.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
 Execute         ap_part_info -name xc7z020-clg400-2 -data info 
@@ -154,11 +154,12 @@ INFO-FLOW: run_clang v_frmbuf_rd.pp.0.cpp.clang exec: /tools/xilinx/2025.2/Vitis
 WARNING: [HLS 207-6591] unused parameter 'srcImg2' (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp:499:12)
 WARNING: [HLS 207-6591] unused parameter 'srcImg3' (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp:500:9)
 WARNING: [HLS 207-6591] unused parameter 'VideoFormat' (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp:505:16)
+WARNING: [HLS 207-6591] unused parameter 'Width' (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp:687:14)
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
 INFO-FLOW: converting llvm 16.0.4 bc to downstrem bc
 INFO-FLOW: run_clang v_frmbuf_rd.bc.llvm-converter exec: /tools/xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/llvm-converter -opaque-pointers=0 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.pre.g.bc -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.bc > /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.bc.llvm-converter.out.log 2> /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.bc.llvm-converter.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 21.25 seconds. CPU system time: 0.75 seconds. Elapsed time: 22.02 seconds; current allocated memory: 263.816 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 20.03 seconds. CPU system time: 0.77 seconds. Elapsed time: 20.81 seconds; current allocated memory: 263.801 MB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
 Execute         run_link_or_opt -out /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.0.bc -args /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.bc 
@@ -173,13 +174,13 @@ INFO-FLOW: Linking math bc lib
 Execute         run_link_or_opt -out /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.2.m1.bc -args /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/xilinx/2025.2/Vitis/lnx64/lib/libhlsm_39.bc /tools/xilinx/2025.2/Vitis/lnx64/lib/libhlsmc++_39.bc 
 INFO-FLOW: run_clang a.g.ld.2.m1.bc.llvm-link exec: /tools/xilinx/2025.2/Vitis/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/xilinx/2025.2/Vitis/lnx64/lib/libhlsm_39.bc /tools/xilinx/2025.2/Vitis/lnx64/lib/libhlsmc++_39.bc -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.2.m1.bc > /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
-Command         run_link_or_opt done; 1.08 sec.
+Command         run_link_or_opt done; 0.99 sec.
 Execute         run_link_or_opt -opt -out /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.3.fpc.bc -args /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=v_frmbuf_rd -reflow-float-conversion 
 INFO-FLOW: run_clang a.g.ld.3.fpc.bc.opt exec: /tools/xilinx/2025.2/Vitis/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=v_frmbuf_rd -reflow-float-conversion -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.3.fpc.bc > /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
 INFO-FLOW: Running: gen_design_size_report post-opt
 INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds 
-Command         run_link_or_opt done; 0.46 sec.
+Command         run_link_or_opt done; 0.43 sec.
 Execute         run_link_or_opt -out /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.4.m2.bc -args /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/xilinx/2025.2/Vitis/lnx64/lib/libfloatconversion_39.bc 
 INFO-FLOW: run_clang a.g.ld.4.m2.bc.llvm-link exec: /tools/xilinx/2025.2/Vitis/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/xilinx/2025.2/Vitis/lnx64/lib/libfloatconversion_39.bc -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.4.m2.bc > /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
@@ -193,53 +194,53 @@ INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 Execute         is_m_axi_addr64 
 INFO-FLOW: Doing LTO.
 INFO-FLOW: run_clang reflow (background poll_ms 5000) exec: /tools/xilinx/2025.2/Vitis/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=v_frmbuf_rd -mllvm -hls-db-dir -mllvm /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -hls-top-function-prefix=top_design_v_frmbuf_rd_0_0_ -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -reflow-unroll-size-threshold=10000 -mllvm -reflow-unroll-cost-threshold=1000000 -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -reflow-force-aggressive-unroll=0 -mllvm -reflow-aggressive-unroll-adjust-factor=1.000000 -mllvm -reflow-complete-threshold=4 -mllvm -reflow-array-promotion-threshold=64 -mllvm -reflow-enable-critical-path-for-performance=1 -mllvm -assume-maxi-align=1 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-small-array-partition=true -mllvm -reflow-enable-auto-array-promotion=true -mllvm -reflow-enable-auto-array-partition-for-flatten=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -auto-unroll-tripcount-threshold=0 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -reflow-enable-codegen-with-if=true -mllvm -reflow-enable-dataflow-canon=true -mllvm -reflow-enable-dataflow-canon2=true -mllvm -reflow-dump-extra-complexity-metric=true -mllvm -reflow-enable-dse-loop-nest-extraction=false -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -reflow-enable-maxi-addr-32bits -mllvm -default-clock-period=6.667 -mllvm -use_read_first_ram_in_loop=1 -mllvm -default-clock-uncertainty=1.8 -x ir /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.5.gdce.bc -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.lto.bc -hls-platform-db-name=/tools/xilinx/2025.2/Vitis/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_medium -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-2 2> /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
-Execute         send_msg_by_id INFO @200-1995@%s%s%s 1,909 Compile/Link (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 1,909 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-Execute         send_msg_by_id INFO @200-1995@%s%s%s 825 Unroll/Inline (step 1) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 825 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-Execute         send_msg_by_id INFO @200-1995@%s%s%s 465 Unroll/Inline (step 2) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 465 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-Execute         send_msg_by_id INFO @200-1995@%s%s%s 420 Unroll/Inline (step 3) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 420 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-Execute         send_msg_by_id INFO @200-1995@%s%s%s 391 Unroll/Inline (step 4) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 391 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-Execute         send_msg_by_id INFO @200-1995@%s%s%s 377 Array/Struct (step 1) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 377 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-Execute         send_msg_by_id INFO @200-1995@%s%s%s 355 Array/Struct (step 2) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 355 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-Execute         send_msg_by_id INFO @200-1995@%s%s%s 364 Array/Struct (step 3) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 364 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-Execute         send_msg_by_id INFO @200-1995@%s%s%s 549 Array/Struct (step 4) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 549 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-Execute         send_msg_by_id INFO @200-1995@%s%s%s 636 Array/Struct (step 5) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 636 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-Execute         send_msg_by_id INFO @200-1995@%s%s%s 614 Performance (step 1) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 614 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-Execute         send_msg_by_id INFO @200-1995@%s%s%s 583 Performance (step 2) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 583 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-Execute         send_msg_by_id INFO @200-1995@%s%s%s 547 Performance (step 3) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 547 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-Execute         send_msg_by_id INFO @200-1995@%s%s%s 547 Performance (step 4) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 547 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-Execute         send_msg_by_id INFO @200-1995@%s%s%s 473 HW Transforms (step 1) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 473 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-Execute         send_msg_by_id INFO @200-1995@%s%s%s 479 HW Transforms (step 2) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 479 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'Bytes2MultiPixStream(STREAM_PLANES&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1237:20)
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 2,308 Compile/Link (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 2,308 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 561 Unroll/Inline (step 1) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 561 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 348 Unroll/Inline (step 2) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 348 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 339 Unroll/Inline (step 3) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 339 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 310 Unroll/Inline (step 4) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 310 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 296 Array/Struct (step 1) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 296 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 274 Array/Struct (step 2) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 274 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 277 Array/Struct (step 3) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 277 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 336 Array/Struct (step 4) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 336 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 423 Array/Struct (step 5) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 423 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 402 Performance (step 1) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 402 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 371 Performance (step 2) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 371 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 335 Performance (step 3) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 335 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 335 Performance (step 4) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 335 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 315 HW Transforms (step 1) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 315 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 311 HW Transforms (step 2) (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 311 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'Bytes2MultiPixStream(STREAM_PLANES&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short const&, unsigned short const&, unsigned short const&, unsigned short const&)' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1447:20)
 INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned short&)' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:311:18)
 INFO: [HLS 214-377] Adding 'pix' into disaggregation list because there's array-partition pragma applied on the struct field (hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_rd_0_0/src/hls/hls_video_core.h:198:1)
 INFO: [HLS 214-377] Adding 'bytePlanes' into disaggregation list because there's stream pragma applied on the struct field (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:96:1)
-INFO: [HLS 214-210] Disaggregating variable 'pix' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1237:20)
+INFO: [HLS 214-210] Disaggregating variable 'pix' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1447:20)
 INFO: [HLS 214-210] Disaggregating variable 'pix' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:311:18)
 INFO: [HLS 214-210] Disaggregating variable 'bytePlanes' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:95:16)
 INFO: [HLS 214-291] Loop 'VITIS_LOOP_403_4' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:403:22)
 INFO: [HLS 214-291] Loop 'VITIS_LOOP_405_5' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:405:23)
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_1254_2' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1254:24)
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_1256_3' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1256:25)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1456_2' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1456:24)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1458_3' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1458:25)
 INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_403_4' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:403:22) in function 'MultiPixStream2AXIvideo' completely with a factor of 1 (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:310:0)
 INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_405_5' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:405:23) in function 'MultiPixStream2AXIvideo' completely with a factor of 3 (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:310:0)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1254_2' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1254:24) in function 'Bytes2MultiPixStream' completely with a factor of 8 (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:688:0)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1256_3' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1256:25) in function 'Bytes2MultiPixStream' completely with a factor of 1 (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:688:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1456_2' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1456:24) in function 'Bytes2MultiPixStream' completely with a factor of 2 (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:688:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1458_3' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1458:25) in function 'Bytes2MultiPixStream' completely with a factor of 1 (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:688:0)
 WARNING: [HLS 214-464] Skipping array undecay on variable length array 'HwReg_frm_buffer'. (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:84:0)
 INFO: [HLS 214-248] Applying array_partition to 'pix': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:311:18)
 INFO: [HLS 214-248] Applying array_partition to 'map': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:365:13)
@@ -247,22 +248,22 @@ WARNING: [HLS 214-358] Array transformation on index using bit extension logic m
 INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'img' with compact=bit mode in 24-bits (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:90:18)
 INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_367_1> at prj/sol/.autopilot/db/v_frmbuf_rd.cpp:367:20 due to pipeline_loops threshold
 INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 64 in loop 'VITIS_LOOP_515_1'(prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515:27) has been inferred on bundle 'mm_video'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515:27)
-INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=77
+INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=65
 INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.06 seconds. CPU system time: 0.33 seconds. Elapsed time: 6.9 seconds; current allocated memory: 271.816 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 271.816 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.86 seconds. CPU system time: 0.27 seconds. Elapsed time: 6.71 seconds; current allocated memory: 271.801 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 271.801 MB.
 Execute         opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute           cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute           transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -reassociate -gvn -reassociate -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top v_frmbuf_rd -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -promote-dbg-pointer -norm-name /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.0.bc -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 271.816 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 271.801 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute           transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.1.bc -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.2.prechk.bc -f 
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute           transform -syn-check /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.2.prechk.bc -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 271.816 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 271.801 MB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.g.1.bc to /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -271,11 +272,11 @@ WARNING: [XFORM 203-561] Updating loop upper bound from 65535 to 1920 for loop '
 WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1920) < AVE (= 32767)) for loop 'VITIS_LOOP_376_3' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:372:7) in function 'MultiPixStream2AXIvideo'.
 WARNING: [XFORM 203-561] Updating loop upper bound from 65535 to 1080 for loop 'VITIS_LOOP_374_2' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:372:7) in function 'MultiPixStream2AXIvideo'.
 WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1080) < AVE (= 32767)) for loop 'VITIS_LOOP_374_2' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:372:7) in function 'MultiPixStream2AXIvideo'.
-WARNING: [XFORM 203-561] Updating loop upper bound from 2731 to 480 for loop 'VITIS_LOOP_1240_1' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1236:21) in function 'Bytes2MultiPixStream'.
-WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 480) < AVE (= 1365)) for loop 'VITIS_LOOP_1240_1' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1236:21) in function 'Bytes2MultiPixStream'.
-WARNING: [XFORM 203-561] Updating loop upper bound from 4320 to 1080 for loop 'loop_RGB8_YUV8' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1234:1) in function 'Bytes2MultiPixStream'.
-WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 64 for loop 'loop_RGB8_YUV8' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1234:1) in function 'Bytes2MultiPixStream'.
-WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1080) < AVE (= 2160)) for loop 'loop_RGB8_YUV8' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1234:1) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 8192 to 1440 for loop 'VITIS_LOOP_1450_1' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1450:32) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1440) < AVE (= 4096)) for loop 'VITIS_LOOP_1450_1' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1450:32) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 4320 to 1080 for loop 'loop_RGBX8_YUVX8' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1445:1) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 64 for loop 'loop_RGBX8_YUVX8' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1445:1) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1080) < AVE (= 2160)) for loop 'loop_RGBX8_YUVX8' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1445:1) in function 'Bytes2MultiPixStream'.
 WARNING: [XFORM 203-561] Updating loop upper bound from 8192 to 1440 for loop 'VITIS_LOOP_515_1' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515:36) in function 'AXIMMvideo2Bytes'.
 WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1440) < AVE (= 4096)) for loop 'VITIS_LOOP_515_1' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515:36) in function 'AXIMMvideo2Bytes'.
 WARNING: [XFORM 203-561] Updating loop upper bound from 4320 to 1080 for loop 'loop_AXIMMvideo2Bytes_1plane' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:512:1) in function 'AXIMMvideo2Bytes'.
@@ -284,23 +285,23 @@ WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1080) < AV
 WARNING: [HLS 200-805] An internal stream 'img' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:90) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
 INFO: [HLS 200-1947] Using 'stable' for argument 'mm_video' of dataflow function 'FrmbufRdHlsDataFlow' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:90:1).
 INFO: [HLS 200-1947] Using 'stable' for argument 'HwReg_frm_buffer' of dataflow function 'FrmbufRdHlsDataFlow' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:90:1).
-INFO: [HLS 200-1947] Using 'stable' for argument 'WidthInBytes.val10' of dataflow function 'FrmbufRdHlsDataFlow' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:90:1).
-INFO: [HLS 200-1947] Using 'stable' for argument 'colorFormat.val11' of dataflow function 'FrmbufRdHlsDataFlow' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:90:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'WidthInBytes.val8' of dataflow function 'FrmbufRdHlsDataFlow' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:90:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'colorFormat.val9' of dataflow function 'FrmbufRdHlsDataFlow' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:90:1).
 INFO: [XFORM 203-712] Applying dataflow to function 'FrmbufRdHlsDataFlow' (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:90:1), detected/extracted 3 process function(s): 
 	 'AXIMMvideo2Bytes'
 	 'Bytes2MultiPixStream'
 	 'MultiPixStream2AXIvideo'.
 INFO-FLOW: Presyn 2...
 Execute           transform -hls -keep-callgraph -scalarrepl -mem2reg -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.o.1.tmp.bc -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.o.2.bc -f -phase presyn 
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 286.098 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 285.641 MB.
 Execute           transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -inst-simplify -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-rewind-sink-hoist -loop-outline -hls-dead-arg-elim -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -mul2addshift -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -gvn -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -inst-clarity -bitwidth -dce -validate-dataflow -dump-loop-dep-to-ir -check-all-ssdm -drop-inferred-ii -dump-complexity-metric /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.o.2.bc -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
 Execute             AP::auto_get_db
 INFO-FLOW: Building ssdm...
 Execute           transform -hls -cdfg-build /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.o.3.bc -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.1 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 364.062 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 363.270 MB.
 INFO-FLOW: Finish building internal data model.
-Command         opt_and_import_c done; 0.27 sec.
-Command       elaborate done; 29.19 sec.
+Command         opt_and_import_c done; 0.21 sec.
+Command       elaborate done; 27.73 sec.
 Execute       ap_eval exec zip -j /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design AP::SynTopModule=v_frmbuf_rd
@@ -315,20 +316,20 @@ Execute       preproc_iomode -model MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_
 Execute       preproc_iomode -model MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 
 Execute       preproc_iomode -model reg<unsigned short> 
 Execute       preproc_iomode -model Bytes2MultiPixStream 
-Execute       preproc_iomode -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 
+Execute       preproc_iomode -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 
 Execute       preproc_iomode -model AXIMMvideo2Bytes 
 Execute       preproc_iomode -model AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 
 Execute       get_model_list v_frmbuf_rd -filter all-wo-channel 
-INFO-FLOW: Model list for configure: AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 AXIMMvideo2Bytes Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 Bytes2MultiPixStream {reg<unsigned short>} MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 MultiPixStream2AXIvideo FrmbufRdHlsDataFlow v_frmbuf_rd
+INFO-FLOW: Model list for configure: AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 AXIMMvideo2Bytes Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 Bytes2MultiPixStream {reg<unsigned short>} MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 MultiPixStream2AXIvideo FrmbufRdHlsDataFlow v_frmbuf_rd
 INFO-FLOW: Configuring Module : AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 ...
 Execute       set_default_model AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 
 Execute       apply_spec_resource_limit AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 
 INFO-FLOW: Configuring Module : AXIMMvideo2Bytes ...
 Execute       set_default_model AXIMMvideo2Bytes 
 Execute       apply_spec_resource_limit AXIMMvideo2Bytes 
-INFO-FLOW: Configuring Module : Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 ...
-Execute       set_default_model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 
-Execute       apply_spec_resource_limit Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 
+INFO-FLOW: Configuring Module : Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 ...
+Execute       set_default_model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 
+Execute       apply_spec_resource_limit Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 
 INFO-FLOW: Configuring Module : Bytes2MultiPixStream ...
 Execute       set_default_model Bytes2MultiPixStream 
 Execute       apply_spec_resource_limit Bytes2MultiPixStream 
@@ -350,7 +351,7 @@ Execute       apply_spec_resource_limit FrmbufRdHlsDataFlow
 INFO-FLOW: Configuring Module : v_frmbuf_rd ...
 Execute       set_default_model v_frmbuf_rd 
 Execute       apply_spec_resource_limit v_frmbuf_rd 
-INFO-FLOW: Model list for preprocess: AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 AXIMMvideo2Bytes Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 Bytes2MultiPixStream {reg<unsigned short>} MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 MultiPixStream2AXIvideo FrmbufRdHlsDataFlow v_frmbuf_rd
+INFO-FLOW: Model list for preprocess: AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 AXIMMvideo2Bytes Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 Bytes2MultiPixStream {reg<unsigned short>} MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 MultiPixStream2AXIvideo FrmbufRdHlsDataFlow v_frmbuf_rd
 INFO-FLOW: Preprocessing Module: AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 ...
 Execute       set_default_model AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 
 Execute       cdfg_preprocess -model AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 
@@ -359,10 +360,10 @@ INFO-FLOW: Preprocessing Module: AXIMMvideo2Bytes ...
 Execute       set_default_model AXIMMvideo2Bytes 
 Execute       cdfg_preprocess -model AXIMMvideo2Bytes 
 Execute       rtl_gen_preprocess AXIMMvideo2Bytes 
-INFO-FLOW: Preprocessing Module: Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 ...
-Execute       set_default_model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 
-Execute       cdfg_preprocess -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 
-Execute       rtl_gen_preprocess Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 
+INFO-FLOW: Preprocessing Module: Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 ...
+Execute       set_default_model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 
+Execute       cdfg_preprocess -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 
+Execute       rtl_gen_preprocess Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 
 INFO-FLOW: Preprocessing Module: Bytes2MultiPixStream ...
 Execute       set_default_model Bytes2MultiPixStream 
 Execute       cdfg_preprocess -model Bytes2MultiPixStream 
@@ -391,7 +392,7 @@ INFO-FLOW: Preprocessing Module: v_frmbuf_rd ...
 Execute       set_default_model v_frmbuf_rd 
 Execute       cdfg_preprocess -model v_frmbuf_rd 
 Execute       rtl_gen_preprocess v_frmbuf_rd 
-INFO-FLOW: Model list for synthesis: AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 AXIMMvideo2Bytes Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 Bytes2MultiPixStream {reg<unsigned short>} MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 MultiPixStream2AXIvideo FrmbufRdHlsDataFlow v_frmbuf_rd
+INFO-FLOW: Model list for synthesis: AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 AXIMMvideo2Bytes Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 Bytes2MultiPixStream {reg<unsigned short>} MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 MultiPixStream2AXIvideo FrmbufRdHlsDataFlow v_frmbuf_rd
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -401,7 +402,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_515_1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_515_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 365.078 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 364.285 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1.verbose.sched.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -415,7 +416,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 365.078 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 364.285 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1.verbose.bind.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -429,7 +430,7 @@ Execute       set_default_model AXIMMvideo2Bytes
 Execute       schedule -model AXIMMvideo2Bytes 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 365.094 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 364.301 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/AXIMMvideo2Bytes.verbose.sched.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -443,7 +444,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 365.094 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 364.301 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/AXIMMvideo2Bytes.verbose.bind.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -451,35 +452,35 @@ Execute           ap_part_info -quiet -name xc7z020-clg400-2 -data family
 Execute       db_write -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/AXIMMvideo2Bytes.bind.adb -f 
 INFO-FLOW: Finish binding AXIMMvideo2Bytes.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1' 
+INFO: [HLS 200-42] -- Implementing module 'Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 
-Execute       schedule -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 
+Execute       set_default_model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 
+Execute       schedule -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_1240_1'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 8, Final II = 8, Depth = 9, loop 'VITIS_LOOP_1240_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_1450_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 3, loop 'VITIS_LOOP_1450_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 366.316 MB.
-Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.verbose.sched.rpt 
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 364.398 MB.
+Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1.verbose.sched.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
 Execute           ap_part_info -quiet -name xc7z020-clg400-2 -data family 
-Execute       db_write -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.sched.adb -f 
-INFO-FLOW: Finish scheduling Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.
-Execute       set_default_model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 
-Execute       bind -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 
+Execute       db_write -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1.sched.adb -f 
+INFO-FLOW: Finish scheduling Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1.
+Execute       set_default_model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 
+Execute       bind -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 366.316 MB.
-Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.verbose.bind.rpt 
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 364.398 MB.
+Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1.verbose.bind.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
 Execute           ap_part_info -quiet -name xc7z020-clg400-2 -data family 
-Execute       db_write -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.bind.adb -f 
-INFO-FLOW: Finish binding Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.
+Execute       db_write -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1.bind.adb -f 
+INFO-FLOW: Finish binding Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'Bytes2MultiPixStream' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -487,7 +488,7 @@ Execute       set_default_model Bytes2MultiPixStream
 Execute       schedule -model Bytes2MultiPixStream 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 366.332 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 365.000 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream.verbose.sched.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -501,7 +502,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 366.332 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 365.000 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream.verbose.bind.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -517,7 +518,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'reg<unsigned short>'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'reg<unsigned short>'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 366.332 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 365.000 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/reg_unsigned_short_s.verbose.sched.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -531,7 +532,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 366.332 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 365.000 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/reg_unsigned_short_s.verbose.bind.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -547,7 +548,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_367_1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_367_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 366.844 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 365.348 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1.verbose.sched.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -561,7 +562,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 366.844 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 365.348 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1.verbose.bind.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -577,7 +578,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_376_3'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_376_3'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 367.133 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 365.633 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3.verbose.sched.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -591,7 +592,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 367.133 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 365.633 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3.verbose.bind.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -605,7 +606,7 @@ Execute       set_default_model MultiPixStream2AXIvideo
 Execute       schedule -model MultiPixStream2AXIvideo 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 367.535 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 366.035 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/MultiPixStream2AXIvideo.verbose.sched.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -619,7 +620,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 367.535 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 366.035 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/MultiPixStream2AXIvideo.verbose.bind.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -633,7 +634,7 @@ Execute       set_default_model FrmbufRdHlsDataFlow
 Execute       schedule -model FrmbufRdHlsDataFlow 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 367.852 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 366.340 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/FrmbufRdHlsDataFlow.verbose.sched.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -647,7 +648,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 367.852 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 366.340 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/FrmbufRdHlsDataFlow.verbose.bind.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -661,7 +662,7 @@ Execute       set_default_model v_frmbuf_rd
 Execute       schedule -model v_frmbuf_rd 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 368.289 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 366.781 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.verbose.sched.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -675,7 +676,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 368.289 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 366.781 MB.
 Execute       syn_report -verbosereport -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.verbose.bind.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
@@ -686,7 +687,7 @@ Execute       get_model_list v_frmbuf_rd -filter all-wo-channel
 INFO-FLOW: Preprocessing for RTLGen ...
 Execute       rtl_gen_preprocess AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 
 Execute       rtl_gen_preprocess AXIMMvideo2Bytes 
-Execute       rtl_gen_preprocess Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 
+Execute       rtl_gen_preprocess Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 
 Execute       rtl_gen_preprocess Bytes2MultiPixStream 
 Execute       rtl_gen_preprocess reg<unsigned short> 
 Execute       rtl_gen_preprocess MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 
@@ -694,7 +695,7 @@ Execute       rtl_gen_preprocess MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376
 Execute       rtl_gen_preprocess MultiPixStream2AXIvideo 
 Execute       rtl_gen_preprocess FrmbufRdHlsDataFlow 
 Execute       rtl_gen_preprocess v_frmbuf_rd 
-INFO-FLOW: Model list for RTL generation: AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 AXIMMvideo2Bytes Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 Bytes2MultiPixStream {reg<unsigned short>} MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 MultiPixStream2AXIvideo FrmbufRdHlsDataFlow v_frmbuf_rd
+INFO-FLOW: Model list for RTL generation: AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 AXIMMvideo2Bytes Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 Bytes2MultiPixStream {reg<unsigned short>} MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 MultiPixStream2AXIvideo FrmbufRdHlsDataFlow v_frmbuf_rd
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -713,7 +714,7 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'AXIMMvideo2Bytes_Pipeline_VI
 WARNING: [RTGEN 206-101] Setting dangling out port 'AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1/m_axi_mm_video_0_ARREGION' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1/m_axi_mm_video_0_ARUSER' to 0.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 368.289 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 366.781 MB.
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.rtl_wrap.cfg.tcl 
 Execute       gen_rtl AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 -style xilinx -f -lang vhdl -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/vhdl/top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 
 Execute       gen_rtl AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 -style xilinx -f -lang vlog -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/verilog/top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 
@@ -737,7 +738,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'AXIMMvideo2Bytes'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       create_rtl_model AXIMMvideo2Bytes -top_prefix top_design_v_frmbuf_rd_0_0_ -sub_prefix top_design_v_frmbuf_rd_0_0_ -mg_file /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/AXIMMvideo2Bytes.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIMMvideo2Bytes'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 370.234 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 368.730 MB.
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.rtl_wrap.cfg.tcl 
 Execute       gen_rtl AXIMMvideo2Bytes -style xilinx -f -lang vhdl -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/vhdl/top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes 
 Execute       gen_rtl AXIMMvideo2Bytes -style xilinx -f -lang vlog -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/verilog/top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes 
@@ -757,38 +758,36 @@ Execute       db_write -model AXIMMvideo2Bytes -f -o /home/serg/Documents/Xilinx
 Execute       db_write -model AXIMMvideo2Bytes -bindview -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/design.bindinfo.xml 
 Execute       gen_tb_info AXIMMvideo2Bytes -p /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/AXIMMvideo2Bytes 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1' 
+INFO: [HLS 200-10] -- Generating RTL for module 'Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       create_rtl_model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 -top_prefix top_design_v_frmbuf_rd_0_0_ -sub_prefix top_design_v_frmbuf_rd_0_0_ -mg_file /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.compgen.tcl 
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1' pipeline 'VITIS_LOOP_1240_1' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 372.094 MB.
+Execute       create_rtl_model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 -top_prefix top_design_v_frmbuf_rd_0_0_ -sub_prefix top_design_v_frmbuf_rd_0_0_ -mg_file /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1' pipeline 'VITIS_LOOP_1450_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 370.023 MB.
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.rtl_wrap.cfg.tcl 
-Execute       gen_rtl Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 -style xilinx -f -lang vhdl -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/vhdl/top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 
-Execute       gen_rtl Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 -style xilinx -f -lang vlog -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/verilog/top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 
-Execute       syn_report -csynth -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1_csynth.rpt 
+Execute       gen_rtl Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 -style xilinx -f -lang vhdl -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/vhdl/top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 
+Execute       gen_rtl Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 -style xilinx -f -lang vlog -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/verilog/top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 
+Execute       syn_report -csynth -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1_csynth.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
 Execute           ap_part_info -quiet -name xc7z020-clg400-2 -data family 
-Execute       syn_report -rtlxml -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1_csynth.xml 
+Execute       syn_report -rtlxml -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/report/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1_csynth.xml 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
 Execute           ap_part_info -quiet -name xc7z020-clg400-2 -data family 
-Execute       syn_report -verbosereport -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.verbose.rpt 
+Execute       syn_report -verbosereport -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1.verbose.rpt 
 Execute         list_part -family xc7z020-clg400-2 
 Execute           ap_family_info -name xc7z020-clg400-2 -data names 
 Execute           ap_part_info -quiet -name xc7z020-clg400-2 -data family 
-Execute       db_write -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 -f -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.adb 
-Execute       db_write -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 -bindview -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/design.bindinfo.xml 
-Execute       gen_tb_info Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 -p /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 
+Execute       db_write -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 -f -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1.adb 
+Execute       db_write -model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 -bindview -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 -p /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Bytes2MultiPixStream' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       create_rtl_model Bytes2MultiPixStream -top_prefix top_design_v_frmbuf_rd_0_0_ -sub_prefix top_design_v_frmbuf_rd_0_0_ -mg_file /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream.compgen.tcl 
-INFO: [RTGEN 206-100] Generating core module 'mul_11ns_13ns_23_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'urem_11ns_3ns_2_15_seq_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Bytes2MultiPixStream'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 374.469 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 370.824 MB.
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.rtl_wrap.cfg.tcl 
 Execute       gen_rtl Bytes2MultiPixStream -style xilinx -f -lang vhdl -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/vhdl/top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream 
 Execute       gen_rtl Bytes2MultiPixStream -style xilinx -f -lang vlog -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/verilog/top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream 
@@ -813,7 +812,7 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       create_rtl_model reg<unsigned short> -top_prefix top_design_v_frmbuf_rd_0_0_ -sub_prefix top_design_v_frmbuf_rd_0_0_ -mg_file /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/reg_unsigned_short_s.compgen.tcl 
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'reg_unsigned_short_s' pipeline 'reg<unsigned short>' pipeline type 'function pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_unsigned_short_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 376.426 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 372.141 MB.
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.rtl_wrap.cfg.tcl 
 Execute       gen_rtl reg<unsigned short> -style xilinx -f -lang vhdl -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/vhdl/top_design_v_frmbuf_rd_0_0_reg_unsigned_short_s 
 Execute       gen_rtl reg<unsigned short> -style xilinx -f -lang vlog -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/verilog/top_design_v_frmbuf_rd_0_0_reg_unsigned_short_s 
@@ -839,7 +838,7 @@ Execute       create_rtl_model MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1' pipeline 'VITIS_LOOP_367_1' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1'.
 INFO: [RTMG 210-279] Implementing memory 'top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R' using auto ROMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 376.426 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 372.301 MB.
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.rtl_wrap.cfg.tcl 
 Execute       gen_rtl MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 -style xilinx -f -lang vhdl -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/vhdl/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 
 Execute       gen_rtl MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 -style xilinx -f -lang vlog -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 
@@ -865,7 +864,7 @@ Execute       create_rtl_model MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3' pipeline 'VITIS_LOOP_376_3' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_8_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 377.176 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 373.355 MB.
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.rtl_wrap.cfg.tcl 
 Execute       gen_rtl MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 -style xilinx -f -lang vhdl -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/vhdl/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 
 Execute       gen_rtl MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 -style xilinx -f -lang vlog -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 
@@ -889,7 +888,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvideo'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       create_rtl_model MultiPixStream2AXIvideo -top_prefix top_design_v_frmbuf_rd_0_0_ -sub_prefix top_design_v_frmbuf_rd_0_0_ -mg_file /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/MultiPixStream2AXIvideo.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvideo'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 378.348 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 374.613 MB.
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.rtl_wrap.cfg.tcl 
 Execute       gen_rtl MultiPixStream2AXIvideo -style xilinx -f -lang vhdl -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/vhdl/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo 
 Execute       gen_rtl MultiPixStream2AXIvideo -style xilinx -f -lang vlog -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/verilog/top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo 
@@ -936,7 +935,7 @@ INFO: [RTMG 210-285] Implementing FIFO 'bytePlanes_U(top_design_v_frmbuf_rd_0_0_
 INFO: [RTMG 210-285] Implementing FIFO 'img_U(top_design_v_frmbuf_rd_0_0_fifo_w24_d2_S)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_Bytes2MultiPixStream_U0_U(top_design_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPixStream2AXIvideo_U0_U(top_design_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0)' using Shift Registers.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 379.910 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 376.141 MB.
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.rtl_wrap.cfg.tcl 
 Execute       gen_rtl FrmbufRdHlsDataFlow -style xilinx -f -lang vhdl -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/vhdl/top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow 
 Execute       gen_rtl FrmbufRdHlsDataFlow -style xilinx -f -lang vlog -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/verilog/top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow 
@@ -981,7 +980,7 @@ INFO: [RTGEN 206-100] Generating core module 'mul_14s_3ns_14_1_1': 1 instance(s)
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_frmbuf_rd'.
 INFO: [RTMG 210-279] Implementing memory 'top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R' using auto ROMs.
 INFO: [RTMG 210-279] Implementing memory 'top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R' using auto ROMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 382.320 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 378.625 MB.
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.rtl_wrap.cfg.tcl 
 Execute       gen_rtl v_frmbuf_rd -istop -style xilinx -f -lang vhdl -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/vhdl/top_design_v_frmbuf_rd_0_0_v_frmbuf_rd 
 Execute       gen_rtl v_frmbuf_rd -istop -style xilinx -f -lang vlog -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/syn/verilog/top_design_v_frmbuf_rd_0_0_v_frmbuf_rd 
@@ -1010,23 +1009,19 @@ Execute       syn_report -wcfg -model v_frmbuf_rd -o /home/serg/Documents/Xilinx
 Execute       syn_report -protoinst -model v_frmbuf_rd -o /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.protoinst 
 Execute       sc_get_clocks v_frmbuf_rd 
 Execute       sc_get_portdomain v_frmbuf_rd 
-INFO-FLOW: Model list for RTL component generation: AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 AXIMMvideo2Bytes Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 Bytes2MultiPixStream {reg<unsigned short>} MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 MultiPixStream2AXIvideo FrmbufRdHlsDataFlow v_frmbuf_rd
+INFO-FLOW: Model list for RTL component generation: AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 AXIMMvideo2Bytes Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 Bytes2MultiPixStream {reg<unsigned short>} MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 MultiPixStream2AXIvideo FrmbufRdHlsDataFlow v_frmbuf_rd
 INFO-FLOW: Handling components in module [AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1] ... 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1.compgen.tcl 
 INFO-FLOW: Found component top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init.
 INFO-FLOW: Append model top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init
 INFO-FLOW: Handling components in module [AXIMMvideo2Bytes] ... 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/AXIMMvideo2Bytes.compgen.tcl 
-INFO-FLOW: Handling components in module [Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1] ... 
-Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.compgen.tcl 
+INFO-FLOW: Handling components in module [Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1] ... 
+Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1.compgen.tcl 
 INFO-FLOW: Found component top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init.
 INFO-FLOW: Append model top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init
 INFO-FLOW: Handling components in module [Bytes2MultiPixStream] ... 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream.compgen.tcl 
-INFO-FLOW: Found component top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1.
-INFO-FLOW: Append model top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1
-INFO-FLOW: Found component top_design_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1.
-INFO-FLOW: Append model top_design_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1
 INFO-FLOW: Handling components in module [reg_unsigned_short_s] ... 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/reg_unsigned_short_s.compgen.tcl 
 INFO-FLOW: Handling components in module [MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1] ... 
@@ -1081,7 +1076,7 @@ INFO-FLOW: Found component top_design_v_frmbuf_rd_0_0_regslice_both.
 INFO-FLOW: Append model top_design_v_frmbuf_rd_0_0_regslice_both
 INFO-FLOW: Append model AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1
 INFO-FLOW: Append model AXIMMvideo2Bytes
-INFO-FLOW: Append model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1
+INFO-FLOW: Append model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1
 INFO-FLOW: Append model Bytes2MultiPixStream
 INFO-FLOW: Append model reg_unsigned_short_s
 INFO-FLOW: Append model MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1
@@ -1090,12 +1085,10 @@ INFO-FLOW: Append model MultiPixStream2AXIvideo
 INFO-FLOW: Append model FrmbufRdHlsDataFlow
 INFO-FLOW: Append model v_frmbuf_rd
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1 top_design_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1 top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1 top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init top_design_v_frmbuf_rd_0_0_fifo_w64_d481_B top_design_v_frmbuf_rd_0_0_fifo_w24_d2_S top_design_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0 top_design_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0 top_design_v_frmbuf_rd_0_0_mul_14s_3ns_14_1_1 top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R top_design_v_frmbuf_rd_0_0_mm_video_m_axi top_design_v_frmbuf_rd_0_0_CTRL_s_axi top_design_v_frmbuf_rd_0_0_regslice_both top_design_v_frmbuf_rd_0_0_regslice_both top_design_v_frmbuf_rd_0_0_regslice_both top_design_v_frmbuf_rd_0_0_regslice_both top_design_v_frmbuf_rd_0_0_regslice_both top_design_v_frmbuf_rd_0_0_regslice_both top_design_v_frmbuf_rd_0_0_regslice_both AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 AXIMMvideo2Bytes Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 Bytes2MultiPixStream reg_unsigned_short_s MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 MultiPixStream2AXIvideo FrmbufRdHlsDataFlow v_frmbuf_rd
+INFO-FLOW: All models in this session: top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1 top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init top_design_v_frmbuf_rd_0_0_fifo_w64_d481_B top_design_v_frmbuf_rd_0_0_fifo_w24_d2_S top_design_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0 top_design_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0 top_design_v_frmbuf_rd_0_0_mul_14s_3ns_14_1_1 top_design_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R top_design_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R top_design_v_frmbuf_rd_0_0_mm_video_m_axi top_design_v_frmbuf_rd_0_0_CTRL_s_axi top_design_v_frmbuf_rd_0_0_regslice_both top_design_v_frmbuf_rd_0_0_regslice_both top_design_v_frmbuf_rd_0_0_regslice_both top_design_v_frmbuf_rd_0_0_regslice_both top_design_v_frmbuf_rd_0_0_regslice_both top_design_v_frmbuf_rd_0_0_regslice_both top_design_v_frmbuf_rd_0_0_regslice_both AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 AXIMMvideo2Bytes Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 Bytes2MultiPixStream reg_unsigned_short_s MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 MultiPixStream2AXIvideo FrmbufRdHlsDataFlow v_frmbuf_rd
 INFO-FLOW: Generating /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/autopilot.rtl.models.txt file...
 INFO-FLOW: To file: write model top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init
 INFO-FLOW: To file: write model top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init
-INFO-FLOW: To file: write model top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1
-INFO-FLOW: To file: write model top_design_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1
 INFO-FLOW: To file: write model top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R
 INFO-FLOW: To file: write model top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init
 INFO-FLOW: To file: write model top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1
@@ -1118,7 +1111,7 @@ INFO-FLOW: To file: write model top_design_v_frmbuf_rd_0_0_regslice_both
 INFO-FLOW: To file: write model top_design_v_frmbuf_rd_0_0_regslice_both
 INFO-FLOW: To file: write model AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1
 INFO-FLOW: To file: write model AXIMMvideo2Bytes
-INFO-FLOW: To file: write model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1
+INFO-FLOW: To file: write model Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1
 INFO-FLOW: To file: write model Bytes2MultiPixStream
 INFO-FLOW: To file: write model reg_unsigned_short_s
 INFO-FLOW: To file: write model MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1
@@ -1157,8 +1150,6 @@ Execute         source /tools/xilinx/2025.2/Vitis/common/technology/xilinx/DSP48
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=6.667 (was NA)
 INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/vhdl' dstVlogDir='/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/vlog' tclDir='/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db' modelList='top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init
 top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init
-top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1
-top_design_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1
 top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R
 top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init
 top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1
@@ -1181,7 +1172,7 @@ top_design_v_frmbuf_rd_0_0_regslice_both
 top_design_v_frmbuf_rd_0_0_regslice_both
 AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1
 AXIMMvideo2Bytes
-Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1
+Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1
 Bytes2MultiPixStream
 reg_unsigned_short_s
 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1
@@ -1197,7 +1188,7 @@ Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/global.setting.tcl 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1.compgen.tcl 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/AXIMMvideo2Bytes.compgen.tcl 
-Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.compgen.tcl 
+Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1.compgen.tcl 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream.compgen.tcl 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/reg_unsigned_short_s.compgen.tcl 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1.compgen.tcl 
@@ -1206,16 +1197,16 @@ Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/FrmbufRdHlsDataFlow.compgen.tcl 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.compgen.tcl 
 Execute         source ./top_design_v_frmbuf_rd_0_0_CTRL.slave.tcl 
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 384.738 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.12 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.14 seconds; current allocated memory: 380.977 MB.
 INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='top_design_v_frmbuf_rd_0_0_' outfile=''
 INFO-FLOW: Running: create_csynth_xml read xml data
 INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds 
 INFO-FLOW: create_csynth_xml: all_module_nodes count=10
 INFO-FLOW: Running: create_csynth_xml bind info
-INFO-FLOW: create_csynth_xml: all_bind_nodes count=60
+INFO-FLOW: create_csynth_xml: all_bind_nodes count=40
 INFO-FLOW: No bind nodes found for module_name reg_unsigned_short_s
 INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds 
-INFO-FLOW: create_csynth_xml: bind_instances counts: modules=9 instances=59
+INFO-FLOW: create_csynth_xml: bind_instances counts: modules=9 instances=39
 INFO-FLOW: Running: create_csynth_xml update csynth_xml_module_hier
 INFO-FLOW: Done: create_csynth_xml update csynth_xml_module_hier time: 0 seconds 
 INFO-FLOW: create_csynth_xml: csynth_xml_module_hier max_depth=5
@@ -1229,8 +1220,6 @@ INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=/home/serg/Document
 INFO-FLOW: Running: generate_json
 INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init
 top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init
-top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1
-top_design_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1
 top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R
 top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init
 top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1
@@ -1253,7 +1242,7 @@ top_design_v_frmbuf_rd_0_0_regslice_both
 top_design_v_frmbuf_rd_0_0_regslice_both
 AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1
 AXIMMvideo2Bytes
-Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1
+Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1
 Bytes2MultiPixStream
 reg_unsigned_short_s
 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1
@@ -1272,7 +1261,7 @@ Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.compgen.dataonly.tcl 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1.tbgen.tcl 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/AXIMMvideo2Bytes.tbgen.tcl 
-Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.tbgen.tcl 
+Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1.tbgen.tcl 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream.tbgen.tcl 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/reg_unsigned_short_s.tbgen.tcl 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1.tbgen.tcl 
@@ -1289,7 +1278,7 @@ Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video
 Execute       source /tools/xilinx/2025.2/Vitis/tps/tcl/tcllib2.0/fileutil/fileutil.tcl 
 INFO-FLOW: Done: generate_json time: 0.2 seconds 
 INFO-FLOW: Running: add_csynth_report_sections
-INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA {} RTLNAME CTRL_s_axi_U SOURCE {} VARIABLE {} LOOP {} BUNDLEDNAME CTRL DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE s_axilite STORAGESIZE {} STORAGEUSAGE interface DISPNAME {bind_adapter }} {BINDTYPE adapter ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA {} RTLNAME mm_video_m_axi_U SOURCE {} VARIABLE {} LOOP {} BUNDLEDNAME mm_video DSP 0 BRAM 4 URAM 0 STORAGESUBTYPE m_axi STORAGESIZE {} STORAGEUSAGE interface DISPNAME {bind_adapter }}} cache_nodes {} report_dict {TOPINST v_frmbuf_rd MODULE2INSTS {v_frmbuf_rd v_frmbuf_rd FrmbufRdHlsDataFlow grp_FrmbufRdHlsDataFlow_fu_166 AXIMMvideo2Bytes AXIMMvideo2Bytes_U0 AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1_fu_146 Bytes2MultiPixStream Bytes2MultiPixStream_U0 Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1_fu_172 MultiPixStream2AXIvideo MultiPixStream2AXIvideo_U0 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128 reg_unsigned_short_s {grp_reg_unsigned_short_s_fu_193 grp_reg_unsigned_short_s_fu_199} MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138} INST2MODULE {v_frmbuf_rd v_frmbuf_rd grp_FrmbufRdHlsDataFlow_fu_166 FrmbufRdHlsDataFlow AXIMMvideo2Bytes_U0 AXIMMvideo2Bytes grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1_fu_146 AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 Bytes2MultiPixStream_U0 Bytes2MultiPixStream grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1_fu_172 Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 MultiPixStream2AXIvideo_U0 MultiPixStream2AXIvideo grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 grp_reg_unsigned_short_s_fu_193 reg_unsigned_short_s grp_reg_unsigned_short_s_fu_199 reg_unsigned_short_s grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3} INSTDATA {v_frmbuf_rd {DEPTH 1 CHILDREN grp_FrmbufRdHlsDataFlow_fu_166} grp_FrmbufRdHlsDataFlow_fu_166 {DEPTH 2 CHILDREN {AXIMMvideo2Bytes_U0 Bytes2MultiPixStream_U0 MultiPixStream2AXIvideo_U0}} AXIMMvideo2Bytes_U0 {DEPTH 3 CHILDREN grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1_fu_146} grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1_fu_146 {DEPTH 4 CHILDREN {}} Bytes2MultiPixStream_U0 {DEPTH 3 CHILDREN grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1_fu_172} grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1_fu_172 {DEPTH 4 CHILDREN {}} MultiPixStream2AXIvideo_U0 {DEPTH 3 CHILDREN {grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128 grp_reg_unsigned_short_s_fu_193 grp_reg_unsigned_short_s_fu_199 grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138}} grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128 {DEPTH 4 CHILDREN {}} grp_reg_unsigned_short_s_fu_193 {DEPTH 4 CHILDREN {}} grp_reg_unsigned_short_s_fu_199 {DEPTH 4 CHILDREN {}} grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138 {DEPTH 4 CHILDREN {}}} MODULEDATA {AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln515_fu_116_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515 VARIABLE icmp_ln515 LOOP VITIS_LOOP_515_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln515_fu_122_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515 VARIABLE add_ln515 LOOP VITIS_LOOP_515_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 0 BRAM 0 URAM 0}} AXIMMvideo2Bytes {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln515_fu_156_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515 VARIABLE add_ln515 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln510_fu_203_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:510 VARIABLE icmp_ln510 LOOP loop_AXIMMvideo2Bytes_1plane BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME y_4_fu_208_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:510 VARIABLE y_4 LOOP loop_AXIMMvideo2Bytes_1plane BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln515_1_fu_229_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515 VARIABLE add_ln515_1 LOOP loop_AXIMMvideo2Bytes_1plane BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln523_fu_244_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:523 VARIABLE add_ln523 LOOP loop_AXIMMvideo2Bytes_1plane BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 0 BRAM 0 URAM 0}} Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setlt PRAGMA {} RTLNAME icmp_ln1240_fu_217_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1240 VARIABLE icmp_ln1240 LOOP VITIS_LOOP_1240_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setlt} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME x_2_fu_223_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1240 VARIABLE x_2 LOOP VITIS_LOOP_1240_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setlt PRAGMA {} RTLNAME icmp_ln1247_1_fu_229_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1247 VARIABLE icmp_ln1247_1 LOOP VITIS_LOOP_1240_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setlt} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln1247_fu_235_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1247 VARIABLE or_ln1247 LOOP VITIS_LOOP_1240_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln1250_fu_241_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1250 VARIABLE or_ln1250 LOOP VITIS_LOOP_1240_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln1271_fu_247_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1271 VARIABLE or_ln1271 LOOP VITIS_LOOP_1240_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln1271_1_fu_253_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1271 VARIABLE or_ln1271_1 LOOP VITIS_LOOP_1240_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln1271_2_fu_259_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1271 VARIABLE or_ln1271_2 LOOP VITIS_LOOP_1240_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln1271_3_fu_265_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1271 VARIABLE or_ln1271_3 LOOP VITIS_LOOP_1240_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln1271_4_fu_271_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1271 VARIABLE or_ln1271_4 LOOP VITIS_LOOP_1240_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln1271_5_fu_277_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1271 VARIABLE or_ln1271_5 LOOP VITIS_LOOP_1240_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln1271_6_fu_283_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1271 VARIABLE or_ln1271_6 LOOP VITIS_LOOP_1240_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false}} AREA {DSP 0 BRAM 0 URAM 0}} Bytes2MultiPixStream {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln1224_fu_227_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1224 VARIABLE add_ln1224 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln1225_fu_258_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1225 VARIABLE add_ln1225 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_11ns_13ns_23_1_1_U25 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1225 VARIABLE mul_ln1225 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto_seq LATENCY 14 OPTYPE urem PRAGMA {} RTLNAME urem_11ns_3ns_2_15_seq_1_U24 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1226 VARIABLE remainTrx LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op urem} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln1229_fu_299_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1229 VARIABLE icmp_ln1229 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME remainPix_1_fu_304_p3 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1229 VARIABLE remainPix_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln1247_fu_312_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1247 VARIABLE add_ln1247 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setne PRAGMA {} RTLNAME icmp_ln1247_fu_317_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1247 VARIABLE icmp_ln1247 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setne} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln1250_fu_323_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1250 VARIABLE icmp_ln1250 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setne PRAGMA {} RTLNAME icmp_ln1271_fu_339_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1271 VARIABLE icmp_ln1271 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setne} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setgt PRAGMA {} RTLNAME icmp_ln1271_1_fu_345_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1271 VARIABLE icmp_ln1271_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setgt} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setne PRAGMA {} RTLNAME icmp_ln1271_2_fu_361_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1271 VARIABLE icmp_ln1271_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setne} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setgt PRAGMA {} RTLNAME icmp_ln1271_3_fu_367_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1271 VARIABLE icmp_ln1271_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setgt} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setgt PRAGMA {} RTLNAME icmp_ln1271_4_fu_373_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1271 VARIABLE icmp_ln1271_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setgt} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setgt PRAGMA {} RTLNAME icmp_ln1271_5_fu_379_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1271 VARIABLE icmp_ln1271_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setgt} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln1232_fu_388_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1232 VARIABLE icmp_ln1232 LOOP loop_RGB8_YUV8 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME y_2_fu_393_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1232 VARIABLE y_2 LOOP loop_RGB8_YUV8 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 1 BRAM 0 URAM 0}} MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln367_fu_102_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:367 VARIABLE icmp_ln367 LOOP VITIS_LOOP_367_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln367_fu_108_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:367 VARIABLE add_ln367 LOOP VITIS_LOOP_367_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln369_fu_118_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:369 VARIABLE add_ln369 LOOP VITIS_LOOP_367_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME mapComp_U SOURCE {} VARIABLE mapComp LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {2 12 1} STORAGEUSAGE rom_1p DISPNAME {bind_storage rom_1p} VISIBLE true}} AREA {DSP 0 BRAM 0 URAM 0}} MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln376_fu_197_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:376 VARIABLE icmp_ln376 LOOP VITIS_LOOP_376_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME j_2_fu_203_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:376 VARIABLE j_2 LOOP VITIS_LOOP_376_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln392_fu_213_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:392 VARIABLE icmp_ln392 LOOP VITIS_LOOP_376_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL onehotencoding_realdef LATENCY 0 OPTYPE sparsemux PRAGMA {} RTLNAME sparsemux_7_2_8_1_1_U40 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:409 VARIABLE tmp_4 LOOP VITIS_LOOP_376_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sparsemux} VISIBLE false} {BINDTYPE op ID {} IMPL onehotencoding_realdef LATENCY 0 OPTYPE sparsemux PRAGMA {} RTLNAME sparsemux_7_2_8_1_1_U41 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:409 VARIABLE tmp_5 LOOP VITIS_LOOP_376_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sparsemux} VISIBLE false} {BINDTYPE op ID {} IMPL onehotencoding_realdef LATENCY 0 OPTYPE sparsemux PRAGMA {} RTLNAME sparsemux_7_2_8_1_1_U42 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:409 VARIABLE tmp_6 LOOP VITIS_LOOP_376_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sparsemux} VISIBLE false}} AREA {DSP 0 BRAM 0 URAM 0}} MultiPixStream2AXIvideo {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln367_fu_181_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:367 VARIABLE sub_ln367 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln392_fu_218_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:392 VARIABLE add_ln392 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln374_fu_224_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:374 VARIABLE icmp_ln374 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln374_1_fu_233_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:374 VARIABLE icmp_ln374_1 LOOP VITIS_LOOP_374_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_2_fu_238_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:374 VARIABLE i_2 LOOP VITIS_LOOP_374_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME and_ln374_fu_244_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:374 VARIABLE and_ln374 LOOP VITIS_LOOP_374_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false}} AREA {DSP 0 BRAM 0 URAM 0}} FrmbufRdHlsDataFlow {BINDINFO {{BINDTYPE storage ID {} IMPL bram LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME bytePlanes_U SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:95 VARIABLE bytePlanes LOOP {} BUNDLEDNAME {} DSP 0 BRAM 4 URAM 0 STORAGESUBTYPE stream STORAGESIZE {64 481 1} STORAGEUSAGE {fifo channel} DISPNAME {bind_storage fifo} VISIBLE true} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME img_U SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:90 VARIABLE img LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE stream STORAGESIZE {24 2 1} STORAGEUSAGE {fifo channel} DISPNAME {bind_storage fifo} VISIBLE true}} AREA {DSP 1 BRAM 4 URAM 0}} v_frmbuf_rd {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_14s_3ns_14_1_1_U88 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:255 VARIABLE WidthInBytes LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME BYTES_PER_PIXEL_U SOURCE {} VARIABLE BYTES_PER_PIXEL LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {3 45 1} STORAGEUSAGE rom_1p DISPNAME {bind_storage rom_1p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME MEMORY2LIVE_U SOURCE {} VARIABLE MEMORY2LIVE LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {3 45 1} STORAGEUSAGE rom_1p DISPNAME {bind_storage rom_1p} VISIBLE true}} AREA {DSP 1 BRAM 8 URAM 0}} reg_unsigned_short_s {AREA {DSP 0 BRAM 0 URAM 0}}}}'
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA {} RTLNAME CTRL_s_axi_U SOURCE {} VARIABLE {} LOOP {} BUNDLEDNAME CTRL DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE s_axilite STORAGESIZE {} STORAGEUSAGE interface DISPNAME {bind_adapter }} {BINDTYPE adapter ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA {} RTLNAME mm_video_m_axi_U SOURCE {} VARIABLE {} LOOP {} BUNDLEDNAME mm_video DSP 0 BRAM 4 URAM 0 STORAGESUBTYPE m_axi STORAGESIZE {} STORAGEUSAGE interface DISPNAME {bind_adapter }}} cache_nodes {} report_dict {TOPINST v_frmbuf_rd MODULE2INSTS {v_frmbuf_rd v_frmbuf_rd FrmbufRdHlsDataFlow grp_FrmbufRdHlsDataFlow_fu_166 AXIMMvideo2Bytes AXIMMvideo2Bytes_U0 AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1_fu_146 Bytes2MultiPixStream Bytes2MultiPixStream_U0 Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1_fu_146 MultiPixStream2AXIvideo MultiPixStream2AXIvideo_U0 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128 reg_unsigned_short_s {grp_reg_unsigned_short_s_fu_193 grp_reg_unsigned_short_s_fu_199} MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138} INST2MODULE {v_frmbuf_rd v_frmbuf_rd grp_FrmbufRdHlsDataFlow_fu_166 FrmbufRdHlsDataFlow AXIMMvideo2Bytes_U0 AXIMMvideo2Bytes grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1_fu_146 AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 Bytes2MultiPixStream_U0 Bytes2MultiPixStream grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1_fu_146 Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 MultiPixStream2AXIvideo_U0 MultiPixStream2AXIvideo grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 grp_reg_unsigned_short_s_fu_193 reg_unsigned_short_s grp_reg_unsigned_short_s_fu_199 reg_unsigned_short_s grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3} INSTDATA {v_frmbuf_rd {DEPTH 1 CHILDREN grp_FrmbufRdHlsDataFlow_fu_166} grp_FrmbufRdHlsDataFlow_fu_166 {DEPTH 2 CHILDREN {AXIMMvideo2Bytes_U0 Bytes2MultiPixStream_U0 MultiPixStream2AXIvideo_U0}} AXIMMvideo2Bytes_U0 {DEPTH 3 CHILDREN grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1_fu_146} grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1_fu_146 {DEPTH 4 CHILDREN {}} Bytes2MultiPixStream_U0 {DEPTH 3 CHILDREN grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1_fu_146} grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1_fu_146 {DEPTH 4 CHILDREN {}} MultiPixStream2AXIvideo_U0 {DEPTH 3 CHILDREN {grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128 grp_reg_unsigned_short_s_fu_193 grp_reg_unsigned_short_s_fu_199 grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138}} grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128 {DEPTH 4 CHILDREN {}} grp_reg_unsigned_short_s_fu_193 {DEPTH 4 CHILDREN {}} grp_reg_unsigned_short_s_fu_199 {DEPTH 4 CHILDREN {}} grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138 {DEPTH 4 CHILDREN {}}} MODULEDATA {AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln515_fu_116_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515 VARIABLE icmp_ln515 LOOP VITIS_LOOP_515_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln515_fu_122_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515 VARIABLE add_ln515 LOOP VITIS_LOOP_515_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 0 BRAM 0 URAM 0}} AXIMMvideo2Bytes {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln515_fu_156_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515 VARIABLE add_ln515 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln510_fu_203_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:510 VARIABLE icmp_ln510 LOOP loop_AXIMMvideo2Bytes_1plane BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME y_4_fu_208_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:510 VARIABLE y_4 LOOP loop_AXIMMvideo2Bytes_1plane BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln515_1_fu_229_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515 VARIABLE add_ln515_1 LOOP loop_AXIMMvideo2Bytes_1plane BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln523_fu_244_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:523 VARIABLE add_ln523 LOOP loop_AXIMMvideo2Bytes_1plane BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 0 BRAM 0 URAM 0}} Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln1450_fu_109_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1450 VARIABLE icmp_ln1450 LOOP VITIS_LOOP_1450_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME x_2_fu_115_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1450 VARIABLE x_2 LOOP VITIS_LOOP_1450_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setlt PRAGMA {} RTLNAME icmp_ln1467_fu_125_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1467 VARIABLE icmp_ln1467 LOOP VITIS_LOOP_1450_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setlt} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln1467_fu_131_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1467 VARIABLE or_ln1467 LOOP VITIS_LOOP_1450_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false}} AREA {DSP 0 BRAM 0 URAM 0}} Bytes2MultiPixStream {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln1437_fu_207_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1437 VARIABLE add_ln1437 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE xor PRAGMA {} RTLNAME xor_ln1440_fu_235_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1440 VARIABLE xor_ln1440 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op xor} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln1467_fu_241_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1467 VARIABLE add_ln1467 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln1443_fu_255_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1443 VARIABLE icmp_ln1443 LOOP loop_RGBX8_YUVX8 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME y_2_fu_260_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1443 VARIABLE y_2 LOOP loop_RGBX8_YUVX8 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 0 BRAM 0 URAM 0}} MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln367_fu_102_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:367 VARIABLE icmp_ln367 LOOP VITIS_LOOP_367_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln367_fu_108_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:367 VARIABLE add_ln367 LOOP VITIS_LOOP_367_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln369_fu_118_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:369 VARIABLE add_ln369 LOOP VITIS_LOOP_367_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME mapComp_U SOURCE {} VARIABLE mapComp LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {2 12 1} STORAGEUSAGE rom_1p DISPNAME {bind_storage rom_1p} VISIBLE true}} AREA {DSP 0 BRAM 0 URAM 0}} MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln376_fu_197_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:376 VARIABLE icmp_ln376 LOOP VITIS_LOOP_376_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME j_2_fu_203_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:376 VARIABLE j_2 LOOP VITIS_LOOP_376_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln392_fu_213_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:392 VARIABLE icmp_ln392 LOOP VITIS_LOOP_376_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL onehotencoding_realdef LATENCY 0 OPTYPE sparsemux PRAGMA {} RTLNAME sparsemux_7_2_8_1_1_U27 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:409 VARIABLE tmp_4 LOOP VITIS_LOOP_376_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sparsemux} VISIBLE false} {BINDTYPE op ID {} IMPL onehotencoding_realdef LATENCY 0 OPTYPE sparsemux PRAGMA {} RTLNAME sparsemux_7_2_8_1_1_U28 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:409 VARIABLE tmp_5 LOOP VITIS_LOOP_376_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sparsemux} VISIBLE false} {BINDTYPE op ID {} IMPL onehotencoding_realdef LATENCY 0 OPTYPE sparsemux PRAGMA {} RTLNAME sparsemux_7_2_8_1_1_U29 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:409 VARIABLE tmp_6 LOOP VITIS_LOOP_376_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sparsemux} VISIBLE false}} AREA {DSP 0 BRAM 0 URAM 0}} MultiPixStream2AXIvideo {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln367_fu_181_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:367 VARIABLE sub_ln367 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln392_fu_218_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:392 VARIABLE add_ln392 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln374_fu_224_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:374 VARIABLE icmp_ln374 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln374_1_fu_233_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:374 VARIABLE icmp_ln374_1 LOOP VITIS_LOOP_374_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_2_fu_238_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:374 VARIABLE i_2 LOOP VITIS_LOOP_374_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME and_ln374_fu_244_p2 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:374 VARIABLE and_ln374 LOOP VITIS_LOOP_374_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false}} AREA {DSP 0 BRAM 0 URAM 0}} FrmbufRdHlsDataFlow {BINDINFO {{BINDTYPE storage ID {} IMPL bram LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME bytePlanes_U SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:95 VARIABLE bytePlanes LOOP {} BUNDLEDNAME {} DSP 0 BRAM 4 URAM 0 STORAGESUBTYPE stream STORAGESIZE {64 481 1} STORAGEUSAGE {fifo channel} DISPNAME {bind_storage fifo} VISIBLE true} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME img_U SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:90 VARIABLE img LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE stream STORAGESIZE {24 2 1} STORAGEUSAGE {fifo channel} DISPNAME {bind_storage fifo} VISIBLE true}} AREA {DSP 0 BRAM 4 URAM 0}} v_frmbuf_rd {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_14s_3ns_14_1_1_U75 SOURCE prj/sol/.autopilot/db/v_frmbuf_rd.cpp:255 VARIABLE WidthInBytes LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME BYTES_PER_PIXEL_U SOURCE {} VARIABLE BYTES_PER_PIXEL LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {3 45 1} STORAGEUSAGE rom_1p DISPNAME {bind_storage rom_1p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME MEMORY2LIVE_U SOURCE {} VARIABLE MEMORY2LIVE LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {3 45 1} STORAGEUSAGE rom_1p DISPNAME {bind_storage rom_1p} VISIBLE true}} AREA {DSP 0 BRAM 8 URAM 0}} reg_unsigned_short_s {AREA {DSP 0 BRAM 0 URAM 0}}}}'
 INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
 Execute       send_msg_by_id INFO @200-1603@%s  and missed bursts 
 INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
@@ -1300,14 +1289,14 @@ INFO: [HLS 200-2225] Wrote inferred directives to file /home/serg/Documents/Xili
 INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
 INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
 INFO-FLOW: Done: add_csynth_report_sections time: 0.2 seconds 
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.47 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.5 seconds; current allocated memory: 393.508 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.44 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.48 seconds; current allocated memory: 389.406 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for v_frmbuf_rd with prefix top_design_v_frmbuf_rd_0_0_.
 INFO: [VLOG 209-307] Generating Verilog RTL for v_frmbuf_rd with prefix top_design_v_frmbuf_rd_0_0_.
 Execute       syn_report -model v_frmbuf_rd -printsummary 
 INFO: [HLS 200-789] **** Estimated Fmax: 205.47 MHz
 Execute       AP::msg_collection_file -close 
-Command     csynth_design done; 30.48 sec.
-INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:30; Allocated memory: 158.898 MB.
+Command     csynth_design done; 28.89 sec.
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:28; Allocated memory: 154.797 MB.
 Execute     export_design -format ip_catalog 
 INFO: [HLS 200-1510] Running: export_design -format ip_catalog 
 Execute       config_export -format=ip_catalog 
@@ -1354,11 +1343,9 @@ Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video
 INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to top_design_v_frmbuf_rd_0_0_v_frmbuf_rd
 INFO-FLOW: DBG:PUTS:       generate_datafile_ip_script ip_types={vitis sysgen} #gSsdmPorts=0
 INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=15
-INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=34 #gSsdmPorts=0
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=32 #gSsdmPorts=0
 INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init
 top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init
-top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1
-top_design_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1
 top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R
 top_design_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init
 top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1
@@ -1381,7 +1368,7 @@ top_design_v_frmbuf_rd_0_0_regslice_both
 top_design_v_frmbuf_rd_0_0_regslice_both
 AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1
 AXIMMvideo2Bytes
-Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1
+Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1
 Bytes2MultiPixStream
 reg_unsigned_short_s
 MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1
@@ -1400,7 +1387,7 @@ Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.compgen.dataonly.tcl 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1.tbgen.tcl 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/AXIMMvideo2Bytes.tbgen.tcl 
-Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1.tbgen.tcl 
+Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1.tbgen.tcl 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/Bytes2MultiPixStream.tbgen.tcl 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/reg_unsigned_short_s.tbgen.tcl 
 Execute       source /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1.tbgen.tcl 
@@ -1449,6 +1436,6 @@ INFO-FLOW: DBG:PUTS:     IP package: exec /home/serg/Documents/Xilinx/z700_hdmi/
 INFO-FLOW: DBG:PUTS:     IP package: success /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/impl/ip/pack.sh
 Execute       send_msg_by_id INFO @200-802@%s prj/sol/impl/export.zip 
 INFO: [HLS 200-802] Generated output file prj/sol/impl/export.zip
-Command     export_design done; 4.39 sec.
-INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:04; Allocated memory: 2.777 MB.
+Command     export_design done; 4.17 sec.
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:04; Allocated memory: 2.742 MB.
 Execute     cleanup_all 

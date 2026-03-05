@@ -24,8 +24,8 @@ set C_modelArgList {
 	{ cols int 11 regular  }
 	{ add_ln392 int 12 regular  }
 	{ img int 24 regular {fifo 0 volatile }  }
-	{ empty_47 int 2 regular  }
-	{ empty_48 int 2 regular  }
+	{ empty_43 int 2 regular  }
+	{ empty_44 int 2 regular  }
 	{ empty int 2 regular  }
 	{ m_axis_video_V_data_V int 24 regular {axi_s 1 volatile  { m_axis_video Data } }  }
 	{ m_axis_video_V_keep_V int 3 regular {axi_s 1 volatile  { m_axis_video Keep } }  }
@@ -43,8 +43,8 @@ set C_modelArgMapList {[
  	{ "Name" : "cols", "interface" : "wire", "bitwidth" : 11, "direction" : "READONLY"} , 
  	{ "Name" : "add_ln392", "interface" : "wire", "bitwidth" : 12, "direction" : "READONLY"} , 
  	{ "Name" : "img", "interface" : "fifo", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "empty_47", "interface" : "wire", "bitwidth" : 2, "direction" : "READONLY"} , 
- 	{ "Name" : "empty_48", "interface" : "wire", "bitwidth" : 2, "direction" : "READONLY"} , 
+ 	{ "Name" : "empty_43", "interface" : "wire", "bitwidth" : 2, "direction" : "READONLY"} , 
+ 	{ "Name" : "empty_44", "interface" : "wire", "bitwidth" : 2, "direction" : "READONLY"} , 
  	{ "Name" : "empty", "interface" : "wire", "bitwidth" : 2, "direction" : "READONLY"} , 
  	{ "Name" : "m_axis_video_V_data_V", "interface" : "axis", "bitwidth" : 24, "direction" : "WRITEONLY"} , 
  	{ "Name" : "m_axis_video_V_keep_V", "interface" : "axis", "bitwidth" : 3, "direction" : "WRITEONLY"} , 
@@ -71,8 +71,8 @@ set portList {
 	{ sof sc_in sc_lv 1 signal 0 } 
 	{ cols sc_in sc_lv 11 signal 1 } 
 	{ add_ln392 sc_in sc_lv 12 signal 2 } 
-	{ empty_47 sc_in sc_lv 2 signal 4 } 
-	{ empty_48 sc_in sc_lv 2 signal 5 } 
+	{ empty_43 sc_in sc_lv 2 signal 4 } 
+	{ empty_44 sc_in sc_lv 2 signal 5 } 
 	{ empty sc_in sc_lv 2 signal 6 } 
 	{ m_axis_video_TDATA sc_out sc_lv 24 signal 7 } 
 	{ m_axis_video_TVALID sc_out sc_logic 1 outvld 13 } 
@@ -99,8 +99,8 @@ set NewPortList {[
  	{ "name": "sof", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "sof", "role": "default" }} , 
  	{ "name": "cols", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "cols", "role": "default" }} , 
  	{ "name": "add_ln392", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "add_ln392", "role": "default" }} , 
- 	{ "name": "empty_47", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "empty_47", "role": "default" }} , 
- 	{ "name": "empty_48", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "empty_48", "role": "default" }} , 
+ 	{ "name": "empty_43", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "empty_43", "role": "default" }} , 
+ 	{ "name": "empty_44", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "empty_44", "role": "default" }} , 
  	{ "name": "empty", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "empty", "role": "default" }} , 
  	{ "name": "m_axis_video_TDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "m_axis_video_V_data_V", "role": "default" }} , 
  	{ "name": "m_axis_video_TVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "m_axis_video_V_dest_V", "role": "default" }} , 
@@ -117,8 +117,8 @@ set ArgLastReadFirstWriteLatency {
 		cols {Type I LastRead 0 FirstWrite -1}
 		add_ln392 {Type I LastRead 0 FirstWrite -1}
 		img {Type I LastRead 1 FirstWrite -1}
-		empty_47 {Type I LastRead 0 FirstWrite -1}
-		empty_48 {Type I LastRead 0 FirstWrite -1}
+		empty_43 {Type I LastRead 0 FirstWrite -1}
+		empty_44 {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
 		m_axis_video_V_data_V {Type O LastRead -1 FirstWrite 2}
 		m_axis_video_V_keep_V {Type O LastRead -1 FirstWrite 2}
@@ -144,8 +144,8 @@ set Spec2ImplPortList {
 	cols { ap_none {  { cols in_data 0 11 } } }
 	add_ln392 { ap_none {  { add_ln392 in_data 0 12 } } }
 	img { ap_fifo {  { img_dout fifo_data_out 0 24 }  { img_empty_n fifo_status_empty 0 1 }  { img_read fifo_data_in 1 1 }  { img_num_data_valid fifo_update 0 3 }  { img_fifo_cap fifo_data 0 3 } } }
-	empty_47 { ap_none {  { empty_47 in_data 0 2 } } }
-	empty_48 { ap_none {  { empty_48 in_data 0 2 } } }
+	empty_43 { ap_none {  { empty_43 in_data 0 2 } } }
+	empty_44 { ap_none {  { empty_44 in_data 0 2 } } }
 	empty { ap_none {  { empty in_data 0 2 } } }
 	m_axis_video_V_data_V { axis {  { m_axis_video_TREADY out_acc 0 1 }  { m_axis_video_TDATA out_data 1 24 } } }
 	m_axis_video_V_keep_V { axis {  { m_axis_video_TKEEP out_data 1 3 } } }

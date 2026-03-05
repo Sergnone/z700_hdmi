@@ -1434,7 +1434,7 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>trunc_ln4</name>
+						<name>trunc_ln2</name>
 						<fileName>prj/sol/.autopilot/db/v_frmbuf_rd.cpp</fileName>
 						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1</fileDirectory>
 						<lineNumber>515</lineNumber>

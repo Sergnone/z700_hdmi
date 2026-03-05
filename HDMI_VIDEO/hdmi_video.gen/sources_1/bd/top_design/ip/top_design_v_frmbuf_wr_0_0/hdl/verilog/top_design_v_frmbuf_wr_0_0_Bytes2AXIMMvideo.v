@@ -279,7 +279,7 @@ wire   [31:0] zext_ln1539_fu_179_p1;
 reg   [31:0] zext_ln1539_reg_305;
 wire   [23:0] zext_ln1552_fu_193_p1;
 reg   [23:0] zext_ln1552_reg_310;
-reg   [28:0] trunc_ln4_reg_318;
+reg   [28:0] trunc_ln2_reg_318;
 wire    ap_CS_fsm_state2;
 wire    grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1552_1_fu_153_ap_start;
 wire    grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1552_1_fu_153_ap_done;
@@ -512,7 +512,7 @@ top_design_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1552_1 grp_Bytes
     .m_axi_mm_video_0_BID(m_axi_mm_video_0_BID),
     .m_axi_mm_video_0_BUSER(m_axi_mm_video_0_BUSER),
     .loopWidth(loopWidth_reg_300),
-    .sext_ln1552(trunc_ln4_reg_318)
+    .sext_ln1552(trunc_ln2_reg_318)
 );
 
 always @ (posedge ap_clk) begin
@@ -575,7 +575,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        trunc_ln4_reg_318 <= {{add_ln1552_fu_236_p2[31:3]}};
+        trunc_ln2_reg_318 <= {{add_ln1552_fu_236_p2[31:3]}};
     end
 end
 
@@ -1404,7 +1404,7 @@ assign m_axi_mm_video_0_WSTRB = grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1552_1_
 
 assign m_axi_mm_video_0_WUSER = grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1552_1_fu_153_m_axi_mm_video_0_WUSER;
 
-assign sext_ln1552_fu_266_p1 = $signed(trunc_ln4_reg_318);
+assign sext_ln1552_fu_266_p1 = $signed(trunc_ln2_reg_318);
 
 assign shl_ln_fu_224_p3 = {{yoffset_fu_114}, {3'd0}};
 

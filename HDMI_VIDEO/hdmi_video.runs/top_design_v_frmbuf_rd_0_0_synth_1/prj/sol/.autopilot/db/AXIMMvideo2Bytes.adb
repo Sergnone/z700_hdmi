@@ -1434,7 +1434,7 @@
             <Obj>
               <type>0</type>
               <id>41</id>
-              <name>trunc_ln4</name>
+              <name>trunc_ln2</name>
               <fileName>prj/sol/.autopilot/db/v_frmbuf_rd.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>515</lineNumber>
@@ -1459,7 +1459,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>trunc_ln4_reg_311</rtlName>
+              <rtlName>trunc_ln2_reg_311</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -7121,7 +7121,7 @@
           </second>
         </item>
         <item>
-          <first>trunc_ln4_reg_311</first>
+          <first>trunc_ln2_reg_311</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7956,7 +7956,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln4_fu_234</first>
+        <first>trunc_ln2_fu_234</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -8343,7 +8343,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln4_reg_311</first>
+        <first>trunc_ln2_reg_311</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

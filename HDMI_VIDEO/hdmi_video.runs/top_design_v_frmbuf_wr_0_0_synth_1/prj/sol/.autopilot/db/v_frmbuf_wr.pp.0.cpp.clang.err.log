@@ -2227,15 +2227,18 @@ In file included from /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_vide
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:410:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=AXIvideo2MultiPixStream_XLX_SEP_ PragmaOptions=avg=0 max=0_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS loop_tripcount avg=0 max=0
 ^
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1088:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=MultiPixStream2Bytes_XLX_SEP_ PragmaOptions=max=4320_XLX_SEP_ [-Wdump-hls-pragmas]
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:695:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=MultiPixStream2Bytes_XLX_SEP_ PragmaOptions=max=4320_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS loop_tripcount max=4320
 ^
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1089:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_flatten_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=MultiPixStream2Bytes_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:696:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_flatten_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=MultiPixStream2Bytes_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS loop_flatten off
 ^
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1092:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=MultiPixStream2Bytes_XLX_SEP_ PragmaOptions=II=8_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS pipeline II=8
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:699:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=MultiPixStream2Bytes_XLX_SEP_ PragmaOptions=II=3_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=3
 ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:429:8: warning: unused parameter 'WidthInPix' [-Wunused-parameter]
+  U16 &WidthInPix, U16 &WidthInBytes, U16 &VideoFormat)
+       ^
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1549:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=Bytes2AXIMMvideo_XLX_SEP_ PragmaOptions=max=4320_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS loop_tripcount max=4320
 ^
@@ -2254,4 +2257,4 @@ In file included from /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_vide
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1533:28: warning: unused parameter 'VideoFormat' [-Wunused-parameter]
                       U16& VideoFormat
                            ^
-714 warnings generated.
+715 warnings generated.

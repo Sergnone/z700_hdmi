@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 5,
-    "calls": "2",
+    "calls": "6",
     "control_depth": 0,
     "def_use_depth": 4,
     "file": "v_frmbuf_rd.cpp",
@@ -16,51 +16,27 @@
     "stores": {
       "L": 13
     },
-    "total_instructions": 1909
+    "total_instructions": 2308
   },
   "1": {
-    "basicblocks": 115,
-    "calls": "5",
+    "basicblocks": 109,
+    "calls": "4",
     "control_depth": 1,
-    "def_use_depth": 5,
+    "def_use_depth": 4,
     "file": "v_frmbuf_rd.cpp",
     "fileloc": 686,
-    "instructions": 451,
+    "instructions": 352,
     "loads": {
-      "L": 42
+      "L": 39
     },
-    "memory_accesses": 21,
+    "memory_accesses": 15,
     "name": "Bytes2MultiPixStream",
     "stores": {
-      "L": 6
+      "L": 3
     },
-    "total_instructions": 909
+    "total_instructions": 1308
   },
   "2": {
-    "basicblocks": 1,
-    "calls": "6 4 1 7",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "v_frmbuf_rd.cpp",
-    "fileloc": 78,
-    "instructions": 23,
-    "memory_accesses": 0,
-    "name": "FrmbufRdHlsDataFlow",
-    "total_instructions": 1802
-  },
-  "3": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
-    "memory_accesses": 0,
-    "name": "reg<unsigned short>",
-    "total_instructions": 1
-  },
-  "4": {
     "basicblocks": 13,
     "calls": "",
     "control_depth": 1,
@@ -78,33 +54,9 @@
     },
     "total_instructions": 50
   },
-  "5": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "hls_video_core.h",
-    "fileloc": 196,
-    "instructions": 5,
-    "memory_accesses": 0,
-    "name": "Scalar",
-    "total_instructions": 5
-  },
-  "6": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "v_frmbuf_rd.h",
-    "fileloc": 250,
-    "instructions": 3,
-    "memory_accesses": 0,
-    "name": "STREAM_PLANES",
-    "total_instructions": 4
-  },
-  "7": {
+  "3": {
     "basicblocks": 36,
-    "calls": "5 3 3",
+    "calls": "4 7 7",
     "control_depth": 1,
     "def_use_depth": 5,
     "file": "v_frmbuf_rd.cpp",
@@ -119,5 +71,53 @@
       "L": 7
     },
     "total_instructions": 815
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "hls_video_core.h",
+    "fileloc": 196,
+    "instructions": 5,
+    "memory_accesses": 0,
+    "name": "Scalar",
+    "total_instructions": 5
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "v_frmbuf_rd.h",
+    "fileloc": 250,
+    "instructions": 3,
+    "memory_accesses": 0,
+    "name": "STREAM_PLANES",
+    "total_instructions": 4
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "5 2 1 3",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "v_frmbuf_rd.cpp",
+    "fileloc": 78,
+    "instructions": 23,
+    "memory_accesses": 0,
+    "name": "FrmbufRdHlsDataFlow",
+    "total_instructions": 2201
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "memory_accesses": 0,
+    "name": "reg<unsigned short>",
+    "total_instructions": 1
   }
 }

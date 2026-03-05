@@ -106,7 +106,7 @@ architecture behav of top_design_v_frmbuf_wr_0_0_v_frmbuf_wr is
     attribute DowngradeIPIdentifiedWarnings of behav : architecture is "yes";
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "top_design_v_frmbuf_wr_0_0_v_frmbuf_wr,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-2,HLS_INPUT_CLOCK=6.667000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=4.866910,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=4,HLS_SYN_DSP=0,HLS_SYN_FF=2244,HLS_SYN_LUT=3351,HLS_VERSION=2025_2}";
+    "top_design_v_frmbuf_wr_0_0_v_frmbuf_wr,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-2,HLS_INPUT_CLOCK=6.667000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=4.866910,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=4,HLS_SYN_DSP=0,HLS_SYN_FF=2043,HLS_SYN_LUT=3036,HLS_VERSION=2025_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (4 downto 0) := "00001";
@@ -327,22 +327,22 @@ architecture behav of top_design_v_frmbuf_wr_0_0_v_frmbuf_wr is
         HwReg_frm_buffer : IN STD_LOGIC_VECTOR (31 downto 0);
         WidthInBytes_val2 : IN STD_LOGIC_VECTOR (13 downto 0);
         colorFormat_val3 : IN STD_LOGIC_VECTOR (2 downto 0);
-        width_val5 : IN STD_LOGIC_VECTOR (10 downto 0);
-        height_val8 : IN STD_LOGIC_VECTOR (10 downto 0);
-        stride_val9 : IN STD_LOGIC_VECTOR (15 downto 0);
-        video_format_val10 : IN STD_LOGIC_VECTOR (5 downto 0);
+        width_val4 : IN STD_LOGIC_VECTOR (10 downto 0);
+        height_val7 : IN STD_LOGIC_VECTOR (10 downto 0);
+        stride_val8 : IN STD_LOGIC_VECTOR (15 downto 0);
+        video_format_val9 : IN STD_LOGIC_VECTOR (5 downto 0);
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
         s_axis_video_TVALID : IN STD_LOGIC;
         s_axis_video_TREADY : OUT STD_LOGIC;
-        height_val8_ap_vld : IN STD_LOGIC;
-        width_val5_ap_vld : IN STD_LOGIC;
+        height_val7_ap_vld : IN STD_LOGIC;
+        width_val4_ap_vld : IN STD_LOGIC;
         colorFormat_val3_ap_vld : IN STD_LOGIC;
         ap_start : IN STD_LOGIC;
         WidthInBytes_val2_ap_vld : IN STD_LOGIC;
-        video_format_val10_ap_vld : IN STD_LOGIC;
+        video_format_val9_ap_vld : IN STD_LOGIC;
         HwReg_frm_buffer_ap_vld : IN STD_LOGIC;
-        stride_val9_ap_vld : IN STD_LOGIC;
+        stride_val8_ap_vld : IN STD_LOGIC;
         ap_done : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
@@ -630,22 +630,22 @@ begin
         HwReg_frm_buffer => frm_buffer_read_reg_221,
         WidthInBytes_val2 => WidthInBytes_reg_271,
         colorFormat_val3 => colorFormat_reg_266,
-        width_val5 => trunc_ln157_2_reg_241,
-        height_val8 => trunc_ln157_3_reg_246,
-        stride_val9 => stride_read_reg_226,
-        video_format_val10 => trunc_ln157_1_reg_236,
+        width_val4 => trunc_ln157_2_reg_241,
+        height_val7 => trunc_ln157_3_reg_246,
+        stride_val8 => stride_read_reg_226,
+        video_format_val9 => trunc_ln157_1_reg_236,
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         s_axis_video_TVALID => s_axis_video_TVALID_int_regslice,
         s_axis_video_TREADY => grp_FrmbufWrHlsDataFlow_fu_164_s_axis_video_TREADY,
-        height_val8_ap_vld => ap_const_logic_1,
-        width_val5_ap_vld => ap_const_logic_1,
+        height_val7_ap_vld => ap_const_logic_1,
+        width_val4_ap_vld => ap_const_logic_1,
         colorFormat_val3_ap_vld => ap_const_logic_1,
         ap_start => grp_FrmbufWrHlsDataFlow_fu_164_ap_start,
         WidthInBytes_val2_ap_vld => ap_const_logic_1,
-        video_format_val10_ap_vld => ap_const_logic_1,
+        video_format_val9_ap_vld => ap_const_logic_1,
         HwReg_frm_buffer_ap_vld => ap_const_logic_1,
-        stride_val9_ap_vld => ap_const_logic_1,
+        stride_val8_ap_vld => ap_const_logic_1,
         ap_done => grp_FrmbufWrHlsDataFlow_fu_164_ap_done,
         ap_ready => grp_FrmbufWrHlsDataFlow_fu_164_ap_ready,
         ap_idle => grp_FrmbufWrHlsDataFlow_fu_164_ap_idle,
@@ -785,7 +785,7 @@ begin
         I_CH0_BVALID => mm_video_0_BVALID,
         I_CH0_BREADY => mm_video_0_BREADY);
 
-    mul_14s_3ns_14_1_1_U99 : component top_design_v_frmbuf_wr_0_0_mul_14s_3ns_14_1_1
+    mul_14s_3ns_14_1_1_U89 : component top_design_v_frmbuf_wr_0_0_mul_14s_3ns_14_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

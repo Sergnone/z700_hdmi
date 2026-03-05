@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3'" level="0">
-<item name = "Date">Thu Feb 19 12:55:08 2026
+<item name = "Date">Thu Mar  5 14:47:30 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -62,9 +62,9 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="sparsemux_7_2_8_1_1_U40">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_8_1_1_U41">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_8_1_1_U42">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_8_1_1_U27">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_8_1_1_U28">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_8_1_1_U29">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -143,8 +143,8 @@
 <column name="sof">in, 1, ap_none, sof, scalar</column>
 <column name="cols">in, 11, ap_none, cols, scalar</column>
 <column name="add_ln392">in, 12, ap_none, add_ln392, scalar</column>
-<column name="empty_47">in, 2, ap_none, empty_47, scalar</column>
-<column name="empty_48">in, 2, ap_none, empty_48, scalar</column>
+<column name="empty_43">in, 2, ap_none, empty_43, scalar</column>
+<column name="empty_44">in, 2, ap_none, empty_44, scalar</column>
 <column name="empty">in, 2, ap_none, empty, scalar</column>
 <column name="m_axis_video_TVALID">out, 1, axis, m_axis_video_V_dest_V, pointer</column>
 <column name="m_axis_video_TDEST">out, 1, axis, m_axis_video_V_dest_V, pointer</column>

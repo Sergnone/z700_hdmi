@@ -194,8 +194,8 @@ attribute shreg_extract : string;
         sof : IN STD_LOGIC_VECTOR (0 downto 0);
         cols : IN STD_LOGIC_VECTOR (10 downto 0);
         add_ln392 : IN STD_LOGIC_VECTOR (11 downto 0);
-        empty_47 : IN STD_LOGIC_VECTOR (1 downto 0);
-        empty_48 : IN STD_LOGIC_VECTOR (1 downto 0);
+        empty_43 : IN STD_LOGIC_VECTOR (1 downto 0);
+        empty_44 : IN STD_LOGIC_VECTOR (1 downto 0);
         empty : IN STD_LOGIC_VECTOR (1 downto 0);
         m_axis_video_TDATA : OUT STD_LOGIC_VECTOR (23 downto 0);
         m_axis_video_TVALID : OUT STD_LOGIC;
@@ -257,8 +257,8 @@ begin
         sof => sof_reg_116,
         cols => cols_reg_299,
         add_ln392 => add_ln392_reg_313,
-        empty_47 => kMap_loc_fu_86,
-        empty_48 => kMap_1_loc_fu_90,
+        empty_43 => kMap_loc_fu_86,
+        empty_44 => kMap_1_loc_fu_90,
         empty => kMap_2_loc_fu_94,
         m_axis_video_TDATA => grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138_m_axis_video_TDATA,
         m_axis_video_TVALID => grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138_m_axis_video_TVALID,

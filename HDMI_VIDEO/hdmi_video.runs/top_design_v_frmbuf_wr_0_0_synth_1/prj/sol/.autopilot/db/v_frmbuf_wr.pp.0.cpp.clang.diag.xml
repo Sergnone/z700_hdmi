@@ -11289,7 +11289,7 @@
       <key>filename</key>
       <string>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</string>
       <key>line</key>
-      <integer>1088</integer>
+      <integer>695</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -11305,7 +11305,7 @@
       <key>filename</key>
       <string>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</string>
       <key>line</key>
-      <integer>1089</integer>
+      <integer>696</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -11321,15 +11321,31 @@
       <key>filename</key>
       <string>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</string>
       <key>line</key>
-      <integer>1092</integer>
+      <integer>699</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=MultiPixStream2Bytes_XLX_SEP_ PragmaOptions=II=8_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=MultiPixStream2Bytes_XLX_SEP_ PragmaOptions=II=3_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
       <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</string>
+      <key>line</key>
+      <integer>429</integer>
+      <key>column</key>
+      <integer>8</integer>
+      <key>message</key>
+      <string>unused parameter &apos;WidthInPix&apos;</string>
+      <key>ID</key>
+      <integer>6591</integer>
+      <key>WarningOption</key>
+      <string>unused-parameter</string>
     </dict>
     <dict>
       <key>level</key>

@@ -287,7 +287,7 @@ wire   [31:0] zext_ln523_fu_172_p1;
 reg   [31:0] zext_ln523_reg_298;
 wire   [23:0] zext_ln515_fu_186_p1;
 reg   [23:0] zext_ln515_reg_303;
-reg   [28:0] trunc_ln4_reg_311;
+reg   [28:0] trunc_ln2_reg_311;
 wire    ap_CS_fsm_state2;
 wire    grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1_fu_146_ap_start;
 wire    grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1_fu_146_ap_done;
@@ -465,7 +465,7 @@ initial begin
 #0 lshr_ln_reg_293 = 11'd0;
 #0 zext_ln523_reg_298 = 32'd0;
 #0 zext_ln515_reg_303 = 24'd0;
-#0 trunc_ln4_reg_311 = 29'd0;
+#0 trunc_ln2_reg_311 = 29'd0;
 #0 grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1_fu_146_ap_start_reg = 1'b0;
 #0 y_fu_108 = 11'd0;
 #0 offset_fu_112 = 24'd0;
@@ -530,7 +530,7 @@ top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1 grp_AXIMMv
     .bytePlanes_num_data_valid(10'd0),
     .bytePlanes_fifo_cap(10'd0),
     .lshr_ln(lshr_ln_reg_293),
-    .sext_ln515(trunc_ln4_reg_311)
+    .sext_ln515(trunc_ln2_reg_311)
 );
 
 always @ (posedge ap_clk) begin
@@ -621,10 +621,10 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        trunc_ln4_reg_311 <= 29'd0;
+        trunc_ln2_reg_311 <= 29'd0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state2)) begin
-            trunc_ln4_reg_311 <= {{add_ln515_1_fu_229_p2[31:3]}};
+            trunc_ln2_reg_311 <= {{add_ln515_1_fu_229_p2[31:3]}};
         end
     end
 end
@@ -1510,7 +1510,7 @@ assign m_axi_mm_video_0_WUSER = 1'd0;
 
 assign m_axi_mm_video_0_WVALID = 1'b0;
 
-assign sext_ln515_fu_259_p1 = $signed(trunc_ln4_reg_311);
+assign sext_ln515_fu_259_p1 = $signed(trunc_ln2_reg_311);
 
 assign shl_ln_fu_217_p3 = {{offset_fu_112}, {3'd0}};
 

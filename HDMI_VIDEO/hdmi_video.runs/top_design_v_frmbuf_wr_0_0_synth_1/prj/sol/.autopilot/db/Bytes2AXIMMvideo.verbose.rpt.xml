@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'Bytes2AXIMMvideo'" level="0">
-<item name = "Date">Thu Feb 19 12:55:09 2026
+<item name = "Date">Thu Mar  5 14:47:30 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -120,7 +120,7 @@
 <column name="dstImg_read_reg_295">32, 0, 32, 0</column>
 <column name="grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1552_1_fu_153_ap_start_reg">1, 0, 1, 0</column>
 <column name="loopWidth_reg_300">11, 0, 11, 0</column>
-<column name="trunc_ln4_reg_318">29, 0, 29, 0</column>
+<column name="trunc_ln2_reg_318">29, 0, 29, 0</column>
 <column name="y_fu_110">11, 0, 11, 0</column>
 <column name="yoffset_fu_114">24, 0, 24, 0</column>
 <column name="zext_ln1539_reg_305">11, 0, 32, 21</column>

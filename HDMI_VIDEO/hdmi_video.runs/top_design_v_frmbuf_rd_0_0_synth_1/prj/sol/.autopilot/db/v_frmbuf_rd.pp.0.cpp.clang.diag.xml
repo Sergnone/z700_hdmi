@@ -11321,7 +11321,7 @@
       <key>filename</key>
       <string>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp</string>
       <key>line</key>
-      <integer>1234</integer>
+      <integer>1445</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -11337,7 +11337,7 @@
       <key>filename</key>
       <string>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp</string>
       <key>line</key>
-      <integer>1239</integer>
+      <integer>1449</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -11353,15 +11353,31 @@
       <key>filename</key>
       <string>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp</string>
       <key>line</key>
-      <integer>1242</integer>
+      <integer>1452</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=Bytes2MultiPixStream_XLX_SEP_ PragmaOptions=II=8_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=Bytes2MultiPixStream_XLX_SEP_ PragmaOptions=II=2_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
       <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp</string>
+      <key>line</key>
+      <integer>687</integer>
+      <key>column</key>
+      <integer>14</integer>
+      <key>message</key>
+      <string>unused parameter &apos;Width&apos;</string>
+      <key>ID</key>
+      <integer>6591</integer>
+      <key>WarningOption</key>
+      <string>unused-parameter</string>
     </dict>
   </array>
 </dict>

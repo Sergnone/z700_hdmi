@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'MultiPixStream2Bytes'" level="0">
-<item name = "Date">Thu Feb 19 12:55:08 2026
+<item name = "Date">Thu Mar  5 14:47:30 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">6.67 ns, 4.813 ns, 1.80 ns</column>
+<column name="ap_clk">6.67 ns, 4.261 ns, 1.80 ns</column>
 </table>
 </item>
 </section>
@@ -24,19 +24,19 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1, 4153683, 6.667 ns, 27.693 ms, 1, 4153683, no</column>
+<column name="">1, 4671001, 6.667 ns, 31.142 ms, 1, 4671001, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196">MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1, 2, 3843, 13.334 ns, 25.621 us, 0, 0, loop pipeline stp</column>
+<column name="grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116">MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1, 2, 4322, 13.334 ns, 28.815 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop_RGB8_YUV8">320, 4153680, 5 ~ 3846, -, -, 64 ~ 1080, no</column>
+<column name="- loop_RGBX8_YUVX8">320, 4671000, 5 ~ 4325, -, -, 64 ~ 1080, no</column>
 </table>
 </item>
 </section>

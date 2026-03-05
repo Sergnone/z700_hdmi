@@ -22,20 +22,20 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>151632</Best-caseLatency>
+<Best-caseLatency>181808</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>4153684</Worst-caseLatency>
-<Best-caseRealTimeLatency>1.011 ms</Best-caseRealTimeLatency>
+<Worst-caseLatency>4671005</Worst-caseLatency>
+<Best-caseRealTimeLatency>1.212 ms</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>27.693 ms</Worst-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>31.142 ms</Worst-caseRealTimeLatency>
 <DataflowPipelineThroughput>
 <range>
 <min>7042</min>
-<max>4153684</max>
+<max>4671002</max>
 </range>
 </DataflowPipelineThroughput>
 <Interval-min>7042</Interval-min>
-<Interval-max>4153684</Interval-max>
+<Interval-max>4671002</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
@@ -48,9 +48,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>4</BRAM_18K>
-<DSP>1</DSP>
-<FF>1216</FF>
-<LUT>2065</LUT>
+<FF>1015</FF>
+<LUT>1750</LUT>
+<DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -735,8 +735,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>width_val5</name>
-<Object>width_val5</Object>
+<name>width_val4</name>
+<Object>width_val4</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -746,8 +746,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>width_val5_ap_vld</name>
-<Object>width_val5</Object>
+<name>width_val4_ap_vld</name>
+<Object>width_val4</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -757,8 +757,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>height_val8</name>
-<Object>height_val8</Object>
+<name>height_val7</name>
+<Object>height_val7</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -768,8 +768,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>height_val8_ap_vld</name>
-<Object>height_val8</Object>
+<name>height_val7_ap_vld</name>
+<Object>height_val7</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -779,8 +779,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>stride_val9</name>
-<Object>stride_val9</Object>
+<name>stride_val8</name>
+<Object>stride_val8</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -790,8 +790,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>stride_val9_ap_vld</name>
-<Object>stride_val9</Object>
+<name>stride_val8_ap_vld</name>
+<Object>stride_val8</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -801,8 +801,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>video_format_val10</name>
-<Object>video_format_val10</Object>
+<name>video_format_val9</name>
+<Object>video_format_val9</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -812,8 +812,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>video_format_val10_ap_vld</name>
-<Object>video_format_val10</Object>
+<name>video_format_val9_ap_vld</name>
+<Object>video_format_val9</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

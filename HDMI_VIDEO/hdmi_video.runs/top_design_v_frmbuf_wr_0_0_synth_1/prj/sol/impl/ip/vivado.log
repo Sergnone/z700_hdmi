@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Thu Feb 19 12:55:11 2026
-# Process ID         : 425717
+# Start of session at: Thu Mar  5 14:47:32 2026
+# Process ID         : 313773
 # Current directory  : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip
 # Command line       : vivado -notrace -mode batch -source run_ippack.tcl
 # Log file           : /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip/vivado.log
@@ -13,19 +13,19 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.3 LTS
 # Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13400
-# CPU Frequency      : 4101.716 MHz
+# CPU Frequency      : 4103.747 MHz
 # CPU Physical cores : 10
 # CPU Logical cores  : 16
 # Host memory        : 33409 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 41999 MB
-# Available Virtual  : 23900 MB
+# Available Virtual  : 29048 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace
 INFO: calling package_hls_ip ip_types=vitis sysgen json_file=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/sol_data.json outdir=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip srcdir=/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol ippack_options_dict=subcore_use_xci_files false ippack_options_dict=subcore_use_xci_files false
 INFO: Copied 1 ipmisc file(s) to /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip/misc
-INFO: Copied 32 verilog file(s) to /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip/hdl/verilog
-INFO: Copied 23 vhdl file(s) to /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip/hdl/vhdl
+INFO: Copied 31 verilog file(s) to /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip/hdl/verilog
+INFO: Copied 22 vhdl file(s) to /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip/hdl/vhdl
 INFO: Copied 10 swdriver file(s) to /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip/drivers
 INFO: Import ports from HDL: /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip/hdl/vhdl/top_design_v_frmbuf_wr_0_0_v_frmbuf_wr.vhd (top_design_v_frmbuf_wr_0_0_v_frmbuf_wr)
 INFO: Add axi4lite interface s_axi_CTRL
@@ -42,4 +42,4 @@ INFO: Calling post_process_sysgen to specialize IP
 Generating sysgen info xml from json file
 INFO: Created IP /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip/component.xml
 INFO: Created IP archive /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip/xilinx_com_ip_v_frmbuf_wr_3_0.zip
-INFO: [Common 17-206] Exiting Vivado at Thu Feb 19 12:55:14 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  5 14:47:35 2026...

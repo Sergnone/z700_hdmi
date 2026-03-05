@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="top_design_v_frmbuf_wr_0_0_v_frmbuf_wr,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-2,HLS_INPUT_CLOCK=6.667000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=4.866910,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=4,HLS_SYN_DSP=0,HLS_SYN_FF=2244,HLS_SYN_LUT=3351,HLS_VERSION=2025_2}" *)
+(* CORE_GENERATION_INFO="top_design_v_frmbuf_wr_0_0_v_frmbuf_wr,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-2,HLS_INPUT_CLOCK=6.667000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=4.866910,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=4,HLS_SYN_DSP=0,HLS_SYN_FF=2043,HLS_SYN_LUT=3036,HLS_VERSION=2025_2}" *)
 
 (* DowngradeIPIdentifiedWarnings="yes" *)
 module top_design_v_frmbuf_wr_0_0_v_frmbuf_wr (
@@ -410,22 +410,22 @@ top_design_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow grp_FrmbufWrHlsDataFlow_fu_164(
     .HwReg_frm_buffer(frm_buffer_read_reg_221),
     .WidthInBytes_val2(WidthInBytes_reg_271),
     .colorFormat_val3(colorFormat_reg_266),
-    .width_val5(trunc_ln157_2_reg_241),
-    .height_val8(trunc_ln157_3_reg_246),
-    .stride_val9(stride_read_reg_226),
-    .video_format_val10(trunc_ln157_1_reg_236),
+    .width_val4(trunc_ln157_2_reg_241),
+    .height_val7(trunc_ln157_3_reg_246),
+    .stride_val8(stride_read_reg_226),
+    .video_format_val9(trunc_ln157_1_reg_236),
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .s_axis_video_TVALID(s_axis_video_TVALID_int_regslice),
     .s_axis_video_TREADY(grp_FrmbufWrHlsDataFlow_fu_164_s_axis_video_TREADY),
-    .height_val8_ap_vld(1'b1),
-    .width_val5_ap_vld(1'b1),
+    .height_val7_ap_vld(1'b1),
+    .width_val4_ap_vld(1'b1),
     .colorFormat_val3_ap_vld(1'b1),
     .ap_start(grp_FrmbufWrHlsDataFlow_fu_164_ap_start),
     .WidthInBytes_val2_ap_vld(1'b1),
-    .video_format_val10_ap_vld(1'b1),
+    .video_format_val9_ap_vld(1'b1),
     .HwReg_frm_buffer_ap_vld(1'b1),
-    .stride_val9_ap_vld(1'b1),
+    .stride_val8_ap_vld(1'b1),
     .ap_done(grp_FrmbufWrHlsDataFlow_fu_164_ap_done),
     .ap_ready(grp_FrmbufWrHlsDataFlow_fu_164_ap_ready),
     .ap_idle(grp_FrmbufWrHlsDataFlow_fu_164_ap_idle),
@@ -572,7 +572,7 @@ top_design_v_frmbuf_wr_0_0_mul_14s_3ns_14_1_1 #(
     .din0_WIDTH( 14 ),
     .din1_WIDTH( 3 ),
     .dout_WIDTH( 14 ))
-mul_14s_3ns_14_1_1_U99(
+mul_14s_3ns_14_1_1_U89(
     .din0(trunc_ln157_reg_231),
     .din1(WidthInBytes_fu_216_p1),
     .dout(WidthInBytes_fu_216_p2)

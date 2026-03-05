@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'v_frmbuf_wr'" level="0">
-<item name = "Date">Thu Feb 19 12:55:08 2026
+<item name = "Date">Thu Mar  5 14:47:30 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">151636, 4153688, 1.011 ms, 27.693 ms, 151637, 4153689, no</column>
+<column name="">181812, 4671009, 1.212 ms, 31.142 ms, 181813, 4671010, no</column>
 </table>
 </item>
 <item name = "Detail">

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1552_1'
 ================================================================
-* Date:           Thu Feb 19 12:55:08 2026
+* Date:           Thu Mar  5 14:47:30 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -123,7 +123,7 @@ Target clock period: 6.667ns, clock uncertainty: 1.800ns.
 The critical path consists of the following:
 	'store' operation ('store_ln1552', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1552) of constant 0 11 bit on local variable 'x', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1552 [12]  (1.298 ns)
 	'load' operation 11 bit ('x', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1552) on local variable 'x', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1552 [15]  (0.000 ns)
-	'add' operation 11 bit ('add_ln1552', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1552) [18]  (1.482 ns)
+	'icmp' operation 1 bit ('icmp_ln1552', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1552) [16]  (1.482 ns)
 	'store' operation ('store_ln1552', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1552) of variable 'add_ln1552', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1552 11 bit on local variable 'x', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1552 [26]  (1.298 ns)
 
  <State 2>: 2.433ns

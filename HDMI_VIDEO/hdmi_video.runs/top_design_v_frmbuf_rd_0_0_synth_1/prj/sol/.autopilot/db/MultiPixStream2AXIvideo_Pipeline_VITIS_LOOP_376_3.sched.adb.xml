@@ -106,7 +106,7 @@ newFuncRoot:4 %tmp = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %empty
 
 <Node id="20" bw="2" op_0_bw="2" op_1_bw="2">
 <![CDATA[
-newFuncRoot:5 %tmp_2 = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %empty_48
+newFuncRoot:5 %tmp_2 = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %empty_44
 
 ]]></Node>
 <StgValue><ssdm name="tmp_2"/></StgValue>
@@ -121,7 +121,7 @@ newFuncRoot:5 %tmp_2 = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %empty_48
 
 <Node id="21" bw="2" op_0_bw="2" op_1_bw="2">
 <![CDATA[
-newFuncRoot:6 %tmp_3 = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %empty_47
+newFuncRoot:6 %tmp_3 = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %empty_43
 
 ]]></Node>
 <StgValue><ssdm name="tmp_3"/></StgValue>

@@ -235,7 +235,7 @@ attribute shreg_extract : string;
     signal zext_ln1539_reg_305 : STD_LOGIC_VECTOR (31 downto 0);
     signal zext_ln1552_fu_193_p1 : STD_LOGIC_VECTOR (23 downto 0);
     signal zext_ln1552_reg_310 : STD_LOGIC_VECTOR (23 downto 0);
-    signal trunc_ln4_reg_318 : STD_LOGIC_VECTOR (28 downto 0);
+    signal trunc_ln2_reg_318 : STD_LOGIC_VECTOR (28 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1552_1_fu_153_ap_start : STD_LOGIC;
@@ -529,7 +529,7 @@ begin
         m_axi_mm_video_0_BID => m_axi_mm_video_0_BID,
         m_axi_mm_video_0_BUSER => m_axi_mm_video_0_BUSER,
         loopWidth => loopWidth_reg_300,
-        sext_ln1552 => trunc_ln4_reg_318);
+        sext_ln1552 => trunc_ln2_reg_318);
 
 
 
@@ -616,7 +616,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state2)) then
-                trunc_ln4_reg_318 <= add_ln1552_fu_236_p2(31 downto 3);
+                trunc_ln2_reg_318 <= add_ln1552_fu_236_p2(31 downto 3);
             end if;
         end if;
     end process;
@@ -1249,7 +1249,7 @@ begin
         end if; 
     end process;
 
-        sext_ln1552_fu_266_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln4_reg_318),32));
+        sext_ln1552_fu_266_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln2_reg_318),32));
 
     shl_ln_fu_224_p3 <= (yoffset_fu_114 & ap_const_lv3_0);
     y_4_fu_215_p2 <= std_logic_vector(unsigned(y_fu_110) + unsigned(ap_const_lv11_1));

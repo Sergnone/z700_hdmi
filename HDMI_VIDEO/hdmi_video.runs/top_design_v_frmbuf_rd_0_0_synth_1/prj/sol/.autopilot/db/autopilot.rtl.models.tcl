@@ -5,13 +5,8 @@ set SynModuleInfo {
     }
   }
   {SRCNAME AXIMMvideo2Bytes MODELNAME AXIMMvideo2Bytes RTLNAME top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes}
-  {SRCNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 MODELNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 RTLNAME top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1}
-  {SRCNAME Bytes2MultiPixStream MODELNAME Bytes2MultiPixStream RTLNAME top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream
-    SUBMODULES {
-      {MODELNAME top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1 RTLNAME top_design_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1 BINDTYPE op TYPE urem IMPL auto_seq LATENCY 14 ALLOW_PRAGMA 1}
-      {MODELNAME top_design_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1 RTLNAME top_design_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-    }
-  }
+  {SRCNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 MODELNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 RTLNAME top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1}
+  {SRCNAME Bytes2MultiPixStream MODELNAME Bytes2MultiPixStream RTLNAME top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream}
   {SRCNAME {reg<unsigned short>} MODELNAME reg_unsigned_short_s RTLNAME top_design_v_frmbuf_rd_0_0_reg_unsigned_short_s}
   {SRCNAME MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 MODELNAME MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 RTLNAME top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1
     SUBMODULES {

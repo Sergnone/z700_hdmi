@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'v_frmbuf_rd'
 ================================================================
-* Date:           Thu Feb 19 12:55:08 2026
+* Date:           Thu Mar  5 14:47:30 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |    Interval    | Pipeline|
     |   min   |   max   |    min    |    max    |  min |   max   |   Type  |
     +---------+---------+-----------+-----------+------+---------+---------+
-    |     7174|  4152716|  47.829 us|  27.686 ms|  7175|  4152717|       no|
+    |     7174|  3115916|  47.829 us|  20.774 ms|  7175|  3115917|       no|
     +---------+---------+-----------+-----------+------+---------+---------+
 
     + Detail: 
@@ -103,8 +103,8 @@ State 3 <SV = 2> <Delay = 4.64>
 ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln255_1 = zext i3 %BYTES_PER_PIXEL_load" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:255]   --->   Operation 23 'zext' 'zext_ln255_1' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 24 [1/1] (4.64ns)   --->   "%WidthInBytes = mul i14 %trunc_ln135, i14 %zext_ln255_1" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:255]   --->   Operation 24 'mul' 'WidthInBytes' <Predicate = true> <Delay = 4.64> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.64> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 
-State 4 <SV = 3> <Delay = 4.39>
-ST_4 : Operation 25 [2/2] (4.39ns)   --->   "%call_ln259 = call void @FrmbufRdHlsDataFlow, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i64 %mm_video, i32 %frm_buffer_read, i11 %trunc_ln135_2, i11 %trunc_ln135_3, i16 %stride_read, i6 %trunc_ln135_1, i14 %WidthInBytes, i3 %colorFormat, i2 %mapComp" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:259]   --->   Operation 25 'call' 'call_ln259' <Predicate = true> <Delay = 4.39> <CoreType = "Generic">   --->   Generic Core
+State 4 <SV = 3> <Delay = 3.74>
+ST_4 : Operation 25 [2/2] (3.74ns)   --->   "%call_ln259 = call void @FrmbufRdHlsDataFlow, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i64 %mm_video, i32 %frm_buffer_read, i11 %trunc_ln135_2, i11 %trunc_ln135_3, i16 %stride_read, i6 %trunc_ln135_1, i14 %WidthInBytes, i3 %colorFormat, i2 %mapComp" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:259]   --->   Operation 25 'call' 'call_ln259' <Predicate = true> <Delay = 3.74> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.00>
 ST_5 : Operation 26 [1/2] (0.00ns)   --->   "%call_ln259 = call void @FrmbufRdHlsDataFlow, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i64 %mm_video, i32 %frm_buffer_read, i11 %trunc_ln135_2, i11 %trunc_ln135_3, i16 %stride_read, i6 %trunc_ln135_1, i14 %WidthInBytes, i3 %colorFormat, i2 %mapComp" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:259]   --->   Operation 26 'call' 'call_ln259' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -167,9 +167,9 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'mul' operation 14 bit ('WidthInBytes', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:255) [66]  (4.648 ns)
 
- <State 4>: 4.392ns
+ <State 4>: 3.749ns
 The critical path consists of the following:
-	'call' operation ('call_ln259', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:259) to 'FrmbufRdHlsDataFlow' [69]  (4.392 ns)
+	'call' operation ('call_ln259', prj/sol/.autopilot/db/v_frmbuf_rd.cpp:259) to 'FrmbufRdHlsDataFlow' [69]  (3.749 ns)
 
  <State 5>: 0.000ns
 The critical path consists of the following:

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3'
 ================================================================
-* Date:           Thu Feb 19 12:55:08 2026
+* Date:           Thu Mar  5 14:47:30 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -73,9 +73,9 @@
     +-------------------------+---------------------+---------+----+---+----+-----+
     |         Instance        |        Module       | BRAM_18K| DSP| FF| LUT| URAM|
     +-------------------------+---------------------+---------+----+---+----+-----+
-    |sparsemux_7_2_8_1_1_U40  |sparsemux_7_2_8_1_1  |        0|   0|  0|   9|    0|
-    |sparsemux_7_2_8_1_1_U41  |sparsemux_7_2_8_1_1  |        0|   0|  0|   9|    0|
-    |sparsemux_7_2_8_1_1_U42  |sparsemux_7_2_8_1_1  |        0|   0|  0|   9|    0|
+    |sparsemux_7_2_8_1_1_U27  |sparsemux_7_2_8_1_1  |        0|   0|  0|   9|    0|
+    |sparsemux_7_2_8_1_1_U28  |sparsemux_7_2_8_1_1  |        0|   0|  0|   9|    0|
+    |sparsemux_7_2_8_1_1_U29  |sparsemux_7_2_8_1_1  |        0|   0|  0|   9|    0|
     +-------------------------+---------------------+---------+----+---+----+-----+
     |Total                    |                     |        0|   0|  0|  27|    0|
     +-------------------------+---------------------+---------+----+---+----+-----+
@@ -167,8 +167,8 @@
 |sof                  |   in|    1|     ap_none|                                                sof|        scalar|
 |cols                 |   in|   11|     ap_none|                                               cols|        scalar|
 |add_ln392            |   in|   12|     ap_none|                                          add_ln392|        scalar|
-|empty_47             |   in|    2|     ap_none|                                           empty_47|        scalar|
-|empty_48             |   in|    2|     ap_none|                                           empty_48|        scalar|
+|empty_43             |   in|    2|     ap_none|                                           empty_43|        scalar|
+|empty_44             |   in|    2|     ap_none|                                           empty_44|        scalar|
 |empty                |   in|    2|     ap_none|                                              empty|        scalar|
 |m_axis_video_TVALID  |  out|    1|        axis|                              m_axis_video_V_dest_V|       pointer|
 |m_axis_video_TDEST   |  out|    1|        axis|                              m_axis_video_V_dest_V|       pointer|

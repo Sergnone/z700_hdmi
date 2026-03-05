@@ -29,17 +29,14 @@ module top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes (
         bytePlanes_num_data_valid,
         bytePlanes_fifo_cap,
         Height_val,
-        WidthInPix_val,
         WidthInBytes_val,
         VideoFormat_val
 );
 
-parameter    ap_ST_fsm_state1 = 6'd1;
-parameter    ap_ST_fsm_state2 = 6'd2;
-parameter    ap_ST_fsm_state3 = 6'd4;
-parameter    ap_ST_fsm_state4 = 6'd8;
-parameter    ap_ST_fsm_state5 = 6'd16;
-parameter    ap_ST_fsm_state6 = 6'd32;
+parameter    ap_ST_fsm_state1 = 4'd1;
+parameter    ap_ST_fsm_state2 = 4'd2;
+parameter    ap_ST_fsm_state3 = 4'd4;
+parameter    ap_ST_fsm_state4 = 4'd8;
 
 input   ap_clk;
 input   ap_rst;
@@ -59,10 +56,9 @@ input  [2:0] img_fifo_cap;
 output  [63:0] bytePlanes_din;
 input   bytePlanes_full_n;
 output   bytePlanes_write;
-input  [9:0] bytePlanes_num_data_valid;
-input  [9:0] bytePlanes_fifo_cap;
+input  [31:0] bytePlanes_num_data_valid;
+input  [31:0] bytePlanes_fifo_cap;
 input  [10:0] Height_val;
-input  [10:0] WidthInPix_val;
 input  [13:0] WidthInBytes_val;
 input  [5:0] VideoFormat_val;
 
@@ -73,129 +69,80 @@ reg start_write;
 reg    real_start;
 reg    start_once_reg;
 reg    ap_done_reg;
-(* fsm_encoding = "none" *) reg   [5:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [3:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    internal_ap_ready;
-wire   [5:0] VideoFormat_val_read_read_fu_172_p2;
-reg   [5:0] VideoFormat_val_read_reg_479;
+wire   [5:0] VideoFormat_val_read_read_fu_98_p2;
+reg   [5:0] VideoFormat_val_read_reg_212;
 reg    ap_block_state1;
-reg   [10:0] Height_val_read_reg_483;
-wire   [10:0] add_ln1073_fu_277_p2;
-reg   [10:0] add_ln1073_reg_495;
-wire   [2:0] remPix_fu_283_p1;
-reg   [2:0] remPix_reg_500;
-reg   [9:0] trunc_ln1_reg_508;
+reg   [10:0] Height_val_read_reg_216;
+wire   [10:0] trunc_ln681_1_fu_150_p4;
+reg   [10:0] trunc_ln681_1_reg_234;
+wire   [0:0] xor_ln685_fu_172_p2;
+reg   [0:0] xor_ln685_reg_239;
+wire   [11:0] add_ln702_fu_178_p2;
+reg   [11:0] add_ln702_reg_244;
+wire   [10:0] y_2_fu_202_p2;
+reg   [10:0] y_2_reg_252;
 wire    ap_CS_fsm_state2;
-reg   [8:0] trunc_ln1_cast_reg_513;
-wire   [0:0] icmp_ln1077_fu_324_p2;
-reg   [0:0] icmp_ln1077_reg_518;
+wire    grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_start;
+wire    grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_done;
+wire    grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_idle;
+wire    grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_ready;
+wire   [63:0] grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_bytePlanes_din;
+wire    grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_bytePlanes_write;
+wire    grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_img_read;
+wire   [63:0] grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_out_pix_1_out_o;
+wire    grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_out_pix_1_out_o_ap_vld;
+reg    grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_start_reg;
+wire   [0:0] icmp_ln693_fu_197_p2;
 wire    ap_CS_fsm_state3;
-wire   [9:0] add_ln1095_fu_385_p2;
-reg   [9:0] add_ln1095_reg_523;
-wire   [0:0] icmp_ln1095_fu_400_p2;
-reg   [0:0] icmp_ln1095_reg_528;
-wire   [0:0] icmp_ln1095_1_fu_406_p2;
-reg   [0:0] icmp_ln1095_1_reg_533;
-wire   [0:0] icmp_ln1095_2_fu_422_p2;
-reg   [0:0] icmp_ln1095_2_reg_538;
-wire   [0:0] icmp_ln1095_3_fu_428_p2;
-reg   [0:0] icmp_ln1095_3_reg_543;
-wire   [0:0] icmp_ln1095_4_fu_434_p2;
-reg   [0:0] icmp_ln1095_4_reg_548;
-wire   [0:0] icmp_ln1095_5_fu_440_p2;
-reg   [0:0] icmp_ln1095_5_reg_553;
-reg   [0:0] tmp_6_reg_558;
-wire   [0:0] icmp_ln1110_fu_454_p2;
-reg   [0:0] icmp_ln1110_reg_563;
-wire    grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_start;
-wire    grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_done;
-wire    grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_idle;
-wire    grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_ready;
-wire    grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_img_read;
-wire   [63:0] grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_bytePlanes_din;
-wire    grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_bytePlanes_write;
-reg    grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_start_reg;
-wire    ap_CS_fsm_state5;
-wire    ap_CS_fsm_state6;
-reg   [10:0] y_fu_168;
-wire   [10:0] y_2_fu_468_p2;
+reg   [63:0] out_pix_fu_90;
+reg   [10:0] y_fu_94;
 wire    ap_CS_fsm_state4;
-wire   [0:0] icmp_ln1086_fu_463_p2;
-wire   [13:0] add_ln1072_fu_261_p2;
-wire   [10:0] trunc_ln_fu_267_p4;
-wire   [10:0] mul_ln1073_fu_295_p0;
-wire   [12:0] mul_ln1073_fu_295_p1;
-wire   [22:0] mul_ln1073_fu_295_p2;
-wire   [3:0] zext_ln1075_fu_321_p1;
-wire   [5:0] tmp_3_fu_344_p3;
-wire   [7:0] p_shl_fu_337_p3;
-wire   [7:0] zext_ln1081_fu_351_p1;
-wire   [7:0] sub_ln1081_fu_355_p2;
-wire   [7:0] add_ln1081_fu_361_p2;
-wire   [1:0] trunc_ln2_fu_367_p4;
-wire   [3:0] remainPix_fu_329_p3;
-wire   [2:0] tmp_4_fu_390_p4;
-wire   [1:0] tmp_5_fu_412_p4;
-wire   [1:0] remainTrx_fu_377_p3;
-reg   [5:0] ap_NS_fsm;
+wire   [13:0] add_ln681_fu_144_p2;
+wire   [0:0] tmp_2_fu_164_p3;
+wire   [11:0] zext_ln681_fu_160_p1;
+reg   [3:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
-wire    ap_ST_fsm_state3_blk;
+reg    ap_ST_fsm_state3_blk;
 wire    ap_ST_fsm_state4_blk;
-wire    ap_ST_fsm_state5_blk;
-reg    ap_ST_fsm_state6_blk;
-wire   [22:0] mul_ln1073_fu_295_p00;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
 #0 start_once_reg = 1'b0;
 #0 ap_done_reg = 1'b0;
-#0 ap_CS_fsm = 6'd1;
-#0 grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_start_reg = 1'b0;
-#0 y_fu_168 = 11'd0;
+#0 ap_CS_fsm = 4'd1;
+#0 grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_start_reg = 1'b0;
+#0 out_pix_fu_90 = 64'd0;
+#0 y_fu_94 = 11'd0;
 end
 
-top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1 grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196(
+top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1 grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_start),
-    .ap_done(grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_done),
-    .ap_idle(grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_idle),
-    .ap_ready(grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_ready),
+    .ap_start(grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_start),
+    .ap_done(grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_done),
+    .ap_idle(grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_idle),
+    .ap_ready(grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_ready),
+    .bytePlanes_din(grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_bytePlanes_din),
+    .bytePlanes_full_n(bytePlanes_full_n),
+    .bytePlanes_write(grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_bytePlanes_write),
+    .bytePlanes_num_data_valid(bytePlanes_num_data_valid),
+    .bytePlanes_fifo_cap(bytePlanes_fifo_cap),
     .img_dout(img_dout),
     .img_empty_n(img_empty_n),
-    .img_read(grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_img_read),
+    .img_read(grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_img_read),
     .img_num_data_valid(3'd0),
     .img_fifo_cap(3'd0),
-    .bytePlanes_din(grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_bytePlanes_din),
-    .bytePlanes_full_n(bytePlanes_full_n),
-    .bytePlanes_write(grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_bytePlanes_write),
-    .bytePlanes_num_data_valid(10'd0),
-    .bytePlanes_fifo_cap(10'd0),
-    .trunc_ln1(trunc_ln1_cast_reg_513),
-    .icmp_ln1110_1(icmp_ln1110_reg_563),
-    .empty(tmp_6_reg_558),
-    .icmp_ln1077(icmp_ln1077_reg_518),
-    .icmp_ln1095_5(icmp_ln1095_5_reg_553),
-    .icmp_ln1095_4(icmp_ln1095_4_reg_548),
-    .icmp_ln1095_3(icmp_ln1095_3_reg_543),
-    .icmp9(icmp_ln1095_2_reg_538),
-    .icmp_ln1095_1(icmp_ln1095_1_reg_533),
-    .add_ln1095(add_ln1095_reg_523),
-    .icmp6(icmp_ln1095_reg_528)
-);
-
-top_design_v_frmbuf_wr_0_0_mul_11ns_13ns_23_1_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 1 ),
-    .din0_WIDTH( 11 ),
-    .din1_WIDTH( 13 ),
-    .dout_WIDTH( 23 ))
-mul_11ns_13ns_23_1_1_U62(
-    .din0(mul_ln1073_fu_295_p0),
-    .din1(mul_ln1073_fu_295_p1),
-    .dout(mul_ln1073_fu_295_p2)
+    .trunc_ln681_1(trunc_ln681_1_reg_234),
+    .add_ln702(add_ln702_reg_244),
+    .rev(xor_ln685_reg_239),
+    .out_pix_1_out_i(out_pix_fu_90),
+    .out_pix_1_out_o(grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_out_pix_1_out_o),
+    .out_pix_1_out_o_ap_vld(grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_out_pix_1_out_o_ap_vld)
 );
 
 always @ (posedge ap_clk) begin
@@ -212,7 +159,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((1'b1 == ap_CS_fsm_state4) & ((6'd43 == VideoFormat_val_read_reg_479) | ((6'd42 == VideoFormat_val_read_reg_479) | ((6'd44 == VideoFormat_val_read_reg_479) | ((6'd41 == VideoFormat_val_read_reg_479) | ((6'd11 == VideoFormat_val_read_reg_479) | ((6'd10 == VideoFormat_val_read_reg_479) | ((6'd27 == VideoFormat_val_read_reg_479) | ((6'd16 == VideoFormat_val_read_reg_479) | ((6'd15 == VideoFormat_val_read_reg_479) | ((6'd12 == VideoFormat_val_read_reg_479) | ((6'd28 == VideoFormat_val_read_reg_479) | ((6'd19 == VideoFormat_val_read_reg_479) | ((6'd18 == VideoFormat_val_read_reg_479) | ((6'd23 == VideoFormat_val_read_reg_479) | ((6'd22 == VideoFormat_val_read_reg_479) | ((6'd33 == VideoFormat_val_read_reg_479) | ((6'd32 == VideoFormat_val_read_reg_479) | ((6'd38 == VideoFormat_val_read_reg_479) | ((6'd37 == VideoFormat_val_read_reg_479) | ((icmp_ln1086_fu_463_p2 == 1'd1) | (~(6'd21 == VideoFormat_val_read_reg_479) & ~(6'd20 == VideoFormat_val_read_reg_479)))))))))))))))))))))))) begin
+        end else if (((1'b1 == ap_CS_fsm_state2) & ((6'd43 == VideoFormat_val_read_reg_212) | ((6'd42 == VideoFormat_val_read_reg_212) | ((6'd44 == VideoFormat_val_read_reg_212) | ((6'd41 == VideoFormat_val_read_reg_212) | ((icmp_ln693_fu_197_p2 == 1'd1) | (~(6'd11 == VideoFormat_val_read_reg_212) & ~(6'd10 == VideoFormat_val_read_reg_212))))))))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -220,12 +167,12 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_start_reg <= 1'b0;
+        grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state5)) begin
-            grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_start_reg <= 1'b1;
-        end else if ((grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_ready == 1'b1)) begin
-            grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state2) & (((6'd11 == VideoFormat_val_read_reg_212) & (icmp_ln693_fu_197_p2 == 1'd0)) | ((icmp_ln693_fu_197_p2 == 1'd0) & (6'd10 == VideoFormat_val_read_reg_212))))) begin
+            grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_start_reg <= 1'b1;
+        end else if ((grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_ready == 1'b1)) begin
+            grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -243,41 +190,34 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1) & ((6'd21 == VideoFormat_val_read_read_fu_172_p2) | (6'd20 == VideoFormat_val_read_read_fu_172_p2)))) begin
-        y_fu_168 <= 11'd0;
-    end else if (((1'b1 == ap_CS_fsm_state4) & (((6'd21 == VideoFormat_val_read_reg_479) & (icmp_ln1086_fu_463_p2 == 1'd0)) | ((icmp_ln1086_fu_463_p2 == 1'd0) & (6'd20 == VideoFormat_val_read_reg_479))))) begin
-        y_fu_168 <= y_2_fu_468_p2;
+    if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1) & ((6'd11 == VideoFormat_val_read_read_fu_98_p2) | (6'd10 == VideoFormat_val_read_read_fu_98_p2)))) begin
+        out_pix_fu_90 <= 64'd0;
+    end else if (((1'b1 == ap_CS_fsm_state3) & (grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_out_pix_1_out_o_ap_vld == 1'b1))) begin
+        out_pix_fu_90 <= grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_out_pix_1_out_o;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1) & ((6'd11 == VideoFormat_val_read_read_fu_98_p2) | (6'd10 == VideoFormat_val_read_read_fu_98_p2)))) begin
+        y_fu_94 <= 11'd0;
+    end else if ((1'b1 == ap_CS_fsm_state4)) begin
+        y_fu_94 <= y_2_reg_252;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        Height_val_read_reg_483 <= Height_val;
-        VideoFormat_val_read_reg_479 <= VideoFormat_val;
-        add_ln1073_reg_495 <= add_ln1073_fu_277_p2;
-        remPix_reg_500 <= remPix_fu_283_p1;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        add_ln1095_reg_523 <= add_ln1095_fu_385_p2;
-        icmp_ln1077_reg_518 <= icmp_ln1077_fu_324_p2;
-        icmp_ln1095_1_reg_533 <= icmp_ln1095_1_fu_406_p2;
-        icmp_ln1095_2_reg_538 <= icmp_ln1095_2_fu_422_p2;
-        icmp_ln1095_3_reg_543 <= icmp_ln1095_3_fu_428_p2;
-        icmp_ln1095_4_reg_548 <= icmp_ln1095_4_fu_434_p2;
-        icmp_ln1095_5_reg_553 <= icmp_ln1095_5_fu_440_p2;
-        icmp_ln1095_reg_528 <= icmp_ln1095_fu_400_p2;
-        icmp_ln1110_reg_563 <= icmp_ln1110_fu_454_p2;
-        tmp_6_reg_558 <= remainTrx_fu_377_p3[32'd1];
+        Height_val_read_reg_216 <= Height_val;
+        VideoFormat_val_read_reg_212 <= VideoFormat_val;
+        add_ln702_reg_244 <= add_ln702_fu_178_p2;
+        trunc_ln681_1_reg_234 <= {{add_ln681_fu_144_p2[13:3]}};
+        xor_ln685_reg_239 <= xor_ln685_fu_172_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        trunc_ln1_cast_reg_513 <= {{mul_ln1073_fu_295_p2[21:13]}};
-        trunc_ln1_reg_508 <= {{mul_ln1073_fu_295_p2[22:13]}};
+        y_2_reg_252 <= y_2_fu_202_p2;
     end
 end
 
@@ -291,22 +231,18 @@ end
 
 assign ap_ST_fsm_state2_blk = 1'b0;
 
-assign ap_ST_fsm_state3_blk = 1'b0;
-
-assign ap_ST_fsm_state4_blk = 1'b0;
-
-assign ap_ST_fsm_state5_blk = 1'b0;
-
 always @ (*) begin
-    if ((grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_done == 1'b0)) begin
-        ap_ST_fsm_state6_blk = 1'b1;
+    if ((grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_done == 1'b0)) begin
+        ap_ST_fsm_state3_blk = 1'b1;
     end else begin
-        ap_ST_fsm_state6_blk = 1'b0;
+        ap_ST_fsm_state3_blk = 1'b0;
     end
 end
 
+assign ap_ST_fsm_state4_blk = 1'b0;
+
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) & ((6'd43 == VideoFormat_val_read_reg_479) | ((6'd42 == VideoFormat_val_read_reg_479) | ((6'd44 == VideoFormat_val_read_reg_479) | ((6'd41 == VideoFormat_val_read_reg_479) | ((6'd11 == VideoFormat_val_read_reg_479) | ((6'd10 == VideoFormat_val_read_reg_479) | ((6'd27 == VideoFormat_val_read_reg_479) | ((6'd16 == VideoFormat_val_read_reg_479) | ((6'd15 == VideoFormat_val_read_reg_479) | ((6'd12 == VideoFormat_val_read_reg_479) | ((6'd28 == VideoFormat_val_read_reg_479) | ((6'd19 == VideoFormat_val_read_reg_479) | ((6'd18 == VideoFormat_val_read_reg_479) | ((6'd23 == VideoFormat_val_read_reg_479) | ((6'd22 == VideoFormat_val_read_reg_479) | ((6'd33 == VideoFormat_val_read_reg_479) | ((6'd32 == VideoFormat_val_read_reg_479) | ((6'd38 == VideoFormat_val_read_reg_479) | ((6'd37 == VideoFormat_val_read_reg_479) | ((icmp_ln1086_fu_463_p2 == 1'd1) | (~(6'd21 == VideoFormat_val_read_reg_479) & ~(6'd20 == VideoFormat_val_read_reg_479)))))))))))))))))))))))) begin
+    if (((1'b1 == ap_CS_fsm_state2) & ((6'd43 == VideoFormat_val_read_reg_212) | ((6'd42 == VideoFormat_val_read_reg_212) | ((6'd44 == VideoFormat_val_read_reg_212) | ((6'd41 == VideoFormat_val_read_reg_212) | ((icmp_ln693_fu_197_p2 == 1'd1) | (~(6'd11 == VideoFormat_val_read_reg_212) & ~(6'd10 == VideoFormat_val_read_reg_212))))))))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = ap_done_reg;
@@ -322,7 +258,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) & ((6'd43 == VideoFormat_val_read_reg_479) | ((6'd42 == VideoFormat_val_read_reg_479) | ((6'd44 == VideoFormat_val_read_reg_479) | ((6'd41 == VideoFormat_val_read_reg_479) | ((6'd11 == VideoFormat_val_read_reg_479) | ((6'd10 == VideoFormat_val_read_reg_479) | ((6'd27 == VideoFormat_val_read_reg_479) | ((6'd16 == VideoFormat_val_read_reg_479) | ((6'd15 == VideoFormat_val_read_reg_479) | ((6'd12 == VideoFormat_val_read_reg_479) | ((6'd28 == VideoFormat_val_read_reg_479) | ((6'd19 == VideoFormat_val_read_reg_479) | ((6'd18 == VideoFormat_val_read_reg_479) | ((6'd23 == VideoFormat_val_read_reg_479) | ((6'd22 == VideoFormat_val_read_reg_479) | ((6'd33 == VideoFormat_val_read_reg_479) | ((6'd32 == VideoFormat_val_read_reg_479) | ((6'd38 == VideoFormat_val_read_reg_479) | ((6'd37 == VideoFormat_val_read_reg_479) | ((icmp_ln1086_fu_463_p2 == 1'd1) | (~(6'd21 == VideoFormat_val_read_reg_479) & ~(6'd20 == VideoFormat_val_read_reg_479)))))))))))))))))))))))) begin
+    if (((1'b1 == ap_CS_fsm_state2) & ((6'd43 == VideoFormat_val_read_reg_212) | ((6'd42 == VideoFormat_val_read_reg_212) | ((6'd44 == VideoFormat_val_read_reg_212) | ((6'd41 == VideoFormat_val_read_reg_212) | ((icmp_ln693_fu_197_p2 == 1'd1) | (~(6'd11 == VideoFormat_val_read_reg_212) & ~(6'd10 == VideoFormat_val_read_reg_212))))))))) begin
         internal_ap_ready = 1'b1;
     end else begin
         internal_ap_ready = 1'b0;
@@ -348,37 +284,28 @@ end
 always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state1 : begin
-            if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1) & ((6'd43 == VideoFormat_val_read_read_fu_172_p2) | ((6'd42 == VideoFormat_val_read_read_fu_172_p2) | ((6'd44 == VideoFormat_val_read_read_fu_172_p2) | ((6'd41 == VideoFormat_val_read_read_fu_172_p2) | ((6'd11 == VideoFormat_val_read_read_fu_172_p2) | ((6'd10 == VideoFormat_val_read_read_fu_172_p2) | ((6'd27 == VideoFormat_val_read_read_fu_172_p2) | ((6'd16 == VideoFormat_val_read_read_fu_172_p2) | ((6'd15 == VideoFormat_val_read_read_fu_172_p2) | ((6'd12 == VideoFormat_val_read_read_fu_172_p2) | ((6'd28 == VideoFormat_val_read_read_fu_172_p2) | ((6'd19 == VideoFormat_val_read_read_fu_172_p2) | ((6'd18 == VideoFormat_val_read_read_fu_172_p2) | ((6'd23 == VideoFormat_val_read_read_fu_172_p2) | ((6'd22 == VideoFormat_val_read_read_fu_172_p2) | ((6'd33 == VideoFormat_val_read_read_fu_172_p2) | ((6'd32 == VideoFormat_val_read_read_fu_172_p2) | ((6'd38 == VideoFormat_val_read_read_fu_172_p2) | ((6'd37 == VideoFormat_val_read_read_fu_172_p2) | (~(6'd21 == VideoFormat_val_read_read_fu_172_p2) 
-    & ~(6'd20 == VideoFormat_val_read_read_fu_172_p2))))))))))))))))))))))) begin
-                ap_NS_fsm = ap_ST_fsm_state4;
-            end else if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1) & ((6'd21 == VideoFormat_val_read_read_fu_172_p2) | (6'd20 == VideoFormat_val_read_read_fu_172_p2)))) begin
+            if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end
         end
         ap_ST_fsm_state2 : begin
-            ap_NS_fsm = ap_ST_fsm_state3;
-        end
-        ap_ST_fsm_state3 : begin
-            ap_NS_fsm = ap_ST_fsm_state4;
-        end
-        ap_ST_fsm_state4 : begin
-            if (((1'b1 == ap_CS_fsm_state4) & ((6'd43 == VideoFormat_val_read_reg_479) | ((6'd42 == VideoFormat_val_read_reg_479) | ((6'd44 == VideoFormat_val_read_reg_479) | ((6'd41 == VideoFormat_val_read_reg_479) | ((6'd11 == VideoFormat_val_read_reg_479) | ((6'd10 == VideoFormat_val_read_reg_479) | ((6'd27 == VideoFormat_val_read_reg_479) | ((6'd16 == VideoFormat_val_read_reg_479) | ((6'd15 == VideoFormat_val_read_reg_479) | ((6'd12 == VideoFormat_val_read_reg_479) | ((6'd28 == VideoFormat_val_read_reg_479) | ((6'd19 == VideoFormat_val_read_reg_479) | ((6'd18 == VideoFormat_val_read_reg_479) | ((6'd23 == VideoFormat_val_read_reg_479) | ((6'd22 == VideoFormat_val_read_reg_479) | ((6'd33 == VideoFormat_val_read_reg_479) | ((6'd32 == VideoFormat_val_read_reg_479) | ((6'd38 == VideoFormat_val_read_reg_479) | ((6'd37 == VideoFormat_val_read_reg_479) | ((icmp_ln1086_fu_463_p2 == 1'd1) | (~(6'd21 == VideoFormat_val_read_reg_479) & ~(6'd20 == VideoFormat_val_read_reg_479)))))))))))))))))))))))) begin
+            if (((1'b1 == ap_CS_fsm_state2) & ((6'd43 == VideoFormat_val_read_reg_212) | ((6'd42 == VideoFormat_val_read_reg_212) | ((6'd44 == VideoFormat_val_read_reg_212) | ((6'd41 == VideoFormat_val_read_reg_212) | ((icmp_ln693_fu_197_p2 == 1'd1) | (~(6'd11 == VideoFormat_val_read_reg_212) & ~(6'd10 == VideoFormat_val_read_reg_212))))))))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state5;
+                ap_NS_fsm = ap_ST_fsm_state3;
             end
         end
-        ap_ST_fsm_state5 : begin
-            ap_NS_fsm = ap_ST_fsm_state6;
-        end
-        ap_ST_fsm_state6 : begin
-            if (((1'b1 == ap_CS_fsm_state6) & (grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_done == 1'b1))) begin
+        ap_ST_fsm_state3 : begin
+            if (((grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
                 ap_NS_fsm = ap_ST_fsm_state4;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state6;
+                ap_NS_fsm = ap_ST_fsm_state3;
             end
+        end
+        ap_ST_fsm_state4 : begin
+            ap_NS_fsm = ap_ST_fsm_state2;
         end
         default : begin
             ap_NS_fsm = 'bx;
@@ -386,15 +313,11 @@ always @ (*) begin
     endcase
 end
 
-assign VideoFormat_val_read_read_fu_172_p2 = VideoFormat_val;
+assign VideoFormat_val_read_read_fu_98_p2 = VideoFormat_val;
 
-assign add_ln1072_fu_261_p2 = (WidthInBytes_val + 14'd7);
+assign add_ln681_fu_144_p2 = (WidthInBytes_val + 14'd7);
 
-assign add_ln1073_fu_277_p2 = (trunc_ln_fu_267_p4 + 11'd2);
-
-assign add_ln1081_fu_361_p2 = (sub_ln1081_fu_355_p2 + 8'd63);
-
-assign add_ln1095_fu_385_p2 = ($signed(trunc_ln1_reg_508) + $signed(10'd1023));
+assign add_ln702_fu_178_p2 = ($signed(zext_ln681_fu_160_p1) + $signed(12'd4095));
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -404,74 +327,32 @@ assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
 
 assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
 
-assign ap_CS_fsm_state5 = ap_CS_fsm[32'd4];
-
-assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
-
 always @ (*) begin
     ap_block_state1 = ((ap_done_reg == 1'b1) | (real_start == 1'b0));
 end
 
 assign ap_ready = internal_ap_ready;
 
-assign bytePlanes_din = grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_bytePlanes_din;
+assign bytePlanes_din = grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_bytePlanes_din;
 
-assign bytePlanes_write = grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_bytePlanes_write;
+assign bytePlanes_write = grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_bytePlanes_write;
 
-assign grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_start = grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_ap_start_reg;
+assign grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_start = grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_ap_start_reg;
 
-assign icmp_ln1077_fu_324_p2 = ((remPix_reg_500 == 3'd0) ? 1'b1 : 1'b0);
+assign icmp_ln693_fu_197_p2 = ((y_fu_94 == Height_val_read_reg_216) ? 1'b1 : 1'b0);
 
-assign icmp_ln1086_fu_463_p2 = ((y_fu_168 == Height_val_read_reg_483) ? 1'b1 : 1'b0);
-
-assign icmp_ln1095_1_fu_406_p2 = ((remainPix_fu_329_p3 > 4'd2) ? 1'b1 : 1'b0);
-
-assign icmp_ln1095_2_fu_422_p2 = ((tmp_5_fu_412_p4 != 2'd0) ? 1'b1 : 1'b0);
-
-assign icmp_ln1095_3_fu_428_p2 = ((remainPix_fu_329_p3 > 4'd4) ? 1'b1 : 1'b0);
-
-assign icmp_ln1095_4_fu_434_p2 = ((remainPix_fu_329_p3 > 4'd5) ? 1'b1 : 1'b0);
-
-assign icmp_ln1095_5_fu_440_p2 = ((remainPix_fu_329_p3 > 4'd6) ? 1'b1 : 1'b0);
-
-assign icmp_ln1095_fu_400_p2 = ((tmp_4_fu_390_p4 != 3'd0) ? 1'b1 : 1'b0);
-
-assign icmp_ln1110_fu_454_p2 = ((remainTrx_fu_377_p3 == 2'd3) ? 1'b1 : 1'b0);
-
-assign img_read = grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196_img_read;
-
-assign mul_ln1073_fu_295_p0 = mul_ln1073_fu_295_p00;
-
-assign mul_ln1073_fu_295_p00 = add_ln1073_reg_495;
-
-assign mul_ln1073_fu_295_p1 = 23'd2731;
-
-assign p_shl_fu_337_p3 = {{remPix_reg_500}, {5'd0}};
-
-assign remPix_fu_283_p1 = WidthInPix_val[2:0];
-
-assign remainPix_fu_329_p3 = ((icmp_ln1077_fu_324_p2[0:0] == 1'b1) ? 4'd8 : zext_ln1075_fu_321_p1);
-
-assign remainTrx_fu_377_p3 = ((icmp_ln1077_fu_324_p2[0:0] == 1'b1) ? 2'd3 : trunc_ln2_fu_367_p4);
+assign img_read = grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116_img_read;
 
 assign start_out = real_start;
 
-assign sub_ln1081_fu_355_p2 = (p_shl_fu_337_p3 - zext_ln1081_fu_351_p1);
+assign tmp_2_fu_164_p3 = WidthInBytes_val[32'd2];
 
-assign tmp_3_fu_344_p3 = {{remPix_reg_500}, {3'd0}};
+assign trunc_ln681_1_fu_150_p4 = {{add_ln681_fu_144_p2[13:3]}};
 
-assign tmp_4_fu_390_p4 = {{remainPix_fu_329_p3[3:1]}};
+assign xor_ln685_fu_172_p2 = (tmp_2_fu_164_p3 ^ 1'd1);
 
-assign tmp_5_fu_412_p4 = {{remainPix_fu_329_p3[3:2]}};
+assign y_2_fu_202_p2 = (y_fu_94 + 11'd1);
 
-assign trunc_ln2_fu_367_p4 = {{add_ln1081_fu_361_p2[7:6]}};
-
-assign trunc_ln_fu_267_p4 = {{add_ln1072_fu_261_p2[13:3]}};
-
-assign y_2_fu_468_p2 = (y_fu_168 + 11'd1);
-
-assign zext_ln1075_fu_321_p1 = remPix_reg_500;
-
-assign zext_ln1081_fu_351_p1 = tmp_3_fu_344_p3;
+assign zext_ln681_fu_160_p1 = trunc_ln681_1_fu_150_p4;
 
 endmodule //top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes

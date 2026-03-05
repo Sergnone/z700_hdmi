@@ -126,8 +126,8 @@ set ArgLastReadFirstWriteLatency {
 		cols {Type I LastRead 0 FirstWrite -1}
 		add_ln392 {Type I LastRead 0 FirstWrite -1}
 		img {Type I LastRead 1 FirstWrite -1}
-		empty_47 {Type I LastRead 0 FirstWrite -1}
-		empty_48 {Type I LastRead 0 FirstWrite -1}
+		empty_43 {Type I LastRead 0 FirstWrite -1}
+		empty_44 {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
 		m_axis_video_V_data_V {Type O LastRead -1 FirstWrite 2}
 		m_axis_video_V_keep_V {Type O LastRead -1 FirstWrite 2}

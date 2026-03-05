@@ -271,8 +271,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>empty_47</name>
-<Object>empty_47</Object>
+<name>empty_43</name>
+<Object>empty_43</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -282,8 +282,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>empty_48</name>
-<Object>empty_48</Object>
+<name>empty_44</name>
+<Object>empty_44</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

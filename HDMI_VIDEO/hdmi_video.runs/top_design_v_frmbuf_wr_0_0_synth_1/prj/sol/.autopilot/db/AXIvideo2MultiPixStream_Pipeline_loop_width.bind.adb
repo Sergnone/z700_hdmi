@@ -2054,7 +2054,7 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>tmp_3</name>
+						<name>tmp_9</name>
 						<fileName>hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h</fileName>
 						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO</fileDirectory>
 						<lineNumber>63</lineNumber>
@@ -2254,7 +2254,7 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>tmp_5</name>
+						<name>tmp_1</name>
 						<fileName>hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h</fileName>
 						<fileDirectory>/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO</fileDirectory>
 						<lineNumber>63</lineNumber>
@@ -5304,19 +5304,19 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_3_fu_274</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>62</item>
-			</second>
-		</item>
-		<item>
-			<first>tmp_5_fu_293</first>
+			<first>tmp_1_fu_293</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>65</item>
+			</second>
+		</item>
+		<item>
+			<first>tmp_9_fu_274</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>62</item>
 			</second>
 		</item>
 		<item>

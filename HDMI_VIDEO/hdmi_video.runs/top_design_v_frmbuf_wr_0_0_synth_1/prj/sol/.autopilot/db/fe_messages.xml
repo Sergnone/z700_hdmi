@@ -1,4 +1,7 @@
 <xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-6591" msg_severity="WARNING" msg_loc="/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:429:8" msg_body="unused parameter 'WidthInPix'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
     <msg msg_groups="" msg_id="207-6591" msg_severity="WARNING" msg_loc="/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1528:30" msg_body="unused parameter 'dstImg2'">
         <args ClangWarningOption="unused-parameter"/>
     </msg>
@@ -2123,14 +2126,14 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:410:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="AXIvideo2MultiPixStream" ARG_PragmaIsValid="1" ARG_PragmaOptions="avg=0 max=0" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1088:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:695:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="MultiPixStream2Bytes" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=4320" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1089:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:696:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="MultiPixStream2Bytes" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="loop_flatten" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1092:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="MultiPixStream2Bytes" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=8" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:699:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="MultiPixStream2Bytes" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1549:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="Bytes2AXIMMvideo" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=4320" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
@@ -2168,17 +2171,14 @@
     <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:104:16" msg_body="Disaggregating variable 'bytePlanes'">
         <args Name="bytePlanes"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1093:24" msg_body="Loop 'VITIS_LOOP_1093_2' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_1093_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:700:23" msg_body="Loop 'VITIS_LOOP_700_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_700_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1097:25" msg_body="Loop 'VITIS_LOOP_1097_3' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_1097_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:704:24" msg_body="Loop 'VITIS_LOOP_704_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_704_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1099:26" msg_body="Loop 'VITIS_LOOP_1099_4' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_1099_4"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1108:24" msg_body="Loop 'VITIS_LOOP_1108_5' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_1108_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:706:25" msg_body="Loop 'VITIS_LOOP_706_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_706_4"/>
     </msg>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:350:22" msg_body="Loop 'VITIS_LOOP_350_1' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_350_1"/>
@@ -2186,17 +2186,14 @@
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:352:23" msg_body="Loop 'VITIS_LOOP_352_2' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_352_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:430:0" msg_body="Unrolling loop 'VITIS_LOOP_1093_2' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1093:24) in function 'MultiPixStream2Bytes' completely with a factor of 8">
-        <args Factor="8" LoopLoc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1093:24" LoopName="VITIS_LOOP_1093_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:430:0" msg_body="Unrolling loop 'VITIS_LOOP_700_2' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:700:23) in function 'MultiPixStream2Bytes' completely with a factor of 2">
+        <args Factor="2" LoopLoc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:700:23" LoopName="VITIS_LOOP_700_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:430:0" msg_body="Unrolling loop 'VITIS_LOOP_1097_3' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1097:25) in function 'MultiPixStream2Bytes' completely with a factor of 1">
-        <args Factor="1" LoopLoc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1097:25" LoopName="VITIS_LOOP_1097_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:430:0" msg_body="Unrolling loop 'VITIS_LOOP_704_3' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:704:24) in function 'MultiPixStream2Bytes' completely with a factor of 1">
+        <args Factor="1" LoopLoc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:704:24" LoopName="VITIS_LOOP_704_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:430:0" msg_body="Unrolling loop 'VITIS_LOOP_1099_4' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1099:26) in function 'MultiPixStream2Bytes' completely with a factor of 3">
-        <args Factor="3" LoopLoc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1099:26" LoopName="VITIS_LOOP_1099_4"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:430:0" msg_body="Unrolling loop 'VITIS_LOOP_1108_5' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1108:24) in function 'MultiPixStream2Bytes' completely with a factor of 3">
-        <args Factor="3" LoopLoc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:1108:24" LoopName="VITIS_LOOP_1108_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:430:0" msg_body="Unrolling loop 'VITIS_LOOP_706_4' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:706:25) in function 'MultiPixStream2Bytes' completely with a factor of 3">
+        <args Factor="3" LoopLoc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:706:25" LoopName="VITIS_LOOP_706_4"/>
     </msg>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:290:0" msg_body="Unrolling loop 'VITIS_LOOP_350_1' (prj/sol/.autopilot/db/v_frmbuf_wr.cpp:350:22) in function 'AXIvideo2MultiPixStream' completely with a factor of 1">
         <args Factor="1" LoopLoc="prj/sol/.autopilot/db/v_frmbuf_wr.cpp:350:22" LoopName="VITIS_LOOP_350_1"/>

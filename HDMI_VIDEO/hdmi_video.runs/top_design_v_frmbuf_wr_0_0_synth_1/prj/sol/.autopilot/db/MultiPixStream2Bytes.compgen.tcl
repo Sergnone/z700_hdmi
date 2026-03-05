@@ -1,11 +1,5 @@
 # This script segment is generated automatically by AutoPilot
 
-set name top_design_v_frmbuf_wr_0_0_mul_11ns_13ns_23_1_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
-}
-
-
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -16,7 +10,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 64 \
+    id 55 \
     name img \
     type fifo \
     dir I \
@@ -31,7 +25,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 65 \
+    id 56 \
     name bytePlanes \
     type fifo \
     dir O \
@@ -39,14 +33,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_bytePlanes \
     op interface \
-    ports { bytePlanes_din { O 64 vector } bytePlanes_full_n { I 1 bit } bytePlanes_write { O 1 bit } bytePlanes_num_data_valid { I 10 vector } bytePlanes_fifo_cap { I 10 vector } } \
+    ports { bytePlanes_din { O 64 vector } bytePlanes_full_n { I 1 bit } bytePlanes_write { O 1 bit } bytePlanes_num_data_valid { I 32 vector } bytePlanes_fifo_cap { I 32 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 66 \
+    id 57 \
     name Height_val \
     type other \
     dir I \
@@ -61,22 +55,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 67 \
-    name WidthInPix_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_WidthInPix_val \
-    op interface \
-    ports { WidthInPix_val { I 11 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 68 \
+    id 58 \
     name WidthInBytes_val \
     type other \
     dir I \
@@ -91,7 +70,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 69 \
+    id 59 \
     name VideoFormat_val \
     type other \
     dir I \

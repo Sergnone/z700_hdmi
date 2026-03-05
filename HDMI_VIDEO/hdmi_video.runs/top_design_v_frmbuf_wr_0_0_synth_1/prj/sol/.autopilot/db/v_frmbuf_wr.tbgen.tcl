@@ -240,10 +240,10 @@ set ArgLastReadFirstWriteLatency {
 		HwReg_frm_buffer {Type I LastRead 4 FirstWrite -1}
 		WidthInBytes_val2 {Type I LastRead 2 FirstWrite -1}
 		colorFormat_val3 {Type I LastRead 0 FirstWrite -1}
-		width_val5 {Type I LastRead 0 FirstWrite -1}
-		height_val8 {Type I LastRead 0 FirstWrite -1}
-		stride_val9 {Type I LastRead 4 FirstWrite -1}
-		video_format_val10 {Type I LastRead 2 FirstWrite -1}}
+		width_val4 {Type I LastRead 0 FirstWrite -1}
+		height_val7 {Type I LastRead 0 FirstWrite -1}
+		stride_val8 {Type I LastRead 4 FirstWrite -1}
+		video_format_val9 {Type I LastRead 2 FirstWrite -1}}
 	AXIvideo2MultiPixStream {
 		s_axis_video_V_data_V {Type I LastRead 1 FirstWrite -1}
 		s_axis_video_V_keep_V {Type I LastRead 1 FirstWrite -1}
@@ -300,26 +300,18 @@ set ArgLastReadFirstWriteLatency {
 	reg_unsigned_short_s {
 		d {Type I LastRead 1 FirstWrite -1}}
 	MultiPixStream2Bytes {
-		img {Type I LastRead 8 FirstWrite -1}
-		bytePlanes {Type O LastRead -1 FirstWrite 4}
+		img {Type I LastRead 2 FirstWrite -1}
+		bytePlanes {Type O LastRead -1 FirstWrite 3}
 		Height_val {Type I LastRead 0 FirstWrite -1}
-		WidthInPix_val {Type I LastRead 0 FirstWrite -1}
 		WidthInBytes_val {Type I LastRead 0 FirstWrite -1}
 		VideoFormat_val {Type I LastRead 0 FirstWrite -1}}
-	MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1 {
-		trunc_ln1 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1110_1 {Type I LastRead 0 FirstWrite -1}
-		bytePlanes {Type O LastRead -1 FirstWrite 4}
-		empty {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1077 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1095_5 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1095_4 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1095_3 {Type I LastRead 0 FirstWrite -1}
-		icmp9 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1095_1 {Type I LastRead 0 FirstWrite -1}
-		add_ln1095 {Type I LastRead 0 FirstWrite -1}
-		img {Type I LastRead 8 FirstWrite -1}
-		icmp6 {Type I LastRead 0 FirstWrite -1}}
+	MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1 {
+		trunc_ln681_1 {Type I LastRead 0 FirstWrite -1}
+		bytePlanes {Type O LastRead -1 FirstWrite 3}
+		add_ln702 {Type I LastRead 0 FirstWrite -1}
+		img {Type I LastRead 2 FirstWrite -1}
+		rev {Type I LastRead 0 FirstWrite -1}
+		out_pix_1_out {Type IO LastRead 3 FirstWrite 3}}
 	Bytes2AXIMMvideo {
 		bytePlanes {Type I LastRead 1 FirstWrite -1}
 		mm_video {Type O LastRead 5 FirstWrite 2}
@@ -336,8 +328,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "151636", "Max" : "4153688"}
-	, {"Name" : "Interval", "Min" : "151637", "Max" : "4153689"}
+	{"Name" : "Latency", "Min" : "181812", "Max" : "4671009"}
+	, {"Name" : "Interval", "Min" : "181813", "Max" : "4671010"}
 ]}
 
 set PipelineEnableSignalInfo {[

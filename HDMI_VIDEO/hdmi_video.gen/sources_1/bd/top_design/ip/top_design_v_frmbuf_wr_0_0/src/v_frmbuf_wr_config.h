@@ -22,12 +22,12 @@
 
 #define MAX_NR_PLANES           1
 
-#define HAS_RGBX8_YUVX8         0
+#define HAS_RGBX8_YUVX8         1
 #define HAS_RGBA8_YUVA8         0
 #define HAS_YUYV8               0
 #define HAS_RGBX10_YUVX10       0
 #define HAS_Y_UV8_Y_UV8_420     0
-#define HAS_RGB8_YUV8           1
+#define HAS_RGB8_YUV8           0
 #define HAS_Y_UV10_Y_UV10_420   0
 #define HAS_Y8                  0
 #define HAS_Y10                 0

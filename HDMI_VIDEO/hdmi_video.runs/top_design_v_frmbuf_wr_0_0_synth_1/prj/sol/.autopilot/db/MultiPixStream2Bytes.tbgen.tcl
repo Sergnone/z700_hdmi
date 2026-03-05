@@ -23,7 +23,6 @@ set C_modelArgList {
 	{ img int 24 regular {fifo 0 volatile }  }
 	{ bytePlanes int 64 regular {fifo 1 volatile }  }
 	{ Height_val int 11 regular {ap_stable 0} }
-	{ WidthInPix_val int 11 regular {ap_stable 0} }
 	{ WidthInBytes_val int 14 regular {ap_stable 0} }
 	{ VideoFormat_val int 6 regular {ap_stable 0} }
 }
@@ -34,11 +33,10 @@ set C_modelArgMapList {[
 	{ "Name" : "img", "interface" : "fifo", "bitwidth" : 24, "direction" : "READONLY"} , 
  	{ "Name" : "bytePlanes", "interface" : "fifo", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
  	{ "Name" : "Height_val", "interface" : "wire", "bitwidth" : 11, "direction" : "READONLY"} , 
- 	{ "Name" : "WidthInPix_val", "interface" : "wire", "bitwidth" : 11, "direction" : "READONLY"} , 
  	{ "Name" : "WidthInBytes_val", "interface" : "wire", "bitwidth" : 14, "direction" : "READONLY"} , 
  	{ "Name" : "VideoFormat_val", "interface" : "wire", "bitwidth" : 6, "direction" : "READONLY"} ]}
 # RTL Port declarations: 
-set portNum 24
+set portNum 23
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -58,12 +56,11 @@ set portList {
 	{ bytePlanes_din sc_out sc_lv 64 signal 1 } 
 	{ bytePlanes_full_n sc_in sc_logic 1 signal 1 } 
 	{ bytePlanes_write sc_out sc_logic 1 signal 1 } 
-	{ bytePlanes_num_data_valid sc_in sc_lv 10 signal 1 } 
-	{ bytePlanes_fifo_cap sc_in sc_lv 10 signal 1 } 
+	{ bytePlanes_num_data_valid sc_in sc_lv 32 signal 1 } 
+	{ bytePlanes_fifo_cap sc_in sc_lv 32 signal 1 } 
 	{ Height_val sc_in sc_lv 11 signal 2 } 
-	{ WidthInPix_val sc_in sc_lv 11 signal 3 } 
-	{ WidthInBytes_val sc_in sc_lv 14 signal 4 } 
-	{ VideoFormat_val sc_in sc_lv 6 signal 5 } 
+	{ WidthInBytes_val sc_in sc_lv 14 signal 3 } 
+	{ VideoFormat_val sc_in sc_lv 6 signal 4 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -84,41 +81,32 @@ set NewPortList {[
  	{ "name": "bytePlanes_din", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "bytePlanes", "role": "din" }} , 
  	{ "name": "bytePlanes_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bytePlanes", "role": "full_n" }} , 
  	{ "name": "bytePlanes_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bytePlanes", "role": "write" }} , 
- 	{ "name": "bytePlanes_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "bytePlanes", "role": "num_data_valid" }} , 
- 	{ "name": "bytePlanes_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "bytePlanes", "role": "fifo_cap" }} , 
+ 	{ "name": "bytePlanes_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "bytePlanes", "role": "num_data_valid" }} , 
+ 	{ "name": "bytePlanes_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "bytePlanes", "role": "fifo_cap" }} , 
  	{ "name": "Height_val", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "Height_val", "role": "default" }} , 
- 	{ "name": "WidthInPix_val", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "WidthInPix_val", "role": "default" }} , 
  	{ "name": "WidthInBytes_val", "direction": "in", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "WidthInBytes_val", "role": "default" }} , 
  	{ "name": "VideoFormat_val", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "VideoFormat_val", "role": "default" }}  ]}
 
 set ArgLastReadFirstWriteLatency {
 	MultiPixStream2Bytes {
-		img {Type I LastRead 8 FirstWrite -1}
-		bytePlanes {Type O LastRead -1 FirstWrite 4}
+		img {Type I LastRead 2 FirstWrite -1}
+		bytePlanes {Type O LastRead -1 FirstWrite 3}
 		Height_val {Type I LastRead 0 FirstWrite -1}
-		WidthInPix_val {Type I LastRead 0 FirstWrite -1}
 		WidthInBytes_val {Type I LastRead 0 FirstWrite -1}
 		VideoFormat_val {Type I LastRead 0 FirstWrite -1}}
-	MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1 {
-		trunc_ln1 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1110_1 {Type I LastRead 0 FirstWrite -1}
-		bytePlanes {Type O LastRead -1 FirstWrite 4}
-		empty {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1077 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1095_5 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1095_4 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1095_3 {Type I LastRead 0 FirstWrite -1}
-		icmp9 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1095_1 {Type I LastRead 0 FirstWrite -1}
-		add_ln1095 {Type I LastRead 0 FirstWrite -1}
-		img {Type I LastRead 8 FirstWrite -1}
-		icmp6 {Type I LastRead 0 FirstWrite -1}}}
+	MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1 {
+		trunc_ln681_1 {Type I LastRead 0 FirstWrite -1}
+		bytePlanes {Type O LastRead -1 FirstWrite 3}
+		add_ln702 {Type I LastRead 0 FirstWrite -1}
+		img {Type I LastRead 2 FirstWrite -1}
+		rev {Type I LastRead 0 FirstWrite -1}
+		out_pix_1_out {Type IO LastRead 3 FirstWrite 3}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1", "Max" : "4153683"}
-	, {"Name" : "Interval", "Min" : "1", "Max" : "4153683"}
+	{"Name" : "Latency", "Min" : "1", "Max" : "4671001"}
+	, {"Name" : "Interval", "Min" : "1", "Max" : "4671001"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -126,9 +114,8 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	img { ap_fifo {  { img_dout fifo_data_out 0 24 }  { img_empty_n fifo_status_empty 0 1 }  { img_read fifo_data_in 1 1 }  { img_num_data_valid fifo_update 0 3 }  { img_fifo_cap fifo_data 0 3 } } }
-	bytePlanes { ap_fifo {  { bytePlanes_din fifo_data_out 1 64 }  { bytePlanes_full_n fifo_status_empty 0 1 }  { bytePlanes_write fifo_data_in 1 1 }  { bytePlanes_num_data_valid fifo_update 0 10 }  { bytePlanes_fifo_cap fifo_data 0 10 } } }
+	bytePlanes { ap_fifo {  { bytePlanes_din fifo_data_out 1 64 }  { bytePlanes_full_n fifo_status_empty 0 1 }  { bytePlanes_write fifo_data_in 1 1 }  { bytePlanes_num_data_valid fifo_update 0 32 }  { bytePlanes_fifo_cap fifo_data 0 32 } } }
 	Height_val { ap_stable {  { Height_val in_data 0 11 } } }
-	WidthInPix_val { ap_stable {  { WidthInPix_val in_data 0 11 } } }
 	WidthInBytes_val { ap_stable {  { WidthInBytes_val in_data 0 14 } } }
 	VideoFormat_val { ap_stable {  { VideoFormat_val in_data 0 6 } } }
 }

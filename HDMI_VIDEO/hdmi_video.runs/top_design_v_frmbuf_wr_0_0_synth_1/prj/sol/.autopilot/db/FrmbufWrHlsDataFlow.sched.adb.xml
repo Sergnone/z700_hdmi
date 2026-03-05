@@ -49,10 +49,10 @@
 
 <Node id="22" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-entry:6 %height_val8_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %height_val8
+entry:6 %height_val7_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %height_val7
 
 ]]></Node>
-<StgValue><ssdm name="height_val8_read"/></StgValue>
+<StgValue><ssdm name="height_val7_read"/></StgValue>
 </operation>
 
 <operation id="8" st_id="1" stage="1" lat="1">
@@ -64,10 +64,10 @@ entry:6 %height_val8_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %height_val
 
 <Node id="23" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-entry:7 %width_val5_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %width_val5
+entry:7 %width_val4_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %width_val4
 
 ]]></Node>
-<StgValue><ssdm name="width_val5_read"/></StgValue>
+<StgValue><ssdm name="width_val4_read"/></StgValue>
 </operation>
 
 <operation id="9" st_id="1" stage="1" lat="1">
@@ -124,7 +124,7 @@ entry:21 %bytePlanes = alloca i32 1
 
 <Node id="41" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="3" op_3_bw="3" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="24" op_9_bw="11" op_10_bw="11" op_11_bw="3">
 <![CDATA[
-entry:25 %call_ln126 = call void @AXIvideo2MultiPixStream, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i24 %img, i11 %height_val8_read, i11 %width_val5_read, i3 %colorFormat_val3_read
+entry:25 %call_ln126 = call void @AXIvideo2MultiPixStream, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i24 %img, i11 %height_val7_read, i11 %width_val4_read, i3 %colorFormat_val3_read
 
 ]]></Node>
 <StgValue><ssdm name="call_ln126"/></StgValue>
@@ -142,7 +142,7 @@ entry:25 %call_ln126 = call void @AXIvideo2MultiPixStream, i24 %s_axis_video_V_d
 
 <Node id="41" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="3" op_3_bw="3" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="24" op_9_bw="11" op_10_bw="11" op_11_bw="3">
 <![CDATA[
-entry:25 %call_ln126 = call void @AXIvideo2MultiPixStream, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i24 %img, i11 %height_val8_read, i11 %width_val5_read, i3 %colorFormat_val3_read
+entry:25 %call_ln126 = call void @AXIvideo2MultiPixStream, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i24 %img, i11 %height_val7_read, i11 %width_val4_read, i3 %colorFormat_val3_read
 
 ]]></Node>
 <StgValue><ssdm name="call_ln126"/></StgValue>
@@ -160,10 +160,10 @@ entry:25 %call_ln126 = call void @AXIvideo2MultiPixStream, i24 %s_axis_video_V_d
 
 <Node id="20" bw="6" op_0_bw="6" op_1_bw="6">
 <![CDATA[
-entry:4 %video_format_val10_read = read i6 @_ssdm_op_Read.ap_auto.i6, i6 %video_format_val10
+entry:4 %video_format_val9_read = read i6 @_ssdm_op_Read.ap_auto.i6, i6 %video_format_val9
 
 ]]></Node>
-<StgValue><ssdm name="video_format_val10_read"/></StgValue>
+<StgValue><ssdm name="video_format_val9_read"/></StgValue>
 </operation>
 
 <operation id="15" st_id="3" stage="1" lat="1">
@@ -188,9 +188,9 @@ entry:9 %WidthInBytes_val2_read = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %Widt
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="11" op_4_bw="11" op_5_bw="14" op_6_bw="6" op_7_bw="0" op_8_bw="0">
+<Node id="42" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="11" op_4_bw="14" op_5_bw="6" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:26 %call_ln139 = call void @MultiPixStream2Bytes, i24 %img, i64 %bytePlanes, i11 %height_val8_read, i11 %width_val5_read, i14 %WidthInBytes_val2_read, i6 %video_format_val10_read
+entry:26 %call_ln139 = call void @MultiPixStream2Bytes, i24 %img, i64 %bytePlanes, i11 %height_val7_read, i14 %WidthInBytes_val2_read, i6 %video_format_val9_read
 
 ]]></Node>
 <StgValue><ssdm name="call_ln139"/></StgValue>
@@ -206,9 +206,9 @@ entry:26 %call_ln139 = call void @MultiPixStream2Bytes, i24 %img, i64 %bytePlane
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="11" op_4_bw="11" op_5_bw="14" op_6_bw="6" op_7_bw="0" op_8_bw="0">
+<Node id="42" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="11" op_4_bw="14" op_5_bw="6" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:26 %call_ln139 = call void @MultiPixStream2Bytes, i24 %img, i64 %bytePlanes, i11 %height_val8_read, i11 %width_val5_read, i14 %WidthInBytes_val2_read, i6 %video_format_val10_read
+entry:26 %call_ln139 = call void @MultiPixStream2Bytes, i24 %img, i64 %bytePlanes, i11 %height_val7_read, i14 %WidthInBytes_val2_read, i6 %video_format_val9_read
 
 ]]></Node>
 <StgValue><ssdm name="call_ln139"/></StgValue>
@@ -226,10 +226,10 @@ entry:26 %call_ln139 = call void @MultiPixStream2Bytes, i24 %img, i64 %bytePlane
 
 <Node id="21" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-entry:5 %stride_val9_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %stride_val9
+entry:5 %stride_val8_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %stride_val8
 
 ]]></Node>
-<StgValue><ssdm name="stride_val9_read"/></StgValue>
+<StgValue><ssdm name="stride_val8_read"/></StgValue>
 </operation>
 
 <operation id="19" st_id="5" stage="1" lat="1">
@@ -256,7 +256,7 @@ entry:10 %HwReg_frm_buffer_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %HwRe
 
 <Node id="43" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="32" op_4_bw="11" op_5_bw="14" op_6_bw="16" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:27 %call_ln141 = call void @Bytes2AXIMMvideo, i64 %bytePlanes, i64 %mm_video, i32 %HwReg_frm_buffer_read, i11 %height_val8_read, i14 %WidthInBytes_val2_read, i16 %stride_val9_read
+entry:27 %call_ln141 = call void @Bytes2AXIMMvideo, i64 %bytePlanes, i64 %mm_video, i32 %HwReg_frm_buffer_read, i11 %height_val7_read, i14 %WidthInBytes_val2_read, i16 %stride_val8_read
 
 ]]></Node>
 <StgValue><ssdm name="call_ln141"/></StgValue>
@@ -349,7 +349,7 @@ entry:11 %specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISS
 
 <Node id="28" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="1" op_3_bw="0">
 <![CDATA[
-entry:12 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i6 %video_format_val10, i1 1, void 
+entry:12 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i6 %video_format_val9, i1 1, void 
 
 ]]></Node>
 <StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
@@ -364,7 +364,7 @@ entry:12 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableCon
 
 <Node id="29" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="1" op_3_bw="0">
 <![CDATA[
-entry:13 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %stride_val9, i1 1, void 
+entry:13 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %stride_val8, i1 1, void 
 
 ]]></Node>
 <StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
@@ -379,7 +379,7 @@ entry:13 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableCon
 
 <Node id="30" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="1" op_3_bw="0">
 <![CDATA[
-entry:14 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i11 %height_val8, i1 1, void 
+entry:14 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i11 %height_val7, i1 1, void 
 
 ]]></Node>
 <StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
@@ -394,7 +394,7 @@ entry:14 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableCon
 
 <Node id="31" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="1" op_3_bw="0">
 <![CDATA[
-entry:15 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i11 %width_val5, i1 1, void 
+entry:15 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i11 %width_val4, i1 1, void 
 
 ]]></Node>
 <StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
@@ -469,10 +469,10 @@ entry:20 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %i
 
 <Node id="38" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="64" op_8_bw="64">
 <![CDATA[
-entry:22 %empty_151 = specchannel i32 @_ssdm_op_SpecChannel, void @bytePlanes_str, i32 1, void @p_str, void @p_str, i32 481, i32 481, i64 %bytePlanes, i64 %bytePlanes
+entry:22 %empty_72 = specchannel i32 @_ssdm_op_SpecChannel, void @bytePlanes_str, i32 1, void @p_str, void @p_str, i32 481, i32 481, i64 %bytePlanes, i64 %bytePlanes
 
 ]]></Node>
-<StgValue><ssdm name="empty_151"/></StgValue>
+<StgValue><ssdm name="empty_72"/></StgValue>
 </operation>
 
 <operation id="35" st_id="6" stage="1" lat="1">
@@ -514,7 +514,7 @@ entry:24 %specmemcore_ln120 = specmemcore void @_ssdm_op_SpecMemCore, i64 %byteP
 
 <Node id="43" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="32" op_4_bw="11" op_5_bw="14" op_6_bw="16" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:27 %call_ln141 = call void @Bytes2AXIMMvideo, i64 %bytePlanes, i64 %mm_video, i32 %HwReg_frm_buffer_read, i11 %height_val8_read, i14 %WidthInBytes_val2_read, i16 %stride_val9_read
+entry:27 %call_ln141 = call void @Bytes2AXIMMvideo, i64 %bytePlanes, i64 %mm_video, i32 %HwReg_frm_buffer_read, i11 %height_val7_read, i14 %WidthInBytes_val2_read, i16 %stride_val8_read
 
 ]]></Node>
 <StgValue><ssdm name="call_ln141"/></StgValue>

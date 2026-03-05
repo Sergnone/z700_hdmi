@@ -241,7 +241,7 @@ attribute shreg_extract : string;
     signal zext_ln523_reg_298 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     signal zext_ln515_fu_186_p1 : STD_LOGIC_VECTOR (23 downto 0);
     signal zext_ln515_reg_303 : STD_LOGIC_VECTOR (23 downto 0) := "000000000000000000000000";
-    signal trunc_ln4_reg_311 : STD_LOGIC_VECTOR (28 downto 0) := "00000000000000000000000000000";
+    signal trunc_ln2_reg_311 : STD_LOGIC_VECTOR (28 downto 0) := "00000000000000000000000000000";
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1_fu_146_ap_start : STD_LOGIC;
@@ -538,7 +538,7 @@ begin
         bytePlanes_num_data_valid => ap_const_lv10_0,
         bytePlanes_fifo_cap => ap_const_lv10_0,
         lshr_ln => lshr_ln_reg_293,
-        sext_ln515 => trunc_ln4_reg_311);
+        sext_ln515 => trunc_ln2_reg_311);
 
 
 
@@ -662,14 +662,14 @@ begin
     end process;
 
 
-    trunc_ln4_reg_311_assign_proc : process(ap_clk)
+    trunc_ln2_reg_311_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                trunc_ln4_reg_311 <= ap_const_lv29_0;
+                trunc_ln2_reg_311 <= ap_const_lv29_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-                    trunc_ln4_reg_311 <= add_ln515_1_fu_229_p2(31 downto 3);
+                    trunc_ln2_reg_311 <= add_ln515_1_fu_229_p2(31 downto 3);
                 end if; 
             end if;
         end if;
@@ -1353,7 +1353,7 @@ begin
         end if; 
     end process;
 
-        sext_ln515_fu_259_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln4_reg_311),32));
+        sext_ln515_fu_259_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln2_reg_311),32));
 
     shl_ln_fu_217_p3 <= (offset_fu_112 & ap_const_lv3_0);
     start_out <= real_start;

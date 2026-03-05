@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'AXIMMvideo2Bytes'" level="0">
-<item name = "Date">Thu Feb 19 12:55:08 2026
+<item name = "Date">Thu Mar  5 14:47:30 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -121,7 +121,7 @@
 <column name="offset_fu_112">24, 0, 24, 0</column>
 <column name="srcImg_read_reg_288">32, 0, 32, 0</column>
 <column name="start_once_reg">1, 0, 1, 0</column>
-<column name="trunc_ln4_reg_311">29, 0, 29, 0</column>
+<column name="trunc_ln2_reg_311">29, 0, 29, 0</column>
 <column name="y_fu_108">11, 0, 11, 0</column>
 <column name="zext_ln515_reg_303">13, 0, 24, 11</column>
 <column name="zext_ln523_reg_298">11, 0, 32, 21</column>

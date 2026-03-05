@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'FrmbufWrHlsDataFlow'" level="0">
-<item name = "Date">Thu Feb 19 12:55:08 2026
+<item name = "Date">Thu Mar  5 14:47:30 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">151632, 4153684, 1.011 ms, 27.693 ms, 7042, 4153684, dataflow</column>
+<column name="">181808, 4671005, 1.212 ms, 31.142 ms, 7042, 4671002, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
@@ -32,8 +32,8 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="grp_AXIvideo2MultiPixStream_fu_164">AXIvideo2MultiPixStream, 5, 2084405, 33.335 ns, 13.897 ms, 5, 2084405, no</column>
-<column name="grp_MultiPixStream2Bytes_fu_189">MultiPixStream2Bytes, 1, 4153683, 6.667 ns, 27.693 ms, 1, 4153683, no</column>
-<column name="grp_Bytes2AXIMMvideo_fu_201">Bytes2AXIMMvideo, 7041, 1675081, 46.942 us, 11.168 ms, 7041, 1675081, no</column>
+<column name="grp_MultiPixStream2Bytes_fu_189">MultiPixStream2Bytes, 1, 4671001, 6.667 ns, 31.142 ms, 1, 4671001, no</column>
+<column name="grp_Bytes2AXIMMvideo_fu_200">Bytes2AXIMMvideo, 7041, 1675081, 46.942 us, 11.168 ms, 7041, 1675081, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

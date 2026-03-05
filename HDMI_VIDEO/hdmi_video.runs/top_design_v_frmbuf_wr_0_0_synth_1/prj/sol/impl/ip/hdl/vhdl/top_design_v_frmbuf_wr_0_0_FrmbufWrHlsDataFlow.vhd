@@ -66,22 +66,22 @@ port (
     HwReg_frm_buffer : IN STD_LOGIC_VECTOR (31 downto 0);
     WidthInBytes_val2 : IN STD_LOGIC_VECTOR (13 downto 0);
     colorFormat_val3 : IN STD_LOGIC_VECTOR (2 downto 0);
-    width_val5 : IN STD_LOGIC_VECTOR (10 downto 0);
-    height_val8 : IN STD_LOGIC_VECTOR (10 downto 0);
-    stride_val9 : IN STD_LOGIC_VECTOR (15 downto 0);
-    video_format_val10 : IN STD_LOGIC_VECTOR (5 downto 0);
+    width_val4 : IN STD_LOGIC_VECTOR (10 downto 0);
+    height_val7 : IN STD_LOGIC_VECTOR (10 downto 0);
+    stride_val8 : IN STD_LOGIC_VECTOR (15 downto 0);
+    video_format_val9 : IN STD_LOGIC_VECTOR (5 downto 0);
     ap_clk : IN STD_LOGIC;
     ap_rst : IN STD_LOGIC;
     s_axis_video_TVALID : IN STD_LOGIC;
     s_axis_video_TREADY : OUT STD_LOGIC;
-    height_val8_ap_vld : IN STD_LOGIC;
-    width_val5_ap_vld : IN STD_LOGIC;
+    height_val7_ap_vld : IN STD_LOGIC;
+    width_val4_ap_vld : IN STD_LOGIC;
     colorFormat_val3_ap_vld : IN STD_LOGIC;
     ap_start : IN STD_LOGIC;
     WidthInBytes_val2_ap_vld : IN STD_LOGIC;
-    video_format_val10_ap_vld : IN STD_LOGIC;
+    video_format_val9_ap_vld : IN STD_LOGIC;
     HwReg_frm_buffer_ap_vld : IN STD_LOGIC;
-    stride_val9_ap_vld : IN STD_LOGIC;
+    stride_val8_ap_vld : IN STD_LOGIC;
     ap_done : OUT STD_LOGIC;
     ap_ready : OUT STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
@@ -123,6 +123,8 @@ attribute shreg_extract : string;
     signal MultiPixStream2Bytes_U0_img_read : STD_LOGIC;
     signal MultiPixStream2Bytes_U0_bytePlanes_din : STD_LOGIC_VECTOR (63 downto 0);
     signal MultiPixStream2Bytes_U0_bytePlanes_write : STD_LOGIC;
+    signal MultiPixStream2Bytes_U0_bytePlanes_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
+    signal MultiPixStream2Bytes_U0_bytePlanes_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
     signal Bytes2AXIMMvideo_U0_ap_start : STD_LOGIC;
     signal Bytes2AXIMMvideo_U0_ap_done : STD_LOGIC;
     signal Bytes2AXIMMvideo_U0_ap_continue : STD_LOGIC;
@@ -232,10 +234,9 @@ attribute shreg_extract : string;
         bytePlanes_din : OUT STD_LOGIC_VECTOR (63 downto 0);
         bytePlanes_full_n : IN STD_LOGIC;
         bytePlanes_write : OUT STD_LOGIC;
-        bytePlanes_num_data_valid : IN STD_LOGIC_VECTOR (9 downto 0);
-        bytePlanes_fifo_cap : IN STD_LOGIC_VECTOR (9 downto 0);
+        bytePlanes_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
+        bytePlanes_fifo_cap : IN STD_LOGIC_VECTOR (31 downto 0);
         Height_val : IN STD_LOGIC_VECTOR (10 downto 0);
-        WidthInPix_val : IN STD_LOGIC_VECTOR (10 downto 0);
         WidthInBytes_val : IN STD_LOGIC_VECTOR (13 downto 0);
         VideoFormat_val : IN STD_LOGIC_VECTOR (5 downto 0) );
     end component;
@@ -400,8 +401,8 @@ begin
         img_write => AXIvideo2MultiPixStream_U0_img_write,
         img_num_data_valid => img_num_data_valid,
         img_fifo_cap => img_fifo_cap,
-        Height_val => height_val8,
-        WidthIn_val => width_val5,
+        Height_val => height_val7,
+        WidthIn_val => width_val4,
         colorFormat_val => colorFormat_val3);
 
     MultiPixStream2Bytes_U0 : component top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes
@@ -424,12 +425,11 @@ begin
         bytePlanes_din => MultiPixStream2Bytes_U0_bytePlanes_din,
         bytePlanes_full_n => bytePlanes_full_n,
         bytePlanes_write => MultiPixStream2Bytes_U0_bytePlanes_write,
-        bytePlanes_num_data_valid => bytePlanes_num_data_valid,
-        bytePlanes_fifo_cap => bytePlanes_fifo_cap,
-        Height_val => height_val8,
-        WidthInPix_val => width_val5,
+        bytePlanes_num_data_valid => MultiPixStream2Bytes_U0_bytePlanes_num_data_valid,
+        bytePlanes_fifo_cap => MultiPixStream2Bytes_U0_bytePlanes_fifo_cap,
+        Height_val => height_val7,
         WidthInBytes_val => WidthInBytes_val2,
-        VideoFormat_val => video_format_val10);
+        VideoFormat_val => video_format_val9);
 
     Bytes2AXIMMvideo_U0 : component top_design_v_frmbuf_wr_0_0_Bytes2AXIMMvideo
     port map (
@@ -492,9 +492,9 @@ begin
         m_axi_mm_video_0_BID => m_axi_mm_video_0_BID,
         m_axi_mm_video_0_BUSER => m_axi_mm_video_0_BUSER,
         dstImg => HwReg_frm_buffer,
-        Height_val => height_val8,
+        Height_val => height_val7,
         WidthInBytes_val => WidthInBytes_val2,
-        StrideInBytes_val => stride_val9);
+        StrideInBytes_val => stride_val8);
 
     img_U : component top_design_v_frmbuf_wr_0_0_fifo_w24_d2_S
     port map (
@@ -561,6 +561,8 @@ begin
     Bytes2AXIMMvideo_U0_ap_start <= start_for_Bytes2AXIMMvideo_U0_empty_n;
     MultiPixStream2Bytes_U0_ap_continue <= ap_const_logic_1;
     MultiPixStream2Bytes_U0_ap_start <= start_for_MultiPixStream2Bytes_U0_empty_n;
+    MultiPixStream2Bytes_U0_bytePlanes_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(bytePlanes_fifo_cap),10))),32));
+    MultiPixStream2Bytes_U0_bytePlanes_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(bytePlanes_num_data_valid),10))),32));
     ap_done <= Bytes2AXIMMvideo_U0_ap_done;
     ap_idle <= (MultiPixStream2Bytes_U0_ap_idle and Bytes2AXIMMvideo_U0_ap_idle and AXIvideo2MultiPixStream_U0_ap_idle);
     ap_ready <= AXIvideo2MultiPixStream_U0_ap_ready;

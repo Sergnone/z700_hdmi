@@ -1,7 +1,7 @@
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1237, 
+DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1447, 
                    Column: 20 }
 Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
@@ -187,7 +187,7 @@ Args:
 --- !Passed
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1237, 
+DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1447, 
                    Column: 20 }
 Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
@@ -242,23 +242,23 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1254, 
+DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1456, 
                    Column: 24 }
 Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_1254_2
+  - LoopName:        VITIS_LOOP_1456_2
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1256, 
+DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1458, 
                    Column: 25 }
 Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_1256_3
+  - LoopName:        VITIS_LOOP_1458_3
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
@@ -303,14 +303,14 @@ DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688,
 Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_1254_2
+  - LoopName:        VITIS_LOOP_1456_2
   - String:          ''' ('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1254:24'
+  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1456:24'
   - String:          ') '
   - String:          'in function '''
   - String:          Bytes2MultiPixStream
   - String:          ''' completely with a factor of '
-  - Factor:          '8'
+  - Factor:          '2'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -320,26 +320,9 @@ DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688,
 Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_1256_3
+  - LoopName:        VITIS_LOOP_1458_3
   - String:          ''' ('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1256:25'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          Bytes2MultiPixStream
-  - String:          ''' completely with a factor of '
-  - Factor:          '1'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
-                   Column: 0 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_1256_3
-  - String:          ''' ('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1256:25'
+  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1458:25'
   - String:          ') '
   - String:          'in function '''
   - String:          Bytes2MultiPixStream
@@ -354,94 +337,9 @@ DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688,
 Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_1256_3
+  - LoopName:        VITIS_LOOP_1458_3
   - String:          ''' ('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1256:25'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          Bytes2MultiPixStream
-  - String:          ''' completely with a factor of '
-  - Factor:          '1'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
-                   Column: 0 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_1256_3
-  - String:          ''' ('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1256:25'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          Bytes2MultiPixStream
-  - String:          ''' completely with a factor of '
-  - Factor:          '1'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
-                   Column: 0 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_1256_3
-  - String:          ''' ('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1256:25'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          Bytes2MultiPixStream
-  - String:          ''' completely with a factor of '
-  - Factor:          '1'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
-                   Column: 0 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_1256_3
-  - String:          ''' ('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1256:25'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          Bytes2MultiPixStream
-  - String:          ''' completely with a factor of '
-  - Factor:          '1'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
-                   Column: 0 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_1256_3
-  - String:          ''' ('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1256:25'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          Bytes2MultiPixStream
-  - String:          ''' completely with a factor of '
-  - Factor:          '1'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 688, 
-                   Column: 0 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_1256_3
-  - String:          ''' ('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1256:25'
+  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1458:25'
   - String:          ') '
   - String:          'in function '''
   - String:          Bytes2MultiPixStream
@@ -727,121 +625,31 @@ Args:
 --- !Failure
 Pass:            reflow-occurrence-analysis
 Name:            CouldNotAnalyzeBBInfo
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1272, 
+DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1468, 
                    Column: 11 }
 Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Could not analyze occurrence information for '''
-  - BBName:          if.then169
+  - BBName:          if.then144
   - String:          ''' living in '''
-  - LoopName:        VITIS_LOOP_1240_1
+  - LoopName:        VITIS_LOOP_1450_1
   - String:          '''('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1240:23'
+  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1450:23'
   - String:          ') .'
 ...
 --- !Failure
 Pass:            reflow-occurrence-analysis
 Name:            CouldNotAnalyzeBBInfo
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1272, 
+DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1468, 
                    Column: 11 }
 Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
 Args:            
   - String:          'Could not analyze occurrence information for '''
-  - BBName:          if.then169.1
+  - BBName:          if.then144.1
   - String:          ''' living in '''
-  - LoopName:        VITIS_LOOP_1240_1
+  - LoopName:        VITIS_LOOP_1450_1
   - String:          '''('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1240:23'
-  - String:          ') .'
-...
---- !Failure
-Pass:            reflow-occurrence-analysis
-Name:            CouldNotAnalyzeBBInfo
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1272, 
-                   Column: 11 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
-Args:            
-  - String:          'Could not analyze occurrence information for '''
-  - BBName:          if.then169.2
-  - String:          ''' living in '''
-  - LoopName:        VITIS_LOOP_1240_1
-  - String:          '''('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1240:23'
-  - String:          ') .'
-...
---- !Failure
-Pass:            reflow-occurrence-analysis
-Name:            CouldNotAnalyzeBBInfo
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1272, 
-                   Column: 11 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
-Args:            
-  - String:          'Could not analyze occurrence information for '''
-  - BBName:          if.then169.3
-  - String:          ''' living in '''
-  - LoopName:        VITIS_LOOP_1240_1
-  - String:          '''('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1240:23'
-  - String:          ') .'
-...
---- !Failure
-Pass:            reflow-occurrence-analysis
-Name:            CouldNotAnalyzeBBInfo
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1272, 
-                   Column: 11 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
-Args:            
-  - String:          'Could not analyze occurrence information for '''
-  - BBName:          if.then169.4
-  - String:          ''' living in '''
-  - LoopName:        VITIS_LOOP_1240_1
-  - String:          '''('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1240:23'
-  - String:          ') .'
-...
---- !Failure
-Pass:            reflow-occurrence-analysis
-Name:            CouldNotAnalyzeBBInfo
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1272, 
-                   Column: 11 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
-Args:            
-  - String:          'Could not analyze occurrence information for '''
-  - BBName:          if.then169.5
-  - String:          ''' living in '''
-  - LoopName:        VITIS_LOOP_1240_1
-  - String:          '''('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1240:23'
-  - String:          ') .'
-...
---- !Failure
-Pass:            reflow-occurrence-analysis
-Name:            CouldNotAnalyzeBBInfo
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1272, 
-                   Column: 11 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
-Args:            
-  - String:          'Could not analyze occurrence information for '''
-  - BBName:          if.then169.6
-  - String:          ''' living in '''
-  - LoopName:        VITIS_LOOP_1240_1
-  - String:          '''('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1240:23'
-  - String:          ') .'
-...
---- !Failure
-Pass:            reflow-occurrence-analysis
-Name:            CouldNotAnalyzeBBInfo
-DebugLoc:        { File: prj/sol/.autopilot/db/v_frmbuf_rd.cpp, Line: 1272, 
-                   Column: 11 }
-Function:        _Z20Bytes2MultiPixStreamR13STREAM_PLANESRN3hls6streamINS1_6ScalarILi3E7ap_uintILi8EEEELi0EEERKtSA_SA_SA_
-Args:            
-  - String:          'Could not analyze occurrence information for '''
-  - BBName:          if.then169.7
-  - String:          ''' living in '''
-  - LoopName:        VITIS_LOOP_1240_1
-  - String:          '''('
-  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1240:23'
+  - LoopLoc:         'prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1450:23'
   - String:          ') .'
 ...
 --- !HLSReportInfo

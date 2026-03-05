@@ -31,7 +31,7 @@
         "AXIMM_NUM_OUTSTANDING": [ { "value": "4", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "AXIMM_BURST_LENGTH": [ { "value": "16", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "IS_TILE_FORMAT": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "HAS_RGBX8": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "HAS_RGBX8": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "USE_URAM": [ { "value": "0", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "ENABLE_SYNC_SIGNALS": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "HAS_YUVX8": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
@@ -44,7 +44,7 @@
         "HAS_YUVX10": [ { "value": "0", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "HAS_Y_UV8": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "HAS_Y_UV8_420": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "HAS_RGB8": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "HAS_RGB8": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "HAS_YUV8": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "HAS_Y_UV10": [ { "value": "0", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "HAS_Y_UV10_420": [ { "value": "0", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
@@ -260,7 +260,7 @@
           "parameters": {
             "POLARITY": [ { "value": "ACTIVE_LOW", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
             "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ],
-            "PortWidth": [ { "value": "1", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
+            "PortWidth": [ { "value": "1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
           },
           "port_maps": {
             "RST": [ { "physical_name": "ap_rst_n" } ]
@@ -410,5 +410,5 @@
       }
     }
   },
-  "checksum": "7100e02b"
+  "checksum": "36bab224"
 }

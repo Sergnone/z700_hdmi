@@ -340,7 +340,7 @@
             <Obj>
               <type>1</type>
               <id>10</id>
-              <name>width_val2</name>
+              <name>width_val1</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -376,7 +376,7 @@
             <Obj>
               <type>1</type>
               <id>11</id>
-              <name>height_val6</name>
+              <name>height_val4</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -412,7 +412,7 @@
             <Obj>
               <type>1</type>
               <id>12</id>
-              <name>stride_val7</name>
+              <name>stride_val5</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -448,7 +448,7 @@
             <Obj>
               <type>1</type>
               <id>13</id>
-              <name>video_format_val8</name>
+              <name>video_format_val6</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -484,7 +484,7 @@
             <Obj>
               <type>1</type>
               <id>14</id>
-              <name>WidthInBytes_val10</name>
+              <name>WidthInBytes_val8</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -520,7 +520,7 @@
             <Obj>
               <type>1</type>
               <id>15</id>
-              <name>colorFormat_val11</name>
+              <name>colorFormat_val9</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -560,7 +560,7 @@
             <Obj>
               <type>0</type>
               <id>22</id>
-              <name>colorFormat_val11_read</name>
+              <name>colorFormat_val9_read</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -595,7 +595,7 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>11</m_topoIndex>
+          <m_topoIndex>10</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_17">
@@ -603,7 +603,7 @@
             <Obj>
               <type>0</type>
               <id>23</id>
-              <name>WidthInBytes_val10_read</name>
+              <name>WidthInBytes_val8_read</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -646,7 +646,7 @@
             <Obj>
               <type>0</type>
               <id>24</id>
-              <name>video_format_val8_read</name>
+              <name>video_format_val6_read</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -689,7 +689,7 @@
             <Obj>
               <type>0</type>
               <id>25</id>
-              <name>stride_val7_read</name>
+              <name>stride_val5_read</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -732,7 +732,7 @@
             <Obj>
               <type>0</type>
               <id>26</id>
-              <name>height_val6_read</name>
+              <name>height_val4_read</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -775,7 +775,7 @@
             <Obj>
               <type>0</type>
               <id>27</id>
-              <name>width_val2_read</name>
+              <name>width_val1_read</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -810,7 +810,7 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>9</m_topoIndex>
+          <m_topoIndex>11</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_22">
@@ -1073,7 +1073,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <oprand_edges>
-            <count>9</count>
+            <count>8</count>
             <item_version>0</item_version>
             <item>80</item>
             <item>81</item>
@@ -1081,17 +1081,16 @@
             <item>83</item>
             <item>84</item>
             <item>85</item>
-            <item>86</item>
+            <item>292</item>
             <item>293</item>
-            <item>294</item>
           </oprand_edges>
           <opcode>call</opcode>
           <m_Display>0</m_Display>
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>4.39</m_delay>
-          <m_topoIndex>10</m_topoIndex>
+          <m_delay>3.00</m_delay>
+          <m_topoIndex>9</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_27">
@@ -1139,6 +1138,7 @@
           <oprand_edges>
             <count>15</count>
             <item_version>0</item_version>
+            <item>87</item>
             <item>88</item>
             <item>89</item>
             <item>90</item>
@@ -1151,9 +1151,8 @@
             <item>97</item>
             <item>98</item>
             <item>99</item>
-            <item>100</item>
-            <item>292</item>
-            <item>295</item>
+            <item>291</item>
+            <item>294</item>
           </oprand_edges>
           <opcode>call</opcode>
           <m_Display>0</m_Display>
@@ -1320,7 +1319,7 @@
           <Value>
             <Obj>
               <type>2</type>
-              <id>87</id>
+              <id>86</id>
               <name>MultiPixStream2AXIvideo</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
@@ -1396,7 +1395,7 @@
         </item>
       </blocks>
       <edges class_id="19" tracking_level="0" version="0">
-        <count>40</count>
+        <count>39</count>
         <item_version>0</item_version>
         <item class_id="20" tracking_level="1" version="0" object_id="_34">
           <id>50</id>
@@ -1541,120 +1540,120 @@
         <item class_id_reference="20" object_id="_54">
           <id>84</id>
           <edge_type>1</edge_type>
-          <source_obj>27</source_obj>
+          <source_obj>23</source_obj>
           <sink_obj>44</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_55">
           <id>85</id>
           <edge_type>1</edge_type>
-          <source_obj>23</source_obj>
+          <source_obj>24</source_obj>
           <sink_obj>44</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_56">
-          <id>86</id>
+          <id>87</id>
           <edge_type>1</edge_type>
-          <source_obj>24</source_obj>
-          <sink_obj>44</sink_obj>
+          <source_obj>86</source_obj>
+          <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_57">
           <id>88</id>
           <edge_type>1</edge_type>
-          <source_obj>87</source_obj>
+          <source_obj>36</source_obj>
           <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_58">
           <id>89</id>
           <edge_type>1</edge_type>
-          <source_obj>36</source_obj>
+          <source_obj>1</source_obj>
           <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_59">
           <id>90</id>
           <edge_type>1</edge_type>
-          <source_obj>1</source_obj>
+          <source_obj>2</source_obj>
           <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_60">
           <id>91</id>
           <edge_type>1</edge_type>
-          <source_obj>2</source_obj>
+          <source_obj>3</source_obj>
           <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_61">
           <id>92</id>
           <edge_type>1</edge_type>
-          <source_obj>3</source_obj>
+          <source_obj>4</source_obj>
           <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_62">
           <id>93</id>
           <edge_type>1</edge_type>
-          <source_obj>4</source_obj>
+          <source_obj>5</source_obj>
           <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_63">
           <id>94</id>
           <edge_type>1</edge_type>
-          <source_obj>5</source_obj>
+          <source_obj>6</source_obj>
           <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_64">
           <id>95</id>
           <edge_type>1</edge_type>
-          <source_obj>6</source_obj>
+          <source_obj>7</source_obj>
           <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_65">
           <id>96</id>
           <edge_type>1</edge_type>
-          <source_obj>7</source_obj>
+          <source_obj>26</source_obj>
           <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_66">
           <id>97</id>
           <edge_type>1</edge_type>
-          <source_obj>26</source_obj>
+          <source_obj>27</source_obj>
           <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_67">
           <id>98</id>
           <edge_type>1</edge_type>
-          <source_obj>27</source_obj>
+          <source_obj>22</source_obj>
           <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_68">
           <id>99</id>
           <edge_type>1</edge_type>
-          <source_obj>22</source_obj>
+          <source_obj>16</source_obj>
           <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_69">
-          <id>100</id>
-          <edge_type>1</edge_type>
-          <source_obj>16</source_obj>
+          <id>291</id>
+          <edge_type>4</edge_type>
+          <source_obj>44</source_obj>
           <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_70">
           <id>292</id>
           <edge_type>4</edge_type>
-          <source_obj>44</source_obj>
-          <sink_obj>45</sink_obj>
+          <source_obj>43</source_obj>
+          <sink_obj>44</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_71">
@@ -1667,13 +1666,6 @@
         <item class_id_reference="20" object_id="_72">
           <id>294</id>
           <edge_type>4</edge_type>
-          <source_obj>43</source_obj>
-          <sink_obj>44</sink_obj>
-          <is_back_edge>0</is_back_edge>
-        </item>
-        <item class_id_reference="20" object_id="_73">
-          <id>295</id>
-          <edge_type>4</edge_type>
           <source_obj>44</source_obj>
           <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
@@ -1683,7 +1675,7 @@
     <cdfg_regions class_id="21" tracking_level="0" version="0">
       <count>1</count>
       <item_version>0</item_version>
-      <item class_id="22" tracking_level="1" version="0" object_id="_74">
+      <item class_id="22" tracking_level="1" version="0" object_id="_73">
         <mId>1</mId>
         <mTag>FrmbufRdHlsDataFlow</mTag>
         <mNormTag>FrmbufRdHlsDataFlow</mNormTag>
@@ -1702,13 +1694,13 @@
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
         <mMinLatency>7169</mMinLatency>
-        <mMaxLatency>4152711</mMaxLatency>
+        <mMaxLatency>3115911</mMaxLatency>
         <mIsDfPipe>1</mIsDfPipe>
-        <mDfPipe class_id="23" tracking_level="1" version="0" object_id="_75">
+        <mDfPipe class_id="23" tracking_level="1" version="0" object_id="_74">
           <port_list class_id="24" tracking_level="0" version="0">
             <count>15</count>
             <item_version>0</item_version>
-            <item class_id="25" tracking_level="1" version="0" object_id="_76">
+            <item class_id="25" tracking_level="1" version="0" object_id="_75">
               <name>m_axis_video_V_data_V</name>
               <dir>1</dir>
               <type>3</type>
@@ -1716,7 +1708,7 @@
               <top_port class_id="-1"></top_port>
               <chan class_id="-1"></chan>
             </item>
-            <item class_id_reference="25" object_id="_77">
+            <item class_id_reference="25" object_id="_76">
               <name>m_axis_video_V_keep_V</name>
               <dir>1</dir>
               <type>3</type>
@@ -1724,7 +1716,7 @@
               <top_port class_id="-1"></top_port>
               <chan class_id="-1"></chan>
             </item>
-            <item class_id_reference="25" object_id="_78">
+            <item class_id_reference="25" object_id="_77">
               <name>m_axis_video_V_strb_V</name>
               <dir>1</dir>
               <type>3</type>
@@ -1732,7 +1724,7 @@
               <top_port class_id="-1"></top_port>
               <chan class_id="-1"></chan>
             </item>
-            <item class_id_reference="25" object_id="_79">
+            <item class_id_reference="25" object_id="_78">
               <name>m_axis_video_V_user_V</name>
               <dir>1</dir>
               <type>3</type>
@@ -1740,7 +1732,7 @@
               <top_port class_id="-1"></top_port>
               <chan class_id="-1"></chan>
             </item>
-            <item class_id_reference="25" object_id="_80">
+            <item class_id_reference="25" object_id="_79">
               <name>m_axis_video_V_last_V</name>
               <dir>1</dir>
               <type>3</type>
@@ -1748,7 +1740,7 @@
               <top_port class_id="-1"></top_port>
               <chan class_id="-1"></chan>
             </item>
-            <item class_id_reference="25" object_id="_81">
+            <item class_id_reference="25" object_id="_80">
               <name>m_axis_video_V_id_V</name>
               <dir>1</dir>
               <type>3</type>
@@ -1756,7 +1748,7 @@
               <top_port class_id="-1"></top_port>
               <chan class_id="-1"></chan>
             </item>
-            <item class_id_reference="25" object_id="_82">
+            <item class_id_reference="25" object_id="_81">
               <name>m_axis_video_V_dest_V</name>
               <dir>1</dir>
               <type>3</type>
@@ -1764,7 +1756,7 @@
               <top_port class_id="-1"></top_port>
               <chan class_id="-1"></chan>
             </item>
-            <item class_id_reference="25" object_id="_83">
+            <item class_id_reference="25" object_id="_82">
               <name>mm_video</name>
               <dir>0</dir>
               <type>1</type>
@@ -1772,7 +1764,7 @@
               <top_port class_id="-1"></top_port>
               <chan class_id="-1"></chan>
             </item>
-            <item class_id_reference="25" object_id="_84">
+            <item class_id_reference="25" object_id="_83">
               <name>HwReg_frm_buffer</name>
               <dir>0</dir>
               <type>3</type>
@@ -1780,8 +1772,16 @@
               <top_port class_id="-1"></top_port>
               <chan class_id="-1"></chan>
             </item>
+            <item class_id_reference="25" object_id="_84">
+              <name>width_val1</name>
+              <dir>0</dir>
+              <type>3</type>
+              <need_hs>0</need_hs>
+              <top_port class_id="-1"></top_port>
+              <chan class_id="-1"></chan>
+            </item>
             <item class_id_reference="25" object_id="_85">
-              <name>width_val2</name>
+              <name>height_val4</name>
               <dir>0</dir>
               <type>3</type>
               <need_hs>0</need_hs>
@@ -1789,7 +1789,7 @@
               <chan class_id="-1"></chan>
             </item>
             <item class_id_reference="25" object_id="_86">
-              <name>height_val6</name>
+              <name>stride_val5</name>
               <dir>0</dir>
               <type>3</type>
               <need_hs>0</need_hs>
@@ -1797,7 +1797,7 @@
               <chan class_id="-1"></chan>
             </item>
             <item class_id_reference="25" object_id="_87">
-              <name>stride_val7</name>
+              <name>video_format_val6</name>
               <dir>0</dir>
               <type>3</type>
               <need_hs>0</need_hs>
@@ -1805,7 +1805,7 @@
               <chan class_id="-1"></chan>
             </item>
             <item class_id_reference="25" object_id="_88">
-              <name>video_format_val8</name>
+              <name>WidthInBytes_val8</name>
               <dir>0</dir>
               <type>3</type>
               <need_hs>0</need_hs>
@@ -1813,15 +1813,7 @@
               <chan class_id="-1"></chan>
             </item>
             <item class_id_reference="25" object_id="_89">
-              <name>WidthInBytes_val10</name>
-              <dir>0</dir>
-              <type>3</type>
-              <need_hs>0</need_hs>
-              <top_port class_id="-1"></top_port>
-              <chan class_id="-1"></chan>
-            </item>
-            <item class_id_reference="25" object_id="_90">
-              <name>colorFormat_val11</name>
+              <name>colorFormat_val9</name>
               <dir>0</dir>
               <type>3</type>
               <need_hs>0</need_hs>
@@ -1832,257 +1824,246 @@
           <process_list class_id="27" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
-            <item class_id="28" tracking_level="1" version="0" object_id="_91">
+            <item class_id="28" tracking_level="1" version="0" object_id="_90">
               <type>0</type>
               <name>AXIMMvideo2Bytes_U0</name>
               <ssdmobj_id>43</ssdmobj_id>
               <pins class_id="29" tracking_level="0" version="0">
                 <count>5</count>
                 <item_version>0</item_version>
-                <item class_id="30" tracking_level="1" version="0" object_id="_92">
-                  <port class_id_reference="25" object_id="_93">
+                <item class_id="30" tracking_level="1" version="0" object_id="_91">
+                  <port class_id_reference="25" object_id="_92">
                     <name>mm_video</name>
                     <dir>0</dir>
                     <type>1</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_83"></top_port>
+                    <top_port class_id_reference="25" object_id_reference="_82"></top_port>
                     <chan class_id="-1"></chan>
                   </port>
-                  <inst class_id="31" tracking_level="1" version="0" object_id="_94">
+                  <inst class_id="31" tracking_level="1" version="0" object_id="_93">
                     <type>0</type>
                     <name>AXIMMvideo2Bytes_U0</name>
                     <ssdmobj_id>43</ssdmobj_id>
                   </inst>
                 </item>
-                <item class_id_reference="30" object_id="_95">
-                  <port class_id_reference="25" object_id="_96">
+                <item class_id_reference="30" object_id="_94">
+                  <port class_id_reference="25" object_id="_95">
                     <name>HwReg_frm_buffer</name>
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_84"></top_port>
+                    <top_port class_id_reference="25" object_id_reference="_83"></top_port>
                     <chan class_id="-1"></chan>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_94"></inst>
+                  <inst class_id_reference="31" object_id_reference="_93"></inst>
                 </item>
-                <item class_id_reference="30" object_id="_97">
-                  <port class_id_reference="25" object_id="_98">
-                    <name>height_val6</name>
-                    <dir>0</dir>
-                    <type>3</type>
-                    <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_86"></top_port>
-                    <chan class_id="-1"></chan>
-                  </port>
-                  <inst class_id_reference="31" object_id_reference="_94"></inst>
-                </item>
-                <item class_id_reference="30" object_id="_99">
-                  <port class_id_reference="25" object_id="_100">
-                    <name>WidthInBytes_val10</name>
-                    <dir>0</dir>
-                    <type>3</type>
-                    <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_89"></top_port>
-                    <chan class_id="-1"></chan>
-                  </port>
-                  <inst class_id_reference="31" object_id_reference="_94"></inst>
-                </item>
-                <item class_id_reference="30" object_id="_101">
-                  <port class_id_reference="25" object_id="_102">
-                    <name>stride_val7</name>
-                    <dir>0</dir>
-                    <type>3</type>
-                    <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_87"></top_port>
-                    <chan class_id="-1"></chan>
-                  </port>
-                  <inst class_id_reference="31" object_id_reference="_94"></inst>
-                </item>
-              </pins>
-              <in_source_fork>1</in_source_fork>
-              <in_sink_join>0</in_sink_join>
-              <flag_in_gui>0</flag_in_gui>
-            </item>
-            <item class_id_reference="28" object_id="_103">
-              <type>0</type>
-              <name>Bytes2MultiPixStream_U0</name>
-              <ssdmobj_id>44</ssdmobj_id>
-              <pins>
-                <count>4</count>
-                <item_version>0</item_version>
-                <item class_id_reference="30" object_id="_104">
-                  <port class_id_reference="25" object_id="_105">
-                    <name>height_val6</name>
-                    <dir>0</dir>
-                    <type>3</type>
-                    <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_86"></top_port>
-                    <chan class_id="-1"></chan>
-                  </port>
-                  <inst class_id_reference="31" object_id="_106">
-                    <type>0</type>
-                    <name>Bytes2MultiPixStream_U0</name>
-                    <ssdmobj_id>44</ssdmobj_id>
-                  </inst>
-                </item>
-                <item class_id_reference="30" object_id="_107">
-                  <port class_id_reference="25" object_id="_108">
-                    <name>width_val2</name>
+                <item class_id_reference="30" object_id="_96">
+                  <port class_id_reference="25" object_id="_97">
+                    <name>height_val4</name>
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
                     <top_port class_id_reference="25" object_id_reference="_85"></top_port>
                     <chan class_id="-1"></chan>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_106"></inst>
+                  <inst class_id_reference="31" object_id_reference="_93"></inst>
                 </item>
-                <item class_id_reference="30" object_id="_109">
-                  <port class_id_reference="25" object_id="_110">
-                    <name>WidthInBytes_val10</name>
-                    <dir>0</dir>
-                    <type>3</type>
-                    <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_89"></top_port>
-                    <chan class_id="-1"></chan>
-                  </port>
-                  <inst class_id_reference="31" object_id_reference="_106"></inst>
-                </item>
-                <item class_id_reference="30" object_id="_111">
-                  <port class_id_reference="25" object_id="_112">
-                    <name>video_format_val8</name>
+                <item class_id_reference="30" object_id="_98">
+                  <port class_id_reference="25" object_id="_99">
+                    <name>WidthInBytes_val8</name>
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
                     <top_port class_id_reference="25" object_id_reference="_88"></top_port>
                     <chan class_id="-1"></chan>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_106"></inst>
+                  <inst class_id_reference="31" object_id_reference="_93"></inst>
                 </item>
-              </pins>
-              <in_source_fork>0</in_source_fork>
-              <in_sink_join>0</in_sink_join>
-              <flag_in_gui>0</flag_in_gui>
-            </item>
-            <item class_id_reference="28" object_id="_113">
-              <type>0</type>
-              <name>MultiPixStream2AXIvideo_U0</name>
-              <ssdmobj_id>45</ssdmobj_id>
-              <pins>
-                <count>10</count>
-                <item_version>0</item_version>
-                <item class_id_reference="30" object_id="_114">
-                  <port class_id_reference="25" object_id="_115">
-                    <name>m_axis_video_V_data_V</name>
-                    <dir>1</dir>
-                    <type>3</type>
-                    <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_76"></top_port>
-                    <chan class_id="-1"></chan>
-                  </port>
-                  <inst class_id_reference="31" object_id="_116">
-                    <type>0</type>
-                    <name>MultiPixStream2AXIvideo_U0</name>
-                    <ssdmobj_id>45</ssdmobj_id>
-                  </inst>
-                </item>
-                <item class_id_reference="30" object_id="_117">
-                  <port class_id_reference="25" object_id="_118">
-                    <name>m_axis_video_V_keep_V</name>
-                    <dir>1</dir>
-                    <type>3</type>
-                    <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_77"></top_port>
-                    <chan class_id="-1"></chan>
-                  </port>
-                  <inst class_id_reference="31" object_id_reference="_116"></inst>
-                </item>
-                <item class_id_reference="30" object_id="_119">
-                  <port class_id_reference="25" object_id="_120">
-                    <name>m_axis_video_V_strb_V</name>
-                    <dir>1</dir>
-                    <type>3</type>
-                    <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_78"></top_port>
-                    <chan class_id="-1"></chan>
-                  </port>
-                  <inst class_id_reference="31" object_id_reference="_116"></inst>
-                </item>
-                <item class_id_reference="30" object_id="_121">
-                  <port class_id_reference="25" object_id="_122">
-                    <name>m_axis_video_V_user_V</name>
-                    <dir>1</dir>
-                    <type>3</type>
-                    <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_79"></top_port>
-                    <chan class_id="-1"></chan>
-                  </port>
-                  <inst class_id_reference="31" object_id_reference="_116"></inst>
-                </item>
-                <item class_id_reference="30" object_id="_123">
-                  <port class_id_reference="25" object_id="_124">
-                    <name>m_axis_video_V_last_V</name>
-                    <dir>1</dir>
-                    <type>3</type>
-                    <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_80"></top_port>
-                    <chan class_id="-1"></chan>
-                  </port>
-                  <inst class_id_reference="31" object_id_reference="_116"></inst>
-                </item>
-                <item class_id_reference="30" object_id="_125">
-                  <port class_id_reference="25" object_id="_126">
-                    <name>m_axis_video_V_id_V</name>
-                    <dir>1</dir>
-                    <type>3</type>
-                    <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_81"></top_port>
-                    <chan class_id="-1"></chan>
-                  </port>
-                  <inst class_id_reference="31" object_id_reference="_116"></inst>
-                </item>
-                <item class_id_reference="30" object_id="_127">
-                  <port class_id_reference="25" object_id="_128">
-                    <name>m_axis_video_V_dest_V</name>
-                    <dir>1</dir>
-                    <type>3</type>
-                    <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_82"></top_port>
-                    <chan class_id="-1"></chan>
-                  </port>
-                  <inst class_id_reference="31" object_id_reference="_116"></inst>
-                </item>
-                <item class_id_reference="30" object_id="_129">
-                  <port class_id_reference="25" object_id="_130">
-                    <name>height_val6</name>
+                <item class_id_reference="30" object_id="_100">
+                  <port class_id_reference="25" object_id="_101">
+                    <name>stride_val5</name>
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
                     <top_port class_id_reference="25" object_id_reference="_86"></top_port>
                     <chan class_id="-1"></chan>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_116"></inst>
+                  <inst class_id_reference="31" object_id_reference="_93"></inst>
                 </item>
-                <item class_id_reference="30" object_id="_131">
-                  <port class_id_reference="25" object_id="_132">
-                    <name>width_val2</name>
+              </pins>
+              <in_source_fork>1</in_source_fork>
+              <in_sink_join>0</in_sink_join>
+              <flag_in_gui>0</flag_in_gui>
+            </item>
+            <item class_id_reference="28" object_id="_102">
+              <type>0</type>
+              <name>Bytes2MultiPixStream_U0</name>
+              <ssdmobj_id>44</ssdmobj_id>
+              <pins>
+                <count>3</count>
+                <item_version>0</item_version>
+                <item class_id_reference="30" object_id="_103">
+                  <port class_id_reference="25" object_id="_104">
+                    <name>height_val4</name>
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
                     <top_port class_id_reference="25" object_id_reference="_85"></top_port>
                     <chan class_id="-1"></chan>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_116"></inst>
+                  <inst class_id_reference="31" object_id="_105">
+                    <type>0</type>
+                    <name>Bytes2MultiPixStream_U0</name>
+                    <ssdmobj_id>44</ssdmobj_id>
+                  </inst>
                 </item>
-                <item class_id_reference="30" object_id="_133">
-                  <port class_id_reference="25" object_id="_134">
-                    <name>colorFormat_val11</name>
+                <item class_id_reference="30" object_id="_106">
+                  <port class_id_reference="25" object_id="_107">
+                    <name>WidthInBytes_val8</name>
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_90"></top_port>
+                    <top_port class_id_reference="25" object_id_reference="_88"></top_port>
                     <chan class_id="-1"></chan>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_116"></inst>
+                  <inst class_id_reference="31" object_id_reference="_105"></inst>
+                </item>
+                <item class_id_reference="30" object_id="_108">
+                  <port class_id_reference="25" object_id="_109">
+                    <name>video_format_val6</name>
+                    <dir>0</dir>
+                    <type>3</type>
+                    <need_hs>0</need_hs>
+                    <top_port class_id_reference="25" object_id_reference="_87"></top_port>
+                    <chan class_id="-1"></chan>
+                  </port>
+                  <inst class_id_reference="31" object_id_reference="_105"></inst>
+                </item>
+              </pins>
+              <in_source_fork>0</in_source_fork>
+              <in_sink_join>0</in_sink_join>
+              <flag_in_gui>0</flag_in_gui>
+            </item>
+            <item class_id_reference="28" object_id="_110">
+              <type>0</type>
+              <name>MultiPixStream2AXIvideo_U0</name>
+              <ssdmobj_id>45</ssdmobj_id>
+              <pins>
+                <count>10</count>
+                <item_version>0</item_version>
+                <item class_id_reference="30" object_id="_111">
+                  <port class_id_reference="25" object_id="_112">
+                    <name>m_axis_video_V_data_V</name>
+                    <dir>1</dir>
+                    <type>3</type>
+                    <need_hs>0</need_hs>
+                    <top_port class_id_reference="25" object_id_reference="_75"></top_port>
+                    <chan class_id="-1"></chan>
+                  </port>
+                  <inst class_id_reference="31" object_id="_113">
+                    <type>0</type>
+                    <name>MultiPixStream2AXIvideo_U0</name>
+                    <ssdmobj_id>45</ssdmobj_id>
+                  </inst>
+                </item>
+                <item class_id_reference="30" object_id="_114">
+                  <port class_id_reference="25" object_id="_115">
+                    <name>m_axis_video_V_keep_V</name>
+                    <dir>1</dir>
+                    <type>3</type>
+                    <need_hs>0</need_hs>
+                    <top_port class_id_reference="25" object_id_reference="_76"></top_port>
+                    <chan class_id="-1"></chan>
+                  </port>
+                  <inst class_id_reference="31" object_id_reference="_113"></inst>
+                </item>
+                <item class_id_reference="30" object_id="_116">
+                  <port class_id_reference="25" object_id="_117">
+                    <name>m_axis_video_V_strb_V</name>
+                    <dir>1</dir>
+                    <type>3</type>
+                    <need_hs>0</need_hs>
+                    <top_port class_id_reference="25" object_id_reference="_77"></top_port>
+                    <chan class_id="-1"></chan>
+                  </port>
+                  <inst class_id_reference="31" object_id_reference="_113"></inst>
+                </item>
+                <item class_id_reference="30" object_id="_118">
+                  <port class_id_reference="25" object_id="_119">
+                    <name>m_axis_video_V_user_V</name>
+                    <dir>1</dir>
+                    <type>3</type>
+                    <need_hs>0</need_hs>
+                    <top_port class_id_reference="25" object_id_reference="_78"></top_port>
+                    <chan class_id="-1"></chan>
+                  </port>
+                  <inst class_id_reference="31" object_id_reference="_113"></inst>
+                </item>
+                <item class_id_reference="30" object_id="_120">
+                  <port class_id_reference="25" object_id="_121">
+                    <name>m_axis_video_V_last_V</name>
+                    <dir>1</dir>
+                    <type>3</type>
+                    <need_hs>0</need_hs>
+                    <top_port class_id_reference="25" object_id_reference="_79"></top_port>
+                    <chan class_id="-1"></chan>
+                  </port>
+                  <inst class_id_reference="31" object_id_reference="_113"></inst>
+                </item>
+                <item class_id_reference="30" object_id="_122">
+                  <port class_id_reference="25" object_id="_123">
+                    <name>m_axis_video_V_id_V</name>
+                    <dir>1</dir>
+                    <type>3</type>
+                    <need_hs>0</need_hs>
+                    <top_port class_id_reference="25" object_id_reference="_80"></top_port>
+                    <chan class_id="-1"></chan>
+                  </port>
+                  <inst class_id_reference="31" object_id_reference="_113"></inst>
+                </item>
+                <item class_id_reference="30" object_id="_124">
+                  <port class_id_reference="25" object_id="_125">
+                    <name>m_axis_video_V_dest_V</name>
+                    <dir>1</dir>
+                    <type>3</type>
+                    <need_hs>0</need_hs>
+                    <top_port class_id_reference="25" object_id_reference="_81"></top_port>
+                    <chan class_id="-1"></chan>
+                  </port>
+                  <inst class_id_reference="31" object_id_reference="_113"></inst>
+                </item>
+                <item class_id_reference="30" object_id="_126">
+                  <port class_id_reference="25" object_id="_127">
+                    <name>height_val4</name>
+                    <dir>0</dir>
+                    <type>3</type>
+                    <need_hs>0</need_hs>
+                    <top_port class_id_reference="25" object_id_reference="_85"></top_port>
+                    <chan class_id="-1"></chan>
+                  </port>
+                  <inst class_id_reference="31" object_id_reference="_113"></inst>
+                </item>
+                <item class_id_reference="30" object_id="_128">
+                  <port class_id_reference="25" object_id="_129">
+                    <name>width_val1</name>
+                    <dir>0</dir>
+                    <type>3</type>
+                    <need_hs>0</need_hs>
+                    <top_port class_id_reference="25" object_id_reference="_84"></top_port>
+                    <chan class_id="-1"></chan>
+                  </port>
+                  <inst class_id_reference="31" object_id_reference="_113"></inst>
+                </item>
+                <item class_id_reference="30" object_id="_130">
+                  <port class_id_reference="25" object_id="_131">
+                    <name>colorFormat_val9</name>
+                    <dir>0</dir>
+                    <type>3</type>
+                    <need_hs>0</need_hs>
+                    <top_port class_id_reference="25" object_id_reference="_89"></top_port>
+                    <chan class_id="-1"></chan>
+                  </port>
+                  <inst class_id_reference="31" object_id_reference="_113"></inst>
                 </item>
               </pins>
               <in_source_fork>0</in_source_fork>
@@ -2093,7 +2074,7 @@
           <channel_list class_id="32" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
-            <item class_id="26" tracking_level="1" version="0" object_id="_135">
+            <item class_id="26" tracking_level="1" version="0" object_id="_132">
               <type>1</type>
               <name>bytePlanes</name>
               <ssdmobj_id>39</ssdmobj_id>
@@ -2105,8 +2086,8 @@
               <source_list>
                 <count>1</count>
                 <item_version>0</item_version>
-                <item class_id_reference="30" object_id="_136">
-                  <port class_id_reference="25" object_id="_137">
+                <item class_id_reference="30" object_id="_133">
+                  <port class_id_reference="25" object_id="_134">
                     <name>in</name>
                     <dir>0</dir>
                     <type>3</type>
@@ -2114,14 +2095,14 @@
                     <top_port class_id="-1"></top_port>
                     <chan class_id="-1"></chan>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_94"></inst>
+                  <inst class_id_reference="31" object_id_reference="_93"></inst>
                 </item>
               </source_list>
               <sink_list>
                 <count>1</count>
                 <item_version>0</item_version>
-                <item class_id_reference="30" object_id="_138">
-                  <port class_id_reference="25" object_id="_139">
+                <item class_id_reference="30" object_id="_135">
+                  <port class_id_reference="25" object_id="_136">
                     <name>out</name>
                     <dir>1</dir>
                     <type>3</type>
@@ -2129,14 +2110,14 @@
                     <top_port class_id="-1"></top_port>
                     <chan class_id="-1"></chan>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_106"></inst>
+                  <inst class_id_reference="31" object_id_reference="_105"></inst>
                 </item>
               </sink_list>
               <bram_cost>4</bram_cost>
               <uram_cost>0</uram_cost>
               <storage_size>64 481 1</storage_size>
             </item>
-            <item class_id_reference="26" object_id="_140">
+            <item class_id_reference="26" object_id="_137">
               <type>1</type>
               <name>img</name>
               <ssdmobj_id>36</ssdmobj_id>
@@ -2148,8 +2129,8 @@
               <source_list>
                 <count>1</count>
                 <item_version>0</item_version>
-                <item class_id_reference="30" object_id="_141">
-                  <port class_id_reference="25" object_id="_142">
+                <item class_id_reference="30" object_id="_138">
+                  <port class_id_reference="25" object_id="_139">
                     <name>in</name>
                     <dir>0</dir>
                     <type>3</type>
@@ -2157,14 +2138,14 @@
                     <top_port class_id="-1"></top_port>
                     <chan class_id="-1"></chan>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_106"></inst>
+                  <inst class_id_reference="31" object_id_reference="_105"></inst>
                 </item>
               </source_list>
               <sink_list>
                 <count>1</count>
                 <item_version>0</item_version>
-                <item class_id_reference="30" object_id="_143">
-                  <port class_id_reference="25" object_id="_144">
+                <item class_id_reference="30" object_id="_140">
+                  <port class_id_reference="25" object_id="_141">
                     <name>out</name>
                     <dir>1</dir>
                     <type>3</type>
@@ -2172,7 +2153,7 @@
                     <top_port class_id="-1"></top_port>
                     <chan class_id="-1"></chan>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_116"></inst>
+                  <inst class_id_reference="31" object_id_reference="_113"></inst>
                 </item>
               </sink_list>
               <bram_cost>0</bram_cost>
@@ -2187,211 +2168,211 @@
         </mDfPipe>
       </item>
     </cdfg_regions>
-    <fsm class_id="34" tracking_level="1" version="0" object_id="_145">
+    <fsm class_id="34" tracking_level="1" version="0" object_id="_142">
       <states class_id="35" tracking_level="0" version="0">
         <count>6</count>
         <item_version>0</item_version>
-        <item class_id="36" tracking_level="1" version="0" object_id="_146">
+        <item class_id="36" tracking_level="1" version="0" object_id="_143">
           <id>1</id>
           <operations class_id="37" tracking_level="0" version="0">
             <count>7</count>
             <item_version>0</item_version>
-            <item class_id="38" tracking_level="1" version="0" object_id="_147">
+            <item class_id="38" tracking_level="1" version="0" object_id="_144">
               <id>23</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_148">
+            <item class_id_reference="38" object_id="_145">
               <id>25</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_149">
+            <item class_id_reference="38" object_id="_146">
               <id>26</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_150">
+            <item class_id_reference="38" object_id="_147">
               <id>28</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_151">
+            <item class_id_reference="38" object_id="_148">
               <id>36</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_152">
+            <item class_id_reference="38" object_id="_149">
               <id>39</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_153">
+            <item class_id_reference="38" object_id="_150">
               <id>43</id>
               <stage>2</stage>
               <latency>2</latency>
             </item>
           </operations>
         </item>
-        <item class_id_reference="36" object_id="_154">
+        <item class_id_reference="36" object_id="_151">
           <id>2</id>
           <operations>
             <count>1</count>
             <item_version>0</item_version>
-            <item class_id_reference="38" object_id="_155">
+            <item class_id_reference="38" object_id="_152">
               <id>43</id>
               <stage>1</stage>
+              <latency>2</latency>
+            </item>
+          </operations>
+        </item>
+        <item class_id_reference="36" object_id="_153">
+          <id>3</id>
+          <operations>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item class_id_reference="38" object_id="_154">
+              <id>24</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="38" object_id="_155">
+              <id>44</id>
+              <stage>2</stage>
               <latency>2</latency>
             </item>
           </operations>
         </item>
         <item class_id_reference="36" object_id="_156">
-          <id>3</id>
-          <operations>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item class_id_reference="38" object_id="_157">
-              <id>24</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="38" object_id="_158">
-              <id>27</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="38" object_id="_159">
-              <id>44</id>
-              <stage>2</stage>
-              <latency>2</latency>
-            </item>
-          </operations>
-        </item>
-        <item class_id_reference="36" object_id="_160">
           <id>4</id>
           <operations>
             <count>1</count>
             <item_version>0</item_version>
-            <item class_id_reference="38" object_id="_161">
+            <item class_id_reference="38" object_id="_157">
               <id>44</id>
               <stage>1</stage>
+              <latency>2</latency>
+            </item>
+          </operations>
+        </item>
+        <item class_id_reference="36" object_id="_158">
+          <id>5</id>
+          <operations>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item class_id_reference="38" object_id="_159">
+              <id>22</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="38" object_id="_160">
+              <id>27</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="38" object_id="_161">
+              <id>45</id>
+              <stage>2</stage>
               <latency>2</latency>
             </item>
           </operations>
         </item>
         <item class_id_reference="36" object_id="_162">
-          <id>5</id>
-          <operations>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item class_id_reference="38" object_id="_163">
-              <id>22</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="38" object_id="_164">
-              <id>45</id>
-              <stage>2</stage>
-              <latency>2</latency>
-            </item>
-          </operations>
-        </item>
-        <item class_id_reference="36" object_id="_165">
           <id>6</id>
           <operations>
             <count>19</count>
             <item_version>0</item_version>
-            <item class_id_reference="38" object_id="_166">
+            <item class_id_reference="38" object_id="_163">
               <id>17</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_167">
+            <item class_id_reference="38" object_id="_164">
               <id>18</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_168">
+            <item class_id_reference="38" object_id="_165">
               <id>19</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_169">
+            <item class_id_reference="38" object_id="_166">
               <id>20</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_170">
+            <item class_id_reference="38" object_id="_167">
               <id>21</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_171">
+            <item class_id_reference="38" object_id="_168">
               <id>29</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_172">
+            <item class_id_reference="38" object_id="_169">
               <id>30</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_173">
+            <item class_id_reference="38" object_id="_170">
               <id>31</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_174">
+            <item class_id_reference="38" object_id="_171">
               <id>32</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_175">
+            <item class_id_reference="38" object_id="_172">
               <id>33</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_176">
+            <item class_id_reference="38" object_id="_173">
               <id>34</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_177">
+            <item class_id_reference="38" object_id="_174">
               <id>35</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_178">
+            <item class_id_reference="38" object_id="_175">
               <id>37</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_179">
+            <item class_id_reference="38" object_id="_176">
               <id>38</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_180">
+            <item class_id_reference="38" object_id="_177">
               <id>40</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_181">
+            <item class_id_reference="38" object_id="_178">
               <id>41</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_182">
+            <item class_id_reference="38" object_id="_179">
               <id>42</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_183">
+            <item class_id_reference="38" object_id="_180">
               <id>45</id>
               <stage>1</stage>
               <latency>2</latency>
             </item>
-            <item class_id_reference="38" object_id="_184">
+            <item class_id_reference="38" object_id="_181">
               <id>46</id>
               <stage>1</stage>
               <latency>1</latency>
@@ -2402,7 +2383,7 @@
       <transitions class_id="39" tracking_level="0" version="0">
         <count>5</count>
         <item_version>0</item_version>
-        <item class_id="40" tracking_level="1" version="0" object_id="_185">
+        <item class_id="40" tracking_level="1" version="0" object_id="_182">
           <inState>1</inState>
           <outState>2</outState>
           <condition class_id="41" tracking_level="0" version="0">
@@ -2417,7 +2398,7 @@
             </sop>
           </condition>
         </item>
-        <item class_id_reference="40" object_id="_186">
+        <item class_id_reference="40" object_id="_183">
           <inState>2</inState>
           <outState>3</outState>
           <condition>
@@ -2432,7 +2413,7 @@
             </sop>
           </condition>
         </item>
-        <item class_id_reference="40" object_id="_187">
+        <item class_id_reference="40" object_id="_184">
           <inState>3</inState>
           <outState>4</outState>
           <condition>
@@ -2447,7 +2428,7 @@
             </sop>
           </condition>
         </item>
-        <item class_id_reference="40" object_id="_188">
+        <item class_id_reference="40" object_id="_185">
           <inState>4</inState>
           <outState>5</outState>
           <condition>
@@ -2462,7 +2443,7 @@
             </sop>
           </condition>
         </item>
-        <item class_id_reference="40" object_id="_189">
+        <item class_id_reference="40" object_id="_186">
           <inState>5</inState>
           <outState>6</outState>
           <condition>
@@ -2479,7 +2460,7 @@
         </item>
       </transitions>
     </fsm>
-    <res class_id="44" tracking_level="1" version="0" object_id="_190">
+    <res class_id="44" tracking_level="1" version="0" object_id="_187">
       <dp_component_resource class_id="45" tracking_level="0" version="0">
         <count>5</count>
         <item_version>0</item_version>
@@ -2501,19 +2482,15 @@
         <item>
           <first>Bytes2MultiPixStream_U0 (Bytes2MultiPixStream)</first>
           <second>
-            <count>3</count>
+            <count>2</count>
             <item_version>0</item_version>
             <item>
-              <first>DSP</first>
-              <second>1</second>
-            </item>
-            <item>
               <first>FF</first>
-              <second>467</second>
+              <second>112</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>516</second>
+              <second>238</second>
             </item>
           </second>
         </item>
@@ -2731,7 +2708,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>199</item>
+            <item>198</item>
           </second>
         </item>
         <item>
@@ -2739,7 +2716,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>216</item>
+            <item>215</item>
           </second>
         </item>
       </dp_fifo_map>
@@ -2789,7 +2766,7 @@
       <item>
         <first>27</first>
         <second>
-          <first>2</first>
+          <first>4</first>
           <second>0</second>
         </second>
       </item>
@@ -2857,7 +2834,7 @@
     <regions class_id="57" tracking_level="0" version="0">
       <count>1</count>
       <item_version>0</item_version>
-      <item class_id="58" tracking_level="1" version="0" object_id="_191">
+      <item class_id="58" tracking_level="1" version="0" object_id="_188">
         <region_name>FrmbufRdHlsDataFlow</region_name>
         <basic_blocks>
           <count>1</count>
@@ -2972,7 +2949,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>27</item>
+          <item>22</item>
         </second>
       </item>
       <item>
@@ -2980,7 +2957,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>22</item>
+          <item>27</item>
         </second>
       </item>
       <item>
@@ -3002,7 +2979,7 @@
         </second>
       </item>
       <item>
-        <first>193</first>
+        <first>191</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3053,7 +3030,7 @@
         </second>
       </item>
       <item>
-        <first>grp_MultiPixStream2AXIvideo_fu_193</first>
+        <first>grp_MultiPixStream2AXIvideo_fu_191</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3074,7 +3051,7 @@
         </second>
       </item>
       <item>
-        <first>WidthInBytes_val10_read_read_fu_124</first>
+        <first>WidthInBytes_val8_read_read_fu_124</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3082,7 +3059,7 @@
         </second>
       </item>
       <item>
-        <first>colorFormat_val11_read_read_fu_160</first>
+        <first>colorFormat_val9_read_read_fu_154</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3090,7 +3067,7 @@
         </second>
       </item>
       <item>
-        <first>height_val6_read_read_fu_136</first>
+        <first>height_val4_read_read_fu_136</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3098,7 +3075,7 @@
         </second>
       </item>
       <item>
-        <first>stride_val7_read_read_fu_130</first>
+        <first>stride_val5_read_read_fu_130</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3106,7 +3083,7 @@
         </second>
       </item>
       <item>
-        <first>video_format_val8_read_read_fu_148</first>
+        <first>video_format_val6_read_read_fu_148</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3114,7 +3091,7 @@
         </second>
       </item>
       <item>
-        <first>width_val2_read_read_fu_154</first>
+        <first>width_val1_read_read_fu_160</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3145,7 +3122,7 @@
       <count>9</count>
       <item_version>0</item_version>
       <item>
-        <first>218</first>
+        <first>217</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3153,7 +3130,7 @@
         </second>
       </item>
       <item>
-        <first>224</first>
+        <first>223</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3161,7 +3138,7 @@
         </second>
       </item>
       <item>
-        <first>229</first>
+        <first>228</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3169,7 +3146,7 @@
         </second>
       </item>
       <item>
-        <first>236</first>
+        <first>235</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3177,7 +3154,7 @@
         </second>
       </item>
       <item>
-        <first>241</first>
+        <first>240</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3185,7 +3162,7 @@
         </second>
       </item>
       <item>
-        <first>247</first>
+        <first>246</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3193,7 +3170,7 @@
         </second>
       </item>
       <item>
-        <first>253</first>
+        <first>252</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3201,19 +3178,19 @@
         </second>
       </item>
       <item>
-        <first>258</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>27</item>
-        </second>
-      </item>
-      <item>
-        <first>264</first>
+        <first>257</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>22</item>
+        </second>
+      </item>
+      <item>
+        <first>262</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>27</item>
         </second>
       </item>
     </dp_reg_nodes>
@@ -3221,7 +3198,7 @@
       <count>9</count>
       <item_version>0</item_version>
       <item>
-        <first>HwReg_frm_buffer_read_reg_236</first>
+        <first>HwReg_frm_buffer_read_reg_235</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3229,7 +3206,7 @@
         </second>
       </item>
       <item>
-        <first>WidthInBytes_val10_read_reg_218</first>
+        <first>WidthInBytes_val8_read_reg_217</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3237,7 +3214,7 @@
         </second>
       </item>
       <item>
-        <first>bytePlanes_reg_247</first>
+        <first>bytePlanes_reg_246</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3245,7 +3222,7 @@
         </second>
       </item>
       <item>
-        <first>colorFormat_val11_read_reg_264</first>
+        <first>colorFormat_val9_read_reg_257</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3253,7 +3230,7 @@
         </second>
       </item>
       <item>
-        <first>height_val6_read_reg_229</first>
+        <first>height_val4_read_reg_228</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3261,7 +3238,7 @@
         </second>
       </item>
       <item>
-        <first>img_reg_241</first>
+        <first>img_reg_240</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3269,7 +3246,7 @@
         </second>
       </item>
       <item>
-        <first>stride_val7_read_reg_224</first>
+        <first>stride_val5_read_reg_223</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3277,7 +3254,7 @@
         </second>
       </item>
       <item>
-        <first>video_format_val8_read_reg_253</first>
+        <first>video_format_val6_read_reg_252</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3285,7 +3262,7 @@
         </second>
       </item>
       <item>
-        <first>width_val2_read_reg_258</first>
+        <first>width_val1_read_reg_262</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3320,7 +3297,7 @@
         </second>
       </item>
       <item>
-        <first>WidthInBytes_val10</first>
+        <first>WidthInBytes_val8</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3335,7 +3312,7 @@
         </second>
       </item>
       <item>
-        <first>colorFormat_val11</first>
+        <first>colorFormat_val9</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3350,7 +3327,7 @@
         </second>
       </item>
       <item>
-        <first>height_val6</first>
+        <first>height_val4</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3485,7 +3462,7 @@
         </second>
       </item>
       <item>
-        <first>stride_val7</first>
+        <first>stride_val5</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3500,7 +3477,7 @@
         </second>
       </item>
       <item>
-        <first>video_format_val8</first>
+        <first>video_format_val6</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3515,7 +3492,7 @@
         </second>
       </item>
       <item>
-        <first>width_val2</first>
+        <first>width_val1</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

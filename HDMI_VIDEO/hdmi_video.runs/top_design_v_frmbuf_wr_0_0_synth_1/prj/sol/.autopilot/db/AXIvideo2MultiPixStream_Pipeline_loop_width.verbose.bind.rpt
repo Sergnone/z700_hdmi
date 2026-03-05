@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'AXIvideo2MultiPixStream_Pipeline_loop_width'
 ================================================================
-* Date:           Thu Feb 19 12:55:08 2026
+* Date:           Thu Mar  5 14:47:30 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -139,12 +139,12 @@ ST_2 : Operation 62 [1/1] (1.29ns)   --->   "%ret_ln0 = ret"   --->   Operation 
 State 3 <SV = 2> <Delay = 3.39>
 ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%axi_data = load i24 %p_0_0_0_0178414" [hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:63->hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:85->prj/sol/.autopilot/db/v_frmbuf_wr.cpp:359]   --->   Operation 48 'load' 'axi_data' <Predicate = (!icmp_ln326)> <Delay = 0.00>
 ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%eol_2 = load i1 %p_4_0_0_0186423"   --->   Operation 49 'load' 'eol_2' <Predicate = (!icmp_ln326)> <Delay = 0.00>
-ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%tmp_3 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32, i24 %axi_data, i32 16" [hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:63->hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:85->prj/sol/.autopilot/db/v_frmbuf_wr.cpp:358]   --->   Operation 50 'partselect' 'tmp_3' <Predicate = (!icmp_ln326)> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%tmp_9 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32, i24 %axi_data, i32 16" [hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:63->hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:85->prj/sol/.autopilot/db/v_frmbuf_wr.cpp:358]   --->   Operation 50 'partselect' 'tmp_9' <Predicate = (!icmp_ln326)> <Delay = 0.00>
 ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%trunc_ln63 = trunc i24 %axi_data" [hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:63->hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:85->prj/sol/.autopilot/db/v_frmbuf_wr.cpp:359]   --->   Operation 51 'trunc' 'trunc_ln63' <Predicate = (!icmp_ln326)> <Delay = 0.00>
-ST_3 : Operation 52 [1/1] (0.44ns)   --->   "%select_ln361 = select i1 %icmp_ln361, i8 %tmp_3, i8 %trunc_ln63" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:361]   --->   Operation 52 'select' 'select_ln361' <Predicate = (!icmp_ln326)> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%tmp_5 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32, i24 %axi_data, i32 8" [hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:63->hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:85->prj/sol/.autopilot/db/v_frmbuf_wr.cpp:359]   --->   Operation 53 'partselect' 'tmp_5' <Predicate = (!icmp_ln326)> <Delay = 0.00>
-ST_3 : Operation 54 [1/1] (0.44ns)   --->   "%select_ln361_1 = select i1 %icmp_ln361, i8 %trunc_ln63, i8 %tmp_5" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:361]   --->   Operation 54 'select' 'select_ln361_1' <Predicate = (!icmp_ln326)> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 55 [1/1] (0.44ns)   --->   "%select_ln361_2 = select i1 %icmp_ln361, i8 %tmp_5, i8 %tmp_3" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:361]   --->   Operation 55 'select' 'select_ln361_2' <Predicate = (!icmp_ln326)> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 52 [1/1] (0.44ns)   --->   "%select_ln361 = select i1 %icmp_ln361, i8 %tmp_9, i8 %trunc_ln63" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:361]   --->   Operation 52 'select' 'select_ln361' <Predicate = (!icmp_ln326)> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%tmp_1 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32, i24 %axi_data, i32 8" [hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:63->hdmi_video.gen/sources_1/bd/top_design/ip/top_design_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:85->prj/sol/.autopilot/db/v_frmbuf_wr.cpp:359]   --->   Operation 53 'partselect' 'tmp_1' <Predicate = (!icmp_ln326)> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.44ns)   --->   "%select_ln361_1 = select i1 %icmp_ln361, i8 %trunc_ln63, i8 %tmp_1" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:361]   --->   Operation 54 'select' 'select_ln361_1' <Predicate = (!icmp_ln326)> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 55 [1/1] (0.44ns)   --->   "%select_ln361_2 = select i1 %icmp_ln361, i8 %tmp_1, i8 %tmp_9" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:361]   --->   Operation 55 'select' 'select_ln361_2' <Predicate = (!icmp_ln326)> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%or_ln403_3 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i8.i8.i8, i8 %select_ln361_2, i8 %select_ln361_1, i8 %select_ln361" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:403]   --->   Operation 56 'bitconcatenate' 'or_ln403_3' <Predicate = (!icmp_ln326)> <Delay = 0.00>
 ST_3 : Operation 57 [1/1] ( I:2.43ns O:2.43ns )   --->   "%write_ln403 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %img, i24 %or_ln403_3" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:403]   --->   Operation 57 'write' 'write_ln403' <Predicate = (!icmp_ln326)> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
 
@@ -225,10 +225,10 @@ store_ln337                   (store              ) [ 0000]
 br_ln0                        (br                 ) [ 0000]
 axi_data                      (load               ) [ 0000]
 eol_2                         (load               ) [ 0110]
-tmp_3                         (partselect         ) [ 0000]
+tmp_9                         (partselect         ) [ 0000]
 trunc_ln63                    (trunc              ) [ 0000]
 select_ln361                  (select             ) [ 0000]
-tmp_5                         (partselect         ) [ 0000]
+tmp_1                         (partselect         ) [ 0000]
 select_ln361_1                (select             ) [ 0000]
 select_ln361_2                (select             ) [ 0000]
 or_ln403_3                    (bitconcatenate     ) [ 0000]
@@ -1066,7 +1066,7 @@ ret_ln0                       (ret                ) [ 0000]
 </bind>
 </comp>
 
-<comp id="274" class="1004" name="tmp_3_fu_274">
+<comp id="274" class="1004" name="tmp_9_fu_274">
 <pin_list>
 <pin id="275" dir="0" index="0" bw="8" slack="0"/>
 <pin id="276" dir="0" index="1" bw="24" slack="0"/>
@@ -1075,7 +1075,7 @@ ret_ln0                       (ret                ) [ 0000]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_3/3 "/>
+<opset="tmp_9/3 "/>
 </bind>
 </comp>
 
@@ -1103,7 +1103,7 @@ ret_ln0                       (ret                ) [ 0000]
 </bind>
 </comp>
 
-<comp id="293" class="1004" name="tmp_5_fu_293">
+<comp id="293" class="1004" name="tmp_1_fu_293">
 <pin_list>
 <pin id="294" dir="0" index="0" bw="8" slack="0"/>
 <pin id="295" dir="0" index="1" bw="24" slack="0"/>
@@ -1112,7 +1112,7 @@ ret_ln0                       (ret                ) [ 0000]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_5/3 "/>
+<opset="tmp_1/3 "/>
 </bind>
 </comp>
 
@@ -1470,10 +1470,10 @@ ret_ln0                       (ret                ) [ 0000]
 		write_ln0 : 1
 		write_ln0 : 1
 	State 3
-		tmp_3 : 1
+		tmp_9 : 1
 		trunc_ln63 : 1
 		select_ln361 : 2
-		tmp_5 : 1
+		tmp_1 : 1
 		select_ln361_1 : 2
 		select_ln361_2 : 2
 		or_ln403_3 : 3
@@ -1513,8 +1513,8 @@ ret_ln0                       (ret                ) [ 0000]
 |extractvalue|                 p_s_fu_250                |    0    |    0    |
 |          |                eol_1_fu_254               |    0    |    0    |
 |----------|-------------------------------------------|---------|---------|
-|partselect|                tmp_3_fu_274               |    0    |    0    |
-|          |                tmp_5_fu_293               |    0    |    0    |
+|partselect|                tmp_9_fu_274               |    0    |    0    |
+|          |                tmp_1_fu_293               |    0    |    0    |
 |----------|-------------------------------------------|---------|---------|
 |   trunc  |             trunc_ln63_fu_282             |    0    |    0    |
 |----------|-------------------------------------------|---------|---------|

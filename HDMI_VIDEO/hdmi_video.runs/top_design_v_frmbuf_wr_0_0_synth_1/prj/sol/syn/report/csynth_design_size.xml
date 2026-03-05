@@ -2,50 +2,50 @@
     <item name="Total Instructions per Compilation Phase">
         <table>
             <keys size="4">Phase, Step, Instructions, Description</keys>
-            <column name="Compile/Link">, 2065, After all functions are compiled and linked into a single design</column>
+            <column name="Compile/Link">, 1978, After all functions are compiled and linked into a single design</column>
             <column name="">, , </column>
             <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
-            <column name="">(1) unroll,   998, user unroll pragmas are applied</column>
-            <column name="">(2) simplification,   674, simplification of applied user unroll pragmas</column>
-            <column name="">(3) inline,   585, user inline pragmas are applied</column>
-            <column name="">(4) simplification,   513, simplification of applied user inline pragmas</column>
+            <column name="">(1) unroll,   798, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,   498, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,   482, user inline pragmas are applied</column>
+            <column name="">(4) simplification,   410, simplification of applied user inline pragmas</column>
             <column name="">, , </column>
             <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(1) array partition,   477, user array partition pragmas are applied</column>
-            <column name="">(2) simplification,   477, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
-            <column name="">(3) aggregate/disaggregate,   486, user struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(4) array reshape,   657, apply array reshape pragmas</column>
-            <column name="">(5) access patterns,   712, array access pattern optmizations</column>
+            <column name="">(1) array partition,   374, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,   374, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate,   377, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,   434, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,   496, array access pattern optmizations</column>
             <column name="">, , </column>
             <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
-            <column name="">(1) loop simplification,   683, loop and instruction simplification</column>
-            <column name="">(2) parallelization,   659, loops are unrolled or pipelined to meet performance targets</column>
-            <column name="">(3) array partition,   619, arrays are partitioned to meet performance targets</column>
-            <column name="">(4) simplification,   619, simplification of design after performance transformations</column>
+            <column name="">(1) loop simplification,   468, loop and instruction simplification</column>
+            <column name="">(2) parallelization,   443, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,   403, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,   403, simplification of design after performance transformations</column>
             <column name="">, , </column>
             <column name="HW Transforms">, , After hardware transfomations</column>
-            <column name="">(1) lowering,   606, initial conversion to HW specific instructions</column>
-            <column name="">(2) optimizations,   518, high level synthesis optimizations</column>
+            <column name="">(1) lowering,   384, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,   333, high level synthesis optimizations</column>
         </table>
     </item>
     <item name="Instructions per Function for each Compilation Phase">
         <hiertable>
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
-                <row id="0" col0="v_frmbuf_wr" col1="v_frmbuf_wr.cpp:157" col2="2065" col3="513" col4="712" col5="619" col6="518">
-                    <row id="2" col0="FrmbufWrHlsDataFlow" col1="v_frmbuf_wr.cpp:89" col2="1960" col3="457" col4="656" col5="575" col6="463">
-                        <row id="1" col0="STREAM_PLANES" col1="v_frmbuf_wr.h:255" col2="4" col3="" col4="" col5="" col6=""/>
-                        <row id="5" col0="AXIvideo2MultiPixStream" col1="v_frmbuf_wr.cpp:282" col2="1283" col3="227" col4="278" col5="210" col6="126">
-                            <row id="9" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
-                            <row id="8" col0="reg&lt;unsigned short&gt;" col1="x_hls_utils.h:222" col2="2" col2_disp="   2 (2 calls)" col3="2" col3_disp="  2 (2 calls)" col4="2" col4_disp="  2 (2 calls)" col5="2" col5_disp="  2 (2 calls)" col6="8" col6_disp="  8 (2 calls)"/>
-                            <row id="6" col0="AXIGetBitFields&lt;24, ap_uint&lt;8&gt; &gt;" col1="hls_axi_io.h:83" col2="228" col2_disp=" 228 (3 calls)" col3="" col4="" col5="" col6="">
-                                <row id="3" col0="AXIGetBitFields&lt;24, ap_uint&lt;8&gt; &gt;" col1="hls_axi_io.h:60" col2="210" col2_disp=" 210 (3 calls)" col3="" col4="" col5="" col6=""/>
+                <row id="0" col0="v_frmbuf_wr" col1="v_frmbuf_wr.cpp:157" col2="1978" col3="410" col4="496" col5="403" col6="333">
+                    <row id="6" col0="FrmbufWrHlsDataFlow" col1="v_frmbuf_wr.cpp:89" col2="1873" col3="354" col4="440" col5="359" col6="278">
+                        <row id="4" col0="STREAM_PLANES" col1="v_frmbuf_wr.h:255" col2="4" col3="" col4="" col5="" col6=""/>
+                        <row id="2" col0="AXIvideo2MultiPixStream" col1="v_frmbuf_wr.cpp:282" col2="1283" col3="227" col4="278" col5="210" col6="126">
+                            <row id="7" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            <row id="3" col0="reg&lt;unsigned short&gt;" col1="x_hls_utils.h:222" col2="2" col2_disp="   2 (2 calls)" col3="2" col3_disp="  2 (2 calls)" col4="2" col4_disp="  2 (2 calls)" col5="2" col5_disp="  2 (2 calls)" col6="8" col6_disp="  8 (2 calls)"/>
+                            <row id="5" col0="AXIGetBitFields&lt;24, ap_uint&lt;8&gt; &gt;" col1="hls_axi_io.h:83" col2="228" col2_disp=" 228 (3 calls)" col3="" col4="" col5="" col6="">
+                                <row id="1" col0="AXIGetBitFields&lt;24, ap_uint&lt;8&gt; &gt;" col1="hls_axi_io.h:60" col2="210" col2_disp=" 210 (3 calls)" col3="" col4="" col5="" col6=""/>
                             </row>
                         </row>
-                        <row id="4" col0="MultiPixStream2Bytes" col1="v_frmbuf_wr.cpp:428" col2="599" col3="186" col4="332" col5="323" col6="282">
-                            <row id="9" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                        <row id="8" col0="MultiPixStream2Bytes" col1="v_frmbuf_wr.cpp:428" col2="512" col3="83" col4="116" col5="107" col6="97">
+                            <row id="7" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
                         </row>
-                        <row id="7" col0="Bytes2AXIMMvideo" col1="v_frmbuf_wr.cpp:1526" col2="50" col3="34" col4="36" col5="32" col6="42"/>
+                        <row id="9" col0="Bytes2AXIMMvideo" col1="v_frmbuf_wr.cpp:1526" col2="50" col3="34" col4="36" col5="32" col6="42"/>
                     </row>
                 </row>
             </rows>

@@ -1159,10 +1159,10 @@ VITIS_LOOP_515_1.split:4 %add_ln515_1 = add i32 %zext_ln515_1, i32 %srcImg_read
 
 <Node id="41" bw="29" op_0_bw="29" op_1_bw="32" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-VITIS_LOOP_515_1.split:5 %trunc_ln4 = partselect i29 @_ssdm_op_PartSelect.i29.i32.i32.i32, i32 %add_ln515_1, i32 3, i32 31
+VITIS_LOOP_515_1.split:5 %trunc_ln2 = partselect i29 @_ssdm_op_PartSelect.i29.i32.i32.i32, i32 %add_ln515_1, i32 3, i32 31
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln4"/></StgValue>
+<StgValue><ssdm name="trunc_ln2"/></StgValue>
 </operation>
 
 <operation id="144" st_id="2" stage="1" lat="1">
@@ -1241,7 +1241,7 @@ for.end12:0 %ret_ln525 = ret
 
 <Node id="42" bw="32" op_0_bw="29">
 <![CDATA[
-VITIS_LOOP_515_1.split:6 %sext_ln515 = sext i29 %trunc_ln4
+VITIS_LOOP_515_1.split:6 %sext_ln515 = sext i29 %trunc_ln2
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln515"/></StgValue>
@@ -3197,7 +3197,7 @@ VITIS_LOOP_515_1.split:8 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 
 
 <Node id="45" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="64" op_3_bw="29" op_4_bw="64" op_5_bw="0">
 <![CDATA[
-VITIS_LOOP_515_1.split:9 %call_ln515 = call void @AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1, i11 %lshr_ln, i64 %mm_video, i29 %trunc_ln4, i64 %bytePlanes
+VITIS_LOOP_515_1.split:9 %call_ln515 = call void @AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1, i11 %lshr_ln, i64 %mm_video, i29 %trunc_ln2, i64 %bytePlanes
 
 ]]></Node>
 <StgValue><ssdm name="call_ln515"/></StgValue>
@@ -3230,7 +3230,7 @@ VITIS_LOOP_515_1.split:1 %specloopname_ln510 = specloopname void @_ssdm_op_SpecL
 
 <Node id="45" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="64" op_3_bw="29" op_4_bw="64" op_5_bw="0">
 <![CDATA[
-VITIS_LOOP_515_1.split:9 %call_ln515 = call void @AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1, i11 %lshr_ln, i64 %mm_video, i29 %trunc_ln4, i64 %bytePlanes
+VITIS_LOOP_515_1.split:9 %call_ln515 = call void @AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1, i11 %lshr_ln, i64 %mm_video, i29 %trunc_ln2, i64 %bytePlanes
 
 ]]></Node>
 <StgValue><ssdm name="call_ln515"/></StgValue>

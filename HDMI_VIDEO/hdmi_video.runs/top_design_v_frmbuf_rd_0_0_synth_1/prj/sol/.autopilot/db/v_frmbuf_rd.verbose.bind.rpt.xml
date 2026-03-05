@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'v_frmbuf_rd'" level="0">
-<item name = "Date">Thu Feb 19 12:55:08 2026
+<item name = "Date">Thu Mar  5 14:47:30 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">7174, 4152716, 47.829 us, 27.686 ms, 7175, 4152717, no</column>
+<column name="">7174, 3115916, 47.829 us, 20.774 ms, 7175, 3115917, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_FrmbufRdHlsDataFlow_fu_166">FrmbufRdHlsDataFlow, 7169, 4152711, 47.796 us, 27.686 ms, 7170, 4152616, dataflow</column>
+<column name="grp_FrmbufRdHlsDataFlow_fu_166">FrmbufRdHlsDataFlow, 7169, 3115911, 47.796 us, 20.774 ms, 7170, 3115802, dataflow</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

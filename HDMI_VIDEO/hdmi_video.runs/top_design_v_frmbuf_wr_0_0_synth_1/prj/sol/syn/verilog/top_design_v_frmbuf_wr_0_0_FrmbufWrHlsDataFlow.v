@@ -64,22 +64,22 @@ module top_design_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow (
         HwReg_frm_buffer,
         WidthInBytes_val2,
         colorFormat_val3,
-        width_val5,
-        height_val8,
-        stride_val9,
-        video_format_val10,
+        width_val4,
+        height_val7,
+        stride_val8,
+        video_format_val9,
         ap_clk,
         ap_rst,
         s_axis_video_TVALID,
         s_axis_video_TREADY,
-        height_val8_ap_vld,
-        width_val5_ap_vld,
+        height_val7_ap_vld,
+        width_val4_ap_vld,
         colorFormat_val3_ap_vld,
         ap_start,
         WidthInBytes_val2_ap_vld,
-        video_format_val10_ap_vld,
+        video_format_val9_ap_vld,
         HwReg_frm_buffer_ap_vld,
-        stride_val9_ap_vld,
+        stride_val8_ap_vld,
         ap_done,
         ap_ready,
         ap_idle,
@@ -143,22 +143,22 @@ input  [0:0] m_axi_mm_video_0_BUSER;
 input  [31:0] HwReg_frm_buffer;
 input  [13:0] WidthInBytes_val2;
 input  [2:0] colorFormat_val3;
-input  [10:0] width_val5;
-input  [10:0] height_val8;
-input  [15:0] stride_val9;
-input  [5:0] video_format_val10;
+input  [10:0] width_val4;
+input  [10:0] height_val7;
+input  [15:0] stride_val8;
+input  [5:0] video_format_val9;
 input   ap_clk;
 input   ap_rst;
 input   s_axis_video_TVALID;
 output   s_axis_video_TREADY;
-input   height_val8_ap_vld;
-input   width_val5_ap_vld;
+input   height_val7_ap_vld;
+input   width_val4_ap_vld;
 input   colorFormat_val3_ap_vld;
 input   ap_start;
 input   WidthInBytes_val2_ap_vld;
-input   video_format_val10_ap_vld;
+input   video_format_val9_ap_vld;
 input   HwReg_frm_buffer_ap_vld;
-input   stride_val9_ap_vld;
+input   stride_val8_ap_vld;
 output   ap_done;
 output   ap_ready;
 output   ap_idle;
@@ -184,6 +184,8 @@ wire    MultiPixStream2Bytes_U0_start_write;
 wire    MultiPixStream2Bytes_U0_img_read;
 wire   [63:0] MultiPixStream2Bytes_U0_bytePlanes_din;
 wire    MultiPixStream2Bytes_U0_bytePlanes_write;
+wire   [31:0] MultiPixStream2Bytes_U0_bytePlanes_num_data_valid;
+wire   [31:0] MultiPixStream2Bytes_U0_bytePlanes_fifo_cap;
 wire    Bytes2AXIMMvideo_U0_ap_start;
 wire    Bytes2AXIMMvideo_U0_ap_done;
 wire    Bytes2AXIMMvideo_U0_ap_continue;
@@ -266,8 +268,8 @@ top_design_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream AXIvideo2MultiPixStream_U0(
     .img_write(AXIvideo2MultiPixStream_U0_img_write),
     .img_num_data_valid(img_num_data_valid),
     .img_fifo_cap(img_fifo_cap),
-    .Height_val(height_val8),
-    .WidthIn_val(width_val5),
+    .Height_val(height_val7),
+    .WidthIn_val(width_val4),
     .colorFormat_val(colorFormat_val3)
 );
 
@@ -290,12 +292,11 @@ top_design_v_frmbuf_wr_0_0_MultiPixStream2Bytes MultiPixStream2Bytes_U0(
     .bytePlanes_din(MultiPixStream2Bytes_U0_bytePlanes_din),
     .bytePlanes_full_n(bytePlanes_full_n),
     .bytePlanes_write(MultiPixStream2Bytes_U0_bytePlanes_write),
-    .bytePlanes_num_data_valid(bytePlanes_num_data_valid),
-    .bytePlanes_fifo_cap(bytePlanes_fifo_cap),
-    .Height_val(height_val8),
-    .WidthInPix_val(width_val5),
+    .bytePlanes_num_data_valid(MultiPixStream2Bytes_U0_bytePlanes_num_data_valid),
+    .bytePlanes_fifo_cap(MultiPixStream2Bytes_U0_bytePlanes_fifo_cap),
+    .Height_val(height_val7),
     .WidthInBytes_val(WidthInBytes_val2),
-    .VideoFormat_val(video_format_val10)
+    .VideoFormat_val(video_format_val9)
 );
 
 top_design_v_frmbuf_wr_0_0_Bytes2AXIMMvideo Bytes2AXIMMvideo_U0(
@@ -358,9 +359,9 @@ top_design_v_frmbuf_wr_0_0_Bytes2AXIMMvideo Bytes2AXIMMvideo_U0(
     .m_axi_mm_video_0_BID(m_axi_mm_video_0_BID),
     .m_axi_mm_video_0_BUSER(m_axi_mm_video_0_BUSER),
     .dstImg(HwReg_frm_buffer),
-    .Height_val(height_val8),
+    .Height_val(height_val7),
     .WidthInBytes_val(WidthInBytes_val2),
-    .StrideInBytes_val(stride_val9)
+    .StrideInBytes_val(stride_val8)
 );
 
 top_design_v_frmbuf_wr_0_0_fifo_w24_d2_S img_U(
@@ -430,6 +431,10 @@ assign Bytes2AXIMMvideo_U0_ap_start = start_for_Bytes2AXIMMvideo_U0_empty_n;
 assign MultiPixStream2Bytes_U0_ap_continue = 1'b1;
 
 assign MultiPixStream2Bytes_U0_ap_start = start_for_MultiPixStream2Bytes_U0_empty_n;
+
+assign MultiPixStream2Bytes_U0_bytePlanes_fifo_cap = bytePlanes_fifo_cap;
+
+assign MultiPixStream2Bytes_U0_bytePlanes_num_data_valid = bytePlanes_num_data_valid;
 
 assign ap_done = Bytes2AXIMMvideo_U0_ap_done;
 

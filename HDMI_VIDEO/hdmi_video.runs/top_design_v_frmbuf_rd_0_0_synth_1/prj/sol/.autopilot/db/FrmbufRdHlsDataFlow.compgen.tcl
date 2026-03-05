@@ -31,7 +31,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 73 \
+    id 60 \
     name m_axis_video_V_data_V \
     reset_level 1 \
     sync_rst true \
@@ -50,7 +50,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 74 \
+    id 61 \
     name m_axis_video_V_keep_V \
     reset_level 1 \
     sync_rst true \
@@ -69,7 +69,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 75 \
+    id 62 \
     name m_axis_video_V_strb_V \
     reset_level 1 \
     sync_rst true \
@@ -88,7 +88,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 76 \
+    id 63 \
     name m_axis_video_V_user_V \
     reset_level 1 \
     sync_rst true \
@@ -107,7 +107,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 77 \
+    id 64 \
     name m_axis_video_V_last_V \
     reset_level 1 \
     sync_rst true \
@@ -126,7 +126,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 78 \
+    id 65 \
     name m_axis_video_V_id_V \
     reset_level 1 \
     sync_rst true \
@@ -145,7 +145,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 79 \
+    id 66 \
     name m_axis_video_V_dest_V \
     reset_level 1 \
     sync_rst true \
@@ -163,7 +163,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 80 \
+    id 67 \
     name mm_video \
     type other \
     dir I \
@@ -178,7 +178,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 81 \
+    id 68 \
     name HwReg_frm_buffer \
     type other \
     dir I \
@@ -193,90 +193,90 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 82 \
-    name width_val2 \
+    id 69 \
+    name width_val1 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_width_val2 \
+    corename dc_width_val1 \
     op interface \
-    ports { width_val2 { I 11 vector } width_val2_ap_vld { I 1 bit } } \
+    ports { width_val1 { I 11 vector } width_val1_ap_vld { I 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 83 \
-    name height_val6 \
+    id 70 \
+    name height_val4 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_height_val6 \
+    corename dc_height_val4 \
     op interface \
-    ports { height_val6 { I 11 vector } height_val6_ap_vld { I 1 bit } } \
+    ports { height_val4 { I 11 vector } height_val4_ap_vld { I 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 84 \
-    name stride_val7 \
+    id 71 \
+    name stride_val5 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_stride_val7 \
+    corename dc_stride_val5 \
     op interface \
-    ports { stride_val7 { I 16 vector } stride_val7_ap_vld { I 1 bit } } \
+    ports { stride_val5 { I 16 vector } stride_val5_ap_vld { I 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 85 \
-    name video_format_val8 \
+    id 72 \
+    name video_format_val6 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_video_format_val8 \
+    corename dc_video_format_val6 \
     op interface \
-    ports { video_format_val8 { I 6 vector } video_format_val8_ap_vld { I 1 bit } } \
+    ports { video_format_val6 { I 6 vector } video_format_val6_ap_vld { I 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 86 \
-    name WidthInBytes_val10 \
+    id 73 \
+    name WidthInBytes_val8 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_WidthInBytes_val10 \
+    corename dc_WidthInBytes_val8 \
     op interface \
-    ports { WidthInBytes_val10 { I 14 vector } WidthInBytes_val10_ap_vld { I 1 bit } } \
+    ports { WidthInBytes_val8 { I 14 vector } WidthInBytes_val8_ap_vld { I 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 87 \
-    name colorFormat_val11 \
+    id 74 \
+    name colorFormat_val9 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_colorFormat_val11 \
+    corename dc_colorFormat_val9 \
     op interface \
-    ports { colorFormat_val11 { I 3 vector } colorFormat_val11_ap_vld { I 1 bit } } \
+    ports { colorFormat_val9 { I 3 vector } colorFormat_val9_ap_vld { I 1 bit } } \
 } "
 }
 

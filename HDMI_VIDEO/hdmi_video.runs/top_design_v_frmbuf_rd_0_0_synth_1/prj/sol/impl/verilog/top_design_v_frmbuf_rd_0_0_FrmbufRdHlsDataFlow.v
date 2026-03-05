@@ -62,24 +62,24 @@ module top_design_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow (
         m_axi_mm_video_0_BID,
         m_axi_mm_video_0_BUSER,
         HwReg_frm_buffer,
-        width_val2,
-        height_val6,
-        stride_val7,
-        video_format_val8,
-        WidthInBytes_val10,
-        colorFormat_val11,
+        width_val1,
+        height_val4,
+        stride_val5,
+        video_format_val6,
+        WidthInBytes_val8,
+        colorFormat_val9,
         ap_clk,
         ap_rst,
         HwReg_frm_buffer_ap_vld,
-        height_val6_ap_vld,
-        WidthInBytes_val10_ap_vld,
-        stride_val7_ap_vld,
+        height_val4_ap_vld,
+        WidthInBytes_val8_ap_vld,
+        stride_val5_ap_vld,
         ap_start,
-        width_val2_ap_vld,
-        video_format_val8_ap_vld,
+        video_format_val6_ap_vld,
         m_axis_video_TVALID,
         m_axis_video_TREADY,
-        colorFormat_val11_ap_vld,
+        width_val1_ap_vld,
+        colorFormat_val9_ap_vld,
         ap_done,
         ap_ready,
         ap_idle,
@@ -141,24 +141,24 @@ input  [1:0] m_axi_mm_video_0_BRESP;
 input  [0:0] m_axi_mm_video_0_BID;
 input  [0:0] m_axi_mm_video_0_BUSER;
 input  [31:0] HwReg_frm_buffer;
-input  [10:0] width_val2;
-input  [10:0] height_val6;
-input  [15:0] stride_val7;
-input  [5:0] video_format_val8;
-input  [13:0] WidthInBytes_val10;
-input  [2:0] colorFormat_val11;
+input  [10:0] width_val1;
+input  [10:0] height_val4;
+input  [15:0] stride_val5;
+input  [5:0] video_format_val6;
+input  [13:0] WidthInBytes_val8;
+input  [2:0] colorFormat_val9;
 input   ap_clk;
 input   ap_rst;
 input   HwReg_frm_buffer_ap_vld;
-input   height_val6_ap_vld;
-input   WidthInBytes_val10_ap_vld;
-input   stride_val7_ap_vld;
+input   height_val4_ap_vld;
+input   WidthInBytes_val8_ap_vld;
+input   stride_val5_ap_vld;
 input   ap_start;
-input   width_val2_ap_vld;
-input   video_format_val8_ap_vld;
+input   video_format_val6_ap_vld;
 output   m_axis_video_TVALID;
 input   m_axis_video_TREADY;
-input   colorFormat_val11_ap_vld;
+input   width_val1_ap_vld;
+input   colorFormat_val9_ap_vld;
 output   ap_done;
 output   ap_ready;
 output   ap_idle;
@@ -313,9 +313,9 @@ top_design_v_frmbuf_rd_0_0_AXIMMvideo2Bytes AXIMMvideo2Bytes_U0(
     .bytePlanes_write(AXIMMvideo2Bytes_U0_bytePlanes_write),
     .bytePlanes_num_data_valid(bytePlanes_num_data_valid),
     .bytePlanes_fifo_cap(bytePlanes_fifo_cap),
-    .Height_val(height_val6),
-    .WidthInBytes_val(WidthInBytes_val10),
-    .StrideInBytes_val(stride_val7)
+    .Height_val(height_val4),
+    .WidthInBytes_val(WidthInBytes_val8),
+    .StrideInBytes_val(stride_val5)
 );
 
 top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream Bytes2MultiPixStream_U0(
@@ -339,10 +339,9 @@ top_design_v_frmbuf_rd_0_0_Bytes2MultiPixStream Bytes2MultiPixStream_U0(
     .img_write(Bytes2MultiPixStream_U0_img_write),
     .img_num_data_valid(Bytes2MultiPixStream_U0_img_num_data_valid),
     .img_fifo_cap(Bytes2MultiPixStream_U0_img_fifo_cap),
-    .Height_val(height_val6),
-    .Width_val(width_val2),
-    .WidthInBytes_val(WidthInBytes_val10),
-    .VideoFormat_val(video_format_val8)
+    .Height_val(height_val4),
+    .WidthInBytes_val(WidthInBytes_val8),
+    .VideoFormat_val(video_format_val6)
 );
 
 top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo MultiPixStream2AXIvideo_U0(
@@ -367,9 +366,9 @@ top_design_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo MultiPixStream2AXIvideo_U0(
     .m_axis_video_TLAST(MultiPixStream2AXIvideo_U0_m_axis_video_TLAST),
     .m_axis_video_TID(MultiPixStream2AXIvideo_U0_m_axis_video_TID),
     .m_axis_video_TDEST(MultiPixStream2AXIvideo_U0_m_axis_video_TDEST),
-    .Height_val(height_val6),
-    .WidthOut_val(width_val2),
-    .colorFormat_val(colorFormat_val11)
+    .Height_val(height_val4),
+    .WidthOut_val(width_val1),
+    .colorFormat_val(colorFormat_val9)
 );
 
 top_design_v_frmbuf_rd_0_0_fifo_w64_d481_B bytePlanes_U(

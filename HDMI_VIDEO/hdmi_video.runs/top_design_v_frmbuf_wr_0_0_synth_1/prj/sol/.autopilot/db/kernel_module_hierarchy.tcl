@@ -21,11 +21,11 @@ set ModuleHierarchy {[{
 					{"Name" : "loop_wait_for_eol","RefName" : "loop_wait_for_eol","ID" : "11","Type" : "pipeline"},]},]},]},
 		{"Name" : "MultiPixStream2Bytes_U0", "RefName" : "MultiPixStream2Bytes","ID" : "12","Type" : "sequential",
 			"SubLoops" : [
-			{"Name" : "loop_RGB8_YUV8","RefName" : "loop_RGB8_YUV8","ID" : "13","Type" : "no",
+			{"Name" : "loop_RGBX8_YUVX8","RefName" : "loop_RGBX8_YUVX8","ID" : "13","Type" : "no",
 			"SubInsts" : [
-			{"Name" : "grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1_fu_196", "RefName" : "MultiPixStream2Bytes_Pipeline_VITIS_LOOP_1090_1","ID" : "14","Type" : "sequential",
+			{"Name" : "grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1_fu_116", "RefName" : "MultiPixStream2Bytes_Pipeline_VITIS_LOOP_697_1","ID" : "14","Type" : "sequential",
 					"SubLoops" : [
-					{"Name" : "VITIS_LOOP_1090_1","RefName" : "VITIS_LOOP_1090_1","ID" : "15","Type" : "pipeline"},]},]},]},
+					{"Name" : "VITIS_LOOP_697_1","RefName" : "VITIS_LOOP_697_1","ID" : "15","Type" : "pipeline"},]},]},]},
 		{"Name" : "Bytes2AXIMMvideo_U0", "RefName" : "Bytes2AXIMMvideo","ID" : "16","Type" : "sequential",
 			"SubLoops" : [
 			{"Name" : "loop_Bytes2AXIMMvideo_1plane","RefName" : "loop_Bytes2AXIMMvideo_1plane","ID" : "17","Type" : "no",

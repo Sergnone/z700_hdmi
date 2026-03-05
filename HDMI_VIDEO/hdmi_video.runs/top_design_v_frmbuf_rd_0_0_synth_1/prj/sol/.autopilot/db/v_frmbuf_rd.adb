@@ -1320,7 +1320,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>WidthInBytes</originalName>
-              <rtlName>mul_14s_3ns_14_1_1_U88</rtlName>
+              <rtlName>mul_14s_3ns_14_1_1_U75</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>auto</implIndex>
@@ -1529,7 +1529,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>4.39</m_delay>
+          <m_delay>3.74</m_delay>
           <m_topoIndex>17</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -2082,7 +2082,7 @@
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
         <mMinLatency>7174</mMinLatency>
-        <mMaxLatency>4152716</mMaxLatency>
+        <mMaxLatency>3115916</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"></mDfPipe>
       </item>
@@ -2520,23 +2520,19 @@
         <item>
           <first>grp_FrmbufRdHlsDataFlow_fu_166 (FrmbufRdHlsDataFlow)</first>
           <second>
-            <count>4</count>
+            <count>3</count>
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
               <second>4</second>
             </item>
             <item>
-              <first>DSP</first>
-              <second>1</second>
-            </item>
-            <item>
               <first>FF</first>
-              <second>1255</second>
+              <second>900</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1925</second>
+              <second>1647</second>
             </item>
           </second>
         </item>
@@ -2560,7 +2556,7 @@
           </second>
         </item>
         <item>
-          <first>mul_14s_3ns_14_1_1_U88 (mul_14s_3ns_14_1_1)</first>
+          <first>mul_14s_3ns_14_1_1_U75 (mul_14s_3ns_14_1_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3477,7 +3473,7 @@
           </second>
         </item>
         <item>
-          <first>mul_14s_3ns_14_1_1_U88</first>
+          <first>mul_14s_3ns_14_1_1_U75</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -3545,7 +3541,7 @@
           </second>
         </item>
         <item>
-          <first>mul_14s_3ns_14_1_1_U88 (mul_14s_3ns_14_1_1)</first>
+          <first>mul_14s_3ns_14_1_1_U75 (mul_14s_3ns_14_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

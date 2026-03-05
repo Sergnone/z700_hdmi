@@ -1708,33 +1708,28 @@
     ^
     VITIS_LOOP_352_2: 
 /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80754:5: note: FIX-IT applied suggested code changes
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80873:4: remark: Added loop label VITIS_LOOP_1090_1:   [xilinx-label-all-loops]
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80834:4: remark: Added loop label VITIS_LOOP_697_1:   [xilinx-label-all-loops]
    for (int x = 0; x < loopWidth; x++)
    ^
-   VITIS_LOOP_1090_1: 
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80873:4: note: FIX-IT applied suggested code changes
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80876:5: remark: Added loop label VITIS_LOOP_1093_2:   [xilinx-label-all-loops]
-    for (int i = 0; i < ((64 * 3) / (24 * 1)); i++)
+   VITIS_LOOP_697_1: 
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80834:4: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80837:5: remark: Added loop label VITIS_LOOP_700_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < (64 / (32 * 1)); i++)
     ^
-    VITIS_LOOP_1093_2: 
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80876:5: note: FIX-IT applied suggested code changes
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80880:6: remark: Added loop label VITIS_LOOP_1097_3:   [xilinx-label-all-loops]
+    VITIS_LOOP_700_2: 
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80837:5: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80841:6: remark: Added loop label VITIS_LOOP_704_3:   [xilinx-label-all-loops]
      for (int l = 0; l < 1; l++)
      ^
-     VITIS_LOOP_1097_3: 
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80880:6: note: FIX-IT applied suggested code changes
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80882:7: remark: Added loop label VITIS_LOOP_1099_4:   [xilinx-label-all-loops]
+     VITIS_LOOP_704_3: 
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80841:6: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80843:7: remark: Added loop label VITIS_LOOP_706_4:   [xilinx-label-all-loops]
       for (int k = 0; k < 3; k++)
       ^
-      VITIS_LOOP_1099_4: 
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80882:7: note: FIX-IT applied suggested code changes
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80891:5: remark: Added loop label VITIS_LOOP_1108_5:   [xilinx-label-all-loops]
-    for (int j = 0; j < 3; j++)
-    ^
-    VITIS_LOOP_1108_5: 
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80891:5: note: FIX-IT applied suggested code changes
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80970:9: remark: Added loop label VITIS_LOOP_1552_1:   [xilinx-label-all-loops]
+      VITIS_LOOP_706_4: 
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80843:7: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80962:9: remark: Added loop label VITIS_LOOP_1552_1:   [xilinx-label-all-loops]
         for (int x = 0; x < loopWidth; x++)
         ^
         VITIS_LOOP_1552_1: 
-/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80970:9: note: FIX-IT applied suggested code changes
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp:80962:9: note: FIX-IT applied suggested code changes

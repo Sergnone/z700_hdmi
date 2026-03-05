@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date             : Thu Feb 19 13:01:58 2026
+| Date             : Thu Mar  5 14:49:34 2026
 | Host             : serg running 64-bit Ubuntu 24.04.3 LTS
 | Command          : report_power -file top_design_wrapper_power_routed.rpt -pb top_design_wrapper_power_summary_routed.pb -rpx top_design_wrapper_power_routed.rpx
 | Design           : top_design_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.890        |
+| Total On-Chip Power (W)  | 1.887        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.742        |
+| Dynamic (W)              | 1.740        |
 | Device Static (W)        | 0.148        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 63.2         |
@@ -52,23 +52,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.084 |        7 |       --- |             --- |
-| Slice Logic              |     0.041 |    33986 |       --- |             --- |
-|   LUT as Logic           |     0.034 |    10562 |     53200 |           19.85 |
-|   Register               |     0.003 |    16641 |    106400 |           15.64 |
-|   CARRY4                 |     0.002 |      573 |     13300 |            4.31 |
+| Clocks                   |     0.086 |        7 |       --- |             --- |
+| Slice Logic              |     0.040 |    32989 |       --- |             --- |
+|   LUT as Logic           |     0.033 |    10161 |     53200 |           19.10 |
+|   Register               |     0.003 |    16120 |    106400 |           15.15 |
+|   CARRY4                 |     0.002 |      560 |     13300 |            4.21 |
 |   LUT as Distributed RAM |    <0.001 |      576 |     17400 |            3.31 |
 |   LUT as Shift Register  |    <0.001 |      566 |     17400 |            3.25 |
-|   F7/F8 Muxes            |    <0.001 |      401 |     53200 |            0.75 |
-|   Others                 |     0.000 |     1377 |       --- |             --- |
-| Signals                  |     0.052 |    23156 |       --- |             --- |
+|   F7/F8 Muxes            |    <0.001 |      402 |     53200 |            0.76 |
+|   Others                 |     0.000 |     1364 |       --- |             --- |
+| Signals                  |     0.051 |    22375 |       --- |             --- |
 | Block RAM                |     0.027 |      8.5 |       140 |            6.07 |
 | MMCM                     |     0.107 |        1 |         4 |           25.00 |
-| DSPs                     |     0.017 |       15 |       220 |            6.82 |
+| DSPs                     |     0.016 |       13 |       220 |            5.91 |
 | I/O                      |     0.133 |        9 |       125 |            7.20 |
 | PS7                      |     1.281 |        1 |       --- |             --- |
 | Static Power             |     0.148 |          |           |                 |
-| Total                    |     1.890 |          |           |                 |
+| Total                    |     1.887 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,7 +78,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.240 |       0.223 |      0.017 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.237 |       0.221 |      0.017 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.075 |       0.059 |      0.016 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.041 |       0.040 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -158,28 +158,28 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| top_design_wrapper       |     1.742 |
-|   top_design_i           |     1.742 |
+| top_design_wrapper       |     1.740 |
+|   top_design_i           |     1.740 |
 |     axi_dynclk_0         |     0.110 |
 |       U0                 |     0.110 |
-|     axi_smc              |     0.020 |
-|       inst               |     0.020 |
+|     axi_smc              |     0.021 |
+|       inst               |     0.021 |
 |     processing_system7_0 |     1.282 |
 |       inst               |     1.282 |
 |     rgb2dvi_0            |     0.134 |
 |       U0                 |     0.134 |
-|     smartconnect_0       |     0.051 |
-|       inst               |     0.051 |
+|     smartconnect_0       |     0.053 |
+|       inst               |     0.053 |
 |     v_axi4s_vid_out_0    |     0.006 |
 |       inst               |     0.006 |
-|     v_frmbuf_rd_0        |     0.029 |
-|       inst               |     0.029 |
-|     v_frmbuf_wr_0        |     0.025 |
-|       inst               |     0.025 |
+|     v_frmbuf_rd_0        |     0.026 |
+|       inst               |     0.026 |
+|     v_frmbuf_wr_0        |     0.021 |
+|       inst               |     0.021 |
 |     v_tc_0               |     0.015 |
 |       U0                 |     0.015 |
-|     v_tpg_0              |     0.070 |
-|       inst               |     0.070 |
+|     v_tpg_0              |     0.071 |
+|       inst               |     0.071 |
 +--------------------------+-----------+
 
 

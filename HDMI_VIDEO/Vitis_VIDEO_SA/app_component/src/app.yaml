@@ -1,4 +1,0 @@
-domain_path: /home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/Vitis_VIDEO_SA/platform/export/platform/sw/standalone_ps7_cortexa9_0
-app_src_dir: /tools/xilinx/2025.2/Vitis/data/embeddedsw/lib/sw_apps/empty_application
-template: empty_application
-lang: c

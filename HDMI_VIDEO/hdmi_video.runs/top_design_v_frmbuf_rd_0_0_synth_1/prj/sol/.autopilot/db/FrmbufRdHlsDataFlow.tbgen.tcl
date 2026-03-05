@@ -29,12 +29,12 @@ set C_modelArgList {
 	{ m_axis_video_V_dest_V int 1 regular {axi_s 1 volatile  { m_axis_video Dest } }  }
 	{ mm_video int 64 regular {axi_master 0 stable }  }
 	{ HwReg_frm_buffer int 32 regular {ap_stable 0} }
-	{ width_val2 int 11 regular {ap_stable 0} }
-	{ height_val6 int 11 regular {ap_stable 0} }
-	{ stride_val7 int 16 regular {ap_stable 0} }
-	{ video_format_val8 int 6 regular {ap_stable 0} }
-	{ WidthInBytes_val10 int 14 regular {ap_stable 0} }
-	{ colorFormat_val11 int 3 regular {ap_stable 0} }
+	{ width_val1 int 11 regular {ap_stable 0} }
+	{ height_val4 int 11 regular {ap_stable 0} }
+	{ stride_val5 int 16 regular {ap_stable 0} }
+	{ video_format_val6 int 6 regular {ap_stable 0} }
+	{ WidthInBytes_val8 int 14 regular {ap_stable 0} }
+	{ colorFormat_val9 int 3 regular {ap_stable 0} }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
@@ -49,12 +49,12 @@ set C_modelArgMapList {[
  	{ "Name" : "m_axis_video_V_dest_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
  	{ "Name" : "mm_video", "interface" : "axi_master", "bitwidth" : 64, "direction" : "READONLY", "id_num" : 0, "bitSlice":[ {"cElement": [{"cName": "frm_buffer","offset": { "type": "dynamic","port_name": "frm_buffer","bundle": "CTRL"},"direction": "READONLY"},{"cName": "frm_buffer2","offset": { "type": "dynamic","port_name": "frm_buffer2","bundle": "CTRL"}},{"cName": "frm_buffer3","offset": { "type": "dynamic","port_name": "frm_buffer3","bundle": "CTRL"}}]}]} , 
  	{ "Name" : "HwReg_frm_buffer", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "width_val2", "interface" : "wire", "bitwidth" : 11, "direction" : "READONLY"} , 
- 	{ "Name" : "height_val6", "interface" : "wire", "bitwidth" : 11, "direction" : "READONLY"} , 
- 	{ "Name" : "stride_val7", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
- 	{ "Name" : "video_format_val8", "interface" : "wire", "bitwidth" : 6, "direction" : "READONLY"} , 
- 	{ "Name" : "WidthInBytes_val10", "interface" : "wire", "bitwidth" : 14, "direction" : "READONLY"} , 
- 	{ "Name" : "colorFormat_val11", "interface" : "wire", "bitwidth" : 3, "direction" : "READONLY"} ]}
+ 	{ "Name" : "width_val1", "interface" : "wire", "bitwidth" : 11, "direction" : "READONLY"} , 
+ 	{ "Name" : "height_val4", "interface" : "wire", "bitwidth" : 11, "direction" : "READONLY"} , 
+ 	{ "Name" : "stride_val5", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
+ 	{ "Name" : "video_format_val6", "interface" : "wire", "bitwidth" : 6, "direction" : "READONLY"} , 
+ 	{ "Name" : "WidthInBytes_val8", "interface" : "wire", "bitwidth" : 14, "direction" : "READONLY"} , 
+ 	{ "Name" : "colorFormat_val9", "interface" : "wire", "bitwidth" : 3, "direction" : "READONLY"} ]}
 # RTL Port declarations: 
 set portNum 76
 set portList { 
@@ -112,24 +112,24 @@ set portList {
 	{ m_axi_mm_video_0_BID sc_in sc_lv 1 signal 7 } 
 	{ m_axi_mm_video_0_BUSER sc_in sc_lv 1 signal 7 } 
 	{ HwReg_frm_buffer sc_in sc_lv 32 signal 8 } 
-	{ width_val2 sc_in sc_lv 11 signal 9 } 
-	{ height_val6 sc_in sc_lv 11 signal 10 } 
-	{ stride_val7 sc_in sc_lv 16 signal 11 } 
-	{ video_format_val8 sc_in sc_lv 6 signal 12 } 
-	{ WidthInBytes_val10 sc_in sc_lv 14 signal 13 } 
-	{ colorFormat_val11 sc_in sc_lv 3 signal 14 } 
+	{ width_val1 sc_in sc_lv 11 signal 9 } 
+	{ height_val4 sc_in sc_lv 11 signal 10 } 
+	{ stride_val5 sc_in sc_lv 16 signal 11 } 
+	{ video_format_val6 sc_in sc_lv 6 signal 12 } 
+	{ WidthInBytes_val8 sc_in sc_lv 14 signal 13 } 
+	{ colorFormat_val9 sc_in sc_lv 3 signal 14 } 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
 	{ HwReg_frm_buffer_ap_vld sc_in sc_logic 1 invld 8 } 
-	{ height_val6_ap_vld sc_in sc_logic 1 invld 10 } 
-	{ WidthInBytes_val10_ap_vld sc_in sc_logic 1 invld 13 } 
-	{ stride_val7_ap_vld sc_in sc_logic 1 invld 11 } 
+	{ height_val4_ap_vld sc_in sc_logic 1 invld 10 } 
+	{ WidthInBytes_val8_ap_vld sc_in sc_logic 1 invld 13 } 
+	{ stride_val5_ap_vld sc_in sc_logic 1 invld 11 } 
 	{ ap_start sc_in sc_logic 1 start -1 } 
-	{ width_val2_ap_vld sc_in sc_logic 1 invld 9 } 
-	{ video_format_val8_ap_vld sc_in sc_logic 1 invld 12 } 
+	{ video_format_val6_ap_vld sc_in sc_logic 1 invld 12 } 
 	{ m_axis_video_TVALID sc_out sc_logic 1 outvld 6 } 
 	{ m_axis_video_TREADY sc_in sc_logic 1 outacc 6 } 
-	{ colorFormat_val11_ap_vld sc_in sc_logic 1 invld 14 } 
+	{ width_val1_ap_vld sc_in sc_logic 1 invld 9 } 
+	{ colorFormat_val9_ap_vld sc_in sc_logic 1 invld 14 } 
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
@@ -190,24 +190,24 @@ set NewPortList {[
  	{ "name": "m_axi_mm_video_0_BID", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "mm_video", "role": "0_BID" }} , 
  	{ "name": "m_axi_mm_video_0_BUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "mm_video", "role": "0_BUSER" }} , 
  	{ "name": "HwReg_frm_buffer", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "HwReg_frm_buffer", "role": "default" }} , 
- 	{ "name": "width_val2", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "width_val2", "role": "default" }} , 
- 	{ "name": "height_val6", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "height_val6", "role": "default" }} , 
- 	{ "name": "stride_val7", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "stride_val7", "role": "default" }} , 
- 	{ "name": "video_format_val8", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "video_format_val8", "role": "default" }} , 
- 	{ "name": "WidthInBytes_val10", "direction": "in", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "WidthInBytes_val10", "role": "default" }} , 
- 	{ "name": "colorFormat_val11", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "colorFormat_val11", "role": "default" }} , 
+ 	{ "name": "width_val1", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "width_val1", "role": "default" }} , 
+ 	{ "name": "height_val4", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "height_val4", "role": "default" }} , 
+ 	{ "name": "stride_val5", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "stride_val5", "role": "default" }} , 
+ 	{ "name": "video_format_val6", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "video_format_val6", "role": "default" }} , 
+ 	{ "name": "WidthInBytes_val8", "direction": "in", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "WidthInBytes_val8", "role": "default" }} , 
+ 	{ "name": "colorFormat_val9", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "colorFormat_val9", "role": "default" }} , 
  	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
  	{ "name": "ap_rst", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst", "role": "default" }} , 
  	{ "name": "HwReg_frm_buffer_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "HwReg_frm_buffer", "role": "ap_vld" }} , 
- 	{ "name": "height_val6_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "height_val6", "role": "ap_vld" }} , 
- 	{ "name": "WidthInBytes_val10_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "WidthInBytes_val10", "role": "ap_vld" }} , 
- 	{ "name": "stride_val7_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "stride_val7", "role": "ap_vld" }} , 
+ 	{ "name": "height_val4_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "height_val4", "role": "ap_vld" }} , 
+ 	{ "name": "WidthInBytes_val8_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "WidthInBytes_val8", "role": "ap_vld" }} , 
+ 	{ "name": "stride_val5_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "stride_val5", "role": "ap_vld" }} , 
  	{ "name": "ap_start", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "start", "bundle":{"name": "ap_start", "role": "default" }} , 
- 	{ "name": "width_val2_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "width_val2", "role": "ap_vld" }} , 
- 	{ "name": "video_format_val8_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "video_format_val8", "role": "ap_vld" }} , 
+ 	{ "name": "video_format_val6_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "video_format_val6", "role": "ap_vld" }} , 
  	{ "name": "m_axis_video_TVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "m_axis_video_V_dest_V", "role": "default" }} , 
  	{ "name": "m_axis_video_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "m_axis_video_V_dest_V", "role": "default" }} , 
- 	{ "name": "colorFormat_val11_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "colorFormat_val11", "role": "ap_vld" }} , 
+ 	{ "name": "width_val1_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "width_val1", "role": "ap_vld" }} , 
+ 	{ "name": "colorFormat_val9_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "colorFormat_val9", "role": "ap_vld" }} , 
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
@@ -224,12 +224,12 @@ set ArgLastReadFirstWriteLatency {
 		m_axis_video_V_dest_V {Type O LastRead -1 FirstWrite 2}
 		mm_video {Type I LastRead 2 FirstWrite -1}
 		HwReg_frm_buffer {Type I LastRead 0 FirstWrite -1}
-		width_val2 {Type I LastRead 2 FirstWrite -1}
-		height_val6 {Type I LastRead 0 FirstWrite -1}
-		stride_val7 {Type I LastRead 0 FirstWrite -1}
-		video_format_val8 {Type I LastRead 2 FirstWrite -1}
-		WidthInBytes_val10 {Type I LastRead 0 FirstWrite -1}
-		colorFormat_val11 {Type I LastRead 4 FirstWrite -1}
+		width_val1 {Type I LastRead 4 FirstWrite -1}
+		height_val4 {Type I LastRead 0 FirstWrite -1}
+		stride_val5 {Type I LastRead 0 FirstWrite -1}
+		video_format_val6 {Type I LastRead 2 FirstWrite -1}
+		WidthInBytes_val8 {Type I LastRead 0 FirstWrite -1}
+		colorFormat_val9 {Type I LastRead 4 FirstWrite -1}
 		mapComp {Type I LastRead -1 FirstWrite -1}}
 	AXIMMvideo2Bytes {
 		mm_video {Type I LastRead 2 FirstWrite -1}
@@ -244,26 +244,17 @@ set ArgLastReadFirstWriteLatency {
 		sext_ln515 {Type I LastRead 0 FirstWrite -1}
 		bytePlanes {Type O LastRead -1 FirstWrite 2}}
 	Bytes2MultiPixStream {
-		bytePlanes {Type I LastRead 3 FirstWrite -1}
+		bytePlanes {Type I LastRead 1 FirstWrite -1}
 		img {Type O LastRead -1 FirstWrite 1}
 		Height_val {Type I LastRead 0 FirstWrite -1}
-		Width_val {Type I LastRead 0 FirstWrite -1}
 		WidthInBytes_val {Type I LastRead 0 FirstWrite -1}
 		VideoFormat_val {Type I LastRead 0 FirstWrite -1}}
-	Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1 {
-		trunc_ln2 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1229 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1271_5 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1271_4 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1271_3 {Type I LastRead 0 FirstWrite -1}
-		icmp9 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1271_1 {Type I LastRead 0 FirstWrite -1}
+	Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1 {
+		trunc_ln1437_1 {Type I LastRead 0 FirstWrite -1}
+		bytePlanes {Type I LastRead 1 FirstWrite -1}
+		add_ln1467 {Type I LastRead 0 FirstWrite -1}
 		img {Type O LastRead -1 FirstWrite 1}
-		icmp6 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1250 {Type I LastRead 0 FirstWrite -1}
-		bytePlanes {Type I LastRead 3 FirstWrite -1}
-		add_ln1247 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln1247 {Type I LastRead 0 FirstWrite -1}}
+		rev {Type I LastRead 0 FirstWrite -1}}
 	MultiPixStream2AXIvideo {
 		img {Type I LastRead 1 FirstWrite -1}
 		m_axis_video_V_data_V {Type O LastRead -1 FirstWrite 2}
@@ -288,8 +279,8 @@ set ArgLastReadFirstWriteLatency {
 		cols {Type I LastRead 0 FirstWrite -1}
 		add_ln392 {Type I LastRead 0 FirstWrite -1}
 		img {Type I LastRead 1 FirstWrite -1}
-		empty_47 {Type I LastRead 0 FirstWrite -1}
-		empty_48 {Type I LastRead 0 FirstWrite -1}
+		empty_43 {Type I LastRead 0 FirstWrite -1}
+		empty_44 {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
 		m_axis_video_V_data_V {Type O LastRead -1 FirstWrite 2}
 		m_axis_video_V_keep_V {Type O LastRead -1 FirstWrite 2}
@@ -306,8 +297,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "7169", "Max" : "4152711"}
-	, {"Name" : "Interval", "Min" : "7170", "Max" : "4152616"}
+	{"Name" : "Latency", "Min" : "7169", "Max" : "3115911"}
+	, {"Name" : "Interval", "Min" : "7170", "Max" : "3115802"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -323,10 +314,10 @@ set Spec2ImplPortList {
 	m_axis_video_V_dest_V { axis {  { m_axis_video_TDEST out_data 1 1 }  { m_axis_video_TVALID out_vld 1 1 }  { m_axis_video_TREADY out_acc 0 1 } } }
 	 { m_axi {  { m_axi_mm_video_0_AWVALID VALID 1 1 }  { m_axi_mm_video_0_AWREADY READY 0 1 }  { m_axi_mm_video_0_AWADDR ADDR 1 32 }  { m_axi_mm_video_0_AWID ID 1 1 }  { m_axi_mm_video_0_AWLEN SIZE 1 32 }  { m_axi_mm_video_0_AWSIZE BURST 1 3 }  { m_axi_mm_video_0_AWBURST LOCK 1 2 }  { m_axi_mm_video_0_AWLOCK CACHE 1 2 }  { m_axi_mm_video_0_AWCACHE PROT 1 4 }  { m_axi_mm_video_0_AWPROT QOS 1 3 }  { m_axi_mm_video_0_AWQOS REGION 1 4 }  { m_axi_mm_video_0_AWREGION USER 1 4 }  { m_axi_mm_video_0_AWUSER DATA 1 1 }  { m_axi_mm_video_0_WVALID VALID 1 1 }  { m_axi_mm_video_0_WREADY READY 0 1 }  { m_axi_mm_video_0_WDATA FIFONUM 1 64 }  { m_axi_mm_video_0_WSTRB STRB 1 8 }  { m_axi_mm_video_0_WLAST LAST 1 1 }  { m_axi_mm_video_0_WID ID 1 1 }  { m_axi_mm_video_0_WUSER DATA 1 1 }  { m_axi_mm_video_0_ARVALID VALID 1 1 }  { m_axi_mm_video_0_ARREADY READY 0 1 }  { m_axi_mm_video_0_ARADDR ADDR 1 32 }  { m_axi_mm_video_0_ARID ID 1 1 }  { m_axi_mm_video_0_ARLEN SIZE 1 32 }  { m_axi_mm_video_0_ARSIZE BURST 1 3 }  { m_axi_mm_video_0_ARBURST LOCK 1 2 }  { m_axi_mm_video_0_ARLOCK CACHE 1 2 }  { m_axi_mm_video_0_ARCACHE PROT 1 4 }  { m_axi_mm_video_0_ARPROT QOS 1 3 }  { m_axi_mm_video_0_ARQOS REGION 1 4 }  { m_axi_mm_video_0_ARREGION USER 1 4 }  { m_axi_mm_video_0_ARUSER DATA 1 1 }  { m_axi_mm_video_0_RVALID VALID 0 1 }  { m_axi_mm_video_0_RREADY READY 1 1 }  { m_axi_mm_video_0_RDATA FIFONUM 0 64 }  { m_axi_mm_video_0_RLAST LAST 0 1 }  { m_axi_mm_video_0_RID ID 0 1 }  { m_axi_mm_video_0_RFIFONUM LEN 0 7 }  { m_axi_mm_video_0_RUSER DATA 0 1 }  { m_axi_mm_video_0_RRESP RESP 0 2 }  { m_axi_mm_video_0_BVALID VALID 0 1 }  { m_axi_mm_video_0_BREADY READY 1 1 }  { m_axi_mm_video_0_BRESP RESP 0 2 }  { m_axi_mm_video_0_BID ID 0 1 }  { m_axi_mm_video_0_BUSER DATA 0 1 } } }
 	HwReg_frm_buffer { ap_none {  { HwReg_frm_buffer in_data 0 32 }  { HwReg_frm_buffer_ap_vld in_vld 0 1 } } }
-	width_val2 { ap_none {  { width_val2 in_data 0 11 }  { width_val2_ap_vld in_vld 0 1 } } }
-	height_val6 { ap_none {  { height_val6 in_data 0 11 }  { height_val6_ap_vld in_vld 0 1 } } }
-	stride_val7 { ap_none {  { stride_val7 in_data 0 16 }  { stride_val7_ap_vld in_vld 0 1 } } }
-	video_format_val8 { ap_none {  { video_format_val8 in_data 0 6 }  { video_format_val8_ap_vld in_vld 0 1 } } }
-	WidthInBytes_val10 { ap_none {  { WidthInBytes_val10 in_data 0 14 }  { WidthInBytes_val10_ap_vld in_vld 0 1 } } }
-	colorFormat_val11 { ap_none {  { colorFormat_val11 in_data 0 3 }  { colorFormat_val11_ap_vld in_vld 0 1 } } }
+	width_val1 { ap_none {  { width_val1 in_data 0 11 }  { width_val1_ap_vld in_vld 0 1 } } }
+	height_val4 { ap_none {  { height_val4 in_data 0 11 }  { height_val4_ap_vld in_vld 0 1 } } }
+	stride_val5 { ap_none {  { stride_val5 in_data 0 16 }  { stride_val5_ap_vld in_vld 0 1 } } }
+	video_format_val6 { ap_none {  { video_format_val6 in_data 0 6 }  { video_format_val6_ap_vld in_vld 0 1 } } }
+	WidthInBytes_val8 { ap_none {  { WidthInBytes_val8 in_data 0 14 }  { WidthInBytes_val8_ap_vld in_vld 0 1 } } }
+	colorFormat_val9 { ap_none {  { colorFormat_val9 in_data 0 3 }  { colorFormat_val9_ap_vld in_vld 0 1 } } }
 }

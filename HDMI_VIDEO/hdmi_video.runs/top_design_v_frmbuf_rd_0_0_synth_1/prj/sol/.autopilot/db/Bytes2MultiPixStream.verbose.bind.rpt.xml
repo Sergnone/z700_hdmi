@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'Bytes2MultiPixStream'" level="0">
-<item name = "Date">Thu Feb 19 12:55:08 2026
+<item name = "Date">Thu Mar  5 14:47:30 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -24,19 +24,19 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1, 4152615, 6.667 ns, 27.685 ms, 1, 4152615, no</column>
+<column name="">1, 3115801, 6.667 ns, 20.773 ms, 1, 3115801, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1_fu_172">Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1, 2, 3842, 13.334 ns, 25.615 us, 0, 0, loop pipeline stp</column>
+<column name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1_fu_146">Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1, 2, 2882, 13.334 ns, 19.214 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop_RGB8_YUV8">320, 4152600, 5 ~ 3845, -, -, 64 ~ 1080, no</column>
+<column name="- loop_RGBX8_YUVX8">320, 3115800, 5 ~ 2885, -, -, 64 ~ 1080, no</column>
 </table>
 </item>
 </section>

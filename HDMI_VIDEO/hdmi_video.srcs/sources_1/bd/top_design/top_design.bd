@@ -1910,6 +1910,12 @@
         "inst_hier_path": "v_frmbuf_wr_0",
         "has_run_ip_tcl": "true",
         "parameters": {
+          "HAS_RGB8": {
+            "value": "0"
+          },
+          "HAS_RGBX8": {
+            "value": "1"
+          },
           "MAX_COLS": {
             "value": "1920"
           },
@@ -1955,6 +1961,12 @@
         "inst_hier_path": "v_frmbuf_rd_0",
         "has_run_ip_tcl": "true",
         "parameters": {
+          "HAS_RGB8": {
+            "value": "0"
+          },
+          "HAS_RGBX8": {
+            "value": "1"
+          },
           "MAX_COLS": {
             "value": "1920"
           },

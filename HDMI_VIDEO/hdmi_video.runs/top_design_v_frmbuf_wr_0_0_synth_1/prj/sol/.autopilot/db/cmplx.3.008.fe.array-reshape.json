@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "2",
+    "calls": "1",
     "control_depth": 0,
     "def_use_depth": 3,
     "file": "v_frmbuf_wr.cpp",
@@ -15,9 +15,21 @@
     "stores": {
       "L": 6
     },
-    "total_instructions": 657
+    "total_instructions": 434
   },
   "1": {
+    "basicblocks": 1,
+    "calls": "4 5 2",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "v_frmbuf_wr.cpp",
+    "fileloc": 89,
+    "instructions": 10,
+    "memory_accesses": 0,
+    "name": "FrmbufWrHlsDataFlow",
+    "total_instructions": 385
+  },
+  "2": {
     "basicblocks": 7,
     "calls": "",
     "control_depth": 0,
@@ -35,18 +47,6 @@
     },
     "total_instructions": 32
   },
-  "2": {
-    "basicblocks": 1,
-    "calls": "5 4 1",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "v_frmbuf_wr.cpp",
-    "fileloc": 89,
-    "instructions": 10,
-    "memory_accesses": 0,
-    "name": "FrmbufWrHlsDataFlow",
-    "total_instructions": 608
-  },
   "3": {
     "basicblocks": 1,
     "calls": "",
@@ -60,21 +60,6 @@
     "total_instructions": 1
   },
   "4": {
-    "basicblocks": 46,
-    "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 14,
-    "file": "v_frmbuf_wr.cpp",
-    "fileloc": 428,
-    "instructions": 183,
-    "loads": {
-      "L": 4
-    },
-    "memory_accesses": 11,
-    "name": "MultiPixStream2Bytes",
-    "total_instructions": 335
-  },
-  "5": {
     "basicblocks": 15,
     "calls": "3 3",
     "control_depth": 2,
@@ -91,5 +76,20 @@
       "L": 18
     },
     "total_instructions": 231
+  },
+  "5": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 7,
+    "file": "v_frmbuf_wr.cpp",
+    "fileloc": 428,
+    "instructions": 74,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 3,
+    "name": "MultiPixStream2Bytes",
+    "total_instructions": 112
   }
 }

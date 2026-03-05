@@ -24,18 +24,18 @@
 <unit>clock cycles</unit>
 <Best-caseLatency>7169</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>4152711</Worst-caseLatency>
+<Worst-caseLatency>3115911</Worst-caseLatency>
 <Best-caseRealTimeLatency>47.796 us</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>27.686 ms</Worst-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>20.774 ms</Worst-caseRealTimeLatency>
 <DataflowPipelineThroughput>
 <range>
 <min>7170</min>
-<max>4152616</max>
+<max>3115802</max>
 </range>
 </DataflowPipelineThroughput>
 <Interval-min>7170</Interval-min>
-<Interval-max>4152616</Interval-max>
+<Interval-max>3115802</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
@@ -48,9 +48,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>4</BRAM_18K>
-<DSP>1</DSP>
-<FF>1255</FF>
-<LUT>1925</LUT>
+<FF>900</FF>
+<LUT>1647</LUT>
+<DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -691,8 +691,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>width_val2</name>
-<Object>width_val2</Object>
+<name>width_val1</name>
+<Object>width_val1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -702,8 +702,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>width_val2_ap_vld</name>
-<Object>width_val2</Object>
+<name>width_val1_ap_vld</name>
+<Object>width_val1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -713,8 +713,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>height_val6</name>
-<Object>height_val6</Object>
+<name>height_val4</name>
+<Object>height_val4</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -724,8 +724,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>height_val6_ap_vld</name>
-<Object>height_val6</Object>
+<name>height_val4_ap_vld</name>
+<Object>height_val4</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -735,8 +735,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>stride_val7</name>
-<Object>stride_val7</Object>
+<name>stride_val5</name>
+<Object>stride_val5</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -746,8 +746,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>stride_val7_ap_vld</name>
-<Object>stride_val7</Object>
+<name>stride_val5_ap_vld</name>
+<Object>stride_val5</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -757,8 +757,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>video_format_val8</name>
-<Object>video_format_val8</Object>
+<name>video_format_val6</name>
+<Object>video_format_val6</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -768,8 +768,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>video_format_val8_ap_vld</name>
-<Object>video_format_val8</Object>
+<name>video_format_val6_ap_vld</name>
+<Object>video_format_val6</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -779,8 +779,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>WidthInBytes_val10</name>
-<Object>WidthInBytes_val10</Object>
+<name>WidthInBytes_val8</name>
+<Object>WidthInBytes_val8</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -790,8 +790,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>WidthInBytes_val10_ap_vld</name>
-<Object>WidthInBytes_val10</Object>
+<name>WidthInBytes_val8_ap_vld</name>
+<Object>WidthInBytes_val8</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -801,8 +801,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>colorFormat_val11</name>
-<Object>colorFormat_val11</Object>
+<name>colorFormat_val9</name>
+<Object>colorFormat_val9</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -812,8 +812,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>colorFormat_val11_ap_vld</name>
-<Object>colorFormat_val11</Object>
+<name>colorFormat_val9_ap_vld</name>
+<Object>colorFormat_val9</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

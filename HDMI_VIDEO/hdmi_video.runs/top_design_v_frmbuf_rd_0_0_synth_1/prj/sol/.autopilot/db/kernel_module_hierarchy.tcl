@@ -12,11 +12,11 @@ set ModuleHierarchy {[{
 					{"Name" : "VITIS_LOOP_515_1","RefName" : "VITIS_LOOP_515_1","ID" : "5","Type" : "pipeline"},]},]},]},
 		{"Name" : "Bytes2MultiPixStream_U0", "RefName" : "Bytes2MultiPixStream","ID" : "6","Type" : "sequential",
 			"SubLoops" : [
-			{"Name" : "loop_RGB8_YUV8","RefName" : "loop_RGB8_YUV8","ID" : "7","Type" : "no",
+			{"Name" : "loop_RGBX8_YUVX8","RefName" : "loop_RGBX8_YUVX8","ID" : "7","Type" : "no",
 			"SubInsts" : [
-			{"Name" : "grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1_fu_172", "RefName" : "Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1","ID" : "8","Type" : "sequential",
+			{"Name" : "grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1_fu_146", "RefName" : "Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1","ID" : "8","Type" : "sequential",
 					"SubLoops" : [
-					{"Name" : "VITIS_LOOP_1240_1","RefName" : "VITIS_LOOP_1240_1","ID" : "9","Type" : "pipeline"},]},]},]},
+					{"Name" : "VITIS_LOOP_1450_1","RefName" : "VITIS_LOOP_1450_1","ID" : "9","Type" : "pipeline"},]},]},]},
 		{"Name" : "MultiPixStream2AXIvideo_U0", "RefName" : "MultiPixStream2AXIvideo","ID" : "10","Type" : "sequential",
 			"SubInsts" : [
 			{"Name" : "grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128", "RefName" : "MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1","ID" : "11","Type" : "sequential",

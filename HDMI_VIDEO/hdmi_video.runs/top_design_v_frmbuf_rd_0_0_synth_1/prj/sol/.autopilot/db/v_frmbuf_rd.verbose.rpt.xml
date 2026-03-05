@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'v_frmbuf_rd'" level="0">
-<item name = "Date">Thu Feb 19 12:55:08 2026
+<item name = "Date">Thu Mar  5 14:47:31 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">prj</item>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">7174, 4152716, 47.829 us, 27.686 ms, 7175, 4152717, no</column>
+<column name="">7174, 3115916, 47.829 us, 20.774 ms, 7175, 3115917, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_FrmbufRdHlsDataFlow_fu_166">FrmbufRdHlsDataFlow, 7169, 4152711, 47.796 us, 27.686 ms, 7170, 4152616, dataflow</column>
+<column name="grp_FrmbufRdHlsDataFlow_fu_166">FrmbufRdHlsDataFlow, 7169, 3115911, 47.796 us, 20.774 ms, 7170, 3115802, dataflow</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,12 +50,12 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 3, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">8, 1, 2214, 3129, -</column>
+<column name="Instance">8, 0, 1859, 2851, -</column>
 <column name="Memory">0, -, 6, 6, -</column>
 <column name="Multiplexer">-, -, 0, 110, -</column>
 <column name="Register">-, -, 154, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">2, ~0, 2, 6, 0</specialColumn>
+<specialColumn name="Utilization (%)">2, 0, 1, 5, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -63,9 +63,9 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 238, 360, 0</column>
-<column name="grp_FrmbufRdHlsDataFlow_fu_166">FrmbufRdHlsDataFlow, 4, 1, 1255, 1925, 0</column>
+<column name="grp_FrmbufRdHlsDataFlow_fu_166">FrmbufRdHlsDataFlow, 4, 0, 900, 1647, 0</column>
 <column name="mm_video_m_axi_U">mm_video_m_axi, 4, 0, 721, 838, 0</column>
-<column name="mul_14s_3ns_14_1_1_U88">mul_14s_3ns_14_1_1, 0, 0, 0, 6, 0</column>
+<column name="mul_14s_3ns_14_1_1_U75">mul_14s_3ns_14_1_1, 0, 0, 0, 6, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">

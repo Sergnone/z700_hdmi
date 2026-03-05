@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'AXIMMvideo2Bytes'
 ================================================================
-* Date:           Thu Feb 19 12:55:08 2026
+* Date:           Thu Mar  5 14:47:30 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -223,14 +223,14 @@ ST_2 : Operation 139 [1/1] (0.00ns)   --->   "%offset_load = load i24 %offset" [
 ST_2 : Operation 140 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i27 @_ssdm_op_BitConcatenate.i27.i24.i3, i24 %offset_load, i3 0" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515]   --->   Operation 140 'bitconcatenate' 'shl_ln' <Predicate = (!icmp_ln510)> <Delay = 0.00>
 ST_2 : Operation 141 [1/1] (0.00ns)   --->   "%zext_ln515_1 = zext i27 %shl_ln" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515]   --->   Operation 141 'zext' 'zext_ln515_1' <Predicate = (!icmp_ln510)> <Delay = 0.00>
 ST_2 : Operation 142 [1/1] (1.89ns)   --->   "%add_ln515_1 = add i32 %zext_ln515_1, i32 %srcImg_read" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515]   --->   Operation 142 'add' 'add_ln515_1' <Predicate = (!icmp_ln510)> <Delay = 1.89> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 143 [1/1] (0.00ns)   --->   "%trunc_ln4 = partselect i29 @_ssdm_op_PartSelect.i29.i32.i32.i32, i32 %add_ln515_1, i32 3, i32 31" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515]   --->   Operation 143 'partselect' 'trunc_ln4' <Predicate = (!icmp_ln510)> <Delay = 0.00>
+ST_2 : Operation 143 [1/1] (0.00ns)   --->   "%trunc_ln2 = partselect i29 @_ssdm_op_PartSelect.i29.i32.i32.i32, i32 %add_ln515_1, i32 3, i32 31" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515]   --->   Operation 143 'partselect' 'trunc_ln2' <Predicate = (!icmp_ln510)> <Delay = 0.00>
 ST_2 : Operation 144 [1/1] (1.68ns)   --->   "%add_ln523 = add i24 %zext_ln515, i24 %offset_load" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:523]   --->   Operation 144 'add' 'add_ln523' <Predicate = (!icmp_ln510)> <Delay = 1.68> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.68> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 145 [1/1] (1.29ns)   --->   "%store_ln507 = store i24 %add_ln523, i24 %offset" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:507]   --->   Operation 145 'store' 'store_ln507' <Predicate = (!icmp_ln510)> <Delay = 1.29>
 ST_2 : Operation 146 [1/1] (1.29ns)   --->   "%store_ln510 = store i11 %y_4, i11 %y" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:510]   --->   Operation 146 'store' 'store_ln510' <Predicate = (!icmp_ln510)> <Delay = 1.29>
 ST_2 : Operation 147 [1/1] (0.00ns)   --->   "%ret_ln525 = ret" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:525]   --->   Operation 147 'ret' 'ret_ln525' <Predicate = (icmp_ln510)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 4.86>
-ST_3 : Operation 148 [1/1] (0.00ns)   --->   "%sext_ln515 = sext i29 %trunc_ln4" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515]   --->   Operation 148 'sext' 'sext_ln515' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 148 [1/1] (0.00ns)   --->   "%sext_ln515 = sext i29 %trunc_ln2" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515]   --->   Operation 148 'sext' 'sext_ln515' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 149 [1/1] (0.00ns)   --->   "%mm_video_addr = getelementptr i64 %mm_video, i32 %sext_ln515" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515]   --->   Operation 149 'getelementptr' 'mm_video_addr' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 150 [107/107] (4.86ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %mm_video_addr, i32 %zext_ln523" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515]   --->   Operation 150 'readreq' 'empty' <Predicate = true> <Delay = 4.86> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
@@ -553,11 +553,11 @@ State 109 <SV = 108> <Delay = 4.86>
 ST_109 : Operation 256 [1/107] ( I:4.86ns O:4.86ns )   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %mm_video_addr, i32 %zext_ln523" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515]   --->   Operation 256 'readreq' 'empty' <Predicate = true> <Delay = 4.86> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 110 <SV = 109> <Delay = 2.77>
-ST_110 : Operation 257 [2/2] (2.77ns)   --->   "%call_ln515 = call void @AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1, i11 %lshr_ln, i64 %mm_video, i29 %trunc_ln4, i64 %bytePlanes" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515]   --->   Operation 257 'call' 'call_ln515' <Predicate = true> <Delay = 2.77> <CoreType = "Generic">   --->   Generic Core
+ST_110 : Operation 257 [2/2] (2.77ns)   --->   "%call_ln515 = call void @AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1, i11 %lshr_ln, i64 %mm_video, i29 %trunc_ln2, i64 %bytePlanes" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515]   --->   Operation 257 'call' 'call_ln515' <Predicate = true> <Delay = 2.77> <CoreType = "Generic">   --->   Generic Core
 
 State 111 <SV = 110> <Delay = 0.00>
 ST_111 : Operation 258 [1/1] (0.00ns)   --->   "%specloopname_ln510 = specloopname void @_ssdm_op_SpecLoopName, void @empty_21" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:510]   --->   Operation 258 'specloopname' 'specloopname_ln510' <Predicate = true> <Delay = 0.00>
-ST_111 : Operation 259 [1/2] (0.00ns)   --->   "%call_ln515 = call void @AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1, i11 %lshr_ln, i64 %mm_video, i29 %trunc_ln4, i64 %bytePlanes" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515]   --->   Operation 259 'call' 'call_ln515' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_111 : Operation 259 [1/2] (0.00ns)   --->   "%call_ln515 = call void @AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1, i11 %lshr_ln, i64 %mm_video, i29 %trunc_ln2, i64 %bytePlanes" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:515]   --->   Operation 259 'call' 'call_ln515' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_111 : Operation 260 [1/1] (0.00ns)   --->   "%br_ln510 = br void %VITIS_LOOP_515_1" [prj/sol/.autopilot/db/v_frmbuf_rd.cpp:510]   --->   Operation 260 'br' 'br_ln510' <Predicate = true> <Delay = 0.00>
 
 

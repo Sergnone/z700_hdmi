@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'v_frmbuf_rd'
 ================================================================
 + General Information: 
-    * Date:           Thu Feb 19 12:55:08 2026
+    * Date:           Thu Mar  5 14:47:31 2026
     * Version:        2025.2 (Build 6295257 on Nov 14 2025)
     * Project:        prj
     * Solution:       sol (Vivado IP Flow Target)
@@ -13,29 +13,29 @@
     
 
 * Performance & Resource Estimates: 
-+---------------------------------------------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+--------+---------+-----------+-----------+-----+
-|                         Modules                         | Issue|               | Iteration|         | Trip |          |       Latency       |      |        |         |           |           |     |
-|                         & Loops                         | Type | Violation Type|  Latency | Interval| Count| Pipelined| (cycles)|    (ns)   | Slack|  BRAM  |   DSP   |     FF    |    LUT    | URAM|
-+---------------------------------------------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+--------+---------+-----------+-----------+-----+
-|+ v_frmbuf_rd                                            |     -|              -|         -|  4152717|     -|        no|  4152716|  2.769e+07|  0.00|  8 (2%)|  1 (~0%)|  2374 (2%)|  3249 (6%)|    -|
-| + FrmbufRdHlsDataFlow*                                  |     -|              -|         -|  4152616|     -|  dataflow|  4152711|  2.769e+07|  0.00|  4 (1%)|  1 (~0%)|  1255 (1%)|  1926 (3%)|    -|
-|  + AXIMMvideo2Bytes                                     |     -|              -|         -|  1677241|     -|        no|  1677241|  1.118e+07|  0.00|       -|        -|  336 (~0%)|   905 (1%)|    -|
-|   o loop_AXIMMvideo2Bytes_1plane                        |     -|              -|      1553|        -|  1080|        no|  1677240|  1.118e+07|  4.87|       -|        -|          -|          -|    -|
-|    + AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1         |     -|              -|         -|        -|     -|       yes|     1443|  9.620e+03|  0.00|       -|        -|   80 (~0%)|   79 (~0%)|    -|
-|     o VITIS_LOOP_515_1                                  |     -|              -|         3|        1|  1440|       yes|     1441|  9.607e+03|  4.87|       -|        -|          -|          -|    -|
-|  + Bytes2MultiPixStream                                 |     -|              -|         -|  4152615|     -|        no|  4152615|  2.769e+07|  0.00|       -|  1 (~0%)|  467 (~0%)|  516 (~0%)|    -|
-|   o loop_RGB8_YUV8                                      |     -|              -|      3845|        -|  1080|        no|  4152600|  2.769e+07|  4.87|       -|        -|          -|          -|    -|
-|    + Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1    |     -|              -|         -|        -|     -|       yes|     3842|  2.561e+04|  0.00|       -|        -|  202 (~0%)|  215 (~0%)|    -|
-|     o VITIS_LOOP_1240_1                                 |     -|              -|         9|        8|   480|       yes|     3840|  2.560e+04|  4.87|       -|        -|          -|          -|    -|
-|  + MultiPixStream2AXIvideo                              |     -|              -|         -|  2080089|     -|        no|  2080089|  1.387e+07|  0.61|       -|        -|  191 (~0%)|  354 (~0%)|    -|
-|   + MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1   |     -|              -|         -|        -|     -|       yes|        6|     40.002|  0.82|       -|        -|   17 (~0%)|   51 (~0%)|    -|
-|    o VITIS_LOOP_367_1                                   |     -|              -|         2|        1|     3|       yes|        4|     26.668|  4.87|       -|        -|          -|          -|    -|
-|   + reg_unsigned_short_s                                |     -|              -|         -|        1|     -|       yes|        1|      6.667|  4.87|       -|        -|   13 (~0%)|    2 (~0%)|    -|
-|   + reg_unsigned_short_s                                |     -|              -|         -|        1|     -|       yes|        1|      6.667|  4.87|       -|        -|   13 (~0%)|    2 (~0%)|    -|
-|   o VITIS_LOOP_374_2                                    |     -|              -|      1926|        -|  1080|        no|  2080080|  1.387e+07|  4.87|       -|        -|          -|          -|    -|
-|    + MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3  |     -|              -|         -|        -|     -|       yes|     1924|  1.283e+04|  0.79|       -|        -|   46 (~0%)|  130 (~0%)|    -|
-|     o VITIS_LOOP_376_3                                  |     -|              -|         3|        1|  1920|       yes|     1922|  1.281e+04|  4.87|       -|        -|          -|          -|    -|
-+---------------------------------------------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+--------+---------+-----------+-----------+-----+
++---------------------------------------------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+--------+----+-----------+-----------+-----+
+|                         Modules                         | Issue|               | Iteration|         | Trip |          |       Latency       |      |        |    |           |           |     |
+|                         & Loops                         | Type | Violation Type|  Latency | Interval| Count| Pipelined| (cycles)|    (ns)   | Slack|  BRAM  | DSP|     FF    |    LUT    | URAM|
++---------------------------------------------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+--------+----+-----------+-----------+-----+
+|+ v_frmbuf_rd                                            |     -|              -|         -|  3115917|     -|        no|  3115916|  2.077e+07|  0.00|  8 (2%)|   -|  2019 (1%)|  2971 (5%)|    -|
+| + FrmbufRdHlsDataFlow*                                  |     -|              -|         -|  3115802|     -|  dataflow|  3115911|  2.077e+07|  0.00|  4 (1%)|   -|  900 (~0%)|  1648 (3%)|    -|
+|  + AXIMMvideo2Bytes                                     |     -|              -|         -|  1677241|     -|        no|  1677241|  1.118e+07|  0.00|       -|   -|  336 (~0%)|   905 (1%)|    -|
+|   o loop_AXIMMvideo2Bytes_1plane                        |     -|              -|      1553|        -|  1080|        no|  1677240|  1.118e+07|  4.87|       -|   -|          -|          -|    -|
+|    + AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1         |     -|              -|         -|        -|     -|       yes|     1443|  9.620e+03|  0.00|       -|   -|   80 (~0%)|   79 (~0%)|    -|
+|     o VITIS_LOOP_515_1                                  |     -|              -|         3|        1|  1440|       yes|     1441|  9.607e+03|  4.87|       -|   -|          -|          -|    -|
+|  + Bytes2MultiPixStream                                 |     -|              -|         -|  3115801|     -|        no|  3115801|  2.077e+07|  0.00|       -|   -|  112 (~0%)|  238 (~0%)|    -|
+|   o loop_RGBX8_YUVX8                                    |     -|              -|      2885|        -|  1080|        no|  3115800|  2.077e+07|  4.87|       -|   -|          -|          -|    -|
+|    + Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1    |     -|              -|         -|        -|     -|       yes|     2882|  1.921e+04|  0.00|       -|   -|   42 (~0%)|  139 (~0%)|    -|
+|     o VITIS_LOOP_1450_1                                 |     -|              -|         3|        2|  1440|       yes|     2880|  1.920e+04|  4.87|       -|   -|          -|          -|    -|
+|  + MultiPixStream2AXIvideo                              |     -|              -|         -|  2080089|     -|        no|  2080089|  1.387e+07|  0.61|       -|   -|  191 (~0%)|  354 (~0%)|    -|
+|   + MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1   |     -|              -|         -|        -|     -|       yes|        6|     40.002|  0.82|       -|   -|   17 (~0%)|   51 (~0%)|    -|
+|    o VITIS_LOOP_367_1                                   |     -|              -|         2|        1|     3|       yes|        4|     26.668|  4.87|       -|   -|          -|          -|    -|
+|   + reg_unsigned_short_s                                |     -|              -|         -|        1|     -|       yes|        1|      6.667|  4.87|       -|   -|   13 (~0%)|    2 (~0%)|    -|
+|   + reg_unsigned_short_s                                |     -|              -|         -|        1|     -|       yes|        1|      6.667|  4.87|       -|   -|   13 (~0%)|    2 (~0%)|    -|
+|   o VITIS_LOOP_374_2                                    |     -|              -|      1926|        -|  1080|        no|  2080080|  1.387e+07|  4.87|       -|   -|          -|          -|    -|
+|    + MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3  |     -|              -|         -|        -|     -|       yes|     1924|  1.283e+04|  0.79|       -|   -|   46 (~0%)|  130 (~0%)|    -|
+|     o VITIS_LOOP_376_3                                  |     -|              -|         3|        1|  1920|       yes|     1922|  1.281e+04|  4.87|       -|   -|          -|          -|    -|
++---------------------------------------------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+--------+----+-----------+-----------+-----+
     Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
 
 
@@ -153,71 +153,51 @@
 ================================================================
 == Bind Op Report
 ================================================================
-+--------------------------------------------------------+-----+--------+---------------+-----------+------------------------+---------+
-| Name                                                   | DSP | Pragma | Variable      | Op        | Impl                   | Latency |
-+--------------------------------------------------------+-----+--------+---------------+-----------+------------------------+---------+
-| + v_frmbuf_rd                                          | 1   |        |               |           |                        |         |
-|   mul_14s_3ns_14_1_1_U88                               |     |        | WidthInBytes  | mul       | auto                   | 0       |
-|  + FrmbufRdHlsDataFlow                                 | 1   |        |               |           |                        |         |
-|   + AXIMMvideo2Bytes                                   | 0   |        |               |           |                        |         |
-|     add_ln515_fu_156_p2                                |     |        | add_ln515     | add       | fabric                 | 0       |
-|     icmp_ln510_fu_203_p2                               |     |        | icmp_ln510    | seteq     | auto                   | 0       |
-|     y_4_fu_208_p2                                      |     |        | y_4           | add       | fabric                 | 0       |
-|     add_ln515_1_fu_229_p2                              |     |        | add_ln515_1   | add       | fabric                 | 0       |
-|     add_ln523_fu_244_p2                                |     |        | add_ln523     | add       | fabric                 | 0       |
-|    + AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1        | 0   |        |               |           |                        |         |
-|      icmp_ln515_fu_116_p2                              |     |        | icmp_ln515    | seteq     | auto                   | 0       |
-|      add_ln515_fu_122_p2                               |     |        | add_ln515     | add       | fabric                 | 0       |
-|   + Bytes2MultiPixStream                               | 1   |        |               |           |                        |         |
-|     add_ln1224_fu_227_p2                               |     |        | add_ln1224    | add       | fabric                 | 0       |
-|     add_ln1225_fu_258_p2                               |     |        | add_ln1225    | add       | fabric                 | 0       |
-|     mul_11ns_13ns_23_1_1_U25                           | 1   |        | mul_ln1225    | mul       | auto                   | 0       |
-|     urem_11ns_3ns_2_15_seq_1_U24                       |     |        | remainTrx     | urem      | auto_seq               | 14      |
-|     icmp_ln1229_fu_299_p2                              |     |        | icmp_ln1229   | seteq     | auto                   | 0       |
-|     remainPix_1_fu_304_p3                              |     |        | remainPix_1   | select    | auto_sel               | 0       |
-|     add_ln1247_fu_312_p2                               |     |        | add_ln1247    | add       | fabric                 | 0       |
-|     icmp_ln1247_fu_317_p2                              |     |        | icmp_ln1247   | setne     | auto                   | 0       |
-|     icmp_ln1250_fu_323_p2                              |     |        | icmp_ln1250   | seteq     | auto                   | 0       |
-|     icmp_ln1271_fu_339_p2                              |     |        | icmp_ln1271   | setne     | auto                   | 0       |
-|     icmp_ln1271_1_fu_345_p2                            |     |        | icmp_ln1271_1 | setgt     | auto                   | 0       |
-|     icmp_ln1271_2_fu_361_p2                            |     |        | icmp_ln1271_2 | setne     | auto                   | 0       |
-|     icmp_ln1271_3_fu_367_p2                            |     |        | icmp_ln1271_3 | setgt     | auto                   | 0       |
-|     icmp_ln1271_4_fu_373_p2                            |     |        | icmp_ln1271_4 | setgt     | auto                   | 0       |
-|     icmp_ln1271_5_fu_379_p2                            |     |        | icmp_ln1271_5 | setgt     | auto                   | 0       |
-|     icmp_ln1232_fu_388_p2                              |     |        | icmp_ln1232   | seteq     | auto                   | 0       |
-|     y_2_fu_393_p2                                      |     |        | y_2           | add       | fabric                 | 0       |
-|    + Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_1   | 0   |        |               |           |                        |         |
-|      icmp_ln1240_fu_217_p2                             |     |        | icmp_ln1240   | setlt     | auto                   | 0       |
-|      x_2_fu_223_p2                                     |     |        | x_2           | add       | fabric                 | 0       |
-|      icmp_ln1247_1_fu_229_p2                           |     |        | icmp_ln1247_1 | setlt     | auto                   | 0       |
-|      or_ln1247_fu_235_p2                               |     |        | or_ln1247     | or        | auto                   | 0       |
-|      or_ln1250_fu_241_p2                               |     |        | or_ln1250     | or        | auto                   | 0       |
-|      or_ln1271_fu_247_p2                               |     |        | or_ln1271     | or        | auto                   | 0       |
-|      or_ln1271_1_fu_253_p2                             |     |        | or_ln1271_1   | or        | auto                   | 0       |
-|      or_ln1271_2_fu_259_p2                             |     |        | or_ln1271_2   | or        | auto                   | 0       |
-|      or_ln1271_3_fu_265_p2                             |     |        | or_ln1271_3   | or        | auto                   | 0       |
-|      or_ln1271_4_fu_271_p2                             |     |        | or_ln1271_4   | or        | auto                   | 0       |
-|      or_ln1271_5_fu_277_p2                             |     |        | or_ln1271_5   | or        | auto                   | 0       |
-|      or_ln1271_6_fu_283_p2                             |     |        | or_ln1271_6   | or        | auto                   | 0       |
-|   + MultiPixStream2AXIvideo                            | 0   |        |               |           |                        |         |
-|     sub_ln367_fu_181_p2                                |     |        | sub_ln367     | sub       | fabric                 | 0       |
-|     add_ln392_fu_218_p2                                |     |        | add_ln392     | add       | fabric                 | 0       |
-|     icmp_ln374_fu_224_p2                               |     |        | icmp_ln374    | seteq     | auto                   | 0       |
-|     icmp_ln374_1_fu_233_p2                             |     |        | icmp_ln374_1  | seteq     | auto                   | 0       |
-|     i_2_fu_238_p2                                      |     |        | i_2           | add       | fabric                 | 0       |
-|     and_ln374_fu_244_p2                                |     |        | and_ln374     | and       | auto                   | 0       |
-|    + MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 | 0   |        |               |           |                        |         |
-|      icmp_ln367_fu_102_p2                              |     |        | icmp_ln367    | seteq     | auto                   | 0       |
-|      add_ln367_fu_108_p2                               |     |        | add_ln367     | add       | fabric                 | 0       |
-|      add_ln369_fu_118_p2                               |     |        | add_ln369     | add       | fabric                 | 0       |
-|    + MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 | 0   |        |               |           |                        |         |
-|      icmp_ln376_fu_197_p2                              |     |        | icmp_ln376    | seteq     | auto                   | 0       |
-|      j_2_fu_203_p2                                     |     |        | j_2           | add       | fabric                 | 0       |
-|      icmp_ln392_fu_213_p2                              |     |        | icmp_ln392    | seteq     | auto                   | 0       |
-|      sparsemux_7_2_8_1_1_U40                           |     |        | tmp_4         | sparsemux | onehotencoding_realdef | 0       |
-|      sparsemux_7_2_8_1_1_U41                           |     |        | tmp_5         | sparsemux | onehotencoding_realdef | 0       |
-|      sparsemux_7_2_8_1_1_U42                           |     |        | tmp_6         | sparsemux | onehotencoding_realdef | 0       |
-+--------------------------------------------------------+-----+--------+---------------+-----------+------------------------+---------+
++--------------------------------------------------------+-----+--------+--------------+-----------+------------------------+---------+
+| Name                                                   | DSP | Pragma | Variable     | Op        | Impl                   | Latency |
++--------------------------------------------------------+-----+--------+--------------+-----------+------------------------+---------+
+| + v_frmbuf_rd                                          | 0   |        |              |           |                        |         |
+|   mul_14s_3ns_14_1_1_U75                               |     |        | WidthInBytes | mul       | auto                   | 0       |
+|  + FrmbufRdHlsDataFlow                                 | 0   |        |              |           |                        |         |
+|   + AXIMMvideo2Bytes                                   | 0   |        |              |           |                        |         |
+|     add_ln515_fu_156_p2                                |     |        | add_ln515    | add       | fabric                 | 0       |
+|     icmp_ln510_fu_203_p2                               |     |        | icmp_ln510   | seteq     | auto                   | 0       |
+|     y_4_fu_208_p2                                      |     |        | y_4          | add       | fabric                 | 0       |
+|     add_ln515_1_fu_229_p2                              |     |        | add_ln515_1  | add       | fabric                 | 0       |
+|     add_ln523_fu_244_p2                                |     |        | add_ln523    | add       | fabric                 | 0       |
+|    + AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_515_1        | 0   |        |              |           |                        |         |
+|      icmp_ln515_fu_116_p2                              |     |        | icmp_ln515   | seteq     | auto                   | 0       |
+|      add_ln515_fu_122_p2                               |     |        | add_ln515    | add       | fabric                 | 0       |
+|   + Bytes2MultiPixStream                               | 0   |        |              |           |                        |         |
+|     add_ln1437_fu_207_p2                               |     |        | add_ln1437   | add       | fabric                 | 0       |
+|     xor_ln1440_fu_235_p2                               |     |        | xor_ln1440   | xor       | auto                   | 0       |
+|     add_ln1467_fu_241_p2                               |     |        | add_ln1467   | add       | fabric                 | 0       |
+|     icmp_ln1443_fu_255_p2                              |     |        | icmp_ln1443  | seteq     | auto                   | 0       |
+|     y_2_fu_260_p2                                      |     |        | y_2          | add       | fabric                 | 0       |
+|    + Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_1   | 0   |        |              |           |                        |         |
+|      icmp_ln1450_fu_109_p2                             |     |        | icmp_ln1450  | seteq     | auto                   | 0       |
+|      x_2_fu_115_p2                                     |     |        | x_2          | add       | fabric                 | 0       |
+|      icmp_ln1467_fu_125_p2                             |     |        | icmp_ln1467  | setlt     | auto                   | 0       |
+|      or_ln1467_fu_131_p2                               |     |        | or_ln1467    | or        | auto                   | 0       |
+|   + MultiPixStream2AXIvideo                            | 0   |        |              |           |                        |         |
+|     sub_ln367_fu_181_p2                                |     |        | sub_ln367    | sub       | fabric                 | 0       |
+|     add_ln392_fu_218_p2                                |     |        | add_ln392    | add       | fabric                 | 0       |
+|     icmp_ln374_fu_224_p2                               |     |        | icmp_ln374   | seteq     | auto                   | 0       |
+|     icmp_ln374_1_fu_233_p2                             |     |        | icmp_ln374_1 | seteq     | auto                   | 0       |
+|     i_2_fu_238_p2                                      |     |        | i_2          | add       | fabric                 | 0       |
+|     and_ln374_fu_244_p2                                |     |        | and_ln374    | and       | auto                   | 0       |
+|    + MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 | 0   |        |              |           |                        |         |
+|      icmp_ln367_fu_102_p2                              |     |        | icmp_ln367   | seteq     | auto                   | 0       |
+|      add_ln367_fu_108_p2                               |     |        | add_ln367    | add       | fabric                 | 0       |
+|      add_ln369_fu_118_p2                               |     |        | add_ln369    | add       | fabric                 | 0       |
+|    + MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 | 0   |        |              |           |                        |         |
+|      icmp_ln376_fu_197_p2                              |     |        | icmp_ln376   | seteq     | auto                   | 0       |
+|      j_2_fu_203_p2                                     |     |        | j_2          | add       | fabric                 | 0       |
+|      icmp_ln392_fu_213_p2                              |     |        | icmp_ln392   | seteq     | auto                   | 0       |
+|      sparsemux_7_2_8_1_1_U27                           |     |        | tmp_4        | sparsemux | onehotencoding_realdef | 0       |
+|      sparsemux_7_2_8_1_1_U28                           |     |        | tmp_5        | sparsemux | onehotencoding_realdef | 0       |
+|      sparsemux_7_2_8_1_1_U29                           |     |        | tmp_6        | sparsemux | onehotencoding_realdef | 0       |
++--------------------------------------------------------+-----+--------+--------------+-----------+------------------------+---------+
 
 
 ================================================================
@@ -757,9 +737,9 @@
 | LOOP_TRIPCOUNT       | max=4320                                                                                                                                                              | in aximmvideo2bytes (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:512)                                                                                                     |
 | LOOP_FLATTEN         | off                                                                                                                                                                   | in aximmvideo2bytes (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:514)                                                                                                     |
 | PIPELINE             | ii=1                                                                                                                                                                  | in aximmvideo2bytes (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:517)                                                                                                     |
-| LOOP_TRIPCOUNT       | max=4320                                                                                                                                                              | in bytes2multipixstream (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1234)                                                                                                |
-| LOOP_FLATTEN         | off                                                                                                                                                                   | in bytes2multipixstream (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1239)                                                                                                |
-| PIPELINE             | ii=8                                                                                                                                                                  | in bytes2multipixstream (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1242)                                                                                                |
+| LOOP_TRIPCOUNT       | max=4320                                                                                                                                                              | in bytes2multipixstream (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1445)                                                                                                |
+| LOOP_FLATTEN         | off                                                                                                                                                                   | in bytes2multipixstream (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1449)                                                                                                |
+| PIPELINE             | ii=2                                                                                                                                                                  | in bytes2multipixstream (prj/sol/.autopilot/db/v_frmbuf_rd.cpp:1452)                                                                                                |
 +----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 

@@ -1320,7 +1320,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>WidthInBytes</originalName>
-              <rtlName>mul_14s_3ns_14_1_1_U99</rtlName>
+              <rtlName>mul_14s_3ns_14_1_1_U89</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>auto</implIndex>
@@ -2073,8 +2073,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>151636</mMinLatency>
-        <mMaxLatency>4153688</mMaxLatency>
+        <mMinLatency>181812</mMinLatency>
+        <mMaxLatency>4671009</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"></mDfPipe>
       </item>
@@ -2490,23 +2490,19 @@
         <item>
           <first>grp_FrmbufWrHlsDataFlow_fu_164 (FrmbufWrHlsDataFlow)</first>
           <second>
-            <count>4</count>
+            <count>3</count>
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
               <second>4</second>
             </item>
             <item>
-              <first>DSP</first>
-              <second>1</second>
-            </item>
-            <item>
               <first>FF</first>
-              <second>1216</second>
+              <second>1015</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>2065</second>
+              <second>1750</second>
             </item>
           </second>
         </item>
@@ -2530,7 +2526,7 @@
           </second>
         </item>
         <item>
-          <first>mul_14s_3ns_14_1_1_U99 (mul_14s_3ns_14_1_1)</first>
+          <first>mul_14s_3ns_14_1_1_U89 (mul_14s_3ns_14_1_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3156,7 +3152,7 @@
           </second>
         </item>
         <item>
-          <first>mul_14s_3ns_14_1_1_U99</first>
+          <first>mul_14s_3ns_14_1_1_U89</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -3224,7 +3220,7 @@
           </second>
         </item>
         <item>
-          <first>mul_14s_3ns_14_1_1_U99 (mul_14s_3ns_14_1_1)</first>
+          <first>mul_14s_3ns_14_1_1_U89 (mul_14s_3ns_14_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

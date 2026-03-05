@@ -25,8 +25,8 @@ port (
     sof : IN STD_LOGIC_VECTOR (0 downto 0);
     cols : IN STD_LOGIC_VECTOR (10 downto 0);
     add_ln392 : IN STD_LOGIC_VECTOR (11 downto 0);
-    empty_47 : IN STD_LOGIC_VECTOR (1 downto 0);
-    empty_48 : IN STD_LOGIC_VECTOR (1 downto 0);
+    empty_43 : IN STD_LOGIC_VECTOR (1 downto 0);
+    empty_44 : IN STD_LOGIC_VECTOR (1 downto 0);
     empty : IN STD_LOGIC_VECTOR (1 downto 0);
     m_axis_video_TDATA : OUT STD_LOGIC_VECTOR (23 downto 0);
     m_axis_video_TVALID : OUT STD_LOGIC;
@@ -173,7 +173,7 @@ attribute shreg_extract : string;
 
 
 begin
-    sparsemux_7_2_8_1_1_U40 : component top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U27 : component top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -191,10 +191,10 @@ begin
         din1 => tmp_4_fu_248_p4,
         din2 => tmp_4_fu_248_p6,
         def => tmp_4_fu_248_p7,
-        sel => empty_47,
+        sel => empty_43,
         dout => tmp_4_fu_248_p9);
 
-    sparsemux_7_2_8_1_1_U41 : component top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U28 : component top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -212,10 +212,10 @@ begin
         din1 => tmp_5_fu_267_p4,
         din2 => tmp_5_fu_267_p6,
         def => tmp_5_fu_267_p7,
-        sel => empty_48,
+        sel => empty_44,
         dout => tmp_5_fu_267_p9);
 
-    sparsemux_7_2_8_1_1_U42 : component top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U29 : component top_design_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

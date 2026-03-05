@@ -4155,38 +4155,38 @@ Diagnostics:
     BuildDirectory:  '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_1240_1:  '
+      Message:         'Added loop label VITIS_LOOP_1450_1:  '
       FilePath:        '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp'
-      FileOffset:      1240
+      FileOffset:      1450
       Replacements:
         - FilePath:        '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.pp.0.cpp'
-          Offset:          3256754
+          Offset:          3257441
           Length:          0
-          ReplacementText: 'VITIS_LOOP_1240_1: '
+          ReplacementText: 'VITIS_LOOP_1450_1: '
     Level:           Remark
     BuildDirectory:  '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_1254_2:  '
+      Message:         'Added loop label VITIS_LOOP_1456_2:  '
       FilePath:        '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp'
-      FileOffset:      1254
+      FileOffset:      1456
       Replacements:
         - FilePath:        '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.pp.0.cpp'
-          Offset:          3257107
+          Offset:          3257557
           Length:          0
-          ReplacementText: 'VITIS_LOOP_1254_2: '
+          ReplacementText: 'VITIS_LOOP_1456_2: '
     Level:           Remark
     BuildDirectory:  '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_1256_3:  '
+      Message:         'Added loop label VITIS_LOOP_1458_3:  '
       FilePath:        '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.cpp'
-      FileOffset:      1256
+      FileOffset:      1458
       Replacements:
         - FilePath:        '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_rd.pp.0.cpp'
-          Offset:          3257162
+          Offset:          3257608
           Length:          0
-          ReplacementText: 'VITIS_LOOP_1256_3: '
+          ReplacementText: 'VITIS_LOOP_1458_3: '
     Level:           Remark
     BuildDirectory:  '/home/serg/Documents/Xilinx/z700_hdmi/HDMI_VIDEO/hdmi_video.runs/top_design_v_frmbuf_rd_0_0_synth_1'
 ...

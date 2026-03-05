@@ -101,9 +101,9 @@ attribute shreg_extract : string;
     signal ap_loop_exit_ready_pp0_iter1_reg : STD_LOGIC;
     signal p_4_0_0_0186423_fu_108 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     signal ap_block_pp0_stage0_01001 : BOOLEAN;
-    signal tmp_3_fu_274_p3 : STD_LOGIC_VECTOR (7 downto 0);
+    signal tmp_9_fu_274_p3 : STD_LOGIC_VECTOR (7 downto 0);
     signal trunc_ln63_fu_282_p1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal tmp_5_fu_293_p3 : STD_LOGIC_VECTOR (7 downto 0);
+    signal tmp_1_fu_293_p3 : STD_LOGIC_VECTOR (7 downto 0);
     signal select_ln361_2_fu_308_p3 : STD_LOGIC_VECTOR (7 downto 0);
     signal select_ln361_1_fu_301_p3 : STD_LOGIC_VECTOR (7 downto 0);
     signal select_ln361_fu_286_p3 : STD_LOGIC_VECTOR (7 downto 0);
@@ -505,14 +505,14 @@ begin
 
     select_ln361_1_fu_301_p3 <= 
         trunc_ln63_fu_282_p1 when (icmp_ln361_reg_362(0) = '1') else 
-        tmp_5_fu_293_p3;
+        tmp_1_fu_293_p3;
     select_ln361_2_fu_308_p3 <= 
-        tmp_5_fu_293_p3 when (icmp_ln361_reg_362(0) = '1') else 
-        tmp_3_fu_274_p3;
+        tmp_1_fu_293_p3 when (icmp_ln361_reg_362(0) = '1') else 
+        tmp_9_fu_274_p3;
     select_ln361_fu_286_p3 <= 
-        tmp_3_fu_274_p3 when (icmp_ln361_reg_362(0) = '1') else 
+        tmp_9_fu_274_p3 when (icmp_ln361_reg_362(0) = '1') else 
         trunc_ln63_fu_282_p1;
-    tmp_3_fu_274_p3 <= p_0_0_0_0178414_fu_104(23 downto 16);
-    tmp_5_fu_293_p3 <= p_0_0_0_0178414_fu_104(15 downto 8);
+    tmp_1_fu_293_p3 <= p_0_0_0_0178414_fu_104(15 downto 8);
+    tmp_9_fu_274_p3 <= p_0_0_0_0178414_fu_104(23 downto 16);
     trunc_ln63_fu_282_p1 <= p_0_0_0_0178414_fu_104(8 - 1 downto 0);
 end behav;

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'FrmbufRdHlsDataFlow'
 ================================================================
-* Date:           Thu Feb 19 12:55:08 2026
+* Date:           Thu Mar  5 14:47:30 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |    Interval    | Pipeline |
     |   min   |   max   |    min    |    max    |  min |   max   |   Type   |
     +---------+---------+-----------+-----------+------+---------+----------+
-    |     7169|  4152711|  47.796 us|  27.686 ms|  7170|  4152616|  dataflow|
+    |     7169|  3115911|  47.796 us|  20.774 ms|  7170|  3115802|  dataflow|
     +---------+---------+-----------+-----------+------+---------+----------+
 
     + Detail: 
@@ -39,7 +39,7 @@
         |          Instance          |          Module         |   min   |   max   |    min    |    max    |  min |   max   |   Type  |
         +----------------------------+-------------------------+---------+---------+-----------+-----------+------+---------+---------+
         |AXIMMvideo2Bytes_U0         |AXIMMvideo2Bytes         |     7169|  1677241|  47.796 us|  11.182 ms|  7169|  1677241|       no|
-        |Bytes2MultiPixStream_U0     |Bytes2MultiPixStream     |        1|  4152615|   6.667 ns|  27.685 ms|     1|  4152615|       no|
+        |Bytes2MultiPixStream_U0     |Bytes2MultiPixStream     |        1|  3115801|   6.667 ns|  20.773 ms|     1|  3115801|       no|
         |MultiPixStream2AXIvideo_U0  |MultiPixStream2AXIvideo  |        9|  2080089|  60.003 ns|  13.868 ms|     9|  2080089|       no|
         +----------------------------+-------------------------+---------+---------+-----------+-----------+------+---------+---------+
 
@@ -58,16 +58,16 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       0|      1|    -|
 |FIFO             |        4|    -|     261|    150|    -|
-|Instance         |        0|    1|     994|   1774|    -|
+|Instance         |        0|    -|     639|   1496|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       -|      -|    -|
 |Register         |        -|    -|       -|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        4|    1|    1255|   1925|    0|
+|Total            |        4|    0|     900|   1647|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |        1|   ~0|       1|      3|    0|
+|Utilization (%)  |        1|    0|      ~0|      3|    0|
 +-----------------+---------+-----+--------+-------+-----+
 
 + Detail: 
@@ -76,10 +76,10 @@
     |          Instance          |          Module         | BRAM_18K| DSP|  FF | LUT | URAM|
     +----------------------------+-------------------------+---------+----+-----+-----+-----+
     |AXIMMvideo2Bytes_U0         |AXIMMvideo2Bytes         |        0|   0|  336|  905|    0|
-    |Bytes2MultiPixStream_U0     |Bytes2MultiPixStream     |        0|   1|  467|  516|    0|
+    |Bytes2MultiPixStream_U0     |Bytes2MultiPixStream     |        0|   0|  112|  238|    0|
     |MultiPixStream2AXIvideo_U0  |MultiPixStream2AXIvideo  |        0|   0|  191|  353|    0|
     +----------------------------+-------------------------+---------+----+-----+-----+-----+
-    |Total                       |                         |        0|   1|  994| 1774|    0|
+    |Total                       |                         |        0|   0|  639| 1496|    0|
     +----------------------------+-------------------------+---------+----+-----+-----+-----+
 
     * DSP: 
@@ -179,18 +179,18 @@
 |m_axi_mm_video_0_BUSER     |   in|    1|       m_axi|               mm_video|       pointer|
 |HwReg_frm_buffer           |   in|   32|     ap_none|       HwReg_frm_buffer|        scalar|
 |HwReg_frm_buffer_ap_vld    |   in|    1|     ap_none|       HwReg_frm_buffer|        scalar|
-|width_val2                 |   in|   11|     ap_none|             width_val2|        scalar|
-|width_val2_ap_vld          |   in|    1|     ap_none|             width_val2|        scalar|
-|height_val6                |   in|   11|     ap_none|            height_val6|        scalar|
-|height_val6_ap_vld         |   in|    1|     ap_none|            height_val6|        scalar|
-|stride_val7                |   in|   16|     ap_none|            stride_val7|        scalar|
-|stride_val7_ap_vld         |   in|    1|     ap_none|            stride_val7|        scalar|
-|video_format_val8          |   in|    6|     ap_none|      video_format_val8|        scalar|
-|video_format_val8_ap_vld   |   in|    1|     ap_none|      video_format_val8|        scalar|
-|WidthInBytes_val10         |   in|   14|     ap_none|     WidthInBytes_val10|        scalar|
-|WidthInBytes_val10_ap_vld  |   in|    1|     ap_none|     WidthInBytes_val10|        scalar|
-|colorFormat_val11          |   in|    3|     ap_none|      colorFormat_val11|        scalar|
-|colorFormat_val11_ap_vld   |   in|    1|     ap_none|      colorFormat_val11|        scalar|
+|width_val1                 |   in|   11|     ap_none|             width_val1|        scalar|
+|width_val1_ap_vld          |   in|    1|     ap_none|             width_val1|        scalar|
+|height_val4                |   in|   11|     ap_none|            height_val4|        scalar|
+|height_val4_ap_vld         |   in|    1|     ap_none|            height_val4|        scalar|
+|stride_val5                |   in|   16|     ap_none|            stride_val5|        scalar|
+|stride_val5_ap_vld         |   in|    1|     ap_none|            stride_val5|        scalar|
+|video_format_val6          |   in|    6|     ap_none|      video_format_val6|        scalar|
+|video_format_val6_ap_vld   |   in|    1|     ap_none|      video_format_val6|        scalar|
+|WidthInBytes_val8          |   in|   14|     ap_none|      WidthInBytes_val8|        scalar|
+|WidthInBytes_val8_ap_vld   |   in|    1|     ap_none|      WidthInBytes_val8|        scalar|
+|colorFormat_val9           |   in|    3|     ap_none|       colorFormat_val9|        scalar|
+|colorFormat_val9_ap_vld    |   in|    1|     ap_none|       colorFormat_val9|        scalar|
 |ap_clk                     |   in|    1|  ap_ctrl_hs|    FrmbufRdHlsDataFlow|  return value|
 |ap_rst                     |   in|    1|  ap_ctrl_hs|    FrmbufRdHlsDataFlow|  return value|
 |ap_start                   |   in|    1|  ap_ctrl_hs|    FrmbufRdHlsDataFlow|  return value|

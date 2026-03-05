@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'Bytes2AXIMMvideo'
 ================================================================
-* Date:           Thu Feb 19 12:55:09 2026
+* Date:           Thu Mar  5 14:47:30 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        prj
@@ -144,7 +144,7 @@
     |dstImg_read_reg_295                                                  |   32|   0|   32|          0|
     |grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1552_1_fu_153_ap_start_reg  |    1|   0|    1|          0|
     |loopWidth_reg_300                                                    |   11|   0|   11|          0|
-    |trunc_ln4_reg_318                                                    |   29|   0|   29|          0|
+    |trunc_ln2_reg_318                                                    |   29|   0|   29|          0|
     |y_fu_110                                                             |   11|   0|   11|          0|
     |yoffset_fu_114                                                       |   24|   0|   24|          0|
     |zext_ln1539_reg_305                                                  |   11|   0|   32|         21|
