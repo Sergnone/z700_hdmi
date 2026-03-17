@@ -1,0 +1,67 @@
+set SynModuleInfo {
+  {SRCNAME AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4 MODELNAME AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4 RTLNAME design_1_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4
+    SUBMODULES {
+      {MODELNAME design_1_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init RTLNAME design_1_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME design_1_v_frmbuf_rd_0_0_flow_control_loop_pipe_sequential_init_U}
+    }
+  }
+  {SRCNAME AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5 MODELNAME AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5 RTLNAME design_1_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5}
+  {SRCNAME AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6 MODELNAME AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6 RTLNAME design_1_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6}
+  {SRCNAME AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1 MODELNAME AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1 RTLNAME design_1_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1}
+  {SRCNAME AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2 MODELNAME AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2 RTLNAME design_1_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2}
+  {SRCNAME AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3 MODELNAME AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3 RTLNAME design_1_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3}
+  {SRCNAME AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7 MODELNAME AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7 RTLNAME design_1_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7}
+  {SRCNAME AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8 MODELNAME AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8 RTLNAME design_1_v_frmbuf_rd_0_0_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8}
+  {SRCNAME AXIMMvideo2Bytes MODELNAME AXIMMvideo2Bytes RTLNAME design_1_v_frmbuf_rd_0_0_AXIMMvideo2Bytes}
+  {SRCNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29 MODELNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29 RTLNAME design_1_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29}
+  {SRCNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26 MODELNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26 RTLNAME design_1_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26}
+  {SRCNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23 MODELNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23 RTLNAME design_1_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23}
+  {SRCNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20 MODELNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20 RTLNAME design_1_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20}
+  {SRCNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17 MODELNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17 RTLNAME design_1_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17}
+  {SRCNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14 MODELNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14 RTLNAME design_1_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14}
+  {SRCNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11 MODELNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11 RTLNAME design_1_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11}
+  {SRCNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8 MODELNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8 RTLNAME design_1_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8}
+  {SRCNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5 MODELNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5 RTLNAME design_1_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5
+    SUBMODULES {
+      {MODELNAME design_1_v_frmbuf_rd_0_0_partselect_8ns_64ns_6ns_8_1_1 RTLNAME design_1_v_frmbuf_rd_0_0_partselect_8ns_64ns_6ns_8_1_1 BINDTYPE op TYPE partselect IMPL auto}
+    }
+  }
+  {SRCNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1 MODELNAME Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1 RTLNAME design_1_v_frmbuf_rd_0_0_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1}
+  {SRCNAME Bytes2MultiPixStream MODELNAME Bytes2MultiPixStream RTLNAME design_1_v_frmbuf_rd_0_0_Bytes2MultiPixStream
+    SUBMODULES {
+      {MODELNAME design_1_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1 RTLNAME design_1_v_frmbuf_rd_0_0_urem_11ns_3ns_2_15_seq_1 BINDTYPE op TYPE urem IMPL auto_seq LATENCY 14 ALLOW_PRAGMA 1}
+      {MODELNAME design_1_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1 RTLNAME design_1_v_frmbuf_rd_0_0_mul_11ns_13ns_23_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME {reg<unsigned short>} MODELNAME reg_unsigned_short_s RTLNAME design_1_v_frmbuf_rd_0_0_reg_unsigned_short_s}
+  {SRCNAME MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 MODELNAME MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1 RTLNAME design_1_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1
+    SUBMODULES {
+      {MODELNAME design_1_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R RTLNAME design_1_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_mapComp_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 MODELNAME MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3 RTLNAME design_1_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3
+    SUBMODULES {
+      {MODELNAME design_1_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1 RTLNAME design_1_v_frmbuf_rd_0_0_sparsemux_7_2_8_1_1 BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}
+    }
+  }
+  {SRCNAME MultiPixStream2AXIvideo MODELNAME MultiPixStream2AXIvideo RTLNAME design_1_v_frmbuf_rd_0_0_MultiPixStream2AXIvideo}
+  {SRCNAME FrmbufRdHlsDataFlow MODELNAME FrmbufRdHlsDataFlow RTLNAME design_1_v_frmbuf_rd_0_0_FrmbufRdHlsDataFlow
+    SUBMODULES {
+      {MODELNAME design_1_v_frmbuf_rd_0_0_fifo_w64_d481_B RTLNAME design_1_v_frmbuf_rd_0_0_fifo_w64_d481_B BINDTYPE storage TYPE fifo IMPL bram ALLOW_PRAGMA 1 INSTNAME bytePlanes_plane0_U}
+      {MODELNAME design_1_v_frmbuf_rd_0_0_fifo_w64_d481_B RTLNAME design_1_v_frmbuf_rd_0_0_fifo_w64_d481_B BINDTYPE storage TYPE fifo IMPL bram ALLOW_PRAGMA 1 INSTNAME bytePlanes_plane1_U}
+      {MODELNAME design_1_v_frmbuf_rd_0_0_fifo_w64_d481_B RTLNAME design_1_v_frmbuf_rd_0_0_fifo_w64_d481_B BINDTYPE storage TYPE fifo IMPL bram ALLOW_PRAGMA 1 INSTNAME bytePlanes_plane2_U}
+      {MODELNAME design_1_v_frmbuf_rd_0_0_fifo_w24_d2_S RTLNAME design_1_v_frmbuf_rd_0_0_fifo_w24_d2_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME img_U}
+      {MODELNAME design_1_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0 RTLNAME design_1_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_Bytes2MultiPixStream_U0_U}
+      {MODELNAME design_1_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0 RTLNAME design_1_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvideo_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_MultiPixStream2AXIvideo_U0_U}
+    }
+  }
+  {SRCNAME v_frmbuf_rd MODELNAME v_frmbuf_rd RTLNAME design_1_v_frmbuf_rd_0_0_v_frmbuf_rd IS_TOP 1
+    SUBMODULES {
+      {MODELNAME design_1_v_frmbuf_rd_0_0_mul_14s_3ns_14_1_1 RTLNAME design_1_v_frmbuf_rd_0_0_mul_14s_3ns_14_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME design_1_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R RTLNAME design_1_v_frmbuf_rd_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME design_1_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R RTLNAME design_1_v_frmbuf_rd_0_0_MEMORY2LIVE_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME design_1_v_frmbuf_rd_0_0_mm_video_m_axi RTLNAME design_1_v_frmbuf_rd_0_0_mm_video_m_axi BINDTYPE interface TYPE adapter IMPL m_axi}
+      {MODELNAME design_1_v_frmbuf_rd_0_0_CTRL_s_axi RTLNAME design_1_v_frmbuf_rd_0_0_CTRL_s_axi BINDTYPE interface TYPE interface_s_axilite}
+      {MODELNAME design_1_v_frmbuf_rd_0_0_regslice_both RTLNAME design_1_v_frmbuf_rd_0_0_regslice_both BINDTYPE interface TYPE adapter IMPL reg_slice}
+    }
+  }
+}

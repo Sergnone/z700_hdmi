@@ -1,0 +1,68 @@
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:25: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+                        ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:26: warning: null character ignored [-Wnull-character]
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+                            ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:27: warning: null character ignored [-Wnull-character]
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+                                    ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:28: warning: null character ignored [-Wnull-character]
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+                                            ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:29: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+                                                    ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:1: error: unknown type name 'XlxVV0EB0000000000000098'
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:31: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+                                                         ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:32: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+                                                             ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:33: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+                                                                 ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:31: error: expected ';' after top level declarator
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+                                                         ^
+                                                         ;
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:38: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+                                                                                ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:40: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+                                                                                     ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:41: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+                                                                                         ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:45: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+                                                                                                       ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:49: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+                                                                                                                     ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:50: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+                                                                                                                         ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:1:51: error: source file is not valid UTF-8
+XlxVV0EB0000000000000098<80><U+0000><U+0000><U+0000><80>J<E3><C9><C4>@<U+000F>%\<F7>r<F4><A5>$^<U+0015><C2><U+000C>8&<D2><FD><A0>
+                                                                                                                             ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:2:1: error: source file is not valid UTF-8
+<A1>$<BF>?<EF><AC><U+000F>ʑ<FD>%<DC>q<90>fN<U+0018><89>u<D3><E4><A0>qS<U+007F>v<E4>D^7<E5><F2><EB>
+^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:2:3: error: source file is not valid UTF-8
+<A1>$<BF>?<EF><AC><U+000F>ʑ<FD>%<DC>q<90>fN<U+0018><89>u<D3><E4><A0>qS<U+007F>v<E4>D^7<E5><F2><EB>
+     ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:2:5: error: source file is not valid UTF-8
+<A1>$<BF>?<EF><AC><U+000F>ʑ<FD>%<DC>q<90>fN<U+0018><89>u<D3><E4><A0>qS<U+007F>v<E4>D^7<E5><F2><EB>
+          ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:2:6: error: source file is not valid UTF-8
+<A1>$<BF>?<EF><AC><U+000F>ʑ<FD>%<DC>q<90>fN<U+0018><89>u<D3><E4><A0>qS<U+007F>v<E4>D^7<E5><F2><EB>
+              ^
+/home/serg/Documents/Xilinx/z700_hdmi/HDMI_MIXER/hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_mix_0_0/src/v_dma.cpp:2:10: error: source file is not valid UTF-8
+<A1>$<BF>?<EF><AC><U+000F>ʑ<FD>%<DC>q<90>fN<U+0018><89>u<D3><E4><A0>qS<U+007F>v<E4>D^7<E5><F2><EB>
+                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]

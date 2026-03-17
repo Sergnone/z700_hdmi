@@ -1,0 +1,192 @@
+
+
+================================================================
+== Vitis HLS Report for 'MultiPixStream2AXIvideo'
+================================================================
+* Date:           Mon Mar 16 15:11:28 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.52 ns|  4.261 ns|     1.76 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+---------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |    Interval   | Pipeline|
+    |   min   |   max   |    min    |    max    | min |   max   |   Type  |
+    +---------+---------+-----------+-----------+-----+---------+---------+
+    |        2|  2080082|  13.044 ns|  13.566 ms|    2|  2080082|       no|
+    +---------+---------+-----------+-----------+-----+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------------------------+----------------------------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
+        |                                                              |                                                    |  Latency (cycles) |   Latency (absolute)  |  Interval |      Pipeline     |
+        |                           Instance                           |                       Module                       |   min   |   max   |    min    |    max    | min | max |        Type       |
+        +--------------------------------------------------------------+----------------------------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
+        |grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_3903_3_fu_96  |MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_3903_3  |        3|     1923|  19.566 ns|  12.542 us|    0|    0|  loop pipeline stp|
+        |grp_reg_unsigned_short_1_fu_120                               |reg_unsigned_short_1                                |        1|        1|   6.522 ns|   6.522 ns|    1|    1|                yes|
+        |grp_reg_unsigned_short_1_fu_126                               |reg_unsigned_short_1                                |        1|        1|   6.522 ns|   6.522 ns|    1|    1|                yes|
+        +--------------------------------------------------------------+----------------------------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip   |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |- VITIS_LOOP_3901_2  |        0|  2080080|  6 ~ 1926|          -|          -|  0 ~ 1080|        no|
+        +---------------------+---------+---------+----------+-----------+-----------+----------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     48|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|      44|    106|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|    115|    -|
+|Register         |        -|    -|     100|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     144|    269|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------------------+----------------------------------------------------+---------+----+----+-----+-----+
+    |                           Instance                           |                       Module                       | BRAM_18K| DSP| FF | LUT | URAM|
+    +--------------------------------------------------------------+----------------------------------------------------+---------+----+----+-----+-----+
+    |grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_3903_3_fu_96  |MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_3903_3  |        0|   0|  18|  102|    0|
+    |grp_reg_unsigned_short_1_fu_120                               |reg_unsigned_short_1                                |        0|   0|  13|    2|    0|
+    |grp_reg_unsigned_short_1_fu_126                               |reg_unsigned_short_1                                |        0|   0|  13|    2|    0|
+    +--------------------------------------------------------------+----------------------------------------------------+---------+----+----+-----+-----+
+    |Total                                                         |                                                    |        0|   0|  44|  106|    0|
+    +--------------------------------------------------------------+----------------------------------------------------+---------+----+----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                                   Variable Name                                  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |add_ln3916_fu_141_p2                                                              |         +|   0|  0|  12|          12|           2|
+    |i_4_fu_161_p2                                                                     |         +|   0|  0|  11|          11|           1|
+    |and_ln3901_fu_167_p2                                                              |       and|   0|  0|   1|           1|           1|
+    |grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_3903_3_fu_96_m_axis_video_TREADY  |       and|   0|  0|   1|           1|           1|
+    |icmp_ln3901_1_fu_156_p2                                                           |      icmp|   0|  0|  11|          11|          11|
+    |icmp_ln3901_fu_147_p2                                                             |      icmp|   0|  0|  11|          11|           1|
+    |ap_block_state1                                                                   |        or|   0|  0|   1|           1|           1|
+    +----------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                                             |          |   0|  0|  48|          48|          18|
+    +----------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------+----+-----------+-----+-----------+
+    |        Name        | LUT| Input Size| Bits| Total Bits|
+    +--------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm           |  25|          6|    1|          6|
+    |ap_done             |   9|          2|    1|          2|
+    |i_fu_68             |   9|          2|   11|         22|
+    |m_axis_video_TDATA  |   9|          2|   24|         48|
+    |m_axis_video_TDEST  |   9|          2|    1|          2|
+    |m_axis_video_TID    |   9|          2|    1|          2|
+    |m_axis_video_TKEEP  |   9|          2|    3|          6|
+    |m_axis_video_TLAST  |   9|          2|    1|          2|
+    |m_axis_video_TSTRB  |   9|          2|    3|          6|
+    |m_axis_video_TUSER  |   9|          2|    1|          2|
+    |sof_reg_84          |   9|          2|    1|          2|
+    +--------------------+----+-----------+-----+-----------+
+    |Total               | 115|         26|   48|        100|
+    +--------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                    Name                                   | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------------------------------+----+----+-----+-----------+
+    |add_ln3916_reg_203                                                         |  12|   0|   12|          0|
+    |and_ln3901_reg_221                                                         |   1|   0|    1|          0|
+    |ap_CS_fsm                                                                  |   5|   0|    5|          0|
+    |ap_done_reg                                                                |   1|   0|    1|          0|
+    |cols_reg_198                                                               |  11|   0|   11|          0|
+    |grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_3903_3_fu_96_ap_start_reg  |   1|   0|    1|          0|
+    |i_4_reg_216                                                                |  11|   0|   11|          0|
+    |i_fu_68                                                                    |  11|   0|   11|          0|
+    |icmp_ln3901_reg_208                                                        |   1|   0|    1|          0|
+    |m_axis_video_TDATA_reg                                                     |  24|   0|   24|          0|
+    |m_axis_video_TDEST_reg                                                     |   1|   0|    1|          0|
+    |m_axis_video_TID_reg                                                       |   1|   0|    1|          0|
+    |m_axis_video_TKEEP_reg                                                     |   3|   0|    3|          0|
+    |m_axis_video_TLAST_reg                                                     |   1|   0|    1|          0|
+    |m_axis_video_TSTRB_reg                                                     |   3|   0|    3|          0|
+    |m_axis_video_TUSER_reg                                                     |   1|   0|    1|          0|
+    |rows_reg_193                                                               |  11|   0|   11|          0|
+    |sof_reg_84                                                                 |   1|   0|    1|          0|
+    +---------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                      | 100|   0|  100|          0|
+    +---------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+-------------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++-----------------------+-----+-----+------------+-------------------------+--------------+
+|ap_clk                 |   in|    1|  ap_ctrl_hs|  MultiPixStream2AXIvideo|  return value|
+|ap_rst                 |   in|    1|  ap_ctrl_hs|  MultiPixStream2AXIvideo|  return value|
+|ap_start               |   in|    1|  ap_ctrl_hs|  MultiPixStream2AXIvideo|  return value|
+|ap_done                |  out|    1|  ap_ctrl_hs|  MultiPixStream2AXIvideo|  return value|
+|ap_continue            |   in|    1|  ap_ctrl_hs|  MultiPixStream2AXIvideo|  return value|
+|ap_idle                |  out|    1|  ap_ctrl_hs|  MultiPixStream2AXIvideo|  return value|
+|ap_ready               |  out|    1|  ap_ctrl_hs|  MultiPixStream2AXIvideo|  return value|
+|out420_dout            |   in|   24|     ap_fifo|                   out420|       pointer|
+|out420_empty_n         |   in|    1|     ap_fifo|                   out420|       pointer|
+|out420_read            |  out|    1|     ap_fifo|                   out420|       pointer|
+|out420_num_data_valid  |   in|    3|     ap_fifo|                   out420|       pointer|
+|out420_fifo_cap        |   in|    3|     ap_fifo|                   out420|       pointer|
+|m_axis_video_TDATA     |  out|   24|        axis|    m_axis_video_V_data_V|       pointer|
+|m_axis_video_TVALID    |  out|    1|        axis|    m_axis_video_V_dest_V|       pointer|
+|m_axis_video_TREADY    |   in|    1|        axis|    m_axis_video_V_dest_V|       pointer|
+|m_axis_video_TDEST     |  out|    1|        axis|    m_axis_video_V_dest_V|       pointer|
+|m_axis_video_TKEEP     |  out|    3|        axis|    m_axis_video_V_keep_V|       pointer|
+|m_axis_video_TSTRB     |  out|    3|        axis|    m_axis_video_V_strb_V|       pointer|
+|m_axis_video_TUSER     |  out|    1|        axis|    m_axis_video_V_user_V|       pointer|
+|m_axis_video_TLAST     |  out|    1|        axis|    m_axis_video_V_last_V|       pointer|
+|m_axis_video_TID       |  out|    1|        axis|      m_axis_video_V_id_V|       pointer|
+|Height                 |   in|   11|   ap_stable|                   Height|        scalar|
+|WidthOut               |   in|   11|   ap_stable|                 WidthOut|        scalar|
++-----------------------+-----+-----+------------+-------------------------+--------------+
+

@@ -1,0 +1,1292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="v_frmbuf_rd.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_v_frmbuf_rd_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd//AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd_activity">
+         <obj_property name="label">AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd//AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd//AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd//AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/grp_FrmbufRdHlsDataFlow_fu_178_activity">
+            <obj_property name="label">grp_FrmbufRdHlsDataFlow_fu_178_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_FrmbufRdHlsDataFlow_fu_178_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_FrmbufRdHlsDataFlow_fu_178_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/grp_FrmbufRdHlsDataFlow_fu_178_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/grp_FrmbufRdHlsDataFlow_fu_178_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/grp_FrmbufRdHlsDataFlow_fu_178_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/AXIMMvideo2Bytes_U0_activity">
+               <obj_property name="label">AXIMMvideo2Bytes_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">AXIMMvideo2Bytes_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">AXIMMvideo2Bytes_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/AXIMMvideo2Bytes_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/AXIMMvideo2Bytes_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/AXIMMvideo2Bytes_U0_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260_activity">
+                  <obj_property name="label">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270_activity">
+                  <obj_property name="label">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280_activity">
+                  <obj_property name="label">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290_activity">
+                  <obj_property name="label">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300_activity">
+                  <obj_property name="label">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310_activity">
+                  <obj_property name="label">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320_activity">
+                  <obj_property name="label">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330_activity">
+                  <obj_property name="label">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/Bytes2MultiPixStream_U0_activity">
+               <obj_property name="label">Bytes2MultiPixStream_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">Bytes2MultiPixStream_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">Bytes2MultiPixStream_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/Bytes2MultiPixStream_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/Bytes2MultiPixStream_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/Bytes2MultiPixStream_U0_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302_activity">
+                  <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313_activity">
+                  <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330_activity">
+                  <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341_activity">
+                  <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360_activity">
+                  <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379_activity">
+                  <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392_activity">
+                  <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405_activity">
+                  <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426_activity">
+                  <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450_activity">
+                  <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/MultiPixStream2AXIvideo_U0_activity">
+               <obj_property name="label">MultiPixStream2AXIvideo_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">MultiPixStream2AXIvideo_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">MultiPixStream2AXIvideo_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/MultiPixStream2AXIvideo_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/MultiPixStream2AXIvideo_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/MultiPixStream2AXIvideo_U0_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128_activity">
+                  <obj_property name="label">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138_activity">
+                  <obj_property name="label">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_reg_unsigned_short_s_fu_193/grp_reg_unsigned_short_s_fu_193_activity">
+                  <obj_property name="label">grp_reg_unsigned_short_s_fu_193_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_reg_unsigned_short_s_fu_193_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_reg_unsigned_short_s_fu_193_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_reg_unsigned_short_s_fu_193/grp_reg_unsigned_short_s_fu_193_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_reg_unsigned_short_s_fu_193/grp_reg_unsigned_short_s_fu_193_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_reg_unsigned_short_s_fu_193/grp_reg_unsigned_short_s_fu_193_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_reg_unsigned_short_s_fu_199/grp_reg_unsigned_short_s_fu_199_activity">
+                  <obj_property name="label">grp_reg_unsigned_short_s_fu_199_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_reg_unsigned_short_s_fu_199_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_reg_unsigned_short_s_fu_199_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_reg_unsigned_short_s_fu_199/grp_reg_unsigned_short_s_fu_199_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_reg_unsigned_short_s_fu_199/grp_reg_unsigned_short_s_fu_199_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_reg_unsigned_short_s_fu_199/grp_reg_unsigned_short_s_fu_199_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd//AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd_activity">
+      <obj_property name="ElementShortName">AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd_group">
+      <obj_property name="label">AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/grp_FrmbufRdHlsDataFlow_fu_178_activity">
+         <obj_property name="ElementShortName">grp_FrmbufRdHlsDataFlow_fu_178_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_FrmbufRdHlsDataFlow_fu_178_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_FrmbufRdHlsDataFlow_fu_178_group">
+         <obj_property name="label">grp_FrmbufRdHlsDataFlow_fu_178</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/AXIMMvideo2Bytes_U0_activity">
+            <obj_property name="ElementShortName">AXIMMvideo2Bytes_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">AXIMMvideo2Bytes_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/Bytes2MultiPixStream_U0_activity">
+            <obj_property name="ElementShortName">Bytes2MultiPixStream_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Bytes2MultiPixStream_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/MultiPixStream2AXIvideo_U0_activity">
+            <obj_property name="ElementShortName">MultiPixStream2AXIvideo_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">MultiPixStream2AXIvideo_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_FrmbufRdHlsDataFlow_fu_178_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="AXIMMvideo2Bytes_U0_group">
+            <obj_property name="label">AXIMMvideo2Bytes_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260_activity">
+               <obj_property name="ElementShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270_activity">
+               <obj_property name="ElementShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280_activity">
+               <obj_property name="ElementShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290_activity">
+               <obj_property name="ElementShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300_activity">
+               <obj_property name="ElementShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310_activity">
+               <obj_property name="ElementShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320_activity">
+               <obj_property name="ElementShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330_activity">
+               <obj_property name="ElementShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330_activity</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="AXIMMvideo2Bytes_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="AXIMMvideo2Bytes_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/real_start">
+                  <obj_property name="ElementShortName">real_start</obj_property>
+                  <obj_property name="ObjectShortName">real_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AXIMMvideo2Bytes_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="bytePlanes_plane0_group">
+                  <obj_property name="label">bytePlanes_plane0(bytePlanes_plane0_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/bytePlanes_plane0_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/bytePlanes_plane0_full_n">
+                     <obj_property name="ElementShortName">bytePlanes_plane0_full_n</obj_property>
+                     <obj_property name="ObjectShortName">bytePlanes_plane0_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/bytePlanes_plane0_write">
+                     <obj_property name="ElementShortName">bytePlanes_plane0_write</obj_property>
+                     <obj_property name="ObjectShortName">bytePlanes_plane0_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="bytePlanes_plane1_group">
+                  <obj_property name="label">bytePlanes_plane1(bytePlanes_plane1_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/bytePlanes_plane1_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/bytePlanes_plane1_full_n">
+                     <obj_property name="ElementShortName">bytePlanes_plane1_full_n</obj_property>
+                     <obj_property name="ObjectShortName">bytePlanes_plane1_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/bytePlanes_plane1_write">
+                     <obj_property name="ElementShortName">bytePlanes_plane1_write</obj_property>
+                     <obj_property name="ObjectShortName">bytePlanes_plane1_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="bytePlanes_plane2_group">
+                  <obj_property name="label">bytePlanes_plane2(bytePlanes_plane2_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/bytePlanes_plane2_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/bytePlanes_plane2_full_n">
+                     <obj_property name="ElementShortName">bytePlanes_plane2_full_n</obj_property>
+                     <obj_property name="ObjectShortName">bytePlanes_plane2_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/bytePlanes_plane2_write">
+                     <obj_property name="ElementShortName">bytePlanes_plane2_write</obj_property>
+                     <obj_property name="ObjectShortName">bytePlanes_plane2_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260_group">
+               <obj_property name="label">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_625_4_fu_260/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270_group">
+               <obj_property name="label">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_634_5_fu_270/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280_group">
+               <obj_property name="label">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_640_6_fu_280/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290_group">
+               <obj_property name="label">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_591_1_fu_290/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300_group">
+               <obj_property name="label">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_597_2_fu_300/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310_group">
+               <obj_property name="label">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_603_3_fu_310/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320_group">
+               <obj_property name="label">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_660_7_fu_320/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330_group">
+               <obj_property name="label">grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/AXIMMvideo2Bytes_U0/grp_AXIMMvideo2Bytes_Pipeline_VITIS_LOOP_670_8_fu_330/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Bytes2MultiPixStream_U0_group">
+            <obj_property name="label">Bytes2MultiPixStream_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302_activity">
+               <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313_activity">
+               <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330_activity">
+               <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341_activity">
+               <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360_activity">
+               <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379_activity">
+               <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392_activity">
+               <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405_activity">
+               <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426_activity">
+               <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450_activity">
+               <obj_property name="ElementShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450_activity</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="Bytes2MultiPixStream_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="bytePlanes_plane0_group">
+                  <obj_property name="label">bytePlanes_plane0(bytePlanes_plane0_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/bytePlanes_plane0_dout">
+                     <obj_property name="ElementShortName">bytePlanes_plane0_dout[63:0]</obj_property>
+                     <obj_property name="ObjectShortName">bytePlanes_plane0_dout[63:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/bytePlanes_plane0_empty_n">
+                     <obj_property name="ElementShortName">bytePlanes_plane0_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">bytePlanes_plane0_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/bytePlanes_plane0_read">
+                     <obj_property name="ElementShortName">bytePlanes_plane0_read</obj_property>
+                     <obj_property name="ObjectShortName">bytePlanes_plane0_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="bytePlanes_plane1_group">
+                  <obj_property name="label">bytePlanes_plane1(bytePlanes_plane1_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/bytePlanes_plane1_dout">
+                     <obj_property name="ElementShortName">bytePlanes_plane1_dout[63:0]</obj_property>
+                     <obj_property name="ObjectShortName">bytePlanes_plane1_dout[63:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/bytePlanes_plane1_empty_n">
+                     <obj_property name="ElementShortName">bytePlanes_plane1_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">bytePlanes_plane1_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/bytePlanes_plane1_read">
+                     <obj_property name="ElementShortName">bytePlanes_plane1_read</obj_property>
+                     <obj_property name="ObjectShortName">bytePlanes_plane1_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="bytePlanes_plane2_group">
+                  <obj_property name="label">bytePlanes_plane2(bytePlanes_plane2_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/bytePlanes_plane2_dout">
+                     <obj_property name="ElementShortName">bytePlanes_plane2_dout[63:0]</obj_property>
+                     <obj_property name="ObjectShortName">bytePlanes_plane2_dout[63:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/bytePlanes_plane2_empty_n">
+                     <obj_property name="ElementShortName">bytePlanes_plane2_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">bytePlanes_plane2_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/bytePlanes_plane2_read">
+                     <obj_property name="ElementShortName">bytePlanes_plane2_read</obj_property>
+                     <obj_property name="ObjectShortName">bytePlanes_plane2_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Bytes2MultiPixStream_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/real_start">
+                  <obj_property name="ElementShortName">real_start</obj_property>
+                  <obj_property name="ObjectShortName">real_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Bytes2MultiPixStream_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="img_group">
+                  <obj_property name="label">img(img_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/img_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/img_full_n">
+                     <obj_property name="ElementShortName">img_full_n</obj_property>
+                     <obj_property name="ObjectShortName">img_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/img_write">
+                     <obj_property name="ElementShortName">img_write</obj_property>
+                     <obj_property name="ObjectShortName">img_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302_group">
+               <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313_group">
+               <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330_group">
+               <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341_group">
+               <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360_group">
+               <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379_group">
+               <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392_group">
+               <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405_group">
+               <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426_group">
+               <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450_group">
+               <obj_property name="label">grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/Bytes2MultiPixStream_U0/grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="MultiPixStream2AXIvideo_U0_group">
+            <obj_property name="label">MultiPixStream2AXIvideo_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128_activity">
+               <obj_property name="ElementShortName">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138_activity">
+               <obj_property name="ElementShortName">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_reg_unsigned_short_s_fu_193/grp_reg_unsigned_short_s_fu_193_activity">
+               <obj_property name="ElementShortName">grp_reg_unsigned_short_s_fu_193_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_reg_unsigned_short_s_fu_193_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_reg_unsigned_short_s_fu_199/grp_reg_unsigned_short_s_fu_199_activity">
+               <obj_property name="ElementShortName">grp_reg_unsigned_short_s_fu_199_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_reg_unsigned_short_s_fu_199_activity</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="MultiPixStream2AXIvideo_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="img_group">
+                  <obj_property name="label">img(img_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/img_dout">
+                     <obj_property name="ElementShortName">img_dout[23:0]</obj_property>
+                     <obj_property name="ObjectShortName">img_dout[23:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/img_empty_n">
+                     <obj_property name="ElementShortName">img_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">img_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/img_read">
+                     <obj_property name="ElementShortName">img_read</obj_property>
+                     <obj_property name="ObjectShortName">img_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="mapComp_group">
+                  <obj_property name="label">mapComp(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/mapComp_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/mapComp_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/mapComp_ce0">
+                     <obj_property name="ElementShortName">mapComp_ce0</obj_property>
+                     <obj_property name="ObjectShortName">mapComp_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="MultiPixStream2AXIvideo_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="MultiPixStream2AXIvideo_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128_group">
+               <obj_property name="label">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_367_1_fu_128/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138_group">
+               <obj_property name="label">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_376_3_fu_138/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_reg_unsigned_short_s_fu_193_group">
+               <obj_property name="label">grp_reg_unsigned_short_s_fu_193</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_reg_unsigned_short_s_fu_193_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_reg_unsigned_short_s_fu_193/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_reg_unsigned_short_s_fu_193/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_reg_unsigned_short_s_fu_193/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_reg_unsigned_short_s_fu_199_group">
+               <obj_property name="label">grp_reg_unsigned_short_s_fu_199</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_reg_unsigned_short_s_fu_199_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_reg_unsigned_short_s_fu_199/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_reg_unsigned_short_s_fu_199/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_frmbuf_rd_top/AESL_inst_design_1_v_frmbuf_rd_0_0_v_frmbuf_rd/grp_FrmbufRdHlsDataFlow_fu_178/MultiPixStream2AXIvideo_U0/grp_reg_unsigned_short_s_fu_199/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

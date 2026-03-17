@@ -1,0 +1,195 @@
+
+
+================================================================
+== Vitis HLS Report for 'AXIvideo2MultiPixStream_Pipeline_loop_width'
+================================================================
+* Date:           Mon Mar 16 15:10:41 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.52 ns|  4.078 ns|     1.76 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval |      Pipeline     |
+    |   min   |   max   |    min    |    max    | min | max |        Type       |
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+    |        3|     1923|  19.566 ns|  12.542 us|    0|    0|  loop pipeline stp|
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |              |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip   |          |
+        |   Loop Name  |   min   |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +--------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |- loop_width  |        1|     1921|         3|          1|          1|  0 ~ 1920|       yes|
+        +--------------+---------+---------+----------+-----------+-----------+----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.07>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%j = alloca i32 1" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326]   --->   Operation 6 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%p_0_0_0_0178414 = alloca i32 1"   --->   Operation 7 'alloca' 'p_0_0_0_0178414' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%p_4_0_0_0186423 = alloca i32 1"   --->   Operation 8 'alloca' 'p_4_0_0_0186423' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_12"   --->   Operation 9 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i3 %colorFormat_val, i1 1, void @p_str"   --->   Operation 10 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_dest_V, void @empty_10, i32 0, i32 0, void @empty_11, i32 0, i32 0, void @empty_53, void @empty_53, void @empty_53, i32 0, i32 0, i32 0, i32 0, void @empty_53, void @empty_53, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_id_V, void @empty_10, i32 0, i32 0, void @empty_11, i32 0, i32 0, void @empty_53, void @empty_53, void @empty_53, i32 0, i32 0, i32 0, i32 0, void @empty_53, void @empty_53, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_last_V, void @empty_10, i32 0, i32 0, void @empty_11, i32 0, i32 0, void @empty_53, void @empty_53, void @empty_53, i32 0, i32 0, i32 0, i32 0, void @empty_53, void @empty_53, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_user_V, void @empty_10, i32 0, i32 0, void @empty_11, i32 0, i32 0, void @empty_53, void @empty_53, void @empty_53, i32 0, i32 0, i32 0, i32 0, void @empty_53, void @empty_53, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %s_axis_video_V_strb_V, void @empty_10, i32 0, i32 0, void @empty_11, i32 0, i32 0, void @empty_53, void @empty_53, void @empty_53, i32 0, i32 0, i32 0, i32 0, void @empty_53, void @empty_53, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %s_axis_video_V_keep_V, void @empty_10, i32 0, i32 0, void @empty_11, i32 0, i32 0, void @empty_53, void @empty_53, void @empty_53, i32 0, i32 0, i32 0, i32 0, void @empty_53, void @empty_53, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %s_axis_video_V_data_V, void @empty_10, i32 0, i32 0, void @empty_11, i32 0, i32 0, void @empty_53, void @empty_53, void @empty_53, i32 0, i32 0, i32 0, i32 0, void @empty_53, void @empty_53, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %img, void @empty_20, i32 0, i32 0, void @empty_53, i32 0, i32 0, void @empty_53, void @empty_53, void @empty_53, i32 0, i32 0, i32 0, i32 0, void @empty_53, void @empty_53, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%cols_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %cols"   --->   Operation 19 'read' 'cols_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%colorFormat_val_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %colorFormat_val"   --->   Operation 20 'read' 'colorFormat_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%sof_2_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %sof_2"   --->   Operation 21 'read' 'sof_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p_0_0_0_0178415_lcssa431_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %p_0_0_0_0178415_lcssa431"   --->   Operation 22 'read' 'p_0_0_0_0178415_lcssa431_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%p_4_0_0_0186422_lcssa447_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %p_4_0_0_0186422_lcssa447"   --->   Operation 23 'read' 'p_4_0_0_0186422_lcssa447_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.76ns)   --->   "%icmp_ln361 = icmp_eq  i3 %colorFormat_val_read, i3 0" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:361]   --->   Operation 24 'icmp' 'icmp_ln361' <Predicate = true> <Delay = 0.76> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (1.29ns)   --->   "%store_ln0 = store i1 %p_4_0_0_0186422_lcssa447_read, i1 %p_4_0_0_0186423"   --->   Operation 25 'store' 'store_ln0' <Predicate = true> <Delay = 1.29>
+ST_1 : Operation 26 [1/1] (1.29ns)   --->   "%store_ln0 = store i24 %p_0_0_0_0178415_lcssa431_read, i24 %p_0_0_0_0178414"   --->   Operation 26 'store' 'store_ln0' <Predicate = true> <Delay = 1.29>
+ST_1 : Operation 27 [1/1] (1.29ns)   --->   "%store_ln326 = store i11 0, i11 %j" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326]   --->   Operation 27 'store' 'store_ln326' <Predicate = true> <Delay = 1.29>
+ST_1 : Operation 28 [1/1] (1.29ns)   --->   "%br_ln326 = br void %for.body12" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326]   --->   Operation 28 'br' 'br_ln326' <Predicate = true> <Delay = 1.29>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%j_1 = load i11 %j" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326]   --->   Operation 29 'load' 'j_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (1.48ns)   --->   "%icmp_ln326 = icmp_eq  i11 %j_1, i11 %cols_read" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326]   --->   Operation 30 'icmp' 'icmp_ln326' <Predicate = true> <Delay = 1.48> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (1.48ns)   --->   "%j_2 = add i11 %j_1, i11 1" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326]   --->   Operation 31 'add' 'j_2' <Predicate = true> <Delay = 1.48> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln326 = br i1 %icmp_ln326, void %for.body12.split, void %loop_wait_for_eol.exitStub" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326]   --->   Operation 32 'br' 'br_ln326' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (1.29ns)   --->   "%store_ln326 = store i11 %j_2, i11 %j" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326]   --->   Operation 33 'store' 'store_ln326' <Predicate = (!icmp_ln326)> <Delay = 1.29>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%br_ln326 = br void %for.body12" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326]   --->   Operation 34 'br' 'br_ln326' <Predicate = (!icmp_ln326)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 2.09>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%eol = phi i1 0, void %newFuncRoot, i1 %eol_2, void %if.end"   --->   Operation 35 'phi' 'eol' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%sof = phi i1 %sof_2_read, void %newFuncRoot, i1 0, void %if.end"   --->   Operation 36 'phi' 'sof' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 1920, i64 0"   --->   Operation 37 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%specpipeline_ln329 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_53" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:329]   --->   Operation 38 'specpipeline' 'specpipeline_ln329' <Predicate = (!icmp_ln326)> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%specloopname_ln326 = specloopname void @_ssdm_op_SpecLoopName, void @empty_19" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326]   --->   Operation 39 'specloopname' 'specloopname_ln326' <Predicate = (!icmp_ln326)> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.80ns)   --->   "%or_ln330 = or i1 %sof, i1 %eol" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:330]   --->   Operation 40 'or' 'or_ln330' <Predicate = (!icmp_ln326)> <Delay = 0.80> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%br_ln330 = br i1 %or_ln330, void %if.else, void %if.end" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:330]   --->   Operation 41 'br' 'br_ln330' <Predicate = (!icmp_ln326)> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] ( I:0.41ns O:0.41ns )   --->   "%empty = read i34 @_ssdm_op_Read.axis.volatile.i24P0A.i3P0A.i3P0A.i1P0A.i1P0A.i1P0A.i1P0A, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:337]   --->   Operation 42 'read' 'empty' <Predicate = (!icmp_ln326 & !or_ln330)> <Delay = 0.41> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 1.52> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%p_s = extractvalue i34 %empty" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:337]   --->   Operation 43 'extractvalue' 'p_s' <Predicate = (!icmp_ln326 & !or_ln330)> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%eol_1 = extractvalue i34 %empty" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:337]   --->   Operation 44 'extractvalue' 'eol_1' <Predicate = (!icmp_ln326 & !or_ln330)> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (1.29ns)   --->   "%store_ln337 = store i1 %eol_1, i1 %p_4_0_0_0186423" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:337]   --->   Operation 45 'store' 'store_ln337' <Predicate = (!icmp_ln326 & !or_ln330)> <Delay = 1.29>
+ST_2 : Operation 46 [1/1] (1.29ns)   --->   "%store_ln337 = store i24 %p_s, i24 %p_0_0_0_0178414" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:337]   --->   Operation 46 'store' 'store_ln337' <Predicate = (!icmp_ln326 & !or_ln330)> <Delay = 1.29>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end"   --->   Operation 47 'br' 'br_ln0' <Predicate = (!icmp_ln326 & !or_ln330)> <Delay = 0.00>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%p_0_0_0_0178414_load = load i24 %p_0_0_0_0178414"   --->   Operation 58 'load' 'p_0_0_0_0178414_load' <Predicate = (icmp_ln326)> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%p_4_0_0_0186423_load = load i1 %p_4_0_0_0186423"   --->   Operation 59 'load' 'p_4_0_0_0186423_load' <Predicate = (icmp_ln326)> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %p_4_0_0_0186423_out, i1 %p_4_0_0_0186423_load"   --->   Operation 60 'write' 'write_ln0' <Predicate = (icmp_ln326)> <Delay = 0.00>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i24P0A, i24 %p_0_0_0_0178414_out, i24 %p_0_0_0_0178414_load"   --->   Operation 61 'write' 'write_ln0' <Predicate = (icmp_ln326)> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (1.29ns)   --->   "%ret_ln0 = ret"   --->   Operation 62 'ret' 'ret_ln0' <Predicate = (icmp_ln326)> <Delay = 1.29>
+
+State 3 <SV = 2> <Delay = 3.39>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%axi_data = load i24 %p_0_0_0_0178414" [hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:63->hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:85->prj/sol/.autopilot/db/v_frmbuf_wr.cpp:359]   --->   Operation 48 'load' 'axi_data' <Predicate = (!icmp_ln326)> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%eol_2 = load i1 %p_4_0_0_0186423"   --->   Operation 49 'load' 'eol_2' <Predicate = (!icmp_ln326)> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%tmp_3 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32, i24 %axi_data, i32 16" [hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:63->hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:85->prj/sol/.autopilot/db/v_frmbuf_wr.cpp:358]   --->   Operation 50 'partselect' 'tmp_3' <Predicate = (!icmp_ln326)> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%trunc_ln63 = trunc i24 %axi_data" [hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:63->hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:85->prj/sol/.autopilot/db/v_frmbuf_wr.cpp:359]   --->   Operation 51 'trunc' 'trunc_ln63' <Predicate = (!icmp_ln326)> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (0.44ns)   --->   "%select_ln361 = select i1 %icmp_ln361, i8 %tmp_3, i8 %trunc_ln63" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:361]   --->   Operation 52 'select' 'select_ln361' <Predicate = (!icmp_ln326)> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%tmp_5 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32, i24 %axi_data, i32 8" [hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:63->hdmi_mixer.gen/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:85->prj/sol/.autopilot/db/v_frmbuf_wr.cpp:359]   --->   Operation 53 'partselect' 'tmp_5' <Predicate = (!icmp_ln326)> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.44ns)   --->   "%select_ln361_1 = select i1 %icmp_ln361, i8 %trunc_ln63, i8 %tmp_5" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:361]   --->   Operation 54 'select' 'select_ln361_1' <Predicate = (!icmp_ln326)> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 55 [1/1] (0.44ns)   --->   "%select_ln361_2 = select i1 %icmp_ln361, i8 %tmp_5, i8 %tmp_3" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:361]   --->   Operation 55 'select' 'select_ln361_2' <Predicate = (!icmp_ln326)> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%or_ln403_3 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i8.i8.i8, i8 %select_ln361_2, i8 %select_ln361_1, i8 %select_ln361" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:403]   --->   Operation 56 'bitconcatenate' 'or_ln403_3' <Predicate = (!icmp_ln326)> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] ( I:2.38ns O:2.38ns )   --->   "%write_ln403 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %img, i24 %or_ln403_3" [prj/sol/.autopilot/db/v_frmbuf_wr.cpp:403]   --->   Operation 57 'write' 'write_ln403' <Predicate = (!icmp_ln326)> <Delay = 2.38> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.522ns, clock uncertainty: 1.761ns.
+
+ <State 1>: 4.078ns
+The critical path consists of the following:
+	'store' operation ('store_ln326', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326) of constant 0 11 bit on local variable 'j', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326 [37]  (1.298 ns)
+	'load' operation 11 bit ('j', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326) on local variable 'j', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326 [42]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln326', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326) [43]  (1.482 ns)
+	'store' operation ('store_ln326', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326) of variable 'j', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326 11 bit on local variable 'j', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:326 [70]  (1.298 ns)
+
+ <State 2>: 2.098ns
+The critical path consists of the following:
+	'phi' operation 1 bit ('eol') with incoming values : ('eol') [40]  (0.000 ns)
+	'or' operation 1 bit ('or_ln330', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:330) [50]  (0.800 ns)
+	'store' operation ('store_ln337', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:337) of variable 'eol', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:337 1 bit on local variable 'p_4_0_0_0186423' [56]  (1.298 ns)
+
+ <State 3>: 3.396ns
+The critical path consists of the following:
+	'load' operation 1 bit ('eol') on local variable 'p_4_0_0_0186423' [61]  (0.000 ns)
+	multiplexor before 'phi' operation 1 bit ('eol') with incoming values : ('eol') [40]  (1.298 ns)
+	'phi' operation 1 bit ('eol') with incoming values : ('eol') [40]  (0.000 ns)
+	'or' operation 1 bit ('or_ln330', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:330) [50]  (0.800 ns)
+	'store' operation ('store_ln337', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:337) of variable 'eol', prj/sol/.autopilot/db/v_frmbuf_wr.cpp:337 1 bit on local variable 'p_4_0_0_0186423' [56]  (1.298 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

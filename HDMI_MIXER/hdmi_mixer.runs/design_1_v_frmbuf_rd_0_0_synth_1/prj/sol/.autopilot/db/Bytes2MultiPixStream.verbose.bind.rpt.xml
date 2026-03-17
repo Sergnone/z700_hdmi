@@ -1,0 +1,65 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'Bytes2MultiPixStream'" level="0">
+<item name = "Date">Mon Mar 16 15:10:45 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">prj</item>
+<item name = "Solution">sol (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">6.52 ns, 4.761 ns, 1.76 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1, 12447005, 6.522 ns, 81.179 ms, 1, 12447005, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29_fu_302">Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1772_29, 2, 2882, 13.044 ns, 18.796 us, 0, 0, loop pipeline stp</column>
+<column name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26_fu_313">Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1532_26, 2, 11522, 13.044 ns, 75.146 us, 0, 0, loop pipeline stp</column>
+<column name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23_fu_330">Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1450_23, 2, 2882, 13.044 ns, 18.796 us, 0, 0, loop pipeline stp</column>
+<column name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20_fu_341">Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1398_20, 2, 3842, 13.044 ns, 25.058 us, 0, 0, loop pipeline stp</column>
+<column name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17_fu_360">Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1240_17, 2, 3842, 13.044 ns, 25.058 us, 0, 0, loop pipeline stp</column>
+<column name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14_fu_379">Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1197_14, 2, 5762, 13.044 ns, 37.580 us, 0, 0, loop pipeline stp</column>
+<column name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11_fu_392">Bytes2MultiPixStream_Pipeline_VITIS_LOOP_1157_11, 2, 5762, 13.044 ns, 37.580 us, 0, 0, loop pipeline stp</column>
+<column name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8_fu_405">Bytes2MultiPixStream_Pipeline_VITIS_LOOP_954_8, 2, 11522, 13.044 ns, 75.146 us, 0, 0, loop pipeline stp</column>
+<column name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5_fu_426">Bytes2MultiPixStream_Pipeline_VITIS_LOOP_862_5, 2, 11523, 13.044 ns, 75.153 us, 0, 0, loop pipeline stp</column>
+<column name="grp_Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1_fu_450">Bytes2MultiPixStream_Pipeline_VITIS_LOOP_755_1, 2, 11522, 13.044 ns, 75.146 us, 0, 0, loop pipeline stp</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- loop_Bytes2MulPxStrm_Y_U_V8">320, 12447000, 5 ~ 11525, -, -, 64 ~ 1080, no</column>
+<column name="- VITIS_LOOP_857_4">256, 12447000, 4 ~ 11525, -, -, 64 ~ 1080, no</column>
+<column name="- loop_Y_UV8_Y_UV8_420">320, 12447000, 5 ~ 11525, -, -, 64 ~ 1080, no</column>
+<column name="- loop_YUYV8">320, 6226200, 5 ~ 5765, -, -, 64 ~ 1080, no</column>
+<column name="- loop_UYVY8">320, 6226200, 5 ~ 5765, -, -, 64 ~ 1080, no</column>
+<column name="- loop_RGB8_YUV8">320, 4152600, 5 ~ 3845, -, -, 64 ~ 1080, no</column>
+<column name="- loop_BGR8">320, 4152600, 5 ~ 3845, -, -, 64 ~ 1080, no</column>
+<column name="- loop_RGBX8_YUVX8">320, 3115800, 5 ~ 2885, -, -, 64 ~ 1080, no</column>
+<column name="- loop_Y8">320, 12447000, 5 ~ 11525, -, -, 64 ~ 1080, no</column>
+<column name="- loop_BGRX8">320, 3115800, 5 ~ 2885, -, -, 64 ~ 1080, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

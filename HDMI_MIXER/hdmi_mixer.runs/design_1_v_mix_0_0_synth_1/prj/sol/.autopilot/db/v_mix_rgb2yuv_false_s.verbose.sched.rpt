@@ -1,0 +1,156 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_mix_rgb2yuv_false_s'
+================================================================
+* Date:           Mon Mar 16 15:11:27 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.52 ns|  4.761 ns|     1.76 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+---------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |    Interval    | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |   max   |   Type  |
+    +---------+---------+-----------+-----------+------+---------+---------+
+    |     4417|  2079001|  28.808 us|  13.559 ms|  4417|  2079001|       no|
+    +---------+---------+-----------+-----------+------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+---------+---------+-----------+-----------+-----------+-----------+----------+
+        |                     |  Latency (cycles) | Iteration |  Initiation Interval  |    Trip   |          |
+        |      Loop Name      |   min   |   max   |  Latency  |  achieved |   target  |   Count   | Pipelined|
+        +---------------------+---------+---------+-----------+-----------+-----------+-----------+----------+
+        |- VITIS_LOOP_1040_1  |     4416|  2079000|  69 ~ 1925|          -|          -|  64 ~ 1080|        no|
+        +---------------------+---------+---------+-----------+-----------+-----------+-----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.29>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%y = alloca i32 1" [prj/sol/.autopilot/db/v_csc.cpp:1034]   --->   Operation 5 'alloca' 'y' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%width_val_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %width_val"   --->   Operation 6 'read' 'width_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%height_val_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %height_val"   --->   Operation 7 'read' 'height_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i11 %height_val, i1 1, void "   --->   Operation 8 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i11 %width_val, i1 1, void "   --->   Operation 9 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %outLayer1, void @empty_31, i32 0, i32 0, void @empty_46, i32 0, i32 0, void @empty_46, void @empty_46, void @empty_46, i32 0, i32 0, i32 0, i32 0, void @empty_46, void @empty_46, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %outYuv, void @empty_31, i32 0, i32 0, void @empty_46, i32 0, i32 0, void @empty_46, void @empty_46, void @empty_46, i32 0, i32 0, i32 0, i32 0, void @empty_46, void @empty_46, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (1.29ns)   --->   "%store_ln1034 = store i11 0, i11 %y" [prj/sol/.autopilot/db/v_csc.cpp:1034]   --->   Operation 12 'store' 'store_ln1034' <Predicate = true> <Delay = 1.29>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln1040 = br void %VITIS_LOOP_1042_2" [prj/sol/.autopilot/db/v_csc.cpp:1040]   --->   Operation 13 'br' 'br_ln1040' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 4.26>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%y_9 = load i11 %y" [prj/sol/.autopilot/db/v_csc.cpp:1040]   --->   Operation 14 'load' 'y_9' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (1.48ns)   --->   "%icmp_ln1040 = icmp_eq  i11 %y_9, i11 %height_val_read" [prj/sol/.autopilot/db/v_csc.cpp:1040]   --->   Operation 15 'icmp' 'icmp_ln1040' <Predicate = true> <Delay = 1.48> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 64, i64 1080, i64 0"   --->   Operation 16 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (1.48ns)   --->   "%y_10 = add i11 %y_9, i11 1" [prj/sol/.autopilot/db/v_csc.cpp:1040]   --->   Operation 17 'add' 'y_10' <Predicate = true> <Delay = 1.48> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln1040 = br i1 %icmp_ln1040, void %for.inc.lr.ph, void %for.end14" [prj/sol/.autopilot/db/v_csc.cpp:1040]   --->   Operation 18 'br' 'br_ln1040' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [2/2] (2.77ns)   --->   "%call_ln0 = call void @v_mix_rgb2yuv<false>_Pipeline_VITIS_LOOP_1042_2, i11 %width_val_read, i24 %outLayer1, i24 %outYuv"   --->   Operation 19 'call' 'call_ln0' <Predicate = (!icmp_ln1040)> <Delay = 2.77> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%ret_ln1050 = ret" [prj/sol/.autopilot/db/v_csc.cpp:1050]   --->   Operation 20 'ret' 'ret_ln1050' <Predicate = (icmp_ln1040)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 4.07>
+ST_3 : Operation 21 [1/2] (4.07ns)   --->   "%call_ln0 = call void @v_mix_rgb2yuv<false>_Pipeline_VITIS_LOOP_1042_2, i11 %width_val_read, i24 %outLayer1, i24 %outYuv"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 4.07> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 1.29>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%specloopname_ln1040 = specloopname void @_ssdm_op_SpecLoopName, void @empty_49" [prj/sol/.autopilot/db/v_csc.cpp:1040]   --->   Operation 22 'specloopname' 'specloopname_ln1040' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (1.29ns)   --->   "%store_ln1034 = store i11 %y_10, i11 %y" [prj/sol/.autopilot/db/v_csc.cpp:1034]   --->   Operation 23 'store' 'store_ln1034' <Predicate = true> <Delay = 1.29>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln1040 = br void %VITIS_LOOP_1042_2" [prj/sol/.autopilot/db/v_csc.cpp:1040]   --->   Operation 24 'br' 'br_ln1040' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.522ns, clock uncertainty: 1.761ns.
+
+ <State 1>: 1.298ns
+The critical path consists of the following:
+	'alloca' operation 11 bit ('y', prj/sol/.autopilot/db/v_csc.cpp:1034) [5]  (0.000 ns)
+	'store' operation ('store_ln1034', prj/sol/.autopilot/db/v_csc.cpp:1034) of constant 0 11 bit on local variable 'y', prj/sol/.autopilot/db/v_csc.cpp:1034 [12]  (1.298 ns)
+
+ <State 2>: 4.261ns
+The critical path consists of the following:
+	'load' operation 11 bit ('y', prj/sol/.autopilot/db/v_csc.cpp:1040) on local variable 'y', prj/sol/.autopilot/db/v_csc.cpp:1034 [15]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln1040', prj/sol/.autopilot/db/v_csc.cpp:1040) [16]  (1.482 ns)
+	'call' operation ('call_ln0') to 'v_mix_rgb2yuv<false>_Pipeline_VITIS_LOOP_1042_2' [22]  (2.780 ns)
+
+ <State 3>: 4.078ns
+The critical path consists of the following:
+	'call' operation ('call_ln0') to 'v_mix_rgb2yuv<false>_Pipeline_VITIS_LOOP_1042_2' [22]  (4.078 ns)
+
+ <State 4>: 1.298ns
+The critical path consists of the following:
+	'store' operation ('store_ln1034', prj/sol/.autopilot/db/v_csc.cpp:1034) of variable 'y', prj/sol/.autopilot/db/v_csc.cpp:1040 11 bit on local variable 'y', prj/sol/.autopilot/db/v_csc.cpp:1034 [23]  (1.298 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

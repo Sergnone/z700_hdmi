@@ -1,0 +1,31 @@
+#ifndef __V_PL_ADDRESSES_H_
+#define __V_PL_ADDRESSES_H_
+
+#include "xparameters.h"
+#include "platform.h"
+#include "sleep.h"
+#include "xvidc.h"
+
+
+#define DDR_BASEADDR XPAR_DDR_MEM_BASEADDR
+
+//#define CHROMA_ADDR_OFFSET   (0x01000000U)
+//#define V_CHROMA_ADDR_OFFSET (0x03000000U)
+
+//8MB Buffer Size
+#define	BUFFER_SIZE	0x800000
+//read OUT
+#define XVFRMBUFRD_BUFFER_BASEADDR (DDR_BASEADDR + (0x01000000))
+//write IN TPG
+//#define XVFRMBUFWR_BUFFER_BASEADDR (DDR_BASEADDR + (0x01000000) + BUFFER_SIZE)
+
+
+//#define XVFRMBUFRD_BUFFER_BASEADDR (DDR_BASEADDR)
+//#define XVFRMBUFWR_BUFFER_BASEADDR (DDR_BASEADDR + (0x01000000))
+
+#define XVMIX_LAYER1_BASEADDR      (DDR_BASEADDR + (0x02100000))
+//#define XVMIX_LAYER_ADDR_OFFSET    (0x01000000U)
+//#define XVMIX_CHROMA_ADDR_OFFSET   (0x01000000U)
+
+
+#endif

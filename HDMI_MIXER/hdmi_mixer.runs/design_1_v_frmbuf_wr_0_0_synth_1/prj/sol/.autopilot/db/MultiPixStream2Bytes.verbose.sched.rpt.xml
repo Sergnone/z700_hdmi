@@ -1,0 +1,55 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'MultiPixStream2Bytes'" level="0">
+<item name = "Date">Mon Mar 16 15:10:42 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">prj</item>
+<item name = "Solution">sol (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">6.52 ns, 4.652 ns, 1.76 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1, 12447005, 6.522 ns, 81.179 ms, 1, 12447005, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- loop_MultPixStrm2Bytes_Y_U_V8">256, 12447000, 4 ~ 11525, -, -, 64 ~ 1080, no</column>
+<column name="- loop_MultPixStrm2Bytes_Y_U_V8_420">256, 12447000, 4 ~ 11525, -, -, 64 ~ 1080, no</column>
+<column name="- loop_RGBX8_YUVX8">320, 4671000, 5 ~ 4325, -, -, 64 ~ 1080, no</column>
+<column name="- loop_BGRX8">320, 4671000, 5 ~ 4325, -, -, 64 ~ 1080, no</column>
+<column name="- loop_YUYV8">256, 6226200, 4 ~ 5765, -, -, 64 ~ 1080, no</column>
+<column name="- loop_UYVY8">256, 6226200, 4 ~ 5765, -, -, 64 ~ 1080, no</column>
+<column name="- loop_Y_UV8_Y_UV8_420">256, 12447000, 4 ~ 11525, -, -, 64 ~ 1080, no</column>
+<column name="- loop_RGB8_YUV8">256, 4152600, 4 ~ 3845, -, -, 64 ~ 1080, no</column>
+<column name="- loop_BGR8">256, 4152600, 4 ~ 3845, -, -, 64 ~ 1080, no</column>
+<column name="- loop_Y8">256, 12447000, 4 ~ 11525, -, -, 64 ~ 1080, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
